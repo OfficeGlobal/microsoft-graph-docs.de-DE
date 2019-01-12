@@ -2,50 +2,52 @@
 title: Ereignis erstellen
 description: Erstellen eines Ereignisses im Standardkalender des Benutzers oder in einem angegebenen Kalender.
 localization_priority: Priority
-ms.openlocfilehash: 178891392d32e97bb8f3db85f9f32acc43a177a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836470"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978613"
 ---
-# <a name="create-event"></a><span data-ttu-id="50a92-103">Ereignis erstellen</span><span class="sxs-lookup"><span data-stu-id="50a92-103">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="0ed29-103">Ereignis erstellen</span><span class="sxs-lookup"><span data-stu-id="0ed29-103">Create Event</span></span>
 
-<span data-ttu-id="50a92-104">Erstellen eines [Ereignisses](../resources/event.md) im Standardkalender des Benutzers oder in einem angegebenen Kalender.</span><span class="sxs-lookup"><span data-stu-id="50a92-104">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="0ed29-104">Erstellen eines [Ereignisses](../resources/event.md) im Standardkalender des Benutzers oder in einem angegebenen Kalender.</span><span class="sxs-lookup"><span data-stu-id="0ed29-104">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="50a92-105">Sie können die Zeitzone für alle Start- und Endzeiten des Ereignisses als Teil dieser Werte angeben, da die **start**- und **end**-Eigenschaft vom Typ [dateTimeTimeZone](../resources/datetimetimezone.md) sind.</span><span class="sxs-lookup"><span data-stu-id="50a92-105">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+<span data-ttu-id="0ed29-105">Sie können die Zeitzone für alle Start- und Endzeiten des Ereignisses als Teil dieser Werte angeben, da die **start**- und **end**-Eigenschaft vom Typ [dateTimeTimeZone](../resources/datetimetimezone.md) sind.</span><span class="sxs-lookup"><span data-stu-id="0ed29-105">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
 
-<span data-ttu-id="50a92-106">Wenn ein Ereignis gesendet wird, sendet der Server Einladungen an alle Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="50a92-106">When an event is sent, the server sends invitations to all the attendees.</span></span>
+<span data-ttu-id="0ed29-106">Wenn ein Ereignis gesendet wird, sendet der Server Einladungen an alle Teilnehmer.</span><span class="sxs-lookup"><span data-stu-id="0ed29-106">When an event is sent, the server sends invitations to all the attendees.</span></span>
 
-<span data-ttu-id="50a92-107">**Festlegen des Ortes in einer Einladung**</span><span class="sxs-lookup"><span data-stu-id="50a92-107">**Setting the location in an event**</span></span>
+<span data-ttu-id="0ed29-107">**Festlegen des Ortes in einer Einladung**</span><span class="sxs-lookup"><span data-stu-id="0ed29-107">**Setting the location in an event**</span></span>
 
-<span data-ttu-id="50a92-108">Ein Exchange-Administrator kann ein Postfach und eine E-Mail-Adresse für eine Ressource, z. B. einen Besprechungsraum, oder Geräte, z B. einen Projektor, einrichten.</span><span class="sxs-lookup"><span data-stu-id="50a92-108">An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment like a projector.</span></span> <span data-ttu-id="50a92-109">Benutzer können die Ressource als Teilnehmer zu einer Besprechung einladen.</span><span class="sxs-lookup"><span data-stu-id="50a92-109">Users can then invite the resource as an attendee to a meeting.</span></span> <span data-ttu-id="50a92-110">Der Server akzeptiert im Auftrag der Ressource die Besprechungsanfrage basierend auf dem Frei/Gebucht-Zeitplan der Ressource oder lehnt diese ab.</span><span class="sxs-lookup"><span data-stu-id="50a92-110">On behalf of the resource, the server accepts or rejects the meeting request based on the free/busy schedule of the resource.</span></span> <span data-ttu-id="50a92-111">Wenn der Server eine Besprechung für die Ressource akzeptiert, wird ein Ereignis für die Besprechung im Kalender der Ressource erstellt.</span><span class="sxs-lookup"><span data-stu-id="50a92-111">If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.</span></span> <span data-ttu-id="50a92-112">Wenn die Besprechung neu geplant wird, aktualisiert der Server das Ereignis im Kalender der Ressource automatisch.</span><span class="sxs-lookup"><span data-stu-id="50a92-112">If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.</span></span>
+<span data-ttu-id="0ed29-108">Ein Exchange-Administrator kann ein Postfach und eine E-Mail-Adresse für eine Ressource, z. B. einen Besprechungsraum, oder Geräte, z B. einen Projektor, einrichten.</span><span class="sxs-lookup"><span data-stu-id="0ed29-108">An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment like a projector.</span></span> <span data-ttu-id="0ed29-109">Benutzer können die Ressource als Teilnehmer zu einer Besprechung einladen.</span><span class="sxs-lookup"><span data-stu-id="0ed29-109">Users can then invite the resource as an attendee to a meeting.</span></span> <span data-ttu-id="0ed29-110">Der Server akzeptiert im Auftrag der Ressource die Besprechungsanfrage basierend auf dem Frei/Gebucht-Zeitplan der Ressource oder lehnt diese ab.</span><span class="sxs-lookup"><span data-stu-id="0ed29-110">On behalf of the resource, the server accepts or rejects the meeting request based on the free/busy schedule of the resource.</span></span> <span data-ttu-id="0ed29-111">Wenn der Server eine Besprechung für die Ressource akzeptiert, wird ein Ereignis für die Besprechung im Kalender der Ressource erstellt.</span><span class="sxs-lookup"><span data-stu-id="0ed29-111">If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.</span></span> <span data-ttu-id="0ed29-112">Wenn die Besprechung neu geplant wird, aktualisiert der Server das Ereignis im Kalender der Ressource automatisch.</span><span class="sxs-lookup"><span data-stu-id="0ed29-112">If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.</span></span>
 
-<span data-ttu-id="50a92-113">Ein weiterer Vorteil beim Einrichten eines Postfachs für eine Ressource ist das Steuern des Zeitplans der Ressource derart, dass z. B. nur Führungskräfte oder deren Stellvertretungen einen privaten Besprechungsraum buchen können.</span><span class="sxs-lookup"><span data-stu-id="50a92-113">Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives or their delegates can book a private meeting room.</span></span>
+<span data-ttu-id="0ed29-113">Ein weiterer Vorteil beim Einrichten eines Postfachs für eine Ressource ist das Steuern des Zeitplans der Ressource derart, dass z. B. nur Führungskräfte oder deren Stellvertretungen einen privaten Besprechungsraum buchen können.</span><span class="sxs-lookup"><span data-stu-id="0ed29-113">Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives or their delegates can book a private meeting room.</span></span>
 
-<span data-ttu-id="50a92-114">Gehen Sie folgendermaßen vor, wenn Sie ein Ereignis organisieren, bei dem ein Besprechungsort vorhanden ist:</span><span class="sxs-lookup"><span data-stu-id="50a92-114">If you're organizing an event that involves a meeting location:</span></span>
+<span data-ttu-id="0ed29-114">Gehen Sie folgendermaßen vor, wenn Sie ein Ereignis organisieren, bei dem ein Besprechungsort vorhanden ist:</span><span class="sxs-lookup"><span data-stu-id="0ed29-114">If you're organizing an event that involves a meeting location:</span></span>
 
-1. <span data-ttu-id="50a92-115">Legen Sie die **location**-Eigenschaft des **Ereignisses** entsprechend fest.</span><span class="sxs-lookup"><span data-stu-id="50a92-115">Set the **location** property of the **event** accordingly.</span></span> 
-2. <span data-ttu-id="50a92-116">Legen Sie die optionale **locationEmailAddress**-Eigenschaft fest, wenn der Besprechungsort eine E-Mail-Adresse aufweist.</span><span class="sxs-lookup"><span data-stu-id="50a92-116">Set the optional **locationEmailAddress** property if the meeting location has an email address.</span></span>
+1. <span data-ttu-id="0ed29-115">Legen Sie die **location**-Eigenschaft des **Ereignisses** entsprechend fest.</span><span class="sxs-lookup"><span data-stu-id="0ed29-115">Set the **location** property of the **event** accordingly.</span></span> 
+2. <span data-ttu-id="0ed29-116">Legen Sie die optionale **locationEmailAddress**-Eigenschaft fest, wenn der Besprechungsort eine E-Mail-Adresse aufweist.</span><span class="sxs-lookup"><span data-stu-id="0ed29-116">Set the optional **locationEmailAddress** property if the meeting location has an email address.</span></span>
 
-<span data-ttu-id="50a92-117">Führen Sie die folgenden zusätzlichen Schritte aus, wenn der Besprechungsort als Ressource eingerichtet wurde oder wenn das Ereignis Geräte umfasst, die als Ressource eingerichtet wurden:</span><span class="sxs-lookup"><span data-stu-id="50a92-117">Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:</span></span>
+<span data-ttu-id="0ed29-117">Führen Sie die folgenden zusätzlichen Schritte aus, wenn der Besprechungsort als Ressource eingerichtet wurde oder wenn das Ereignis Geräte umfasst, die als Ressource eingerichtet wurden:</span><span class="sxs-lookup"><span data-stu-id="0ed29-117">Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:</span></span>
 
-3. <span data-ttu-id="50a92-118">Laden Sie die Ressource als [Teilnehmer](../resources/attendee.md) ein.</span><span class="sxs-lookup"><span data-stu-id="50a92-118">Invite the resource as an [attendee](../resources/attendee.md).</span></span>
-4. <span data-ttu-id="50a92-119">Legen Sie die **type**-Eigenschaft des Teilnehmers auf `resource` fest.</span><span class="sxs-lookup"><span data-stu-id="50a92-119">Set the attendee **type** property as `resource`.</span></span>
-5. <span data-ttu-id="50a92-120">Legen Sie die **emailAddress** des Teilnehmers als E-Mail-Adresse der Ressource fest.</span><span class="sxs-lookup"><span data-stu-id="50a92-120">Set the attendee **emailAddress** as the resource email address.</span></span>
+3. <span data-ttu-id="0ed29-118">Laden Sie die Ressource als [Teilnehmer](../resources/attendee.md) ein.</span><span class="sxs-lookup"><span data-stu-id="0ed29-118">Invite the resource as an [attendee](../resources/attendee.md).</span></span>
+4. <span data-ttu-id="0ed29-119">Legen Sie die **type**-Eigenschaft des Teilnehmers auf `resource` fest.</span><span class="sxs-lookup"><span data-stu-id="0ed29-119">Set the attendee **type** property as `resource`.</span></span>
+5. <span data-ttu-id="0ed29-120">Legen Sie die **emailAddress** des Teilnehmers als E-Mail-Adresse der Ressource fest.</span><span class="sxs-lookup"><span data-stu-id="0ed29-120">Set the attendee **emailAddress** as the resource email address.</span></span>
 
 
 
-## <a name="permissions"></a><span data-ttu-id="50a92-121">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="50a92-121">Permissions</span></span>
-<span data-ttu-id="50a92-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50a92-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0ed29-121">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0ed29-121">Permissions</span></span>
+<span data-ttu-id="0ed29-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ed29-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50a92-124">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="50a92-124">Permission type</span></span>      | <span data-ttu-id="50a92-125">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="50a92-125">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0ed29-124">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0ed29-124">Permission type</span></span>      | <span data-ttu-id="0ed29-125">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0ed29-125">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="50a92-126">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="50a92-126">Delegated (work or school account)</span></span> | <span data-ttu-id="50a92-127">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50a92-127">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="50a92-128">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="50a92-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50a92-129">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50a92-129">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="50a92-130">Anwendung</span><span class="sxs-lookup"><span data-stu-id="50a92-130">Application</span></span> | <span data-ttu-id="50a92-131">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50a92-131">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="0ed29-126">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0ed29-126">Delegated (work or school account)</span></span> | <span data-ttu-id="0ed29-127">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ed29-127">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="0ed29-128">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0ed29-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ed29-129">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ed29-129">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="0ed29-130">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0ed29-130">Application</span></span> | <span data-ttu-id="0ed29-131">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ed29-131">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="50a92-132">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="50a92-132">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ed29-132">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ed29-132">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -57,24 +59,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="50a92-133">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="50a92-133">Request headers</span></span>
-| <span data-ttu-id="50a92-134">Header</span><span class="sxs-lookup"><span data-stu-id="50a92-134">Header</span></span>       | <span data-ttu-id="50a92-135">Wert</span><span class="sxs-lookup"><span data-stu-id="50a92-135">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="0ed29-133">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0ed29-133">Request headers</span></span>
+| <span data-ttu-id="0ed29-134">Header</span><span class="sxs-lookup"><span data-stu-id="0ed29-134">Header</span></span>       | <span data-ttu-id="0ed29-135">Wert</span><span class="sxs-lookup"><span data-stu-id="0ed29-135">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="50a92-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="50a92-136">Authorization</span></span>  | <span data-ttu-id="50a92-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="50a92-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="50a92-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="50a92-139">Content-Type</span></span>  | <span data-ttu-id="50a92-p104">application/json. Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="50a92-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="0ed29-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ed29-136">Authorization</span></span>  | <span data-ttu-id="0ed29-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ed29-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0ed29-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0ed29-139">Content-Type</span></span>  | <span data-ttu-id="0ed29-p104">application/json. Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="0ed29-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="50a92-142">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="50a92-142">Request body</span></span>
-<span data-ttu-id="50a92-143">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="50a92-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ed29-142">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0ed29-142">Request body</span></span>
+<span data-ttu-id="0ed29-143">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ed29-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="50a92-144">Da die **event**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, können Sie den `POST`-Vorgang verwenden und während der Erstellung des Ereignisses benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="50a92-144">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="0ed29-144">Da die **event**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, können Sie den `POST`-Vorgang verwenden und während der Erstellung des Ereignisses benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="0ed29-144">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="50a92-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="50a92-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0ed29-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ed29-145">Response</span></span>
 
-<span data-ttu-id="50a92-146">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [event](../resources/event.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="50a92-146">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="0ed29-146">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [event](../resources/event.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ed29-146">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50a92-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="50a92-147">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="50a92-148">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="50a92-148">Request 1</span></span>
-<span data-ttu-id="50a92-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="50a92-149">Here is an example of the request.</span></span> <span data-ttu-id="50a92-150">Es verwendet den `Prefer: outlook.timezone`-Anforderungsheader, um die **Start**- und **End**zeiten in der Antwort anzugeben.</span><span class="sxs-lookup"><span data-stu-id="50a92-150">It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** times in the response.</span></span>
+## <a name="example"></a><span data-ttu-id="0ed29-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0ed29-147">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="0ed29-148">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="0ed29-148">Request 1</span></span>
+<span data-ttu-id="0ed29-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0ed29-149">Here is an example of the request.</span></span> <span data-ttu-id="0ed29-150">Es verwendet den `Prefer: outlook.timezone`-Anforderungsheader, um die **Start**- und **End**zeiten in der Antwort anzugeben.</span><span class="sxs-lookup"><span data-stu-id="0ed29-150">It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** times in the response.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -113,9 +115,9 @@ Content-length: 600
   ]
 }
 ```
-<span data-ttu-id="50a92-151">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="50a92-151">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="50a92-152">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="50a92-152">Response 1</span></span>
-<span data-ttu-id="50a92-153">Nachfolgend finden Sie ein Beispiel der Antwort, in der die Eigenschaften **start** und **end** die im `Prefer: outlook.timezone`-Header angegebene Zeitzone verwenden.</span><span class="sxs-lookup"><span data-stu-id="50a92-153">Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="50a92-154">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="50a92-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="50a92-155">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="50a92-155">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ed29-151">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ed29-151">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="0ed29-152">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="0ed29-152">Response 1</span></span>
+<span data-ttu-id="0ed29-153">Nachfolgend finden Sie ein Beispiel der Antwort, in der die Eigenschaften **start** und **end** die im `Prefer: outlook.timezone`-Header angegebene Zeitzone verwenden.</span><span class="sxs-lookup"><span data-stu-id="0ed29-153">Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="0ed29-154">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="0ed29-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0ed29-155">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ed29-155">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -209,10 +211,10 @@ Content-length: 2197
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="50a92-156">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="50a92-156">Request 2</span></span>
-<span data-ttu-id="50a92-157">In der nächsten Beispielanforderung werden drei Orte angegeben, an denen der Organisator und Teilnehmer an der Besprechung teilnehmen können.</span><span class="sxs-lookup"><span data-stu-id="50a92-157">The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="0ed29-156">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="0ed29-156">Request 2</span></span>
+<span data-ttu-id="0ed29-157">In der nächsten Beispielanforderung werden drei Orte angegeben, an denen der Organisator und Teilnehmer an der Besprechung teilnehmen können.</span><span class="sxs-lookup"><span data-stu-id="0ed29-157">The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.</span></span>
 
-<span data-ttu-id="50a92-158">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="50a92-158">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="0ed29-158">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ed29-158">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -283,9 +285,9 @@ Content-length: 1390
 }
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="50a92-159">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="50a92-159">Response 2</span></span>
-<span data-ttu-id="50a92-160">Im folgenden Antwortbeispiel ist das erstellte Ereignis dargestellt, das Informationen für die drei Standorte für die Besprechung angibt.</span><span class="sxs-lookup"><span data-stu-id="50a92-160">The following example response shows the created event that specifies information for the 3 locations for the meeting.</span></span> <span data-ttu-id="50a92-161">Aufgrund des `Prefer: outlook.timezone="Pacific Standard Time"`-Anforderungsheaders werden die Eigenschaften **start** und **end** in PST ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="50a92-161">Because of the `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.</span></span>
-<span data-ttu-id="50a92-162">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="50a92-162">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="50a92-163">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="50a92-163">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="0ed29-159">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="0ed29-159">Response 2</span></span>
+<span data-ttu-id="0ed29-160">Im folgenden Antwortbeispiel ist das erstellte Ereignis dargestellt, das Informationen für die drei Standorte für die Besprechung angibt.</span><span class="sxs-lookup"><span data-stu-id="0ed29-160">The following example response shows the created event that specifies information for the 3 locations for the meeting.</span></span> <span data-ttu-id="0ed29-161">Aufgrund des `Prefer: outlook.timezone="Pacific Standard Time"`-Anforderungsheaders werden die Eigenschaften **start** und **end** in PST ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="0ed29-161">Because of the `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.</span></span>
+<span data-ttu-id="0ed29-162">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="0ed29-162">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0ed29-163">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ed29-163">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -412,8 +414,8 @@ Content-length: 2985
 ```
 
 
-##### <a name="request-3"></a><span data-ttu-id="50a92-164">Anforderung 3</span><span class="sxs-lookup"><span data-stu-id="50a92-164">Request 3</span></span>
-<span data-ttu-id="50a92-165">Das dritte Beispiel zeigt, wie ein wiederkehrendes Ereignis erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="50a92-165">The third example shows how to create a recurring event.</span></span> <span data-ttu-id="50a92-166">Das Ereignis findet jeden Montag von 12:00 Uhr bis 2:00 Uhr beginnend am 4. September 2017 bis zum Jahresende statt.</span><span class="sxs-lookup"><span data-stu-id="50a92-166">The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="0ed29-164">Anforderung 3</span><span class="sxs-lookup"><span data-stu-id="0ed29-164">Request 3</span></span>
+<span data-ttu-id="0ed29-165">Das dritte Beispiel zeigt, wie ein wiederkehrendes Ereignis erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="0ed29-165">The third example shows how to create a recurring event.</span></span> <span data-ttu-id="0ed29-166">Das Ereignis findet jeden Montag von 12:00 Uhr bis 2:00 Uhr beginnend am 4. September 2017 bis zum Jahresende statt.</span><span class="sxs-lookup"><span data-stu-id="0ed29-166">The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -462,9 +464,9 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="50a92-167">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="50a92-167">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-3"></a><span data-ttu-id="50a92-168">Antwort 3</span><span class="sxs-lookup"><span data-stu-id="50a92-168">Response 3</span></span>
-<span data-ttu-id="50a92-p109">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="50a92-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ed29-167">Geben Sie im Anforderungstext eine JSON-Darstellung des [event](../resources/event.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="0ed29-167">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="0ed29-168">Antwort 3</span><span class="sxs-lookup"><span data-stu-id="0ed29-168">Response 3</span></span>
+<span data-ttu-id="0ed29-p109">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ed29-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -577,11 +579,11 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="50a92-172">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="50a92-172">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0ed29-172">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0ed29-172">See also</span></span>
 
-- [<span data-ttu-id="50a92-173">Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="50a92-173">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="50a92-174">Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="50a92-174">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="50a92-175">Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen</span><span class="sxs-lookup"><span data-stu-id="50a92-175">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="0ed29-173">Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="0ed29-173">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="0ed29-174">Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen</span><span class="sxs-lookup"><span data-stu-id="0ed29-174">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="0ed29-175">Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen</span><span class="sxs-lookup"><span data-stu-id="0ed29-175">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 
