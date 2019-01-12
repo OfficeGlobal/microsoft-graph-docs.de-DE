@@ -3,12 +3,13 @@ title: iosVppEBookAssignment-Ressourcentyp
 description: Enthält Eigenschaften zum Zuweisen eines iOS-VPP-E-Books zu einer Gruppe.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea47b3927eb0702cb4ea365f9c23d7fd6d1e2f4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 126ae989df317ab01e1db17d319607abf13923c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948695"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment-Ressourcentyp
 
@@ -30,7 +31,7 @@ Erbt von [managedEBookAssignment](../resources/intune-books-managedebookassignme
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Geerbt von [ManagedEBookAssignment](../resources/intune-books-managedebookassignment.md). Mögliche Werte: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 

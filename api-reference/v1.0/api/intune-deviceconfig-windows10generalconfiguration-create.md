@@ -3,12 +3,13 @@ title: windows10GeneralConfiguration erstellen
 description: Erstellt ein neues windows10GeneralConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13e2dc362bb45e8948244f7d29c1ff74e164fb88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1d98a5fef5d0147bff7458ad045f2dc7ab94df08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949689"
 ---
 # <a name="create-windows10generalconfiguration"></a>windows10GeneralConfiguration erstellen
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -54,7 +55,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |enterpriseCloudPrintDiscoveryEndPoint|Zeichenfolge|Der Endpunkt zur Ermittlung von Clouddruckern.|
 |enterpriseCloudPrintOAuthAuthority|Zeichenfolge|Authentifizierungsendpunkt zum Abrufen von OAuth-Token.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID einer Clientanwendung, die berechtigt ist, OAuth-Token von der OAuth Authority.|
+|enterpriseCloudPrintOAuthClientIdentifier|Zeichenfolge|GUID einer Clientanwendung, die berechtigt ist, OAuth-Token von der OAuth Authority.|
 |enterpriseCloudPrintResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für den Druckdienst, wie im Azure-Portal konfiguriert.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen. Dies ist nur eine Mobileinstellung. Gültige Werte: 1 bis 65535.|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|Zeichenfolge|OAuth-Ressourcen-URI für Druckerermittlungsdienst, wie im Azure-Portal konfiguriert.|
@@ -68,8 +69,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Ruft einen Wert ab, der es dem Gerät ermöglicht, Diagnose- und Nutzungstelemetriedaten zu senden, oder ruft diesen ab (z. B. Watson). Mögliche Werte: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolescher Wert|Ruft einen Wert ab, der es IT-Administratoren ermöglicht, zu verhindern, dass Apps und Features mit Dateien auf OneDrive arbeiten.|
 |smartScreenEnableAppInstallControl|Boolescher Wert|Ermöglicht IT-Administratoren, zu steuern, ob Benutzer Apps von anderen Orten als dem Store installieren können.|
-|personalizationDesktopImageUrl|String|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Desktopbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Desktopbild verwendet werden muss.|
-|personalizationLockScreenImageUrl|String|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Sperrbildschirmbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Sperrbildschirmbild verwendet werden muss.|
+|personalizationDesktopImageUrl|Zeichenfolge|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Desktopbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Desktopbild verwendet werden muss.|
+|personalizationLockScreenImageUrl|Zeichenfolge|Eine http- oder https-URL zu einem JPG-, JPEG- oder PNP-Bild, das heruntergeladen und als Sperrbildschirmbild verwendet werden muss, oder eine Datei-URL zu einem lokalen Bild in dem Dateisystem, das als Sperrbildschirmbild verwendet werden muss.|
 |bluetoothAllowedServices|Zeichenfolgenauflistung|Gibt eine Liste zulässiger Bluetooth-Dienste und -Profile in Zeichenfolgen im Hexadezimalformat an.|
 |bluetoothBlockAdvertising|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Bluetooth-Werbung verwendet.|
 |bluetoothBlockDiscoverableMode|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer den sichtbaren Bluetoothmodus verwendet.|
@@ -187,7 +188,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Gibt den Typ des Spotlight. Mögliche Werte sind: `notConfigured`, `disabled` und `enabled`.|
 |networkProxyApplySettingsDeviceWide|Boolescher Wert|Wenn dieser Wert festgelegt ist, werden Proxyeinstellungen auf alle Prozesse und Konten in dem Gerät angewendet. Andernfalls wird er auf das Benutzerkonto angewendet, das bei MDM registriert ist.|
 |networkProxyDisableAutoDetect|Boolescher Wert|Deaktiviert die automatische Erkennung von Einstellungen. Wenn diese Option aktiviert ist, versucht das System, den Pfad zu einem PAC-Skript (automatische Proxykonfiguration) zu suchen.|
-|networkProxyAutomaticConfigurationUrl|String|Adresse zu dem PAC-Skript, das Sie verwenden möchten.|
+|networkProxyAutomaticConfigurationUrl|Zeichenfolge|Adresse zu dem PAC-Skript, das Sie verwenden möchten.|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Gibt manuelle Proxyservereinstellungen an.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer E-Mail-Konten zu Geräten hinzufügt, die keinem Microsoft-Konto zugeordnet sind.|
 |antiTheftModeBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine Einstellung für den AntiTheft-Modus auswählt (nur Windows 10 Mobile).|
@@ -204,8 +205,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |edgeBlockSearchSuggestions|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Suchvorschläge in der Adressleiste verwendet.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer Intranetverkehr aus Edge an Internet Explorer sendet.|
 |edgeRequireSmartScreen|Boolescher Wert|Gibt an, ob der Benutzer aufgefordert werden soll, den Smartscreenfilter zu verwenden.|
-|edgeEnterpriseModeSiteListLocation|String|Gibt den Speicherort der Siteliste für den Unternehmensmodus an. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein http-Speicherort sein.|
-|edgeFirstRunUrl|String|Die URL für erste Ausführung, wenn der Edge-Browser das erste Mal geöffnet wird.|
+|edgeEnterpriseModeSiteListLocation|Zeichenfolge|Gibt den Speicherort der Siteliste für den Unternehmensmodus an. Dies kann eine lokale Datei, ein lokales Netzwerk oder ein http-Speicherort sein.|
+|edgeFirstRunUrl|Zeichenfolge|Die URL für erste Ausführung, wenn der Edge-Browser das erste Mal geöffnet wird.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Ermöglicht es IT-Administratoren, eine standardmäßige Suchmaschine für MDM-gesteuerte Geräte festzulegen. Benutzer können dies außer Kraft setzen und die standardmäßige Suchmaschine ändern, sofern die Richtlinie „AllowSearchEngineCustomization“ nicht festgelegt ist.|
 |edgeHomepageUrls|Zeichenfolgenauflistung|Die Liste von URLs für Startseiten, die auf bei MDM-registrierten Geräten im Edge-Browser angezeigt werden.|
 |edgeBlockAccessToAboutFlags|Boolescher Wert|Gibt an, ob Zugriff auf Info-Flags im Edge-Browser verhindert werden soll.|

@@ -3,12 +3,13 @@ title: iosCustomConfiguration löschen
 description: Löscht eine iosCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c3c7c4500644a00e10f6342147da481cd6978c79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abb2724d09c55eddddbfd13b7b61dbf9e9ef8217
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847719"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953511"
 ---
 # <a name="delete-ioscustomconfiguration"></a>iosCustomConfiguration löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

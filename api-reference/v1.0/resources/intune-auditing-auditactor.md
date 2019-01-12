@@ -3,12 +3,13 @@ title: auditActor-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für den Audit-Akteur enthält.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14b4ce53d46897a84da8fab468ba2ad6aa99b30e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ba63fd04d917a464933e749622a5abf959c2859e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948702"
 ---
 # <a name="auditactor-resource-type"></a>auditActor-Ressourcentyp
 

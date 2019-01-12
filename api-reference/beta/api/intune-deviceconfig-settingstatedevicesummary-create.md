@@ -3,12 +3,13 @@ title: settingStateDeviceSummary erstellen
 description: Erstellen eines neuen SettingStateDeviceSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06c9851a534f59be935791e1c1f435d2180bf9d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31c887394daa3425d39a80a9986d4d2eb6ea818b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950354"
 ---
 # <a name="create-settingstatedevicesummary"></a>settingStateDeviceSummary erstellen
 
@@ -45,7 +46,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -57,9 +58,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|settingName|String|Name der Einstellung|
-|instancePath|String|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
+|id|Zeichenfolge|Schlüssel der Entität|
+|settingName|Zeichenfolge|Name der Einstellung|
+|instancePath|Zeichenfolge|Name des zur Einstellung gehörenden Objekts des Typs „InstancePath“|
 |unknownDeviceCount|Int32|Anzahl der Geräte mit Meldung „Unknown“ für die Einstellung|
 |notApplicableDeviceCount|Int32|Anzahl der Geräte mit Meldung „Not Applicable“ für die Einstellung|
 |compliantDeviceCount|Int32|Anzahl der Geräte mit Meldung „Compliant“ für die Einstellung|

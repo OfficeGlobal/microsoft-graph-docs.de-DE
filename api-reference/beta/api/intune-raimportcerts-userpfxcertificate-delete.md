@@ -3,12 +3,13 @@ title: UserPFXCertificate löschen
 description: Löscht eine UserPFXCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 196c69abae766cb927bfa0ef4abe4e2978b1bbc3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e1c2bbf92031818bb93ed3c8eeab7eb5f16313aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827055"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948205"
 ---
 # <a name="delete-userpfxcertificate"></a>UserPFXCertificate löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

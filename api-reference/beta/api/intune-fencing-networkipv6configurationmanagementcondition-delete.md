@@ -3,12 +3,13 @@ title: NetworkIPv6ConfigurationManagementCondition löschen
 description: Löscht eine networkIPv6ConfigurationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a945f6ea70ff289d103535c3bec0990b59be676f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bc0da75157bde7ef77a8168ab4a89ed6c72692cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813174"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948086"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition löschen
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

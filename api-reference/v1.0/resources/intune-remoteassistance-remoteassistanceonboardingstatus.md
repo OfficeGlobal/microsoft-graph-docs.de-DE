@@ -3,12 +3,13 @@ title: RemoteAssistanceOnboardingStatus Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0dade07bafe1149eb76b46ffd3fd5b9242c2891
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8b4d5525fac00dfd7ebf1c68718ad8b47b0a2d56
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951782"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>RemoteAssistanceOnboardingStatus Enum-Typ
 

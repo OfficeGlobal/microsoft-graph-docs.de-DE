@@ -2,12 +2,14 @@
 title: Anwenden von accessReview
 description: 'In Azure AD zugreifen auf Berichte-Funktion, anwenden Sie die Entscheidungen von einer abgeschlossenen AccessReview.  Das Zielobjekt kann entweder eine einmalige Access Überprüfung oder eine Instanz einer wiederkehrenden Access Überprüfung sein.  '
 localization_priority: Normal
-ms.openlocfilehash: 762acb3dde490ea8867fb008d07b9914326f20fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e230a9638e865fbca69448f3a7683b95db954598
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951333"
 ---
 # <a name="apply-accessreview"></a>Anwenden von accessReview
 

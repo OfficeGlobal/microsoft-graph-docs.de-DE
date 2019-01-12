@@ -2,12 +2,14 @@
 title: Übersicht über Planner-Aufgaben und Pläne-API
 description: Planner bietet Teams eine einfache und visuelle Möglichkeit, ihre Arbeit zu organisieren. Kunden können mit Planner Pläne erstellen, Aufgaben organisieren und zuweisen, Informationen zum Fortschritt teilen und Inhalte gemeinsam bearbeiten.  Planner bietet mehrere interaktive Oberfläche, darunter ein Task Board, eine Diagrammseite und eine Zeitplanansicht sowie Integrationen in Office 365.
 author: TarkanSevilmis
-ms.openlocfilehash: cbe56021ad3aad08359b46b06a4ad2e285cac036
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: planner
+ms.openlocfilehash: c2e8be27eeb4f91b3030701e2f8416fecf29c2d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357162"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947071"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Übersicht über Planner-Aufgaben und Pläne-API
 Planner bietet Teams eine einfache und visuelle Möglichkeit, ihre Arbeit zu organisieren. Kunden können mit Planner Pläne erstellen, Aufgaben organisieren und zuweisen, Informationen zum Fortschritt teilen und Inhalte gemeinsam bearbeiten.  Planner bietet mehrere interaktive Oberfläche, darunter ein Task Board, eine Diagrammseite und eine Zeitplanansicht sowie Integrationen in Office 365.

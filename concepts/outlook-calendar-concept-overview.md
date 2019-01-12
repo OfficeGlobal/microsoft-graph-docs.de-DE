@@ -2,12 +2,14 @@
 title: Übersicht über die Outlook-Kalender-API
 description: Der Outlook-Kalender ist Teil des Messaging-Hubs von Outlook in Office 365, mit dem Sie ebenfalls Ihre E-Mails und Kontakte verwalten, Informationen zu Benutzern in Ihrem Unternehmen suchen...
 author: angelgolfer-ms
-ms.openlocfilehash: 44578d5ec37e25b66cceb11692a4519f6198ca1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: f147f3b8edf67940cbb3d0d86a3c3b3c1018895f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304305"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952951"
 ---
 # <a name="outlook-calendar-api-overview"></a>Übersicht über die Outlook-Kalender-API
 

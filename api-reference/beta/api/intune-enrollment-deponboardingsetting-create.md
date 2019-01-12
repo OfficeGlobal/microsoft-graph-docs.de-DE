@@ -3,12 +3,13 @@ title: Erstellen von depOnboardingSetting
 description: Erstellen eines neuen DepOnboardingSetting-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e9a5ed92f1a0ce656c1baa7af8a3cb23299395a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854901"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949486"
 ---
 # <a name="create-deponboardingsetting"></a>Erstellen von depOnboardingSetting
 
@@ -36,7 +37,7 @@ POST /deviceManagement/depOnboardingSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -54,13 +55,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |lastModifiedDateTime|DateTimeOffset|Wenn der Dienst Onboarded wurde.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Wenn der Dienst letzten Syned mit Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Wenn Intune zuletzt eine Synchronisierung angefordert wird.|
-|shareTokenWithSchoolDataSyncService|Boolean|Unabhängig davon, ob die Datenausführungsverhinderung token Freigabe mit dem Schule Daten Sync-Dienst aktiviert ist.|
+|shareTokenWithSchoolDataSyncService|Boolescher Wert|Unabhängig davon, ob die Datenausführungsverhinderung token Freigabe mit dem Schule Daten Sync-Dienst aktiviert ist.|
 |lastSyncErrorCode|Int32|Fehlercode von Apple während der letzten Synchronisierung der Datenausführungsverhinderung gemeldet.|
 |"TokenType"|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Ruft ab oder legt ihn fest die Datenausführungsverhinderung Token. Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.|
-|tokenName|String|Anzeigename für die Datenausführungsverhinderung Token|
+|tokenName|Zeichenfolge|Anzeigename für die Datenausführungsverhinderung Token|
 |syncedDeviceCount|Int32|Ruft synchronisierter Anzahl der Geräte|
-|defaultProfileDisplayName|String|Ruft synchronisierter Anzahl der Geräte|
-|dataSharingConsentGranted|Boolean|Stimmen Sie gewährte Zugriffsberechtigungen für die Datenfreigabe mit Apple Dep-Dienst|
+|defaultProfileDisplayName|Zeichenfolge|Ruft synchronisierter Anzahl der Geräte|
+|dataSharingConsentGranted|Boolescher Wert|Stimmen Sie gewährte Zugriffsberechtigungen für die Datenfreigabe mit Apple Dep-Dienst|
 
 
 

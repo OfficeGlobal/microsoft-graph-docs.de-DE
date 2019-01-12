@@ -2,12 +2,14 @@
 title: Abschnitte auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs section aus der angegebenen Abschnittsgruppe abrufen.
 localization_priority: Normal
-ms.openlocfilehash: cf31f8e132019b8afce204d0058516fd330f45d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 66ffe610df5479eac78a943b1eefac0a41ecd37e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836099"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953357"
 ---
 # <a name="list-sections"></a>Abschnitte auflisten
 

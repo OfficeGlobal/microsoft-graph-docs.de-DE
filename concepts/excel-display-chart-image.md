@@ -1,12 +1,15 @@
 ---
 title: Anzeigen eines Diagrammbilds in Excel mithilfe von Microsoft Graph
 description: Wenn Sie einen GET-Vorgang zum Abrufen eines Diagrammbilds ausführen, gibt die Excel-API das Bild als Base-64-Zeichenfolge zurück.
-ms.openlocfilehash: ae721547fca9a6fe835843544bf550c5fe222426
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946371"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Anzeigen eines Diagrammbilds in Excel mithilfe von Microsoft Graph
 

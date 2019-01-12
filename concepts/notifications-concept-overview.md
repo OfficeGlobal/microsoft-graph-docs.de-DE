@@ -1,12 +1,14 @@
 ---
 title: 'Verwenden der Benachrichtigungs-API in Microsoft Graph zur Realisierung von auf den Benutzer ausgerichteten Benachrichtigungsfunktionen '
 description: 'Benachrichtigungen stellen die wirksamste Möglichkeit dar, Benutzer wieder an sich zu binden. Sie können die Aufmerksamkeit Ihres Benutzers erregen und bringen ihn wieder zu Ihrer App zurück. In einer Welt der vielen Geräte können Ihre Benutzer von überall auf Ihre Apps und Dienste zugreifen, auf verschiedenen Plattformen und Geräten, auf denen Ihre Apps präsent sind. '
-ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092202"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947120"
 ---
 # <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>Verwenden der Benachrichtigungs-API in Microsoft Graph zur Realisierung von auf den Benutzer ausgerichteten Benachrichtigungsfunktionen 
 

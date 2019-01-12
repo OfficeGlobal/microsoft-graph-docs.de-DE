@@ -3,12 +3,13 @@ title: ChartDataLabelFormat-Ressourcentyp
 description: Kapselt die Formateigenschaften für die Diagrammdatenbeschriftungen.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 586b201b0bcc70765fb68aa7736664f493f5539b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 645267fd595a4b8e83090d9d6b2179e8c6112a78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951992"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>ChartDataLabelFormat-Ressourcentyp
 

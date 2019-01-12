@@ -3,12 +3,13 @@ title: Ressourcentyp iosSingleSignOnSettings
 description: iOS Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54c5656de6262692324cce8ab71a0e100672c050
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952671"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>Ressourcentyp iosSingleSignOnSettings
 
@@ -22,9 +23,9 @@ iOS Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
 |:---|:---|:---|
 |allowedAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste der app-Bezeichner, die dieser Anmeldung verwenden dürfen. Wenn dieses Feld nicht angegeben wird, gilt die Anmeldung auf alle Programme, auf dem Gerät. Diese Collection darf maximal 500 Elemente enthalten.|
 |allowedUrls|Collection von Objekten des Typs „String“|Liste der HTTP-URLs, die übereinstimmen muss, um diesen Benutzernamen verwenden. IOS 9.0 oder höher können ein Platzhalterzeichen verwendet werden.|
-|displayName|String|Der Anzeigename der Einstellungen für die Anmeldung auf dem empfangenden Gerät angezeigt.|
-|kerberosPrincipalName|String|Ein Kerberos principal Name. Wenn nicht angegeben, wird der Benutzer während der Profilinstallation dazu aufgefordert.|
-|kerberosRealm|String|Ein Kerberos-Realm-Name. Groß-/Kleinschreibung beachtet.|
+|displayName|Zeichenfolge|Der Anzeigename der Einstellungen für die Anmeldung auf dem empfangenden Gerät angezeigt.|
+|kerberosPrincipalName|Zeichenfolge|Ein Kerberos principal Name. Wenn nicht angegeben, wird der Benutzer während der Profilinstallation dazu aufgefordert.|
+|kerberosRealm|Zeichenfolge|Ein Kerberos-Realm-Name. Groß-/Kleinschreibung beachtet.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

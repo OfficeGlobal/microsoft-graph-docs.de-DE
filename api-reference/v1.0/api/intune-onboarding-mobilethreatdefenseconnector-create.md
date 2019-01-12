@@ -3,12 +3,13 @@ title: Erstellen von mobileThreatDefenseConnector
 description: Erstellt neue Objekte des Typs mobileThreatDefenseConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5b4c85bda5c32b829ede20b68bfd5a8d185daeb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3336c03f86ac7b6d9b926780fccd5cc9e60d5db2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950676"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Erstellen von mobileThreatDefenseConnector
 
@@ -34,7 +35,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|id|Zeichenfolge|Noch nicht dokumentiert|
 |lastHeartbeatDateTime|DateTimeOffset|DateTime des letzten vom Datensynchronisierungspartner empfangenen Heartbeats|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Daten Sync Partner Zustand für dieses Konto. Mögliche Werte: sind `unavailable`, `available`, `enabled` und `unresponsive`.|
 |androidEnabled|Boolean|Legen Sie für Android fest, ob Daten vom Datensynchronisierungspartner während der Konformitätsbewertung verwendet werden sollen.|

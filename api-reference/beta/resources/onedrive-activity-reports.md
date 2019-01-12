@@ -2,12 +2,13 @@
 title: OneDrive-Aktivitätsberichte
 description: Sie können die Aktivität jedes Benutzers OneDrive verwenden, indem Sie deren Interaktion mit Dateien auf OneDrive betrachten lizenziert abrufen. Außerdem können Sie zu verstehen, die Ebene der Zusammenarbeit wie folgt die Anzahl der freigegebenen Dateien fortfahren.
 localization_priority: Normal
-ms.openlocfilehash: fc87eebeb7c0df1bd6d08a82fa67ccd6d9fa40a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 8e02e93d2266f302fb3f90ab47fe4853e34adee5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947197"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive-Aktivitätsberichte
 

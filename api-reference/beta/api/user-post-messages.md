@@ -2,12 +2,14 @@
 title: Nachricht erstellen
 description: Verwenden Sie diese API zum Erstellen eines Entwurfs einer neuen Nachricht. Entwürfe können in einem beliebigen Ordner erstellt und optional vor dem Senden aktualisiert werden. Verwenden Sie die Verknüpfung „/messages“, um den Entwurf im Ordner „Entwürfe“ zu speichern.
 localization_priority: Normal
-ms.openlocfilehash: ff4472b84ed218607ff6cda2b991f6bf2b63cda3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 95fb4c385da7115480a2e1e63135bd875a80b598
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952902"
 ---
 # <a name="create-message"></a>Nachricht erstellen
 

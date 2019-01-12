@@ -3,12 +3,13 @@ title: AndroidWiFiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWiFiConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c399db7c4e8f2af8ff8ef8224d84aec764506956
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 25794454f750f1d79e5d43bf866157f9761e36c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837142"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949437"
 ---
 # <a name="update-androidwificonfiguration"></a>AndroidWiFiConfiguration aktualisieren
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

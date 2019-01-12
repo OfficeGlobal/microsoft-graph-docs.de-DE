@@ -3,12 +3,13 @@ title: Abrufen von networkIPv6ConfigurationManagementCondition
 description: Lesen Sie Eigenschaften und Beziehungen des networkIPv6ConfigurationManagementCondition-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3acd53701b9c2aae10ca32d29419a6be0e028bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4ecd060949796180a7050164417d35fad99dc2a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953350"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Abrufen von networkIPv6ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

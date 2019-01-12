@@ -3,12 +3,13 @@ title: Abrufen von windowsAutopilotSettings
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsAutopilotSettings-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17c8c9aae7294beb7716aba696a6cce77022fccb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c5c578175d9e2fa7c7493956545d709672b2a91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949493"
 ---
 # <a name="get-windowsautopilotsettings"></a>Abrufen von windowsAutopilotSettings
 
@@ -38,7 +39,7 @@ GET /deviceManagement/windowsAutopilotSettings
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

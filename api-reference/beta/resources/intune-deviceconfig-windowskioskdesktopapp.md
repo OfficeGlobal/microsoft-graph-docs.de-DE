@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskDesktopApp
 description: Die Basisklasse für einen Typ von apps
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53eb615dcd1ba2b88c6cdd4bb5a1b76b83b67eaf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a9b808bfd67e1b14e0b11fe84da48b77b4d965ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947330"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Ressourcentyp windowsKioskDesktopApp
 
@@ -24,10 +25,10 @@ Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die app-Kachelgröße für die Start-Layout Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.|
-|name|String|Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.|
-|Pfad|String|Definieren Sie den Pfad einer desktop-App|
-|desktopApplicationId|String|Definieren der DesktopApplicationID der app|
-|desktopApplicationLinkPath|String|Definieren der DesktopApplicationLinkPath der app|
+|name|Zeichenfolge|Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.|
+|Pfad|Zeichenfolge|Definieren Sie den Pfad einer desktop-App|
+|desktopApplicationId|Zeichenfolge|Definieren der DesktopApplicationID der app|
+|desktopApplicationLinkPath|Zeichenfolge|Definieren der DesktopApplicationLinkPath der app|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

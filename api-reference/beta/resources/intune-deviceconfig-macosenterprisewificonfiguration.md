@@ -3,12 +3,13 @@ title: Ressourcentyp macOSEnterpriseWiFiConfiguration
 description: Mac OS Wi-Fi WPA-Enterprise/WPA2-Enterprise Konfigurationsprofil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 132701b0d3bb666d8b58bed59a0f0e28b7d062c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82aa929b28ed4cb881e5cd4ad951503efd5b47f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890762"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947813"
 ---
 # <a name="macosenterprisewificonfiguration-resource-type"></a>Ressourcentyp macOSEnterpriseWiFiConfiguration
 
@@ -26,7 +27,7 @@ Erbt vom [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonf
 |[Liste macOSEnterpriseWiFiConfigurations](../api/intune-deviceconfig-macosenterprisewificonfiguration-list.md)|[MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Objekte.|
 |[Abrufen von macOSEnterpriseWiFiConfiguration](../api/intune-deviceconfig-macosenterprisewificonfiguration-get.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Objekts.|
 |[Erstellen von macOSEnterpriseWiFiConfiguration](../api/intune-deviceconfig-macosenterprisewificonfiguration-create.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)|Erstellen eines neuen [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Objekts.|
-|[MacOSEnterpriseWiFiConfiguration löschen](../api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md)|Keine|Löscht eine [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md).|
+|[MacOSEnterpriseWiFiConfiguration löschen](../api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md)|Keines|Löscht eine [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md).|
 |[MacOSEnterpriseWiFiConfiguration aktualisieren](../api/intune-deviceconfig-macosenterprisewificonfiguration-update.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)|Aktualisieren Sie die Eigenschaften eines [MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften

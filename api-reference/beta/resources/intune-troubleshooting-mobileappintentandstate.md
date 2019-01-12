@@ -3,12 +3,13 @@ title: Ressourcentyp mobileAppIntentAndState
 description: MobileApp beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 037faeb02f18f304153dbe19fef640cc1183ddcd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 689945d1e2f7e7a1c33e9bc098dc64ad16472bd5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819796"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947246"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>Ressourcentyp mobileAppIntentAndState
 
@@ -30,8 +31,8 @@ MobileApp beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|UUID für das Objekt|
-|managedDeviceIdentifier|String|Von Intune erstellter oder erfasster Gerätebezeichner|
-|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
+|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |mobileAppList|[MobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) -Auflistung|Die Liste der Nutzlast Intents und Status für den Mandanten.|
 
 ## <a name="relationships"></a>Beziehungen

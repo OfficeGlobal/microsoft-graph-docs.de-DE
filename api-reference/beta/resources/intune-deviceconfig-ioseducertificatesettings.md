@@ -3,12 +3,13 @@ title: Ressourcentyp iosEduCertificateSettings
 description: Vertrauenswürdige Stamm und PFX-Zertifikate für iOS EDU.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c48883caa9479638b1a727272abdd0bc5762db9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948675"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Ressourcentyp iosEduCertificateSettings
 
@@ -21,10 +22,10 @@ Vertrauenswürdige Stamm und PFX-Zertifikate für iOS EDU.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |trustedRootCertificate|Binär|Zertifikat der vertrauenswürdigen Stammzertifizierungsstellen.|
-|Aus|String|Der Dateiname in der Benutzeroberfläche angezeigt.|
-|certificationAuthority|String|PKCS Zertifizierungsstelle.|
-|certificationAuthorityName|String|Name der Zertifizierungsstelle PKCS.|
-|certificateTemplateName|String|Name der PKCS Zertifikatsvorlage.|
+|Aus|Zeichenfolge|Der Dateiname in der Benutzeroberfläche angezeigt.|
+|certificationAuthority|Zeichenfolge|PKCS Zertifizierungsstelle.|
+|certificationAuthorityName|Zeichenfolge|Name der Zertifizierungsstelle PKCS.|
+|certificateTemplateName|Zeichenfolge|Name der PKCS Zertifikatsvorlage.|
 |renewalThresholdPercentage|Int32|Zertifikat Erneuerung Schwellenwertprozentsatz. Gültige Werte 1 bis 99|
 |certificateValidityPeriodValue|Int32|Wert für die Gültigkeitsdauer des Zertifikats.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für die Gültigkeitsdauer des Zertifikats. Mögliche Werte sind: `days`, `months` und `years`.|

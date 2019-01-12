@@ -2,12 +2,14 @@
 title: Abrufen von dataPolicyOperation
 description: Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.
 localization_priority: Normal
-ms.openlocfilehash: 00ecde916a2b0632305c6e09437ce3138dc3344d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808981"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951061"
 ---
 # <a name="get-datapolicyoperation"></a>Abrufen von dataPolicyOperation
 

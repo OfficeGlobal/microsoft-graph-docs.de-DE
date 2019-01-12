@@ -3,12 +3,13 @@ title: NetworkIPv4ConfigurationManagementCondition aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines networkIPv4ConfigurationManagementCondition-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc9662e812909bb78a0a9441c5fd0cb6929d26db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 305e8ff97b54db0888842fdbd60f88ab2ee0677e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953154"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition aktualisieren
 

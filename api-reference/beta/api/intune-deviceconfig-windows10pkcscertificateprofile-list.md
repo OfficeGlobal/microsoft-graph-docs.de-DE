@@ -3,12 +3,13 @@ title: Liste windows10PkcsCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windows10PkcsCertificateProfile-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73528f84ddd4c7b871888d764ebe7b0cc6fcd754
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21de6279780e8e1d4ab5d6a8c25063a9a68ab0f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950326"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Liste windows10PkcsCertificateProfiles
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

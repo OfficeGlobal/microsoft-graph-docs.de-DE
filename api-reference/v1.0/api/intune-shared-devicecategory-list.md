@@ -3,12 +3,13 @@ title: Auflisten von „deviceCategory“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCategory auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a639bb8f3c5d9c796a0d62e6e32fbd53526a7a0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 410db393c354038f9e0442f10c1a2a9b413533c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890888"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949381"
 ---
 # <a name="list-devicecategories"></a>Auflisten von „deviceCategory“
 

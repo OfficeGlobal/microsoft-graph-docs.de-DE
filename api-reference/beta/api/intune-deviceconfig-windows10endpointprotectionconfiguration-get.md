@@ -3,12 +3,13 @@ title: Abrufen von „windows10EndpointProtectionConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windows10EndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 723ab155879a7b12d8582c2003393a4d1b465956
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea83798f97196d4dde87240778e9fbaf0eae6a63
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814224"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949129"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Abrufen von „windows10EndpointProtectionConfiguration“
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

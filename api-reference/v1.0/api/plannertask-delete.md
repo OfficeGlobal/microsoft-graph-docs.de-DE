@@ -2,12 +2,14 @@
 title: plannerTask löschen
 description: Dient zum Löschen eines **plannerTask**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: bf33164bf1cc97838af8dc0d8ef28395ccd03b5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 0130a0599b075ea99c9022e4bb3a99838301b790
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948654"
 ---
 # <a name="delete-plannertask"></a>plannerTask löschen
 

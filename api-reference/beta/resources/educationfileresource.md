@@ -2,12 +2,14 @@
 title: Ressourcentyp educationFileResource
 description: Eine Unterklasse der EducationResource, die ein File-Objekt darstellt, die die Zuordnung oder die Übermittlung zugeordnet ist.  In diesem Fall wird die Datei ist nicht die speziellen Dateien (Word, Excel usw.), jedoch ist eine Datei, die keine besondere Behandlung innerhalb des Systems verfügt. File-Ressource muss in der **Ressourcefolder** gespeichert werden, die die Zuordnung oder die Übermittlung, diese Ressource zugeordnet ist, zugeordnet ist.
 localization_priority: Normal
-ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 96c03dc1571e0f8686116f169706aa35003f92a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858086"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953658"
 ---
 # <a name="educationfileresource-resource-type"></a>Ressourcentyp educationFileResource
 

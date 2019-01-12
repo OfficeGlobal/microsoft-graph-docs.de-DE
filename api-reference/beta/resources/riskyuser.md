@@ -3,12 +3,13 @@ title: Ressourcentyp riskyUsers
 description: Stellt Azure AD-Benutzer, die gefährdet sind. Azure AD ständig wertet basierend auf verschiedenen Signale und Computer Learning Benutzer Risiko. Diese API ermöglicht den programmgesteuerten Zugriff auf alle Risiko Benutzer in Ihrer Azure Active Directory.
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: bb1dab6461a3b235d461720a68855f1e8f3f70d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 2e4cf47ea78583958c79750e0b2ad4fa12230d22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950732"
 ---
 # <a name="riskyusers-resource-type"></a>Ressourcentyp riskyUsers
 

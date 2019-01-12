@@ -3,12 +3,13 @@ title: Ressourcentyp „iosDeviceFeaturesConfiguration“
 description: Diese Ressource repräsentiert das Konfigurationsprofil der Funktionen eines iOS-Geräts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ffb4604e0902deb2d1a7f8f3630426aab39a3ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 062c1a264b3fcf9c3b49f9de35ee505e0823cc2c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949892"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>Ressourcentyp „iosDeviceFeaturesConfiguration“
 
@@ -30,14 +31,14 @@ Sie erbt von [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceco
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|assetTagTemplate|String|Bestandskennzeicheninformationen zum Gerät. Sie werden im Anmeldefenster und im Sperrbildschirm angezeigt.|
-|lockScreenFootnote|String|Fußnote, die im Anmeldefenster und im Sperrbildschirm angezeigt wird. Verfügbar ab iOS 9.3.1.|
+|assetTagTemplate|Zeichenfolge|Bestandskennzeicheninformationen zum Gerät. Sie werden im Anmeldefenster und im Sperrbildschirm angezeigt.|
+|lockScreenFootnote|Zeichenfolge|Fußnote, die im Anmeldefenster und im Sperrbildschirm angezeigt wird. Verfügbar ab iOS 9.3.1.|
 |homeScreenDockIcons|Collection von Objekten des Typs [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Liste der Apps und Ordner, die im Home-Bildschirm-Dock angezeigt werden sollen. Diese Collection darf maximal 500 Elemente enthalten.|
 |homeScreenPages|Collection von Objekten des Typs [iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md)|Liste der Seiten auf dem Home-Bildschirm. Diese Collection darf maximal 500 Elemente enthalten.|
 |notificationSettings|Collection von Objekten des Typs [iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md)|Benachrichtigungseinstellungen für jede Bundle-ID. Gilt nur für Geräte im Betreuungsmodus (iOS 9.3 und höher). Diese Sammlung darf maximal 500 Elemente enthalten.|

@@ -3,12 +3,13 @@ title: Abrufen von windows81CertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des windows81CertificateProfileBase-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c89185b9211cf502c072a8ba4a3e28a199dcf5e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1694d56267e764fb1496333cc3e9950d23b0f2cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868733"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950347"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Abrufen von windows81CertificateProfileBase
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

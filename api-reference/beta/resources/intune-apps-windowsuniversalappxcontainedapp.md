@@ -3,12 +3,13 @@ title: Ressourcentyp windowsUniversalAppXContainedApp
 description: Eine Klasse, die eine app enthaltene einer App WindowsUniversalAppX darstellt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7b9c814b73ce08bacdba97b40b5b7f07362606e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ee4d8a08fe182322412c228b04da56339be93f54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837716"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950760"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>Ressourcentyp windowsUniversalAppXContainedApp
 
@@ -32,8 +33,8 @@ Erbt vom [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|Die app Benutzer Modell-ID der app enthaltenen einer WindowsUniversalAppX-App.|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Zeichenfolge|Die app Benutzer Modell-ID der app enthaltenen einer WindowsUniversalAppX-App.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -3,12 +3,13 @@ title: Auflisten von „macOSOfficeSuiteApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs macOSOfficeSuiteApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b668d7a052d124b798abd8f2a0aadaab77f6153a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cfa1d818714de2b9fcbd3e33460f7c26af0432ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949276"
 ---
 # <a name="list-macosofficesuiteapps"></a>Auflisten von „macOSOfficeSuiteApp“
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

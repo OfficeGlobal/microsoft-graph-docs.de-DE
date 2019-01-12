@@ -3,12 +3,13 @@ title: omaSetting-Ressourcentyp
 description: Definition der OMA-Einstellungen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9abc7db7b6d2ad16aa13886905c348e6c8f01b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e6cb37078eb6c5b4aee00a9ac7bfc77061ec0bcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946595"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting-Ressourcentyp
 
@@ -21,7 +22,7 @@ Definition der OMA-Einstellungen.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename.|
-|description|String|Beschreibung.|
+|description|Zeichenfolge|Beschreibung.|
 |omaUri|Zeichenfolge|OMA.|
 
 ## <a name="relationships"></a>Beziehungen

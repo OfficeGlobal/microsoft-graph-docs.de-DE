@@ -3,12 +3,13 @@ title: ChassisType Enum-Typ
 description: Gerätetyp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e2010957c48623fc5e01eeb87a95251d743f29b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7ad3d520042b44feb3bdd32ca07e6d783ce7d228
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947400"
 ---
 # <a name="chassistype-enum-type"></a>ChassisType Enum-Typ
 

@@ -2,12 +2,13 @@
 title: OneDrive-Verwendungsberichte
 description: Sie können eine grundlegende Übersicht über den Wert abrufen, die Sie aus OneDrive im Hinblick auf die Gesamtzahl der Dateien und allen OneDrive-Konten in Ihrer Organisation verwendeten Speicher erhalten. Sie können dann ein Drilldown ausführen, um die Trends aktiver OneDrive-Konten zu erfassen und zu erfahren, mit wie vielen Dateien Benutzer interagiert haben und wie viel Speicherplatz verwendet wird. Außerdem haben Sie die pro OneDrive Kontodetails.
 localization_priority: Normal
-ms.openlocfilehash: a3d75a7863a539c67ef4971193b108f0ba73a1fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 74ca2a5df1f59303a7f8a6b105468cf6d0c5ee6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952888"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive-Verwendungsberichte
 

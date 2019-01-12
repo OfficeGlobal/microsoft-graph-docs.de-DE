@@ -3,12 +3,13 @@ title: Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 description: ATP Onboarding Zustand für ein bestimmtes Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a83581faa921fc4216cd81f1fbabb026210db34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26cc9d42238dd19b256b80e7e70ac605e8742d3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863847"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953084"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Ressourcentyp advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -31,15 +32,15 @@ ATP Onboarding Zustand für ein bestimmtes Gerät.
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Gerätetyp-Plattform. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
 |settingName|String|Gemeldeter Einstellungsname|
 |deviceId|String|Gemeldete Geräte-ID|
 |deviceName|String|Gemeldeter Gerätename|
 |userId|String|Gemeldete Benutzer-ID|
 |userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|String|Gemeldeter Benutzername|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
 

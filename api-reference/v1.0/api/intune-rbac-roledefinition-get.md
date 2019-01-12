@@ -3,12 +3,13 @@ title: roleDefinition abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs roleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d4df6a9a3acdfc4f4e1ff97f4eb8f8b189e1a0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae3eb37f3a3a3a0d835d405b89d5ab5102c3e43e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805215"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947113"
 ---
 # <a name="get-roledefinition"></a>roleDefinition abrufen
 
@@ -37,7 +38,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

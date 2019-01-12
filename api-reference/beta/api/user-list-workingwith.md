@@ -3,12 +3,13 @@ title: Liste arbeiten
 description: Berechnete Insight für die Liste der Benutzer, denen ein Benutzer mit gearbeitet hat.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: df7f84bf42887d9052cb9d81042b5735af7bd2b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5f9445dcee294f20f5eadf18cdd648805142c53d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870336"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953558"
 ---
 # <a name="list-workingwith"></a>Liste arbeiten
 

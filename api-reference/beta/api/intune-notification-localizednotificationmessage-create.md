@@ -3,12 +3,13 @@ title: localizedNotificationMessage erstellen
 description: Erstellen eines neuen localizedNotificationMessage-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 555cfa1c6c34a99bf001b9c3b1f462f1a7d3e41c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf0187177a80428924af6276eaf9df6f6456e2d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950795"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage erstellen
 
@@ -36,7 +37,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,12 +49,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Gebietsschema|String|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|Betreff|String|Die Vorlage für den Betreff der Nachricht.|
-|messageTemplate|String|Die Vorlage für den Inhalt der Nachricht.|
-|isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
+|Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
+|Betreff|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
+|messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
+|isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 
 

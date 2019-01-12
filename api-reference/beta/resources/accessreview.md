@@ -2,12 +2,14 @@
 title: Ressourcentyp accessReview
 description: 'In Azure AD Access Feature, überprüft die `accessReview` eine Überprüfung Access darstellt.  '
 localization_priority: Normal
-ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6d97382957b7c61625ec54af4c572962be839b4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826075"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950662"
 ---
 # <a name="accessreview-resource-type"></a>Ressourcentyp accessReview
 

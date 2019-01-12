@@ -2,12 +2,14 @@
 title: Erstellen von educationAssignment
 description: 'Erstellt eine neue Zuordnung. Nur Lehrer in einer Klasse können eine Zuordnung erstellen. Zuordnungen starten Sie den Status Entwurf, was bedeutet, dass die Zuordnung von Studenten nicht angezeigt werden, bis veröffentlichen aufgerufen wird.  '
 localization_priority: Normal
-ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f86c6c3cc94ada7865038a0e8ae4aff90285719e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824185"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950158"
 ---
 # <a name="create-educationassignment"></a>Erstellen von educationAssignment
 
