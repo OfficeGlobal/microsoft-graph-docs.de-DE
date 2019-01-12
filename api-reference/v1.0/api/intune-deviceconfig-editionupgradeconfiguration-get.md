@@ -3,12 +3,13 @@ title: Abrufen von „editionUpgradeConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs editionUpgradeConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 80da27d86dd1d5640681bcf06edbff71869b964b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8701fc9420d4e659ddd138cae37ff4eb66483032
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875496"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953813"
 ---
 # <a name="get-editionupgradeconfiguration"></a>Abrufen von „editionUpgradeConfiguration“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
