@@ -3,12 +3,13 @@ title: Auflisten von „managedMobileLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedMobileLobApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c094e4b135d4105ed068e7d0f41a0c6743c1b417
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32fbf9bb9d67726eec3f2853ef723887b759cd59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832858"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959622"
 ---
 # <a name="list-managedmobilelobapps"></a>Auflisten von „managedMobileLobApp“
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

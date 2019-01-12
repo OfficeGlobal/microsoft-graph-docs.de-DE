@@ -3,12 +3,13 @@ title: Ressourcentyp audioConferencing
 description: Stellt Access Telefoninformationen für einen OnlineMeeting.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: cd65b094a17ad3fa470471c3ed6dd3908367e578
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843624"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977507"
 ---
 # <a name="audioconferencing-resource-type"></a>Ressourcentyp audioConferencing
 
@@ -20,11 +21,11 @@ Stellt Access Telefoninformationen für einen [OnlineMeeting](onlinemeeting.md).
 
 | Eigenschaft            | Typ    | Beschreibung                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | Eine URL, die extern zugängliche Webseite, die Einwahlinformationen enthält. |
-| leaderPasscode      | String  | Der Leiter Kennwort zum Verbinden mit dem Audio Conference Provider erforderlich.      |
-| participantPasscode | String  | Die Teilnehmer das Kennwort zum Verbinden mit dem Audio Conference Provider erforderlich. |
-| tollFreeNumber      | String  | Die gebührenfreie Telefonnummer für die Audio Conference Provider die Verbindung.              |
-| tollNumber          | String  | Die gebührenpflichtige Telefonnummer für die Audio Conference Provider die Verbindung.                   |
+| dialinUrl           | Zeichenfolge  | Eine URL, die extern zugängliche Webseite, die Einwahlinformationen enthält. |
+| leaderPasscode      | Zeichenfolge  | Der Leiter Kennwort zum Verbinden mit dem Audio Conference Provider erforderlich.      |
+| participantPasscode | Zeichenfolge  | Die Teilnehmer das Kennwort zum Verbinden mit dem Audio Conference Provider erforderlich. |
+| tollFreeNumber      | Zeichenfolge  | Die gebührenfreie Telefonnummer für die Audio Conference Provider die Verbindung.              |
+| tollNumber          | Zeichenfolge  | Die gebührenpflichtige Telefonnummer für die Audio Conference Provider die Verbindung.                   |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -3,12 +3,13 @@ title: Löschen von app-Teams
 description: Deinstalliert eine app aus dem angegebenen Team.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 2545ae8c0c6d0485fe4ed57f94137936fda538d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 886c3d4c93403225a5e1cd258b3225cd52dc8c78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965152"
 ---
 # <a name="delete-app-from-team"></a>Löschen von app-Teams
 
@@ -32,7 +33,7 @@ DELETE /teams/{id}/installedApps/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

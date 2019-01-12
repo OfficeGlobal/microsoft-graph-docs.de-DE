@@ -2,12 +2,14 @@
 title: Ressourcentyp personDataSource
 description: Stellt die Quellen, die die Benutzerdaten, beispielsweise Directory und Outlook-Kontakte stammen.
 localization_priority: Normal
-ms.openlocfilehash: 80e61bd1cd91c0b2a780936a5a311b0916743a17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: simonhult
+ms.prod: insights
+ms.openlocfilehash: 540ffa81b20b40f9df2694ba634777250742daaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824969"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978501"
 ---
 # <a name="persondatasource-resource-type"></a>Ressourcentyp personDataSource
 
@@ -36,7 +38,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|String|Der Typ der Datenquelle.|
+|type|Zeichenfolge|Der Typ der Datenquelle.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

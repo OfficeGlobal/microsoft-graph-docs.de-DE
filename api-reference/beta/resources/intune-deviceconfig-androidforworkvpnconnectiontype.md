@@ -3,12 +3,13 @@ title: AndroidForWorkVpnConnectionType Enum-Typ
 description: Android für Arbeit VPN-Verbindungstyp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38dba15764f016d830c3e0641c3f1410e91bc9a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28eeb6f148baad098620e88fd1e10b99e1875059
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991503"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>AndroidForWorkVpnConnectionType Enum-Typ
 

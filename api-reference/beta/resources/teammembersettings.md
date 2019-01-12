@@ -2,12 +2,14 @@
 title: Ressourcentyp teamMemberSettings
 description: Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführen können beispielsweise Kanäle erstellen und Hinzufügen von Programmen, im Team.
 localization_priority: Normal
-ms.openlocfilehash: 85f8794ea3564174c75f38228f3891bcd264df2e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3854481e89f04fa727b77c6b4f8699c62a16d739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851380"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978249"
 ---
 # <a name="teammembersettings-resource-type"></a>Ressourcentyp teamMemberSettings
 
@@ -18,11 +20,11 @@ Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführe
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen und Aktualisieren von Kanäle kann.|
-|allowDeleteChannels|Boolean|Bei Festlegung auf "true" Mitglieder Kanäle löschen kann.|
-|allowAddRemoveApps|Boolean|Wenn es sich bei Festlegung auf "true" Mitglieder hinzufügen und Entfernen von apps.|
-|allowCreateUpdateRemoveTabs|Boolean|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen kann, aktualisieren und Entfernen von Registerkarten. |
-|allowCreateUpdateRemoveConnectors|Boolean|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen kann, aktualisieren und Entfernen von Connectors.|
+|allowCreateUpdateChannels|Boolescher Wert|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen und Aktualisieren von Kanäle kann.|
+|allowDeleteChannels|Boolescher Wert|Bei Festlegung auf "true" Mitglieder Kanäle löschen kann.|
+|allowAddRemoveApps|Boolescher Wert|Wenn es sich bei Festlegung auf "true" Mitglieder hinzufügen und Entfernen von apps.|
+|allowCreateUpdateRemoveTabs|Boolescher Wert|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen kann, aktualisieren und Entfernen von Registerkarten. |
+|allowCreateUpdateRemoveConnectors|Boolescher Wert|Wenn es sich bei Festlegung auf true fest, Mitglieder hinzufügen kann, aktualisieren und Entfernen von Connectors.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -3,12 +3,13 @@ title: groupAssignmentTarget-Ressourcentyp
 description: Stellt eine Zuweisung zu einer Gruppe dar.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f344c0ed718f32352901af63da32c11ca02e2db6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96aec1b72233cfe7d553b8f17feb9af382d89cde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849812"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971676"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget-Ressourcentyp
 

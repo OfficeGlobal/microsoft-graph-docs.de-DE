@@ -3,12 +3,13 @@ title: organization-Ressourcentyp
 description: Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Ressourcen dar, die auf Mandantenebene ausgeführt und bereitgestellt werden.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b87866520e62850f169861f4fac0a9a2454ea3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd38274fea11f4312b60719fe04464d9b283fe9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814434"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961375"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -26,7 +27,7 @@ Die organization-Ressource stellt eine Instanz der globalen Einstellungen und Re
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Die GUID für das Objekt.|
+|id|Zeichenfolge|Die GUID für das Objekt.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Beziehungen

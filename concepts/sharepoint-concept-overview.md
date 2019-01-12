@@ -1,12 +1,14 @@
 ---
 title: Übersicht über SharePoint-Websites und die Inhalts-API
 description: SharePoint ist Ihr mobiles, intelligentes Intranet. Mit SharePoint können Benutzer Inhalte. Wissen und Anwendungen freigeben und verwalten, um Gruppenarbeit zu stärken, Informationen zu finden und in der Organisation zusammenzuarbeiten. In Microsoft Graph können Sie die REST-API für SharePoint verwenden, um Ihre Lösungen in SharePoint-Websites und -Inhalte zu integrieren.
-ms.openlocfilehash: e71ef735cadf13ddb05799431fcf74ae9b3fa463
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092300"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965271"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Übersicht über SharePoint-Websites und die Inhalts-API
 

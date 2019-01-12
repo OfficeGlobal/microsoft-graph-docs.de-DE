@@ -2,12 +2,13 @@
 title: Ressourcentyp office365ActivationCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 30386b3833b8140d4c602e27cb3a78f3a68670dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 4787672df6462e8d1f343e4dace43ede7c79ff37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991181"
 ---
 # <a name="office365activationcounts-resource-type"></a>Ressourcentyp office365ActivationCounts
 
@@ -16,7 +17,7 @@ ms.locfileid: "27824990"
 | Eigenschaft          | Typ   | Beschreibung                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Datum   | Das aktuelle Datum des Inhalts.          |
-| productType       | String | Produkttyp, beispielsweise "Office 365 ProPlus", "Project-Client" oder "Visio Pro für Office 365". |
+| productType       | Zeichenfolge | Produkttyp, beispielsweise "Office 365 ProPlus", "Project-Client" oder "Visio Pro für Office 365". |
 | Windows           | Int64  | Die Anzahl der Aktivierung auf Windows. Dieser Wert schließt alle Aktivierung auf einem beliebigen Windows-Computer. |
 | mac               | Int64  | Die Anzahl der Aktivierung auf Mac OS.          |
 | Android (engl.)           | Int64  | Die Anzahl der Aktivierung auf einer Android-Gerät.  |

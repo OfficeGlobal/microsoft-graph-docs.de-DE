@@ -2,12 +2,14 @@
 title: Arbeiten mit Education-APIs in Microsoft Graph
 description: Office 365-Ressourcen und Daten mit der relevante Informationen für Bildungseinrichtungen Szenarien, einschließlich Schulen, Studenten, Lehrer, Klassen, Registrierung und Zuordnungen der Education-APIs in Microsoft Graph zu verbessern. Dies erleichtert das Erstellen von Lösungen, die in Bildungsressourcen integriert werden.
 localization_priority: Normal
-ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958089"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Arbeiten mit Education-APIs in Microsoft Graph
 

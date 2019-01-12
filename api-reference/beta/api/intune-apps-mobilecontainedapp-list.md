@@ -3,12 +3,13 @@ title: Liste mobileContainedApps
 description: Listeneigenschaften und Beziehungen der MobileContainedApp-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74aa7d04975c6098b0368d916d0c86f019359dae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fc4db3f37785d932e6bb167db9b7695985a40109
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968736"
 ---
 # <a name="list-mobilecontainedapps"></a>Liste mobileContainedApps
 

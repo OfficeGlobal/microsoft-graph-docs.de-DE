@@ -3,12 +3,13 @@ title: Abrufen von windowsAutopilotDeploymentProfileAssignment
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsAutopilotDeploymentProfileAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c9888361cd25728a2dbebccf0ed019a9ffe234c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8fc14a4da6bce5409aae2f07d66df674c1819505
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849854"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964284"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>Abrufen von windowsAutopilotDeploymentProfileAssignment
 

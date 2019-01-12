@@ -2,12 +2,13 @@
 title: Erstellen Sie und senden Sie eine Benachrichtigung
 description: 'Erstellen Sie und senden Sie eine Benachrichtigung für einen Benutzer über Microsoft Graph. Die Benachrichtigung wird in der Microsoft Graph-Benachrichtigung feed Store gespeichert und an alle Geräte-Endpunkten, bei denen der Benutzer, in angemeldet ist allen app-Clients gesendet.  '
 localization_priority: Normal
-ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: d8258e0da04f199a0f40bdb2a2ec85e01d5d5faf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975932"
 ---
 # <a name="create-and-send-a-notification"></a>Erstellen Sie und senden Sie eine Benachrichtigung
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
@@ -31,7 +32,7 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Anforderungsheader
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|Authorization | string |Der Authorization-Header wird verwendet, um die Anmeldeinformationen des Anrufers zu übergeben. Bearer {Token}. Erforderlich. |
+|Authorization | string |Der Authorization-Header wird verwendet, um die Anmeldeinformationen des Anrufers zu übergeben. Bearer {Token}. Erforderlich.  |
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Benachrichtigung](../resources/projectrome-notification.md) .
 

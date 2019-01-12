@@ -2,12 +2,14 @@
 title: Abrufen von bookingStaffMember
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 1bb00a0df9a8497f99a04a1d293505302400832f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: ad550bbcc1608d3770d8047f6081fc20fd419822
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819642"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956892"
 ---
 # <a name="get-bookingstaffmember"></a>Abrufen von bookingStaffMember
 

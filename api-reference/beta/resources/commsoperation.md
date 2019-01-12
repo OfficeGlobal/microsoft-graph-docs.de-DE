@@ -3,12 +3,13 @@ title: Ressourcentyp commsOperation
 description: Der Status der bestimmte langer Vorgänge.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 79fc6801e95854b2530f8a28c13f7180ed02203f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957725"
 ---
 # <a name="commsoperation-resource-type"></a>Ressourcentyp commsOperation
 
@@ -23,9 +24,9 @@ Keine
 
 | Eigenschaft           | Typ                        | Beschreibung                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Der Clientkontext.                                                             |
+| clientContext      | Zeichenfolge                      | Der Clientkontext.                                                             |
 | createdDateTime    | DateTimeOffset              | Die Startzeit des Vorgangs.                                                |
-| id                 | String                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
+| id                 | Zeichenfolge                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
 | lastActionDateTime | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                            |
 | status             | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. |

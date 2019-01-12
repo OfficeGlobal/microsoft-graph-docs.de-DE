@@ -2,12 +2,14 @@
 title: 'message: createReply'
 description: Erstellen Sie einen Entwurf der Antwort auf die angegebene Nachricht. Anschließend können Sie den Entwurf aktualisieren, um den Antwortinhalt zum **Text** hinzuzufügen, oder andere Nachrichteneigenschaften ändern. Sie können den Entwurf auch einfach senden.
 localization_priority: Normal
-ms.openlocfilehash: 92fc487ad4fe57a7439e367e4238aeff3ddfd7ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 566b267e192d9f23d63ba9b15f6318ad0ca33843
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971683"
 ---
 # <a name="message-createreply"></a>message: createReply
 

@@ -3,12 +3,13 @@ title: Audio Routinggruppe aktualisieren
 description: Inhaltsquellen und der Empfänger von einer AudioRoutingGroup zu ändern.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ca6e77e71abb7d7a934944ce7fd4de10d79e1a94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833838"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956906"
 ---
 # <a name="update-audio-routing-group"></a>Audio Routinggruppe aktualisieren
 

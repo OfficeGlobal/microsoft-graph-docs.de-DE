@@ -3,12 +3,13 @@ title: VppTokenActionFailureReason Enum-Typ
 description: Möglichen Typen der Gründe für ein Apple Volume Purchase Program token Aktion Fehler aufgetreten.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f488302b7fc701e8a419357ad7d6cbbb6015759b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: baf33c29a822cc725c66ff6a3a7d796e57e63693
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883720"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961162"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>VppTokenActionFailureReason Enum-Typ
 

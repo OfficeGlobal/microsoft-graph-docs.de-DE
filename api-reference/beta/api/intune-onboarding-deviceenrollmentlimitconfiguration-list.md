@@ -3,12 +3,13 @@ title: Auflisten von „deviceEnrollmentLimitConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentLimitConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed0970122783f7c134268db7910ab03e15029ba7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d16e262b905cf290069d7dab1778db6f50f51354
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978816"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Auflisten von „deviceEnrollmentLimitConfiguration“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

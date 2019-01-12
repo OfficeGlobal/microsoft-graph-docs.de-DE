@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskAppBase
 description: Die Basisklasse für einen Typ von apps
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b13807fdb0319b3c9a15248fa2d50ffc46ac164
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977024"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Ressourcentyp windowsKioskAppBase
 
@@ -21,7 +22,7 @@ Die Basisklasse für einen Typ von apps
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die app-Kachelgröße für das Layout Start. Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.|
-|name|String|Stellt den Anzeigenamen einer App|
+|name|Zeichenfolge|Stellt den Anzeigenamen einer App|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

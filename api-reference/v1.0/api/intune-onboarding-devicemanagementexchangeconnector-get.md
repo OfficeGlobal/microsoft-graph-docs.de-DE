@@ -3,12 +3,13 @@ title: Abrufen von „deviceManagementExchangeConnector“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49a4b7d84520e3f80dd0035a6e9ec573689518c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a05b99257bb20de184815f662a4ace63bdb44e57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866731"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960084"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Abrufen von „deviceManagementExchangeConnector“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: windows10VpnProfileTarget Enum-Typ
 description: Windows-10-VPN-Profil Zieltypen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 608fa39d190e941106e584c984ee32e727749fcb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d711e525f6e83e33835ef45c222823e29ce42b23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960042"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget Enum-Typ
 

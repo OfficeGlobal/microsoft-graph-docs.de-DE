@@ -3,12 +3,13 @@ title: CalendarGroup aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Objekts des Typs „calendargroup“ aktualisieren.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 9a8006098c1088caec444b30aa5210b44388f5cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f488594778c1e80e725cb2587bf5d0c41cb570e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961302"
 ---
 # <a name="update-calendargroup"></a>CalendarGroup aktualisieren
 
@@ -39,7 +40,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile        | Wert                       |
+| Header        | Wert                       |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Erforderlich.   |
 | Content-Type  | application/json. Erforderlich.  |
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft | Typ   | Beschreibung     |
 | :------- | :----- | :-------------- |
-| name     | String | Der Gruppenname. |
+| name     | Zeichenfolge | Der Gruppenname. |
 
 ## <a name="response"></a>Antwort
 

@@ -3,12 +3,13 @@ title: user-Ressourcentyp
 description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: d9f15cd6f0b3169370257578f841a1821593f351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862496"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964459"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -69,60 +70,60 @@ Diese Ressource unterstützt Folgendes:
 
 | Eigenschaft       | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|aboutMe|String|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
+|aboutMe|Zeichenfolge|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
 |accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
-|ageGroup|String|Die ALTER Gruppe des Benutzers festgelegt. Zulässige Werte: `null`, `minor`, `notAdult` und `adult`. Die [rechtliche Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen finden Sie unter. |
+|ageGroup|Zeichenfolge|Die ALTER Gruppe des Benutzers festgelegt. Zulässige Werte: `null`, `minor`, `notAdult` und `adult`. Die [rechtliche Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen finden Sie unter. |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
-|Ort|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
+|Ort|Zeichenfolge|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
 |companyName | String | Der Unternehmensname, dem der Benutzer zugewiesen ist. Schreibgeschützt. |
-|consentProvidedForMinor|String|Legt fest, ob Zustimmung für Minderjährige abgerufen wurde. Zulässige Werte: `null`, `granted`, `denied` und `notRequired`. Die [rechtliche Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen finden Sie unter.|
+|consentProvidedForMinor|Zeichenfolge|Legt fest, ob Zustimmung für Minderjährige abgerufen wurde. Zulässige Werte: `null`, `granted`, `denied` und `notRequired`. Die [rechtliche Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen finden Sie unter.|
 |Land|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |createdDateTime | DateTimeOffset |Das Erstellungsdatum des User-Objekts. |
-|department|String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
-|displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
-|givenName|String|Der Vorname des Benutzers. Unterstützt $filter.|
+|department|Zeichenfolge|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
+|displayName|Zeichenfolge|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
+|givenName|Zeichenfolge|Der Vorname des Benutzers. Unterstützt $filter.|
 |hireDate|DateTimeOffset|Das Einstellungsdatum des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |imAddresses|String-Sammlung|Die VOIP-SIP-Adressen (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |interests|Zeichenfolgenauflistung|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
-|jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
+|jobTitle|Zeichenfolge|Die Position des Benutzers. Unterstützt $filter.|
 |legalAgeGroupClassification|String| Wird von enterpriseanwendungen verwendet, um der Altersgruppe Legal des Benutzers zu bestimmen. Diese Eigenschaft ist schreibgeschützt und berechnete basierend auf `ageGroup` und `consentProvidedForMinor` Eigenschaften. Zulässige Werte: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` und `adult`. Verweisen Sie auf die [Legal Alter mitgliedergruppendefinitionen-Eigenschaft](#legal-age-group-property-definitions) für Weitere Informationen.)|
-|mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|mail|Zeichenfolge|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Einstellungen für das primäre Postfach des angemeldeten Benutzers. Sie können Einstellungen für das Senden von automatischen Antworten auf eingehende Nachrichten, das Gebietsschema und die Zeitzone [abrufen](../api/user-get-mailboxsettings.md) oder [aktualisieren](../api/user-update-mailboxsettings.md).|
-|mailNickname|String|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
-|mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
-|mySite|String|Die URL für die persönliche Website des Benutzers.|
+|mailNickname|Zeichenfolge|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
+|mobilePhone|Zeichenfolge|Die Nummer des primären Mobiltelefons für den Benutzer.|
+|mySite|Zeichenfolge|Die URL für die persönliche Website des Benutzers.|
 |officeLocation|String|Der Bürostandort der Firma des Benutzers|
-|onPremisesDomainName|String| Enthält lokale `domainFQDN`, auch als bezeichnet DnsDomänenName aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
+|onPremisesDomainName|Zeichenfolge| Enthält lokale `domainFQDN`, auch als bezeichnet DnsDomänenName aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|"Extensionattributes" 1-15 für den Benutzer enthält. Beachten Sie, dass der einzelnen Erweiterungsattribute auswählbar weder gefiltert werden. Für eine `onPremisesSyncEnabled` Benutzer, diese Gruppe von Eigenschaften ist dem Format mastered lokale und ist schreibgeschützt. Für einen Benutzer nur-Cloud-(wobei `onPremisesSyncEnabled` ist false), können diese Eigenschaften festgelegt werden, während der Erstellung oder zu aktualisieren. |
-|onPremisesImmutableId|String|Diese Eigenschaft wird verwendet, um eine lokale Active Directory-Benutzerkonto in ihrer Azure AD-Benutzerobjekt zuordnen. Diese Eigenschaft muss angegeben werden, wenn ein neues Benutzerkonto im Diagramm erstellen, wenn Sie eine verbunddomäne für die Benutzereigenschaft **UserPrincipalName** (UPN) verwenden. **Wichtig:** Die **$** und **\_** Zeichen können nicht verwendet werden, wenn Sie diese Eigenschaft festlegen. Unterstützt $filter.                            |
+|onPremisesImmutableId|Zeichenfolge|Diese Eigenschaft wird verwendet, um eine lokale Active Directory-Benutzerkonto in ihrer Azure AD-Benutzerobjekt zuordnen. Diese Eigenschaft muss angegeben werden, wenn ein neues Benutzerkonto im Diagramm erstellen, wenn Sie eine verbunddomäne für die Benutzereigenschaft **UserPrincipalName** (UPN) verwenden. **Wichtig:** Die **$** und **\_** Zeichen können nicht verwendet werden, wenn Sie diese Eigenschaft festlegen. Unterstützt $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Gibt den letzten Zeitpunkt an, zu dem das Objekt mit dem lokalen Verzeichnis synchronisiert wurde. Beispiel: „2013-02-16T03:04:54Z“. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |onPremisesProvisioningErrors|[OnPremisesProvisioningError](onpremisesprovisioningerror.md) -Auflistung| Fehler beim Microsoft Synchronisierung während der Bereitstellung verwenden. |
-|onPremisesSamAccountName|String| Enthält lokale `samAccountName` aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
-|onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für den Benutzer, der von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt.|
+|onPremisesSamAccountName|Zeichenfolge| Enthält lokale `samAccountName` aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
+|onPremisesSecurityIdentifier|Zeichenfolge|Enthält die lokale Sicherheits-ID (SID) für den Benutzer, der von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt.|
 |onPremisesSyncEnabled|Boolean| **true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt |
-|onPremisesUserPrincipalName|String| Enthält lokale `userPrincipalName` aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
-|passwordPolicies|String|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Beide können zusammen angegeben werden, z. B.: „DisablePasswordExpiration, DisableStrongPassword“.|
+|onPremisesUserPrincipalName|Zeichenfolge| Enthält lokale `userPrincipalName` aus dem lokalen Verzeichnis synchronisiert. Die Eigenschaft wird nur für Kunden aufgefüllt, die ihre lokalen Verzeichnis zu Azure Active Directory über Azure AD-Connect synchronisiert werden. Schreibgeschützt. |
+|passwordPolicies|Zeichenfolge|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Beide können zusammen angegeben werden, z. B.: „DisablePasswordExpiration, DisableStrongPassword“.|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
 |pastProjects|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der erledigten Projekte eines Benutzers.|
-|postalCode|String|Die Postleitzahl für die Postanschrift des Benutzers. Die Postleitzahl ist für das Land/die Region des Benutzers spezifisch. In den USA enthält dieses Attribut den ZIP Code.|
-|preferredDataLocation|String|Die bevorzugte Datenspeicherort für den Benutzer. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
-|preferredName|String|Der bevorzugte Name für den Benutzer.|
+|postalCode|Zeichenfolge|Die Postleitzahl für die Postanschrift des Benutzers. Die Postleitzahl ist für das Land/die Region des Benutzers spezifisch. In den USA enthält dieses Attribut den ZIP Code.|
+|preferredDataLocation|Zeichenfolge|Die bevorzugte Datenspeicherort für den Benutzer. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
+|preferredName|Zeichenfolge|Der bevorzugte Name für den Benutzer.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |proxyAddresses|Zeichenfolgenauflistung|Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt, lässt keine NULL-Werte zu. Unterstützt $filter.          |
 |responsibilities|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der Verantwortlichkeiten eines Benutzers.|
 |schools|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der vom Benutzer besuchten Schulen.|
 |skills|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
-|state|String|Bundesland oder Kanton in der Adresse des Benutzers. Unterstützt $filter.|
-|streetAddress|String|Die Straße der Firma des Benutzers.|
+|state|Zeichenfolge|Bundesland oder Kanton in der Adresse des Benutzers. Unterstützt $filter.|
+|streetAddress|Zeichenfolge|Die Straße der Firma des Benutzers.|
 |surname|Zeichenfolge|Der Nachname des Benutzers. Unterstützt $filter.|
-|usageLocation|String|Ein aus zwei Buchstaben bestehender Ländercode (ISO-Standard 3166). Erforderlich für Benutzer, denen Lizenzen zugewiesen werden, aufgrund der gesetzlichen Vorschrift, dass die Verfügbarkeit von Diensten in einzelnen Ländern geprüft werden muss.  Beispiele sind: „US“, „JP“ und „GB“. Lässt keine NULL-Werte zu. Unterstützt $filter.|
+|usageLocation|Zeichenfolge|Ein aus zwei Buchstaben bestehender Ländercode (ISO-Standard 3166). Erforderlich für Benutzer, denen Lizenzen zugewiesen werden, aufgrund der gesetzlichen Vorschrift, dass die Verfügbarkeit von Diensten in einzelnen Ländern geprüft werden muss.  Beispiele sind: „US“, „JP“ und „GB“. Lässt keine NULL-Werte zu. Unterstützt $filter.|
 |userPrincipalName|String|Der User Principal Name (UPN) des Benutzers. Der UPN ist ein Anmeldename des Benutzers im Internetformat, der auf dem Internetstandard RFC 822 basiert. Gemäß der Konvention sollte er dem E-Mail-Namen des Benutzers zugeordnet sein. Das allgemeine Format lautet „alias@domäne“, wobei „domäne“ in der Sammlung der verifizierten Domänen des Mandanten vorhanden sein muss. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Auf die verifizierten Domänen für den Mandanten kann über die **verifiedDomains** -Eigenschaft von [organization](organization.md) zugegriffen werden. Unterstützt $Filter und $orderby.
-|userType|String|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |
+|userType|Zeichenfolge|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Legal Alter mitgliedergruppendefinitionen-Eigenschaft
 

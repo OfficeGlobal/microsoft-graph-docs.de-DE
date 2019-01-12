@@ -3,12 +3,13 @@ title: Erstellen von „deviceConfigurationAssignment“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b5d201ec8f7759547acf637adf709a777cbeac2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d81f8f5618b9582b40bfbccbb4c6c0fb50c2c11c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961561"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Erstellen von „deviceConfigurationAssignment“
 

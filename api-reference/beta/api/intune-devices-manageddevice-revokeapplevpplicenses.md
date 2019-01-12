@@ -3,12 +3,13 @@ title: RevokeAppleVppLicenses Aktion
 description: Alle Apple Vpp Lizenzen für ein Gerät widerrufen
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 790147376b60708292ff4aaa542876f0ba1b44ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2329482588ff7f54444187527134586318a0ae5e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960687"
 ---
 # <a name="revokeapplevpplicenses-action"></a>RevokeAppleVppLicenses Aktion
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

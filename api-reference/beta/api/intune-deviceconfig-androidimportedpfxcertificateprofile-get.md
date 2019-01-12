@@ -3,12 +3,13 @@ title: Abrufen von androidImportedPFXCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidImportedPFXCertificateProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1bfe1d30a6299f5de3cab1be81bb35936305f399
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e66a28ca8c5de2fbe7938c1f5fe84152056914b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963451"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>Abrufen von androidImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

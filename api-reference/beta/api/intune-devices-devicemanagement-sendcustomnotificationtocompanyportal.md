@@ -3,12 +3,13 @@ title: SendCustomNotificationToCompanyPortal Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ea1cb5a2bcdf18c38dfc144d57e7ee77a5d6fd2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92276ac8609f1699b1b4a4217452f121d8507f47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863329"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978851"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>SendCustomNotificationToCompanyPortal Aktion
 
@@ -36,7 +37,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,8 +49,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|notificationTitle|String|Noch nicht dokumentiert|
-|notificationBody|String|Noch nicht dokumentiert|
+|notificationTitle|Zeichenfolge|Noch nicht dokumentiert|
+|notificationBody|Zeichenfolge|Noch nicht dokumentiert|
 |groupsToNotify|Zeichenfolgenauflistung|Noch nicht dokumentiert|
 
 

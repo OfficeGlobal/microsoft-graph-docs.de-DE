@@ -3,12 +3,13 @@ title: 'message: reply'
 description: Antwortet auf eine Nachricht des Absenders. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 2ba3df6551aab9138e90fa5e3fc452f2929b4815
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 1aacac847295926562036a65007cac1f542f50fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856322"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961309"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
+|comment|Zeichenfolge|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
 
 ## <a name="response"></a>Antwort
 

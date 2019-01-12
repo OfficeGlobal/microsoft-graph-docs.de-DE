@@ -3,12 +3,13 @@ title: Ressourcentyp androidPermissionAction
 description: Zuordnung zwischen einer Android-app-Berechtigung und die Aktion Android sollte verwenden, wenn diese Berechtigung angefordert wird.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ad7b438951b947cc515f1472dd1eae8caf472f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860536"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977122"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Ressourcentyp androidPermissionAction
 
@@ -20,7 +21,7 @@ Zuordnung zwischen einer Android-app-Berechtigung und die Aktion Android sollte 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Berechtigung|String|In der Dokumentation zu offiziellen Android definierte Zeichenfolge Android Berechtigung.  Beispiel für 'android.permission.READ_CONTACTS'.|
+|Berechtigung|Zeichenfolge|In der Dokumentation zu offiziellen Android definierte Zeichenfolge Android Berechtigung.  Beispiel für 'android.permission.READ_CONTACTS'.|
 |Aktion|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Typ der Berechtigung Android-Aktion. Mögliche Werte sind: `prompt`, `autoGrant` und `autoDeny`.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,12 +1,14 @@
 ---
 title: Verwenden der Aktivitätsfeed-API in Microsoft Graph zur Erstellung geräteübergreifender Oberflächen
 description: Wenn Sie Aktivitäten verwenden, können diese Microsoft-Oberflächen zu einer größeren Akzeptanz Ihrer App führen. Die Anzeige von Aktivitäten in Apps kann Benutzern außerdem helfen, genau dort weiterzumachen, wo sie zuvor aufgehört haben – auf jedem Gerät und auf jeder Plattform, inklusive Windows, Android und iOS.
-ms.openlocfilehash: 768326a5a18962f28aebe2e66b7dbd2a95b1a7bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: project-rome
+ms.openlocfilehash: d264ca473dae66a945144c69cb64416d7c703611
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092153"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964942"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Verwenden der Aktivitätsfeed-API in Microsoft Graph zur Erstellung geräteübergreifender Oberflächen
 

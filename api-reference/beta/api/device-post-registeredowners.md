@@ -1,14 +1,15 @@
 ---
 title: registeredOwner erstellen
 description: Mit dieser API können Sie einen Benutzer als registrierten Besitzer eines Geräts hinzufügen.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: e1c8151f43ea7c4eb8e1235727a6b9f40f193853
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3db0e62e30dd5776283b93bd2a786bd0f398621d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960896"
 ---
 # <a name="create-registeredowner"></a>registeredOwner erstellen
 

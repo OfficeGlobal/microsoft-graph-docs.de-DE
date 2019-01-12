@@ -2,12 +2,14 @@
 title: Übersicht über die Outlook-Mail-API
 description: Outlook ist ein Messaging-Hub in Office 365. Es erlaubt ferner das Verwalten von Kontakten, das Planen von Besprechungen, das Suchen von Informationen über Benutzer in einer Organisation,
 author: angelgolfer-ms
-ms.openlocfilehash: 7cf498c91464ae14dcf8bf3c3d5dba4bdf030455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 462e00825a9dd54a6628ca638b06fb56c6cb5c8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306615"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976625"
 ---
 # <a name="outlook-mail-api-overview"></a>Übersicht über die Outlook-Mail-API
 

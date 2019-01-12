@@ -3,12 +3,13 @@ title: iosDeviceType-Ressourcentyp
 description: Enthält die Eigenschaften der möglichen iOS-Gerätetypen, auf denen die mobile App ausgeführt werden kann.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ffa46d1e8fb693822051250fb4a722815b1dcb73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b541310ced9c9aaa781077639203950d00f56f27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976751"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType-Ressourcentyp
 

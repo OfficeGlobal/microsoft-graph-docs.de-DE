@@ -3,12 +3,13 @@ title: DefenderMonitorFileActivity Enum-Typ
 description: Mögliche Werte für die Überwachung von Dateiaktivität.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d7b6c921ec40b53339646b2b3b0a91e2d4e8a84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: df973c06456484263b6346b5eaa48ac466de41f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837905"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967994"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>DefenderMonitorFileActivity Enum-Typ
 

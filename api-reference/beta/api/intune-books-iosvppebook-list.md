@@ -3,12 +3,13 @@ title: Auflisten von „iosVppEBook“
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppEBook auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5174372e85d808f95ca910b3c57e9c1cc4abc980
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 257e887ab235ec9975f408a893681fc99aa5b5c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978921"
 ---
 # <a name="list-iosvppebooks"></a>Auflisten von „iosVppEBook“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedEBooks
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
