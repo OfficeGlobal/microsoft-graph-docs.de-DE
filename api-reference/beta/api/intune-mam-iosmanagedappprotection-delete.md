@@ -3,30 +3,31 @@ title: iosManagedAppProtection löschen
 description: Löscht Objekte des Typs iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d64d022518843ca814a41e369bdb9146fc8eee9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f935971ce0cbe403664a146c84bf32e0a4083800
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991341"
 ---
-# <a name="delete-iosmanagedappprotection"></a><span data-ttu-id="ceb23-103">iosManagedAppProtection löschen</span><span class="sxs-lookup"><span data-stu-id="ceb23-103">Delete iosManagedAppProtection</span></span>
+# <a name="delete-iosmanagedappprotection"></a><span data-ttu-id="baa93-103">iosManagedAppProtection löschen</span><span class="sxs-lookup"><span data-stu-id="baa93-103">Delete iosManagedAppProtection</span></span>
 
-> <span data-ttu-id="ceb23-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="ceb23-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ceb23-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ceb23-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="baa93-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="baa93-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="baa93-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="baa93-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ceb23-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="ceb23-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="baa93-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="baa93-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ceb23-107">Löscht Objekte des Typs [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="ceb23-107">Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ceb23-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="ceb23-108">Prerequisites</span></span>
-<span data-ttu-id="ceb23-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ceb23-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="baa93-107">Löscht Objekte des Typs [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="baa93-107">Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="baa93-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="baa93-108">Prerequisites</span></span>
+<span data-ttu-id="baa93-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="baa93-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ceb23-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ceb23-111">Permission type</span></span>|<span data-ttu-id="ceb23-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ceb23-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="baa93-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="baa93-111">Permission type</span></span>|<span data-ttu-id="baa93-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="baa93-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ceb23-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ceb23-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ceb23-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ceb23-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="ceb23-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ceb23-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ceb23-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ceb23-116">Not supported.</span></span>|
-|<span data-ttu-id="ceb23-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ceb23-117">Application</span></span>|<span data-ttu-id="ceb23-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ceb23-118">Not supported.</span></span>|
+|<span data-ttu-id="baa93-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="baa93-113">Delegated (work or school account)</span></span>|<span data-ttu-id="baa93-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="baa93-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="baa93-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="baa93-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="baa93-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="baa93-116">Not supported.</span></span>|
+|<span data-ttu-id="baa93-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="baa93-117">Application</span></span>|<span data-ttu-id="baa93-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="baa93-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ceb23-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ceb23-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="baa93-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="baa93-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ ms.locfileid: "27813692"
 DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ceb23-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ceb23-120">Request headers</span></span>
-|<span data-ttu-id="ceb23-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="ceb23-121">Header</span></span>|<span data-ttu-id="ceb23-122">Wert</span><span class="sxs-lookup"><span data-stu-id="ceb23-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="baa93-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="baa93-120">Request headers</span></span>
+|<span data-ttu-id="baa93-121">Header</span><span class="sxs-lookup"><span data-stu-id="baa93-121">Header</span></span>|<span data-ttu-id="baa93-122">Wert</span><span class="sxs-lookup"><span data-stu-id="baa93-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ceb23-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ceb23-123">Authorization</span></span>|<span data-ttu-id="ceb23-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="ceb23-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ceb23-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="ceb23-125">Accept</span></span>|<span data-ttu-id="ceb23-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ceb23-126">application/json</span></span>|
+|<span data-ttu-id="baa93-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="baa93-123">Authorization</span></span>|<span data-ttu-id="baa93-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="baa93-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="baa93-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="baa93-125">Accept</span></span>|<span data-ttu-id="baa93-126">application/json</span><span class="sxs-lookup"><span data-stu-id="baa93-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ceb23-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ceb23-127">Request body</span></span>
-<span data-ttu-id="ceb23-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ceb23-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="baa93-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="baa93-127">Request body</span></span>
+<span data-ttu-id="baa93-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="baa93-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ceb23-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="ceb23-129">Response</span></span>
-<span data-ttu-id="ceb23-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ceb23-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="baa93-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="baa93-129">Response</span></span>
+<span data-ttu-id="baa93-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="baa93-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ceb23-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ceb23-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ceb23-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ceb23-132">Request</span></span>
-<span data-ttu-id="ceb23-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ceb23-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="baa93-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="baa93-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="baa93-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="baa93-132">Request</span></span>
+<span data-ttu-id="baa93-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="baa93-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="ceb23-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="ceb23-134">Response</span></span>
-<span data-ttu-id="ceb23-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ceb23-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="baa93-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="baa93-134">Response</span></span>
+<span data-ttu-id="baa93-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="baa93-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

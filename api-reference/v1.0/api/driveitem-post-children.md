@@ -4,28 +4,29 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Einen neuen Ordner erstellen
 localization_priority: Priority
-ms.openlocfilehash: 68dfadf98b705812d36fbaf46fc6c59d4de20af9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 26a87aefdf692562491f0bda1fcc87a48b4079fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986712"
 ---
-# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="dc2a3-102">Neuen Ordner in OneDrive erstellen</span><span class="sxs-lookup"><span data-stu-id="dc2a3-102">Create a new folder in a drive</span></span>
+# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="8c922-102">Neuen Ordner in OneDrive erstellen</span><span class="sxs-lookup"><span data-stu-id="8c922-102">Create a new folder in a drive</span></span>
 
-<span data-ttu-id="dc2a3-103">Mit dieser API können Sie einen neuen Ordner oder eine neue Ressource des Typs [DriveItem](../resources/driveitem.md) in der Ressource des Typs [Drive](../resources/drive.md) mit dem jeweils angegebenen übergeordneten Element oder Pfad erstellen.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="8c922-103">Mit dieser API können Sie einen neuen Ordner oder eine neue Ressource des Typs [DriveItem](../resources/driveitem.md) in der Ressource des Typs [Drive](../resources/drive.md) mit dem jeweils angegebenen übergeordneten Element oder Pfad erstellen.</span><span class="sxs-lookup"><span data-stu-id="8c922-103">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dc2a3-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="dc2a3-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8c922-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8c922-104">Permissions</span></span>
 
-<span data-ttu-id="dc2a3-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc2a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8c922-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8c922-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dc2a3-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="dc2a3-107">Permission type</span></span>      | <span data-ttu-id="dc2a3-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="dc2a3-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8c922-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8c922-107">Permission type</span></span>      | <span data-ttu-id="8c922-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8c922-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dc2a3-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="dc2a3-109">Delegated (work or school account)</span></span> | <span data-ttu-id="dc2a3-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc2a3-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="dc2a3-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="dc2a3-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc2a3-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc2a3-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="dc2a3-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="dc2a3-113">Application</span></span> | <span data-ttu-id="dc2a3-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc2a3-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="8c922-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8c922-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8c922-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c922-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8c922-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8c922-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8c922-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c922-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8c922-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8c922-113">Application</span></span> | <span data-ttu-id="8c922-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c922-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dc2a3-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="dc2a3-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8c922-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8c922-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,20 +38,20 @@ POST /sites/{site-id}/drive/items/{parent-item-id}/children
 POST /users/{user-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="dc2a3-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="dc2a3-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8c922-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8c922-116">Request body</span></span>
 
-<span data-ttu-id="dc2a3-117">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [DriveItem](../resources/driveitem.md)-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+<span data-ttu-id="8c922-117">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [DriveItem](../resources/driveitem.md)-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="8c922-117">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dc2a3-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="dc2a3-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8c922-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="8c922-118">Response</span></span>
 
-<span data-ttu-id="dc2a3-119">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und die [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="8c922-119">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und die [DriveItem](../resources/driveitem.md)-Ressource im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8c922-119">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dc2a3-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dc2a3-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8c922-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8c922-120">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="dc2a3-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="dc2a3-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8c922-121">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8c922-121">Request</span></span>
 
-<span data-ttu-id="dc2a3-122">Nachfolgend finden Sie ein Beispiel der Anforderung zum Erstellen eines neues Ordners am OneDrive-Stammordner des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
-<span data-ttu-id="dc2a3-123">Die verwendete `@microsoft.graph.conflictBehavior`-Eigenschaft zeigt an, wenn ein Element bereits mit dem gleichen Namen vorhanden ist. Der Dienst sollte bei der Erstellung einen neuen Namen für den Ordner auswählen.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
+<span data-ttu-id="8c922-122">Nachfolgend finden Sie ein Beispiel der Anforderung zum Erstellen eines neues Ordners am OneDrive-Stammordner des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="8c922-122">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
+<span data-ttu-id="8c922-123">Die verwendete `@microsoft.graph.conflictBehavior`-Eigenschaft zeigt an, wenn ein Element bereits mit dem gleichen Namen vorhanden ist. Der Dienst sollte bei der Erstellung einen neuen Namen für den Ordner auswählen.</span><span class="sxs-lookup"><span data-stu-id="8c922-123">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -65,9 +66,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="dc2a3-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="dc2a3-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8c922-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="8c922-124">Response</span></span>
 
-<span data-ttu-id="dc2a3-125">Wenn die Methode erfolgreich verläuft, wird der neu erstelle Ordner als [DriveItem][item-resource]- zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dc2a3-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
+<span data-ttu-id="8c922-125">Wenn die Methode erfolgreich verläuft, wird der neu erstelle Ordner als [DriveItem][item-resource]- zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8c922-125">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -105,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-response"></a><span data-ttu-id="dc2a3-126">Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="dc2a3-126">Error response</span></span>
+## <a name="error-response"></a><span data-ttu-id="8c922-126">Fehlerantwort</span><span class="sxs-lookup"><span data-stu-id="8c922-126">Error response</span></span>
 
-<span data-ttu-id="dc2a3-127">Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Artikel zum Thema [Fehlerantworten][error-response].</span><span class="sxs-lookup"><span data-stu-id="dc2a3-127">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
+<span data-ttu-id="8c922-127">Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Artikel zum Thema [Fehlerantworten][error-response].</span><span class="sxs-lookup"><span data-stu-id="8c922-127">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
 [Fehlerantwort]: / Diagramm/Fehler [Element-Ressource]:... /Resources/driveitem.MD [Ordner Facetten]:... /Resources/Folder.MD
 [error-response]: /graph/errors [item-resource]: ../resources/driveitem.md [folder-facet]: ../resources/folder.md
 
