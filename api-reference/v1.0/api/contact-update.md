@@ -3,12 +3,13 @@ title: Kontakt aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Kontaktobjekts aktualisieren.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: e73257e0e2e27bb4ef89a50477e67840c484b0cd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858338"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927905"
 ---
 # <a name="update-contact"></a>Kontakt aktualisieren
 
@@ -39,7 +40,7 @@ PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |

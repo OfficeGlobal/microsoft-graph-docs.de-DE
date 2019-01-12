@@ -3,12 +3,13 @@ title: Ressourcentyp mobileAppTroubleshootingEvent
 description: Ereignis, das eine Anwendung für Benutzer Geräte darstellt installieren Status.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8441015f594d227066db39f3f643cc8136637668
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d26873b90941f27538a5c71e113a92bb5af1bf26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977325"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>Ressourcentyp mobileAppTroubleshootingEvent
 
@@ -32,11 +33,11 @@ Erbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshoot
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|UUID für das Objekt. Geerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|id|Zeichenfolge|UUID für das Objekt. Geerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Uhrzeit, zu der das Ereignis aufgetreten ist. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|String|Von Intune erstellter oder erfasster Gerätebezeichner|
-|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|correlationId|Zeichenfolge|ID, die für die Verfolgung des Fehlers in dem Dienst verwendet wurde. Gerbt von [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
+|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |applicationId|Zeichenfolge|Intune Anwendungsbezeichner.|
 |Verlauf|[MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) -Auflistung|Intune Mobile Anwendung Problembehandlung Historienelement|
 

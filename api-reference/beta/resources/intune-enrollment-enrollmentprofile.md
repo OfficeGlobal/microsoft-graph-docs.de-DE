@@ -2,12 +2,14 @@
 title: Ressourcentyp enrollmentProfile
 description: Die Ressource EnrollmentProfile stellt eine Auflistung von Konfigurationen, die bereitgestellt werden müssen vor dem Registrierung zum Registrieren von bestimmten Geräten, deren Identitäten vorab bereitgestellt wurden, aktivieren. Provisorisch Gerät Identitäten werden mit diesem Profil zugewiesen, das Profil Konfigurationen zur Registrierung des entsprechenden Geräts angewendet.
 localization_priority: Normal
-ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b88745c060e71e32199a96b23f94fa0d3229d451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935591"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Ressourcentyp enrollmentProfile
 

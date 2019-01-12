@@ -3,12 +3,13 @@ title: Liste embeddedSIMActivationCodePoolAssignments
 description: Listeneigenschaften und Beziehungen der EmbeddedSIMActivationCodePoolAssignment-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd3fceea3601f17bfc22e75f15cba959865a7b9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: afadab79246afaa1a2610f624cc8b4d9ddca5fd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940176"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Liste embeddedSIMActivationCodePoolAssignments
 
@@ -36,7 +37,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

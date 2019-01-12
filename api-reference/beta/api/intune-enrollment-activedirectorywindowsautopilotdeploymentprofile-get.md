@@ -3,12 +3,13 @@ title: Abrufen von activeDirectoryWindowsAutopilotDeploymentProfile
 description: Lesen Sie Eigenschaften und Beziehungen des ActiveDirectoryWindowsAutopilotDeploymentProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05cb2d6a85522748a481d985e73a69e03e6a5033
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 193000e92491f4f4d434db57b1305fd22c85d32f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934100"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>Abrufen von activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

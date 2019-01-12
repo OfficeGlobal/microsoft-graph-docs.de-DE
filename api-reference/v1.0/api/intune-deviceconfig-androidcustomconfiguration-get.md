@@ -3,12 +3,13 @@ title: Abrufen von „androidCustomConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: be99c7296e7987ed32240138a849c21a3ef43520
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 59f5f5f7a29e28320e4c44ac72caaa3a62f2ad93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860089"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934107"
 ---
 # <a name="get-androidcustomconfiguration"></a>Abrufen von „androidCustomConfiguration“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

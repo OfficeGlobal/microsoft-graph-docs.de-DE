@@ -3,12 +3,13 @@ title: Auflisten von „deviceComplianceDeviceStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceComplianceDeviceStatus auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9d5a869083b8a0dceea57a644962af9196563599
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd7472893cd5dbb5abad6f892506e1778f534b29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836757"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940323"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>Auflisten von „deviceComplianceDeviceStatus“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: Abrufen von outlookTaskFolder
 description: Rufen Sie die Eigenschaften und Beziehungen zwischen den angegebenen Outlook-Aufgabenordner.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 61f31f95ab31aab254c3497f088117480e84a512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 7e8f8e9c1fa16b5e0a00b0f779d652d2c6e1aa93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929221"
 ---
 # <a name="get-outlooktaskfolder"></a>Abrufen von outlookTaskFolder
 

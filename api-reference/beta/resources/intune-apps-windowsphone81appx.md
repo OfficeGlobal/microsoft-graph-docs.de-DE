@@ -3,12 +3,13 @@ title: Ressourcentyp windowsPhone81AppX
 description: Enthält Eigenschaften und geerbten Eigenschaften für Windows Phone 8.1 AppX-Line Of Business apps.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 535eb9e82241870418826711b76421c6c6b2d0ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1d356cd21b4fb268588636483b8c9a655a545536
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878211"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916005"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Ressourcentyp windowsPhone81AppX
 

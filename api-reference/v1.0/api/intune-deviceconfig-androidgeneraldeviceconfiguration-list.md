@@ -3,12 +3,13 @@ title: Auflisten von „androidGeneralDeviceConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidGeneralDeviceConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc5e20f5551b130777e008be46b0bd462f1d97ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 147f16fb6c9bee63bf1ef7877e8dd4b3f441f160
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930999"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Auflisten von „androidGeneralDeviceConfiguration“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

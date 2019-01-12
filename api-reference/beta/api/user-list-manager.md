@@ -2,12 +2,14 @@
 title: Manager auflisten
 description: Ruft den Vorgesetzten des Benutzers ab. Gibt den Benutzer oder Kontakt zurück, der als Vorgesetzter des Benutzers zugewiesen ist.
 localization_priority: Normal
-ms.openlocfilehash: 6f88aaf04596ade1a1cfd280af13efbc02affad6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3818d72ea024ff06697f123d9a1fb5b3d534152d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933772"
 ---
 # <a name="list-manager"></a>Manager auflisten
 
@@ -31,7 +33,7 @@ GET /users/{id | userPrincipalName}/manager
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert|
+| Header       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json  |

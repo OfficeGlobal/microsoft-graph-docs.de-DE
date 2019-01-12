@@ -3,12 +3,13 @@ title: deviceCompliancePolicySettingStateSummary-Ressourcentyp
 description: Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung für das Konto.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e86527327560c7683f46fe1c0888d2ff295fe86d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a41a76299f4460daf5bb0e856b4d2779589789ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933085"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary-Ressourcentyp
 
@@ -29,9 +30,9 @@ Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien-Einstellung fü
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|String|Name der Einstellung|
+|id|Zeichenfolge|Schlüssel der Entität|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
+|settingName|Zeichenfolge|Name der Einstellung|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Einstellung-Plattform. Mögliche Werte: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|

@@ -3,12 +3,13 @@ title: Liste windowsOfficeClientConfigurations
 description: Listeneigenschaften und Beziehungen der WindowsOfficeClientConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a34c33f015bf513d2da6aa17d2228a36dbeb2209
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 22a02981cc8d7a9a800a59466c440c08a8b333c4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813559"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933855"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Liste windowsOfficeClientConfigurations
 
@@ -36,7 +37,7 @@ GET /officeConfiguration/clientConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

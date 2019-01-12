@@ -2,12 +2,13 @@
 title: Ressourcentyp Aktivität
 description: Stellt eine einzelne Aktivität in einer app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als Element Verlauf erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 localization_priority: Normal
-ms.openlocfilehash: 5010cf49e72bd7bd71d5407546c7bcd72570db22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 7a9000de339bc5d44fcbf2d282237caef85e076f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939294"
 ---
 # <a name="activity-resource-type"></a>Ressourcentyp Aktivität
 

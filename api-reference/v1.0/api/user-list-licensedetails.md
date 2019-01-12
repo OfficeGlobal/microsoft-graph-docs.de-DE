@@ -3,12 +3,13 @@ title: licenseDetails auflisten
 description: Mit dieser API können Sie eine Liste von Objekten des Typs „licenseDetails“ abrufen.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 7f9869088e7ee6e8f4857ad3f8a7c4e3768e529b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0ad9b10a377e89858cad03d3eabe4e62a4f86627
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931825"
 ---
 # <a name="list-licensedetails"></a>licenseDetails auflisten
 

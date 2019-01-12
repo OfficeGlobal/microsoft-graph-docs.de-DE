@@ -3,12 +3,13 @@ title: deviceComplianceUserOverview abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceComplianceUserOverview-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f36401ba5e1a5928658da175d679a258230aa3df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6e830edd53b780972fed6d548f3c4f733fbe116
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972019"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>deviceComplianceUserOverview abrufen
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

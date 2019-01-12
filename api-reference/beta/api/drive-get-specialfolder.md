@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Spezielle Ordner abgerufen
 localization_priority: Normal
-ms.openlocfilehash: c63f3ae585db0aff812e16eb9f125d19e77a806c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 39d4b3124b74cb1f164c5cd637a256b975365432
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985123"
 ---
 # <a name="get-a-special-folder-by-name"></a>Speziellen Ordner nach Name abrufen
 
@@ -110,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 > **Hinweis:** DriveItems mit der `specialFolder`-Facette geben an, dass das Element ein spezieller Ordner ist und der Zugriff über die `special`-Sammlung erfolgen kann.
 

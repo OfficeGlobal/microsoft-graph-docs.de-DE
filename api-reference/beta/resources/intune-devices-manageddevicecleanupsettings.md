@@ -3,12 +3,13 @@ title: Ressourcentyp managedDeviceCleanupSettings
 description: Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werden möchte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 755fc90b957427c4b9f8ee9007decea320141601
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 334b561ffa19d4161553f761ce65b7da7d9dbcfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808974"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961897"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Ressourcentyp managedDeviceCleanupSettings
 
@@ -20,7 +21,7 @@ Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werde
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Anzahl der Tage, wenn das Gerät nicht Intune kontaktiert hat.|
+|deviceInactivityBeforeRetirementInDays|Zeichenfolge|Anzahl der Tage, wenn das Gerät nicht Intune kontaktiert hat.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

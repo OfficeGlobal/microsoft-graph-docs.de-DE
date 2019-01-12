@@ -3,12 +3,13 @@ title: MobileAppIntentAndState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MobileAppIntentAndState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ee4bed7a8e4a918eb2c633f287fafa56d43c0590
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827097"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969065"
 ---
 # <a name="update-mobileappintentandstate"></a>MobileAppIntentAndState aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,8 +50,8 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|UUID für das Objekt|
-|managedDeviceIdentifier|String|Von Intune erstellter oder erfasster Gerätebezeichner|
-|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
+|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |mobileAppList|[MobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) -Auflistung|Die Liste der Nutzlast Intents und Status für den Mandanten.|
 
 

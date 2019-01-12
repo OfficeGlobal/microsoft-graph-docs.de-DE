@@ -3,12 +3,13 @@ title: windows10CompliancePolicy erstellen
 description: Erstellt neue Objekte des Typs windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee738bc07ab0d246ecb5a61df244b08287a58d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d09c30c9219ea3a9d927b6d550f98130a38ecbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950144"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy erstellen
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,11 +50,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|String|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.|
 |passwordBlockSimple|Boolean|Gibt an, ob einfache Kennwörter erlaubt sind.|
@@ -65,26 +66,26 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss.|
 |requireHealthyDeviceReport|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
-|osMinimumVersion|String|Mindestversion von Windows 10|
-|osMaximumVersion|String|Maximalversion von Windows 10|
-|mobileOsMinimumVersion|String|Mindestversion von Windows Phone|
-|mobileOsMaximumVersion|String|Maximalversion von Windows Phone|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
-|bitLockerEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
-|secureBootEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
-|codeIntegrityEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
-|storageRequireEncryption|Boolean|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
-|activeFirewallRequired|Boolean|Erfordern Sie active Firewall auf Windows-Geräten.|
-|defenderEnabled|Boolean|Benötigen Sie Windows Defender Modul auf Windows-Geräten.|
-|defenderVersion|String|Benötigen Sie mindestens Version von Windows Defender Modul auf Windows-Geräten.|
-|signatureOutOfDate|Boolean|Benötigen Sie Windows Defender Modul Signatur, um auf Windows-Geräten Stand sein.|
-|rtpEnabled|Boolean|Benötigen Sie Windows Defender Modul Real-Time Schutz auf Windows-Geräten.|
-|antivirusRequired|Boolean|Erfordern Sie Antivirus-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Erfordern Sie AntiSpyware-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
+|osMinimumVersion|Zeichenfolge|Mindestversion von Windows 10|
+|osMaximumVersion|Zeichenfolge|Maximalversion von Windows 10|
+|mobileOsMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
+|mobileOsMaximumVersion|Zeichenfolge|Maximalversion von Windows Phone|
+|earlyLaunchAntiMalwareDriverEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
+|bitLockerEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
+|secureBootEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
+|codeIntegrityEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
+|storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
+|activeFirewallRequired|Boolescher Wert|Erfordern Sie active Firewall auf Windows-Geräten.|
+|defenderEnabled|Boolescher Wert|Benötigen Sie Windows Defender Modul auf Windows-Geräten.|
+|defenderVersion|Zeichenfolge|Benötigen Sie mindestens Version von Windows Defender Modul auf Windows-Geräten.|
+|signatureOutOfDate|Boolescher Wert|Benötigen Sie Windows Defender Modul Signatur, um auf Windows-Geräten Stand sein.|
+|rtpEnabled|Boolescher Wert|Benötigen Sie Windows Defender Modul Real-Time Schutz auf Windows-Geräten.|
+|antivirusRequired|Boolescher Wert|Erfordern Sie Antivirus-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
+|antiSpywareRequired|Boolescher Wert|Erfordern Sie AntiSpyware-Lösung mit Windows Decurity Center befinden registriert und Überwachung (z. B. Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[OperatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) -Auflistung|Das gültige Betriebssystem erstellen Bereiche auf Windows-Geräten. Diese Collection darf maximal 10.000 Elemente enthalten.|
-|deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Erfordern Sie Gerät Bedrohung minimalem Risiko Mail-Schutzstufe Kompatibilität vorgesehenen Unwichtigstes. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
-|configurationManagerComplianceRequired|Boolean|SCCM Compliance Zustand berücksichtigt für Intune Compliance Zustand berücksichtigen müssen.|
+|configurationManagerComplianceRequired|Boolescher Wert|SCCM Compliance Zustand berücksichtigt für Intune Compliance Zustand berücksichtigen müssen.|
 
 
 

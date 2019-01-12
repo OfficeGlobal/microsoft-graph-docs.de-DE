@@ -2,12 +2,14 @@
 title: Vorlage für Gruppeneinstellung abrufen
 description: Eine Vorlage für Gruppeneinstellungen ist eine Vorlage mit Einstellungen, aus denen Einstellungen innerhalb eines Mandanten erstellt werden können. Dieser Vorgang ermöglicht das Abrufen der Eigenschaften des groupSettingTemplate-Objekts, einschließlich der verfügbaren Einstellungen und ihrer Standardwerte.
 localization_priority: Normal
-ms.openlocfilehash: 17e385c564337fcaa1255685e2b5808caec5cba4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804998"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934303"
 ---
 # <a name="get-a-group-setting-template"></a>Vorlage für Gruppeneinstellung abrufen
 

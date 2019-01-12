@@ -3,12 +3,13 @@ title: 'group: resetUnseenCount'
 description: Dient zum Zurücksetzen des unseenCount-Elements aller Beiträge, die der aktuelle Benutzer seit dem letzten Besuch noch nicht gesehen hat. Wird nur für Office 365-Gruppen unterstützt.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 360f3aef68cb8ddd44f68982f3da494b42b616c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 0c875615fb9650ecafafd503d37e88b0473fd482
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874851"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981980"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 Dient zum Zurücksetzen des unseenCount-Elements aller Beiträge, die der aktuelle Benutzer seit dem letzten Besuch noch nicht gesehen hat. Wird nur für Office 365-Gruppen unterstützt.

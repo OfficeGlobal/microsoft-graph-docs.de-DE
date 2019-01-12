@@ -3,12 +3,13 @@ title: recoverPasscode-Aktion
 description: Kennung wiederherstellen
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 76b0fac0e6413390b98c8d4c607a956fc3f4eacd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 66ff12f11d49bae9bd263c2a98c01a7ddd25ed17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862699"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934401"
 ---
 # <a name="recoverpasscode-action"></a>recoverPasscode-Aktion
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

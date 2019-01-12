@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessActivityCounts'
 description: Rufen Sie die Trends dazu ab, wie viele Benutzer Konferenzsitzungen, die in Ihrem Unternehmen mit Skype for Business abgehalten wurden, organisiert und daran teilgenommen haben. Der Bericht enthält auch die Anzahl von Peer-to-Peer-Sitzungen.
 localization_priority: Normal
-ms.openlocfilehash: 4f63f1fe35974ef1c51e26109538455295021f25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: e1a42d6612a29e8d65665174fb46defd2cb9185d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878757"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933869"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 

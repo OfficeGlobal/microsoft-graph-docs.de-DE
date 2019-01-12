@@ -3,12 +3,13 @@ title: Aktualisieren von „iosCustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 585da3f9e11596193bc82ce0a34ee17edcada4db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 72191a024525f5cafbb1bdb0f8067935ce671776
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972012"
 ---
 # <a name="update-ioscustomconfiguration"></a>Aktualisieren von „iosCustomConfiguration“
 

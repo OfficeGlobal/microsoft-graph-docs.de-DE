@@ -3,12 +3,13 @@ title: 'Domäne: ForceDelete'
 description: Löscht eine Domäne mithilfe eines asynchronen Vorgangs.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: e90b960bc2e2ff63068b1d91029371044075be27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6c3d942352a0db20d6e46a4b00686ad948bd6798
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838059"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965124"
 ---
 # <a name="domain-forcedelete"></a>Domäne: ForceDelete
 
@@ -63,7 +64,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Option zum Deaktivieren von Benutzerkonten umbenannt. Wenn ein Benutzerkonto deaktiviert ist, wird der Benutzer nicht zulässig ist so melden Sie sich.<br>*"True"* (Standard) - Benutzer, die im Rahmen dieses Vorgangs umbenannte Konten deaktiviert wurden.<br>*False* - Benutzerkonten, die im Rahmen dieses Vorgangs umbenannt werden nicht deaktiviert. |
+|disableUserAccounts|Boolescher Wert| Option zum Deaktivieren von Benutzerkonten umbenannt. Wenn ein Benutzerkonto deaktiviert ist, wird der Benutzer nicht zulässig ist so melden Sie sich.<br>*"True"* (Standard) - Benutzer, die im Rahmen dieses Vorgangs umbenannte Konten deaktiviert wurden.<br>*False* - Benutzerkonten, die im Rahmen dieses Vorgangs umbenannt werden nicht deaktiviert. |
 
 ## <a name="response"></a>Antwort
 

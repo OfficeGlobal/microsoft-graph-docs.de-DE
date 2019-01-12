@@ -2,12 +2,14 @@
 title: RatingGermanyMoviesType Enum-Typ
 description: Filme Bewertung Bezeichnungen in Deutschland
 author: tfitzmac
-ms.openlocfilehash: b5d158a596d6a89ae0751419aceac7d2f9a7ffeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: ef57f27d72204136e101b03dfa5e4af00ba39b1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309198"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928675"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>RatingGermanyMoviesType Enum-Typ
 
@@ -15,7 +17,7 @@ ms.locfileid: "27309198"
 
 Filme Bewertung Bezeichnungen in Deutschland
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|

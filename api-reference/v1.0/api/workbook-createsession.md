@@ -3,12 +3,13 @@ title: Sitzung erstellen
 description: 'Verwenden Sie diese API zum Erstellen einer neuen Arbeitsmappensitzung. '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d6e05b4a86c9dc3a6a06ae62f6386ef622c16d6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9a377c4bb86f468e9e6107e451b40494665f5b16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877630"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972817"
 ---
 # <a name="create-session"></a>Sitzung erstellen
 

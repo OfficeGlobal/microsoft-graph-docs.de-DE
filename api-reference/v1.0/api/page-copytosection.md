@@ -2,12 +2,14 @@
 title: 'page: copyToSection'
 description: Kopiert eine Seite in einen bestimmten Abschnitt.
 localization_priority: Normal
-ms.openlocfilehash: 971d5eb47c6130ab7379e8b7db67d355b55c8d7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: b09c47ab7dbaec7b7dd63d134cdefae1260d9e8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871498"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934821"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 Kopiert eine Seite in einen bestimmten Abschnitt.
@@ -41,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt an, das die vom Vorgang benötigte
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupId|String|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
+|groupId|Zeichenfolge|Die ID der Gruppe, in die kopiert werden soll. Verwenden Sie diesen Parameter nur beim Kopieren in eine Office 365-Gruppe.|
 |id|String|Erforderlich. Die ID des Zielabschnitts.|
 
 ## <a name="response"></a>Antwort

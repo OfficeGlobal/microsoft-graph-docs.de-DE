@@ -3,12 +3,13 @@ title: 'message: copy'
 description: Mit dieser API können Sie Nachrichten in Ordner kopieren.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a713238abe0ab4ccd4ef3ec032e73fe2d83a062e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cacc827079089cf977a28f5bb45bb1ac62884275
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846704"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934716"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
 | Authorization | `Bearer {token}`. Erforderlich. |
 | Content-Type | `application/json`. Erforderlich. |
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-|destinationId|String|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|destinationId|Zeichenfolge|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 

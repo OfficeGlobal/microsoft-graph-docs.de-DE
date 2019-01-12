@@ -3,12 +3,13 @@ title: EducationClass zu educationSchool hinzufügen
 description: Hinzufügen einer Klasse zu einer Schule.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 3e09bd141c0b474d44ce9d691cff29b5164f8f34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0ee3d1ba1a0b0da143ab3dbab5624d0ebb3de4ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926211"
 ---
 # <a name="add-educationclass-to-educationschool"></a>EducationClass zu educationSchool hinzufügen
 
@@ -31,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /education/schools/{id}/classes/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

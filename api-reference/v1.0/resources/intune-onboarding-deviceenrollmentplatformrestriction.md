@@ -3,12 +3,13 @@ title: deviceEnrollmentPlatformRestriction-Ressourcentyp
 description: Plattformspezifische Registrierungseinschränkungen
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ce30b9ff24067fb2bfec17ad85d3c8827cc6b798
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7879b7f6585908aa760c3169e950cc5257bf49a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816002"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929067"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction-Ressourcentyp
 

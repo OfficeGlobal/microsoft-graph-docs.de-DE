@@ -3,12 +3,13 @@ title: Abrufen von „deviceEnrollmentWindowsHelloForBusinessConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8152ad5a578c210214aa26508b31efcc7d96baef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4bb655f8c8e1a2e22255d493370e4735dc0874c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882271"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930719"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Abrufen von „deviceEnrollmentWindowsHelloForBusinessConfiguration“
 

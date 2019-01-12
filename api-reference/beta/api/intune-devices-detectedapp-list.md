@@ -3,12 +3,13 @@ title: Auflisten von „detectedApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs detectedApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba3a4fc911e2da9241fb2c02f1bf0bbce85ebac6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1d0464bf43e3972fed05286825e8ae021649746
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938657"
 ---
 # <a name="list-detectedapps"></a>Auflisten von „detectedApp“
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

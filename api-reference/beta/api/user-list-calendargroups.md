@@ -2,12 +2,14 @@
 title: calendarGroups auflisten
 description: Dient zum Abrufen der Kalendergruppen des Benutzers.
 localization_priority: Normal
-ms.openlocfilehash: 75b3465bb2aac69ee6a8f38678734f6c6dd3473b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 646a2566c11778282e5473258f867143b85a88ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825799"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925392"
 ---
 # <a name="list-calendargroups"></a>calendarGroups auflisten
 

@@ -3,12 +3,13 @@ title: EnterpriseCodeSigningCertificate aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EnterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5133f5dffa98834ce44849c6b18c73cc19732756
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955114"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -52,9 +53,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |content|Binär|Die Enterprise-Code für Windows-Signaturzertifikat im Format Rohdaten.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Status der bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|String|Der Wert der Betreff für das Zertifikat.|
-|issuerName|String|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|String|Der Wert der Aussteller für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Das Datum-Uhrzeit des Zertifikats CodeSigning, wenn diese hochgeladen wird.|
 

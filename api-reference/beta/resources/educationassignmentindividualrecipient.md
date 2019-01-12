@@ -2,12 +2,14 @@
 title: Ressourcentyp educationAssignmentIndividualRecipient
 description: 'Innerhalb der assignment.assignTo-Eigenschaft verwendet. Bei Festlegung auf einzelne Empfängerliste, werden in der Klasse markierte Studenten '
 localization_priority: Normal
-ms.openlocfilehash: fab79d7836a7562c0518197600392021a71c45c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: 7a8f9c19b4488caee1241184b51e8ee77501b7d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932938"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>Ressourcentyp educationAssignmentIndividualRecipient
 

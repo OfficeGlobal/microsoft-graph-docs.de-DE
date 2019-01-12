@@ -3,12 +3,13 @@ title: Erstellen von androidWorkProfileGeneralDeviceConfiguration
 description: Erstellen eines neuen AndroidWorkProfileGeneralDeviceConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7e44d3cbac87346034cb9c6c83054f4a048182a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53cd8f310cfa50aafde7b8be3afae7fae2758171
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925357"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Erstellen von androidWorkProfileGeneralDeviceConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

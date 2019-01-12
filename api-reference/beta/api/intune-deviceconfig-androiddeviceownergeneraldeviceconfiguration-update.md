@@ -3,12 +3,13 @@ title: AndroidDeviceOwnerGeneralDeviceConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidDeviceOwnerGeneralDeviceConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb4ce71c059f9fdcfa971237b46a28473059e742
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cc1bad08ef6e3a522176a87550361c7e293f7593
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945314"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration aktualisieren
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

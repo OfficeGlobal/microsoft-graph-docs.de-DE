@@ -3,12 +3,13 @@ title: EducationClass entfernen
 description: Löscht eine Klasse aus einer Schule.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: ac626310fb61fd0d0a73e86d5c52ad0b37e1dd32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a1ae6e96358f0ea6c85feb8cfec50a68ba1a7ee4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934975"
 ---
 # <a name="remove-educationclass"></a>EducationClass entfernen
 
@@ -31,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 DELETE /education/schools/{id}/classes/{classId}/$ref
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

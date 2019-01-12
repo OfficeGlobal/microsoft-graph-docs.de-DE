@@ -3,12 +3,13 @@ title: ResultantAppStateDetail Enum-Typ
 description: Enum angibt, Weitere Einzelheiten zu warum eine Anwendung für einen bestimmten hat Installationsstatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5c5eb8c921be7c14a45c979a57ffcaa0704d9b4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cf665c81219e501ea96d6fcf213214ec8a7327d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928038"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>ResultantAppStateDetail Enum-Typ
 

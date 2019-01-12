@@ -3,12 +3,13 @@ title: Liste androidForWorkGmailEasConfigurations
 description: Listeneigenschaften und Beziehungen der AndroidForWorkGmailEasConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b74ab029c66ccf3a55df6d6d5f002d434998096
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e3908e62f3f01f1f558d1f887682e42bf23e16fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945237"
 ---
 # <a name="list-androidforworkgmaileasconfigurations"></a>Liste androidForWorkGmailEasConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

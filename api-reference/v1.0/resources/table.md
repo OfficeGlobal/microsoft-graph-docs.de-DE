@@ -3,12 +3,13 @@ title: Table-Ressourcentyp
 description: Stellt eine Excel-Tabelle dar.
 author: lumine2008
 localization_priority: Priority
-ms.openlocfilehash: ad5bb13960dba1308553b8162c13795e477adce6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 97755052a1f0e5cf91fb45987870b498832ee735
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967854"
 ---
 # <a name="table-resource-type"></a>Table-Ressourcentyp
 
@@ -44,11 +45,11 @@ Stellt eine Excel-Tabelle dar.
 |showHeaders|boolean|Gibt an, ob die Kopfzeile sichtbar oder nicht sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.|
 |showTotals|boolean|Gibt an, ob die Ergebniszeile sichtbar ist oder nicht. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.|
 |style|string|Konstanter Wert, der das Tabellenformat darstellt. Die möglichen Werte sind: TableStyleLight1 bis TableStyleLight21 TableStyleMedium1 bis TableStyleMedium28 TableStyleStyleDark1 bis TableStyleStyleDark11. Eine benutzerdefinierte benutzerdefinierte Formatvorlage in der Arbeitsmappe vorhanden kann auch angegeben werden.|
-|highlightFirstColumn|Boolean|Gibt an, ob die erste Spalte spezielle Formatierung enthält.   |
-|highlightLastColumn|Boolean|Gibt an, ob die letzte Spalte spezielle Formatierung enthält. |
-|showBandedColumns|Boolean|Gibt an, ob die Spalten gebänderte Formatierung aufweisen, wobei ungerade Spalten anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.   |
-|showBandedRows|Boolean|Gibt an, ob die Zeilen gebänderte Formatierung aufweisen, wobei ungerade Zeilen anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.    |
-|showFilterButton|Boolean|Gibt an, ob die Filterschaltflächen am oberen Rand jedes Spaltenheaders sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.   |
+|highlightFirstColumn|Boolescher Wert|Gibt an, ob die erste Spalte spezielle Formatierung enthält.   |
+|highlightLastColumn|Boolescher Wert|Gibt an, ob die letzte Spalte spezielle Formatierung enthält. |
+|showBandedColumns|Boolescher Wert|Gibt an, ob die Spalten gebänderte Formatierung aufweisen, wobei ungerade Spalten anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.   |
+|showBandedRows|Boolescher Wert|Gibt an, ob die Zeilen gebänderte Formatierung aufweisen, wobei ungerade Zeilen anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.    |
+|showFilterButton|Boolescher Wert|Gibt an, ob die Filterschaltflächen am oberen Rand jedes Spaltenheaders sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.   |
 |legacyId|String|In älteren Excel-Clients verwendete Legacy-ID. Der Wert des Bezeichners bleibt unverändert, auch wenn die Tabelle umbenannt wird. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.   |
 
 ## <a name="relationships"></a>Beziehungen

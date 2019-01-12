@@ -2,12 +2,14 @@
 title: Abrufen von bookingService
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 7a309e076f480d051a1da47265dedaf4c32207d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 6a914a20fd002bd2d3a042239a17366d328878a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819691"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928388"
 ---
 # <a name="get-bookingservice"></a>Abrufen von bookingService
 

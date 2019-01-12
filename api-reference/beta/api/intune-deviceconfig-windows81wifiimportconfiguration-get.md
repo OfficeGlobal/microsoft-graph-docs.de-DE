@@ -3,12 +3,13 @@ title: Abrufen von windows81WifiImportConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des windows81WifiImportConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 66f8f3b92291d6ae5316541b75db135b3cef95db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4222815e19e560fde01bf8c666df09cc5be9dfe8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950123"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>Abrufen von windows81WifiImportConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

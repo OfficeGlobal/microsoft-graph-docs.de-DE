@@ -3,12 +3,13 @@ title: roleDefinition löschen
 description: Löscht Objekte des Typs roleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7722a5a9c6b92636b79f0891f224aa00cd24ee5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fac2258414bc4ef5e9782ba017d2968d2ac5feb7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932039"
 ---
 # <a name="delete-roledefinition"></a>roleDefinition löschen
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

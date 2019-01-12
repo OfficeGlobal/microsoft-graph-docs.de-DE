@@ -2,12 +2,14 @@
 title: plannerTask abrufen
 description: Dient zum Abrufen der Eigenschaften und Beziehungen eines **plannertask**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 15e4cea3c8f1e98a85defa10055f42ce54bb59c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: fde4f1a3ce543c805de0997f5b4b10ebd14ba6ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820839"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960266"
 ---
 # <a name="get-plannertask"></a>plannerTask abrufen
 
