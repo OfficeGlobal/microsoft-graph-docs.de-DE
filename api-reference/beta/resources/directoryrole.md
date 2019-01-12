@@ -1,12 +1,15 @@
 ---
 title: Ressourcentyp directoryRole
 description: Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter Zuweisen von Administratorrollen in Azure Active Directory. Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Um anderen verfügbaren Verzeichnis-Rollen aktivieren möchten, senden Sie eine POST-Anforderung mit der ID der DirectoryRoleTemplate, auf dem die Rolle Directory basiert. Erbt von directoryObject.
-ms.openlocfilehash: c3def9f75b62db1f07c648fed18f57f92f5c7f77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e6753369be070ab04419cab0c870aec7e96b1fb2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27060180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927744"
 ---
 # <a name="directoryrole-resource-type"></a>Ressourcentyp directoryRole
 
@@ -35,8 +38,8 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
-|displayName|String|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
+|description|Zeichenfolge|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
+|displayName|Zeichenfolge|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
 |id|Zeichenfolge|Die eindeutige ID für die Verzeichnisrolle. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu, schreibgeschützt.|
 |roleTemplateId|String| Die **id** der [directoryRoleTemplate](directoryroletemplate.md), auf der diese Rolle basiert. Die Eigenschaft muss angegeben werden, wenn eine Verzeichnisrolle mit einer POST-Operation in einem Mandanten aktiviert wird. Nach der Aktivierung der Verzeichnisrolle ist die Eigenschaft schreibgeschützt. |
 

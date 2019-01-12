@@ -2,12 +2,14 @@
 title: Mitglied hinzufügen
 description: Verwenden Sie diese API, um ein Mitglied einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-aktivierten Sicherheitsgruppe durch die **member**-Navigationseigenschaft hinzuzufügen.
 localization_priority: Priority
-ms.openlocfilehash: 89f4bd5060e167e1920e5f64d70127c1fed41ad6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: bddb4176fc94426ef527f7f7d15980611919cc1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867522"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932515"
 ---
 # <a name="add-member"></a>Mitglied hinzufügen
 Verwenden Sie diese API, um ein Mitglied einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-aktivierten Sicherheitsgruppe durch die **member**-Navigationseigenschaft hinzuzufügen.

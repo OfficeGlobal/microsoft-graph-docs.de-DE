@@ -3,12 +3,13 @@ title: resourceOperation aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d65fb9394ba1bf33ce657941f2807d3dda44a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851793"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919064"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation aktualisieren
 

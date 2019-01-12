@@ -3,12 +3,13 @@ title: Aktualisieren von „reportRoot“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs reportRoot.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 358bf315dbb8a43c8790a316f2e8c61896a3be6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a001a021c90e2971ffd30d25b9037a20bb5592c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913730"
 ---
 # <a name="update-reportroot"></a>Aktualisieren von „reportRoot“
 
@@ -38,7 +39,7 @@ PATCH /reports
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

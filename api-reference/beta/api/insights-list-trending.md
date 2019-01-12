@@ -3,12 +3,13 @@ title: Liste Trend
 description: Berechnete Insight, der die Liste der Elemente, um den Benutzer Trend zurückgibt.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 86b9daf96529d50d8767f234c3b1a6d9526eaac4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: bc0dcd70ef8fb527096e8142f188f9c2cbf02193
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926218"
 ---
 # <a name="list-trending"></a>Liste Trend
 
@@ -47,7 +48,7 @@ Finden Sie die verfügbaren Containertypen und Typen, die Sie nach [ResourceVisu
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       |  Wert|
+| Header       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Annehmen  | application/json|

@@ -3,12 +3,13 @@ title: GetScopesForUser-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b0cd9a14602ce090de5d79720415a1e52d3b3145
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 55d39ed67dc3aafff69a4e826d59c9933023788b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822421"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930789"
 ---
 # <a name="getscopesforuser-function"></a>GetScopesForUser-Funktion
 

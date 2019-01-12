@@ -3,12 +3,13 @@ title: managedEBook-Ressourcentyp
 description: Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 61a4098850f9b3b4a6b82f2fcee5d1ce89b0696d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2da2254b5d86a16d3a0e60fae0c0ea4215d54a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830254"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917860"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook-Ressourcentyp
 

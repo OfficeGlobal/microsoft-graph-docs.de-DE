@@ -2,12 +2,14 @@
 title: plannerUser-Ressourcentyp
 description: 'Die Ressource **PlannerUser** bietet Zugriff auf Ressourcen Planner für einen Benutzer. '
 localization_priority: Normal
-ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1b240092e7476884399f88fad61551763f33fe69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820804"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928283"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser-Ressourcentyp
 
@@ -29,7 +31,7 @@ Die Ressource **PlannerUser** bietet Zugriff auf Ressourcen Planner für einen [
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. Bezeichner des der plannerUser|
+|id|Zeichenfolge| Schreibgeschützt. Bezeichner des der plannerUser|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| Eine Auflistung mit der Verweise auf die Pläne, die der Benutzer als Favoriten gekennzeichnet hat.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| Eine Auflistung mit Verweisen auf die Pläne, die zuletzt vom Benutzer in apps angezeigt wurden, die zuletzt verwendete Pläne zu unterstützen.|
 

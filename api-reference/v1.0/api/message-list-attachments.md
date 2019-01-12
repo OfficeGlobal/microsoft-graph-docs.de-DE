@@ -3,12 +3,13 @@ title: Anlagen auflisten
 description: Mit dieser API können Sie eine Liste der einer Nachricht angefügten Objekte des Typs attachment abrufen.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b4f86871e31dcaaf9303d0cbd19e7d178137a9a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2e37e863d4b050a07b756b91f1e98a4349239154
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867025"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918121"
 ---
 # <a name="list-attachments"></a>Anlagen auflisten
 

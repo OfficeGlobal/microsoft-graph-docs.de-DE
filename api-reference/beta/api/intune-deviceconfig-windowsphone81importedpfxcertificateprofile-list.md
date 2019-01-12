@@ -3,12 +3,13 @@ title: Liste windowsPhone81ImportedPFXCertificateProfiles
 description: Listeneigenschaften und Beziehungen der windowsPhone81ImportedPFXCertificateProfile-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 80dd829074a93afec445f26347f730c30c34c858
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9f2348e70d88dbe59d8e6a9e968d60a81e9bd157
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929879"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>Liste windowsPhone81ImportedPFXCertificateProfiles
 

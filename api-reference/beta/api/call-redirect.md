@@ -3,12 +3,13 @@ title: 'Rufen Sie: Umleiten'
 description: Umleiten eines eingehenden Anrufs an.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809471"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921724"
 ---
 # <a name="call-redirect"></a>Rufen Sie: Umleiten
 
@@ -43,10 +44,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |Ziele|[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung|Die Teilnehmer Ziel des Vorgangs umleiten.|
-|targetDisposition|String|Der Wert ist:`default`|
+|targetDisposition|Zeichenfolge|Der Wert ist:`default`|
 |timeout|Int32|Das Zeitlimit in Sekunden für den Umleitungsvorgang.|
-|maskCallee|Boolean|Gibt an, ob der aufgerufene maskieren.|
-|maskCaller|Boolean|Gibt an, ob den Anrufer maskieren.|
+|maskCallee|Boolescher Wert|Gibt an, ob der aufgerufene maskieren.|
+|maskCaller|Boolescher Wert|Gibt an, ob den Anrufer maskieren.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode

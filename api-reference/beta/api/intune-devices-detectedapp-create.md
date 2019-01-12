@@ -3,12 +3,13 @@ title: Erstellen von „detectedApp“
 description: Diese Methode erstellt ein neues Objekt des Typs detectedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da35940ba44790bdaec19a6c841bb5d90312b5f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2e36d04b013a091bf4d2e7306a7da0700c870831
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856315"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914990"
 ---
 # <a name="create-detectedapp"></a>Erstellen von „detectedApp“
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

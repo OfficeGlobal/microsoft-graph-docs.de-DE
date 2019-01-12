@@ -3,12 +3,13 @@ title: Abrufen von deviceManagementScriptDeviceState
 description: Lesen Sie Eigenschaften und Beziehungen des DeviceManagementScriptDeviceState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb82aec0d1e1a93f66986a8c2673ad92b7791d01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d79479c956bb28705c778f78f090a7c1aa069c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933302"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>Abrufen von deviceManagementScriptDeviceState
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

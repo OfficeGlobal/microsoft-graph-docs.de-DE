@@ -3,12 +3,13 @@ title: Abrufen von „managedAppStatusRaw“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppStatusRaw.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6fb4be4c356d50f41c9e0f5c933b6e41922afe0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9de49cf70de0e75036d10a17f99d8bc68934a563
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920485"
 ---
 # <a name="get-managedappstatusraw"></a>Abrufen von „managedAppStatusRaw“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

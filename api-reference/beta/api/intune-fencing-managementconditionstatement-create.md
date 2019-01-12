@@ -3,12 +3,13 @@ title: Erstellen von managementConditionStatement
 description: Erstellen eines neuen ManagementConditionStatement-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da085e2aa384e2ee3d4eedd611cfe14945b8fe1d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c884f1b7239dc2f73438c007202ab783a5bdf1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919155"
 ---
 # <a name="create-managementconditionstatement"></a>Erstellen von managementConditionStatement
 
@@ -37,7 +38,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,13 +50,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die Verwaltung Condition-Anweisung. System generierten Wert, die beim Erstellen zugewiesen.|
-|displayName|String|Der Administrator definierter Name der Bedingung-Anweisung Management.|
-|description|String|Der Administrator definiert die Beschreibung der Management Condition-Anweisung.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Verwaltung Condition-Anweisung. System generierten Wert, die beim Erstellen zugewiesen.|
+|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung-Anweisung Management.|
+|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Management Condition-Anweisung.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Management Condition-Anweisung erstellt wurde. Generierte Service-Seite.|
 |modifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung die Management Condition-Anweisung. Aktualisierte Service-Seite.|
 |Ausdruck|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Die Verwaltung Bedingungsausdruck-Anweisung verwendet, um ausgewertet werden soll, wenn eine Management Anweisung Bedingung wurde aktiviert/deaktiviert.|
-|eTag|String|ETag der Management Condition-Anweisung. Aktualisierte Service-Seite.|
+|eTag|Zeichenfolge|ETag der Management Condition-Anweisung. Aktualisierte Service-Seite.|
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Management Condition-Anweisung.
 Dieser Wert ergibt Suche die Management Bedingungen verknüpft ist, für die Verwaltung von Bedingung-Anweisung die Warteschlange gestellt und Schnittpunkt der Plattformen. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 

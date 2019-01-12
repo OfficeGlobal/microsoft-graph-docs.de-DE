@@ -3,12 +3,13 @@ title: Ressourcentyp hardwareInformation
 description: Hardwareinformationen für ein bestimmtes Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2684f1ff7e7a6407942ac61fae7d45ead16820d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0665152e3cc483f2303f458b79c891658651d91f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930313"
 ---
 # <a name="hardwareinformation-resource-type"></a>Ressourcentyp hardwareInformation
 
@@ -20,28 +21,28 @@ Hardwareinformationen für ein bestimmtes Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|serialNumber|String|Seriennummer.|
+|serialNumber|Zeichenfolge|Seriennummer.|
 |totalStorageSpace|Int64|Gesamtmenge des Speicherplatzes des Geräts.|
 |freeStorageSpace|Int64|Freier Speicherplatz des Geräts.|
-|imei|String|IMEI|
-|meid|String|MEID|
-|manufacturer|String|Hersteller des Geräts.
+|imei|Zeichenfolge|IMEI|
+|meid|Zeichenfolge|MEID|
+|manufacturer|Zeichenfolge|Hersteller des Geräts.
 |
-|model|String|Modell des Geräts.
+|model|Zeichenfolge|Modell des Geräts.
 |
-|PhoneNumber|String|Telefonnummer des Geräts.
+|PhoneNumber|Zeichenfolge|Telefonnummer des Geräts.
 |
-|subscriberCarrier|String|Abonnenten Netzbetreiber des Geräts|
-|cellularTechnology|String|Mobilfunk-Technologie des Geräts|
-|wifiMac|String|WLAN-MAC-Adresse des Geräts|
-|operatingSystemLanguage|String|Die Sprache des Betriebssystems des Geräts|
-|isSupervised|Boolean|Überwachten Modus des Geräts|
-|isEncrypted|Boolean|Status der Verschlüsselung des Geräts|
-|isSharedDevice|Boolean|Freigegebene iPad|
+|subscriberCarrier|Zeichenfolge|Abonnenten Netzbetreiber des Geräts|
+|cellularTechnology|Zeichenfolge|Mobilfunk-Technologie des Geräts|
+|wifiMac|Zeichenfolge|WLAN-MAC-Adresse des Geräts|
+|operatingSystemLanguage|Zeichenfolge|Die Sprache des Betriebssystems des Geräts|
+|isSupervised|Boolescher Wert|Überwachten Modus des Geräts|
+|isEncrypted|Boolescher Wert|Status der Verschlüsselung des Geräts|
+|isSharedDevice|Boolescher Wert|Freigegebene iPad|
 |sharedDeviceCachedUsers|[SharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) -Auflistung|Alle Benutzer auf dem freigegebenen Apple-Gerät|
-|tpmSpecificationVersion|String|Zeichenfolge, die die Spezifikation, Version angibt.|
-|operatingSystemEdition|String|Zeichenfolge, die die Betriebssystem Edition angibt.|
-|deviceFullQualifiedDomainName|String|Gibt den vollqualifizierten Domänennamen des Geräts (falls vorhanden). Wenn das Gerät nicht Mitglied einer Domäne ist, wird eine leere Zeichenfolge zurückgegeben. |
+|tpmSpecificationVersion|Zeichenfolge|Zeichenfolge, die die Spezifikation, Version angibt.|
+|operatingSystemEdition|Zeichenfolge|Zeichenfolge, die die Betriebssystem Edition angibt.|
+|deviceFullQualifiedDomainName|Zeichenfolge|Gibt den vollqualifizierten Domänennamen des Geräts (falls vorhanden). Wenn das Gerät nicht Mitglied einer Domäne ist, wird eine leere Zeichenfolge zurückgegeben. |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Virtualisierung-basierte Hardware Anforderung Sicherheitsstatus. Mögliche Werte sind: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM` und `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Virtualisierung-basierte Sicherheitsstatus. . Mögliche Werte sind: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements` und `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Lokales System Autorität (LSA) Anmeldeinformationen Guard Status. . Mögliche Werte sind: `running`, `rebootRequired`, `notLicensed`, `notConfigured` und `virtualizationBasedSecurityNotRunning`.|

@@ -3,12 +3,13 @@ title: Ressourcentyp vpnTrafficRule
 description: VPN-Datenverkehr Regeldefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b7a4a1841850c0276e50068b9e9c7d1ce69e765
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ebabdb491a9b41efdd6d3abb87fd41a0c803df3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840222"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923243"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Ressourcentyp vpnTrafficRule
 
@@ -20,7 +21,7 @@ VPN-Datenverkehr Regeldefinition.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|String|Name.|
+|name|Zeichenfolge|Name.|
 |Protokolle|Int32|Protokolle (0 – 255). Gültige Werte zwischen 0 und 255|
 |localPortRanges|[NumberRange](../resources/intune-deviceconfig-numberrange.md) -Auflistung|Lokaler Portbereich kann nur bei Protokoll entweder TCP oder UDP (6 oder 17) festgelegt werden. Diese Collection darf maximal 500 Elemente enthalten.|
 |remotePortRanges|[NumberRange](../resources/intune-deviceconfig-numberrange.md) -Auflistung|Remote Portbereich kann nur bei Protokoll entweder TCP oder UDP (6 oder 17) festgelegt werden. Diese Collection darf maximal 500 Elemente enthalten.|
@@ -29,7 +30,7 @@ VPN-Datenverkehr Regeldefinition.
 |appId|Zeichenfolge|App-Bezeichner, wenn diese Regel Datenverkehr durch eine app ausgelöst wird.|
 |der appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App-Typ, wenn diese Regel Datenverkehr durch eine app ausgelöst wird. Mögliche Werte sind: `none`, `desktop` und `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Wenn gibt an, ob aktivieren Split-tunneling auf diese Route ausgelöst, app. Mögliche Werte sind: `none`, `splitTunnel` und `forceTunnel`.|
-|Ansprüche|String|Ansprüche im Zusammenhang mit dieser Regel Datenverkehr.|
+|Ansprüche|Zeichenfolge|Ansprüche im Zusammenhang mit dieser Regel Datenverkehr.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

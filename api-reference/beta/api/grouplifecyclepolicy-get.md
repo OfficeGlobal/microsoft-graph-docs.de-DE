@@ -3,12 +3,13 @@ title: Abrufen von groupLifecyclePolicy
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines groupLifecyclePolicies-Objekts abrufen.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: a7f22c75c9ebfb53c967422712689dbfc4f25031
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: ea7833e9129d31c6c01963755e282a8cc34b65b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879296"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921038"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Abrufen von groupLifecyclePolicy
 

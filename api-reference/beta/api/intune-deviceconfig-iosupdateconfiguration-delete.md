@@ -3,12 +3,13 @@ title: iosUpdateConfiguration löschen
 description: Löscht ein iosUpdateConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22a3141e9444e933586513f722f6f2c390a02f93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d40e95b1e012da3c16373d5a10a991e53d14ef48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817969"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933540"
 ---
 # <a name="delete-iosupdateconfiguration"></a>iosUpdateConfiguration löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

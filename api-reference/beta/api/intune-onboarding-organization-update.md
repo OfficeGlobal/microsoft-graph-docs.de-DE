@@ -3,12 +3,13 @@ title: Organisation aktualisieren
 description: Aktualisieren der Eigenschaften eines organization-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 67ce9fd0181c3f60f3615a29313e2da642e697ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4adff643537c8497fe4bf9c0a5ee5633e80df1df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925343"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
@@ -48,7 +49,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Die GUID für das Objekt.|
+|id|Zeichenfolge|Die GUID für das Objekt.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Connector-Einstellung Zertifikat.|
 

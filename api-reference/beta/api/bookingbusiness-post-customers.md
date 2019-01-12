@@ -2,12 +2,14 @@
 title: Erstellen von bookingCustomer
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: ea534616c35f2ca43c7fb5b0b5169cc935aef1d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 555723fdb4eb7bacb2c876ed3fd87eb539a5239d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922256"
 ---
 # <a name="create-bookingcustomer"></a>Erstellen von bookingCustomer
 

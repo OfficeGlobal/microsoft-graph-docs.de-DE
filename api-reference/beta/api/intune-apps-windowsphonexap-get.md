@@ -3,12 +3,13 @@ title: Abrufen von windowsPhoneXAP
 description: Lesen Sie Eigenschaften und Beziehungen des WindowsPhoneXAP-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef9085128b5cdb0c10738625cea9765266a226fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 07e95aec49a9dcbcefabc3a0b004247f0256cab9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920212"
 ---
 # <a name="get-windowsphonexap"></a>Abrufen von windowsPhoneXAP
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: Erstellen von dataSharingConsent
 description: Erstellen eines neuen DataSharingConsent-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919078"
 ---
 # <a name="create-datasharingconsent"></a>Erstellen von dataSharingConsent
 
@@ -36,7 +37,7 @@ POST /deviceManagement/dataSharingConsents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,13 +49,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Die Daten sharing Zustimmung Id|
-|von Ihnen eingegebene Dienstanzeigename|String|Der Anzeigename der Dienst Workflow|
-|termsUrl|String|Die TermsUrl für die Datenfreigabe Zustimmung|
-|erteilt|Boolean|Den gewährten Status für die Datenfreigabe Zustimmung|
+|id|Zeichenfolge|Die Daten sharing Zustimmung Id|
+|von Ihnen eingegebene Dienstanzeigename|Zeichenfolge|Der Anzeigename der Dienst Workflow|
+|termsUrl|Zeichenfolge|Die TermsUrl für die Datenfreigabe Zustimmung|
+|erteilt|Boolescher Wert|Den gewährten Status für die Datenfreigabe Zustimmung|
 |grantDateTime|DateTimeOffset|Die Zeit Zustimmung wurde für dieses Konto erteilt.|
-|grantedByUpn|String|Den Upn des Benutzers, der für dieses Konto Zustimmung eingeholt|
-|grantedByUserId|String|Die Benutzer-ID des Benutzers, der für dieses Konto Zustimmung eingeholt|
+|grantedByUpn|Zeichenfolge|Den Upn des Benutzers, der für dieses Konto Zustimmung eingeholt|
+|grantedByUserId|Zeichenfolge|Die Benutzer-ID des Benutzers, der für dieses Konto Zustimmung eingeholt|
 
 
 

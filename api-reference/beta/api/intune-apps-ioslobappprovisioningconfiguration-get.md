@@ -3,12 +3,13 @@ title: Abrufen von iosLobAppProvisioningConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des IosLobAppProvisioningConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 942818ef47c6fecabb2dc4cb8870fda8a3e289f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f92ae8f7054e9a7be87fd7891d2468f345f389a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832711"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914570"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Abrufen von iosLobAppProvisioningConfiguration
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

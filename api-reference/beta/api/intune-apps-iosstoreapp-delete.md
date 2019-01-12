@@ -3,12 +3,13 @@ title: iosStoreApp löschen
 description: Löscht ein iosStoreApp-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 25609e0799f2e46b73c14e7ced0967866fa19f22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2bc4c4da95cf62cbf748de69c29a6cf8504cb63b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812894"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914612"
 ---
 # <a name="delete-iosstoreapp"></a>iosStoreApp löschen
 

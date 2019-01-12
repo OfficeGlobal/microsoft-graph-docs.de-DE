@@ -3,12 +3,13 @@ title: windowsInformationProtectionPolicy abrufen
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs windowsInformationProtectionPolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4fec7b07cb2044536b510394a96b9710e4ca2c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 93d2fb33f4afb3e339ed899802dd412bdaa1fdbb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915949"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>windowsInformationProtectionPolicy abrufen
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

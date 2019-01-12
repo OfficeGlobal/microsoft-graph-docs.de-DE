@@ -2,12 +2,13 @@
 title: Ressourcentyp Abonnement
 description: 'Ein Abonnement ermöglicht eine Client-app zum Empfangen von Benachrichtigungen zu Änderungen an Daten in Microsoft Graph. Abonnements werden derzeit für die folgenden Ressourcen aktiviert:'
 localization_priority: Priority
-ms.openlocfilehash: b70daca8eb0f7c303173945b3cacf2cf53af56ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 7837524f2ce20a24154b84a82537ec6a4149bfe9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917818"
 ---
 # <a name="subscription-resource-type"></a>Ressourcentyp Abonnement
 
@@ -64,7 +65,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | changeType | string | Erforderlich. Gibt den Typ der Änderung in der abonnierten Ressource an, die eine Benachrichtigung auslöst. Unterstützte Werte sind: `created`, `updated`, `deleted`. Es können mehrere Werte mithilfe einer durch Trennzeichen getrennten Liste zusammen verwendet werden.<br><br>Hinweis: Laufwerk Root Element Benachrichtigungen unterstützen nur die `updated` ChangeType. Unterstützung von Benutzer- und Benachrichtigungen `updated` und `deleted` ChangeType.|
 | notificationUrl | string | Erforderlich. Die URL des Endpunkts, die Benachrichtigungen erhalten werden. Diese URL muss nutzen Sie die HTTPS Protokoll. |
 | resource | string | Erforderlich. Gibt die Ressource, die für Änderungen überwacht werden. Die base-URL nicht einschließen (`https://graph.microsoft.com/v1.0/`). |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Erforderlich. Gibt Datum und Uhrzeit für das Ablaufen des Webhook-Abonnements an. Die Zeit wird in UTC angegeben und kann eine Dauer aus der Erstellung des Abonnements sein, die von der abonnierten Ressource abweicht.  In der folgenden Tabelle finden Sie die maximale Dauer unterstützter Abonnements. |
+| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Erforderlich.  Gibt Datum und Uhrzeit für das Ablaufen des Webhook-Abonnements an. Die Zeit wird in UTC angegeben und kann eine Dauer aus der Erstellung des Abonnements sein, die von der abonnierten Ressource abweicht.  In der folgenden Tabelle finden Sie die maximale Dauer unterstützter Abonnements. |
 | clientState | string | Optional. Gibt den Wert der `clientState`-Eigenschaft an, die in jeder Benachrichtigung vom Dienst gesendet wird. Die Höchstlänge beträgt 128 Zeichen. Der Client kann prüfen, ob die Benachrichtigung vom Dienst stammt, indem er den Wert der mit dem Abonnement gesendeten `clientState`-Eigenschaft mit dem Wert der mit jeder Benachrichtigung empfangenen `clientState`-Eigenschaft vergleicht. |
 | id | string | Eindeutige ID für das Abonnement. Schreibgeschützt. |
 | applicationId | string | Bezeichner der Anwendung verwendet, um das Abonnement zu erstellen. Schreibgeschützt. |

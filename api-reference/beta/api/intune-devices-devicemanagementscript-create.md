@@ -3,12 +3,13 @@ title: Erstellen von deviceManagementScript
 description: Erstellen eines neuen DeviceManagementScript-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ef3f9436de79b5839912a44915238267f0c26dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924027"
 ---
 # <a name="create-devicemanagementscript"></a>Erstellen von deviceManagementScript
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceManagementScripts
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,16 +49,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Gerät Management-Skript.|
-|displayName|String|Name des Skripts Management Gerät.|
-|description|String|Optionale Beschreibung für das Gerät Management-Skript.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät Management-Skript.|
+|displayName|Zeichenfolge|Name des Skripts Management Gerät.|
+|description|Zeichenfolge|Optionale Beschreibung für das Gerät Management-Skript.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Das Intervall für das Skript ausgeführt wird. Wenn nicht definiert das Skript einmal ausgeführt wird|
 |scriptContent|Binär|Der Skriptinhalt.|
 |createdDateTime|DateTimeOffset|Datum und Zeit für das Gerät Management-Skript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräts Management-Skripts.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts, den das Gerät Management-Skript in ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolean|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
-|fileName|String|Dateiname des Skripts.|
+|enforceSignatureCheck|Boolescher Wert|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
+|fileName|Zeichenfolge|Dateiname des Skripts.|
 
 
 

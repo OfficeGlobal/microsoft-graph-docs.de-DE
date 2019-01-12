@@ -2,12 +2,14 @@
 title: onenoteOperation abrufen
 description: 'Dient zum Abrufen des Status eines lange dauernden OneNote-Vorgangs. Dies gilt für Vorgänge, die den Header **Operation-Location** in der Antwort zurückgeben, z. B. `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   '
 localization_priority: Normal
-ms.openlocfilehash: b62f83266560f217d9569c6ee7ca39dd53198bb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 7974d12e0130fb61da6ee20afe35c3d0dd0e6575
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913779"
 ---
 # <a name="get-onenoteoperation"></a>onenoteOperation abrufen
 

@@ -2,12 +2,14 @@
 title: domainDnsRecord-Ressourcentyp
 description: Für jede Domäne im Mandanten möglicherweise erforderliche DNS-Einträge in die DNS-Zonendatei der Domäne hinzufügen, bevor die Domäne von Microsoft Online Services verwendet werden kann. Die Entität **DomainDnsRecord** wird verwendet, um diese DNS-Einträge vorhanden. Basis Entität für DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord und DomainDnsSrvRecord-Entitäten.
 localization_priority: Normal
-ms.openlocfilehash: 30c5f63f4ecac2c716f7884ccf82fd129125c8b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ce154f97757ad7900388986f9809007acb516c4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915627"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord-Ressourcentyp
 

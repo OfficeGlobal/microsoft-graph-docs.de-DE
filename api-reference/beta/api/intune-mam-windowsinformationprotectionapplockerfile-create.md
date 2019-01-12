@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLockerFile erstellen
 description: Erstellen eines neuen windowsInformationProtectionAppLockerFile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13b6d9a0e8fc6e23b2a5b7b85e257ef8d3ac9c34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c28ff97747f6132edbd89951c4fdfd6aa13941a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919253"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile erstellen
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -51,11 +52,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Der Anzeigename|
-|fileHash|String|SHA256-Hash der Datei|
+|displayName|Zeichenfolge|Der Anzeigename|
+|fileHash|Zeichenfolge|SHA256-Hash der Datei|
 |file|Binär|Datei als Bytearray|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

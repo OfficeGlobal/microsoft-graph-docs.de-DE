@@ -3,12 +3,13 @@ title: AdvancedThreatProtectionOnboardingStateSummary aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AdvancedThreatProtectionOnboardingStateSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 67d127ae3fb4545857dca2719fd2ae8417a400fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 423e1c9862d0e42e7d85efacd17cdd5f1733e0e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837069"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929494"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

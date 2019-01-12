@@ -3,12 +3,13 @@ title: settingStateDeviceSummary-Ressourcentyp
 description: Zusammenfassung des Zustands der Gerätekonformitätsrichtlinien und -konfigurations-Einstellung
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 09eb9059255d6236db6347961ad456f3ec3fd93a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e63cb2ccd37c88b187102b01a2a1251845ccd57b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860333"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919883"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary-Ressourcentyp
 

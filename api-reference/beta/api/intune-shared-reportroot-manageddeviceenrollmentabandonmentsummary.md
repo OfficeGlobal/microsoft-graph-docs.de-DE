@@ -3,12 +3,13 @@ title: ManagedDeviceEnrollmentAbandonmentSummary-Funktion
 description: Metadaten für die Registrierung Aufgabe Zusammenfassungsbericht
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c96df67827857e763d67329ce83a81d3bfa39720
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c4ea4a3cefe862193557928f8865d79c0716329
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930705"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>ManagedDeviceEnrollmentAbandonmentSummary-Funktion
 
@@ -49,7 +50,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |skip|Int32|Noch nicht dokumentiert|
-|Nach oben|Int32|Noch nicht dokumentiert|
+|top|Int32|Noch nicht dokumentiert|
 |filter|Zeichenfolge|Noch nicht dokumentiert|
 |skipToken|Zeichenfolge|Noch nicht dokumentiert|
 

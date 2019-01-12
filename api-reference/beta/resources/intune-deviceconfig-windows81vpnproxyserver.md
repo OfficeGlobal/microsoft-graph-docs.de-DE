@@ -3,12 +3,13 @@ title: Ressourcentyp windows81VpnProxyServer
 description: VPN-Proxy-Server.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b694206fd65bad46c9176a9fc01586f00237bdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d276ee7ac84bfe86c197025c05bf1a119b85e06c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917962"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Ressourcentyp windows81VpnProxyServer
 

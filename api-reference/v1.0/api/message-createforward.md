@@ -2,12 +2,14 @@
 title: 'message: createForward'
 description: Erstellen Sie einen Entwurf, um die angegebene Nachricht weiterzuleiten. Anschließend können Sie den Entwurf aktualisieren, um den Inhalt zum **Text** hinzuzufügen, oder andere Nachrichteneigenschaften ändern. Sie können den Entwurf auch einfach senden.
 localization_priority: Normal
-ms.openlocfilehash: 230fdfd4a1700e5bcbe2e1cb364de08d86c7be39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 484eb33c3cfe7dc9c1dc3ec896e45cff9ecce61d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888263"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921143"
 ---
 # <a name="message-createforward"></a>message: createForward
 

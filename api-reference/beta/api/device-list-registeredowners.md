@@ -2,12 +2,14 @@
 title: registeredOwners auflisten
 description: Dient zum Abrufen einer Liste von Benutzern, die registrierte Besitzer des Geräts sind. Ein registrierter Besitzer ist der Benutzer, dessen Gerät mit der Cloud verknüpft ist oder der sein persönliches Gerät registriert hat. Der registrierte Besitzer wird zum Zeitpunkt der Registrierung festgelegt. Derzeit kann jeweils nur ein Besitzer vorhanden sein.
 localization_priority: Normal
-ms.openlocfilehash: a0b4fac3ef36ac3137307186ab736b812e5f0274
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ebf6350de33d2dfa70f9c098cd618abf7d7df4ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833341"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931713"
 ---
 # <a name="list-registeredowners"></a>registeredOwners auflisten
 

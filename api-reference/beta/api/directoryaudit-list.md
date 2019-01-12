@@ -2,12 +2,14 @@
 title: Liste directoryAudits
 description: Enthält eine Liste der Überwachungsprotokolle von Azure Active Directory generiert. Durch verschiedene Dienste innerhalb von Azure Active Directory wie Benutzer, App, Gerät und Verwaltung von Gruppen, privilegierten Identity Management, Access Bewertungen, rechtlichen Hinweise, Schutz, Kennwortverwaltung (SSPR und Admin das Zurücksetzen von Kennwörtern generiert Überwachungsprotokolle enthält ), Self-service Gruppe Management usw....
 localization_priority: Priority
-ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921262"
 ---
 # <a name="list-directoryaudits"></a>Liste directoryAudits
 

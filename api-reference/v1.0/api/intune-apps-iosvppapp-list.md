@@ -3,12 +3,13 @@ title: Auflisten von „iosVppApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7742a542f97a9135cb15c7744badcd1284c62c98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 326056f8df3c92b39ae14ebc4d7a1922ed5e3e44
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929921"
 ---
 # <a name="list-iosvppapps"></a>Auflisten von „iosVppApp“
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

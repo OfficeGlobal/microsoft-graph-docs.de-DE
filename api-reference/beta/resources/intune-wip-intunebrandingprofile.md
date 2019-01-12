@@ -3,12 +3,13 @@ title: Ressourcentyp intuneBrandingProfile
 description: Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820608"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930264"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Ressourcentyp intuneBrandingProfile
 
@@ -29,10 +30,10 @@ Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unter
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Profil-Taste|
-|Profilname|String|Name des Profils|
-|profileDescription|String|Beschreibung des Profils|
-|isDefaultProfile|Boolean|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
+|id|Zeichenfolge|Profil-Taste|
+|Profilname|Zeichenfolge|Name des Profils|
+|profileDescription|Zeichenfolge|Beschreibung des Profils|
+|isDefaultProfile|Boolescher Wert|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
 |createdDateTime|DateTimeOffset|Wenn die BrandingProfile erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Wann die BrandingProfile zuletzt geändert wurde.|
 |displayName|String|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|

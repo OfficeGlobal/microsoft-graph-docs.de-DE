@@ -3,12 +3,13 @@ title: ChartSeries-Ressourcentyp
 description: Stellt eine Datenreihe in einem Diagramm dar.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6742c30eca55426e54290ae689bfabd8e14ce70f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5a299c7140c2032a57cd47fb0880ae34620a920b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842630"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915816"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries-Ressourcentyp
 

@@ -3,12 +3,13 @@ title: Erstellen von windowsPhone81TrustedRootCertificate
 description: Erstellen eines neuen windowsPhone81TrustedRootCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 55c36c25ab8eaa4895df21d0b7c60dc37179462d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 230bac046c5df3a5dd476c0324e4b25293d5d418
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931468"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>Erstellen von windowsPhone81TrustedRootCertificate
 

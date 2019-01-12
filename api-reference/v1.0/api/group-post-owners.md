@@ -2,12 +2,14 @@
 title: Gruppenbesitzer hinzufügen
 description: Fügt einen Benutzer zu den Besitzern der Gruppe hinzu. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind, die das Gruppenobjekt ändern können.
 localization_priority: Priority
-ms.openlocfilehash: 435d4a2c89abbeb49fc6dbe914cc378d832a8235
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: b3057a270aa2c503d96747e173cc54b13013ce6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825305"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917993"
 ---
 # <a name="add-group-owner"></a>Gruppenbesitzer hinzufügen
 Fügt einen Benutzer zu den Besitzern der Gruppe hinzu. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind, die das Gruppenobjekt ändern können.

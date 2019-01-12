@@ -3,12 +3,13 @@ title: Auflisten von „windowsMobileMSI“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsMobileMSI auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ce550886051158813cdf0e91eac3824dfeaedf63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 09438149ffc94f5c986d1f0e1f7ae791d7f7e865
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922585"
 ---
 # <a name="list-windowsmobilemsis"></a>Auflisten von „windowsMobileMSI“
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

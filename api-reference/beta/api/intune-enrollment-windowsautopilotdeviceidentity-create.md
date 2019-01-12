@@ -3,12 +3,13 @@ title: Erstellen von windowsAutopilotDeviceIdentity
 description: Erstellen eines neuen WindowsAutopilotDeviceIdentity-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6dbefc09b95aefdb652174cc9a1d1e4af45387cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 56d200bd53e94715ba102f6c96bba3e3b5dd892b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919099"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Erstellen von windowsAutopilotDeviceIdentity
 
@@ -37,7 +38,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -54,15 +55,15 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profil Zuordnung detaillierter Status des Geräts Autopilot Windows. Mögliche Werte sind: `none` und `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profil festlegen Uhrzeit des Geräts Autopilot Windows.|
 |orderIdentifier|String|Die Kennung des Geräts Autopilot Windows.|
-|purchaseOrderIdentifier|String|Kennung des Geräts Autopilot Windows Bestellung.|
+|purchaseOrderIdentifier|Zeichenfolge|Kennung des Geräts Autopilot Windows Bestellung.|
 |serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
 |productKey|String|Product Key des Windows AutoPilot-Geräts|
-|manufacturer|String|OEM-Hersteller des Geräts Autopilot Windows.|
-|model|String|Modellname des Geräts Autopilot Windows.|
+|manufacturer|Zeichenfolge|OEM-Hersteller des Geräts Autopilot Windows.|
+|model|Zeichenfolge|Modellname des Geräts Autopilot Windows.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Registrierung-Zustand des Geräts Autopilot Windows Intune. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune kontaktiert Datum Uhrzeit der letzten des Geräts Autopilot Windows.|
-|addressableUserName|String|Adressierbaren Benutzername.|
-|userPrincipalName|String|Benutzerprinzipalname.|
+|addressableUserName|Zeichenfolge|Adressierbaren Benutzername.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname.|
 
 
 

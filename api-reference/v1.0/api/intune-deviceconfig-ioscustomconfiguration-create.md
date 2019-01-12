@@ -3,12 +3,13 @@ title: Erstellen von „iosCustomConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs iosCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2acaa050303c6548ad7f3ace9c72b603b1db115e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe88fe842e61afc3792d9219c8f8e8622a5ca227
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928906"
 ---
 # <a name="create-ioscustomconfiguration"></a>Erstellen von „iosCustomConfiguration“
 
@@ -53,7 +54,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |payloadName|Zeichenfolge|Name, der dem Benutzer angezeigt wird|
-|payloadFileName|String|Name der Nutzlastdatei (*.mobileconfig | *.xml)|
+|payloadFileName|Zeichenfolge|Name der Nutzlastdatei (*.mobileconfig | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
 
 

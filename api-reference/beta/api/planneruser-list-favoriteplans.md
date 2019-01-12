@@ -2,12 +2,14 @@
 title: Liste favoritePlans
 description: Abrufen einer Liste der PlannerPlans, die von einem Benutzer als bevorzugten gekennzeichnet sind. Sie können einen Plan als bevorzugten markieren, durch die PlannerUser Ressource aktualisieren.
 author: TarkanSevilmis
-ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: planner
+ms.openlocfilehash: 15938b2ed3acc9a944d775dc19211745c52ca2fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324584"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931314"
 ---
 # <a name="list-favoriteplans"></a>Liste favoritePlans
 
@@ -36,7 +38,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
-| Autorisierung  | Bearer {code}. Erforderlich.|
+| Authorization  | Bearer {code}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
