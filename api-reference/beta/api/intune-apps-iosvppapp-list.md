@@ -3,30 +3,31 @@ title: Auflisten von „iosVppApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b04cc13d814a57d07cdd9f2f15b184c7135ddf5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 60a72ff837eb79b5a4a2585ad2bf7a2a466e8bc8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843239"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965572"
 ---
-# <a name="list-iosvppapps"></a><span data-ttu-id="ec2cb-103">Auflisten von „iosVppApp“</span><span class="sxs-lookup"><span data-stu-id="ec2cb-103">List iosVppApps</span></span>
+# <a name="list-iosvppapps"></a><span data-ttu-id="4ceee-103">Auflisten von „iosVppApp“</span><span class="sxs-lookup"><span data-stu-id="4ceee-103">List iosVppApps</span></span>
 
-> <span data-ttu-id="ec2cb-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ec2cb-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4ceee-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="4ceee-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4ceee-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4ceee-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ec2cb-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="4ceee-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="4ceee-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ec2cb-107">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [iosVppApp](../resources/intune-apps-iosvppapp.md) auf.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-107">List properties and relationships of the [iosVppApp](../resources/intune-apps-iosvppapp.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ec2cb-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="ec2cb-108">Prerequisites</span></span>
-<span data-ttu-id="ec2cb-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ec2cb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4ceee-107">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [iosVppApp](../resources/intune-apps-iosvppapp.md) auf.</span><span class="sxs-lookup"><span data-stu-id="4ceee-107">List properties and relationships of the [iosVppApp](../resources/intune-apps-iosvppapp.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4ceee-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="4ceee-108">Prerequisites</span></span>
+<span data-ttu-id="4ceee-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ceee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ec2cb-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ec2cb-111">Permission type</span></span>|<span data-ttu-id="ec2cb-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ec2cb-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4ceee-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="4ceee-111">Permission type</span></span>|<span data-ttu-id="4ceee-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="4ceee-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ec2cb-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ec2cb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ec2cb-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ec2cb-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="ec2cb-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ec2cb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ec2cb-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ec2cb-116">Not supported.</span></span>|
-|<span data-ttu-id="ec2cb-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ec2cb-117">Application</span></span>|<span data-ttu-id="ec2cb-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ec2cb-118">Not supported.</span></span>|
+|<span data-ttu-id="4ceee-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="4ceee-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4ceee-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="4ceee-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="4ceee-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="4ceee-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4ceee-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4ceee-116">Not supported.</span></span>|
+|<span data-ttu-id="4ceee-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="4ceee-117">Application</span></span>|<span data-ttu-id="4ceee-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4ceee-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ec2cb-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ec2cb-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4ceee-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4ceee-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ ms.locfileid: "27843239"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ec2cb-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ec2cb-120">Request headers</span></span>
-|<span data-ttu-id="ec2cb-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="ec2cb-121">Header</span></span>|<span data-ttu-id="ec2cb-122">Wert</span><span class="sxs-lookup"><span data-stu-id="ec2cb-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4ceee-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4ceee-120">Request headers</span></span>
+|<span data-ttu-id="4ceee-121">Header</span><span class="sxs-lookup"><span data-stu-id="4ceee-121">Header</span></span>|<span data-ttu-id="4ceee-122">Wert</span><span class="sxs-lookup"><span data-stu-id="4ceee-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ec2cb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ec2cb-123">Authorization</span></span>|<span data-ttu-id="ec2cb-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="ec2cb-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ec2cb-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="ec2cb-125">Accept</span></span>|<span data-ttu-id="ec2cb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ec2cb-126">application/json</span></span>|
+|<span data-ttu-id="4ceee-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ceee-123">Authorization</span></span>|<span data-ttu-id="4ceee-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="4ceee-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4ceee-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="4ceee-125">Accept</span></span>|<span data-ttu-id="4ceee-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4ceee-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ec2cb-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ec2cb-127">Request body</span></span>
-<span data-ttu-id="ec2cb-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4ceee-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4ceee-127">Request body</span></span>
+<span data-ttu-id="4ceee-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="4ceee-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ec2cb-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="ec2cb-129">Response</span></span>
-<span data-ttu-id="ec2cb-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [iosVppApp](../resources/intune-apps-iosvppapp.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-130">If successful, this method returns a `200 OK` response code and a collection of [iosVppApp](../resources/intune-apps-iosvppapp.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4ceee-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="4ceee-129">Response</span></span>
+<span data-ttu-id="4ceee-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [iosVppApp](../resources/intune-apps-iosvppapp.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="4ceee-130">If successful, this method returns a `200 OK` response code and a collection of [iosVppApp](../resources/intune-apps-iosvppapp.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ec2cb-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ec2cb-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ec2cb-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ec2cb-132">Request</span></span>
-<span data-ttu-id="ec2cb-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4ceee-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4ceee-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="4ceee-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4ceee-132">Request</span></span>
+<span data-ttu-id="4ceee-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="4ceee-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="ec2cb-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="ec2cb-134">Response</span></span>
-<span data-ttu-id="ec2cb-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ec2cb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4ceee-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="4ceee-134">Response</span></span>
+<span data-ttu-id="4ceee-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="4ceee-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

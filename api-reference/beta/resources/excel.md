@@ -2,54 +2,56 @@
 title: Arbeiten mit Excel in Microsoft Graph
 description: 'Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive, SharePoint oder anderen unterstützten Speicherplattformen gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die Laufwerks-API auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:'
 localization_priority: Normal
-ms.openlocfilehash: 152aaf1dc8cd8cd98854b2908548f44deb2e49a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 45b232f614c1698a62ed7b7d444dfa156821c747
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940064"
 ---
-# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="382de-106">Arbeiten mit Excel in Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="382de-106">Working with Excel in Microsoft Graph</span></span>
+# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="44fa9-106">Arbeiten mit Excel in Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="44fa9-106">Working with Excel in Microsoft Graph</span></span>
 
-> <span data-ttu-id="382de-107">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="382de-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="382de-108">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="382de-108">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="44fa9-107">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="44fa9-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="44fa9-108">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-108">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="382de-p103">Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive, SharePoint oder anderen unterstützten Speicherplattformen gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die [Laufwerks-API](drive.md) auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:</span><span class="sxs-lookup"><span data-stu-id="382de-p103">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
+<span data-ttu-id="44fa9-p103">Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive, SharePoint oder anderen unterstützten Speicherplattformen gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die [Laufwerks-API](drive.md) auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:</span><span class="sxs-lookup"><span data-stu-id="44fa9-p103">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-<span data-ttu-id="382de-p104">Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagramm) mithilfe von standardmäßigen REST-APIs zugreifen, um Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen in der Abeitsmappe durchzuführen. Beispielsweise gibt `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span><span class="sxs-lookup"><span data-stu-id="382de-p104">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
-<span data-ttu-id="382de-115">eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.</span><span class="sxs-lookup"><span data-stu-id="382de-115">returns a collection of worksheet objects that are part of the workbook.</span></span>    
+<span data-ttu-id="44fa9-p104">Sie können auf eine Reihe von Excel-Objekten (wie Tabelle, Bereich oder Diagramm) mithilfe von standardmäßigen REST-APIs zugreifen, um Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen in der Abeitsmappe durchzuführen. Beispielsweise gibt `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span><span class="sxs-lookup"><span data-stu-id="44fa9-p104">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
+<span data-ttu-id="44fa9-115">eine Sammlung von Arbeitsblattobjekten zurück, die Teil der Arbeitsmappe sind.</span><span class="sxs-lookup"><span data-stu-id="44fa9-115">returns a collection of worksheet objects that are part of the workbook.</span></span>    
 
 
-<span data-ttu-id="382de-p105">**Hinweis:** Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="382de-p105">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported.</span></span> 
+<span data-ttu-id="44fa9-p105">**Hinweis:** Die Excel-REST-API unterstützt nur Arbeitsmappen im Office Open XML-Dateiformat. Arbeitsmappen mit der Erweiterung `.xls` werden nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p105">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks. The `.xls` extension workbooks are not supported.</span></span> 
 
-## <a name="authorization-and-scopes"></a><span data-ttu-id="382de-118">Autorisierung und Bereiche</span><span class="sxs-lookup"><span data-stu-id="382de-118">Authorization and scopes</span></span>
+## <a name="authorization-and-scopes"></a><span data-ttu-id="44fa9-118">Autorisierung und Bereiche</span><span class="sxs-lookup"><span data-stu-id="44fa9-118">Authorization and scopes</span></span>
 
-<span data-ttu-id="382de-p106">Sie können den [Azure AD v.20-Endpunkt](https://developer.microsoft.com/graph/docs/authorization/converged_auth) verwenden, um Excel-APIs zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.</span><span class="sxs-lookup"><span data-stu-id="382de-p106">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
+<span data-ttu-id="44fa9-p106">Sie können den [Azure AD v.20-Endpunkt](https://developer.microsoft.com/graph/docs/authorization/converged_auth) verwenden, um Excel-APIs zu authentifizieren. Alle APIs benötigen den `Authorization: Bearer {access-token}`-HTTP-Header.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p106">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
   
-<span data-ttu-id="382de-121">Einer der folgenden [Berechtigungsbereiche](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) ist erforderlich, um die Excel-Ressource verwenden:</span><span class="sxs-lookup"><span data-stu-id="382de-121">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
+<span data-ttu-id="44fa9-121">Einer der folgenden [Berechtigungsbereiche](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) ist erforderlich, um die Excel-Ressource verwenden:</span><span class="sxs-lookup"><span data-stu-id="44fa9-121">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
 
-* <span data-ttu-id="382de-122">Files.Read</span><span class="sxs-lookup"><span data-stu-id="382de-122">Files.Read</span></span> 
-* <span data-ttu-id="382de-123">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="382de-123">Files.ReadWrite</span></span>
+* <span data-ttu-id="44fa9-122">Files.Read</span><span class="sxs-lookup"><span data-stu-id="44fa9-122">Files.Read</span></span> 
+* <span data-ttu-id="44fa9-123">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="44fa9-123">Files.ReadWrite</span></span>
 
 
-## <a name="sessions-and-persistence"></a><span data-ttu-id="382de-124">Sitzungen und Beständigkeit</span><span class="sxs-lookup"><span data-stu-id="382de-124">Sessions and persistence</span></span>
+## <a name="sessions-and-persistence"></a><span data-ttu-id="44fa9-124">Sitzungen und Beständigkeit</span><span class="sxs-lookup"><span data-stu-id="44fa9-124">Sessions and persistence</span></span>
 
-<span data-ttu-id="382de-125">Excel-APIs können in einem der beiden folgenden Modi aufgerufen werden:</span><span class="sxs-lookup"><span data-stu-id="382de-125">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="44fa9-125">Excel-APIs können in einem der beiden folgenden Modi aufgerufen werden:</span><span class="sxs-lookup"><span data-stu-id="44fa9-125">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="382de-p107">Beständige Sitzung: Alle an der Arbeitsmappe vorgenommenen Änderungen werden gespeichert. Dies ist die übliche Vorgehensweise.</span><span class="sxs-lookup"><span data-stu-id="382de-p107">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="382de-p108">Nicht beständige Sitzung: Die von der API vorgenommenen Änderungen werden nicht am Quellspeicherort gespeichert. Stattdessen behält der Excel-Back-End-Server eine temporäre Kopie der Datei  bei, welche die während dieser API-Sitzung vorgenommenen Änderungen enthält. Wenn die Excel-Sitzung abläuft, gehen die Änderungen verloren. Dieser Modus eignet sich für Apps, die Analysen durchführen oder die Ergebnisse einer Berechnung oder eines Diagrammbilds abrufen, aber nicht den Dokumentstatus betreffen.</span><span class="sxs-lookup"><span data-stu-id="382de-p108">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="44fa9-p107">Beständige Sitzung: Alle an der Arbeitsmappe vorgenommenen Änderungen werden gespeichert. Dies ist die übliche Vorgehensweise.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p107">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="44fa9-p108">Nicht beständige Sitzung: Die von der API vorgenommenen Änderungen werden nicht am Quellspeicherort gespeichert. Stattdessen behält der Excel-Back-End-Server eine temporäre Kopie der Datei  bei, welche die während dieser API-Sitzung vorgenommenen Änderungen enthält. Wenn die Excel-Sitzung abläuft, gehen die Änderungen verloren. Dieser Modus eignet sich für Apps, die Analysen durchführen oder die Ergebnisse einer Berechnung oder eines Diagrammbilds abrufen, aber nicht den Dokumentstatus betreffen.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p108">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="382de-132">Um die Sitzung in der API darzustellen, verwenden Sie den `workbook-session-id: {session-id}`-Header.</span><span class="sxs-lookup"><span data-stu-id="382de-132">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="44fa9-132">Um die Sitzung in der API darzustellen, verwenden Sie den `workbook-session-id: {session-id}`-Header.</span><span class="sxs-lookup"><span data-stu-id="44fa9-132">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="382de-p109">**Hinweis:** Der Sitzungsheader ist für das Funktionieren einer Excel-API nicht erforderlich. Die Verwendung des Sitzungsheaders wird jedoch empfohlen, um die Leistung zu verbessern. Wenn Sie keinen Sitzungsheader verwenden, _werden_ die während des API-Aufrufs vorgenommenen Änderungen in der Datei gespeichert.</span><span class="sxs-lookup"><span data-stu-id="382de-p109">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="44fa9-p109">**Hinweis:** Der Sitzungsheader ist für das Funktionieren einer Excel-API nicht erforderlich. Die Verwendung des Sitzungsheaders wird jedoch empfohlen, um die Leistung zu verbessern. Wenn Sie keinen Sitzungsheader verwenden, _werden_ die während des API-Aufrufs vorgenommenen Änderungen in der Datei gespeichert.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p109">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-### <a name="api-call-to-get-a-session"></a><span data-ttu-id="382de-136">API-Aufruf, um eine Sitzung aufzurufen</span><span class="sxs-lookup"><span data-stu-id="382de-136">API call to get a session</span></span> 
+### <a name="api-call-to-get-a-session"></a><span data-ttu-id="44fa9-136">API-Aufruf, um eine Sitzung aufzurufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-136">API call to get a session</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="382de-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-137">Request</span></span> 
+#### <a name="request"></a><span data-ttu-id="44fa9-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-137">Request</span></span> 
 
-<span data-ttu-id="382de-138">Übergeben Sie ein JSON-Objekt durch Festlegen des `persistchanges`-Wert auf `true` oder `false`.</span><span class="sxs-lookup"><span data-stu-id="382de-138">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
+<span data-ttu-id="44fa9-138">Übergeben Sie ein JSON-Objekt durch Festlegen des `persistchanges`-Wert auf `true` oder `false`.</span><span class="sxs-lookup"><span data-stu-id="44fa9-138">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -60,10 +62,10 @@ authorization: Bearer {access-token}
 { "persistChanges": true }
 ```
 
-<span data-ttu-id="382de-139">Wenn der Wert auf `persistChanges` oder `false` festgelegt wird, wird eine nicht beständige Sitzungs-ID zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="382de-139">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
+<span data-ttu-id="44fa9-139">Wenn der Wert auf `persistChanges` oder `false` festgelegt wird, wird eine nicht beständige Sitzungs-ID zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="44fa9-139">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
 
 
-#### <a name="response"></a><span data-ttu-id="382de-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="44fa9-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-140">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -77,10 +79,10 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="usage"></a><span data-ttu-id="382de-141">Verwendung</span><span class="sxs-lookup"><span data-stu-id="382de-141">Usage</span></span> 
+#### <a name="usage"></a><span data-ttu-id="44fa9-141">Verwendung</span><span class="sxs-lookup"><span data-stu-id="44fa9-141">Usage</span></span> 
 
-<span data-ttu-id="382de-142">Die vom vorherigen Aufruf zurückgegebene Sitzungs-ID wird als Header in nachfolgenden API-Anforderungen im</span><span class="sxs-lookup"><span data-stu-id="382de-142">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
-<span data-ttu-id="382de-143">`workbook-session-id`-HTTP-Header dargestellt.</span><span class="sxs-lookup"><span data-stu-id="382de-143">`workbook-session-id` HTTP header.</span></span> 
+<span data-ttu-id="44fa9-142">Die vom vorherigen Aufruf zurückgegebene Sitzungs-ID wird als Header in nachfolgenden API-Anforderungen im</span><span class="sxs-lookup"><span data-stu-id="44fa9-142">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
+<span data-ttu-id="44fa9-143">`workbook-session-id`-HTTP-Header dargestellt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-143">`workbook-session-id` HTTP header.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -89,16 +91,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-><span data-ttu-id="382de-144">Hinweis: Wenn die Sitzungs-ID abgelaufen ist, wird ein `404` HTTP-Fehlercode an die Sitzung zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="382de-144">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="382de-145">In einem solchen Szenario können Sie eine neue Sitzung erstellen und fortfahren.</span><span class="sxs-lookup"><span data-stu-id="382de-145">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="382de-146">Sie können aber auch die Sitzung regelmäßig aktualisieren, damit die Sitzung erhalten bleibt.</span><span class="sxs-lookup"><span data-stu-id="382de-146">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="382de-147">In der Regel läuft eine beständige Sitzung nach ca. 7 Minuten Inaktivität ab.</span><span class="sxs-lookup"><span data-stu-id="382de-147">Typically the persistent session expires after about 7 minutes of inactivity.</span></span> <span data-ttu-id="382de-148">Eine nicht beständige Sitzung läuft nach ca. 5 Minuten Inaktivität ab.</span><span class="sxs-lookup"><span data-stu-id="382de-148">Non persistent session expires after about 5 minutes of inactivity.</span></span> 
+><span data-ttu-id="44fa9-144">Hinweis: Wenn die Sitzungs-ID abgelaufen ist, wird ein `404` HTTP-Fehlercode an die Sitzung zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="44fa9-144">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="44fa9-145">In einem solchen Szenario können Sie eine neue Sitzung erstellen und fortfahren.</span><span class="sxs-lookup"><span data-stu-id="44fa9-145">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="44fa9-146">Sie können aber auch die Sitzung regelmäßig aktualisieren, damit die Sitzung erhalten bleibt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-146">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="44fa9-147">In der Regel läuft eine beständige Sitzung nach ca. 7 Minuten Inaktivität ab.</span><span class="sxs-lookup"><span data-stu-id="44fa9-147">Typically the persistent session expires after about 7 minutes of inactivity.</span></span> <span data-ttu-id="44fa9-148">Eine nicht beständige Sitzung läuft nach ca. 5 Minuten Inaktivität ab.</span><span class="sxs-lookup"><span data-stu-id="44fa9-148">Non persistent session expires after about 5 minutes of inactivity.</span></span> 
 
-## <a name="common-excel-scenarios"></a><span data-ttu-id="382de-149">Häufige Excel-Szenarien</span><span class="sxs-lookup"><span data-stu-id="382de-149">Common Excel scenarios</span></span>
+## <a name="common-excel-scenarios"></a><span data-ttu-id="44fa9-149">Häufige Excel-Szenarien</span><span class="sxs-lookup"><span data-stu-id="44fa9-149">Common Excel scenarios</span></span>
 
-<span data-ttu-id="382de-150">Dieser Abschnitt enthält Beispiele für häufige Vorgänge,die Sie für Excel-Objekte verwenden können.</span><span class="sxs-lookup"><span data-stu-id="382de-150">This section provides examples of the common operations you can use on Excel objects.</span></span>
+<span data-ttu-id="44fa9-150">Dieser Abschnitt enthält Beispiele für häufige Vorgänge,die Sie für Excel-Objekte verwenden können.</span><span class="sxs-lookup"><span data-stu-id="44fa9-150">This section provides examples of the common operations you can use on Excel objects.</span></span>
 
-### <a name="worksheet-operations"></a><span data-ttu-id="382de-151">Arbeitsblattvorgänge</span><span class="sxs-lookup"><span data-stu-id="382de-151">Worksheet operations</span></span>
+### <a name="worksheet-operations"></a><span data-ttu-id="44fa9-151">Arbeitsblattvorgänge</span><span class="sxs-lookup"><span data-stu-id="44fa9-151">Worksheet operations</span></span>
 
-#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="382de-152">Den Arbeitsblätterteil der Arbeitsmappe auflisten</span><span class="sxs-lookup"><span data-stu-id="382de-152">List worksheets part of the workbook</span></span> 
-<span data-ttu-id="382de-153">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-153">Request</span></span> 
+#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="44fa9-152">Den Arbeitsblätterteil der Arbeitsmappe auflisten</span><span class="sxs-lookup"><span data-stu-id="44fa9-152">List worksheets part of the workbook</span></span> 
+<span data-ttu-id="44fa9-153">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-153">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -108,7 +110,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-154">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-154">Response</span></span>
+<span data-ttu-id="44fa9-154">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-154">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -135,7 +137,7 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
-#### <a name="add-a-new-worksheet"></a><span data-ttu-id="382de-155">Neues Arbeitsblatt hinzufügen</span><span class="sxs-lookup"><span data-stu-id="382de-155">Add a new worksheet</span></span> 
+#### <a name="add-a-new-worksheet"></a><span data-ttu-id="44fa9-155">Neues Arbeitsblatt hinzufügen</span><span class="sxs-lookup"><span data-stu-id="44fa9-155">Add a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -147,7 +149,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-<span data-ttu-id="382de-156">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-156">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-156">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-156">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -162,7 +164,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-a-new-worksheet"></a><span data-ttu-id="382de-157">Neues Arbeitsblatt abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-157">Get a new worksheet</span></span> 
+#### <a name="get-a-new-worksheet"></a><span data-ttu-id="44fa9-157">Neues Arbeitsblatt abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-157">Get a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -172,7 +174,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-158">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-158">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-158">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-158">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -187,11 +189,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="382de-p111">\*\* Hinweis: Arbeitsblätter können auch mit der ID abgerufen werden. Derzeit enthält die ID jedoch die Zeichen `{` und „}“, für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Arbeitsblatt mit der ID `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span><span class="sxs-lookup"><span data-stu-id="382de-p111">\*\* Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
+<span data-ttu-id="44fa9-p111">\*\* Hinweis: Arbeitsblätter können auch mit der ID abgerufen werden. Derzeit enthält die ID jedoch die Zeichen `{` und „}“, für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Arbeitsblatt mit der ID `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p111">\*\* Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
 
-#### <a name="delete-a-worksheet"></a><span data-ttu-id="382de-162">Arbeitsblatt löschen</span><span class="sxs-lookup"><span data-stu-id="382de-162">Delete a worksheet</span></span>
+#### <a name="delete-a-worksheet"></a><span data-ttu-id="44fa9-162">Arbeitsblatt löschen</span><span class="sxs-lookup"><span data-stu-id="44fa9-162">Delete a worksheet</span></span>
 
-<span data-ttu-id="382de-163">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-163">Request</span></span>
+<span data-ttu-id="44fa9-163">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-163">Request</span></span>
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -199,15 +201,15 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-164">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-164">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-164">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-164">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="update-worksheet-properties"></a><span data-ttu-id="382de-165">Arbeitsblatteigenschaften aktualisieren</span><span class="sxs-lookup"><span data-stu-id="382de-165">Update worksheet properties</span></span>
+#### <a name="update-worksheet-properties"></a><span data-ttu-id="44fa9-165">Arbeitsblatteigenschaften aktualisieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-165">Update worksheet properties</span></span>
 
-<span data-ttu-id="382de-166">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-166">Request</span></span> 
+<span data-ttu-id="44fa9-166">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-166">Request</span></span> 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -219,7 +221,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-<span data-ttu-id="382de-167">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-167">Response</span></span>
+<span data-ttu-id="44fa9-167">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-167">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -236,11 +238,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-### <a name="chart-operations"></a><span data-ttu-id="382de-168">Diagrammvorgänge</span><span class="sxs-lookup"><span data-stu-id="382de-168">Chart operations</span></span>
+### <a name="chart-operations"></a><span data-ttu-id="44fa9-168">Diagrammvorgänge</span><span class="sxs-lookup"><span data-stu-id="44fa9-168">Chart operations</span></span>
 
-#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="382de-169">Diagramme auflisten, die Teil des Arbeitsblatts sind</span><span class="sxs-lookup"><span data-stu-id="382de-169">List charts that are part of the worksheet</span></span> 
+#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="44fa9-169">Diagramme auflisten, die Teil des Arbeitsblatts sind</span><span class="sxs-lookup"><span data-stu-id="44fa9-169">List charts that are part of the worksheet</span></span> 
 
-<span data-ttu-id="382de-170">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-170">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-170">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-170">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -248,7 +250,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="382de-171">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-171">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-171">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-171">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -269,18 +271,18 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="382de-p112">\*\* Hinweis: Die Diagramm-ID enthält die Zeichen `{` und `}` (Beispiel: `{00000000-0008-0000-0100-000003000000}`), für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Diagrammobjekt abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span><span class="sxs-lookup"><span data-stu-id="382de-p112">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
+<span data-ttu-id="44fa9-p112">\*\* Hinweis: Die Diagramm-ID enthält die Zeichen `{` und `}` (Beispiel: `{00000000-0008-0000-0100-000003000000}`), für die eine URL-Codierung durchgeführt werden muss, damit die API funktioniert. Beispiel: Um ein Diagrammobjekt abzurufen, führen Sie für die ID im Pfad die folgende URL-Codierung durch: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p112">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
 
-#### <a name="get-chart-image"></a><span data-ttu-id="382de-174">Diagrammbild abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-174">Get chart image</span></span>
+#### <a name="get-chart-image"></a><span data-ttu-id="44fa9-174">Diagrammbild abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-174">Get chart image</span></span>
 
-<span data-ttu-id="382de-175">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-175">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-175">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-175">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="382de-176">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-176">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-176">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-176">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -291,9 +293,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-chart"></a><span data-ttu-id="382de-177">Diagramm hinzufügen</span><span class="sxs-lookup"><span data-stu-id="382de-177">Add a chart</span></span>  
+#### <a name="add-a-chart"></a><span data-ttu-id="44fa9-177">Diagramm hinzufügen</span><span class="sxs-lookup"><span data-stu-id="44fa9-177">Add a chart</span></span>  
 
-<span data-ttu-id="382de-178">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-178">Request</span></span>
+<span data-ttu-id="44fa9-178">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-178">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -305,7 +307,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-<span data-ttu-id="382de-179">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-179">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-179">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-179">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -323,7 +325,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-a-chart"></a><span data-ttu-id="382de-180">Diagramm aktualisieren</span><span class="sxs-lookup"><span data-stu-id="382de-180">Update a chart</span></span>
+#### <a name="update-a-chart"></a><span data-ttu-id="44fa9-180">Diagramm aktualisieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-180">Update a chart</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -335,7 +337,7 @@ workbook-session-id: {session-id}
 { "height": 216.0, "left": 0, "name": "NewName", "top": 0, "width": 360.0 }
 
 ```
-<span data-ttu-id="382de-181">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-181">Response</span></span> 
+<span data-ttu-id="44fa9-181">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-181">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -354,9 +356,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-chart-source-data"></a><span data-ttu-id="382de-182">Quelldaten des Diagramms aktualisieren</span><span class="sxs-lookup"><span data-stu-id="382de-182">Update chart source data</span></span> 
+#### <a name="update-chart-source-data"></a><span data-ttu-id="44fa9-182">Quelldaten des Diagramms aktualisieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-182">Update chart source data</span></span> 
 
-<span data-ttu-id="382de-183">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-183">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-183">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-183">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -367,16 +369,16 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-<span data-ttu-id="382de-184">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-184">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-184">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-184">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="table-operations"></a><span data-ttu-id="382de-185">Tabellenvorgänge</span><span class="sxs-lookup"><span data-stu-id="382de-185">Table operations</span></span> 
+### <a name="table-operations"></a><span data-ttu-id="44fa9-185">Tabellenvorgänge</span><span class="sxs-lookup"><span data-stu-id="44fa9-185">Table operations</span></span> 
 
-#### <a name="get-list-of-tables"></a><span data-ttu-id="382de-186">Liste der Tabellen abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-186">Get list of tables</span></span> 
+#### <a name="get-list-of-tables"></a><span data-ttu-id="44fa9-186">Liste der Tabellen abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-186">Get list of tables</span></span> 
 
-<span data-ttu-id="382de-187">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-187">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-187">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-187">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -384,15 +386,15 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-188">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-188">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-188">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-188">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="create-table"></a><span data-ttu-id="382de-189">Tabelle erstellen</span><span class="sxs-lookup"><span data-stu-id="382de-189">Create table</span></span>
+#### <a name="create-table"></a><span data-ttu-id="44fa9-189">Tabelle erstellen</span><span class="sxs-lookup"><span data-stu-id="44fa9-189">Create table</span></span>
 
-<span data-ttu-id="382de-190">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-190">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-190">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-190">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
 content-type: Application/Json 
@@ -402,7 +404,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="382de-191">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-191">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-191">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-191">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -418,9 +420,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-table"></a><span data-ttu-id="382de-192">Tabelle aktualisieren</span><span class="sxs-lookup"><span data-stu-id="382de-192">Update table</span></span>
+#### <a name="update-table"></a><span data-ttu-id="44fa9-192">Tabelle aktualisieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-192">Update table</span></span>
 
-<span data-ttu-id="382de-193">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-193">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-193">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-193">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -430,7 +432,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="382de-194">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-194">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-194">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-194">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -446,8 +448,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-rows"></a><span data-ttu-id="382de-195">Liste der Tabellenzeilen abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-195">Get list of table rows</span></span>
-<span data-ttu-id="382de-196">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-196">Request</span></span> 
+#### <a name="get-list-of-table-rows"></a><span data-ttu-id="44fa9-195">Liste der Tabellenzeilen abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-195">Get list of table rows</span></span>
+<span data-ttu-id="44fa9-196">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-196">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -456,7 +458,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-197">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-197">Response</span></span>
+<span data-ttu-id="44fa9-197">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-197">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -536,16 +538,16 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-columns"></a><span data-ttu-id="382de-198">Liste der Tabellenspalten abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-198">Get list of table columns</span></span>
+#### <a name="get-list-of-table-columns"></a><span data-ttu-id="44fa9-198">Liste der Tabellenspalten abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-198">Get list of table columns</span></span>
 
-<span data-ttu-id="382de-199">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-199">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-199">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-199">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-200">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-200">Response</span></span> 
+<span data-ttu-id="44fa9-200">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-200">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -647,9 +649,9 @@ content-type: application/json;odata.metadata
 ```
 
 
-#### <a name="add-a-table-row"></a><span data-ttu-id="382de-201">Tabellenzeile hinzufügen</span><span class="sxs-lookup"><span data-stu-id="382de-201">Add a table row</span></span>
+#### <a name="add-a-table-row"></a><span data-ttu-id="44fa9-201">Tabellenzeile hinzufügen</span><span class="sxs-lookup"><span data-stu-id="44fa9-201">Add a table row</span></span>
 
-<span data-ttu-id="382de-202">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-202">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-202">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-202">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
 content-type: Application/Json 
@@ -659,7 +661,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-<span data-ttu-id="382de-203">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-203">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-203">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-203">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -678,9 +680,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-table-column"></a><span data-ttu-id="382de-204">Tabellenspalte hinzufügen</span><span class="sxs-lookup"><span data-stu-id="382de-204">Add a table column</span></span> 
+#### <a name="add-a-table-column"></a><span data-ttu-id="44fa9-204">Tabellenspalte hinzufügen</span><span class="sxs-lookup"><span data-stu-id="44fa9-204">Add a table column</span></span> 
 
-<span data-ttu-id="382de-205">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-205">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-205">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-205">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
 content-type: Application/Json 
@@ -690,7 +692,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-<span data-ttu-id="382de-206">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-206">Response</span></span> 
+<span data-ttu-id="44fa9-206">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-206">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -717,49 +719,49 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="delete-table-row"></a><span data-ttu-id="382de-207">Tabellenzeile löschen</span><span class="sxs-lookup"><span data-stu-id="382de-207">Delete table row</span></span>
+#### <a name="delete-table-row"></a><span data-ttu-id="44fa9-207">Tabellenzeile löschen</span><span class="sxs-lookup"><span data-stu-id="44fa9-207">Delete table row</span></span>
 
-<span data-ttu-id="382de-208">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-208">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-208">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-208">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-209">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-209">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-209">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-209">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="delete-table-column"></a><span data-ttu-id="382de-210">Tabellenspalte löschen</span><span class="sxs-lookup"><span data-stu-id="382de-210">Delete table column</span></span> 
-<span data-ttu-id="382de-211">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-211">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="delete-table-column"></a><span data-ttu-id="44fa9-210">Tabellenspalte löschen</span><span class="sxs-lookup"><span data-stu-id="44fa9-210">Delete table column</span></span> 
+<span data-ttu-id="44fa9-211">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-211">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-212">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-212">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-212">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-212">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="convert-table-to-range"></a><span data-ttu-id="382de-213">Tabelle in Bereich konvertieren</span><span class="sxs-lookup"><span data-stu-id="382de-213">Convert table to range</span></span> 
-<span data-ttu-id="382de-214">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-214">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="convert-table-to-range"></a><span data-ttu-id="44fa9-213">Tabelle in Bereich konvertieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-213">Convert table to range</span></span> 
+<span data-ttu-id="44fa9-214">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-214">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-215">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-215">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-215">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-215">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="table-sort"></a><span data-ttu-id="382de-216">Tabelle sortieren</span><span class="sxs-lookup"><span data-stu-id="382de-216">Table sort</span></span>
-<span data-ttu-id="382de-217">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-217">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="table-sort"></a><span data-ttu-id="44fa9-216">Tabelle sortieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-216">Table sort</span></span>
+<span data-ttu-id="44fa9-217">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-217">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -775,13 +777,13 @@ workbook-session-id: {session-id}
 ```
 
 
-<span data-ttu-id="382de-218">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-218">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-218">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-218">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="table-filter"></a><span data-ttu-id="382de-219">Tabelle filtern</span><span class="sxs-lookup"><span data-stu-id="382de-219">Table filter</span></span>
-<span data-ttu-id="382de-220">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-220">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="table-filter"></a><span data-ttu-id="44fa9-219">Tabelle filtern</span><span class="sxs-lookup"><span data-stu-id="44fa9-219">Table filter</span></span>
+<span data-ttu-id="44fa9-220">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-220">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -798,37 +800,37 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="382de-221">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-221">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-221">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-221">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="clear-filter"></a><span data-ttu-id="382de-222">Filter löschen</span><span class="sxs-lookup"><span data-stu-id="382de-222">Clear filter</span></span>
-<span data-ttu-id="382de-223">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-223">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="clear-filter"></a><span data-ttu-id="44fa9-222">Filter löschen</span><span class="sxs-lookup"><span data-stu-id="44fa9-222">Clear filter</span></span>
+<span data-ttu-id="44fa9-223">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-223">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-224">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-224">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-224">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-224">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="range-operations"></a><span data-ttu-id="382de-225">Bereichsvorgänge</span><span class="sxs-lookup"><span data-stu-id="382de-225">Range operations</span></span>
+### <a name="range-operations"></a><span data-ttu-id="44fa9-225">Bereichsvorgänge</span><span class="sxs-lookup"><span data-stu-id="44fa9-225">Range operations</span></span>
 
-#### <a name="get-range"></a><span data-ttu-id="382de-226">Bereich abrufen</span><span class="sxs-lookup"><span data-stu-id="382de-226">Get Range</span></span> 
+#### <a name="get-range"></a><span data-ttu-id="44fa9-226">Bereich abrufen</span><span class="sxs-lookup"><span data-stu-id="44fa9-226">Get Range</span></span> 
 
-<span data-ttu-id="382de-227">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-227">Request <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-227">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-227">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-228">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-228">Response</span></span> 
+<span data-ttu-id="44fa9-228">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-228">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -922,7 +924,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-update"></a><span data-ttu-id="382de-229">Bereich aktualisieren</span><span class="sxs-lookup"><span data-stu-id="382de-229">Range update</span></span> 
+#### <a name="range-update"></a><span data-ttu-id="44fa9-229">Bereich aktualisieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-229">Range update</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1025,8 +1027,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-sort"></a><span data-ttu-id="382de-230">Bereich sortieren</span><span class="sxs-lookup"><span data-stu-id="382de-230">Range sort</span></span>
-<span data-ttu-id="382de-231">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-231">Request <!-- { "blockType": "ignored" } --></span></span>
+#### <a name="range-sort"></a><span data-ttu-id="44fa9-230">Bereich sortieren</span><span class="sxs-lookup"><span data-stu-id="44fa9-230">Range sort</span></span>
+<span data-ttu-id="44fa9-231">Anforderung<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-231">Request <!-- { "blockType": "ignored" } --></span></span>
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1041,14 +1043,14 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="382de-232">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="382de-232">Response <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="44fa9-232">Antwort<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="44fa9-232">Response <!-- { "blockType": "ignored" } --></span></span>
 ```http
 HTTP code: 204 No Content
 ```
 
 
-### <a name="named-items"></a><span data-ttu-id="382de-233">Benannte Elemente</span><span class="sxs-lookup"><span data-stu-id="382de-233">Named items</span></span>
-<span data-ttu-id="382de-234">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-234">Request</span></span>
+### <a name="named-items"></a><span data-ttu-id="44fa9-233">Benannte Elemente</span><span class="sxs-lookup"><span data-stu-id="44fa9-233">Named items</span></span>
+<span data-ttu-id="44fa9-234">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-234">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1057,7 +1059,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="382de-235">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-235">Response</span></span> 
+<span data-ttu-id="44fa9-235">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-235">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1092,15 +1094,15 @@ content-type: application/json
 }
 ```
 
-### <a name="work-with-nulls"></a><span data-ttu-id="382de-236">Verwenden von Daten</span><span class="sxs-lookup"><span data-stu-id="382de-236">Work with nulls</span></span>
+### <a name="work-with-nulls"></a><span data-ttu-id="44fa9-236">Verwenden von Daten</span><span class="sxs-lookup"><span data-stu-id="44fa9-236">Work with nulls</span></span>
 
-#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="382de-237">NULL-Eingabe im 2D-Array</span><span class="sxs-lookup"><span data-stu-id="382de-237">null input in 2-D array</span></span>
+#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="44fa9-237">NULL-Eingabe im 2D-Array</span><span class="sxs-lookup"><span data-stu-id="44fa9-237">null input in 2-D array</span></span>
 
-<span data-ttu-id="382de-p113">Die `null`-Eingabe in einem zweidimensionalen Array (für Werte, Zahlenformate, Formeln) wird in den Bereichs- und Tabellenressourcen ignoriert. Am beabsichtigten Ziel (Zelle) findet keine Aktualisierung statt, wenn die `null`-Eingabe in Werten, im Zahlenformat oder Formelraster von Werten gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="382de-p113">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
+<span data-ttu-id="44fa9-p113">Die `null`-Eingabe in einem zweidimensionalen Array (für Werte, Zahlenformate, Formeln) wird in den Bereichs- und Tabellenressourcen ignoriert. Am beabsichtigten Ziel (Zelle) findet keine Aktualisierung statt, wenn die `null`-Eingabe in Werten, im Zahlenformat oder Formelraster von Werten gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p113">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
 
-<span data-ttu-id="382de-240">Um nur bestimmte Teile des Bereichs zu aktualisieren, wie z. B. das Zahlenformat einer Zelle, und das vorhandene Zahlenformat in anderen Teilen des Bereichs beizubehalten, legen Sie das gewünschte Zahlenformat an entsprechender Stelle fest und senden Sie `null` für die anderen Zellen.</span><span class="sxs-lookup"><span data-stu-id="382de-240">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
+<span data-ttu-id="44fa9-240">Um nur bestimmte Teile des Bereichs zu aktualisieren, wie z. B. das Zahlenformat einer Zelle, und das vorhandene Zahlenformat in anderen Teilen des Bereichs beizubehalten, legen Sie das gewünschte Zahlenformat an entsprechender Stelle fest und senden Sie `null` für die anderen Zellen.</span><span class="sxs-lookup"><span data-stu-id="44fa9-240">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
 
-<span data-ttu-id="382de-241">In der folgenden Set-Anforderung werden nur einige Teile des Bereichszahlenformats festgelegt, dabei wird das vorhandene Zahlenformat im verbleibenden Teil beibehalten (durch NULL-Übergabe).</span><span class="sxs-lookup"><span data-stu-id="382de-241">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
+<span data-ttu-id="44fa9-241">In der folgenden Set-Anforderung werden nur einige Teile des Bereichszahlenformats festgelegt, dabei wird das vorhandene Zahlenformat im verbleibenden Teil beibehalten (durch NULL-Übergabe).</span><span class="sxs-lookup"><span data-stu-id="44fa9-241">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
 
 ```json
 {
@@ -1109,9 +1111,9 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-input-for-a-property"></a><span data-ttu-id="382de-242">NULL-Eingabe für eine Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="382de-242">null input for a property</span></span>
+#### <a name="null-input-for-a-property"></a><span data-ttu-id="44fa9-242">NULL-Eingabe für eine Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="44fa9-242">null input for a property</span></span>
 
-<span data-ttu-id="382de-p114">`null` ist keine gültige einzelne Eingabe für die gesamte Eigenschaft. Folgende Eingabe ist beispielsweise ungültig, da die gesamten Werte nicht auf NULL festgelegt oder ignoriert werden können.</span><span class="sxs-lookup"><span data-stu-id="382de-p114">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
+<span data-ttu-id="44fa9-p114">`null` ist keine gültige einzelne Eingabe für die gesamte Eigenschaft. Folgende Eingabe ist beispielsweise ungültig, da die gesamten Werte nicht auf NULL festgelegt oder ignoriert werden können.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p114">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
 
 ```json
 {
@@ -1120,7 +1122,7 @@ content-type: application/json
 
 ```
 
-<span data-ttu-id="382de-245">Folgendes ist ebenfalls nicht gültig, da NULL kein gültiger Farbwert ist.</span><span class="sxs-lookup"><span data-stu-id="382de-245">The following is not valid either as null is not a valid color value.</span></span>
+<span data-ttu-id="44fa9-245">Folgendes ist ebenfalls nicht gültig, da NULL kein gültiger Farbwert ist.</span><span class="sxs-lookup"><span data-stu-id="44fa9-245">The following is not valid either as null is not a valid color value.</span></span>
 
 ```json
 {
@@ -1128,11 +1130,11 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-response"></a><span data-ttu-id="382de-246">NULL-Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-246">Null-Response</span></span>
+#### <a name="null-response"></a><span data-ttu-id="44fa9-246">NULL-Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-246">Null-Response</span></span>
 
-<span data-ttu-id="382de-247">Darstellungen der Formatierungseigenschaften, die aus ungleichmäßigen Werten bestehen, ergeben einen NULL-Wert in der Antwort.</span><span class="sxs-lookup"><span data-stu-id="382de-247">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
+<span data-ttu-id="44fa9-247">Darstellungen der Formatierungseigenschaften, die aus ungleichmäßigen Werten bestehen, ergeben einen NULL-Wert in der Antwort.</span><span class="sxs-lookup"><span data-stu-id="44fa9-247">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
 
-<span data-ttu-id="382de-p115">So kann z. B. ein Bereich aus einer oder mehreren Zellen bestehen. In Fällen, in denen die im angegebenen Bereich enthaltenen einzelnen Zellen keine gleichmäßigen Formatierungswerte enthalten, wird die Bereichsebenendarstellung undefiniert.</span><span class="sxs-lookup"><span data-stu-id="382de-p115">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
+<span data-ttu-id="44fa9-p115">So kann z. B. ein Bereich aus einer oder mehreren Zellen bestehen. In Fällen, in denen die im angegebenen Bereich enthaltenen einzelnen Zellen keine gleichmäßigen Formatierungswerte enthalten, wird die Bereichsebenendarstellung undefiniert.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p115">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
 
 ```json
 {
@@ -1142,20 +1144,20 @@ content-type: application/json
 ```
 
 
-### <a name="blank-input-and-output"></a><span data-ttu-id="382de-250">Leere Eingabe und Ausgabe</span><span class="sxs-lookup"><span data-stu-id="382de-250">Blank input and output</span></span>
+### <a name="blank-input-and-output"></a><span data-ttu-id="44fa9-250">Leere Eingabe und Ausgabe</span><span class="sxs-lookup"><span data-stu-id="44fa9-250">Blank input and output</span></span>
 
-<span data-ttu-id="382de-p116">Leere Werte in Aktualisierungsanforderungen werden als Anweisung behandelt, um die entsprechende Eigenschaft zu löschen oder zurückzusetzen. Ein leerer Wert wird durch zwei doppelte Anführungszeichen ohne Leerzeichen dazwischen dargestellt: `""`</span><span class="sxs-lookup"><span data-stu-id="382de-p116">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="44fa9-p116">Leere Werte in Aktualisierungsanforderungen werden als Anweisung behandelt, um die entsprechende Eigenschaft zu löschen oder zurückzusetzen. Ein leerer Wert wird durch zwei doppelte Anführungszeichen ohne Leerzeichen dazwischen dargestellt: `""`</span><span class="sxs-lookup"><span data-stu-id="44fa9-p116">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
-<span data-ttu-id="382de-253">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="382de-253">Examples:</span></span>
+<span data-ttu-id="44fa9-253">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="44fa9-253">Examples:</span></span>
 
-* <span data-ttu-id="382de-254">Für `values` wird der Bereichswert gelöscht. Das ist genauso wie das Löschen des Inhalts in der Anwendung.</span><span class="sxs-lookup"><span data-stu-id="382de-254">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
+* <span data-ttu-id="44fa9-254">Für `values` wird der Bereichswert gelöscht. Das ist genauso wie das Löschen des Inhalts in der Anwendung.</span><span class="sxs-lookup"><span data-stu-id="44fa9-254">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
 
-* <span data-ttu-id="382de-255">Für `numberFormat` wird das Zahlenformat auf `General` festgelegt.</span><span class="sxs-lookup"><span data-stu-id="382de-255">For `numberFormat`, the number format is set to `General`.</span></span>
+* <span data-ttu-id="44fa9-255">Für `numberFormat` wird das Zahlenformat auf `General` festgelegt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-255">For `numberFormat`, the number format is set to `General`.</span></span>
 
-* <span data-ttu-id="382de-256">Für `formula` und `formulaLocale` werden die Formelwerte gelöscht.</span><span class="sxs-lookup"><span data-stu-id="382de-256">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
+* <span data-ttu-id="44fa9-256">Für `formula` und `formulaLocale` werden die Formelwerte gelöscht.</span><span class="sxs-lookup"><span data-stu-id="44fa9-256">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
 
 
-<span data-ttu-id="382de-p117">Für Lesevorgänge können Sie leere Werte erwarten, wenn der Inhalt der Zellen leer ist. Wenn die Zelle keine Daten oder keinen Wert enthält, gibt die API einen leeren Wert zurück. Ein leerer Wert wird durch zwei doppelte Anführungszeichen ohne Leerzeichen dazwischen dargestellt: `""`</span><span class="sxs-lookup"><span data-stu-id="382de-p117">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="44fa9-p117">Für Lesevorgänge können Sie leere Werte erwarten, wenn der Inhalt der Zellen leer ist. Wenn die Zelle keine Daten oder keinen Wert enthält, gibt die API einen leeren Wert zurück. Ein leerer Wert wird durch zwei doppelte Anführungszeichen ohne Leerzeichen dazwischen dargestellt: `""`</span><span class="sxs-lookup"><span data-stu-id="44fa9-p117">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
 ```json
 {
@@ -1170,22 +1172,22 @@ content-type: application/json
 ```
 
 
-### <a name="unbounded-range"></a><span data-ttu-id="382de-260">Ungebundener Bereich</span><span class="sxs-lookup"><span data-stu-id="382de-260">Unbounded Range</span></span>
+### <a name="unbounded-range"></a><span data-ttu-id="44fa9-260">Ungebundener Bereich</span><span class="sxs-lookup"><span data-stu-id="44fa9-260">Unbounded Range</span></span>
 
-#### <a name="read"></a><span data-ttu-id="382de-261">Lesen</span><span class="sxs-lookup"><span data-stu-id="382de-261">Read</span></span>
+#### <a name="read"></a><span data-ttu-id="44fa9-261">Lesen</span><span class="sxs-lookup"><span data-stu-id="44fa9-261">Read</span></span>
 
-<span data-ttu-id="382de-262">Die Adresse eines ungebundenen Bereichs enthält nur Bezeichner für die Spalte oder Zeile und nicht angegebene Zeilenbezeichner oder Spaltenbezeichner, wie etwa:</span><span class="sxs-lookup"><span data-stu-id="382de-262">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
+<span data-ttu-id="44fa9-262">Die Adresse eines ungebundenen Bereichs enthält nur Bezeichner für die Spalte oder Zeile und nicht angegebene Zeilenbezeichner oder Spaltenbezeichner, wie etwa:</span><span class="sxs-lookup"><span data-stu-id="44fa9-262">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
 
-* <span data-ttu-id="382de-263">`C:C`, `A:F`, `A:XFD` (enthält nicht angegebene Zeilen)</span><span class="sxs-lookup"><span data-stu-id="382de-263">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
-* <span data-ttu-id="382de-264">`2:2`, `1:4`, `1:1048546` (enthält nicht angegebene Spalten)</span><span class="sxs-lookup"><span data-stu-id="382de-264">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
+* <span data-ttu-id="44fa9-263">`C:C`, `A:F`, `A:XFD` (enthält nicht angegebene Zeilen)</span><span class="sxs-lookup"><span data-stu-id="44fa9-263">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
+* <span data-ttu-id="44fa9-264">`2:2`, `1:4`, `1:1048546` (enthält nicht angegebene Spalten)</span><span class="sxs-lookup"><span data-stu-id="44fa9-264">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
 
-<span data-ttu-id="382de-p118">Wenn die API eine Anforderung zum Abrufen eines ungebundenen Bereichs (`getRange('C:C')`) ausführt, enthält die zurückgegebene Antwort `null` für Zellenebeneneigenschaften wie `values`, `text`, `numberFormat` oder `formula`. Andere Bereichseigenschaften wie `address` oder `cellCount` spiegeln den ungebundenen Bereich wider.</span><span class="sxs-lookup"><span data-stu-id="382de-p118">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
+<span data-ttu-id="44fa9-p118">Wenn die API eine Anforderung zum Abrufen eines ungebundenen Bereichs (`getRange('C:C')`) ausführt, enthält die zurückgegebene Antwort `null` für Zellenebeneneigenschaften wie `values`, `text`, `numberFormat` oder `formula`. Andere Bereichseigenschaften wie `address` oder `cellCount` spiegeln den ungebundenen Bereich wider.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p118">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
 
-#### <a name="write"></a><span data-ttu-id="382de-267">Schreiben</span><span class="sxs-lookup"><span data-stu-id="382de-267">Write</span></span>
+#### <a name="write"></a><span data-ttu-id="44fa9-267">Schreiben</span><span class="sxs-lookup"><span data-stu-id="44fa9-267">Write</span></span>
 
-<span data-ttu-id="382de-268">Das Festlegen von Eigenschaften auf Zellebene (z. B. values, numberFormat usw.) für einen ungebundenen Bereich ist **nicht zulässig**, da die Eingabeanforderung möglicherweise zu groß zum Verarbeiten ist.</span><span class="sxs-lookup"><span data-stu-id="382de-268">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
+<span data-ttu-id="44fa9-268">Das Festlegen von Eigenschaften auf Zellebene (z. B. values, numberFormat usw.) für einen ungebundenen Bereich ist **nicht zulässig**, da die Eingabeanforderung möglicherweise zu groß zum Verarbeiten ist.</span><span class="sxs-lookup"><span data-stu-id="44fa9-268">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
 
-<span data-ttu-id="382de-269">Beispiel: Folgendes ist keine gültige Aktualisierungsanforderung, da der angeforderte Bereich ungebunden ist.</span><span class="sxs-lookup"><span data-stu-id="382de-269">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
+<span data-ttu-id="44fa9-269">Beispiel: Folgendes ist keine gültige Aktualisierungsanforderung, da der angeforderte Bereich ungebunden ist.</span><span class="sxs-lookup"><span data-stu-id="44fa9-269">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1196,25 +1198,25 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
 }
 ```
 
-<span data-ttu-id="382de-270">Wenn ein Aktualisierungsvorgang für so einen Bereich ausgeführt wird, gibt die API einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="382de-270">When an update operation is attempted on such a Range, the API will return an error.</span></span>
+<span data-ttu-id="44fa9-270">Wenn ein Aktualisierungsvorgang für so einen Bereich ausgeführt wird, gibt die API einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="44fa9-270">When an update operation is attempted on such a Range, the API will return an error.</span></span>
 
 
-### <a name="large-range"></a><span data-ttu-id="382de-271">Großer Bereich</span><span class="sxs-lookup"><span data-stu-id="382de-271">Large Range</span></span>
+### <a name="large-range"></a><span data-ttu-id="44fa9-271">Großer Bereich</span><span class="sxs-lookup"><span data-stu-id="44fa9-271">Large Range</span></span>
 
-<span data-ttu-id="382de-p119">Ein großer Bereich impliziert einen Bereich, dessen Größe für einen einzelnen API-Aufruf zu groß ist. Viele Faktoren wie z. B. die Anzahl der Zellen, Werte, numberFormat und Formeln, die im Bereich enthalten sind, können die Antwort so groß werden lassen, dass sie zur API-Interaktion ungeeignet werden kann. Die API ermöglicht einen optimalen Versuch zum Zurückgeben oder Schreiben der angeforderten Daten. Allerdings kann die Größe aufgrund der hohen Ressourcenverwendung zu einem API-Fehlerzustand führen.</span><span class="sxs-lookup"><span data-stu-id="382de-p119">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
+<span data-ttu-id="44fa9-p119">Ein großer Bereich impliziert einen Bereich, dessen Größe für einen einzelnen API-Aufruf zu groß ist. Viele Faktoren wie z. B. die Anzahl der Zellen, Werte, numberFormat und Formeln, die im Bereich enthalten sind, können die Antwort so groß werden lassen, dass sie zur API-Interaktion ungeeignet werden kann. Die API ermöglicht einen optimalen Versuch zum Zurückgeben oder Schreiben der angeforderten Daten. Allerdings kann die Größe aufgrund der hohen Ressourcenverwendung zu einem API-Fehlerzustand führen.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p119">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
 
-<span data-ttu-id="382de-276">Um dies zu vermeiden, wird empfohlen, das Lesen oder Schreiben für einen großen Bereich in mehreren kleineren Bereichsgrößen zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="382de-276">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
+<span data-ttu-id="44fa9-276">Um dies zu vermeiden, wird empfohlen, das Lesen oder Schreiben für einen großen Bereich in mehreren kleineren Bereichsgrößen zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="44fa9-276">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
 
 
-### <a name="single-input-copy"></a><span data-ttu-id="382de-277">Einzelne Eingabekopie</span><span class="sxs-lookup"><span data-stu-id="382de-277">Single input copy</span></span>
+### <a name="single-input-copy"></a><span data-ttu-id="44fa9-277">Einzelne Eingabekopie</span><span class="sxs-lookup"><span data-stu-id="44fa9-277">Single input copy</span></span>
 
-<span data-ttu-id="382de-p120">Zur Unterstützung der Aktualisierung eines Bereichs mit denselben Werten oder demselben Zahlenformat oder des Anwendens derselben Formel für einen kompletten Bereich, wird in der Set-API folgende Konvention verwendet. In Excel ähnelt dieses Verhalten dem Eingeben von Werten oder Formeln in einen Bereich im Modus STRG + EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="382de-p120">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
+<span data-ttu-id="44fa9-p120">Zur Unterstützung der Aktualisierung eines Bereichs mit denselben Werten oder demselben Zahlenformat oder des Anwendens derselben Formel für einen kompletten Bereich, wird in der Set-API folgende Konvention verwendet. In Excel ähnelt dieses Verhalten dem Eingeben von Werten oder Formeln in einen Bereich im Modus STRG + EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p120">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
 
-<span data-ttu-id="382de-280">Die API sucht nach einem *einzelnen Zellenwert* und wenn die Ziel-Bereichsdimension nicht mit der Eingabebereichsdimension übereinstimmt, wendet sie die Aktualisierung im STRG + EINGABE-Modell mit dem in der Anforderung bereitgestellten Wert oder der Formel auf den gesamten Bereich an.</span><span class="sxs-lookup"><span data-stu-id="382de-280">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
+<span data-ttu-id="44fa9-280">Die API sucht nach einem *einzelnen Zellenwert* und wenn die Ziel-Bereichsdimension nicht mit der Eingabebereichsdimension übereinstimmt, wendet sie die Aktualisierung im STRG + EINGABE-Modell mit dem in der Anforderung bereitgestellten Wert oder der Formel auf den gesamten Bereich an.</span><span class="sxs-lookup"><span data-stu-id="44fa9-280">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="382de-281">Beispiele</span><span class="sxs-lookup"><span data-stu-id="382de-281">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="44fa9-281">Beispiele</span><span class="sxs-lookup"><span data-stu-id="44fa9-281">Examples</span></span>
 
-<span data-ttu-id="382de-p121">Die folgende Anforderung aktualisiert den ausgewählten Bereich mit dem Text „Beispieltext“. Beachten Sie, dass der Bereich 200 Zellen aufweist, während die angegebene Eingabe nur einen Zellwert besitzt.</span><span class="sxs-lookup"><span data-stu-id="382de-p121">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
+<span data-ttu-id="44fa9-p121">Die folgende Anforderung aktualisiert den ausgewählten Bereich mit dem Text „Beispieltext“. Beachten Sie, dass der Bereich 200 Zellen aufweist, während die angegebene Eingabe nur einen Zellwert besitzt.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p121">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1225,12 +1227,12 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 }
 ```
 
-### <a name="workbook-functions"></a><span data-ttu-id="382de-284">Arbeitsmappenfunktionen</span><span class="sxs-lookup"><span data-stu-id="382de-284">Workbook functions</span></span> 
-<span data-ttu-id="382de-285">Sie können auf die Arbeitsmappenfunktionen über eine Sammlung von Funktionen zugreifen, die in der /Functions-Ressource enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="382de-285">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
+### <a name="workbook-functions"></a><span data-ttu-id="44fa9-284">Arbeitsmappenfunktionen</span><span class="sxs-lookup"><span data-stu-id="44fa9-284">Workbook functions</span></span> 
+<span data-ttu-id="44fa9-285">Sie können auf die Arbeitsmappenfunktionen über eine Sammlung von Funktionen zugreifen, die in der /Functions-Ressource enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="44fa9-285">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
 
 <!-- LG: Where is the Functions resource? We should link to this.
 -->
-##### <a name="request"></a><span data-ttu-id="382de-286">Anforderung</span><span class="sxs-lookup"><span data-stu-id="382de-286">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="44fa9-286">Anforderung</span><span class="sxs-lookup"><span data-stu-id="44fa9-286">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/pmt
@@ -1246,7 +1248,7 @@ workbook-session-id: {session-id}
 ```
 
 
-##### <a name="response"></a><span data-ttu-id="382de-287">Antwort</span><span class="sxs-lookup"><span data-stu-id="382de-287">Response</span></span> 
+##### <a name="response"></a><span data-ttu-id="44fa9-287">Antwort</span><span class="sxs-lookup"><span data-stu-id="44fa9-287">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1262,11 +1264,11 @@ content-type: application/json
 }
 ```
 
-## <a name="error-information"></a><span data-ttu-id="382de-288">Informationen zu Fehlern</span><span class="sxs-lookup"><span data-stu-id="382de-288">Error information</span></span> 
+## <a name="error-information"></a><span data-ttu-id="44fa9-288">Informationen zu Fehlern</span><span class="sxs-lookup"><span data-stu-id="44fa9-288">Error information</span></span> 
 
-<span data-ttu-id="382de-p122">Fehler werden mit einem HTTP-Fehlercode und einem Fehlerobjekt zurückgegeben. Die Fehler `code` und `message` erläutern die Ursache des Fehlers.</span><span class="sxs-lookup"><span data-stu-id="382de-p122">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
+<span data-ttu-id="44fa9-p122">Fehler werden mit einem HTTP-Fehlercode und einem Fehlerobjekt zurückgegeben. Die Fehler `code` und `message` erläutern die Ursache des Fehlers.</span><span class="sxs-lookup"><span data-stu-id="44fa9-p122">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
  
-<span data-ttu-id="382de-291">Es folgt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="382de-291">The following is an example.</span></span>
+<span data-ttu-id="44fa9-291">Es folgt ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="44fa9-291">The following is an example.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
