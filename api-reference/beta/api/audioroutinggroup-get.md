@@ -3,53 +3,54 @@ title: Abrufen von audio Routinggruppe
 description: Rufen Sie die Eigenschaften und die Beziehungen eines AudioRoutingGroup-Objekts ab.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08c86e0a88cb77ddf42f8b7feee2f55093723d35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814182"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922557"
 ---
-# <a name="get-audio-routing-group"></a><span data-ttu-id="10d8c-103">Abrufen von audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="10d8c-103">Get audio routing group</span></span>
+# <a name="get-audio-routing-group"></a><span data-ttu-id="db8f8-103">Abrufen von audio Routinggruppe</span><span class="sxs-lookup"><span data-stu-id="db8f8-103">Get audio routing group</span></span>
 
-> <span data-ttu-id="10d8c-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="10d8c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="10d8c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="10d8c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="db8f8-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="db8f8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="db8f8-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="db8f8-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="10d8c-106">Rufen Sie die Eigenschaften und die Beziehungen eines [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="10d8c-106">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="db8f8-106">Rufen Sie die Eigenschaften und die Beziehungen eines [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="db8f8-106">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="10d8c-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="10d8c-107">Permissions</span></span>
-<span data-ttu-id="10d8c-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10d8c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="db8f8-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="db8f8-107">Permissions</span></span>
+<span data-ttu-id="db8f8-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db8f8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="10d8c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="10d8c-110">Permission type</span></span>                        | <span data-ttu-id="10d8c-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="10d8c-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="db8f8-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="db8f8-110">Permission type</span></span>                        | <span data-ttu-id="db8f8-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="db8f8-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="10d8c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="10d8c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="10d8c-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="10d8c-113">Not Supported</span></span>                               |
-| <span data-ttu-id="10d8c-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="10d8c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10d8c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="10d8c-115">Not Supported</span></span>                               |
-| <span data-ttu-id="10d8c-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="10d8c-116">Application</span></span>                            | <span data-ttu-id="10d8c-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="10d8c-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="db8f8-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="db8f8-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="db8f8-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="db8f8-113">Not Supported</span></span>                               |
+| <span data-ttu-id="db8f8-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="db8f8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db8f8-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="db8f8-115">Not Supported</span></span>                               |
+| <span data-ttu-id="db8f8-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="db8f8-116">Application</span></span>                            | <span data-ttu-id="db8f8-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="db8f8-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10d8c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="10d8c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db8f8-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="db8f8-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
 GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="10d8c-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="10d8c-119">Optional query parameters</span></span>
-<span data-ttu-id="10d8c-120">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="10d8c-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="db8f8-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="db8f8-119">Optional query parameters</span></span>
+<span data-ttu-id="db8f8-120">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="db8f8-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="10d8c-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="10d8c-121">Request headers</span></span>
-| <span data-ttu-id="10d8c-122">Name</span><span class="sxs-lookup"><span data-stu-id="10d8c-122">Name</span></span>          | <span data-ttu-id="10d8c-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="10d8c-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="db8f8-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="db8f8-121">Request headers</span></span>
+| <span data-ttu-id="db8f8-122">Name</span><span class="sxs-lookup"><span data-stu-id="db8f8-122">Name</span></span>          | <span data-ttu-id="db8f8-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="db8f8-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="10d8c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="10d8c-124">Authorization</span></span> | <span data-ttu-id="10d8c-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="10d8c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="db8f8-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="db8f8-124">Authorization</span></span> | <span data-ttu-id="db8f8-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="db8f8-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="10d8c-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="10d8c-127">Request body</span></span>
-<span data-ttu-id="10d8c-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="10d8c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db8f8-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="db8f8-127">Request body</span></span>
+<span data-ttu-id="db8f8-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="db8f8-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10d8c-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="10d8c-129">Response</span></span>
-<span data-ttu-id="10d8c-130">Wenn der Vorgang erfolgreich war, gibt diese Methode eine `200 OK` Antwortcode und eines [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="10d8c-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="db8f8-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="db8f8-129">Response</span></span>
+<span data-ttu-id="db8f8-130">Wenn der Vorgang erfolgreich war, gibt diese Methode eine `200 OK` Antwortcode und eines [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="db8f8-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10d8c-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="10d8c-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="db8f8-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="db8f8-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="10d8c-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="10d8c-132">Request</span></span>
-<span data-ttu-id="10d8c-133">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="10d8c-133">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="db8f8-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="db8f8-132">Request</span></span>
+<span data-ttu-id="db8f8-133">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="db8f8-133">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,9 +60,9 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="10d8c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="10d8c-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="db8f8-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="db8f8-134">Response</span></span>
 
-> <span data-ttu-id="10d8c-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="10d8c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="db8f8-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="db8f8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -3,30 +3,31 @@ title: windowsInformationProtectionIPRangeCollection-Ressourcentyp
 description: Windows Information Protection – IP-Bereichssammlung
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73995f6b8f5e376de53ec88772dc3713cc179f3a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9981b585818bb6db712b0088b2fde275179917ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911826"
 ---
-# <a name="windowsinformationprotectioniprangecollection-resource-type"></a><span data-ttu-id="11833-103">windowsInformationProtectionIPRangeCollection-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="11833-103">windowsInformationProtectionIPRangeCollection resource type</span></span>
+# <a name="windowsinformationprotectioniprangecollection-resource-type"></a><span data-ttu-id="0d359-103">windowsInformationProtectionIPRangeCollection-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="0d359-103">windowsInformationProtectionIPRangeCollection resource type</span></span>
 
-> <span data-ttu-id="11833-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="11833-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="11833-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="11833-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0d359-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="0d359-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0d359-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0d359-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="11833-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="11833-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0d359-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="0d359-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="11833-107">Windows Information Protection – IP-Bereichssammlung</span><span class="sxs-lookup"><span data-stu-id="11833-107">Windows Information Protection IP Range Collection</span></span>
-## <a name="properties"></a><span data-ttu-id="11833-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="11833-108">Properties</span></span>
-|<span data-ttu-id="11833-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="11833-109">Property</span></span>|<span data-ttu-id="11833-110">Typ</span><span class="sxs-lookup"><span data-stu-id="11833-110">Type</span></span>|<span data-ttu-id="11833-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="11833-111">Description</span></span>|
+<span data-ttu-id="0d359-107">Windows Information Protection – IP-Bereichssammlung</span><span class="sxs-lookup"><span data-stu-id="0d359-107">Windows Information Protection IP Range Collection</span></span>
+## <a name="properties"></a><span data-ttu-id="0d359-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="0d359-108">Properties</span></span>
+|<span data-ttu-id="0d359-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="0d359-109">Property</span></span>|<span data-ttu-id="0d359-110">Typ</span><span class="sxs-lookup"><span data-stu-id="0d359-110">Type</span></span>|<span data-ttu-id="0d359-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0d359-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="11833-112">displayName</span><span class="sxs-lookup"><span data-stu-id="11833-112">displayName</span></span>|<span data-ttu-id="11833-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="11833-113">String</span></span>|<span data-ttu-id="11833-114">Anzeigename</span><span class="sxs-lookup"><span data-stu-id="11833-114">Display name</span></span>|
-|<span data-ttu-id="11833-115">ranges</span><span class="sxs-lookup"><span data-stu-id="11833-115">ranges</span></span>|<span data-ttu-id="11833-116">[ipRange](../resources/intune-shared-iprange.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="11833-116">[ipRange](../resources/intune-shared-iprange.md) collection</span></span>|<span data-ttu-id="11833-117">Sammlung der IP-Bereiche</span><span class="sxs-lookup"><span data-stu-id="11833-117">Collection of ip ranges</span></span>|
+|<span data-ttu-id="0d359-112">displayName</span><span class="sxs-lookup"><span data-stu-id="0d359-112">displayName</span></span>|<span data-ttu-id="0d359-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0d359-113">String</span></span>|<span data-ttu-id="0d359-114">Anzeigename</span><span class="sxs-lookup"><span data-stu-id="0d359-114">Display name</span></span>|
+|<span data-ttu-id="0d359-115">ranges</span><span class="sxs-lookup"><span data-stu-id="0d359-115">ranges</span></span>|<span data-ttu-id="0d359-116">[ipRange](../resources/intune-shared-iprange.md)-Sammlung</span><span class="sxs-lookup"><span data-stu-id="0d359-116">[ipRange](../resources/intune-shared-iprange.md) collection</span></span>|<span data-ttu-id="0d359-117">Sammlung der IP-Bereiche</span><span class="sxs-lookup"><span data-stu-id="0d359-117">Collection of ip ranges</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="11833-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="11833-118">Relationships</span></span>
-<span data-ttu-id="11833-119">Keine</span><span class="sxs-lookup"><span data-stu-id="11833-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="11833-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="11833-120">JSON Representation</span></span>
-<span data-ttu-id="11833-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="11833-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="0d359-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="0d359-118">Relationships</span></span>
+<span data-ttu-id="0d359-119">Keine</span><span class="sxs-lookup"><span data-stu-id="0d359-119">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0d359-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="0d359-120">JSON Representation</span></span>
+<span data-ttu-id="0d359-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="0d359-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
