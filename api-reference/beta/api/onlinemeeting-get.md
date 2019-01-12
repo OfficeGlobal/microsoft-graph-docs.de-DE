@@ -3,57 +3,58 @@ title: Get-Onlinebesprechung
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **OnlineMeeting** -Objekts ab.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 75f4b4372e8e2bf12deee4d77f8f271696c715d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4e287c3848b6ae18c206980b745a39e5b6b45cc3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944691"
 ---
-# <a name="get-online-meeting"></a><span data-ttu-id="c26ba-103">Get-Onlinebesprechung</span><span class="sxs-lookup"><span data-stu-id="c26ba-103">Get Online Meeting</span></span>
+# <a name="get-online-meeting"></a><span data-ttu-id="edfa2-103">Get-Onlinebesprechung</span><span class="sxs-lookup"><span data-stu-id="edfa2-103">Get Online Meeting</span></span>
 
-> <span data-ttu-id="c26ba-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c26ba-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c26ba-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c26ba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="edfa2-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="edfa2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="edfa2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="edfa2-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c26ba-106">Rufen Sie die Eigenschaften und die Beziehungen eines **OnlineMeeting** -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="c26ba-106">Retrieve the properties and relationships of an **onlineMeeting** object.</span></span>
+<span data-ttu-id="edfa2-106">Rufen Sie die Eigenschaften und die Beziehungen eines **OnlineMeeting** -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="edfa2-106">Retrieve the properties and relationships of an **onlineMeeting** object.</span></span>
 
-> <span data-ttu-id="c26ba-107">**Hinweis:** Die `GET` -Methode auf eine [Konferenz-Id VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)beschränkt ist. Cloud-Video-Interop-lizenzierte Benutzer und diese Methode wird verwendet, um die Details an der Besprechung teilnehmen möchten, werden diese IDs generiert.</span><span class="sxs-lookup"><span data-stu-id="c26ba-107">**Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
-> <span data-ttu-id="c26ba-108">Für reguläre Datenflüsse den Robot können die `joinURL` zur Teilnahme an einer Besprechung und keine Suche erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="c26ba-108">For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.</span></span>
+> <span data-ttu-id="edfa2-107">**Hinweis:** Die `GET` -Methode auf eine [Konferenz-Id VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)beschränkt ist. Cloud-Video-Interop-lizenzierte Benutzer und diese Methode wird verwendet, um die Details an der Besprechung teilnehmen möchten, werden diese IDs generiert.</span><span class="sxs-lookup"><span data-stu-id="edfa2-107">**Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
+> <span data-ttu-id="edfa2-108">Für reguläre Datenflüsse den Robot können die `joinURL` zur Teilnahme an einer Besprechung und keine Suche erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="edfa2-108">For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c26ba-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c26ba-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="edfa2-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="edfa2-109">Permissions</span></span>
 
-<span data-ttu-id="c26ba-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c26ba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="edfa2-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="edfa2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c26ba-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c26ba-112">Permission type</span></span>                        | <span data-ttu-id="c26ba-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c26ba-113">Permissions (from least to most privileged)</span></span>           |
+| <span data-ttu-id="edfa2-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="edfa2-112">Permission type</span></span>                        | <span data-ttu-id="edfa2-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="edfa2-113">Permissions (from least to most privileged)</span></span>           |
 |:---------------------------------------|:------------------------------------------------------|
-| <span data-ttu-id="c26ba-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c26ba-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="c26ba-115">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c26ba-115">Not Supported.</span></span>                                        |
-| <span data-ttu-id="c26ba-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c26ba-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c26ba-117">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c26ba-117">Not Supported.</span></span>                                        |
-| <span data-ttu-id="c26ba-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c26ba-118">Application</span></span>                            | <span data-ttu-id="c26ba-119">OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c26ba-119">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All</span></span> |
+| <span data-ttu-id="edfa2-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="edfa2-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="edfa2-115">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="edfa2-115">Not Supported.</span></span>                                        |
+| <span data-ttu-id="edfa2-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="edfa2-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="edfa2-117">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="edfa2-117">Not Supported.</span></span>                                        |
+| <span data-ttu-id="edfa2-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="edfa2-118">Application</span></span>                            | <span data-ttu-id="edfa2-119">OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edfa2-119">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c26ba-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c26ba-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="edfa2-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="edfa2-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
 GET /applications/{id}/onlineMeetings/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c26ba-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c26ba-121">Optional query parameters</span></span>
-<span data-ttu-id="c26ba-122">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="c26ba-122">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="edfa2-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="edfa2-121">Optional query parameters</span></span>
+<span data-ttu-id="edfa2-122">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="edfa2-122">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c26ba-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c26ba-123">Request headers</span></span>
-| <span data-ttu-id="c26ba-124">Name</span><span class="sxs-lookup"><span data-stu-id="c26ba-124">Name</span></span>          | <span data-ttu-id="c26ba-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c26ba-125">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="edfa2-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="edfa2-123">Request headers</span></span>
+| <span data-ttu-id="edfa2-124">Name</span><span class="sxs-lookup"><span data-stu-id="edfa2-124">Name</span></span>          | <span data-ttu-id="edfa2-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="edfa2-125">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="c26ba-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="c26ba-126">Authorization</span></span> | <span data-ttu-id="c26ba-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c26ba-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="edfa2-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="edfa2-126">Authorization</span></span> | <span data-ttu-id="edfa2-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="edfa2-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c26ba-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c26ba-129">Request body</span></span>
-<span data-ttu-id="c26ba-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c26ba-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="edfa2-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="edfa2-129">Request body</span></span>
+<span data-ttu-id="edfa2-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="edfa2-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c26ba-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="c26ba-131">Response</span></span>
-<span data-ttu-id="c26ba-132">Wenn der Vorgang erfolgreich war, gibt diese Methode eine `200 OK` Code und [OnlineMeeting](../resources/onlinemeeting.md) Antwortobjekt im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="c26ba-132">If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="edfa2-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="edfa2-131">Response</span></span>
+<span data-ttu-id="edfa2-132">Wenn der Vorgang erfolgreich war, gibt diese Methode eine `200 OK` Code und [OnlineMeeting](../resources/onlinemeeting.md) Antwortobjekt im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="edfa2-132">If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c26ba-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c26ba-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="edfa2-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="edfa2-133">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c26ba-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c26ba-134">Request</span></span>
-<span data-ttu-id="c26ba-135">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="c26ba-135">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="edfa2-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="edfa2-134">Request</span></span>
+<span data-ttu-id="edfa2-135">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="edfa2-135">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -63,9 +64,9 @@ GET /applications/{id}/onlineMeetings/{id}
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="c26ba-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="c26ba-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="edfa2-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="edfa2-136">Response</span></span>
 
-> <span data-ttu-id="c26ba-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="c26ba-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="edfa2-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="edfa2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

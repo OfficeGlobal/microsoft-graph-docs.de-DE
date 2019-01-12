@@ -3,33 +3,34 @@ title: RangeSort-Ressourcentyp
 description: Verwaltet Sortiervorgänge für Range-Objekte.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c52b4c6cc50bce7d518d26798db9f3d3da49cd1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6d1fb0be3feae69ff2cae34f360a0f78d46a6172
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816429"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947575"
 ---
-# <a name="rangesort-resource-type"></a><span data-ttu-id="30be9-103">RangeSort-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="30be9-103">RangeSort resource type</span></span>
+# <a name="rangesort-resource-type"></a><span data-ttu-id="eda9f-103">RangeSort-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="eda9f-103">RangeSort resource type</span></span>
 
-<span data-ttu-id="30be9-104">Verwaltet Sortiervorgänge für Range-Objekte.</span><span class="sxs-lookup"><span data-stu-id="30be9-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="eda9f-104">Verwaltet Sortiervorgänge für Range-Objekte.</span><span class="sxs-lookup"><span data-stu-id="eda9f-104">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="30be9-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="30be9-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="eda9f-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="eda9f-105">Methods</span></span>
 
-| <span data-ttu-id="30be9-106">Methode</span><span class="sxs-lookup"><span data-stu-id="30be9-106">Method</span></span>           | <span data-ttu-id="30be9-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="30be9-107">Return Type</span></span>    |<span data-ttu-id="30be9-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="30be9-108">Description</span></span>|
+| <span data-ttu-id="eda9f-106">Methode</span><span class="sxs-lookup"><span data-stu-id="eda9f-106">Method</span></span>           | <span data-ttu-id="eda9f-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="eda9f-107">Return Type</span></span>    |<span data-ttu-id="eda9f-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="eda9f-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="30be9-109">Apply</span><span class="sxs-lookup"><span data-stu-id="30be9-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="30be9-110">Keine</span><span class="sxs-lookup"><span data-stu-id="30be9-110">None</span></span>|<span data-ttu-id="30be9-111">Führt einen Sortiervorgang aus.</span><span class="sxs-lookup"><span data-stu-id="30be9-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="eda9f-109">Apply</span><span class="sxs-lookup"><span data-stu-id="eda9f-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="eda9f-110">Keine</span><span class="sxs-lookup"><span data-stu-id="eda9f-110">None</span></span>|<span data-ttu-id="eda9f-111">Führt einen Sortiervorgang aus.</span><span class="sxs-lookup"><span data-stu-id="eda9f-111">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="30be9-112">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="30be9-112">Properties</span></span>
-<span data-ttu-id="30be9-113">Keine</span><span class="sxs-lookup"><span data-stu-id="30be9-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="eda9f-112">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="eda9f-112">Properties</span></span>
+<span data-ttu-id="eda9f-113">Keine</span><span class="sxs-lookup"><span data-stu-id="eda9f-113">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="30be9-114">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="30be9-114">Relationships</span></span>
-<span data-ttu-id="30be9-115">Keine</span><span class="sxs-lookup"><span data-stu-id="30be9-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="eda9f-114">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="eda9f-114">Relationships</span></span>
+<span data-ttu-id="eda9f-115">Keine</span><span class="sxs-lookup"><span data-stu-id="eda9f-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="30be9-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="30be9-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eda9f-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="eda9f-116">JSON representation</span></span>
 
-<span data-ttu-id="30be9-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="30be9-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="eda9f-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="eda9f-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,8 +46,8 @@ ms.locfileid: "27816429"
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="30be9-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="30be9-118">Request</span></span>
-<span data-ttu-id="30be9-119">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="30be9-119">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="eda9f-118">Anforderung</span><span class="sxs-lookup"><span data-stu-id="eda9f-118">Request</span></span>
+<span data-ttu-id="eda9f-119">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="eda9f-119">Here is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -56,8 +57,8 @@ ms.locfileid: "27816429"
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
 
-##### <a name="response"></a><span data-ttu-id="30be9-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="30be9-120">Response</span></span>
-<span data-ttu-id="30be9-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="30be9-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="eda9f-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="eda9f-120">Response</span></span>
+<span data-ttu-id="eda9f-121">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="eda9f-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,53 +3,54 @@ title: Unterhaltung erstellen
 description: 'Erstellen Sie eine neue Unterhaltung, indem Sie einen Thread und einen Beitrag einschließen. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8fe80c3a7d226aaa2bfa3e4834623a84aa91a940
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d2e5f53ae8792cb7fb644701e191c44ad3262a3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936375"
 ---
-# <a name="create-conversation"></a><span data-ttu-id="8dca0-103">Unterhaltung erstellen</span><span class="sxs-lookup"><span data-stu-id="8dca0-103">Create conversation</span></span>
+# <a name="create-conversation"></a><span data-ttu-id="74a7d-103">Unterhaltung erstellen</span><span class="sxs-lookup"><span data-stu-id="74a7d-103">Create conversation</span></span>
 
-> <span data-ttu-id="8dca0-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8dca0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8dca0-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8dca0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="74a7d-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="74a7d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="74a7d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="74a7d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8dca0-106">Erstellen Sie eine neue [Unterhaltung](../resources/conversation.md), indem Sie einen Thread und einen Beitrag einschließen.</span><span class="sxs-lookup"><span data-stu-id="8dca0-106">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
+<span data-ttu-id="74a7d-106">Erstellen Sie eine neue [Unterhaltung](../resources/conversation.md), indem Sie einen Thread und einen Beitrag einschließen.</span><span class="sxs-lookup"><span data-stu-id="74a7d-106">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
 
-<span data-ttu-id="8dca0-107">Sie können die APIs [conversationThread: reply](conversationthread-reply.md) und [post: reply](post-reply.md) verwenden, um weitere Beiträge in der betreffenden Unterhaltung zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="8dca0-107">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
+<span data-ttu-id="74a7d-107">Sie können die APIs [conversationThread: reply](conversationthread-reply.md) und [post: reply](post-reply.md) verwenden, um weitere Beiträge in der betreffenden Unterhaltung zu veröffentlichen.</span><span class="sxs-lookup"><span data-stu-id="74a7d-107">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8dca0-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8dca0-108">Permissions</span></span>
-<span data-ttu-id="8dca0-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8dca0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="74a7d-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="74a7d-108">Permissions</span></span>
+<span data-ttu-id="74a7d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74a7d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8dca0-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8dca0-111">Permission type</span></span>      | <span data-ttu-id="8dca0-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8dca0-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="74a7d-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="74a7d-111">Permission type</span></span>      | <span data-ttu-id="74a7d-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="74a7d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8dca0-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8dca0-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8dca0-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8dca0-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8dca0-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8dca0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8dca0-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8dca0-116">Not supported.</span></span>    |
-|<span data-ttu-id="8dca0-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8dca0-117">Application</span></span> | <span data-ttu-id="8dca0-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8dca0-118">Not supported.</span></span> |
+|<span data-ttu-id="74a7d-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="74a7d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="74a7d-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74a7d-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="74a7d-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="74a7d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74a7d-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="74a7d-116">Not supported.</span></span>    |
+|<span data-ttu-id="74a7d-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="74a7d-117">Application</span></span> | <span data-ttu-id="74a7d-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="74a7d-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8dca0-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8dca0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74a7d-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="74a7d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8dca0-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8dca0-120">Request headers</span></span>
-| <span data-ttu-id="8dca0-121">Header</span><span class="sxs-lookup"><span data-stu-id="8dca0-121">Header</span></span>       | <span data-ttu-id="8dca0-122">Wert</span><span class="sxs-lookup"><span data-stu-id="8dca0-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="74a7d-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="74a7d-120">Request headers</span></span>
+| <span data-ttu-id="74a7d-121">Header</span><span class="sxs-lookup"><span data-stu-id="74a7d-121">Header</span></span>       | <span data-ttu-id="74a7d-122">Wert</span><span class="sxs-lookup"><span data-stu-id="74a7d-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8dca0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8dca0-123">Authorization</span></span>  | <span data-ttu-id="8dca0-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8dca0-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8dca0-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8dca0-126">Content-Type</span></span>  | <span data-ttu-id="8dca0-127">application/json</span><span class="sxs-lookup"><span data-stu-id="8dca0-127">application/json</span></span>  |
+| <span data-ttu-id="74a7d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="74a7d-123">Authorization</span></span>  | <span data-ttu-id="74a7d-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="74a7d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="74a7d-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="74a7d-126">Content-Type</span></span>  | <span data-ttu-id="74a7d-127">application/json</span><span class="sxs-lookup"><span data-stu-id="74a7d-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8dca0-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8dca0-128">Request body</span></span>
-<span data-ttu-id="8dca0-129">Geben Sie im Anforderungstext eine JSON-Darstellung des [conversation](../resources/conversation.md)-Objekts an, das einen [conversationThread](../resources/conversationthread.md) und einen [post](../resources/post.md) enthält.</span><span class="sxs-lookup"><span data-stu-id="8dca0-129">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="74a7d-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="74a7d-128">Request body</span></span>
+<span data-ttu-id="74a7d-129">Geben Sie im Anforderungstext eine JSON-Darstellung des [conversation](../resources/conversation.md)-Objekts an, das einen [conversationThread](../resources/conversationthread.md) und einen [post](../resources/post.md) enthält.</span><span class="sxs-lookup"><span data-stu-id="74a7d-129">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="8dca0-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="8dca0-130">Response</span></span>
-<span data-ttu-id="8dca0-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [conversation](../resources/conversation.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8dca0-131">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="74a7d-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="74a7d-130">Response</span></span>
+<span data-ttu-id="74a7d-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [conversation](../resources/conversation.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="74a7d-131">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span> 
 
-<span data-ttu-id="8dca0-132">Die Antwort enthält die IDs für die neue Unterhaltung und den Thread, die Sie im Vorgang [Beiträge auflisten](conversationthread-list-posts.md) auch verwenden können, um zu dem neuen Beitrag zu gelangen.</span><span class="sxs-lookup"><span data-stu-id="8dca0-132">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
+<span data-ttu-id="74a7d-132">Die Antwort enthält die IDs für die neue Unterhaltung und den Thread, die Sie im Vorgang [Beiträge auflisten](conversationthread-list-posts.md) auch verwenden können, um zu dem neuen Beitrag zu gelangen.</span><span class="sxs-lookup"><span data-stu-id="74a7d-132">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8dca0-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8dca0-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8dca0-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8dca0-134">Request</span></span>
-<span data-ttu-id="8dca0-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8dca0-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="74a7d-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="74a7d-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="74a7d-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="74a7d-134">Request</span></span>
+<span data-ttu-id="74a7d-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="74a7d-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_conversation_from_group"
@@ -83,9 +84,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="8dca0-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="8dca0-136">Response</span></span>
-<span data-ttu-id="8dca0-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8dca0-137">The following is an example of the response.</span></span>
-><span data-ttu-id="8dca0-138">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="8dca0-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8dca0-139">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="8dca0-139">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="74a7d-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="74a7d-136">Response</span></span>
+<span data-ttu-id="74a7d-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="74a7d-137">The following is an example of the response.</span></span>
+><span data-ttu-id="74a7d-138">**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="74a7d-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="74a7d-139">Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="74a7d-139">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
