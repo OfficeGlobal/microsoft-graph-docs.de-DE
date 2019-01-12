@@ -3,33 +3,34 @@ title: ChartAxisFormat-Ressourcentyp
 description: Kapselt die Formateigenschaften für die Diagrammachse.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a219122141da1f384279d0ff4c612f62226612c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 92258887c9646890ee63d14aebcd32ada7a8aaa6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952111"
 ---
-# <a name="chartaxisformat-resource-type"></a><span data-ttu-id="182b6-103">ChartAxisFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="182b6-103">ChartAxisFormat resource type</span></span>
+# <a name="chartaxisformat-resource-type"></a><span data-ttu-id="dbc20-103">ChartAxisFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="dbc20-103">ChartAxisFormat resource type</span></span>
 
-<span data-ttu-id="182b6-104">Kapselt die Formateigenschaften für die Diagrammachse.</span><span class="sxs-lookup"><span data-stu-id="182b6-104">Encapsulates the format properties for the chart axis.</span></span>
+<span data-ttu-id="dbc20-104">Kapselt die Formateigenschaften für die Diagrammachse.</span><span class="sxs-lookup"><span data-stu-id="dbc20-104">Encapsulates the format properties for the chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="182b6-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="182b6-105">Methods</span></span>
-<span data-ttu-id="182b6-106">Keine</span><span class="sxs-lookup"><span data-stu-id="182b6-106">None</span></span>
-## <a name="properties"></a><span data-ttu-id="182b6-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="182b6-107">Properties</span></span>
-<span data-ttu-id="182b6-108">Keine</span><span class="sxs-lookup"><span data-stu-id="182b6-108">None</span></span>
+## <a name="methods"></a><span data-ttu-id="dbc20-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="dbc20-105">Methods</span></span>
+<span data-ttu-id="dbc20-106">Keine</span><span class="sxs-lookup"><span data-stu-id="dbc20-106">None</span></span>
+## <a name="properties"></a><span data-ttu-id="dbc20-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="dbc20-107">Properties</span></span>
+<span data-ttu-id="dbc20-108">Keine</span><span class="sxs-lookup"><span data-stu-id="dbc20-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="182b6-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="182b6-109">Relationships</span></span>
-| <span data-ttu-id="182b6-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="182b6-110">Relationship</span></span> | <span data-ttu-id="182b6-111">Typ</span><span class="sxs-lookup"><span data-stu-id="182b6-111">Type</span></span>   |<span data-ttu-id="182b6-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="182b6-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="dbc20-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="dbc20-109">Relationships</span></span>
+| <span data-ttu-id="dbc20-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="dbc20-110">Relationship</span></span> | <span data-ttu-id="dbc20-111">Typ</span><span class="sxs-lookup"><span data-stu-id="dbc20-111">Type</span></span>   |<span data-ttu-id="dbc20-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dbc20-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="182b6-113">Schriftart</span><span class="sxs-lookup"><span data-stu-id="182b6-113">font</span></span>|[<span data-ttu-id="182b6-114">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="182b6-114">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="182b6-p101">Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammachsenelement dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="182b6-p101">Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.</span></span>|
-|<span data-ttu-id="182b6-117">line</span><span class="sxs-lookup"><span data-stu-id="182b6-117">line</span></span>|[<span data-ttu-id="182b6-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="182b6-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="182b6-p102">Stellt die Formatierung der Diagrammlinien dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="182b6-p102">Represents chart line formatting. Read-only.</span></span>|
+|<span data-ttu-id="dbc20-113">Schriftart</span><span class="sxs-lookup"><span data-stu-id="dbc20-113">font</span></span>|[<span data-ttu-id="dbc20-114">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="dbc20-114">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="dbc20-p101">Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammachsenelement dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="dbc20-p101">Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.</span></span>|
+|<span data-ttu-id="dbc20-117">line</span><span class="sxs-lookup"><span data-stu-id="dbc20-117">line</span></span>|[<span data-ttu-id="dbc20-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="dbc20-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="dbc20-p102">Stellt die Formatierung der Diagrammlinien dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="dbc20-p102">Represents chart line formatting. Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="182b6-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="182b6-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dbc20-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="dbc20-121">JSON representation</span></span>
 
-<span data-ttu-id="182b6-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="182b6-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dbc20-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="dbc20-122">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

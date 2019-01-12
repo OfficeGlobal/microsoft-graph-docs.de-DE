@@ -3,26 +3,27 @@ title: 'Range: LastColumn'
 description: .
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9ed7a58c744e316266c755f94670a3277ecd747a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: cd028b383fb3769829502cd702e33e65f187e3a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885162"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947883"
 ---
-# <a name="range-lastcolumn"></a><span data-ttu-id="5fe8c-103">Range: LastColumn</span><span class="sxs-lookup"><span data-stu-id="5fe8c-103">Range: LastColumn</span></span>
+# <a name="range-lastcolumn"></a><span data-ttu-id="0ba57-103">Range: LastColumn</span><span class="sxs-lookup"><span data-stu-id="0ba57-103">Range: LastColumn</span></span>
 
-<span data-ttu-id="5fe8c-p101">Ruft die letzte Spalte im Bereich ab. Beispielsweise lautet die letzte Spalte von „B2:D5“ „D2:D5“.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-p101">Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".</span></span>
-## <a name="permissions"></a><span data-ttu-id="5fe8c-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5fe8c-106">Permissions</span></span>
-<span data-ttu-id="5fe8c-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5fe8c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0ba57-p101">Ruft die letzte Spalte im Bereich ab. Beispielsweise lautet die letzte Spalte von „B2:D5“ „D2:D5“.</span><span class="sxs-lookup"><span data-stu-id="0ba57-p101">Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".</span></span>
+## <a name="permissions"></a><span data-ttu-id="0ba57-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0ba57-106">Permissions</span></span>
+<span data-ttu-id="0ba57-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ba57-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5fe8c-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5fe8c-109">Permission type</span></span>      | <span data-ttu-id="5fe8c-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5fe8c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0ba57-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0ba57-109">Permission type</span></span>      | <span data-ttu-id="0ba57-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0ba57-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5fe8c-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5fe8c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5fe8c-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5fe8c-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5fe8c-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5fe8c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fe8c-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5fe8c-114">Not supported.</span></span>    |
-|<span data-ttu-id="5fe8c-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5fe8c-115">Application</span></span> | <span data-ttu-id="5fe8c-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5fe8c-116">Not supported.</span></span> |
+|<span data-ttu-id="0ba57-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0ba57-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0ba57-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ba57-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0ba57-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0ba57-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ba57-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0ba57-114">Not supported.</span></span>    |
+|<span data-ttu-id="0ba57-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0ba57-115">Application</span></span> | <span data-ttu-id="0ba57-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0ba57-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5fe8c-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5fe8c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ba57-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ba57-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/lastColumn
@@ -30,22 +31,22 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/lastColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="5fe8c-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5fe8c-118">Request headers</span></span>
-| <span data-ttu-id="5fe8c-119">Name</span><span class="sxs-lookup"><span data-stu-id="5fe8c-119">Name</span></span>       | <span data-ttu-id="5fe8c-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5fe8c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0ba57-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0ba57-118">Request headers</span></span>
+| <span data-ttu-id="0ba57-119">Name</span><span class="sxs-lookup"><span data-stu-id="0ba57-119">Name</span></span>       | <span data-ttu-id="0ba57-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0ba57-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="5fe8c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5fe8c-121">Authorization</span></span>  | <span data-ttu-id="5fe8c-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5fe8c-124">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="5fe8c-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="5fe8c-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="0ba57-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ba57-121">Authorization</span></span>  | <span data-ttu-id="0ba57-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0ba57-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0ba57-124">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="0ba57-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="0ba57-p104">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="0ba57-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5fe8c-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5fe8c-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ba57-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0ba57-127">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="5fe8c-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="5fe8c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0ba57-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ba57-128">Response</span></span>
 
-<span data-ttu-id="5fe8c-129">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-129">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="0ba57-129">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Range](../resources/range.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ba57-129">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5fe8c-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5fe8c-130">Example</span></span>
-<span data-ttu-id="5fe8c-131">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="5fe8c-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5fe8c-132">Request</span></span>
-<span data-ttu-id="5fe8c-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0ba57-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0ba57-130">Example</span></span>
+<span data-ttu-id="0ba57-131">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="0ba57-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0ba57-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0ba57-132">Request</span></span>
+<span data-ttu-id="0ba57-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0ba57-133">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -55,8 +56,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastColumn
 ```
 
-##### <a name="response"></a><span data-ttu-id="5fe8c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="5fe8c-134">Response</span></span>
-<span data-ttu-id="5fe8c-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5fe8c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0ba57-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="0ba57-134">Response</span></span>
+<span data-ttu-id="0ba57-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0ba57-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

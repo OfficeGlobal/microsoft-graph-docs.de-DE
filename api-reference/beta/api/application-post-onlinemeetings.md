@@ -3,52 +3,53 @@ title: Erstellen von online-Besprechung
 description: Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: bd16b6979eed2c7d9386313f2ca07cb9ea2c5c6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946931"
 ---
-# <a name="create-online-meeting"></a><span data-ttu-id="e2fb3-103">Erstellen von online-Besprechung</span><span class="sxs-lookup"><span data-stu-id="e2fb3-103">Create online meeting</span></span>
+# <a name="create-online-meeting"></a><span data-ttu-id="101fb-103">Erstellen von online-Besprechung</span><span class="sxs-lookup"><span data-stu-id="101fb-103">Create online meeting</span></span>
 
-> <span data-ttu-id="e2fb3-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e2fb3-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="101fb-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="101fb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="101fb-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="101fb-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e2fb3-106">Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-106">Creates an online meeting on behalf of a user specified in the request body.</span></span>
+<span data-ttu-id="101fb-106">Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.</span><span class="sxs-lookup"><span data-stu-id="101fb-106">Creates an online meeting on behalf of a user specified in the request body.</span></span>
 
-> <span data-ttu-id="e2fb3-107">**Hinweis**: die Besprechung wird nicht auf den Kalender des Benutzers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-107">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="101fb-107">**Hinweis**: die Besprechung wird nicht auf den Kalender des Benutzers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="101fb-107">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2fb3-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e2fb3-108">Permissions</span></span>
-<span data-ttu-id="e2fb3-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2fb3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="101fb-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="101fb-108">Permissions</span></span>
+<span data-ttu-id="101fb-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="101fb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e2fb3-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e2fb3-111">Permission type</span></span>                        | <span data-ttu-id="e2fb3-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e2fb3-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="101fb-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="101fb-111">Permission type</span></span>                        | <span data-ttu-id="101fb-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="101fb-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e2fb3-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e2fb3-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="e2fb3-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e2fb3-114">Not Supported</span></span>                               |
-| <span data-ttu-id="e2fb3-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e2fb3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2fb3-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e2fb3-116">Not Supported</span></span>                               |
-| <span data-ttu-id="e2fb3-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e2fb3-117">Application</span></span>                            | <span data-ttu-id="e2fb3-118">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2fb3-118">OnlineMeetings.ReadWrite.All</span></span>                |
+| <span data-ttu-id="101fb-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="101fb-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="101fb-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="101fb-114">Not Supported</span></span>                               |
+| <span data-ttu-id="101fb-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="101fb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="101fb-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="101fb-116">Not Supported</span></span>                               |
+| <span data-ttu-id="101fb-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="101fb-117">Application</span></span>                            | <span data-ttu-id="101fb-118">OnlineMeetings.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="101fb-118">OnlineMeetings.ReadWrite.All</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="e2fb3-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e2fb3-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="101fb-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="101fb-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
 POST /applications/{id}/onlineMeetings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e2fb3-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e2fb3-120">Request headers</span></span>
-| <span data-ttu-id="e2fb3-121">Name</span><span class="sxs-lookup"><span data-stu-id="e2fb3-121">Name</span></span>          | <span data-ttu-id="e2fb3-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e2fb3-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="101fb-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="101fb-120">Request headers</span></span>
+| <span data-ttu-id="101fb-121">Name</span><span class="sxs-lookup"><span data-stu-id="101fb-121">Name</span></span>          | <span data-ttu-id="101fb-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="101fb-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="e2fb3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e2fb3-123">Authorization</span></span> | <span data-ttu-id="e2fb3-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="101fb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="101fb-123">Authorization</span></span> | <span data-ttu-id="101fb-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="101fb-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e2fb3-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e2fb3-126">Request body</span></span>
-<span data-ttu-id="e2fb3-127">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-127">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="101fb-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="101fb-126">Request body</span></span>
+<span data-ttu-id="101fb-127">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="101fb-127">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e2fb3-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="e2fb3-128">Response</span></span>
-<span data-ttu-id="e2fb3-129">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortcode und ein [OnlineMeeting](../resources/onlinemeeting.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-129">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="101fb-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="101fb-128">Response</span></span>
+<span data-ttu-id="101fb-129">Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortcode und ein [OnlineMeeting](../resources/onlinemeeting.md) -Objekt aus der Antwort.</span><span class="sxs-lookup"><span data-stu-id="101fb-129">If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e2fb3-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e2fb3-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="101fb-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="101fb-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e2fb3-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e2fb3-131">Request</span></span>
-<span data-ttu-id="e2fb3-132">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="101fb-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="101fb-131">Request</span></span>
+<span data-ttu-id="101fb-132">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="101fb-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -74,11 +75,11 @@ Content-Length: 1553
 }
 ```
 
-<span data-ttu-id="e2fb3-133">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-133">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="101fb-133">Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="101fb-133">In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="e2fb3-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="e2fb3-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="101fb-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="101fb-134">Response</span></span>
 
-><span data-ttu-id="e2fb3-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="e2fb3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="101fb-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="101fb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
