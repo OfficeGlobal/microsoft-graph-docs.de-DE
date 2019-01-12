@@ -3,12 +3,13 @@ title: targetedManagedAppPolicyAssignment-Ressourcentyp
 description: Der Typ der Bereitstellung von Gruppen oder Apps
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41229dec8a87d27b8d4e9203847f4f13647c04d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af0016f83256bf0bb23365f4e1f6422d5f617764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976576"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment-Ressourcentyp
 
@@ -26,7 +27,7 @@ Der Typ der Bereitstellung von Gruppen oder Apps
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Id|
+|id|Zeichenfolge|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Bezeichner für die Bereitstellung einer Gruppe oder App|
 
 ## <a name="relationships"></a>Beziehungen

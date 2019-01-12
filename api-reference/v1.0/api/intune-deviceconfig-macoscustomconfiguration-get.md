@@ -3,12 +3,13 @@ title: Abrufen von „macOSCustomConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 265a8f6a10d4557301ee56c5ceab3fdfb335a767
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 87f1243a6c859e0510aa29d9cca9748de57e3828
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968862"
 ---
 # <a name="get-macoscustomconfiguration"></a>Abrufen von „macOSCustomConfiguration“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

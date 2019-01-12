@@ -2,12 +2,13 @@
 title: Benachrichtigung Ressourcentyp
 description: 'Stellt eine Benachrichtigung, die von einem app-Server veröffentlicht wird, die einen angegebenen Benutzer abzielt. Die Benachrichtigung in Microsoft Graph gespeichert ist und auf anderes Gerät Endpunkte Besitz des Benutzers verteilt ist. '
 localization_priority: Normal
-ms.openlocfilehash: cc68b95e01452e657187e42aa5f92bfec07f396a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: e920645e0d526893eff197b42ed5d6ef7f7c7b93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973076"
 ---
 # <a name="notification-resource-type"></a>Benachrichtigung Ressourcentyp
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.

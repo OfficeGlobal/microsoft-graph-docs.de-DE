@@ -3,12 +3,13 @@ title: deviceComplianceActionItem-Ressourcentyp
 description: Konfiguration der geplanten Aktivität
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bbb67151b38f6c65bf8abae1b16a96b8cb25584f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 46828e3379fbf5179658ed7e2fb2e5e960d61ada
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845808"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965705"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem-Ressourcentyp
 
@@ -27,10 +28,10 @@ Konfiguration der geplanten Aktivität
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |gracePeriodHours|Int32|Anzahl Stunden, die gewartet wird, bis die Aktion erzwungen wird. Gültige Werte: 0 bis 8760.|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Welche Aktion erfolgen soll. Mögliche Werte sind: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles` und `pushNotification`.|
-|notificationTemplateId|String|Benachrichtigungs-E-Mail-Vorlage, die verwendet werden soll|
+|notificationTemplateId|Zeichenfolge|Benachrichtigungs-E-Mail-Vorlage, die verwendet werden soll|
 |notificationMessageCCList|Collection von Objekten des Typs „String“|Eine Liste der Gruppen-IDs, die festlegt, wer bei dieser Benachrichtigung auf „CC“ gesetzt wird.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -3,12 +3,13 @@ title: Educationschool-Eigenschaften aktualisieren
 description: Aktualisieren der Eigenschaften eines school-Objekts.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 23c7c476e2447fbde43a0e7521d4b3d626f80f5b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 3f44d6f8de1685c0c825be8781c1450baad5231e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892232"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975799"
 ---
 # <a name="update-educationschool-properties"></a>Educationschool-Eigenschaften aktualisieren
 

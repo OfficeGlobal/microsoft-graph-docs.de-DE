@@ -3,12 +3,13 @@ title: Educationsubmission aktualisieren
 description: Note und Feedback zu einer Übermittlung hinzufügen. Dieser Vorgang können nur Lehrer ausgeführt werden. Beachten Sie, dass die grundlegende Berechtigung hat keinen Zugriff auf die Eigenschaften für die Qualität und daher Note oder Feedback kann nicht geschrieben werden. Diese Aktion wird die Note und ihr Feedback an die Student nicht freigegeben. Lehrer muss eine Aktion explizite Freigabe, für die Qualität Daten zum Schüler zurückgegeben werden soll.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975337"
 ---
 # <a name="update-educationsubmission"></a>Educationsubmission aktualisieren
 

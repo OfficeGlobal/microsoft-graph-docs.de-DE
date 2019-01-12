@@ -3,12 +3,13 @@ title: Abrufen von androidManagedStoreApp
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidManagedStoreApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9a67ca7d71a25bddf217d8a115e8a2934aba728
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de3c14dd7a096baa252a09a50b4a0c4e77550c14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969513"
 ---
 # <a name="get-androidmanagedstoreapp"></a>Abrufen von androidManagedStoreApp
 

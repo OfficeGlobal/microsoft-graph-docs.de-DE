@@ -2,12 +2,14 @@
 title: Ressourcentyp iosLobAppProvisioningConfiguration
 description: Dieses Thema enthält eine Beschreibung der deklarierte Methoden, Eigenschaften und Beziehungen, die von der Ressource IOS Branchen-App-Bereitstellung Konfiguration verfügbar gemacht werden.
 localization_priority: Normal
-ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2d91508316ab0d164fbc2d4730e905112d82ba8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866395"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965607"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Ressourcentyp iosLobAppProvisioningConfiguration
 
@@ -29,14 +31,14 @@ Dieses Thema enthält eine Beschreibung der deklarierte Methoden, Eigenschaften 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |expirationDateTime|DateTimeOffset|Optionales Profil Ablaufdatum und-Zeit.|
-|payloadFileName|String|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
+|payloadFileName|Zeichenfolge|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 ## <a name="relationships"></a>Beziehungen

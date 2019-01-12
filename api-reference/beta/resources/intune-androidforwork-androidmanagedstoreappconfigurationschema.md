@@ -2,12 +2,14 @@
 title: Ressourcentyp androidManagedStoreAppConfigurationSchema
 description: Schema beschreibt eine Android Anwendung benutzerdefinierten Konfigurationen.
 localization_priority: Normal
-ms.openlocfilehash: 9203d72739da7fa3c4acda0388676ed1c86f924e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 897e1315b0139d0c99e1ff07899d743b4c701078
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965544"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>Ressourcentyp androidManagedStoreAppConfigurationSchema
 

@@ -3,12 +3,13 @@ title: 'Rufen Sie: UpdateMetadata'
 description: Aktualisieren Sie den Beginn des Debuggings Metadaten zu einem Anruf.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 19e56c3ac00aa0b61efef6be3a25020166e364d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976478"
 ---
 # <a name="call-updatemetadata"></a>Rufen Sie: UpdateMetadata
 
@@ -42,8 +43,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|metadata|String|Ein Blob von Daten von den Teilnehmer in der Teilnehmerliste einer bereitgestellt.|
-|clientContext|String|Der Clientkontext.|
+|metadata|Zeichenfolge|Ein Blob von Daten von den Teilnehmer in der Teilnehmerliste einer bereitgestellt.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.

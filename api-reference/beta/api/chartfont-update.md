@@ -3,12 +3,13 @@ title: ChartFont aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften des ChartFont-Objekts.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6030bd9a5ab39f56ecb84da4f60457b4c8d8ba53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 729c5e20fef7c4c2c411cfede3a28e512286457c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864953"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971494"
 ---
 # <a name="update-chartfont"></a>ChartFont aktualisieren
 

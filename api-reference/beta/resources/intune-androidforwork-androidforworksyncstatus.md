@@ -3,12 +3,13 @@ title: AndroidForWorkSyncStatus Enum-Typ
 description: Synchronisierungsstatus des Mandanten mit der Google EMM-API
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0149c76c3f06a0c8cad754431b852d637ba185d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a71a7b247ecd5b7af26ce7c04b3528068a505cf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807917"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965509"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>AndroidForWorkSyncStatus Enum-Typ
 

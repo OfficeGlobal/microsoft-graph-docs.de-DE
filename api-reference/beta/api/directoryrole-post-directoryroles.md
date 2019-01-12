@@ -2,12 +2,14 @@
 title: directoryRole aktivieren
 description: Dient zum Aktivieren einer Verzeichnisrolle. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen und die impliziten Benutzer Directory Rollen sind standardmäßig aktiviert. Zugriff auf und Zuweisen von Mitgliedern zu einer anderen Verzeichnis Rolle, müssen Sie zuerst mit der entsprechenden Verzeichnis Rolle-Vorlage (DirectoryRoleTemplate) aktivieren.
 localization_priority: Normal
-ms.openlocfilehash: 6045b4307b571d84ac28467af21f7aa89b6ee7fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 44c447515a8bc9600a708b3c4a41562bd15c4e59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975449"
 ---
 # <a name="activate-directoryrole"></a>directoryRole aktivieren
 

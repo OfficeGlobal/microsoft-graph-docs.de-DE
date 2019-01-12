@@ -2,12 +2,13 @@
 title: Ressourcentyp office365GroupsActivityCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 87867071545a36f7aca1833a369f919317153bc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968288"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Ressourcentyp office365GroupsActivityCounts
 
@@ -21,7 +22,7 @@ ms.locfileid: "27874109"
 | yammerMessagesRead     | Int64  | Lesen Sie die Anzahl der Nachrichten in Yammer-Gruppen. |
 | yammerMessagesLiked    | Int64  | Die Anzahl der Nachrichten in Yammer-Gruppen gefallen. |
 | reportDate             | Datum   | Das Datum, an dem eine Anzahl von e-Mails an eine Gruppenpostfach gesendet wurden, oder eine Anzahl von Nachrichten gesendet wurden, lesen oder in einer Gruppe Yammer gefallen |
-| reportPeriod           | String | Die Anzahl der Tage, die der Bericht wird behandelt.    |
+| reportPeriod           | Zeichenfolge | Die Anzahl der Tage, die der Bericht wird behandelt.    |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

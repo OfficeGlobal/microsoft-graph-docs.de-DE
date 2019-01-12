@@ -3,12 +3,13 @@ title: termsAndConditionsAcceptanceStatus-Ressourcentyp
 description: C) Richtlinie von einem bestimmten Benutzer. Benutzer müssen die neueste Version der Geschäftsbedingungen akzeptieren, um weiterhin Zugriff auf das Unternehmensportal zu haben.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17d76be4db1f790d00fb90322307ff04152291be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dffbcf3b13fd988a75e4f1061a52dfc46f193bb5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971375"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus-Ressourcentyp
 

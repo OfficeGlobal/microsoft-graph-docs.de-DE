@@ -3,12 +3,13 @@ title: Liste termsAndConditionsGroupAssignments
 description: Listeneigenschaften und Beziehungen der TermsAndConditionsGroupAssignment-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14dfed592d46934d0f9b067a56c8e6c74c38924e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 135c96dd8ccf9a360fdc7ad0035f16154061e53e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832557"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973685"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Liste termsAndConditionsGroupAssignments
 
@@ -36,7 +37,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

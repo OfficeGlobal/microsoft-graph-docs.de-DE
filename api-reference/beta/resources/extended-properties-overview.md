@@ -2,12 +2,14 @@
 title: Übersicht über erweiterte Outlook-Eigenschaften
 description: 'Erweiterte Eigenschaften Speichern benutzerdefinierter Daten zulassen und insbesondere dienen als ein Sicherungsmechanismus für apps für den Zugriff auf '
 localization_priority: Normal
-ms.openlocfilehash: e78b70dc4978cbee05215cffd7a2af1205ba5c69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 4aae656b996fb9d3a2acdc2ac1b77602e32d2073
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966664"
 ---
 # <a name="outlook-extended-properties-overview"></a>Übersicht über erweiterte Outlook-Eigenschaften
 

@@ -3,12 +3,13 @@ title: EmbeddedSIMDeviceState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines EmbeddedSIMDeviceState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cad82e5e211120d79e011647063762ae6a69ec60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 95182cdf8ac35e59428b34888e4376422344c479
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858653"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969926"
 ---
 # <a name="update-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState aktualisieren
 
@@ -55,7 +56,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |universalIntegratedCircuitCardIdentifier|Zeichenfolge|Der universelle Chip Karte Bezeichner (UICCID), identifiziert der Hardware, auf der ein Profil ist bereitgestellt werden.|
 |deviceName|Zeichenfolge|Name des Aufnahmegeräts, dem das Abonnement wurde, bereitgestellt, z. B. DESKTOP JOE|
 |userName|Zeichenfolge|Benutzernamen, der das Abonnement, z. B. joe@contoso.com bereitgestellt wurde|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Der Status des Vorgangs Profil angewendet auf das Gerät. Mögliche Werte sind: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted` und `removedByUser`.|
+|Zustand|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Der Status des Vorgangs Profil angewendet auf das Gerät. Mögliche Werte sind: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted` und `removedByUser`.|
 |stateDetails|Zeichenfolge|Beschreibung des provisioning Status eine Zeichenfolge.|
 
 

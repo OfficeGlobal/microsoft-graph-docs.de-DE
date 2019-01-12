@@ -3,12 +3,13 @@ title: deviceManagementSettings-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f973f2645b37375641bc536b5ace0fa508fb0b0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4e92c8e88ecf620b4731bd3694dfb97e252d042f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973027"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings-Ressourcentyp
 
@@ -23,7 +24,7 @@ Noch nicht dokumentiert
 |deviceComplianceCheckinThresholdDays|Int32|Die Anzahl von Tagen, die ein Gerät ohne Einchecken konform bleiben kann. Gültige Werte: 0 bis 120|
 |isScheduledActionEnabled|Boolean|Gibt an, ob das Feature für eine geplante Aktion für die Regel aktiviert ist.|
 |secureByDefault|Boolean|Ist dies auf „true“ gesetzt, sollte das Gerät als nicht konform gelten, wenn keine Konformitätsrichtlinie verfolgt wird.|
-|enhancedJailBreak|Boolean|Ist Feature aktiviert ist oder nicht erweiterten Jailbreak Erkennung.|
+|enhancedJailBreak|Boolescher Wert|Ist Feature aktiviert ist oder nicht erweiterten Jailbreak Erkennung.|
 |deviceInactivityBeforeRetirementInDay|Int32|Wenn das Gerät nicht prüft für die angegebene Anzahl von Tagen, möglicherweise die Mandantendaten entfernt, und das Gerät werden nicht in die Verwaltung. Gültige Werte 30 bis 270|
 
 ## <a name="relationships"></a>Beziehungen

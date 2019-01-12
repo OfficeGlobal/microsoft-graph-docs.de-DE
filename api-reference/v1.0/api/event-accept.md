@@ -3,12 +3,13 @@ title: 'event: accept'
 description: Akzeptieren Sie das angegebene Ereignis in einem Benutzerkalender an.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0ff048863f1e2077967c995e7e8806f6df7716ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5e89aa5cd934805fed9e8b08f93fed6d4e7cfe8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814882"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972565"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -52,8 +53,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|String|In der Antwort enthaltener Text. Optional.|
-|sendResponse|Boolean|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
+|comment|Zeichenfolge|In der Antwort enthaltener Text. Optional.|
+|sendResponse|Boolescher Wert|`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.|
 
 ## <a name="response"></a>Antwort
 

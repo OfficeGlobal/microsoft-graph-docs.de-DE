@@ -3,12 +3,13 @@ title: Erstellen von deviceConfigurationConflictSummary
 description: Erstellen eines neuen DeviceConfigurationConflictSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea5aa43cf4df325afbffddcc1323f98bf89a3166
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968400"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Erstellen von deviceConfigurationConflictSummary
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,7 +50,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md)-Sammlung|Der Satz von Richtlinien mit der angegebenen Einstellung in Konflikt|
-|id|String|Die Id für diesen Satz von miteinander in Konflikt stehende Richtlinien. Diese Id ist die Ids aller Richtlinien in ConflictingDeviceConfigurations in lexikografischer Reihenfolge durch Unterstriche getrennt sind.|
+|id|Zeichenfolge|Die Id für diesen Satz von miteinander in Konflikt stehende Richtlinien. Diese Id ist die Ids aller Richtlinien in ConflictingDeviceConfigurations in lexikografischer Reihenfolge durch Unterstriche getrennt sind.|
 |contributingSettings|Collection von Objekten des Typs „String“|Die Gruppe von Einstellungen in Konflikt mit der angegebenen Richtlinien|
 |deviceCheckinsImpacted|Int32|Die Anzahl der durch die miteinander in Konflikt stehende Richtlinien und Einstellungen beeinträchtigt Eincheckvorgänge|
 

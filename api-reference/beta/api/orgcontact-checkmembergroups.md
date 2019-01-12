@@ -2,12 +2,14 @@
 title: 'OrgContact: CheckMemberGroups'
 description: Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema Berechtigungen.
 localization_priority: Normal
-ms.openlocfilehash: eea07a97a4ed12d5c8659875c449d4b019392475
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 15fef20514d63a2009f943ca5956af5f026b2fa5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821385"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973342"
 ---
 # <a name="orgcontact-checkmembergroups"></a>OrgContact: CheckMemberGroups
 
@@ -38,7 +40,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupIds|String||
+|groupIds|Zeichenfolge||
 
 ## <a name="response"></a>Antwort
 

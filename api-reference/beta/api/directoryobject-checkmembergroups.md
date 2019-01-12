@@ -2,12 +2,14 @@
 title: Mitgliedergruppen prüfen
 description: Überprüfen Sie die Mitgliedschaft in einer angegebenen Liste von Gruppen und gibt aus dieser Liste dieser Gruppen
 localization_priority: Normal
-ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93ff0a0cb215e489490e50bde40f56e5b562be95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854040"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971088"
 ---
 # <a name="check-member-groups"></a>Mitgliedergruppen prüfen
 
@@ -45,7 +47,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|groupIds|String|Eine Sammlung mit den Objekt-IDs der Gruppen, in denen die Mitgliedschaft überprüft werden soll. Bis zu 20 Gruppen können angegeben werden.|
+|groupIds|Zeichenfolge|Eine Sammlung mit den Objekt-IDs der Gruppen, in denen die Mitgliedschaft überprüft werden soll. Bis zu 20 Gruppen können angegeben werden.|
 
 ## <a name="response"></a>Antwort
 

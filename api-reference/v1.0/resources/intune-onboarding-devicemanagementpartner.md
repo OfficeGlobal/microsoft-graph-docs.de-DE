@@ -3,12 +3,13 @@ title: deviceManagementPartner-Ressourcentyp
 description: Entität, die eine Verbindung mit dem Geräteverwaltungspartner darstellt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b34fc559f71f2f346ba59c5ac5b0c009ce67a83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd91f139824051ec76cd214a8b87b0024608574d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972845"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner-Ressourcentyp
 

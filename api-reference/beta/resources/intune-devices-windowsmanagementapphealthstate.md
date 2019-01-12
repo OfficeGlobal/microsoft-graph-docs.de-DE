@@ -3,12 +3,13 @@ title: Ressourcentyp windowsManagementAppHealthState
 description: Windows Management app Health Zustand Entität.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cf679cf1a5ac86c47354db2fc9f800647d309c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875299"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976471"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Ressourcentyp windowsManagementAppHealthState
 
@@ -29,12 +30,12 @@ Windows Management app Health Zustand Entität.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows Management app Zustand. Mögliche Werte sind: `unknown`, `healthy` und `unhealthy`.|
-|installedVersion|String|Windows Management-app-Version installiert.|
+|installedVersion|Zeichenfolge|Windows Management-app-Version installiert.|
 |lastCheckInDateTime|DateTimeOffset|Windows Management app Einchecken zuletzt.|
-|deviceName|String|Name des Geräts, auf dem Windows Management-app installiert ist.|
-|deviceOSVersion|String|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceName|Zeichenfolge|Name des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceOSVersion|Zeichenfolge|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

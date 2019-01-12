@@ -3,12 +3,13 @@ title: Abrufen von managementCondition
 description: Lesen Sie Eigenschaften und Beziehungen des ManagementCondition-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a6935796d429b478eca53d058690d2e0dcc6ea75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 42314bdea20e1b52240c07204135e1c8e3a547ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841846"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970101"
 ---
 # <a name="get-managementcondition"></a>Abrufen von managementCondition
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

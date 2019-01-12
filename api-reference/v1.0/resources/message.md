@@ -3,12 +3,13 @@ title: Nachrichtenressourcentyp
 description: Dieser Ressourcentyp stellt eine Nachricht in einem mailFolder-Objekt dar.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ea66839fe756fc6ecd57008c775fd20a9a23633a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833019"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966454"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -59,34 +60,34 @@ Diese Ressource unterstützt Folgendes:
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
 |body|[itemBody](itembody.md)|Der Text der Nachricht. Es kann im HTML- oder Textformat sein. Erfahren Sie mehr über [sichere HTML-Code in den Textkörper einer Nachricht](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
-|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
+|bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
-|changeKey|String|Die Version der Nachricht.|
-|conversationId|String|Die ID der Unterhaltung, zu der die E-Mail gehört.|
+|changeKey|Zeichenfolge|Die Version der Nachricht.|
+|conversationId|Zeichenfolge|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
 |Flag|[followupFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
 |Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht. Der Wert muss in das tatsächliche Postfach verwendet entsprechen. Erfahren Sie mehr über [Einstellung der aus und Absender Eigenschaften](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) einer Nachricht.|
 |hasAttachments|Boolescher Wert|Gibt an, ob die Nachricht Anlagen enthält. Diese Eigenschaft enthält keine Inline-Anlagen, wenn eine Nachrichtalso  nur Inline-Anlagen enthält, ist diese Eigenschaft „false“. Um das Vorhandensein von Inline-Anlagen zu überprüfen, analysieren Sie die **body**-Eigenschaft so, dass nach einem `src`-Attribut, z. B. `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`, gesucht wird.|
-|id|String|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
 |Wichtigkeit|Wichtigkeit| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | Die Klassifizierung der Nachricht für Benutzer, basierend auf abgeleiteten Relevanz oder Wichtigkeit oder auf eine explizite Außerkraftsetzung vorliegt. Die möglichen Werte sind: `focused` oder `other`. |
 |internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Auflistung von Nachrichtenkopfzeilen von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)definiert. Der Satz enthält Nachrichtenkopfzeilen zurück, der den Netzwerkpfad durch eine Nachricht vom Absender an den Empfänger angibt. Sie können auch benutzerdefinierte Nachrichtenkopfzeilen enthalten, die die app-Daten für die Nachricht enthalten. |
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. |
-|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
-|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isDraft|Boolescher Wert|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
+|isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
-|parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
+|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
 |replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
 |sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. In den meisten Fällen beträgt dieser Wert **von** -Eigenschaft identisch. Sie können diese Eigenschaft auf einen anderen Wert festlegen, beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen. Erfahren Sie mehr über [Einstellung der aus und Absender Eigenschaften](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) einer Nachricht.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
-|Betreff|String|Der Betreff der Nachricht.|
+|Betreff|Zeichenfolge|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Nachrichtentexts, der nur in der aktuellen Nachricht vorhanden ist. **uniqueBody** wird nicht standardmäßig zurückgegeben, kann aber für eine bestimmte Nachricht mithilfe der Abfrage `?$select=uniqueBody` abgerufen werden. Er kann im HTML- oder Textformat vorliegen.|
-|webLink|String|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
+|webLink|Zeichenfolge|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
 
 ## <a name="relationships"></a>Beziehungen
@@ -172,7 +173,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Postfacheinstellungen abrufen](../api/user-get-mailboxsettings.md) 
 - [Postfacheinstellungen aktualisieren](../api/user-update-mailboxsettings.md)

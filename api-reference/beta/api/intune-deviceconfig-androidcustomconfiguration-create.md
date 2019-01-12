@@ -3,12 +3,13 @@ title: Erstellen von „androidCustomConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs androidCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 64da61abbac0d141699e3d06ca616f8e4178b626
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f19d3d0920d71e20347d67cec04c8bc8bb78566d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842553"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973734"
 ---
 # <a name="create-androidcustomconfiguration"></a>Erstellen von „androidCustomConfiguration“
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

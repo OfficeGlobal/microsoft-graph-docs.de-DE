@@ -2,12 +2,13 @@
 title: Liste von Abonnements
 description: Abrufen der Eigenschaften und Beziehungen zwischen Webhook Abonnements, basierend auf der app-ID, die Benutzer und die Rolle des Benutzers mit einem Mandanten.
 localization_priority: Priority
-ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: c2e9446721f4390341c33f8b976893e4b1ab14be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972936"
 ---
 # <a name="list-subscriptions"></a>Liste von Abonnements
 

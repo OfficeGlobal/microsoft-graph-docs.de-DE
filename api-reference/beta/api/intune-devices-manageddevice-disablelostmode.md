@@ -3,12 +3,13 @@ title: disableLostMode-Aktion
 description: Modus für verlorene Geräte deaktivieren
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdde0783a6e4195ff7a51102adb6007f49a82ef9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5458b29b610b5c6c18909233ed7f7f31ec4d2e96
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970486"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode-Aktion
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

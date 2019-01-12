@@ -2,12 +2,13 @@
 title: Aktivität löschen
 description: Löschen einer vorhandenen Benutzeraktivität für Ihre app.
 localization_priority: Normal
-ms.openlocfilehash: fab008e9a9d031aed12605f14bf447247c0227ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: cbe12a373f06c2893a5ca202247865f4ce4a8f52
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966853"
 ---
 # <a name="delete-an-activity"></a>Aktivität löschen
 

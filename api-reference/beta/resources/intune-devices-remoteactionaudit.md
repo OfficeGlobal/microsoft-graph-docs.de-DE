@@ -3,12 +3,13 @@ title: Ressourcentyp remoteActionAudit
 description: Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten gehören initiiert wurden.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad583f13311e5baece70c5ec28ca8f7c73f5349e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972593"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Ressourcentyp remoteActionAudit
 
@@ -29,14 +30,14 @@ Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Berichts-ID|
-|deviceDisplayName|String|Name des Aufnahmegeräts Intune.|
-|userName|String|\[veraltete\] verwenden Sie stattdessen InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|String|Benutzer, der die Aktion Gerät gestartet UPN-Format vorliegt.|
+|id|Zeichenfolge|Berichts-ID|
+|deviceDisplayName|Zeichenfolge|Name des Aufnahmegeräts Intune.|
+|userName|Zeichenfolge|\[veraltete\] verwenden Sie stattdessen InitiatedByUserPrincipalName.|
+|initiatedByUserPrincipalName|Zeichenfolge|Benutzer, der die Aktion Gerät gestartet UPN-Format vorliegt.|
 |Aktion|[remoteAction](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Zeit, wenn die Aktion ausgestellt wurde, in UTC angegeben.|
-|deviceOwnerUserPrincipalName|String|UPN des Besitzers Gerät.|
-|deviceIMEI|String|IMEI des Geräts.|
+|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Besitzers Gerät.|
+|deviceIMEI|Zeichenfolge|IMEI des Geräts.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion. Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Beziehungen

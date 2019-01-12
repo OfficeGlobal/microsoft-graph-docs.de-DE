@@ -3,12 +3,13 @@ title: Aktualisieren von „macOSOfficeSuiteApp“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs macOSOfficeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 020f5090c85458619eb599e519dae0605ccb310a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e1986f96b120605cc99aef9fbf8a8c321d041e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830569"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975939"
 ---
 # <a name="update-macosofficesuiteapp"></a>Aktualisieren von „macOSOfficeSuiteApp“
 

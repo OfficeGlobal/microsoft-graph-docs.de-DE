@@ -3,12 +3,13 @@ title: telecomExpenseManagementPartners auflisten
 description: Auflisten von Eigenschaften und Beziehungen der telecomExpenseManagementPartner-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7c9ed2bdfcdaa116d5357fcff07a1ae9e11472e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f86d5c65bf1a2b6a8d31f347a4797485db0974f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828084"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970759"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>telecomExpenseManagementPartners auflisten
 
@@ -34,7 +35,7 @@ GET /deviceManagement/telecomExpenseManagementPartners
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

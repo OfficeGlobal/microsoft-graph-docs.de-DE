@@ -3,12 +3,13 @@ title: Ressourcentyp importedDeviceIdentity
 description: Die Ressource ImportedDeviceIdentity stellt eine eindeutige Hardware Identität eines Geräts für die Konfiguration der Registrierung vor dem bereits bereitgestellt wurde.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c33069520913c7c750220ca8938459ba9bf96c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6fe03159f79bb1198db80cbba130601614df8865
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811669"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966566"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Ressourcentyp importedDeviceIdentity
 

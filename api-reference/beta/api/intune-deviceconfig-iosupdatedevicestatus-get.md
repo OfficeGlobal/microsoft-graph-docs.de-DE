@@ -3,12 +3,13 @@ title: Abrufen von „iosUpdateDeviceStatus“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs iosUpdateDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 679cc7de95f6c70bead957a77b7bcac8a3ae8abe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 171a243cda68c55bf16fbbb83f32bad73ca1e198
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966615"
 ---
 # <a name="get-iosupdatedevicestatus"></a>Abrufen von „iosUpdateDeviceStatus“
 
@@ -38,7 +39,7 @@ GET /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

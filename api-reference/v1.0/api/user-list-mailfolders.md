@@ -3,12 +3,13 @@ title: mailFolders auflisten
 description: 'Mit dieser API können Sie die E-Mail-Ordner-Sammlung im Stammordner des angemeldeten Benutzers abrufen. '
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 853b20ec3ed667fdf6dbc8b99645623d4872a09d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8515e70ed9502c97706f8eab332c85c748384082
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972761"
 ---
 # <a name="list-mailfolders"></a>mailFolders auflisten
 

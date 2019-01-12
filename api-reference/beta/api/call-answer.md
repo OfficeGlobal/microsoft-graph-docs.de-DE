@@ -3,12 +3,13 @@ title: 'Rufen Sie: Antwort'
 description: Beantworten eines eingehenden Anrufs an.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 98d3f54e87e36de6c8f492644be1b47486b48d39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d3927c41df6558b1c0d266afbdb25f1c12ac1e49
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879534"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971613"
 ---
 # <a name="call-answer"></a>Rufen Sie: Antwort
 

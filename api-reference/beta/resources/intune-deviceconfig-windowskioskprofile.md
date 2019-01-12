@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskProfile
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c082b5fb9421af36bbc742051989492a5a3b19d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6fc462bdf6548f0f281082ba1cb228796899896d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807651"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977052"
 ---
 # <a name="windowskioskprofile-resource-type"></a>Ressourcentyp windowsKioskProfile
 
@@ -20,8 +21,8 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ID|String|Schlüssel der Entität|
-|Profilname|String|Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.|
+|ID|Zeichenfolge|Schlüssel der Entität|
+|Profilname|Zeichenfolge|Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.|
 |appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|Die App-Konfiguration, die für diese Konfiguration Kiosk verwendet werden soll.|
 |userAccountsConfiguration|[WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) -Auflistung|Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt werden. Diese Sammlung darf maximal 500 Elemente enthalten.|
 

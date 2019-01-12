@@ -3,12 +3,13 @@ title: GetManagementConditionsForPlatform-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13871db2f5dd99de80caf1004baa96aaf6dcf146
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 16e60527c17d443ab75ff189fcbd8177e60a7ecb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864925"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975792"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>GetManagementConditionsForPlatform-Funktion
 

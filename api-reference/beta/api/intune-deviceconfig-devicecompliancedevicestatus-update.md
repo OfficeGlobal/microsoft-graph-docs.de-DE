@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceComplianceDeviceStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d731a19359854cb39db5980f0b4c5e1b52b52897
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28643c5e308f026f6aca0b0c600387a35acf4f4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874501"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968995"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Aktualisieren von „deviceComplianceDeviceStatus“
 

@@ -3,12 +3,13 @@ title: Ressourcentyp windowsVpnConfiguration
 description: Windows-VPN-Konfigurationsprofil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d3601515f62855df79d548c11db9d46438afdb68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1f2f350044253bfcac4d9a527d6e888f8613d7a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835609"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976898"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>Ressourcentyp windowsVpnConfiguration
 

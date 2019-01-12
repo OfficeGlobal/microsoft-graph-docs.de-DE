@@ -3,12 +3,13 @@ title: Erstellen von mobileAppInstallStatus
 description: Erstellen eines neuen MobileAppInstallStatus-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eb20bc01884c895baaf88f2ccdee3af69d534b21
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb2425ee773068eea2446b19534f907f48a43fe5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854502"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970766"
 ---
 # <a name="create-mobileappinstallstatus"></a>Erstellen von mobileAppInstallStatus
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,19 +50,19 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|deviceName|String|Gerätename|
-|deviceId|String|Geräte-ID|
+|id|Zeichenfolge|Schlüssel der Entität|
+|deviceName|Zeichenfolge|Gerätename|
+|deviceId|Zeichenfolge|Geräte-ID|
 |lastSyncDateTime|DateTimeOffset|Letzte Synchronisierung Datum-Zeit|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Die Details der Installation Zustand der app. Mögliche Werte: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|Der Fehler im code für die Installation oder Deinstallieren von Fehlern.|
-|osVersion|String|Version des Betriebssystems|
+|osVersion|Zeichenfolge|Version des Betriebssystems|
 |osDescription|String|OS Beschreibung|
-|userName|String|Name des Aufnahmegeräts Benutzer|
-|userPrincipalName|String|Benutzerprinzipalname|
-|displayVersion|String|Menschen lesbare Version der Anwendung|
+|userName|Zeichenfolge|Name des Aufnahmegeräts Benutzer|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
+|displayVersion|Zeichenfolge|Menschen lesbare Version der Anwendung|
 
 
 

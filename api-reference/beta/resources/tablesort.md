@@ -3,12 +3,13 @@ title: TableSort-Ressourcentyp
 description: Verwaltet Sortiervorgänge für Table-Objekte.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7e3eae5ef21bc8d8ea1fba395b369ea35d1f80b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5e5e93fb1cccb420e8da08015109c81dc45ae688
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873045"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966489"
 ---
 # <a name="tablesort-resource-type"></a>TableSort-Ressourcentyp
 

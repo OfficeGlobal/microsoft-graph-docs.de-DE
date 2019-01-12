@@ -2,12 +2,14 @@
 title: Warnung aktualisieren
 description: Aktualisieren einer bearbeitbaren **Benachrichtigung** -Eigenschaft in eine integrierte Lösung alert Status und Aufgaben in Lösungen synchron. Dieser Methode wird jede Lösung, die eine Aufzeichnung die Warnung ID wurde aktualisiert.
 localization_priority: Normal
-ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 7b218daa56f7648bc888bbc0cd25619b22799325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858093"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966034"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 

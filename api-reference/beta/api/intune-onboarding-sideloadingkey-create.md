@@ -3,12 +3,13 @@ title: Erstellen von sideLoadingKey
 description: Erstellen eines neuen SideLoadingKey-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 140dc11778bad432d388f8d22173cd31cbdef915
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838871"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974847"
 ---
 # <a name="create-sideloadingkey"></a>Erstellen von sideLoadingKey
 

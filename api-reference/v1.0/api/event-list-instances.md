@@ -2,12 +2,14 @@
 title: Instanzen auflisten
 description: 'Rufen Sie die Instanzen (vorkommen) eines Ereignisses für einen angegebenen Zeitraum. Wenn das Ereignis gehört zu einer `SeriesMaster` eingeben, gibt die '
 localization_priority: Normal
-ms.openlocfilehash: 194d911b6c5ea05eb0d3f797287773c516da9ee3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6e18572a0c9f8d7d20ad8f3740559d645e4fa9e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811396"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977017"
 ---
 # <a name="list-instances"></a>Instanzen auflisten
 
@@ -48,8 +50,8 @@ Stellen Sie in der URL der Anforderung die folgenden Funktionsparameter mit Wert
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|startDateTime|String|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
-|endDateTime|String|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
+|startDateTime|Zeichenfolge|Startdatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Beispielsweise „2015-11-08T19:00:00.0000000“.|
+|endDateTime|Zeichenfolge|Enddatum und -uhrzeit des Zeitraums, dargestellt im ISO 8601-Format. Z. B. „2015-11-08T20:00:00.0000000“.|
 
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader

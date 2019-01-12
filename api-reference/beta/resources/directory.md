@@ -2,12 +2,14 @@
 title: directory-Ressourcentyp (Gelöschte Elemente)
 description: . Ein kürzlich gelöschtes Element kann bis zu 30 Tage lang wiederhergestellt werden. Nach 30 Tagen wird das Element dauerhaft gelöscht.
 localization_priority: Normal
-ms.openlocfilehash: 20685f2d9d61726d170744efb5fd2abb571fe934
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2593603afa145d30b5e26a240bb5cd471eab9942
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834447"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966552"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory-Ressourcentyp (Gelöschte Elemente)
 

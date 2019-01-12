@@ -3,12 +3,13 @@ title: LocalSecurityOptionsSmartCardRemovalBehaviorType Enum-Typ
 description: Mögliche Werte für LocalSecurityOptionsSmartCardRemovalBehaviorType
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ab8ead80cc98a8036c4f874c61d541af09cbaaae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6077bbecbb883dc1ca1eb55e92cd062444b25123
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809968"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973013"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>LocalSecurityOptionsSmartCardRemovalBehaviorType Enum-Typ
 

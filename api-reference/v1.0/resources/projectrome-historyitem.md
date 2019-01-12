@@ -2,12 +2,13 @@
 title: Ressourcentyp historyItem
 description: Stellt ein Verlaufselement für eine Aktivität in einer app. Die Benutzeraktivitäten darstellen ein einziges Ziel in der app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als Element Verlauf erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 localization_priority: Normal
-ms.openlocfilehash: 510913be6a3f70190c7cf657d9540d75f481c3a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 029c17e09348977752f3ce5632740b2bdac64e46
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882915"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977437"
 ---
 # <a name="historyitem-resource-type"></a>Ressourcentyp historyItem
 
@@ -31,7 +32,7 @@ Wenn eine app eine Sitzung erstellt, sollte ein **HistoryItem** -Objekt auf die 
 |createdDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server erstellt wurde.|
 |lastModifiedDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server geändert wurde.|
 |id | Zeichenfolge | Erforderlich. Client-Set-GUID für das **HistoryItem** -Objekt.|
-|startedDateTime | DateTimeOffset | Erforderlich. UTC-DateTime beim **HistoryItem** (Aktivität Sitzung) gestartet wurde. Erforderlich für die Versionsgeschichte der Zeitachse.|
+|startedDateTime | DateTimeOffset | Erforderlich.  UTC-DateTime beim **HistoryItem** (Aktivität Sitzung) gestartet wurde. Erforderlich für die Versionsgeschichte der Zeitachse.|
 |lastActiveDateTime | DateTimeOffset | Optional. UTC-DateTime beim letzten **HistoryItem** (Aktivität Sitzung) als aktiv oder fertig - bei null **HistoryItem** Status erkannt wurden, sollte laufend Besprechung sein.|
 |expirationDateTime | DateTimeOffset | Optional. UTC-DateTime, wenn die **HistoryItem** harten Löschens durchläuft. Kann vom Client festgelegt werden.|
 |activeDurationSeconds | int | Optional. Die Dauer des Engagements aktiver Benutzer. Wenn nicht angegeben ist, erfolgt die Berechnung von der **StartedDateTime** und **LastActiveDateTime**.|

@@ -3,12 +3,13 @@ title: Ressourcentyp contactFolder
 description: Ein Ordner, der Kontakte enthält.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 87276ced9a1b333eb502feab122bca88e86b5349
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 450c683d91eeb789c8c54b2bbfd38db695fbbba2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967546"
 ---
 # <a name="contactfolder-resource-type"></a>Ressourcentyp contactFolder
 
@@ -40,9 +41,9 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des Ordners.|
-|id|String|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Ordners.|
+|displayName|Zeichenfolge|Der Anzeigename des Ordners.|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Ordners.|
 |wellKnownName|string|Der Name des Ordners, wenn der Ordner einen erkannten Ordner ist. Derzeit `contacts` ist die einzige erkannten Kontakteordner.|
 
 ## <a name="relationships"></a>Beziehungen

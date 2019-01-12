@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceCompliancePolicyAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCompliancePolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a5dc31eb1de806ae10a14012e7e2cadd82ed633a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31fb66288f2c7706115b9d1ab52efa652b0b98ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861257"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968645"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Aktualisieren von „deviceCompliancePolicyAssignment“
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ziel der Zuweisung der Konformitätsrichtlinie|
 
 
