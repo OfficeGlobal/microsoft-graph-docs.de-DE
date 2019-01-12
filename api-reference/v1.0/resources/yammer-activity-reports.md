@@ -2,12 +2,13 @@
 title: Yammer-Aktivitätsberichte
 description: Der Yammer-Aktivitätsbericht gibt Aufschluss darüber, in welchem Umfang Yammer in Ihrer Organisation genutzt wird, denn Sie erfahren, wie hoch die Aktivität innerhalb der Organisation ist und wie viele eindeutige Benutzer über Yammer Nachrichten veröffentlichen, liken und lesen.
 localization_priority: Normal
-ms.openlocfilehash: 98b3172fef6baff0a1ba13f6f78ad92b58829f3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 2a97b0d8020a5fce8777d93588e1a38a7ccd8355
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871764"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937621"
 ---
 # <a name="yammer-activity-reports"></a>Yammer-Aktivitätsberichte
 

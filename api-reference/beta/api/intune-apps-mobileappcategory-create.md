@@ -3,12 +3,13 @@ title: Erstellen von „mobileAppCategory“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a84d141a15a55d95d5429511a8db208f24ed984c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04224a40982a0802af88ceed61d3e121c531827b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887283"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941303"
 ---
 # <a name="create-mobileappcategory"></a>Erstellen von „mobileAppCategory“
 

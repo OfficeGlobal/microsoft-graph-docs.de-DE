@@ -3,12 +3,13 @@ title: settingStateDeviceSummary löschen
 description: Löscht ein settingStateDeviceSummary-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e06b23ace3962ad3d0326c8d9a182bb7d8ea054e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6d88d43068cd8eeceb1227e1a3aae76dc3acd913
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942346"
 ---
 # <a name="delete-settingstatedevicesummary"></a>settingStateDeviceSummary löschen
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

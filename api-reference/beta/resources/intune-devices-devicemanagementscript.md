@@ -3,12 +3,13 @@ title: Ressourcentyp deviceManagementScript
 description: Intune bietet Kunden die Möglichkeit, ihre Powershell-Skripts auf der registrierten Windows 10 Azure Active Directory verbunden Geräten ausführen. Das Skript kann einmal oder in regelmäßigen Abständen ausgeführt werden.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811046"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932308"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Ressourcentyp deviceManagementScript
 
@@ -23,7 +24,7 @@ Intune bietet Kunden die Möglichkeit, ihre Powershell-Skripts auf der registrie
 |[Liste deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekte.|
 |[Abrufen von deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
 |[Erstellen von deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Erstellen eines neuen [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
-|[DeviceManagementScript löschen](../api/intune-devices-devicemanagementscript-delete.md)|Keine|Löscht eine [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
+|[DeviceManagementScript löschen](../api/intune-devices-devicemanagementscript-delete.md)|Keines|Löscht eine [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
 |[DeviceManagementScript aktualisieren](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Aktualisieren Sie die Eigenschaften eines [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
 |[assign-Aktion](../api/intune-devices-devicemanagementscript-assign.md)|Keine|Noch nicht dokumentiert|
 

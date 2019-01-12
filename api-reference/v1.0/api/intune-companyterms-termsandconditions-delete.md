@@ -3,12 +3,13 @@ title: termsAndConditions löschen
 description: Löscht Objekte des Typs termsAndConditions.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a6f46812efe5cfa2bef3e8532620eebfe56d597e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d86d7b6adbea2254425e0f649b105377e9dfddc4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942612"
 ---
 # <a name="delete-termsandconditions"></a>termsAndConditions löschen
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

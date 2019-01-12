@@ -2,12 +2,14 @@
 title: Liste roleScopeTags
 description: Listeneigenschaften und Beziehungen der RoleScopeTag-Objekte.
 author: tfitzmac
-ms.openlocfilehash: 786276f5e0d74871ebf38fce235f584911bebb20
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 57d3d1bfbc2e0a7dd6a166406aac06835b58d619
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337800"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939210"
 ---
 # <a name="list-rolescopetags"></a>Liste roleScopeTags
 
@@ -38,8 +40,8 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
-|Accept|application/json|
+|Authorization|Bearer&lt;token&gt; erforderlich|
+|Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

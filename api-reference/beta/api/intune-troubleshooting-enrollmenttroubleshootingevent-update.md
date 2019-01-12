@@ -3,12 +3,13 @@ title: enrollmentTroubleshootingEvent aktualisieren
 description: Aktualisieren der Eigenschaften eines enrollmentTroubleshootingEvent-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 785835eb0daabd55add7d7d903990abd4725ab9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 33f4a789834ee7fdc84c000d065df932203efb0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914472"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent aktualisieren
 

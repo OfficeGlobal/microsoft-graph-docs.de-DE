@@ -3,12 +3,13 @@ title: Erstellen von managedDeviceCertificateState
 description: Erstellen eines neuen ManagedDeviceCertificateState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44c8425ece89835ff36bb4886acd27e80c43b1bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0b48550d3cea0fef3e57821f0ef89a75bdcc412a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945405"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Erstellen von managedDeviceCertificateState
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -64,7 +65,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Enhanced Key Usage. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Gültigkeit Period Einheiten. Mögliche Werte sind: `days`, `months` und `years`.|
@@ -73,21 +74,21 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Format des Antragstellernamen. Mögliche Werte: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Subject alternative Name-Format. Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|REVOKE-Status. Mögliche Werte sind: `none`, `pending`, `issued`, `failed` und `revoked`.|
-|certificateProfileDisplayName|String|Profil der Anzeigename des Zertifikats|
-|deviceDisplayName|String|Anzeigename des Geräts|
-|userDisplayName|String|Anzeigename des Benutzers.
+|certificateProfileDisplayName|Zeichenfolge|Profil der Anzeigename des Zertifikats|
+|deviceDisplayName|Zeichenfolge|Anzeigename des Geräts|
+|userDisplayName|Zeichenfolge|Anzeigename des Benutzers.
 |
 |certificateExpirationDateTime|DateTimeOffset|Ablaufdatum des Zertifikats|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
-|certificateIssuer|String|Aussteller|
-|certificateThumbprint|String|Fingerabdruck|
-|Zertifikatsseriennummer|String|Seriennummer|
+|certificateIssuer|Zeichenfolge|Aussteller|
+|certificateThumbprint|Zeichenfolge|Fingerabdruck|
+|Zertifikatsseriennummer|Zeichenfolge|Seriennummer|
 |certificateKeyLength|Int32|Schlüssellänge|
-|certificateEnhancedKeyUsage|String|Erweiterte Schlüsselverwendung|
+|certificateEnhancedKeyUsage|Zeichenfolge|Erweiterte Schlüsselverwendung|
 |certificateValidityPeriod|Int32|Gültigkeitsdauer|
-|certificateSubjectNameFormatString|String|Subject Name Formatzeichenfolge für benutzerdefinierte Subject Namensformate|
-|certificateSubjectAlternativeNameFormatString|String|Subject alternative Name Formatzeichenfolge für benutzerdefinierte Formate|
+|certificateSubjectNameFormatString|Zeichenfolge|Subject Name Formatzeichenfolge für benutzerdefinierte Subject Namensformate|
+|certificateSubjectAlternativeNameFormatString|Zeichenfolge|Subject alternative Name Formatzeichenfolge für benutzerdefinierte Formate|
 |certificateIssuanceDateTime|DateTimeOffset|Veröffentlichungslizenzen Datum|
 |certificateErrorCode|Int32|Fehlercode|
 

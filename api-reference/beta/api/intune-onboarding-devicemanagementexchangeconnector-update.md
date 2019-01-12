@@ -3,12 +3,13 @@ title: deviceManagementExchangeConnector aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagementExchangeConnector-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5bb6a490f5f192a673a050f9c4711fd4981665d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 877493e0ef2234942abf2b1b90d4493b73afb615
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946112"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,7 +49,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert|
+|id|Zeichenfolge|Noch nicht dokumentiert|
 |lastSyncDateTime|DateTimeOffset|Zeit der letzten Synchronisierung für Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connectorstatus. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
 |primarySmtpAddress|String|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|

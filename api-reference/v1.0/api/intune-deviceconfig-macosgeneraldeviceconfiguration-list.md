@@ -3,12 +3,13 @@ title: Auflisten von „macOSGeneralDeviceConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs macOSGeneralDeviceConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c11cc0f1fef43297fd585dc5c9e30ecd361d04e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b0faacfccebca1d893b4e23049a22ca3490b92de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855216"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935367"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Auflisten von „macOSGeneralDeviceConfiguration“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

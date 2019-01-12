@@ -3,12 +3,13 @@ title: Beitragsressourcentyp
 description: Stellt ein einzelnes Post-Element innerhalb einer ConverstaionThread Entität.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 46e33021d0929e1bd665f8256f0874e8e8c92809
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942416"
 ---
 # <a name="post-resource-type"></a>Beitragsressourcentyp
 
@@ -65,14 +66,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Der Inhalt des Beitrags. Dies ist eine Standardeigenschaft. Für diese Eigenschaft sind Nullwerte zulässig.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Beitrag verknüpft sind. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) , der für einen Benutzer definiert wurde.|
-|changeKey|String|Gibt die Version des Beitrags an. Jedes Mal, wenn der Beitrag geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
-|conversationId|String|Eindeutige ID der Unterhaltung. Schreibgeschützt.|
-|conversationThreadId|String|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
+|changeKey|Zeichenfolge|Gibt die Version des Beitrags an. Jedes Mal, wenn der Beitrag geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|conversationId|Zeichenfolge|Eindeutige ID der Unterhaltung. Schreibgeschützt.|
+|conversationThreadId|Zeichenfolge|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Gibt an, wann der Beitrag erstellt wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Von|[Empfänger](recipient.md)|Wird in Zugriffsszenarien mit Stellvertretungen verwendet. Gibt an, wer die Nachricht im Auftrag eines anderen Benutzers veröffentlicht hat. Dies ist eine Standardeigenschaft.|
-|hasAttachments|Boolean|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
-|id|String| Schreibgeschützt|
-|importance | String | Die Bedeutung der einer Gruppe Post: `low`, `normal`, `high`. |
+|hasAttachments|Boolescher Wert|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
+|id|Zeichenfolge| Schreibgeschützt|
+|importance | Zeichenfolge | Die Bedeutung der einer Gruppe Post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Gibt an, wann der Beitrag zuletzt geändert wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|Teilnehmer einer Unterhaltung, die im Rahmen des Beitrags zu dem Thread hinzugefügt wurden.|
 |receivedDateTime|DateTimeOffset|Gibt an, wann der Beitrag empfangen wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|

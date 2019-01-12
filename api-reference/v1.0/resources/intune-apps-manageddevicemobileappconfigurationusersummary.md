@@ -2,12 +2,14 @@
 title: managedDeviceMobileAppConfigurationUserSummary-Ressourcentyp
 description: Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für eine Zusammenfassung des Benutzerstatus von MDM-Konfigurationen mobiler Apps.
 localization_priority: Normal
-ms.openlocfilehash: e543c6d70906b678e90ba1598c46a039430745e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 385e9ac51b10d97e425cf19acb10007402eeeeb4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934891"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary-Ressourcentyp
 

@@ -3,12 +3,13 @@ title: Personenressourcentyp
 description: Eine Ansammlung von Informationen über eine Person aus E-Mails, Kontakten und sozialen Netzwerken. Personen können lokale Kontakte, Kontakte aus sozialen Netzwerken, aus dem Verzeichnis Ihrer Organisation und Personen aus kürzlichen Unterhaltungen (z. B. E-Mail und Skype) sein.
 author: simonhult
 localization_priority: Priority
-ms.openlocfilehash: d61d1393795408636ac8f5720e018bb4ea885cb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: c92709143ee7def0ede98dfdb81a419df43c4493
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890993"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940295"
 ---
 # <a name="person-resource-type"></a>Personenressourcentyp
 

@@ -3,12 +3,13 @@ title: Ressourcentyp windowsManagedDevice
 description: Windows-Geräte, die verwaltet werden, oder über Intune Einschreibung
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc1b55694881b913fac57edeff3d9e1f9e48f099
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54b11d8ee0a5b2c7b325289c897fe2e511ec3b4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933393"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>Ressourcentyp windowsManagedDevice
 
@@ -32,9 +33,9 @@ Erbt vom [managedDevice](../resources/intune-devices-manageddevice.md)
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userId|String|Eindeutiger Bezeichner für den Benutzer mit dem Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceName|String|Name des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userId|Zeichenfolge|Eindeutiger Bezeichner für den Benutzer mit dem Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceName|Zeichenfolge|Name des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Die Hardward Details für das Gerät.  Enthält Informationen, wie Speicherplatz, Hersteller, Seriennummer. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Besitzertyp|[Besitzertyp](../resources/intune-devices-ownertype.md)|Besitz des Geräts. "Unternehmen" oder "personal" Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md)möglich. Mögliche Werte sind: `unknown`, `company` und `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Besitz des Geräts. "Unternehmen" oder "personal" Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md)möglich. Mögliche Werte sind: `unknown`, `company` und `personal`.|
@@ -53,7 +54,7 @@ Erbt vom [managedDevice](../resources/intune-devices-manageddevice.md)
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController` und `microsoft365ManagedMdm`.|
 |osVersion|Zeichenfolge|Auf dem Gerät installierte Betriebssystemversion.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|easActivated|Boolescher Wert|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|Zeichenfolge|Exchange ActiveSync-ID des Geräts.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.

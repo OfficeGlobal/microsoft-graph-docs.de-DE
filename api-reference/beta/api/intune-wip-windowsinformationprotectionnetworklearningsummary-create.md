@@ -3,12 +3,13 @@ title: windowsInformationProtectionNetworkLearningSummary erstellen
 description: Erstellen eines neuen windowsInformationProtectionNetworkLearningSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f3cb295fd24b70b4d40464218532fd1298fd2ab1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 59b55111a022c1172abb9ab9f65ccf23e153c8cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841503"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915529"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary erstellen
 
@@ -36,7 +37,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

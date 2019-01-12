@@ -2,12 +2,14 @@
 title: Erstellen von mailSearchFolder
 description: Verwenden Sie diese API, um eine neue MailSearchFolder in das angegebene Postfach des Benutzers zu erstellen.
 localization_priority: Normal
-ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 626bf3a2e8bc77ba929895eed74ac0bb803aa5d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840187"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912876"
 ---
 # <a name="create-mailsearchfolder"></a>Erstellen von mailSearchFolder
 
@@ -38,10 +40,10 @@ Geben Sie in der Abfrage-URL als eine Ordner-ID oder den Ordnernamen einer bekan
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
-| Content-Type | `application/json`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich.  |
+| Content-Type | `application/json`. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -49,11 +51,11 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-| @odata.type | String | Der Typ des zu erstellenden Ordners. Legen Sie auf "microsoft.graph.mailSearchFolder". |
-| displayName | String | Der Anzeigename für den neuen Ordner.|
-| includeNestedFolders | Boolean | Wie sollte die Hierarchie der Postfach-Ordner durchlaufen werden. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
+| @odata.type | Zeichenfolge | Der Typ des zu erstellenden Ordners. Legen Sie auf "microsoft.graph.mailSearchFolder". |
+| displayName | Zeichenfolge | Der Anzeigename für den neuen Ordner.|
+| includeNestedFolders | Boolescher Wert | Wie sollte die Hierarchie der Postfach-Ordner durchlaufen werden. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
 | sourceFolderIDs | Collection von Objekten des Typs „String“ | Die Postfachordner, die durchsucht werden soll. |
-| filterQuery | String | Der OData-Abfrage Nachrichten gefiltert werden soll. |
+| filterQuery | Zeichenfolge | Der OData-Abfrage Nachrichten gefiltert werden soll. |
 
 ## <a name="response"></a>Antwort
 

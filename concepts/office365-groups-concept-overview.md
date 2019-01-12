@@ -2,12 +2,14 @@
 title: Überblick über Office 365-Gruppen in Microsoft Graph
 description: 'Office 365-Gruppen stellen den grundlegenden Mitgliedschaftsdienst für Benutzer bereit, um Unterhaltungen, Dateien, Notizen, Kalender, Pläne und viele andere Ressourcen freizugeben. '
 author: dkershaw10
-ms.openlocfilehash: 7dcb13210a69737ae5f7889fe797afd9fec19c81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932709"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Überblick über Office 365-Gruppen in Microsoft Graph
 

@@ -3,12 +3,13 @@ title: DefenderPromptForSampleSubmission Enum-Typ
 description: Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1419a719ea6fb3eff3ec2a5e0cdb3722173ef6cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e103916bd55e6c2d505a85c379b80962ab9a0cac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928087"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>DefenderPromptForSampleSubmission Enum-Typ
 

@@ -3,12 +3,13 @@ title: Ressourcentyp deviceManagementScriptGroupAssignment
 description: Enthält Eigenschaften, die zum Zuweisen eines Verwaltungsskripts Gerät zu einer Gruppe.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6dfeca71b20ffae27f99fdd4af0909332338b4f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c1077cb3892cad210033abcd21a7abf2ee2e397
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832207"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934758"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>Ressourcentyp deviceManagementScriptGroupAssignment
 
@@ -29,8 +30,8 @@ Enthält Eigenschaften, die zum Zuweisen eines Verwaltungsskripts Gerät zu eine
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
-|targetGroupId|String|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
+|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
+|targetGroupId|Zeichenfolge|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

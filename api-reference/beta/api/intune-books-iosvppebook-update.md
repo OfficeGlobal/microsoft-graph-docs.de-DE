@@ -3,12 +3,13 @@ title: Aktualisieren von „iosVppEBook“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b8af46ca4e5e75e362043cfc74fc2745072ac033
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 27fa80b36ab049ead5b3aa8f56b27eeecfb31430
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823380"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915018"
 ---
 # <a name="update-iosvppebook"></a>Aktualisieren von „iosVppEBook“
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,22 +49,22 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|displayName|String|Name des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|publisher|String|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|displayName|Zeichenfolge|Name des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Zeichenfolge|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|publisher|Zeichenfolge|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|informationUrl|String|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
-|appleId|String|Apple-ID, die dem VPP-Token zugeordnet ist|
-|vppOrganizationName|String|Zum VPP-Token gehörender Organisationsname|
+|appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
+|vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
 |genres|Collection von Objekten des Typs „String“|Genres|
-|language|String|Sprache|
-|seller|String|Verkäufer|
+|language|Zeichenfolge|Sprache|
+|seller|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
 

@@ -2,12 +2,14 @@
 title: Bookingappointment aktualisieren
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: c36f7033cb9a8f884436b4315399c794516a93ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917258"
 ---
 # <a name="update-bookingappointment"></a>Bookingappointment aktualisieren
 
@@ -38,30 +40,30 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|Die SMTP-Adresse von der [BookingCustomer](../resources/bookingcustomer.md) , die den Termin buchungs-ist.|
-|customerId|String|Die ID des der [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin. Wenn keine ID angegeben wird, wenn ein Termin erstellt wird, wird ein neues **BookingCustomer** -Objekt erstellt. Einmal festlegen möchten, sollten Sie die **CustomerId** unveränderlich berücksichtigen.|
+|customerEmailAddress|Zeichenfolge|Die SMTP-Adresse von der [BookingCustomer](../resources/bookingcustomer.md) , die den Termin buchungs-ist.|
+|customerId|Zeichenfolge|Die ID des der [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin. Wenn keine ID angegeben wird, wenn ein Termin erstellt wird, wird ein neues **BookingCustomer** -Objekt erstellt. Einmal festlegen möchten, sollten Sie die **CustomerId** unveränderlich berücksichtigen.|
 |customerLocation|[location](../resources/location.md)|Stellt die Standortinformationen für die [BookingCustomer](../resources/bookingcustomer.md) , die den Termin buchungs-ist.|
-|Kundenname|String|Der Kunde seinen Namen.|
-|customerNotes|String|Die Notizen aus der Kunde diesen Termin zugeordnet. Sie können den Wert nur beim Lesen dieses **BookingAppointment** anhand seiner ID abrufen. <br> Sie können diese Eigenschaft festlegen, nur, wenn Sie einen Termin zunächst mit einem neuen Kunden zu erstellen. Nach diesem Punkt ist der Wert des Kunden durch **CustomerId**dargestellten berechnet.|
-|customerPhone|String|Telefonnummer des Kunden.|
+|Kundenname|Zeichenfolge|Der Kunde seinen Namen.|
+|customerNotes|Zeichenfolge|Die Notizen aus der Kunde diesen Termin zugeordnet. Sie können den Wert nur beim Lesen dieses **BookingAppointment** anhand seiner ID abrufen. <br> Sie können diese Eigenschaft festlegen, nur, wenn Sie einen Termin zunächst mit einem neuen Kunden zu erstellen. Nach diesem Punkt ist der Wert des Kunden durch **CustomerId**dargestellten berechnet.|
+|customerPhone|Zeichenfolge|Telefonnummer des Kunden.|
 |duration|Duration|Die Länge des Termins, im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) gekennzeichnet. |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, das Ende des Termins.|
 |invoiceAmount|Gleitkommawert mit doppelter Genauigkeit|Die berechneter Betrag der Rechnung.|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone der Rechnung für diesen Termin.|
-|invoiceId|String|Die ID der Rechnung.|
+|invoiceId|Zeichenfolge|Die ID der Rechnung.|
 |invoiceStatus|string| Der Status der Rechnung. Mögliche Werte sind: `draft`, `reviewing`, `open`, `canceled`, `paid` und `corrective`.|
-|invoiceUrl|String|Die URL der Rechnung in Microsoft Bookings.|
-|optOutOfCustomerEmail|Boolean|True gibt an, dass die [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
+|invoiceUrl|Zeichenfolge|Die URL der Rechnung in Microsoft Bookings.|
+|optOutOfCustomerEmail|Boolescher Wert|True gibt an, dass die [BookingCustomer](../resources/bookingcustomer.md) für diesen Termin nicht möchte einer Bestätigung für diesen Termin.|
 |postBuffer|Duration|Der Zeitraum, nach den Termin enden, für die Bereinigung als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt. |
 |preBuffer|Duration|Die Zeitspanne, vor dem Beginn des Termins für die Vorbereitung, als Beispiel zu reservieren. Der Wert wird im Format [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) ausgedrückt.|
 |Preis|Gleitkommawert mit doppelter Genauigkeit|Die regulären Preis für einen Termin für die angegebene [BookingService](../resources/bookingservice.md).|
 |priceType|string| Eine Einstellung für die pricing Struktur von Diensten Flexibilität. Mögliche Werte sind: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs` und `notSet`.|
 |Erinnerungen|[BookingReminder](../resources/bookingreminder.md) -Auflistung|Die Auflistung von Kunden Erinnerungen für diesen Termin gesendet. Der Wert dieser Eigenschaft ist nur bei dieser **BookingAppointment** anhand seiner ID Lesen verfügbar|
-|selfServiceAppointmentId|String|Eine zusätzliche Tracking-ID für den Termin, wenn der Termin direkt vom Kunden auf der Seite scheduling im Gegensatz zur durch ein Mitarbeiter in den Namen des Kunden erstellt wurde.|
-|ServiceID|String|Die ID des der [BookingService](../resources/bookingservice.md) , die diesen Termin zugeordnet ist.|
+|selfServiceAppointmentId|Zeichenfolge|Eine zusätzliche Tracking-ID für den Termin, wenn der Termin direkt vom Kunden auf der Seite scheduling im Gegensatz zur durch ein Mitarbeiter in den Namen des Kunden erstellt wurde.|
+|ServiceID|Zeichenfolge|Die ID des der [BookingService](../resources/bookingservice.md) , die diesen Termin zugeordnet ist.|
 |serviceLocation|[location](../resources/location.md)|Der Speicherort, in dem der Dienst übermittelt wird.|
-|Dienstname|String|Der Name des der **BookingService** , die diesen Termin zugeordnet ist.<br>Diese Eigenschaft ist optional, wenn Sie einen neuen Termin zu erstellen. Wenn nicht angegeben, wird es aus dem Dienst, der den Termin zugeordnet, von der **ServiceId** -Eigenschaft berechnet.|
-|serviceNotes|String|Notizen aus einer [BookingStaffMember](../resources/bookingstaffmember.md). Der Wert dieser Eigenschaft ist nur bei dieser **BookingAppointment** anhand seiner ID Lesen verfügbar|
+|Dienstname|Zeichenfolge|Der Name des der **BookingService** , die diesen Termin zugeordnet ist.<br>Diese Eigenschaft ist optional, wenn Sie einen neuen Termin zu erstellen. Wenn nicht angegeben, wird es aus dem Dienst, der den Termin zugeordnet, von der **ServiceId** -Eigenschaft berechnet.|
+|serviceNotes|Zeichenfolge|Notizen aus einer [BookingStaffMember](../resources/bookingstaffmember.md). Der Wert dieser Eigenschaft ist nur bei dieser **BookingAppointment** anhand seiner ID Lesen verfügbar|
 |staffMemberIds|Collection von Objekten des Typs „String“|Die ID der einzelnen [BookingStaffMember](../resources/bookingstaffmember.md) , die diesem Termin geplant ist.|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, die Beginn des Termins.|
 

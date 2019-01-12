@@ -3,12 +3,13 @@ title: UpdatePriorities Aktion
 description: Aktualisieren Sie die Richtlinie Prioritäten.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2aeffb76268266f239413437369cefddadb72cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 15c57de2077842ff2115770859fc34357e0f6a22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940477"
 ---
 # <a name="updatepriorities-action"></a>UpdatePriorities Aktion
 
@@ -36,7 +37,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

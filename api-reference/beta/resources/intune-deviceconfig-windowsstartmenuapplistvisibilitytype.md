@@ -3,12 +3,13 @@ title: WindowsStartMenuAppListVisibilityType Enum-Typ
 description: Typ der Start Menü app Liste Sichtbarkeit.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cc8440f05b818eab7b02e6df016b47ecd3a8d3b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f4b2e07126ab6f65af26a8145c04acbab526ab8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839277"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932588"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>WindowsStartMenuAppListVisibilityType Enum-Typ
 

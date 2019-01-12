@@ -3,12 +3,13 @@ title: deviceConfigurationDeviceStatus abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceConfigurationDeviceStatus-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63110ec5c71e773e66a15318f16a97c73b13581f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b3602289622bfcdebd52f40c78517c3747646686
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925210"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus abrufen
 

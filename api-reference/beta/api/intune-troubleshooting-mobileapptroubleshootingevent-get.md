@@ -3,12 +3,13 @@ title: Abrufen von mobileAppTroubleshootingEvent
 description: Lesen Sie Eigenschaften und Beziehungen des MobileAppTroubleshootingEvent-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7f22e0909b53695b7edde6f8469176c2ae2ead25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d267059f2252621f708fbf525366153cf603096d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861726"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944740"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Abrufen von mobileAppTroubleshootingEvent
 
@@ -38,7 +39,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

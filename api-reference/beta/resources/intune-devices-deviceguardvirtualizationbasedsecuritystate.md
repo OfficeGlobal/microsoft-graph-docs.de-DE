@@ -3,12 +3,13 @@ title: DeviceGuardVirtualizationBasedSecurityState Enum-Typ
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2c3d7745af4e6a93e9836f24a184e6ca90b60d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6719dc370355c82d18c0a416cba02899ad03e183
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944264"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>DeviceGuardVirtualizationBasedSecurityState Enum-Typ
 

@@ -3,12 +3,13 @@ title: AndroidWorkProfileNineWorkEasConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWorkProfileNineWorkEasConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: edbdbff87cf2384506aeb7f3527b9dc018e3931c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6eb42fd868b5e262c83a740847a107f4de4da518
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944278"
 ---
 # <a name="update-androidworkprofilenineworkeasconfiguration"></a>AndroidWorkProfileNineWorkEasConfiguration aktualisieren
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

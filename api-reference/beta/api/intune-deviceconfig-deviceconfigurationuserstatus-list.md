@@ -3,12 +3,13 @@ title: Auflisten von „deviceConfigurationUserStatus“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceConfigurationUserStatus auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5da16c1d1495359c138fc34491f100955fa72c33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c44f984aab21a2155ce2f93fd25f82752f8aa7c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827965"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943144"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>Auflisten von „deviceConfigurationUserStatus“
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

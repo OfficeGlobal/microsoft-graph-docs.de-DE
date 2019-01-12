@@ -2,12 +2,13 @@
 title: Datenerweiterung abrufen
 description: Dieser Artikel beschreibt, wie Sie eine offene Erweiterung (openTypeExtension-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
 localization_priority: Normal
-ms.openlocfilehash: ca2acb78d5a4731b57614476f11a6235a3b784bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 33c26980382e29a3b640a53ac3397b4ee959fd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844002"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935521"
 ---
 # <a name="get-open-extension"></a>Datenerweiterung abrufen
 
@@ -112,7 +113,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 Stellen Sie sicher, dass Sie für die Leerzeichen in der `$filter`-Zeichenfolge die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
-|**Name**|**Value**|**Beschreibung**|
+|**Name**|**Wert**|**Beschreibung**|
 |:---------------|:--------|:-------|
 |$filter|string|Gibt Erweiterungen zurück, deren **id** dem Wert des Parameters `extensionId` entspricht.|
 |$filter with **any** operator|string|Gibt Instanzen einer Ressourcensammlung zurück, die eine Erweiterung enthalten, deren **id** dem Wert des Parameters `extensionId` entspricht.|

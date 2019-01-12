@@ -3,12 +3,13 @@ title: Benutzer erstellen
 description: Dient zum Erstellen eines neuen Benutzerobjekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9146f7292e003bb64c958e91d1305544b3980442
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 10670accfe99a545cd6adb1532f34de3b229b26c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943186"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -44,7 +45,7 @@ POST /users
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -57,7 +58,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner des Benutzers|
+|id|Zeichenfolge|Eindeutiger Bezeichner des Benutzers|
 |**Klicken Sie auf mittels Fingereingabe**||
 |deviceEnrollmentLimit|Int32|Der Grenzwert für die maximale Anzahl von Geräten, die der Benutzer registrieren kann. Zulässige Werte sind 5 oder 1000.|
 

@@ -2,12 +2,14 @@
 title: 'Benutzer: ExportPersonalData'
 description: Fordert die Daten Richtlinie Vorgang, versucht ein Unternehmensadministrator, eine Organisationseinheit Benutzerdaten exportieren.
 localization_priority: Normal
-ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7f112d065b75da7dc525e667df78b0264be37d55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934191"
 ---
 # <a name="user-exportpersonaldata"></a>Benutzer: ExportPersonalData
 
@@ -40,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung |
 |:---------------|:--------|:----------|
-|storageLocation|String|Dies ist die URL einer gemeinsamen Zugriff Signatur (SAS) ein Konto Azure-Speicher an, in dem Daten exportiert werden sollen.|
+|storageLocation|Zeichenfolge|Dies ist die URL einer gemeinsamen Zugriff Signatur (SAS) ein Konto Azure-Speicher an, in dem Daten exportiert werden sollen.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Es gibt keine Suchzeichenfolge im Antworttext zurück. Die Antwort enthält die folgenden Kopfzeilen.

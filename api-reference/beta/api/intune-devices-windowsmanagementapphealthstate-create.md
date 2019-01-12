@@ -3,12 +3,13 @@ title: Erstellen von windowsManagementAppHealthState
 description: Erstellen eines neuen WindowsManagementAppHealthState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b3df0880168c4b4ccb15b11e39124ec8ee7ab708
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dce9b217b7234fadff0d8cbdc962f1ef38e66c0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838626"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938999"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Erstellen von windowsManagementAppHealthState
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,12 +49,12 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Zustand des Windows Management-app|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows Management app Zustand. Mögliche Werte sind: `unknown`, `healthy` und `unhealthy`.|
-|installedVersion|String|Windows Management-app-Version installiert.|
+|installedVersion|Zeichenfolge|Windows Management-app-Version installiert.|
 |lastCheckInDateTime|DateTimeOffset|Windows Management app Einchecken zuletzt.|
-|deviceName|String|Name des Geräts, auf dem Windows Management-app installiert ist.|
-|deviceOSVersion|String|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceName|Zeichenfolge|Name des Geräts, auf dem Windows Management-app installiert ist.|
+|deviceOSVersion|Zeichenfolge|Windows 10 Betriebssystemversion des Geräts, auf dem Windows Management-app installiert ist.|
 
 
 

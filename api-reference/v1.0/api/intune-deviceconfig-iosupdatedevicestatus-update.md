@@ -3,12 +3,13 @@ title: iosUpdateDeviceStatus aktualisieren
 description: Aktualisieren der Eigenschaften eines iosUpdateDeviceStatus-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3b6e10719ac13bb8fb483a837154cd83da553a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8ae033083374366a80178aac1674c4f9647bf90b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932175"
 ---
 # <a name="update-iosupdatedevicestatus"></a>iosUpdateDeviceStatus aktualisieren
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,18 +47,18 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Installationsstatus des Richtlinienberichts. Mögliche Werte sind: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
-|osVersion|String|Gemeldete Geräteversion|
-|deviceId|String|Gemeldete Geräte-ID|
-|userId|String|Gemeldete Benutzer-ID|
-|deviceDisplayName|String|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
-|userName|String|Gemeldeter Benutzername|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|osVersion|Zeichenfolge|Gemeldete Geräteversion|
+|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
+|userId|Zeichenfolge|Gemeldete Benutzer-ID|
+|deviceDisplayName|Zeichenfolge|Gerätename, der dem Objekt des Typs „DevicePolicyStatus“ zugeordnet ist|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzerprinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
 
 
 

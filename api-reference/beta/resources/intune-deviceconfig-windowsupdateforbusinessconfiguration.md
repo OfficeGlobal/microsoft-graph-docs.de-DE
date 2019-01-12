@@ -3,12 +3,13 @@ title: Ressourcentyp „windowsUpdateForBusinessConfiguration“
 description: Diese Ressource enthält die Windows Update for Business-Konfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8376508e701262deca7fdacdd49add179d7dae5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 76e5c14bf7e26121eca19bf03d995e5679f57075
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815477"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938419"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Ressourcentyp „windowsUpdateForBusinessConfiguration“
 
@@ -34,13 +35,13 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Übermittlung Optimierung Modus. Mögliche Werte sind: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` und `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Pre-Release-Funktionen. Mögliche Werte sind: `userDefined`, `settingsOnly`, `settingsAndExperimentations` und `notAllowed`.|
@@ -55,13 +56,13 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Qualitätsupdates|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Aussetzung der Funktionsupdates|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Bestimmt, welche Geräte Branch ihre Updates von erhält. Mögliche Werte sind: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow` und `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Boolean|Legen Sie vor dem Neustart alle Kontrollkästchen überspringen: Batterie Level = 40 %, Anwesenheitsinformationen des Benutzers, Anzeige benötigt, Präsentationsmodus, Vollbildmodus, Telefonanruf Zustand, Spiel Modus usw.. |
+|skipChecksBeforeRestart|Boolescher Wert|Legen Sie vor dem Neustart alle Kontrollkästchen überspringen: Batterie Level = 40 %, Anwesenheitsinformationen des Benutzers, Anzeige benötigt, Präsentationsmodus, Vollbildmodus, Telefonanruf Zustand, Spiel Modus usw.. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Die Installation des Updates auf den Wochen des Monats geplant. Mögliche Werte sind: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek` und `everyWeek`.|
-|qualityUpdatesPauseStartDateTime|String|Qualität Updates anhalten starten datetime|
-|featureUpdatesPauseStartDateTime|String|Feature Updates anhalten starten datetime|
+|qualityUpdatesPauseStartDateTime|Zeichenfolge|Qualität Updates anhalten starten datetime|
+|featureUpdatesPauseStartDateTime|Zeichenfolge|Feature Updates anhalten starten datetime|
 |featureUpdatesRollbackWindowInDays|Int32|Die Anzahl der Tage nach einer Aktualisierung der Features für die ein Rollback gültig ist.|
-|qualityUpdatesWillBeRolledBack|Boolean|Gibt an, ob Rollback Qualität Updates auf dem nächsten Gerät|
-|featureUpdatesWillBeRolledBack|Boolean|Gibt an, ob Rollback-Feature-Updates auf das nächste Gerät|
+|qualityUpdatesWillBeRolledBack|Boolescher Wert|Gibt an, ob Rollback Qualität Updates auf dem nächsten Gerät|
+|featureUpdatesWillBeRolledBack|Boolescher Wert|Gibt an, ob Rollback-Feature-Updates auf das nächste Gerät|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Qualität Updates Rollback starten datetime|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Feature Updates Rollback starten datetime|
 |engagedRestartDeadlineInDays|Int32|Stichtag in Tagen, bevor Sie automatisch planen und Ausführen von ein ausstehender Neustart außerhalb von aktiven Stunden mit gültigen Bereich von 2 bis 30 Tage|

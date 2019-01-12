@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsDeviceUsageUserDetail'
 description: Diese Methode ruft Details zur Microsoft Teams-Gerätenutzung ab, aufgeschlüsselt nach Benutzer.
 localization_priority: Normal
-ms.openlocfilehash: 8e3f19d0e95c5b69109787208b4d75613922bd91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: b87a0b85b99bb0aba44b145fa38e50c80b89d5b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936235"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 

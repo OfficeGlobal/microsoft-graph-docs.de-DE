@@ -3,12 +3,13 @@ title: windows10EnterpriseModernAppManagementConfiguration löschen
 description: Löscht ein windows10EnterpriseModernAppManagementConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eee5ac0b4848f745b0c943c681c59c4fc54470f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f59fa8c7a6da69b49c3667681098369acf547b7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863693"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938601"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>windows10EnterpriseModernAppManagementConfiguration löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

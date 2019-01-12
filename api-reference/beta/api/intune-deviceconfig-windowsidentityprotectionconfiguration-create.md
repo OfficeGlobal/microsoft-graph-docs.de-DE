@@ -3,12 +3,13 @@ title: Erstellen von windowsIdentityProtectionConfiguration
 description: Erstellen eines neuen WindowsIdentityProtectionConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1478b5b84175d74a0b13bc4ee073b46838028422
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f83322eeb6d3275215f83ddc7cd3da16faa02b2d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844520"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938321"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>Erstellen von windowsIdentityProtectionConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

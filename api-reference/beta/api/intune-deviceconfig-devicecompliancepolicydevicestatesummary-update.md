@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCompliancePolicyDeviceStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 51f43fb99fbb53f42bca37cb9f9d4943aa4635a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2a8df64bd2b6c5976481b00eedf3212d115eba23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817439"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933365"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Aktualisieren von „deviceCompliancePolicyDeviceStateSummary“
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,7 +51,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Anzahl von Geräten, die sich in der Toleranzperiode befinden|
 |configManagerCount|Int32|Anzahl von Geräten, deren Konformität mit System Center Configuration Manager verwaltet wird|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|

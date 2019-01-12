@@ -3,12 +3,13 @@ title: iosGeneralDeviceConfiguration erstellen
 description: Erstellen Sie ein neues iosGeneralDeviceConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b0cbbc293b549b1276a5ac600ddb276049c7f229
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e55db84b1afa1c63fed620eaf33c44e542035224
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932112"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>iosGeneralDeviceConfiguration erstellen
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

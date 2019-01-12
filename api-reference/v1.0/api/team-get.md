@@ -3,12 +3,13 @@ title: Get-team
 description: Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 3efec6e9b767d026d0a7626c2da257feaa20fde3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0221983538f14ef3f0c0439f8241974091e8dc0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943137"
 ---
 # <a name="get-team"></a>Get-team
 
@@ -38,7 +39,7 @@ GET /teams/{id}
 Diese Methode unterstützt die $select und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -56,7 +57,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 

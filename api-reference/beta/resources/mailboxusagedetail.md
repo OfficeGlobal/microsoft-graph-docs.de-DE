@@ -2,12 +2,14 @@
 title: Ressourcentyp mailboxUsageDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 25cb41e38138a677bfc6636b035003bb8fc5858c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938734"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>Ressourcentyp mailboxUsageDetail
 
@@ -16,9 +18,9 @@ ms.locfileid: "27818011"
 | Eigenschaft                        | Typ    |
 | :------------------------------ | :------ |
 | reportRefreshDate               | Datum    |
-| userPrincipalName               | String  |
-| displayName                     | String  |
-| isDeleted                       | Boolean |
+| userPrincipalName               | Zeichenfolge  |
+| displayName                     | Zeichenfolge  |
+| isDeleted                       | Boolescher Wert |
 | deletedDate                     | Datum    |
 | createdDate                     | Datum    |
 | lastActivityDate                | Datum    |
@@ -27,7 +29,7 @@ ms.locfileid: "27818011"
 | issueWarningQuotaInBytes        | Int64   |
 | prohibitSendQuotaInBytes        | Int64   |
 | prohibitSendReceiveQuotaInBytes | Int64   |
-| reportPeriod                    | String  |
+| reportPeriod                    | Zeichenfolge  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

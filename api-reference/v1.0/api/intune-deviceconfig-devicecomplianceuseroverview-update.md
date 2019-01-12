@@ -3,12 +3,13 @@ title: Aktualisieren von „deviceComplianceUserOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceUserOverview.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d173a8194457c068d038ac377d06928849101c36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a7cfc6bbcb28636e0f5fe8568e1be619f92eb78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855608"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946266"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Aktualisieren von „deviceComplianceUserOverview“
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
 |notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|

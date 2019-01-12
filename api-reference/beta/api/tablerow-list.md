@@ -3,12 +3,13 @@ title: TableRowCollection auflisten
 description: Dient zum Abrufen einer Liste von tablerow-Objekten.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a841626b2f9a85e7cf36c7d968cafd9c1c9bced3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5e2440c1ec570b41d8d5b0c74c1c3e46b1bc0873
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841230"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923705"
 ---
 # <a name="list-tablerowcollection"></a>TableRowCollection auflisten
 

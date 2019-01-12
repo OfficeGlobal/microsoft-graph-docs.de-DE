@@ -2,12 +2,14 @@
 title: PlannerUser aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines PlannerUser-Objekts. Verwenden Sie diese Operation zum Hinzufügen oder Entfernen von Plänen aus der Liste eines Benutzers bevorzugten Pläne und um anzugeben, die den Benutzer plant wurde kürzlich angezeigt.
 localization_priority: Normal
-ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 733743ffee8e29d66f2ebe411d127161e7e8eb2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889054"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925889"
 ---
 # <a name="update-planneruser"></a>PlannerUser aktualisieren
 
@@ -33,7 +35,7 @@ PATCH /me/planner
 | Name       | Beschreibung|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Erforderlich.|
-| If-Match  | Letzte bekannten ETag-Wert für die **PlannerUser** aktualisiert werden. Erforderlich.|
+| If-Match  | Letzte bekannten ETag-Wert für die **PlannerUser** aktualisiert werden. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.

@@ -3,12 +3,13 @@ title: Ressourcentyp excludedApps
 description: Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2ec66c83c13088fb289e271e604154195902ca5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90216c639d36a989b2fad5dbdc1adbd11fe46ede
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821882"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943949"
 ---
 # <a name="excludedapps-resource-type"></a>Ressourcentyp excludedApps
 
@@ -20,19 +21,19 @@ Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|access|Boolean|Der Wert für die If MS Office Access davon ausgeschlossen werden soll.|
-|Excel-|Boolean|Der Wert für die If MS Office Excel davon ausgeschlossen werden soll.|
-|Groove|Boolean|Der Wert für die If MS Office OneDrive for Business - Groove ausgeschlossen werden soll, oder nicht.|
-|infoPath|Boolean|Der Wert für die If MS Office InfoPath davon ausgeschlossen werden soll.|
-|Lync|Boolean|Der Wert für die If MS Office Skype for Business – Lync ausgeschlossen werden soll, oder nicht.|
-|oneDrive|Boolean|Der Wert für die If MS Office OneDrive davon ausgeschlossen werden soll.|
-|oneNote|Boolean|Der Wert für die If MS Office OneNote davon ausgeschlossen werden soll.|
-|Outlook|Boolean|Der Wert für die If MS Office Outlook oder nicht ausgeschlossen werden soll.|
-|powerPoint|Boolean|Der Wert für die If MS Office PowerPoint davon ausgeschlossen werden soll.|
-|publisher|Boolean|Der Wert für die If MS Office Publisher davon ausgeschlossen werden soll.|
-|SharePoint Designer|Boolean|Der Wert für die If MS Office SharePoint Designer davon ausgeschlossen werden soll.|
-|Visio|Boolean|Der Wert für die If MS Office Visio davon ausgeschlossen werden soll.|
-|Word|Boolean|Der Wert für die If MS Office Word davon ausgeschlossen werden soll.|
+|access|Boolescher Wert|Der Wert für die If MS Office Access davon ausgeschlossen werden soll.|
+|Excel-|Boolescher Wert|Der Wert für die If MS Office Excel davon ausgeschlossen werden soll.|
+|Groove|Boolescher Wert|Der Wert für die If MS Office OneDrive for Business - Groove ausgeschlossen werden soll, oder nicht.|
+|infoPath|Boolescher Wert|Der Wert für die If MS Office InfoPath davon ausgeschlossen werden soll.|
+|Lync|Boolescher Wert|Der Wert für die If MS Office Skype for Business – Lync ausgeschlossen werden soll, oder nicht.|
+|oneDrive|Boolescher Wert|Der Wert für die If MS Office OneDrive davon ausgeschlossen werden soll.|
+|oneNote|Boolescher Wert|Der Wert für die If MS Office OneNote davon ausgeschlossen werden soll.|
+|Outlook|Boolescher Wert|Der Wert für die If MS Office Outlook oder nicht ausgeschlossen werden soll.|
+|powerPoint|Boolescher Wert|Der Wert für die If MS Office PowerPoint davon ausgeschlossen werden soll.|
+|publisher|Boolescher Wert|Der Wert für die If MS Office Publisher davon ausgeschlossen werden soll.|
+|SharePoint Designer|Boolescher Wert|Der Wert für die If MS Office SharePoint Designer davon ausgeschlossen werden soll.|
+|Visio|Boolescher Wert|Der Wert für die If MS Office Visio davon ausgeschlossen werden soll.|
+|Word|Boolescher Wert|Der Wert für die If MS Office Word davon ausgeschlossen werden soll.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

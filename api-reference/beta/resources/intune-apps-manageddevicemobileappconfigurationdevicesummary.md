@@ -2,12 +2,14 @@
 title: managedDeviceMobileAppConfigurationDeviceSummary-Ressourcentyp
 description: Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für eine Zusammenfassung des Gerätestatus von MDM-Konfigurationen mobiler Apps.
 localization_priority: Normal
-ms.openlocfilehash: e395f0d3d1ceeacf9eb02c621eb0fbd7a30da907
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: c6af1ff39fe9626f42003863992ec2e185d67caf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862622"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939588"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>managedDeviceMobileAppConfigurationDeviceSummary-Ressourcentyp
 
@@ -25,7 +27,7 @@ Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für eine Zusammenfas
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
 |notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
 |notApplicablePlatformCount|Int32|Anzahl der Geräte, die aufgrund von Konflikt Plattform und Richtlinie nicht zutreffend|

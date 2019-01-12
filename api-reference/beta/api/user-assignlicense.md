@@ -1,12 +1,15 @@
 ---
 title: assignLicense
 description: Hinzufügen oder Entfernen von Lizenzen für den Benutzer aktivieren oder Deaktivieren der Verwendung von Microsoft-Cloud-angeboten. Beispielsweise eine Organisation kann ein Office 365 Enterprise E3-Abonnement mit 100 Lizenzen verfügen, und diese Anforderung weist eine der Lizenzen, die für einen bestimmten Benutzer. Sie können auch aktivieren und Deaktivieren von bestimmten Pläne ein Abonnement zugeordnet. Weitere Informationen zu Abonnements und Lizenzen finden Sie unter Technet-Artikel.
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 82347f46855baa91b5a42452cdbacc914bc89cdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066181"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933792"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -31,7 +34,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users/{id | userPrincipalName}/assignLicense
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

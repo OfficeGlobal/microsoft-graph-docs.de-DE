@@ -3,12 +3,13 @@ title: windowsPhone81CompliancePolicy-Ressourcentyp
 description: Diese Klasse enthält Konformitätseinstellungen für Windows 8.1 Mobile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c590b17865cab6ca745582947431ecbd2b7fed0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f800780560050ace543627b7348869b9daac0f94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865617"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912505"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy-Ressourcentyp
 
@@ -33,13 +34,13 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecom
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|String|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
+|passwordBlockSimple|Boolescher Wert|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
@@ -47,8 +48,8 @@ Sie erbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecom
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
-|osMinimumVersion|String|Mindestversion von Windows Phone|
-|osMaximumVersion|String|Maximalversion von Windows Phone|
+|osMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
+|osMaximumVersion|Zeichenfolge|Maximalversion von Windows Phone|
 |storageRequireEncryption|Boolean|Verschlüsselung auf Windows Phone-Geräten erforderlich|
 
 ## <a name="relationships"></a>Beziehungen

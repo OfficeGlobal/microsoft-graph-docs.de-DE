@@ -3,12 +3,13 @@ title: Ereignisse auflisten
 description: Dient zum Abrufen einer Liste von Ereignissen in einem Kalender.  Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 72c2391e3ab568c56cd6973483042a4d5bd79753
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f229960ee5fc8f0541fb3c1b91f02ddc9b0a28c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941114"
 ---
 # <a name="list-events"></a>Ereignisse auflisten
 
