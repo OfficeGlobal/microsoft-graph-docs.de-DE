@@ -3,12 +3,13 @@ title: getEffectivePermissions-Funktion
 description: Ruft die effektiven Berechtigungen des derzeit authentifizierten Benutzers ab.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5c887aebdba69048ded387371ad2534ce4173668
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f40412a8d95fd6bde17843b0c13e81f00459dd12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980076"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions-Funktion
 

@@ -3,12 +3,13 @@ title: AndroidWorkProfileRequiredPasswordType Enum-Typ
 description: Android Arbeit Profil erforderliche Kennworttyp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c77b9b3265a5c3f64da93df58d5a605923dff69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cbe1eb1482e979d236c1f8bf92f687077fb189f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809933"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986278"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>AndroidWorkProfileRequiredPasswordType Enum-Typ
 
@@ -20,7 +21,7 @@ Android Arbeit Profil erforderliche Kennworttyp.
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |lowSecurityBiometric|1|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|
-|erforderlich|2|Erforderlich.|
+|erforderlich|2|Erforderlich. |
 |atLeastNumeric|3|Mindestens numerische erforderliche Kennwort.|
 |numericComplex|4|Numerische komplexe Kennwort erforderlich.|
 |atLeastAlphabetic|5|Mindestens alphabetische erforderliche Kennwort.|

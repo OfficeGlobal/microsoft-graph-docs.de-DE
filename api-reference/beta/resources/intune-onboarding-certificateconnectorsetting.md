@@ -2,12 +2,14 @@
 title: Ressourcentyp certificateConnectorSetting
 description: Connector-Einstellungen für Zertifikate.
 author: tfitzmac
-ms.openlocfilehash: 8c993634eb4f41e16643ae3f40be74ecc3eb392f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 74a63d308d53d09b71b19b2ff10a9d94c3fa818d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980993"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Ressourcentyp certificateConnectorSetting
 
@@ -21,9 +23,9 @@ Connector-Einstellungen für Zertifikate.
 |:---|:---|:---|
 |status|Int32|Zertifikat Connectorstatus|
 |certExpiryTime|DateTimeOffset|Zertifikat abläuft Zeit|
-|enrollmentError|String|Zertifikatfehler Connector-Registrierung|
+|enrollmentError|Zeichenfolge|Zertifikatfehler Connector-Registrierung|
 |lastConnectorConnectionTime|DateTimeOffset|Zuletzt Zertifikat Connector verbunden|
-|connectorVersion|String|Version des Zertifikat-Connectors|
+|connectorVersion|Zeichenfolge|Version des Zertifikat-Connectors|
 |lastUploadVersion|Int64|Version des letzten hochgeladenen Zertifikat connector|
 
 ## <a name="relationships"></a>Beziehungen

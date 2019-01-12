@@ -3,12 +3,13 @@ title: plannerBucket-Ressourcentyp
 description: ) für Aufgaben in einem Plan in Office 365. Er ist in einem PlannerPlan enthalten und kann eine Auflistung von PlannerTasks haben.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 592d0e24f527d7ae343bd29e71a3dfdf0247720f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982834"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket-Ressourcentyp
 
@@ -29,9 +30,9 @@ Die **plannerBucket**-Ressource stellt einen Bucket (bzw. eine „benutzerdefini
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Schreibgeschützt. ID des Bucket. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|id|Zeichenfolge| Schreibgeschützt. ID des Bucket. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
 |name|String|Name des Buckets.|
-|orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner-order-hint-format.md) beschrieben definiert.|
+|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner-order-hint-format.md) beschrieben definiert.|
 |planId|String|Plan-ID, zu der der Bucket gehört.|
 
 ## <a name="relationships"></a>Beziehungen

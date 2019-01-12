@@ -2,12 +2,14 @@
 title: 'user: delta'
 description: Get neu erstellt, aktualisiert oder Benutzer ohne Durchführung ein alles Lesen der gesamten Benutzer-Auflistung gelöscht. Finden Sie unter Nachverfolgen von Änderungen für Details.
 localization_priority: Normal
-ms.openlocfilehash: 2aaee8a5722c22ad8fc381f0a4b1d577461b3991
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f63a426c97aaf695447de9075b91fb2c534309db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856196"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984633"
 ---
 # <a name="user-delta"></a>user: delta
 

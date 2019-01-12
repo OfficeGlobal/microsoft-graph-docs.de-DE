@@ -3,12 +3,13 @@ title: Erstellen von windows10EnrollmentCompletionPageConfiguration
 description: Erstellen eines neuen windows10EnrollmentCompletionPageConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa459255e48323c5f4e614dc9d12f8ae89d2f4e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d64ca5e5df475368e9b4848f57141884df5dd86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862727"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984493"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Erstellen von windows10EnrollmentCompletionPageConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,20 +49,20 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|displayName|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|id|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|displayName|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|description|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Priorität|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
-|blockDeviceSetupRetryByUser|Boolean|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
-|allowDeviceResetOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Gerät zurücksetzen auf Installationsfehler|
-|allowLogCollectionOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
-|customErrorMessage|String|Legen Sie benutzerdefinierte Fehlermeldung nach einem Installationsfehler anzeigen|
+|showInstallationProgress|Boolescher Wert|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
+|blockDeviceSetupRetryByUser|Boolescher Wert|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
+|allowDeviceResetOnInstallFailure|Boolescher Wert|Zulassen Sie oder blockieren Sie Gerät zurücksetzen auf Installationsfehler|
+|allowLogCollectionOnInstallFailure|Boolescher Wert|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
+|customErrorMessage|Zeichenfolge|Legen Sie benutzerdefinierte Fehlermeldung nach einem Installationsfehler anzeigen|
 |installProgressTimeoutInMinutes|Int32|Legen Sie die Installation des Fortschritts Timeout in Minuten|
-|allowDeviceUseOnInstallFailure|Boolean|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
+|allowDeviceUseOnInstallFailure|Boolescher Wert|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
 |selectedMobileAppIds|Collection von Objekten des Typs „String“|Ausgewählte Anwendungen zum Nachverfolgen des Installationsstatus|
 
 

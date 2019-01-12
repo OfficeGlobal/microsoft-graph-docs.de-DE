@@ -2,12 +2,13 @@
 title: Ressourcentyp sharePointActivityUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 4503739a7b2e13cade72951ae56ab410f22608b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a7dc324d821dca26ff1083f1e48c258e1955d72f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880696"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979943"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>Ressourcentyp sharePointActivityUserDetail
 
@@ -16,8 +17,8 @@ ms.locfileid: "27880696"
 | Eigenschaft                  | Typ              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Datum              |
-| userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
+| userPrincipalName         | Zeichenfolge            |
+| isDeleted                 | Boolescher Wert           |
 | deletedDate               | Datum              |
 | lastActivityDate          | Datum              |
 | viewedOrEditedFileCount   | Int64             |
@@ -26,7 +27,7 @@ ms.locfileid: "27880696"
 | sharedExternallyFileCount | Int64             |
 | visitedPageCount          | Int64             |
 | assignedProducts          | Collection von Objekten des Typs „String“ |
-| reportPeriod              | String            |
+| reportPeriod              | Zeichenfolge            |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
