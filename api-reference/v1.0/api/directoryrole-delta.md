@@ -2,12 +2,14 @@
 title: 'DirectoryRole: Delta'
 description: Get neu erstellt, aktualisiert oder gelöscht Directory Rollen ohne ein alles Lesen der gesamte Ressource Auflistung ausführen. Einzelheiten finden Sie unter Delta-Abfrage verwenden.
 localization_priority: Normal
-ms.openlocfilehash: a46bcfd5c345763e7ab3d64ec780721f7052fbdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6da3e8c4cf92edbf79df1b082675c36d54e81292
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846466"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923839"
 ---
 # <a name="directoryrole-delta"></a>DirectoryRole: Delta
 
@@ -111,7 +113,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Artikel
 
 - [Verwendung Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview) für weitere details
 - Beispielanforderungen finden Sie unter [Inkrementelle Änderungen für Benutzer abrufen](/graph/delta-query-users).

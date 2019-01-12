@@ -2,12 +2,14 @@
 title: Übersicht über Microsoft Teams-APIs
 description: 'Microsoft Teams ist der ultimative Hub für Zusammenarbeit und intelligente Kommunikation. '
 author: nkramer
-ms.openlocfilehash: 2297f92cb44c8a12512e4e06ffc2392d75626952
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-teams
+ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358856"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967980"
 ---
 # <a name="microsoft-teams-api-overview"></a>Übersicht über Microsoft Teams-APIs
 

@@ -3,12 +3,13 @@ title: Ressourcentyp androidDeviceOwnerWiFiConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Verbindung zum gewünschten Wi-Fi-Endpunkt Android-Gerät anweisen. Durch Angeben von erwartet, dass die Authentifizierungstypen-Methode und der Sicherheit durch Wi-Fi-Endpunkt, dass Sie die Wi-Fi-Verbindung nahtlos für Endbenutzer vornehmen können. Dieses Profil bietet eingeschränkten und einfacher Sicherheitstypen als Enterprise Wi-Fi-Profil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f0db7889058816a6c09d754d068a851a7612407d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c80c535b248091cbef270e546dc9a401809f2f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958453"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>Ressourcentyp androidDeviceOwnerWiFiConfiguration
 

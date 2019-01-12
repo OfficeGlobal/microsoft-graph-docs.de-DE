@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveUsageAccountDetail'
 description: Rufen Sie Details zur OneDrive-Nutzung nach Konto ab.
 localization_priority: Normal
-ms.openlocfilehash: 10bf00b66cdb387588acff61c59747de7ae70381
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1aa7de008f1791908786111a87c1ab046df7f42e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960301"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 

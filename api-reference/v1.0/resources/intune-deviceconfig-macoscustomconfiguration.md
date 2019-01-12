@@ -1,12 +1,15 @@
 ---
 title: macOSCustomConfiguration-Ressourcentyp
 description: Dieses Thema enthält eine Beschreibung der deklarierten Methoden, Eigenschaften und Beziehungen, die von der Ressource macOSCustomConfiguration verfügbar gemacht werden.
-ms.openlocfilehash: a138043bc545208399c60e134a3d88ab704e4af7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6a84531bf9e79416496a00401916045257efcb5e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020143"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964725"
 ---
 # <a name="macoscustomconfiguration-resource-type"></a>macOSCustomConfiguration-Ressourcentyp
 
@@ -28,14 +31,14 @@ Erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|payloadName|String|Name, der dem Benutzer angezeigt wird|
-|payloadFileName|String|Name der Nutzlastdatei (*.mobileconfig | *.xml)|
+|payloadName|Zeichenfolge|Name, der dem Benutzer angezeigt wird|
+|payloadFileName|Zeichenfolge|Name der Nutzlastdatei (*.mobileconfig | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
 
 ## <a name="relationships"></a>Beziehungen

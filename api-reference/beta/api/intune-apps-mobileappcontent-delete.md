@@ -3,12 +3,13 @@ title: mobileAppContent löschen
 description: Löscht einen mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0872e68d59de49409a198fa32a39fd7d37425288
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea26796a9b2bf61a075d51a74d1abb42c81f2f16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956248"
 ---
 # <a name="delete-mobileappcontent"></a>mobileAppContent löschen
 

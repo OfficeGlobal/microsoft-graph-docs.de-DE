@@ -3,12 +3,13 @@ title: enrollmentTroubleshootingEvents auflisten
 description: Auflisten von Eigenschaften und Beziehungen der enrollmentTroubleshootingEvent-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c2d98aa5e411fba91ec2fd9d4112a23483758f42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6558d97e8a0a140cc002551adc0fc01da1f6ec6b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882642"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963283"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>enrollmentTroubleshootingEvents auflisten
 
@@ -36,7 +37,7 @@ GET /deviceManagement/troubleshootingEvents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

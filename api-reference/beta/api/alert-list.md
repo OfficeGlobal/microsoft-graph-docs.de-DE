@@ -2,12 +2,14 @@
 title: Warnungen auflisten
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 6036514c2aeabe287fd019ce69157d4b7897af60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 507ad72b8d50e2343bfd99446e178e09ea65ac8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860207"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927842"
 ---
 # <a name="list-alerts"></a>Warnungen auflisten
 

@@ -3,12 +3,13 @@ title: Ressourcentyp windowsKioskLocalGroup
 description: Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dcc4f6ae47abf07ae259562b2aee72d187abd476
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f9c5d467e70b4e2e7f60bc4898be35a2e9fefadc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964753"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Ressourcentyp windowsKioskLocalGroup
 
@@ -23,7 +24,7 @@ Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|groupName|String|Der Name der lokalen Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird|
+|groupName|Zeichenfolge|Der Name der lokalen Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

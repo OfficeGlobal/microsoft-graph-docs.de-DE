@@ -3,12 +3,13 @@ title: MacOSScepCertificateProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines MacOSScepCertificateProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0271faf63a3f117301cb21d2082f36e3085a9238
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e654208e006b04c846721fe2cd3446183553902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968022"
 ---
 # <a name="update-macosscepcertificateprofile"></a>MacOSScepCertificateProfile aktualisieren
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

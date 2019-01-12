@@ -3,12 +3,13 @@ title: GetRoleScopeTagsByIds-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 586c6a3612fefaf45e55883b106aeaa5e543386c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b51482b8cdc320e4f273400d7fa78891d1449c67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964095"
 ---
 # <a name="getrolescopetagsbyids-function"></a>GetRoleScopeTagsByIds-Funktion
 

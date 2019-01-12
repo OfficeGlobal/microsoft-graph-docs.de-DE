@@ -3,12 +3,13 @@ title: Ressourcentyp advancedThreatProtectionOnboardingStateSummary
 description: Windows Defender erweiterte Threat Protection Onboarding Übersicht über das Konto.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c308f91862e1d709d92a45d0a83148df5c23fd88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966601"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Ressourcentyp advancedThreatProtectionOnboardingStateSummary
 
@@ -26,7 +27,7 @@ Windows Defender erweiterte Threat Protection Onboarding Übersicht über das Ko
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner|
+|id|Zeichenfolge|Eindeutiger Bezeichner|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|

@@ -3,12 +3,13 @@ title: Windows10EnrollmentCompletionPageConfiguration löschen
 description: Löscht eine windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dc408ca4aa07744ccc6edd08d3d412874a717a16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4e377f21e82d6102c39fabc33c671f5dc3d499d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965229"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

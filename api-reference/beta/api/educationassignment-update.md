@@ -2,12 +2,14 @@
 title: Educationassignment aktualisieren
 description: Aktualisieren Sie das Assignment-Objekt. Nur Lehrer in der Klasse ist dies möglich. Beachten Sie, dass eine Anforderung PATCH zum Ändern des Status einer Zuordnung verwendet werden können. Verwenden Sie die Veröffentlichungsaktion zum Ändern des Zuordnungsstatus.
 localization_priority: Normal
-ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838290"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960350"
 ---
 # <a name="update-educationassignment"></a>Educationassignment aktualisieren
 
@@ -30,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/classes/{id}/assignments/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -40,11 +42,11 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| Gibt an, ob nach dem Fälligkeitsdatum Übermittlungen gesendet werden können.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Gibt an, ob eine Student Ressourcen zu einer Übermittlung hinzufügen kann. Angegeben, ob die Ressourcenliste Zuordnung der einzige Elemente auf der Übermittlung stammt. |
+|allowLateSubmissions|Boolescher Wert| Gibt an, ob nach dem Fälligkeitsdatum Übermittlungen gesendet werden können.|
+|allowStudentsToAddResourcesToSubmission|Boolescher Wert| Gibt an, ob eine Student Ressourcen zu einer Übermittlung hinzufügen kann. Angegeben, ob die Ressourcenliste Zuordnung der einzige Elemente auf der Übermittlung stammt. |
 |assignDateTime|DateTimeOffset| Datum, an dem die Zuordnung für Studenten veröffentlicht werden soll. |
 |assignTo|educationAssignmentRecipient| Teilnehmer, die die Zuordnung zu erhalten.|
-|displayName|String| Name der Zuordnung. |
+|displayName|Zeichenfolge| Name der Zuordnung. |
 |dueDateTime|DateTimeOffset| Datum Aufgabe ist fällig. |
 |Benotung|educationAssignmentGradeType| Wie wird die Zuordnung eingestuft.|
 |Anleitung|itemBody| Anleitung für die Kursteilnehmer zusammen mit der Zuordnung angegeben. |

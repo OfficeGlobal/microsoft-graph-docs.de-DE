@@ -2,12 +2,14 @@
 title: plannerAssignments-Ressourcentyp
 description: 'Die Ressource **PlannerAssignments** stellt Zuordnungen einer PlannerTask Ressource dar. Dieser Typ ist vom Typ öffnen. Jeder Eigenschaftsname dieses Typs '
 localization_priority: Normal
-ms.openlocfilehash: 42d85a1787efbfa55196db36cbcdd09aae7d1a84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: bf079cbf91e0c9b8b1a8c92403324b301bbde923
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811907"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966818"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments-Ressourcentyp
 

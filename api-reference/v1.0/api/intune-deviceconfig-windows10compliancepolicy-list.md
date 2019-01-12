@@ -3,12 +3,13 @@ title: Auflisten von „windows10CompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10CompliancePolicy auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 001772c72acf72bc21c427456bae3ca893703856
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb1bd35166dee3ecf738650cd60e3f48aed535e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920549"
 ---
 # <a name="list-windows10compliancepolicies"></a>Auflisten von „windows10CompliancePolicy“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

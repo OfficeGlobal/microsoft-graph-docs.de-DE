@@ -3,12 +3,13 @@ title: deviceEnrollmentWindowsHelloForBusinessConfiguration löschen
 description: Löscht ein deviceEnrollmentWindowsHelloForBusinessConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9896c891a7399f9931736688308f48259ee33d28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ee64e830d1ae0cf29d3604dfb74e2954e3551d17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849091"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960280"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

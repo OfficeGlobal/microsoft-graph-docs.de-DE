@@ -3,12 +3,13 @@ title: remoteAssistancePartner abrufen
 description: Lesen von Eigenschaften und Beziehungen des remoteAssistancePartner-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1212ca8d51ac0fd2a896800d5467624cd1c08570
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 171982e79745bfb94ecf41ddfc602bc883cf6ac3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806720"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963535"
 ---
 # <a name="get-remoteassistancepartner"></a>remoteAssistancePartner abrufen
 
@@ -38,7 +39,7 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

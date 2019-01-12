@@ -1,12 +1,15 @@
 ---
 title: Verwalten von Sitzungen und Persistenz in Excel mit Microsoft Graph
 description: Wenn Ihre Anwendung mehr als nur ein oder zwei Aufrufe an die Excel-API durchführen muss, müssen Sie eine Sitzung erstellen und die Sitzungs-ID mit jeder Anforderung übergeben. Indem Sie eine Sitzungs-ID in die Anforderungen einschließen, wird sichergestellt, dass Sie die Excel-API auf möglichst effiziente Weise verwenden.
-ms.openlocfilehash: 6fe869aaab62b47934c91194eeb75229d8215e9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 151119a2a2861b64db126c8f49d0b916a6f563e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921689"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Verwalten von Sitzungen und Persistenz in Excel mit Microsoft Graph
 

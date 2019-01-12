@@ -2,12 +2,14 @@
 title: Aufrufen von Microsoft Graph aus einer Anwendung eines Cloud-Lösungsanbieters
 description: In diesem Thema wird beschrieben, wie Sie Anwendungszugriff auf partnerverwaltete Kundendaten über Microsoft Graph aktivieren, entweder mit dem Fluss zur Erteilung von Autorisierungscodes oder dem Fluss zur Gewährung von Clientanmeldeinformationen für Dienst-zu-Dienst-Aufrufe.
 author: jackson-woods
-ms.openlocfilehash: 3640cde7fb3b1c49e87a0e06e293aba8c656e264
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e354230cb8dc3a27df56ea2caf5fbaed1e066fbc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361866"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967490"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Aufrufen von Microsoft Graph aus einer Anwendung eines Cloud-Lösungsanbieters
 

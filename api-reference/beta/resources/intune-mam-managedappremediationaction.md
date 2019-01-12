@@ -3,12 +3,13 @@ title: ManagedAppRemediationAction Enum-Typ
 description: Ein Administrator initiiert Aktion einer verwalteten app angewendet werden sollen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ecc4b61400cac841a9a699f2d8e3e99e2f543a74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1abfe8e05eaa93d7588ae38e2fd5944a106fca32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894201"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967154"
 ---
 # <a name="managedappremediationaction-enum-type"></a>ManagedAppRemediationAction Enum-Typ
 

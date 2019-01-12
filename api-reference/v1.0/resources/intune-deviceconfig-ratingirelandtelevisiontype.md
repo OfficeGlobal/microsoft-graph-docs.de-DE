@@ -3,12 +3,13 @@ title: RatingIrelandTelevisionType Enum-Typ
 description: TV zum Bewerten Bezeichnungen in Irland
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b58071759b82a8870ffed54090ac9cf0028b0c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb03562a32fa9a8d41ea0d68cf7cd5cf5416ac0e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967308"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>RatingIrelandTelevisionType Enum-Typ
 

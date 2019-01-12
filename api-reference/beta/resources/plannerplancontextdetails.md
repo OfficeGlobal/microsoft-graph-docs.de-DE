@@ -2,12 +2,14 @@
 title: Ressourcentyp plannerPlanContextDetails
 description: Die Ressource **PlannerPlanContextDetails** enthält zusätzliche Informationen zu einer PlannerPlanContext.
 localization_priority: Normal
-ms.openlocfilehash: ec35a83e5ba2d2648c512f31f838f19bd3ec2e02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e0f26bcb25bf77a0a9907ba7e0414e57ad738cae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812054"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968218"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>Ressourcentyp plannerPlanContextDetails
 
@@ -18,7 +20,7 @@ Die Ressource **PlannerPlanContextDetails** enthält zusätzliche Informationen 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|url|String|URL des Benutzererlebnisses durch die zugeordneten [PlannerPlanContext](plannerplancontext.md)dargestellt. |
+|url|Zeichenfolge|URL des Benutzererlebnisses durch die zugeordneten [PlannerPlanContext](plannerplancontext.md)dargestellt. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

@@ -3,12 +3,13 @@ title: Auflisten von „deviceComplianceScheduledActionForRule“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceComplianceScheduledActionForRule auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1aa364a950b8218f11491f35fc5368dae7d15713
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32c5b75f9d0d2af699a3ed8f41e6294e43e49c12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965236"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>Auflisten von „deviceComplianceScheduledActionForRule“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
