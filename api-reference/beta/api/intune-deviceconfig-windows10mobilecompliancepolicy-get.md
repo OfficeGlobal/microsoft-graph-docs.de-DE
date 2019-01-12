@@ -3,12 +3,13 @@ title: Abrufen von „windows10MobileCompliancePolicy“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windows10MobileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 084f8ff90f3cc0a0ced4fe58ebd7fe677601494b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5542505906cc5d5e4599e0cb73c0df7f6445b62
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827935"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946469"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Abrufen von „windows10MobileCompliancePolicy“
 

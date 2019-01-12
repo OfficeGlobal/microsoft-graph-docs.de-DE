@@ -3,12 +3,13 @@ title: Auflisten von „iosUpdateConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosUpdateConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f672baecf357262f258a994c20c8c3b6a8d5e365
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: acc1fbfe713f7bb5d7b9987eb65c29cbfb84494a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927473"
 ---
 # <a name="list-iosupdateconfigurations"></a>Auflisten von „iosUpdateConfiguration“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

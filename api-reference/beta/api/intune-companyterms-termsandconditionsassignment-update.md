@@ -3,12 +3,13 @@ title: Aktualisieren von „termsAndConditionsAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs termsAndConditionsAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 30f9934b6a0e9b5d2dda0fc03c55d9bc89733840
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a808ebfcce08fc93c8d5f95b11a43aea742b4b08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955443"
 ---
 # <a name="update-termsandconditionsassignment"></a>Aktualisieren von „termsAndConditionsAssignment“
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: webApp löschen
 description: Löscht eine webApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 726b5e1824a4d8b8a26a20d5975a757d5474ad52
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6fdc31b7a5774db1e4d05b4e16714e8bf01c1497
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960819"
 ---
 # <a name="delete-webapp"></a>webApp löschen
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

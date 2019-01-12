@@ -2,12 +2,13 @@
 title: Ressourcentyp office365ServicesUserCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 54ae2020a5c02bba1469e3c6c0728024c72046bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957305"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Ressourcentyp office365ServicesUserCounts
 

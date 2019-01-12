@@ -2,12 +2,14 @@
 title: Verwenden der OneNote-REST-API
 description: 'Microsoft Graph können Ihre app autorisierten Zugriff auf eines Benutzers OneNote-Notizbücher, Abschnitte und Seiten in einem persönlichen oder Organisation Konto zu erhalten. Mit der entsprechenden delegiert, oder Berechtigungen für die Anwendung, Ihre app die OneNote-Daten des angemeldeten Benutzers oder jeder Benutzer in einem Mandanten zugreifen können. '
 localization_priority: Normal
-ms.openlocfilehash: 25817280fff570f0d87722fc8f3fadc9cf1c24d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ff17f7fbe5f15752bc272b79f3f741180f8d6417
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815236"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953000"
 ---
 # <a name="use-the-onenote-rest-api"></a>Verwenden der OneNote-REST-API
 

@@ -2,12 +2,14 @@
 title: 'Range: insert'
 description: Fügt eine Zelle oder einen Zellbereich in das Arbeitsblatt anstelle dieses Bereichs ein, und verschiebt die anderen Zellen, um Platz zu schaffen. Gibt ein neues Bereichsobjekt in dem nun leeren Bereich zurück.
 localization_priority: Normal
-ms.openlocfilehash: 0e7ab0d729dad4eec7fb455774cfed19bf4f5013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 9d8c55fbc887d1dad84ece9a1f6936b17496a586
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950466"
 ---
 # <a name="range-insert"></a>Range: insert
 

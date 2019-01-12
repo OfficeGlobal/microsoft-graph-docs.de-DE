@@ -3,12 +3,13 @@ title: disconnect-Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9f49aa57400d15410c31cc4a45793ef0e230ab5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 468841f94bbff8f6dce467e3f47e02235f3c5131
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944362"
 ---
 # <a name="disconnect-action"></a>disconnect-Aktion
 
@@ -36,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -2,12 +2,14 @@
 title: Liste riskyUsers
 description: Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
 localization_priority: Normal
-ms.openlocfilehash: bc5023df014e2abc1e7b510bc10a051f6b725e3b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: f2763a963d27bbb0a2fc1515a36aec199bd29f19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835238"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953441"
 ---
 # <a name="list-riskyusers"></a>Liste riskyUsers
 

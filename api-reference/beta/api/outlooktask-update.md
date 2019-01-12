@@ -3,12 +3,13 @@ title: Outlooktask aktualisieren
 description: Schreibbare Eigenschaften einer Outlook-Aufgabe zu ändern.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964935"
 ---
 # <a name="update-outlooktask"></a>Outlooktask aktualisieren
 
@@ -52,25 +53,25 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|assignedTo|String|Der Name der Person, die die Aufgabe zugewiesen wurde.|
+|assignedTo|Zeichenfolge|Der Name der Person, die die Aufgabe zugewiesen wurde.|
 |body|[itemBody](../resources/itembody.md)|Der Hauptteil der Aufgabe, die in der Regel Informationen zum Vorgang enthält. Beachten Sie, dass nur HTML-Typ unterstützt wird.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die dem Vorgang zugeordnet.|
-|changeKey|String|Die Version des Vorgangs.|
+|changeKey|Zeichenfolge|Die Version des Vorgangs.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, dass der Vorgang abgeschlossen wurde.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung die Aufgabe. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft verwendet die ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, die die Aufgabe fertig gestellt werden.|
-|hasAttachments|Boolean|Legen Sie auf true zurück, wenn der Vorgang Anlagen hat.|
+|hasAttachments|Boolescher Wert|Legen Sie auf true zurück, wenn der Vorgang Anlagen hat.|
 |Wichtigkeit|string|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
 |isReminderOn|Boolean|Legen Sie auf true zurück, wenn eine Warnung festgelegt ist, um die Benutzer über die Aufgabe zu erinnern.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten die Aufgabe Änderung. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft um ISO 8601-Format verwendet und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|owner|String|Der Name der Person, die die Aufgabe erstellt.|
-|parentFolderId|String|Der eindeutige Bezeichner für die Aufgabe übergeordneten Ordner.|
+|owner|Zeichenfolge|Der Name der Person, die die Aufgabe erstellt.|
+|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für die Aufgabe übergeordneten Ordner.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Das Serienmuster für den Vorgang.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Datum und Zeit für eine Erinnerung des Vorgangs erfolgt.|
 |sensitivity|string|Gibt die Ebene des Datenschutzes für den Vorgang an. Mögliche Werte: sind `normal`, `personal`, `private` und `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, wenn der Vorgang zu beginnen.|
 |status|string|Gibt das Bundesland oder den Fortschritt des Vorgangs. Mögliche Werte sind: `notStarted`, `inProgress`, `completed`, `waitingOnOthers` und `deferred`.|
-|Betreff|String|Eine kurze Beschreibung oder Titel des Vorgangs.|
+|Betreff|Zeichenfolge|Eine kurze Beschreibung oder Titel des Vorgangs.|
 
 ## <a name="response"></a>Antwort
 

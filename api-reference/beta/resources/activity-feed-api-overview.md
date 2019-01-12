@@ -2,12 +2,13 @@
 title: Verwenden Sie den Aktivitätsfeed REST-API
 description: 'Aktivitätsfeed API in Microsoft Graph können Sie die Aktivität des Benutzers Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und dem Benutzer die Berechtigung Aktivität, die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden kann. '
 localization_priority: Normal
-ms.openlocfilehash: 677d98d8658c282c5db822c46a78fc664a34fbc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842854"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943396"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Verwenden Sie den Aktivitätsfeed REST-API
 

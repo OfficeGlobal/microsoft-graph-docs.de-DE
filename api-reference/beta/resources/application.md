@@ -2,12 +2,14 @@
 title: Anwendung Ressourcentyp
 description: 'Stellt eine Anwendung dar. Jede Anwendung, die Authentifizierung mit Azure Active Directory (AD Azure) mit dem Konfigurieren beauftragt muss in einem Verzeichnis registriert werden. Registrierung Anwendung umfasst darüber informiert Azure AD über die Anwendung, einschließlich der URL, in dem es wurde gefunden, die URL zum Senden von Antworten nach der Authentifizierung, den URI zum Identifizieren der Anwendung und vieles mehr. Weitere Informationen finden Sie unter Grundlagen der Registrieren einer Anwendung in Azure Active Directory. Erbt von directoryObject. '
 localization_priority: Priority
-ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805670"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946679"
 ---
 # <a name="application-resource-type"></a>Anwendung Ressourcentyp
 

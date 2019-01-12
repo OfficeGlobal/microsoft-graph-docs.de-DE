@@ -3,12 +3,13 @@ title: Ressourcentyp extendedKeyUsage
 description: Benutzerdefinierte erweiterte Schlüsselverwendung definition
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f1fd159a9b9fdb621a1e52bd080c005c8b93129c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb08bf086ce8386e424ebd6355a4920e87be59a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840978"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928444"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Ressourcentyp extendedKeyUsage
 
@@ -20,8 +21,8 @@ Benutzerdefinierte erweiterte Schlüsselverwendung definition
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|String|Erweiterte Schlüsselverwendung Name|
-|objectIdentifier|String|Erweiterte Schlüsselverwendung Objektbezeichner|
+|name|Zeichenfolge|Erweiterte Schlüsselverwendung Name|
+|objectIdentifier|Zeichenfolge|Erweiterte Schlüsselverwendung Objektbezeichner|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

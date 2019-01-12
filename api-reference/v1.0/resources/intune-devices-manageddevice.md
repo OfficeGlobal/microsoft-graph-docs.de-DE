@@ -3,12 +3,13 @@ title: managedDevice-Ressourcentyp
 description: Über Intune verwaltete oder vorab registrierte Geräte
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 18904807f6c5158284809c6b4c697e517680c6f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3643ec5020ea088b2da423ed44d0a1596e53e6a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862260"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955730"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice-Ressourcentyp
 
@@ -45,9 +46,9 @@ ms.locfileid: "27862260"
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für das Gerät.
+|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.
 |
-|userId|String|Eindeutiger Bezeichner des Benutzers, der dem Gerät zugeordnet ist.
+|userId|Zeichenfolge|Eindeutiger Bezeichner des Benutzers, der dem Gerät zugeordnet ist.
 |
 |deviceName|Zeichenfolge|Name des Geräts.
 |
@@ -64,7 +65,7 @@ ms.locfileid: "27862260"
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` und `googleCloudDevicePolicyController`.|
 |osVersion|Zeichenfolge|Auf dem Gerät installierte Betriebssystemversion.
 |
-|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
+|easActivated|Boolescher Wert|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
 |easDeviceId|Zeichenfolge|Exchange ActiveSync-ID des Geräts.
 |
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.

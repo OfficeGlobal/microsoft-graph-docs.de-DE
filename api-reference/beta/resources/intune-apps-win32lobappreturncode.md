@@ -3,12 +3,13 @@ title: Ressourcentyp win32LobAppReturnCode
 description: Enthält Eigenschaften Rückgabecode für eine Win32-App
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f635c49ece6a1083ef3a89271faf76e01206e9ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0728ee3c029331b37369172373ef1400dde37991
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849819"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927863"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Ressourcentyp win32LobAppReturnCode
 

@@ -3,12 +3,13 @@ title: Ressourcentyp „resourceOperation“
 description: " Vorgang wird verwendet, um eine Sicherheitsgruppe AAD eine MobileApp Ressource zuordnen.  Ressourcenoperationen für integrierte Rollen können nicht geändert werden."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e193060ca07fa79caea90dc2578364958551cd8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811851"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956325"
 ---
 # <a name="resourceoperation-resource-type"></a>Ressourcentyp „resourceOperation“
 

@@ -3,12 +3,13 @@ title: Ressourcentyp customSubjectAlternativeName
 description: Benutzerdefinierte Subject Alternative Name-definition
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b8f0587e74e9c059ca3cbbda6af6947ded3b6bce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 069cc1f6d93c785e4fc774d7988e0fc80febbb12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841132"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954120"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>Ressourcentyp customSubjectAlternativeName
 
@@ -21,7 +22,7 @@ Benutzerdefinierte Subject Alternative Name-definition
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Benutzerdefinierte SAN-Typ. Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
-|name|String|Benutzerdefinierte SAN-Name|
+|name|Zeichenfolge|Benutzerdefinierte SAN-Name|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

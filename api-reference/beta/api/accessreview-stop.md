@@ -2,12 +2,14 @@
 title: AccessReview beenden
 description: In Azure AD Access Feature überprüft, und beenden Sie eine derzeit aktive AccessReview.  Das Zielobjekt kann entweder eine einmalige Access Überprüfung oder eine Instanz einer wiederkehrenden Access Überprüfung sein.  (Um zu verhindern, dass sich wiederholenden Access Wiederholung zukünftige Instanzen starten, aktualisieren Sie, um die geplante Enddatum ändern).  Überprüfen Sie nach dem Zugriff wird beendet, Bearbeiter können nicht mehr liefern Input und die Zugriff überprüfen Entscheidungen angewendet werden können.
 localization_priority: Normal
-ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860116"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941464"
 ---
 # <a name="stop-accessreview"></a>AccessReview beenden
 

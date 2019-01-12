@@ -3,12 +3,13 @@ title: managedAndroidLobApp erstellen
 description: Erstellen eines neuen managedAndroidLobApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5026406a36e523e535286ff82cc3017571e8a875
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 56e8a68a817bbca8e575d34f69d55f5bd3dccba5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930034"
 ---
 # <a name="create-managedandroidlobapp"></a>managedAndroidLobApp erstellen
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

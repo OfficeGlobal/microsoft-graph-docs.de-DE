@@ -3,12 +3,13 @@ title: rejectedSender entfernen
 description: Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „rejectedSenders“ entfernen.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 6033b1991807aac1b3edfff10ff407f0b667df7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 58936ee410b63f43d9c0a9e8efcf3eb5a96e76ae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957473"
 ---
 # <a name="remove-rejectedsender"></a>rejectedSender entfernen
 Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „rejectedSenders“ entfernen.
@@ -31,7 +32,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile         | Wert                      |
+| Header         | Wert                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Erforderlich. 
 

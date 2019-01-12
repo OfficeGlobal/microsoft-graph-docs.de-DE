@@ -3,12 +3,13 @@ title: Kontakt aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Kontaktobjekts an.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: e205421413dabeec7667252a05fc8398bdd48e36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 364a927c37673181bb499689909db113c2e5476e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941177"
 ---
 # <a name="update-contact"></a>Kontakt aktualisieren
 
@@ -41,7 +42,7 @@ PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
@@ -51,38 +52,38 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assistantName|String|Der Name des Assistenten des Kontakts.|
+|assistantName|Zeichenfolge|Der Name des Assistenten des Kontakts.|
 |birthday|DateTimeOffset|Das Geburtsdatum des Kontakts.|
-|categories|String|Die Kategorien, die mit dem Kontakt verknüpft sind.|
-|children|String||
-|companyName|String|Der Name des Unternehmens des Kontakts.|
-|department|String|Die Abteilung des Kontakts.|
-|displayName|String|Der Anzeigename des Kontakts. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Aktualisierungsvorgang ein.|
+|categories|Zeichenfolge|Die Kategorien, die mit dem Kontakt verknüpft sind.|
+|children|Zeichenfolge||
+|companyName|Zeichenfolge|Der Name des Unternehmens des Kontakts.|
+|department|Zeichenfolge|Die Abteilung des Kontakts.|
+|displayName|Zeichenfolge|Der Anzeigename des Kontakts. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Aktualisierungsvorgang ein.|
 |emailAddresses|[TypedEmailAddress](../resources/typedemailaddress.md) -Auflistung|Die E-Mail-Adressen des Kontakts.|
-|fileAs|String|Der Name, unter dem der Kontakt abgelegt ist.|
-|gender |String |Geschlecht des Kontakts. |
-|generation|String|Die Generation des Kontakts.|
-|givenName|String|Der Vorname des Kontakts.|
-|imAddresses|String|Instant Messaging Chatadressen des Kontakts.|
-|initials|String|Die Initialen des Kontakts.|
-|jobTitle|String|Die Position des Kontakts.|
-|manager|String|Der Name des Vorgesetzten des Kontakts.
-|middleName|String|Der zweite Vorname des Kontakts.|
-|nickName|String|Der Spitzname des Kontakts.|
-|officeLocation|String|Der Bürostandort des Kontakts.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Kontakts.|
-|personalNotes|String|Die Notizen des Benutzers zu dem Kontakt.|
+|fileAs|Zeichenfolge|Der Name, unter dem der Kontakt abgelegt ist.|
+|gender |Zeichenfolge |Geschlecht des Kontakts. |
+|generation|Zeichenfolge|Die Generation des Kontakts.|
+|givenName|Zeichenfolge|Der Vorname des Kontakts.|
+|imAddresses|Zeichenfolge|Instant Messaging Chatadressen des Kontakts.|
+|initials|Zeichenfolge|Die Initialen des Kontakts.|
+|jobTitle|Zeichenfolge|Die Position des Kontakts.|
+|manager|Zeichenfolge|Der Name des Vorgesetzten des Kontakts.
+|middleName|Zeichenfolge|Der zweite Vorname des Kontakts.|
+|nickName|Zeichenfolge|Der Spitzname des Kontakts.|
+|officeLocation|Zeichenfolge|Der Bürostandort des Kontakts.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Kontakts.|
+|personalNotes|Zeichenfolge|Die Notizen des Benutzers zu dem Kontakt.|
 |phones |[phone](../resources/phone.md)-Sammlung |Telefonnummern für den Kontakt zugeordnet ist, beispielsweise Telefon (privat), Mobiltelefon und Telefon (geschäftlich) |
 |postalAddresses |[physikalische Adresse](../resources/physicaladdress.md) -Auflistung |Der Kontakt zugeordnete Adressen home beispielsweise Adresse und Geschäftsadresse. |
-|profession|String|Der Beruf des Kontakts.|
+|profession|Zeichenfolge|Der Beruf des Kontakts.|
 |spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
-|surname|String|Der Nachname des Kontakts.|
-|title|String|Der Titel des Kontakts.|
+|surname|Zeichenfolge|Der Nachname des Kontakts.|
+|title|Zeichenfolge|Der Titel des Kontakts.|
 |websites |[website](../resources/website.md)-Sammlung|Websites, die dem Kontakt zugeordnet werden. |
 |weddingAnniversary |Datum |Hochzeitstag des Kontakts. |
-|yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts. Diese Eigenschaft ist optional.|
-|yomiGivenName|String|Der phonetische japanische Vorname des Kontakts. Diese Eigenschaft ist optional.|
-|yomiSurname|String|Der phonetische japanische Nachname des Kontakts. Diese Eigenschaft ist optional.|
+|yomiCompanyName|Zeichenfolge|Der phonetische japanische Firmenname des Kontakts. Diese Eigenschaft ist optional.|
+|yomiGivenName|Zeichenfolge|Der phonetische japanische Vorname des Kontakts. Diese Eigenschaft ist optional.|
+|yomiSurname|Zeichenfolge|Der phonetische japanische Nachname des Kontakts. Diese Eigenschaft ist optional.|
 
 Da die Ressource **wenden Sie sich an** [Extensions](/graph/extensibility-overview)unterstützt, können Sie die `PATCH` Vorgang hinzufügen, aktualisieren und Löschen von Ihren eigenen app-spezifischen Daten in benutzerdefinierten Eigenschaften einer Erweiterung in einer vorhandenen Instanz **wenden Sie sich an** .
 

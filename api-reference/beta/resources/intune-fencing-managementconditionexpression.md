@@ -2,12 +2,14 @@
 title: Ressourcentyp managementConditionExpression
 description: Ein Bedingungsausdruck Management ist ein Ausdruck, der erzeugt einen boolean-Wert, wenn ausgewertet, d. h. eines True oder False, was bedeutet, dass eine bedingungsanweisung Management aktiviert/deaktiviert ist. Ein Bedingungsausdruck Management kann aus einer Kombination der Ausdrucksvariablen und booleschen Ausdrucksoperatoren bestehen.
 localization_priority: Normal
-ms.openlocfilehash: f7f370b348ab13ef964eab1cc7025868e4380bac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b25469c3efb9f7985bf21ad47e83c34b47f96b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941877"
 ---
 # <a name="managementconditionexpression-resource-type"></a>Ressourcentyp managementConditionExpression
 

@@ -3,12 +3,13 @@ title: Liste easEmailProfileConfigurationBases
 description: Listeneigenschaften und Beziehungen der EasEmailProfileConfigurationBase-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ca0c4a0fc0c6fb12a563c685836a9817337c6de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 263b2d683d5a581ba9dae243014344ebbaad0cd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869426"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926554"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>Liste easEmailProfileConfigurationBases
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: Ressourcentyp networkManagementCondition
 description: Enthält Informationen, die eine Network Management Bedingung zu definieren.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d91ac60ae52f3317e8148e8bb4adcaf82afac53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 00ccc045892290ff03e68a109ccc01c4d5dbf8a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806510"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927044"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>Ressourcentyp networkManagementCondition
 

@@ -2,12 +2,14 @@
 title: Liste Zuordnungen
 description: Gibt eine Liste der Zuordnungen für einen Benutzer für alle Klassen zugewiesen. Dieser Namespace Dienstprogramm kann Anrufer, in einem einzigen Aufruf und erspart Zuordnungen von jede Klasse Anfordern einer Student Zuordnungen zu erhalten. Die Zuordnung Liste enthält, was benötigt wird, um die detaillierten Informationen für die Zuordnung von innerhalb der Klassennamespace abzurufen. Alle anderen Operationen für die Zuordnung sollten den Klassennamespace verwenden.
 localization_priority: Normal
-ms.openlocfilehash: 92a52f38a305515824a34e87bc3d23d16a2be4c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 0366a159e3e28e9ad3933ec4d1eea6799c1f65c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883202"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940841"
 ---
 # <a name="list-assignments"></a>Liste Zuordnungen
 

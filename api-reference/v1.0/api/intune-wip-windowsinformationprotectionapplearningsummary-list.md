@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLearningSummaries auflisten
 description: Auflisten von Eigenschaften und Beziehungen der windowsInformationProtectionAppLearningSummary-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a17427af37bf5adbc4c4511d08434df6db87397e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b224e0774809c5373556049e91770f65a20bc3f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961505"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>windowsInformationProtectionAppLearningSummaries auflisten
 
@@ -34,7 +35,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

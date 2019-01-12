@@ -3,12 +3,13 @@ title: importedWindowsAutopilotDeviceIdentity abrufen
 description: Lesen von Eigenschaften und Beziehungen des importedWindowsAutopilotDeviceIdentity-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 610e6bcdc3f066c71924621a1718dabc2c52dc2d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d9c86290c30c98ec3acd7225c1853e5987c02e28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828252"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945524"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity abrufen
 

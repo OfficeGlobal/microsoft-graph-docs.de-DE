@@ -1,14 +1,15 @@
 ---
 title: Personen auflisten
 description: Dient zum Abrufen einer Sammlung von person-Objekten, die nach ihrer Relevanz für den Benutzer sortiert sind, die von den Mustern bei Kommunikation, Zusammenarbeit und den Geschäftsbeziehungen des Benutzers abhängt.
-author: simonhult
+author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: c1152990e23a931f246c5319e795ef7568aadd76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: e7dd5c2ffefe57ffebf5e8d2fe3e9dca3101a488
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881599"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946350"
 ---
 # <a name="list-people"></a>Personen auflisten
 

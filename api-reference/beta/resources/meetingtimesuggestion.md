@@ -2,12 +2,14 @@
 title: Ressourcentyp „meetingTimeSuggestion“
 description: 'Ein besprechungsvorschlag, das Informationen wie Besprechungszeit, Anwesenheit Wahrscheinlichkeit, einzelne enthält '
 localization_priority: Normal
-ms.openlocfilehash: a38a971bb43fa13d8617e5fad1c4b5646bf224ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6c7adf6d3b31ebdd5a068f71572b80141736a0bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956115"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Ressourcentyp „meetingTimeSuggestion“
 

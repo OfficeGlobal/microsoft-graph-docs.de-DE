@@ -3,12 +3,13 @@ title: enrollmentConfigurationAssignment löschen
 description: Löscht ein enrollmentConfigurationAssignment-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3af630f24c5a976cc8d1be948a542f18f0c4c70c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 242dcd6d15112eba39c1b9a3cd74043f3b7c78d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941982"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment löschen
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

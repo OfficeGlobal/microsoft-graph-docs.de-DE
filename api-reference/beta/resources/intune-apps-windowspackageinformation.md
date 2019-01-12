@@ -3,12 +3,13 @@ title: Ressourcentyp windowsPackageInformation
 description: Enthält Eigenschaften für die Paketinformationen für einen Windows-Geschäfts-app.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f7f3cd593670e071ae62bdb287bcebeee01d555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac0f9aad1cdba1eaaac12754fd4a4d0ad4a6db32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926848"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Ressourcentyp windowsPackageInformation
 
@@ -21,11 +22,11 @@ Enthält Eigenschaften für die Paketinformationen für einen Windows-Geschäfts
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Windows-Architektur für die diese app ausgeführt werden kann. Mögliche Werte sind: `none`, `x86`, `x64`, `arm` und `neutral`.|
-|displayName|String|Der Anzeigename.|
-|identityName|String|Identitätsname|
-|identityPublisher|String|Der Identity-Herausgeber.|
-|identityResourceIdentifier|String|Der Identitätsressourcenbezeichner.|
-|identityVersion|String|Die Identität-Version.|
+|displayName|Zeichenfolge|Der Anzeigename.|
+|identityName|Zeichenfolge|Identitätsname|
+|identityPublisher|Zeichenfolge|Der Identity-Herausgeber.|
+|identityResourceIdentifier|Zeichenfolge|Der Identitätsressourcenbezeichner.|
+|identityVersion|Zeichenfolge|Die Identität-Version.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Der Wert für die Mindestversion des verwendbaren Betriebssystems.|
 
 ## <a name="relationships"></a>Beziehungen

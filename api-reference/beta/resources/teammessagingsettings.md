@@ -3,12 +3,13 @@ title: Ressourcentyp teamMessagingSettings
 description: So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 06aca84355a07052dcea316145dfff437eee743b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 342062ee9661758c8b3179e21246b9366d832f3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930404"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Ressourcentyp teamMessagingSettings
 
@@ -19,11 +20,11 @@ So konfigurieren Sie die messaging-Einstellungen und erwähnungen im [Team](team
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolean|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
-|allowUserDeleteMessages|Boolean|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
-|allowOwnerDeleteMessages|Boolean|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
-|allowTeamMentions|Boolean|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
-|allowChannelMentions|Boolean|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
+|allowUserEditMessages|Boolescher Wert|Wenn es sich bei Festlegung auf true können Benutzer ihre Nachrichten bearbeiten kann.|
+|allowUserDeleteMessages|Boolescher Wert|Bei Festlegung auf true können Benutzer ihre Nachrichten löschen kann.|
+|allowOwnerDeleteMessages|Boolescher Wert|Bei Festlegung auf "true" Websitebesitzer eine beliebige Nachricht löschen kann.|
+|allowTeamMentions|Boolescher Wert|Wenn Festlegung auf "true", "@team erwähnungen sind zulässig.|
+|allowChannelMentions|Boolescher Wert|Wenn Festlegung auf "true", "@channel erwähnungen sind zulässig.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
