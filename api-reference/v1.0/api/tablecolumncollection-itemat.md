@@ -3,53 +3,54 @@ title: 'TableColumnCollection: ItemAt'
 description: Ruft eine Spalte anhand ihrer Position in der Auflistung ab.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f70ca1a8fe7c2a878a4f21a3b960d8ce99d21380
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 580b94b1df6abf8a86db817456361bd3e7001843
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922361"
 ---
-# <a name="tablecolumncollection-itemat"></a><span data-ttu-id="fde31-103">TableColumnCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="fde31-103">TableColumnCollection: ItemAt</span></span>
+# <a name="tablecolumncollection-itemat"></a><span data-ttu-id="844b3-103">TableColumnCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="844b3-103">TableColumnCollection: ItemAt</span></span>
 
-<span data-ttu-id="fde31-104">Ruft eine Spalte anhand ihrer Position in der Auflistung ab.</span><span class="sxs-lookup"><span data-stu-id="fde31-104">Gets a column based on its position in the collection.</span></span>
-## <a name="permissions"></a><span data-ttu-id="fde31-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="fde31-105">Permissions</span></span>
-<span data-ttu-id="fde31-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fde31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="844b3-104">Ruft eine Spalte anhand ihrer Position in der Auflistung ab.</span><span class="sxs-lookup"><span data-stu-id="844b3-104">Gets a column based on its position in the collection.</span></span>
+## <a name="permissions"></a><span data-ttu-id="844b3-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="844b3-105">Permissions</span></span>
+<span data-ttu-id="844b3-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="844b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fde31-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="fde31-108">Permission type</span></span>      | <span data-ttu-id="fde31-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="fde31-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="844b3-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="844b3-108">Permission type</span></span>      | <span data-ttu-id="844b3-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="844b3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fde31-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="fde31-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fde31-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fde31-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="fde31-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="fde31-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fde31-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fde31-113">Not supported.</span></span>    |
-|<span data-ttu-id="fde31-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="fde31-114">Application</span></span> | <span data-ttu-id="fde31-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="fde31-115">Not supported.</span></span> |
+|<span data-ttu-id="844b3-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="844b3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="844b3-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="844b3-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="844b3-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="844b3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="844b3-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="844b3-113">Not supported.</span></span>    |
+|<span data-ttu-id="844b3-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="844b3-114">Application</span></span> | <span data-ttu-id="844b3-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="844b3-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fde31-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="fde31-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="844b3-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="844b3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/itemAt
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="fde31-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="fde31-117">Request headers</span></span>
-| <span data-ttu-id="fde31-118">Name</span><span class="sxs-lookup"><span data-stu-id="fde31-118">Name</span></span>       | <span data-ttu-id="fde31-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fde31-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="844b3-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="844b3-117">Request headers</span></span>
+| <span data-ttu-id="844b3-118">Name</span><span class="sxs-lookup"><span data-stu-id="844b3-118">Name</span></span>       | <span data-ttu-id="844b3-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="844b3-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fde31-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="fde31-120">Authorization</span></span>  | <span data-ttu-id="fde31-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fde31-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fde31-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="fde31-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="fde31-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="fde31-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="844b3-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="844b3-120">Authorization</span></span>  | <span data-ttu-id="844b3-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="844b3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="844b3-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="844b3-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="844b3-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="844b3-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fde31-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="fde31-126">Request body</span></span>
-<span data-ttu-id="fde31-127">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="fde31-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="844b3-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="844b3-126">Request body</span></span>
+<span data-ttu-id="844b3-127">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="844b3-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="fde31-128">Parameter</span><span class="sxs-lookup"><span data-stu-id="fde31-128">Parameter</span></span>    | <span data-ttu-id="fde31-129">Typ</span><span class="sxs-lookup"><span data-stu-id="fde31-129">Type</span></span>   |<span data-ttu-id="fde31-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fde31-130">Description</span></span>|
+| <span data-ttu-id="844b3-128">Parameter</span><span class="sxs-lookup"><span data-stu-id="844b3-128">Parameter</span></span>    | <span data-ttu-id="844b3-129">Typ</span><span class="sxs-lookup"><span data-stu-id="844b3-129">Type</span></span>   |<span data-ttu-id="844b3-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="844b3-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fde31-131">Index</span><span class="sxs-lookup"><span data-stu-id="fde31-131">index</span></span>|<span data-ttu-id="fde31-132">Int32</span><span class="sxs-lookup"><span data-stu-id="fde31-132">Int32</span></span>|<span data-ttu-id="fde31-p104">Index-Wert des abzurufenden Objekts. Nullindiziert.</span><span class="sxs-lookup"><span data-stu-id="fde31-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="844b3-131">Index</span><span class="sxs-lookup"><span data-stu-id="844b3-131">index</span></span>|<span data-ttu-id="844b3-132">Int32</span><span class="sxs-lookup"><span data-stu-id="844b3-132">Int32</span></span>|<span data-ttu-id="844b3-p104">Index-Wert des abzurufenden Objekts. Nullindiziert.</span><span class="sxs-lookup"><span data-stu-id="844b3-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fde31-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="fde31-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="844b3-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="844b3-135">Response</span></span>
 
-<span data-ttu-id="fde31-136">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und [WorkbookTableColumn](../resources/tablecolumn.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="fde31-136">If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
+<span data-ttu-id="844b3-136">Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und [WorkbookTableColumn](../resources/tablecolumn.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="844b3-136">If successful, this method returns `200 OK` response code and [WorkbookTableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fde31-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="fde31-137">Example</span></span>
-<span data-ttu-id="fde31-138">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="fde31-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="fde31-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="fde31-139">Request</span></span>
-<span data-ttu-id="fde31-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="fde31-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="844b3-137">Beispiel</span><span class="sxs-lookup"><span data-stu-id="844b3-137">Example</span></span>
+<span data-ttu-id="844b3-138">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="844b3-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="844b3-139">Anforderung</span><span class="sxs-lookup"><span data-stu-id="844b3-139">Request</span></span>
+<span data-ttu-id="844b3-140">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="844b3-140">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -67,8 +68,8 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="fde31-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="fde31-141">Response</span></span>
-<span data-ttu-id="fde31-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="fde31-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="844b3-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="844b3-141">Response</span></span>
+<span data-ttu-id="844b3-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="844b3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

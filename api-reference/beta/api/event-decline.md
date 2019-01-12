@@ -3,29 +3,30 @@ title: 'event: decline'
 description: Einladung auf das angegebene Ereignis in einem Benutzerkalender abzulehnen.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 218ca79b05507fc63ba6f45e2fcb5dd4a0835361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: b59d6717d51dc2f72e49c8e4f971f54950674bc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916498"
 ---
-# <a name="event-decline"></a><span data-ttu-id="e8acf-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="e8acf-103">event: decline</span></span>
+# <a name="event-decline"></a><span data-ttu-id="5b905-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="5b905-103">event: decline</span></span>
 
-> <span data-ttu-id="e8acf-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e8acf-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e8acf-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e8acf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5b905-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="5b905-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5b905-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5b905-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e8acf-106">Auf das angegebene [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md)des Benutzers Einladung ablehnen.</span><span class="sxs-lookup"><span data-stu-id="e8acf-106">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="5b905-106">Auf das angegebene [Ereignis](../resources/event.md) in einem [Kalender](../resources/calendar.md)des Benutzers Einladung ablehnen.</span><span class="sxs-lookup"><span data-stu-id="5b905-106">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e8acf-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e8acf-107">Permissions</span></span>
-<span data-ttu-id="e8acf-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8acf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b905-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5b905-107">Permissions</span></span>
+<span data-ttu-id="5b905-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b905-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e8acf-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e8acf-110">Permission type</span></span>      | <span data-ttu-id="e8acf-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e8acf-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5b905-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5b905-110">Permission type</span></span>      | <span data-ttu-id="5b905-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5b905-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e8acf-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e8acf-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e8acf-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8acf-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="e8acf-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e8acf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8acf-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8acf-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="e8acf-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e8acf-116">Application</span></span> | <span data-ttu-id="e8acf-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8acf-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="5b905-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5b905-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5b905-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b905-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="5b905-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5b905-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b905-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b905-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="5b905-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5b905-116">Application</span></span> | <span data-ttu-id="5b905-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b905-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e8acf-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e8acf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b905-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5b905-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,33 +49,33 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="e8acf-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e8acf-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5b905-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5b905-119">Request headers</span></span>
 
-| <span data-ttu-id="e8acf-120">Name</span><span class="sxs-lookup"><span data-stu-id="e8acf-120">Name</span></span>       | <span data-ttu-id="e8acf-121">Typ</span><span class="sxs-lookup"><span data-stu-id="e8acf-121">Type</span></span> | <span data-ttu-id="e8acf-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e8acf-122">Description</span></span>|
+| <span data-ttu-id="5b905-120">Name</span><span class="sxs-lookup"><span data-stu-id="5b905-120">Name</span></span>       | <span data-ttu-id="5b905-121">Typ</span><span class="sxs-lookup"><span data-stu-id="5b905-121">Type</span></span> | <span data-ttu-id="5b905-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5b905-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e8acf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8acf-123">Authorization</span></span>  | <span data-ttu-id="e8acf-124">string</span><span class="sxs-lookup"><span data-stu-id="e8acf-124">string</span></span>  | <span data-ttu-id="e8acf-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e8acf-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e8acf-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e8acf-127">Content-Type</span></span> | <span data-ttu-id="e8acf-128">string</span><span class="sxs-lookup"><span data-stu-id="e8acf-128">string</span></span>  | <span data-ttu-id="e8acf-p104">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="e8acf-p104">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="5b905-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="5b905-123">Authorization</span></span>  | <span data-ttu-id="5b905-124">string</span><span class="sxs-lookup"><span data-stu-id="5b905-124">string</span></span>  | <span data-ttu-id="5b905-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5b905-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5b905-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b905-127">Content-Type</span></span> | <span data-ttu-id="5b905-128">string</span><span class="sxs-lookup"><span data-stu-id="5b905-128">string</span></span>  | <span data-ttu-id="5b905-p104">Die Art der Daten im Textkörper einer Entität. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5b905-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e8acf-131">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e8acf-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b905-131">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5b905-131">Request body</span></span>
 
-<span data-ttu-id="e8acf-132">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="e8acf-132">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="5b905-132">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="5b905-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e8acf-133">Parameter</span><span class="sxs-lookup"><span data-stu-id="e8acf-133">Parameter</span></span>    | <span data-ttu-id="e8acf-134">Typ</span><span class="sxs-lookup"><span data-stu-id="e8acf-134">Type</span></span>   |<span data-ttu-id="e8acf-135">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e8acf-135">Description</span></span>|
+| <span data-ttu-id="5b905-133">Parameter</span><span class="sxs-lookup"><span data-stu-id="5b905-133">Parameter</span></span>    | <span data-ttu-id="5b905-134">Typ</span><span class="sxs-lookup"><span data-stu-id="5b905-134">Type</span></span>   |<span data-ttu-id="5b905-135">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5b905-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e8acf-136">comment</span><span class="sxs-lookup"><span data-stu-id="e8acf-136">comment</span></span>|<span data-ttu-id="e8acf-137">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="e8acf-137">String</span></span>|<span data-ttu-id="e8acf-p105">In der Antwort enthaltener Text. Optional.</span><span class="sxs-lookup"><span data-stu-id="e8acf-p105">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="e8acf-140">sendResponse</span><span class="sxs-lookup"><span data-stu-id="e8acf-140">sendResponse</span></span>|<span data-ttu-id="e8acf-141">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="e8acf-141">Boolean</span></span>|<span data-ttu-id="e8acf-p106">`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.</span><span class="sxs-lookup"><span data-stu-id="e8acf-p106">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="5b905-136">comment</span><span class="sxs-lookup"><span data-stu-id="5b905-136">comment</span></span>|<span data-ttu-id="5b905-137">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="5b905-137">String</span></span>|<span data-ttu-id="5b905-p105">In der Antwort enthaltener Text. Optional.</span><span class="sxs-lookup"><span data-stu-id="5b905-p105">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="5b905-140">sendResponse</span><span class="sxs-lookup"><span data-stu-id="5b905-140">sendResponse</span></span>|<span data-ttu-id="5b905-141">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="5b905-141">Boolean</span></span>|<span data-ttu-id="5b905-p106">`true`,wenn eine Antwort an den Organisator gesendet werden soll; andernfalls `false`. Optional. Der Standardwert lautet `true`.</span><span class="sxs-lookup"><span data-stu-id="5b905-p106">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e8acf-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="e8acf-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5b905-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="5b905-145">Response</span></span>
 
-<span data-ttu-id="e8acf-p107">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e8acf-p107">If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="5b905-p107">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5b905-p107">If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e8acf-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e8acf-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5b905-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5b905-148">Example</span></span>
 
-<span data-ttu-id="e8acf-149">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="e8acf-149">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="5b905-149">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="5b905-149">Here is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="e8acf-150">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e8acf-150">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5b905-150">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5b905-150">Request</span></span>
 
-<span data-ttu-id="e8acf-151">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e8acf-151">Here is an example of the request.</span></span>
+<span data-ttu-id="5b905-151">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5b905-151">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -92,9 +93,9 @@ Content-length: 56
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e8acf-152">Antwort</span><span class="sxs-lookup"><span data-stu-id="e8acf-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5b905-152">Antwort</span><span class="sxs-lookup"><span data-stu-id="5b905-152">Response</span></span>
 
-<span data-ttu-id="e8acf-153">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e8acf-153">Here is an example of the response.</span></span>
+<span data-ttu-id="5b905-153">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5b905-153">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

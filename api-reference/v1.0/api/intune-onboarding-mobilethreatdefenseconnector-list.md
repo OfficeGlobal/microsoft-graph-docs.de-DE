@@ -3,28 +3,29 @@ title: mobileThreatDefenseConnectors auflisten
 description: Listet die Eigenschaften und Beziehungen von Objekten des Typs mobileThreatDefenseConnector auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 42d572357f3dd749b959791925e5ea82abb11580
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 506246352ef42c7d0b97b726f0c990ece1d4743b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931209"
 ---
-# <a name="list-mobilethreatdefenseconnectors"></a><span data-ttu-id="17982-103">mobileThreatDefenseConnectors auflisten</span><span class="sxs-lookup"><span data-stu-id="17982-103">List mobileThreatDefenseConnectors</span></span>
+# <a name="list-mobilethreatdefenseconnectors"></a><span data-ttu-id="32fab-103">mobileThreatDefenseConnectors auflisten</span><span class="sxs-lookup"><span data-stu-id="32fab-103">List mobileThreatDefenseConnectors</span></span>
 
-> <span data-ttu-id="17982-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="17982-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="32fab-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="32fab-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="17982-105">Listet die Eigenschaften und Beziehungen von Objekten des Typs [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) auf.</span><span class="sxs-lookup"><span data-stu-id="17982-105">List properties and relationships of the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="17982-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="17982-106">Prerequisites</span></span>
-<span data-ttu-id="17982-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="17982-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="32fab-105">Listet die Eigenschaften und Beziehungen von Objekten des Typs [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) auf.</span><span class="sxs-lookup"><span data-stu-id="32fab-105">List properties and relationships of the [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="32fab-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="32fab-106">Prerequisites</span></span>
+<span data-ttu-id="32fab-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32fab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="17982-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="17982-109">Permission type</span></span>|<span data-ttu-id="17982-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="17982-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="32fab-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="32fab-109">Permission type</span></span>|<span data-ttu-id="32fab-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="32fab-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="17982-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="17982-111">Delegated (work or school account)</span></span>|<span data-ttu-id="17982-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="17982-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="17982-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="17982-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="17982-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="17982-114">Not supported.</span></span>|
-|<span data-ttu-id="17982-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="17982-115">Application</span></span>|<span data-ttu-id="17982-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="17982-116">Not supported.</span></span>|
+|<span data-ttu-id="32fab-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="32fab-111">Delegated (work or school account)</span></span>|<span data-ttu-id="32fab-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="32fab-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="32fab-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="32fab-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="32fab-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="32fab-114">Not supported.</span></span>|
+|<span data-ttu-id="32fab-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="32fab-115">Application</span></span>|<span data-ttu-id="32fab-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="32fab-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="17982-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="17982-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32fab-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="32fab-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27856887"
 GET /deviceManagement/mobileThreatDefenseConnectors
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="17982-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="17982-118">Request headers</span></span>
-|<span data-ttu-id="17982-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="17982-119">Header</span></span>|<span data-ttu-id="17982-120">Wert</span><span class="sxs-lookup"><span data-stu-id="17982-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="32fab-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="32fab-118">Request headers</span></span>
+|<span data-ttu-id="32fab-119">Header</span><span class="sxs-lookup"><span data-stu-id="32fab-119">Header</span></span>|<span data-ttu-id="32fab-120">Wert</span><span class="sxs-lookup"><span data-stu-id="32fab-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="17982-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="17982-121">Authorization</span></span>|<span data-ttu-id="17982-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="17982-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="17982-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="17982-123">Accept</span></span>|<span data-ttu-id="17982-124">application/json</span><span class="sxs-lookup"><span data-stu-id="17982-124">application/json</span></span>|
+|<span data-ttu-id="32fab-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="32fab-121">Authorization</span></span>|<span data-ttu-id="32fab-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="32fab-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="32fab-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="32fab-123">Accept</span></span>|<span data-ttu-id="32fab-124">application/json</span><span class="sxs-lookup"><span data-stu-id="32fab-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="17982-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="17982-125">Request body</span></span>
-<span data-ttu-id="17982-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="17982-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="32fab-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="32fab-125">Request body</span></span>
+<span data-ttu-id="32fab-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="32fab-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="17982-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="17982-127">Response</span></span>
-<span data-ttu-id="17982-128">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="17982-128">If successful, this method returns a `200 OK` response code and a collection of [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="32fab-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="32fab-127">Response</span></span>
+<span data-ttu-id="32fab-128">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="32fab-128">If successful, this method returns a `200 OK` response code and a collection of [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="17982-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="17982-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="17982-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="17982-130">Request</span></span>
-<span data-ttu-id="17982-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="17982-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="32fab-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="32fab-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="32fab-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="32fab-130">Request</span></span>
+<span data-ttu-id="32fab-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="32fab-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/mobileThreatDefenseConnectors
 ```
 
-### <a name="response"></a><span data-ttu-id="17982-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="17982-132">Response</span></span>
-<span data-ttu-id="17982-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="17982-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="32fab-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="32fab-132">Response</span></span>
+<span data-ttu-id="32fab-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="32fab-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

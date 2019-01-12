@@ -2,48 +2,50 @@
 title: Mitglieder auflisten
 description: 'Abrufen der Lehrer und Kursteilnehmer für eine Klasse. Hinweis: Wenn das delegierte Token verwendet wird, werden Mitglieder nur anderen Mitgliedern der Klasse angezeigt.'
 localization_priority: Normal
-ms.openlocfilehash: 13484a6a20f1b35e69a8957eb05bb93c9666ee75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 09c02d13a6c8c74b8e9cca690f605fa4ee128e67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915291"
 ---
-# <a name="list-members"></a><span data-ttu-id="6958b-104">Mitglieder auflisten</span><span class="sxs-lookup"><span data-stu-id="6958b-104">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="20449-104">Mitglieder auflisten</span><span class="sxs-lookup"><span data-stu-id="20449-104">List members</span></span>
 
-> <span data-ttu-id="6958b-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="6958b-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6958b-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6958b-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="20449-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="20449-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="20449-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="20449-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6958b-107">Abrufen der Lehrer und Kursteilnehmer für eine Klasse.</span><span class="sxs-lookup"><span data-stu-id="6958b-107">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="6958b-108">Hinweis: Wenn das delegierte Token verwendet wird, werden Mitglieder nur anderen Mitgliedern der Klasse angezeigt.</span><span class="sxs-lookup"><span data-stu-id="6958b-108">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
+<span data-ttu-id="20449-107">Abrufen der Lehrer und Kursteilnehmer für eine Klasse.</span><span class="sxs-lookup"><span data-stu-id="20449-107">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="20449-108">Hinweis: Wenn das delegierte Token verwendet wird, werden Mitglieder nur anderen Mitgliedern der Klasse angezeigt.</span><span class="sxs-lookup"><span data-stu-id="20449-108">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6958b-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6958b-109">Permissions</span></span>
-<span data-ttu-id="6958b-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6958b-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="20449-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="20449-109">Permissions</span></span>
+<span data-ttu-id="20449-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="20449-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6958b-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6958b-112">Permission type</span></span>      | <span data-ttu-id="6958b-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6958b-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="20449-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="20449-112">Permission type</span></span>      | <span data-ttu-id="20449-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="20449-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6958b-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6958b-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="6958b-115">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="6958b-115">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="6958b-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6958b-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="6958b-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6958b-117">Not supported</span></span>  |
-|<span data-ttu-id="6958b-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6958b-118">Application</span></span> | <span data-ttu-id="6958b-119">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span><span class="sxs-lookup"><span data-stu-id="6958b-119">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
+|<span data-ttu-id="20449-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="20449-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="20449-115">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="20449-115">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="20449-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="20449-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="20449-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="20449-117">Not supported</span></span>  |
+|<span data-ttu-id="20449-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="20449-118">Application</span></span> | <span data-ttu-id="20449-119">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span><span class="sxs-lookup"><span data-stu-id="20449-119">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="6958b-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6958b-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20449-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="20449-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6958b-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="6958b-121">Optional query parameters</span></span>
-<span data-ttu-id="6958b-122">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6958b-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="20449-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="20449-121">Optional query parameters</span></span>
+<span data-ttu-id="20449-122">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="20449-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6958b-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6958b-123">Request headers</span></span>
-| <span data-ttu-id="6958b-124">Header</span><span class="sxs-lookup"><span data-stu-id="6958b-124">Header</span></span>       | <span data-ttu-id="6958b-125">Wert</span><span class="sxs-lookup"><span data-stu-id="6958b-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="20449-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="20449-123">Request headers</span></span>
+| <span data-ttu-id="20449-124">Header</span><span class="sxs-lookup"><span data-stu-id="20449-124">Header</span></span>       | <span data-ttu-id="20449-125">Wert</span><span class="sxs-lookup"><span data-stu-id="20449-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6958b-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6958b-126">Authorization</span></span>  | <span data-ttu-id="6958b-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6958b-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="20449-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="20449-126">Authorization</span></span>  | <span data-ttu-id="20449-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="20449-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6958b-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6958b-129">Request body</span></span>
-<span data-ttu-id="6958b-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="6958b-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="6958b-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="6958b-131">Response</span></span>
-<span data-ttu-id="6958b-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [educationUser](../resources/educationuser.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6958b-132">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6958b-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6958b-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6958b-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6958b-134">Request</span></span>
-<span data-ttu-id="6958b-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6958b-135">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="20449-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="20449-129">Request body</span></span>
+<span data-ttu-id="20449-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="20449-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="20449-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="20449-131">Response</span></span>
+<span data-ttu-id="20449-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [educationUser](../resources/educationuser.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="20449-132">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="20449-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="20449-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="20449-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="20449-134">Request</span></span>
+<span data-ttu-id="20449-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="20449-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_members"
@@ -51,10 +53,10 @@ GET /education/classes/{id}/members
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
-##### <a name="response"></a><span data-ttu-id="6958b-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="6958b-136">Response</span></span>
-<span data-ttu-id="6958b-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="6958b-137">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="20449-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="20449-136">Response</span></span>
+<span data-ttu-id="20449-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="20449-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="6958b-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="6958b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="20449-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="20449-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

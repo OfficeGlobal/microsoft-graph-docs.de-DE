@@ -3,49 +3,50 @@ title: Klassen auflisten
 description: 'Abrufen einer Liste aller Klassenobjekte. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 74639acd39ee6b11a7338692b23e5e14a7020eda
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2be32a833d407eee51f5372c3eff55e19081fc37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823926"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920282"
 ---
-# <a name="list-classes"></a><span data-ttu-id="c0256-103">Klassen auflisten</span><span class="sxs-lookup"><span data-stu-id="c0256-103">List classes</span></span>
+# <a name="list-classes"></a><span data-ttu-id="d17e9-103">Klassen auflisten</span><span class="sxs-lookup"><span data-stu-id="d17e9-103">List classes</span></span>
 
-> <span data-ttu-id="c0256-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c0256-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c0256-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c0256-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d17e9-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d17e9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d17e9-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d17e9-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c0256-106">Abrufen einer Liste aller Klassenobjekte.</span><span class="sxs-lookup"><span data-stu-id="c0256-106">Retrieve a list of all class objects.</span></span> 
+<span data-ttu-id="d17e9-106">Abrufen einer Liste aller Klassenobjekte.</span><span class="sxs-lookup"><span data-stu-id="d17e9-106">Retrieve a list of all class objects.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="c0256-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c0256-107">Permissions</span></span>
-<span data-ttu-id="c0256-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0256-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d17e9-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d17e9-107">Permissions</span></span>
+<span data-ttu-id="d17e9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d17e9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c0256-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c0256-110">Permission type</span></span>      | <span data-ttu-id="c0256-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c0256-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d17e9-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d17e9-110">Permission type</span></span>      | <span data-ttu-id="d17e9-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d17e9-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c0256-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c0256-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c0256-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="c0256-113">EduRoster.ReadBasic</span></span> |
-|<span data-ttu-id="c0256-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c0256-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c0256-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c0256-115">Not supported.</span></span>  |
-|<span data-ttu-id="c0256-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c0256-116">Application</span></span> | <span data-ttu-id="c0256-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0256-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="d17e9-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d17e9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d17e9-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="d17e9-113">EduRoster.ReadBasic</span></span> |
+|<span data-ttu-id="d17e9-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d17e9-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="d17e9-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d17e9-115">Not supported.</span></span>  |
+|<span data-ttu-id="d17e9-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d17e9-116">Application</span></span> | <span data-ttu-id="d17e9-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d17e9-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="c0256-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c0256-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d17e9-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d17e9-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c0256-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c0256-119">Optional query parameters</span></span>
-<span data-ttu-id="c0256-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c0256-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d17e9-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="d17e9-119">Optional query parameters</span></span>
+<span data-ttu-id="d17e9-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d17e9-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c0256-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c0256-121">Request headers</span></span>
-| <span data-ttu-id="c0256-122">Header</span><span class="sxs-lookup"><span data-stu-id="c0256-122">Header</span></span>       | <span data-ttu-id="c0256-123">Wert</span><span class="sxs-lookup"><span data-stu-id="c0256-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d17e9-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d17e9-121">Request headers</span></span>
+| <span data-ttu-id="d17e9-122">Header</span><span class="sxs-lookup"><span data-stu-id="d17e9-122">Header</span></span>       | <span data-ttu-id="d17e9-123">Wert</span><span class="sxs-lookup"><span data-stu-id="d17e9-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c0256-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c0256-124">Authorization</span></span>  | <span data-ttu-id="c0256-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c0256-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d17e9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d17e9-124">Authorization</span></span>  | <span data-ttu-id="d17e9-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d17e9-p103">Bearer {token}. Required.</span></span>  |
 
 
-## <a name="request-body"></a><span data-ttu-id="c0256-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c0256-127">Request body</span></span>
-<span data-ttu-id="c0256-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c0256-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="c0256-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="c0256-129">Response</span></span>
-<span data-ttu-id="c0256-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [educationClass](../resources/educationclass.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c0256-130">If successful, this method returns a `200 OK` response code and a collection of [educationClass](../resources/educationclass.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c0256-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c0256-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c0256-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c0256-132">Request</span></span>
-<span data-ttu-id="c0256-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c0256-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d17e9-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d17e9-127">Request body</span></span>
+<span data-ttu-id="d17e9-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d17e9-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="d17e9-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="d17e9-129">Response</span></span>
+<span data-ttu-id="d17e9-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [educationClass](../resources/educationclass.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d17e9-130">If successful, this method returns a `200 OK` response code and a collection of [educationClass](../resources/educationclass.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d17e9-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d17e9-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d17e9-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d17e9-132">Request</span></span>
+<span data-ttu-id="d17e9-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d17e9-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_classes"
@@ -53,10 +54,10 @@ GET /education/classes
 ```http
 GET https://graph.microsoft.com/beta/education/classes
 ```
-##### <a name="response"></a><span data-ttu-id="c0256-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="c0256-134">Response</span></span>
-<span data-ttu-id="c0256-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c0256-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d17e9-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="d17e9-134">Response</span></span>
+<span data-ttu-id="d17e9-135">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d17e9-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="c0256-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="c0256-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d17e9-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="d17e9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
