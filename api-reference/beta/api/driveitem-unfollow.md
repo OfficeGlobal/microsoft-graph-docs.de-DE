@@ -3,12 +3,13 @@ author: chackman
 ms.author: chackman
 title: Nicht mehr folgen Laufwerk-Element
 localization_priority: Normal
-ms.openlocfilehash: 6d2b47b0d243f2b13b390a9e0121e4174d8f75bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5a42f740b3ea6f706529a5353e9cbb846bb7a4e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945951"
 ---
 # <a name="unfollow-drive-item"></a>Nicht mehr folgen Laufwerk-Element
 

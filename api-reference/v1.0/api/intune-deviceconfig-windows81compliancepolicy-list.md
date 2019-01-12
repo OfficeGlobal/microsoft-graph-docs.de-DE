@@ -3,12 +3,13 @@ title: Auflisten von „windows81CompliancePolicy“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows81CompliancePolicy auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c79067cc40b1c969cfd91125fce9239a515fce3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6e0fae9b12ec3c6a8197a0bf596078134fb8da88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917041"
 ---
 # <a name="list-windows81compliancepolicies"></a>Auflisten von „windows81CompliancePolicy“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

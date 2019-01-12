@@ -2,12 +2,14 @@
 title: Registrieren von Geräten für die Verwaltung in Intune
 description: " Registrierung (BYOD) kann Benutzer ihre persönliche Telefone, Tablets oder PCs zu registrieren. Die Registrierung unternehmenseigener Geräte (COD) ermöglicht Verwaltungsszenarien wie Remotezurücksetzung, gemeinsam genutzte Geräte oder Benutzeraffinität für ein Gerät."
 localization_priority: Normal
-ms.openlocfilehash: de2a87c08851081891ee641db50a4ca1c64cb314
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917440"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrieren von Geräten für die Verwaltung in Intune
 

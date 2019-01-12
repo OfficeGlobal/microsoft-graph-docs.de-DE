@@ -3,12 +3,13 @@ title: Liste apps im team
 description: Abrufen der Liste apps im angegebenen Team installiert.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 9b1589a7497ef466f996edde4353198d0d59b535
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 02f324c17bde34973c6f3fe612c327a0f7488eb4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957641"
 ---
 # <a name="list-apps-in-team"></a>Liste apps im team
 
@@ -40,7 +41,7 @@ Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfragepar
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

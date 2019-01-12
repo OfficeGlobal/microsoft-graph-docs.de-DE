@@ -2,12 +2,14 @@
 title: Geräteressourcentyp
 description: Stellt ein Gerät im Verzeichnis registriert. Geräte werden mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von directoryObject.
 localization_priority: Normal
-ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9a699134be1189700fd4689668db6021260835ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821672"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944194"
 ---
 # <a name="device-resource-type"></a>Geräteressourcentyp
 
@@ -42,25 +44,25 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |alternativeSecurityIds|alternativeSecurityId-Sammlung| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
 |approximateLastSignInDateTime|DateTimeOffset| Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 |deviceId|Guid| Der eindeutige Bezeichner, der vom Azure-Geräteregistrierungsdienst bei der Registrierung festgelegt wird. |
-|deviceMetadata|String| Nur für internen Gebrauch. Auf Null festgelegt. |
+|deviceMetadata|Zeichenfolge| Nur für internen Gebrauch. Auf Null festgelegt. |
 |deviceVersion|Int32| Nur für internen Gebrauch. |
-|displayName|String| Der Anzeigename für das Gerät. Erforderlich. |
-|id|String|Die eindeutige ID für das Gerät. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
+|displayName|Zeichenfolge| Der Anzeigename für das Gerät. Erforderlich. |
+|id|Zeichenfolge|Die eindeutige ID für das Gerät. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
 |isCompliant|Boolean|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Schreibgeschützt. Dies kann nur durch Intune für einen beliebigen Gerätetyp Betriebssystem oder durch eine [genehmigt MDM-app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden.|
-|isManaged|Boolean|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur durch Intune für einen beliebigen Gerätetyp Betriebssystem oder durch eine [genehmigt MDM-app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden. |
+|isManaged|Boolescher Wert|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur durch Intune für einen beliebigen Gerätetyp Betriebssystem oder durch eine [genehmigt MDM-app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Der Zeitpunkt der letzten Synchronisierung des Objekts mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'` Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt.|
-|operatingSystem|String| Der Typ des Betriebssystems auf dem Gerät. Erforderlich. |
-|operatingSystemVersion|String| Auf dem Gerät installierte Betriebssystemversion.
+|operatingSystem|Zeichenfolge| Der Typ des Betriebssystems auf dem Gerät. Erforderlich. |
+|operatingSystemVersion|Zeichenfolge| Auf dem Gerät installierte Betriebssystemversion.
  Erforderlich. |
 |physicalIds|Zeichenfolgenauflistung| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
 |trustType|String| Typ von Vertrauensstellung für das beigetretene Gerät. Schreibgeschützt. Mögliche Werte: <br />**Arbeitsplatz** - Gibt an *, dass eigene persönliche Geräte mitgebracht werden sollen*<br />**AzureAd** - Nur Geräte, die mit der Cloud verknüpft sind<br />**ServerAd** - Lokale Geräte, die der Domäne beigetreten sind, die mit Azure AD verknüpft sind. Weitere Informationen hierzu finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
-|Name| String | Der Anzeigename eines Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Status | String| Gerät ist online oder offline. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Plattform |String|Plattform des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet.|
-|Art| String| Formfaktor des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Model| String| Modell des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Hersteller| String| Hersteller des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Name| Zeichenfolge | Der Anzeigename eines Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Status | Zeichenfolge| Gerät ist online oder offline. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Plattform |Zeichenfolge|Plattform des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet.|
+|Art| Zeichenfolge| Formfaktor des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Model| Zeichenfolge| Modell des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Hersteller| Zeichenfolge| Hersteller des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

@@ -2,12 +2,14 @@
 title: emailAddress-Ressourcentyp
 description: Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.
 localization_priority: Normal
-ms.openlocfilehash: 5ea1919e5c5f389c9b7fece508e8339f722b725a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7af23418132c4d1c20097899f870c7d25be119bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826884"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951754"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress-Ressourcentyp
 
@@ -16,8 +18,8 @@ Name und E-Mail-Adresse eines Kontakts oder eines Empfängers der Nachricht.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|address|String|Die E-Mail-Adresse der Person oder Organisation.|
-|name|String|Der Anzeigename der Person oder Entität.|
+|address|Zeichenfolge|Die E-Mail-Adresse der Person oder Organisation.|
+|name|Zeichenfolge|Der Anzeigename der Person oder Entität.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

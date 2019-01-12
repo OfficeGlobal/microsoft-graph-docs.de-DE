@@ -3,12 +3,13 @@ title: MobileAppInstallStatus löschen
 description: Löscht eine MobileAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 924a89ab0ac2c8b6aec7e1e08bd186949bdaa25c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 323090c754b9680d0c367c0b4aedbdb336d2c3a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849161"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960987"
 ---
 # <a name="delete-mobileappinstallstatus"></a>MobileAppInstallStatus löschen
 
@@ -37,7 +38,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstal
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

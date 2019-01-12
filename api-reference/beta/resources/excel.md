@@ -2,12 +2,14 @@
 title: Arbeiten mit Excel in Microsoft Graph
 description: 'Sie können Microsoft Graph verwenden, um es Web- und Mobilanwendungen zu ermöglichen, in OneDrive, SharePoint oder anderen unterstützten Speicherplattformen gespeicherte Excel-Arbeitsmappen zu lesen und zu bearbeiten. Die `Workbook`- (bzw. Excel-Datei-)Ressource enthält alle anderen Excel-Ressourcen über Beziehungen. Sie können über die Laufwerks-API auf eine Arbeitsmappe zugreifen, indem Sie den Speicherort der Datei in der URL identifizieren. Beispiel:'
 localization_priority: Normal
-ms.openlocfilehash: 152aaf1dc8cd8cd98854b2908548f44deb2e49a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 45b232f614c1698a62ed7b7d444dfa156821c747
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940064"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Arbeiten mit Excel in Microsoft Graph
 

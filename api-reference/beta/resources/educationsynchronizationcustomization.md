@@ -3,12 +3,13 @@ title: Ressourcentyp educationSynchronizationCustomization
 description: 'Stellt Einstellungen zum Anpassen der Schule Daten profilsynchronisierung Ressource Entitäten bereit. Die Anpassung kann auf allen synchronisierten Entitäten angewendet werden. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9294af5796daeefb394ed1625a9a36128ae7b2a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: c4e8810202dbae5fdc3d978bd27e0463f0424d2e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860900"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962870"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>Ressourcentyp educationSynchronizationCustomization
 
@@ -24,8 +25,8 @@ Stellt Einstellungen zum Anpassen der Schule Daten profilsynchronisierung Ressou
 |:-|:-|:-|
 | **optionalPropertiesToSync** | Auflistung der Zeichenfolge |  Die Auflistung von Eigenschaftennamen synchronisieren. Wenn auf null festgelegt, alle Eigenschaften werden synchronisiert.       |
 | **synchronizationStartDate** | DateTime |  Das Datum, das die Synchronisierung gestartet werden soll. Dieser Wert sollte zu einem späteren Zeitpunkt festgelegt werden. Wenn der Wert Null, die Ressource synchronisiert werden soll, wenn das Profil Setup abgeschlossen ist. **Hinweis:** Dies gilt nur für die **StudentEnrollment** -Eigenschaft.      |
-|**isSyncDeferred** |Boolean | Gibt an, ob die Synchronisierung der übergeordneten Entität zu einem späteren Zeitpunkt verzögert ist. |
-| **allowDisplayNameUpdate** | Boolean |  Gibt an, ob der Anzeigename der Ressource durch die Synchronisierung überschrieben werden kann.         |
+|**isSyncDeferred** |Boolescher Wert | Gibt an, ob die Synchronisierung der übergeordneten Entität zu einem späteren Zeitpunkt verzögert ist. |
+| **allowDisplayNameUpdate** | Boolescher Wert |  Gibt an, ob der Anzeigename der Ressource durch die Synchronisierung überschrieben werden kann.         |
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

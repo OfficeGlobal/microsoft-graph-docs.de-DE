@@ -3,12 +3,13 @@ title: Abrufen von androidForWorkVpnConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkVpnConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0260905d52cda7a73847f1cf1dfee026da5ba1c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dff7467d1d3728ce6a4c57a8ddbc868bcbb9948e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948779"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>Abrufen von androidForWorkVpnConfiguration
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

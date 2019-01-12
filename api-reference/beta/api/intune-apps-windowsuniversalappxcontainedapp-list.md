@@ -3,12 +3,13 @@ title: Liste windowsUniversalAppXContainedApps
 description: Listeneigenschaften und Beziehungen der WindowsUniversalAppXContainedApp-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f5c7afb65c3628629d5349bca76c1b46467dfc9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aa796ca7b32295f50fcaa901f31b71fbaa058be5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808687"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964158"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Liste windowsUniversalAppXContainedApps
 

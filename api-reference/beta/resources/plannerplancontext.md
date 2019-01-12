@@ -2,12 +2,14 @@
 title: Ressourcentyp plannerPlanContext
 description: Die Ressource **PlannerPlanContext** stellt die Beziehung zwischen einem PlannerPlan zu einer Benutzeroberfläche außerhalb Planner dar. Pläne in Planner können in anderen Erfahrungen, beispielsweise Microsoft-Teams, zum Nachverfolgen von Arbeit im Zusammenhang mit dieser Erfahrungen verfügbar gemacht werden.
 localization_priority: Normal
-ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e118e32ea74332f0d8d0f958f7c55cd9980acb8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820979"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962891"
 ---
 # <a name="plannerplancontext-resource-type"></a>Ressourcentyp plannerPlanContext
 
@@ -21,10 +23,10 @@ Die Erfahrung, die der Eintrag **PlannerPlanContext** reresents kann auf Basis d
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|associationType|String|Lässt Nullwerte zu. Eine app-benutzerdefinierten Typ der Zuordnung zwischen der [PlannerPlan](plannerplan.md) und die app. Diese Informationen können die app verschiedene Arten von Beziehungen an den gleichen [PlannerPlan](plannerplan.md)verfolgen.|
+|associationType|Zeichenfolge|Lässt Nullwerte zu. Eine app-benutzerdefinierten Typ der Zuordnung zwischen der [PlannerPlan](plannerplan.md) und die app. Diese Informationen können die app verschiedene Arten von Beziehungen an den gleichen [PlannerPlan](plannerplan.md)verfolgen.|
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung der **PlannerPlanContext** . Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |displayNameSegments|Collection von Objekten des Typs „String“|Der Name der externen Erfahrung-Segmente. Segmente sind eine hierarchische Struktur, die anderen apps auf die Beziehung anzeigen kann.|
-|ownerAppId|String|Schreibgeschützt. Die ID der app, die die **PlannerPlanContext**erstellt.|
+|ownerAppId|Zeichenfolge|Schreibgeschützt. Die ID der app, die die **PlannerPlanContext**erstellt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

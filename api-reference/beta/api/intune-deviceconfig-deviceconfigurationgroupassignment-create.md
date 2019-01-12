@@ -3,12 +3,13 @@ title: Erstellen von deviceConfigurationGroupAssignment
 description: Erstellen eines neuen DeviceConfigurationGroupAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f4193470483918a2b690962ae3e190a08ac2f4c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 051884e386f67437e39da4d79def29034f088906
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943585"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Erstellen von deviceConfigurationGroupAssignment
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -58,7 +59,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |targetGroupId|Zeichenfolge|Die Id der Gruppe AAD sind wir Gerätekonfiguration zu adressieren.|
-|excludeGroup|Boolean|Gibt an, ob diese Gruppe ist ausgeschlossen werden soll. Die Standardeinstellungen, dass die Gruppe eingeschlossen werden sollen|
+|excludeGroup|Boolescher Wert|Gibt an, ob diese Gruppe ist ausgeschlossen werden soll. Die Standardeinstellungen, dass die Gruppe eingeschlossen werden sollen|
 
 
 

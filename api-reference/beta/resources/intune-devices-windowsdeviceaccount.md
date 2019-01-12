@@ -3,12 +3,13 @@ title: windowsDeviceAccount-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c9625f702bda3057f0cfe2e4b376e0adb1523238
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fcae471f79474c72fd89939769370414b44a504f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876993"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937838"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount-Ressourcentyp
 
@@ -20,7 +21,7 @@ Noch nicht dokumentiert
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|password|String|Noch nicht dokumentiert.|
+|password|Zeichenfolge|Noch nicht dokumentiert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

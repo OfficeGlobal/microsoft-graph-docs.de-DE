@@ -2,12 +2,14 @@
 title: managedDeviceMobileAppConfigurationUserStatus-Ressourcentyp
 description: Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für den Status einer MDM-Konfiguration mobiler Apps für einen Benutzer.
 localization_priority: Normal
-ms.openlocfilehash: 1f7e9c0a20c52083434eada86836eb22fe87f994
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 4071702b634c0c56d8850a8e10c8bab3fe877f2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937915"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus-Ressourcentyp
 
@@ -26,12 +28,12 @@ Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für den Status einer
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |userDisplayName|String|Benutzername, der zu dem Objekt des Typs „DevicePolicyStatus“ gehört|
 |devicesCount|Int32|Geräteanzahl für den Benutzer|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Konformitätsstatus des Richtlinienberichts. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Richtlinienberichts|
-|userPrincipalName|String|Benutzer-Prinzipalname|
+|userPrincipalName|Zeichenfolge|Benutzer-Prinzipalname|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -3,12 +3,13 @@ title: managedDevice-Ressourcentyp
 description: Über Intune verwaltete oder vorab registrierte Geräte
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38c96bb3c2a4a5ccfe9ce7dc40b247af79c428a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869216"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957718"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice-Ressourcentyp
 
@@ -79,7 +80,7 @@ ms.locfileid: "27869216"
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
 |
 |aadRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
-|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|azureADRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Gibt an, ob verloren-Modus aktiviert oder deaktiviert ist. Mögliche Werte sind: `disabled` und `enabled`.|
 |activationLockBypassCode|Zeichenfolge|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht|

@@ -3,12 +3,13 @@ title: serviceConfigurationRecords auflisten
 description: Dient zum Abrufen einer Liste von domainDnsRecord-Objekten, die erforderlich sind, um Dienste für die Domäne zu aktivieren.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a68938b7eb5b2abed1a2d0476fdfeb5fdd783ec4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2880a8336d15b675cd5debc6008d8de8f4d191f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833719"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965537"
 ---
 # <a name="list-serviceconfigurationrecords"></a>serviceConfigurationRecords auflisten
 
