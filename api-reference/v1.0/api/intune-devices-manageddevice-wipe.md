@@ -3,12 +3,13 @@ title: Aktion „wipe“
 description: Mit dieser Aktion lässt sich ein Gerät zurücksetzen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3da2d5619c57a083c7702d3b9accfa8d52f20568
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 20ebe11dce6847066148f06a77bffa970e3a1b1e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834419"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919820"
 ---
 # <a name="wipe-action"></a>Aktion „wipe“
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,7 +50,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |keepEnrollmentData|Boolean|Noch nicht dokumentiert|
-|keepUserData|Boolean|Noch nicht dokumentiert|
+|keepUserData|Boolescher Wert|Noch nicht dokumentiert|
 |macOsUnlockCode|String|Noch nicht dokumentiert|
 
 

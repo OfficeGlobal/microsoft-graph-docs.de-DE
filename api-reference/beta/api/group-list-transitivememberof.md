@@ -2,12 +2,14 @@
 title: Liste Gruppe transitive Mitglied
 description: Rufen Sie Gruppen und administrative Einheiten, denen die Gruppe ein Mitglied ist.  Dieser Vorgang ist transitiv und werden auch alle Gruppen, die diese Gruppen gehört geschachtelte aufgenommen. Im Gegensatz zum Abrufen eines Benutzers Office 365-Gruppen, die alle Arten von Gruppen, zurückgegebene nicht nur die Office 365-Gruppen.
 localization_priority: Normal
-ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: ec03ca6fce354f2a0b81cf0f81bf3061db504365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887402"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921668"
 ---
 # <a name="list-group-transitive-memberof"></a>Liste Gruppe transitive Mitglied
 

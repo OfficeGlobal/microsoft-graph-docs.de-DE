@@ -3,12 +3,13 @@ title: Abrufen von „managedAppProtection“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c4c0c9e077965268aa700068bde8bdd53953eb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0526d16de14b823ad533715306f58f4c61b505b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830597"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919350"
 ---
 # <a name="get-managedappprotection"></a>Abrufen von „managedAppProtection“
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -2,12 +2,13 @@
 title: Ressourcentyp yammerActivityUserDetail
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: d7869869466dc785b92db23f8b574eb2e77dd786
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d24e21c9525d49b7af5f8c4efaddd606c20c162b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923033"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>Ressourcentyp yammerActivityUserDetail
 
@@ -16,16 +17,16 @@ ms.locfileid: "27816401"
 | Eigenschaft          | Typ              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Datum              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| userState         | String            |
+| userPrincipalName | Zeichenfolge            |
+| displayName       | Zeichenfolge            |
+| userState         | Zeichenfolge            |
 | stateChangeDate   | Datum              |
 | lastActivityDate  | Datum              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
 | assignedProducts  | Collection von Objekten des Typs „String“ |
-| reportPeriod      | String            |
+| reportPeriod      | Zeichenfolge            |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

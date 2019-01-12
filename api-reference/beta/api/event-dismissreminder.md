@@ -3,12 +3,13 @@ title: 'event: dismissReminder'
 description: Schließen Sie eine Erinnerung, die in einem Benutzerkalender für ein Ereignis ausgelöst wurde.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 570a9b34031afe6d53b6e577127180ebdbe7a163
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 43ba18ae5a2e0859ed033ca89615c4116f0908b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864939"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916439"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 

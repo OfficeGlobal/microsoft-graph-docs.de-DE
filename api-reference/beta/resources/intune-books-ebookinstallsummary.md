@@ -3,12 +3,13 @@ title: eBookInstallSummary-Ressourcentyp
 description: Enthält Eigenschaften für die Installationszusammenfassung eines Buchs für ein Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41e9752707cfdca974162b097ad4e6fc96b3b43a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d3a5d1ce5c05d0a8c20a79aea2fd3562ab2170c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815890"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915942"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary-Ressourcentyp
 
@@ -26,7 +27,7 @@ Enthält Eigenschaften für die Installationszusammenfassung eines Buchs für ei
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, auf denen das Buch erfolgreich installiert wurde.|
 |failedDeviceCount|Int32|Die Anzahl der Geräte, auf denen die Installation des Buchs fehlgeschlagen ist.|
 |notInstalledDeviceCount|Int32|Die Anzahl von Geräten, auf denen das Buch nicht installiert ist.|

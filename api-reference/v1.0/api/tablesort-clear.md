@@ -2,12 +2,14 @@
 title: 'TableSort: clear'
 description: Löscht die Sortierung, die derzeit in der Tabelle enthalten ist. Dies ändert nicht die Sortierung der Tabelle, löscht jedoch den Zustand der Kopfzeilen-Schaltflächen.
 localization_priority: Normal
-ms.openlocfilehash: 00d81e05ccaea45be0ce67cd29b828e2d7ce1634
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 90ac8b30c3b8513bdd73fa40746268212a8c0df9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842749"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912190"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 

@@ -3,12 +3,13 @@ title: windowsPhone81CompliancePolicy löschen
 description: Löscht ein windowsPhone81CompliancePolicy-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f7a276150ac199241613d35672ebb36dca277832
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32b13ef23e12add3c804b5b8b24d19296388b922
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867669"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925175"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy löschen
 

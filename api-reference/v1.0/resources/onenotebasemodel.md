@@ -1,14 +1,15 @@
 ---
 title: OnenoteEntityBaseModel-Ressource
 description: Dies ist der Basistyp für OneNote-Entitäten.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 0c6a3d4916bf54eeec5856f51af87fa79e1f6e6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 53ed86ae22f3ac9fccdef98e56382cd9440e71e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821231"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923131"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>OnenoteEntityBaseModel-Ressource
 
@@ -37,7 +38,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|self|String|Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.|
+|self|Zeichenfolge|Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

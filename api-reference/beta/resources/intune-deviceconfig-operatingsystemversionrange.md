@@ -3,12 +3,13 @@ title: Ressourcentyp operatingSystemVersionRange
 description: Betriebssystem Versionsbereich.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56df6b53dc29247d3f718ad185152069a071a0f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c0b81482ad4b48ad5fe59b1ec0109fcd3bf03f83
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918546"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Ressourcentyp operatingSystemVersionRange
 
@@ -20,9 +21,9 @@ Betriebssystem Versionsbereich.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|description|String|Die Beschreibung dieses Bereichs (z. B. gültig 1702 Builds)|
-|lowestVersion|String|Die niedrigste inklusive Version, die dieser Bereich enthält.|
-|highestVersion|String|Die höchste inklusive Version, die dieser Bereich enthält.|
+|description|Zeichenfolge|Die Beschreibung dieses Bereichs (z. B. gültig 1702 Builds)|
+|lowestVersion|Zeichenfolge|Die niedrigste inklusive Version, die dieser Bereich enthält.|
+|highestVersion|Zeichenfolge|Die höchste inklusive Version, die dieser Bereich enthält.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

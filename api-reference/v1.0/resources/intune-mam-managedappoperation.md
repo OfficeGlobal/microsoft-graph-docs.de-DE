@@ -3,12 +3,13 @@ title: managedAppOperation-Ressourcentyp
 description: Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c91290891ee28a9cd811c6326794a33316676d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 52e511ca24f67a485ab289f48c25fa1ceb309910
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820237"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920478"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation-Ressourcentyp
 
@@ -30,8 +31,8 @@ Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 |displayName|String|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
 |state|String|Aktueller Status des Vorgangs|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

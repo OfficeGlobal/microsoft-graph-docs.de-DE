@@ -2,12 +2,14 @@
 title: Verwenden Sie die Microsoft-Buchungen API in Microsoft Graph
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Priority
-ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915732"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Verwenden Sie die Microsoft-Buchungen API in Microsoft Graph
 

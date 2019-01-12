@@ -3,12 +3,13 @@ title: windowsInformationProtectionIPRangeCollection-Ressourcentyp
 description: Windows Information Protection – IP-Bereichssammlung
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73995f6b8f5e376de53ec88772dc3713cc179f3a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9981b585818bb6db712b0088b2fde275179917ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911826"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection-Ressourcentyp
 

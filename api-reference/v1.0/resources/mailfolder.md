@@ -2,12 +2,14 @@
 title: mailFolder-Ressoucentyp
 description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang und Entwürfe. Mailordner können Nachrichten, andere Outlook-Elemente und untergeordnete E-Mail-Ordner enthalten.
 localization_priority: Priority
-ms.openlocfilehash: 32af125f57e02394c4d01913aaf783df11809242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920114"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
@@ -71,9 +73,9 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Die Anzahl der unmittelbar untergeordneten mailFolders-Elemente in dem aktuellen mailFolder-Element.|
-|displayName|String|Der Anzeigename des mailFolder-Elements.|
-|id|String|Eindeutiger Bezeichner der MailFolder.|
-|parentFolderId|String|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
+|displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
+|id|Zeichenfolge|Eindeutiger Bezeichner der MailFolder.|
+|parentFolderId|Zeichenfolge|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
 |totalItemCount|Int32|Anzahl der Elemente im mailFolder-Element.|
 |unreadItemCount|Int32|Die Anzahl der Elemente im mailFolder-Element, die als „Ungelesen“ markiert sind.|
 

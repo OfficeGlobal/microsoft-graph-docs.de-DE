@@ -3,12 +3,13 @@ title: managedIOSLobApp löschen
 description: Löscht eine managedIOSLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29bfd720e48f20361fda54b80087414a0befeb91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f94152b894b775e3536b4eb975f249f4bf267cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824500"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921094"
 ---
 # <a name="delete-managedioslobapp"></a>managedIOSLobApp löschen
 

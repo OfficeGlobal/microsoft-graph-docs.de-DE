@@ -3,12 +3,13 @@ title: Auflisten von Outlook-Kategorien
 description: Ruft alle Kategorien ab, die für den Benutzer definiert wurden.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 1a328d64026454b17f865ec6652ec2ae9e3e686b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d64b3a87f99a8398d09a74aaac102e5b67ed1baf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873311"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919722"
 ---
 # <a name="list-outlook-categories"></a>Auflisten von Outlook-Kategorien
 

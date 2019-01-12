@@ -3,12 +3,13 @@ title: Abrufen von officeClientConfiguration
 description: Rufen Sie eine bestimmte Richtlinie.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fcacbdda592ac0c9cbd1775acb3c568f7e29c396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d6cd4ec909219fb184ea67dbf9b249a53786ec72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918931"
 ---
 # <a name="get-officeclientconfiguration"></a>Abrufen von officeClientConfiguration
 
@@ -38,7 +39,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

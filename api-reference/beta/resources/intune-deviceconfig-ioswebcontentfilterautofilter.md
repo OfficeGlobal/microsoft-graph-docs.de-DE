@@ -2,12 +2,14 @@
 title: Ressourcentyp iosWebContentFilterAutoFilter
 description: Stellt eine iOS Webinhaltsfilter Einstellungstyp, der ermöglicht automatische Filterfunktion iOS und zusätzliche URL-Zugriffssteuerung. Wenn keine-Eigenschaft Werte erstellt wird, wird das Gerät iOS den automatischen Filter unabhängig aktivieren.
 localization_priority: Normal
-ms.openlocfilehash: 02576565ecf764d33312477531d6a76c61911cb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 03e3c4f51e673be1e2bada89e06a26048fe4e385
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916779"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>Ressourcentyp iosWebContentFilterAutoFilter
 

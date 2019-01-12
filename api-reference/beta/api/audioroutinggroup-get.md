@@ -3,12 +3,13 @@ title: Abrufen von audio Routinggruppe
 description: Rufen Sie die Eigenschaften und die Beziehungen eines AudioRoutingGroup-Objekts ab.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08c86e0a88cb77ddf42f8b7feee2f55093723d35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814182"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922557"
 ---
 # <a name="get-audio-routing-group"></a>Abrufen von audio Routinggruppe
 

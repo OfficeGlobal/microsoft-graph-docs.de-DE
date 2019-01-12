@@ -2,12 +2,14 @@
 title: registeredDevices auflisten
 description: Mit dieser API können Sie eine Liste aller registrierten Geräte eines Benutzers abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 2447a58e89fe6c94ab5b3cf6d23b2621f757709c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9a03027ae8ff2f5fe3c0b9d30c11ed1e860097c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915228"
 ---
 # <a name="list-registereddevices"></a>registeredDevices auflisten
 
@@ -31,7 +33,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Annehmen  | application/json|

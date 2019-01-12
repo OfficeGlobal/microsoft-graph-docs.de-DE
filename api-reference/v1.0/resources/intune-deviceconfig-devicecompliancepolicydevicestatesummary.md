@@ -3,12 +3,13 @@ title: deviceCompliancePolicyDeviceStateSummary-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b21b34506c9ef763751a32a4e83b9c7f5e363a19
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c3f047f35718c2172ad5d04a17c07ba746012a2e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815820"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912953"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary-Ressourcentyp
 
@@ -26,7 +27,7 @@ Noch nicht dokumentiert.
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Anzahl von Geräten, die sich in der Toleranzperiode befinden|
 |configManagerCount|Int32|Anzahl von Geräten, deren Konformität mit System Center Configuration Manager verwaltet wird|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
 |compliantDeviceCount|Int32|Anzahl von konformen Geräten|

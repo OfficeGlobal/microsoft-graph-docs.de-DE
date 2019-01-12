@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: Rufen Sie die Gesamtzahl der Postfächer in Ihrem Unternehmen ab und erfahren Sie, wie viele Postfächer im Berichtszeitraum täglich aktiv sind. Ein Postfach wird als aktiv betrachtet, wenn der Benutzer eine E-Mail sendet oder liest.
 localization_priority: Normal
-ms.openlocfilehash: c1b15824ab5313d1c581509936a84f5af2daee84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 925ec8ebd6a0114f78e69c14480bba9d8ca3987f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924097"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

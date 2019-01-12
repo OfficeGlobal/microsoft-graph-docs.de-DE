@@ -3,12 +3,13 @@ title: Abrufen von „microsoftStoreForBusinessApp“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs microsoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8067e61e1184ff4a9de271ee94e924fc36b67783
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5af96ce956b19302fae976310cb3f2917a79dc48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923950"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Abrufen von „microsoftStoreForBusinessApp“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

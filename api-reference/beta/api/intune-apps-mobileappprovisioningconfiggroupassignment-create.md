@@ -3,12 +3,13 @@ title: Erstellen von mobileAppProvisioningConfigGroupAssignment
 description: Erstellen eines neuen MobileAppProvisioningConfigGroupAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d08b5001f5c9ef8abc42085fb9840f726ede4446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925490"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Erstellen von mobileAppProvisioningConfigGroupAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,8 +49,8 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|targetGroupId|String|Die ID der Gruppe der AAD, in der die app-Bereitstellung Konfiguration vorgesehen ist.|
-|id|String|Schlüssel der Entität|
+|targetGroupId|Zeichenfolge|Die ID der Gruppe der AAD, in der die app-Bereitstellung Konfiguration vorgesehen ist.|
+|id|Zeichenfolge|Schlüssel der Entität|
 
 
 

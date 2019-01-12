@@ -2,12 +2,14 @@
 title: Diagramm abrufen
 description: Dient zum Abrufen der Eigenschaften und der Beziehungen des Diagrammobjekts.
 author: lumine2008
-ms.openlocfilehash: 85a2e92808a4622a539cccf832b87fe2f65324f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: excel
+ms.openlocfilehash: 7d81312cac63f17a69ec9076287209a67c0a1f23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926372"
 ---
 # <a name="get-chart"></a>Diagramm abrufen
 

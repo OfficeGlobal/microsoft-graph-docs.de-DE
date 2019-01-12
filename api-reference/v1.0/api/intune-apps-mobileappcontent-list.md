@@ -3,12 +3,13 @@ title: Auflisten von „mobileAppContent“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileAppContent auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7fc06ee7a702eed2f1226335acb94ccf7edc3a18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5421d7e19838603c2f7d529b9a3b43c7cf370f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829813"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922704"
 ---
 # <a name="list-mobileappcontents"></a>Auflisten von „mobileAppContent“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

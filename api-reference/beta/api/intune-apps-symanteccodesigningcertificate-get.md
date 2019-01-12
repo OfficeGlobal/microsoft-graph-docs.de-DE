@@ -3,12 +3,13 @@ title: Abrufen von symantecCodeSigningCertificate
 description: Lesen Sie Eigenschaften und Beziehungen des SymantecCodeSigningCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ec92d04b65d10dec1ec8cb91aaae01e3323e197
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 905f70811ecbb0abd9be758d99f1d21c2eb0643a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926169"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Abrufen von symantecCodeSigningCertificate
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

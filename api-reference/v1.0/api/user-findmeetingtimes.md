@@ -1,12 +1,15 @@
 ---
 title: 'user: findMeetingTimes'
 description: Schlagen Sie vor Besprechungszeiten und Speicherorte basierend auf der Organisator und Teilnehmer Verfügbarkeit und Zeit oder Ort Einschränkungen, die als Parameter angegeben.
-ms.openlocfilehash: 7ee6794041310d031f257bb83714de57f4af0cee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b1e2ced373cffec19ab0d945dbc27e24833e8059
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27016210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923166"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 Schlagen Sie vor Besprechungszeiten und Speicherorte basierend auf der Organisator und Teilnehmer Verfügbarkeit und Zeit oder Ort Einschränkungen, die als Parameter angegeben.

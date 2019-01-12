@@ -3,12 +3,13 @@ title: Gemeinsame Liste
 description: Berechnete Insight, der die Liste der Dateien, die ein Benutzer freigegeben zurückgibt.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: eb9d0165d61559d5f31af486b96e1127c9c7c43c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: c40f6ba80a39fb7db3b959bc78f317d86f3de8e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921780"
 ---
 # <a name="list-shared"></a>Gemeinsame Liste
 
@@ -51,7 +52,7 @@ Finden Sie unter den komplexen Typ [SharingDetail](../resources/insights-sharing
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       |  Wert|
+| Header       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Annehmen  | application/json|

@@ -3,12 +3,13 @@ title: 'EducationSubmission: Absenden'
 description: Eine Aktion, die angibt, dass ein Schüler mit der Arbeit erfolgt und kann sofort in die Zuordnung zu verweisen. Diese Aktion kann nur durch die Student übernommen werden.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: ef2ef84819a6bfbeeb83a012b4c26fe7cb56662c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: d1fd41c66e3f54898f6086a9bf14a0b53763df88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808575"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915809"
 ---
 # <a name="educationsubmission-submit"></a>EducationSubmission: Absenden
 

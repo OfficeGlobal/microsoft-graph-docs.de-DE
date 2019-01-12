@@ -3,12 +3,13 @@ title: Ressourcentyp mobileAppProvisioningConfigGroupAssignment
 description: Enthält die Eigenschaften verwendet, um eine App-Bereitstellung Konfiguration einer Gruppe zuweisen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6996bf29776910d8af3da08d63003889b817cfbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840782"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912134"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Ressourcentyp mobileAppProvisioningConfigGroupAssignment
 
@@ -29,8 +30,8 @@ Enthält die Eigenschaften verwendet, um eine App-Bereitstellung Konfiguration e
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|targetGroupId|String|Die ID der Gruppe der AAD, in der die app-Bereitstellung Konfiguration vorgesehen ist.|
-|id|String|Schlüssel der Entität|
+|targetGroupId|Zeichenfolge|Die ID der Gruppe der AAD, in der die app-Bereitstellung Konfiguration vorgesehen ist.|
+|id|Zeichenfolge|Schlüssel der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

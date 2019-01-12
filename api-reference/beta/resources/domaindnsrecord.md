@@ -2,12 +2,14 @@
 title: domainDnsRecord-Ressourcentyp
 description: Für jede Domäne im Mandanten möglicherweise erforderliche DNS-Einträge in die DNS-Zonendatei der Domäne hinzufügen, bevor die Domäne von Microsoft Online Services verwendet werden kann. Die Entität **DomainDnsRecord** wird verwendet, um diese DNS-Einträge vorhanden. Basis Entität für DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord und DomainDnsSrvRecord-Entitäten.
 localization_priority: Normal
-ms.openlocfilehash: 194e25ca78a1937415b15f455e98ac526c4fb4be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f5c760ba9a2100bbefd0353c2c02019e7a04354b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811410"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912960"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord-Ressourcentyp
 
@@ -21,7 +23,7 @@ Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum A
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
+|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
 |isOptional|Boolean| Wenn „false“, muss dieser Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. |
 |label|String| Wert, der beim Konfigurieren des Namens des DNS-Eintrags auf dem DNS-Host verwendet wird. |
 |recordType|String| Gibt an, welche Art von DNS-Eintrag diese Entität darstellt.</br></br>Folgende Werte sind möglich: *CName*, *Mx*, *Srv*, *Txt*</br></br>Schlüssel |
