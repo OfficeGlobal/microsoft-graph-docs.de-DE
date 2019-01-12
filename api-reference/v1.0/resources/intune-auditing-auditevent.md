@@ -3,12 +3,13 @@ title: auditEvent-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für das Audit-Ereignis enthält.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 914d4ac5aa666aa430224f582df8f99dbcf60701
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 445ed776de946c3b557e387164f81dcf4ee16ab2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940966"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent-Ressourcentyp
 

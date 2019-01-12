@@ -3,12 +3,13 @@ title: Auflisten von „mobileAppCategory“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs mobileAppCategory auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 646fc280de072a10cbd4fd7522ed0d935a485d03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 906b7fa291a8f4f663ced05d546cc76f9931f8f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947323"
 ---
 # <a name="list-mobileappcategories"></a>Auflisten von „mobileAppCategory“
 
@@ -35,7 +36,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

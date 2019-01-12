@@ -3,12 +3,13 @@ title: WindowsProtectionState aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines WindowsProtectionState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce3c4fcd46e2d627f94e1728d38e9a8f0f91ad30
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939875"
 ---
 # <a name="update-windowsprotectionstate"></a>WindowsProtectionState aktualisieren
 

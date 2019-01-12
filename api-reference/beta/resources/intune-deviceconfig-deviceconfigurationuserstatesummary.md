@@ -3,12 +3,13 @@ title: Ressourcentyp deviceConfigurationUserStateSummary
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5eb6ebc29b2482628daf1879a55d00048621b314
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5c1a6f20a54f74d077adf26de81812fe9ed5fee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830828"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943767"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Ressourcentyp deviceConfigurationUserStateSummary
 
@@ -26,7 +27,7 @@ Noch nicht dokumentiert.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |unknownUserCount|Int32|Unbekannte Benutzeranzahl|
 |notApplicableUserCount|Int32|Anzahl der Benutzer nicht zutreffend|
 |compliantUserCount|Int32|Kompatible Benutzeranzahl|

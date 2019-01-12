@@ -2,12 +2,14 @@
 title: plannerTaskDetails-Ressourcentyp
 description: Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu einer Aufgabe dar. Jedes task-Objekt hat ein Detailobjekt.
 localization_priority: Normal
-ms.openlocfilehash: 0bec5b47d1472eae43906841c5074e4080672817
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 84b7191822be56e881b31d99503fdcdc4097890c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888165"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941142"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails-Ressourcentyp
 
@@ -28,7 +30,7 @@ Die **plannerTaskDetails**-Ressource stellt die zusätzlichen Informationen zu e
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Die Sammlung von Checklistenelementen für die Aufgabe.|
 |description|String|Beschreibung der Aufgabe.|
-|id|String| Schreibgeschützt. ID des die Aufgabendetails. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](tasks-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|id|Zeichenfolge| Schreibgeschützt. ID des die Aufgabendetails. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](tasks-identifiers-disclaimer.md) erfolgt für den Dienst.|
 |previewType|string|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Bei Festlegung auf `automatic` wird die angezeigte Vorschau von der App ausgewählt, mit der die Aufgabe angezeigt wird.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Die Sammlung der Verweise für die Aufgabe.|
 

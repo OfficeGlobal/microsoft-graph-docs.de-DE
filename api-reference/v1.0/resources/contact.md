@@ -3,12 +3,13 @@ title: Ressourcentyp contact
 description: Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen über die Personen und Organisationen, mit denen Sie kommunizieren, organisieren und speichern können. Kontakte sind in Kontaktordnern enthalten.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6ff19278e6cf120404b892bb95881326ce281a72
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936837"
 ---
 # <a name="contact-resource-type"></a>Ressourcentyp contact
 
@@ -44,44 +45,44 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assistantName|String|Der Name des Assistenten des Kontakts.|
+|assistantName|Zeichenfolge|Der Name des Assistenten des Kontakts.|
 |birthday|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|Die Geschäftsadresse des Kontakts.|
-|businessHomePage|String|Die geschäftliche Homepage des Kontakts.|
+|businessHomePage|Zeichenfolge|Die geschäftliche Homepage des Kontakts.|
 |businessPhones|Zeichenfolgenauflistung|Die geschäftlichen Telefonnummern des Kontakts.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Kontakt verknüpft sind.|
-|changeKey|String|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|changeKey|Zeichenfolge|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |children|Zeichenfolgenauflistung|Die Namen der Kinder des Kontakts.|
-|companyName|String|Der Name des Unternehmens des Kontakts.|
+|companyName|Zeichenfolge|Der Name des Unternehmens des Kontakts.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Abteilung|String|Die Abteilung des Kontakts.|
-|displayName|String|Der Anzeigename des Kontakts. Sie können den Anzeigenamen in einem Vorgang [Erstellen](../api/user-post-contacts.md) oder [Aktualisieren](../api/contact-update.md) angeben. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Vorgang [zu aktualisieren ein](../api/contact-update.md) .|
+|Abteilung|Zeichenfolge|Die Abteilung des Kontakts.|
+|displayName|Zeichenfolge|Der Anzeigename des Kontakts. Sie können den Anzeigenamen in einem Vorgang [Erstellen](../api/user-post-contacts.md) oder [Aktualisieren](../api/contact-update.md) angeben. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Vorgang [zu aktualisieren ein](../api/contact-update.md) .|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|Die E-Mail-Adressen des Kontakts.|
-|fileAs|String|Der Name, unter dem der Kontakt abgelegt ist.|
-|generation|String|Die Generation des Kontakts.|
-|givenName|String|Der Vorname des Kontakts.|
+|fileAs|Zeichenfolge|Der Name, unter dem der Kontakt abgelegt ist.|
+|generation|Zeichenfolge|Die Generation des Kontakts.|
+|givenName|Zeichenfolge|Der Vorname des Kontakts.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|Die Privatadresse des Kontakts.|
 |homePhones|Zeichenfolgenauflistung|Die privaten Telefonnummern des Kontakts.|
-|id|String|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
 |imAddresses|Zeichenfolgenauflistung|Instant Messaging Chatadressen des Kontakts.|
-|initials|String|Die Initialen des Kontakts.|
-|jobTitle|String|Die Position des Kontakts.|
+|initials|Zeichenfolge|Die Initialen des Kontakts.|
+|jobTitle|Zeichenfolge|Die Position des Kontakts.|
 |lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|manager|String|Der Name des Vorgesetzten des Kontakts.
-|middleName|String|Der zweite Vorname des Kontakts.|
-|mobilePhone|String|Die Mobiltelefonnummer des Kontakts.|
-|nickName|String|Der Spitzname des Kontakts.|
-|officeLocation|String|Der Bürostandort des Kontakts.|
+|manager|Zeichenfolge|Der Name des Vorgesetzten des Kontakts.
+|middleName|Zeichenfolge|Der zweite Vorname des Kontakts.|
+|mobilePhone|Zeichenfolge|Die Mobiltelefonnummer des Kontakts.|
+|nickName|Zeichenfolge|Der Spitzname des Kontakts.|
+|officeLocation|Zeichenfolge|Der Bürostandort des Kontakts.|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Weitere Adressen für den Kontakt.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Kontakts.|
-|personalNotes|String|Die Notizen des Benutzers zu dem Kontakt.|
-|profession|String|Der Beruf des Kontakts.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Kontakts.|
+|personalNotes|Zeichenfolge|Die Notizen des Benutzers zu dem Kontakt.|
+|profession|Zeichenfolge|Der Beruf des Kontakts.|
 |spouseName|Zeichenfolge|Der Name des Ehepartners/Partners des Kontakts|
-|surname|String|Der Nachname des Kontakts.|
-|title|String|Der Titel des Kontakts.|
-|yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts.|
-|yomiGivenName|String|Der phonetische japanische Vorname des Kontakts.|
-|yomiSurname|String|Der phonetische japanische Nachname des Kontakts.|
+|surname|Zeichenfolge|Der Nachname des Kontakts.|
+|title|Zeichenfolge|Der Titel des Kontakts.|
+|yomiCompanyName|Zeichenfolge|Der phonetische japanische Firmenname des Kontakts.|
+|yomiGivenName|Zeichenfolge|Der phonetische japanische Vorname des Kontakts.|
+|yomiSurname|Zeichenfolge|Der phonetische japanische Nachname des Kontakts.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -174,7 +175,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview)
 - [Inkrementelle Änderungen an Nachrichten in einem Ordner abrufen](/graph/delta-query-messages)

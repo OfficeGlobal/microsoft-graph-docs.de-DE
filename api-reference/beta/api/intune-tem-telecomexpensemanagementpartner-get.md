@@ -3,12 +3,13 @@ title: telecomExpenseManagementPartner abrufen
 description: Lesen von Eigenschaften und Beziehungen des telecomExpenseManagementPartner-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5b3deff4cf97d036ae889241306cca77b4a7eef9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6973261fda6dd56e18480f83fcb804c50922852f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851933"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939266"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner abrufen
 
@@ -38,7 +39,7 @@ GET /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagement
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

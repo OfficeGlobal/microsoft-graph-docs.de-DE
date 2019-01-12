@@ -2,12 +2,14 @@
 title: Abrufen einer Directory Einstellung-Vorlage
 description: Verzeichnis Einstellung Vorlage stellt eine Vorlage der Einstellungen aus denen Einstellungen innerhalb einer mandantenstruktur erstellt werden können. Dieser Vorgang ermöglicht das Abrufen der Eigenschaften des DirectorySettingTemplate-Objekts, einschließlich der verfügbaren Einstellungen und Standardwerte.
 localization_priority: Normal
-ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2fb9f8edbc374760f16496bd9ec5bcf666a09883
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888172"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935675"
 ---
 # <a name="get-a-directory-setting-template"></a>Abrufen einer Directory Einstellung-Vorlage
 

@@ -2,12 +2,14 @@
 title: Liste AccessReview Bearbeiter
 description: In Azure AD Access Feature überprüft, die Bearbeiter eines AccessReview-Objekts abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829372"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946812"
 ---
 # <a name="list-accessreview-reviewers"></a>Liste AccessReview Bearbeiter
 
@@ -31,7 +33,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearer \{token\}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Keine Anforderungstext sollte angegeben werden.

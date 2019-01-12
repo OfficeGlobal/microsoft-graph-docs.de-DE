@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfigurationAssignment abrufen
 description: Lesen von Eigenschaften und Beziehungen des managedDeviceMobileAppConfigurationAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cbc4bdfa00d35532d1292d77abb5251ffa7f7cef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cb4d9fd4f184109982311b49ac82d7b8e10cbf2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934359"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment abrufen
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

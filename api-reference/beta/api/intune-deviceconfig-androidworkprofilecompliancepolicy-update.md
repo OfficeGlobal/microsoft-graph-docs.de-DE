@@ -3,12 +3,13 @@ title: AndroidWorkProfileCompliancePolicy aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidWorkProfileCompliancePolicy-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 02a056c01a6b684e1c389771bf21ae45d92515bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 707d2d66a4e44cf52c2ec3e62d5790ad7d15063c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837625"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940442"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

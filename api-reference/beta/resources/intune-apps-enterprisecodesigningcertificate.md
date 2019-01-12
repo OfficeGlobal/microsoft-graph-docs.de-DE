@@ -3,12 +3,13 @@ title: Ressourcentyp enterpriseCodeSigningCertificate
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84fe89d77901c330924c57937f9bb334beab979d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842133"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945895"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Ressourcentyp enterpriseCodeSigningCertificate
 
@@ -33,9 +34,9 @@ Noch nicht dokumentiert.
 |content|Binär|Die Enterprise-Code für Windows-Signaturzertifikat im Format Rohdaten.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Status der bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|String|Der Wert der Betreff für das Zertifikat.|
-|issuerName|String|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|String|Der Wert der Aussteller für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Das Datum-Uhrzeit des Zertifikats CodeSigning, wenn diese hochgeladen wird.|
 

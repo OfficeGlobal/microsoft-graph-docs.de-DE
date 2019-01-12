@@ -3,12 +3,13 @@ title: EnableLostMode Aktion
 description: Verloren-Modus aktivieren
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bd7d58a70d60b040b25dcb38574e16edb309599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934324"
 ---
 # <a name="enablelostmode-action"></a>EnableLostMode Aktion
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -51,9 +52,9 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|message|String|Noch nicht dokumentiert|
-|PhoneNumber|String|Noch nicht dokumentiert|
-|Fußzeile|String|Noch nicht dokumentiert|
+|message|Zeichenfolge|Noch nicht dokumentiert|
+|PhoneNumber|Zeichenfolge|Noch nicht dokumentiert|
+|Fußzeile|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

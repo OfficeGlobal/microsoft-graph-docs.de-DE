@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLearningSummary erstellen
 description: Erstellen eines neuen windowsInformationProtectionAppLearningSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 498b6da245cbf805ef4c106447f73e56837a43e9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 66658cdd601ec7ea1af60a29a9302ca100debfaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810556"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940582"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary erstellen
 

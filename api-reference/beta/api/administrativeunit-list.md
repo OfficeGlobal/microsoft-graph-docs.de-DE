@@ -3,12 +3,13 @@ title: Liste administrativeUnits
 description: Abrufen einer Liste von AdministrativeUnit-Objekten.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 7abd0e3074202ddfd11df2696c22874ffd81554a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1cb2369d4badff139cfdb209174294911b5fd385
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854817"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936851"
 ---
 # <a name="list-administrativeunits"></a>Liste administrativeUnits
 

@@ -2,12 +2,14 @@
 title: RangeFormat-Ressourcentyp
 description: Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt.
 localization_priority: Normal
-ms.openlocfilehash: 38844e2f43dcb56021e25ad189529b36cc8eb456
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: b4018995e37ff40ae014b54d08b77bbed73d6fe2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937348"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat-Ressourcentyp
 

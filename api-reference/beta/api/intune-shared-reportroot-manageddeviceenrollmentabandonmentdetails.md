@@ -3,12 +3,13 @@ title: ManagedDeviceEnrollmentAbandonmentDetails-Funktion
 description: Metadaten für die Registrierung Aufgabe Detailbericht
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939910"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>ManagedDeviceEnrollmentAbandonmentDetails-Funktion
 
@@ -37,7 +38,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,9 +50,9 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |skip|Int32|Noch nicht dokumentiert|
-|Nach oben|Int32|Noch nicht dokumentiert|
-|filter|String|Noch nicht dokumentiert|
-|skipToken|String|Noch nicht dokumentiert|
+|top|Int32|Noch nicht dokumentiert|
+|filter|Zeichenfolge|Noch nicht dokumentiert|
+|skipToken|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

@@ -3,12 +3,13 @@ title: Ressourcentyp deviceConfigurationTargetedUserAndDevice
 description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 234cc9c909875d835ba54709f30f1ca306eb0954
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809625"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947966"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Ressourcentyp deviceConfigurationTargetedUserAndDevice
 
@@ -20,11 +21,11 @@ Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Gerä
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceId|String|Die Id des Geräts in das Einchecken.|
-|deviceName|String|Der Name des Geräts in das Einchecken.|
-|userId|String|Die Id des Benutzers in das Einchecken.|
-|userDisplayName|String|Der Anzeigename des Benutzers in das Einchecken|
-|userPrincipalName|String|Den UPN des Benutzers in das Einchecken.|
+|deviceId|Zeichenfolge|Die Id des Geräts in das Einchecken.|
+|deviceName|Zeichenfolge|Der Name des Geräts in das Einchecken.|
+|userId|Zeichenfolge|Die Id des Benutzers in das Einchecken.|
+|userDisplayName|Zeichenfolge|Der Anzeigename des Benutzers in das Einchecken|
+|userPrincipalName|Zeichenfolge|Den UPN des Benutzers in das Einchecken.|
 |lastCheckinDateTime|DateTimeOffset|Zeitpunkt der letzten Checkin für diese Benutzer/Geräte-Paar.|
 
 ## <a name="relationships"></a>Beziehungen

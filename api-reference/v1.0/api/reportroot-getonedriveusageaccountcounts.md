@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveUsageAccountCounts'
 description: Rufen Sie die Anzahl der aktiven OneDrive for Business-Benutzer ab. Jede Website, über die Benutzer Dateien angezeigt, geändert, hochgeladen, heruntergeladen, freigegeben oder synchronisiert haben, wird als aktive Website betrachtet.
 localization_priority: Normal
-ms.openlocfilehash: 06bedc2da04a10a01cdbcf6960c8548f06aa882c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 5ee2d7e40bd197157595e3c0c8336ae914a24718
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872114"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941065"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 

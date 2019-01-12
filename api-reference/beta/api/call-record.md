@@ -3,12 +3,13 @@ title: 'Rufen Sie: Datensatz'
 description: Notieren Sie den Anruf.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936368"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 

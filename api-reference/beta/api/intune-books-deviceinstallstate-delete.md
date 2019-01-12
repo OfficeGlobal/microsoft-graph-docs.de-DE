@@ -3,12 +3,13 @@ title: deviceInstallState löschen
 description: Löscht ein deviceInstallState-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f415b478ff7453a6a1ac7abcdd496ca80f6e4502
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 59f08430edc46f5fd454d77805f638006eec1f52
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939735"
 ---
 # <a name="delete-deviceinstallstate"></a>deviceInstallState löschen
 

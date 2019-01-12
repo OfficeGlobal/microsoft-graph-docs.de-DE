@@ -3,12 +3,13 @@ title: Aktualisieren von „macOSCustomConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2d7bda0041cec0ec6854ee0873f120eae2c95e9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6bb5adfc336cffdb36b6908426a3a3ab84a7c54b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939280"
 ---
 # <a name="update-macoscustomconfiguration"></a>Aktualisieren von „macOSCustomConfiguration“
 

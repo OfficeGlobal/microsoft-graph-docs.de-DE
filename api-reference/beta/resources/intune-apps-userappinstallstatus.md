@@ -3,12 +3,13 @@ title: Ressourcentyp userAppInstallStatus
 description: Enthält Eigenschaften für den Installationsstatus für einen Benutzer.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f17a504537b1230de175e033779441627f5f98be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938013"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Ressourcentyp userAppInstallStatus
 

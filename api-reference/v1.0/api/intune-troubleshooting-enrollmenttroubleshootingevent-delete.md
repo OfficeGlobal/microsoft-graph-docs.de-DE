@@ -3,12 +3,13 @@ title: enrollmentTroubleshootingEvent löschen
 description: Löscht ein enrollmentTroubleshootingEvent löschen-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c34e53f7c23d4eb6c7c281b02d7fc77a945313f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 456870226fb10cf6e011746116948d9ae7c57f72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839655"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937600"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent löschen
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

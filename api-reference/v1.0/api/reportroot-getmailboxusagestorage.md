@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageStorage'
 description: Erfahren Sie, wie viel Speicherplatz in Ihrer Organisation verwendet wird.
 localization_priority: Normal
-ms.openlocfilehash: 4fa3b10d2f654389d07f751513e2fed2e2c329ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: b0021285fc9e1fed6c5790e2aff75393c10a59d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822743"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943011"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 

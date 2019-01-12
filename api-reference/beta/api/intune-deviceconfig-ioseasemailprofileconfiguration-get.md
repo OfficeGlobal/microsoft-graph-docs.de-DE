@@ -3,12 +3,13 @@ title: Abrufen von iosEasEmailProfileConfiguration
 description: Lesen Sie Eigenschaften und Beziehungen des IosEasEmailProfileConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53340389e882b1a42d988fceb3856acd1cd5b16d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 397c367bd40986193d934ae75b7d92d05c2f3416
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873850"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938930"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Abrufen von iosEasEmailProfileConfiguration
 

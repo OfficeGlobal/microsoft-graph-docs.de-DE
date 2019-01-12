@@ -3,12 +3,13 @@ title: unbind-Aktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd3b0ebcd6cc7969e79f13642a85d00aa4936625
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ba0d0db61eb80282f2cb94b2a082b25ce924f85d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848874"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936354"
 ---
 # <a name="unbind-action"></a>unbind-Aktion
 
@@ -36,7 +37,7 @@ POST /deviceManagement/androidForWorkSettings/unbind
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -2,12 +2,14 @@
 title: 'message: createReplyAll'
 description: Erstellen Sie einen Entwurf, um dem Absender und allen Empfängern der angegebenen Nachricht zu antworten. Anschließend können Sie den Entwurf aktualisieren, um den Antwortinhalt zum **Text** hinzuzufügen, oder andere Nachrichteneigenschaften ändern. Sie können den Entwurf auch einfach senden.
 localization_priority: Normal
-ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 29bfb2b7d8e24619e5d5be53d88ce3ae3ee1ce9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938706"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

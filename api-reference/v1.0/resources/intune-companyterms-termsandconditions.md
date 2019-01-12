@@ -2,12 +2,14 @@
 title: Ressourcentyp „termsAndConditions“
 description: C-Richtlinien Inhalt zur Verfügung gestellt Benutzer ihre ersten Versuch in Intune registrieren und anschließend bearbeitet, wobei ein Administrator Re-Annahme erforderlich ist. Mithilfe dieser Richtlinien können Administratoren die Bedingungen festlegen, die Benutzer akzeptieren müssen, bevor sie ihre Geräte in Intune registrieren dürfen.
 localization_priority: Normal
-ms.openlocfilehash: 2f435f08c306f8dadd76257e19a53c9a6cee95d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 9dc1e8b2ea6c8b00296cb3a55aba6e8059e5728a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935472"
 ---
 # <a name="termsandconditions-resource-type"></a>Ressourcentyp „termsAndConditions“
 

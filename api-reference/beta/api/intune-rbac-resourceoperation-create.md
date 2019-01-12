@@ -3,12 +3,13 @@ title: resourceOperation erstellen
 description: Erstellt neue Objekte des Typs resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8aa701d51d51d326340ff5ebddc9cc97c5962402
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938664"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation erstellen
 
@@ -36,7 +37,7 @@ POST /deviceManagement/resourceOperations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,12 +49,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
-|resource|String|Resource-Kategorie, zu dem dieser Vorgang gehört.|
-|resourceName|String|Name der Ressource, auf die die Operation angewendet wird|
-|actionName|String|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
-|description|String|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
-|enabledForScopeValidation|Boolean|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
+|id|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|resource|Zeichenfolge|Resource-Kategorie, zu dem dieser Vorgang gehört.|
+|resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
+|actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
+|description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
+|enabledForScopeValidation|Boolescher Wert|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
 
 
 

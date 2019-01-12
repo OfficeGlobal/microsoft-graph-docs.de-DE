@@ -3,12 +3,13 @@ title: softwareUpdateStatusSummary aktualisieren
 description: Aktualisieren der Eigenschaften eines softwareUpdateStatusSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d588dd4f16ca3aecafa56f90a30efab65963e9c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84402834e7e1cfea5c08cc2d0714f5676946920f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825354"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938132"
 ---
 # <a name="update-softwareupdatestatussummary"></a>softwareUpdateStatusSummary aktualisieren
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -46,7 +47,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |displayName|String|Der Name der Richtlinie|
 |compliantDeviceCount|Int32|Anzahl der konformen Geräte|
 |nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|

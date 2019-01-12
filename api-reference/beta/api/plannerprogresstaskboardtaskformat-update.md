@@ -2,12 +2,14 @@
 title: plannerProgressTaskBoardTaskFormat aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften eines **plannerProgressTaskBoardTaskFormat**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 4fedbf9bc5edf90b78545a7e7dec29257b471fd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 63654112e2a8192d2f84ea42252491f03a839602
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846396"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945188"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>plannerProgressTaskBoardTaskFormat aktualisieren
 
@@ -39,7 +41,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|orderHint|String|Hinweiswert verwendet, um den Vorgang in der Ansicht des Fortschritts des Vorgangs bestellen. Das Format ist in [Using Reihenfolge Hinweise in Planner](../resources/planner-order-hint-format.md)definiert.|
+|orderHint|Zeichenfolge|Hinweiswert verwendet, um den Vorgang in der Ansicht des Fortschritts des Vorgangs bestellen. Das Format ist in [Using Reihenfolge Hinweise in Planner](../resources/planner-order-hint-format.md)definiert.|
 
 ## <a name="response"></a>Antwort
 

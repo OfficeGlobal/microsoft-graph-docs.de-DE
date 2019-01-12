@@ -2,12 +2,14 @@
 title: Ressourcentyp plannerRecentPlanReference
 description: 'Die Ressource **PlannerRecentPlanReference** Repesents Geben Sie einen Verweis auf eine PlannerPlan, die kürzlich von einem Benutzer angezeigt wurde. '
 localization_priority: Normal
-ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: bafaf6d20dc8f64ffe49eb4e2f998607708a2773
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943529"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>Ressourcentyp plannerRecentPlanReference
 

@@ -2,12 +2,14 @@
 title: androidCustomConfiguration-Ressourcentyp
 description: Dieses Thema enthält eine Beschreibung der deklarierten Methoden, Eigenschaften und Beziehungen, die von der Ressource androidCustomConfiguration verfügbar gemacht werden.
 localization_priority: Normal
-ms.openlocfilehash: 0f707f8369cfd1b56dd3c0a7d941a2ab9b7c12dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d500abaccf38af998c64bd756075d4b0f8d2ca94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941947"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration-Ressourcentyp
 

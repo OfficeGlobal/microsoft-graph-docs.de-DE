@@ -2,12 +2,14 @@
 title: Verwenden der Sicherheits-API von Microsoft Graph
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Priority
-ms.openlocfilehash: be07bf3bbc2c09efc4ed9e918e6b8296fcf0ff37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: bc5a307b17a37f5523e3dbc8b145c248b0226471
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944768"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Sicherheits-API von Microsoft Graph
 
@@ -68,7 +70,7 @@ Sicherheit-API von Microsoft Graph können neue Methoden, die Sie mit anderen Si
 
 Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/graph/graph/examples#partners).
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 Code und beitragen zu dieser Microsoft Graph Sicherheit API-Beispiele:
 

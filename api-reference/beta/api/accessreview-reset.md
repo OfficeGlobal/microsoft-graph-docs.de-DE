@@ -2,12 +2,14 @@
 title: AccessReview zurücksetzen
 description: In der Azure AD-Zugriff zurücksetzen Bewertungen-Funktion, die Entscheidungen der eine derzeit aktive AccessReview.  Das Zielobjekt kann entweder eine einmalige Access Überprüfung oder eine Instanz einer wiederkehrenden Access Überprüfung sein.  Frühere Entscheidungen werden nicht mehr aufgezeichnet, aber Bearbeiter können weiterhin Entscheidungen zu aktualisieren.
 localization_priority: Normal
-ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b1f107733543380dbd6ad095133f09befc03736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941492"
 ---
 # <a name="reset-accessreview"></a>AccessReview zurücksetzen
 
@@ -32,7 +34,7 @@ POST /accessReviews('<id>')/resetDecisions()
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearer \{token\}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.

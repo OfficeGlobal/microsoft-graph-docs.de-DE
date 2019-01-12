@@ -3,12 +3,13 @@ title: Erstellen von iosLobAppProvisioningConfiguration
 description: Erstellen eines neuen IosLobAppProvisioningConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809100"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944761"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Erstellen von iosLobAppProvisioningConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,14 +49,14 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |expirationDateTime|DateTimeOffset|Optionales Profil Ablaufdatum und-Zeit.|
-|payloadFileName|String|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
+|payloadFileName|Zeichenfolge|Der Dateiname (*.mobileprovision Nutzlast | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
 |version|Int32|Version der Gerätekonfiguration.|
 
 

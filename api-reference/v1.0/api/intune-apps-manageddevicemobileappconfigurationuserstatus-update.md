@@ -3,12 +3,13 @@ title: Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5ded212d579fb20cd736a58142457a78e44997a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e04df1f7cb9ffadc19508851bcf7f068c040bdf2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881060"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937516"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Aktualisieren von „managedDeviceMobileAppConfigurationUserStatus“
 

@@ -2,12 +2,13 @@
 title: Auflisten von Websites
 description: Liste der verfügbaren [Standorte] [] in einer Organisation, die bereitgestellten Filterkriterien entsprechen und Abfragen Optionen.
 localization_priority: Normal
-ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 05c3480181126d528657d0efacde97051a178bfd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939567"
 ---
 # <a name="enumerate-sites"></a>Auflisten von Websites
 
@@ -23,7 +24,7 @@ Derzeit werden nur die folgenden Abfrageoptionen unterstützt:
 
 Darüber hinaus können Sie **[eine Suchabfrage für die Auflistung "/ sites"][]** angegebenen Schlüsselwörter übereinstimmenden Websites suchen verwenden.
 
-[Suche]: site-search.md
+[search]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Berechtigungen

@@ -2,12 +2,14 @@
 title: Organisation auflisten
 description: Mit dieser API können Sie eine Liste von Organisationsobjekten abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 7087ea0ef7e3885334b33d53416d5e4b6fc750a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9dd1489714c4de87f0072ef0498c5acdf008d5ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882796"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938825"
 ---
 # <a name="list-organization"></a>Organisation auflisten
 

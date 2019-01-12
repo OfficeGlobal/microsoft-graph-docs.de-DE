@@ -2,12 +2,14 @@
 title: Postfacheinstellungen des Benutzers aktualisieren
 description: Aktualisieren Sie eine oder mehrere Einstellungen des Postfachs des Benutzers. Dies umfasst die Einstellungen für automatische Antworten (automatische Benachrichtigung von Personen über den Empfang von E-Mails), Gebietsschema (Sprache und Land/Region), Zeitzone und die Geschäftszeiten.
 localization_priority: Normal
-ms.openlocfilehash: 67b8c3dbc0dd4c4de9c94807d09bbd0f9ff79f4f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 96896d7b5440887f023b4817195af2f55beb6752
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938125"
 ---
 # <a name="update-user-mailbox-settings"></a>Postfacheinstellungen des Benutzers aktualisieren
 

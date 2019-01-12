@@ -3,12 +3,13 @@ title: Abrufen von „windowsUniversalAppX“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windowsUniversalAppX.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8adc5d3720eb52af3f70351ff7f7aa78347e1052
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 182f209c673aeedae5c39c1366000b68405f5270
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947785"
 ---
 # <a name="get-windowsuniversalappx"></a>Abrufen von „windowsUniversalAppX“
 

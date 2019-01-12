@@ -2,12 +2,14 @@
 title: Ressourcentyp directoryRole
 description: Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter Zuweisen von Administratorrollen in Azure Active Directory. Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Zum Aktivieren von anderen verfügbaren Verzeichnis Rollen senden Sie eine POST-Anforderung mit der ID der DirectoryRoleTemplate, auf dem die Rolle Directory basiert. Erbt von directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: 05d897d6426b2feab7c08adaa125788590675f66
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4b3379bbbecd86612043dcc3cb8455f5c43ba9cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939546"
 ---
 # <a name="directoryrole-resource-type"></a>Ressourcentyp directoryRole
 

@@ -3,12 +3,13 @@ title: Ressourcentyp „mobileApp“
 description: Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps enthält
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 01bde6a94c0d16b26b20d1ba30e69bec0457972e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c5b7af252c27f60a1b6dd78f7a69bc7a712541b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938454"
 ---
 # <a name="mobileapp-resource-type"></a>Ressourcentyp „mobileApp“
 
@@ -29,19 +30,19 @@ Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps en
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Titel der App (vom Administrator bereitgestellt oder importiert)|
-|description|String|Beschreibung der App|
-|publisher|String|Herausgeber der App|
+|id|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Titel der App (vom Administrator bereitgestellt oder importiert)|
+|description|Zeichenfolge|Beschreibung der App|
+|publisher|Zeichenfolge|Herausgeber der App|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App|
 |isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde|
-|privacyInformationUrl|String|URL zur Datenschutzerklärung|
-|informationUrl|String|URL zur Seite mit weiteren Informationen|
-|owner|String|Besitzer der App|
-|developer|String|Entwickler der App|
-|notes|String|Hinweise zur App.|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
+|informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen|
+|owner|Zeichenfolge|Besitzer der App|
+|developer|Zeichenfolge|Entwickler der App|
+|notes|Zeichenfolge|Hinweise zur App.|
 |uploadState|Int32|Der Upload-Zustand.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
 

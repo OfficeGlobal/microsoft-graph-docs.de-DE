@@ -3,12 +3,13 @@ title: Outlooktaskgroup aktualisieren
 description: Aktualisieren Sie die schreibbaren Eigenschaften einer Outlook-Aufgabe-Gruppe.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0287d7a94dcfb74e43e22571b20fd52d5f888740
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ecea8487e0fedfdf3658d5f04c0ae8d96dcd5d93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827349"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940414"
 ---
 # <a name="update-outlooktaskgroup"></a>Outlooktaskgroup aktualisieren
 
@@ -41,7 +42,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|name|String|Der Name der Aufgabengruppe.|
+|name|Zeichenfolge|Der Name der Aufgabengruppe.|
 
 ## <a name="response"></a>Antwort
 

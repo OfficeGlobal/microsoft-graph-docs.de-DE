@@ -3,12 +3,13 @@ title: Auflisten von „androidLobApp“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidLobApp auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aacc49d761250c26d723553126c3e3687a3cb119
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae4c4bc8447eb64c783db2ed71c182dd33ee3553
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940715"
 ---
 # <a name="list-androidlobapps"></a>Auflisten von „androidLobApp“
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

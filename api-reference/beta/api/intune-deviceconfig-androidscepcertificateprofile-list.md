@@ -3,12 +3,13 @@ title: Liste androidScepCertificateProfiles
 description: Listeneigenschaften und Beziehungen der AndroidScepCertificateProfile-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e34c772cc1b9bdcbe72d11280f5a5868106698e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e952b4af7e540c04c2d91baf9d66413ca4449784
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934373"
 ---
 # <a name="list-androidscepcertificateprofiles"></a>Liste androidScepCertificateProfiles
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

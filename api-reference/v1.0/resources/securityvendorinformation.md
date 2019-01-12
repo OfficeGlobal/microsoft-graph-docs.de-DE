@@ -2,12 +2,14 @@
 title: Ressourcentyp securityVendorInformation
 description: " SubProvider = AppLocker)."
 localization_priority: Normal
-ms.openlocfilehash: e9d8551c085c05007388bf0c6e33143994c6969b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945937"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Ressourcentyp securityVendorInformation
 
@@ -17,10 +19,10 @@ Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subp
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|Anbieter |String|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
-|providerVersion|String|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Erforderlich*|
-|subProvider|String|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
-|Hersteller |String|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Erforderlich*|
+|Anbieter |Zeichenfolge|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
+|providerVersion|Zeichenfolge|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Erforderlich*|
+|subProvider|Zeichenfolge|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
+|Hersteller |Zeichenfolge|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Erforderlich*|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

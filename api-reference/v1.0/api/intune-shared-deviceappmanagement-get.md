@@ -3,12 +3,13 @@ title: Abrufen von „deviceAppManagement“
 description: Liest die Eigenschaften und Beziehungen von Objekten des Typs deviceAppManagement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6e862fa3b0e82d70907fbe903c144c4511fb278
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d700939f9073ff5d655421942ccc83ff5fc6bf7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935423"
 ---
 # <a name="get-deviceappmanagement"></a>Abrufen von „deviceAppManagement“
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -3,12 +3,13 @@ title: Auflisten von „androidForWorkEnrollmentProfile“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidForWorkEnrollmentProfile auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef83136793b21b25827e4b9f16aeeff0a3a7464a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 818aca336f5c0998ccbb819c32a989fb28923ed9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813125"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936606"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Auflisten von „androidForWorkEnrollmentProfile“
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

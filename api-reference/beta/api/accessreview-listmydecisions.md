@@ -2,12 +2,14 @@
 title: Meine AccessReview Entscheidungen auflisten
 description: In Azure AD Access Feature überprüft, die Entscheidungen eines AccessReview-Objekts für den aufrufenden Benutzer als Reviewer abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 27ae3129810b6019ecf47e23f1e4cc48362df6fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941499"
 ---
 # <a name="list-my-accessreview-decisions"></a>Meine AccessReview Entscheidungen auflisten
 
@@ -31,7 +33,7 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearer \{token\}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Keine Anforderungstext sollte angegeben werden.

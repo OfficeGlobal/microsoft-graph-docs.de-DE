@@ -3,12 +3,13 @@ title: Ressourcentyp windowsAutopilotSettings
 description: Die Ressource WindowsAutopilotSettings stellt ein Windows-Konto Autopilot Synchronisationsdaten mit Windows-Gerät synchronisieren Datendienst dar.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7beb1f04efe3b43067eb1cedeed7071561265ce6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4bf9a39d6a5078362c966edde38ec98deec037b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881549"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939553"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>Ressourcentyp windowsAutopilotSettings
 
