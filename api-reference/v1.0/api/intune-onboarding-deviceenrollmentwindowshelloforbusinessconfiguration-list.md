@@ -3,12 +3,13 @@ title: Auflisten von „deviceEnrollmentWindowsHelloForBusinessConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentWindowsHelloForBusinessConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f40a646e18e5cecb40361952c14021331902644
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 542b851e2750e3cf8c700f31cd503608bef60ce9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861397"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931251"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Auflisten von „deviceEnrollmentWindowsHelloForBusinessConfiguration“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

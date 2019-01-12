@@ -3,12 +3,13 @@ title: Ressourcentyp meetingCapability
 description: Enthält die Funktionen einer Besprechung
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 342d264c1f4c670d159c15558c78cc896d4a9487
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825809"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931363"
 ---
 # <a name="meetingcapability-resource-type"></a>Ressourcentyp meetingCapability
 
@@ -20,8 +21,8 @@ Enthält die Funktionen einer Besprechung
 
 | Eigenschaft                          | Typ    | Beschreibung                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
-| allowAnonymousUsersToStartMeeting | Boolean | Gibt an, ob anonyme Benutzer zugelassen sind, um eine Besprechung zu starten.  |
+| allowAnonymousUsersToDialOut      | Boolescher Wert | Gibt an, ob anonyme Benutzer als Client-Anschluss in einer Besprechung zulässig ist. |
+| allowAnonymousUsersToStartMeeting | Boolescher Wert | Gibt an, ob anonyme Benutzer zugelassen sind, um eine Besprechung zu starten.  |
 | autoAdmittedUsers                 | String  | Mögliche Werte: `everyoneInCompany`, `everyone`.              |
 
 ## <a name="json-representation"></a>JSON-Darstellung

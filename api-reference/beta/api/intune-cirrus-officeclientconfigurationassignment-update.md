@@ -3,12 +3,13 @@ title: OfficeClientConfigurationAssignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines OfficeClientConfigurationAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f3d2fab5dc8793f566973e2d3e2d9bf968cbf30a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d76fd4808c6a9b28151d2487bfb7c6b2afcc7c60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935192"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment aktualisieren
 
@@ -36,7 +37,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,7 +49,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Noch nicht dokumentiert.|
+|id|Zeichenfolge|Noch nicht dokumentiert.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Noch nicht dokumentiert|
 
 

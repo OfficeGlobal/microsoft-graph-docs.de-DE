@@ -3,12 +3,13 @@ title: mediaContentRatingIreland-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9c1733ca3c541709d77dae0b1d6193a7b706c0cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 531768883b88e8fc89fe00c1df7a8a9e8767a408
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879562"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934877"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>mediaContentRatingIreland-Ressourcentyp
 

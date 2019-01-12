@@ -3,12 +3,13 @@ title: domainDnsCnameRecord-Ressourcentyp
 description: Stellt einen CNAME-Eintrag dar, der der DNS-Zonendatei einer bestimmten Domäne im Mandanten hinzugefügt wird. Geerbt von der Entität DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 86ce0a1e5336414ef87fb78752e8c252015f724c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1bf670193d6d16e88c0a60b907539a9274236f61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856588"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928997"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord-Ressourcentyp
 
@@ -24,7 +25,7 @@ Direkte Abfragen dieser Ressource werden nicht unterstützt. Informationen zum A
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |canonicalName|String| Der kanonische Name des CNAME-Eintrags. Wird verwendet, um den CNAME-Eintrag auf dem DNS-Host zu konfigurieren. |
-|id|String| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
+|id|Zeichenfolge| Eindeutiger Bezeichner, der dieser Entität zugewiesen ist. Lässt keine Nullwerte zu, schreibgeschützt.|
 |isOptional|Boolean| Wenn „false“, muss der CNAME-Eintrag vom Kunden auf dem DNS-Host konfiguriert werden, damit Microsoft-Onlinedienste ordnungsgemäß mit der Domäne funktionieren. Lässt keine Nullwerte zu. |
 |label|String| Wert, der beim Konfigurieren der *alias/host/name*-Eigenschaft des CNAME-Eintrags auf dem DNS-Host verwendet wird. |
 |recordType|String| Typ des DNS-Eintrags. Der Wert ist immer *CName*. Schlüssel|

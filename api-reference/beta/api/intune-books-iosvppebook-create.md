@@ -3,12 +3,13 @@ title: iosVppEBook erstellen
 description: Erstellt neue Objekte des Typs iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 810efd73c1c0559fa3e885b19bf22af189d771b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930005"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook erstellen
 
