@@ -3,12 +3,13 @@ title: Abrufen von androidWorkProfileCertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidWorkProfileCertificateProfileBase-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 387701d1d13c6a52411ad5b49aa5d784f0317496
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b4f74d1d21a49ff3d0d2422f12ba26b71a1db8f1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953778"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Abrufen von androidWorkProfileCertificateProfileBase
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

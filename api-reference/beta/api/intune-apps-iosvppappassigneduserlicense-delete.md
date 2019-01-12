@@ -3,12 +3,13 @@ title: IosVppAppAssignedUserLicense löschen
 description: Löscht eine IosVppAppAssignedUserLicense.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 030a888f7ffda5453b242fd69670d5c4608e0800
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5cb15eb661368f6a175e703f407c20691dd03b77
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818494"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951047"
 ---
 # <a name="delete-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense löschen
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/a
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

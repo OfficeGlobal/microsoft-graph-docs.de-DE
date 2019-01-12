@@ -3,12 +3,13 @@ title: Kanal-Meldung
 description: Rufen Sie eine Nachricht (ohne die Antworten) in einem Kanal eines Teams ab.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 202e2c341e58175e1807e1aa47c120f6c829a7c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9c8ee3da89beffd78fc906c92a4d2744f168c582
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829120"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960882"
 ---
 # <a name="get-channel-message"></a>Kanal-Meldung
 
@@ -35,7 +36,7 @@ GET /teams/{id}/channels/{id}/messages/{id}
 Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) werden derzeit nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

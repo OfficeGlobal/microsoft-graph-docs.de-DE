@@ -3,12 +3,13 @@ title: deviceComplianceSettingState aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceComplianceSettingState-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9be4f0301cd60cfb21087588dce5452c4caf7bde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01cba1f18783946487473943ec5ca4abc221920f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949157"
 ---
 # <a name="update-devicecompliancesettingstate"></a>deviceComplianceSettingState aktualisieren
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -47,15 +48,15 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|setting|String|Klassenname und Eigenschaftenname der Einstellung|
+|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
 |settingName|String|Gemeldeter Einstellungsname|
 |deviceId|String|Gemeldete Geräte-ID|
 |deviceName|String|Gemeldeter Gerätename|
 |userId|String|Gemeldete Benutzer-ID|
 |userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|String|Gemeldeter Benutzername|
+|userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
-|deviceModel|String|Gemeldetes Gerätemodell|
+|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 

@@ -3,12 +3,13 @@ title: deleteUserFromSharedAppleDevice-Aktion
 description: Benutzer von freigegebenem Apple-Gerät löschen
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dbbd42b2efc7b0c7e5367f7f3692f01c7fc6661e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 66acf89b0562594f32d9e77089d4b25b4f00db29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955975"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice-Aktion
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,7 +49,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userPrincipalName|String|Noch nicht dokumentiert|
+|userPrincipalName|Zeichenfolge|Noch nicht dokumentiert|
 
 
 

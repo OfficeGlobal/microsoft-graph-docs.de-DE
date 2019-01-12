@@ -3,12 +3,13 @@ title: Ressourcentyp deviceConfigurationConflictSummary
 description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8d84a4240059ff9772fefd9737ad27d8fbae7a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f366a36b2b24eafee8e3685821688f2ac85a2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948660"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Ressourcentyp deviceConfigurationConflictSummary
 
@@ -30,7 +31,7 @@ Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Gerä
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md)-Sammlung|Der Satz von Richtlinien mit der angegebenen Einstellung in Konflikt|
-|id|String|Die Id für diesen Satz von miteinander in Konflikt stehende Richtlinien. Diese Id ist die Ids aller Richtlinien in ConflictingDeviceConfigurations in lexikografischer Reihenfolge durch Unterstriche getrennt sind.|
+|id|Zeichenfolge|Die Id für diesen Satz von miteinander in Konflikt stehende Richtlinien. Diese Id ist die Ids aller Richtlinien in ConflictingDeviceConfigurations in lexikografischer Reihenfolge durch Unterstriche getrennt sind.|
 |contributingSettings|Collection von Objekten des Typs „String“|Die Gruppe von Einstellungen in Konflikt mit der angegebenen Richtlinien|
 |deviceCheckinsImpacted|Int32|Die Anzahl der durch die miteinander in Konflikt stehende Richtlinien und Einstellungen beeinträchtigt Eincheckvorgänge|
 

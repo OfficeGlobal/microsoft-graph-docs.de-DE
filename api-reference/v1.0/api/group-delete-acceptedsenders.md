@@ -3,12 +3,13 @@ title: acceptedSender entfernen
 description: 'Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „acceptedSenders“ entfernen. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 5eaa89c895c0b3e46f63754f7943f22e52cb1566
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 86d9cc6cd0adf1c29f64044299daa1ed2c8403d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962366"
 ---
 # <a name="remove-acceptedsender"></a>acceptedSender entfernen
 Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „acceptedSenders“ entfernen. 
@@ -31,7 +32,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile         | Wert                      |
+| Header         | Wert                      |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Erforderlich.  
 

@@ -3,12 +3,13 @@ title: Unterhaltung löschen
 description: Löschen eines conversation-Objekts.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: b36b708ca7b98668465112e4369751efde6b5936
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: f470fb1ed55237e968b0277f30a67f4c212b1493
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954967"
 ---
 # <a name="delete-conversation"></a>Unterhaltung löschen
 Löschen eines [conversation](../resources/conversation.md)-Objekts.

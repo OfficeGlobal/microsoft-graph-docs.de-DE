@@ -3,12 +3,13 @@ title: Erstellen von „iosVppEBookAssignment“
 description: Diese Methode erstellt ein neues Objekt des Typs iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1cb66c4600c7816afcc7d73b17e8fa3ff01bec0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2abbe332e59b642178ac87e682c7ef8fa3efe13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961848"
 ---
 # <a name="create-iosvppebookassignment"></a>Erstellen von „iosVppEBookAssignment“
 

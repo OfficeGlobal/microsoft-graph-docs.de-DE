@@ -3,12 +3,13 @@ title: ActiveDirectoryWindowsAutopilotDeploymentProfile aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines ActiveDirectoryWindowsAutopilotDeploymentProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 025daeb85fd4bd5036da5dadf64ee2928d8616c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d50598796bcd455664741fb83a71a7b54775d6cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954813"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile aktualisieren
 

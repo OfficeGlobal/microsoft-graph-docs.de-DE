@@ -3,12 +3,13 @@ title: Erstellen von „managedMobileApp“
 description: Diese Methode erstellt ein neues Objekt des Typs managedMobileApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a79f8ce7e6cbad49c48f5b9b06bf7a86c8e414c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58d1c7329a65865080a11b99c6c67724e2e37563
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954469"
 ---
 # <a name="create-managedmobileapp"></a>Erstellen von „managedMobileApp“
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,8 +51,8 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
-|id|String|Schlüssel der Entität|
-|Version|String|Version der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|Zeichenfolge|Version der Entität|
 
 
 

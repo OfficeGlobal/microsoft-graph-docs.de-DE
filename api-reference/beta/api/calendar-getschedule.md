@@ -2,12 +2,14 @@
 title: 'Kalender: GetSchedule'
 description: Rufen Sie die Frei/Gebucht-Verfügbarkeitsinformationen für eine Auflistung von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum.
 localization_priority: Priority
-ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844562"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956955"
 ---
 # <a name="calendar-getschedule"></a>Kalender: GetSchedule
 
@@ -35,7 +37,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | string | Die Art der Daten im Textkörper einer Entität, die Application/Json ist. Erforderlich.  |
+| Content-Type  | string | Die Art der Daten im Textkörper einer Entität, die Application/Json ist. Erforderlich.   |
 | Prefer: outlook.timezone | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext

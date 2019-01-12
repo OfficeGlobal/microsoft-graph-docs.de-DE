@@ -2,12 +2,14 @@
 title: plannerBucket abrufen
 description: Dient zum Abrufen der Eigenschaften und Beziehungen eines **plannerBucket**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 78b0034d7e75f56c8d553cf9122d442d480432d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d331523ad2d205f2e01431f943da6095ecd667f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839858"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953758"
 ---
 # <a name="get-plannerbucket"></a>plannerBucket abrufen
 

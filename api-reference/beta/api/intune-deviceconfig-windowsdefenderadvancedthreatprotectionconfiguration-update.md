@@ -3,12 +3,13 @@ title: Aktualisieren von „windowsDefenderAdvancedThreatProtectionConfiguration
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6955851660277a6369e29d3e83e7fc2c08081d22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc0d6d5225b62a21bb9fe53818562cf10aa8aa73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812075"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949108"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Aktualisieren von „windowsDefenderAdvancedThreatProtectionConfiguration“
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,21 +51,21 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection Onboarding Blob.|
-|advancedThreatProtectionOnboardingFilename|String|Der Name der Datei aus der AdvancedThreatProtectionOnboardingBlob abgerufen wurde.|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|Füllen Sie automatisch auf Onboarding Blob programmgesteuert aus erweiterte Threat Protection-Diensts|
-|allowSampleSharing|Boolean|Regel „Beispielfreigabe zulassen“ in Windows Defender Advanced Threat Protection|
-|enableExpeditedTelemetryReporting|Boolean|Verkürzt das Meldungsintervall für Windows Defender Advanced Threat Protection-Telemetriedaten.|
-|advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection Offboarding Blob.|
-|advancedThreatProtectionOffboardingFilename|String|Der Name der Datei aus der AdvancedThreatProtectionOffboardingBlob abgerufen wurde.|
+|advancedThreatProtectionOnboardingBlob|Zeichenfolge|Windows Defender AdvancedThreatProtection Onboarding Blob.|
+|advancedThreatProtectionOnboardingFilename|Zeichenfolge|Der Name der Datei aus der AdvancedThreatProtectionOnboardingBlob abgerufen wurde.|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolescher Wert|Füllen Sie automatisch auf Onboarding Blob programmgesteuert aus erweiterte Threat Protection-Diensts|
+|allowSampleSharing|Boolescher Wert|Regel „Beispielfreigabe zulassen“ in Windows Defender Advanced Threat Protection|
+|enableExpeditedTelemetryReporting|Boolescher Wert|Verkürzt das Meldungsintervall für Windows Defender Advanced Threat Protection-Telemetriedaten.|
+|advancedThreatProtectionOffboardingBlob|Zeichenfolge|Windows Defender AdvancedThreatProtection Offboarding Blob.|
+|advancedThreatProtectionOffboardingFilename|Zeichenfolge|Der Name der Datei aus der AdvancedThreatProtectionOffboardingBlob abgerufen wurde.|
 
 
 

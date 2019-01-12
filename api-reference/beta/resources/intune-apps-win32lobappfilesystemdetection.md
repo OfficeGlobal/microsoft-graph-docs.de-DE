@@ -3,12 +3,13 @@ title: Ressourcentyp win32LobAppFileSystemDetection
 description: Enthält Datei- oder Ordnerpfads zum Erkennen von einer Win32-App
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13a994d39ec42ddcb45bc71aac739864a6ef6dc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c901949295b1ff411dec5e9827b7991c922c2315
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958208"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Ressourcentyp win32LobAppFileSystemDetection
 
@@ -23,12 +24,12 @@ Erbt vom [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Pfad|String|Der Datei- oder Ordnerpfads zum Erkennen von Win32 Line of Business (LoB)-app|
-|fileOrFolderName|String|Der File- oder Folder Name zum Erkennen von Win32 Line of Business (LoB)-app|
-|check32BitOn64System|Boolean|Ein Wert, der angibt, ob diese Datei oder eines Ordners ist für die Überprüfung auf 32-Bit-app auf 64-Bit-system|
+|Pfad|Zeichenfolge|Der Datei- oder Ordnerpfads zum Erkennen von Win32 Line of Business (LoB)-app|
+|fileOrFolderName|Zeichenfolge|Der File- oder Folder Name zum Erkennen von Win32 Line of Business (LoB)-app|
+|check32BitOn64System|Boolescher Wert|Ein Wert, der angibt, ob diese Datei oder eines Ordners ist für die Überprüfung auf 32-Bit-app auf 64-Bit-system|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Typ des Dateisystems Erkennung. Mögliche Werte sind: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version` und `sizeInMB`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator für die Datei oder Fodler Erkennung. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
-|detectionValue|String|Der Wert der Erkennung Datei oder eines Ordners|
+|detectionValue|Zeichenfolge|Der Wert der Erkennung Datei oder eines Ordners|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

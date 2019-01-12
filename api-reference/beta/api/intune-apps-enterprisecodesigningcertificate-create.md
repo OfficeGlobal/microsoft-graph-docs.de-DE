@@ -3,12 +3,13 @@ title: Erstellen von enterpriseCodeSigningCertificate
 description: Erstellen eines neuen EnterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec84f55fc94d1cdbf29e0cc65d6da029a3435315
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 302c10d1e0fbc5e182180a32ad96d614555d1d04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956192"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Erstellen von enterpriseCodeSigningCertificate
 

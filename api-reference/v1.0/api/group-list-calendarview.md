@@ -2,12 +2,14 @@
 title: calendarView auflisten
 description: Möchten Sie die vorkommen, Ausnahmen und einzelne Instanzen von Ereignissen in einer Kalenderansicht von einem Zeitbereich definierten erhalten,
 localization_priority: Normal
-ms.openlocfilehash: 38240df7348d2d1de3576d9b2bb850c5128d8a0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956465"
 ---
 # <a name="list-calendarview"></a>calendarView auflisten
 Mit dieser API können Sie Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer durch einen Zeitbereich definierten Kalenderansicht aus dem Standardkalender einer Gruppe abrufen.

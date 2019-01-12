@@ -3,12 +3,13 @@ title: RestrictedAppsViolation aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines RestrictedAppsViolation-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 139a87dafc438e9710ff9494f8477658c61cca0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4c3d1f8b43bd3f17f2e6f92427d7e06295a808e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950081"
 ---
 # <a name="update-restrictedappsviolation"></a>RestrictedAppsViolation aktualisieren
 

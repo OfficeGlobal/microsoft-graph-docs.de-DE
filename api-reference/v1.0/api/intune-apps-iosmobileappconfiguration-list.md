@@ -3,12 +3,13 @@ title: iosMobileAppConfigurations auflisten
 description: Auflisten von Eigenschaften und Beziehungen der iosMobileAppConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4af324de29c6ecaceb6a2f13da86d8337a008cdd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fd21d243e535a222d206b80ca7bcb1464e9e0ab5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822330"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949175"
 ---
 # <a name="list-iosmobileappconfigurations"></a>iosMobileAppConfigurations auflisten
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

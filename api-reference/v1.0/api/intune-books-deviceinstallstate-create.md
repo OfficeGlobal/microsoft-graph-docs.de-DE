@@ -3,12 +3,13 @@ title: Erstellen von „deviceInstallState“
 description: Diese Methode erstellt ein neues Objekt des Typs deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49979b883ffef895124d8bb57837d5c5103a0d67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e7e37857cfa7d7c8820844f506b59d50933c5866
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962541"
 ---
 # <a name="create-deviceinstallstate"></a>Erstellen von „deviceInstallState“
 
@@ -47,13 +48,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |deviceName|String|Name des Geräts|
 |deviceId|String|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
 |installState|[installState](../resources/intune-books-installstate.md)|Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
 |errorCode|String|Fehlercode von Installationsfehlern|
-|osVersion|String|Betriebssystemversion|
+|osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|String|Beschreibung des Betriebssystems|
 |userName|String|Name des Gerätebenutzers|
 

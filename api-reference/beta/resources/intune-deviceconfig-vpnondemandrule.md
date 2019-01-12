@@ -3,12 +3,13 @@ title: Ressourcentyp vpnOnDemandRule
 description: VPN-On-Demand Regeldefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43908a55ff43c533d02ace629a80b96dc09c10ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955415"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Ressourcentyp vpnOnDemandRule
 

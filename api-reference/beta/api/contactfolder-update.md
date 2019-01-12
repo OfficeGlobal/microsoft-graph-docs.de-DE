@@ -3,12 +3,13 @@ title: contactFolder aktualisieren
 description: Mit dieser API können Sie die Eigenschaften von Objekten des Typs „contactfolder“ aktualisieren.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 155a8fb17f0423e2a4718dde8fc9743d8c1f0342
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 9b2244f17bf877c1f52ae5de812f65ba1eae3b98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956150"
 ---
 # <a name="update-contactfolder"></a>contactFolder aktualisieren
 
@@ -31,7 +32,7 @@ PATCH /me/contactFolders/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json. Erforderlich.   |
@@ -41,8 +42,8 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|String|Der Anzeigename des Ordners.|
-|parentFolderId|String|Die ID des übergeordneten Ordners des Ordners.|
+|displayName|Zeichenfolge|Der Anzeigename des Ordners.|
+|parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Ordners.|
 |wellKnownName|string|Der Name des Ordners, wenn der Ordner einen erkannten Ordner ist. Derzeit `contacts` ist die einzige erkannten Kontakteordner.|
 
 ## <a name="response"></a>Antwort

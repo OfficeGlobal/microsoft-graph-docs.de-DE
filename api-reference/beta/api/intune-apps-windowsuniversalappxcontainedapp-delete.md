@@ -3,12 +3,13 @@ title: WindowsUniversalAppXContainedApp löschen
 description: Löscht eine WindowsUniversalAppXContainedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 008dda46eabc70b1f22c535d9324f60ea5d64b49
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 626ba2e70a6a2a22e0266bec64dae19be43d4dcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843589"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950907"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>WindowsUniversalAppXContainedApp löschen
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniv
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

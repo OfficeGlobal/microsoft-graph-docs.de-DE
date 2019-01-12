@@ -3,12 +3,13 @@ title: Erstellen von mailFolder
 description: Verwenden Sie diese API, um eine neue untergeordnete MailFolder erstellen.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c031f0bd621778fc38801a80788f977d45fbaffb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d466de7ae3952c85891c1798afa03b96aa887de0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962751"
 ---
 # <a name="create-mailfolder"></a>Erstellen von mailFolder
 
@@ -39,10 +40,10 @@ Geben Sie in der Abfrage-URL als eine Ordner-ID oder den Ordnernamen einer bekan
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile | Wert |
+| Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
-| Content-Type | `application/json`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich.  |
+| Content-Type | `application/json`. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -50,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-|displayName|String|Der Anzeigename für den neuen Ordner.|
+|displayName|Zeichenfolge|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
 

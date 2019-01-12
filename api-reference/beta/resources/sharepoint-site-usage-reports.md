@@ -2,12 +2,13 @@
 title: Verwendungsberichte für SharePoint-Website
 description: Sie können den Wert eine Ansicht auf oberster Ebene abrufen, die Sie von SharePoint im Hinblick auf die Gesamtzahl der Dateien, die Benutzer in SharePoint-Websites erhalten, wie viele Dateien aktiv verwendet werden und den Speicher für alle diese Websites verbraucht speichern. Anschließend können Sie in der SharePoint-Websiteverwendungsbericht zu verstehen, die Trends und pro Ebene Standortdetails für alle Websites anzeigen.
 localization_priority: Normal
-ms.openlocfilehash: 287abafdf279b2a249481ebc4445bfcd980ebc76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 964ec64a2cbb15d639a619cf8debd5fb5875245e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856141"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950529"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Verwendungsberichte für SharePoint-Website
 

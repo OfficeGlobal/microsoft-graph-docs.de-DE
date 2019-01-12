@@ -3,12 +3,13 @@ title: DDE-Kanal Ressourcentyp
 description: 'Ein Kanal ist eine Auflistung von ChatMessages innerhalb eines Teams. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842686"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952328"
 ---
 # <a name="channel-resource-type"></a>DDE-Kanal Ressourcentyp
 
@@ -32,12 +33,12 @@ Ein Kanal ist eine Auflistung von [ChatMessages](chatmessage.md) in einem [Team]
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|String|Optionale Beschreibung für den Kanal.|
-|displayName|String|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
-|id|String|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
-|isFavoriteByDefault|Boolean|Gibt an, ob der Kanal automatisch "Favoriten" für alle Mitglieder des Teams gekennzeichnet werden soll. Standard: `false`.|
-|E-Mail|Boolean| Die e-Mail-Adresse zum Senden von Nachrichten an den Kanal. Schreibgeschützt.|
-|webUrl|String|Ein Hyperlink, zu dem navigiert an den Kanal in Microsoft-Teams. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten Maustaste in eines Kanals in Microsoft-Teams, und wählen Sie Get-Link Kanal aus. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. Schreibgeschützt.|
+|description|Zeichenfolge|Optionale Beschreibung für den Kanal.|
+|displayName|Zeichenfolge|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
+|id|Zeichenfolge|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
+|isFavoriteByDefault|Boolescher Wert|Gibt an, ob der Kanal automatisch "Favoriten" für alle Mitglieder des Teams gekennzeichnet werden soll. Standard: `false`.|
+|E-Mail|Boolescher Wert| Die e-Mail-Adresse zum Senden von Nachrichten an den Kanal. Schreibgeschützt.|
+|webUrl|Zeichenfolge|Ein Hyperlink, zu dem navigiert an den Kanal in Microsoft-Teams. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten Maustaste in eines Kanals in Microsoft-Teams, und wählen Sie Get-Link Kanal aus. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. Schreibgeschützt.|
 
 
 ## <a name="relationships"></a>Beziehungen

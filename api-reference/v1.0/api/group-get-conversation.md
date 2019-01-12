@@ -3,12 +3,13 @@ title: Unterhaltung abrufen
 description: Abrufen eines conversation-Objekts.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 64355f38d5cbab8d8a146125512338f98d830b62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: efbf93afabb95db00075ea780e3d6f6bc28b27eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951012"
 ---
 # <a name="get-conversation"></a>Unterhaltung abrufen
 Abrufen eines [conversation](../resources/conversation.md)-Objekts.
@@ -32,7 +33,7 @@ GET /groups/{id}/conversations/{id}
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 

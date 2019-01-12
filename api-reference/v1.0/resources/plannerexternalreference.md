@@ -2,12 +2,14 @@
 title: plannerExternalReference-Ressourcentyp
 description: Die Ressource **PlannerExternalReference** stellt die Metadaten eines Verweises (Anlagen wie etwa URL-Datei). Es ist der Wert der Eigenschaft-Wert-Paare im ExternalReferences-Objekt.
 localization_priority: Normal
-ms.openlocfilehash: 696cc61b17776382aa0963d2d6d92f558f033bf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: f95c6661dd179a7078980894b87184059598319d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952174"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference-Ressourcentyp
 

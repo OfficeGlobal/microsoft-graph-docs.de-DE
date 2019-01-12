@@ -2,12 +2,14 @@
 title: sectionGroup-Ressourcentyp
 description: Eine Abschnittsgruppe in einem OneNote-Notizbuch. Abschnittsgruppen können Abschnitte und Abschnittsgruppen enthalten.
 localization_priority: Normal
-ms.openlocfilehash: f204c5422eb5f0f2580bfbed82ed28306dd0618f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806307"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961876"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup-Ressourcentyp
 

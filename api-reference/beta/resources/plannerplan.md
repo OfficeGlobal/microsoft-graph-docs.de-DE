@@ -2,12 +2,14 @@
 title: plannerPlan-Ressourcentyp
 description: Die Ressource **PlannerPlan** stellt einen Plan in Office 365. Ein Plan kann eine Gruppe Besitz und enthält eine Auflistung von PlannerTasks. Sie können auch eine Auflistung von PlannerBuckets verfügen. Jedes Plan-Objekt ist ein Details-Objekt, das Informationen über den Plan enthalten kann. Weitere Informationen zu den Beziehungen zwischen Gruppen, Pläne und Aufgaben finden Sie unter Planner.
 localization_priority: Normal
-ms.openlocfilehash: 4890daa6ad221a36cf0029b49ce39560fc80afcd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b5d95b1bfab7404007c3139833e54f155c10d9aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950522"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan-Ressourcentyp
 
@@ -30,9 +32,9 @@ Die Ressource **PlannerPlan** stellt einen Plan in Office 365. Ein Plan kann ein
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung des Plans. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|String| Schreibgeschützt. ID des Plans. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](tasks-identifiers-disclaimer.md) erfolgt für den Dienst.|
-|owner|String|Die ID der [Gruppe](group.md) , die den Plan besitzt. Eine gültige Gruppe muss vorhanden sein, bevor Sie dieses Feld festgelegt werden kann. Diese Eigenschaft kann nicht aktualisiert werden, nachdem er festgelegt wurde.|
-|title|String|Erforderlich.  Der Titel des Plans.|
+|id|Zeichenfolge| Schreibgeschützt. ID des Plans. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](tasks-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|owner|Zeichenfolge|Die ID der [Gruppe](group.md) , die den Plan besitzt. Eine gültige Gruppe muss vorhanden sein, bevor Sie dieses Feld festgelegt werden kann. Diese Eigenschaft kann nicht aktualisiert werden, nachdem er festgelegt wurde.|
+|title|Zeichenfolge|Erforderlich.  Der Titel des Plans.|
 |createdBy|[identitySet](identityset.md)|Schreibgeschützt. Der Benutzer, der den Plan erstellt hat.|
 |Kontext|[plannerPlanContextCollection](plannerplancontextcollection.md)| Schreibgeschützt. Zusätzliche Benutzererlebnis, in denen dieser Plan verwendet wird, dargestellt als [PlannerPlanContext](plannerplancontext.md) Einträge.|
 

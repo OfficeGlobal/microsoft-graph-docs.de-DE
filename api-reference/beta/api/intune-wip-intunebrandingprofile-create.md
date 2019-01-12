@@ -3,12 +3,13 @@ title: Erstellen von intuneBrandingProfile
 description: Erstellen eines neuen IntuneBrandingProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 755de596da82aa2ef7a8d5bc142f43e6bf2ca4c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964543"
 ---
 # <a name="create-intunebrandingprofile"></a>Erstellen von intuneBrandingProfile
 
@@ -48,9 +49,9 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Profil-Taste|
-|Profilname|String|Name des Profils|
-|profileDescription|String|Beschreibung des Profils|
+|id|Zeichenfolge|Profil-Taste|
+|Profilname|Zeichenfolge|Name des Profils|
+|profileDescription|Zeichenfolge|Beschreibung des Profils|
 |isDefaultProfile|Boolescher Wert|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
 |createdDateTime|DateTimeOffset|Wenn die BrandingProfile erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Wann die BrandingProfile zuletzt geändert wurde.|

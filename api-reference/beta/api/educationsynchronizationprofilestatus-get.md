@@ -3,12 +3,13 @@ title: Abrufen des Status eines educationSynchronizationProfile
 description: Rufen Sie den Status eines bestimmten Schule Daten Synchronisierungsprofils im Mandanten. Die Antwort wird den Status der auszuführenden Synchronisierung hingewiesen.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: f371d86d188068a90b3a9503adea12fd38ba8e8d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 3b235ca243e6ee0f2ebb442d53a7425fa979d778
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869953"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965453"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Abrufen des Status eines educationSynchronizationProfile
 

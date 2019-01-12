@@ -3,12 +3,13 @@ title: 'message: move'
 description: Verschieben von Nachrichten in einen Ordner. Erstellt eine neue Kopie der Nachricht im Zielordner und die ursprüngliche Nachricht entfernt.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 7ad9ac2b8f64d75950c9b2cac17a4c5dc5a9b3eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2f6614d3769d2619854782776c061436622f1309
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843288"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961197"
 ---
 # <a name="message-move"></a>message: move
 
@@ -41,8 +42,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Header | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich. |
-| Content-Type | `application/json`. Erforderlich. |
+| Authorization | `Bearer {token}`. Erforderlich.  |
+| Content-Type | `application/json`. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 

@@ -3,12 +3,13 @@ title: deviceCompliancePolicy abrufen
 description: Lesen von Eigenschaften und Beziehungen des deviceCompliancePolicy-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5473d48a5868af2748d14e68ff1e12bbc8e6d0b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a1359b66f3960024efe67db2002ec746f4eff5e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869475"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953462"
 ---
 # <a name="get-devicecompliancepolicy"></a>deviceCompliancePolicy abrufen
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

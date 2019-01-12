@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerActivityUserCounts'
 description: Erfahren Sie, wie viele eindeutige Benutzer Yammer-Nachrichten veröffentlicht, gelesen und gelikt haben.
 localization_priority: Normal
-ms.openlocfilehash: bfa74d53198bb65ac86be50f84bdb7cae1c8c26d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: bd49374f339034dfa9c43f5cca7299287b40ffd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956164"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 

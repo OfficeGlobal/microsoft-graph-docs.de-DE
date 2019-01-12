@@ -3,12 +3,13 @@ title: Abrufen von androidForWorkImportedPFXCertificateProfile
 description: Lesen Sie Eigenschaften und Beziehungen des AndroidForWorkImportedPFXCertificateProfile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 37f33473ab9333a4435f898f975f6d3139b7107f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f79cba0ce082e8fcc941293aff5a2c33cfeab6a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960014"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Abrufen von androidForWorkImportedPFXCertificateProfile
 

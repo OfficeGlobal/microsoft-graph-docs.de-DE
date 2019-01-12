@@ -3,12 +3,13 @@ title: Auflisten von „windowsPhone81CustomConfiguration“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsPhone81CustomConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8293bd245e50e3589ec744ff1fc9928e4649d1f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9d2e7641a0f2ae902b0ac310e36c0ce5678c054
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963948"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Auflisten von „windowsPhone81CustomConfiguration“
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

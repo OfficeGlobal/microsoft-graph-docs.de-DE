@@ -3,12 +3,13 @@ title: Erwähnen Ressourcentyp
 description: Stellt eine Benachrichtigung an eine Person basierend auf e-Mail-Adresse der Person.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: b24ce5488e93160c3424fb41f83b91c1b8ccea95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858429"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955436"
 ---
 # <a name="mention-resource-type"></a>Erwähnen Ressourcentyp
 
@@ -60,7 +61,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |createdDateTime  |DateTimeOffset |Das Datum und die Uhrzeit, die auf dem Client die Erwähnung erstellt wird. |
 |deepLink | Zeichenfolge | Tiefe Weblink zu den Kontext des Hinweises auf die Instanz der Ressource. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
 |id | Zeichenfolge| Der eindeutige Bezeichner des Vermerk in einer Ressourceninstanz einer.|
-|erwähnten | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen der weiter oben erwähnt Person. Erforderlich. |
+|erwähnten | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen der weiter oben erwähnt Person. Erforderlich.  |
 |mentionText | Zeichenfolge | Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. Wenn die erwähnungen in einer Nachricht erhalten möchten, finden Sie stattdessen die **BodyPreview** -Eigenschaft der Nachricht. |
 |serverCreatedDateTime | DateTimeOffset | Das Datum und die Uhrzeit, die die Erwähnung auf dem Server erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
 

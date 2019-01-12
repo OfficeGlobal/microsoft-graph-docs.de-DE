@@ -3,12 +3,13 @@ title: 'Rufen Sie: stumm schalten'
 description: Ermöglicht der Anwendung selbst stumm geschaltet werden sollen.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fa4baed5af378c58f8e25dbdc5413c1bef743c32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956661"
 ---
 # <a name="call-mute"></a>Rufen Sie: stumm schalten
 
@@ -42,7 +43,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|clientContext|String|Der Clientkontext.|
+|clientContext|Zeichenfolge|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und eines [CommsOperation](../resources/commsoperation.md) -Objekts in der Antworttext.

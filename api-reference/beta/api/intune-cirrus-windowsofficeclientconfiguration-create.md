@@ -3,12 +3,13 @@ title: Erstellen von windowsOfficeClientConfiguration
 description: Erstellen Sie eine neue Richtlinie nicht sicherheitsrelevante mit Adressieren von Gruppen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 34d279b6c9bbb31dd5897f4e0d357119d8c86c45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 10fecb11b29a9b35123bc6a07ee3059cf5ac9365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948842"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>Erstellen von windowsOfficeClientConfiguration
 

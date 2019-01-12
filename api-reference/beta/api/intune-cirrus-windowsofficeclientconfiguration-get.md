@@ -3,12 +3,13 @@ title: Abrufen von windowsOfficeClientConfiguration
 description: Rufen Sie eine bestimmte nicht sicherheitsrelevante Richtlinie WindowsOfficeClientConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5b733caece0c572074715e5affa6ec9fd945e4c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a53fde0620e6240923dc4093a1a28d86a3c517e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955758"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Abrufen von windowsOfficeClientConfiguration
 
@@ -38,7 +39,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

@@ -1,12 +1,15 @@
 ---
 title: Liste Benutzer transitive Mitglied
 description: Abrufen von Gruppen, Directory Rollen und administrative Einheiten, denen der Benutzer Mitglied ist. Diese API-Anforderung ist transitiv und alle Gruppen, die, denen der Benutzer ein geschachtelte Mitglied ist, wird ebenfalls zurückgegeben.
-ms.openlocfilehash: b507e7e0e54fcd37b4a31a9a6cf9e07b32e41244
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d4977d06b05b7b8d860023640f1e413afa3c3c64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27065278"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953709"
 ---
 # <a name="list-user-transitive-memberof"></a>Liste Benutzer transitive Mitglied
 
@@ -38,10 +41,10 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Kopfzeile       | Wert |
+| Header       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
-| Accept  | application/json|
+| Annehmen  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 

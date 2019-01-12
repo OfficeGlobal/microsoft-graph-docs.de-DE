@@ -3,12 +3,13 @@ title: RevokeUserLicense Aktion
 description: REVOKE zugewiesen iOS VPP-Benutzerlizenz für die app zu reparieren.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 241306b812615bb804a3139082a439df9eeae059
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a9c4e61a66bc2a2705586af870708242f21416d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837303"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958467"
 ---
 # <a name="revokeuserlicense-action"></a>RevokeUserLicense Aktion
 

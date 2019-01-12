@@ -3,12 +3,13 @@ title: Erstellen von „termsAndConditions“
 description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditions.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bea289d293edd7f7ac68c5a1da1388d89c5687e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d27cf4e4cbedd924c1efbbd526257d5df1d293e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824325"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954183"
 ---
 # <a name="create-termsandconditions"></a>Erstellen von „termsAndConditions“
 

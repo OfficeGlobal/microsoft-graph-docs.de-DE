@@ -3,12 +3,13 @@ title: Abrufen von „applePushNotificationCertificate“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs applePushNotificationCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 988a63649f98e8d58c17546f752fef25609692f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 23e832bc664041041bbbdf6eed031831e8458bbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954106"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Abrufen von „applePushNotificationCertificate“
 
@@ -38,7 +39,7 @@ GET /deviceManagement/applePushNotificationCertificate
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

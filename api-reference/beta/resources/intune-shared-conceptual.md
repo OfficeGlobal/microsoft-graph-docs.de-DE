@@ -2,12 +2,14 @@
 title: Gemeinsam genutzten Ressourcen in Microsoft Intune
 description: Diese Endpunkte werden in mehreren Microsoft Graph-API für Intune Workflows verwendet.  Die Absicht, den Zweck und die erforderlichen Berechtigungen für eine bestimmte Ressource verwenden variiert je nach den bestimmten Workflow und dem Kontext des zugrunde liegenden Anrufs.  Darüber hinaus werden bestimmte Methoden, Eigenschaften und Aktionen nur für bestimmte Workflows unterstützt.
 localization_priority: Normal
-ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6180868d4aec195afcc037146f475e56a91aa669
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852626"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952559"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Gemeinsam genutzten Ressourcen in Microsoft Intune
 

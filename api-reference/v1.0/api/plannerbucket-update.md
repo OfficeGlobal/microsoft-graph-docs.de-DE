@@ -2,12 +2,14 @@
 title: plannerBucket aktualisieren
 description: Dient zum Aktualisieren der Eigenschaften eines **plannerbucket**-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 84583df95d69f4b7f4beb604cd3cf61270c177ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1941220304cd2d95aba5f0aab42b62c8d0e61397
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814938"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951467"
 ---
 # <a name="update-plannerbucket"></a>plannerBucket aktualisieren
 
@@ -38,7 +40,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |name|String|Name des Buckets.|
-|orderHint|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
+|orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
 |planId|String|Plan-ID, zu der der Bucket gehört.|
 
 ## <a name="response"></a>Antwort
