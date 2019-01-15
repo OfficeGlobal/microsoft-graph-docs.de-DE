@@ -4,12 +4,12 @@ description: Ereignisserien sind ein wichtiger Bestandteil der Kalenderfunktione
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 27c407ccd288323866fbd6599050f0036b9d363d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961792"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016765"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Planen wiederkehrender Termine als wiederkehrende Ereignisse in Outlook
 
@@ -203,7 +203,7 @@ Das relative jährliche Muster bewirkt, dass ein Ereignis am gleichen Wochentag 
 | **Index** | Optional | Gibt an, in welcher Instanz der zulässigen Tage, die unter **daysOfsWeek** angegeben sind, das Ereignis eintritt, ausgehend von der ersten Instanz des Monats gezählt. Mögliche Werte: `first`, `second`, `third`, `fourth` und `last`. Standardwert: `first`. |
 | **Monat** | Erforderlich | Gibt an, in welchem Monat das Ereignis auftritt. |
 | **Intervall** | Erforderlich | Gibt die Anzahl der Jahre zwischen zwei Vorkommen an. |
-| **Typ** | Erforderlich | Muss auf `relativeMonthly` festgelegt werden. |
+| **Typ** | Erforderlich | Muss auf `relativeYearly` festgelegt werden. |
 
 #### <a name="examples"></a>Beispiele
 
