@@ -4,12 +4,12 @@ description: 'Veröffentlichen einer app mit dem Microsoft-Teams, apps Katalog. 
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7faf5847b78d6221b5167c775def75ae9a2ce629
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911875"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016744"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Veröffentlichen von apps in Ihrer Organisation app-Katalog
 
@@ -55,7 +55,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode 
 ### <a name="request"></a>Anforderung
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 

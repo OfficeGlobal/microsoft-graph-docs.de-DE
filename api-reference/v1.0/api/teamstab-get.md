@@ -4,12 +4,12 @@ description: 'Abrufen der Eigenschaften und Beziehungen zwischen der angegebenen
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 70782682e2e87de50459384d782a56ccb7e6cfe8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dd23ffc6bcfdeb8821e2227331e2be801f348ce8
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945601"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016674"
 ---
 # <a name="get-tab"></a>Erste Registerkarte
 
@@ -52,7 +52,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode 
 #### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 

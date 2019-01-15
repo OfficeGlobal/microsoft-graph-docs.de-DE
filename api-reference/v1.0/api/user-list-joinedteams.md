@@ -4,12 +4,12 @@ description: Abrufen des Teams für die der Microsoft-Teams, die der Benutzer ei
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f2c5c67234a6e847327c28e61e7ccb2294b36d54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95dfa387a55dd5270035816d144ac3a6ac2b6703
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980860"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016702"
 ---
 # <a name="list-joinedteams"></a>joinedTeams auflisten
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "get_joinedteams"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/joinedTeams
+GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.

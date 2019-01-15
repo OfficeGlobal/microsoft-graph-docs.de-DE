@@ -4,12 +4,12 @@ description: Zugriff auf in Azure AD Bewertungen Feature, Erstellen eines neuen 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: de8574566a8ca1eedb1f0f55230fb91053370ccc
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942269"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016723"
 ---
 # <a name="create-accessreview"></a>Erstellen von accessReview
 
@@ -17,7 +17,7 @@ ms.locfileid: "27942269"
 
 Erstellen Sie ein neues [AccessReview](../resources/accessreview.md) -Objekt in Azure AD [Access überprüft](../resources/accessreviews-root.md) Feature.
 
-Vor dieser Anforderung ausführenden, der Anrufer benötigen zuvor [die Liste der Vorlagen für Unternehmen Fluss abgerufen](businessflowtemplate-list.md), auf dem Wert der `businessFlowTemplateId` in der Anforderung enthalten.
+Vor der Durchführung dieser Anforderung, der Anrufer benötigen zuvor [die Liste der Vorlagen für Unternehmen Fluss abgerufen](businessflowtemplate-list.md), auf dem Wert der `businessFlowTemplateId` in der Anforderung enthalten.
 
 Nach dem Ändern dieser Anforderung, sollte der Aufrufer [eine ProgramControl erstellen](programcontrol-create.md), um die Überprüfung des Zugriffs auf ein Programm verknüpfen.  
 
@@ -38,7 +38,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | String | Bearer \{token\}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [AccessReview](../resources/accessreview.md) -Objekts.
@@ -52,11 +52,11 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 | `endDateTime`             |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, um zu beenden. Dies muss mindestens einen Tag später als das Startdatum sein.   |
 | `description`             |`String`                                                        | Die Beschreibung für die Bearbeiter angezeigt. |
 | `businessFlowTemplateId`  |`String`                                                        | Der Business-Fluss Vorlagenbezeichner, von einem [BusinessFlowTemplate](../resources/businessflowtemplate.md)abgerufen.  |
-| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer über die Zugriffsrechte des überarbeiteten-Objekts, eines `self`, `delegate` oder `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt, für das eine Überprüfung Access, wie eine Mitgliedschaft in einer Gruppe oder die Zuweisung von Benutzern zu einer Anwendung erstellt wird. | 
+| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer über die Zugriffsrechte des überarbeiteten-Objekts, eines `self`, `delegated`, oder `entityOwners`. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt, für das eine Überprüfung Access, wie die Mitgliedschaft einer Gruppe oder die Zuweisung von Benutzern zu einer Anwendung erstellt wird. | 
 
 
-Wenn die ReviewerType gesendet wird den Wert `delegate`, und klicken Sie dann der Anrufer auch umfassen muss die `reviewers` -Eigenschaft, mit einer Auflistung von [Benutzeridentität](../resources/useridentity.md) der Bearbeiter.
+Wenn die ReviewerType gesendet wird den Wert `delegated`, und klicken Sie dann der Anrufer auch umfassen muss die `reviewers` -Eigenschaft, mit einer Auflistung von [Benutzeridentität](../resources/useridentity.md) der Bearbeiter.
 
 Darüber hinaus kann der Aufrufer Einstellungen, zum Erstellen einer Terminserie überprüfen oder So ändern Sie das Standardverhalten für die Überprüfung umfassen. Zum Erstellen einer wiederkehrenden Überprüfung der Anrufer muss sich insbesondere die `accessReviewRecurrenceSettings` überprüfen Sie in die Access-Einstellungen
 
@@ -86,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -100,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -126,7 +138,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

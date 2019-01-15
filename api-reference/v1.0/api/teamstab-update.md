@@ -4,12 +4,12 @@ description: Aktualisieren Sie die Eigenschaften der angegebenen Registerkarte.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f7bb00fb58513c32c66f72a9ef852e799674a52e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 342026dc592dc447c85d3885b4706e5c0891ef26
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944705"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016730"
 ---
 # <a name="update-tab"></a>Registerkarte "Aktualisieren"
 
@@ -52,7 +52,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 #### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 

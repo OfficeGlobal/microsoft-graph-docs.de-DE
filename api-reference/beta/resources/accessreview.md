@@ -4,12 +4,12 @@ description: 'In Azure AD Access Feature, überprüft die `accessReview` eine Ü
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6d97382957b7c61625ec54af4c572962be839b4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950662"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016737"
 ---
 # <a name="accessreview-resource-type"></a>Ressourcentyp accessReview
 
@@ -52,12 +52,12 @@ In Azure AD [Access überprüft](accessreviews-root.md) Feature der `accessRevie
 | `displayName`             |`String`                                                        | Der Name des Access überprüfen. Erforderliche auf erstellen. |
 | `startDateTime`           |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, gestartet werden.  Dabei kann es sich um ein Datum in der Zukunft handeln.  Erforderliche auf erstellen. |
 | `endDateTime`             |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, um zu beenden. Dies muss mindestens einen Tag später als das Startdatum sein.  Erforderliche auf erstellen. |
-| `status`                  |`String`                                                        | Dieses schreibgeschützte Feld gibt den aktuellen Status einer AccessReview an. Die normale Statusarten `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, und `AutoReviewed`. |
+| `status`                  |`String`                                                        | Dieses schreibgeschützte Feld gibt den Status eines AccessReview an. Die normale Statusarten `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, und `AutoReviewed`. |
 | `description`             |`String`                                                        | Die Beschreibung, die vom Ersteller überprüfen Access so, dass der Bearbeiter bereitgestellt. |
 | `businessFlowTemplateId`  |`String`                                                        | Der Bezeichner der Business-Fluss-Vorlage. Erforderliche auf erstellen. |
-| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer auf das Zielobjekt, eine der `self`, `delegate` oder `entityOwners`. Erforderliche auf erstellen. | 
+| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer auf das Zielobjekt, eine der `self`, `delegated` oder `entityOwners`. Erforderliche auf erstellen. | 
 | `createdBy`               |[Benutzeridentität](useridentity.md)                                 | Der Benutzer, die diese Überprüfung erstellt hat. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt für das prüft der Zugriff ist von der zugewiesenen Zugriffsrechte, wie die Mitgliedschaften von Benutzern zu einer Gruppe oder Zuweisung von Benutzern zu einer Anwendung. Erforderliche auf erstellen. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt für das das Access überprüft überprüft die zugewiesenen Zugriffsrechte. Dies kann die Gruppe für die Überprüfung von Mitgliedschaften von Benutzern in einer Gruppe oder der app für eine Überprüfung der Zuordnungen von Benutzern zu einer Anwendung sein. Erforderliche auf erstellen. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | Die Einstellungen für ein AccessReview finden Sie unter Typdefinition unten. |
 
 
@@ -74,7 +74,7 @@ In Azure AD [Access überprüft](accessreviews-root.md) Feature der `accessRevie
 | `myDecisions`             |[AccessReviewDecision](accessreviewdecision.md) -Auflistung | Die Auflistung von Entscheidungen für den Anrufer, wenn der Aufrufer Bearbeiter ist. |
 | `instances`               |[AccessReview](accessreview.md) -Auflistung         | Die Auflistung von Bewertungen für Access-Instanzen Vergangenheit, Gegenwart und Zukunft, wenn dieses Objekt eine periodische Access Überprüfung ist. |
 
-Ob die Beziehungen auf ein Objekt vorhanden sind, hängt davon ab, gibt an, ob das Objekt eine Überprüfung einmaligen Zugriff auf einer Reihe von sich wiederholenden Access Wiederholung oder eine Instanz einer wiederkehrenden Access Überprüfung ist.
+Ob diese Beziehungen auf ein Objekt vorhanden sind, hängt davon ab, gibt an, ob das Objekt eine Überprüfung einmaligen Zugriff auf einer Reihe von sich wiederholenden Access Wiederholung oder eine Instanz einer wiederkehrenden Access Überprüfung ist.
 
 | Szenario | Hat Bearbeiter? | Hat Entscheidungen und MyDecisions? | Hat Instanzen? |
 |:---------|:---------------|:---------------|:---------------|
@@ -125,7 +125,7 @@ Die `accessReviewSettings` bietet zusätzliche Einstellungen beim Erstellen eine
 | `autoReviewEnabled`|`Boolean` | Kennzeichnung, die angibt, ob das Feature für eine Entscheidung festgelegt werden soll, wenn der Prüfer eine für die Verwendung mit Auto-apply, nicht angegeben haben, ist aktiviert. |
 | `autoReviewSettings`|`microsoft.graph.autoReviewSettings` | Detaillierte Einstellungen für das Feature für die Überprüfung Entscheidung, für die Verwendung mit Auto-apply, die weiter unten beschriebenen festzulegen, wie sollten. |
 | `recurrenceSettings`|`microsoft.graph.accessReviewRecurrenceSettings` | Detaillierte Einstellungen für die Serie, die weiter unten beschriebenen. |
-| `autoApplyReviewResultsEnabled`|`Boolean` | Kennzeichnung, die angibt, ob gelten Auto-Funktion, so ändern Sie die Zielressource-Objekt zugreifen, automatisch aktiviert ist.  Nicht aktiviert ist, muss ein Benutzer anwenden anschließend die Änderung der Überprüfung Access nach Abschluss die Überprüfung Access. |
+| `autoApplyReviewResultsEnabled`|`Boolean` | Kennzeichnung, die angibt, ob gelten Auto-Funktion, so ändern Sie die Zielressource-Objekt zugreifen, automatisch aktiviert ist.  Nicht aktiviert ist, muss, ein Benutzer nach Abschluss die Überprüfung die Überprüfung Access anwenden. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag, das angibt, ob Recommendations an Bearbeiter anzeigen aktiviert ist. |
 
 
@@ -145,10 +145,10 @@ Die `accessReviewRecurrenceSettings` überprüfen Sie die Einstellungen der Acce
 
 | Eigenschaft                     | Typ                                                                                                          | Beschreibung |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | Das Serienintervall, die eine sein muss der `onetime`, `weekly`, `monthly`, `quarterly` oder `annual`.                                                                   |
-| `recurrenceEndType`|`String` | Wie werden die Serie beendet. Es kann eine der `Never`, dass es keine explizite Ende der Serie ist `Endby`, die das Serienmuster zu einem bestimmten Zeitpunkt endet und `occurrences`, dass die Datenreihe endet, wenn bestimmte Anzahl von Instanzen der Überprüfung abgeschlossen haben. |
+| `recurrenceType`|`String`    | Das Serienintervall, die eine sein muss der `onetime`, `weekly`, `monthly`, `quarterly`, oder `annual`.                                                                   |
+| `recurrenceEndType`|`String` | Das Serienmuster wie endet. Wenn es ist `Never`, und es keine explizite Ende der Serie ist. Wenn es ist `endBy`, klicken Sie dann das Serienmuster zu einem bestimmten Zeitpunkt endet. Wenn es ist `occurrences`, klicken Sie dann die Datenreihe endet nach `recurrentCount` Instanzen der Überprüfung abgeschlossen haben. |
 | `durationInDays`|`Int32`     | Die Dauer in Tagen für die Serie.                                                                              |
-| `recurrenceCount`|`Int32`    | Die Anzahl der Wiederholungen, wenn der Wert der `recurrenceEndType` ist `occurrences`.                                                        |
+| `recurrenceCount`|`Int32`    | Die Anzahl der Wiederholungen, wenn der Wert der `recurrenceEndType` ist `occurrences`, oder andernfalls 0.                                                        |
 
 
 

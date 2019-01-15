@@ -4,12 +4,12 @@ description: In Azure AD Access Feature überprüft, und Aktualisieren eines vor
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e4e74daa092c6f18c845c7f0c468af90385b899b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941355"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016751"
 ---
 # <a name="update-accessreview"></a>AccessReview aktualisieren
 
@@ -17,7 +17,7 @@ ms.locfileid: "27941355"
 
 Aktualisieren Sie in Azure AD [Access überprüft](../resources/accessreviews-root.md) Feature eines vorhandenen [AccessReview](../resources/accessreview.md) -Objekts, um eine oder mehrere Eigenschaften ändern.
 
-Diese API ist nicht so ändern Sie die Bearbeiter oder Entscheidungen einer Überprüfung vorgesehen.  Um die Bearbeiter ändern möchten, verwenden Sie die [AddReviewer](accessreview-addreviewer.md) oder [RemoveReviewer](accessreview-removereviewer.md) APIs.  Beenden einer bereits gestartet einmalige Überprüfung oder eine Instanz bereits gestartet eine periodische Überprüfung, frühzeitig und [Beenden](accessreview-stop.md) API verwenden, und um die Entscheidungen auf Ziel Zugriffsrechte Gruppe oder app anzuwenden verwenden Sie die [anwenden](accessreview-apply.md) API. 
+Diese API ist nicht so ändern Sie die Bearbeiter oder Entscheidungen einer Überprüfung vorgesehen.  Um die Bearbeiter ändern möchten, verwenden Sie die [AddReviewer](accessreview-addreviewer.md) oder [RemoveReviewer](accessreview-removereviewer.md) APIs.  Verwenden Sie eine einmalige Überprüfung bei bereits gestartet, oder eine Instanz bereits gestartet periodische Wiederholung frühzeitig und, um beenden [Beenden](accessreview-stop.md) API. Um die Entscheidungen über die Ziel-Gruppe oder app Zugriffsrechte anwenden möchten, verwenden Sie die [anwenden](accessreview-apply.md) API. 
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -37,10 +37,10 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | String | Bearer \{token\}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung der ein Parameter eines [AccessReview](../resources/accessreview.md) -Objekts.
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Parameter eines [AccessReview](../resources/accessreview.md) -Objekts.
 
 In der folgenden Tabelle werden die Eigenschaften gezeigt, die beim Aktualisieren von einer AccessReview bereitgestellt werden können.
 
@@ -94,7 +94,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

@@ -4,12 +4,12 @@ description: 'Liste apps aus dem Microsoft-Teams, app-Katalog. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fc8648ac99a3b502956ce07d5c5b53bab930095e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a19c852b4cca08b7318ef33cdf24929e5f4c3042
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945587"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016667"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Liste der veröffentlichten apps aus dem Microsoft-Teams, app-Katalog
 
@@ -58,7 +58,7 @@ Das folgende Beispiel listet alle Anwendungen, die für Ihre Mandanten spezifisc
 
 #### <a name="request"></a>Anforderung
 ```
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 #### <a name="response"></a>Antwort
@@ -85,7 +85,7 @@ Das folgende Beispiel listet Applikationen mit einer bestimmten ID.
 
 #### <a name="request"></a>Anforderung
 ```
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### <a name="response"></a>Antwort
