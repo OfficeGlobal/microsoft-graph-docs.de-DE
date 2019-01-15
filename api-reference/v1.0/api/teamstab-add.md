@@ -4,60 +4,60 @@ description: 'Fügt (Pins) einer Registerkarte an den angegebenen Kanal innerhal
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ce91b841ab8eeaaec3811382c55f8debba99ce31
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8c2aee1f67eebd2fda7515ede27158f3154dd2d1
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921164"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016716"
 ---
-# <a name="add-tab-to-channel"></a><span data-ttu-id="47a18-103">Registerkarte Channel hinzufügen</span><span class="sxs-lookup"><span data-stu-id="47a18-103">Add tab to channel</span></span>
+# <a name="add-tab-to-channel"></a><span data-ttu-id="2d13c-103">Registerkarte Channel hinzufügen</span><span class="sxs-lookup"><span data-stu-id="2d13c-103">Add tab to channel</span></span>
 
 
 
-<span data-ttu-id="47a18-104">Fügt (Pins) einer [Registerkarte](../resources/teamstab.md) an den angegebenen [DDE-Kanal](../resources/channel.md) in einem [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="47a18-104">Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> <span data-ttu-id="47a18-105">Die entsprechende app muss bereits [im Team installiert](../api/teamsappinstallation-add.md)sein.</span><span class="sxs-lookup"><span data-stu-id="47a18-105">The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).</span></span>
+<span data-ttu-id="2d13c-104">Fügt (Pins) einer [Registerkarte](../resources/teamstab.md) an den angegebenen [DDE-Kanal](../resources/channel.md) in einem [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="2d13c-104">Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> <span data-ttu-id="2d13c-105">Die entsprechende app muss bereits [im Team installiert](../api/teamsappinstallation-add.md)sein.</span><span class="sxs-lookup"><span data-stu-id="2d13c-105">The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="47a18-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="47a18-106">Permissions</span></span>
-<span data-ttu-id="47a18-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="47a18-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d13c-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2d13c-106">Permissions</span></span>
+<span data-ttu-id="2d13c-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d13c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="47a18-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="47a18-109">Permission type</span></span>      | <span data-ttu-id="47a18-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="47a18-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2d13c-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2d13c-109">Permission type</span></span>      | <span data-ttu-id="2d13c-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2d13c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="47a18-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="47a18-111">Delegated (work or school account)</span></span> | <span data-ttu-id="47a18-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47a18-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="47a18-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="47a18-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47a18-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="47a18-114">Not supported.</span></span>    |
-| <span data-ttu-id="47a18-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="47a18-115">Application</span></span>                            | <span data-ttu-id="47a18-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="47a18-116">Group.ReadWrite.All</span></span>                         |
+|<span data-ttu-id="2d13c-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2d13c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2d13c-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d13c-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2d13c-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2d13c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d13c-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2d13c-114">Not supported.</span></span>    |
+| <span data-ttu-id="2d13c-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2d13c-115">Application</span></span>                            | <span data-ttu-id="2d13c-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d13c-116">Group.ReadWrite.All</span></span>                         |
 
-> <span data-ttu-id="47a18-117">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="47a18-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="47a18-118">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="47a18-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="2d13c-117">**Hinweis**: Diese API unterstützt Administratorberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="2d13c-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="2d13c-118">Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.</span><span class="sxs-lookup"><span data-stu-id="2d13c-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="47a18-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="47a18-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d13c-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2d13c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/tabs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="47a18-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="47a18-120">Request headers</span></span>
-| <span data-ttu-id="47a18-121">Header</span><span class="sxs-lookup"><span data-stu-id="47a18-121">Header</span></span>       | <span data-ttu-id="47a18-122">Wert</span><span class="sxs-lookup"><span data-stu-id="47a18-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2d13c-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2d13c-120">Request headers</span></span>
+| <span data-ttu-id="2d13c-121">Header</span><span class="sxs-lookup"><span data-stu-id="2d13c-121">Header</span></span>       | <span data-ttu-id="2d13c-122">Wert</span><span class="sxs-lookup"><span data-stu-id="2d13c-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="47a18-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="47a18-123">Authorization</span></span>  | <span data-ttu-id="47a18-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="47a18-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2d13c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d13c-123">Authorization</span></span>  | <span data-ttu-id="2d13c-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2d13c-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="47a18-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="47a18-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d13c-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2d13c-126">Request body</span></span>
 
-<span data-ttu-id="47a18-127">Ein [TeamsTab](../resources/teamstab.md).</span><span class="sxs-lookup"><span data-stu-id="47a18-127">A [teamsTab](../resources/teamstab.md).</span></span>
+<span data-ttu-id="2d13c-127">Ein [TeamsTab](../resources/teamstab.md).</span><span class="sxs-lookup"><span data-stu-id="2d13c-127">A [teamsTab](../resources/teamstab.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="47a18-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="47a18-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2d13c-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="2d13c-128">Response</span></span>
 
-<span data-ttu-id="47a18-129">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `201 OK` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="47a18-129">If successful, this method returns a `201 OK` response code.</span></span>
+<span data-ttu-id="2d13c-129">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `201 OK` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2d13c-129">If successful, this method returns a `201 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="47a18-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="47a18-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2d13c-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2d13c-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="47a18-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="47a18-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d13c-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2d13c-131">Request</span></span>
 
-<span data-ttu-id="47a18-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="47a18-132">The following is an example of the request.</span></span>
+<span data-ttu-id="2d13c-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2d13c-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 {
   "name": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
@@ -70,9 +70,9 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="47a18-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="47a18-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d13c-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="2d13c-133">Response</span></span>
 
-<span data-ttu-id="47a18-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="47a18-134">The following is an example of the response.</span></span> <span data-ttu-id="47a18-135">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="47a18-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="47a18-136">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="47a18-136">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="2d13c-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2d13c-134">The following is an example of the response.</span></span> <span data-ttu-id="2d13c-135">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="2d13c-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="2d13c-136">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2d13c-136">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -97,9 +97,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="47a18-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="47a18-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2d13c-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2d13c-137">See also</span></span>
 
-[<span data-ttu-id="47a18-138">Konfigurieren der integrierten Registerkartentypen</span><span class="sxs-lookup"><span data-stu-id="47a18-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+[<span data-ttu-id="2d13c-138">Konfigurieren der integrierten Registerkartentypen</span><span class="sxs-lookup"><span data-stu-id="2d13c-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
