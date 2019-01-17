@@ -103,6 +103,8 @@ items:
                 href: outlook-share-messages-folders.md
               - name: Unveränderliche ID (Vorschau)
                 href: outlook-immutable-id.md
+              - name: Senden von E-Mails von einem anderen Benutzer
+                href: outlook-send-mail-from-other-user.md
           - name: Hinweise
             href: integrate-with-onenote.md
             items:

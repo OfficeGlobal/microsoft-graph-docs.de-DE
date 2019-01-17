@@ -3,12 +3,12 @@ title: 'Microsoft Graph-Berechtigungsreferenz '
 description: 'Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2e21c5933b51e6e43d7d67430fef6ff3afe79ff4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02867d6651820fabbb374cddfb69c4a8011390f0
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27992091"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328006"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph-Berechtigungsreferenz 
 Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). 
@@ -454,7 +454,9 @@ Im Hinblick auf Anwendungsberechtigungen gelten einige Einschränkungen für die
 
 In einigen Fällen benötigt eine App eventuell [Verzeichnisberechtigungen](#directory-permissions), um einige Gruppeneigenschaften wie `member` und `memberOf` zu lesen. Wenn eine Gruppe z. B. einen oder mehrere [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) als Mitglieder besitzt, benötigt die App effektive Berechtigungen zum Lesen von Dienstprinzipalen, indem ihr eine der Berechtigungen vom Typ _Directory.\*_ gewährt wird, andernfalls gibt Microsoft Graph einen Fehler zurück. (Im Fall von delegierten Berechtigungen benötigt der angemeldete Benutzer außerdem ausreichende Rechte in der Organisation zum Lesen von Dienstprinzipalen.) Dasselbe gilt für die Eigenschaft `memberOf`, die [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta) zurückgeben kann.
 
-Gruppenberechtigungen werden auch verwendet, um den Zugriff auf [Microsoft Planner](/graph/api/resources/planner-overview?view=graph-rest-beta)-Ressourcen und -APIs zu steuern. Nur delegierte Berechtigungen werden für Microsoft Planner-APIs unterstützt; Anwendungsberechtigungen werden nicht unterstützt. Persönliche Microsoft-Konten werden nicht unterstützt.
+Gruppenberechtigungen werden zum Steuern des Zugriffs auf [Microsoft Teams](/graph/api/resources/teams-api-overview)-Ressourcen und APIs verwendet. 
+
+Gruppenberechtigungen werden auch verwendet, um den Zugriff auf [Microsoft Planner](/graph/api/resources/planner-overview)-Ressourcen und -APIs zu steuern. Nur delegierte Berechtigungen werden für Microsoft Planner-APIs unterstützt; Anwendungsberechtigungen werden nicht unterstützt. Persönliche Microsoft-Konten werden nicht unterstützt.
 
 
 ### <a name="example-usage"></a>Verwendungsbeispiel

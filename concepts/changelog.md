@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: a4d1250297b4bb0fc03915acbd3adf7dd41b7df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae38218b60e4ca0b69ac6a42b46a384ab6347c54
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882859"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328041"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -37,6 +37,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Ergänzungen | Beta | Neue `expirationDateTime`-Eigenschaft wurde zu [Gruppen](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-beta) für den [Gruppenablauf](https://docs.microsoft.com/de-DE/azure/active-directory/users-groups-roles/groups-lifecycle) hinzugefügt.|
 | Ergänzungen | Beta | Neuer Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) hinzugefügt.|
 | Ergänzungen | Beta | Eigenschaft `createdDateTime` zur Ressource [organization](/graph/api/resources/organization?view=graph-rest-beta) hinzugefügt.|
 | Ergänzung | v1.0 | Methode `memberOf` hinzugefügt, um die direkte [Mitgliedschaft](/graph/api/device-list-memberOf?view=graph-rest-1.0) eines [Geräts](/graph/api/resources/device?view=graph-rest-1.0) abzurufen. Diese Methode wurde zum Abrufen der Liste der Mitgliedschaften einschließlich geschachtelter Mitgliedschaften hinzugefügt.|
