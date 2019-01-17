@@ -3,12 +3,13 @@ title: AndroidEnterpriseWiFiConfiguration aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines AndroidEnterpriseWiFiConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef833a437b7a014eb9c51f759af0327990d76b41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 88c6cdf0d9313e44444824611ac0f4a677099bce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990642"
 ---
 # <a name="update-androidenterprisewificonfiguration"></a>AndroidEnterpriseWiFiConfiguration aktualisieren
 

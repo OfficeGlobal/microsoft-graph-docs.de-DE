@@ -3,12 +3,13 @@ title: Ressourcentyp „iosVppApp“
 description: Diese Ressource enthält die Eigenschaften und geerbten Eigenschaften einer iOS-VPP-App (Volume Purchase Program).
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c85fe2220a9bbc9df6933951c779c5d898eadab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 88e6df1df064e43d47b657a38b534ca6ebdd875c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888749"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987384"
 ---
 # <a name="iosvppapp-resource-type"></a>Ressourcentyp „iosVppApp“
 
@@ -35,7 +36,7 @@ Sie erbt von [mobileApp](../resources/intune-apps-mobileapp.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|

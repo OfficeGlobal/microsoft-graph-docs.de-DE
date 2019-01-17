@@ -3,12 +3,13 @@ title: Ressourcentyp iosVpnConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen, können Sie das Gerät iOS zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ab5b53c47022b106bbe337254d6f0b1043f83c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cc9269a7e1c096b9378ed8baac32f91e4652858
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849518"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939077"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>Ressourcentyp iosVpnConfiguration
 

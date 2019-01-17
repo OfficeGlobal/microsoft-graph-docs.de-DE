@@ -2,12 +2,13 @@
 title: Datenerweiterung erstellen
 description: Erstellen Sie eine open-Erweiterung (OpenTypeExtension-Objekt) und Hinzufügen von benutzerdefinierten Eigenschaften
 localization_priority: Normal
-ms.openlocfilehash: 363bd629b5b7c9041f36ce039403717f715e202c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 58df4ab2898abe0e49563de4b655eccacfdc91fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948569"
 ---
 # <a name="create-open-extension"></a>Datenerweiterung erstellen
 

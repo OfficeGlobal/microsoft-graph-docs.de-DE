@@ -3,12 +3,13 @@ title: Konfigurieren von Geräten in Microsoft Intune
 description: Mit der Workload „Microsoft Intune-Gerätekonfiguration“ können Sie die Einstellungen und Funktionen auf allen Geräten verwalten, die Sie betreuen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 358e432f595f58a950466bc18ebe4347b50dc04d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 812ce791484b6128ef65b2afe61cb2694bb7a529
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973713"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Konfigurieren von Geräten in Microsoft Intune
 

@@ -3,12 +3,13 @@ title: GetManagedDevicesWithAppFailures-Funktion
 description: Ruft die Liste der Geräte mit fehlerhaften apps
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cafda91617bfd183606877bfda352370f2364c9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 18b1a4275d623cf3d35d38db1d183bdd344e7cfe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890069"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918749"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>GetManagedDevicesWithAppFailures-Funktion
 
@@ -37,7 +38,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

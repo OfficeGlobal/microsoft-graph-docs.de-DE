@@ -3,12 +3,13 @@ title: Erstellen von „androidGeneralDeviceConfiguration“
 description: Diese Methode erstellt ein neues Objekt des Typs androidGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 779b93ce25eb9fe5044a166a78ac7d02ab77201c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd9bf764bae7a26a2987d1d34cbfa0683d8a0054
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968050"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Erstellen von „androidGeneralDeviceConfiguration“
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Kopfzeile|Wert|
+|Header|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,63 +50,63 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|appsBlockClipboardSharing|Boolean|Gibt an, ob die gemeinsame Nutzung der Zwischenablage zum Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
-|appsBlockCopyPaste|Boolean|Gibt an, ob Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
-|appsBlockYouTube|Boolean|Gibt an, ob die YouTube-App blockiert werden soll.|
-|bluetoothBlocked|Boolean|Gibt an, ob Bluetooth blockiert werden soll.|
-|cameraBlocked|Boolean|Gibt an, ob die Verwendung der Kamera blockiert werden soll.|
-|cellularBlockDataRoaming|Boolean|Gibt an, ob Datenroaming blockiert werden soll.|
-|cellularBlockMessaging|Boolean|Gibt an, ob SMS-/MMS-Nachrichten blockiert werden sollen.|
-|cellularBlockVoiceRoaming|Boolean|Gibt an, ob Sprachroaming blockiert werden soll.|
-|cellularBlockWifiTethering|Boolean|Gibt an, ob die Synchronisierung von WLAN-Tethering blockiert werden soll.|
+|appsBlockClipboardSharing|Boolescher Wert|Gibt an, ob die gemeinsame Nutzung der Zwischenablage zum Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
+|appsBlockCopyPaste|Boolescher Wert|Gibt an, ob Kopieren und Einfügen zwischen Anwendungen blockiert werden soll.|
+|appsBlockYouTube|Boolescher Wert|Gibt an, ob die YouTube-App blockiert werden soll.|
+|bluetoothBlocked|Boolescher Wert|Gibt an, ob Bluetooth blockiert werden soll.|
+|cameraBlocked|Boolescher Wert|Gibt an, ob die Verwendung der Kamera blockiert werden soll.|
+|cellularBlockDataRoaming|Boolescher Wert|Gibt an, ob Datenroaming blockiert werden soll.|
+|cellularBlockMessaging|Boolescher Wert|Gibt an, ob SMS-/MMS-Nachrichten blockiert werden sollen.|
+|cellularBlockVoiceRoaming|Boolescher Wert|Gibt an, ob Sprachroaming blockiert werden soll.|
+|cellularBlockWifiTethering|Boolescher Wert|Gibt an, ob die Synchronisierung von WLAN-Tethering blockiert werden soll.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
-|locationServicesBlocked|Boolean|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
-|googleAccountBlockAutoSync|Boolean|Gibt an, ob die automatische Synchronisierung von Google-Konten blockiert werden soll.|
-|googlePlayStoreBlocked|Boolean|Gibt an, ob der Google Play-Store blockiert werden soll.|
-|kioskModeBlockSleepButton|Boolean|Gibt an, ob die Standbytaste im Kioskmodus blockiert werden soll.|
-|kioskModeBlockVolumeButtons|Boolean|Gibt an, ob die Lautstärkeregler im Kioskmodus blockiert werden sollen.|
-|dateAndTimeBlockChanges|Boolean|Gibt an, ob veränderbaren Datum und Uhrzeit im Modus KNOX blockieren.|
+|diagnosticDataBlockSubmission|Boolescher Wert|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|locationServicesBlocked|Boolescher Wert|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
+|googleAccountBlockAutoSync|Boolescher Wert|Gibt an, ob die automatische Synchronisierung von Google-Konten blockiert werden soll.|
+|googlePlayStoreBlocked|Boolescher Wert|Gibt an, ob der Google Play-Store blockiert werden soll.|
+|kioskModeBlockSleepButton|Boolescher Wert|Gibt an, ob die Standbytaste im Kioskmodus blockiert werden soll.|
+|kioskModeBlockVolumeButtons|Boolescher Wert|Gibt an, ob die Lautstärkeregler im Kioskmodus blockiert werden sollen.|
+|dateAndTimeBlockChanges|Boolescher Wert|Gibt an, ob veränderbaren Datum und Uhrzeit im Modus KNOX blockieren.|
 |kioskModeApps|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Eine Liste der Apps, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Diese Collection darf maximal 500 Elemente enthalten.|
-|nfcBlocked|Boolean|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
-|passwordBlockFingerprintUnlock|Boolean|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
-|passwordBlockTrustAgents|Boolean|Gibt an, ob Smart Lock oder andere Vertrauensstellungs-Agents blockiert werden sollen.|
+|nfcBlocked|Boolescher Wert|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
+|passwordBlockFingerprintUnlock|Boolescher Wert|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
+|passwordBlockTrustAgents|Boolescher Wert|Gibt an, ob Smart Lock oder andere Vertrauensstellungs-Agents blockiert werden sollen.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts. Gültige Werte: 1 bis 365.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern. Gültige Werte: 4 bis 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, bevor es zu einem Bildschirmtimeout kommt|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird. Gültige Werte: 4 bis 11.|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` und `any`.|
-|passwordRequired|Boolean|Gibt an, ob ein Kennwort erforderlich ist.|
-|powerOffBlocked|Boolean|Gibt an, ob das Ausschalten des Geräts blockiert werden soll.|
-|factoryResetBlocked|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer eine Zurücksetzung auf die Werkseinstellungen durchführt.|
-|screenCaptureBlocked|Boolean|Gibt an, ob Screenshots blockiert werden sollen.|
-|deviceSharingAllowed|Boolean|Gibt an, ob der Gerätefreigabemodus zugelassen wird.|
-|storageBlockGoogleBackup|Boolean|Gibt an, ob die Google-Sicherung blockiert werden soll.|
-|storageBlockRemovableStorage|Boolean|Gibt an, ob die Verwendung von Wechselmedien blockiert werden soll.|
-|storageRequireDeviceEncryption|Boolean|Gibt an, ob eine Geräteverschlüsselung erforderlich ist.|
-|storageRequireRemovableStorageEncryption|Boolean|Gibt an, ob die Verschlüsselung von Wechselmedien erforderlich ist.|
-|voiceAssistantBlocked|Boolean|Gibt an, ob die Verwendung des Sprach-Assistenten blockiert werden soll.|
-|voiceDialingBlocked|Boolean|Gibt an, ob das Sprachwahlverfahren blockiert werden soll.|
-|webBrowserBlockPopups|Boolean|Gibt an, ob Popups innerhalb des Webbrowsers blockiert werden sollen.|
-|webBrowserBlockAutofill|Boolean|Gibt an, ob das AutoAusfüllen-Feature des Webbrowsers blockiert werden soll.|
-|webBrowserBlockJavaScript|Boolean|Gibt an, ob JavaScript im Webbrowser blockiert werden soll.|
-|webBrowserBlocked|Boolean|Gibt an, ob der Webbrowser blockiert werden soll.|
+|passwordRequired|Boolescher Wert|Gibt an, ob ein Kennwort erforderlich ist.|
+|powerOffBlocked|Boolescher Wert|Gibt an, ob das Ausschalten des Geräts blockiert werden soll.|
+|factoryResetBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer eine Zurücksetzung auf die Werkseinstellungen durchführt.|
+|screenCaptureBlocked|Boolescher Wert|Gibt an, ob Screenshots blockiert werden sollen.|
+|deviceSharingAllowed|Boolescher Wert|Gibt an, ob der Gerätefreigabemodus zugelassen wird.|
+|storageBlockGoogleBackup|Boolescher Wert|Gibt an, ob die Google-Sicherung blockiert werden soll.|
+|storageBlockRemovableStorage|Boolescher Wert|Gibt an, ob die Verwendung von Wechselmedien blockiert werden soll.|
+|storageRequireDeviceEncryption|Boolescher Wert|Gibt an, ob eine Geräteverschlüsselung erforderlich ist.|
+|storageRequireRemovableStorageEncryption|Boolescher Wert|Gibt an, ob die Verschlüsselung von Wechselmedien erforderlich ist.|
+|voiceAssistantBlocked|Boolescher Wert|Gibt an, ob die Verwendung des Sprach-Assistenten blockiert werden soll.|
+|voiceDialingBlocked|Boolescher Wert|Gibt an, ob das Sprachwahlverfahren blockiert werden soll.|
+|webBrowserBlockPopups|Boolescher Wert|Gibt an, ob Popups innerhalb des Webbrowsers blockiert werden sollen.|
+|webBrowserBlockAutofill|Boolescher Wert|Gibt an, ob das AutoAusfüllen-Feature des Webbrowsers blockiert werden soll.|
+|webBrowserBlockJavaScript|Boolescher Wert|Gibt an, ob JavaScript im Webbrowser blockiert werden soll.|
+|webBrowserBlocked|Boolescher Wert|Gibt an, ob der Webbrowser blockiert werden soll.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Cookieeinstellungen des Webbrowsers. Mögliche Werte sind: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` und `allowAlways`.|
-|wiFiBlocked|Boolean|Gibt an, ob die WLAN-Synchronisierung blockiert werden soll.|
+|wiFiBlocked|Boolescher Wert|Gibt an, ob die WLAN-Synchronisierung blockiert werden soll.|
 |appsInstallAllowList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät installiert werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
 |appsLaunchBlockList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät nicht gestartet werden dürfen. Diese Collection darf maximal 500 Elemente enthalten.|
 |appsHideList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste von Apps, die auf dem KNOX-Gerät ausgeblendet werden sollen. Diese Collection darf maximal 500 Elemente enthalten.|
-|securityRequireVerifyApps|Boolean|Legt fest, dass die Android-Funktion „Verify Apps“ aktiviert sein muss.|
+|securityRequireVerifyApps|Boolescher Wert|Legt fest, dass die Android-Funktion „Verify Apps“ aktiviert sein muss.|
 
 
 

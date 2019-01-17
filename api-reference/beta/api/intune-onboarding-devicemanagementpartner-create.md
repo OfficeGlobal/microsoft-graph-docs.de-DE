@@ -3,12 +3,13 @@ title: deviceManagementPartner erstellen
 description: Erstellen eines neuen deviceManagementPartner-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38a21c8e069a3a071d43111f8542972ccc70e546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9ff6eab5bf04277d89616765fb14855d047450c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991083"
 ---
 # <a name="create-devicemanagementpartner"></a>deviceManagementPartner erstellen
 

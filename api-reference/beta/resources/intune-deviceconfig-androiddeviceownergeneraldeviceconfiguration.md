@@ -2,12 +2,14 @@
 title: Ressourcentyp androidDeviceOwnerGeneralDeviceConfiguration
 description: Dieses Thema enthält eine Beschreibung der deklarierten Methoden, Eigenschaften und Beziehungen, die durch die AndroidDeviceOwnerGeneralDeviceConfiguration Ressource verfügbar gemacht werden.
 localization_priority: Normal
-ms.openlocfilehash: 4388c7a79a1db16df92bfa55ec0e205da692fb1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: ba0da32f6a5a3914b30fa7c0a2f13d0d583d7899
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978277"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Ressourcentyp androidDeviceOwnerGeneralDeviceConfiguration
 
