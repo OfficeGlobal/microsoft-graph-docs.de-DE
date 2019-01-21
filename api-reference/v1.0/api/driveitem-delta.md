@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
 localization_priority: Priority
-ms.openlocfilehash: edf47b1ab6ecd910a5ad2dbc2e87454963a12555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: sharepoint
+ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987846"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -19,7 +20,7 @@ Die App ruft zunächst `delta` ohne Parameter auf. Der Dienst startet dann eine 
 
 Sobald alle Änderungen empfangen wurden, können Sie sie auf den lokalen Zustand anwenden. Wenn Sie zu einem späteren Zeitpunkt nochmals auf Änderungen prüfen möchten, rufen Sie erneut `delta` auf, mit dem `@odata.deltaLink` aus der vorherigen Antwort.
 
-Gelöschte Elemente werden mit dem [`deleted`Facet](../resources/deleted.md) zurückgegeben. Elemente, für die diese Eigenschaft gesetzt ist, sollten Sie aus Ihrem lokalen Zustand entfernen. 
+Gelöschte Elemente werden mit dem [`deleted`-Facet](../resources/deleted.md) zurückgegeben. Elemente, für die diese Eigenschaft festgelegt ist, sollten aus dem lokalen Zustand entfernt werden. 
 
 **Hinweis:** Löschen Sie Ordner nur lokal, wenn sie nach der Synchronisierung aller Änderungen leer sind.
 
@@ -49,7 +50,7 @@ GET /users/{userId}/drive/root/delta
 
 | Parameter   | Typ  | Beschreibung                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. Wenn Sie nicht angegeben ist, zählt aktuellen Status der Hierarchie. Wenn `latest`, gibt eine leere Antwort mit dem neuesten Delta-Token. Wenn eine frühere Delta-Token gibt neuen Status seit Token zurück.
+| token  | string | Optional. Falls nicht angegeben, wird der aktuelle Status der Hierarchie aufgelistet. Für `latest` wird eine leere Antwort mit dem neuesten Delta-Token zurückgegeben. Im Fall eines vorherigen Delta-Token wird der neue Status seit diesem Token zurückgegeben.
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
@@ -198,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * Der „delta“-Feed zeigt den aktuellen Zustand jedes Elements, nicht jede Änderung. Wenn ein Element beispielsweise zweimal umbenannt wurde, wird es nur einmal angezeigt, mit seinem neuesten Namen.
 * Ein Element kann mehrmals in einem „delta“-Feed aufgeführt werden, aus jeweils unterschiedlichen Gründen. Verwenden Sie das letzte Vorkommen in der Auflistung.

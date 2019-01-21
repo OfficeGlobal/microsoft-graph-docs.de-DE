@@ -2,43 +2,44 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Website
+title: Site
 localization_priority: Priority
-ms.openlocfilehash: fb91e9bada227f1a22cf862726ea0b6f658fe469
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: sharepoint
+ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952349"
 ---
-# <a name="site-resource-type"></a>Website-Ressourcentyp
+# <a name="site-resource-type"></a>Site-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Die **site**-Ressource stellt Metadaten und Beziehungen für eine SharePoint-Website bereit.
 
 ## <a name="methods"></a>Methoden
 
-| Methode                         | REST-Pfad
+| Method                         | REST-Pfad
 |:-------------------------------|:--------------------------------------------
 | [Stammwebsite abrufen][]              | GET /sites/root
 | [Website abrufen][]                   | GET /sites/{site-id}
 | [Website nach Pfad abrufen][]           | GET /sites/{hostname}:/{site-path}
 | [Website für eine Gruppe abrufen][]       | GET /groups/{group-id}/sites/root
-| [Abrufen von analytics][]              | GET/Sites / {Site-Id} / Analytics
-| [Abrufen von Aktivitäten nach Intervall][] | GET/Sites / {Site-Id} / GetActivitiesByInterval
-| [Seiten auflisten][]                 | GET/Sites / {Site-Id} / pages
-| [Stamm Websites aufgelistet werden sollen][]            | GET/Sites? Filter = Root Ne null & select = SiteCollection WebUrl
+| [Analysen abrufen][]              | GET /sites/{site-id}/analytics
+| [Aktivitäten nach Intervall abrufen][] | GET /sites/{site-id}/getActivitiesByInterval
+| [Seiten auflisten][]                 | GET /sites/{site-id}/pages
+| [Stammwebsites auflisten][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Nach Websites suchen][]           | GET /sites?search={query}
 
 [Website abrufen]: ../api/site-get.md
 [Stammwebsite abrufen]: ../api/site-get.md
 [Website nach Pfad abrufen]: ../api/site-getbypath.md
 [Website für eine Gruppe abrufen]: ../api/site-get.md
-[Abrufen von analytics]: ../api/itemanalytics-get.md
-[Abrufen von Aktivitäten nach Intervall]: ../api/itemactivity-getbyinterval.md
+[Analysen abrufen]: ../api/itemanalytics-get.md
+[Aktivitäten nach Intervall abrufen]: ../api/itemactivity-getbyinterval.md
 [Seiten auflisten]: ../api/sitepage-list.md
-[Stamm Websites aufgelistet werden sollen]: ../api/site-list.md
+[Stammwebsites auflisten]: ../api/site-list.md
 [Nach Websites suchen]: ../api/site-search.md
 
 
@@ -62,14 +63,14 @@ Die **site**-Ressource stellt Metadaten und Beziehungen für eine SharePoint-Web
 
 | Beziehungsname | Typ                             | Beschreibung
 |:------------------|:---------------------------------|:----------------------
-| **Analytics**     | [ItemAnalytics][] -Ressource       | Analytics über die Aktivitäten anzeigen, die auf dieser Site durchgeführt wurde.
+| **analytics**     | [itemAnalytics][]-Ressource       | Analysen zu den Anzeigeaktivitäten, die auf dieser Website stattgefunden haben.
 | **columns**       | Sammlung ([ColumnDefinition][]) | Die Sammlung der wiederverwendbaren Spaltendefinitionen von Listen unterhalb dieser Website.
 | **contentTypes**  | Sammlung ([contentType][])      | Die Sammlung von für diese Website definierten Inhaltstypen.
 | **drive**         | [drive][]                        | Das Standardlaufwerk (Dokumentbibliothek) für diese Website.
 | **drives**        | Sammlung ([drive][])            | Die Sammlung von Laufwerken (Dokumentbibliotheken) unter dieser Website.
 | **items**         | Sammlung ([baseItem][])         | Wird verwendet, um ein beliebiges in dieser Website enthaltenes Element zu adressieren. Diese Sammlung kann nicht aufgezählt werden.
 | **Listen**         | Sammlung ([Liste][])             | Die Sammlung der Listen unter dieser Website.
-| **Seiten**         | Auflistung ([SitePage][])         | Die Auflistung von Seiten in der Liste SitePages auf dieser Site.
+| **pages**         | Sammlung([sitePage][])         | Die Sammlung von Seiten in der SitePages-Liste auf dieser Website.
 | **sites**         | Sammlung ([site][])             | Die Sammlung der Unterwebsites unter dieser Website.
 
 [columnDefinition]: columndefinition.md
@@ -81,7 +82,7 @@ Die **site**-Ressource stellt Metadaten und Beziehungen für eine SharePoint-Web
 [list]: list.md
 [sitePage]: sitepage.md
 [root]: root.md
-[Website]: site.md
+[site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 
@@ -89,7 +90,7 @@ Die **site**-Ressource stellt Metadaten und Beziehungen für eine SharePoint-Web
 
 Es folgt eine JSON-Darstellung einer **site**-Ressource.
 
-Die **site**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und erbt Eigenschaften von dieser Ressource.
+Die **site**-Ressource wird von [ **baseItem**](baseitem.md) abgeleitet und erbt Eigenschaften von dieser Ressource.
 
 <!--{
   "blockType": "resource",
