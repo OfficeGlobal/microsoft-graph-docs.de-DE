@@ -3,16 +3,17 @@ title: Nachricht aktualisieren
 description: Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjekts aktualisieren.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 24705fbf986f9ecf1142e66d189ae2071e1be223
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: outlook
+ms.openlocfilehash: c3564d5f48cb3b3e12e18a07d605fcd3eba01291
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922543"
 ---
 # <a name="update-message"></a>Nachricht aktualisieren
 
-Aktualisieren Sie die Eigenschaften des Message-Objekts.
+Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjekts aktualisieren.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -40,23 +41,23 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bccRecipients|Empfänger|Die Bcc-Empfänger der Nachricht. |
-|body|ItemBody|Der Text der Nachricht. Aktualisierbare nur, wenn IsDraft = True.|
-|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|ccRecipients|Recipient collection|Die Cc-Empfänger der Nachricht. |
-|Von|Empfänger|Der Postfachbesitzer und der Absender der Nachricht. Muss das tatsächliche Postfach verwendet entsprechen.|
-|Wichtigkeit|Zeichenfolge|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
-|inferenceClassification | Zeichenfolge | Die Klassifizierung der Nachricht für Benutzer, basierend auf abgeleiteten Relevanz oder Wichtigkeit oder auf eine explizite Außerkraftsetzung vorliegt. Die möglichen Werte sind: `focused` oder `other`. |
-|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Aktualisierbare nur, wenn IsDraft = True.|
-|isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
-|isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der Mehrfachwert erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
-|replyTo|Recipient collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Aktualisierbare nur, wenn IsDraft = True.|
-|sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Aktualisierbare beim Senden einer Nachricht von einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)oder Senden einer Nachricht als [Delegieren](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Der Wert muss in jedem Fall das tatsächliche Postfach verwendet entsprechen.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Auflistung der einwertig erweiterte Eigenschaften für die Nachricht definiert ist. Lässt Nullwerte zu.|
-|Betreff|Zeichenfolge|Der Betreff der Nachricht. Aktualisierbare nur, wenn IsDraft = True.|
-|toRecipients|Recipient collection|Die an-Empfänger der Nachricht.|
+|bccRecipients|Empfänger|Die Bcc:-Empfänger der Nachricht. |
+|body|ItemBody|Der Text der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
+|categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|ccRecipients|Empfänger-Sammlung|Die Cc:-Empfänger der Nachricht. |
+|from|Empfänger|Der Postfachbesitzer und Absender der Nachricht. Muss dem tatsächlich verwendeten Postfach entsprechen.|
+|importance|Zeichenfolge|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
+|inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Die möglichen Werte sind: `focused` oder `other`. |
+|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn isDraft = True.|
+|isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
+|isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|replyTo|Empfänger-Sammlung|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Kann nur aktualisiert werden, wenn isDraft = True.|
+|sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Kann beim Senden einer Nachricht aus einem [freigegebenen Postfach](https://docs.microsoft.com/de-DE/exchange/collaboration/shared-mailboxes/shared-mailboxes) oder beim Senden einer Nachricht als[Stellvertretung](https://support.office.com/de-DE/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) aktualisiert werden. Der Wert muss auf jeden Fall dem tatsächlich verwendeten Postfach entsprechen.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|subject|String|Der Betreff der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
+|toRecipients|Empfänger-Sammlung|Die An:-Empfänger der Nachricht.|
 
 Da die **message**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **message**-Instanzen.
 
@@ -110,7 +111,7 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)

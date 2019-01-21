@@ -1,61 +1,63 @@
 ---
 title: Gruppen-Ressourcentyp
-description: Stellt eine Gruppe Azure Active Directory (AD Azure), die eine Office 365-Gruppe, ein Team in Microsoft-Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe sein kann.
+description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der es sich um eine Office 365-Gruppe, ein Team in Microsoft Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln kann.
 localization_priority: Priority
-ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: b9f4e249c763b7617e946432d10f33166173dd84
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866892"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328013"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Stellt eine Gruppe Azure Active Directory (AD Azure), die eine Office 365-Gruppe, ein Team in Microsoft-Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe sein kann.
+Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der es sich um eine Office 365-Gruppe, ein Team in Microsoft Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln kann.
 Erbt von [directoryObject](directoryobject.md).
 
 Diese Ressource unterstützt Folgendes:
 
-- Hinzufügen von Ihren eigenen Daten zu benutzerdefinierten Eigenschaften als [Extensions](/graph/extensibility-overview).
-- Abonnieren von [Benachrichtigungen zu ändern](/graph/webhooks).
+- Hinzufügen Ihrer eigenen Daten zu benutzerdefinierten Eigenschaften als [Erweiterungen](/graph/extensibility-overview).
+- Abonnieren von [Änderungsbenachrichtigungen](/graph/webhooks).
 - Verwenden einer [Delta-Abfrage](/graph/delta-query-overview) zum Nachverfolgen von inkrementellen Hinzufügungen, Löschungen und Aktualisierungen durch Bereitstellen der [delta](../api/user-delta.md)-Funktion.
 
-> **Microsoft-Teams und Office 365 Gruppen unterstützen die Zusammenarbeit von Gruppen**. Sie können die meisten der Office 365-API-Gruppen mit Microsoft-Teams verwenden. Um ein [Team](team.md), erste [Gruppe erstellen](../api/group-post-groups.md) und dann auf [Hinzufügen ein Team, um es](../api/team-put-teams.md)zu erstellen. Weitere Informationen hierzu finden Sie unter [Übersicht über die Microsoft-Teams](teams-api-overview.md).
+> **Microsoft Teams- und Office 365-Gruppen unterstützen Gruppenzusammenarbeit**. Der Großteil der Office 365-Gruppen-API kann mit Microsoft Teams verwendet werden. Um ein [Team](team.md) zu erstellen, müssen Sie zuerst eine [Gruppe erstellen](../api/group-post-groups.md) und dann [ein Team zur Gruppe hinzufügen](../api/team-put-teams.md). Weitere Informationen finden Sie in der [Übersicht über Microsoft Teams](teams-api-overview.md).
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |**Gruppenverwaltung**| | |
-|[Gruppe erstellen](../api/group-post-groups.md) | [Gruppe](group.md) |Erstellen einer neuen Gruppe wie angegeben. Sie können eine Gruppe von Office 365, dynamische Gruppe, Sicherheitsgruppe oder Team sein.|
-|[Gruppe abrufen](../api/group-get.md) | [group](group.md) |Eigenschaften lesen und Beziehungen des Group-Objekt.|
+|[Gruppe erstellen](../api/group-post-groups.md) | [group](group.md) |Erstellt eine neue Gruppe gemäß den Angaben. Dabei kann es sich um eine Office 365-Gruppe, eine dynamische Gruppe, eine Sicherheitsgruppe oder ein Team handeln.|
+|[Gruppe abrufen](../api/group-get.md) | [group](group.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des group-Objekts.|
 |[Gruppe aktualisieren](../api/group-update.md) | Keine |Aktualisiert die Eigenschaften eines Gruppenobjekts. |
 |[Gruppe löschen](../api/group-delete.md) | Keiner |Löscht das Gruppenobjekt. |
 |[delta](../api/group-delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
 |[List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung| Dient zum Auflisten der Gruppenlebenszyklusrichtlinien. |
-|[Besitzer auflisten](../api/group-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Eigentümer der Gruppe aus der **owners**-Navigationseigenschaft ab.|
-|[Add owner](../api/group-post-owners.md) |[directoryObject](directoryobject.md)| Fügt einen neuen Besitzer zur Gruppe durch Bereitstellen an die **owners**-Navigationseigenschaft bereit (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
+|[Besitzer auflisten](../api/group-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Besitzer der Gruppe aus der **owners**-Navigationseigenschaft ab.|
+|[Besitzer hinzufügen](../api/group-post-owners.md) |[directoryObject](directoryobject.md)| Fügt einen neuen Besitzer zur Gruppe durch Bereitstellen an die **owners**-Navigationseigenschaft hinzu (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
 |[Besitzer entfernen](../api/group-delete-owners.md) | Keiner |Entfernt einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe über die **owners**-Navigationseigenschaft.|
 |[Mitglieder auflisten](../api/group-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer und Gruppen, die direkte Mitglieder dieser Gruppe sind, aus der **members**-Navigationseigenschaft ab.|
-|[Transitive Listenmitglieder](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Benutzer, Gruppen, Geräte und Service-Prinzipale, die Mitglieder, einschließlich geschachtelter Mitglieder dieser Gruppe sind.|
+|[Transitive Mitglieder auflisten](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, Gruppen, Geräte und Dienstprinzipale ab, die Mitglieder sind, einschließlich der geschachtelten Mitglieder dieser Gruppe.|
 |[Mitglied hinzufügen](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Fügt dieser Gruppe einen Benutzer oder eine Gruppe durch Bereitstellung an die **members**-Navigationseigenschaft hinzu (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
 |[Mitglied entfernen](../api/group-delete-members.md) | Keine |Entfernt ein Mitglied aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe anhand der **members**-Navigationseigenschaft. Sie können Benutzer oder andere Gruppen entfernen. |
-|[memberOf auflisten](../api/group-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Gruppen und administrative Einheiten, die dieser Gruppe ein direktes Mitglied in der Navigationseigenschaft Mitglied ist.|
-|[Transitive Mitglied Liste](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Liste der Gruppen und administrative Einheiten, denen dieser Benutzer ein Mitglied ist. Dieser Vorgang ist transitiv und enthält die Gruppen, denen dieser Gruppe geschachtelte Mitglied ist. |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|Zeichenfolgenauflistung|Überprüfen Sie die Mitgliedschaft in einer Liste von Gruppen. Die Funktion ist transitiv.|
-|[getMemberGroups](../api/group-getmembergroups.md)|Zeichenfolgenauflistung|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv.|
-|[getMemberObjects](../api/group-getmemberobjects.md)|Zeichenfolgenauflistung|Zurückgeben Sie aller Gruppen und administrative Einheiten, denen die Gruppe ein Mitglied ist. Die Funktion ist transitiv. |
-|[Einstellung erstellen](../api/directorysetting-post-settings.md) | [Verzeichnisberechtigungen](directorysetting.md) |Erstellen einer Einstellungsobjekt basierend auf einer DirectorySettingTemplate. Die POST-Anforderung muss EinstellenWerte für alle in der Vorlage definierten Einstellungen angeben. Für diesen Vorgang dürfen nur bestimmten Gruppen-Vorlagen verwendet werden.|
-|[Einstellung abrufen](../api/directorysetting-get.md) | [Verzeichnisberechtigungen](directorysetting.md) |Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts.|
-|[Einstellungen auflisten](../api/directorysetting-list.md) | [Verzeichnisberechtigungen](directorysetting.md) -Auflistung |Listet Eigenschaften aller Einstellungsobjekte auf.|
-|[Einstellung aktualisieren](../api/directorysetting-update.md) | [Verzeichnisberechtigungen](directorysetting.md)  |Aktualisiert ein Einstellungsobjekt. |
+|[memberOf auflisten](../api/group-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Gruppen und administrativen Einheiten, in denen diese Gruppe ein direktes Mitglied ist, aus der memberOf-Navigationseigenschaft ab.|
+|[Transitive memberOf auflisten](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Listet die Gruppen und administrativen Einheiten auf, bei denen der Benutzer Mitglied ist. Dieser Vorgang ist transitiv und schließt die Gruppen ein, in denen diese Gruppe ein geschachteltes Mitglied. |
+|[checkMemberGroups](../api/group-checkmembergroups.md)|Zeichenfolgenauflistung|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Funktion ist transitiv.|
+|[getMemberGroups](../api/group-getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv.|
+|[getMemberObjects](../api/group-getmemberobjects.md)|Zeichenfolgenauflistung|Gibt alle Gruppen und administrativen Einheiten zurück, in denen der Benutzer Mitglied ist. Die Funktion ist transitiv. |
+|[Einstellung erstellen](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Erstellt ein Einstellungsobjekt basierend auf einer directorySettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen angeben, die in der Vorlage definiert sind. Für diesen Vorgang können nur gruppenspezifische Vorlagen verwendet werden.|
+|[Einstellung abrufen](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts.|
+|[Einstellungen auflisten](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) collection |Listet Eigenschaften aller Einstellungsobjekte auf.|
+|[Einstellung aktualisieren](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Aktualisiert ein Einstellungsobjekt. |
 |[Einstellung löschen](../api/directorysetting-delete.md) | Keine |Löscht ein Einstellungsobjekt. |
-|[Endpunkte auflisten](../api/group-list-endpoints.md) |[Endpunkt](endpoint.md) -Auflistung| Rufen Sie eine Auflistung der Endpunkt-Objekts. |
-|[Get-Endpunkt](../api/endpoint-get.md) | [Endpunkt](endpoint.md) | Lesen Sie Eigenschaften und Beziehungen eines Endpunkts-Objekts. |
-|[delta](../api/group-delta.md)|group-Sammlung| Dient zum Abrufen inkrementeller Änderungen für Gruppen. |
-|[validateProperties](../api/group-validateproperties.md)|JSON| Anzeigenamen ein Office 365-Gruppe zu überprüfen, oder e-Mail-Spitzname naming Richtlinien entspricht. | 
+|[Endpunkte auflisten](../api/group-list-endpoints.md) |[endpoint](endpoint.md)-Sammlung| Ruft eine Endpunktobjektsammlung ab. |
+|[Endpunkt abrufen](../api/endpoint-get.md) | [endpoint](endpoint.md) | Dient zum Lesen der Eigenschaften und der Beziehungen des endpoint-Objekts. |
+|[delta](../api/group-delta.md)|group-Sammlung| Ruft inkrementelle Änderungen für Gruppen ab. |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Überprüft, ob der Anzeigename oder E-Mail-Kontoname einer Office 365-Gruppe den Benennungsrichtlinien entspricht. | 
 |**Calendar**| | |
 |[Ereignis erstellen](../api/group-post-events.md) |[Ereignis](event.md)| Erstellt ein neues Ereignis durch Veröffentlichen in der Ereignissammlung.|
 |[Ereignis abrufen](../api/group-get-event.md) |[Ereignis](event.md)|Liest die Eigenschaften eines Ereignisobjekts.|
@@ -71,7 +73,7 @@ Diese Ressource unterstützt Folgendes:
 |[Thread abrufen](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Liest die Eigenschaften eines Threadobjekts.|
 |[Threads auflisten](../api/group-list-threads.md) |[conversationThread](conversationthread.md)-Sammlung| Ruft alle Threads einer Gruppe ab.|
 |[Thread aktualisieren](../api/group-update-thread.md) |Keine| Aktualisiert die Eigenschaften eines Threadobjekts.|
-|[Thread löschen](../api/group-delete-thread.md) |Keine| Löschen Sie die Thread-Objekt
+|[Thread löschen](../api/group-delete-thread.md) |Keine| Löscht das Threadobjekt.
 |[acceptedSenders auflisten](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft eine Liste von Benutzern oder Gruppen ab, die sich in der Liste der acceptedSenders für diese Gruppe befinden.|
 |[acceptedSender hinzufügen](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Fügt einen Benutzer oder eine Gruppe zur acceptSenders-Sammlung hinzu.|
 |[acceptedSender entfernen](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Entfernt einen Benutzer oder eine Gruppe aus der acceptedSenders-Sammlung.|
@@ -90,54 +92,55 @@ Diese Ressource unterstützt Folgendes:
 |[addFavorite](../api/group-addfavorite.md)|Keine|Fügt die Gruppe zu der Liste der Favoritengruppen des aktuellen Benutzers hinzu. Wird nur für Office 365-Gruppen unterstützt.|
 |[removeFavorite](../api/group-removefavorite.md)|Keine|Entfernt die Gruppe aus der Liste der Favoritengruppen des aktuellen Benutzers. Wird nur für Office 365-Gruppen unterstützt.|
 |[memberOf auflisten](../api/group-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Gruppen und administrativen Einheiten, bei denen dieser Benutzer direktes Mitglied ist, aus der **memberOf**-Navigationseigenschaft ab.|
-|[joinedTeams auflisten](../api/user-list-joinedteams.md) |[Gruppensammlung](group.md)| Rufen Sie die Microsoft-Teams, die der Benutzer ein direktes Mitglied ist.|
-|[subscribeByMail](../api/group-subscribebymail.md)|Keine|Die IsSubscribedByMail-Eigenschaft auf **true**festgelegt. Aktivieren den aktuellen Benutzer zum Empfangen von e-Mail-Unterhaltungen. Unterstützt nur die Office 365-Gruppen.|
-|[unsubscribeByMail](../api/group-unsubscribebymail.md)|Keine|Legen Sie die IsSubscribedByMail-Eigenschaft auf **false fest**. Deaktivieren den aktuellen Benutzer aus e-Mail-Unterhaltungen empfangen. Unterstützt nur die Office 365-Gruppen.|
-|[resetUnseenCount](../api/group-resetunseencount.md)|Keine|Setzen Sie die UnseenCount auf 0 der alle Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht erkannt wurde. Unterstützt nur die Office 365-Gruppen.|
+|[joinedTeams auflisten](../api/user-list-joinedteams.md) |[group](group.md)-Sammlung| Ruft die Microsoft-Teams an, in denen der Benutzer ein direktes Mitglied ist.|
+|[subscribeByMail](../api/group-subscribebymail.md)|Keiner|Legt die Eigenschaft „IsSubscribedByMail“ auf **true** fest. Aktiviert den aktuellen Benutzer für den Erhalt von E-Mail-Unterhaltungen. Wird nur für Office 365-Gruppen unterstützt.|
+|[unsubscribeByMail](../api/group-unsubscribebymail.md)|Keiner|Legt die Eigenschaft „isSubscribedByMail“ auf **false** fest. Deaktiviert den aktuellen Benutzer für den Erhalt von E-Mail-Unterhaltungen. Wird nur für Office 365-Gruppen unterstützt.|
+|[resetUnseenCount](../api/group-resetunseencount.md)|Keiner|Setzt das unseenCount-Element aller Beiträge, die der aktuelle Benutzer seit dem letzten Besuch noch nicht gesehen hat, auf 0 zurück. Wird nur für Office 365-Gruppen unterstützt.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolescher Wert|Der Standardwert ist **false**. Gibt an, ob Personen außerhalb der Organisation Nachrichten an die Gruppe senden können.|
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die der Gruppe zugewiesen sind. Schreibgeschützt.|
+|assignedLicenses|[assignedLicense](assignedlicense.md)-Sammlung|Die Lizenzen, die der Gruppe zugewiesen sind. Schreibgeschützt.|
 |autoSubscribeNewMembers|Boolean|Der Standardwert ist **false**. Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird.|
 |Klassifikation|Zeichenfolge|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](directorysetting.md)-Werts basierend auf der [Vorlagendefinition](directorysettingtemplate.md) erstellt.|
 |createdDateTime|DateTimeOffset| Zeitstempel der Gruppenerstellung. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
-|description|Zeichenfolge|Eine optionale Beschreibung für die Gruppe.|
-|displayName|Zeichenfolge|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
-|groupTypes|Zeichenfolgenauflistung| Gibt den Typ der Gruppe zu erstellen. Mögliche Werte sind `Unified` zum Erstellen einer Gruppe Office 365 oder `DynamicMembership` für dynamische Gruppen.  Für alle anderen Gruppe Typen, wie Sicherheit-aktivierten Gruppen und e-Mail-aktivierte Sicherheitsgruppen diese Eigenschaft nicht festlegen.|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|description|String|Eine optionale Beschreibung für die Gruppe.|
+|displayName|String|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht deaktiviert werden. Unterstützt $Filter und $orderby.|
+|expirationDateTime|DateTimeOffset| Zeitstempel des festgelegten Ablaufs der Gruppe. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
+|groupTypes|Zeichenfolgenauflistung| Gibt den Typ der zu erstellenden Gruppe an. Mögliche Werte sind `Unified` zum Erstellen einer Office 365-Gruppe oder `DynamicMembership` für dynamische Gruppen.  Legen Sie für alle anderen Gruppentypen wie Gruppen mit aktivierter Sicherheit und E-Mail-fähige Sicherheitsgruppen diese Eigenschaft nicht fest.|
+|id|String|Eindeutiger Bezeichner für die Gruppe. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isSubscribedByMail|Boolean|Der Standardwert ist **true**. Gibt an, ob der aktuelle Benutzer den Erhalt von E-Mail-Unterhaltungen abonniert hat.|
-|licenseProcessingState|Zeichenfolge|Status der Gruppe Lizenz Zuordnung an alle Mitglieder der Gruppe angibt. Schreibgeschützt. Mögliche Werte: `QueuedForProcessing`, `ProcessingInProgress`, und `ProcessingComplete`.|
-|mail|Zeichenfolge|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
+|licenseProcessingState|Zeichenfolge|Gibt den Status der Gruppenlizenzzuweisung an alle Mitglieder der Gruppe an. Schreibgeschützt. Mögliche Werte: `QueuedForProcessing`, `ProcessingInProgress` und `ProcessingComplete`.|
+|mail|String|Die SMTP-Adresse für die Gruppe ein, z. B. „serviceadmins@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe.|
 |mailNickname|String|Der E-Mail-Alias für die Gruppe (eindeutig in der Organisation). Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. Unterstützt $filter.|
-|membershipRule|Zeichenfolge|Die Regel, die Mitglieder dieser Gruppe bestimmt, ob die Gruppe eine dynamische Gruppe ist (GroupTypes enthält `DynamicMembership`). Weitere Informationen zur Syntax der Mitgliedschaftsregel finden Sie unter [Regeln für die Mitgliedschaft syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
-|membershipRuleProcessingState|Zeichenfolge|Gibt an, ob die Verarbeitung der dynamischen Mitgliedschaft ist fehlerhaft oder angehalten. Mögliche Werte sind "Auf" oder "Angehalten"|
-|onPremisesLastSyncDateTime|DateTimeOffset|Gibt das letzte Mal an dem das Objekt mit dem lokalen Verzeichnis synchronisiert wurde. Der Zeitstempeltyp stellt Informationen zum Datum und Uhrzeit mit ISO 8601-Format dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. Unterstützt $filter.|
-|onPremisesProvisioningErrors|[OnPremisesProvisioningError](onpremisesprovisioningerror.md) -Auflistung| Fehler beim Microsoft Synchronisierung während der Bereitstellung verwenden. |
-|onPremisesSecurityIdentifier|Zeichenfolge|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
+|membershipRule|Zeichenfolge|Die Regel, die Mitglieder dieser Gruppe bestimmt, wenn die Gruppe eine dynamische Gruppe ist (enthält `DynamicMembership`). Weitere Informationen zur Syntax der Mitgliedschaftsregel finden Sie unter [Regeln für eine dynamische Mitgliedschaft](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
+|membershipRuleProcessingState|Zeichenfolge|Gibt an, ob die Verarbeitung der dynamischen Mitgliedschaft aktiv ist oder angehalten wurde. Mögliche Werte sind „On“ oder „Paused“.|
+|onPremisesLastSyncDateTime|DateTimeOffset|Gibt den Zeitpunkt der letzten Synchronisierung des Objekts mit dem lokalen Verzeichnis an. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. Unterstützt $filter.|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)-Sammlung| Fehler bei Verwendung eines Microsoft-Synchronisierungsprodukts während der Bereitstellung. |
+|onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für die Gruppe, die von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt. Unterstützt $filter.|
-|preferredDataLocation|Zeichenfolge|Die bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für ein Office 365-Gruppe. Führen Sie die ISO 639-1-Code sollte; beispielsweise "En-US".|
-|proxyAddresses|Zeichenfolgenauflistung| Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` **any** -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Schreibgeschützt. Lässt keine Nullwerte zu. Unterstützt $filter. |
+|preferredDataLocation|Zeichenfolge|Der bevorzugte Datenspeicherort für die Gruppe. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für eine Office 365-Gruppe. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
+|proxyAddresses|Zeichenfolgenauflistung| Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt. Lässt keine NULL-Werte zu. Unterstützt $filter. |
 |renewedDateTime|DateTimeOffset| Zeitstempel der letzten Verlängerung der Gruppe. Dies kann nicht direkt geändert werden und wird nur über die [Aktion zum Verlängern des Diensts](../api/grouplifecyclepolicy-renewgroup.md) aktualisiert. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. Unterstützt $filter.|
-|Design|Zeichenfolge|Gibt eine Office 365-Gruppe Farbdesign an. Mögliche Werte sind `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` oder `Red`.|
-|unseenConversationsCount|Int32|Anzahl der Unterhaltungen, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe einen oder mehrere neue Beiträge bereitgestellt wurden. Diese Eigenschaft entspricht dem **UnseenCount**.|
-|unseenCount|Int32|Anzahl der Unterhaltungen, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe einen oder mehrere neue Beiträge bereitgestellt wurden. Diese Eigenschaft entspricht dem **UnseenConversationsCount**.|
-|unseenMessagesCount|Int32|Anzahl der neuen Beiträge, die seit dem letzten Besuch des angemeldeten Benutzers, der Gruppe der Gruppe Unterhaltungen bereitgestellt wurden.|
-|visibility|Zeichenfolge| Gibt die Sichtbarkeit einer Office 365-Gruppe. Mögliche Werte sind: `private`, `public`, oder `hiddenmembership`; leere Werte werden als öffentliche behandelt.  Finden Sie unter [Sichtbarkeitsoptionen Gruppe](#group-visibility-options) , um mehr zu erfahren.<br>Sichtbarkeit kann festgelegt werden, nur, wenn eine Gruppe erstellt wird. Es kann nicht bearbeitet werden.<br>Sichtbarkeit wird nur für unified Gruppen unterstützt. Es ist nicht für Sicherheitsgruppen unterstützt.|
+|theme|Zeichenfolge|Gibt das Farbdesign einer Office 365-Gruppe an. Mögliche Werte sind `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` oder `Red`.|
+|unseenConversationsCount|Int32|Die Anzahl von Unterhaltungen, an die seit dem letzten Besuch des angemeldeten Benutzers bei der Gruppe ein oder mehrere neue Beiträge übermittelt wurden. Diese Eigenschaft ist identisch mit **unseenCount**.|
+|unseenCount|Int32|Die Anzahl von Unterhaltungen, an die seit dem letzten Besuch des angemeldeten Benutzers bei der Gruppe ein oder mehrere neue Beiträge übermittelt wurden. Diese Eigenschaft ist identisch mit **unseenConversationsCount**.|
+|unseenMessagesCount|Int32|Die Anzahl neuer Beiträge, die seit dem letzten Besuch des angemeldeten Benutzers bei der Gruppe an die Unterhaltungen der Gruppe übermittelt wurden.|
+|visibility|Zeichenfolge| Gibt die Sichtbarkeit einer Office 365-Gruppe an. Mögliche Werte sind: `private`, `public` oder `hiddenmembership`; leere Werte werden als „public“ behandelt.  Weitere Informationen finden Sie unter [Sichtbarkeitsoptionen für Gruppen](#group-visibility-options).<br>Die Sichtbarkeit kann nur beim Erstellen einer Gruppe festgelegt und anschließend nicht mehr bearbeitet werden.<br>Sichtbarkeit wird nur für einheitliche Gruppen unterstützt. Für Sicherheitsgruppen wird sie nicht unterstützt.|
 
-### <a name="group-visibility-options"></a>Gruppe Sichtbarkeitsoptionen
+### <a name="group-visibility-options"></a>Sichtbarkeitsoptionen für Gruppen
 
-Hier ist, was bedeutet, dass jeder Wert der **Visibility** -Eigenschaft:
+Im Folgenden wird die Bedeutung der einzelnen Werte der Eigenschaft **visibility** erläutert:
  
 |Wert|Beschreibung|
 |:----|-----------|
-| `public` | Jeder kann die Gruppe ohne Besitzerberechtigung teilnehmen.<br>Jeder Benutzer kann den Inhalt der Gruppe anzeigen.|
-| `private` | Besitzerberechtigung ist erforderlich, um der Gruppe "Leistungsprotokollbenutzer".<br>Nicht-Mitglieder können nicht den Inhalt der Gruppe anzeigen.|
-| `hiddenmembership` | Besitzerberechtigung ist erforderlich, um der Gruppe "Leistungsprotokollbenutzer".<br>Nicht-Mitglieder können nicht den Inhalt der Gruppe anzeigen.<br>Nicht-Elemente nicht die Mitglieder der Gruppe angezeigt.<br>Administratoren (global, Unternehmen, Benutzer und Helpdesk) können die Mitgliedschaft der Gruppe anzeigen.<br>Die Gruppe wird in der globalen Adressliste (GAL).|
+| `public` | Jeder kann der Gruppe beitreten, ohne dass die Berechtigung „Besitzer“ erforderlich ist.<br>Jeder kann die Inhalte der Gruppe anzeigen.|
+| `private` | Die Berechtigung „Besitzer“ ist erforderlich, um der Gruppe beizutreten.<br>Nichtmitglieder können die Inhalte der Gruppe nicht anzeigen.|
+| `hiddenmembership` | Die Berechtigung „Besitzer“ ist erforderlich, um der Gruppe beizutreten.<br>Nichtmitglieder können die Inhalte der Gruppe nicht anzeigen.<br>Nichtmitglieder können die Mitglieder der Gruppe nicht sehen.<br>Administratoren (global, Unternehmen, Benutzer und Helpdesk) können die Mitgliedschaft der Gruppe anzeigen.<br>Die Gruppe wird im globalen Adressbuch (GAL) angezeigt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
@@ -147,27 +150,27 @@ Hier ist, was bedeutet, dass jeder Wert der **Visibility** -Eigenschaft:
 |calendarView|[Ereignissammlung](event.md)|Die Kalenderansicht für den Kalender. Schreibgeschützt.|
 |conversations|[Unterhaltungssammlung](conversation.md)|Die Unterhaltungen der Gruppe|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Der Benutzer (bzw. die Anwendung), der/die Gruppe erstellt hat. HINWEIS: Dies ist nicht festgelegt, wenn der Benutzer ein Administrator ist. Schreibgeschützt.|
-|Laufwerk|[drive](drive.md)|Die Gruppe Standard-Laufwerk. Schreibgeschützt.|
-|drives|[Laufwerkssammlung](drive.md)|Die Gruppe Laufwerke. Schreibgeschützt.|
-|Endpunkte|[Endpunkt](endpoint.md) -Auflistung| Endpunkte für die Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
-|events|[Ereignissammlung](event.md)|Ereignisse, die der Gruppe.|
-|Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für die Gruppe definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung|Die Auflistung der Lifecycle-Richtlinien für diese Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
-|memberOf|[directoryObject](directoryobject.md)-Sammlung|Gruppen und administrative Einheiten, denen dieser Gruppe ein Mitglied ist. HTTP-Methoden: Abrufen (unterstützt für alle Gruppen). Schreibgeschützt. Lässt Nullwerte zu.|
-|Elemente|[directoryObject](directoryobject.md)-Sammlung| Benutzer, Kontakte und Gruppen, die Mitglieder dieser Gruppe sind. HTTP-Methoden: Abrufen (unterstützt für alle Gruppen), POST (unterstützt für Sicherheitsgruppen und e-Mail-aktivierten Sicherheitsgruppen), DELETE (unterstützt nur für Sicherheitsgruppen) schreibgeschützt. Lässt Nullwerte zu.|
-|membersWithLicenseErrors|[Benutzer](user.md) -Auflistung|Eine Liste der Mitglieder der Gruppe mit Fehlern aus dieser Gruppe basierenden lizenzzuweisung Lizenz. Schreibgeschützt.|
+|Laufwerk|[drive](drive.md)|Das Standardlaufwerk der Gruppe. Schreibgeschützt.|
+|drives|[drive](drive.md)-Sammlung|Die Laufwerke der Gruppe. Schreibgeschützt.|
+|endpoints|[endpoint](endpoint.md)-Sammlung| Endpunkte für die Gruppe. Schreibgeschützt. Nullwerte zulassend.|
+|events|[event](event.md)-Sammlung|Die Ereignisse der Gruppe.|
+|extensions|[extension](extension.md)-Sammlung|Die Sammlung der für die Gruppe definierten offenen Erweiterungen. Schreibgeschützt. Nullwerte zulassend.|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung|Die Sammlung der Lebenszyklusrichtlinien für diese Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
+|memberOf|[directoryObject](directoryobject.md)-Sammlung|Gruppen und administrative Einheiten, in denen dieser Benutzer Mitglied ist. HTTP-Methoden: GET (für alle Gruppen unterstützt). Schreibgeschützt. Lässt NULL-Werte zu.|
+|members|[directoryObject](directoryobject.md)-Sammlung| Benutzer, Kontakte und Gruppen, die Mitglieder dieser Gruppe sind. HTTP-Methoden: GET (für alle Gruppen unterstützt), POST (für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt), DELETE (nur für Sicherheitsgruppen unterstützt). Schreibgeschützt. Nullwerte zulassend.|
+|membersWithLicenseErrors|[User](user.md)-Sammlung|Eine Liste von Gruppenmitgliedern mit Lizenzfehlern aus dieser gruppenbasierten Lizenzizenzzuweisung. Schreibgeschützt.|
 |onenote|[OneNote](onenote.md)| Schreibgeschützt.|
-|owners|[directoryObject](directoryobject.md)-Sammlung|Der Besitzer der Gruppe. Die Besitzer sind eine Reihe von nicht-Administrator-Benutzer, die berechtigt sind, dieses Objekt zu ändern. HTTP-Methoden: Abrufen (unterstützt für alle Gruppen), POST (unterstützt für Sicherheitsgruppen und e-Mail-aktivierten Sicherheitsgruppen), DELETE (unterstützt nur für Sicherheitsgruppen) schreibgeschützt. Lässt Nullwerte zu.|
-|Foto|[profilePhoto](profilephoto.md)| Die Gruppe Profilfoto. |
+|owners|[directoryObject](directoryobject.md)-Sammlung|Die Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. HTTP-Methoden: GET (für alle Gruppen unterstützt), POST (für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt), DELETE (nur für Sicherheitsgruppen unterstützt). Schreibgeschützt. Nullwerte zulassend.|
+|Foto|[profilePhoto](profilephoto.md)| Das Profilfoto der Gruppe. |
 |Fotos|[profilePhoto](profilephoto.md)-Sammlung| Die Profilfotos im Besitz der  Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
-|Planner|[plannerGroup](plannergroup.md)| Selektive Planner-Dienste für die Gruppe verfügbar. Schreibgeschützt. Lässt Nullwerte zu. |
+|planner|[plannerGroup](plannergroup.md)| Selektive Planner-Dienste, die für die Gruppe zur Verfügung stehen. Schreibgeschützt. Nullwerte zulassend. |
 |rejectedSenders|[directoryObject](directoryobject.md)-Sammlung|Die Liste der Benutzer oder Gruppen, die nicht berechtigt sind, Beiträge oder Kalenderereignisse in dieser Gruppe zu erstellen. Lässt NULL-Werte zu|
-|Einstellungen|[Verzeichnisberechtigungen](directorysetting.md) -Auflistung| Die Einstellungen, die dieser Gruppe Verhalten, z. B., ob Mitglieder von Gastbenutzern zur Gruppe einladen können steuern können. Lässt Nullwerte zu.|
+|settings|[directorySetting](directorysetting.md) collection| Einstellungen, die das Verhalten dieser Gruppe steuern, z. B. ob Mitglieder Gastbenutzer zur Gruppe einladen können. Nullwerte zulassend.|
 |sites|[site](site.md)-Sammlung|Die Liste der SharePoint-Websites in dieser Gruppe. Der Zugriff auf die Standardwebsite erfolgt mit „/sites/root“.|
 |threads|[conversationThread](conversationthread.md)-Sammlung| Die Unterhaltungs-Threads der Gruppe. Lässt NULL-Werte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
-Der folgende Code ist ein JSON-Darstellung der Ressource
+Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
@@ -204,6 +207,7 @@ Der folgende Code ist ein JSON-Darstellung der Ressource
   "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
+  "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
   "isFavorite": true,  
@@ -243,7 +247,7 @@ Der folgende Code ist ein JSON-Darstellung der Ressource
 
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
