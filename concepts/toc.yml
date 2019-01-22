@@ -167,6 +167,13 @@ items:
             href: planner-concept-overview.md
           - name: Teamarbeit
             href: teams-concept-overview.md
+            items:
+              - name: Erstellen einer Gruppe und eines Teams
+                href: teams-create-group-and-team.md
+              - name: Auflisten aller Teams
+                href: teams-list-all-teams.md
+              - name: Konfigurieren integrierter Registerkarten
+                href: teams-configuring-builtin-tabs.md
           - name: Arbeitsmappen und Diagramme
             href: excel-concept-overview.md
             items:

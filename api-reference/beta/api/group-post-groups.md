@@ -4,24 +4,28 @@ description: 'Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß d
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: d1ce182a0122f621ccd1ea464df7a734bb89f24c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: de304cc4faaa6e4b64992ba0d7b2af35e8b5900a
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991160"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353069"
 ---
 # <a name="create-group"></a>Gruppe erstellen
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Verwenden Sie diese API zum Erstellen einer neuen [Gruppe](../resources/group.md) wie im Textkörper Anforderung angegeben. Sie können eine der drei Arten von Gruppen erstellen:
+Verwenden Sie diese API zum Erstellen einer neuen [Gruppe](../resources/group.md) gemäß der Angabe im Anforderungstext. Sie können drei Typen von Gruppen erstellen:
 
 * Office 365-Gruppe (einheitliche Gruppe)
 * Dynamische Gruppe
 * Sicherheitsgruppe
 
-> **Hinweis**: zum Erstellen ein [Team](../resources/team.md), zuerst erstellen Sie eine Gruppe, dann fügen Sie ein Team hinzu, finden Sie unter [Team erstellen](../api/team-put-teams.md).
+Dieser Vorgang gibt standardmäßig nur eine Teilmenge der Eigenschaften für jede Gruppe zurück. Diese Standardeigenschaften werden im Abschnitt [Eigenschaften](../resources/group.md#properties) aufgeführt.
+
+Um Eigenschaften abzurufen, die _nicht_ standardmäßig zurückgegeben werden, führen Sie eine GET-Operation aus, und geben Sie die Eigenschaften in einer OData-Abfrageoption `$select` an. Sehen Sie sich das [Beispiel](group-get.md#request-2) an.
+
+> **Hinweis**: Zum Erstellen eines [Teams](../resources/team.md) erstellen Sie zuerst eine Gruppe und fügen ihr dann ein Team hinzu (siehe [Team erstellen](../api/team-put-teams.md)).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -44,18 +48,18 @@ POST /groups
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Die folgende Tabelle zeigt die Eigenschaften des [Group](../resources/group.md) -Ressource angeben, wenn Sie eine Gruppe zu erstellen. 
+Die folgende Tabelle enthält die Eigenschaften der [group](../resources/group.md)-Ressource, die Sie beim Erstellen einer Gruppe angeben müssen. 
 
 | Eigenschaft | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. Erforderlich.  |
-| mailEnabled | boolean | **true** für E-Mail-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine Office 365-Gruppe zu erstellen. Festlegen Sie diese Eigenschaft auf **"false"** Wenn dynamische Erstellen oder Sicherheitsgruppe. Erforderlich.  |
-| mailNickname | string | Der E-Mail-Alias für die Gruppe. Erforderlich.  |
-| securityEnabled | boolean | Festgelegt auf **true** für Sicherheit-aktivierte Gruppen. Legen Sie dies auf **true** fest, wenn eine dynamische oder eine Sicherheitsgruppe an erstellen. Legen Sie dies auf **false fest** , wenn eine Office 365-Gruppe zu erstellen. Erforderlich.  |
-| owners | string collection | Diese Eigenschaft stellt den Besitzer für die Gruppe zum Zeitpunkt der Erstellung. Optional. |
-| Elemente | string collection | Diese Eigenschaft stellt die Mitglieder der Gruppe zum Zeitpunkt der Erstellung. Optional. |
+| displayName | string | Der Name der Gruppe, der im Adressbuch angezeigt wird. Erforderlich. |
+| mailEnabled | boolean | **true** für E-Mail-aktivierte Gruppen. **true**, wenn eine Office 365-Gruppe erstellt wird. **false**, wenn eine dynamische oder eine Sicherheitsgruppe erstellt wird. Erforderlich. |
+| mailNickname | string | Der E-Mail-Alias für die Gruppe. Erforderlich. |
+| securityEnabled | Boolescher Wert | **true** für Gruppen mit aktivierter Sicherheit. **true**, wenn eine dynamische oder eine Sicherheitsgruppe erstellt wird. **false**, wenn eine Office 365-Gruppe erstellt wird. Erforderlich. |
+| owners | Zeichenfolgenauflistung | Diese Eigenschaft stellt die Besitzer für die Gruppe zum Zeitpunkt der Erstellung dar. Optional. |
+| members | Zeichenfolgenauflistung | Diese Eigenschaft stellt die Mitglieder der Gruppe zum Zeitpunkt der Erstellung dar. Optional. |
 
-Geben Sie die **groupTypes** Eigenschaft an, wenn Sie eine Office 365 oder eine dynamische Gruppe erstellen, wie unten beschrieben.
+Geben Sie die **groupTypes**-Eigenschaft an, wenn Sie eine Office 365- oder eine dynamische Gruppe erstellen, wie unten beschrieben.
 
 | Art der Gruppe | **groupTypes**-Eigenschaft |
 |:--------------|:------------------------|
@@ -63,18 +67,18 @@ Geben Sie die **groupTypes** Eigenschaft an, wenn Sie eine Office 365 oder eine 
 | Dynamisch | "DynamicMembership" |
 | Sicherheit | Nicht festlegen. |
 
-Da die **Group** -Ressource [Extensions](/graph/extensibility-overview)unterstützt, können Sie die `POST` Vorgang und benutzerdefinierte Eigenschaften mit Ihren eigenen Daten beim Erstellen der Gruppe hinzufügen.
+Da die **group**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, können Sie den `POST`-Vorgang verwenden und beim Erstellen der Gruppe benutzerdefinierte Eigenschaften mit Ihren eigenen Daten hinzufügen.
 
->**Hinweis:** Erstellen einer Office 365-Gruppe programmgesteuert ohne einen Benutzerkontext und ohne Angabe von Besitzer erstellt die Gruppe anonym.  Dies kann führen, dass in der zugehörigen SharePoint Online-Website nicht automatisch erstellt werden, bis eine zusätzliche manuelle Aktion ausgeführt wird.  
+>**Hinweis:** Beim programmgesteuerten Erstellen einer Office 365-Gruppe ohne Benutzerkontext und ohne Angabe von Besitzern wird die Gruppe anonym erstellt.  Dies kann dazu führen, dass die zugehörige SharePoint Online-Website nicht automatisch erstellt wird und weitere manuelle Aktionen nötig sind.  
 
 Geben Sie bei Bedarf andere beschreibbare Eigenschaften für Ihre Gruppe an. Weitere Informationen finden Sie in Themen zu Eigenschaften der [group](../resources/group.md)-Ressource.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben. Die Antwort enthält nur die Standardeigenschaften der Gruppe.
 
 ## <a name="example"></a>Beispiel
 #### <a name="request-1"></a>Anforderung 1
-Die erste beispielanforderung erstellt eine Office 365-Gruppe.
+Die erste Beispielanfrage erstellt eine Office 365-Gruppe.
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -85,87 +89,134 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "library",
+  "mailNickname": "golfassist",
   "securityEnabled": false
 }
 ```
 
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Von einem tatsächlichen Aufruf werden alle Standardeigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mail": "library@contoso.onmicrosoft.com",
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+     "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-22T02:21:05Z",
+     "description": "Self help community for golf",
+     "displayName": "Golf Assist",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
+     "mail": "golfassist@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "golfassist",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:golfassist@contoso.onmicrosoft.com"
+     ],
+     "renewedDateTime": "2018-12-22T02:21:05Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```
 
 #### <a name="request-2"></a>Anforderung 2
-Die zweite beispielanforderung erstellt eine Office 365-Gruppe mit Besitzer angegeben.
+Die zweite Beispielanfrage erstellt eine Office 365-Gruppe mit einem angegebenen Besitzer.
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_group_with_owner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups
+POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
- {
-  "description": "Group with owners",
-  "displayName": "Group1",
+
+{
+  "description": "Group with designated owner",
+  "displayName": "Operations group",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "group1",
+  "mailNickname": "operations2019",
   "securityEnabled": false,
   "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+    "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ]
 }
 ```
 
  #### <a name="response-2"></a>Antwort 2
-Es folgt ein Beispiel für die erfolgreiche Antwort.
->**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+Es folgt ein Beispiel für eine erfolgreiche Antwort. Es enthält nur Standardeigenschaften. Sie können anschließend die **owners**-Navigationseigenschaft der Gruppe abrufen, um die Details des Besitzers zu überprüfen. 
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Von einem tatsächlichen Aufruf werden alle Standardeigenschaften zurückgegeben.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group_with_owner"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
- {
-    "description": "Group with owners",
-    "displayName": "Group1",
-    "groupTypes": [
-        "Unified"
-    ],
-    "mail": "group1@contoso.onmicrosoft.com",
-    "mailEnabled": true,
-    "mailNickname": "group1",
-    "securityEnabled": false
+
+{
+     "id": "502df398-d59c-469d-944f-34a50e60db3f",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-27T22:17:07Z",
+     "description": "Group with designated owner",
+     "displayName": "Operations group",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
+     "mail": "operations2019@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "operations2019",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:operations2019@contoso.com"
+     ],
+     "renewedDateTime": "2018-12-27T22:17:07Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```
 

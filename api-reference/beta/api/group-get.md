@@ -1,76 +1,27 @@
 ---
 title: Gruppe abrufen
-description: Dient zum Abrufen der Eigenschaften und der Beziehungen eines Gruppenobjekts.
+description: Dient zum Abrufen der Eigenschaften und Beziehungen eines Gruppenobjekts.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 18eb80938247d56326620a6ac866073acad6f715
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941051"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353076"
 ---
 # <a name="get-group"></a>Gruppe abrufen
 
 > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-Rufen Sie die Eigenschaften und die Beziehungen eines [Group](../resources/group.md) -Objekts.
+Dient zum Abrufen der Eigenschaften und Beziehungen eines [group](../resources/group.md)-Objekts.
 
-##### <a name="default-properties"></a>Standardeigenschaften
+Dieser Vorgang gibt standardmäßig nur eine Teilmenge aller verfügbaren Eigenschaften zurück, wie im Abschnitt [Eigenschaften](../resources/group.md#properties) beschrieben. 
 
-Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen oder beim Auflisten von Gruppen zurückgegeben werden. Diese stellen eine Teilmenge aller verfügbaren Eigenschaften. 
+Zum Abrufen von Eigenschaften, die _nicht_ standardmäßig zurückgegeben werden, geben sie diese in einer OData-Abfrageoption `$select` an. Sehen Sie sich ein [Beispiel](#request-2) für `$select` an. Eine Ausnahme ist die **hasMembersWithLicenseErrors**-Eigenschaft. Sehen Sie sich ein [Beispiel](group-list.md#request-2) für die Verwendung dieser Eigenschaft an.
 
-* Klassifikation
-* createdDateTime
-* description
-* displayName
-* groupTypes
-* id
-* Mail
-* mailEnabled
-* mailNickname
-* membershipRule
-* membershipRuleProcessingState
-* onPremisesLastSyncDateTime
-* onPremisesSecurityIdentifier
-* onPremisesSyncEnabled
-* PreferredLanguage - nicht unterstützt; Set und gibt ein Wert für diese Eigenschaft nicht `null` aufgerufen.
-* proxyAddresses
-* renewedDateTime
-* securityEnabled
-* Design
-* visibility
-
-Die folgenden Gruppeneigenschaften werden standardmäßig nicht zurückgegeben:
-
-* accessType
-* allowExternalSenders
-* autoSubscribeNewMembers
-* hasMembersWithLicenseErrors
-* isSubscribedByMail
-* isFavorite
-* unseenConversationsCount
-* unseenCount
-* unseenMessagesCount
-
-Wenn Sie diese Eigenschaften (außer **IsFavorite** und **HasMembersWithLicenseErrors**) erhalten möchten, verwenden Sie die `$select` Parameter Abfragen. Es folgen Beispiele: 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-Verwenden Sie zum Zurückgeben von Gruppen, die Elemente mit Fehlern Lizenz enthält die **$filter** Abfragezeichenfolgen-Parameter:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
-
-Da die **Group** -Ressource [Extensions](/graph/extensibility-overview)unterstützt, können Sie auch die `GET` Vorgang zum Abrufen von benutzerdefinierten Eigenschaften und Erweiterungsdaten in eine **Gruppe** -Instanz.
+Da die **group**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, können Sie über den `GET`-Vorgang auch benutzerdefinierte Eigenschaften und Erweiterungsdaten aus **group**-Instanzen abrufen.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -87,7 +38,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /groups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
+Mit `$select` können Sie bestimmte Gruppeneigenschaften abrufen, einschließlich derjenigen, die standardmäßig nicht zurückgegeben werden. Unten finden Sie ein [Beispiel](#request-2).
+
+Weitere Informationen zu OData-Abfrageoptionen finden Sie unter [OData-Abfrageparameter](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
@@ -98,54 +51,104 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [photo](../resources/group.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [group](../resources/group.md)-Objekt im Antworttext zurückgegeben. Es werden die Standardeigenschaften zurückgegeben, sofern Sie nicht mit `$select` bestimmte Eigenschaften angeben.
 
 ## <a name="example"></a>Beispiel
-### <a name="request"></a>Anforderung
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+#### <a name="request-1"></a>Anforderung 1
+Nachfolgend sehen Sie ein Beispiel für eine GET-Anforderung. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
->**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden. Von einem tatsächlichen Aufruf werden, wie zuvor beschrieben, die Standardeigenschaften zurückgegeben.
+#### <a name="response-1"></a>Antwort 1
+Nachfolgend sehen Sie ein Beispiel der Antwort. Es enthält nur die Standardeigenschaften.
+
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Bei einem tatsächlichen Aufruf werden alle Standardeigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T02:21:05Z",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
+  "expirationDateTime": null,
   "groupTypes": [
-    "groupTypes-value"
+      "Unified"
   ],
-  "mail": "mail-value",
+  "mail": "golfassist@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
+  "mailNickname": "golfassist",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "preferredLanguage": null,
   "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+      "smtp:golfassist@contoso.onmicrosoft.com",
+      "SMTP:golfassist@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T02:21:05Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "theme": null,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+#### <a name="request-2"></a>Anforderung 2
+Das nächste Beispiel verwendet eine `$select`-Abfrageoption, um einige Eigenschaften abzurufen, die standardmäßig nicht zurückgegeben werden. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a>Antwort 2
+Nachfolgend finden Sie ein Beispiel der Antwort, die die angeforderten nicht standardmäßigen Eigenschaften umfasst.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
+}
+```
+
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
