@@ -4,12 +4,12 @@ description: So erstellen oder konfigurieren Sie eine Microsoft Teams-Registerka
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34db44b1048431f8d1bf0be715e35bcdab6ae80b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970752"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726540"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 
@@ -60,7 +60,7 @@ Für Microsoft Stream-Registerkarten ist die `teamsAppId` `com.microsoftstream.e
 ## <a name="microsoft-forms-tabs"></a>Microsoft Forms-Registerkarten
 
 Für Microsoft Forms-Registerkarten ist die `teamsAppId` `81fef3a6-72aa-4648-a763-de824aeafb7d`.
-Konfiguration:
+Die folgende Tabelle zeigt die Konfiguration.
 
 | Eigenschaft   | Typ        | Beschreibung                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -80,7 +80,32 @@ In der folgenden Tabelle ist die `teamsAppId` für die einzelnen Apps aufgeliste
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Konfiguration wird nicht unterstützt.
+Die folgende Tabelle zeigt die Konfiguration.
+
+| Eigenschaft   | Typ        | Beschreibung                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | Zeichenfolge      | Die sourceDoc-ID der Datei. Sie finden diese, indem Sie die Datei in SharePoint öffnen und in die Adressleiste schauen – die URL weist eine `sourcedoc=%7B{sourceDocId}%7D`- Klausel auf. Sie können diese auch aus der webUrl des SharePoint-Laufwerkelements für das Dokument abrufen. Einzelheiten hierzu finden Sie unter [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| contentUrl | Zeichenfolge      | Die URL der Datei im Format `{folder-webUrl}/{item-name}`. {folder-webUrl} ist die webUrl des SharePoint-Ordners, der die Datei enthält, die Sie finden, indem Sie die Datei in SharePoint öffnen und in die Adressleiste schauen, oder indem Sie die webUrl-Eigenschaft aus [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) verwenden. {item-name} ist der Dateiname (z. B. file.docx), der die `name`-Eigenschaft in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) darstellt. |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                       |
+
+### <a name="example-create-a-configured-word-tab"></a>Beispiel: Erstellen einer konfigurierten Word-Registerkarte
+
+Im folgenden Beispiel wird eine konfigurierte Word-Registerkarte erstellt.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+     "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+     "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+     "removeUrl": null,
+     "websiteUrl": null
+  }
+}
+```
 
 ## <a name="wiki-tabs"></a>Wiki-Registerkarten
 
@@ -112,4 +137,4 @@ Konfiguration wird nicht unterstützt.
 
 Für Registerkarten von SharePoint-Seiten und -Listen ist die `teamsAppId` `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Konfiguration wird nicht unterstützt.
-Wenn Konfiguration gewünscht wird, erwägen Sie die Verwendung einer Website-Registerkarte.
+Wenn Sie die Registerkarte konfigurieren möchten, sollten Sie die Registerkarte „Website“ verwenden.
