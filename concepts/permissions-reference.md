@@ -3,12 +3,12 @@ title: 'Microsoft Graph-Berechtigungsreferenz '
 description: 'Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 02867d6651820fabbb374cddfb69c4a8011390f0
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 98438b9403222a8a631b2c335c1f325a70805007
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410756"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph-Berechtigungsreferenz 
 Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). 
@@ -454,7 +454,7 @@ Im Hinblick auf Anwendungsberechtigungen gelten einige Einschränkungen für die
 
 In einigen Fällen benötigt eine App eventuell [Verzeichnisberechtigungen](#directory-permissions), um einige Gruppeneigenschaften wie `member` und `memberOf` zu lesen. Wenn eine Gruppe z. B. einen oder mehrere [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) als Mitglieder besitzt, benötigt die App effektive Berechtigungen zum Lesen von Dienstprinzipalen, indem ihr eine der Berechtigungen vom Typ _Directory.\*_ gewährt wird, andernfalls gibt Microsoft Graph einen Fehler zurück. (Im Fall von delegierten Berechtigungen benötigt der angemeldete Benutzer außerdem ausreichende Rechte in der Organisation zum Lesen von Dienstprinzipalen.) Dasselbe gilt für die Eigenschaft `memberOf`, die [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta) zurückgeben kann.
 
-Gruppenberechtigungen werden zum Steuern des Zugriffs auf [Microsoft Teams](/graph/api/resources/teams-api-overview)-Ressourcen und APIs verwendet. 
+Gruppenberechtigungen werden zum Steuern des Zugriffs auf [Microsoft Teams](/graph/api/resources/teams-api-overview)-Ressourcen und APIs verwendet. Persönliche Microsoft-Konten werden nicht unterstützt.
 
 Gruppenberechtigungen werden auch verwendet, um den Zugriff auf [Microsoft Planner](/graph/api/resources/planner-overview)-Ressourcen und -APIs zu steuern. Nur delegierte Berechtigungen werden für Microsoft Planner-APIs unterstützt; Anwendungsberechtigungen werden nicht unterstützt. Persönliche Microsoft-Konten werden nicht unterstützt.
 
@@ -1099,8 +1099,6 @@ Zum Lesen der Gruppenmitgliedschaften eines Benutzers (`memberOf`) benötigt die
 
 Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Berechtigungsszenarios](#permission-scenarios).
 
-<a name="msprod-microsoft-identity-platform"></a>ms.prod: "microsoft-identity-platform"
----
 ## <a name="user-activity-permissions"></a>Berechtigungen für Benutzeraktivitäten
 
 #### <a name="delegated-permissions"></a>Delegierte Berechtigungen
