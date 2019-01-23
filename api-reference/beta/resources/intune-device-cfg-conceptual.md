@@ -4,16 +4,16 @@ description: Mit der Workload „Microsoft Intune-Gerätekonfiguration“ könn
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 812ce791484b6128ef65b2afe61cb2694bb7a529
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5578f00f3e295c3e4ddb0af24e53a486a2e7b8b4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415768"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Konfigurieren von Geräten in Microsoft Intune
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) ist.
 
@@ -59,6 +59,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Android für Arbeit Wi-Fi-Konfiguration](intune-deviceconfig-androidforworkwificonfiguration.md)
 - [androidGeneralDeviceConfiguration](intune-deviceconfig-androidgeneraldeviceconfiguration.md)
 - [Android importierte PFX-Zertifikat-Profil](intune-deviceconfig-androidimportedpfxcertificateprofile.md)
+- [Android Keyguard-Funktion](intune-deviceconfig-androidkeyguardfeature.md)
 - [Android PKCS Zertifikatsprofil](intune-deviceconfig-androidpkcscertificateprofile.md)
 - [Android erforderliche Kennwort-Typ](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Android SCEP Zertifikatsprofil](intune-deviceconfig-androidscepcertificateprofile.md)
@@ -103,6 +104,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [BitLocker Wiederherstellungsoptionen](intune-deviceconfig-bitlockerrecoveryoptions.md)
 - [bitLockerRemovableDrivePolicy](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [BitLocker Drive Systemrichtlinie](intune-deviceconfig-bitlockersystemdrivepolicy.md)
+- [Browser-Synchronisierung einrichten](intune-deviceconfig-browsersyncsetting.md)
 - [Einkaufswagen Klasse Zuordnung](intune-deviceconfig-carttoclassassociation.md)
 - [Ziel-Zertifikatspeicher](intune-deviceconfig-certificatedestinationstore.md)
 - [Zertifikat Veröffentlichungslizenzen Staaten](intune-deviceconfig-certificateissuancestates.md)
@@ -126,6 +128,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Defender Security Center-Benachrichtigungen von app-Typ](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Defender Submit Beispiele stimmen Typ](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
 - [Defender Bedrohungsaktion](intune-deviceconfig-defenderthreataction.md)
+- [Abgeleitete Anmeldeinformationen Providertyp](intune-deviceconfig-derivedcredentialprovidertype.md)
 - [deviceComplianceActionItem](intune-deviceconfig-devicecomplianceactionitem.md)
 - [Gerätetyp Compliance-Aktion](intune-deviceconfig-devicecomplianceactiontype.md)
 - [deviceComplianceDeviceOverview](intune-deviceconfig-devicecompliancedeviceoverview.md)
@@ -157,16 +160,24 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Festlegen von Benutzerrechten Management Gerät](intune-deviceconfig-devicemanagementuserrightssetting.md)
 - [Gerät Bedrohung Mail-Schutzstufe](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Diagnosedaten Übermittlung Modus](intune-deviceconfig-diagnosticdatasubmissionmode.md)
+- [DMA schützen Richtlinientyp für Device-Aufzählung](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [Domain Name Quelle](intune-deviceconfig-domainnamesource.md)
 - [EAP-fast-Konfiguration](intune-deviceconfig-eapfastconfiguration.md)
 - [EAP-Typ](intune-deviceconfig-eaptype.md)
 - [EAS-Authentifizierungsmethode](intune-deviceconfig-easauthenticationmethod.md)
 - [EAS-e-Profilkonfiguration Basiskalender](intune-deviceconfig-easemailprofileconfigurationbase.md)
 - [Edge-Cookie-Richtlinie](intune-deviceconfig-edgecookiepolicy.md)
+- [Konfiguration für Zugriffsedge home-Schaltfläche](intune-deviceconfig-edgehomebuttonconfiguration.md)
+- [Edge-home-Schaltfläche ausgeblendet](intune-deviceconfig-edgehomebuttonhidden.md)
+- [Edge-home-Schaltfläche lädt Startseite](intune-deviceconfig-edgehomebuttonloadsstartpage.md)
+- [Edge-home-Schaltfläche wird l sind benutzerdefinierte geöffnet.](intune-deviceconfig-edgehomebuttonopenscustomurl.md)
+- [Edge home-Schaltfläche wird neuen Registerkarte geöffnet.](intune-deviceconfig-edgehomebuttonopensnewtab.md)
+- [Öffnen der Optionen für Edge](intune-deviceconfig-edgeopenoptions.md)
 - [edgeSearchEngine](intune-deviceconfig-edgesearchengine.md)
 - [edgeSearchEngineBase](intune-deviceconfig-edgesearchenginebase.md)
 - [edgeSearchEngineCustom](intune-deviceconfig-edgesearchenginecustom.md)
 - [Kantentyp Search-Modul](intune-deviceconfig-edgesearchenginetype.md)
+- [Edge-Telemetrie-Modus](intune-deviceconfig-edgetelemetrymode.md)
 - [editionUpgradeConfiguration](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Aktualisieren der Edition Lizenztyp](intune-deviceconfig-editionupgradelicensetype.md)
 - [Dauer der e-Mail-Synchronisierung](intune-deviceconfig-emailsyncduration.md)
@@ -176,9 +187,36 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Firewall Pakettyp Berichterstellungsdienst-Methode](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Firewall älter als Version Schlüsseln Codierungstyp-Methode](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
 - [Ordner Schutztyp](intune-deviceconfig-folderprotectiontype.md)
+- [Gruppenrichtlinienkonfiguration](intune-grouppolicy-grouppolicyconfiguration.md)
+- [Gruppe richtlinienzuweisung Konfiguration](intune-grouppolicy-grouppolicyconfigurationassignment.md)
+- [Gruppe Richtlinientyp Konfiguration](intune-grouppolicy-grouppolicyconfigurationtype.md)
+- [Gruppe Richtliniendefinition](intune-grouppolicy-grouppolicydefinition.md)
+- [Gruppe Richtlinientyp Definition-Klasse](intune-grouppolicy-grouppolicydefinitionclasstype.md)
+- [Group Policy-Definitionsdatei](intune-grouppolicy-grouppolicydefinitionfile.md)
+- [Group Policy Definitionswert](intune-grouppolicy-grouppolicydefinitionvalue.md)
+- [Group Policy Präsentation](intune-grouppolicy-grouppolicypresentation.md)
+- [Das Kontrollkästchen Richtlinie Präsentation Gruppe](intune-grouppolicy-grouppolicypresentationcheckbox.md)
+- [Group Policy Präsentation Kombinationsfeld](intune-grouppolicy-grouppolicypresentationcombobox.md)
+- [Group Policy Präsentation decimal Textfeld](intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)
+- [Group Policy Präsentation Dropdown-Liste](intune-grouppolicy-grouppolicypresentationdropdownlist.md)
+- [Group Policy Präsentation Dropdown-Listenelement](intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)
+- [Group Policy Präsentation Listenfeld](intune-grouppolicy-grouppolicypresentationlistbox.md)
+- [Group Policy Präsentation lange decimal Textfeld](intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)
+- [Group Policy Präsentation Multi-Textfeld](intune-grouppolicy-grouppolicypresentationmultitextbox.md)
+- [Group Policy Präsentationstext](intune-grouppolicy-grouppolicypresentationtext.md)
+- [Group Policy Präsentation Textfeld](intune-grouppolicy-grouppolicypresentationtextbox.md)
+- [Gruppenrichtlinienwert Präsentation](intune-grouppolicy-grouppolicypresentationvalue.md)
+- [Group Policy Präsentation Boolean-Wert](intune-grouppolicy-grouppolicypresentationvalueboolean.md)
+- [Group Policy Präsentation Wert dezimal](intune-grouppolicy-grouppolicypresentationvaluedecimal.md)
+- [Group Policy Präsentation Werteliste](intune-grouppolicy-grouppolicypresentationvaluelist.md)
+- [Lange decimal Präsentation-Richtlinienwert gruppieren](intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md)
+- [Group Policy Präsentation Wert Multi text](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
+- [Group Policy Präsentation Werttext](intune-grouppolicy-grouppolicypresentationvaluetext.md)
+- [Gruppentyp-Richtlinie](intune-grouppolicy-grouppolicytype.md)
 - [Hashalgorithmen](intune-deviceconfig-hashalgorithms.md)
 - [Einstellung Freihand-Zugriff](intune-deviceconfig-inkaccesssetting.md)
 - [Verwendungszweck](intune-deviceconfig-intendedpurpose.md)
+- [Einstellung für Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
 - [Internet Security Websiteebene](intune-deviceconfig-internetsitesecuritylevel.md)
 - [iOS-Textmarke](intune-deviceconfig-iosbookmark.md)
 - [iosCertificateProfile](intune-deviceconfig-ioscertificateprofile.md)
@@ -209,6 +247,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [iosUpdateDeviceStatus](intune-deviceconfig-iosupdatedevicestatus.md)
 - [iOS-Updates installieren status](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [iOS-VPN-Konfiguration](intune-deviceconfig-iosvpnconfiguration.md)
+- [iOS Hintergrundbild Anzeigeort](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [iOS web Inhaltsfilter automatisch filtern](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [iOS Webinhaltsfilter Basiskalender](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [iOS web Inhaltsfilter bestimmte Websites Zugriff](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
@@ -367,15 +406,16 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Windows 8.1 VPN-Proxy-server](intune-deviceconfig-windows81vpnproxyserver.md)
 - [Windows 8.1 Wi-Fi Importieren einer Konfiguration](intune-deviceconfig-windows81wifiimportconfiguration.md)
 - [Windows-app starten Größe der Leseansicht Kachel](intune-deviceconfig-windowsappstartlayouttilesize.md)
-- [Windows-Profil Access zugewiesen](intune-deviceconfig-windowsassignedaccessprofile.md)
 - [Windows-Zertifikat Benutzerprofil Basiskalender](intune-deviceconfig-windowscertificateprofilebase.md)
 - [windowsDefenderAdvancedThreatProtectionConfiguration](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
+- [Windows-Übermittlung Optimierung-Konfiguration](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows-Übermittlung Optimierung Authentifizierungsmodus](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [windowsFirewallNetworkProfile](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Windows Identity Protection-Konfiguration](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows-Kiosk-active Directory-Gruppe](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows-Kiosk-app Basiskalender](intune-deviceconfig-windowskioskappbase.md)
 - [Windows-Kiosk-app-Konfiguration](intune-deviceconfig-windowskioskappconfiguration.md)
+- [Windows-Kiosk-app-Typ](intune-deviceconfig-windowskioskapptype.md)
 - [Windows-Kiosk automatische Anmeldung](intune-deviceconfig-windowskioskautologon.md)
 - [Windows Azure AD-Kiosk-Gruppe](intune-deviceconfig-windowskioskazureadgroup.md)
 - [Windows Azure AD-Kiosk-Benutzer](intune-deviceconfig-windowskioskazureaduser.md)
@@ -411,6 +451,8 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Windows Update für Business Update Wochen](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [windowsUpdateInstallScheduleType](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [windowsUpdateScheduledInstall](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Windows update Zustand](intune-deviceconfig-windowsupdatestate.md)
+- [Aktualisieren des Windows-status](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows update-Typ](intune-deviceconfig-windowsupdatetype.md)
 - [Windows-Steuerelement benutzerkontoeinstellungen](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Windows-VPN-Konfiguration](intune-deviceconfig-windowsvpnconfiguration.md)

@@ -1,23 +1,24 @@
 ---
 title: omaSettingBase64-Ressourcentyp
 description: Base64-Definition der OMA-Einstellungen
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8f1c6a488adf2f39b2c415e31c4919380ebda5ab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f5885a81e68dbea4e5f6f1c8cae456144785338
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413920"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Base64-Definition der OMA-Einstellungen
+
 
 Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
@@ -32,6 +33,7 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -49,7 +51,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "value": "String"
 }
 ```
-
 
 
 

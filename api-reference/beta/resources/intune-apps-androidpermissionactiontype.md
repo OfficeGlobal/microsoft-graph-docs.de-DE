@@ -1,30 +1,30 @@
 ---
 title: AndroidPermissionActionType Enum-Typ
 description: Android Aktion bei eine app eine riskante Berechtigung anfordert.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f12832faa12e19eaf1d348382b91f06ddc4b542a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d22b24248325d38754be1263f2a7d8344e45e5ae
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413934"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>AndroidPermissionActionType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Android Aktion bei eine app eine riskante Berechtigung anfordert.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|Aufforderung|0|Noch nicht dokumentiert|
+|prompt|0|Noch nicht dokumentiert|
 |autoGrant|1|Noch nicht dokumentiert|
 |autoDeny|2|Noch nicht dokumentiert|
-
 
 
 

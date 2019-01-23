@@ -4,22 +4,27 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00859a4d9c230682a9ac66f5d46e9852ba141ce5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6a984e0d6671416f84c51211019854a808f9728
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420073"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Geräteverwaltung in Microsoft Intune
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) ist.
 
 - [Administratorzustimmung](intune-devices-adminconsent.md)
 - [Admin Zustimmung Zustand](intune-devices-adminconsentstate.md)
+- [Downloaddetails App Log-Auflistung](intune-devices-applogcollectiondownloaddetails.md)
+- [App-Protokoll-Auflistung-Anforderung](intune-devices-applogcollectionrequest.md)
+- [App Protokoll Entschlüsselungsalgorithmus](intune-devices-applogdecryptionalgorithm.md)
+- [App-Protokoll Upload-Status](intune-devices-apploguploadstate.md)
 - [Apple Push Notification-Zertifikat](intune-devices-applepushnotificationcertificate.md)
+- [Apple VPP token zur Problembehandlung-Ereignis](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [Audit-Akteur](intune-auditing-auditactor.md)
 - [Audit-Ereignis](intune-auditing-auditevent.md)
 - [Audit-Eigenschaft](intune-auditing-auditproperty.md)
@@ -55,15 +60,17 @@ ms.locfileid: "27990873"
 - [Verwaltung von Skript Benutzer Gerätestatus](intune-devices-devicemanagementscriptuserstate.md)
 - [Management Abonnement-Gerätestatus](intune-devices-devicemanagementsubscriptionstate.md)
 - [Gerät-Management-Abonnements](intune-devices-devicemanagementsubscriptions.md)
+- [Gerät Management Fehlerdetails zur Problembehandlung](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [Gerät Management zur Problembehandlung Fehler Ressource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Problembehandlung bei Geräteverwaltung](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Betriebssystem des Geräts – Zusammenfassung](intune-devices-deviceoperatingsystemsummary.md)
 - [Gerät Protection im Überblick](intune-devices-deviceprotectionoverview.md)
 - [Die Registrierung des Geräts](intune-devices-deviceregistrationstate.md)
-- [Eingebettete s ich m Aktivierungscode](intune-esim-embeddedsimactivationcode.md)
-- [Eingebettete s ich m Aktivierung Code Pool](intune-esim-embeddedsimactivationcodepool.md)
-- [Eingebettete s ich m Aktivierung die poolzuweisung von Code](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [Eingebettete s ich m Gerätestatus](intune-esim-embeddedsimdevicestate.md)
-- [Eingebettete s ich m Gerät Statuswert](intune-esim-embeddedsimdevicestatevalue.md)
+- [Eingebettete SIM Aktivierungscode](intune-esim-embeddedsimactivationcode.md)
+- [Eingebettete SIM Aktivierung Code pool](intune-esim-embeddedsimactivationcodepool.md)
+- [Eingebettete SIM Aktivierung Code poolzuordnung](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [Eingebettete SIM Gerätestatus](intune-esim-embeddedsimdevicestate.md)
+- [Eingebettete SIM Gerät Statuswert](intune-esim-embeddedsimdevicestatevalue.md)
 - [Problembehandlung bei Registrierung](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Informationen zur Hardware](intune-devices-hardwareinformation.md)
 - [Zustand](intune-devices-healthstate.md)
@@ -97,7 +104,6 @@ ms.locfileid: "27990873"
 - [Problembehandlung bei app Zielverlauf mobilen app](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [Problembehandlung von app-Updateverlauf mobilen app](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [Problembehandlung bei Gerät Checkin Verlauf mobilen app](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [Problembehandlung bei mobilen app-Ereignis](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [Mobile app zur Problembehandlung History-Element](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [Netzwerk-IPv4-Konfiguration Management Bedingung](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [Netzwerk-IPv6-Konfiguration Management Bedingung](intune-fencing-networkipv6configurationmanagementcondition.md)

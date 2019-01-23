@@ -1,25 +1,26 @@
 ---
 title: LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
 description: Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ae886f6c7696150cb85a17cb2caa65823705e121
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 978436bca4ac0ca281fde61e046e854ba3725c73
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916824"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413759"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Nicht konfiguriert|
 |elevateWithoutPrompting|1|Zu erhöhen, ohne aufzufordern.|
@@ -28,7 +29,6 @@ Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
 |promptForCredentials|4|Aufforderung zur erneuten Eingabe|
 |promptForConsent|5|Aufforderung zur Bestätigung|
 |promptForConsentForNonWindowsBinaries|6|Aufforderung zur Bestätigung für nicht-Windows-Binärdateien|
-
 
 
 

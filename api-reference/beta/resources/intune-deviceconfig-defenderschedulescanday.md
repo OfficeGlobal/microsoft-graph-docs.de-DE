@@ -1,25 +1,26 @@
 ---
 title: DefenderScheduleScanDay Enum-Typ
 description: 'Mögliche Werte für DefenderScheduleScanDay '
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 51d7fa5a51cc0adda7e0ce6bcaa9c01a3d2fa607
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4ee08566d0811666dacad158e380f86b30417a3a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415180"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>DefenderScheduleScanDay Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Mögliche Werte für DefenderScheduleScanDay 
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |alltägliche|0|Täglich|
 |Montag|1|Montag|
@@ -30,7 +31,6 @@ Mögliche Werte für DefenderScheduleScanDay
 |Samstag|6|Samstag|
 |Sonntag|7|Sonntag|
 |noScheduledScan|8|Keine geplanten Scan|
-
 
 
 

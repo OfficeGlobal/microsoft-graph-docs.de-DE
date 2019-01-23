@@ -1,23 +1,24 @@
 ---
 title: androidMinimumOperatingSystem-Ressourcentyp
 description: Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 94f11678ab43e5f8785cb6cc0eddf073105b3ce8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4328cfe06180be138b2c33840c72620efdaa277b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403126"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
@@ -29,15 +30,16 @@ Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderl
 |v4_4|Boolescher Wert|Version 4.4 oder höher|
 |v5_0|Boolescher Wert|Version 5.0 oder höher|
 |v5_1|Boolescher Wert|Version 5.1 oder höher|
-|v6_0|Boolescher Wert|Version 6.0 oder höher.|
-|v7_0|Boolescher Wert|Version 7.0 oder höher.|
-|v7_1|Boolescher Wert|Version 7.1 oder später.|
+|v6_0|Boolean|Version 6.0 oder höher.|
+|v7_0|Boolean|Version 7.0 oder höher.|
+|v7_1|Boolean|Version 7.1 oder später.|
 |v8_0|Boolescher Wert|Version 8.0 oder höher|
 |v8_1|Boolescher Wert|Version 8.1 oder höher.|
 |v9_0|Boolescher Wert|Version 9.0 oder höher|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -64,7 +66,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "v9_0": true
 }
 ```
-
 
 
 

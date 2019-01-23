@@ -1,37 +1,39 @@
 ---
 title: Ressourcentyp windowsNetworkIsolationPolicy
 description: Windows-Isolation Netzwerkrichtlinien
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5bb427d519cf1f981997b70242095af22bf705df
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c7ab7addffa4ff3f9b84ced60c30fe8707c695b0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403756"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>Ressourcentyp windowsNetworkIsolationPolicy
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Windows-Isolation Netzwerkrichtlinien
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|enterpriseNetworkDomainNames|Collection von Objekten des Typs „String“|Dies ist die Liste der Domänen, die die Grenzen des Unternehmens definieren. Daten von einem diese Domänen, die zu einem Gerät gesendet wird werden als Enterprise-Daten und geschützt. Diese Speicherorte gilt ein sicherer Ziel für die Enterprise-Daten auf freigegeben werden.|
+|enterpriseNetworkDomainNames|Zeichenfolgenauflistung|Dies ist die Liste der Domänen, die die Grenzen des Unternehmens definieren. Daten von einem diese Domänen, die zu einem Gerät gesendet wird werden als Enterprise-Daten und geschützt. Diese Speicherorte gilt ein sicherer Ziel für die Enterprise-Daten auf freigegeben werden.|
 |enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md)-Sammlung|Enthält eine Liste der Enterprise-Ressourcendomänen gehostet in der Cloud, die geschützt werden müssen. Verbindungen zu diesen Ressourcen gelten als Unternehmensdaten. Ist ein Proxy mit einer Cloudressource gekoppelt, wird Datenverkehr zu dieser Cloudressource über das Unternehmensnetzwerk weitergeleitet, und zwar über den angegebenen Proxyserver (auf Port 80). Mit der Richtlinie EnterpriseInternalProxyServers muss auch für diesen Zweck verwendet ein Proxy-Server konfiguriert werden. Diese Collection darf maximal 500 Elemente enthalten.|
 |enterpriseIPRanges|[ipRange](../resources/intune-shared-iprange.md)-Sammlung|Legt die Unternehmens-IP-Bereiche fest, die die Computer im Unternehmensnetzwerk definieren. Daten, die von diesen Computern gesendet werden, gelten als Teil des Unternehmens und werden geschützt. Diese Speicherorte gilt ein sicherer Ziel für die Enterprise-Daten auf freigegeben werden. Diese Collection darf maximal 500 Elemente enthalten.|
-|enterpriseInternalProxyServers|Collection von Objekten des Typs „String“|Dies ist die durch Trennzeichen getrennte Liste der internen Proxyserver. Beispiel: „157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59“. Diese Proxys wurden vom Administrator für Verbindungen zu bestimmten Ressourcen im Internet konfiguriert. Sie gelten als Adressen im Unternehmensnetzwerk. Die Proxys sind nur in Konfigurieren der Richtlinie EnterpriseCloudResources, um Datenverkehr an die übereinstimmenden Cloudressourcen über diese Proxys erzwingen genutzt.|
-|enterpriseIPRangesAreAuthoritative|Boolescher Wert|Boolescher Wert, der den Client anweist, die konfigurierte Liste zu akzeptieren und nicht zu versuchen, mittels Heuristik andere Subnetze zu finden. Standard ist false.|
-|enterpriseProxyServers|Collection von Objekten des Typs „String“|Dies ist eine Liste von Proxyservern. Jeder Server wird in dieser Liste nicht-Enterprise nicht berücksichtigt.|
-|enterpriseProxyServersAreAuthoritative|Boolescher Wert|Boolescher Wert, der den Client anweist, die konfigurierte Proxyliste zu akzeptieren und nicht zu versuchen, andere Arbeitsproxys zu finden. Der Standardwert ist „FALSE“.|
-|neutralDomainResources|Collection von Objekten des Typs „String“|Liste der Domänennamen, die für die Arbeit "oder" Persönliche Ressource verwendet werden können.|
+|enterpriseInternalProxyServers|Zeichenfolgenauflistung|Dies ist die durch Trennzeichen getrennte Liste der internen Proxyserver. Beispiel: „157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59“. Diese Proxys wurden vom Administrator für Verbindungen zu bestimmten Ressourcen im Internet konfiguriert. Sie gelten als Adressen im Unternehmensnetzwerk. Die Proxys sind nur in Konfigurieren der Richtlinie EnterpriseCloudResources, um Datenverkehr an die übereinstimmenden Cloudressourcen über diese Proxys erzwingen genutzt.|
+|enterpriseIPRangesAreAuthoritative|Boolean|Boolescher Wert, der den Client anweist, die konfigurierte Liste zu akzeptieren und nicht zu versuchen, mittels Heuristik andere Subnetze zu finden. Standard ist false.|
+|enterpriseProxyServers|Zeichenfolgenauflistung|Dies ist eine Liste von Proxyservern. Jeder Server wird in dieser Liste nicht-Enterprise nicht berücksichtigt.|
+|enterpriseProxyServersAreAuthoritative|Boolean|Boolescher Wert, der den Client anweist, die konfigurierte Proxyliste zu akzeptieren und nicht zu versuchen, andere Arbeitsproxys zu finden. Der Standardwert ist „FALSE“.|
+|neutralDomainResources|Zeichenfolgenauflistung|Liste der Domänennamen, die für die Arbeit "oder" Persönliche Ressource verwendet werden können.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -72,7 +74,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
-
 
 
 

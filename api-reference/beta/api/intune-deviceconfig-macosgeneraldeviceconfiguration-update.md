@@ -1,25 +1,26 @@
 ---
 title: macOSGeneralDeviceConfiguration aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs macOSGeneralDeviceConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: db5f07f2cfbf183cfe38c7a5837e1ccaf78821bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dab8bbb23b2237be19556fc28bfb4cda2d466f4c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407564"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>macOSGeneralDeviceConfiguration aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Aktualisiert die Eigenschaften von Objekten des Typs [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md).
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -41,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -53,15 +54,15 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|emailInDomainSuffixes|Collection von Objekten des Typs „String“|E-Mail-Adressen, deren Suffix keiner dieser Zeichenfolgen entspricht, gelten als domänenextern.|
+|emailInDomainSuffixes|Zeichenfolgenauflistung|E-Mail-Adressen, deren Suffix keiner dieser Zeichenfolgen entspricht, gelten als domänenextern.|
 |passwordBlockSimple|Boolean|Unterbindet die Verwendung einfacher Kennwörter.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts|
 |passwordMinimumCharacterSetCount|Int32|Anzahl von Zeichensätzen, die ein Kennwort enthalten muss. Gültige Werte: 0 bis 4.|
@@ -71,28 +72,31 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
-|keychainBlockCloudSync|Boolescher Wert|Gibt an, ob iCloud Schlüsselsammlung Synchronisierung blockierte (Mac OS 10.12 und höher) ist.|
-|airPrintBlocked|Boolescher Wert|Gibt an, ob AirPrint blockierte (Mac OS 10.12 und höher) ist.|
-|airPrintForceTrustedTLS|Boolescher Wert|Gibt an, ob vertrauenswürdige Zertifikate für Drucken TLS-Kommunikation (Mac OS 10.13 und höher) erforderlich sind.|
-|airPrintBlockiBeaconDiscovery|Boolescher Wert|Gibt an, ob iBeacon Ermittlung von AirPrint Drucker ausgeschlossen wird. Dies verhindert, dass falsche AirPrint Bluetooth Beacons vor Phishing für den Netzwerkdatenverkehr (Mac OS 10.3 und höher).|
-|safariBlockAutofill|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer AutoAusfüllen in Safari verwendet.|
-|cameraBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
-|iTunesBlockMusicService|Boolescher Wert|Gibt an, ob Musik Service blockieren und Musik-app im klassischen Modus zurücksetzen.|
-|spotlightBlockInternetResults|Boolescher Wert|Gibt an, ob Spotlight blockieren aus einer Internet-Suche Ergebnisse zurückgegeben.|
-|keyboardBlockDictation|Boolescher Wert|Gibt an, ob die Benutzer mit Dictation Input blockieren.|
-|definitionLookupBlocked|Boolescher Wert|Gibt an, ob Definition Lookup blockieren.|
-|appleWatchBlockAutoUnlock|Boolescher Wert|Gibt an, ob oder blockieren Benutzer ihre Mac mit Apple Watch entsperren.|
-|iTunesBlockFileSharing|Boolescher Wert|Gibt an, ob Dateien verhindern blockieren übertragen iTunes verwenden.|
-|iCloudBlockDocumentSync|Boolescher Wert|Gibt an, ob die iCloud-Dokumentsynchronisierung blockiert werden soll.|
-|iCloudBlockMail|Boolescher Wert|Gibt an, ob iCloud aus der Synchronisierung von e-Mail-Nachrichten zu blockieren.|
-|iCloudBlockAddressBook|Boolescher Wert|Gibt an, ob iCloud aus der Synchronisierung von Kontakten zu blockieren.|
-|iCloudBlockCalendar|Boolescher Wert|Gibt an, ob iCloud aus der Synchronisierung von Kalendern blockieren.|
-|iCloudBlockReminders|Boolescher Wert|Gibt an, ob iCloud aus der Synchronisierung Erinnerungen blockieren.|
-|iCloudBlockBookmarks|Boolescher Wert|Gibt an, ob iCloud von Lesezeichen synchronisieren blockieren.|
-|iCloudBlockNotes|Boolescher Wert|Gibt an, ob iCloud aus der Synchronisierung von Notizen zu blockieren.|
-|airDropBlocked|Boolescher Wert|Gibt an, ob AirDrop zulassen.|
-|passwordBlockModification|Boolescher Wert|Gibt an, ob Kennung für die Änderung zu ermöglichen.|
-|passwordBlockFingerprintUnlock|Boolescher Wert|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
+|keychainBlockCloudSync|Boolean|Gibt an, ob iCloud Schlüsselsammlung Synchronisierung blockierte (Mac OS 10.12 und höher) ist.|
+|airPrintBlocked|Boolean|Gibt an, ob AirPrint blockierte (Mac OS 10.12 und höher) ist.|
+|airPrintForceTrustedTLS|Boolean|Gibt an, ob vertrauenswürdige Zertifikate für Drucken TLS-Kommunikation (Mac OS 10.13 und höher) erforderlich sind.|
+|airPrintBlockiBeaconDiscovery|Boolean|Gibt an, ob iBeacon Ermittlung von AirPrint Drucker ausgeschlossen wird. Dies verhindert, dass falsche AirPrint Bluetooth Beacons vor Phishing für den Netzwerkdatenverkehr (Mac OS 10.3 und höher).|
+|safariBlockAutofill|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer AutoAusfüllen in Safari verwendet.|
+|cameraBlocked|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
+|iTunesBlockMusicService|Boolean|Gibt an, ob Musik Service blockieren und Musik-app im klassischen Modus zurücksetzen.|
+|spotlightBlockInternetResults|Boolean|Gibt an, ob Spotlight blockieren aus einer Internet-Suche Ergebnisse zurückgegeben.|
+|keyboardBlockDictation|Boolean|Gibt an, ob die Benutzer mit Dictation Input blockieren.|
+|definitionLookupBlocked|Boolean|Gibt an, ob Definition Lookup blockieren.|
+|appleWatchBlockAutoUnlock|Boolean|Gibt an, ob oder blockieren Benutzer ihre Mac mit Apple Watch entsperren.|
+|iTunesBlockFileSharing|Boolean|Gibt an, ob Dateien verhindern blockieren übertragen iTunes verwenden.|
+|iCloudBlockDocumentSync|Boolean|Gibt an, ob die iCloud-Dokumentsynchronisierung blockiert werden soll.|
+|iCloudBlockMail|Boolean|Gibt an, ob iCloud aus der Synchronisierung von e-Mail-Nachrichten zu blockieren.|
+|iCloudBlockAddressBook|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Kontakten zu blockieren.|
+|iCloudBlockCalendar|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Kalendern blockieren.|
+|iCloudBlockReminders|Boolean|Gibt an, ob iCloud aus der Synchronisierung Erinnerungen blockieren.|
+|iCloudBlockBookmarks|Boolean|Gibt an, ob iCloud von Lesezeichen synchronisieren blockieren.|
+|iCloudBlockNotes|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Notizen zu blockieren.|
+|airDropBlocked|Boolean|Gibt an, ob AirDrop zulassen.|
+|passwordBlockModification|Boolean|Gibt an, ob Kennung für die Änderung zu ermöglichen.|
+|passwordBlockFingerprintUnlock|Boolean|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
+|passwordBlockAutoFill|Boolean|Gibt an, ob das Feature AutoAusfüllen-Kennwörter zu blockieren.|
+|passwordBlockProximityRequests|Boolean|Gibt an, ob anfordernde Kennwörter von Geräten in der Nähe zu blockieren.|
+|passwordBlockAirDropSharing|Boolean|Gibt an, ob sharing Kennwörter mit dem AirDrop Kennwörter Feature blockieren.|
 
 
 
@@ -100,15 +104,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1747
+Content-length: 1870
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -159,7 +164,10 @@ Content-length: 1747
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true
 }
 ```
 
@@ -168,7 +176,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1925
+Content-Length: 2042
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -225,10 +233,12 @@ Content-Length: 1925
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true
 }
 ```
-
 
 
 
