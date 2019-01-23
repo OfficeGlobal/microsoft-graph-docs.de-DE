@@ -4,33 +4,33 @@ description: Erstellen eines neuen deviceCategory-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: fe2d928f784eaa370c964761e54c9ea4e2c4d006
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395272"
 ---
-# <a name="create-devicecategory"></a><span data-ttu-id="d0da4-103">deviceCategory erstellen</span><span class="sxs-lookup"><span data-stu-id="d0da4-103">Create deviceCategory</span></span>
+# <a name="create-devicecategory"></a><span data-ttu-id="0273a-103">deviceCategory erstellen</span><span class="sxs-lookup"><span data-stu-id="0273a-103">Create deviceCategory</span></span>
 
-> <span data-ttu-id="d0da4-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d0da4-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d0da4-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d0da4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0273a-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="0273a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0273a-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0273a-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d0da4-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="d0da4-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0273a-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0273a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d0da4-107">Erstellen eines neuen [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="d0da4-107">Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="0273a-107">Erstellen eines neuen [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekts.</span><span class="sxs-lookup"><span data-stu-id="0273a-107">Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d0da4-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="d0da4-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0273a-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="0273a-108">Prerequisites</span></span>
 
-<span data-ttu-id="d0da4-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0da4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0273a-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0273a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d0da4-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d0da4-111">Permission type</span></span>|<span data-ttu-id="d0da4-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d0da4-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0273a-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0273a-111">Permission type</span></span>|<span data-ttu-id="0273a-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0273a-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d0da4-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d0da4-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="d0da4-114">&nbsp;&nbsp; **Onboarding**</span><span class="sxs-lookup"><span data-stu-id="d0da4-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="d0da4-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0da4-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="d0da4-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d0da4-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d0da4-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d0da4-117">Not supported.</span></span>|
-|<span data-ttu-id="d0da4-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d0da4-118">Application</span></span>|<span data-ttu-id="d0da4-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d0da4-119">Not supported.</span></span>|
+|<span data-ttu-id="0273a-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0273a-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="0273a-114">&nbsp;&nbsp; **Onboarding**</span><span class="sxs-lookup"><span data-stu-id="0273a-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="0273a-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0273a-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="0273a-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0273a-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0273a-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0273a-117">Not supported.</span></span>|
+|<span data-ttu-id="0273a-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0273a-118">Application</span></span>|<span data-ttu-id="0273a-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0273a-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d0da4-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0da4-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0273a-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0273a-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,35 +39,35 @@ ms.locfileid: "27942962"
 POST /deviceManagement/deviceCategories
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d0da4-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d0da4-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0273a-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0273a-121">Request headers</span></span>
 
-|<span data-ttu-id="d0da4-122">Header</span><span class="sxs-lookup"><span data-stu-id="d0da4-122">Header</span></span>|<span data-ttu-id="d0da4-123">Wert</span><span class="sxs-lookup"><span data-stu-id="d0da4-123">Value</span></span>|
+|<span data-ttu-id="0273a-122">Header</span><span class="sxs-lookup"><span data-stu-id="0273a-122">Header</span></span>|<span data-ttu-id="0273a-123">Wert</span><span class="sxs-lookup"><span data-stu-id="0273a-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d0da4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d0da4-124">Authorization</span></span>|<span data-ttu-id="d0da4-125">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="d0da4-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d0da4-126">Annehmen</span><span class="sxs-lookup"><span data-stu-id="d0da4-126">Accept</span></span>|<span data-ttu-id="d0da4-127">application/json</span><span class="sxs-lookup"><span data-stu-id="d0da4-127">application/json</span></span>|
+|<span data-ttu-id="0273a-124">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="0273a-124">Authorization</span></span>|<span data-ttu-id="0273a-125">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="0273a-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0273a-126">Annehmen</span><span class="sxs-lookup"><span data-stu-id="0273a-126">Accept</span></span>|<span data-ttu-id="0273a-127">application/json</span><span class="sxs-lookup"><span data-stu-id="0273a-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d0da4-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d0da4-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0273a-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0273a-128">Request body</span></span>
 
-<span data-ttu-id="d0da4-129">Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs deviceCategory an.</span><span class="sxs-lookup"><span data-stu-id="d0da4-129">In the request body, supply a JSON representation for the deviceCategory object.</span></span>
+<span data-ttu-id="0273a-129">Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs deviceCategory an.</span><span class="sxs-lookup"><span data-stu-id="0273a-129">In the request body, supply a JSON representation for the deviceCategory object.</span></span>
 
-<span data-ttu-id="d0da4-130">In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs deviceCategory erstellen.</span><span class="sxs-lookup"><span data-stu-id="d0da4-130">The following table shows the properties that are required when you create the deviceCategory.</span></span>
+<span data-ttu-id="0273a-130">In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs deviceCategory erstellen.</span><span class="sxs-lookup"><span data-stu-id="0273a-130">The following table shows the properties that are required when you create the deviceCategory.</span></span>
 
-|<span data-ttu-id="d0da4-131">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d0da4-131">Property</span></span>|<span data-ttu-id="d0da4-132">Typ</span><span class="sxs-lookup"><span data-stu-id="d0da4-132">Type</span></span>|<span data-ttu-id="d0da4-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d0da4-133">Description</span></span>|
+|<span data-ttu-id="0273a-131">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="0273a-131">Property</span></span>|<span data-ttu-id="0273a-132">Typ</span><span class="sxs-lookup"><span data-stu-id="0273a-132">Type</span></span>|<span data-ttu-id="0273a-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0273a-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d0da4-134">id</span><span class="sxs-lookup"><span data-stu-id="d0da4-134">id</span></span>|<span data-ttu-id="d0da4-135">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d0da4-135">String</span></span>|<span data-ttu-id="d0da4-136">Eindeutiger Bezeichner für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="d0da4-136">Unique identifier for the device category.</span></span> <span data-ttu-id="d0da4-137">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="d0da4-137">Read-only.</span></span>|
-|<span data-ttu-id="d0da4-138">**Obboarding**</span><span class="sxs-lookup"><span data-stu-id="d0da4-138">**Obboarding**</span></span>|
-|<span data-ttu-id="d0da4-139">description</span><span class="sxs-lookup"><span data-stu-id="d0da4-139">description</span></span>|<span data-ttu-id="d0da4-140">String</span><span class="sxs-lookup"><span data-stu-id="d0da4-140">String</span></span>|<span data-ttu-id="d0da4-141">Optionale Beschreibung für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="d0da4-141">Optional description for the device category.</span></span>|
-|<span data-ttu-id="d0da4-142">displayName</span><span class="sxs-lookup"><span data-stu-id="d0da4-142">displayName</span></span>|<span data-ttu-id="d0da4-143">String</span><span class="sxs-lookup"><span data-stu-id="d0da4-143">String</span></span>|<span data-ttu-id="d0da4-144">Der Anzeigename für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="d0da4-144">Display name for the device category.</span></span>|
+|<span data-ttu-id="0273a-134">id</span><span class="sxs-lookup"><span data-stu-id="0273a-134">id</span></span>|<span data-ttu-id="0273a-135">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0273a-135">String</span></span>|<span data-ttu-id="0273a-136">Eindeutiger Bezeichner für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="0273a-136">Unique identifier for the device category.</span></span> <span data-ttu-id="0273a-137">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="0273a-137">Read-only.</span></span>|
+|<span data-ttu-id="0273a-138">**Obboarding**</span><span class="sxs-lookup"><span data-stu-id="0273a-138">**Obboarding**</span></span>|
+|<span data-ttu-id="0273a-139">description</span><span class="sxs-lookup"><span data-stu-id="0273a-139">description</span></span>|<span data-ttu-id="0273a-140">String</span><span class="sxs-lookup"><span data-stu-id="0273a-140">String</span></span>|<span data-ttu-id="0273a-141">Optionale Beschreibung für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="0273a-141">Optional description for the device category.</span></span>|
+|<span data-ttu-id="0273a-142">displayName</span><span class="sxs-lookup"><span data-stu-id="0273a-142">displayName</span></span>|<span data-ttu-id="0273a-143">String</span><span class="sxs-lookup"><span data-stu-id="0273a-143">String</span></span>|<span data-ttu-id="0273a-144">Der Anzeigename für die Gerätekategorie.</span><span class="sxs-lookup"><span data-stu-id="0273a-144">Display name for the device category.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d0da4-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0da4-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0273a-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="0273a-145">Response</span></span>
 
-<span data-ttu-id="d0da4-146">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d0da4-146">If successful, this method returns a `201 Created` response code and a [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
+<span data-ttu-id="0273a-146">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0273a-146">If successful, this method returns a `201 Created` response code and a [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d0da4-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d0da4-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0273a-147">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0273a-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d0da4-148">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d0da4-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0273a-148">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0273a-148">Request</span></span>
 
-<span data-ttu-id="d0da4-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d0da4-149">Here is an example of the request.</span></span>
+<span data-ttu-id="0273a-149">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0273a-149">Here is an example of the request.</span></span>
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCategories
@@ -81,9 +81,9 @@ Content-length: 135
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d0da4-150">Antwort</span><span class="sxs-lookup"><span data-stu-id="d0da4-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0273a-150">Antwort</span><span class="sxs-lookup"><span data-stu-id="0273a-150">Response</span></span>
 
-<span data-ttu-id="d0da4-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d0da4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0273a-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0273a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 201 Created
