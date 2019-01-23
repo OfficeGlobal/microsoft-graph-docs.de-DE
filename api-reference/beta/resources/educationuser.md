@@ -4,16 +4,16 @@ description: Ein Benutzer im System. Dies ist eine bildungsspezifische Variante 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 21119c6a99420c0b3b8b9a941f73cc4de1a2c121
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e6fe0c40a9930b8ba1c7f200a44ab1d3ce444579
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420857"
 ---
 # <a name="educationuser-resource-type"></a>educationUser-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Ein Benutzer im System. Dies ist eine bildungsspezifische Variante des Benutzers mit derselben `id`, den Microsoft Graph vom nicht bildungsspezifischen `/users`-Endpunkt zurückgibt.
 Dieses Objekt enthält eine gezielte Teilmenge von Eigenschaften des [user](user.md)-Kernobjekts, erweitert um eine Reihe bildungsspezifischer Eigenschaften wie `primaryRole`, Kursteilnehmer- und Lehrerdaten.
@@ -34,7 +34,7 @@ Dieses Objekt enthält eine gezielte Teilmenge von Eigenschaften des [user](user
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **True**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
+|assignedLicenses|[assignedLicense](assignedlicense.md)-Sammlung|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
 |createdBy|[identitySet](identityset.md)| Entität, die den Benutzer erstellt hat. |
@@ -49,10 +49,10 @@ Dieses Objekt enthält eine gezielte Teilmenge von Eigenschaften des [user](user
 |middleName| String | Der zweite Vorname des Benutzers|
 |mobilePhone|Zeichenfolge|Die Nummer des primären Mobiltelefons für den Benutzer.|
 |passwordPolicies|Zeichenfolge|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Die beiden können zusammen angegeben werden. Beispiel: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
 |preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
 |primaryRole|string| Standardrolle für einen Benutzer. Die Rolle des Benutzers kann in einer einzelnen Klasse unterschiedlich sein. Mögliche Werte sind: `student`, `teacher` und `enum_sentinel`. Unterstützt $filter.|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) -Auflistung|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Die Wohnadresse des Benutzers|
 |student|[educationStudent](educationstudent.md)| Ist die primäre Rolle Kursteilnehmer, enthält dieser Block spezifische Daten für Kursteilnehmer.|
 |surname|Zeichenfolge|Der Nachname des Benutzers. Unterstützt $filter.|

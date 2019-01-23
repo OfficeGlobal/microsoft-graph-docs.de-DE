@@ -1,24 +1,25 @@
 ---
 title: Ressourcentyp networkIPv6ConfigurationManagementCondition
-description: Netzwerkeinstellungen für IPv6-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config-Management-Bedingung wird nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist.
-author: tfitzmac
+description: Netzwerkeinstellungen für IPv6-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config-Management-Bedingung wird nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist. IPv6-DHCP-Server-Adressen möglicherweise nicht abgeglichen wird. Dies ist, da diese Informationen, um den natürlichen Authentifizierungsdienst nicht in Windows (ca. Redstone) verfügbar macht.
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a2c7178fc522c95c870a9b34657e1afe3a407f09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 497e5ec8d2fbde5a4687b6f30afef9383f2a890b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421193"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Ressourcentyp networkIPv6ConfigurationManagementCondition
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Netzwerkeinstellungen für IPv6-Konfiguration-basiertes Management Bedingungen definiert werden können, die ausgelöst wird, wenn ein Gerät bestimmte IP-Adresse erkennt. Eine IP-Config-Management-Bedingung wird nur als TRUE betrachtet werden, wenn die Netzwerkverbindung aktiv ist.
 IPv6-DHCP-Server-Adressen möglicherweise nicht abgeglichen wird. Dies ist, da diese Informationen, um den natürlichen Authentifizierungsdienst nicht in Windows (ca. Redstone) verfügbar macht.
+
 
 Erbt vom [networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)
 
@@ -44,8 +45,8 @@ Erbt vom [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|Zeichenfolge|Die IPv6-Subnetz mit verbunden sein. Diese Vorgaben unter 2001:db8:: / 32|
 |ipV6Gateway|Zeichenfolge|Die IPv6-Gateway-Adresse zu. z. B. 2001:db8::1|
-|ipV6DNSServerList|Collection von Objekten des Typs „String“|Eine IPv6-DNS-Server für den Adapter konfiguriert.|
-|dnsSuffixList|Collection von Objekten des Typs „String“|Gültige DNS-Suffixe für das aktuelle Netzwerk. Diese Vorgaben unter seattle.contoso.com|
+|ipV6DNSServerList|Zeichenfolgenauflistung|Eine IPv6-DNS-Server für den Adapter konfiguriert.|
+|dnsSuffixList|Zeichenfolgenauflistung|Gültige DNS-Suffixe für das aktuelle Netzwerk. Diese Vorgaben unter seattle.contoso.com|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -83,7 +84,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   ]
 }
 ```
-
 
 
 

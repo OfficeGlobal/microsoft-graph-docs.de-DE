@@ -3,21 +3,22 @@ title: Ressourcentyp circularGeofenceManagementCondition
 description: Enthält Informationen zum Definieren einer kreisförmige Geo-Zauns Management Bedingung ein Interessenbereich zum Überwachen.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: bd7ae4b50ab7ec1497544fe8247f5d6d7e80e083
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 641e87a623d20f7290b58180266030c58518e384
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925364"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422096"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>Ressourcentyp circularGeofenceManagementCondition
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Enthält Informationen zum Definieren einer kreisförmige Geo-Zauns Management Bedingung ein Interessenbereich zum Überwachen.
+
 
 Erbt vom [locationManagementCondition](../resources/intune-fencing-locationmanagementcondition.md)
 
@@ -43,7 +44,7 @@ Erbt vom [locationManagementCondition](../resources/intune-fencing-locationmanag
 |applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Bedingung Management. Geerbt von [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |latitude|Gleitkommawert mit doppelter Genauigkeit|Breitengrad zwischen-90 und + 90 inklusive in Grad.|
 |longitude|Gleitkommawert mit doppelter Genauigkeit|Längengrad in zwischen-180 und inklusive und + 180 Grad.|
-|radiusInMeters|Single|RADIUS in Meter.|
+|radiusInMeters|Einzel|RADIUS in Meter.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -76,7 +77,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
 
 
 

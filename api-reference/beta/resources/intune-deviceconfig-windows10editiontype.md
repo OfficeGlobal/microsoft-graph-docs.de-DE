@@ -1,25 +1,26 @@
 ---
 title: windows10EditionType Enum-Typ
 description: Windows-10-Edition-Typ.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1bef365a70c6d63fca307b47b2971aca490c6658
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0cc19a0e4fcd5f291b143e48393a992d03ce7f75
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422341"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Windows-10-Edition-Typ.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Enterprise|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|
@@ -34,7 +35,6 @@ Windows-10-Edition-Typ.
 |windows10ProfessionalWorkstation|10|Windows 10 Professional für Arbeitsstationen|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional für Arbeitsstationen N|
 |nicht konfiguriert|12|Nicht konfiguriert|
-
 
 
 

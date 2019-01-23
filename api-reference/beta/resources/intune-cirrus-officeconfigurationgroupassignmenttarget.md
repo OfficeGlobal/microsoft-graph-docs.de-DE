@@ -1,21 +1,21 @@
 ---
 title: Ressourcentyp officeConfigurationGroupAssignmentTarget
 description: Office-Client-Konfiguration AAD Zuordnung Ziel gruppieren
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9d59a6adc5478d619187e5414ac92170cbdedd49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 411af117999498050288405874bd6b5baff5b6b5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422747"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Ressourcentyp officeConfigurationGroupAssignmentTarget
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Office-Client-Konfiguration AAD Zuordnung Ziel gruppieren
 
@@ -28,6 +28,7 @@ Erbt vom [officeConfigurationAssignmentTarget](../resources/intune-cirrus-office
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

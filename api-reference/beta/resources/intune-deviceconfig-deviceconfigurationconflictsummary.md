@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp deviceConfigurationConflictSummary
 description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6f366a36b2b24eafee8e3685821688f2ac85a2bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7e5f90ddc1b12f052dd603a6979d6838051504aa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948660"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418680"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Ressourcentyp deviceConfigurationConflictSummary
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -32,11 +33,12 @@ Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Gerä
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md)-Sammlung|Der Satz von Richtlinien mit der angegebenen Einstellung in Konflikt|
 |id|Zeichenfolge|Die Id für diesen Satz von miteinander in Konflikt stehende Richtlinien. Diese Id ist die Ids aller Richtlinien in ConflictingDeviceConfigurations in lexikografischer Reihenfolge durch Unterstriche getrennt sind.|
-|contributingSettings|Collection von Objekten des Typs „String“|Die Gruppe von Einstellungen in Konflikt mit der angegebenen Richtlinien|
+|contributingSettings|Zeichenfolgenauflistung|Die Gruppe von Einstellungen in Konflikt mit der angegebenen Richtlinien|
 |deviceCheckinsImpacted|Int32|Die Anzahl der durch die miteinander in Konflikt stehende Richtlinien und Einstellungen beeinträchtigt Eincheckvorgänge|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -62,7 +64,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

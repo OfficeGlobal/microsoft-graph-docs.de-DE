@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp „iosVppEBook“
 description: Diese Klasse enthält die Eigenschaften eines iOS-VPP-E-Books.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 74f2f71b9f6f31e2574afb16c276ba42fb87c9a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 35a3f6cc1744b869b4dd2dc9e0baf703144ea73b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416776"
 ---
 # <a name="iosvppebook-resource-type"></a>Ressourcentyp „iosVppEBook“
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Diese Klasse enthält die Eigenschaften eines iOS-VPP-E-Books.
+
 
 Sie erbt von [managedEBook](../resources/intune-books-managedebook.md).
 
@@ -46,11 +47,12 @@ Sie erbt von [managedEBook](../resources/intune-books-managedebook.md).
 |vppTokenId|Guid|ID des VPP-Tokens|
 |appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
 |vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
-|genres|Collection von Objekten des Typs „String“|Genres|
+|genres|String collection|Genres|
 |language|Zeichenfolge|Sprache|
 |seller|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -95,10 +97,12 @@ Es folgt eine JSON-Darstellung der Ressource.
   "language": "String",
   "seller": "String",
   "totalLicenseCount": 1024,
-  "usedLicenseCount": 1024
+  "usedLicenseCount": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

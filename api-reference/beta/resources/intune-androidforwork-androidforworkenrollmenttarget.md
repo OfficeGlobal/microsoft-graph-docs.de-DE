@@ -1,31 +1,31 @@
 ---
 title: AndroidForWorkEnrollmentTarget Enum-Typ
 description: Android für Arbeit Gerätemanagement Zielgruppenadressierung Typ für das Konto
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaea4ad4f1c1106cecafcf8db4cdb6d3cdbc71cd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ee961c484254b44b32326be98b0a9a355d11951
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415362"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>AndroidForWorkEnrollmentTarget Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Android für Arbeit Gerätemanagement Zielgruppenadressierung Typ für das Konto
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Noch nicht dokumentiert|
+|Keine|0|Noch nicht dokumentiert|
 |all|1|Noch nicht dokumentiert|
 |Ziel|2|Noch nicht dokumentiert|
 |targetedAsEnrollmentRestrictions|3|Noch nicht dokumentiert|
-
 
 
 

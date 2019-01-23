@@ -4,16 +4,16 @@ description: Diese Endpunkte werden in mehreren Microsoft Graph-API für Intune 
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 6180868d4aec195afcc037146f475e56a91aa669
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 11ee529edd3d74b5d6fb0c2d9d4e63bada0b0b22
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415432"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Gemeinsam genutzten Ressourcen in Microsoft Intune
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) ist.
 
@@ -41,6 +41,7 @@ Die folgenden Ressourcen: Grafik werden sowohl Intune Workflows verwendet:
 - [iPv6Range](intune-shared-ipv6range.md)
 - [keyValuePair](intune-shared-keyvaluepair.md)
 - [MIME-Inhalt](intune-shared-mimecontent.md)
+- [Problembehandlung bei mobilen app-Ereignis](intune-shared-mobileapptroubleshootingevent.md)
 - [proxiedDomain](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [reportRoot](intune-shared-reportroot.md)

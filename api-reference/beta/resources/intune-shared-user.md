@@ -4,18 +4,18 @@ description: Stellt ein user-Objekt von Azure Active Directory dar.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 67b347a34244b5789bcb38a281e33974473ba1bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8f7c49f6016c0cd91d80278282c937ad9ad9a0ab
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422481"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Stellt ein user-Objekt von Azure Active Directory dar.
 
@@ -39,7 +39,7 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 |[ExportDeviceAndAppManagementData-Funktion](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Noch nicht dokumentiert|
 |[GetEffectiveDeviceEnrollmentConfigurations-Funktion](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)-Sammlung|Noch nicht dokumentiert|
 |**Problembehandlung**|
-|[GetManagedDevicesWithAppFailures-Funktion](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Collection von Objekten des Typs „String“|Ruft die Liste der Geräte mit fehlerhaften apps.|
+|[GetManagedDevicesWithAppFailures-Funktion](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Zeichenfolgenauflistung|Ruft die Liste der Geräte mit fehlerhaften apps.|
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -61,7 +61,7 @@ Stellt ein user-Objekt von Azure Active Directory dar.
 |**Problembehandlung**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)-Sammlung|Die Liste der Problembehandlungsereignisse für diesen Benutzer.|
 |mobileAppIntentAndStates|[MobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) -Auflistung|Die Liste der Problembehandlungsereignisse für diesen Benutzer.|
-|mobileAppTroubleshootingEvents|[MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) -Auflistung|Die Liste der mobilen app Problembehandlung Ereignisse für diesen Benutzer.|
+|mobileAppTroubleshootingEvents|[MobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) -Auflistung|Die Liste der mobilen app Problembehandlung Ereignisse für diesen Benutzer.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

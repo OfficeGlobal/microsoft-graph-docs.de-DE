@@ -1,25 +1,26 @@
 ---
 title: Abrufen von depIOSEnrollmentProfile
 description: Lesen Sie Eigenschaften und Beziehungen des DepIOSEnrollmentProfile-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d3306ef11266c30af5348472f10ca220117452bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0bc4363e1f84830f91fd5defc543325ad3d3b8ad
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423237"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Abrufen von depIOSEnrollmentProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Lesen Sie Eigenschaften und Beziehungen des [DepIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) -Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -37,11 +38,12 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosE
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
+
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -51,6 +53,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [DepIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) im Antworttext.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
@@ -62,7 +65,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1471
+Content-Length: 1898
 
 {
   "value": {
@@ -73,6 +76,7 @@ Content-Length: 1471
     "requiresUserAuthentication": true,
     "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
     "enableAuthenticationViaCompanyPortal": true,
+    "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
@@ -89,6 +93,8 @@ Content-Length: 1471
     "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
+    "displayToneSetupDisabled": true,
+    "privacyPaneDisabled": true,
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -102,11 +108,17 @@ Content-Length: 1471
     "sharedIPadMaximumUserCount": 10,
     "enableSharedIPad": true,
     "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-    "enableSingleAppEnrollmentMode": true
+    "enableSingleAppEnrollmentMode": true,
+    "homeButtonScreenDisabled": true,
+    "iMessageAndFaceTimeScreenDisabled": true,
+    "onBoardingScreenDisabled": true,
+    "screenTimeScreenDisabled": true,
+    "simSetupScreenDisabled": true,
+    "softwareUpdateScreenDisabled": true,
+    "watchMigrationScreenDisabled": true
   }
 }
 ```
-
 
 
 
