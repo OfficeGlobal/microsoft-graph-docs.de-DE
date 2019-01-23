@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp variableManagementConditionExpression
 description: Ergibt die Bedingung Verwaltungsstatus als boolescher Ausdruck.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8fc3e49e7ba55cf10a1dac36690d0b1e419890a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f6a5e7efd0c8213f40d1dfb5f86d2f86c999069d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399626"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Ressourcentyp variableManagementConditionExpression
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Ergibt die Bedingung Verwaltungsstatus als boolescher Ausdruck.
+
 
 Erbt vom [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
@@ -28,6 +29,7 @@ Erbt vom [managementConditionExpressionModel](../resources/intune-fencing-manage
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -41,7 +43,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "managementConditionId": "String"
 }
 ```
-
 
 
 

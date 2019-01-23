@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windows81VpnProxyServer
 description: VPN-Proxy-Server.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d276ee7ac84bfe86c197025c05bf1a119b85e06c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a400ed128a80e6fae11f090f7cdd445fe8c174b0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398891"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Ressourcentyp windows81VpnProxyServer
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 VPN-Proxy-Server.
+
 
 Erbt vom [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 
@@ -27,11 +28,12 @@ Erbt vom [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 |automaticConfigurationScriptUrl|Zeichenfolge|Automatische Konfiguration Skript-Url des Proxys. Geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Zeichenfolge|Adresse. Geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|Port. Gültige Werte zwischen 0 und 65535 Inherited aus [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Boolescher Wert|Erkennen Sie Proxyeinstellungen automatisch.|
-|bypassProxyServerForLocalAddress|Boolescher Wert|Proxyserver für lokale Adressen umgehen.|
+|automaticallyDetectProxySettings|Boolean|Erkennen Sie Proxyeinstellungen automatisch.|
+|bypassProxyServerForLocalAddress|Boolean|Proxyserver für lokale Adressen umgehen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -49,7 +51,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

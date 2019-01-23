@@ -1,25 +1,26 @@
 ---
 title: WindowsPrivacyDataCategory Enum-Typ
 description: Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 03a7e1d7f017d7c7df9c27257c8f2a3e01c861d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 484042130a4a1d6a3732ddd1b3ac7fc4aec41da3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401145"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>WindowsPrivacyDataCategory Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Keine Zugriffsebene angegeben, keine Intents. Gerät kann entweder wie in UserInControl oder ForceAllow Verhalten. Es kann die private Daten abhängen wurde Zugriff auf Windows-Versionen und anderen Faktoren.|
 |Kontostatus|1|Lassen Sie apps Zugriff Benutzernamen ein, Bild und andere Kontoinformationen in Microsoft-Konto erstellt. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
@@ -40,7 +41,6 @@ Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
 |tasks|16|Let apps Zugriff Taskplaner. In Windows 10, Version 1703 hinzugefügt.|
 |syncWithDevices|17|Können Sie apps, automatisch freigeben und Info mit drahtlosen Geräten, die explizit mit Gerät des Benutzers ein nicht synchronisieren. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
 |trustedDevices|18|Können Sie apps, die vertrauenswürdige Geräte zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-
 
 
 

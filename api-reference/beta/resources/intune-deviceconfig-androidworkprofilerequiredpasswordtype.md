@@ -1,25 +1,26 @@
 ---
 title: AndroidWorkProfileRequiredPasswordType Enum-Typ
 description: Android Arbeit Profil erforderliche Kennworttyp.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 97820113cda826a97d5bac5854577d4b4434eb57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cdf8c03dab6642cf6859ca822001a71b041c0e54
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912232"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399899"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>AndroidWorkProfileRequiredPasswordType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Android Arbeit Profil erforderliche Kennworttyp.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
 |lowSecurityBiometric|1|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|
@@ -29,7 +30,6 @@ Android Arbeit Profil erforderliche Kennworttyp.
 |atLeastAlphabetic|5|Mindestens alphabetische erforderliche Kennwort.|
 |atLeastAlphanumeric|6|Mindestens Alphanumerisches Kennwort erforderlich.|
 |alphanumericWithSymbols|7|Mindestens alphanumerisch Symbole erforderliche Kennwort.|
-
 
 
 

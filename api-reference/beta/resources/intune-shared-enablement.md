@@ -1,15 +1,15 @@
 ---
 title: Aktivierung von Steuerelementen Enum-Typ
-description: 'Werte verwendet, um den Status eines Geräts angeben. '
+description: Beschreibt die Aktivierung von Steuerelementen Enumeration die Microsoft Graph-API für Intune, die mehrere Workflows unterstützt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 539d57111003f348147a6be3952d969ab4206b5d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 538b52790cf7748453adfda2a6bea8334a36fb87
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399563"
 ---
 # <a name="enablement-enum-type"></a>Aktivierung von Steuerelementen Enum-Typ
 
@@ -22,7 +22,7 @@ Werte verwendet, um den Status eines Geräts angeben.
 Beachten Sie, dass es ein Unterschied zwischen deaktiviert und nicht konfiguriert.
 
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |nicht konfiguriert|0|Gerät Standardwert, keine beabsichtigt.|
 |enabled|1|Aktiviert die Einstellung auf dem Gerät.|
