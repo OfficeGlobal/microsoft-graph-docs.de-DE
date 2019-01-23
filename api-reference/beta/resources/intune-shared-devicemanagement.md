@@ -4,16 +4,18 @@ description: 'Die Ressource DeviceManagement stellt einen Container, deren Inhal
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 05620a5b34125920399434824d9f42ccea989c72
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396420"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren nach Workflow je, einschließlich:  
 
@@ -57,11 +59,11 @@ Die Ressource DeviceManagement stellt einen Container, deren Inhalt variieren na
 |id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.|
 |**deviceConfiguration**|
 |intuneAccountId|Guid|Intune Konto-ID für die angegebenen Mandanten|
-|legacyPcManangementEnabled|Boolescher Wert|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
+|legacyPcManangementEnabled|Boolean|Die Eigenschaft zum Aktivieren von nicht-MDM verwaltet legacy PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
 |maximumDepTokens|Int32|Maximal zulässige Anzahl von DEP Token pro Mandant.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|
-|accountMoveCompletionDateTime|DateTimeOffset|Datum & Zeit bei Mandantendaten zwischen Scaleunits verschoben.|
+|accountMoveCompletionDateTime|DateTimeOffset|Das Datum & Uhrzeit wann Mandantendaten zwischen Scaleunits verschoben.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informationen zum Unternehmensadministrator Zustimmung.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Gerät Protection Overview.|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Cleanup-Regel|

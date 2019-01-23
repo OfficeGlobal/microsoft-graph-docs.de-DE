@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windowsAutopilotDeploymentProfile
 description: Windows Autopilot Bereitstellung Benutzerprofil
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 60d72a63cfd4e062c312aeda89a37937b7e03041
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7f97603980f4e76c4dd2f63287822a1e8e984ded
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394110"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Ressourcentyp windowsAutopilotDeploymentProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Windows Autopilot Bereitstellung Benutzerprofil
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -35,7 +36,7 @@ Windows Autopilot Bereitstellung Benutzerprofil
 |lastModifiedDateTime|DateTimeOffset|Profil Zeitpunkt der letzten Änderung|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Erleben Sie die Einstellung im Lieferzustand|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Registrierung Status Bildschirm Einstellung|
-|extractHardwareHash|Boolescher Wert|Extraktion von HardwareHash für das Profil|
+|extractHardwareHash|Boolean|Extraktion von HardwareHash für das Profil|
 |deviceNameTemplate|Zeichenfolge|Die Vorlage verwendet, um das Gerät AutoPilot nennen. Dies kann ein benutzerdefinierter Text und kann auch die Seriennummer des Geräts, oder aber eine zufällig erzeugte Zahl enthalten. Die gesamte Länge des Texts von der Vorlage generierte kann nicht mehr als 15 Zeichen sein.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -84,7 +85,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceNameTemplate": "String"
 }
 ```
-
 
 
 

@@ -4,16 +4,16 @@ description: 'Stellt den Synchronisierungsstatus eines Profils Schule Daten-Sync
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1fd77f48544e5e6bc0c582e4ce9fb2a5b1b6601a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396154"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>Ressourcentyp educationSynchronizationProfileStatus
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt den Synchronisierungsstatus eines Schule Daten [Synchronisierung Profil](educationsynchronizationprofile.md). 
 
@@ -29,7 +29,7 @@ Stellt den Synchronisierungsstatus eines Schule Daten [Synchronisierung Profil](
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **status** | string | Der Status der Synchronisierung. Mögliche Werte sind: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
+| **status** | educationSynchronizationStatus | Der Status der Synchronisierung. Mögliche Werte sind: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Gibt die Zeit, die beim letzten Änderung im Verzeichnis beobachtet wurden.  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -38,7 +38,7 @@ Stellt den Synchronisierungsstatus eines Schule Daten [Synchronisierung Profil](
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json

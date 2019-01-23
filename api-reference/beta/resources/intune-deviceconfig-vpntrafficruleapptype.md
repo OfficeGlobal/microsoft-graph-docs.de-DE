@@ -1,30 +1,30 @@
 ---
 title: VpnTrafficRuleAppType Enum-Typ
 description: Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6adf30f981bcb3ee4d57410a63419b29ac4184cd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396021"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>VpnTrafficRuleAppType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Die Regel Datenverkehr ist nicht mit einer app verknüpft.|
+|Keine|0|Die Regel Datenverkehr ist nicht mit einer app verknüpft.|
 |Desktop|1|Die Regel Datenverkehr ist desktop-app zugeordnet.|
 |universelle|2|Die Regel Datenverkehr ist eine universelle app zugeordnet.|
-
 
 
 

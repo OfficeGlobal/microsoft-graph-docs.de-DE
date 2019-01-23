@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp importedDeviceIdentityResult
 description: Die Ressource ImportedDeviceIdentityResult stellt das Ergebnis der Versuch, eine Identität Gerät zu importieren.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7373ff0c0ec138b61552b61caea063a063a50ad1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e4a1720fee543b4814430476ebd6c84a0fc33d73
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395804"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>Ressourcentyp importedDeviceIdentityResult
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Die Ressource ImportedDeviceIdentityResult stellt das Ergebnis der Versuch, eine Identität Gerät zu importieren.
+
 
 Erbt vom [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)
 
@@ -42,10 +43,11 @@ Erbt vom [importedDeviceIdentity](../resources/intune-enrollment-importeddevicei
 |description|Zeichenfolge|Die Beschreibung des Geräts Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Zustand des Geräts in Intune geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
-|status|Boolescher Wert|Status der importierten Gerät Identität|
+|status|Boolean|Status der importierten Gerät Identität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -69,7 +71,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "status": true
 }
 ```
-
 
 
 

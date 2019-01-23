@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp hardwareInformation
 description: Hardwareinformationen für ein bestimmtes Gerät.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0665152e3cc483f2303f458b79c891658651d91f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 32b6d0e637c477265a6d23f39e531ca89c7e490c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394824"
 ---
 # <a name="hardwareinformation-resource-type"></a>Ressourcentyp hardwareInformation
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Hardwareinformationen für ein bestimmtes Gerät.
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
@@ -36,9 +37,9 @@ Hardwareinformationen für ein bestimmtes Gerät.
 |cellularTechnology|Zeichenfolge|Mobilfunk-Technologie des Geräts|
 |wifiMac|Zeichenfolge|WLAN-MAC-Adresse des Geräts|
 |operatingSystemLanguage|Zeichenfolge|Die Sprache des Betriebssystems des Geräts|
-|isSupervised|Boolescher Wert|Überwachten Modus des Geräts|
-|isEncrypted|Boolescher Wert|Status der Verschlüsselung des Geräts|
-|isSharedDevice|Boolescher Wert|Freigegebene iPad|
+|isSupervised|Boolean|Überwachten Modus des Geräts|
+|isEncrypted|Boolean|Status der Verschlüsselung des Geräts|
+|isSharedDevice|Boolean|Freigegebene iPad|
 |sharedDeviceCachedUsers|[SharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) -Auflistung|Alle Benutzer auf dem freigegebenen Apple-Gerät|
 |tpmSpecificationVersion|Zeichenfolge|Zeichenfolge, die die Spezifikation, Version angibt.|
 |operatingSystemEdition|Zeichenfolge|Zeichenfolge, die die Betriebssystem Edition angibt.|
@@ -49,6 +50,7 @@ Hardwareinformationen für ein bestimmtes Gerät.
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -91,7 +93,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
-
 
 
 

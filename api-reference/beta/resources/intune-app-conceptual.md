@@ -4,16 +4,16 @@ description: Die App-Schutz-Richtlinien von Microsoft Intune schützen die Date
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2a701dfc36615facdf64e7588f8688eb495906a3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90764386d1241a0cec7552435ebd605d61dcae5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395006"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>So schützen Sie Daten in Unternehmens-Apps mit Microsoft Intune
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) ist.
 
@@ -24,6 +24,7 @@ Mithilfe der App-Schutz-Richtlinien von Intune können Sie die Daten Ihres Unter
 Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-Ressourcen zur Verfügung:
 
 - [Android-Gerät Besitzer Registrierung Profil](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android-Registrierung Unternehmenscode](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android für Arbeit app](intune-apps-androidforworkapp.md)
 - [Android for Work-App – Konfigurationsschema](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Android for Work-App – Konfigurationsschemaelement](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -73,6 +74,10 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [app für iOS VPP widerrufen Lizenzen Aktionsergebnis](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS-VPP-E-Book](intune-books-iosvppebook.md)
 - [iOS-VPP-E-Book-Zuweisung](intune-books-iosvppebookassignment.md)
+- [Mac os VPP-app](intune-apps-macosvppapp.md)
+- [Mac os VPP zugewiesenen app-Lizenz](intune-apps-macosvppappassignedlicense.md)
+- [Einstellungen für die Zuweisung von Mac os VPP app](intune-apps-macosvppappassignmentsettings.md)
+- [Mac os VPP app widerrufen Lizenzen Aktionsergebnis](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Mac OS LOB-app](intune-apps-macoslobapp.md)
 - [Mac OS LOB untergeordneten app](intune-apps-macoslobchildapp.md)
 - [Mac OS Betriebssystem (mindestens)](intune-apps-macosminimumoperatingsystem.md)
@@ -111,10 +116,17 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [Veröffentlichung Mobile app-Status](intune-apps-mobileapppublishingstate.md)
 - [Mobile app enthalten](intune-apps-mobilecontainedapp.md)
 - [Mobile Branchen-App](intune-apps-mobilelobapp.md)
+- [Office Client Checkin-status](intune-cirrus-officeclientcheckinstatus.md)
+- [Office-Client-Konfiguration](intune-cirrus-officeclientconfiguration.md)
+- [Zuordnung von Office-Client-Konfiguration](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office-Konfiguration](intune-cirrus-officeconfiguration.md)
+- [Office-Konfiguration Zuordnung Ziel](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office-Konfiguration Gruppe Zuordnung Ziel](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office-Produkt-id](intune-apps-officeproductid.md)
 - [Office-Suite-app](intune-apps-officesuiteapp.md)
 - [Office-Suite installiert Fortschritt Anzeigeebene](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office Update Kanal](intune-apps-officeupdatechannel.md)
+- [Office-Benutzer Checkin Zusammenfassung](intune-cirrus-officeusercheckinsummary.md)
 - [Resultierende app State detail](intune-apps-resultantappstatedetail.md)
 - [Symantec Code Signaturzertifikat](intune-apps-symanteccodesigningcertificate.md)
 - [Installieren von Benutzerstatus-app](intune-apps-userappinstallstatus.md)
@@ -122,6 +134,7 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [VPP-Lizenzierungstyp](intune-apps-vpplicensingtype.md)
 - [Web-App](intune-apps-webapp.md)
 - [Win32-LOB-app](intune-apps-win32lobapp.md)
+- [Win32-LOB app Assignment-Einstellungen](intune-apps-win32lobappassignmentsettings.md)
 - [App-Win32 LOB-Erkennung](intune-apps-win32lobappdetection.md)
 - [Win32-LOB-app Erkennung operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32-LOB-app-Datei Entdeckung](intune-apps-win32lobappfilesystemdetection.md)
@@ -129,6 +142,7 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [Win32-LOB-app installieren Erfahrung](intune-apps-win32lobappinstallexperience.md)
 - [Win32-LOB-app MSI-Informationen](intune-apps-win32lobappmsiinformation.md)
 - [Win32-LOB app MSI-Paket-Typ](intune-apps-win32lobappmsipackagetype.md)
+- [App-Win32 LOB-Benachrichtigung](intune-apps-win32lobappnotification.md)
 - [Win32-LOB-app Power Shell Skript Erkennung](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32-LOB-app Produkt Code Erkennung](intune-apps-win32lobappproductcodedetection.md)
 - [Win32-LOB-app-Registrierung Erkennung](intune-apps-win32lobappregistrydetection.md)
@@ -141,6 +155,8 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [Windows-Gerätetyp](intune-apps-windowsdevicetype.md)
 - [Mindestversion des Windows-Betriebssystems](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile-MSI](intune-apps-windowsmobilemsi.md)
+- [Windows-Office-Client-Konfiguration](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows Office-Client-Sicherheitskonfiguration](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Informationen zu Windows-Paket](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 AppX bundle](intune-apps-windowsphone81appxbundle.md)

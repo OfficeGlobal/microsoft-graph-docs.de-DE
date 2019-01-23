@@ -1,32 +1,32 @@
 ---
 title: MobileAppActionType Enum-Typ
 description: Noch nicht dokumentiert
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 009e64f88179b252ced1c88133f3bed566302df8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a5dee317bfecdf98d45999cb7b4d6c0da22c7ac5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396056"
 ---
 # <a name="mobileappactiontype-enum-type"></a>MobileAppActionType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Noch nicht dokumentiert
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekanntes Ergebnis.|
 |installCommandSent|1|Anwendung installieren Befehl gesendet wurde.|
 |installiert|3|Die Anwendung installiert.|
 |deinstalliert|4|Anwendung deinstalliert.|
 |userRequestedInstall|5|Benutzer angefordert installation|
-
 
 
 

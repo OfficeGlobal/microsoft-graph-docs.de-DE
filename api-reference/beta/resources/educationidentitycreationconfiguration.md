@@ -4,16 +4,16 @@ description: Definiert die Einstellungen, die bei der Erstellung der Schule Date
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: cb7d3d101c547f1ced1b16bf857b7a7e953dc91b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7c05d810c017f57f738d188a8edef5d0560415fd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395685"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>Ressourcentyp educationIdentityCreationConfiguration
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Definiert die Einstellungen, die bei der Erstellung der Schule Daten Profil Identitäten. Diese Identitäten enthalten Schüler und Lehrer. Basierend auf diese Einstellungen, werden die Benutzer im Verzeichnis erstellt werden.
 
@@ -39,10 +39,10 @@ Definiert die Einstellungen, die bei der Erstellung der Schule Daten Profil Iden
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
-            "@odata.type": "#microsoft.graph.educationIdentityDomain",
+            "@odata.type": "microsoft.graph.educationIdentityDomain",
         }
     ]
 }

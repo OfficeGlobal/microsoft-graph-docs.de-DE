@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windowsKioskUWPApp
 description: Die Basisklasse für einen Typ von apps
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8719fdd248276a657b96235c592f1bb62607b856
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7ba5367721890f02af3b348ad469b15024de4800
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29392682"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Ressourcentyp windowsKioskUWPApp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Die Basisklasse für einen Typ von apps
+
 
 Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
@@ -26,12 +27,14 @@ Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die app-Kachelgröße für die Start-Layout Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.|
 |name|Zeichenfolge|Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.|
+|der appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Der app-Typ Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Mögliche Werte: sind `unknown`, `store`, `desktop` und `aumId`.|
 |appUserModelId|Zeichenfolge|Dies ist die einzige Anwendung Benutzer Modell ID (AUMID), die Verwendung im Kioskmodus gestartet werden|
 |appId|Zeichenfolge|Dies verweist auf eine Intune-App, die Ziel ein, um dieselben Zuweisungen als Kiosk-Konfiguration werden|
 |containedAppId|Zeichenfolge|Dies wird auf einer enthaltenen App aus einer Intune App|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -44,12 +47,12 @@ Es folgt eine JSON-Darstellung der Ressource.
   "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
   "startLayoutTileSize": "String",
   "name": "String",
+  "appType": "String",
   "appUserModelId": "String",
   "appId": "String",
   "containedAppId": "String"
 }
 ```
-
 
 
 

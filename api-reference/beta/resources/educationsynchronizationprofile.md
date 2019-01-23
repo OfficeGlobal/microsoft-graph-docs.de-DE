@@ -4,16 +4,16 @@ description: Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a9976538923d35c38bda001d73cabc1b4c3f6814
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b753e904a0c70d5c0ae83dbb3d9a88aff8401eac
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396952"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Ressourcentyp educationSynchronizationProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von Education Entitäten und der Teilnehmerliste einer Informationen aus einem Quellverzeichnis in Azure Active Directory (AD Azure) verwendet. Diese Ressource enthält eine programmgesteuerte Darstellung in [Schule Daten Sync](https://sds.microsoft.com)verwendet.
 
@@ -39,9 +39,9 @@ Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von Education Ent
 |:-|:-|:-|
 | **displayName** | string |  Name des Konfigurationsprofils zum Synchronisieren von Identitäten.         |
 | **Datenprovider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  Der Datenanbieter für das Profil verwendet.         |
-| **identitysynchronizationconfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identität [Erstellung](educationidentitycreationconfiguration.md) oder [übereinstimmenden](educationidentitymatchingconfiguration.md) Konfiguration.        |
+| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identität [Erstellung](educationidentitycreationconfiguration.md) oder [übereinstimmenden](educationidentitymatchingconfiguration.md) Konfiguration.        |
 | **licensesToAssign** | [EducationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md) -Auflistung|  Lizenz-Setup-Konfiguration.        |
-| **state** | string |  Der Zustand des Profils. Mögliche Werte sind: `provisioning`, `provisioned`, `provisioningFailed`, `deleting` und `deletionFailed`.          |
+| **state** | educationSynchronizationProfileState |  Der Zustand des Profils. Mögliche Werte sind: `provisioning`, `provisioned`, `provisioningFailed`, `deleting` und `deletionFailed`.          |
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -58,7 +58,7 @@ Es folgt eine JSON-Darstellung der Ressource **EducationSynchronizationProfile**
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
@@ -67,8 +67,8 @@ Es folgt eine JSON-Darstellung der Ressource **EducationSynchronizationProfile**
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
     "errors": [{"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus" }],
-    "dataProvider": { "@odata.type": "#microsoft.graph.educationcsvdataprovider" },
-    "identitySynchronizationConfiguration": { "@odata.type": "#microsoft.graph.educationIdentitySynchronizationConfiguration" },
+    "dataProvider": { "@odata.type": "microsoft.graph.educationCsvDataProvider" },
+    "identitySynchronizationConfiguration": { "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration" },
     "licensesToAssign": [{"@odata.type":"microsoft.graph.educationSynchronizationLicenseAssignment"}],
     "handleSpecialCharacterConstraint": "Boolean"
 }
