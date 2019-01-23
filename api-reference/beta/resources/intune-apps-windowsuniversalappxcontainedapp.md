@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windowsUniversalAppXContainedApp
 description: Eine Klasse, die eine app enthaltene einer App WindowsUniversalAppX darstellt.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ee4d8a08fe182322412c228b04da56339be93f54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 397d2b706bcf3e7fbbf223a5af5e567c83ce47f7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410910"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>Ressourcentyp windowsUniversalAppXContainedApp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Eine Klasse, die eine app enthaltene einer App WindowsUniversalAppX darstellt.
+
 
 Erbt vom [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
@@ -38,6 +39,7 @@ Erbt vom [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -53,7 +55,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "appUserModelId": "String"
 }
 ```
-
 
 
 

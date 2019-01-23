@@ -1,25 +1,26 @@
 ---
 title: iosVppEBook erstellen
 description: Erstellt neue Objekte des Typs iosVppEBook.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409755"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook erstellen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Erstellt neue Objekte des Typs [iosVppEBook](../resources/intune-books-iosvppebook.md).
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -39,7 +40,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -62,11 +63,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |vppTokenId|Guid|ID des VPP-Tokens|
 |appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
 |vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
-|genres|Collection von Objekten des Typs „String“|Genres|
+|genres|String collection|Genres|
 |language|Zeichenfolge|Sprache|
 |seller|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität.|
 
 
 
@@ -74,12 +76,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein [iosVppEBook](../resources/intune-books-iosvppebook.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 856
+Content-length: 854
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -92,7 +95,6 @@ Content-length: 856
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
@@ -104,7 +106,10 @@ Content-length: 856
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -113,7 +118,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1026
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -140,10 +145,12 @@ Content-Length: 964
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

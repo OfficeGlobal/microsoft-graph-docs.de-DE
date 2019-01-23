@@ -1,25 +1,26 @@
 ---
 title: AndroidForWorkVpnConnectionType Enum-Typ
 description: Android für Arbeit VPN-Verbindungstyp.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 28eeb6f148baad098620e88fd1e10b99e1875059
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 953d35e6484a59db1768d04056f87c4aeefb05c5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409300"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>AndroidForWorkVpnConnectionType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Android für Arbeit VPN-Verbindungstyp.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Pulse sichern.|
@@ -27,7 +28,6 @@ Android für Arbeit VPN-Verbindungstyp.
 |dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Verbindung.|
 |checkPointCapsuleVpn|4|Überprüfen Sie Punkt "Kapseln" VPN.|
 |Citrix|5|Citrix|
-
 
 
 

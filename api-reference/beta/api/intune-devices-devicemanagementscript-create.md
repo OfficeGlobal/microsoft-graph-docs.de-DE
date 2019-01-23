@@ -1,25 +1,26 @@
 ---
 title: Erstellen von deviceManagementScript
 description: Erstellen eines neuen DeviceManagementScript-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3ef3f9436de79b5839912a44915238267f0c26dd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: be0ffb8b912b25684ba0ed3dc383a995fb872f3b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409272"
 ---
 # <a name="create-devicemanagementscript"></a>Erstellen von deviceManagementScript
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Erstellen eines neuen [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -57,8 +58,10 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |createdDateTime|DateTimeOffset|Datum und Zeit für das Gerät Management-Skript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräts Management-Skripts.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts, den das Gerät Management-Skript in ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolescher Wert|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
+|enforceSignatureCheck|Boolean|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
 |fileName|Zeichenfolge|Dateiname des Skripts.|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-IDs für diese Instanz des PowerShellScript.|
+|runAs32Bit|Boolean|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
 
 
 
@@ -66,12 +69,13 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
-Content-length: 422
+Content-length: 443
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -81,10 +85,13 @@ Content-length: 422
     "@odata.type": "microsoft.graph.runSchedule"
   },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "runAs32Bit": true
 }
 ```
 
@@ -93,7 +100,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 615
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -108,10 +115,13 @@ Content-Length: 530
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 

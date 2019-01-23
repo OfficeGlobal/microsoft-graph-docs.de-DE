@@ -1,25 +1,26 @@
 ---
 title: RatingUnitedStatesMoviesType Enum-Typ
 description: Filme Bewertung Beschriftungen in US-Rufnummern
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5aeb2279d2f8379a4adb17277adf0da278e1c7ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c14fcc87c949e3f16403ca4654ec987423f8b647
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412226"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>RatingUnitedStatesMoviesType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Filme Bewertung Beschriftungen in US-Rufnummern
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|
@@ -28,7 +29,6 @@ Filme Bewertung Beschriftungen in US-Rufnummern
 |parentalGuidance13|4|PG13, kann einige Materialien für untergeordnete Elemente unter 13 eventuell|
 |eingeschränkt|5|R, erfordern Viewer unter 17 begleitenden Erziehungsberechtigte Versender nicht jugendfreier|
 |Erwachsene|6|NC17, nur Erwachsene|
-
 
 
 

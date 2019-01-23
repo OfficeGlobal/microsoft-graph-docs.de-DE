@@ -4,16 +4,16 @@ description: Stellt die Lizenzinformationen Benutzerkonten zugewiesen. Die Resso
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 757e080a8b2c6f3f01fa1663f10c9b0b98eaf4d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c60b868ab8d973f6249d7e9ea2b30415d4b8a1b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409678"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Ressourcentyp educationSynchronizationLicenseAssignment
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt die Lizenzinformationen Benutzerkonten zugewiesen. Die Ressource wird Lizenz Zuordnungen einrichten, beim Erstellen von neuen Benutzerkonten verwendet werden.
 
@@ -30,12 +30,12 @@ Stellt die Lizenzinformationen Benutzerkonten zugewiesen. Die Ressource wird Liz
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment"
+  "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "skuIds": ["String"]
 }
 ```
