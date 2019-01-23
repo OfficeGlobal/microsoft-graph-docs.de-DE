@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp managedDeviceCleanupSettings
 description: Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werden möchte.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 334b561ffa19d4161553f761ce65b7da7d9dbcfa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4bf756072dcc3cd13bda2fda59b8688b63f3cd43
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424567"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Ressourcentyp managedDeviceCleanupSettings
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werden möchte.
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
@@ -25,6 +26,7 @@ Definieren Sie die Regel aus, wenn der Administrator die Geräte bereinigt werde
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -38,7 +40,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
 
 
 

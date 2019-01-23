@@ -4,12 +4,12 @@ description: 'Rufen Sie die Fehler, die während der Validierung und/oder währe
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6a15070b68e9cf249a6b6a7841ea24b0e265a24e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425127"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Abrufen von educationSynchronizationErrors
 
@@ -35,7 +35,7 @@ Diese Methode unterstützt die folgenden [Parameter für OData-Abfrage](https://
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationError",
+  "@odata.type": "microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http

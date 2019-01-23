@@ -4,16 +4,16 @@ description: Stellt eine Zuordnung zwischen einem Source-Eigenschaft und einer T
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 624e2717387c5cc8994596fd83d5a6856ac6082b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c2b092d5589cdccccfe73a7e71afcafa7b555a90
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978256"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425792"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>Ressourcentyp educationIdentityMatchingOptions
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Stellt eine Zuordnung zwischen einem Source-Eigenschaft und einer Target-Eigenschaft für den Abgleich von Benutzerkonten bereit. Die Source-Eigenschaft sollte in den Quelldaten vorhanden sein. Target-Eigenschaft muss eine gültige Eigenschaft in Azure Active Directory (AD Azure) sein.
 
@@ -32,12 +32,12 @@ Stellt eine Zuordnung zwischen einem Source-Eigenschaft und einer Target-Eigensc
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityMatchingOptions"
+  "@odata.type": "microsoft.graph.educationIdentityMatchingOptions"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "sourcePropertyName": "String",
     "targetPropertyName": "String",
     "targetDomain": "String"

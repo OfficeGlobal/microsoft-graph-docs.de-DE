@@ -1,23 +1,23 @@
 ---
-title: Abrufen von remoteActionAudit
-description: Lesen Sie Eigenschaften und Beziehungen des RemoteActionAudit-Objekts.
+title: Liste appleVppTokenTroubleshootingEvents
+description: Listeneigenschaften und Beziehungen der AppleVppTokenTroubleshootingEvent-Objekte.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 5de961cc4307b36028a83affcc44185fa506f33d
+ms.openlocfilehash: 7ab20a752438d0a2a4685b51582f39b614d2b791
 ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424574"
+ms.locfileid: "29428885"
 ---
-# <a name="get-remoteactionaudit"></a>Abrufen von remoteActionAudit
+# <a name="list-applevpptokentroubleshootingevents"></a>Liste appleVppTokenTroubleshootingEvents
 
 > **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
-Lesen Sie Eigenschaften und Beziehungen des [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.
+Listeneigenschaften und Beziehungen der [AppleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -34,11 +34,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 }
 -->
 ``` http
-GET /deviceManagement/remoteActionAudits/{remoteActionAuditId}
+GET /deviceManagement/troubleshootingEvents
 ```
-
-## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
@@ -50,14 +47,14 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.c
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) im Antworttext.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [AppleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) .
 
 ## <a name="example"></a>Beispiel
 
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
+GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Antwort
@@ -65,21 +62,40 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 1071
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.remoteActionAudit",
-    "id": "477f8d24-8d24-477f-248d-7f47248d7f47",
-    "deviceDisplayName": "Device Display Name value",
-    "userName": "User Name value",
-    "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
-    "action": "factoryReset",
-    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
-    "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
-    "deviceIMEI": "Device IMEI value",
-    "actionState": "pending"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.appleVppTokenTroubleshootingEvent",
+      "id": "09295f26-5f26-0929-265f-2909265f2909",
+      "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
+      "correlationId": "Correlation Id value",
+      "troubleshootingErrorDetails": {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+        "context": "Context value",
+        "failure": "Failure value",
+        "failureDetails": "Failure Details value",
+        "remediation": "Remediation value",
+        "resources": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+            "text": "Text value",
+            "link": "Link value"
+          }
+        ]
+      },
+      "eventName": "Event Name value",
+      "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "tokenId": "Token Id value"
+    }
+  ]
 }
 ```
 

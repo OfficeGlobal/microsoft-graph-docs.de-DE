@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp symantecCodeSigningCertificate
 description: Noch nicht dokumentiert
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9c195a31dae12c1a67d8226a219fe57a68bf905d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f22f86f6facfbe1b21bb0f857b8401393ed1a77
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425995"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Ressourcentyp symantecCodeSigningCertificate
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Noch nicht dokumentiert.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -32,7 +33,7 @@ Noch nicht dokumentiert.
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Status Cert bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |password|Zeichenfolge|Das Kennwort für die PFX-Datei.|
 |subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|Betreff|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
+|subject|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
 |issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
 |Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
@@ -40,6 +41,7 @@ Noch nicht dokumentiert.
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -63,7 +65,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

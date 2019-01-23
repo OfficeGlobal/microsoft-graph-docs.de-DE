@@ -1,25 +1,26 @@
 ---
 title: DeviceComplianceActionType Enum-Typ
 description: Geplante Aktion Typ Enum
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1856847cb8a8ecf48ee6d13067bd24515326d89
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cd0db68a21fff79ddbab924e8a1d9bd2ff2e542d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973209"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425743"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>DeviceComplianceActionType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Geplante Aktion Typ Enum
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |noAction|0|Keine Aktion|
 |Benachrichtigung|1|Benachrichtigung senden|
@@ -29,7 +30,6 @@ Geplante Aktion Typ Enum
 |removeResourceAccessProfiles|5|Ressource Access Profile vom Gerät zu entfernen|
 |pushNotification|9|Push-Benachrichtigung an Gerät senden|
 |remoteLock|10|Das Gerät Remote Sperren|
-
 
 
 
