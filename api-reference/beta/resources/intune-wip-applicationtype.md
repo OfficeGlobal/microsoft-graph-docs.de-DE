@@ -1,29 +1,29 @@
 ---
 title: ApplicationType Enum-Typ
 description: Möglichen Typen der Anwendung
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 13508c26dee1729ba856fcca51ab89ab08270cd0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7d98a7e06b41b1c683ed1110a6438daa45b75876
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421263"
 ---
-# <a name="applicationtype-enum-type"></a><span data-ttu-id="f74bc-103">ApplicationType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="f74bc-103">applicationType enum type</span></span>
+# <a name="applicationtype-enum-type"></a><span data-ttu-id="ba8f6-103">ApplicationType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="ba8f6-103">applicationType enum type</span></span>
 
-> <span data-ttu-id="f74bc-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f74bc-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f74bc-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f74bc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ba8f6-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="ba8f6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ba8f6-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ba8f6-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f74bc-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f74bc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ba8f6-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ba8f6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f74bc-107">Möglichen Typen der Anwendung</span><span class="sxs-lookup"><span data-stu-id="f74bc-107">Possible types of Application</span></span>
-## <a name="members"></a><span data-ttu-id="f74bc-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="f74bc-108">Members</span></span>
-|<span data-ttu-id="f74bc-109">Element</span><span class="sxs-lookup"><span data-stu-id="f74bc-109">Member</span></span>|<span data-ttu-id="f74bc-110">Wert</span><span class="sxs-lookup"><span data-stu-id="f74bc-110">Value</span></span>|<span data-ttu-id="f74bc-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f74bc-111">Description</span></span>|
+<span data-ttu-id="ba8f6-107">Möglichen Typen der Anwendung</span><span class="sxs-lookup"><span data-stu-id="ba8f6-107">Possible types of Application</span></span>
+
+## <a name="members"></a><span data-ttu-id="ba8f6-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="ba8f6-108">Members</span></span>
+|<span data-ttu-id="ba8f6-109">Member</span><span class="sxs-lookup"><span data-stu-id="ba8f6-109">Member</span></span>|<span data-ttu-id="ba8f6-110">Wert</span><span class="sxs-lookup"><span data-stu-id="ba8f6-110">Value</span></span>|<span data-ttu-id="ba8f6-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ba8f6-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f74bc-112">universelle</span><span class="sxs-lookup"><span data-stu-id="f74bc-112">universal</span></span>|<span data-ttu-id="f74bc-113">1</span><span class="sxs-lookup"><span data-stu-id="f74bc-113">1</span></span>|<span data-ttu-id="f74bc-114">Die universellen Windows-Anwendung</span><span class="sxs-lookup"><span data-stu-id="f74bc-114">The windows universal application</span></span>|
-|<span data-ttu-id="f74bc-115">Desktop</span><span class="sxs-lookup"><span data-stu-id="f74bc-115">desktop</span></span>|<span data-ttu-id="f74bc-116">2</span><span class="sxs-lookup"><span data-stu-id="f74bc-116">2</span></span>|<span data-ttu-id="f74bc-117">Die Windows-desktop-Anwendung</span><span class="sxs-lookup"><span data-stu-id="f74bc-117">The windows desktop application</span></span>|
-
+|<span data-ttu-id="ba8f6-112">universelle</span><span class="sxs-lookup"><span data-stu-id="ba8f6-112">universal</span></span>|<span data-ttu-id="ba8f6-113">1</span><span class="sxs-lookup"><span data-stu-id="ba8f6-113">1</span></span>|<span data-ttu-id="ba8f6-114">Die universellen Windows-Anwendung</span><span class="sxs-lookup"><span data-stu-id="ba8f6-114">The windows universal application</span></span>|
+|<span data-ttu-id="ba8f6-115">Desktop</span><span class="sxs-lookup"><span data-stu-id="ba8f6-115">desktop</span></span>|<span data-ttu-id="ba8f6-116">2</span><span class="sxs-lookup"><span data-stu-id="ba8f6-116">2</span></span>|<span data-ttu-id="ba8f6-117">Die Windows-desktop-Anwendung</span><span class="sxs-lookup"><span data-stu-id="ba8f6-117">The windows desktop application</span></span>|
 
 
 

@@ -1,35 +1,37 @@
 ---
 title: Ressourcentyp windowsKioskLocalGroup
 description: Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f9c5d467e70b4e2e7f60bc4898be35a2e9fefadc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1134b6a842b54dc49fcd15a92d21aef227b35182
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424630"
 ---
-# <a name="windowskiosklocalgroup-resource-type"></a><span data-ttu-id="6aad3-103">Ressourcentyp windowsKioskLocalGroup</span><span class="sxs-lookup"><span data-stu-id="6aad3-103">windowsKioskLocalGroup resource type</span></span>
+# <a name="windowskiosklocalgroup-resource-type"></a><span data-ttu-id="a6784-103">Ressourcentyp windowsKioskLocalGroup</span><span class="sxs-lookup"><span data-stu-id="a6784-103">windowsKioskLocalGroup resource type</span></span>
 
-> <span data-ttu-id="6aad3-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="6aad3-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6aad3-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6aad3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a6784-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="a6784-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a6784-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a6784-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6aad3-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="6aad3-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="a6784-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a6784-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6aad3-107">Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren</span><span class="sxs-lookup"><span data-stu-id="6aad3-107">The class used to identify a local group for the kiosk configuration</span></span>
+<span data-ttu-id="a6784-107">Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren</span><span class="sxs-lookup"><span data-stu-id="a6784-107">The class used to identify a local group for the kiosk configuration</span></span>
 
-<span data-ttu-id="6aad3-108">Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="6aad3-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6aad3-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6aad3-109">Properties</span></span>
-|<span data-ttu-id="6aad3-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6aad3-110">Property</span></span>|<span data-ttu-id="6aad3-111">Typ</span><span class="sxs-lookup"><span data-stu-id="6aad3-111">Type</span></span>|<span data-ttu-id="6aad3-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6aad3-112">Description</span></span>|
+<span data-ttu-id="a6784-108">Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="a6784-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="a6784-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a6784-109">Properties</span></span>
+|<span data-ttu-id="a6784-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a6784-110">Property</span></span>|<span data-ttu-id="a6784-111">Typ</span><span class="sxs-lookup"><span data-stu-id="a6784-111">Type</span></span>|<span data-ttu-id="a6784-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a6784-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6aad3-113">groupName</span><span class="sxs-lookup"><span data-stu-id="6aad3-113">groupName</span></span>|<span data-ttu-id="6aad3-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6aad3-114">String</span></span>|<span data-ttu-id="6aad3-115">Der Name der lokalen Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird</span><span class="sxs-lookup"><span data-stu-id="6aad3-115">The name of the local group that will be locked to this kiosk configuration</span></span>|
+|<span data-ttu-id="a6784-113">groupName</span><span class="sxs-lookup"><span data-stu-id="a6784-113">groupName</span></span>|<span data-ttu-id="a6784-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a6784-114">String</span></span>|<span data-ttu-id="a6784-115">Der Name der lokalen Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird</span><span class="sxs-lookup"><span data-stu-id="a6784-115">The name of the local group that will be locked to this kiosk configuration</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6aad3-116">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="6aad3-116">Relationships</span></span>
-<span data-ttu-id="6aad3-117">Keine</span><span class="sxs-lookup"><span data-stu-id="6aad3-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="6aad3-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6aad3-118">JSON Representation</span></span>
-<span data-ttu-id="6aad3-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6aad3-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="a6784-116">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="a6784-116">Relationships</span></span>
+<span data-ttu-id="a6784-117">Keine</span><span class="sxs-lookup"><span data-stu-id="a6784-117">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="a6784-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a6784-118">JSON Representation</span></span>
+<span data-ttu-id="a6784-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a6784-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskLocalGroup"
@@ -41,7 +43,6 @@ ms.locfileid: "27964753"
   "groupName": "String"
 }
 ```
-
 
 
 

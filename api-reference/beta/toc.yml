@@ -142,7 +142,7 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Gruppen
             href: resources/group.md
@@ -165,7 +165,7 @@ items:
             items:
               - name: Nachrichten auflisten
                 href: api/user-list-messages.md
-              - name: Erstellen der Nachricht
+              - name: Nachricht erstellen
                 href: api/user-post-messages.md
               - name: Liste Außerkraftsetzungen
                 href: api/inferenceclassification-list-overrides.md
@@ -183,7 +183,7 @@ items:
                 href: api/mailfolder-post-messagerules.md
               - name: Abrufen von e-Mail-Infos
                 href: api/user-getmailtips.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -396,7 +396,7 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Erweiterte Eigenschaften
             href: resources/extended-properties-overview.md
@@ -434,7 +434,7 @@ items:
                 href: api/grouplifecyclepolicy-removegroup.md
               - name: Erneuern Gruppe
                 href: api/grouplifecyclepolicy-renewgroup.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -617,7 +617,7 @@ items:
                 href: api/event-delta.md
               - name: Erinnerung anzeigen
                 href: api/user-reminderview.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -863,6 +863,8 @@ items:
                     href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                   - name: Aktion „createToken“
                     href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+              - name: Android-Registrierung Unternehmenscode
+                href: resources/intune-androidforwork-androidenrollmentcompanycode.md
               - name: Android für Arbeit app
                 href: resources/intune-apps-androidforworkapp.md
                 items:
@@ -980,6 +982,8 @@ items:
                     href: api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md
                   - name: CreateGooglePlayWebToken Aktion
                     href: api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md
+                  - name: SetAndroidDeviceOwnerFullyManagedEnrollmentState Aktion
+                    href: api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md
               - name: Verwalteter Speicher Android-app
                 href: resources/intune-apps-androidmanagedstoreapp.md
                 items:
@@ -1248,6 +1252,36 @@ items:
                     href: api/intune-books-iosvppebookassignment-delete.md
                   - name: Aktualisieren
                     href: api/intune-books-iosvppebookassignment-update.md
+              - name: Mac OS VPP-app
+                href: resources/intune-apps-macosvppapp.md
+                items:
+                  - name: Liste
+                    href: api/intune-apps-macosvppapp-list.md
+                  - name: Get
+                    href: api/intune-apps-macosvppapp-get.md
+                  - name: Erstellen
+                    href: api/intune-apps-macosvppapp-create.md
+                  - name: Löschen
+                    href: api/intune-apps-macosvppapp-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-apps-macosvppapp-update.md
+              - name: Mac OS VPP zugewiesenen app-Lizenz
+                href: resources/intune-apps-macosvppappassignedlicense.md
+                items:
+                  - name: Liste
+                    href: api/intune-apps-macosvppappassignedlicense-list.md
+                  - name: Get
+                    href: api/intune-apps-macosvppappassignedlicense-get.md
+                  - name: Erstellen
+                    href: api/intune-apps-macosvppappassignedlicense-create.md
+                  - name: Löschen
+                    href: api/intune-apps-macosvppappassignedlicense-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-apps-macosvppappassignedlicense-update.md
+              - name: Einstellungen für die Zuweisung von Mac OS VPP app
+                href: resources/intune-apps-macosvppappassignmentsettings.md
+              - name: Mac OS VPP app widerrufen Lizenzen Aktionsergebnis
+                href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
               - name: Mac OS LOB-app
                 href: resources/intune-apps-macoslobapp.md
                 items:
@@ -1595,7 +1629,40 @@ items:
                     href: api/intune-apps-mobilelobapp-list.md
                   - name: Get
                     href: api/intune-apps-mobilelobapp-get.md
-              - name: Office-Produkt-id
+              - name: Office Client Checkin-status
+                href: resources/intune-cirrus-officeclientcheckinstatus.md
+              - name: Office-Client-Konfiguration
+                href: resources/intune-cirrus-officeclientconfiguration.md
+                items:
+                  - name: Liste
+                    href: api/intune-cirrus-officeclientconfiguration-list.md
+                  - name: Get
+                    href: api/intune-cirrus-officeclientconfiguration-get.md
+                  - name: Aktion „assign“
+                    href: api/intune-cirrus-officeclientconfiguration-assign.md
+                  - name: UpdatePriorities Aktion
+                    href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
+              - name: Zuordnung von Office-Client-Konfiguration
+                href: resources/intune-cirrus-officeclientconfigurationassignment.md
+                items:
+                  - name: Liste
+                    href: api/intune-cirrus-officeclientconfigurationassignment-list.md
+                  - name: Get
+                    href: api/intune-cirrus-officeclientconfigurationassignment-get.md
+                  - name: Erstellen
+                    href: api/intune-cirrus-officeclientconfigurationassignment-create.md
+                  - name: Löschen
+                    href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-cirrus-officeclientconfigurationassignment-update.md
+              - name: Office-Konfiguration
+                href: resources/intune-cirrus-officeconfiguration.md
+                items: null
+              - name: Office-Konfiguration Zuordnung Ziel
+                href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
+              - name: Office-Konfiguration Gruppe Zuordnung Ziel
+                href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
+              - name: Office-Produkt-ID
                 href: resources/intune-apps-officeproductid.md
               - name: Office-Suite-app
                 href: resources/intune-apps-officesuiteapp.md
@@ -1614,6 +1681,8 @@ items:
                 href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
               - name: Office Update Kanal
                 href: resources/intune-apps-officeupdatechannel.md
+              - name: Office-Benutzer Checkin Zusammenfassung
+                href: resources/intune-cirrus-officeusercheckinsummary.md
               - name: Resultierende app State detail
                 href: resources/intune-apps-resultantappstatedetail.md
               - name: Symantec Code Signaturzertifikat
@@ -1677,6 +1746,8 @@ items:
                     href: api/intune-apps-win32lobapp-delete.md
                   - name: Aktualisieren
                     href: api/intune-apps-win32lobapp-update.md
+              - name: Win32-LOB app Assignment-Einstellungen
+                href: resources/intune-apps-win32lobappassignmentsettings.md
               - name: App-Win32 LOB-Erkennung
                 href: resources/intune-apps-win32lobappdetection.md
               - name: Win32-LOB-app Erkennung operator
@@ -1691,6 +1762,8 @@ items:
                 href: resources/intune-apps-win32lobappmsiinformation.md
               - name: Win32-LOB app MSI-Paket-Typ
                 href: resources/intune-apps-win32lobappmsipackagetype.md
+              - name: App-Win32 LOB-Benachrichtigung
+                href: resources/intune-apps-win32lobappnotification.md
               - name: Win32-LOB-app Power Shell Skript Erkennung
                 href: resources/intune-apps-win32lobapppowershellscriptdetection.md
               - name: Win32-LOB-app Produkt Code Erkennung
@@ -1737,6 +1810,32 @@ items:
                     href: api/intune-apps-windowsmobilemsi-delete.md
                   - name: Aktualisieren
                     href: api/intune-apps-windowsmobilemsi-update.md
+              - name: Windows-Office-Client-Konfiguration
+                href: resources/intune-cirrus-windowsofficeclientconfiguration.md
+                items:
+                  - name: Liste
+                    href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
+                  - name: Get
+                    href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
+                  - name: Erstellen
+                    href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
+                  - name: Löschen
+                    href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
+              - name: Windows-Office-Client-Sicherheitskonfiguration
+                href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
+                items:
+                  - name: Liste
+                    href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
+                  - name: Get
+                    href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
+                  - name: Erstellen
+                    href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
+                  - name: Löschen
+                    href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
               - name: Informationen zu Windows-Paket
                 href: resources/intune-apps-windowspackageinformation.md
               - name: Windows Phone 8.1 AppX
@@ -2492,6 +2591,8 @@ items:
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-delete.md
                   - name: Aktualisieren
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
+              - name: Android Keyguard-Funktion
+                href: resources/intune-deviceconfig-androidkeyguardfeature.md
               - name: Android PKCS Zertifikatsprofil
                 href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                 items:
@@ -2776,6 +2877,8 @@ items:
                 href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
               - name: BitLocker Drive Systemrichtlinie
                 href: resources/intune-deviceconfig-bitlockersystemdrivepolicy.md
+              - name: Browser-Synchronisierung einrichten
+                href: resources/intune-deviceconfig-browsersyncsetting.md
               - name: Einkaufswagen Klasse Zuordnung
                 href: resources/intune-deviceconfig-carttoclassassociation.md
                 items:
@@ -2844,6 +2947,8 @@ items:
                 href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
               - name: Defender Bedrohungsaktion
                 href: resources/intune-deviceconfig-defenderthreataction.md
+              - name: Abgeleitete Anmeldeinformationen Providertyp
+                href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
               - name: deviceComplianceActionItem
                 href: resources/intune-deviceconfig-devicecomplianceactionitem.md
                 items:
@@ -2890,6 +2995,8 @@ items:
                     href: api/intune-deviceconfig-devicecompliancepolicy-assign.md
                   - name: scheduleActionsForRules-Aktion
                     href: api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules.md
+                  - name: RefreshDeviceComplianceReportSummarization Aktion
+                    href: api/intune-deviceconfig-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
               - name: Gerät Compliance richtlinienzuweisung
                 href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                 items:
@@ -3095,6 +3202,8 @@ items:
                 href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
               - name: Diagnosedaten Übermittlung Modus
                 href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
+              - name: DMA schützen Richtlinientyp für Device-Aufzählung
+                href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
               - name: Domain Name Quelle
                 href: resources/intune-deviceconfig-domainnamesource.md
               - name: EAP-fast-Konfiguration
@@ -3112,6 +3221,18 @@ items:
                     href: api/intune-deviceconfig-easemailprofileconfigurationbase-get.md
               - name: Edge-Cookie-Richtlinie
                 href: resources/intune-deviceconfig-edgecookiepolicy.md
+              - name: Konfiguration für Zugriffsedge home-Schaltfläche
+                href: resources/intune-deviceconfig-edgehomebuttonconfiguration.md
+              - name: Edge-home-Schaltfläche ausgeblendet
+                href: resources/intune-deviceconfig-edgehomebuttonhidden.md
+              - name: Edge-home-Schaltfläche lädt Startseite
+                href: resources/intune-deviceconfig-edgehomebuttonloadsstartpage.md
+              - name: Edge-home-Schaltfläche wird l sind benutzerdefinierte geöffnet.
+                href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
+              - name: Edge home-Schaltfläche wird neuen Registerkarte geöffnet.
+                href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+              - name: Öffnen der Optionen für Edge
+                href: resources/intune-deviceconfig-edgeopenoptions.md
               - name: edgeSearchEngine
                 href: resources/intune-deviceconfig-edgesearchengine.md
               - name: edgeSearchEngineBase
@@ -3120,6 +3241,8 @@ items:
                 href: resources/intune-deviceconfig-edgesearchenginecustom.md
               - name: Kantentyp Search-Modul
                 href: resources/intune-deviceconfig-edgesearchenginetype.md
+              - name: Edge-Telemetrie-Modus
+                href: resources/intune-deviceconfig-edgetelemetrymode.md
               - name: editionUpgradeConfiguration
                 href: resources/intune-deviceconfig-editionupgradeconfiguration.md
                 items:
@@ -3149,12 +3272,292 @@ items:
                 href: resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md
               - name: Ordner Schutztyp
                 href: resources/intune-deviceconfig-folderprotectiontype.md
+              - name: Gruppenrichtlinienkonfiguration
+                href: resources/intune-grouppolicy-grouppolicyconfiguration.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-update.md
+                  - name: Aktion „assign“
+                    href: api/intune-grouppolicy-grouppolicyconfiguration-assign.md
+              - name: Gruppe richtlinienzuweisung Konfiguration
+                href: resources/intune-grouppolicy-grouppolicyconfigurationassignment.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicyconfigurationassignment-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicyconfigurationassignment-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicyconfigurationassignment-update.md
+              - name: Gruppe Richtlinientyp Konfiguration
+                href: resources/intune-grouppolicy-grouppolicyconfigurationtype.md
+              - name: Gruppe Richtliniendefinition
+                href: resources/intune-grouppolicy-grouppolicydefinition.md
+                items:
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicydefinition-get.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicydefinition-update.md
+              - name: Gruppe Richtlinientyp Definition-Klasse
+                href: resources/intune-grouppolicy-grouppolicydefinitionclasstype.md
+              - name: Group Policy-Definitionsdatei
+                href: resources/intune-grouppolicy-grouppolicydefinitionfile.md
+                items:
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicydefinitionfile-get.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicydefinitionfile-update.md
+              - name: Group Policy Definitionswert
+                href: resources/intune-grouppolicy-grouppolicydefinitionvalue.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicydefinitionvalue-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicydefinitionvalue-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicydefinitionvalue-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicydefinitionvalue-update.md
+              - name: Group Policy Präsentation
+                href: resources/intune-grouppolicy-grouppolicypresentation.md
+                items:
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentation-get.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentation-update.md
+              - name: Das Kontrollkästchen Richtlinie Präsentation Gruppe
+                href: resources/intune-grouppolicy-grouppolicypresentationcheckbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationcheckbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationcheckbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationcheckbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationcheckbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationcheckbox-update.md
+              - name: Group Policy Präsentation Kombinationsfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationcombobox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationcombobox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationcombobox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationcombobox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationcombobox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationcombobox-update.md
+              - name: Group Policy Präsentation decimal Textfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-update.md
+              - name: Group Policy Präsentation Dropdown-Liste
+                href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-update.md
+              - name: Group Policy Präsentation Dropdown-Listenelement
+                href: resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md
+              - name: Group Policy Präsentation Listenfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationlistbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationlistbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationlistbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationlistbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationlistbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationlistbox-update.md
+              - name: Group Policy Präsentation lange decimal Textfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-update.md
+              - name: Group Policy Präsentation Multi-Textfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md
+              - name: Group Policy Präsentationstext
+                href: resources/intune-grouppolicy-grouppolicypresentationtext.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationtext-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationtext-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationtext-update.md
+              - name: Group Policy Präsentation Textfeld
+                href: resources/intune-grouppolicy-grouppolicypresentationtextbox.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationtextbox-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationtextbox-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationtextbox-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationtextbox-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationtextbox-update.md
+              - name: Gruppenrichtlinienwert Präsentation
+                href: resources/intune-grouppolicy-grouppolicypresentationvalue.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvalue-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvalue-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvalue-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvalue-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvalue-update.md
+              - name: Group Policy Präsentation Boolean-Wert
+                href: resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvalueboolean-update.md
+              - name: Group Policy Präsentation Wert dezimal
+                href: resources/intune-grouppolicy-grouppolicypresentationvaluedecimal.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluedecimal-update.md
+              - name: Group Policy Präsentation Werteliste
+                href: resources/intune-grouppolicy-grouppolicypresentationvaluelist.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md
+              - name: Lange decimal Präsentation-Richtlinienwert gruppieren
+                href: resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-update.md
+              - name: Group Policy Präsentation Wert Multi text
+                href: resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-update.md
+              - name: Group Policy Präsentation Werttext
+                href: resources/intune-grouppolicy-grouppolicypresentationvaluetext.md
+                items:
+                  - name: Liste
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluetext-list.md
+                  - name: Get
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluetext-get.md
+                  - name: Erstellen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluetext-create.md
+                  - name: Löschen
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluetext-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md
+              - name: Gruppentyp-Richtlinie
+                href: resources/intune-grouppolicy-grouppolicytype.md
               - name: Hashalgorithmen
                 href: resources/intune-deviceconfig-hashalgorithms.md
               - name: Einstellung Freihand-Zugriff
                 href: resources/intune-deviceconfig-inkaccesssetting.md
               - name: Verwendungszweck
                 href: resources/intune-deviceconfig-intendedpurpose.md
+              - name: Einstellung für Internet Explorer
+                href: resources/intune-deviceconfig-internetexplorermessagesetting.md
               - name: Internet Security Websiteebene
                 href: resources/intune-deviceconfig-internetsitesecuritylevel.md
               - name: iOS-Textmarke
@@ -3390,6 +3793,8 @@ items:
                     href: api/intune-deviceconfig-iosvpnconfiguration-delete.md
                   - name: Aktualisieren
                     href: api/intune-deviceconfig-iosvpnconfiguration-update.md
+              - name: iOS Hintergrundbild Anzeigeort
+                href: resources/intune-deviceconfig-ioswallpaperdisplaylocation.md
               - name: iOS web Inhaltsfilter automatisch filtern
                 href: resources/intune-deviceconfig-ioswebcontentfilterautofilter.md
               - name: iOS Webinhaltsfilter Basiskalender
@@ -4155,19 +4560,6 @@ items:
                     href: api/intune-deviceconfig-windows81wifiimportconfiguration-update.md
               - name: Windows-app starten Größe der Leseansicht Kachel
                 href: resources/intune-deviceconfig-windowsappstartlayouttilesize.md
-              - name: Windows-Profil Access zugewiesen
-                href: resources/intune-deviceconfig-windowsassignedaccessprofile.md
-                items:
-                  - name: Liste
-                    href: api/intune-deviceconfig-windowsassignedaccessprofile-list.md
-                  - name: Get
-                    href: api/intune-deviceconfig-windowsassignedaccessprofile-get.md
-                  - name: Erstellen
-                    href: api/intune-deviceconfig-windowsassignedaccessprofile-create.md
-                  - name: Löschen
-                    href: api/intune-deviceconfig-windowsassignedaccessprofile-delete.md
-                  - name: Aktualisieren
-                    href: api/intune-deviceconfig-windowsassignedaccessprofile-update.md
               - name: Windows-Zertifikat Benutzerprofil Basiskalender
                 href: resources/intune-deviceconfig-windowscertificateprofilebase.md
                 items:
@@ -4188,6 +4580,19 @@ items:
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                   - name: Aktualisieren
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
+              - name: Windows-Übermittlung Optimierung-Konfiguration
+                href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
+                items:
+                  - name: Liste
+                    href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-list.md
+                  - name: Get
+                    href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-get.md
+                  - name: Erstellen
+                    href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-create.md
+                  - name: Löschen
+                    href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
               - name: Windows-Übermittlung Optimierung Authentifizierungsmodus
                 href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
               - name: windowsFirewallNetworkProfile
@@ -4211,6 +4616,8 @@ items:
                 href: resources/intune-deviceconfig-windowskioskappbase.md
               - name: Windows-Kiosk-app-Konfiguration
                 href: resources/intune-deviceconfig-windowskioskappconfiguration.md
+              - name: Windows-Kiosk-app-Typ
+                href: resources/intune-deviceconfig-windowskioskapptype.md
               - name: Windows-Kiosk automatische Anmeldung
                 href: resources/intune-deviceconfig-windowskioskautologon.md
               - name: Windows Azure AD-Kiosk-Gruppe
@@ -4411,6 +4818,10 @@ items:
                 href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
               - name: windowsUpdateScheduledInstall
                 href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
+              - name: Windows update Zustand
+                href: resources/intune-deviceconfig-windowsupdatestate.md
+              - name: Aktualisieren des Windows-status
+                href: resources/intune-deviceconfig-windowsupdatestatus.md
               - name: Windows update-Typ
                 href: resources/intune-deviceconfig-windowsupdatetype.md
               - name: Windows-Steuerelement benutzerkontoeinstellungen
@@ -4457,6 +4868,27 @@ items:
                 href: resources/intune-devices-adminconsent.md
               - name: Admin Zustimmung Zustand
                 href: resources/intune-devices-adminconsentstate.md
+              - name: Downloaddetails App Log-Auflistung
+                href: resources/intune-devices-applogcollectiondownloaddetails.md
+              - name: App-Protokoll-Auflistung-Anforderung
+                href: resources/intune-devices-applogcollectionrequest.md
+                items:
+                  - name: Liste
+                    href: api/intune-devices-applogcollectionrequest-list.md
+                  - name: Get
+                    href: api/intune-devices-applogcollectionrequest-get.md
+                  - name: Erstellen
+                    href: api/intune-devices-applogcollectionrequest-create.md
+                  - name: Löschen
+                    href: api/intune-devices-applogcollectionrequest-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-devices-applogcollectionrequest-update.md
+                  - name: CreateDownloadUrl Aktion
+                    href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
+              - name: App Protokoll Entschlüsselungsalgorithmus
+                href: resources/intune-devices-applogdecryptionalgorithm.md
+              - name: App-Protokoll Upload-Status
+                href: resources/intune-devices-apploguploadstate.md
               - name: Apple Push Notification-Zertifikat
                 href: resources/intune-devices-applepushnotificationcertificate.md
                 items:
@@ -4464,6 +4896,19 @@ items:
                     href: api/intune-devices-applepushnotificationcertificate-get.md
                   - name: Aktualisieren
                     href: api/intune-devices-applepushnotificationcertificate-update.md
+              - name: Apple VPP token zur Problembehandlung-Ereignis
+                href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
+                items:
+                  - name: Liste
+                    href: api/intune-troubleshooting-applevpptokentroubleshootingevent-list.md
+                  - name: Get
+                    href: api/intune-troubleshooting-applevpptokentroubleshootingevent-get.md
+                  - name: Erstellen
+                    href: api/intune-troubleshooting-applevpptokentroubleshootingevent-create.md
+                  - name: Löschen
+                    href: api/intune-troubleshooting-applevpptokentroubleshootingevent-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-troubleshooting-applevpptokentroubleshootingevent-update.md
               - name: Audit-Akteur
                 href: resources/intune-auditing-auditactor.md
               - name: Audit-Ereignis
@@ -4644,6 +5089,10 @@ items:
                 href: resources/intune-devices-devicemanagementsubscriptionstate.md
               - name: Gerät-Management-Abonnements
                 href: resources/intune-devices-devicemanagementsubscriptions.md
+              - name: Gerät Management Fehlerdetails zur Problembehandlung
+                href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
+              - name: Gerät Management zur Problembehandlung Fehler Ressource
+                href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md
               - name: Problembehandlung bei Geräteverwaltung
                 href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                 items:
@@ -4663,9 +5112,9 @@ items:
                 href: resources/intune-devices-deviceprotectionoverview.md
               - name: Die Registrierung des Geräts
                 href: resources/intune-devices-deviceregistrationstate.md
-              - name: Eingebettete s ich m Aktivierungscode
+              - name: Eingebettete SIM Aktivierungscode
                 href: resources/intune-esim-embeddedsimactivationcode.md
-              - name: Eingebettete s ich m Aktivierung Code Pool
+              - name: Eingebettete SIM Aktivierung Code pool
                 href: resources/intune-esim-embeddedsimactivationcodepool.md
                 items:
                   - name: Liste
@@ -4680,7 +5129,7 @@ items:
                     href: api/intune-esim-embeddedsimactivationcodepool-update.md
                   - name: Aktion „assign“
                     href: api/intune-esim-embeddedsimactivationcodepool-assign.md
-              - name: Eingebettete s ich m Aktivierung die poolzuweisung von Code
+              - name: Eingebettete SIM Aktivierung Code poolzuordnung
                 href: resources/intune-esim-embeddedsimactivationcodepoolassignment.md
                 items:
                   - name: Liste
@@ -4693,7 +5142,7 @@ items:
                     href: api/intune-esim-embeddedsimactivationcodepoolassignment-delete.md
                   - name: Aktualisieren
                     href: api/intune-esim-embeddedsimactivationcodepoolassignment-update.md
-              - name: Eingebettete s ich m Gerätestatus
+              - name: Eingebettete SIM Gerätestatus
                 href: resources/intune-esim-embeddedsimdevicestate.md
                 items:
                   - name: Liste
@@ -4706,7 +5155,7 @@ items:
                     href: api/intune-esim-embeddedsimdevicestate-delete.md
                   - name: Aktualisieren
                     href: api/intune-esim-embeddedsimdevicestate-update.md
-              - name: Eingebettete s ich m Gerät Statuswert
+              - name: Eingebettete SIM Gerät Statuswert
                 href: resources/intune-esim-embeddedsimdevicestatevalue.md
               - name: Problembehandlung bei Registrierung
                 href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
@@ -4888,19 +5337,6 @@ items:
                 href: resources/intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md
               - name: Problembehandlung bei Gerät Checkin Verlauf mobilen app
                 href: resources/intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md
-              - name: Problembehandlung bei mobilen app-Ereignis
-                href: resources/intune-troubleshooting-mobileapptroubleshootingevent.md
-                items:
-                  - name: Liste
-                    href: api/intune-troubleshooting-mobileapptroubleshootingevent-list.md
-                  - name: Get
-                    href: api/intune-troubleshooting-mobileapptroubleshootingevent-get.md
-                  - name: Erstellen
-                    href: api/intune-troubleshooting-mobileapptroubleshootingevent-create.md
-                  - name: Löschen
-                    href: api/intune-troubleshooting-mobileapptroubleshootingevent-delete.md
-                  - name: Aktualisieren
-                    href: api/intune-troubleshooting-mobileapptroubleshootingevent-update.md
               - name: Mobile app zur Problembehandlung History-Element
                 href: resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md
               - name: Netzwerk-IPv4-Konfiguration Management Bedingung
@@ -5169,6 +5605,21 @@ items:
                     href: api/intune-wip-intunebrandingprofile-delete.md
                   - name: Aktualisieren
                     href: api/intune-wip-intunebrandingprofile-update.md
+                  - name: Aktion „assign“
+                    href: api/intune-wip-intunebrandingprofile-assign.md
+              - name: Intune branding-Profil-Zuordnung
+                href: resources/intune-wip-intunebrandingprofileassignment.md
+                items:
+                  - name: Liste
+                    href: api/intune-wip-intunebrandingprofileassignment-list.md
+                  - name: Get
+                    href: api/intune-wip-intunebrandingprofileassignment-get.md
+                  - name: Erstellen
+                    href: api/intune-wip-intunebrandingprofileassignment-create.md
+                  - name: Löschen
+                    href: api/intune-wip-intunebrandingprofileassignment-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-wip-intunebrandingprofileassignment-update.md
               - name: iosManagedAppProtection
                 href: resources/intune-mam-iosmanagedappprotection.md
                 items:
@@ -5383,6 +5834,21 @@ items:
                 href: resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md
               - name: windowsInformationProtectionDesktopApp
                 href: resources/intune-mam-windowsinformationprotectiondesktopapp.md
+              - name: Registrierung für Schutz Gerät die Windows Informationen
+                href: resources/intune-mam-windowsinformationprotectiondeviceregistration.md
+                items:
+                  - name: Liste
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-list.md
+                  - name: Get
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-get.md
+                  - name: Erstellen
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-create.md
+                  - name: Löschen
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-update.md
+                  - name: Aktion „wipe“
+                    href: api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md
               - name: Windows Informationen Erzwingung der Mail-Schutzstufe
                 href: resources/intune-mam-windowsinformationprotectionenforcementlevel.md
               - name: windowsInformationProtectionIPRangeCollection
@@ -5421,7 +5887,20 @@ items:
                 href: resources/intune-mam-windowsinformationprotectionresourcecollection.md
               - name: windowsInformationProtectionStoreApp
                 href: resources/intune-mam-windowsinformationprotectionstoreapp.md
-          - name: Klicken Sie auf mittels Fingereingabe
+              - name: Windows Informationen Protection Remotegerätzurücksetzung Aktion
+                href: resources/intune-mam-windowsinformationprotectionwipeaction.md
+                items:
+                  - name: Liste
+                    href: api/intune-mam-windowsinformationprotectionwipeaction-list.md
+                  - name: Get
+                    href: api/intune-mam-windowsinformationprotectionwipeaction-get.md
+                  - name: Erstellen
+                    href: api/intune-mam-windowsinformationprotectionwipeaction-create.md
+                  - name: Löschen
+                    href: api/intune-mam-windowsinformationprotectionwipeaction-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-mam-windowsinformationprotectionwipeaction-update.md
+          - name: Onboarding
             href: resources/intune-onboarding-conceptual.md
             items:
               - name: Zertifikat Connector-Einstellung
@@ -5643,10 +6122,10 @@ items:
               - name: Windows Hello für die Verwendung der Business-PIN
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
           - name: Rollenbasierte Zugriffssteuerung
-            href: resources/intune-rbac-conceptual.md
+            href: /resources/intune-rbac-conceptual.md
             items:
-              - name: Gerät und app Management Role Ids zugewiesen
-                href: resources/intune-rbac-deviceandappmanagementassignedroleids.md
+              - name: Gerät und app Management Role Details zugewiesen
+                href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
               - name: Geräte- und App-Verwaltungsrollenzuweisung
                 href: resources/intune-rbac-deviceandappmanagementroleassignment.md
                 items:
@@ -5801,6 +6280,19 @@ items:
                 href: resources/intune-shared-keyvaluepair.md
               - name: MIME-Inhalt
                 href: resources/intune-shared-mimecontent.md
+              - name: Problembehandlung bei mobilen app-Ereignis
+                href: resources/intune-shared-mobileapptroubleshootingevent.md
+                items:
+                  - name: Liste
+                    href: api/intune-shared-mobileapptroubleshootingevent-list.md
+                  - name: Get
+                    href: api/intune-shared-mobileapptroubleshootingevent-get.md
+                  - name: Erstellen
+                    href: api/intune-shared-mobileapptroubleshootingevent-create.md
+                  - name: Löschen
+                    href: api/intune-shared-mobileapptroubleshootingevent-delete.md
+                  - name: Aktualisieren
+                    href: api/intune-shared-mobileapptroubleshootingevent-update.md
               - name: proxiedDomain
                 href: resources/intune-shared-proxieddomain.md
               - name: Bericht
@@ -6039,7 +6531,7 @@ items:
                 href: api/drive-get.md
               - name: Laufwerke auflisten
                 href: api/drive-list.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
               - name: Zuletzt verwendete Dateien
                 href: api/drive-recent.md
@@ -6052,9 +6544,9 @@ items:
           - name: Laufwerk-Elemente
             href: resources/driveitem.md
             items:
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
-              - name: Element abrufen
+              - name: Get item
                 href: api/driveitem-get.md
               - name: Abrufen von Miniaturansichten
                 href: api/driveitem-list-thumbnails.md
@@ -6066,7 +6558,7 @@ items:
                 href: api/driveitem-delete.md
               - name: Move item
                 href: api/driveitem-move.md
-              - name: Element kopieren
+              - name: Copy item
                 href: api/driveitem-copy.md
               - name: Herunterladen der Datei
                 href: api/driveitem-get-content.md
@@ -6090,20 +6582,20 @@ items:
                 href: api/driveitem-unfollow.md
               - name: Element Analytics abrufen
                 href: api/itemanalytics-get.md
-              - name: Abrufen von Aktivitäten nach Intervall
+              - name: Aktivitäten nach Intervall abrufen
                 href: api/itemactivity-getbyinterval.md
-              - name: Preview-Element
+              - name: Element in Vorschau anzeigen
                 href: api/driveitem-preview.md
           - name: Berechtigungen
             href: resources/permission.md
             items:
-              - name: Freigabelink erstellen
+              - name: Create sharing link
                 href: api/driveitem-createlink.md
               - name: Freigeben von Links verwenden
                 href: api/shares-get.md
-              - name: Listenberechtigungen
+              - name: List permissions
                 href: api/driveitem-list-permissions.md
-              - name: Berechtigungen hinzufügen
+              - name: Add permissions
                 href: api/driveitem-invite.md
               - name: Berechtigung abrufen
                 href: api/permission-get.md
@@ -6664,7 +7156,7 @@ items:
                     href: api/synchronization-synchronizationschema-update.md
                   - name: Reset-schema
                     href: api/synchronization-synchronizationschema-delete.md
-              - name: Template
+              - name: Vorlage
                 href: resources/synchronization-synchronizationtemplate.md
                 items:
                   - name: Listenvorlagen
@@ -6694,7 +7186,7 @@ items:
             items:
               - name: Nachrichten auflisten
                 href: api/user-list-messages.md
-              - name: Erstellen der Nachricht
+              - name: Nachricht erstellen
                 href: api/user-post-messages.md
               - name: Nachricht abrufen
                 href: api/message-get.md
@@ -6749,7 +7241,7 @@ items:
                 href: api/attachment-get.md
               - name: Anlage löschen
                 href: api/attachment-delete.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -6849,10 +7341,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Anmerkungen
+      - name: Hinweise
         href: resources/onenote-api-overview.md
         items:
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -6960,7 +7452,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Datenerweiterung abrufen
                 href: api/opentypeextension-get.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -7254,7 +7746,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Abrufen von Site-Analysen
                 href: api/itemanalytics-get.md
-              - name: Abrufen von Aktivitäten nach Intervall
+              - name: Aktivitäten nach Intervall abrufen
                 href: api/itemactivity-getbyinterval.md
           - name: Listen
             href: resources/list.md
@@ -7268,9 +7760,9 @@ items:
           - name: Listenelemente
             href: resources/listitem.md
             items:
-              - name: Element abrufen
+              - name: Get item
                 href: api/listitem-get.md
-              - name: Create item
+              - name: Element erstellen
                 href: api/listitem-create.md
               - name: Update item
                 href: api/listitem-update.md
@@ -7280,7 +7772,7 @@ items:
                 href: api/listitem-list-versions.md
               - name: Element Analytics abrufen
                 href: api/itemanalytics-get.md
-              - name: Abrufen von Aktivitäten nach Intervall
+              - name: Aktivitäten nach Intervall abrufen
                 href: api/itemactivity-getbyinterval.md
           - name: Seiten
             href: resources/sitepage.md
@@ -7443,7 +7935,7 @@ items:
                 href: api/team-clone.md
               - name: Listen Sie Ihren teams
                 href: api/user-list-joinedteams.md
-              - name: Listen Sie alle teams
+              - name: Auflisten aller Teams
                 href: /graph/teams-list-all-teams?toc=./ref/toc.json
           - name: Gruppe (Team)
             href: resources/group.md
@@ -7567,14 +8059,14 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Pläne
             href: resources/plannerplan.md
             items:
               - name: Pläne auflisten
                 href: api/plannergroup-list-plans.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -7650,7 +8142,7 @@ items:
                 href: api/attachment-get.md
               - name: Anlage löschen
                 href: api/attachment-delete.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
