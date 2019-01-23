@@ -1,33 +1,34 @@
 ---
 title: Auflisten von „windowsUniversalAppX“
 description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsUniversalAppX auf.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dabbd4a5a9bf62f6921bd5dc36504e93acdcc378
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 847a0f84dddd26804f227a529522f690eb8f2e98
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405520"
 ---
-# <a name="list-windowsuniversalappxs"></a><span data-ttu-id="da6e7-103">Auflisten von „windowsUniversalAppX“</span><span class="sxs-lookup"><span data-stu-id="da6e7-103">List windowsUniversalAppXs</span></span>
+# <a name="list-windowsuniversalappxs"></a><span data-ttu-id="98549-103">Auflisten von „windowsUniversalAppX“</span><span class="sxs-lookup"><span data-stu-id="98549-103">List windowsUniversalAppXs</span></span>
 
-> <span data-ttu-id="da6e7-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="da6e7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="da6e7-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="da6e7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="98549-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="98549-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="98549-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="98549-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="da6e7-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="da6e7-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="98549-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="98549-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da6e7-107">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) auf.</span><span class="sxs-lookup"><span data-stu-id="da6e7-107">List properties and relationships of the [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="da6e7-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="da6e7-108">Prerequisites</span></span>
-<span data-ttu-id="da6e7-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da6e7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98549-107">Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) auf.</span><span class="sxs-lookup"><span data-stu-id="98549-107">List properties and relationships of the [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) objects.</span></span>
 
-|<span data-ttu-id="da6e7-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="da6e7-111">Permission type</span></span>|<span data-ttu-id="da6e7-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="da6e7-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="98549-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="98549-108">Prerequisites</span></span>
+<span data-ttu-id="98549-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="98549-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="98549-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="98549-111">Permission type</span></span>|<span data-ttu-id="98549-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="98549-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="da6e7-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="da6e7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="da6e7-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="da6e7-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="da6e7-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="da6e7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da6e7-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="da6e7-116">Not supported.</span></span>|
-|<span data-ttu-id="da6e7-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="da6e7-117">Application</span></span>|<span data-ttu-id="da6e7-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="da6e7-118">Not supported.</span></span>|
+|<span data-ttu-id="98549-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="98549-113">Delegated (work or school account)</span></span>|<span data-ttu-id="98549-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="98549-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="98549-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="98549-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98549-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="98549-116">Not supported.</span></span>|
+|<span data-ttu-id="98549-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="98549-117">Application</span></span>|<span data-ttu-id="98549-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="98549-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="da6e7-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="da6e7-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98549-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="98549-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +37,32 @@ ms.locfileid: "27974840"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da6e7-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="da6e7-120">Request headers</span></span>
-|<span data-ttu-id="da6e7-121">Header</span><span class="sxs-lookup"><span data-stu-id="da6e7-121">Header</span></span>|<span data-ttu-id="da6e7-122">Wert</span><span class="sxs-lookup"><span data-stu-id="da6e7-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="98549-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="98549-120">Request headers</span></span>
+|<span data-ttu-id="98549-121">Header</span><span class="sxs-lookup"><span data-stu-id="98549-121">Header</span></span>|<span data-ttu-id="98549-122">Wert</span><span class="sxs-lookup"><span data-stu-id="98549-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="da6e7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="da6e7-123">Authorization</span></span>|<span data-ttu-id="da6e7-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="da6e7-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="da6e7-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="da6e7-125">Accept</span></span>|<span data-ttu-id="da6e7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="da6e7-126">application/json</span></span>|
+|<span data-ttu-id="98549-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="98549-123">Authorization</span></span>|<span data-ttu-id="98549-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="98549-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="98549-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="98549-125">Accept</span></span>|<span data-ttu-id="98549-126">application/json</span><span class="sxs-lookup"><span data-stu-id="98549-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="da6e7-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="da6e7-127">Request body</span></span>
-<span data-ttu-id="da6e7-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="da6e7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98549-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="98549-127">Request body</span></span>
+<span data-ttu-id="98549-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="98549-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da6e7-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="da6e7-129">Response</span></span>
-<span data-ttu-id="da6e7-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="da6e7-130">If successful, this method returns a `200 OK` response code and a collection of [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="98549-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="98549-129">Response</span></span>
+<span data-ttu-id="98549-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Collection von Objekten des Typs [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="98549-130">If successful, this method returns a `200 OK` response code and a collection of [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da6e7-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="da6e7-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="da6e7-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="da6e7-132">Request</span></span>
-<span data-ttu-id="da6e7-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="da6e7-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="98549-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="98549-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="98549-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="98549-132">Request</span></span>
+<span data-ttu-id="98549-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="98549-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="da6e7-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="da6e7-134">Response</span></span>
-<span data-ttu-id="da6e7-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="da6e7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="98549-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="98549-134">Response</span></span>
+<span data-ttu-id="98549-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="98549-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1668
+Content-Length: 1769
 
 {
   "value": [
@@ -85,6 +87,10 @@ Content-Length: 1668
       "notes": "Notes value",
       "uploadState": 11,
       "publishingState": "processing",
+      "isAssigned": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -109,7 +115,6 @@ Content-Length: 1668
   ]
 }
 ```
-
 
 
 

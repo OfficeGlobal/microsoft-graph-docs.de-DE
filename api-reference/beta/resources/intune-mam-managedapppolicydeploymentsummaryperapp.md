@@ -1,33 +1,35 @@
 ---
 title: managedAppPolicyDeploymentSummaryPerApp-Ressourcentyp
 description: Zusammenfassung der Richtlinienbereitstellung pro App
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ac5acf2536b669c42a324fd5761bed6333dbf05a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0e6053a1d690a68359fa30d5e5ac4c0ce5520bc6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411092"
 ---
-# <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a><span data-ttu-id="e51a1-103">managedAppPolicyDeploymentSummaryPerApp-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e51a1-103">managedAppPolicyDeploymentSummaryPerApp resource type</span></span>
+# <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a><span data-ttu-id="15ada-103">managedAppPolicyDeploymentSummaryPerApp-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="15ada-103">managedAppPolicyDeploymentSummaryPerApp resource type</span></span>
 
-> <span data-ttu-id="e51a1-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e51a1-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e51a1-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e51a1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="15ada-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="15ada-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="15ada-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="15ada-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="e51a1-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e51a1-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="15ada-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="15ada-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e51a1-107">Zusammenfassung der Richtlinienbereitstellung pro App</span><span class="sxs-lookup"><span data-stu-id="e51a1-107">Represents policy deployment summary per app.</span></span>
-## <a name="properties"></a><span data-ttu-id="e51a1-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e51a1-108">Properties</span></span>
-|<span data-ttu-id="e51a1-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e51a1-109">Property</span></span>|<span data-ttu-id="e51a1-110">Typ</span><span class="sxs-lookup"><span data-stu-id="e51a1-110">Type</span></span>|<span data-ttu-id="e51a1-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e51a1-111">Description</span></span>|
+<span data-ttu-id="15ada-107">Zusammenfassung der Richtlinienbereitstellung pro App</span><span class="sxs-lookup"><span data-stu-id="15ada-107">Represents policy deployment summary per app.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="15ada-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="15ada-108">Properties</span></span>
+|<span data-ttu-id="15ada-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="15ada-109">Property</span></span>|<span data-ttu-id="15ada-110">Typ</span><span class="sxs-lookup"><span data-stu-id="15ada-110">Type</span></span>|<span data-ttu-id="15ada-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="15ada-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e51a1-112">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="e51a1-112">mobileAppIdentifier</span></span>|[<span data-ttu-id="e51a1-113">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="e51a1-113">mobileAppIdentifier</span></span>](../resources/intune-mam-mobileappidentifier.md)|<span data-ttu-id="e51a1-114">Bereitstellung einer App</span><span class="sxs-lookup"><span data-stu-id="e51a1-114">Deployment of an app.</span></span>|
-|<span data-ttu-id="e51a1-115">configurationAppliedUserCount</span><span class="sxs-lookup"><span data-stu-id="e51a1-115">configurationAppliedUserCount</span></span>|<span data-ttu-id="e51a1-116">Int32</span><span class="sxs-lookup"><span data-stu-id="e51a1-116">Int32</span></span>|<span data-ttu-id="e51a1-117">Die Anzahl der Benutzer, auf die die Richtlinie angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="e51a1-117">Number of users the policy is applied.</span></span>|
+|<span data-ttu-id="15ada-112">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="15ada-112">mobileAppIdentifier</span></span>|[<span data-ttu-id="15ada-113">mobileAppIdentifier</span><span class="sxs-lookup"><span data-stu-id="15ada-113">mobileAppIdentifier</span></span>](../resources/intune-mam-mobileappidentifier.md)|<span data-ttu-id="15ada-114">Bereitstellung einer App</span><span class="sxs-lookup"><span data-stu-id="15ada-114">Deployment of an app.</span></span>|
+|<span data-ttu-id="15ada-115">configurationAppliedUserCount</span><span class="sxs-lookup"><span data-stu-id="15ada-115">configurationAppliedUserCount</span></span>|<span data-ttu-id="15ada-116">Int32</span><span class="sxs-lookup"><span data-stu-id="15ada-116">Int32</span></span>|<span data-ttu-id="15ada-117">Die Anzahl der Benutzer, auf die die Richtlinie angewendet wird.</span><span class="sxs-lookup"><span data-stu-id="15ada-117">Number of users the policy is applied.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e51a1-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="e51a1-118">Relationships</span></span>
-<span data-ttu-id="e51a1-119">Keine</span><span class="sxs-lookup"><span data-stu-id="e51a1-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="e51a1-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e51a1-120">JSON Representation</span></span>
-<span data-ttu-id="e51a1-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e51a1-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="15ada-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="15ada-118">Relationships</span></span>
+<span data-ttu-id="15ada-119">Keine</span><span class="sxs-lookup"><span data-stu-id="15ada-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="15ada-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="15ada-120">JSON Representation</span></span>
+<span data-ttu-id="15ada-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="15ada-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
@@ -42,7 +44,6 @@ ms.locfileid: "27932959"
   "configurationAppliedUserCount": 1024
 }
 ```
-
 
 
 
