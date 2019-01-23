@@ -1,33 +1,34 @@
 ---
 title: Abrufen von depMacOSEnrollmentProfile
 description: Lesen Sie Eigenschaften und Beziehungen des DepMacOSEnrollmentProfile-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6fd76fda6673ffcfaf18a85d4b33ebbad22a1c4c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 864c5680ee48e06ec7c32b66ee5a456a77dbecde
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416006"
 ---
-# <a name="get-depmacosenrollmentprofile"></a><span data-ttu-id="e983b-103">Abrufen von depMacOSEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="e983b-103">Get depMacOSEnrollmentProfile</span></span>
+# <a name="get-depmacosenrollmentprofile"></a><span data-ttu-id="8be9d-103">Abrufen von depMacOSEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="8be9d-103">Get depMacOSEnrollmentProfile</span></span>
 
-> <span data-ttu-id="e983b-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e983b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e983b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e983b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8be9d-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="8be9d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8be9d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8be9d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="e983b-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e983b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="8be9d-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8be9d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e983b-107">Lesen Sie Eigenschaften und Beziehungen des [DepMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="e983b-107">Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="e983b-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="e983b-108">Prerequisites</span></span>
-<span data-ttu-id="e983b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e983b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8be9d-107">Lesen Sie Eigenschaften und Beziehungen des [DepMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="8be9d-107">Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.</span></span>
 
-|<span data-ttu-id="e983b-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e983b-111">Permission type</span></span>|<span data-ttu-id="e983b-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e983b-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="8be9d-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="8be9d-108">Prerequisites</span></span>
+<span data-ttu-id="8be9d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="8be9d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="8be9d-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8be9d-111">Permission type</span></span>|<span data-ttu-id="8be9d-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8be9d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e983b-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e983b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e983b-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="e983b-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="e983b-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e983b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e983b-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e983b-116">Not supported.</span></span>|
-|<span data-ttu-id="e983b-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e983b-117">Application</span></span>|<span data-ttu-id="e983b-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e983b-118">Not supported.</span></span>|
+|<span data-ttu-id="8be9d-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8be9d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="8be9d-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="8be9d-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="8be9d-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8be9d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8be9d-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8be9d-116">Not supported.</span></span>|
+|<span data-ttu-id="8be9d-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8be9d-117">Application</span></span>|<span data-ttu-id="8be9d-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8be9d-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e983b-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e983b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8be9d-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8be9d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,33 +37,35 @@ ms.locfileid: "27968430"
 GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e983b-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="e983b-120">Optional query parameters</span></span>
-<span data-ttu-id="e983b-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="e983b-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="e983b-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="e983b-122">Request headers</span></span>
-|<span data-ttu-id="e983b-123">Header</span><span class="sxs-lookup"><span data-stu-id="e983b-123">Header</span></span>|<span data-ttu-id="e983b-124">Wert</span><span class="sxs-lookup"><span data-stu-id="e983b-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8be9d-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="8be9d-120">Optional query parameters</span></span>
+<span data-ttu-id="8be9d-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8be9d-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="8be9d-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8be9d-122">Request headers</span></span>
+|<span data-ttu-id="8be9d-123">Header</span><span class="sxs-lookup"><span data-stu-id="8be9d-123">Header</span></span>|<span data-ttu-id="8be9d-124">Wert</span><span class="sxs-lookup"><span data-stu-id="8be9d-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e983b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="e983b-125">Authorization</span></span>|<span data-ttu-id="e983b-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="e983b-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e983b-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="e983b-127">Accept</span></span>|<span data-ttu-id="e983b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="e983b-128">application/json</span></span>|
+|<span data-ttu-id="8be9d-125">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="8be9d-125">Authorization</span></span>|<span data-ttu-id="8be9d-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="8be9d-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8be9d-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="8be9d-127">Accept</span></span>|<span data-ttu-id="8be9d-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8be9d-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e983b-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="e983b-129">Request body</span></span>
-<span data-ttu-id="e983b-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="e983b-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8be9d-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8be9d-129">Request body</span></span>
+<span data-ttu-id="8be9d-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="8be9d-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e983b-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="e983b-131">Response</span></span>
-<span data-ttu-id="e983b-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [DepMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="e983b-132">If successful, this method returns a `200 OK` response code and [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8be9d-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="8be9d-131">Response</span></span>
+<span data-ttu-id="8be9d-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [DepMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="8be9d-132">If successful, this method returns a `200 OK` response code and [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e983b-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e983b-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="e983b-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="e983b-134">Request</span></span>
-<span data-ttu-id="e983b-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="e983b-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8be9d-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8be9d-133">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="8be9d-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8be9d-134">Request</span></span>
+<span data-ttu-id="8be9d-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8be9d-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 ```
 
-### <a name="response"></a><span data-ttu-id="e983b-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="e983b-136">Response</span></span>
-<span data-ttu-id="e983b-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e983b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8be9d-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="8be9d-136">Response</span></span>
+<span data-ttu-id="8be9d-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8be9d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1187
 
 {
   "value": {
@@ -73,6 +76,7 @@ Content-Length: 1048
     "requiresUserAuthentication": true,
     "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
     "enableAuthenticationViaCompanyPortal": true,
+    "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
@@ -89,13 +93,14 @@ Content-Length: 1048
     "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
+    "displayToneSetupDisabled": true,
+    "privacyPaneDisabled": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true
   }
 }
 ```
-
 
 
 
