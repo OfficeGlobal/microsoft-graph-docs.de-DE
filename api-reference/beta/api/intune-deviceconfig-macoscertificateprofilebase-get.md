@@ -1,33 +1,34 @@
 ---
 title: Abrufen von macOSCertificateProfileBase
 description: Lesen Sie Eigenschaften und Beziehungen des MacOSCertificateProfileBase-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f395a724f1eb063ec74475a4dbd2c47a79e2d88a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 75400343b2fe670b27ce73900bfd996cbbe9a016
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407522"
 ---
-# <a name="get-macoscertificateprofilebase"></a><span data-ttu-id="d5415-103">Abrufen von macOSCertificateProfileBase</span><span class="sxs-lookup"><span data-stu-id="d5415-103">Get macOSCertificateProfileBase</span></span>
+# <a name="get-macoscertificateprofilebase"></a><span data-ttu-id="27103-103">Abrufen von macOSCertificateProfileBase</span><span class="sxs-lookup"><span data-stu-id="27103-103">Get macOSCertificateProfileBase</span></span>
 
-> <span data-ttu-id="d5415-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d5415-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d5415-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d5415-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="27103-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="27103-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="27103-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="27103-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d5415-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="d5415-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="27103-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="27103-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d5415-107">Lesen Sie Eigenschaften und Beziehungen des [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="d5415-107">Read properties and relationships of the [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="d5415-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="d5415-108">Prerequisites</span></span>
-<span data-ttu-id="d5415-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5415-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="27103-107">Lesen Sie Eigenschaften und Beziehungen des [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="27103-107">Read properties and relationships of the [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) object.</span></span>
 
-|<span data-ttu-id="d5415-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d5415-111">Permission type</span></span>|<span data-ttu-id="d5415-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d5415-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="27103-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="27103-108">Prerequisites</span></span>
+<span data-ttu-id="27103-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="27103-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="27103-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="27103-111">Permission type</span></span>|<span data-ttu-id="27103-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="27103-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d5415-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d5415-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d5415-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5415-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="d5415-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d5415-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d5415-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d5415-116">Not supported.</span></span>|
-|<span data-ttu-id="d5415-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d5415-117">Application</span></span>|<span data-ttu-id="d5415-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d5415-118">Not supported.</span></span>|
+|<span data-ttu-id="27103-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="27103-113">Delegated (work or school account)</span></span>|<span data-ttu-id="27103-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="27103-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="27103-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="27103-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="27103-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="27103-116">Not supported.</span></span>|
+|<span data-ttu-id="27103-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="27103-117">Application</span></span>|<span data-ttu-id="27103-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="27103-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d5415-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d5415-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="27103-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="27103-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,29 +38,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d5415-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="d5415-120">Optional query parameters</span></span>
-<span data-ttu-id="d5415-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d5415-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="d5415-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d5415-122">Request headers</span></span>
-|<span data-ttu-id="d5415-123">Header</span><span class="sxs-lookup"><span data-stu-id="d5415-123">Header</span></span>|<span data-ttu-id="d5415-124">Wert</span><span class="sxs-lookup"><span data-stu-id="d5415-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="27103-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="27103-120">Optional query parameters</span></span>
+<span data-ttu-id="27103-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="27103-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="27103-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="27103-122">Request headers</span></span>
+|<span data-ttu-id="27103-123">Header</span><span class="sxs-lookup"><span data-stu-id="27103-123">Header</span></span>|<span data-ttu-id="27103-124">Wert</span><span class="sxs-lookup"><span data-stu-id="27103-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d5415-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5415-125">Authorization</span></span>|<span data-ttu-id="d5415-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="d5415-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d5415-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="d5415-127">Accept</span></span>|<span data-ttu-id="d5415-128">application/json</span><span class="sxs-lookup"><span data-stu-id="d5415-128">application/json</span></span>|
+|<span data-ttu-id="27103-125">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="27103-125">Authorization</span></span>|<span data-ttu-id="27103-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="27103-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="27103-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="27103-127">Accept</span></span>|<span data-ttu-id="27103-128">application/json</span><span class="sxs-lookup"><span data-stu-id="27103-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d5415-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d5415-129">Request body</span></span>
-<span data-ttu-id="d5415-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d5415-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="27103-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="27103-129">Request body</span></span>
+<span data-ttu-id="27103-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="27103-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d5415-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="d5415-131">Response</span></span>
-<span data-ttu-id="d5415-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="d5415-132">If successful, this method returns a `200 OK` response code and [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="27103-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="27103-131">Response</span></span>
+<span data-ttu-id="27103-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="27103-132">If successful, this method returns a `200 OK` response code and [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d5415-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d5415-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="d5415-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d5415-134">Request</span></span>
-<span data-ttu-id="d5415-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d5415-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="27103-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="27103-133">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="27103-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="27103-134">Request</span></span>
+<span data-ttu-id="27103-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="27103-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSVpnConfiguration/identityCertificate
 ```
 
-### <a name="response"></a><span data-ttu-id="d5415-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="d5415-136">Response</span></span>
-<span data-ttu-id="d5415-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d5415-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="27103-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="27103-136">Response</span></span>
+<span data-ttu-id="27103-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="27103-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,7 +89,6 @@ Content-Length: 699
   }
 }
 ```
-
 
 
 
