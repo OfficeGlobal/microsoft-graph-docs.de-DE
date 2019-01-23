@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windowsProtectionState
 description: Gerät Protection Status Entität.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423587"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Ressourcentyp windowsProtectionState
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Gerät Protection Status Entität.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,15 +29,15 @@ Gerät Protection Status Entität.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Der eindeutige Bezeichner für das Gerät Protection Status-Objekt. Dies ist die Geräte-Id des Geräts|
-|malwareProtectionEnabled|Boolescher Wert|Anti-Malware ist oder nicht aktiviert|
+|malwareProtectionEnabled|Boolean|Anti-Malware ist oder nicht aktiviert|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Zustand des Computers (wie bereinigen oder ausstehende vollständigen Scan oder Ausstehender Neustart usw.). Mögliche Werte sind: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending` und `critical`.|
-|realTimeProtectionEnabled|Boolescher Wert|Echtzeit-Schutz ist oder nicht aktiviert?|
-|networkInspectionSystemEnabled|Boolescher Wert|Netzwerk-Prüfung System aktiviert ist oder nicht?|
-|quickScanOverdue|Boolescher Wert|Quick scan überfällige oder nicht?|
-|fullScanOverdue|Boolescher Wert|Des vollständigen Scan überfällige oder nicht?|
-|signatureUpdateOverdue|Boolescher Wert|Signatur veraltet oder nicht?|
-|rebootRequired|Boolescher Wert|Neustart erforderlich oder nicht?|
-|fullScanRequired|Boolescher Wert|Vollständigen Scan erforderlich oder nicht?|
+|realTimeProtectionEnabled|Boolean|Echtzeit-Schutz ist oder nicht aktiviert?|
+|networkInspectionSystemEnabled|Boolean|Netzwerk-Prüfung System aktiviert ist oder nicht?|
+|quickScanOverdue|Boolean|Quick scan überfällige oder nicht?|
+|fullScanOverdue|Boolean|Des vollständigen Scan überfällige oder nicht?|
+|signatureUpdateOverdue|Boolean|Signatur veraltet oder nicht?|
+|rebootRequired|Boolean|Neustart erforderlich oder nicht?|
+|fullScanRequired|Boolean|Vollständigen Scan erforderlich oder nicht?|
 |%ENGINEVERSION%|Zeichenfolge|Aktuelle Endpoint Protection Datenbankmodul, version|
 |signatureVersion|Zeichenfolge|Aktuelle Version der Malware-Definitionen|
 |antiMalwareVersion|Zeichenfolge|Aktuelle anti-Malware-version|
@@ -82,7 +83,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

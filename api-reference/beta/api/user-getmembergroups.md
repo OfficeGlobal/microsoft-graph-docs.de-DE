@@ -4,16 +4,16 @@ description: Zurückgeben Sie aller Gruppen, denen der Benutzer Mitglied ist. Da
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 68c01242927a80e9a35625f6e0ad733b44d4c3fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cb6a10a80503d8842442e2678bcf52ee6154e3f5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424210"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv; im Gegensatz zum Lesen der Navigationseigenschaft [memberOf](../api/user-list-memberof.md), die nur die Gruppen zurückgibt, von denen der Benutzer ein direktes Mitglied ist.
 
@@ -25,9 +25,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | ~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                                                                                       |
-| Anwendung                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Anwendung                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
 > **Hinweis:** Diese API derzeit erfordert die `Directory.Read.All` Berechtigung oder höher. Verwenden die Berechtigung Group.Read.All eigenständig oder in Kombination mit einem `User.` Berechtigung, wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
 
