@@ -1,32 +1,34 @@
 ---
 title: uri-Ressourcentyp
 description: Noch nicht dokumentiert
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5ee23a5a5e1173cdf099a83828a94f80e32f72c1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 56d27eb4f6ec2a07d964ac187cf90bc841632f23
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401607"
 ---
-# <a name="uri-resource-type"></a><span data-ttu-id="f4840-103">uri-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f4840-103">uri resource type</span></span>
+# <a name="uri-resource-type"></a><span data-ttu-id="3dc55-103">uri-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3dc55-103">uri resource type</span></span>
 
-> <span data-ttu-id="f4840-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="f4840-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f4840-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f4840-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3dc55-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="3dc55-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3dc55-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3dc55-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f4840-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f4840-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="3dc55-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3dc55-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f4840-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="f4840-107">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="f4840-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f4840-108">Properties</span></span>
-|<span data-ttu-id="f4840-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f4840-109">Property</span></span>|<span data-ttu-id="f4840-110">Typ</span><span class="sxs-lookup"><span data-stu-id="f4840-110">Type</span></span>|<span data-ttu-id="f4840-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4840-111">Description</span></span>|
+<span data-ttu-id="3dc55-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="3dc55-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3dc55-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3dc55-108">Properties</span></span>
+|<span data-ttu-id="3dc55-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3dc55-109">Property</span></span>|<span data-ttu-id="3dc55-110">Typ</span><span class="sxs-lookup"><span data-stu-id="3dc55-110">Type</span></span>|<span data-ttu-id="3dc55-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3dc55-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f4840-112">Segmente</span><span class="sxs-lookup"><span data-stu-id="f4840-112">segments</span></span>|<span data-ttu-id="f4840-113">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="f4840-113">String collection</span></span>|<span data-ttu-id="f4840-114">Noch nicht dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="f4840-114">Not yet documented</span></span>|
+|<span data-ttu-id="3dc55-112">Segmente</span><span class="sxs-lookup"><span data-stu-id="3dc55-112">segments</span></span>|<span data-ttu-id="3dc55-113">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="3dc55-113">String collection</span></span>|<span data-ttu-id="3dc55-114">Noch nicht dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="3dc55-114">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f4840-115">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f4840-115">Relationships</span></span>
-<span data-ttu-id="f4840-116">Keine</span><span class="sxs-lookup"><span data-stu-id="f4840-116">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="f4840-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f4840-117">JSON Representation</span></span>
-<span data-ttu-id="f4840-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f4840-118">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="3dc55-115">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="3dc55-115">Relationships</span></span>
+<span data-ttu-id="3dc55-116">Keine</span><span class="sxs-lookup"><span data-stu-id="3dc55-116">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="3dc55-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3dc55-117">JSON Representation</span></span>
+<span data-ttu-id="3dc55-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3dc55-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.uri"
@@ -40,7 +42,6 @@ ms.locfileid: "27922886"
   ]
 }
 ```
-
 
 
 

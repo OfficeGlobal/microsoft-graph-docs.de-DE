@@ -1,33 +1,34 @@
 ---
 title: Abrufen von circularGeofenceManagementCondition
 description: Lesen Sie Eigenschaften und Beziehungen des CircularGeofenceManagementCondition-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ac259cfcd19b70bde65bb2c14b6b376039bc18b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5dea953df72eb51918d295dd8df3f561cc3c2a6b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401810"
 ---
-# <a name="get-circulargeofencemanagementcondition"></a><span data-ttu-id="4d872-103">Abrufen von circularGeofenceManagementCondition</span><span class="sxs-lookup"><span data-stu-id="4d872-103">Get circularGeofenceManagementCondition</span></span>
+# <a name="get-circulargeofencemanagementcondition"></a><span data-ttu-id="c2971-103">Abrufen von circularGeofenceManagementCondition</span><span class="sxs-lookup"><span data-stu-id="c2971-103">Get circularGeofenceManagementCondition</span></span>
 
-> <span data-ttu-id="4d872-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="4d872-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4d872-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4d872-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c2971-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="c2971-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c2971-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c2971-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="4d872-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="4d872-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="c2971-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c2971-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4d872-107">Lesen Sie Eigenschaften und Beziehungen des [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="4d872-107">Read properties and relationships of the [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="4d872-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="4d872-108">Prerequisites</span></span>
-<span data-ttu-id="4d872-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d872-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c2971-107">Lesen Sie Eigenschaften und Beziehungen des [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="c2971-107">Read properties and relationships of the [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) object.</span></span>
 
-|<span data-ttu-id="4d872-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="4d872-111">Permission type</span></span>|<span data-ttu-id="4d872-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="4d872-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="c2971-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="c2971-108">Prerequisites</span></span>
+<span data-ttu-id="c2971-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="c2971-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="c2971-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c2971-111">Permission type</span></span>|<span data-ttu-id="c2971-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c2971-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4d872-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="4d872-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4d872-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="4d872-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="4d872-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="4d872-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4d872-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4d872-116">Not supported.</span></span>|
-|<span data-ttu-id="4d872-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="4d872-117">Application</span></span>|<span data-ttu-id="4d872-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="4d872-118">Not supported.</span></span>|
+|<span data-ttu-id="c2971-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c2971-113">Delegated (work or school account)</span></span>|<span data-ttu-id="c2971-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c2971-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c2971-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c2971-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c2971-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c2971-116">Not supported.</span></span>|
+|<span data-ttu-id="c2971-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c2971-117">Application</span></span>|<span data-ttu-id="c2971-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c2971-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4d872-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4d872-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2971-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c2971-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,29 +38,31 @@ GET /deviceManagement/managementConditions/{managementConditionId}
 GET /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/managementConditions/{managementConditionId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4d872-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="4d872-120">Optional query parameters</span></span>
-<span data-ttu-id="4d872-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="4d872-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="4d872-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4d872-122">Request headers</span></span>
-|<span data-ttu-id="4d872-123">Header</span><span class="sxs-lookup"><span data-stu-id="4d872-123">Header</span></span>|<span data-ttu-id="4d872-124">Wert</span><span class="sxs-lookup"><span data-stu-id="4d872-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="c2971-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c2971-120">Optional query parameters</span></span>
+<span data-ttu-id="c2971-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c2971-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="c2971-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c2971-122">Request headers</span></span>
+|<span data-ttu-id="c2971-123">Header</span><span class="sxs-lookup"><span data-stu-id="c2971-123">Header</span></span>|<span data-ttu-id="c2971-124">Wert</span><span class="sxs-lookup"><span data-stu-id="c2971-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4d872-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d872-125">Authorization</span></span>|<span data-ttu-id="4d872-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="4d872-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4d872-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="4d872-127">Accept</span></span>|<span data-ttu-id="4d872-128">application/json</span><span class="sxs-lookup"><span data-stu-id="4d872-128">application/json</span></span>|
+|<span data-ttu-id="c2971-125">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="c2971-125">Authorization</span></span>|<span data-ttu-id="c2971-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="c2971-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c2971-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="c2971-127">Accept</span></span>|<span data-ttu-id="c2971-128">application/json</span><span class="sxs-lookup"><span data-stu-id="c2971-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4d872-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4d872-129">Request body</span></span>
-<span data-ttu-id="4d872-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="4d872-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c2971-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c2971-129">Request body</span></span>
+<span data-ttu-id="c2971-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c2971-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d872-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="4d872-131">Response</span></span>
-<span data-ttu-id="4d872-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="4d872-132">If successful, this method returns a `200 OK` response code and [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c2971-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="c2971-131">Response</span></span>
+<span data-ttu-id="c2971-132">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="c2971-132">If successful, this method returns a `200 OK` response code and [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4d872-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4d872-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="4d872-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="4d872-134">Request</span></span>
-<span data-ttu-id="4d872-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="4d872-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c2971-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c2971-133">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="c2971-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c2971-134">Request</span></span>
+<span data-ttu-id="c2971-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c2971-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditions/{managementConditionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="4d872-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="4d872-136">Response</span></span>
-<span data-ttu-id="4d872-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="4d872-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c2971-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="c2971-136">Response</span></span>
+<span data-ttu-id="c2971-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c2971-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -84,7 +87,6 @@ Content-Length: 659
   }
 }
 ```
-
 
 
 
