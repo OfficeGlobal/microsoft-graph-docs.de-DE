@@ -1,30 +1,30 @@
 ---
 title: DefenderSecurityCenterNotificationsFromAppType Enum-Typ
 description: Mögliche Werte für defenderSecurityCenterNotificationsFromApp
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e979b7c1a1a0e823e55899a121a2a9304cbe8f02
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f5a2e9fd4abb27458d1c52ce78ca0ce679576c9b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413605"
 ---
-# <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a><span data-ttu-id="385fd-103">DefenderSecurityCenterNotificationsFromAppType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="385fd-103">defenderSecurityCenterNotificationsFromAppType enum type</span></span>
+# <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a><span data-ttu-id="ee054-103">DefenderSecurityCenterNotificationsFromAppType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="ee054-103">defenderSecurityCenterNotificationsFromAppType enum type</span></span>
 
-> <span data-ttu-id="385fd-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="385fd-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="385fd-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="385fd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ee054-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="ee054-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ee054-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ee054-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="385fd-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="385fd-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ee054-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ee054-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="385fd-107">Mögliche Werte für defenderSecurityCenterNotificationsFromApp</span><span class="sxs-lookup"><span data-stu-id="385fd-107">Possible values for defenderSecurityCenterNotificationsFromApp</span></span>
-## <a name="members"></a><span data-ttu-id="385fd-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="385fd-108">Members</span></span>
-|<span data-ttu-id="385fd-109">Element</span><span class="sxs-lookup"><span data-stu-id="385fd-109">Member</span></span>|<span data-ttu-id="385fd-110">Wert</span><span class="sxs-lookup"><span data-stu-id="385fd-110">Value</span></span>|<span data-ttu-id="385fd-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="385fd-111">Description</span></span>|
+<span data-ttu-id="ee054-107">Mögliche Werte für defenderSecurityCenterNotificationsFromApp</span><span class="sxs-lookup"><span data-stu-id="ee054-107">Possible values for defenderSecurityCenterNotificationsFromApp</span></span>
+
+## <a name="members"></a><span data-ttu-id="ee054-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="ee054-108">Members</span></span>
+|<span data-ttu-id="ee054-109">Member</span><span class="sxs-lookup"><span data-stu-id="ee054-109">Member</span></span>|<span data-ttu-id="ee054-110">Wert</span><span class="sxs-lookup"><span data-stu-id="ee054-110">Value</span></span>|<span data-ttu-id="ee054-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ee054-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="385fd-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="385fd-112">notConfigured</span></span>|<span data-ttu-id="385fd-113">0</span><span class="sxs-lookup"><span data-stu-id="385fd-113">0</span></span>|<span data-ttu-id="385fd-114">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="385fd-114">Not Configured</span></span>|
-|<span data-ttu-id="385fd-115">blockNoncriticalNotifications</span><span class="sxs-lookup"><span data-stu-id="385fd-115">blockNoncriticalNotifications</span></span>|<span data-ttu-id="385fd-116">1</span><span class="sxs-lookup"><span data-stu-id="385fd-116">1</span></span>|<span data-ttu-id="385fd-117">Blockieren nicht kritischen Benachrichtigungen</span><span class="sxs-lookup"><span data-stu-id="385fd-117">Block non-critical notifications</span></span>|
-|<span data-ttu-id="385fd-118">blockAllNotifications</span><span class="sxs-lookup"><span data-stu-id="385fd-118">blockAllNotifications</span></span>|<span data-ttu-id="385fd-119">2</span><span class="sxs-lookup"><span data-stu-id="385fd-119">2</span></span>|<span data-ttu-id="385fd-120">Blockieren Sie aller Benachrichtigungen</span><span class="sxs-lookup"><span data-stu-id="385fd-120">Block all notifications</span></span>|
-
+|<span data-ttu-id="ee054-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="ee054-112">notConfigured</span></span>|<span data-ttu-id="ee054-113">0</span><span class="sxs-lookup"><span data-stu-id="ee054-113">0</span></span>|<span data-ttu-id="ee054-114">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="ee054-114">Not Configured</span></span>|
+|<span data-ttu-id="ee054-115">blockNoncriticalNotifications</span><span class="sxs-lookup"><span data-stu-id="ee054-115">blockNoncriticalNotifications</span></span>|<span data-ttu-id="ee054-116">1</span><span class="sxs-lookup"><span data-stu-id="ee054-116">1</span></span>|<span data-ttu-id="ee054-117">Blockieren nicht kritischen Benachrichtigungen</span><span class="sxs-lookup"><span data-stu-id="ee054-117">Block non-critical notifications</span></span>|
+|<span data-ttu-id="ee054-118">blockAllNotifications</span><span class="sxs-lookup"><span data-stu-id="ee054-118">blockAllNotifications</span></span>|<span data-ttu-id="ee054-119">2</span><span class="sxs-lookup"><span data-stu-id="ee054-119">2</span></span>|<span data-ttu-id="ee054-120">Blockieren Sie aller Benachrichtigungen</span><span class="sxs-lookup"><span data-stu-id="ee054-120">Block all notifications</span></span>|
 
 
 

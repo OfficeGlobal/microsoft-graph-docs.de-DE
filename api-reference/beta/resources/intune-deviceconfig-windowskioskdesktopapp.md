@@ -1,39 +1,42 @@
 ---
 title: Ressourcentyp windowsKioskDesktopApp
 description: Die Basisklasse für einen Typ von apps
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a9b808bfd67e1b14e0b11fe84da48b77b4d965ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 831ed86da24791cde549687ecaff42cabc29a99e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947330"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415306"
 ---
-# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="882cf-103">Ressourcentyp windowsKioskDesktopApp</span><span class="sxs-lookup"><span data-stu-id="882cf-103">windowsKioskDesktopApp resource type</span></span>
+# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="6ffd8-103">Ressourcentyp windowsKioskDesktopApp</span><span class="sxs-lookup"><span data-stu-id="6ffd8-103">windowsKioskDesktopApp resource type</span></span>
 
-> <span data-ttu-id="882cf-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="882cf-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="882cf-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="882cf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6ffd8-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6ffd8-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="882cf-106">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="882cf-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6ffd8-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="882cf-107">Die Basisklasse für einen Typ von apps</span><span class="sxs-lookup"><span data-stu-id="882cf-107">The base class for a type of apps</span></span>
+<span data-ttu-id="6ffd8-107">Die Basisklasse für einen Typ von apps</span><span class="sxs-lookup"><span data-stu-id="6ffd8-107">The base class for a type of apps</span></span>
 
-<span data-ttu-id="882cf-108">Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="882cf-108">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="882cf-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="882cf-109">Properties</span></span>
-|<span data-ttu-id="882cf-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="882cf-110">Property</span></span>|<span data-ttu-id="882cf-111">Typ</span><span class="sxs-lookup"><span data-stu-id="882cf-111">Type</span></span>|<span data-ttu-id="882cf-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="882cf-112">Description</span></span>|
+<span data-ttu-id="6ffd8-108">Erbt vom [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="6ffd8-108">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="6ffd8-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6ffd8-109">Properties</span></span>
+|<span data-ttu-id="6ffd8-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6ffd8-110">Property</span></span>|<span data-ttu-id="6ffd8-111">Typ</span><span class="sxs-lookup"><span data-stu-id="6ffd8-111">Type</span></span>|<span data-ttu-id="6ffd8-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6ffd8-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="882cf-113">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="882cf-113">startLayoutTileSize</span></span>|[<span data-ttu-id="882cf-114">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="882cf-114">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="882cf-115">Die app-Kachelgröße für die Start-Layout Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="882cf-115">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="882cf-116">Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.</span><span class="sxs-lookup"><span data-stu-id="882cf-116">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
-|<span data-ttu-id="882cf-117">name</span><span class="sxs-lookup"><span data-stu-id="882cf-117">name</span></span>|<span data-ttu-id="882cf-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="882cf-118">String</span></span>|<span data-ttu-id="882cf-119">Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.</span><span class="sxs-lookup"><span data-stu-id="882cf-119">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
-|<span data-ttu-id="882cf-120">Pfad</span><span class="sxs-lookup"><span data-stu-id="882cf-120">path</span></span>|<span data-ttu-id="882cf-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="882cf-121">String</span></span>|<span data-ttu-id="882cf-122">Definieren Sie den Pfad einer desktop-App</span><span class="sxs-lookup"><span data-stu-id="882cf-122">Define the path of a desktop app</span></span>|
-|<span data-ttu-id="882cf-123">desktopApplicationId</span><span class="sxs-lookup"><span data-stu-id="882cf-123">desktopApplicationId</span></span>|<span data-ttu-id="882cf-124">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="882cf-124">String</span></span>|<span data-ttu-id="882cf-125">Definieren der DesktopApplicationID der app</span><span class="sxs-lookup"><span data-stu-id="882cf-125">Define the DesktopApplicationID of the app</span></span>|
-|<span data-ttu-id="882cf-126">desktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="882cf-126">desktopApplicationLinkPath</span></span>|<span data-ttu-id="882cf-127">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="882cf-127">String</span></span>|<span data-ttu-id="882cf-128">Definieren der DesktopApplicationLinkPath der app</span><span class="sxs-lookup"><span data-stu-id="882cf-128">Define the DesktopApplicationLinkPath of the app</span></span>|
+|<span data-ttu-id="6ffd8-113">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="6ffd8-113">startLayoutTileSize</span></span>|[<span data-ttu-id="6ffd8-114">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="6ffd8-114">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="6ffd8-115">Die app-Kachelgröße für die Start-Layout Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="6ffd8-115">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="6ffd8-116">Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-116">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
+|<span data-ttu-id="6ffd8-117">name</span><span class="sxs-lookup"><span data-stu-id="6ffd8-117">name</span></span>|<span data-ttu-id="6ffd8-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ffd8-118">String</span></span>|<span data-ttu-id="6ffd8-119">Stellt den Anzeigenamen einer App Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) dar.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-119">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
+|<span data-ttu-id="6ffd8-120">der appType</span><span class="sxs-lookup"><span data-stu-id="6ffd8-120">appType</span></span>|[<span data-ttu-id="6ffd8-121">windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="6ffd8-121">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="6ffd8-122">Der app-Typ Inherited aus [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="6ffd8-122">The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="6ffd8-123">Mögliche Werte: sind `unknown`, `store`, `desktop` und `aumId`.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-123">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
+|<span data-ttu-id="6ffd8-124">Pfad</span><span class="sxs-lookup"><span data-stu-id="6ffd8-124">path</span></span>|<span data-ttu-id="6ffd8-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ffd8-125">String</span></span>|<span data-ttu-id="6ffd8-126">Definieren Sie den Pfad einer desktop-App</span><span class="sxs-lookup"><span data-stu-id="6ffd8-126">Define the path of a desktop app</span></span>|
+|<span data-ttu-id="6ffd8-127">desktopApplicationId</span><span class="sxs-lookup"><span data-stu-id="6ffd8-127">desktopApplicationId</span></span>|<span data-ttu-id="6ffd8-128">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ffd8-128">String</span></span>|<span data-ttu-id="6ffd8-129">Definieren der DesktopApplicationID der app</span><span class="sxs-lookup"><span data-stu-id="6ffd8-129">Define the DesktopApplicationID of the app</span></span>|
+|<span data-ttu-id="6ffd8-130">desktopApplicationLinkPath</span><span class="sxs-lookup"><span data-stu-id="6ffd8-130">desktopApplicationLinkPath</span></span>|<span data-ttu-id="6ffd8-131">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ffd8-131">String</span></span>|<span data-ttu-id="6ffd8-132">Definieren der DesktopApplicationLinkPath der app</span><span class="sxs-lookup"><span data-stu-id="6ffd8-132">Define the DesktopApplicationLinkPath of the app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="882cf-129">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="882cf-129">Relationships</span></span>
-<span data-ttu-id="882cf-130">Keine</span><span class="sxs-lookup"><span data-stu-id="882cf-130">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="882cf-131">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="882cf-131">JSON Representation</span></span>
-<span data-ttu-id="882cf-132">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="882cf-132">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="6ffd8-133">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="6ffd8-133">Relationships</span></span>
+<span data-ttu-id="6ffd8-134">Keine</span><span class="sxs-lookup"><span data-stu-id="6ffd8-134">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="6ffd8-135">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6ffd8-135">JSON Representation</span></span>
+<span data-ttu-id="6ffd8-136">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6ffd8-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskDesktopApp"
@@ -44,12 +47,12 @@ ms.locfileid: "27947330"
   "@odata.type": "#microsoft.graph.windowsKioskDesktopApp",
   "startLayoutTileSize": "String",
   "name": "String",
+  "appType": "String",
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"
 }
 ```
-
 
 
 
