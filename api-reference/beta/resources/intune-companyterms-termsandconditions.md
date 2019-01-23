@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp „termsAndConditions“
-description: C-Richtlinien Inhalt zur Verfügung gestellt Benutzer ihre ersten Versuch in Intune registrieren und anschließend bearbeitet, wobei ein Administrator Re-Annahme erforderlich ist. Mithilfe dieser Richtlinien können Administratoren die Bedingungen festlegen, die Benutzer akzeptieren müssen, bevor sie ihre Geräte in Intune registrieren dürfen.
+description: Eine Entität des Typs „termsAndConditions“ repräsentiert die Metadaten und Inhalte einer Geschäftsbedingungen-Richtlinie. Die Inhalte von Geschäftsbedingungen-Richtlinien werden Benutzern angezeigt, wenn sie sich erstmals bei Intune registrieren. Sie werden ebenfalls angezeigt, wenn ein Administrator Bearbeitungen vorgenommen hat und festlegt, dass eine erneute Annahme der Bedingungen nötig ist. Mithilfe dieser Richtlinien können Administratoren die Bedingungen festlegen, die Benutzer akzeptieren müssen, bevor sie ihre Geräte in Intune registrieren dürfen.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: aab2ca99726c6e5388dfa5641b19d7c40dd920de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 11b790976af5e81fad43c3ada52b4aee77066a3b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410665"
 ---
 # <a name="termsandconditions-resource-type"></a>Ressourcentyp „termsAndConditions“
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Eine Entität des Typs „termsAndConditions“ repräsentiert die Metadaten und Inhalte einer Geschäftsbedingungen-Richtlinie. Die Inhalte von Geschäftsbedingungen-Richtlinien werden Benutzern angezeigt, wenn sie sich erstmals bei Intune registrieren. Sie werden ebenfalls angezeigt, wenn ein Administrator Bearbeitungen vorgenommen hat und festlegt, dass eine erneute Annahme der Bedingungen nötig ist. Mithilfe dieser Richtlinien können Administratoren die Bedingungen festlegen, die Benutzer akzeptieren müssen, bevor sie ihre Geräte in Intune registrieren dürfen.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -44,7 +45,7 @@ Eine Entität des Typs „termsAndConditions“ repräsentiert die Metadaten und
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|groupAssignments|[TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Auflistung|Die Liste der zugewiesenen Gruppe für diese Richtlinie T & C.|
+|groupAssignments|[TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) -Auflistung|Die Liste der Zuordnungen für diese Richtlinie T&C Gruppe.|
 |assignments|Sammlung von Objekten des Typs [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Liste der Zuweisungen der Geschäftsbedingungen-Richtlinie|
 |acceptanceStatuses|Sammlung von Objekten des Typs [TermsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md)|Liste der Annahmestatus der Geschäftsbedingungen-Richtlinie|
 
@@ -71,7 +72,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "version": 1024
 }
 ```
-
 
 
 

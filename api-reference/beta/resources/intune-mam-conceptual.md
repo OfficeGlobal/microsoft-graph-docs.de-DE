@@ -4,16 +4,16 @@ description: Die App-Schutz-Richtlinien von Microsoft Intune schützen die Date
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ca628b81015527cb5ab7e508bebbb2808cdcde7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419002"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>So schützen Sie Daten in Unternehmens-Apps mit Microsoft Intune
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) ist.
 
@@ -30,6 +30,7 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [Art der Anwendung](intune-wip-applicationtype.md)
 - [defaultManagedAppProtection](intune-mam-defaultmanagedappprotection.md)
 - [Intune branding-Profil](intune-wip-intunebrandingprofile.md)
+- [Intune branding-Profil-Zuordnung](intune-wip-intunebrandingprofileassignment.md)
 - [iosManagedAppProtection](intune-mam-iosmanagedappprotection.md)
 - [iosManagedAppRegistration](intune-mam-iosmanagedappregistration.md)
 - [iosMobileAppIdentifier](intune-mam-iosmobileappidentifier.md)
@@ -63,6 +64,7 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [windowsInformationProtectionAppLockerFile](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [windowsInformationProtectionDataRecoveryCertificate](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [windowsInformationProtectionDesktopApp](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Registrierung für Schutz Gerät die Windows Informationen](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Windows Informationen Erzwingung der Mail-Schutzstufe](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [windowsInformationProtectionIPRangeCollection](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [windowsInformationProtectionNetworkLearningSummary](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -71,3 +73,4 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [windowsInformationProtectionProxiedDomainCollection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [windowsInformationProtectionResourceCollection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [windowsInformationProtectionStoreApp](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Windows Informationen Protection Remotegerätzurücksetzung Aktion](intune-mam-windowsinformationprotectionwipeaction.md)

@@ -1,25 +1,26 @@
 ---
 title: RatingFranceMoviesType Enum-Typ
 description: Filme Bezeichnungen in Frankreich Bewertung
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3b9220b5c4ba406aadda930eb355f3d472929a03
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3b1948b2eca2075925ba2597dfda6c5e52b7817c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408152"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>RatingFranceMoviesType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Filme Bezeichnungen in Frankreich Bewertung
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
 |allBlocked|1|Alle Inhalte Filme nicht zulassen|
@@ -27,7 +28,6 @@ Filme Bezeichnungen in Frankreich Bewertung
 |agesAbove12|3|Die 12 Klassifizierung verbietet die Prüfung des Films jugendgefährdend unter 12|
 |agesAbove16|4|Die 16 Klassifizierung verbietet die Prüfung des Films jugendgefährdend unter 16|
 |agesAbove18|5|Die 18 Klassifizierung verbietet die Prüfung jugendgefährdend unter 18|
-
 
 
 

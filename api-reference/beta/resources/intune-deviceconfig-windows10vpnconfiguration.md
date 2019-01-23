@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp windows10VpnConfiguration
 description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Windows-10-Gerät (desktop oder mobilen) zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 775a4dfbeb46c27264b5539c51c63b29b488565b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 75710eb8d969f4bfc751405ecf6eca50ced6cfe1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406969"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Ressourcentyp windows10VpnConfiguration
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Windows-10-Gerät (desktop oder mobilen) zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
+
 
 Erbt vom [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)
 
@@ -35,8 +36,8 @@ Erbt vom [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnco
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -46,25 +47,26 @@ Erbt vom [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnco
 |customXml|Binär|Benutzerdefinierte XML-Befehle, die die VPN-Verbindung konfiguriert. (UTF8 codiert Bytearray) Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Profil Zieltyp. Mögliche Werte sind: `user`, `device` und `autoPilotDevice`.|
 |connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Verbindungstyp. Mögliche Werte: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
-|enableSplitTunneling|Boolescher Wert|Split-tunneling zu aktivieren.|
-|enableAlwaysOn|Boolescher Wert|Aktivieren Sie Always On-Modus.|
-|enableDeviceTunnel|Boolescher Wert|Aktivieren Sie Gerät Tunnel.|
-|enableDnsRegistration|Boolescher Wert|Aktivieren Sie die IP-Adressregistrierung mit internen DNS.|
-|dnsSuffixes|Collection von Objekten des Typs „String“|Geben Sie die DNS-Suffixe hinzufügen zu DNS-Suchliste Kurznamen ordnungsgemäß weitergeleitet.|
+|enableSplitTunneling|Boolean|Split-tunneling zu aktivieren.|
+|enableAlwaysOn|Boolean|Aktivieren Sie Always On-Modus.|
+|enableDeviceTunnel|Boolean|Aktivieren Sie Gerät Tunnel.|
+|enableDnsRegistration|Boolean|Aktivieren Sie die IP-Adressregistrierung mit internen DNS.|
+|dnsSuffixes|Zeichenfolgenauflistung|Geben Sie die DNS-Suffixe hinzufügen zu DNS-Suchliste Kurznamen ordnungsgemäß weitergeleitet.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentifizierungsmethode. Mögliche Werte sind: `certificate`, `usernameAndPassword` und `customEapXml`.|
-|rememberUserCredentials|Boolescher Wert|Beachten Sie die Anmeldeinformationen des Benutzers.|
-|enableConditionalAccess|Boolescher Wert|Aktivieren Sie bedingte Zugriff.|
-|enableSingleSignOnWithAlternateCertificate|Boolescher Wert|Aktivieren Sie einmaliges Anmelden (SSO) mit anderen Zertifikats.|
+|rememberUserCredentials|Boolean|Beachten Sie die Anmeldeinformationen des Benutzers.|
+|enableConditionalAccess|Boolean|Aktivieren Sie bedingte Zugriff.|
+|enableSingleSignOnWithAlternateCertificate|Boolean|Aktivieren Sie einmaliges Anmelden (SSO) mit anderen Zertifikats.|
 |singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Einmaliges Anmelden erweiterte Schlüsselverwendung (EKU).|
 |singleSignOnIssuerHash|Zeichenfolge|Einmaliges Anmelden Aussteller Hash.|
 |eapXml|Binär|Extensible Authentication-Protokoll (EAP) XML. (UTF8-codiertes Bytearray)|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Proxy-Server.|
 |associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md) -Auflistung|Zugehörige Apps. Diese Collection darf maximal 10.000 Elemente enthalten.|
-|onlyAssociatedAppsCanUseConnection|Boolescher Wert|Nur zugeordnete Apps können Verbindung (pro app VPN) verwenden.|
+|onlyAssociatedAppsCanUseConnection|Boolean|Nur zugeordnete Apps können Verbindung (pro app VPN) verwenden.|
 |windowsInformationProtectionDomain|Zeichenfolge|Windows Informationen Schutz (WIP) Domäne, die diese Verbindung zugeordnet.|
 |trafficRules|[VpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) -Auflistung|Datenverkehr Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
 |Routen|[VpnRoute](../resources/intune-deviceconfig-vpnroute.md) -Auflistung|Routen (optional für Drittanbieter-Anbieter). Diese Sammlung kann bis zu 1000 Elemente enthalten.|
 |dnsRules|[VpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) -Auflistung|DNS-Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
+|trustedNetworkDomains|Zeichenfolgenauflistung|Vertrauenswürdige Netzwerkdomänen|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -198,12 +200,16 @@ Es folgt eine JSON-Darstellung der Ressource.
       "servers": [
         "String"
       ],
-      "proxyServerUri": "String"
+      "proxyServerUri": "String",
+      "autoTrigger": true,
+      "persistent": true
     }
+  ],
+  "trustedNetworkDomains": [
+    "String"
   ]
 }
 ```
-
 
 
 

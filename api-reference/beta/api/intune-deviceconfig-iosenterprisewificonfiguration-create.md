@@ -1,25 +1,26 @@
 ---
 title: Erstellen von iosEnterpriseWiFiConfiguration
 description: Erstellen eines neuen IosEnterpriseWiFiConfiguration-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3108defc4d88aacde3139862642e308ce7917da5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 10f83d28644366b0509a2519e942395ddcc48d0b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408950"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>Erstellen von iosEnterpriseWiFiConfiguration
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Erstellen eines neuen [IosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md) -Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,16 +53,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Collection von Objekten des Typs „String“|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Netzwerkname|Zeichenfolge|Netzwerk Namen von [IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) geerbt.|
 |SSID|Zeichenfolge|Dies ist der Name des Netzwerks Wi-Fi, die an alle Geräte gesendet wird. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|connectAutomatically|Boolescher Wert|Verbinden Sie automatisch, wenn dieses Netzwerk im Bereich befindet. Eine Einstellung auf "true" überspringt die Aufforderung der Benutzer und automatisch mit Wi-Fi-Netzwerk verbinden. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolescher Wert|Verbinden Sie, wenn das Netzwerk seinen Namen (SSID) nicht übertragen wird. Bei Festlegung auf true festgelegt ist, dieses Profil erzwingt, dass das Gerät für die Verbindung mit einem Netzwerk SSID nicht, die an alle Geräte seine. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|connectAutomatically|Boolean|Verbinden Sie automatisch, wenn dieses Netzwerk im Bereich befindet. Eine Einstellung auf "true" überspringt die Aufforderung der Benutzer und automatisch mit Wi-Fi-Netzwerk verbinden. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolean|Verbinden Sie, wenn das Netzwerk seinen Namen (SSID) nicht übertragen wird. Bei Festlegung auf true festgelegt ist, dieses Profil erzwingt, dass das Gerät für die Verbindung mit einem Netzwerk SSID nicht, die an alle Geräte seine. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Gibt an, ob Wi-Fi-Endpunkt einen EAP-basierte Sicherheitstyp verwendet wird. Geerbt von [IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md). Mögliche Werte sind: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal` und `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Proxytyp für diese Wi-Fi-Verbindung Inherited aus [IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md). Mögliche Werte sind: `none`, `manual` und `automatic`.|
 |proxyManualAddress|Zeichenfolge|IP-Adresse oder den DNS-Hostnamen des Proxyservers bei der manueller Konfiguration ausgewählt ist. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
@@ -70,7 +71,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |preSharedKey|Zeichenfolge|Dies ist die vorinstallierten Schlüssel für WPA persönliche Wi-Fi-Netzwerk. Geerbt von [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication-Protokoll (EAP). Gibt den Typ des EAP-Protokolls festlegen für den die Wi-Fi-Endpunkt (Router). Mögliche Werte sind: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap` und `eapFast`.|
 |eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|EAP-FAST Konfigurationsoption wenn EAP-FAST den ausgewählten EAP-Typ ist. Mögliche Werte: sind `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision` und `useProtectedAccessCredentialAndProvisionAnonymously`.|
-|trustedServerCertificateNames|Collection von Objekten des Typs „String“|Vertrauenswürdige Zertifikat Servernamen an, wenn EAP-Typ EAP-TLS/TTLS/FAST oder PEAP konfiguriert ist. Dies ist der allgemeine Name in Zertifikate der vertrauenswürdigen Zertifizierungsstelle (CA) verwendet. Wenn Sie diese Informationen bereitstellen, können Sie die dynamische vertrauensdialogfeld umgehen, die auf Geräten für Endbenutzer angezeigt wird, wenn sie mit diesem Wi-Fi-Netzwerk zu verbinden.|
+|trustedServerCertificateNames|Zeichenfolgenauflistung|Vertrauenswürdige Zertifikat Servernamen an, wenn EAP-Typ EAP-TLS/TTLS/FAST oder PEAP konfiguriert ist. Dies ist der allgemeine Name in Zertifikate der vertrauenswürdigen Zertifizierungsstelle (CA) verwendet. Wenn Sie diese Informationen bereitstellen, können Sie die dynamische vertrauensdialogfeld umgehen, die auf Geräten für Endbenutzer angezeigt wird, wenn sie mit diesem Wi-Fi-Netzwerk zu verbinden.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Authentifizierungsmethode beim EAP-Typ PEAP oder EAP-TTLS konfiguriert ist. Mögliche Werte sind: `certificate` und `usernameAndPassword`.|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Nicht-EAP-Methode für die Authentifizierung bei EAP-Typ EAP-TTLS und AuthenticationMethod-ist ist Benutzername und Kennwort. Mögliche Werte: sind `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap` und `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|Zeichenfolge|Identität Privacy (externe Identität) aktivieren, wenn EAP-Typ EAP - TTLS EAP - konfiguriert ist FAST oder PEAP. Diese Eigenschaft maskiert Benutzernamen mit dem Text, die, den Sie eingeben. Wenn Sie "anonymen" verwenden, wird jeder Benutzer, die mit dieser Wi-Fi-Verbindung mit der echten Benutzernamen authentifiziert "Anonym" angezeigt.|
@@ -81,16 +82,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [IosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1147
+Content-length: 1083
 
 {
   "@odata.type": "#microsoft.graph.iosEnterpriseWiFiConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -158,7 +159,6 @@ Content-Length: 1255
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

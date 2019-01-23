@@ -1,31 +1,31 @@
 ---
 title: OfficeProductId Enum-Typ
 description: Die Enumeration, die Office365 ProductIds anzugeben, die die Office365-Suite-SKUs darstellen.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 721a67504d2e20065bd908dfa13e002269c83355
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dfe0f2f9c4f94ebdbcce20e1295383ef05d8f734
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418778"
 ---
 # <a name="officeproductid-enum-type"></a>OfficeProductId Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Die Enumeration, die Office365 ProductIds anzugeben, die die Office365-Suite-SKUs darstellen.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |o365ProPlusRetail|0|Noch nicht dokumentiert|
 |o365BusinessRetail|1|Noch nicht dokumentiert|
 |visioProRetail|2|Noch nicht dokumentiert|
 |projectProRetail|3|Noch nicht dokumentiert|
-
 
 
 

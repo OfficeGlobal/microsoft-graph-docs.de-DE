@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp termsAndConditionsGroupAssignment
-description: C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
-author: tfitzmac
+description: Eine Entität TermsAndConditionsGroupAssignment stellt die Zuordnung von einer angegebenen Geschäftsbedingungen (T&C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3efd219e175743afdca35d1b4348de0c6f571540
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0cdb629c380898af078bf0b5eaeb3c39344a5657
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954113"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418575"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Ressourcentyp termsAndConditionsGroupAssignment
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
-Eine Entität TermsAndConditionsGroupAssignment stellt die Zuweisung einer bestimmten Geschäftsbedingungen (T & C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
+Eine Entität TermsAndConditionsGroupAssignment stellt die Zuordnung von einer angegebenen Geschäftsbedingungen (T&C) Richtlinie zu einer bestimmten Gruppe. Benutzer in der Gruppe müssen die Nutzungsbedingungen annehmen, um Geräte in Intune registrieren zu lassen.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -31,7 +32,7 @@ Eine Entität TermsAndConditionsGroupAssignment stellt die Zuweisung einer besti
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner der Entität|
-|targetGroupId|Zeichenfolge|Eindeutiger Bezeichner der einer Gruppe, der die Richtlinie T & C zugewiesen ist.|
+|targetGroupId|Zeichenfolge|Eindeutiger Bezeichner der einer Gruppe, der die T&C Richtlinie zugewiesen wird.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -53,7 +54,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "targetGroupId": "String"
 }
 ```
-
 
 
 

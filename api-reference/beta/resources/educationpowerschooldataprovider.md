@@ -4,16 +4,16 @@ description: Verwendet, um die Synchronisierung Schule Datenprofil einrichten, w
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a22c3cf68a4a5b4c12dc4e7105f17eed4fc006f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4028170c2780cee426ec961a44b51e0362b0187f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406920"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>EducationPowerSchoolDataProvider-Ressource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Verwendet, um die Synchronisierung Schule Datenprofil einrichten, wenn [PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/) als Eingabe Quelle verwendet wird.
 
@@ -26,9 +26,9 @@ Verwendet, um die Synchronisierung Schule Datenprofil einrichten, wenn [PowerSch
 | **connectionUrl** | Zeichenfolge | Die Verbindungs-URL für die PowerSchool-Instanz. |
 | **clientId** | Zeichenfolge |  Die Client-ID, die zum Verbinden mit PowerSchool. |
 | **clientSecret** | Zeichenfolge |  Der geheime Clientschlüssel zum Authentifizieren der Verbindungs zu der Instanz PowerSchool. |
-| **schoolsIds** | Collection von Objekten des Typs „String“ |  Die Liste der Schulen synchronisieren. |
+| **schoolsIds** | Zeichenfolgenauflistung |  Die Liste der Schulen synchronisieren. |
 | **schoolYear** | Zeichenfolge |  Das Jahr Schule synchronisieren. |
-| **allowTeachersInMultipleSchools** | Boolescher Wert |  Gibt an, ob die Quelle mehrere Bezeichner für eine einzelne Student oder Lehrer verfügt. |
+| **allowTeachersInMultipleSchools** | Boolean |  Gibt an, ob die Quelle mehrere Bezeichner für eine einzelne Student oder Lehrer verfügt. |
 | **Anpassungen** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional Anpassung der Synchronisierung Profil angewendet werden soll.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -37,12 +37,12 @@ Verwendet, um die Synchronisierung Schule Datenprofil einrichten, wenn [PowerSch
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
+    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",
     "clientSecret": "String",

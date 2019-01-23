@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp intuneBrandingProfile
 description: Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411099"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Ressourcentyp intuneBrandingProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unter
 |[Erstellen von intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Erstellen eines neuen [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
 |[IntuneBrandingProfile löschen](../api/intune-wip-intunebrandingprofile-delete.md)|Keine|Löscht eine [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[IntuneBrandingProfile aktualisieren](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Aktualisieren Sie die Eigenschaften eines [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
+|[assign-Aktion](../api/intune-wip-intunebrandingprofile-assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -33,7 +35,7 @@ Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unter
 |id|Zeichenfolge|Profil-Taste|
 |Profilname|Zeichenfolge|Name des Profils|
 |profileDescription|Zeichenfolge|Beschreibung des Profils|
-|isDefaultProfile|Boolescher Wert|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
+|isDefaultProfile|Boolean|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
 |createdDateTime|DateTimeOffset|Wenn die BrandingProfile erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Wann die BrandingProfile zuletzt geändert wurde.|
 |displayName|String|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
@@ -52,7 +54,10 @@ Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unter
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Angepasste Bild im Unternehmensportal apps Zielseite|
 
 ## <a name="relationships"></a>Beziehungen
-Keine
+|Beziehung|Typ|Beschreibung|
+|:---|:---|:---|
+|assignments|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Auflistung|Die Liste der Gruppe Zuordnungen für das branding Profil.|
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -103,7 +108,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
-
 
 
 

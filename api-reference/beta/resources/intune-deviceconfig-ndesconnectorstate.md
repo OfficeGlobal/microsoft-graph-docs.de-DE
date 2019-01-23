@@ -1,30 +1,30 @@
 ---
 title: NdesConnectorState Enum-Typ
 description: Der aktuelle Status der Verbindung Ndes.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3cb54495bffb065ddd56aae1edc063502b681e4c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a9cfb0ec31bccd853b3ff2b2965c83fb6813a82e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990327"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409384"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>NdesConnectorState Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Der aktuelle Status der Verbindung Ndes.
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Status für diesen Connector noch nicht verfügbar.|
+|Keine|0|Status für diesen Connector noch nicht verfügbar.|
 |aktive|1|NDES Connector wurde vor kurzem verbunden.|
 |inaktiv|2|Keine letzte Aktivität für den Connector Ndes|
-
 
 
 

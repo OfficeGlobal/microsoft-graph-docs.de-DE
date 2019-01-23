@@ -1,29 +1,29 @@
 ---
 title: BitLockerRecoveryInformationType Enum-Typ
 description: BitLockerRecoveryInformationType-Typen
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 62a185fc9c2748d5765366ffead6c5055410f844
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: edc78a432e1a2a51fcf4164c1c3a67aaf46c1587
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407298"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>BitLockerRecoveryInformationType Enum-Typ
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 BitLockerRecoveryInformationType-Typen
+
 ## <a name="members"></a>Elemente
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
 |passwordAndKey|1|Speichern von Kennwörtern Recovery und wichtige Pakete.|
 |passwordOnly|2|Wiederherstellen von Kennwörtern zu speichern.|
-
 
 
 

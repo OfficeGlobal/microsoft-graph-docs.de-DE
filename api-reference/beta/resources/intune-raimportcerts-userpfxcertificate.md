@@ -3,21 +3,22 @@ title: Ressourcentyp userPFXCertificate
 description: Entität, die kapselt alle Informationen für einen Benutzer PFX-Zertifikate erforderlich sind.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: f63f95bb96e379cd2fcff0f0a50ac02162223ac2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 95ae97b44a82d5ec87e3e2622a519debcfd8d7c5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406038"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Ressourcentyp userPFXCertificate
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Entität, die kapselt alle Informationen für einen Benutzer PFX-Zertifikate erforderlich sind.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -46,6 +47,7 @@ Entität, die kapselt alle Informationen für einen Benutzer PFX-Zertifikate erf
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -72,7 +74,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

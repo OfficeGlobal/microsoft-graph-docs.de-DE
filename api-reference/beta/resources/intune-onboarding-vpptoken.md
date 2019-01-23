@@ -1,23 +1,24 @@
 ---
 title: vppToken-Ressourcentyp
 description: Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Program for Business oder Education. Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP Business- oder Education-Tokens in Intune. Dann können Sie Ihre Volumenlizenzierungsinformationen mit Intune synchronisieren und die volumenlizenzierte App-Nutzung nachverfolgen. Sie können mehrere Apple VPP Business- oder Education-Token hochladen.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a21ac5a85094692fe52c7817ee31636c872e131e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419877"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Program for Business oder Education. Dies umfasst das Einrichten eines Apple VPP-Kontos auf der Apple-Website und das Hochladen des Apple VPP Business- oder Education-Tokens in Intune. Dann können Sie Ihre Volumenlizenzierungsinformationen mit Intune synchronisieren und die volumenlizenzierte App-Nutzung nachverfolgen. Sie können mehrere Apple VPP Business- oder Education-Token hochladen.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -46,13 +47,15 @@ Sie erwerben mehrere Lizenzen für iOS-Apps über das Apple Volume Purchase Prog
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Aktueller Synchronisierungsstatus seit der letzten Synchronisierung der Anwendung, die mit dem Apple Volume Purchase Program-Token durchgeführt wurde. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`. Mögliche Werte sind: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
 |countryOrRegion|String|Angabe, ob Anwendungen für das VPP-Token automatisch aktualisiert werden.|
-|dataSharingConsentGranted|Boolescher Wert|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
+|dataSharingConsentGranted|Boolean|Stimmen Sie für Datenfreigaben über die Apple Volume Purchase Program gewährt.|
 |displayName|Zeichenfolge|Ein Administrator angegebene token Anzeigenamen.|
 |locationName|Zeichenfolge|Token Speicherort von Apple VPP zurückgegeben.|
-|claimTokenManagementFromExternalMdm|Boolescher Wert|Admin stimmen ausgibt token Management von externen MDM zulassen|
+|claimTokenManagementFromExternalMdm|Boolean|Admin stimmen ausgibt token Management von externen MDM zulassen|
+|roleScopeTagIds|Zeichenfolgenauflistung|Rolle Bereichs Tags-IDs zu dieser Entität zugewiesen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -88,10 +91,12 @@ Es folgt eine JSON-Darstellung der Ressource.
   "dataSharingConsentGranted": true,
   "displayName": "String",
   "locationName": "String",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

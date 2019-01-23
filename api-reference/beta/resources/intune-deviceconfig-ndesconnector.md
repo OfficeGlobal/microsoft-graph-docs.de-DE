@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp ndesConnector
 description: Die Entität, die einen OnPrem Ndes Connector darstellt.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6a65a95310bf3bd4994dd29427cd19cca121d129
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b504173c0a56e15fd2a4ba09ce50beeabbb20edc
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946665"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411148"
 ---
 # <a name="ndesconnector-resource-type"></a>Ressourcentyp ndesConnector
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Die Entität, die einen OnPrem Ndes Connector darstellt.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -32,11 +33,12 @@ Die Entität, die einen OnPrem Ndes Connector darstellt.
 |:---|:---|:---|
 |id|Zeichenfolge|Der Schlüssel des NDES Connectors.|
 |lastConnectionDateTime|DateTimeOffset|Letzte Verbindungszeit für den Ndes Connector|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|NDES Connector Status. Mögliche Werte sind: `none`, `active` und `inactive`.|
+|Zustand|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|NDES Connector Status. Mögliche Werte sind: `none`, `active` und `inactive`.|
 |displayName|Zeichenfolge|Der Anzeigename der Verbindung Ndes.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -54,7 +56,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "displayName": "String"
 }
 ```
-
 
 
 

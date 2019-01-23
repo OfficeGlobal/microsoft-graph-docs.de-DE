@@ -1,25 +1,26 @@
 ---
 title: OfficeSuiteApp aktualisieren
 description: Aktualisieren Sie die Eigenschaften eines OfficeSuiteApp-Objekts.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 24d5a8031580fa1d7cfe74415d84de32f49fa398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a6b286c53cfcd6d6b93a91ea63cb1e693e168e57
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979327"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405317"
 ---
 # <a name="update-officesuiteapp"></a>OfficeSuiteApp aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Aktualisieren Sie die Eigenschaften eines [OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -41,7 +42,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Anforderungsheader
 |Header|Wert|
 |:---|:---|
-|Authorization|Bearer&lt;token&gt; erforderlich|
+|Autorisierung|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -58,7 +59,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -66,17 +67,20 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 |notes|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Der Upload-Zustand. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [MobileApp](../resources/intune-apps-mobileapp.md). Mögliche Werte sind: `notPublished`, `processing` und `published`.|
-|autoAcceptEula|Boolescher Wert|Der Wert, der automatisch auf den des Endbenutzers Gerät den Lizenzvertrag zu akzeptieren.|
+|isAssigned|Boolean|Der Wert, der angibt, ob die app mindestens eine Gruppe zugeordnet ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-Ids für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|autoAcceptEula|Boolean|Der Wert, der automatisch auf den des Endbenutzers Gerät den Lizenzvertrag zu akzeptieren.|
 |productIds|[OfficeProductId](../resources/intune-apps-officeproductid.md) -Auflistung|Die Produkt-Ids, die die Office365 Suite SKU darstellen. Mögliche Werte: sind `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail` und `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|Die Eigenschaft, um die apps darstellen, die von der ausgewählten Office365 Produkt-ID ausgeschlossen werden|
-|useSharedComputerActivation|Boolescher Wert|Die Eigenschaft an, die darstellen, ob die Aktivierung gemeinsam genutzter Computer nicht für die app-Suite Office365 verwendet wird.|
+|useSharedComputerActivation|Boolean|Die Eigenschaft an, die darstellen, ob die Aktivierung gemeinsam genutzter Computer nicht für die app-Suite Office365 verwendet wird.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Die Eigenschaft, die Update-Kanal Office365 darstellen. Mögliche Werte sind: `none`, `current`, `deferred`, `firstReleaseCurrent` und `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Eigenschaft, die Office365 app Suite Version darstellen. Mögliche Werte sind: `none`, `x86`, `x64`, `arm` und `neutral`.|
-|localesToInstall|Collection von Objekten des Typs „String“|Die Eigenschaft, um die Gebietsschemas darstellen, die installiert werden Wenn apps aus Office365 installiert wird. Standard RFC 6033 verwendet. REF:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Eigenschaft, die Office365 app Suite Version darstellen. Mögliche Werte sind: `none`, `x86`, `x64`, `arm`, `neutral` und `arm64`.|
+|localesToInstall|Zeichenfolgenauflistung|Die Eigenschaft, um die Gebietsschemas darstellen, die installiert werden Wenn apps aus Office365 installiert wird. Standard RFC 6033 verwendet. REF:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Sie können die Anzeigeebene für die Installation des Fortschritts Setup-Benutzeroberfläche auf dem Gerät angeben. Mögliche Werte sind: `none` und `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolescher Wert|Die Eigenschaft zum bestimmen, ob das vorhandene Office MSI deinstallieren, wenn eine Office365 app-Suite auf dem Gerät bereitgestellt wird.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|Die Eigenschaft zum bestimmen, ob das vorhandene Office MSI deinstallieren, wenn eine Office365 app-Suite auf dem Gerät bereitgestellt wird.|
 |targetVersion|Zeichenfolge|Die Eigenschaft, die bestimmte Zielversion für die app-Suite Office365 darstellen, die auf den Geräten bereitgestellten blieb werden sollte.|
 |updateVersion|Zeichenfolge|Die Eigenschaft, die Version darstellen, die bestimmten Zielversion für die app-Suite Office365 verfügbar ist.|
+|officeConfigurationXml|Binär|Die Eigenschaft zur Darstellung der XML-Konfigurationsdatei, die für Office ProPlus Apps angegeben werden können. Hat Vorrang vor allen anderen Eigenschaften. Wenn dieser Parameter angegeben wurde, wird die XML-Konfigurationsdatei zum Erstellen der app verwendet werden.|
 
 
 
@@ -84,14 +88,16 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1413
+Content-length: 1552
 
 {
+  "@odata.type": "#microsoft.graph.officeSuiteApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -100,7 +106,6 @@ Content-length: 1413
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -109,6 +114,10 @@ Content-length: 1413
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -138,7 +147,8 @@ Content-length: 1413
   "installProgressDisplayLevel": "full",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value"
+  "updateVersion": "Update Version value",
+  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
 
@@ -147,7 +157,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1574
+Content-Length: 1724
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -170,6 +180,10 @@ Content-Length: 1574
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -199,10 +213,10 @@ Content-Length: 1574
   "installProgressDisplayLevel": "full",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value"
+  "updateVersion": "Update Version value",
+  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Ressourcentyp androidManagedStoreAccountEnterpriseSettings
 description: Enterprise-Einstellungen für eine Android verwaltete Konto anmelden.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a14f0327c4a4c4cf2bc78e56b63686208e97d4b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0deee2d3bbf816371a6331c000383398390e6610
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406381"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>Ressourcentyp androidManagedStoreAccountEnterpriseSettings
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Enterprise-Einstellungen für eine Android verwaltete Konto anmelden.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,6 +29,7 @@ Enterprise-Einstellungen für eine Android verwaltete Konto anmelden.
 |[Aktion „syncApps“](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Keiner|Noch nicht dokumentiert|
 |[Aktion „unbind“](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Keiner|Noch nicht dokumentiert|
 |[CreateGooglePlayWebToken Aktion](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Zeichenfolge|Generiert ein Web-Token, das verwendet wird, in eine Komponente eingebettet werden.|
+|[SetAndroidDeviceOwnerFullyManagedEnrollmentState Aktion](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Keine|Legt die AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled auf den angegebenen Wert fest.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -41,10 +43,13 @@ Enterprise-Einstellungen für eine Android verwaltete Konto anmelden.
 |lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten Änderung für Android Enterprise-Einstellungen|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Gibt an, welche Benutzer Geräte in Android Enterprise Gerätemanagement registrieren können. Mögliche Werte: sind `none`, `all`, `targeted` und `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Zeichenfolgenauflistung|Gibt an, welche AAD-Gruppen Geräte in der Android for Work-Geräteverwaltung registrieren dürfen, wenn die Eigenschaft „enrollmentTarget“ auf „Targeted“ gesetzt ist.|
-|deviceOwnerManagementEnabled|Boolescher Wert|Gibt an, ob dieses Konto für Android Besitzer Gerätemanagement mit CloudDPC flighting ist.|
+|deviceOwnerManagementEnabled|Boolean|Gibt an, ob dieses Konto für Android Besitzer Gerätemanagement mit CloudDPC flighting ist.|
+|companyCodes|[AndroidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) -Auflistung|Unternehmens-Codes für AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Unternehmens-Codes für AndroidManagedStoreAccountEnterpriseSettings|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -67,10 +72,22 @@ Es folgt eine JSON-Darstellung der Ressource.
   "targetGroupIds": [
     "String"
   ],
-  "deviceOwnerManagementEnabled": true
+  "deviceOwnerManagementEnabled": true,
+  "companyCodes": [
+    {
+      "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode",
+      "enrollmentToken": "String",
+      "qrCodeContent": "String",
+      "qrCodeImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      }
+    }
+  ],
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

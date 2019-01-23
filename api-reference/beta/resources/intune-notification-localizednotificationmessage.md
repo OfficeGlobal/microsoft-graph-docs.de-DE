@@ -1,23 +1,24 @@
 ---
 title: localizedNotificationMessage-Ressourcentyp
 description: Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 641819f99cc8a61d68a15b48c34864a78fd202cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7bf21828e69cd6365143bdc7c27b2b9bbf495a27
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418057"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
 
 Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -33,12 +34,13 @@ Der Textinhalt einer Benachrichtigungsvorlage für das angegebene Gebietsschema.
 |id|Zeichenfolge|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |Gebietsschema|Zeichenfolge|Das Gebietsschema für das diese Nachricht bestimmt ist.|
-|Betreff|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
+|subject|Zeichenfolge|Die Vorlage für den Betreff der Nachricht.|
 |messageTemplate|Zeichenfolge|Die Vorlage für den Inhalt der Nachricht.|
-|isDefault|Boolescher Wert|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
+|isDefault|Boolean|Die Kennzeichnung gibt an, ob dies das Standard-Gebietsschema für die Fallbacksprache ist. Dieser Kennzeichnung kann nur festgelegt werden. Um die Festlegung aufzuheben, setzen Sie diese Eigenschaft bei einer anderen lokalisierten Benachrichtigung auf „true“.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -58,7 +60,6 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isDefault": true
 }
 ```
-
 
 
 

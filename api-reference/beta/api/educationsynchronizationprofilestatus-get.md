@@ -4,16 +4,16 @@ description: Rufen Sie den Status eines bestimmten Schule Daten Synchronisierung
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3b235ca243e6ee0f2ebb442d53a7425fa979d778
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 394bb03760e33b4581f5d29e90a4c8fd875c26d0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418134"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Abrufen des Status eines educationSynchronizationProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 Rufen Sie den Status eines bestimmten Schule Daten [Synchronisierung Profil](../resources/educationsynchronizationprofile.md) im Mandanten. Die Antwort wird den Status der auszuführenden Synchronisierung hingewiesen.
 
@@ -35,7 +35,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus",
 } -->
 ```http
 HTTP/1.1 200 OK
