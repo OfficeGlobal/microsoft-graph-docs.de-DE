@@ -1,0 +1,70 @@
+---
+title: Ressourcentyp groupPolicyPresentationValueMultiText
+description: Die Entität stellt einen String-Wert, der einen mehrzeiligen Text Feld Präsentation auf eine Richtliniendefinition.
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ecfb4d39f87f7ab5896be574639ded839121fed5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29429952"
+---
+# <a name="grouppolicypresentationvaluemultitext-resource-type"></a><span data-ttu-id="302ce-103">Ressourcentyp groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-103">groupPolicyPresentationValueMultiText resource type</span></span>
+
+> <span data-ttu-id="302ce-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="302ce-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="302ce-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="302ce-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="302ce-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="302ce-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="302ce-107">Die Entität stellt einen String-Wert, der einen mehrzeiligen Text Feld Präsentation auf eine Richtliniendefinition.</span><span class="sxs-lookup"><span data-stu-id="302ce-107">The entity represents a string value of a multi-line text box presentation on a policy definition.</span></span>
+
+
+<span data-ttu-id="302ce-108">Erbt vom [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-108">Inherits from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="302ce-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="302ce-109">Methods</span></span>
+|<span data-ttu-id="302ce-110">Methode</span><span class="sxs-lookup"><span data-stu-id="302ce-110">Method</span></span>|<span data-ttu-id="302ce-111">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="302ce-111">Return Type</span></span>|<span data-ttu-id="302ce-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="302ce-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="302ce-113">Liste groupPolicyPresentationValueMultiTexts</span><span class="sxs-lookup"><span data-stu-id="302ce-113">List groupPolicyPresentationValueMultiTexts</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md)|<span data-ttu-id="302ce-114">[GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="302ce-114">[groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) collection</span></span>|<span data-ttu-id="302ce-115">Listeneigenschaften und Beziehungen der [GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="302ce-115">List properties and relationships of the [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) objects.</span></span>|
+|[<span data-ttu-id="302ce-116">Abrufen von groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-116">Get groupPolicyPresentationValueMultiText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-get.md)|[<span data-ttu-id="302ce-117">groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-117">groupPolicyPresentationValueMultiText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md)|<span data-ttu-id="302ce-118">Lesen Sie Eigenschaften und Beziehungen des [GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="302ce-118">Read properties and relationships of the [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object.</span></span>|
+|[<span data-ttu-id="302ce-119">Erstellen von groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-119">Create groupPolicyPresentationValueMultiText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-create.md)|[<span data-ttu-id="302ce-120">groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-120">groupPolicyPresentationValueMultiText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md)|<span data-ttu-id="302ce-121">Erstellen eines neuen [GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="302ce-121">Create a new [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object.</span></span>|
+|[<span data-ttu-id="302ce-122">GroupPolicyPresentationValueMultiText löschen</span><span class="sxs-lookup"><span data-stu-id="302ce-122">Delete groupPolicyPresentationValueMultiText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-delete.md)|<span data-ttu-id="302ce-123">Keine</span><span class="sxs-lookup"><span data-stu-id="302ce-123">None</span></span>|<span data-ttu-id="302ce-124">Löscht eine [GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md).</span><span class="sxs-lookup"><span data-stu-id="302ce-124">Deletes a [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md).</span></span>|
+|[<span data-ttu-id="302ce-125">GroupPolicyPresentationValueMultiText aktualisieren</span><span class="sxs-lookup"><span data-stu-id="302ce-125">Update groupPolicyPresentationValueMultiText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluemultitext-update.md)|[<span data-ttu-id="302ce-126">groupPolicyPresentationValueMultiText</span><span class="sxs-lookup"><span data-stu-id="302ce-126">groupPolicyPresentationValueMultiText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md)|<span data-ttu-id="302ce-127">Aktualisieren Sie die Eigenschaften eines [GroupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="302ce-127">Update the properties of a [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="302ce-128">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="302ce-128">Properties</span></span>
+|<span data-ttu-id="302ce-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="302ce-129">Property</span></span>|<span data-ttu-id="302ce-130">Typ</span><span class="sxs-lookup"><span data-stu-id="302ce-130">Type</span></span>|<span data-ttu-id="302ce-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="302ce-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="302ce-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="302ce-132">lastModifiedDateTime</span></span>|<span data-ttu-id="302ce-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="302ce-133">DateTimeOffset</span></span>|<span data-ttu-id="302ce-134">Das Datum und die Zeit, die das Objekt zuletzt geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="302ce-134">The date and time the object was last modified.</span></span> <span data-ttu-id="302ce-135">Geerbt von [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-135">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="302ce-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="302ce-136">createdDateTime</span></span>|<span data-ttu-id="302ce-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="302ce-137">DateTimeOffset</span></span>|<span data-ttu-id="302ce-138">Das Datum und die Zeit, die das Objekt erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="302ce-138">The date and time the object was created.</span></span> <span data-ttu-id="302ce-139">Geerbt von [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-139">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="302ce-140">id</span><span class="sxs-lookup"><span data-stu-id="302ce-140">id</span></span>|<span data-ttu-id="302ce-141">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="302ce-141">String</span></span>|<span data-ttu-id="302ce-142">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="302ce-142">Key of the entity.</span></span> <span data-ttu-id="302ce-143">Geerbt von [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-143">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="302ce-144">values</span><span class="sxs-lookup"><span data-stu-id="302ce-144">values</span></span>|<span data-ttu-id="302ce-145">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="302ce-145">String collection</span></span>|<span data-ttu-id="302ce-146">Eine Auflistung von nicht leeren Zeichenfolgen für die zugehörige Präsentation.</span><span class="sxs-lookup"><span data-stu-id="302ce-146">A collection of non-empty strings for the associated presentation.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="302ce-147">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="302ce-147">Relationships</span></span>
+|<span data-ttu-id="302ce-148">Beziehung</span><span class="sxs-lookup"><span data-stu-id="302ce-148">Relationship</span></span>|<span data-ttu-id="302ce-149">Typ</span><span class="sxs-lookup"><span data-stu-id="302ce-149">Type</span></span>|<span data-ttu-id="302ce-150">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="302ce-150">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="302ce-151">definitionValue</span><span class="sxs-lookup"><span data-stu-id="302ce-151">definitionValue</span></span>|[<span data-ttu-id="302ce-152">groupPolicyDefinitionValue</span><span class="sxs-lookup"><span data-stu-id="302ce-152">groupPolicyDefinitionValue</span></span>](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|<span data-ttu-id="302ce-153">Der Gruppenrichtlinie Definition zugeordnete Wert mit dem Wert der Präsentation.</span><span class="sxs-lookup"><span data-stu-id="302ce-153">The group policy definition value associated with the presentation value.</span></span> <span data-ttu-id="302ce-154">Geerbt von [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-154">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="302ce-155">Präsentation</span><span class="sxs-lookup"><span data-stu-id="302ce-155">presentation</span></span>|[<span data-ttu-id="302ce-156">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="302ce-156">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="302ce-157">Der Gruppenrichtlinie Präsentation Präsentation Wert zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="302ce-157">The group policy presentation associated with the presentation value.</span></span> <span data-ttu-id="302ce-158">Geerbt von [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="302ce-158">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="302ce-159">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="302ce-159">JSON Representation</span></span>
+<span data-ttu-id="302ce-160">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="302ce-160">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.groupPolicyPresentationValueMultiText"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.groupPolicyPresentationValueMultiText",
+  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "values": [
+    "String"
+  ]
+}
+```
+
+
+
+
