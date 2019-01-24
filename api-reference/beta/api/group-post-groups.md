@@ -4,12 +4,12 @@ description: 'Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß d
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: de304cc4faaa6e4b64992ba0d7b2af35e8b5900a
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 736c4350cc5c7c57d0b57562676317317f6f74dc
+ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353069"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442325"
 ---
 # <a name="create-group"></a>Gruppe erstellen
 
@@ -148,17 +148,17 @@ Content-type: application/json
 ```
 
 #### <a name="request-2"></a>Anforderung 2
-Die zweite Beispielanfrage erstellt eine Office 365-Gruppe mit einem angegebenen Besitzer.
+Die zweite Beispielanfrage erstellt eine Office 365-Gruppe mit einem angegebenen Besitzer und Mitgliedern.
 <!-- {
   "blockType": "request",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
-  "description": "Group with designated owner",
+  "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
     "Unified"
@@ -168,55 +168,55 @@ Content-Type: application/json
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
+    "https://graph.microsoft.com/beta/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/beta/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
 
- #### <a name="response-2"></a>Antwort 2
-Es folgt ein Beispiel für eine erfolgreiche Antwort. Es enthält nur Standardeigenschaften. Sie können anschließend die **owners**-Navigationseigenschaft der Gruppe abrufen, um die Details des Besitzers zu überprüfen. 
->**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Von einem tatsächlichen Aufruf werden alle Standardeigenschaften zurückgegeben.
-
+#### <a name="response-2"></a>Antwort 2
+Es folgt ein Beispiel für eine erfolgreiche Antwort. Es enthält nur Standardeigenschaften. Sie können anschließend die **owners**- oder **members**-Navigationseigenschaft der Gruppe abrufen, um den Besitzer oder die Mitglieder zu überprüfen. 
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Von einem tatsächlichen Aufruf werden alle Standardeigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-     "id": "502df398-d59c-469d-944f-34a50e60db3f",
-     "deletedDateTime": null,
-     "classification": null,
-     "createdDateTime": "2018-12-27T22:17:07Z",
-     "description": "Group with designated owner",
-     "displayName": "Operations group",
-     "expirationDateTime": null,
-     "groupTypes": [
-         "Unified"
-     ],
-     "mail": "operations2019@contoso.com",
-     "mailEnabled": true,
-     "mailNickname": "operations2019",
-     "membershipRule": null,
-     "membershipRuleProcessingState": null,
-     "onPremisesLastSyncDateTime": null,
-     "onPremisesSecurityIdentifier": null,
-     "onPremisesSyncEnabled": null,
-     "preferredDataLocation": "CAN",
-     "preferredLanguage": null,
-     "proxyAddresses": [
-         "SMTP:operations2019@contoso.com"
-     ],
-     "renewedDateTime": "2018-12-27T22:17:07Z",
-     "resourceBehaviorOptions": [],
-     "resourceProvisioningOptions": [],
-     "securityEnabled": false,
-     "theme": null,
-     "visibility": "Public",
-     "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-27T22:17:07Z",
+    "creationOptions": [],
+    "description": "Group with designated owner and members",
+    "displayName": "Operations group",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "operations2019@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "operations2019",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "SMTP:operations2019@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
 }
 ```
 
