@@ -1,15 +1,15 @@
 ---
 title: 'user: getMemberGroups'
-description: Zurückgeben Sie aller Gruppen, denen der Benutzer Mitglied ist. Das Kontrollkästchen ist transitiv, im Gegensatz zum Lesen der
+description: Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv, im Gegensatz zum Lesen von
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb8caefae8b7c3ced9630309cae51a3b74b45937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415138"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,11 +23,11 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | ~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                                                                                       |
-| Anwendung                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Anwendung                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
-> **Hinweis:** Diese API derzeit erfordert die `Directory.Read.All` Berechtigung oder höher. Verwenden die Berechtigung Group.Read.All eigenständig oder in Kombination mit einem `User.` Berechtigung, wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
+> **Hinweis:** Diese API erfordert derzeit mindestens die Berechtigung `Directory.Read.All`. Bei der Verwendung der Berechtigung „Group.Read.All“ alleine oder in Kombination mit einer `User.`-Berechtigung wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert                     |
+| Kopfzeile        | Wert                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json          |
