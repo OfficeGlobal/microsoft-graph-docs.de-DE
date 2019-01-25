@@ -4,22 +4,22 @@ description: Stellt die Quellen, die die Benutzerdaten, beispielsweise Directory
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 540ffa81b20b40f9df2694ba634777250742daaf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 431cd9163873305508d5244005e6fe0a80501771
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978501"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509091"
 ---
-# <a name="persondatasource-resource-type"></a><span data-ttu-id="de576-103">Ressourcentyp personDataSource</span><span class="sxs-lookup"><span data-stu-id="de576-103">personDataSource resource type</span></span>
+# <a name="persondatasource-resource-type"></a><span data-ttu-id="a68ed-103">Ressourcentyp personDataSource</span><span class="sxs-lookup"><span data-stu-id="a68ed-103">personDataSource resource type</span></span>
 
-> <span data-ttu-id="de576-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="de576-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="de576-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="de576-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="de576-106">Stellt die Quellen, die die Benutzerdaten, beispielsweise Directory und Outlook-Kontakte stammen.</span><span class="sxs-lookup"><span data-stu-id="de576-106">Represents the sources the user data comes from, such as Directory and Outlook Contacts.</span></span>
+<span data-ttu-id="a68ed-104">Stellt die Quellen, die die Benutzerdaten, beispielsweise Directory und Outlook-Kontakte stammen.</span><span class="sxs-lookup"><span data-stu-id="a68ed-104">Represents the sources the user data comes from, such as Directory and Outlook Contacts.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="de576-107">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="de576-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a68ed-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a68ed-105">JSON representation</span></span>
 
-<span data-ttu-id="de576-108">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="de576-108">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a68ed-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a68ed-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,17 +35,22 @@ ms.locfileid: "27978501"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="de576-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="de576-109">Properties</span></span>
-| <span data-ttu-id="de576-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="de576-110">Property</span></span>     | <span data-ttu-id="de576-111">Typ</span><span class="sxs-lookup"><span data-stu-id="de576-111">Type</span></span>   |<span data-ttu-id="de576-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="de576-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a68ed-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a68ed-107">Properties</span></span>
+| <span data-ttu-id="a68ed-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a68ed-108">Property</span></span>     | <span data-ttu-id="a68ed-109">Typ</span><span class="sxs-lookup"><span data-stu-id="a68ed-109">Type</span></span>   |<span data-ttu-id="a68ed-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a68ed-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="de576-113">type</span><span class="sxs-lookup"><span data-stu-id="de576-113">type</span></span>|<span data-ttu-id="de576-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="de576-114">String</span></span>|<span data-ttu-id="de576-115">Der Typ der Datenquelle.</span><span class="sxs-lookup"><span data-stu-id="de576-115">The type of data source.</span></span>|
+|<span data-ttu-id="a68ed-111">type</span><span class="sxs-lookup"><span data-stu-id="a68ed-111">type</span></span>|<span data-ttu-id="a68ed-112">String</span><span class="sxs-lookup"><span data-stu-id="a68ed-112">String</span></span>|<span data-ttu-id="a68ed-113">Der Typ der Datenquelle.</span><span class="sxs-lookup"><span data-stu-id="a68ed-113">The type of data source.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "personDataSource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/persondatasource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

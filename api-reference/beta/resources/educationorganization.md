@@ -4,33 +4,33 @@ description: 'Abstrakte Entität verwendet, um die Kompatibilität zwischen vers
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a1e3f82e2d777b1d32cc445f543e7beed570a8b0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949521"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507474"
 ---
-# <a name="educationorganization-resource-type"></a><span data-ttu-id="e9891-103">Ressourcentyp educationOrganization</span><span class="sxs-lookup"><span data-stu-id="e9891-103">educationOrganization resource type</span></span>
+# <a name="educationorganization-resource-type"></a><span data-ttu-id="28fc2-103">Ressourcentyp educationOrganization</span><span class="sxs-lookup"><span data-stu-id="28fc2-103">educationOrganization resource type</span></span>
 
-> <span data-ttu-id="e9891-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="e9891-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e9891-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e9891-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e9891-106">Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.</span><span class="sxs-lookup"><span data-stu-id="e9891-106">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>  
+<span data-ttu-id="28fc2-104">Abstrakte Entität verwendet, um die Kompatibilität zwischen verschiedenen Organisationstypen innerhalb der Education Sektor modellieren.</span><span class="sxs-lookup"><span data-stu-id="28fc2-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="e9891-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e9891-107">Properties</span></span>
-| <span data-ttu-id="e9891-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e9891-108">Property</span></span>     | <span data-ttu-id="e9891-109">Typ</span><span class="sxs-lookup"><span data-stu-id="e9891-109">Type</span></span>   |<span data-ttu-id="e9891-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e9891-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="28fc2-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="28fc2-105">Properties</span></span>
+| <span data-ttu-id="28fc2-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="28fc2-106">Property</span></span>     | <span data-ttu-id="28fc2-107">Typ</span><span class="sxs-lookup"><span data-stu-id="28fc2-107">Type</span></span>   |<span data-ttu-id="28fc2-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="28fc2-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e9891-111">description</span><span class="sxs-lookup"><span data-stu-id="e9891-111">description</span></span>|<span data-ttu-id="e9891-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="e9891-112">String</span></span>| <span data-ttu-id="e9891-113">Beschreibung der Organisation.</span><span class="sxs-lookup"><span data-stu-id="e9891-113">Organization description.</span></span>|
-|<span data-ttu-id="e9891-114">displayName</span><span class="sxs-lookup"><span data-stu-id="e9891-114">displayName</span></span>|<span data-ttu-id="e9891-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="e9891-115">String</span></span>| <span data-ttu-id="e9891-116">Anzeigename der Organisation.</span><span class="sxs-lookup"><span data-stu-id="e9891-116">Organization display name.</span></span>|
-|<span data-ttu-id="e9891-117">externalSource</span><span class="sxs-lookup"><span data-stu-id="e9891-117">externalSource</span></span>|<span data-ttu-id="e9891-118">string</span><span class="sxs-lookup"><span data-stu-id="e9891-118">string</span></span>| <span data-ttu-id="e9891-119">Quelle, wo diese Organisation erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="e9891-119">Source where this organization was created from.</span></span> <span data-ttu-id="e9891-120">Mögliche Werte sind: `sis`, `manual` und `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="e9891-120">Possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="28fc2-109">description</span><span class="sxs-lookup"><span data-stu-id="28fc2-109">description</span></span>|<span data-ttu-id="28fc2-110">String</span><span class="sxs-lookup"><span data-stu-id="28fc2-110">String</span></span>| <span data-ttu-id="28fc2-111">Beschreibung der Organisation.</span><span class="sxs-lookup"><span data-stu-id="28fc2-111">Organization description.</span></span>|
+|<span data-ttu-id="28fc2-112">displayName</span><span class="sxs-lookup"><span data-stu-id="28fc2-112">displayName</span></span>|<span data-ttu-id="28fc2-113">String</span><span class="sxs-lookup"><span data-stu-id="28fc2-113">String</span></span>| <span data-ttu-id="28fc2-114">Anzeigename der Organisation.</span><span class="sxs-lookup"><span data-stu-id="28fc2-114">Organization display name.</span></span>|
+|<span data-ttu-id="28fc2-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="28fc2-115">externalSource</span></span>|<span data-ttu-id="28fc2-116">string</span><span class="sxs-lookup"><span data-stu-id="28fc2-116">string</span></span>| <span data-ttu-id="28fc2-117">Quelle, wo diese Organisation erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="28fc2-117">Source where this organization was created from.</span></span> <span data-ttu-id="28fc2-118">Mögliche Werte sind: `sis`, `manual` und `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="28fc2-118">Possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e9891-121">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="e9891-121">Relationships</span></span>
-<span data-ttu-id="e9891-122">Keine.</span><span class="sxs-lookup"><span data-stu-id="e9891-122">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="28fc2-119">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="28fc2-119">Relationships</span></span>
+<span data-ttu-id="28fc2-120">Keine.</span><span class="sxs-lookup"><span data-stu-id="28fc2-120">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="e9891-123">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e9891-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="28fc2-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="28fc2-121">JSON representation</span></span>
 
-<span data-ttu-id="e9891-124">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="e9891-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="28fc2-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="28fc2-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,10 +51,15 @@ ms.locfileid: "27949521"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationOrganization resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationorganization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
