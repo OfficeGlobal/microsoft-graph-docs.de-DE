@@ -2,16 +2,16 @@
 title: recurrencePattern-Ressourcentyp
 description: Beschreibt die Häufigkeit, mit der sich ein wiederkehrendes Ereignis wiederholt.
 localization_priority: Normal
-ms.openlocfilehash: 95b7ef01ad784b5d383190fd28381aa0c700dacf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4798ce7fc33fd6dec7aec1b8c333ae66c917e373
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878050"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512262"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Beschreibt die Häufigkeit, mit der sich ein wiederkehrendes [Ereignis](event.md) wiederholt.
 
@@ -35,8 +35,8 @@ Verwenden Sie die **type**-Eigenschaft, um die unterschiedlichen Typen von **rec
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|Der Tag des Monats, an dem das Ereignis stattfindet. Erforderlich, wenn **type** `absoluteMonthly` oder `absoluteYearly` ist. |
-|daysOfWeek|Zeichenfolgenauflistung|Eine Auflistung der Tage der Woche, an denen das Ereignis stattfindet. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Wenn **type** `relativeMonthly` oder `relativeYearly` ist und **daysOfWeek** mehr als einen Tag angibt, fällt das Ereignis auf den ersten Tag, der dem Muster entspricht. <br> Erforderlich, wenn **type** `weekly`, `relativeMonthly` oder `relativeYearly` ist.|
-|firstDayOfWeek|Zeichenfolge|Der erste Tag der Woche. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Der Standardwert lautet `sunday`. Erforderlich, wenn **type** `weekly` ist. |
+|daysOfWeek|Zeichenfolgenauflistung|Eine Auflistung der Tage der Woche, an denen das Ereignis stattfindet. Mögliche Werte sind: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` und `saturday`. <br>Wenn **type** `relativeMonthly` oder `relativeYearly` ist und **daysOfWeek** mehr als einen Tag angibt, fällt das Ereignis auf den ersten Tag, der dem Muster entspricht. <br> Erforderlich, wenn **type** `weekly`, `relativeMonthly` oder `relativeYearly` ist.|
+|firstDayOfWeek|String|Der erste Tag der Woche. Mögliche Werte: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Der Standardwert lautet `sunday`. Erforderlich, wenn **type** `weekly` ist. |
 |Index|Zeichenfolge|Gibt an, in welcher Instanz der zulässigen Tage, die unter **daysOfsWeek** angegeben sind, das Ereignis eintritt, ausgehend von der ersten Instanz des Monats gezählt. Mögliche Werte: `first`, `second`, `third`, `fourth`, `last`. Der Standardwert lautet `first`. Optional; wird verwendet, wenn **type** `relativeMonthly` oder `relativeYearly` ist. |
 |Intervall|Int32|Die Anzahl von Einheiten zwischen den Vorkommen, wobei Einheiten je nach **type** in Tagen, Wochen, Monaten oder Jahren angegeben werden können. Erforderlich. |
 |Monat|Int32|Der Monat, in dem das Ereignis stattfindet.  Dies ist eine Zahl zwischen 1 und 12.|
@@ -69,10 +69,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recurrencePattern resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/recurrencepattern.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

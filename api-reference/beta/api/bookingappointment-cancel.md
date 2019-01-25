@@ -1,20 +1,20 @@
 ---
 title: 'BookingAppointment: Abbrechen'
-description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
+description: Abbrechen Sie die angegebenen BookingAppointment in der angegebenen Bookingbusiness, und senden Sie eine Nachricht an die beteiligten Kunden und Mitarbeiter Mitglieder.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2ea1baae613188037ab806a81a6341daecaddc65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917251"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514684"
 ---
 # <a name="bookingappointment-cancel"></a>BookingAppointment: Abbrechen
 
- > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
- 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Die angegebene [BookingAppointment](../resources/bookingappointment.md) in der angegebenen [Bookingbusiness](../resources/bookingbusiness.md)Abbrechen, und Senden einer Nachricht an die beteiligten Kunden und Mitarbeiter.
 
 ## <a name="permissions"></a>Berechtigungen
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt   |
-|Anwendung | Nicht unterstützt  | 
+|Anwendung | Nicht unterstützt  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|cancellationMessage|Zeichenfolge|Eine Meldung mit dem Kunden zu bestätigen, dass der Termin abgebrochen wurde.|
+|cancellationMessage|String|Eine Meldung mit dem Kunden zu bestätigen, dass der Termin abgebrochen wurde.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +79,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingAppointment: cancel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

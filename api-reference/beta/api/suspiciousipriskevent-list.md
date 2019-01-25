@@ -2,16 +2,16 @@
 title: Liste suspiciousIpRiskEvents
 description: Abrufen einer Liste von Suspiciousipriskevent-Objekten.
 localization_priority: Normal
-ms.openlocfilehash: 2e540962f94e20cf0d9afed5fe56e0270ef5e6ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1caad773d401367b93bece5d30191a5c98b7b935
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845591"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513802"
 ---
 # <a name="list-suspiciousipriskevents"></a>Liste suspiciousIpRiskEvents
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen einer Liste von Suspiciousipriskevent-Objekten.
 ## <a name="permissions"></a>Berechtigungen
@@ -85,10 +85,15 @@ Content-length: 290
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List suspiciousIpRiskEvents",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/suspiciousipriskevent-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

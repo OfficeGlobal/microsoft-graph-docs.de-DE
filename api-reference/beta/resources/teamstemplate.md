@@ -4,16 +4,16 @@ description: Beschreibt die TeamsTemplate Entität.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bd5047950ed1ed3c57950d2c4b708a78b570649
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940085"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513046"
 ---
 # <a name="teamstemplate-resource-type"></a>Ressourcentyp teamsTemplate
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine Teamvorlage ist eine Vorlage für ein [Team](../resources/team.md) in Microsoft-Teams erstellen. Eine Vorlage gibt die Struktur, Einstellungen und sogar Inhalte, die bereitgestellt werden soll in ein neues Team mit der Vorlage erstellt. Microsoft bietet eine Reihe von Basis Vorlagen und Kunden können ihre eigenen benutzerdefinierten Vorlagen gespeichert.
 
@@ -21,7 +21,7 @@ Eine Teamvorlage ist eine Vorlage für ein [Team](../resources/team.md) in Micro
 
 | Eigenschaft            | Typ     | Beschreibung |
 |:------------------- |:-------- |:----------- |
-| id                  | Zeichenfolge   | Eindeutiger Bezeichner der Vorlage. Darf nicht null sein. |
+| id                  | String   | Eindeutiger Bezeichner der Vorlage. Darf nicht null sein. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -39,5 +39,13 @@ Eine Teamvorlage ist eine Vorlage für ein [Team](../resources/team.md) in Micro
 
 # <a name="see-also"></a>Siehe auch
 
-- [Team](team.md)
+- Team
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

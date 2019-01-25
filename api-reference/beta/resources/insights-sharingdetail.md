@@ -4,16 +4,16 @@ description: 'Komplexer Typ, der Eigenschaften von gemeinsamen Elementen enthäl
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: add63a89a451b742778dda1d6d313d58f675a642
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918763"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512269"
 ---
 # <a name="sharingdetail-resource-type"></a>Ressourcentyp sharingDetail
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Komplexer Typ, der Eigenschaften von [gemeinsamen](insights-shared.md) Elementen enthält. 
 
@@ -35,7 +35,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| Das Datum und die Zeit, die die Datei zuletzt freigegeben wurde. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `2014-01-01T00:00:00Z`. Schreibgeschützt.  |
-| sharingSubject        | Zeichenfolge          | Der Betreff, mit dem das Dokument freigegeben wurde. |
-| sharingType             | Zeichenfolge        | Bestimmt, wie das Dokument freigegeben wurde, kann durch "Link", "Anlage", "Group", "Site" sein.     |
+| sharingSubject        | String          | Der Betreff, mit dem das Dokument freigegeben wurde. |
+| SharingType             | String        | Bestimmt, wie das Dokument freigegeben wurde, kann durch "Link", "Anlage", "Group", "Site" sein.     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | Der Benutzer, die das Dokument freigegeben.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-sharingdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

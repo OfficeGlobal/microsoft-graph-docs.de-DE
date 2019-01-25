@@ -4,16 +4,16 @@ description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Post
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923257"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513088"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Posteingang und Entwürfe. Mailordner können Nachrichten, andere Outlook-Elemente und untergeordnete E-Mail-Ordner enthalten.
 
@@ -34,12 +34,12 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |:-----------------------|:------------|
 | Archiv | Bei Verwendung von One_Click Archiv-Features in Outlook-Clients, die dies unterstützen, werden die Nachrichten archivieren Ordner an gesendet. **Hinweis:** Dies ist nicht das gleiche wie das Archivpostfach Feature von Exchange online. |
 | Unübersichtlichkeit | Die Unübersichtlichkeit Ordner niedriger Priorität Nachrichten werden in verschoben, beim Verwenden des Features Unübersichtlichkeit. |
-| Konflikte | Der Ordner, der miteinander in Konflikt stehende Elemente im Postfach enthält. |
+| Conflicts | Der Ordner, der miteinander in Konflikt stehende Elemente im Postfach enthält. |
 | conversationhistory | Der Ordner, in dem Skype Sofortnachrichtenunterhaltungen speichert (falls Skype dazu konfiguriert ist). |
 | deleteditems | Der Ordnerelemente werden in verschoben, wenn sie gelöscht werden. |
 | Entwürfe | Der Ordner, der nicht gesendete Nachrichten enthält. |
-| Posteingang | Der Posteingangsordner. |
-| junkemail | Der junk-e-Mail-Ordner. |
+| Posteingang | Der Ordner Posteingang. |
+| junkemail | Der Ordner Junk-E-Mail. |
 | localfailures | Der Ordner, der Elemente enthält, die auf dem lokalen Client vorhanden, jedoch nicht auf den Server hochgeladen werden konnte. |
 | msgfolderroot | Der Ordner "Oberste Ebene des Informationsspeichers". Dieser Ordner ist des übergeordneten Ordners für Ordner, in der normalen e-Mail-Clients, wie beispielsweise dem Posteingang angezeigt werden. |
 | Postausgang | Der Ordner Postausgang. |
@@ -57,8 +57,8 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des mailFolder-Objekts.|
 |[Create MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Dient zum Erstellen eines neuen mailFolder-Elements unter dem aktuellen durch die Veröffentlichung der childFolders-Sammlung.|
 |[List childFolders](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md)-Sammlung| Dient zum Abrufen der Ordnersammlung unter dem angegebenen Ordner. Sie können die `.../me/MailFolders`Verknüpfung zum Abrufen der Ordnersammlung auf oberster Ebene und zum Navigieren zu einem anderen Ordner verwenden.|
-|[Create Message](../api/mailfolder-post-messages.md) |[message](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
-|[List messages](../api/mailfolder-list-messages.md) |Sammlung von [Nachrichten](message.md)| Dient zum Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers oder Nachrichten in einen bestimmten Ordner im Postfach.|
+|[Create Message](../api/mailfolder-post-messages.md) |[Nachricht](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
+|[Nachrichten auflisten](../api/mailfolder-list-messages.md) |Sammlung von [Nachrichten](message.md)| Dient zum Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers oder Nachrichten in einen bestimmten Ordner im Postfach.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Dient zum Aktualisieren des angegebenen mailFolder-Objekts. |
 |[Delete](../api/mailfolder-delete.md) | Keine |Dient zum Löschen des angegebenen mailFolder-Objekts. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Dient zum Kopieren eines mailFolder-Elements und seiner Inhalte in ein anderes mailFolder-Element.|
@@ -76,11 +76,11 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Die Anzahl der unmittelbar untergeordneten mailFolders-Elemente in dem aktuellen mailFolder-Element.|
 |displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
-|id|Zeichenfolge|Eindeutiger Bezeichner der MailFolder.|
-|parentFolderId|Zeichenfolge|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
+|id|String|Eindeutiger Bezeichner der MailFolder.|
+|parentFolderId|String|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
 |totalItemCount|Int32|Anzahl der Elemente im mailFolder-Element.|
 |unreadItemCount|Int32|Die Anzahl der Elemente im mailFolder-Element, die als „Ungelesen“ markiert sind.|
-|wellKnownName|Zeichenfolge|Der Ordnername der bekannten für den Ordner. Die möglichen Werte sind oben aufgeführt. Diese Eigenschaft ist nur für Outlook erstellten Standardordner festgelegt. Für andere Ordner ist diese Eigenschaft **null**.|
+|wellKnownName|String|Der Ordnername der bekannten für den Ordner. Die möglichen Werte sind oben aufgeführt. Diese Eigenschaft ist nur für Outlook erstellten Standardordner festgelegt. Für andere Ordner ist diese Eigenschaft **null**.|
 
 **Effizientes Ermitteln der Anzahl von Elementen**
 
@@ -144,10 +144,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

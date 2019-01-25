@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977775"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516742"
 ---
 # <a name="driveitem-resource-type"></a>Ressourcentyp driveItem
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **driveItem**-Ressource stellt eine Datei, einen Ordner oder ein anderes auf einem Laufwerk gespeichertes Element dar. Alle Dateisystemobjekte in OneDrive und SharePoint werden als **driveItem**-Ressourcen zurückgegeben.
 
@@ -109,13 +109,13 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | eTag                 | Zeichenfolge             | ETag des gesamten Elements (Metadaten + Inhalt). Schreibgeschützt.
 | file                 | [file][]           | Dateimetadaten, wenn das Element eine Datei ist. Schreibgeschützt.
 | fileSystemInfo       | [fileSystemInfo][] | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.
-| folder               | [folder][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
-| id                   | Zeichenfolge             | Der eindeutige Bezeichner des Elements im Laufwerk. Schreibgeschützt.
+| folder               | [Ordner][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
+| id                   | string             | Der eindeutige Bezeichner des Elements im Laufwerk. Schreibgeschützt.
 | Abbildung                | [image][]          | Bildmetadaten, wenn das Element ein Bild ist. Schreibgeschützt.
 | lastModifiedBy       | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.
 | lastModifiedDateTime | DateTimeOffset     | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.
 | location             | [geoCoordinates][] | Standortmetadaten, sofern das Element Standortdaten aufweist. Schreibgeschützt.
-| name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
+| name                 | String             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
 | package              | [package][]        | Zeigt wenn vorhanden an, dass das Element ein Paket ist statt eines Ordners oder einer Datei. Pakete werden in einigen Kontexten wie Dateien, in anderen Kontexten wie Ordner behandelt. Schreibgeschützt.
 | parentReference      | [itemReference][]  | Informationen zum übergeordneten Element, wenn das Element ein übergeordnetes Element hat. Lese-/Schreibzugriff.
 | Foto                | [photo][]          | Fotometadaten, wenn das Element ein Foto ist. Schreibgeschützt.
@@ -123,13 +123,13 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | remoteItem           | [remoteItem][]     | Daten zum Remoteelement, wenn das Element von einem anderen Laufwerk freigegeben ist als dem, auf das zugegriffen wird. Schreibgeschützt.
 | root                 | [root][]           | Wenn diese Eigenschaft nicht Null ist, bedeutet dies, dass es sich bei der driveItem-Ressource um die oberste driveItem-Ressource auf dem Laufwerk handelt.
 | searchResult         | [searchResult][]   | Suchmetadaten, wenn das Element aus einem Suchergebnis stammt. Schreibgeschützt.
-| shared               | [shared][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
+| freigegeben               | [shared][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
 | sharepointIds        | [sharepointIds][]  | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
 | size                 | Int64              | Größe des Elements in Byte. Schreibgeschützt.
 | specialFolder        | [specialFolder][]  | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.
 | video                | [video][]          | Videometadaten, wenn das Element ein Video ist. Schreibgeschützt.
 | webDavUrl            | String             | WebDAV-kompatible URL für das Element.
-| webUrl               | Zeichenfolge             | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.
+| webUrl               | String             | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.
 
 **Hinweis:** Die Eigenschaften „eTag“ und „cTag“ arbeiten bei Containern (Ordnern) anders. Der Wert „cTag“ wird geändert, wenn Inhalte oder Metadaten eines Nachfolgers des Ordners geändert werden. Der Wert „eTag“ wird nur geändert, wenn die Eigenschaften des Ordners geändert werden. Ausnahme: Eigenschaften, die von Nachfolgern abgeleitet werden (wie **childCount** oder **lastModifiedDateTime**).
 
@@ -138,13 +138,13 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | Beziehung       | Typ                            | Beschreibung
 |:-------------------|:--------------------------------|:--------------------------
 | Aktivitäten         | [ItemActivity][]-Sammlung     | Die Liste der letzten Aktivitäten, die für dieses Element durchgeführt wurden.
-| Analytics          | [ItemAnalytics][] -Ressource      | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
+| analytics          | [itemAnalytics][]-Ressource      | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
 | content            | Stream                          | Der Inhaltsdatenstrom, wenn das Element eine Datei darstellt.
 | children           | driveitem-Sammlung            | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.
-| listItem           | [listItem][]                    | Für Laufwerke in SharePoint, die zugeordneten Dokumentbibliothek-Listenelement. Schreibgeschützt. Lässt Nullwerte zu.
-| permissions        | [permission][] collection       | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
-| thumbnails         | [thumbnailSet][] collection     | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Lässt Nullwerte zu.
-| Versionen           | [DriveItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Elements. Weitere Informationen finden Sie unter [Abrufen von früheren Versionen][]. Schreibgeschützt. Lässt Nullwerte zu.
+| listItem           | [listItem][]                    | Für Laufwerke in SharePoint das zugehörige Dokumentbibliothek-Listenelement. Schreibgeschützt. Lässt Nullwerte zu.
+| Berechtigungen        | [permission][] collection       | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
+| thumbnails         | [thumbnailSet][] collection     | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Nullwerte zulassend.
+| versions           | [driveItemVersion][]-Sammlung | Die Liste der früheren Versionen des Elements. Weitere Informationen finden Sie unter [Abrufen früherer Versionen][]. Schreibgeschützt. Nullwerte zulassend.
 
 ## <a name="instance-attributes"></a>Instanzenattribute
 
@@ -165,11 +165,11 @@ Die URL ist verfügbar für einen kurzen Zeitraum (1 Stunde), bevor es ungültig
 |:---------------------------------------------------------|:------------------
 | [Element abrufen](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [Aktivitäten auflisten](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Abrufen von analytics][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Abrufen von Aktivitäten nach Intervall][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [Untergeordnete Objekte auflisten](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
+| [Analysen abrufen][]                                        | `GET /drive/items/{item-id}/analytics`
+| [Aktivitäten nach Intervall abrufen][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
+| [Untergeordnete Elemente auflisten](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [Versionen auflisten](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
+| [Element erstellen](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
 | [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [Inhalte herunterladen](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
@@ -180,16 +180,16 @@ Die URL ist verfügbar für einen kurzen Zeitraum (1 Stunde), bevor es ungültig
 | [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Freigabelink erstellen](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Berechtigungen hinzufügen](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [Berechtigungen auflisten](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
+| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Berechtigung löschen](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [DDE-Kanal WebSocket abrufen][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Preview-Element][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Element in Vorschau anzeigen][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
-[Abrufen von analytics]: ../api/itemanalytics-get.md
-[Abrufen von Aktivitäten nach Intervall]: ../api/itemactivity-getbyinterval.md
+[Analysen abrufen]: ../api/itemanalytics-get.md
+[Aktivitäten nach Intervall abrufen]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -203,7 +203,7 @@ In OneDrive for Business- oder SharePoint-Dokumentbibliotheken wird die Eigensch
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[Abrufen von früheren Versionen]: ../api/driveitem-list-versions.md
+[Abrufen früherer Versionen]: ../api/driveitem-list-versions.md
 [Abrufen von Miniaturansichten]: ../api/driveitem-list-thumbnails.md
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
@@ -230,11 +230,18 @@ In OneDrive for Business- oder SharePoint-Dokumentbibliotheken wird die Eigensch
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",
   "keywords": "item,facet,resource",
   "section": "documentation",
   "tocPath": "Items",
-  "tocBookmarks": { "Resources/Item": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Item": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

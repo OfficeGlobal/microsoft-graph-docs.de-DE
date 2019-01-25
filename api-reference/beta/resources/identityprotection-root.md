@@ -4,16 +4,16 @@ description: Microsoft Graph können Sie Abfragen die IdentityRiskEvent Ressourc
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 597ff7ed156dede995b10f07ee6ac6945745b83c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953623"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515097"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Verwenden Sie den Azure AD-Schutz API (Preview)
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph können Sie Abfragen die [IdentityRiskEvent](identityriskevent.md) Ressource für jede Art von Risikoereignis von [Azure AD-Schutz](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)erkannt. Diese Ereignisse sind für Kunden mit Azure AD Premium P2 verfügbar. Eine Teilmenge von Ereignissen ist für Kunden mit Azure AD Premium P1 verfügbar.
 
@@ -47,3 +47,11 @@ Verwenden Sie die folgenden Vorgänge, um diese Ereignisse und die zugehörigen 
 
 * [Informationen zum Schutz von Azure Active Directory-Identität](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
 * [Erste Schritte mit Azure Active Directory-Schutz und Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprotection-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

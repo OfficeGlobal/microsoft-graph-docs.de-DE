@@ -4,16 +4,16 @@ description: 'Eine Nachricht, die für eine Besprechungsanfrage, -absage oder -a
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3f7a2f539d7a21e47b3e35857c6475ae44f32cad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940001"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514019"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine Nachricht, die für eine Besprechungsanfrage, -absage oder -antwort steht (diese kann folgende umfassen: Zusage, Zusage mit Vorbehalt oder Absage). 
 
@@ -21,7 +21,7 @@ Die Entität **EventMessage** [Nachricht](message.md)abgeleitet ist, und [EventM
 
 Wenn ein Organisator oder eine App eine Besprechungsanfrage sendet, trifft die Besprechungsanfrage als eine **eventMessage**-Instanz mit **meetingMessageType** von **meetingRequest** in dem Postfach des Teilnehmers ein. Darüber hinaus erstellt Outlook automatisch eine **event**-Instanz im Kalender des Teilnehmers mit der **showAs**-Eigenschaft als **tentative**. 
 
-Um die Eigenschaften des zugeordneten Ereignisses im Postfach des Teilnehmers abzurufen, kann die App die **event**-Navigationseigenschaft von **eventMessage** verwenden, wie in diesem [Beispiel zum Abrufen von Ereignisnachrichten](../api/eventmessage-get.md#request-2) dargestellt. Die app kann auch auf das Ereignis im Namen der Teilnehmer programmgesteuert [akzeptieren](../api/event-accept.md), [mit Vorbehalt annehmen](../api/event-tentativelyaccept.md)oder [Ablehnen](../api/event-decline.md) des Ereignisses reagieren.
+Um die Eigenschaften des zugeordneten Ereignisses im Postfach des Teilnehmers abzurufen, kann die App die **event**-Navigationseigenschaft von **eventMessage** verwenden, wie in diesem [Beispiel zum Abrufen von Ereignisnachrichten](../api/eventmessage-get.md#request-2) dargestellt. Die App kann auch im Namen der Teilnehmer programmgesteuert auf dieses Ereignis antworten, indem Sie eine [Zusage](../api/event-accept.md), [, eine Zusage mit Vorbehalt](../api/event-tentativelyaccept.md) oder [eine Absage](../api/event-decline.md)] sendet.
 
 Neben dem, einer Besprechungsanfrage kann eine **EventMessage** Instanz eines Teilnehmers Remoteelement in dem Ordner als Ergebnis der Organisator des Ereignisses Abbrechen einer Besprechung oder in der Organisator Posteingang aufgrund eines Teilnehmers reagiert auf die Besprechungsanfrage gefunden werden. Eine App kann mit kleineren Abweichungen Aktionen sowohl bei Ereignisnachrichten als auch bei Nachrichten ausführen.
 
@@ -93,50 +93,50 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
 |body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
-|bodyPreview|Zeichenfolge|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor. |
+|bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor. |
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
-|ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
-|changeKey|Zeichenfolge|Die Version der Nachricht.|
-|conversationId|Zeichenfolge|Die ID der Unterhaltung, zu der die E-Mail gehört.|
+|ccRecipients|[recipient](recipient.md)-Sammlung|Die Cc:-Empfänger der Nachricht.|
+|changeKey|String|Die Version der Nachricht.|
+|conversationId|String|Die ID der Unterhaltung, zu der die E-Mail gehört.|
 |conversationIndex|Binär|Der Index der Unterhaltung, zu der die E-Mail gehört.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erstellt wurde.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|Die Endzeit der angeforderten Besprechung.|
 |Flag|[followUpFlag](followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
 |Von|[Empfänger](recipient.md)|Der Postfachbesitzer und der Absender der Nachricht.|
-|hasAttachments|Boolean|Gibt an, ob die Nachricht Anlagen enthält.|
-|ID|Zeichenfolge||
+|hasAttachments|Boolescher Wert|Gibt an, ob die Nachricht Anlagen enthält.|
+|ID|string||
 |Wichtigkeit|String| Wichtigkeit der Nachricht: `low`, `normal`, `high`.|
-|inferenceClassification|String| Mögliche Werte: `focused`, `other`.|
+|inferenceClassification|Zeichenfolge| Mögliche Werte: `focused`, `other`.|
 |internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Die Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), die Informationen des von einer Nachricht vom Absender bis zum Empfänger verwendeten Pfads einer Nachricht liefert. Schreibgeschützt.|
-|internetMessageId |Zeichenfolge |Die Nachrichten-ID im Format durch [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)angegeben. |
-|isAllDay |Boolean|Gibt an, ob das Ereignis den ganzen Tag dauert. Anpassen dieser Eigenschaft erfordert die **StartDateTime** und **EndDateTime** Eigenschaften des Ereignisses sowie anpassen.|
+|internetMessageId |Zeichenfolge |Die Nachrichten-ID im von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) angegebenen Format. |
+|isAllDay |Boolescher Wert|Gibt an, ob das Ereignis den ganzen Tag dauert. Anpassen dieser Eigenschaft erfordert die **StartDateTime** und **EndDateTime** Eigenschaften des Ereignisses sowie anpassen.|
 |isDeliveryReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|isDraft|Boolescher Wert|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
-|isOutOfDate|Boolescher Wert|Gibt an, ob diese Besprechungsanfrage von einer neueren Anforderung veralteten vorgenommen wurden.|
+|isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
+|IsOutOfDate|Boolescher Wert|Gibt an, ob diese Besprechungsanfrage von einer neueren Anforderung veralteten vorgenommen wurden.|
 |isRead|Boolescher Wert|Gibt an, ob die Nachricht gelesen wurde.|
 |isReadReceiptRequested|Boolescher Wert|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |location|[location](location.md)|Der Speicherort der angeforderten Besprechung.|
 |meetingMessageType|String| Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
-|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
+|parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Das Serienmuster der angeforderten Besprechung.|
 |replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|
 |sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Die Anfangszeit der angeforderten Besprechung.|
-|Betreff|Zeichenfolge|Der Betreff der Nachricht.|
+|subject|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
-|type|Zeichenfolge|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Textkörpers der Nachricht, der für die aktuelle Nachricht eindeutig ist.|
-|UnsubscribeData|Zeichenfolge|Die gültigen Einträge, die vom List-Unsubscribe-Header analysiert werden.  Dies sind die Daten für den E-Mail-Befehl im List-Unsubscribe-Header, wenn die UnsubscribeeEnabled-Eigenschaft „true“ ist.|
+|unsubscribeData|String|Die gültigen Einträge, die vom List-Unsubscribe-Header analysiert werden.  Dies sind die Daten für den E-Mail-Befehl im List-Unsubscribe-Header, wenn die UnsubscribeeEnabled-Eigenschaft „true“ ist.|
 |UnsubscribeEnabled|Boolescher Wert|Gibt an, ob die Nachricht zum Kündigen des Abonnements aktiviert ist.  Wenn der list-Unsubscribe-Header „rfc-2369“ entspricht, ist der Wert „true“.|
-|webLink|Zeichenfolge|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
+|webLink|String|Die URL zum Öffnen der Nachricht in Outlook Web App.<br><br>Sie können am Ende der URL das Argument „ispopout“ anhängen, um zu ändern, wie die Nachricht angezeigt wird. Wenn „ispopout“ nicht vorhanden oder auf 1 festgelegt ist, wird die Nachricht in einem Popout-Fenster angezeigt. Wenn „ispopout“ auf 0 festgelegt ist, zeigt der Browser die Nachricht in Outlook Web App im Prüffensterbereich an.<br><br>Die Nachricht wird im Browser geöffnet, wenn Sie über Outlook Web App bei Ihrem Postfach angemeldet sind. Sie werden aufgefordert, sich anzumelden, wenn Sie noch nicht beim Browser angemeldet sind.<br><br>Auf diese URL kann von einem iFrame aus zugegriffen werden.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Nachricht. Schreibgeschützt. Lässt Nullwerte zu.|
+|attachments|[attachment](attachment.md) collection|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Nachricht. Schreibgeschützt. Nullwerte zulassend.|
 |event|[event](event.md)| Das Ereignis, das der Ereignisnachricht zugeordnet ist. Für Teilnehmer oder Raumressourcen wird davon ausgegangen, dass die Kalenderautomatik für die automatische Aktualisierung des Kalenders mit einem Ereignis festgelegt ist, wenn Ereignisnachrichten mit Besprechungsanfragen eingehen Navigationseigenschaft.  Schreibgeschützt.|
 |Erweiterungen|[extension](extension.md)-Sammlung| Die Sammlung der für das Ereignis definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die eventMessage definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
@@ -148,19 +148,19 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |[eventMessage abrufen](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Liest die Eigenschaften und Beziehungen eines eventMessage-Objekts.|
 |[Aktualisieren](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Aktualisiert das eventMessage-Objekt.|
-|[Löschen](../api/eventmessage-delete.md) | Keiner |Löscht das eventMessage-Objekt.|
-|[copy](../api/message-copy.md)|[message](message.md)|Mit dieser API können Sie Nachrichten in Ordner kopieren.|
-|[createForward](../api/message-createforward.md)|[message](message.md)|Erstellt einen Entwurf der Weiterleitungsnachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
-|[createReply](../api/message-createreply.md)|[message](message.md)|Erstellt einen Entwurf der Antwortnachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Erstellt einen Entwurf der „Allen Antworten“-Nachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
+|[Löschen](../api/eventmessage-delete.md) | Keine |Löscht das eventMessage-Objekt.|
+|[copy](../api/message-copy.md)|[Nachricht](message.md)|Mit dieser API können Sie Nachrichten in Ordner kopieren.|
+|[createForward](../api/message-createforward.md)|[Nachricht](message.md)|Erstellt einen Entwurf der Weiterleitungsnachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
+|[createReply](../api/message-createreply.md)|[Nachricht](message.md)|Erstellt einen Entwurf der Antwortnachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
+|[createReplyAll](../api/message-createreplyall.md)|[Nachricht](message.md)|Erstellt einen Entwurf der „Allen Antworten“-Nachricht. Sie können den Entwurf dann [aktualisieren](../api/message-update.md) oder [senden](../api/message-send.md).|
 |[Weiterleiten](../api/message-forward.md)|Keine|Leitet eine Nachricht weiter. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
 |[move](../api/message-move.md)|[message](message.md)|Verschiebt eine Nachricht in einen Ordner. Dadurch wird eine neue Kopie der Nachricht im Zielordner erstellt.|
 |[Antworten](../api/message-reply.md)|Keine|Antwortet auf eine Nachricht des Absenders. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
 |[replyAll](../api/message-replyall.md)|Keine|Sendet eine Antwort an alle Empfänger einer E-Mail. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
-|[Senden](../api/message-send.md)|Keine|Sendet einen zuvor erstellten Nachrichtenentwurf. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
-|[Abonnement kündigen](../api/message-unsubscribe.md)|Keine|Sendet eine Nachricht unter Verwendung der Daten und der Adresse, die im ersten mailto-Befehl im List-Unsubscribe-Header angegeben wurden.|
+|[Senden](../api/message-send.md)|Keiner|Sendet einen zuvor erstellten Nachrichtenentwurf. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.|
+|[unsubscribe](../api/message-unsubscribe.md)|Keine|Sendet eine Nachricht unter Verwendung der Daten und der Adresse, die im ersten mailto-Befehl im List-Unsubscribe-Header angegeben wurden.|
 |**Anlagen**| | |
-|[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md)-Sammlung| Ruft alle Anlagen für eine eventMessage ab.|
+|[Anlagen auflisten](../api/eventmessage-list-attachments.md) |[attachment](attachment.md)-Sammlung| Ruft alle Anlagen für eine eventMessage ab.|
 |[Hinzufügen einer Anlage](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Fügt einer eventMessage eine neue Anlage durch Veröffentlichen in der Anlagensammlung hinzu.|
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource hinzu.|
@@ -173,10 +173,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessage resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/eventmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

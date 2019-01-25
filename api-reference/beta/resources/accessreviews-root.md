@@ -4,16 +4,16 @@ description: Sie können die Azure AD Bewertungen zum Konfigurieren der einmalig
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516413"
 ---
 # <a name="azure-ad-access-reviews"></a>Prüft Azure AD-Zugriff
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sie können [Azure AD Access überprüft](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) einmalige konfigurieren oder wiederkehrenden Zugriff für Konformitätsbescheinigungssysteme Zugriffsrechte des Benutzers überprüft.
 
@@ -67,10 +67,15 @@ Hier wird die Liste der Methoden, die von Azure Active Directory bereitgestellt 
 - [Wie kann ein Administrator Programme verwalten und Steuerelemente für Azure Active Directory zugreifen Reviews (engl.)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Service root",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

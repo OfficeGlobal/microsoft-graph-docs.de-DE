@@ -2,15 +2,15 @@
 title: Ressourcentyp governanceRoleAssignment
 description: Stellt die Zuordnung eines Benutzers oder einer Gruppe zu einer Rolle dar.
 localization_priority: Normal
-ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 77a5238aa337dd8d273d3156d285e081c4bc8875
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882691"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512682"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Ressourcentyp governanceRoleAssignment
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt die Zuordnung eines Benutzers oder einer Gruppe zu einer Rolle dar.
 
@@ -32,7 +32,7 @@ Nicht `POST`, `PUT`, `PATCH`, oder `DELETE` Vorgänge werden unterstützt, auf d
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft  | Typ      |Beschreibung|
 |:----------|:----------|:----------|
-|id         |String     |Die ID der rollenzuweisung. Es ist im GUID-Format.|
+|id         |Zeichenfolge     |Die ID der rollenzuweisung. Es ist im GUID-Format.|
 |resourceId |Zeichenfolge     |Erforderlich. Die ID der Ressource dem rollenzuweisung zugeordnet ist. |
 |roleDefinitionId|Zeichenfolge|Erforderlich. Die ID der Rollendefinition dem rollenzuweisung zugeordnet ist. |
 |subjectId|Zeichenfolge       |Erforderlich. Die ID des Betreffs, dem die rollenzuweisung zugeordnet ist. |
@@ -49,7 +49,7 @@ Nicht `POST`, `PUT`, `PATCH`, oder `DELETE` Vorgänge werden unterstützt, auf d
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Schreibgeschützt. Die Ressource, die rollenzuweisung zugeordnet. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Schreibgeschützt. Die Rollendefinition mit der rollenzuweisung verknüpft ist. |
-|Betreff|[governanceSubject](../resources/governancesubject.md)|Schreibgeschützt. Der Betreff der Zuordnung Rolle zugeordnet ist. |
+|subject|[governanceSubject](../resources/governancesubject.md)|Schreibgeschützt. Der Betreff der Zuordnung Rolle zugeordnet ist. |
 |linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Schreibgeschützt. Ist dies ein `active assignment` und aufgrund der Aktivierung auf erstellt eine `eligible assignment`, es stellt das Objekt, das `eligible assignment`; Andernfalls ist der Wert `null`. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -83,10 +83,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

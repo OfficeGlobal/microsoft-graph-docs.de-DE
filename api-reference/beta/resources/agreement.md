@@ -2,16 +2,16 @@
 title: Vereinbarung Ressourcentyp
 description: Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt und mit Azure Active Directory (AD Azure) verwaltet wird. Sie können die folgenden Methoden zum Erstellen und Verwalten des Azure Active Directory Ausdrücken verwenden Features gemäß Ihrem Szenario.
 localization_priority: Normal
-ms.openlocfilehash: 8c082ed6229b44cc3a3d4cba6dd8645feee5d07c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845346"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513851"
 ---
 # <a name="agreement-resource-type"></a>Vereinbarung Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt und mit Azure Active Directory (AD Azure) verwaltet wird. Sie können die folgenden Methoden zum Erstellen und Verwalten des [Azure Active Directory Ausdrücken verwenden Feature](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) entsprechend Ihrem Szenario.
 
@@ -32,9 +32,9 @@ Stellt einen Mandanten anpassbare Vertragsbedingungen verwenden, die erstellt un
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|displayName|String|Der Anzeigename der Vereinbarung.|
+|displayName|Zeichenfolge|Der Anzeigename der Vereinbarung.|
 |id|String| Schreibgeschützt.|
-|isViewingBeforeAcceptanceRequired|Boolean|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
+|isViewingBeforeAcceptanceRequired|Boolescher Wert|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ        | Beschreibung |
@@ -64,10 +64,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreement resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreement.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

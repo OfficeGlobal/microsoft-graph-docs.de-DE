@@ -4,16 +4,16 @@ description: Setzen Sie die Synchronisierung eines bestimmten Schule Daten Synch
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0a74d85bd902c21f3af6e8aa506438471f142600
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 50ffcb4ceab401a3041ecb69baa1de0409be94a4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984668"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513256"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Sync auf ein EducationSynchronizationProfile fortsetzen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Setzen Sie die Synchronisierung eines bestimmten Schule Daten [Synchronisierung Profil](../resources/educationsynchronizationprofile.md) im Mandanten fort.
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Berechtigungstyp | Berechtigungen |
 |:-----------|:----------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto) | EduAdministration.ReadWrite |
-|Delegierte (Persönliches Microsoft-Konto|Nicht unterstützt|
+|Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -64,3 +64,11 @@ Es ist keine Antworttext.
 ```
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-resume.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

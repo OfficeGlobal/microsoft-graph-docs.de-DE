@@ -4,16 +4,16 @@ description: Office 365-Ressourcen und Daten mit der relevante Informationen fü
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516931"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Arbeiten mit Education-APIs in Microsoft Graph
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Office 365-Ressourcen und Daten mit der relevante Informationen für Bildungseinrichtungen Szenarien, einschließlich Schulen, Studenten, Lehrer, Klassen, Registrierung und Zuordnungen der Education-APIs in Microsoft Graph zu verbessern. Dies erleichtert das Erstellen von Lösungen, die in Bildungsressourcen integriert werden.
 
@@ -129,3 +129,11 @@ Verwenden Sie das Microsoft Graph Education APIs Education-Lösungen zu erstelle
 - Erfahren Sie, welche Ressourcen und Methoden für Ihr Szenario am besten geeignet sind.
 - Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

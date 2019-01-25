@@ -2,16 +2,16 @@
 title: Vereinbarung erstellen
 description: Erstellen eines neuen Vereinbarung-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870637"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514425"
 ---
 # <a name="create-agreement"></a>Vereinbarung erstellen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erstellen eines neuen [Vereinbarung](../resources/agreement.md) -Objekts.
 ## <a name="permissions"></a>Berechtigungen
@@ -31,7 +31,7 @@ POST /agreements
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearertoken Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Vertrags](../resources/agreement.md) -Objekts.
@@ -40,11 +40,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|displayName|Zeichenfolge|Der Anzeigename der Vereinbarung.|
+|displayName|String|Der Anzeigename der Vereinbarung.|
 |isViewingBeforeAcceptanceRequired|Boolescher Wert|Gibt an, ob der Benutzer zu erweitern und vor dem akzeptieren die Vereinbarung anzuzeigen.|
-|Dateien/fileName|Zeichenfolge|Name der Datei Vereinbarung (beispielsweise TOU.pdf).|
+|Dateien/fileName|String|Name der Datei Vereinbarung (beispielsweise TOU.pdf).|
 |Dateien/isDefault|Boolescher Wert|Gibt an, ob dies Vereinbarung Standarddatei ist, wenn keiner der Kultur die Client-Vorgabe übereinstimmt. Wenn keine der Datei als Standard angegeben ist, wird der ersten als Standard behandelt.|
-|Dateien/Sprache|Zeichenfolge|Kultur der Vereinbarung Datei im Format languagecode2-Land/regioncode2. languagecode2 ist eine zwei-Code aus Kleinbuchstaben ISO 639-1 abgeleitet. Land/regioncode2 ISO 3166 abgeleitet ist und in der Regel besteht aus zwei Großbuchstaben oder ein Sprachtag BCP 47 (z. B. En-US).|
+|Dateien/Sprache|String|Kultur der Vereinbarung Datei im Format languagecode2-Land/regioncode2. languagecode2 ist eine zwei-Code aus Kleinbuchstaben ISO 639-1 abgeleitet. Land/regioncode2 ISO 3166 abgeleitet ist und in der Regel besteht aus zwei Großbuchstaben oder ein Sprachtag BCP 47 (z. B. En-US).|
 |Dateien/FileData/data|Binär|Daten, die rechtliche Hinweise das PDF-Dokument darstellt.|
 
 ## <a name="response"></a>Antwort
@@ -98,10 +98,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create agreement",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

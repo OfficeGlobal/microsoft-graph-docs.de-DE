@@ -4,16 +4,16 @@ description: Mit dieser API können Sie die Eigenschaften eines Objekts des Typs
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f488594778c1e80e725cb2587bf5d0c41cb570e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9f697996c44468039a73900ec0eb98f28d4a9c49
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961302"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516042"
 ---
 # <a name="update-calendargroup"></a>CalendarGroup aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mit dieser API können Sie die Eigenschaften eines Objekts des Typs „calendargroup“ aktualisieren.
 
@@ -40,7 +40,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert                       |
+| Kopfzeile        | Wert                       |
 | :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Erforderlich.   |
 | Content-Type  | application/json. Erforderlich.  |
@@ -51,7 +51,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft | Typ   | Beschreibung     |
 | :------- | :----- | :-------------- |
-| name     | Zeichenfolge | Der Gruppenname. |
+| name     | String | Der Gruppenname. |
 
 ## <a name="response"></a>Antwort
 
@@ -104,10 +104,15 @@ Content-length: 110
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update calendargroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendargroup-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

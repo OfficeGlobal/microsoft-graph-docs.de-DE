@@ -4,16 +4,16 @@ description: Die Aggregation von Informationen über die von einer Person über 
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 7f0f3c71769d2ad8927f634b065253cf118316b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929382"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512402"
 ---
 # <a name="person-resource-type"></a>Personenressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die Aggregation von Informationen über die von einer Person über e-Mail, Kontakte und sozialen Netzwerken. Personen können lokalen Kontakten, Kontakte aus für soziale Netzwerke, Ihrer Organisation Verzeichnis und Personen von letzte Kommunikation (wie e-Mail und Skype) sein.
 
@@ -30,12 +30,12 @@ Die Aggregation von Informationen über die von einer Person über e-Mail, Konta
 |birthday|string|Der Geburtstag der Person.|
 |companyName|string|Der Name des Unternehmens der Person.|
 |department|string|Die Abteilung der Person.|
-|displayName|string|Der Anzeigename der Person.|
+|displayName|String|Der Anzeigename der Person.|
 |emailAddresses|[RankedEmailAddress](rankedemailaddress.md) -Auflistung|Die E-Mail-Adressen der Person.|
 |givenName|string|Der Vorname der Person.|
 |id|string|Eindeutiger Bezeichner für die Person. Schreibgeschützt.|
-|isFavorite|Boolean|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
-|mailboxType|string|Der Typ des Postfachs an, die durch die e-Mail-Adresse der Person dargestellt wird.|
+|isFavorite|Boolescher Wert|`true`, wenn der Benutzer diese Person als Favorit gekennzeichnet hat.|
+|MailboxType|string|Der Typ des Postfachs an, die durch die e-Mail-Adresse der Person dargestellt wird.|
 |officeLocation|string|Der Bürostandort der Person.|
 |personNotes|string|Frei formatierbare Notizen, die der Benutzer zu dieser Person hinzugefügt hat.|
 |personType|string|Der Typ der Person, beispielsweise Verteilerliste.|
@@ -94,10 +94,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "person resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

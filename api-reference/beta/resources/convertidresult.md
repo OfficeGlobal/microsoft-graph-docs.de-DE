@@ -2,16 +2,16 @@
 title: Ressourcentyp convertIdResult
 description: Das Ergebnis einer ID formatkonvertierung, die von der Funktion TranslateExchangeIds durchgeführt.
 localization_priority: Normal
-ms.openlocfilehash: 7e1878de3d3b7ddee36d799c928d6a130b578200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: db28172d009ee8a8a39b7e02733d893dc20a81e5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821455"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516525"
 ---
 # <a name="convertidresult-resource-type"></a>Ressourcentyp convertIdResult
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Das Ergebnis einer ID formatkonvertierung, die von der Funktion [TranslateExchangeIds](../api/user-translateexchangeids.md) durchgeführt.
 
@@ -19,7 +19,7 @@ Das Ergebnis einer ID formatkonvertierung, die von der Funktion [TranslateExchan
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
-| sourceId | String | Der Bezeichner, der konvertiert wurde. Dieser Wert ist der ursprüngliche, nicht konvertierten Bezeichner. |
+| SourceId | String | Der Bezeichner, der konvertiert wurde. Dieser Wert ist der ursprüngliche, nicht konvertierten Bezeichner. |
 | targetId | String | Der Bezeichner konvertierte. Dieser Wert ist nicht vorhanden, wenn die Konvertierung fehlgeschlagen ist. |
 | errorDetails | [Allgemeiner Fehler](genericerror.md) | Ein Error-Objekt zurück, der den Grund für die Konvertierungsfehler angibt. Dieser Wert ist nicht vorhanden, wenn die Konvertierung erfolgreich war. |
 
@@ -45,3 +45,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/convertidresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
