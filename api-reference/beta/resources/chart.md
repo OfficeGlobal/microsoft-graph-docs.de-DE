@@ -4,16 +4,16 @@ description: Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 09d5fd376cfdcd03517cc989708bbf17bcf49a72
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970675"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529523"
 ---
 # <a name="chart-resource-type"></a>Chart-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 
@@ -22,15 +22,15 @@ Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Chart abrufen](../api/chart-get.md) | [Chart](chart.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chart-Objekts.|
-|[ChartSeries erstellen](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.|
-|[Reihe auflisten](../api/chart-list-series.md) |[ChartSeries-Sammlung](chartseries.md)| Dient zum Abrufen einer ChartSeries-Objektsammlung.|
+|Chart abrufen | [Chart](chart.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chart-Objekts.|
+|ChartSeries erstellen |ChartSeries| Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.|
+|Reihe auflisten |ChartSeries-Sammlung| Dient zum Abrufen einer ChartSeries-Objektsammlung.|
 |[Update](../api/chart-update.md) | [Chart](chart.md)   |Dient zum Aktualisieren des Chart-Objekts. |
 |[Image](../api/chart-image.md)|Abbildung der base64-codierten Zeichenfolge|Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen.|
 |[Delete](../api/chart-delete.md)|Keine|Löscht das Diagrammobjekt.|
 |[Setdata](../api/chart-setdata.md)|Keine|Setzt die Quelldaten für das Diagramm zurück.|
 |[Setposition](../api/chart-setposition.md)|Keine|Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.|
-|[List](../api/chart-list.md) | [Diagrammsammlung](chart.md) |Dient zum Abrufen der Diagrammobjeksammlung. |
+|[List](../api/chart-list.md) | Diagrammsammlung |Dient zum Abrufen der Diagrammobjeksammlung. |
 |[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|Ruft ein Diagramm anhand seiner Position in der Sammlung ab.|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Erstellt ein neues Diagramm.|
 
@@ -81,10 +81,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Chart resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

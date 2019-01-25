@@ -4,16 +4,16 @@ description: 'Aktualisieren Sie die Eigenschaften der Ressource einer Zuordnung 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f4178b5d6e2dac956a9d3f20461fd789f9f8e740
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527955"
 ---
 # <a name="update-educationassignmentresource"></a>EducationAssignmentResource aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren Sie die Eigenschaften der Ressource einer Zuordnung zugeordnet. Zuordnungsfeld Resource-Objekten können nur Lehrer in einer Klasse geändert werden.  
 
@@ -32,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -43,7 +43,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Boolescher Wert| Gibt an, ob diese Ressource in jeder Student Resource-Objekt kopiert werden soll, wenn die Zuordnung veröffentlicht wird.|
-|resource|educationResource| Resource-Objekt. |
+|resource|educationResource| Resource-Objekt |
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [EducationAssignmentResource](../resources/educationassignmentresource.md) -Objekts in der Antworttext.
@@ -110,10 +110,15 @@ Content-length: 832
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignmentresource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignmentresource-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

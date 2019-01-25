@@ -4,16 +4,16 @@ description: Die Qualität von Sicherheitsrisiken weiterhin ausweiten, die globa
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980286"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529929"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Verwenden Sie die Microsoft Graph-API für die Erkennung Sicherheit und Schutz (Preview)
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die Qualität von Sicherheitsrisiken weiterhin ausweiten, die globale Wirtschaft beeinträchtigen. Häufig Schaden lange vor Organisationen auch ermitteln. Sie können zum Erstellen oder erweitern sicherheitslösungen, die konsolidieren und korrelieren Sicherheitshinweise aus mehreren Quellen, erkennen Bedrohungen, die versuchen, gefährden Benutzeridentität "und" unlock Kontextdaten zur Untersuchungen zu informieren und Automatisierung von Microsoft Graph verwenden Sicherheitsoperationen für größere Effizienz.
 
@@ -25,5 +25,13 @@ Die [Identität Protection Risikoereignisse API](identityprotection-root.md) erm
 
 - [Gründe für die Verwendung der API-Sicherheits](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [Verwenden Sie die Sicherheit API für die Integration von intelligenten Sicherheit-Diagramm](security-api-overview.md)
-- [Warum mithilfe von Azure AD Identitäten in Ihrer Organisation schützen?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
+- Warum mithilfe von Azure AD Identitäten in Ihrer Organisation schützen?
 - [Verwenden der Azure AD Identity Protection-API](identityprotection-root.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

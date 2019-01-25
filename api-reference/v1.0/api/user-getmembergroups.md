@@ -4,12 +4,12 @@ description: Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 292a7e6c9ed0d67ced657dd726d9f41b32eac458
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415138"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517596"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -26,8 +26,6 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                                                                                       |
 | Anwendung                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
-
-> **Hinweis:** Diese API erfordert derzeit mindestens die Berechtigung `Directory.Read.All`. Bei der Verwendung der Berechtigung „Group.Read.All“ alleine oder in Kombination mit einer `User.`-Berechtigung wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

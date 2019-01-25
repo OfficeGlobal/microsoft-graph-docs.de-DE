@@ -2,16 +2,16 @@
 title: Ressourcentyp secureScores
 description: 'Top n =, wobei n = Anzahl der Tage, die Daten, die Sie abrufen möchten. '
 localization_priority: Normal
-ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528662"
 ---
 # <a name="securescores-resource-type"></a>Ressourcentyp secureScores
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Mandanten sichere Faktor pro Tag der Daten, auf der Ebene Mandanten und Steuerelement bewerten. In der Standardeinstellung ist 90 Tage von Daten enthalten. Diese Daten sortiert spätesten zum frühesten durch **CreatedDateTime**, aus. Dadurch können Sie auf der Seitenantworten mithilfe von $top = n, wobei n = Anzahl der Tage, die Daten, die Sie abrufen möchten. 
 
@@ -28,14 +28,14 @@ Typ mit Eigenschaften der Mandant Sicherheit Entität Punktzahl (tägliche Momen
 
 |Eigenschaft |Typ |Beschreibung |
 |:--|:--|:--|
-|   azureTenantId   |   Zeichenfolge  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
+|   azureTenantId   |   String  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
 |   createdDateTime |   DateTimeOffset  |   Das Datum, wenn die Entität erstellt wird.  |
-|   id  |   Zeichenfolge  |   Kombination von AzureTenantId_createdDateTime.   |
+|   id  |   String  |   Kombination von AzureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Die Anzahl der Benutzer des angegebenen Mandanten lizenziert.    |
 |   activeUserCount |   Int32   |   Aktive Benutzeranzahl des angegebenen Mandanten.  |
 |   currentScore    |   Gleitkommawert mit doppelter Genauigkeit  |   Mandanten aktuellen erreicht Score am angegebenen Datum.    |
 |   MaxErgebnis |  Gleitkommawert mit doppelter Genauigkeit  |   Mandanten maximale Bewertung am angegebenen Datum.    |
-|   enabledServices |   Collection von Objekten des Typs „String“   |   Microsoft-Dienste für den Mandanten (beispielsweise Exchange online, Skype, Sharepoint).   |
+|   enabledServices |   Zeichenfolgenauflistung   |   Microsoft-Dienste für den Mandanten (beispielsweise Exchange online, Skype, Sharepoint).   |
 |   averageComparativeScores |  [AverageComparativeScore](averagecomparativescore.md) -Auflistung    |Durchschnittliche Bewertung von unterschiedlichen Bereichen (beispielsweise Durchschnitt nach Branche, durchschnittliche durch Sitzplätze) und Steuerelement Kategorie (Identität, Daten, Gerät, Apps, Infrastruktur) innerhalb des Bereichs. |
 |   controlScores | [ControlScore](controlscore.md) -Auflistung  |   Mandanten Bewertungen für eine Gruppe von Steuerelementen enthält.   |
 
@@ -74,10 +74,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScores resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescores.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

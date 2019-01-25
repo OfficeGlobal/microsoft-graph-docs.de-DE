@@ -4,16 +4,16 @@ description: Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ccfb74cdac64a147adb8ed7d3a0ad4b3fa3c83cd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 55a3cd0e20f15c4b7d44bc7aebdc19f202e044f1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527983"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>EducationOneRosterApiDataProvider-Ressource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn die [OneRoster-API](https://www.imsglobal.org/activity/onerosterlis) als Eingabe Quelle verwendet wird.
 
@@ -23,9 +23,9 @@ Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn die [OneRoste
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **connectionUrl** | Zeichenfolge | Die Verbindungs-URL für die OneRoster-Instanz. |
+| **connectionUrl** | String | Die Verbindungs-URL für die OneRoster-Instanz. |
 | **schoolsIds** | Zeichenfolgenauflistung |  Die Liste der Schule SourcedIds synchronisieren. |
-| **providerName** | Zeichenfolge | Der Dienstanbieter OneRoster Name gemäß der [Spezifikation OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| ProviderName | String | Der Dienstanbieter OneRoster Name gemäß der [Spezifikation OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **connectionSettings** | [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Verbindungseinstellungen für die OneRoster-Instanz. Muss vom Typ [microsoft.graph.educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) oder [microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md)sein. |
 | **Anpassungen** | [microsoft.graph.educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional Anpassung der Synchronisierung Profil angewendet werden soll.|
 
@@ -54,3 +54,11 @@ Verwendet die Synchronisierung Schule Datenprofil einrichten, wenn die [OneRoste
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationonerosterapidataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

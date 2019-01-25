@@ -4,16 +4,16 @@ description: 'Für die Azure AD zugreifen Reviews (engl.), diesen Typ eine Benut
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 80e8cc68d4fc2f642be6c748b762fe47c7489d59
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ab8076c5ff24e20006b5a5569dacf4c45d987512
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932280"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529467"
 ---
 # <a name="useridentity-type"></a>Typ der Benutzeridentität
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Für die Azure AD, [Access überprüft](accessreviews-root.md)ist stellt dieses Typs eine Benutzeridentität Azure AD eines Bearbeiters eines Access-Überprüfung.  
 Im Zusammenhang mit einer Azure AD-Überwachungsprotokoll stellt dies die Benutzerinformationen, die initiiert oder durch eine Aktivität Audit betroffen war.
@@ -38,7 +38,7 @@ Unter gewissen Umständen steht der eindeutige Bezeichner für den Akteur mögli
 
 ## <a name="relationships"></a>Beziehungen
 
-Keine.
+None.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -69,10 +69,15 @@ Es folgt eine JSON-Darstellung des Typs.
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "userIdentity type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/useridentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

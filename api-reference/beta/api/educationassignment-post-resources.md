@@ -4,16 +4,16 @@ description: um anzugeben, welche Art von Ressource OData.Type wird erstellt. Be
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 46233ec2f8c8acb698dd707f7df06edaca70fec4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 34e8740336acbef056ec0b3703547de51fdc42ce
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965390"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527990"
 ---
 # <a name="create-educationassignmentresource"></a>Erstellen von educationAssignmentResource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erstellen Sie eine [Zuordnung Ressource](../resources/educationassignmentresource.md). Die Ressource selbst verfügt über eine @odata.type um anzugeben, welche Art von Ressource erstellt wird. Beachten Sie, dass Ressourcen dateibasierten zunächst in die Zuordnungen **Ressourcefolder**hochgeladen werden müssen.
 
@@ -32,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /education/classes/{id}/assignments/{id}/resources
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -96,10 +96,15 @@ Content-length: 229
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationAssignmentResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

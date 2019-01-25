@@ -4,19 +4,18 @@ description: Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb8d8f882905141e63bf9d1710cc7b8190d93a9c
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016758"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529334"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
-Textkörper der Anforderung enthält den Benutzer zum Erstellen. Zumindest müssen Sie die erforderlichen Eigenschaften für den Benutzer angeben. Optional können Sie eine beliebige andere schreibbaren Eigenschaften angeben.
+Verwenden Sie diese API zum Erstellen eines neuen Benutzers. Der Anforderungstext enthält den zu erstellenden Benutzer. Sie müssen für den Benutzer mindestens die erforderlichen Eigenschaften angeben. Optional können Sie weitere schreibbare Eigenschaften festlegen.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -32,7 +31,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /users
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -44,8 +43,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 
 | Parameter | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |true, wenn das Konto aktiviert ist; andernfalls false.|
-|displayName |string |Der Name des Benutzers, der im Adressbuch angezeigt wird.|
+|accountEnabled |Boolescher Wert |true, wenn das Konto aktiviert ist; andernfalls false.|
+|displayName |String |Der Name des Benutzers, der im Adressbuch angezeigt wird.|
 |onPremisesImmutableId |string |Muss nur angegeben werden, wenn ein neues Benutzerkonto erstellt wird, wenn Sie eine Verbunddomäne für die UserPrincipalName-Eigenschaft (UPN) des Benutzers verwenden.|
 |mailNickname |string |Der E-Mail-Alias für den Benutzer.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Das Kennwortprofil für den Benutzer.|
@@ -116,10 +115,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create User",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

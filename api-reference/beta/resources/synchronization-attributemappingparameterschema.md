@@ -2,16 +2,16 @@
 title: Ressourcentyp attributeMappingParameterSchema
 description: Beschreibt einen einzelnen Parameter in einer AttributeMappingFunctionSchema verwendet.
 localization_priority: Normal
-ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bad88fc58dcc529f086a3e3870e0bb10a9d23329
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892169"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529950"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>Ressourcentyp attributeMappingParameterSchema
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Beschreibt einen einzelnen Parameter in einer [AttributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)verwendet.
 
@@ -19,9 +19,9 @@ Beschreibt einen einzelnen Parameter in einer [AttributeMappingFunctionSchema](.
 
 | Eigenschaft                   | Typ                      | Beschreibung    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |Der angegebene Parameter kann mehrere Male bereitgestellt werden (beispielsweise Eingabe mehrere Zeichenfolgen der `Concatenate(string,string,...)` Funktion). |
-|name                        |String                    |Name des Parameters. |
-|erforderlich                    |Boolean                   |`true`Wenn der Parameter erforderlich ist. andernfalls `false`. |
+|allowMultipleOccurrences    |Boolescher Wert                   |Der angegebene Parameter kann mehrere Male bereitgestellt werden (beispielsweise Eingabe mehrere Zeichenfolgen der `Concatenate(string,string,...)` Funktion). |
+|name                        |Zeichenfolge                    |Parametername |
+|erforderlich                    |Boolescher Wert                   |`true`Wenn der Parameter erforderlich ist. andernfalls `false`. |
 |type                        |Zeichenfolge                    |Mögliche Werte: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Der Standardwert lautet `String`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -48,10 +48,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attributeMappingParameterSchema resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-attributemappingparameterschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

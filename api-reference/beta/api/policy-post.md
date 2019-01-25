@@ -2,16 +2,16 @@
 title: Richtlinie erstellen
 description: Erstellen Sie ein neues Gruppenrichtlinienobjekt durch Anzeigename, Richtlinientyp und Beschreibung der Richtlinie angeben.
 localization_priority: Normal
-ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831234"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527696"
 ---
 # <a name="create-policy"></a>Richtlinie erstellen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erstellen [Sie ein neues Gruppenrichtlinienobjekt](../resources/policy.md) durch Anzeigename, Richtlinientyp und Beschreibung der Richtlinie angeben.
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |definition|String|Die Zeichenfolgenversion des [Richtlinienobjekts](../resources/policy.md) .|
-|displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein.|
+|displayName|Zeichenfolge|Ein benutzerdefinierter Name für die Richtlinie ein.|
 |type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Antwort
@@ -91,10 +91,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: createReply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

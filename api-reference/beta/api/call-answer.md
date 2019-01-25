@@ -4,16 +4,16 @@ description: Beantworten eines eingehenden Anrufs an.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d3927c41df6558b1c0d266afbdb25f1c12ac1e49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971613"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530048"
 ---
 # <a name="call-answer"></a>Rufen Sie: Antwort
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Beantworten eines eingehenden Anrufs an.
 
@@ -43,9 +43,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter        | Typ                                     |Beschreibung                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |Zeichenfolge                                    |Der Rückruf oder Abonnement-ID auf dem Rückrufe zugestellt werden. (Erforderlich)                                                               |
-|acceptedModalities|Collection von Objekten des Typs „String“                         |Die Liste der akzeptieren Modalitäten. Mögliche Werte sind: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Erforderlich) |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Die Medienkonfiguration. (Erforderlich)                                                                                                            |
+|callbackUri       |String                                    |Der Rückruf oder Abonnement-ID auf dem Rückrufe zugestellt werden. Erforderlich.                                                               |
+|acceptedModalities|Zeichenfolgenauflistung                         |Die Liste der akzeptieren Modalitäten. Mögliche Werte sind: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. Erforderlich. |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Die Medienkonfiguration. Erforderlich.                                                                                                             |
 
 ## <a name="response"></a>Antwort
 Diese Methode gibt `202 Accepted` Antwortcode.
@@ -159,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -312,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -401,10 +401,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: answer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

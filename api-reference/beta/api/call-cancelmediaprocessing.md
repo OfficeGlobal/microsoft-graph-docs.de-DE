@@ -4,16 +4,16 @@ description: Bricht Media Verarbeitung für alle laufenden Vorgänge PlayPrompt 
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: db5a918f630fc54cc6eb574896e9e42af179c05a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 77c35cb0cfeaea6ebb2e623b32b1fa3c70f65777
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921997"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527850"
 ---
 # <a name="call-cancelmediaprocessing"></a>Rufen Sie: CancelMediaProcessing
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Bricht Media Verarbeitung für alle laufenden Vorgänge PlayPrompt oder DNS-Eintrags.
 
@@ -44,7 +44,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    | Beschreibung                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
 | all            | Boolescher Wert | Das Flag, der angibt, ob alle Vorgänge oder aktuellen beenden. |
-| clientContext  | Zeichenfolge  | Der Clientkontext.                                            |
+| ClientContext  | String  | Der Clientkontext.                                            |
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -116,10 +116,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: cancelMediaProcessing",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

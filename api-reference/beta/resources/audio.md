@@ -4,20 +4,20 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b88fbbcd11a4cbeff56c870225d7b0bef4b32346
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985375"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527033"
 ---
 # <a name="audio-facet"></a>Facet „Audio“
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die Ressource **Audio** führt audiobezogene Eigenschaften für ein Element in einer einzelnen Struktur zusammen.
 
-Wenn ein [**DriveItem**](driveitem.md)-Element ein **file**-Facet ungleich Null aufweist, stellt das Element eine Audiodatei dar. Die Eigenschaften der **Audio**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt. 
+Wenn ein DriveItem-Element ein file-Facet ungleich Null aufweist, stellt das Element eine Audiodatei dar. Die Eigenschaften der Audio-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt. 
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -70,10 +70,15 @@ Wenn ein [**DriveItem**](driveitem.md)-Element ein **file**-Facet ungleich Null 
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

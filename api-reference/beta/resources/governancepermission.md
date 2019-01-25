@@ -2,16 +2,16 @@
 title: Ressourcentyp governancePermission
 description: 'Stellt die Berechtigung, die ein GovernanceSubject hat für eine bestimmte GovernanceResource dar.  '
 localization_priority: Normal
-ms.openlocfilehash: e082ca50e5642e865b3e30859eea607df63a03b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882873"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529838"
 ---
 # <a name="governancepermission-resource-type"></a>Ressourcentyp governancePermission
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt die Berechtigung, die ein [GovernanceSubject](../resources/governancesubject.md) hat für eine bestimmte [GovernanceResource](../resources/governanceresource.md)dar.  
 
@@ -19,7 +19,7 @@ Stellt die Berechtigung, die ein [GovernanceSubject](../resources/governancesubj
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|accessLevel|Zeichenfolge|Die Zugriffsebene. Gültige Werte: ``None``, ``UserRead``, ``AdminRead``, und ``AdminReadWrite``.|
+|AccessLevel|String|Die Zugriffsebene. Gültige Werte: ``None``, ``UserRead``, ``AdminRead``, und ``AdminReadWrite``.|
 |isActive|Boolescher Wert|Gibt an, ob der anfordernden Person hat aktiven rollenzuweisung für die Zugriffsebene.|
 |isEligible|Boolescher Wert|Geben Sie an, ob der Requestor alle qualifizierten rollenzuweisung für die Zugriffsebene hat.|
 
@@ -35,3 +35,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governancepermission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

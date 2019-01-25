@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Datei
 localization_priority: Normal
-ms.openlocfilehash: bd2b0fba75ef54586dcfe8b69043669b0681f6b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816324"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528417"
 ---
 # <a name="file-resource-type"></a>File-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.
+Wenn ein DriveItem ein file-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine content-Beziehung auf, die den Bytedatenstrom der Datei enthält.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -47,10 +47,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The file facet describes properties of a file",
   "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/File"
-} -->
+  "tocPath": "Facets/File",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/file.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

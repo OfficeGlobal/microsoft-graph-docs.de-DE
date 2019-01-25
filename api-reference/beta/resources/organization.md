@@ -4,16 +4,16 @@ description: 'Stellt eine Azure Active Directory-Mandanten. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 86263fe11ebf3bb25e17cbd2b950195fa122f778
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927450"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529425"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt dar, bei dem der Benutzer oder die Anwendung in angemeldet ist Azure Active Directory-Mandanten. Nur die Lese- und Aktualisierungsvorgänge werden für diese Ressource unterstützt. Erstellen und Delete werden nicht unterstützt. Erbt von [directoryObject](directoryobject.md).
 
@@ -35,29 +35,29 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
-| businessPhones                      | Zeichenfolgenauflistung                                         | Telefonnummer für die Organisation. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
-|Ort|Zeichenfolge| Der Name der Stadt aus der Unternehmensadresse |
+| businessPhones                      | Zeichenfolgenauflistung                                         | Die Telefonnummer des Unternehmens **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
+|Ort|String| Der Name der Stadt aus der Unternehmensadresse |
 |companyLastDirSyncTime|DateTimeOffset|Zeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Land|Zeichenfolge| Der Name des Landes/der Region aus der Unternehmensadresse |
+|Land|String| Der Name des Landes/der Region aus der Unternehmensadresse |
 |countryLetterCode|Zeichenfolge| Landes-/Regionsabkürzung für das Unternehmen |
 |createdDateTime|DateTimeOffset| Zeitstempel der Erstellung der Organisation. Der Wert kann nicht geändert werden und wird automatisch aufgefüllt, wenn die Organisation erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 | deletedDateTime                    | DateTimeOffset                                                    | Datum und Uhrzeit des darstellt, wenn es sich bei der Azure AD-Mandanten mit ISO 8601-Format gelöscht wurde, und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.                                                                                     |
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
-|displayName|Zeichenfolge|Der Anzeigename für den Mandanten.|
-|id|Zeichenfolge|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|displayName|String|Der Anzeigename für den Mandanten.|
+|id|string|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isMultipleDataLocationsForServicesEnabled|Boolescher Wert|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu.            |
-|objectType|Zeichenfolge|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
-|postalCode|Zeichenfolge| Die Postleitzahl aus der Unternehmensadresse |
-|preferredLanguage|Zeichenfolge| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
+|marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine NULL-Werte zu.            |
+|objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
+|postalCode|String| Die Postleitzahl aus der Unternehmensadresse |
+|preferredLanguage|String| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Das Datenschutzprofil einer Organisation.            |
-|provisionedPlans|[ProvisionedPlan-Sammlung](provisionedplan.md)| Lässt keine Nullwerte zu.            |
-|provisioningErrors|ProvisioningError-Sammlung| Lässt keine Nullwerte zu.            |
+|provisionedPlans|[ProvisionedPlan-Sammlung](provisionedplan.md)| Lässt keine NULL-Werte zu.            |
+|provisioningErrors|ProvisioningError-Sammlung| Lässt keine NULL-Werte zu.            |
 |securityComplianceNotificationMails|Zeichenfolgenauflistung||
 |securityComplianceNotificationPhones|Zeichenfolgenauflistung||
-|state|Zeichenfolge| Der das Bundesland aus der Unternehmensadresse |
+|state|String| Der das Bundesland aus der Unternehmensadresse |
 |street|Zeichenfolge| Der Straßenname aus der Unternehmensadresse |
-|technicalNotificationMails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
+|technicalNotificationMails|String collection| Lässt keine NULL-Werte zu. |
 |verifiedDomains|[VerifiedDomain-Sammlung](verifieddomain.md)|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
 
 ## <a name="relationships"></a>Beziehungen
@@ -108,7 +108,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
@@ -116,10 +116,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

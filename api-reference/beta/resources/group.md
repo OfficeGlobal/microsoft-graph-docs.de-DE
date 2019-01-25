@@ -4,19 +4,18 @@ description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der e
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 50e6062eacd59e0497ec75333296669d001e2c53
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726617"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526179"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der es sich um eine Office 365-Gruppe, ein Team in Microsoft Teams, eine dynamische Gruppe oder eine Sicherheitsgruppe handeln kann.
-Erbt von [directoryObject](directoryobject.md).
 
 Aus Leistungsgründen geben die Vorgänge [create](../api/group-post-groups.md), [get](../api/group-get.md) und [list](../api/group-list.md) standardmäßig nur eine Teilmenge häufig verwendeter Eigenschaften zurück. Diese _Standard_eigenschaften werden im Abschnitt [Eigenschaften](#properties) aufgeführt. Zum Abrufen von Eigenschaften, die nicht standardmäßig zurückgegeben werden, geben sie diese in einer OData-Abfrageoption `$select` an. Sehen Sie sich das [Beispiel](../api/group-get.md#request-2) an.
 
@@ -260,10 +259,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

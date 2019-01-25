@@ -4,16 +4,16 @@ description: Eine app in den Microsoft-Teams, app-Katalog.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f1b45f60e9586d148a08310e9d19b1a3e6c52e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fe60222ae6c5d8475722e18e69555df2d3892759
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912057"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529943"
 ---
 # <a name="teamsapp-resource-type"></a>Ressourcentyp teamsApp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine app in den [Microsoft-Teams,](teams-api-overview.md) app-Katalog.
 
@@ -39,11 +39,11 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 
 ### <a name="teamsappdistributionmethod-values"></a>TeamsAppDistributionMethod Werte
 
-|Element|Wert|Beschreibung|
+|Member|Wert|Beschreibung|
 |:---|:---|:---|
-|Speichern|0| Die app ist für alle Mandanten über Microsoft-Teams app Store verfügbar.|
-|Organisation|1|Die app ist nur in diesen Mandanten verfügbar.|
-|sideloaded|2|Die app steht nur für die Benutzer/Team seine installierten an.|
+|Store|(0)| Die app ist für alle Mandanten über Microsoft-Teams app Store verfügbar.|
+|Organisation|-1|Die app ist nur in diesen Mandanten verfügbar.|
+|sideloaded|-2|Die app steht nur für die Benutzer/Team seine installierten an.|
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -76,11 +76,16 @@ Benutzer können diese apps im Microsoft-Teams Store anzeigen, und diese apps in
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

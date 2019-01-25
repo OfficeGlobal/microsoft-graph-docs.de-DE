@@ -2,16 +2,16 @@
 title: Ressourcentyp governanceRoleDefinition
 description: Stellt die Rollendefinitionen. Für Azure Ressourcen können sie Azure RBAC-Rollen, wie Besitzer, Leser, Autor darstellen.
 localization_priority: Normal
-ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842450"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528641"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Ressourcentyp governanceRoleDefinition
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 Stellt die Rollendefinitionen. Für Azure Ressourcen können sie Azure RBAC-Rollen, wie Besitzer, Leser, Autor darstellen.
@@ -27,10 +27,10 @@ Nicht `POST`, `PUT`, `PATCH`, `DELETE` wird auf unterstützt `roleDefinitions` E
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft  | Typ      |Beschreibung|
 |:----|:----------|:----------|:----------|
-|id         |String     |Die Id der Rollendefinition. |
+|id         |string     |Die Id der Rollendefinition. |
 |resourceId |Zeichenfolge     |Erforderlich. Die Id der Rollendefinition zugeordneten Ressource. |
 |externalId   |String     |Die externe Id der Rollendefinition.|
-|displayName|String     |Der Anzeigename der Rollendefinition.|
+|displayName|Zeichenfolge     |Der Anzeigename der Rollendefinition.|
 |subjectCount|Int32     |Optional. Die Anzahl der Themen, die die Rolle zugewiesen sind. Es stellt den Status des Antragstellers Zugriff auf die Ressource. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=subjectCount` in der Abfrage.|
 |eligibleAssignmentCount|Int32|Optional. Die Anzahl von zu auswählbaren rollenzuweisungen Rollendefinition zugeordnet. Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=eligibleAssignmentCount` in der Abfrage.|
 |activeAssignmentCount|Int32    |Optional. Die Anzahl der aktiven rollenzuweisungen Rollendefinition zugeordnet.  Wenn die Eigenschaft erhalten möchten, geben Sie explizit labeltags verwenden `$select=activeAssignmentCount` in der Abfrage.|
@@ -66,10 +66,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleDefinition",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
