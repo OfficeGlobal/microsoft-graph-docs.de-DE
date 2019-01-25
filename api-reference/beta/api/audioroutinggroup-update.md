@@ -4,56 +4,56 @@ description: Inhaltsquellen und der Empfänger von einer AudioRoutingGroup zu ä
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ca6e77e71abb7d7a934944ce7fd4de10d79e1a94
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524674"
 ---
-# <a name="update-audio-routing-group"></a><span data-ttu-id="2f5bd-103">Audio Routinggruppe aktualisieren</span><span class="sxs-lookup"><span data-stu-id="2f5bd-103">Update audio routing group</span></span>
+# <a name="update-audio-routing-group"></a><span data-ttu-id="454a1-103">Audio Routinggruppe aktualisieren</span><span class="sxs-lookup"><span data-stu-id="454a1-103">Update audio routing group</span></span>
 
-> <span data-ttu-id="2f5bd-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2f5bd-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2f5bd-106">Inhaltsquellen und der Empfänger von einer [AudioRoutingGroup](../resources/audioroutinggroup.md)zu ändern.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-106">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="454a1-104">Inhaltsquellen und der Empfänger von einer [AudioRoutingGroup](../resources/audioroutinggroup.md)zu ändern.</span><span class="sxs-lookup"><span data-stu-id="454a1-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f5bd-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2f5bd-107">Permissions</span></span>
-<span data-ttu-id="2f5bd-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f5bd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="454a1-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="454a1-105">Permissions</span></span>
+<span data-ttu-id="454a1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="454a1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2f5bd-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2f5bd-110">Permission type</span></span> | <span data-ttu-id="2f5bd-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2f5bd-111">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="454a1-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="454a1-108">Permission type</span></span> | <span data-ttu-id="454a1-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="454a1-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="2f5bd-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2f5bd-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="2f5bd-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2f5bd-113">Not Supported</span></span>                       |
-| <span data-ttu-id="2f5bd-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2f5bd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f5bd-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2f5bd-115">Not Supported</span></span>                       |
-| <span data-ttu-id="2f5bd-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2f5bd-116">Application</span></span>     | <span data-ttu-id="2f5bd-117">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="2f5bd-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="454a1-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="454a1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="454a1-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="454a1-111">Not Supported</span></span>                       |
+| <span data-ttu-id="454a1-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="454a1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="454a1-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="454a1-113">Not Supported</span></span>                       |
+| <span data-ttu-id="454a1-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="454a1-114">Application</span></span>     | <span data-ttu-id="454a1-115">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="454a1-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2f5bd-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2f5bd-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="454a1-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="454a1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2f5bd-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2f5bd-119">Request headers</span></span>
-| <span data-ttu-id="2f5bd-120">Name</span><span class="sxs-lookup"><span data-stu-id="2f5bd-120">Name</span></span>          | <span data-ttu-id="2f5bd-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2f5bd-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="454a1-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="454a1-117">Request headers</span></span>
+| <span data-ttu-id="454a1-118">Name</span><span class="sxs-lookup"><span data-stu-id="454a1-118">Name</span></span>          | <span data-ttu-id="454a1-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="454a1-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="2f5bd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f5bd-122">Authorization</span></span> | <span data-ttu-id="2f5bd-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="454a1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="454a1-120">Authorization</span></span> | <span data-ttu-id="454a1-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="454a1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2f5bd-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2f5bd-125">Request body</span></span>
-<span data-ttu-id="2f5bd-126">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="2f5bd-127">Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="2f5bd-128">Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-128">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="454a1-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="454a1-123">Request body</span></span>
+<span data-ttu-id="454a1-124">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="454a1-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="454a1-125">Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet.</span><span class="sxs-lookup"><span data-stu-id="454a1-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="454a1-126">Geben Sie aus Gründen der Leistung vorhandene Werte, die nicht geändert wurden, nicht an.</span><span class="sxs-lookup"><span data-stu-id="454a1-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="2f5bd-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2f5bd-129">Property</span></span>       | <span data-ttu-id="2f5bd-130">Typ</span><span class="sxs-lookup"><span data-stu-id="2f5bd-130">Type</span></span>    |<span data-ttu-id="2f5bd-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2f5bd-131">Description</span></span>|
+| <span data-ttu-id="454a1-127">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="454a1-127">Property</span></span>       | <span data-ttu-id="454a1-128">Typ</span><span class="sxs-lookup"><span data-stu-id="454a1-128">Type</span></span>    |<span data-ttu-id="454a1-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="454a1-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2f5bd-132">Ereignisempfänger</span><span class="sxs-lookup"><span data-stu-id="2f5bd-132">receivers</span></span> | <span data-ttu-id="2f5bd-133">Collection von Objekten des Typs „String“</span><span class="sxs-lookup"><span data-stu-id="2f5bd-133">String collection</span></span> | <span data-ttu-id="2f5bd-134">Die Ziel-Teilnehmer in der AudioRoutingGroup.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-134">The target participants in the audioRoutingGroup.</span></span> |
-| <span data-ttu-id="2f5bd-135">routingMode</span><span class="sxs-lookup"><span data-stu-id="2f5bd-135">routingMode</span></span> | <span data-ttu-id="2f5bd-136">String</span><span class="sxs-lookup"><span data-stu-id="2f5bd-136">String</span></span> | <span data-ttu-id="2f5bd-137">Mögliche Werte: `oneToOne`, `multicast`.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-137">Possible values are: `oneToOne`, `multicast`.</span></span> |
-| <span data-ttu-id="2f5bd-138">sources</span><span class="sxs-lookup"><span data-stu-id="2f5bd-138">sources</span></span> | <span data-ttu-id="2f5bd-139">Collection von Objekten des Typs „String“</span><span class="sxs-lookup"><span data-stu-id="2f5bd-139">String collection</span></span> | <span data-ttu-id="2f5bd-140">Die Quelle Teilnehmer in der AudioRoutingGroup.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-140">The source participant in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="454a1-130">Ereignisempfänger</span><span class="sxs-lookup"><span data-stu-id="454a1-130">receivers</span></span> | <span data-ttu-id="454a1-131">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="454a1-131">String collection</span></span> | <span data-ttu-id="454a1-132">Die Ziel-Teilnehmer in der AudioRoutingGroup.</span><span class="sxs-lookup"><span data-stu-id="454a1-132">The target participants in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="454a1-133">routingMode</span><span class="sxs-lookup"><span data-stu-id="454a1-133">routingMode</span></span> | <span data-ttu-id="454a1-134">String</span><span class="sxs-lookup"><span data-stu-id="454a1-134">String</span></span> | <span data-ttu-id="454a1-135">Mögliche Werte: `oneToOne`, `multicast`.</span><span class="sxs-lookup"><span data-stu-id="454a1-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
+| <span data-ttu-id="454a1-136">sources</span><span class="sxs-lookup"><span data-stu-id="454a1-136">sources</span></span> | <span data-ttu-id="454a1-137">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="454a1-137">String collection</span></span> | <span data-ttu-id="454a1-138">Die Quelle Teilnehmer in der AudioRoutingGroup.</span><span class="sxs-lookup"><span data-stu-id="454a1-138">The source participant in the audioRoutingGroup.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="2f5bd-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="2f5bd-141">Response</span></span>
-<span data-ttu-id="2f5bd-142">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-142">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="454a1-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="454a1-139">Response</span></span>
+<span data-ttu-id="454a1-140">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [AudioRoutingGroup](../resources/audioroutinggroup.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="454a1-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f5bd-143">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2f5bd-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="454a1-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="454a1-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2f5bd-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2f5bd-144">Request</span></span>
-<span data-ttu-id="2f5bd-145">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-145">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="454a1-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="454a1-142">Request</span></span>
+<span data-ttu-id="454a1-143">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="454a1-143">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -76,9 +76,9 @@ Content-Length: 233
   ]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="2f5bd-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="2f5bd-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="454a1-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="454a1-144">Response</span></span>
 
-> <span data-ttu-id="2f5bd-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="2f5bd-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="454a1-p104">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="454a1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,10 +105,15 @@ Content-Length: 233
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update audioRoutingGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

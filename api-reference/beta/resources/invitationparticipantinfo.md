@@ -4,32 +4,32 @@ description: Die **InvitationParticipant** wird verwendet, um die Darstellung ei
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8febd66915ee0b4fba26d9253cd56d67086e63bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982897"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520676"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="38890-103">Ressourcentyp invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="38890-103">invitationParticipantInfo resource type</span></span>
+# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="29b64-103">Ressourcentyp invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="29b64-103">invitationParticipantInfo resource type</span></span>
 
-> <span data-ttu-id="38890-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="38890-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="38890-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="38890-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38890-106">Die **InvitationParticipant** wird verwendet, um die Darstellung eines Satzes von Identitäten zugeordnet einer unterhaltungseinladung zu einer und bietet zusätzliche Einladung-Parameter.</span><span class="sxs-lookup"><span data-stu-id="38890-106">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
+<span data-ttu-id="29b64-104">Die **InvitationParticipant** wird verwendet, um die Darstellung eines Satzes von Identitäten zugeordnet einer unterhaltungseinladung zu einer und bietet zusätzliche Einladung-Parameter.</span><span class="sxs-lookup"><span data-stu-id="29b64-104">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="38890-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="38890-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="29b64-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="29b64-105">Properties</span></span>
 
-| <span data-ttu-id="38890-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="38890-108">Property</span></span>                           | <span data-ttu-id="38890-109">Typ</span><span class="sxs-lookup"><span data-stu-id="38890-109">Type</span></span>                          | <span data-ttu-id="38890-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="38890-110">Description</span></span>                                                                          |
+| <span data-ttu-id="29b64-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="29b64-106">Property</span></span>                           | <span data-ttu-id="29b64-107">Typ</span><span class="sxs-lookup"><span data-stu-id="29b64-107">Type</span></span>                          | <span data-ttu-id="29b64-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="29b64-108">Description</span></span>                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="38890-111">endpointType</span><span class="sxs-lookup"><span data-stu-id="38890-111">endpointType</span></span>                       | <span data-ttu-id="38890-112">String</span><span class="sxs-lookup"><span data-stu-id="38890-112">String</span></span>                        | <span data-ttu-id="38890-113">Mögliche Werte: `default`, `voicemail`.</span><span class="sxs-lookup"><span data-stu-id="38890-113">Possible values are: `default`, `voicemail`.</span></span> |
-| <span data-ttu-id="38890-114">identity</span><span class="sxs-lookup"><span data-stu-id="38890-114">identity</span></span>                           | [<span data-ttu-id="38890-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="38890-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="38890-116">Die [IdentitySet](identityset.md) Einladung zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="38890-116">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
-| <span data-ttu-id="38890-117">languageId</span><span class="sxs-lookup"><span data-stu-id="38890-117">languageId</span></span>                         | <span data-ttu-id="38890-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="38890-118">String</span></span>                        | <span data-ttu-id="38890-119">Die Sprache-Kultur-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="38890-119">The language culture string.</span></span>                                                                                     |
-| <span data-ttu-id="38890-120">Region</span><span class="sxs-lookup"><span data-stu-id="38890-120">region</span></span>                             | <span data-ttu-id="38890-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="38890-121">String</span></span>                        | <span data-ttu-id="38890-122">Region des Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="38890-122">Region of the participant.</span></span>                                                           |
-| <span data-ttu-id="38890-123">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="38890-123">replacesCallId</span></span>                     | <span data-ttu-id="38890-124">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="38890-124">String</span></span>                        | <span data-ttu-id="38890-125">Optional.</span><span class="sxs-lookup"><span data-stu-id="38890-125">Optional.</span></span> <span data-ttu-id="38890-126">Der Aufruf der das Ziel Idenity derzeit gehört.</span><span class="sxs-lookup"><span data-stu-id="38890-126">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="38890-127">Sobald der Teilnehmer hinzugefügt wird, wird dieses Anrufs gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="38890-127">This call will be dropped once the participant is added.</span></span> |
+| <span data-ttu-id="29b64-109">endpointType</span><span class="sxs-lookup"><span data-stu-id="29b64-109">endpointType</span></span>                       | <span data-ttu-id="29b64-110">String</span><span class="sxs-lookup"><span data-stu-id="29b64-110">String</span></span>                        | <span data-ttu-id="29b64-111">Mögliche Werte: `default`, `voicemail`.</span><span class="sxs-lookup"><span data-stu-id="29b64-111">Possible values are: `default`, `voicemail`.</span></span> |
+| <span data-ttu-id="29b64-112">identity</span><span class="sxs-lookup"><span data-stu-id="29b64-112">identity</span></span>                           | [<span data-ttu-id="29b64-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="29b64-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="29b64-114">Die [IdentitySet](identityset.md) Einladung zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="29b64-114">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
+| <span data-ttu-id="29b64-115">languageId</span><span class="sxs-lookup"><span data-stu-id="29b64-115">languageId</span></span>                         | <span data-ttu-id="29b64-116">String</span><span class="sxs-lookup"><span data-stu-id="29b64-116">String</span></span>                        | <span data-ttu-id="29b64-117">Die Sprache-Kultur-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="29b64-117">The language culture string.</span></span>                                                                                     |
+| <span data-ttu-id="29b64-118">Region</span><span class="sxs-lookup"><span data-stu-id="29b64-118">region</span></span>                             | <span data-ttu-id="29b64-119">String</span><span class="sxs-lookup"><span data-stu-id="29b64-119">String</span></span>                        | <span data-ttu-id="29b64-120">Region des Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="29b64-120">Region of the participant.</span></span>                                                           |
+| <span data-ttu-id="29b64-121">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="29b64-121">replacesCallId</span></span>                     | <span data-ttu-id="29b64-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="29b64-122">String</span></span>                        | <span data-ttu-id="29b64-123">Optional.</span><span class="sxs-lookup"><span data-stu-id="29b64-123">Optional.</span></span> <span data-ttu-id="29b64-124">Der Aufruf der das Ziel Idenity derzeit gehört.</span><span class="sxs-lookup"><span data-stu-id="29b64-124">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="29b64-125">Sobald der Teilnehmer hinzugefügt wird, wird dieses Anrufs gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="29b64-125">This call will be dropped once the participant is added.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="38890-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="38890-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="29b64-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="29b64-126">JSON representation</span></span>
 
-<span data-ttu-id="38890-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="38890-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="29b64-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="29b64-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,10 +50,15 @@ ms.locfileid: "27982897"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitationParticipantInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/invitationparticipantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

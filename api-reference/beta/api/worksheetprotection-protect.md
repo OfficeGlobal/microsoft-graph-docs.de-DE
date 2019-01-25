@@ -4,54 +4,54 @@ description: Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d72d81b181c6e2fb82df991baaca7c12bb72c721
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930572"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520130"
 ---
-# <a name="worksheetprotection-protect"></a><span data-ttu-id="16baf-104">WorksheetProtection: Schützen</span><span class="sxs-lookup"><span data-stu-id="16baf-104">WorksheetProtection: protect</span></span>
+# <a name="worksheetprotection-protect"></a><span data-ttu-id="c263a-104">WorksheetProtection: Schützen</span><span class="sxs-lookup"><span data-stu-id="c263a-104">WorksheetProtection: protect</span></span>
 
-> <span data-ttu-id="16baf-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="16baf-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="16baf-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="16baf-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16baf-p103">Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.</span><span class="sxs-lookup"><span data-stu-id="16baf-p103">Protect a worksheet. It throws if the worksheet has been protected.</span></span>
-## <a name="permissions"></a><span data-ttu-id="16baf-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="16baf-109">Permissions</span></span>
-<span data-ttu-id="16baf-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16baf-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c263a-p102">Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt geschützt ist.</span><span class="sxs-lookup"><span data-stu-id="c263a-p102">Protect a worksheet. It throws if the worksheet has been protected.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c263a-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c263a-107">Permissions</span></span>
+<span data-ttu-id="c263a-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c263a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="16baf-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="16baf-112">Permission type</span></span>      | <span data-ttu-id="16baf-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="16baf-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c263a-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c263a-110">Permission type</span></span>      | <span data-ttu-id="c263a-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c263a-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="16baf-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="16baf-114">Delegated (work or school account)</span></span> | <span data-ttu-id="16baf-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="16baf-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="16baf-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="16baf-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16baf-117">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="16baf-117">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="16baf-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="16baf-118">Application</span></span> | <span data-ttu-id="16baf-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="16baf-119">Not supported.</span></span> |
+|<span data-ttu-id="c263a-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c263a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c263a-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c263a-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c263a-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c263a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c263a-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c263a-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c263a-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c263a-116">Application</span></span> | <span data-ttu-id="c263a-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c263a-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="16baf-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="16baf-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c263a-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c263a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/protection/protect
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="16baf-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="16baf-121">Request headers</span></span>
-| <span data-ttu-id="16baf-122">Name</span><span class="sxs-lookup"><span data-stu-id="16baf-122">Name</span></span>       | <span data-ttu-id="16baf-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="16baf-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c263a-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c263a-119">Request headers</span></span>
+| <span data-ttu-id="c263a-120">Name</span><span class="sxs-lookup"><span data-stu-id="c263a-120">Name</span></span>       | <span data-ttu-id="c263a-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c263a-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="16baf-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="16baf-124">Authorization</span></span>  | <span data-ttu-id="16baf-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="16baf-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="16baf-127">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="16baf-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="16baf-p106">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="16baf-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c263a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c263a-122">Authorization</span></span>  | <span data-ttu-id="c263a-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c263a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c263a-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="c263a-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c263a-p105">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="c263a-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="16baf-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="16baf-130">Request body</span></span>
-<span data-ttu-id="16baf-131">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="16baf-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c263a-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c263a-128">Request body</span></span>
+<span data-ttu-id="c263a-129">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="c263a-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="16baf-132">Parameter</span><span class="sxs-lookup"><span data-stu-id="16baf-132">Parameter</span></span>    | <span data-ttu-id="16baf-133">Typ</span><span class="sxs-lookup"><span data-stu-id="16baf-133">Type</span></span>   |<span data-ttu-id="16baf-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="16baf-134">Description</span></span>|
+| <span data-ttu-id="c263a-130">Parameter</span><span class="sxs-lookup"><span data-stu-id="c263a-130">Parameter</span></span>    | <span data-ttu-id="c263a-131">Typ</span><span class="sxs-lookup"><span data-stu-id="c263a-131">Type</span></span>   |<span data-ttu-id="c263a-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c263a-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="16baf-135">options</span><span class="sxs-lookup"><span data-stu-id="16baf-135">options</span></span>|<span data-ttu-id="16baf-136">WorksheetProtectionOptions</span><span class="sxs-lookup"><span data-stu-id="16baf-136">WorksheetProtectionOptions</span></span>|<span data-ttu-id="16baf-p107">Optional. Optionen für den Arbeitsblattschutz.</span><span class="sxs-lookup"><span data-stu-id="16baf-p107">Optional. sheet protection options.</span></span>|
+|<span data-ttu-id="c263a-133">options</span><span class="sxs-lookup"><span data-stu-id="c263a-133">options</span></span>|<span data-ttu-id="c263a-134">WorksheetProtectionOptions</span><span class="sxs-lookup"><span data-stu-id="c263a-134">WorksheetProtectionOptions</span></span>|<span data-ttu-id="c263a-p106">Optional. Optionen für den Arbeitsblattschutz.</span><span class="sxs-lookup"><span data-stu-id="c263a-p106">Optional. sheet protection options.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="16baf-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="16baf-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c263a-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="c263a-137">Response</span></span>
 
-<span data-ttu-id="16baf-p108">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="16baf-p108">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c263a-p107">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 OK` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c263a-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16baf-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="16baf-142">Example</span></span>
-<span data-ttu-id="16baf-143">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="16baf-143">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="16baf-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="16baf-144">Request</span></span>
-<span data-ttu-id="16baf-145">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="16baf-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c263a-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c263a-140">Example</span></span>
+<span data-ttu-id="c263a-141">Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="c263a-141">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c263a-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c263a-142">Request</span></span>
+<span data-ttu-id="c263a-143">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c263a-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_protect"
@@ -78,8 +78,8 @@ Content-length: 383
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="16baf-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="16baf-146">Response</span></span>
-<span data-ttu-id="16baf-147">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="16baf-147">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c263a-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="c263a-144">Response</span></span>
+<span data-ttu-id="c263a-145">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c263a-145">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,10 +91,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "WorksheetProtection: protect",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/worksheetprotection-protect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,31 +3,31 @@ title: Aktivität erstellen oder ersetzen
 description: Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie die Tiefe einfügen.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: eca8e03e45a5a2d4ae6c4c08218189edcf98a03a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f9dfa75f8503e9fcd9bec6f7b36840e310bf629d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944747"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520361"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="29300-104">Aktivität erstellen oder ersetzen</span><span class="sxs-lookup"><span data-stu-id="29300-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="852ca-104">Aktivität erstellen oder ersetzen</span><span class="sxs-lookup"><span data-stu-id="852ca-104">Create or replace an activity</span></span>
 
-> <span data-ttu-id="29300-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="29300-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="29300-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="29300-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="29300-107">Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app.</span><span class="sxs-lookup"><span data-stu-id="29300-107">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="29300-108">Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](projectrome-put-activity.md#example-2---deep-insert).</span><span class="sxs-lookup"><span data-stu-id="29300-108">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
+<span data-ttu-id="852ca-105">Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app.</span><span class="sxs-lookup"><span data-stu-id="852ca-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="852ca-106">Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](projectrome-put-activity.md#example-2---deep-insert).</span><span class="sxs-lookup"><span data-stu-id="852ca-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29300-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="29300-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="852ca-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="852ca-107">Permissions</span></span>
 
-<span data-ttu-id="29300-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29300-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="852ca-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="852ca-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="29300-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="29300-112">Permission type</span></span>      | <span data-ttu-id="29300-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="29300-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="852ca-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="852ca-110">Permission type</span></span>      | <span data-ttu-id="852ca-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="852ca-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29300-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="29300-114">Delegated (work or school account)</span></span> | <span data-ttu-id="29300-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="29300-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="29300-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="29300-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29300-117">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="29300-117">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="29300-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="29300-118">Application</span></span> | <span data-ttu-id="29300-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="29300-119">Not supported.</span></span> |
+|<span data-ttu-id="852ca-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="852ca-112">Delegated (work or school account)</span></span> | <span data-ttu-id="852ca-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="852ca-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="852ca-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="852ca-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="852ca-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="852ca-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="852ca-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="852ca-116">Application</span></span> | <span data-ttu-id="852ca-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="852ca-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="29300-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="29300-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="852ca-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="852ca-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +35,27 @@ ms.locfileid: "27944747"
 PUT /me/activities/{appActivityId}
 ```
 
-><span data-ttu-id="29300-121">**Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.</span><span class="sxs-lookup"><span data-stu-id="29300-121">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+><span data-ttu-id="852ca-119">**Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.</span><span class="sxs-lookup"><span data-stu-id="852ca-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="29300-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="29300-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="852ca-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="852ca-120">Request headers</span></span>
 
-|<span data-ttu-id="29300-123">Name</span><span class="sxs-lookup"><span data-stu-id="29300-123">Name</span></span> | <span data-ttu-id="29300-124">Typ</span><span class="sxs-lookup"><span data-stu-id="29300-124">Type</span></span> | <span data-ttu-id="29300-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="29300-125">Description</span></span>|
+|<span data-ttu-id="852ca-121">Name</span><span class="sxs-lookup"><span data-stu-id="852ca-121">Name</span></span> | <span data-ttu-id="852ca-122">Typ</span><span class="sxs-lookup"><span data-stu-id="852ca-122">Type</span></span> | <span data-ttu-id="852ca-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="852ca-123">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="29300-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="29300-126">Authorization</span></span> | <span data-ttu-id="29300-127">string</span><span class="sxs-lookup"><span data-stu-id="29300-127">string</span></span> | <span data-ttu-id="29300-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="29300-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="852ca-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="852ca-124">Authorization</span></span> | <span data-ttu-id="852ca-125">string</span><span class="sxs-lookup"><span data-stu-id="852ca-125">string</span></span> | <span data-ttu-id="852ca-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="852ca-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="29300-130">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="29300-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="852ca-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="852ca-128">Request body</span></span>
 
-<span data-ttu-id="29300-131">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Aktivität](../resources/projectrome-activity.md) aus.</span><span class="sxs-lookup"><span data-stu-id="29300-131">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="852ca-129">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Aktivität](../resources/projectrome-activity.md) aus.</span><span class="sxs-lookup"><span data-stu-id="852ca-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="29300-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="29300-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="852ca-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="852ca-130">Response</span></span>
 
-<span data-ttu-id="29300-133">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die Aktivität erstellt wurde oder `200 OK` , wenn die Aktivität ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="29300-133">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="852ca-131">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die Aktivität erstellt wurde oder `200 OK` , wenn die Aktivität ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="852ca-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="29300-134">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="29300-134">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="852ca-132">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="852ca-132">Example 1</span></span>
 
-#### <a name="request"></a><span data-ttu-id="29300-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="29300-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="852ca-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="852ca-133">Request</span></span>
 
-<span data-ttu-id="29300-136">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="29300-136">The following is an example of the request.</span></span>
+<span data-ttu-id="852ca-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="852ca-134">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -103,9 +103,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="29300-137">Antwort</span><span class="sxs-lookup"><span data-stu-id="29300-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="852ca-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="852ca-135">Response</span></span>
 
-<span data-ttu-id="29300-138">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="29300-138">The following is an example of the response.</span></span>
+<span data-ttu-id="852ca-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="852ca-136">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -160,11 +160,11 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 }
 ```
 
-## <a name="example-2---deep-insert"></a><span data-ttu-id="29300-139">Beispiel 2 – Tiefe einfügen</span><span class="sxs-lookup"><span data-stu-id="29300-139">Example 2 - Deep insert</span></span>
+## <a name="example-2---deep-insert"></a><span data-ttu-id="852ca-137">Beispiel 2 – Tiefe einfügen</span><span class="sxs-lookup"><span data-stu-id="852ca-137">Example 2 - Deep insert</span></span>
 
-#### <a name="request"></a><span data-ttu-id="29300-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="29300-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="852ca-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="852ca-138">Request</span></span>
 
-<span data-ttu-id="29300-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="29300-141">The following is an example of the request.</span></span>
+<span data-ttu-id="852ca-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="852ca-139">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -219,9 +219,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="29300-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="29300-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="852ca-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="852ca-140">Response</span></span>
 
-<span data-ttu-id="29300-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="29300-143">The following is an example of the response.</span></span>
+<span data-ttu-id="852ca-141">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="852ca-141">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -291,10 +291,15 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-put-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

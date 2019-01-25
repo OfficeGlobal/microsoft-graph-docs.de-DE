@@ -4,32 +4,32 @@ description: 'Die **plannerCategoryDescriptions**-Ressource stellt die beschreib
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4175692182d115e884642ef8f9956cc4db5dae2e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 33031dc3c688e1fefb34109cb0a4a303dbe1c183
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930943"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521236"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="bd5bf-105">plannerCategoryDescriptions-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="bd5bf-105">plannerCategoryDescriptions resource type</span></span>
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="2da89-105">plannerCategoryDescriptions-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="2da89-105">plannerCategoryDescriptions resource type</span></span>
 
-> <span data-ttu-id="bd5bf-106">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bd5bf-107">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-107">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bd5bf-p103">Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichnungen für die Kategorien dar, die für einen Plan definiert wurden. Sie gehört zum [planDetails](plannerplandetails.md)-Objekt. Es können bis zu 6 Kategorien definiert werden.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-p103">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined.</span></span> 
+<span data-ttu-id="2da89-p102">Die **plannerCategoryDescriptions**-Ressource stellt die beschreibenden Bezeichnungen für die Kategorien dar, die für einen Plan definiert wurden. Sie gehört zum [planDetails](plannerplandetails.md)-Objekt. Es können bis zu 6 Kategorien definiert werden.</span><span class="sxs-lookup"><span data-stu-id="2da89-p102">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="bd5bf-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="bd5bf-111">Properties</span></span>
-| <span data-ttu-id="bd5bf-112">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="bd5bf-112">Property</span></span>     | <span data-ttu-id="bd5bf-113">Typ</span><span class="sxs-lookup"><span data-stu-id="bd5bf-113">Type</span></span>   |<span data-ttu-id="bd5bf-114">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bd5bf-114">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2da89-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2da89-109">Properties</span></span>
+| <span data-ttu-id="2da89-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2da89-110">Property</span></span>     | <span data-ttu-id="2da89-111">Typ</span><span class="sxs-lookup"><span data-stu-id="2da89-111">Type</span></span>   |<span data-ttu-id="2da89-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2da89-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bd5bf-115">category1</span><span class="sxs-lookup"><span data-stu-id="bd5bf-115">category1</span></span>|<span data-ttu-id="bd5bf-116">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-116">String</span></span>|<span data-ttu-id="bd5bf-117">Mit Kategorie 1 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-117">The label associated with Category 1</span></span>|
-|<span data-ttu-id="bd5bf-118">category2</span><span class="sxs-lookup"><span data-stu-id="bd5bf-118">category2</span></span>|<span data-ttu-id="bd5bf-119">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-119">String</span></span>|<span data-ttu-id="bd5bf-120">Mit Kategorie 2 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-120">The label associated with Category 2</span></span>|
-|<span data-ttu-id="bd5bf-121">category3</span><span class="sxs-lookup"><span data-stu-id="bd5bf-121">category3</span></span>|<span data-ttu-id="bd5bf-122">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-122">String</span></span>|<span data-ttu-id="bd5bf-123">Mit Kategorie 3 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-123">The label associated with Category 3</span></span>|
-|<span data-ttu-id="bd5bf-124">category4</span><span class="sxs-lookup"><span data-stu-id="bd5bf-124">category4</span></span>|<span data-ttu-id="bd5bf-125">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-125">String</span></span>|<span data-ttu-id="bd5bf-126">Mit Kategorie 4 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-126">The label associated with Category 4</span></span>|
-|<span data-ttu-id="bd5bf-127">category5</span><span class="sxs-lookup"><span data-stu-id="bd5bf-127">category5</span></span>|<span data-ttu-id="bd5bf-128">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-128">String</span></span>|<span data-ttu-id="bd5bf-129">Mit Kategorie 5 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-129">The label associated with Category 5</span></span>|
-|<span data-ttu-id="bd5bf-130">category6</span><span class="sxs-lookup"><span data-stu-id="bd5bf-130">category6</span></span>|<span data-ttu-id="bd5bf-131">String</span><span class="sxs-lookup"><span data-stu-id="bd5bf-131">String</span></span>|<span data-ttu-id="bd5bf-132">Mit Kategorie 6 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-132">The label associated with Category 6</span></span>|
+|<span data-ttu-id="2da89-113">category1</span><span class="sxs-lookup"><span data-stu-id="2da89-113">category1</span></span>|<span data-ttu-id="2da89-114">String</span><span class="sxs-lookup"><span data-stu-id="2da89-114">String</span></span>|<span data-ttu-id="2da89-115">Mit Kategorie 1 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-115">The label associated with Category 1</span></span>|
+|<span data-ttu-id="2da89-116">category2</span><span class="sxs-lookup"><span data-stu-id="2da89-116">category2</span></span>|<span data-ttu-id="2da89-117">String</span><span class="sxs-lookup"><span data-stu-id="2da89-117">String</span></span>|<span data-ttu-id="2da89-118">Mit Kategorie 2 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-118">The label associated with Category 2</span></span>|
+|<span data-ttu-id="2da89-119">category3</span><span class="sxs-lookup"><span data-stu-id="2da89-119">category3</span></span>|<span data-ttu-id="2da89-120">String</span><span class="sxs-lookup"><span data-stu-id="2da89-120">String</span></span>|<span data-ttu-id="2da89-121">Mit Kategorie 3 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-121">The label associated with Category 3</span></span>|
+|<span data-ttu-id="2da89-122">category4</span><span class="sxs-lookup"><span data-stu-id="2da89-122">category4</span></span>|<span data-ttu-id="2da89-123">String</span><span class="sxs-lookup"><span data-stu-id="2da89-123">String</span></span>|<span data-ttu-id="2da89-124">Mit Kategorie 4 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-124">The label associated with Category 4</span></span>|
+|<span data-ttu-id="2da89-125">category5</span><span class="sxs-lookup"><span data-stu-id="2da89-125">category5</span></span>|<span data-ttu-id="2da89-126">String</span><span class="sxs-lookup"><span data-stu-id="2da89-126">String</span></span>|<span data-ttu-id="2da89-127">Mit Kategorie 5 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-127">The label associated with Category 5</span></span>|
+|<span data-ttu-id="2da89-128">category6</span><span class="sxs-lookup"><span data-stu-id="2da89-128">category6</span></span>|<span data-ttu-id="2da89-129">String</span><span class="sxs-lookup"><span data-stu-id="2da89-129">String</span></span>|<span data-ttu-id="2da89-130">Mit Kategorie 6 verknüpfte Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="2da89-130">The label associated with Category 6</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bd5bf-133">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="bd5bf-133">JSON representation</span></span>
-<span data-ttu-id="bd5bf-134">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="bd5bf-134">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2da89-131">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2da89-131">JSON representation</span></span>
+<span data-ttu-id="2da89-132">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2da89-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,10 +53,15 @@ ms.locfileid: "27930943"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerCategoryDescriptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannercategorydescriptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,53 +2,53 @@
 title: Liste privilegedRoleAssignmentRequests
 description: 'Eine Auflistung der PrivilegedRoleAssignmentRequest abzurufen. '
 localization_priority: Normal
-ms.openlocfilehash: 4bae072caeb54c513e9146fe36dfd100ce1b4360
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 06a6c66bcb566df0b6db5193bd753832bd9235a3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838703"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519983"
 ---
-# <a name="list-privilegedroleassignmentrequests"></a><span data-ttu-id="b2e24-103">Liste privilegedRoleAssignmentRequests</span><span class="sxs-lookup"><span data-stu-id="b2e24-103">List privilegedRoleAssignmentRequests</span></span>
+# <a name="list-privilegedroleassignmentrequests"></a><span data-ttu-id="ebe71-103">Liste privilegedRoleAssignmentRequests</span><span class="sxs-lookup"><span data-stu-id="ebe71-103">List privilegedRoleAssignmentRequests</span></span>
 
-> <span data-ttu-id="b2e24-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="b2e24-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b2e24-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b2e24-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b2e24-106">Eine Auflistung der [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)abzurufen.</span><span class="sxs-lookup"><span data-stu-id="b2e24-106">Retrieve a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span> 
+<span data-ttu-id="ebe71-104">Eine Auflistung der [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)abzurufen.</span><span class="sxs-lookup"><span data-stu-id="ebe71-104">Retrieve a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span> 
 
-<span data-ttu-id="b2e24-107">**Hinweis:** Dieser anfordernden Person muss mindestens eine rollenzuweisung für die Ressource verfügen.</span><span class="sxs-lookup"><span data-stu-id="b2e24-107">**Note:** This requester must have at least one role assignment on the resource.</span></span>
+<span data-ttu-id="ebe71-105">**Hinweis:** Dieser anfordernden Person muss mindestens eine rollenzuweisung für die Ressource verfügen.</span><span class="sxs-lookup"><span data-stu-id="ebe71-105">**Note:** This requester must have at least one role assignment on the resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b2e24-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b2e24-108">Permissions</span></span>
-<span data-ttu-id="b2e24-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2e24-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ebe71-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ebe71-106">Permissions</span></span>
+<span data-ttu-id="ebe71-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ebe71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b2e24-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b2e24-111">Permission type</span></span>                        | <span data-ttu-id="b2e24-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b2e24-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ebe71-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ebe71-109">Permission type</span></span>                        | <span data-ttu-id="ebe71-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ebe71-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b2e24-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b2e24-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b2e24-114">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b2e24-114">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b2e24-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b2e24-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2e24-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b2e24-116">Not supported.</span></span> |
-|<span data-ttu-id="b2e24-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b2e24-117">Application</span></span>                            | <span data-ttu-id="b2e24-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b2e24-118">Not supported.</span></span> |
+|<span data-ttu-id="ebe71-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ebe71-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ebe71-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ebe71-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ebe71-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ebe71-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebe71-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ebe71-114">Not supported.</span></span> |
+|<span data-ttu-id="ebe71-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ebe71-115">Application</span></span>                            | <span data-ttu-id="ebe71-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ebe71-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b2e24-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b2e24-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ebe71-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ebe71-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b2e24-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="b2e24-120">Optional query parameters</span></span>
-<span data-ttu-id="b2e24-121">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="b2e24-121">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ebe71-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="ebe71-118">Optional query parameters</span></span>
+<span data-ttu-id="ebe71-119">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="ebe71-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b2e24-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b2e24-122">Request headers</span></span>
-| <span data-ttu-id="b2e24-123">Name</span><span class="sxs-lookup"><span data-stu-id="b2e24-123">Name</span></span>      |<span data-ttu-id="b2e24-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b2e24-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ebe71-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ebe71-120">Request headers</span></span>
+| <span data-ttu-id="ebe71-121">Name</span><span class="sxs-lookup"><span data-stu-id="ebe71-121">Name</span></span>      |<span data-ttu-id="ebe71-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ebe71-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b2e24-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2e24-125">Authorization</span></span>  | <span data-ttu-id="b2e24-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b2e24-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ebe71-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebe71-123">Authorization</span></span>  | <span data-ttu-id="ebe71-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ebe71-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b2e24-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b2e24-128">Request body</span></span>
-<span data-ttu-id="b2e24-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b2e24-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ebe71-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ebe71-126">Request body</span></span>
+<span data-ttu-id="ebe71-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ebe71-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b2e24-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="b2e24-130">Response</span></span>
-<span data-ttu-id="b2e24-131">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="b2e24-131">If successful, this method returns a `200 OK` response code and a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ebe71-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="ebe71-128">Response</span></span>
+<span data-ttu-id="ebe71-129">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="ebe71-129">If successful, this method returns a `200 OK` response code and a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b2e24-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b2e24-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b2e24-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b2e24-133">Request</span></span>
-<span data-ttu-id="b2e24-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b2e24-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ebe71-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ebe71-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ebe71-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ebe71-131">Request</span></span>
+<span data-ttu-id="ebe71-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ebe71-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignmentrequest"
@@ -56,8 +56,8 @@ GET /privilegedRoleAssignmentRequests
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ```
-##### <a name="response"></a><span data-ttu-id="b2e24-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="b2e24-135">Response</span></span>
-<span data-ttu-id="b2e24-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b2e24-136">The following is an example of the response.</span></span> <span data-ttu-id="b2e24-137">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="b2e24-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b2e24-138">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b2e24-138">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ebe71-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="ebe71-133">Response</span></span>
+<span data-ttu-id="ebe71-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="ebe71-134">The following is an example of the response.</span></span> <span data-ttu-id="ebe71-135">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="ebe71-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ebe71-136">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ebe71-136">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +87,15 @@ Content-length: 304
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List privilegedRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

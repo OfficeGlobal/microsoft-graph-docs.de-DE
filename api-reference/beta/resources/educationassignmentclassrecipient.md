@@ -4,24 +4,24 @@ description: 'Innerhalb der assignment.assignTo-Eigenschaft verwendet. Bei Festl
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: d42be11f79441f802a0c8885ca5fd3817e744b04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4aa7e19c3f71f074bf9ed9b4910e6862d31f20b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422166"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529992"
 ---
-# <a name="educationassignmentclassrecipient-resource-type"></a><span data-ttu-id="a320d-104">Ressourcentyp educationAssignmentClassRecipient</span><span class="sxs-lookup"><span data-stu-id="a320d-104">educationAssignmentClassRecipient resource type</span></span>
+# <a name="educationassignmentclassrecipient-resource-type"></a><span data-ttu-id="cb376-104">Ressourcentyp educationAssignmentClassRecipient</span><span class="sxs-lookup"><span data-stu-id="cb376-104">educationAssignmentClassRecipient resource type</span></span>
 
-> <span data-ttu-id="a320d-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden.</span><span class="sxs-lookup"><span data-stu-id="a320d-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a320d-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a320d-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a320d-107">Innerhalb der [assignment.assignTo](educationassignment.md) -Eigenschaft verwendet.</span><span class="sxs-lookup"><span data-stu-id="a320d-107">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="a320d-108">Bei Festlegung auf Klasse Empfänger, jeder Student in der Klasse ein Objekt zum Absenden empfangen wird, wenn die Zuordnung veröffentlicht wird.</span><span class="sxs-lookup"><span data-stu-id="a320d-108">When set to class recipient, every student in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="cb376-105">Innerhalb der [assignment.assignTo](educationassignment.md) -Eigenschaft verwendet.</span><span class="sxs-lookup"><span data-stu-id="cb376-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="cb376-106">Bei Festlegung auf Klasse Empfänger, jeder Student in der Klasse ein Objekt zum Absenden empfangen wird, wenn die Zuordnung veröffentlicht wird.</span><span class="sxs-lookup"><span data-stu-id="cb376-106">When set to class recipient, every student in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="a320d-109">Diese Ressource wird eine Unterklasse der [EducationAssignmentRecipient](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="a320d-109">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="cb376-107">Diese Ressource wird eine Unterklasse der [EducationAssignmentRecipient](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="cb376-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a320d-110">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a320d-110">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="cb376-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cb376-108">Properties</span></span>
 
-<span data-ttu-id="a320d-111">Keine.</span><span class="sxs-lookup"><span data-stu-id="a320d-111">None.</span></span>
+<span data-ttu-id="cb376-109">Keine.</span><span class="sxs-lookup"><span data-stu-id="cb376-109">None.</span></span>
 
 
 <!-- {
@@ -40,10 +40,15 @@ ms.locfileid: "29422166"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignmentClassRecipient resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignmentclassrecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

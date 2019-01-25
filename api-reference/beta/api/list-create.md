@@ -5,30 +5,30 @@ ms.date: 09/11/2017
 title: Erstellen einer SharePoint-Liste
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 112a6a1a735bb527bdd2af7c64f02e4848b6e5f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a6798b57b0988d46cad939276c0bc9a6bbfc44c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963976"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519927"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="1c5fc-102">Eine neue Liste erstellen</span><span class="sxs-lookup"><span data-stu-id="1c5fc-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="80a20-102">Eine neue Liste erstellen</span><span class="sxs-lookup"><span data-stu-id="80a20-102">Create a new list</span></span>
 
-> <span data-ttu-id="1c5fc-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1c5fc-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c5fc-105">Erstellen Sie eine neue [Liste][] auf einer [Webseite][].</span><span class="sxs-lookup"><span data-stu-id="1c5fc-105">Create a new [list][] in a [site][].</span></span>
+<span data-ttu-id="80a20-103">Erstellen Sie eine neue [Liste][] auf einer [Webseite][].</span><span class="sxs-lookup"><span data-stu-id="80a20-103">Create a new [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1c5fc-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1c5fc-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="80a20-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="80a20-104">Permissions</span></span>
 
-<span data-ttu-id="1c5fc-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c5fc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="80a20-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80a20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="1c5fc-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1c5fc-109">Permission type</span></span>             | <span data-ttu-id="1c5fc-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1c5fc-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="80a20-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="80a20-107">Permission type</span></span>             | <span data-ttu-id="80a20-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="80a20-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="1c5fc-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1c5fc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1c5fc-112">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="1c5fc-112">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="1c5fc-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1c5fc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c5fc-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1c5fc-114">Not supported.</span></span>                              |
-| <span data-ttu-id="1c5fc-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1c5fc-115">Application</span></span>                            | <span data-ttu-id="1c5fc-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c5fc-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="80a20-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="80a20-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="80a20-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="80a20-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="80a20-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="80a20-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80a20-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="80a20-112">Not supported.</span></span>                              |
+| <span data-ttu-id="80a20-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="80a20-113">Application</span></span>                            | <span data-ttu-id="80a20-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80a20-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="1c5fc-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1c5fc-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80a20-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="80a20-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,13 +36,13 @@ ms.locfileid: "27963976"
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="1c5fc-118">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1c5fc-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="80a20-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="80a20-116">Request body</span></span>
 
-<span data-ttu-id="1c5fc-119">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [liste][]-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-119">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="80a20-117">Geben Sie im Anforderungstext eine JSON-Darstellung der zu erstellenden [liste][]-Ressource an.</span><span class="sxs-lookup"><span data-stu-id="80a20-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c5fc-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1c5fc-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="80a20-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="80a20-118">Example</span></span>
 
-<span data-ttu-id="1c5fc-121">Unten sehen Sie ein Beispiel, das die Erstellung einer neuen generischen Liste illustriert.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-121">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="80a20-119">Unten sehen Sie ein Beispiel, das die Erstellung einer neuen generischen Liste illustriert.</span><span class="sxs-lookup"><span data-stu-id="80a20-119">Here is an example of how to create a new generic list.</span></span>
 
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
@@ -68,14 +68,14 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="1c5fc-122">**Hinweis:** Benutzerdefinierte Spalten sind optional.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-122">**Note:** Custom columns are optional.</span></span>
+<span data-ttu-id="80a20-120">**Hinweis:** Benutzerdefinierte Spalten sind optional.</span><span class="sxs-lookup"><span data-stu-id="80a20-120">**Note:** Custom columns are optional.</span></span>
 
-<span data-ttu-id="1c5fc-123">Zusätzlich zu den hier angegebenen Spalten werden neue Listen mit der in den referenzierten Spalten definierten **Vorlage** erstellt.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-123">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="1c5fc-124">Wenn das **Listen**-Facette oder die **Vorlage** nicht angegeben ist, wird für die Liste standardmäßig die `genericList`Vorlage mit der Spalte _Titel_ verwendet.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-124">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+<span data-ttu-id="80a20-121">Zusätzlich zu den hier angegebenen Spalten werden neue Listen mit der in den referenzierten Spalten definierten **Vorlage** erstellt.</span><span class="sxs-lookup"><span data-stu-id="80a20-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="80a20-122">Wenn das **Listen**-Facette oder die **Vorlage** nicht angegeben ist, wird für die Liste standardmäßig die `genericList`Vorlage mit der Spalte _Titel_ verwendet.</span><span class="sxs-lookup"><span data-stu-id="80a20-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1c5fc-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="1c5fc-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="80a20-123">Antwort</span><span class="sxs-lookup"><span data-stu-id="80a20-123">Response</span></span>
 
-<span data-ttu-id="1c5fc-126">Wenn die Methode erfolgreich verläuft, wird ein [liste][]-Objekt im Antworttext der neu erstellten Liste zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-126">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+<span data-ttu-id="80a20-124">Wenn die Methode erfolgreich verläuft, wird ein [liste][]-Objekt im Antworttext der neu erstellten Liste zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="80a20-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -102,16 +102,21 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="1c5fc-127">**Hinweis:** Das „Response“-Objekt wurde zwecks besserer Übersichtlichkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-127">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="1c5fc-128">Der tatsächliche Aufruf gibt die Standardeigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="1c5fc-128">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="80a20-125">**Hinweis:** Das „Response“-Objekt wurde zwecks besserer Übersichtlichkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="80a20-125">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="80a20-126">Der tatsächliche Aufruf gibt die Standardeigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="80a20-126">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
