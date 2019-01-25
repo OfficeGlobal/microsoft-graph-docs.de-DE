@@ -4,34 +4,34 @@ description: Abrufen der Liste von Zeitzonen, die für den Benutzer unterstützt
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f54457169b4f4f214488727fa94b7402b0f33724
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 27e5276b3aea656e771a47fee3ff04183147facf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963563"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526998"
 ---
-# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="71f2c-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="71f2c-103">outlookUser: supportedTimeZones</span></span>
+# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="c43a1-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="c43a1-103">outlookUser: supportedTimeZones</span></span>
 
-> <span data-ttu-id="71f2c-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="71f2c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="71f2c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="71f2c-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="71f2c-106">Abrufen der Liste von Zeitzonen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="71f2c-106">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="c43a1-104">Abrufen der Liste von Zeitzonen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="c43a1-104">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="71f2c-107">Sie können explizit angeben, dass Zeitzonen im Windows-Zeitzonenformat oder im [IANA-Format (Internet Assigned Numbers Authority)](https://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet) zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="71f2c-107">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="71f2c-108">Das Windows-Format ist die Standardeinstellung.</span><span class="sxs-lookup"><span data-stu-id="71f2c-108">The Windows format is the default.</span></span>
+<span data-ttu-id="c43a1-105">Sie können explizit angeben, dass Zeitzonen im Windows-Zeitzonenformat oder im [IANA-Format (Internet Assigned Numbers Authority)](https://www.iana.org/time-zones) (auch als Olson-Zeitzone bezeichnet) zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="c43a1-105">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="c43a1-106">Das Windows-Format ist die Standardeinstellung.</span><span class="sxs-lookup"><span data-stu-id="c43a1-106">The Windows format is the default.</span></span>
 
-<span data-ttu-id="71f2c-109">Beim Einrichten eines Outlook-Clients wählt der Benutzer die bevorzugte Zeitzone aus dieser unterstützten Liste aus.</span><span class="sxs-lookup"><span data-stu-id="71f2c-109">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="71f2c-110">Sie können anschließend die bevorzugte Zeitzone abrufen, indem Sie [die Postfacheinstellungen des Benutzers abrufen](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="71f2c-110">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="c43a1-107">Beim Einrichten eines Outlook-Clients wählt der Benutzer die bevorzugte Zeitzone aus dieser unterstützten Liste aus.</span><span class="sxs-lookup"><span data-stu-id="c43a1-107">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="c43a1-108">Sie können anschließend die bevorzugte Zeitzone abrufen, indem Sie [die Postfacheinstellungen des Benutzers abrufen](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="c43a1-108">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="71f2c-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="71f2c-111">Permissions</span></span>
-<span data-ttu-id="71f2c-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="71f2c-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c43a1-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c43a1-109">Permissions</span></span>
+<span data-ttu-id="c43a1-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c43a1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="71f2c-114">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="71f2c-114">Permission type</span></span>      | <span data-ttu-id="71f2c-115">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="71f2c-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c43a1-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c43a1-112">Permission type</span></span>      | <span data-ttu-id="c43a1-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c43a1-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="71f2c-116">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="71f2c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="71f2c-117">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="71f2c-117">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="71f2c-118">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="71f2c-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71f2c-119">User.Read</span><span class="sxs-lookup"><span data-stu-id="71f2c-119">User.Read</span></span>    |
-|<span data-ttu-id="71f2c-120">Anwendung</span><span class="sxs-lookup"><span data-stu-id="71f2c-120">Application</span></span> | <span data-ttu-id="71f2c-121">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="71f2c-121">User.Read.All</span></span> |
+|<span data-ttu-id="c43a1-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c43a1-114">Delegated (work or school account)</span></span> | <span data-ttu-id="c43a1-115">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="c43a1-115">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="c43a1-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c43a1-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c43a1-117">User.Read</span><span class="sxs-lookup"><span data-stu-id="c43a1-117">User.Read</span></span>    |
+|<span data-ttu-id="c43a1-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c43a1-118">Application</span></span> | <span data-ttu-id="c43a1-119">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="c43a1-119">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="71f2c-122">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="71f2c-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c43a1-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c43a1-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedTimeZones
@@ -41,26 +41,26 @@ GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStan
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="71f2c-123">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="71f2c-123">Function parameters</span></span>
-| <span data-ttu-id="71f2c-124">Parameter</span><span class="sxs-lookup"><span data-stu-id="71f2c-124">Parameter</span></span>      | <span data-ttu-id="71f2c-125">Typ</span><span class="sxs-lookup"><span data-stu-id="71f2c-125">Type</span></span>    | <span data-ttu-id="71f2c-126">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="71f2c-126">Description</span></span>|
+## <a name="function-parameters"></a><span data-ttu-id="c43a1-121">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="c43a1-121">Function parameters</span></span>
+| <span data-ttu-id="c43a1-122">Parameter</span><span class="sxs-lookup"><span data-stu-id="c43a1-122">Parameter</span></span>      | <span data-ttu-id="c43a1-123">Typ</span><span class="sxs-lookup"><span data-stu-id="c43a1-123">Type</span></span>    | <span data-ttu-id="c43a1-124">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c43a1-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="71f2c-127">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="71f2c-127">TimeZoneStandard</span></span>  | <span data-ttu-id="71f2c-128">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="71f2c-128">String</span></span>  | <span data-ttu-id="71f2c-129">Ein Zeitzonenformat.</span><span class="sxs-lookup"><span data-stu-id="71f2c-129">A time zone format.</span></span> <span data-ttu-id="71f2c-130">Unterstützte Werte sind: `Windows` und `Iana`.</span><span class="sxs-lookup"><span data-stu-id="71f2c-130">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="71f2c-131">Optional.</span><span class="sxs-lookup"><span data-stu-id="71f2c-131">Optional.</span></span> |
+| <span data-ttu-id="c43a1-125">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="c43a1-125">TimeZoneStandard</span></span>  | <span data-ttu-id="c43a1-126">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c43a1-126">String</span></span>  | <span data-ttu-id="c43a1-127">Ein Zeitzonenformat.</span><span class="sxs-lookup"><span data-stu-id="c43a1-127">A time zone format.</span></span> <span data-ttu-id="c43a1-128">Unterstützte Werte sind: `Windows` und `Iana`.</span><span class="sxs-lookup"><span data-stu-id="c43a1-128">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="c43a1-129">Optional.</span><span class="sxs-lookup"><span data-stu-id="c43a1-129">Optional.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="71f2c-132">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="71f2c-132">Request headers</span></span>
-| <span data-ttu-id="71f2c-133">Name</span><span class="sxs-lookup"><span data-stu-id="71f2c-133">Name</span></span>       | <span data-ttu-id="71f2c-134">Typ</span><span class="sxs-lookup"><span data-stu-id="71f2c-134">Type</span></span> | <span data-ttu-id="71f2c-135">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="71f2c-135">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c43a1-130">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c43a1-130">Request headers</span></span>
+| <span data-ttu-id="c43a1-131">Name</span><span class="sxs-lookup"><span data-stu-id="c43a1-131">Name</span></span>       | <span data-ttu-id="c43a1-132">Typ</span><span class="sxs-lookup"><span data-stu-id="c43a1-132">Type</span></span> | <span data-ttu-id="c43a1-133">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c43a1-133">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="71f2c-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="71f2c-136">Authorization</span></span>  | <span data-ttu-id="71f2c-137">string</span><span class="sxs-lookup"><span data-stu-id="71f2c-137">string</span></span>  | <span data-ttu-id="71f2c-p106">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="71f2c-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c43a1-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="c43a1-134">Authorization</span></span>  | <span data-ttu-id="c43a1-135">string</span><span class="sxs-lookup"><span data-stu-id="c43a1-135">string</span></span>  | <span data-ttu-id="c43a1-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c43a1-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="71f2c-140">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="71f2c-140">Request body</span></span>
-<span data-ttu-id="71f2c-141">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="71f2c-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c43a1-138">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c43a1-138">Request body</span></span>
+<span data-ttu-id="c43a1-139">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c43a1-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="71f2c-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="71f2c-142">Response</span></span>
-<span data-ttu-id="71f2c-143">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Sammlung von [timeZoneInformation](../resources/timezoneinformation.md)-Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="71f2c-143">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c43a1-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="c43a1-140">Response</span></span>
+<span data-ttu-id="c43a1-141">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Sammlung von [timeZoneInformation](../resources/timezoneinformation.md)-Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="c43a1-141">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="71f2c-144">Beispiel</span><span class="sxs-lookup"><span data-stu-id="71f2c-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c43a1-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c43a1-142">Example</span></span>
 
-##### <a name="request-1"></a><span data-ttu-id="71f2c-145">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="71f2c-145">Request 1</span></span>
-<span data-ttu-id="71f2c-146">Im folgenden Beispiel wird der `timeZoneStandard`-Parameter nicht angegeben, und es wird eine Liste unterstützter Zeitzonen abgerufen, die im Windows-Zeitzonenformat dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="71f2c-146">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
+##### <a name="request-1"></a><span data-ttu-id="c43a1-143">Anforderung 1</span><span class="sxs-lookup"><span data-stu-id="c43a1-143">Request 1</span></span>
+<span data-ttu-id="c43a1-144">Im folgenden Beispiel wird der `timeZoneStandard`-Parameter nicht angegeben, und es wird eine Liste unterstützter Zeitzonen abgerufen, die im Windows-Zeitzonenformat dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="c43a1-144">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_default"
@@ -69,8 +69,8 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="71f2c-147">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="71f2c-147">Response 1</span></span>
-<span data-ttu-id="71f2c-148">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="71f2c-148">Here is an example of the response.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="c43a1-145">Antwort 1</span><span class="sxs-lookup"><span data-stu-id="c43a1-145">Response 1</span></span>
+<span data-ttu-id="c43a1-146">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c43a1-146">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -105,8 +105,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="71f2c-149">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="71f2c-149">Request 2</span></span>
-<span data-ttu-id="71f2c-150">Im folgenden Beispiel wird `Iana` für den `TimeZoneStandard`-Parameter angegeben und die Liste der unterstützten Zeitzonen abgerufen, die im IANA-Format dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="71f2c-150">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
+##### <a name="request-2"></a><span data-ttu-id="c43a1-147">Anforderung 2</span><span class="sxs-lookup"><span data-stu-id="c43a1-147">Request 2</span></span>
+<span data-ttu-id="c43a1-148">Im folgenden Beispiel wird `Iana` für den `TimeZoneStandard`-Parameter angegeben und die Liste der unterstützten Zeitzonen abgerufen, die im IANA-Format dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="c43a1-148">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -117,8 +117,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="71f2c-151">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="71f2c-151">Response 2</span></span>
-<span data-ttu-id="71f2c-152">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="71f2c-152">Here is an example of the response.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="c43a1-149">Antwort 2</span><span class="sxs-lookup"><span data-stu-id="c43a1-149">Response 2</span></span>
+<span data-ttu-id="c43a1-150">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c43a1-150">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -158,10 +158,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: supportedTimeZones",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-supportedtimezones.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

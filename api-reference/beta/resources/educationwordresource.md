@@ -4,28 +4,28 @@ description: 'Eine Unterklasse der EducationResource. Hierbei handelt es sich um
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: d67f77774b9d3c428fcfd98006115f0459989fdc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d92b993ab920a894590346bf5fde0ff86c73e8d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948317"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529670"
 ---
-# <a name="educationwordresource-resource-type"></a><span data-ttu-id="8365a-105">Ressourcentyp educationWordResource</span><span class="sxs-lookup"><span data-stu-id="8365a-105">educationWordResource resource type</span></span>
+# <a name="educationwordresource-resource-type"></a><span data-ttu-id="115ca-105">Ressourcentyp educationWordResource</span><span class="sxs-lookup"><span data-stu-id="115ca-105">educationWordResource resource type</span></span>
 
-> <span data-ttu-id="8365a-106">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="8365a-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8365a-107">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8365a-107">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8365a-108">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="8365a-108">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="8365a-109">Hierbei handelt es sich um eine Word-Dokument-Ressource.</span><span class="sxs-lookup"><span data-stu-id="8365a-109">This is a Word document resource.</span></span> <span data-ttu-id="8365a-110">Die Word-Datei muss im Verzeichnis **FileResource** zugeordnet, die Zuordnung oder die Übermittlung hochgeladen werden.</span><span class="sxs-lookup"><span data-stu-id="8365a-110">The Word file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
+<span data-ttu-id="115ca-106">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="115ca-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="115ca-107">Hierbei handelt es sich um eine Word-Dokument-Ressource.</span><span class="sxs-lookup"><span data-stu-id="115ca-107">This is a Word document resource.</span></span> <span data-ttu-id="115ca-108">Die Word-Datei muss im Verzeichnis **FileResource** zugeordnet, die Zuordnung oder die Übermittlung hochgeladen werden.</span><span class="sxs-lookup"><span data-stu-id="115ca-108">The Word file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="8365a-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8365a-111">Properties</span></span>
-| <span data-ttu-id="8365a-112">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8365a-112">Property</span></span>     | <span data-ttu-id="8365a-113">Typ</span><span class="sxs-lookup"><span data-stu-id="8365a-113">Type</span></span>   |<span data-ttu-id="8365a-114">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8365a-114">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="115ca-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="115ca-109">Properties</span></span>
+| <span data-ttu-id="115ca-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="115ca-110">Property</span></span>     | <span data-ttu-id="115ca-111">Typ</span><span class="sxs-lookup"><span data-stu-id="115ca-111">Type</span></span>   |<span data-ttu-id="115ca-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="115ca-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8365a-115">fileUrl</span><span class="sxs-lookup"><span data-stu-id="8365a-115">fileUrl</span></span>|<span data-ttu-id="8365a-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="8365a-116">String</span></span>|<span data-ttu-id="8365a-117">Speicherort der Datei auf dem Datenträger.</span><span class="sxs-lookup"><span data-stu-id="8365a-117">Location of the file on disk.</span></span>|
+|<span data-ttu-id="115ca-113">fileUrl</span><span class="sxs-lookup"><span data-stu-id="115ca-113">fileUrl</span></span>|<span data-ttu-id="115ca-114">String</span><span class="sxs-lookup"><span data-stu-id="115ca-114">String</span></span>|<span data-ttu-id="115ca-115">Speicherort der Datei auf dem Datenträger.</span><span class="sxs-lookup"><span data-stu-id="115ca-115">Location of the file on disk.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8365a-118">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8365a-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="115ca-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="115ca-116">JSON representation</span></span>
 
-<span data-ttu-id="8365a-119">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8365a-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="115ca-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="115ca-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,10 +44,15 @@ ms.locfileid: "27948317"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationWordResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationwordresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

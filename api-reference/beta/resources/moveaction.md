@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
-ms.openlocfilehash: 40049b506c72af5aacddf461b22e1ddd280d7ad4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aa20816165ed4f41e8b89af106e3f781b1be8dd7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530083"
 ---
-# <a name="moveaction-resource-type"></a><span data-ttu-id="81527-102">MoveAction-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="81527-102">MoveAction resource type</span></span>
+# <a name="moveaction-resource-type"></a><span data-ttu-id="16e5c-102">MoveAction-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="16e5c-102">MoveAction resource type</span></span>
 
-> <span data-ttu-id="81527-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="81527-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="81527-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="81527-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="81527-105">Wenn eine **MoveAction**-Ressource für eine [ **ItemActivity**][activity] vorhanden ist, bedeutet dies, dass die Aktivität ein Element verschoben hat.</span><span class="sxs-lookup"><span data-stu-id="81527-105">The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.</span></span>
+<span data-ttu-id="16e5c-103">Wenn eine **MoveAction**-Ressource für eine [ **ItemActivity**][activity] vorhanden ist, bedeutet dies, dass die Aktivität ein Element verschoben hat.</span><span class="sxs-lookup"><span data-stu-id="16e5c-103">The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="81527-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="81527-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="16e5c-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="16e5c-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,21 +34,26 @@ ms.locfileid: "27852899"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="81527-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="81527-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="16e5c-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="16e5c-105">Properties</span></span>
 
-| <span data-ttu-id="81527-108">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="81527-108">Property name</span></span> | <span data-ttu-id="81527-109">Typ</span><span class="sxs-lookup"><span data-stu-id="81527-109">Type</span></span>   | <span data-ttu-id="81527-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="81527-110">Description</span></span>
+| <span data-ttu-id="16e5c-106">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="16e5c-106">Property name</span></span> | <span data-ttu-id="16e5c-107">Typ</span><span class="sxs-lookup"><span data-stu-id="16e5c-107">Type</span></span>   | <span data-ttu-id="16e5c-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="16e5c-108">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="81527-111">from</span><span class="sxs-lookup"><span data-stu-id="81527-111">from</span></span>          | <span data-ttu-id="81527-112">string</span><span class="sxs-lookup"><span data-stu-id="81527-112">string</span></span> | <span data-ttu-id="81527-113">Der Name des Speicherorts aus dem das Element verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="81527-113">The name of the location the item was moved from.</span></span>
-| <span data-ttu-id="81527-114">to</span><span class="sxs-lookup"><span data-stu-id="81527-114">to</span></span>            | <span data-ttu-id="81527-115">string</span><span class="sxs-lookup"><span data-stu-id="81527-115">string</span></span> | <span data-ttu-id="81527-116">Der Name des Speicherorts in den das Element verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="81527-116">The name of the location the item was moved to.</span></span>
+| <span data-ttu-id="16e5c-109">from</span><span class="sxs-lookup"><span data-stu-id="16e5c-109">from</span></span>          | <span data-ttu-id="16e5c-110">string</span><span class="sxs-lookup"><span data-stu-id="16e5c-110">string</span></span> | <span data-ttu-id="16e5c-111">Der Name des Speicherorts aus dem das Element verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="16e5c-111">The name of the location the item was moved from.</span></span>
+| <span data-ttu-id="16e5c-112">to</span><span class="sxs-lookup"><span data-stu-id="16e5c-112">to</span></span>            | <span data-ttu-id="16e5c-113">string</span><span class="sxs-lookup"><span data-stu-id="16e5c-113">string</span></span> | <span data-ttu-id="16e5c-114">Der Name des Speicherorts in den das Element verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="16e5c-114">The name of the location the item was moved to.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="81527-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="81527-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="16e5c-115">Hinweise</span><span class="sxs-lookup"><span data-stu-id="16e5c-115">Remarks</span></span>
 
-<span data-ttu-id="81527-118">Elementaktivitätsdatensätze sind zurzeit nur für SharePoint und OneDrive for Business verfügbar.</span><span class="sxs-lookup"><span data-stu-id="81527-118">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="16e5c-116">Elementaktivitätsdatensätze sind zurzeit nur für SharePoint und OneDrive for Business verfügbar.</span><span class="sxs-lookup"><span data-stu-id="16e5c-116">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The MoveAction object provides information about an activity that moved an item.",
   "keywords": "activities,activity,action,move,moved",
   "section": "documentation",
-  "tocPath": "Resources/MoveAction"
-} -->
+  "tocPath": "Resources/MoveAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/moveaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
