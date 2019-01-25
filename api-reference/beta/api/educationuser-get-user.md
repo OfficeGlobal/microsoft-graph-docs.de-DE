@@ -4,16 +4,16 @@ description: Abrufen des einfachen Verzeichnis-**Benutzers**, der diesem **educa
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f0c731130abb88a2eef4aec0343fb0c9d3bdddd2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1212057af13057f691e5721bd21a351e59a82511
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984836"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526235"
 ---
 # <a name="get-user"></a>Benutzer abrufen
 
-> **Wichtig:** Die APIs der /beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen des einfachen Verzeichnis-**Benutzers**, der diesem **educationUser** entspricht.
 
@@ -35,7 +35,7 @@ GET /education/me/user
 GET /education/users/{id}/user
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -88,10 +88,15 @@ Content-length: 491
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationuser-get-user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
