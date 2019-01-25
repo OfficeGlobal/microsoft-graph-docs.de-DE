@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 17b9b8731a2b4e4ce39fa2ee10535bcb302f1be3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952349"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514803"
 ---
 # <a name="site-resource-type"></a>Site-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **site**-Ressource stellt Metadaten und Beziehungen für eine SharePoint-Website bereit.
 
@@ -135,11 +135,18 @@ Die **site**-Ressource wird von [ **baseItem**](baseitem.md) abgeleitet und erbt
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
