@@ -1,30 +1,30 @@
 ---
-title: 'Kalender: GetSchedule'
-description: Rufen Sie die Frei/Gebucht-Verfügbarkeitsinformationen für eine Auflistung von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum.
+title: 'Kalender: getSchedule'
+description: Rufen Sie die Frei/Gebucht-Informationen zur Verfügbarkeit von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum ab.
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0c2f6a54664242831d7fd3f2ddfc6a44984674e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956955"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530027"
 ---
-# <a name="calendar-getschedule"></a>Kalender: GetSchedule
+# <a name="calendar-getschedule"></a>Kalender: getSchedule
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Frei/Gebucht-Verfügbarkeitsinformationen für eine Auflistung von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum.
+Rufen Sie die Frei/Gebucht-Informationen zur Verfügbarkeit von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum ab.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendar.Read Calendar.ReadWrite    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Calendar.Read, Calendar.ReadWrite    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-|Anwendung | Calendar.Read Calendar.ReadWrite |
+|Anwendung | Calendar.Read, Calendar.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
-| Content-Type  | string | Die Art der Daten im Textkörper einer Entität, die Application/Json ist. Erforderlich.   |
+| Content-Type  | Zeichenfolge | Die Art der Daten im Textkörper einer Entität, die Anwendung/JSON ist. Erforderlich.  |
 | Prefer: outlook.timezone | string | Verwenden Sie dies, um die Zeitzone für die Anfangs- und Endzeiten in der Antwort anzugeben. Wenn nicht angegeben, werden diese Zeitwerte in UTC zurückgegeben. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -45,17 +45,17 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Zeichenfolge|Stellt die Dauer der ein Zeitintervall in einer **AvailabilityView** in der Antwort. Der Standardwert ist 30 Minuten, mindestens 6, Maximum liegt bei 1440. Optional.|
-|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, die die Periode endet.|
-|Zeitpläne|Collection von Objekten des Typs „String“|Eine Auflistung von SMTP-Adressen von Benutzern, Verteilerlisten oder Ressourcen zum Abrufen von Verfügbarkeitsinformationen für.|
-|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Das Datum, Uhrzeit und Zeitzone, die der Zeitraum beginnt.|
+|availabilityViewInterval|String|Steht für die Dauer eines Zeitraums in einem **availabilityView**-Objekt in der Antwort. Die Standardeinstellung beträgt 30 Minuten, minimale Dauer liegt bei 6, maximale Dauer liegt bei 1440 Minuten. Optional.|
+|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für das Ende des Zeitraums.|
+|Terminpläne|Zeichenfolgenauflistung|Eine Sammlung der SMTP-Adressen von Benutzern, Verteilerlisten oder Ressourcen, für die Verfügbarkeitsinformationen abgerufen werden sollen.|
+|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Datum, Uhrzeit und Zeitzone für den Beginn des Zeitraums.|
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von [ScheduleInformation](../resources/scheduleinformation.md) -Objekten für jedes Objekt in der `schedules` Parameter.
+Bei erfolgreicher Ausführung gibt diese Methode den Antwortcode `200 OK` und eine Sammlung von [scheduleInformation](../resources/scheduleinformation.md)-Objekten für jedes Objekt im `schedules`-Parameter zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Das folgende Beispiel ruft die Verfügbarkeitsinformationen für zwei Benutzer für den angegebenen Datum, Uhrzeit und Zeitzone ab.
+Im folgenden Beispiel werden die Verfügbarkeitsinformationen für zwei Benutzer für das angegebene Datum, die angegebene Uhrzeit und Zeitzone abgerufen.
 
 <!-- {
   "blockType": "ignored",
@@ -232,10 +232,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-getschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

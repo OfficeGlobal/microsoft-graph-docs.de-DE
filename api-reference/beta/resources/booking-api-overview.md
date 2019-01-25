@@ -1,35 +1,35 @@
 ---
-title: Verwenden Sie die Microsoft-Buchungen API in Microsoft Graph
+title: Verwenden der Microsoft Bookings-API in Microsoft Graph
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529859"
 ---
-# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Verwenden Sie die Microsoft-Buchungen API in Microsoft Graph
+# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Verwenden der Microsoft Bookings-API in Microsoft Graph
 
- > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Microsoft Bookings können Kleinunternehmen Besitzer Kunden Buchungen und Informationen mit minimalem Setup zu verwalten. Eigentümer eines Unternehmens kann eine oder mehrere Unternehmen mit jedem Business bietet eine Reihe von Diensten erstellen. Der Besitzer kann Einrichten von Mitarbeitern, und geben Sie die Dienste, die jeder Mitarbeiter durchführt. Ein Kunde kann einen Termin für einen bestimmten Dienst in dieses Unternehmen in einer app online oder mobilen Buch. Buchungen stellt sicher, dass, die die Zeit des Termins für die Business, Mitarbeitern und Kunden beteiligten aktualisiert wird.
+Mit Microsoft Bookings können Kleinunternehmer mit geringem Aufwand Kundenbuchungen und -informationen verwalten. Ein Geschäftsinhaber kann ein oder mehrere Unternehmen erstellen, wobei jedes Unternehmen ein eigenes Angebot an Diensten beinhaltet. Der Geschäftsinhaber kann Mitarbeiter einrichten und Dienste angeben, die jeder Mitarbeiter ausführt. Ein Kunde kann einen Termin für einen bestimmten Dienst in diesem Unternehmen entweder online oder über eine mobile App buchen. Mit Bookings wird sichergestellt, dass der Termin für das Unternehmen, die Mitarbeiter und die jeweils involvierten Kunden auf dem neuesten Stand ist.
 
-Programmgesteuertes, umfasst eine [BookingBusiness](bookingbusiness.md) in der Buchungen API die folgenden Objekte:
+Ein [bookingBusiness](bookingbusiness.md)-Objekt umfasst programmgesteuert in der Bookings-API die folgenden Objekte:
  
-- Ein oder mehrere [BookingStaffMember](bookingstaffmember.md) -Objekte
-- Ein oder mehrere [BookingService](bookingservice.md) -Objekte
-- Eine Reihe von [BookingAppointment](bookingappointment.md) Instanzen
-- Eine Reihe von [BookingCustomer](bookingcustomer.md) -Objekten
+- Ein oder mehrere [bookingStaffMember](bookingstaffmember.md)-Objekte
+- Ein oder mehrere [bookingservice](bookingservice.md)-Objekte
+- Mehrere [bookingAppointment](bookingappointment.md)-Instanzen
+- Mehrere [bookingCustomer](bookingcustomer.md)-Objekte
 
-## <a name="using-the-bookings-rest-api"></a>Verwenden die Buchungen REST-API
+## <a name="using-the-bookings-rest-api"></a>Verwenden der Bookings-REST-API
 
-Lernen Sie die folgenden Schritte vor dem Buchen Kundenterminen für ein Unternehmen beim ersten. Stellen Sie sicher, dass Sie die entsprechenden [Zugriffstoken](/graph/auth-overview) für die entsprechenden Vorgänge angeben.
+Führen Sie die folgenden Schritte aus, bevor Sie zum ersten Mal Kundentermine für ein Unternehmen buchen. Stellen Sie sicher, dass Sie die entsprechenden [Zugriffstoken](/graph/auth-overview) für die entsprechenden Vorgänge bereitstellen.
 
-1. Stellen Sie sicher, dass das Unternehmen ein [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) -Abonnement verfügt.
-2. Erstellen einer neuen **BookingBusiness** durch Senden einer POST-Operation auf die Entität. Mindestens sollten Sie einen Namen für die neue Business angeben, die Kunden angezeigt werden:<!-- { "blockType": "ignored" } -->
+1. Stellen Sie sicher, dass das Unternehmen über ein [Office 365 Business Premium](https://products.office.com/de-DE/business/office-365-business-premium)-Abonnement verfügt.
+2. Erstellen Sie ein neues **bookingBusiness**-Objekt, indem Sie einen POST-Vorgang an die Entitätenmenge senden. Sie sollten mindestens einen Namen für das neue Unternehmen angeben, das Kunden angezeigt wird: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -39,9 +39,9 @@ Content-Type: application/json
     "displayName":"Contoso"
 }
 ```
-Verwenden Sie die **Id** -Eigenschaft des neuen **BookingBusiness** in der POST-Antwort zurückgegeben Business Einstellungen [Anpassen](../api/bookingbusiness-update.md) möchten, und fügen Sie Mitarbeiter und Dienste für das Unternehmen.
+Verwenden Sie die **id**-Eigenschaft des neuen **bookingBusiness**-Objekts, das in der POST-Antwort zurückgegeben wurde, um mit dem [Anpassen](../api/bookingbusiness-update.md) der Unternehmenseinstellungen fortzufahren, und fügen Sie Mitarbeiter und Dienste für das Unternehmen hinzu.
 
-3. Fügen Sie einzelne Mitarbeiter für das Unternehmen:<!-- { "blockType": "ignored" } -->
+3. Fügen Sie einzelne Mitarbeiter für das Unternehmen hinzu: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +53,7 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. Definieren Sie jeden Dienst, der vom Unternehmen angeboten:<!-- { "blockType": "ignored" } -->
+4. Definieren Sie jeden Dienst, der vom Unternehmen angeboten wird: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,13 +63,13 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. Veröffentlichen der scheduling Seite für das Unternehmen zu Kunden und Unternehmer buchen Termine vornehmen zu lassen:<!-- { "blockType": "ignored" } -->
+5. Veröffentlichen Sie die Seite für die Terminvergabe für das Unternehmen, damit Kunden und Betreiber des Unternehmens Termine buchen können: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Im Allgemeinen so Listen Sie alle buchen Unternehmen in Office 365-Mandanten:<!-- { "blockType": "ignored" } -->
+So können Sie generell alle Unternehmen mit Bookings im Office 365-Mandanten auflisten: <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -77,22 +77,30 @@ Authorization: Bearer {access token}
 
 ## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle 
 
-Die folgende Tabelle enthält die allgemeine Vorgänge für ein Unternehmen in der Buchungen-API.
+Die folgende Tabelle enthält die allgemeinen Vorgänge für ein Unternehmen in der Bookings-API.
 
 | Anwendungsfälle        | REST-Ressourcen | Siehe auch |
 |:---------------|:--------|:----------|
-| Erstellen, abrufen, aktualisieren oder Löschen eines Unternehmens | [bookingBusiness](bookingbusiness.md) | [Methoden des bookingBusiness](bookingbusiness.md#methods) |
-| Aktualisieren der scheduling-Richtlinie | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Aktualisieren einer bookingBusiness](../api/bookingbusiness-update.md) |
-| Hinzufügen, abrufen, aktualisieren oder Löschen von Mitarbeitern | [bookingStaffMember](bookingstaffmember.md) | [Methoden des bookingStaffMember](bookingstaffmember.md#methods)  |
-| Hinzufügen, abrufen, aktualisieren oder Löschen von Diensten | [bookingService](bookingservice.md) | [Methoden des bookingService](bookingservice.md#methods)  |
-| Veröffentlichen oder Aufheben der Veröffentlichung der Seite scheduling | [bookingBusiness](bookingbusiness.md) | [Veröffentlichen](../api/bookingbusiness-publish.md) <br> [Aufheben der Veröffentlichung](../api/bookingbusiness-unpublish.md) |
-| Erstellen, abrufen, aktualisieren, löschen oder Abbrechen eines Termins | [bookingAppointment](bookingappointment.md) | [Methoden des bookingAppointment](bookingappointment.md#methods)  |
-| Abrufen von Terminen in einen bestimmten Datumsbereich | [bookingBusiness](bookingbusiness.md) | [Liste Buchungen calendarView](../api/bookingbusiness-list-calendarview.md) |
-| Währung abrufen | [bookingCurrency](bookingcurrency.md) | [Methoden des bookingCurrency](bookingcurrency.md#methods) |
+| Erstellen, Abrufen, Aktualisieren oder Löschen eines Unternehmens | [bookingBusiness](bookingbusiness.md) | [Methoden von bookingBusiness](bookingbusiness.md#methods) |
+| Aktualisieren der Richtlinie für die Terminvergabe | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Aktualisieren von bookingBusiness](../api/bookingbusiness-update.md) |
+| Hinzufügen, Abrufen, Aktualisieren oder Löschen von Mitarbeitern | [bookingStaffMember](bookingstaffmember.md) | [Methoden von bookingStaffMember](bookingstaffmember.md#methods)  |
+| Hinzufügen, Abrufen, Aktualisieren oder Löschen von Diensten | [bookingService](bookingservice.md) | [Methoden von bookingService](bookingservice.md#methods)  |
+| Veröffentlichen oder Aufheben der Veröffentlichung der Seite für die Terminvergabe | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness-publish.md) <br> [unpublish](../api/bookingbusiness-unpublish.md) |
+| Erstellen, Abrufen, Aktualisieren, Löschen oder Absagen von Terminen | [bookingAppointment](bookingappointment.md) | [Methoden von bookingAppointment](bookingappointment.md#methods)  |
+| Abrufen von Terminen in einem Datumsbereich | [bookingBusiness](bookingbusiness.md) | [Auflisten von Bookings für calendarView](../api/bookingbusiness-list-calendarview.md) |
+| Abrufen der Währung | [bookingCurrency](bookingcurrency.md) | [Methoden von bookingCurrency](bookingcurrency.md#methods) |
 
 
 ## <a name="see-also"></a>Siehe auch
 
 - Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
-- Finden Sie unter [wie einige unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/graph/graph/examples#partners).
-- Erfahren Sie, wie [Berechtigungen](/graph/permissions-reference) in Microsoft Graph entscheiden.
+- Sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/graph/graph/examples#partners).
+- Erfahren Sie, wie [Berechtigungen](/graph/permissions-reference) in Microsoft Graph ausgewählt werden können.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
