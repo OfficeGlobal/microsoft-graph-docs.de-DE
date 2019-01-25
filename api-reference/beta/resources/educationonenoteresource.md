@@ -4,28 +4,28 @@ description: 'Eine Unterklasse der EducationResource. Dies ist den Speicherort d
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b10bef551cdc2dd29a8a20c69d2c4657ee66af4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927919"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521418"
 ---
-# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="01f0d-104">Ressourcentyp educationOneNoteResource</span><span class="sxs-lookup"><span data-stu-id="01f0d-104">educationOneNoteResource resource type</span></span>
+# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="7ed8f-104">Ressourcentyp educationOneNoteResource</span><span class="sxs-lookup"><span data-stu-id="7ed8f-104">educationOneNoteResource resource type</span></span>
 
-> <span data-ttu-id="01f0d-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="01f0d-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="01f0d-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="01f0d-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="01f0d-107">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="01f0d-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="01f0d-108">Dies ist den Speicherort der OneNote-Seite.</span><span class="sxs-lookup"><span data-stu-id="01f0d-108">This represents the location of the OneNote page.</span></span>  
+<span data-ttu-id="7ed8f-105">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="7ed8f-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="7ed8f-106">Dies ist den Speicherort der OneNote-Seite.</span><span class="sxs-lookup"><span data-stu-id="7ed8f-106">This represents the location of the OneNote page.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="01f0d-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="01f0d-109">Properties</span></span>
-| <span data-ttu-id="01f0d-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="01f0d-110">Property</span></span>     | <span data-ttu-id="01f0d-111">Typ</span><span class="sxs-lookup"><span data-stu-id="01f0d-111">Type</span></span>   |<span data-ttu-id="01f0d-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="01f0d-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7ed8f-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7ed8f-107">Properties</span></span>
+| <span data-ttu-id="7ed8f-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7ed8f-108">Property</span></span>     | <span data-ttu-id="7ed8f-109">Typ</span><span class="sxs-lookup"><span data-stu-id="7ed8f-109">Type</span></span>   |<span data-ttu-id="7ed8f-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7ed8f-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="01f0d-113">pageUrl</span><span class="sxs-lookup"><span data-stu-id="01f0d-113">pageUrl</span></span>|<span data-ttu-id="01f0d-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="01f0d-114">String</span></span>|<span data-ttu-id="01f0d-115">Die Microsoft Graph-URL zu der Seite in OneNote.</span><span class="sxs-lookup"><span data-stu-id="01f0d-115">The Microsoft Graph URL to the page in OneNote.</span></span>|
-|<span data-ttu-id="01f0d-116">sectionName</span><span class="sxs-lookup"><span data-stu-id="01f0d-116">sectionName</span></span>|<span data-ttu-id="01f0d-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="01f0d-117">String</span></span>|<span data-ttu-id="01f0d-118">Im Abschnittsname, die Verteilung in kopiert werden sollte oder in kopiert wurden.</span><span class="sxs-lookup"><span data-stu-id="01f0d-118">Section name that distributions should be copied into or were copied into.</span></span>|
+|<span data-ttu-id="7ed8f-111">pageUrl</span><span class="sxs-lookup"><span data-stu-id="7ed8f-111">pageUrl</span></span>|<span data-ttu-id="7ed8f-112">String</span><span class="sxs-lookup"><span data-stu-id="7ed8f-112">String</span></span>|<span data-ttu-id="7ed8f-113">Die Microsoft Graph-URL zu der Seite in OneNote.</span><span class="sxs-lookup"><span data-stu-id="7ed8f-113">The Microsoft Graph URL to the page in OneNote.</span></span>|
+|<span data-ttu-id="7ed8f-114">sectionName</span><span class="sxs-lookup"><span data-stu-id="7ed8f-114">sectionName</span></span>|<span data-ttu-id="7ed8f-115">String</span><span class="sxs-lookup"><span data-stu-id="7ed8f-115">String</span></span>|<span data-ttu-id="7ed8f-116">Im Abschnittsname, die Verteilung in kopiert werden sollte oder in kopiert wurden.</span><span class="sxs-lookup"><span data-stu-id="7ed8f-116">Section name that distributions should be copied into or were copied into.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="01f0d-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="01f0d-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ed8f-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="7ed8f-117">JSON representation</span></span>
 
-<span data-ttu-id="01f0d-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="01f0d-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7ed8f-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7ed8f-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,10 +45,15 @@ ms.locfileid: "27927919"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationOneNoteResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationonenoteresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

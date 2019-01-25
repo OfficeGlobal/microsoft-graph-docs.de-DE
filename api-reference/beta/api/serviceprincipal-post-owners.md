@@ -2,49 +2,49 @@
 title: 'ServicePrincipal: Besitzer hinzufügen'
 description: Verwenden Sie diese API, um einen Besitzer für den Dienstprinzipal hinzuzufügen.
 localization_priority: Normal
-ms.openlocfilehash: 1bfb82589c730512ba877a94b55d565a6a44d4b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 67146ddf8fc4705b7c55487ec868a5bb090ecfa7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519094"
 ---
-# <a name="serviceprincipal-add-owner"></a><span data-ttu-id="90c24-103">ServicePrincipal: Besitzer hinzufügen</span><span class="sxs-lookup"><span data-stu-id="90c24-103">servicePrincipal: Add owner</span></span>
+# <a name="serviceprincipal-add-owner"></a><span data-ttu-id="99850-103">ServicePrincipal: Besitzer hinzufügen</span><span class="sxs-lookup"><span data-stu-id="99850-103">servicePrincipal: Add owner</span></span>
 
-> <span data-ttu-id="90c24-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="90c24-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="90c24-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="90c24-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="90c24-106">Verwenden Sie diese API, um einen Besitzer für den Dienstprinzipal hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="90c24-106">Use this API to add an owner for the service principal.</span></span>
+<span data-ttu-id="99850-104">Verwenden Sie diese API, um einen Besitzer für den Dienstprinzipal hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="99850-104">Use this API to add an owner for the service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="90c24-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="90c24-107">Permissions</span></span>
-<span data-ttu-id="90c24-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90c24-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="99850-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="99850-105">Permissions</span></span>
+<span data-ttu-id="99850-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="99850-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="90c24-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="90c24-110">Permission type</span></span>      | <span data-ttu-id="90c24-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="90c24-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="99850-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="99850-108">Permission type</span></span>      | <span data-ttu-id="99850-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="99850-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="90c24-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="90c24-112">Delegated (work or school account)</span></span> | <span data-ttu-id="90c24-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="90c24-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="90c24-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="90c24-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="90c24-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="90c24-115">Not supported.</span></span>    |
-|<span data-ttu-id="90c24-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="90c24-116">Application</span></span> | <span data-ttu-id="90c24-117">Application.ReadWrite.OwnedBy und Directory.Read.All, Application.ReadWrite.All und Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="90c24-117">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="99850-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="99850-110">Delegated (work or school account)</span></span> | <span data-ttu-id="99850-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="99850-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="99850-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="99850-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99850-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="99850-113">Not supported.</span></span>    |
+|<span data-ttu-id="99850-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="99850-114">Application</span></span> | <span data-ttu-id="99850-115">Application.ReadWrite.OwnedBy und Directory.Read.All, Application.ReadWrite.All und Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="99850-115">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="90c24-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="90c24-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="99850-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="99850-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/owners
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="90c24-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="90c24-119">Request headers</span></span>
-| <span data-ttu-id="90c24-120">Name</span><span class="sxs-lookup"><span data-stu-id="90c24-120">Name</span></span>       | <span data-ttu-id="90c24-121">Typ</span><span class="sxs-lookup"><span data-stu-id="90c24-121">Type</span></span> | <span data-ttu-id="90c24-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="90c24-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="99850-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="99850-117">Request headers</span></span>
+| <span data-ttu-id="99850-118">Name</span><span class="sxs-lookup"><span data-stu-id="99850-118">Name</span></span>       | <span data-ttu-id="99850-119">Typ</span><span class="sxs-lookup"><span data-stu-id="99850-119">Type</span></span> | <span data-ttu-id="99850-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="99850-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="90c24-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="90c24-123">Authorization</span></span>  | <span data-ttu-id="90c24-124">string</span><span class="sxs-lookup"><span data-stu-id="90c24-124">string</span></span>  | <span data-ttu-id="90c24-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="90c24-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="99850-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="99850-121">Authorization</span></span>  | <span data-ttu-id="99850-122">string</span><span class="sxs-lookup"><span data-stu-id="99850-122">string</span></span>  | <span data-ttu-id="99850-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="99850-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="90c24-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="90c24-127">Request body</span></span>
-<span data-ttu-id="90c24-128">Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="90c24-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="99850-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="99850-125">Request body</span></span>
+<span data-ttu-id="99850-126">Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="99850-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="90c24-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="90c24-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="99850-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="99850-127">Response</span></span>
 
-<span data-ttu-id="90c24-130">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="90c24-130">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="99850-128">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [directoryObject](../resources/directoryobject.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="99850-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="90c24-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="90c24-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="90c24-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="90c24-132">Request</span></span>
-<span data-ttu-id="90c24-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="90c24-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="99850-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="99850-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="99850-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="99850-130">Request</span></span>
+<span data-ttu-id="99850-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="99850-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_serviceprincipal"
@@ -59,9 +59,9 @@ Content-length: 30
   }
 }
 ```
-<span data-ttu-id="90c24-134">Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="90c24-134">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="90c24-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="90c24-135">Response</span></span>
-<span data-ttu-id="90c24-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="90c24-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="99850-132">Geben Sie im Anforderungstext eine JSON-Darstellung des [directoryObject](../resources/directoryobject.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="99850-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="99850-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="99850-133">Response</span></span>
+<span data-ttu-id="99850-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="99850-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,10 +81,15 @@ Content-length: 51
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create owner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-post-owners.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

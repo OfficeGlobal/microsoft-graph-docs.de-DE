@@ -4,49 +4,49 @@ description: Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: da881d46b69153a85de225b895f6b1c2d622ff09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d56b8dc4579f40156e30a46b00af0f5bfcd82b97
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984437"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520347"
 ---
-# <a name="list-directreports"></a><span data-ttu-id="1c2a5-104">directReports auflisten</span><span class="sxs-lookup"><span data-stu-id="1c2a5-104">List directReports</span></span>
+# <a name="list-directreports"></a><span data-ttu-id="a5fad-104">directReports auflisten</span><span class="sxs-lookup"><span data-stu-id="a5fad-104">List directReports</span></span>
 
-> <span data-ttu-id="1c2a5-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1c2a5-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c2a5-p103">Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die Benutzer und Kontakte zurück, für die dieser Benutzer als Vorgesetzter zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-p103">Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1c2a5-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1c2a5-109">Permissions</span></span>
-<span data-ttu-id="1c2a5-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c2a5-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a5fad-p102">Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die Benutzer und Kontakte zurück, für die dieser Benutzer als Vorgesetzter zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="a5fad-p102">Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a5fad-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="a5fad-107">Permissions</span></span>
+<span data-ttu-id="a5fad-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5fad-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c2a5-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1c2a5-112">Permission type</span></span>      | <span data-ttu-id="1c2a5-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1c2a5-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a5fad-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="a5fad-110">Permission type</span></span>      | <span data-ttu-id="a5fad-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="a5fad-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c2a5-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1c2a5-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1c2a5-115">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1c2a5-115">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1c2a5-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1c2a5-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c2a5-117">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1c2a5-117">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="1c2a5-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1c2a5-118">Application</span></span> | <span data-ttu-id="1c2a5-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c2a5-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a5fad-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="a5fad-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a5fad-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a5fad-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a5fad-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="a5fad-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5fad-115">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a5fad-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="a5fad-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="a5fad-116">Application</span></span> | <span data-ttu-id="a5fad-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5fad-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c2a5-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1c2a5-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a5fad-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="a5fad-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/directReports
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1c2a5-121">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="1c2a5-121">Optional query parameters</span></span>
-<span data-ttu-id="1c2a5-122">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1c2a5-123">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1c2a5-123">Request headers</span></span>
-| <span data-ttu-id="1c2a5-124">Header</span><span class="sxs-lookup"><span data-stu-id="1c2a5-124">Header</span></span>       | <span data-ttu-id="1c2a5-125">Wert</span><span class="sxs-lookup"><span data-stu-id="1c2a5-125">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="a5fad-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="a5fad-119">Optional query parameters</span></span>
+<span data-ttu-id="a5fad-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="a5fad-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a5fad-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="a5fad-121">Request headers</span></span>
+| <span data-ttu-id="a5fad-122">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="a5fad-122">Header</span></span>       | <span data-ttu-id="a5fad-123">Wert</span><span class="sxs-lookup"><span data-stu-id="a5fad-123">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="1c2a5-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c2a5-126">Authorization</span></span>  | <span data-ttu-id="1c2a5-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1c2a5-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1c2a5-129">Content-Type</span></span>   | <span data-ttu-id="1c2a5-130">application/json</span><span class="sxs-lookup"><span data-stu-id="1c2a5-130">application/json</span></span>  |
+| <span data-ttu-id="a5fad-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5fad-124">Authorization</span></span>  | <span data-ttu-id="a5fad-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a5fad-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a5fad-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5fad-127">Content-Type</span></span>   | <span data-ttu-id="a5fad-128">application/json</span><span class="sxs-lookup"><span data-stu-id="a5fad-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1c2a5-131">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1c2a5-131">Request body</span></span>
-<span data-ttu-id="1c2a5-132">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a5fad-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="a5fad-129">Request body</span></span>
+<span data-ttu-id="a5fad-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="a5fad-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1c2a5-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="1c2a5-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a5fad-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="a5fad-131">Response</span></span>
 
-<span data-ttu-id="1c2a5-134">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1c2a5-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1c2a5-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1c2a5-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1c2a5-136">Request</span></span>
-<span data-ttu-id="1c2a5-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-137">Here is an example of the request.</span></span>
+<span data-ttu-id="a5fad-132">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [directoryObject](../resources/directoryobject.md)-Objekten im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a5fad-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a5fad-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a5fad-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a5fad-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a5fad-134">Request</span></span>
+<span data-ttu-id="a5fad-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="a5fad-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directreports"
@@ -54,8 +54,8 @@ GET /users/{id | userPrincipalName}/directReports
 ```http
 GET https://graph.microsoft.com/beta/me/directReports
 ```
-##### <a name="response"></a><span data-ttu-id="1c2a5-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="1c2a5-138">Response</span></span>
-<span data-ttu-id="1c2a5-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1c2a5-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a5fad-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="a5fad-136">Response</span></span>
+<span data-ttu-id="a5fad-p105">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a5fad-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,10 +78,15 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

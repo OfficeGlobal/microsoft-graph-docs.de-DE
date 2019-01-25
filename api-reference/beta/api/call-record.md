@@ -4,63 +4,63 @@ description: Notieren Sie den Anruf.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518282"
 ---
-# <a name="call-record"></a><span data-ttu-id="0819f-103">Rufen Sie: Datensatz</span><span class="sxs-lookup"><span data-stu-id="0819f-103">call: record</span></span>
+# <a name="call-record"></a><span data-ttu-id="ed53b-103">Rufen Sie: Datensatz</span><span class="sxs-lookup"><span data-stu-id="ed53b-103">call: record</span></span>
 
-> <span data-ttu-id="0819f-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="0819f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0819f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0819f-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0819f-106">Notieren Sie den Anruf.</span><span class="sxs-lookup"><span data-stu-id="0819f-106">Record the call.</span></span>
+<span data-ttu-id="ed53b-104">Notieren Sie den Anruf.</span><span class="sxs-lookup"><span data-stu-id="ed53b-104">Record the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0819f-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0819f-107">Permissions</span></span>
-<span data-ttu-id="0819f-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0819f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed53b-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ed53b-105">Permissions</span></span>
+<span data-ttu-id="ed53b-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed53b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0819f-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0819f-110">Permission type</span></span> | <span data-ttu-id="0819f-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0819f-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ed53b-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ed53b-108">Permission type</span></span> | <span data-ttu-id="ed53b-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ed53b-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="0819f-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0819f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="0819f-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0819f-113">Not Supported</span></span>        |
-| <span data-ttu-id="0819f-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0819f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0819f-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0819f-115">Not Supported</span></span>        |
-| <span data-ttu-id="0819f-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0819f-116">Application</span></span>     | <span data-ttu-id="0819f-117">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="0819f-117">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="ed53b-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ed53b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ed53b-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ed53b-111">Not Supported</span></span>        |
+| <span data-ttu-id="ed53b-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ed53b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed53b-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ed53b-113">Not Supported</span></span>        |
+| <span data-ttu-id="ed53b-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ed53b-114">Application</span></span>     | <span data-ttu-id="ed53b-115">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="ed53b-115">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="0819f-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0819f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed53b-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ed53b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
 POST /applications/{id}/calls/{id}/record
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0819f-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0819f-119">Request headers</span></span>
-| <span data-ttu-id="0819f-120">Name</span><span class="sxs-lookup"><span data-stu-id="0819f-120">Name</span></span>          | <span data-ttu-id="0819f-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0819f-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="ed53b-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ed53b-117">Request headers</span></span>
+| <span data-ttu-id="ed53b-118">Name</span><span class="sxs-lookup"><span data-stu-id="ed53b-118">Name</span></span>          | <span data-ttu-id="ed53b-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed53b-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="0819f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0819f-122">Authorization</span></span> | <span data-ttu-id="0819f-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0819f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed53b-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed53b-120">Authorization</span></span> | <span data-ttu-id="ed53b-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ed53b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0819f-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0819f-125">Request body</span></span>
-<span data-ttu-id="0819f-126">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="0819f-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ed53b-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ed53b-123">Request body</span></span>
+<span data-ttu-id="ed53b-124">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.</span><span class="sxs-lookup"><span data-stu-id="ed53b-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0819f-127">Parameter</span><span class="sxs-lookup"><span data-stu-id="0819f-127">Parameter</span></span>      | <span data-ttu-id="0819f-128">Typ</span><span class="sxs-lookup"><span data-stu-id="0819f-128">Type</span></span>    |<span data-ttu-id="0819f-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0819f-129">Description</span></span>|
+| <span data-ttu-id="ed53b-125">Parameter</span><span class="sxs-lookup"><span data-stu-id="ed53b-125">Parameter</span></span>      | <span data-ttu-id="ed53b-126">Typ</span><span class="sxs-lookup"><span data-stu-id="ed53b-126">Type</span></span>    |<span data-ttu-id="ed53b-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed53b-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0819f-130">fordert</span><span class="sxs-lookup"><span data-stu-id="0819f-130">prompts</span></span>|<span data-ttu-id="0819f-131">[Mediaprompt](../resources/mediaprompt.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="0819f-131">[mediaprompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="0819f-132">Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet.</span><span class="sxs-lookup"><span data-stu-id="0819f-132">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="0819f-133">Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden</span><span class="sxs-lookup"><span data-stu-id="0819f-133">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt</span></span> |
-|<span data-ttu-id="0819f-134">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="0819f-134">bargeInAllowed</span></span>|<span data-ttu-id="0819f-135">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="0819f-135">Boolean</span></span>| <span data-ttu-id="0819f-136">Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.</span><span class="sxs-lookup"><span data-stu-id="0819f-136">Allow users to enter choice before prompt finishes.</span></span>                                                                 |
-|<span data-ttu-id="0819f-137">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="0819f-137">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="0819f-138">Int32</span><span class="sxs-lookup"><span data-stu-id="0819f-138">Int32</span></span>| <span data-ttu-id="0819f-139">Maximale anfänglichen Silence zulässig, von dem Zeitpunkt wir den Eintrag Vorgang bevor wir Timeout und Fehlschlagen des Vorgangs zu starten.</span><span class="sxs-lookup"><span data-stu-id="0819f-139">Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="0819f-140">Wenn wir eine Aufforderung spielen, startet dieser Zeitgeber nach Aufforderung abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="0819f-140">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> |
-|<span data-ttu-id="0819f-141">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="0819f-141">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="0819f-142">Int32</span><span class="sxs-lookup"><span data-stu-id="0819f-142">Int32</span></span>| <span data-ttu-id="0819f-143">Die maximale Silence Timeout in Sekunden.</span><span class="sxs-lookup"><span data-stu-id="0819f-143">The maximum silence timeout in seconds.</span></span>|
-|<span data-ttu-id="0819f-144">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="0819f-144">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="0819f-145">Int32</span><span class="sxs-lookup"><span data-stu-id="0819f-145">Int32</span></span>| <span data-ttu-id="0819f-146">Die maximale Anzahl von Datensätzen Dauer in Sekunden.</span><span class="sxs-lookup"><span data-stu-id="0819f-146">The maximum record duration in seconds.</span></span>|
-|<span data-ttu-id="0819f-147">playBeep</span><span class="sxs-lookup"><span data-stu-id="0819f-147">playBeep</span></span>|<span data-ttu-id="0819f-148">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="0819f-148">Boolean</span></span>| <span data-ttu-id="0819f-149">Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.</span><span class="sxs-lookup"><span data-stu-id="0819f-149">Plays a beep after playing the prompt.</span></span>|
-|<span data-ttu-id="0819f-150">streamWhileRecording</span><span class="sxs-lookup"><span data-stu-id="0819f-150">streamWhileRecording</span></span>|<span data-ttu-id="0819f-151">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="0819f-151">Boolean</span></span>|<span data-ttu-id="0819f-152">Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="0819f-152">If set to true, a resource location will be provided as soon as the recording starts.</span></span> |
-|<span data-ttu-id="0819f-153">stopTones</span><span class="sxs-lookup"><span data-stu-id="0819f-153">stopTones</span></span>|<span data-ttu-id="0819f-154">Collection von Objekten des Typs „String“</span><span class="sxs-lookup"><span data-stu-id="0819f-154">String collection</span></span>|<span data-ttu-id="0819f-155">Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.</span><span class="sxs-lookup"><span data-stu-id="0819f-155">Stop tones specified to end recording.</span></span>|
-|<span data-ttu-id="0819f-156">clientContext</span><span class="sxs-lookup"><span data-stu-id="0819f-156">clientContext</span></span>|<span data-ttu-id="0819f-157">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0819f-157">String</span></span>|<span data-ttu-id="0819f-158">Der Clientkontext.</span><span class="sxs-lookup"><span data-stu-id="0819f-158">The client context.</span></span>|
+|<span data-ttu-id="ed53b-128">fordert</span><span class="sxs-lookup"><span data-stu-id="ed53b-128">prompts</span></span>|<span data-ttu-id="ed53b-129">[Mediaprompt](../resources/mediaprompt.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="ed53b-129">[mediaprompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="ed53b-130">Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet.</span><span class="sxs-lookup"><span data-stu-id="ed53b-130">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="ed53b-131">Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden</span><span class="sxs-lookup"><span data-stu-id="ed53b-131">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt</span></span> |
+|<span data-ttu-id="ed53b-132">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="ed53b-132">bargeInAllowed</span></span>|<span data-ttu-id="ed53b-133">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ed53b-133">Boolean</span></span>| <span data-ttu-id="ed53b-134">Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.</span><span class="sxs-lookup"><span data-stu-id="ed53b-134">Allow users to enter choice before prompt finishes.</span></span>                                                                 |
+|<span data-ttu-id="ed53b-135">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="ed53b-135">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="ed53b-136">Int32</span><span class="sxs-lookup"><span data-stu-id="ed53b-136">Int32</span></span>| <span data-ttu-id="ed53b-137">Maximale anfänglichen Silence zulässig, von dem Zeitpunkt wir den Eintrag Vorgang bevor wir Timeout und Fehlschlagen des Vorgangs zu starten.</span><span class="sxs-lookup"><span data-stu-id="ed53b-137">Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="ed53b-138">Wenn wir eine Aufforderung spielen, startet dieser Zeitgeber nach Aufforderung abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="ed53b-138">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> |
+|<span data-ttu-id="ed53b-139">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="ed53b-139">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="ed53b-140">Int32</span><span class="sxs-lookup"><span data-stu-id="ed53b-140">Int32</span></span>| <span data-ttu-id="ed53b-141">Die maximale Silence Timeout in Sekunden.</span><span class="sxs-lookup"><span data-stu-id="ed53b-141">The maximum silence timeout in seconds.</span></span>|
+|<span data-ttu-id="ed53b-142">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="ed53b-142">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="ed53b-143">Int32</span><span class="sxs-lookup"><span data-stu-id="ed53b-143">Int32</span></span>| <span data-ttu-id="ed53b-144">Die maximale Anzahl von Datensätzen Dauer in Sekunden.</span><span class="sxs-lookup"><span data-stu-id="ed53b-144">The maximum record duration in seconds.</span></span>|
+|<span data-ttu-id="ed53b-145">playBeep</span><span class="sxs-lookup"><span data-stu-id="ed53b-145">playBeep</span></span>|<span data-ttu-id="ed53b-146">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ed53b-146">Boolean</span></span>| <span data-ttu-id="ed53b-147">Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.</span><span class="sxs-lookup"><span data-stu-id="ed53b-147">Plays a beep after playing the prompt.</span></span>|
+|<span data-ttu-id="ed53b-148">streamWhileRecording</span><span class="sxs-lookup"><span data-stu-id="ed53b-148">streamWhileRecording</span></span>|<span data-ttu-id="ed53b-149">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ed53b-149">Boolean</span></span>|<span data-ttu-id="ed53b-150">Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="ed53b-150">If set to true, a resource location will be provided as soon as the recording starts.</span></span> |
+|<span data-ttu-id="ed53b-151">stopTones</span><span class="sxs-lookup"><span data-stu-id="ed53b-151">stopTones</span></span>|<span data-ttu-id="ed53b-152">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="ed53b-152">String collection</span></span>|<span data-ttu-id="ed53b-153">Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.</span><span class="sxs-lookup"><span data-stu-id="ed53b-153">Stop tones specified to end recording.</span></span>|
+|<span data-ttu-id="ed53b-154">ClientContext</span><span class="sxs-lookup"><span data-stu-id="ed53b-154">clientContext</span></span>|<span data-ttu-id="ed53b-155">String</span><span class="sxs-lookup"><span data-stu-id="ed53b-155">String</span></span>|<span data-ttu-id="ed53b-156">Der Clientkontext.</span><span class="sxs-lookup"><span data-stu-id="ed53b-156">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0819f-159">Antwort</span><span class="sxs-lookup"><span data-stu-id="0819f-159">Response</span></span>
-<span data-ttu-id="0819f-160">Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.</span><span class="sxs-lookup"><span data-stu-id="0819f-160">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="ed53b-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="ed53b-157">Response</span></span>
+<span data-ttu-id="ed53b-158">Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.</span><span class="sxs-lookup"><span data-stu-id="ed53b-158">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0819f-161">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0819f-161">Example</span></span>
-<span data-ttu-id="0819f-162">Das folgende Beispiel illustriert, wie Sie diese API aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="0819f-162">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="ed53b-159">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ed53b-159">Example</span></span>
+<span data-ttu-id="ed53b-160">Das folgende Beispiel illustriert, wie Sie diese API aufrufen können.</span><span class="sxs-lookup"><span data-stu-id="ed53b-160">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0819f-163">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0819f-163">Request</span></span>
-<span data-ttu-id="0819f-164">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="0819f-164">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ed53b-161">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ed53b-161">Request</span></span>
+<span data-ttu-id="ed53b-162">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="ed53b-162">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -94,9 +94,9 @@ Content-Length: 394
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0819f-165">Antwort</span><span class="sxs-lookup"><span data-stu-id="0819f-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ed53b-163">Antwort</span><span class="sxs-lookup"><span data-stu-id="ed53b-163">Response</span></span>
 
-> <span data-ttu-id="0819f-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="0819f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ed53b-p105">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="ed53b-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -108,7 +108,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="0819f-168">Benachrichtigung - Vorgang abgeschlossen</span><span class="sxs-lookup"><span data-stu-id="0819f-168">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="ed53b-166">Benachrichtigung - Vorgang abgeschlossen</span><span class="sxs-lookup"><span data-stu-id="ed53b-166">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: record",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,41 +4,41 @@ description: 'Ein Wrapper für eine Ressource für die Verwendung einer Übermit
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f242e4206c174634a3a8c3248942284798bb1550
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ef231de49d3871ec877c279b4e77585343e1a85e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979180"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522077"
 ---
-# <a name="educationsubmissionresource-resource-type"></a><span data-ttu-id="c4867-104">Ressourcentyp educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="c4867-104">educationSubmissionResource resource type</span></span>
+# <a name="educationsubmissionresource-resource-type"></a><span data-ttu-id="491a7-104">Ressourcentyp educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="491a7-104">educationSubmissionResource resource type</span></span>
 
-> <span data-ttu-id="c4867-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="c4867-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c4867-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c4867-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c4867-107">Ein Wrapper für eine Ressource für die Verwendung einer Übermittlung.</span><span class="sxs-lookup"><span data-stu-id="c4867-107">A wrapper around a resource for use on a submission.</span></span> <span data-ttu-id="c4867-108">Der Wrapper wird die Zuordnung Ressource einen Zeiger hinzugefügt, sofern dies in der Zuweisung kopiert wurde.</span><span class="sxs-lookup"><span data-stu-id="c4867-108">The wrapper adds a pointer to the assignment resource if this was copied from the assignment.</span></span>  
+<span data-ttu-id="491a7-105">Ein Wrapper für eine Ressource für die Verwendung einer Übermittlung.</span><span class="sxs-lookup"><span data-stu-id="491a7-105">A wrapper around a resource for use on a submission.</span></span> <span data-ttu-id="491a7-106">Der Wrapper wird die Zuordnung Ressource einen Zeiger hinzugefügt, sofern dies in der Zuweisung kopiert wurde.</span><span class="sxs-lookup"><span data-stu-id="491a7-106">The wrapper adds a pointer to the assignment resource if this was copied from the assignment.</span></span>  
 
 
-## <a name="methods"></a><span data-ttu-id="c4867-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="c4867-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="491a7-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="491a7-107">Methods</span></span>
 
-| <span data-ttu-id="c4867-110">Methode</span><span class="sxs-lookup"><span data-stu-id="c4867-110">Method</span></span>           | <span data-ttu-id="c4867-111">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="c4867-111">Return Type</span></span>    |<span data-ttu-id="c4867-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c4867-112">Description</span></span>|
+| <span data-ttu-id="491a7-108">Methode</span><span class="sxs-lookup"><span data-stu-id="491a7-108">Method</span></span>           | <span data-ttu-id="491a7-109">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="491a7-109">Return Type</span></span>    |<span data-ttu-id="491a7-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="491a7-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c4867-113">Abrufen von educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="c4867-113">Get educationSubmissionResource</span></span>](../api/educationsubmissionresource-get.md) | [<span data-ttu-id="c4867-114">educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="c4867-114">educationSubmissionResource</span></span>](educationsubmissionresource.md) |<span data-ttu-id="c4867-115">Lesen Sie Eigenschaften und die Beziehungen eines **EducationSubmissionResource** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="c4867-115">Read properties and relationships of an **educationSubmissionResource** object.</span></span>|
-|[<span data-ttu-id="c4867-116">Delete</span><span class="sxs-lookup"><span data-stu-id="c4867-116">Delete</span></span>](../api/educationsubmissionresource-delete.md) | <span data-ttu-id="c4867-117">Keine</span><span class="sxs-lookup"><span data-stu-id="c4867-117">None</span></span> |<span data-ttu-id="c4867-118">Löschen eines **EducationSubmissionResource** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="c4867-118">Delete an **educationSubmissionResource** object.</span></span> |
+|[<span data-ttu-id="491a7-111">Abrufen von educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="491a7-111">Get educationSubmissionResource</span></span>](../api/educationsubmissionresource-get.md) | [<span data-ttu-id="491a7-112">educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="491a7-112">educationSubmissionResource</span></span>](educationsubmissionresource.md) |<span data-ttu-id="491a7-113">Lesen Sie Eigenschaften und die Beziehungen eines **EducationSubmissionResource** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="491a7-113">Read properties and relationships of an **educationSubmissionResource** object.</span></span>|
+|[<span data-ttu-id="491a7-114">Delete</span><span class="sxs-lookup"><span data-stu-id="491a7-114">Delete</span></span>](../api/educationsubmissionresource-delete.md) | <span data-ttu-id="491a7-115">Keine</span><span class="sxs-lookup"><span data-stu-id="491a7-115">None</span></span> |<span data-ttu-id="491a7-116">Löschen eines **EducationSubmissionResource** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="491a7-116">Delete an **educationSubmissionResource** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="c4867-119">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c4867-119">Properties</span></span>
-| <span data-ttu-id="c4867-120">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c4867-120">Property</span></span>     | <span data-ttu-id="c4867-121">Typ</span><span class="sxs-lookup"><span data-stu-id="c4867-121">Type</span></span>   |<span data-ttu-id="c4867-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c4867-122">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="491a7-117">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="491a7-117">Properties</span></span>
+| <span data-ttu-id="491a7-118">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="491a7-118">Property</span></span>     | <span data-ttu-id="491a7-119">Typ</span><span class="sxs-lookup"><span data-stu-id="491a7-119">Type</span></span>   |<span data-ttu-id="491a7-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="491a7-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c4867-123">assignmentResourceUrl</span><span class="sxs-lookup"><span data-stu-id="c4867-123">assignmentResourceUrl</span></span>|<span data-ttu-id="c4867-124">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c4867-124">String</span></span>|<span data-ttu-id="c4867-125">Zeiger auf die Zuordnung aus der diese Ressource kopiert wurden.</span><span class="sxs-lookup"><span data-stu-id="c4867-125">Pointer to the assignment from which this resource was copied.</span></span> <span data-ttu-id="c4867-126">Wenn dies null ist, hochgeladen Student die Ressource.</span><span class="sxs-lookup"><span data-stu-id="c4867-126">If this is null, the student uploaded the resource.</span></span>|
-|<span data-ttu-id="c4867-127">id</span><span class="sxs-lookup"><span data-stu-id="c4867-127">id</span></span>|<span data-ttu-id="c4867-128">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c4867-128">String</span></span>| <span data-ttu-id="c4867-129">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c4867-129">Read-only.</span></span>|
-|<span data-ttu-id="c4867-130">resource</span><span class="sxs-lookup"><span data-stu-id="c4867-130">resource</span></span>|[<span data-ttu-id="c4867-131">educationResource</span><span class="sxs-lookup"><span data-stu-id="c4867-131">educationResource</span></span>](educationresource.md)|<span data-ttu-id="c4867-132">Resource-Objekt.</span><span class="sxs-lookup"><span data-stu-id="c4867-132">Resource object.</span></span>|
+|<span data-ttu-id="491a7-121">assignmentResourceUrl</span><span class="sxs-lookup"><span data-stu-id="491a7-121">assignmentResourceUrl</span></span>|<span data-ttu-id="491a7-122">String</span><span class="sxs-lookup"><span data-stu-id="491a7-122">String</span></span>|<span data-ttu-id="491a7-123">Zeiger auf die Zuordnung aus der diese Ressource kopiert wurden.</span><span class="sxs-lookup"><span data-stu-id="491a7-123">Pointer to the assignment from which this resource was copied.</span></span> <span data-ttu-id="491a7-124">Wenn dies null ist, hochgeladen Student die Ressource.</span><span class="sxs-lookup"><span data-stu-id="491a7-124">If this is null, the student uploaded the resource.</span></span>|
+|<span data-ttu-id="491a7-125">id</span><span class="sxs-lookup"><span data-stu-id="491a7-125">id</span></span>|<span data-ttu-id="491a7-126">String</span><span class="sxs-lookup"><span data-stu-id="491a7-126">String</span></span>| <span data-ttu-id="491a7-127">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="491a7-127">Read-only.</span></span>|
+|<span data-ttu-id="491a7-128">resource</span><span class="sxs-lookup"><span data-stu-id="491a7-128">resource</span></span>|[<span data-ttu-id="491a7-129">educationResource</span><span class="sxs-lookup"><span data-stu-id="491a7-129">educationResource</span></span>](educationresource.md)|<span data-ttu-id="491a7-130">Resource-Objekt</span><span class="sxs-lookup"><span data-stu-id="491a7-130">Resource object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c4867-133">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c4867-133">Relationships</span></span>
-<span data-ttu-id="c4867-134">Keine</span><span class="sxs-lookup"><span data-stu-id="c4867-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="491a7-131">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="491a7-131">Relationships</span></span>
+<span data-ttu-id="491a7-132">Keine</span><span class="sxs-lookup"><span data-stu-id="491a7-132">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c4867-135">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c4867-135">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="491a7-133">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="491a7-133">JSON representation</span></span>
 
-<span data-ttu-id="c4867-136">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c4867-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="491a7-134">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="491a7-134">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,10 +58,15 @@ ms.locfileid: "27979180"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmissionResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsubmissionresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

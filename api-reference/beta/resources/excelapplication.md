@@ -4,39 +4,39 @@ description: Stellt die Excel-Anwendung dar, die die Arbeitsmappe verwaltet.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 250141ff6c6da3a81a1b3492908bc2e04b5a0605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921976"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517617"
 ---
-# <a name="application-resource-type"></a><span data-ttu-id="b46ed-103">Anwendung Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b46ed-103">Application resource type</span></span>
+# <a name="application-resource-type"></a><span data-ttu-id="207eb-103">Anwendung Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="207eb-103">Application resource type</span></span>
 
-> <span data-ttu-id="b46ed-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="b46ed-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b46ed-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b46ed-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b46ed-106">Stellt die Excel-Anwendung dar, die die Arbeitsmappe verwaltet.</span><span class="sxs-lookup"><span data-stu-id="b46ed-106">Represents the Excel application that manages the workbook.</span></span>
+<span data-ttu-id="207eb-104">Stellt die Excel-Anwendung dar, die die Arbeitsmappe verwaltet.</span><span class="sxs-lookup"><span data-stu-id="207eb-104">Represents the Excel application that manages the workbook.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="b46ed-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="b46ed-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="207eb-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="207eb-105">Methods</span></span>
 
-| <span data-ttu-id="b46ed-108">Methode</span><span class="sxs-lookup"><span data-stu-id="b46ed-108">Method</span></span>           | <span data-ttu-id="b46ed-109">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="b46ed-109">Return Type</span></span>    |<span data-ttu-id="b46ed-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b46ed-110">Description</span></span>|
+| <span data-ttu-id="207eb-106">Methode</span><span class="sxs-lookup"><span data-stu-id="207eb-106">Method</span></span>           | <span data-ttu-id="207eb-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="207eb-107">Return Type</span></span>    |<span data-ttu-id="207eb-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="207eb-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="b46ed-111">Abrufen der Anwendung</span><span class="sxs-lookup"><span data-stu-id="b46ed-111">Get Application</span></span>](../api/excelapplication-get.md) | [<span data-ttu-id="b46ed-112">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b46ed-112">Application</span></span>](application.md) |<span data-ttu-id="b46ed-113">Lesen Sie Eigenschaften und Beziehungen des Application-Objekts.</span><span class="sxs-lookup"><span data-stu-id="b46ed-113">Read properties and relationships of application object.</span></span>|
-|[<span data-ttu-id="b46ed-114">Calculate</span><span class="sxs-lookup"><span data-stu-id="b46ed-114">Calculate</span></span>](../api/excelapplication-calculate.md)|<span data-ttu-id="b46ed-115">Keine</span><span class="sxs-lookup"><span data-stu-id="b46ed-115">None</span></span>|<span data-ttu-id="b46ed-116">Alle in Excel geöffnete Arbeitsmappen werden neu berechnet.</span><span class="sxs-lookup"><span data-stu-id="b46ed-116">Recalculate all currently opened workbooks in Excel.</span></span>|
+|[<span data-ttu-id="207eb-109">Abrufen der Anwendung</span><span class="sxs-lookup"><span data-stu-id="207eb-109">Get Application</span></span>](../api/excelapplication-get.md) | [<span data-ttu-id="207eb-110">Anwendung</span><span class="sxs-lookup"><span data-stu-id="207eb-110">Application</span></span>](application.md) |<span data-ttu-id="207eb-111">Lesen Sie Eigenschaften und Beziehungen des Application-Objekts.</span><span class="sxs-lookup"><span data-stu-id="207eb-111">Read properties and relationships of application object.</span></span>|
+|[<span data-ttu-id="207eb-112">Calculate</span><span class="sxs-lookup"><span data-stu-id="207eb-112">Calculate</span></span>](../api/excelapplication-calculate.md)|<span data-ttu-id="207eb-113">Keine</span><span class="sxs-lookup"><span data-stu-id="207eb-113">None</span></span>|<span data-ttu-id="207eb-114">Alle in Excel geöffnete Arbeitsmappen werden neu berechnet.</span><span class="sxs-lookup"><span data-stu-id="207eb-114">Recalculate all currently opened workbooks in Excel.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="b46ed-117">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b46ed-117">Properties</span></span>
-| <span data-ttu-id="b46ed-118">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b46ed-118">Property</span></span>     | <span data-ttu-id="b46ed-119">Typ</span><span class="sxs-lookup"><span data-stu-id="b46ed-119">Type</span></span>   |<span data-ttu-id="b46ed-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b46ed-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="207eb-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="207eb-115">Properties</span></span>
+| <span data-ttu-id="207eb-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="207eb-116">Property</span></span>     | <span data-ttu-id="207eb-117">Typ</span><span class="sxs-lookup"><span data-stu-id="207eb-117">Type</span></span>   |<span data-ttu-id="207eb-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="207eb-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b46ed-121">calculationMode</span><span class="sxs-lookup"><span data-stu-id="b46ed-121">calculationMode</span></span>|<span data-ttu-id="b46ed-122">string</span><span class="sxs-lookup"><span data-stu-id="b46ed-122">string</span></span>|<span data-ttu-id="b46ed-123">Gibt den Berechnungsmodus in der Arbeitsmappe verwendet.</span><span class="sxs-lookup"><span data-stu-id="b46ed-123">Returns the calculation mode used in the workbook.</span></span> <span data-ttu-id="b46ed-124">Mögliche Werte sind: `Automatic`, `AutomaticExceptTables` und `Manual`.</span><span class="sxs-lookup"><span data-stu-id="b46ed-124">Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.</span></span> <span data-ttu-id="b46ed-125">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b46ed-125">Read-only.</span></span>|
+|<span data-ttu-id="207eb-119">calculationMode</span><span class="sxs-lookup"><span data-stu-id="207eb-119">calculationMode</span></span>|<span data-ttu-id="207eb-120">string</span><span class="sxs-lookup"><span data-stu-id="207eb-120">string</span></span>|<span data-ttu-id="207eb-121">Gibt den Berechnungsmodus in der Arbeitsmappe verwendet.</span><span class="sxs-lookup"><span data-stu-id="207eb-121">Returns the calculation mode used in the workbook.</span></span> <span data-ttu-id="207eb-122">Mögliche Werte sind: `Automatic`, `AutomaticExceptTables` und `Manual`.</span><span class="sxs-lookup"><span data-stu-id="207eb-122">Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.</span></span> <span data-ttu-id="207eb-123">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="207eb-123">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b46ed-126">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b46ed-126">Relationships</span></span>
-<span data-ttu-id="b46ed-127">Keine</span><span class="sxs-lookup"><span data-stu-id="b46ed-127">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="207eb-124">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="207eb-124">Relationships</span></span>
+<span data-ttu-id="207eb-125">Keine</span><span class="sxs-lookup"><span data-stu-id="207eb-125">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="b46ed-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b46ed-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="207eb-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="207eb-126">JSON representation</span></span>
 
-<span data-ttu-id="b46ed-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b46ed-129">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="207eb-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="207eb-127">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,10 +55,15 @@ ms.locfileid: "27921976"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/excelapplication.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
