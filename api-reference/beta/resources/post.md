@@ -4,16 +4,16 @@ description: Stellt ein einzelnes Post-Element innerhalb einer ConverstaionThrea
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 46e33021d0929e1bd665f8256f0874e8e8c92809
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942416"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519955"
 ---
 # <a name="post-resource-type"></a>Beitragsressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt ein einzelnes Post-Element innerhalb einer [ConverstaionThread](conversationthread.md) Entität.
 
@@ -66,13 +66,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Der Inhalt des Beitrags. Dies ist eine Standardeigenschaft. Für diese Eigenschaft sind Nullwerte zulässig.|
 |categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Beitrag verknüpft sind. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) , der für einen Benutzer definiert wurde.|
-|changeKey|Zeichenfolge|Gibt die Version des Beitrags an. Jedes Mal, wenn der Beitrag geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
-|conversationId|Zeichenfolge|Eindeutige ID der Unterhaltung. Schreibgeschützt.|
-|conversationThreadId|Zeichenfolge|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
+|changeKey|String|Gibt die Version des Beitrags an. Jedes Mal, wenn der Beitrag geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
+|conversationId|String|Eindeutige ID der Unterhaltung. Schreibgeschützt.|
+|conversationThreadId|String|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Gibt an, wann der Beitrag erstellt wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Von|[Empfänger](recipient.md)|Wird in Zugriffsszenarien mit Stellvertretungen verwendet. Gibt an, wer die Nachricht im Auftrag eines anderen Benutzers veröffentlicht hat. Dies ist eine Standardeigenschaft.|
 |hasAttachments|Boolescher Wert|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
-|id|Zeichenfolge| Schreibgeschützt|
+|id|String| Schreibgeschützt|
 |importance | Zeichenfolge | Die Bedeutung der einer Gruppe Post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Gibt an, wann der Beitrag zuletzt geändert wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|Teilnehmer einer Unterhaltung, die im Rahmen des Beitrags zu dem Thread hinzugefügt wurden.|
@@ -82,7 +82,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anlagen|[Anlagensammlung](attachment.md)|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Bereitstellung. Schreibgeschützt. Lässt Nullwerte zu.|
+|Anlagen|[attachment](attachment.md)-Sammlung|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Bereitstellung. Schreibgeschützt. Nullwerte zulassend.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)|Die Sammlung der für den Beitrag definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
 |inReplyTo|[Post](post.md)|Frühere Beitrags, den dieser Beitrag in der [ConversationThread](conversationthread.md)beantwortet wird. Schreibgeschützt.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Beitrag definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
@@ -97,7 +97,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |[Reply](../api/post-reply.md)|Keine|Dient zum Antworten auf einen Beitrag und zum Hinzufügen eines neuen Beitrags zum angegebenen Thread in einer Gruppenunterhaltung.|
 |[Forward](../api/post-forward.md)|Keine|Dient zum Weiterleiten eines Beitrags an einen Empfänger.|
 |**Anlagen**| | |
-|[List attachments](../api/post-list-attachments.md) |[attachment](attachment.md) collection| Ruft alle Anlagen für einen Beitrag ab.|
+|[Anlagen auflisten](../api/post-list-attachments.md) |[attachment](attachment.md) collection| Ruft alle Anlagen für einen Beitrag ab.|
 |[Hinzufügen von Anlagen](../api/post-post-attachments.md) |[attachment](attachment.md)| Dient zum Hinzufügen einer Anlage zu einem Beitrag. |
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
@@ -110,7 +110,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Dient zum Erstellen einer oder mehrerer erweiterter mehrwertiger Eigenschaften in einem neuen oder vorhandenen Beitrag  |
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Dient zum Abrufen eines Beitrags mit einer erweiterten mehrwertigen Eigenschaft mithilfe von `$expand`. |
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
@@ -119,10 +119,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "post resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

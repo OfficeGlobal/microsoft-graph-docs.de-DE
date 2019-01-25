@@ -4,16 +4,16 @@ description: Aktualisieren Sie die Eigenschaften des Event-Objekts.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 50711c6e2533f7a99e742542b1376faf78fff8e9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956577"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524975"
 ---
 # <a name="update-event"></a>Ereignis aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren Sie die Eigenschaften des [Event](../resources/event.md) -Objekts.
 ## <a name="permissions"></a>Berechtigungen
@@ -57,20 +57,20 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:------------|
 | attendees|Teilnehmer|Die Sammlung der Teilnehmer des Ereignisses|
 | body|ItemBody|Der Text der Nachricht, die mit diesem Ereignis verknüpft ist.|
-| categories|Zeichenfolge|Die Kategorien, die mit dem Ereignis verknüpft sind.|
+| categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
 | end|DateTimeTimeZone|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
 | Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
-| isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|
+| isAllDay|Boolescher Wert|True, wenn das Ereignis den ganzen Tag andauert.|
 | isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
 | location|Ort|Der Ort des Ereignisses.|
 |locations|[Standort](../resources/location.md) -Auflistung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
 | recurrence|PatternedRecurrence|Das Serienmuster für das Ereignis.|
 | reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 | responseRequested|Boolean|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
-| sensitivity|String| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|Zeichenfolge| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
 | showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
-| Betreff|Zeichenfolge|Der Text der Betreffzeile des Ereignisses|
+| subject|String|Der Text der Betreffzeile des Ereignisses|
 
 Da die Ressource **Ereignis** [Extensions](/graph/extensibility-overview)unterstützt, können Sie mithilfe der `PATCH` Vorgang hinzufügen, aktualisieren oder Löschen von Ihren eigenen app-spezifischen Daten in benutzerdefinierten Eigenschaften einer Erweiterung in einer vorhandenen Instanz **Ereignis** .
 
@@ -146,10 +146,15 @@ Content-length: 285
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

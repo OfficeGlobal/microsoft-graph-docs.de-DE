@@ -4,16 +4,16 @@ description: 'Aktualisieren Sie die schreibbare Eigenschaft, **color**, des ange
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f6440708f7083e0b129e48aa0f455b892fd4d157
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 87c235b670036cb7f4d7e4c20a0e6c700d3843c7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523659"
 ---
 # <a name="update-outlook-category"></a>Aktualisieren der Outlook-Kategorie
 
-> **Wichtig**: unter der /beta Version von Microsoft Graph-APIs sind in der Vorschau und kann geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren Sie die schreibbare Eigenschaft, **color**, des angegebenen [outlookCategory](../resources/outlookcategory.md)-Objekts. Sie können die **displayName**-Eigenschaft nicht mehr ändern, nachdem die Kategorie erstellt wurde.
 
@@ -91,5 +91,7 @@ Content-length: 251
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

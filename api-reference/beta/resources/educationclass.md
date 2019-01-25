@@ -4,16 +4,16 @@ description: 'Stellt eine Klasse in einer Schule dar. Die **educationClass**-Res
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393221"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526732"
 ---
 # <a name="educationclass-resource-type"></a>educationClass-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspricht der Office 365-Gruppe und hat die gleiche ID. Kursteilnehmer sind reguläre Mitglieder der Klasse, Lehrer sind Besitzer und verfügen über entsprechende Rechte. Damit Office-Benutzeroberflächen ordnungsgemäß funktionieren, müssen Lehrer Mitglieder der Sammlungen der Lehrkräfte wie auch der Mitglieder sein.  
 
@@ -39,10 +39,10 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id| String| Eindeutiger Bezeichner für die Klasse|
+|id| string| Eindeutiger Bezeichner für die Klasse|
 |description|String| Beschreibung der Klasse|
 |displayName|String| Der Name der Klasse|
-|mailNickname|String| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
+|mailNickname|Zeichenfolge| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
 |createdBy|[identitySet](identityset.md)| Entität, die die Klasse erstellt hat. |
 |classCode|String| Von der Schule verwendeter Klassencode zum Identifizieren der Klasse|
 |externalId|String| ID der Klasse aus dem Synchronisierungssystem |
@@ -54,10 +54,10 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Lässt Nullwerte zu.|
+|members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Nullwerte zulassend.|
 |schools|[educationSchool](../resources/educationschool.md)-Sammlung| Alle Schulen, denen dieser Klasse zugeordnet ist. Lässt Nullwerte zu.|
 |teachers|[educationUser](../resources/educationuser.md)-Sammlung|  Alle Lehrer in der Klasse. Lässt Nullwerte zu.|
-|assignments|[EducationAssignment](../resources/educationassignment.md) -Auflistung| Alle Aufgaben, die diese Klasse zugeordnet werden. Lässt Nullwerte zu.|
+|assignments|[EducationAssignment](../resources/educationassignment.md) -Auflistung| Alle Aufgaben, die diese Klasse zugeordnet werden. Nullwerte zulassend.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -89,10 +89,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

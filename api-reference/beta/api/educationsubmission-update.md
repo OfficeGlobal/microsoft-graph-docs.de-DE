@@ -4,16 +4,16 @@ description: Note und Feedback zu einer Übermittlung hinzufügen. Dieser Vorgan
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c420d2c6e512d8fed0d713340fea482b0888ca1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975337"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526116"
 ---
 # <a name="update-educationsubmission"></a>Educationsubmission aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Note und Feedback zu einer Übermittlung hinzufügen. Dieser Vorgang können nur Lehrer ausgeführt werden. Beachten Sie, dass die grundlegende Berechtigung hat keinen Zugriff auf die Eigenschaften für die Qualität und daher Note oder Feedback kann nicht geschrieben werden. Diese Aktion wird die Note und ihr Feedback an die Student nicht freigegeben. Lehrer muss eine Aktion explizite Freigabe, für die Qualität Daten zum Schüler zurückgegeben werden soll.
 
@@ -32,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -156,10 +156,15 @@ Content-length: 1217
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationsubmission",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

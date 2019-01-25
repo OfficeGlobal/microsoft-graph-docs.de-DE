@@ -4,16 +4,16 @@ description: Verschieben von Nachrichten in einen Ordner. Erstellt eine neue Kop
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2f6614d3769d2619854782776c061436622f1309
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: efe2bcf262ef91b4684bc812fa19bdbe52f12564
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961197"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526858"
 ---
 # <a name="message-move"></a>message: move
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Verschieben von Nachrichten in einen Ordner. Erstellt eine neue Kopie der Nachricht im Zielordner und die ursprüngliche Nachricht entfernt.
 
@@ -40,10 +40,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header | Wert |
+| Kopfzeile | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich.  |
-| Content-Type | `application/json`. Erforderlich.  |
+| Authorization | `Bearer {token}`. Erforderlich. |
+| Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -51,7 +51,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|DestinationId|Zeichenfolge|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
+|DestinationId|String|Die Ziel-Ordner-ID oder den Ordnernamen einer bekannten. Eine Liste der unterstützten bekannten Ordnernamen finden Sie unter [mailFolder-Ressourcentyp](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Antwort
 
@@ -83,7 +83,7 @@ Content-type: application/json
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
-> **Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+> **Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,10 +167,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: move",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-move.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

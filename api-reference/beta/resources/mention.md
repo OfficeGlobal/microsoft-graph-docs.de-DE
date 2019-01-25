@@ -4,16 +4,16 @@ description: Stellt eine Benachrichtigung an eine Person basierend auf e-Mail-Ad
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: b24ce5488e93160c3424fb41f83b91c1b8ccea95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f8e04722edf878b4f3851de837908dc5c0a02de7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955436"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523197"
 ---
 # <a name="mention-resource-type"></a>Erwähnen Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Benachrichtigung an eine Person basierend auf e-Mail-Adresse der Person. Die Benachrichtigung wird auch als @ erwähnungen.
 
@@ -55,13 +55,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anwendung | Zeichenfolge | Der Name der Anwendung, in dem die Erwähnung erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
-|clientReference | Zeichenfolge | Ein eindeutiger Bezeichner, der ein übergeordnetes Element der Ressourceninstanz darstellt. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|Anwendung | String | Der Name der Anwendung, in dem die Erwähnung erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|clientReference | String | Ein eindeutiger Bezeichner, der ein übergeordnetes Element der Ressourceninstanz darstellt. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen des Benutzers, der die Erwähnung vorgenommen. |
 |createdDateTime  |DateTimeOffset |Das Datum und die Uhrzeit, die auf dem Client die Erwähnung erstellt wird. |
-|deepLink | Zeichenfolge | Tiefe Weblink zu den Kontext des Hinweises auf die Instanz der Ressource. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
-|id | Zeichenfolge| Der eindeutige Bezeichner des Vermerk in einer Ressourceninstanz einer.|
-|erwähnten | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen der weiter oben erwähnt Person. Erforderlich.  |
+|deepLink | String | Tiefe Weblink zu den Kontext des Hinweises auf die Instanz der Ressource. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
+|id | String| Der eindeutige Bezeichner des Vermerk in einer Ressourceninstanz einer.|
+|erwähnten | [emailAddress](../resources/emailaddress.md) | Die e-Mail-Informationen der weiter oben erwähnt Person. Erforderlich. |
 |mentionText | Zeichenfolge | Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. Wenn die erwähnungen in einer Nachricht erhalten möchten, finden Sie stattdessen die **BodyPreview** -Eigenschaft der Nachricht. |
 |serverCreatedDateTime | DateTimeOffset | Das Datum und die Uhrzeit, die die Erwähnung auf dem Server erstellt wird. Optional. Wird nicht verwendet und nicht mehr als Null für **Nachricht**übernommen. |
 
@@ -81,10 +81,15 @@ Keine
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mention resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

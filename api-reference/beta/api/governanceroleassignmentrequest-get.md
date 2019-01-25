@@ -2,16 +2,16 @@
 title: Abrufen von governanceRoleAssignmentRequest
 description: 'Rufen Sie eine GovernanceRoleAssignmentRequest. '
 localization_priority: Normal
-ms.openlocfilehash: 190e79787b32e7e21e9d321ee6f3d90dc27605ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6914dbe8c45bcc05bc684b08fb5fdf87405a045a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524135"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Abrufen von governanceRoleAssignmentRequest
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Rufen Sie eine [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
@@ -92,10 +92,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

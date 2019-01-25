@@ -2,16 +2,16 @@
 title: Ressourcentyp operationError
 description: Fehler in TeamsAsyncOperation beschreibt.
 localization_priority: Normal
-ms.openlocfilehash: 423f426df92e99754af0abf4c9c8088eea61d5ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1f07fe064d7bbd255f2693071c86842a34fdffa0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890293"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526130"
 ---
 # <a name="operationerror-resource-type"></a>Ressourcentyp operationError
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Fehler in [TeamsAsyncOperation](teamsasyncoperation.md)beschreibt.
 
@@ -39,10 +39,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 069fadaa-52db-4ced-85d5-74f7caa2c66f
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation error resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 'Aktualisieren einer app zuvor in der Microsoft-Teams, app-Katalog 
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 641d55e7eb1bc6987e72b8c07b29421b4ceb1645
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2b9a16dc64557776eb6571ba3740249593684ba2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974695"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526984"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Aktualisieren von apps in Ihrer Organisation app-Katalog veröffentlicht
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren einer [app](../resources/teamsapp.md) veröffentlicht zuvor in der Microsoft-Teams, app-Katalog. Diese API aktualisiert speziell eine app in Ihrer Organisation app-Katalog (die Mandanten-app-Katalog) veröffentlicht. Geben Sie zum Veröffentlichen in Ihrer Organisation app-Katalog `organization` als die **DistributionMethod** in der [TeamsCatalogApp](../resources/teamsapp.md) -Ressource.
 
@@ -37,7 +37,7 @@ PUT /appCatalogs/teamsApps/{id}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert           |
+| Kopfzeile        | Wert           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Erforderlich.  |
 | Content-Type  | Anwendung/zip |
@@ -73,3 +73,11 @@ Für Teams Anwendung zip-Datei [finden Sie unter Erstellen von app-Paket](https:
 ```
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

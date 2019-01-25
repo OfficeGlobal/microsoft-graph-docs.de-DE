@@ -4,16 +4,16 @@ description: Notieren Sie den Anruf.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518282"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Notieren Sie den Anruf.
 
@@ -50,8 +50,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |maxRecordDurationInSeconds|Int32| Die maximale Anzahl von Datensätzen Dauer in Sekunden.|
 |playBeep|Boolescher Wert| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
 |streamWhileRecording|Boolescher Wert|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
-|stopTones|Collection von Objekten des Typs „String“|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|stopTones|Zeichenfolgenauflistung|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
+|ClientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: record",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

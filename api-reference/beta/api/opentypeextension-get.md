@@ -3,16 +3,16 @@ title: Datenerweiterung abrufen
 description: Dieser Artikel beschreibt, wie Sie eine offene Erweiterung (openTypeExtension-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 33c26980382e29a3b640a53ac3397b4ee959fd92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 367e3613e309e02a8ca5ec82c5216e4aeae20d25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935521"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524303"
 ---
 # <a name="get-open-extension"></a>Datenerweiterung abrufen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Dieser Artikel beschreibt, wie Sie eine offene Erweiterung ([openTypeExtension](../resources/opentypeextension.md)-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
 
@@ -32,13 +32,13 @@ Je nach der Ressource, die die Erweiterung und die Berechtigung enthält Typ (de
 |:-----|:-----|:-----|:-----|
 | [Gerät](../resources/device.md) | Directory.Read.All | Nicht unterstützt | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [Gruppe](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [group event](../resources/event.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [group post](../resources/post.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Nicht unterstützt | Nicht unterstützt |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [Benutzer](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -464,10 +464,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

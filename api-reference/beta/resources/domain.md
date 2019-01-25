@@ -4,16 +4,16 @@ description: Stellt eine Domäne dar, die einem Mandanten zugewiesen ist.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d8dabf29285aea0b24613e584184dc13e02e499
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d19909679447e050ea639ee0fcb4cd31288efc0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942395"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518639"
 ---
 # <a name="domain-resource-type"></a>domain-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Domäne dar, die einem Mandanten zugewiesen ist.
 
@@ -35,12 +35,12 @@ So ordnen Sie eine Domäne einem Mandanten zu:
 
 | Methode   | Rückgabetyp |Beschreibung|
 |:---------------|:--------|:----------|
-|[Domäne abrufen](../api/domain-get.md) | [Domäne](domain.md) | Dient zum Lesen der Eigenschaften und der Beziehungen eines Domänenobjekts.|
-|[Domäne erstellen](../api/domain-post-domains.md) | [Domäne](domain.md) | Fügt eine Domäne zum Mandanten hinzu. |
+|[Domäne abrufen](../api/domain-get.md) | [domain](domain.md) | Dient zum Lesen der Eigenschaften und der Beziehungen eines Domänenobjekts.|
+|[Domäne erstellen](../api/domain-post-domains.md) | [domain](domain.md) | Fügt eine Domäne zum Mandanten hinzu. |
 |[domainNameReference auflisten](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen einer Liste von Verzeichnisobjekten mit einem Verweis auf die Domäne.|
 |[serviceConfigurationRecords auflisten](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenkonfiguration.|
 |[verificationDnsRecords auflisten](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenüberprüfung.|
-|[Domäne aktualisieren](../api/domain-update.md) | [Domäne](domain.md) |Dient zum Aktualisieren einer Domäne.|
+|[Domäne aktualisieren](../api/domain-update.md) | [domain](domain.md) |Dient zum Aktualisieren einer Domäne.|
 |[Domäne löschen](../api/domain-delete.md) | Keine |Dient zum Löschen einer Domäne.|
 |[ForceDelete Domäne](../api/domain-forcedelete.md)|Keine|Löscht eine Domäne mithilfe eines asynchronen Vorgangs.|
 |[Domäne überprüfen](../api/domain-verify.md)|[Domäne](domain.md)|Überprüft den Besitz der Domäne.|
@@ -99,10 +99,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domain resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/domain.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

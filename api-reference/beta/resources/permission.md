@@ -4,21 +4,21 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Berechtigung
 localization_priority: Normal
-ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843316"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518849"
 ---
-# <a name="permission-resource-type"></a>Berechtigung Ressourcentyp
+# <a name="permission-resource-type"></a>Permission-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die **Berechtigung** Ressource enthält Informationen über eine Zugriffsberechtigung für eine Ressource [DriveItem](driveitem.md) erteilt.
+Die **Permission**-Ressource enthält Informationen über eine Berechtigung, die einer [DriveItem](driveitem.md)-Ressource erteilt wurde.
 
 Freigabeberechtigungen können verschiedene Formen aufweisen.
-Die **Berechtigung** Ressource stellt diese verschiedenen Formularen über Facetten für die Ressource.
+Die **Permission**-Ressource stellt die verschiedenen Formen über Facets für die Ressource dar.
 
 >**Hinweis:** OneDrive für Unternehmen und SharePoint-Dokumentbibliotheken keine die **InheritedFrom** -Eigenschaft zurückgegeben.
 
@@ -69,9 +69,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | inheritedFrom       | [ItemReference][]           | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.
 | Link                | [SharingLink][]             | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.
 | roles               | Collection(String)          | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
-| shareId             | String                      | Ein eindeutiges Token, das Zugriff auf diese über die **[API teilt][]** des freigegebenen Elements verwendet werden können. Schreibgeschützt.
+| shareId             | String                      | Ein eindeutiges Token, das verwendet werden kann, um über die ** [Freigabe][]-API** auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
 | expirationDateTime  | DateTimeOffset              | Ein Format JJJJ-MM-TTThh von DateTimeOffset gibt den Ablaufzeitpunkt der Berechtigung. DateTime.MinValue gibt es für diese Berechtigung, kein Ablaufdatum festgelegt ist. Optional.
-| hasPassword         | Boolean                     | Dies gibt an, ob das Kennwort für diese Berechtigung festgelegt ist, diese nur als Antwort angezeigt wird. Optional und nur-Lese und für OneDrive Personal nur.
+| HasPassword         | Boolescher Wert                     | Dies gibt an, ob das Kennwort für diese Berechtigung festgelegt ist, diese nur als Antwort angezeigt wird. Optional und nur-Lese und für OneDrive Personal nur.
 
 ### <a name="roles-enumeration-values"></a>Werte des Rollen-enumeration
 
@@ -99,7 +99,7 @@ Die [einladen][] API können Sie erstellen eine Verknüpfung, die nur für besti
 
 Hier sind einige Beispiele für Links freigeben.
 
-### <a name="view-link"></a>Verknüpfung anzeigen
+### <a name="view-link"></a>Anzeigelink
 
 Diese Ansicht Verknüpfung bietet schreibgeschützten Zugriff für alle Benutzer mit den Link.
 
@@ -232,7 +232,7 @@ Nachdem die Freigabeeinladung von einem Benutzer eingelöst wurde, enthält die 
 
 [createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[einladen]: ../api/driveitem-invite.md
+[Einladen]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
 [Freigaben-API]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
@@ -240,10 +240,15 @@ Nachdem die Freigabeeinladung von einem Benutzer eingelöst wurde, enthält die 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
-} -->
+  "tocPath": "Resources/Permission",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Ein Ordner, der Kontakte enthält.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 450c683d91eeb789c8c54b2bbfd38db695fbbba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967546"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523799"
 ---
 # <a name="contactfolder-resource-type"></a>Ressourcentyp contactFolder
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein Ordner, der Kontakte enthält.
 
@@ -27,7 +27,7 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 |[contactFolder abrufen](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Dient zum Abrufen eines Kontaktordners anhand der Kontaktordner-ID.|
 |[Aktualisieren](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Dient zum Aktualisieren des contactFolder-Objekts. |
 |[Löschen](../api/contactfolder-delete.md) | Keine |Dient zum Löschen des contactFolder-Objekts. |
-|[childFolders auflisten](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) -Auflistung| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
+|[childFolders auflisten](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) collection| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
 |[Untergeordneten contactFolder erstellen](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Dient zum Erstellen eines neuen contactFolder als untergeordnetes Element eines bestimmten Ordners.|
 |[delta](../api/contact-delta.md)|[contact](contact.md)-Sammlung| Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
 |[Kontakte im Ordner auflisten](../api/contactfolder-list-contacts.md) |[contact](contact.md)-Sammlung| Dient zum Abrufen einer Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder aus dem angegebenen Kontaktordner.|
@@ -42,7 +42,7 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |displayName|Zeichenfolge|Der Anzeigename des Ordners.|
-|id|Zeichenfolge|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
+|id|String|Eindeutiger Bezeichner des Kontaktordners. Schreibgeschützt.|
 |parentFolderId|Zeichenfolge|Die ID des übergeordneten Ordners des Ordners.|
 |wellKnownName|string|Der Name des Ordners, wenn der Ordner einen erkannten Ordner ist. Derzeit `contacts` ist die einzige erkannten Kontakteordner.|
 
@@ -88,10 +88,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "contactFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contactfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

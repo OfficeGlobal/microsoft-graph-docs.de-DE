@@ -1,21 +1,21 @@
 ---
 title: 'group: resetUnseenCount'
-description: Zurücksetzen der UnseenCount der alle Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht erkannt wurde. Unterstützt nur die Office 365-Gruppen.
+description: Dient zum Zurücksetzen des unseenCount-Elements aller Beiträge, die der aktuelle Benutzer seit dem letzten Besuch noch nicht gesehen hat. Wird nur für Office 365-Gruppen unterstützt.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 3d85dc82efd67311b81d69f2f99e63c47155f15a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: aa37261a536437d0e82195ecfaae06de9e1c6a3a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926281"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524814"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Zurücksetzen der UnseenCount der alle Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht erkannt wurde. Unterstützt nur die Office 365-Gruppen.
+Zurücksetzen der UnseenCount der alle Beiträge, die der aktuelle Benutzer seit seinem letzten Besuch nicht erkannt wurde. Wird nur für Office 365-Gruppen unterstützt.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -32,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 POST /groups/{id}/resetUnseenCount
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  | 
@@ -66,10 +66,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: resetUnseenCount",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-resetunseencount.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

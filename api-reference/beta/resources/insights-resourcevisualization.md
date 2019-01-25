@@ -4,16 +4,16 @@ description: Komplexer Typ mit Eigenschaften des Insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526760"
 ---
 # <a name="resourcevisualization-resource-type"></a>Ressourcentyp resourceVisualization
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Komplexer Typ mit Eigenschaften des [Insights](insights.md).
 
@@ -38,20 +38,20 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |---------------| -------------|
-| title                 | Zeichenfolge        | Text für das Element.               |
-| type              | Zeichenfolge        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
-| mediaType             | Zeichenfolge        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
-| Vorschaubild-URL       | Zeichenfolge        | Eine URL für das Element des Vorschaubilds führende. |
-| previewText           | Zeichenfolge        | Eine Vorschautext für das Element. |
-| containerWebUrl       | Zeichenfolge        | Ein Pfad zu dem Ordner, in dem das Element gespeichert ist. |
-| containerDisplayName  | Zeichenfolge        | Eine Zeichenfolge, die beschreibt, in dem das Element gespeichert ist. Beispielsweise der Name einer SharePoint-Website oder den Benutzernamen ein, die den Besitzer der OneDrive, speichern das Element identifiziert.  |
-| containerType         | Zeichenfolge | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
+| title                 | String        | Text für das Element.               |
+| type              | String        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
+| MediaType             | String        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
+| PreviewImageUrl       | String        | Eine URL für das Element des Vorschaubilds führende. |
+| previewText           | String        | Eine Vorschautext für das Element. |
+| containerWebUrl       | String        | Ein Pfad zu dem Ordner, in dem das Element gespeichert ist. |
+| containerDisplayName  | String        | Eine Zeichenfolge, die beschreibt, in dem das Element gespeichert ist. Beispielsweise der Name einer SharePoint-Website oder den Benutzernamen ein, die den Besitzer der OneDrive, speichern das Element identifiziert.  |
+| ContainerType         | String | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Type-Eigenschaftenwerte
 -   PowerPoint
 -   Word
 -   Excel
--   PDF-Datei
+-   PDF
 -   OneNote
 -   OneNotePage
 -   InfoPath
@@ -65,8 +65,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 -   XPS
 -   Audio
 -   Video
--   Image
--   Web
+-   Bild
+-   Netz
 -   Text
 -   XML
 -   Story
@@ -80,10 +80,18 @@ Beispiel für eine Abfrage:`https://graph.microsoft.com/beta/me/insights/trendin
 Unterstützten Typen können basierend auf Container unterscheiden sich aus denen die [Erkenntnisse](insights.md) Dateien zurückgegeben. Beispielsweise gibt nur die [Shared](insights-shared.md) Einblicke Dateien aus 'Ablage', 'Feld' und 'GDrive' zurück.
 
 -   OneDriveBusiness
--   Website
+-   Site
 -   E-Mail
 -   Ablage
 -   Kasten
 -   GDrive
 
 Beispiel für eine Abfrage:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

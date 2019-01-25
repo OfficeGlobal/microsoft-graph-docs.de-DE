@@ -4,16 +4,16 @@ description: 'Eine Gruppe von Ordnern (OutlookTaskFolder), die Outlook-Aufgaben 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d1392e07f76d508fe30307294a54429a692f34e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 486261d80b8faad7a5969f8f1ce198479e39583c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923908"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524618"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Ressourcentyp outlookTaskGroup
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine Gruppe von Ordnern ([OutlookTaskFolder](outlooktaskfolder.md)), die Outlook-Aufgaben (Auflistung von [OutlookTask](outlooktask.md) -Objekten) enthalten. 
 
@@ -33,7 +33,7 @@ In Outlook eine Aufgabe Standardgruppe vorhanden ist `My Tasks` das Umbenennen o
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|changeKey|Zeichenfolge|Die Version der Aufgabengruppe.|
+|changeKey|String|Die Version der Aufgabengruppe.|
 |groupKey|Edm.Guid|Der eindeutige GUID-Bezeichner für die Aufgabengruppe.|
 |id|Zeichenfolge|Der eindeutige Zeichenfolgenbezeichner der Aufgabengruppe. Schreibgeschützt.|
 |isDefaultGroup|Boolescher Wert|True, wenn die "Task Group" der Standardproxygruppe für die Aufgabe ist.|
@@ -68,10 +68,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTaskGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktaskgroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

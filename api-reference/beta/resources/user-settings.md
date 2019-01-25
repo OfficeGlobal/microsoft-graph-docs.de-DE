@@ -4,16 +4,16 @@ description: 'Den aktuellen benutzereinstellungen. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7beddf0c0ac1d6279d5e6e53b8a87844f19efba6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967973"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521096"
 ---
 # <a name="settings-resource-type"></a>Ressourcentyp Einstellungen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Den aktuellen benutzereinstellungen. Informationen zum Abrufen oder Aktualisieren von benutzereinstellungen, finden Sie unter [Abrufen von Einstellungen](../api/user-get-settings.md) und [Einstellungen aktualisieren](../api/user-update-settings.md).
 
@@ -25,8 +25,8 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="methods"></a>Methoden
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen der Benutzereinstellungen](../api/user-get-settings.md) |[Einstellungen](../resources/user-settings.md)| Rufen Sie die Einstellungen für Benutzer und Organisation. |
-|[Aktualisieren von benutzereinstellungen](../api/user-update-settings.md) |[Einstellungen](../resources/user-settings.md)| Aktualisieren Sie die aktuellen benutzereinstellungen. |
+|Abrufen der Benutzereinstellungen |[](../resources/user-settings.md) Einstellungen| Rufen Sie die Einstellungen für Benutzer und Organisation. |
+|[Aktualisieren von benutzereinstellungen](../api/user-update-settings.md) |[](../resources/user-settings.md) Einstellungen| Aktualisieren Sie die aktuellen benutzereinstellungen. |
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -46,3 +46,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/user-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

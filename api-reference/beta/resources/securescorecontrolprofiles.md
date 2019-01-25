@@ -2,16 +2,16 @@
 title: Ressourcentyp secureScoreControlProfiles
 description: Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardeinstellung alle Steuerelemente für einen Mandanten zurückgegeben und einzelne Steuerelemente können explizit abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 866b2086ff5160744f848292cedf30c3cedf6daa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866220"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524429"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>Ressourcentyp secureScoreControlProfiles
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardeinstellung alle Steuerelemente für einen Mandanten zurückgegeben und einzelne Steuerelemente können explizit abrufen.
 
@@ -35,15 +35,15 @@ Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardein
 |   actionType  |   String  |   Steuerelementtyp Aktion (Config überprüfen, Verhalten). |
 |   service |   String  |   Dienst, der das Steuerelement (Exchange, Sharepoint, Azure AD) besitzt. |
 |   MaxErgebnis |  String  |   Aktuelle abgerufen max Score am angegebenen Datum.   |
-|   Tier |  String  |   Steuerelement-Tier (Quad-Core, mehrstufige im Detail, erweiterte.)    |
+|   Ebene |  String  |   Steuerelement-Tier (Quad-Core, mehrstufige im Detail, erweiterte.)    |
 |   userImpact |    String  | Beeinträchtigung für die Benutzer Implementieren von Steuerelement (niedrig, Mittel, hoch).    |
 |   implementationCost |    String  |   Ressourcenkosten Implemmentating-Steuerelements (niedrig, Mittel, hoch). |
 |   rank |  Int32   |   Microsoft Stapel ranking des Steuerelements.   |
 |   Bedrohungen |   Zeichenfolgenauflistung   |   Liste der Bedrohungen für das Steuerelement reduziert (AccountBreach, DataDeletion, DataExfiltration, DataSpillage, ElevationOfPrivilege, MaliciousInsider, PasswordCracking, PhishingOrWhaling, spoofing). |
-|   veraltet |    Boolescher Wert |   Flag, das angibt, ob ein Steuerelement abgeschrieben wird.   |
+|   Veraltet |    Boolescher Wert |   Flag, das angibt, ob ein Steuerelement abgeschrieben wird.   |
 |   Wartung |   String  |   Beschreibung, wie das Steuerelement helfen warten. |
 |   remediationImpact | String  |   Beschreibung der Auswirkung auf den Benutzer von der Wartung. |
-|   actionUrl | String  |   URL zu, in dem das Steuerelement verarbeitet werden kann. |
+|   ActionUrl | String  |   URL zu, in dem das Steuerelement verarbeitet werden kann. |
 |   controlStateUpdates |   [SecureScoreControlStateUpdate](securescorecontrolstateupdate.md) -Auflistung |    Kennzeichnung, die angibt, für der Mandanten ein Steuerelement markiert wurde (ignorieren, ThirdParty, überprüft) (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Beziehungen
@@ -91,10 +91,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScoreControlProfiles resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Enthält die Liste der Entitäten, Synchronisierung und ihre Anpass
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 18b37276730286650e3fd75ad57a6b16e7917a04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e513e64afb1478ca7b5cc5d53f1964d16d9928b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425960"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523253"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>Ressourcentyp educationSynchronizationCustomizations
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enthält die Liste der Entitäten, Synchronisierung und ihre [Anpassungen](educationsynchronizationcustomization.md), sofern vorhanden.
 
@@ -30,8 +30,8 @@ Diese Ressource ist Mitglied der folgenden Datenanbieter:
 |:-|:-|:-|
 | **School** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Schule Entität.        |
 | **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Entität im Abschnitt.         |
-| **student** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Student-Entität.         |
-| **teacher** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Entität Lehrer.         |
+| student | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Student-Entität.         |
+| teacher | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für eine Entität Lehrer.         |
 | **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Anpassung für die Student-Registrierung.           |
 | **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Anpassung für eine Teilnehmerliste Lehrer.    |
 
@@ -54,3 +54,11 @@ Diese Ressource ist Mitglied der folgenden Datenanbieter:
   "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomizations.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

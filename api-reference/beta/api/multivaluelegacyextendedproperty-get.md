@@ -1,17 +1,17 @@
 ---
 title: Get multiValueLegacyExtendedProperty
-description: Erweitern Sie ".
+description: $expand
 localization_priority: Normal
-ms.openlocfilehash: 2dd97797fb15641e772d27d6ffb9652fabe3c04b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837744"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525241"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Get multiValueLegacyExtendedProperty
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Dient zum Abrufen einer Ressourceninstanz mit einer erweiterten mehrwertigen Eigenschaft mithilfe von `$expand`.
 
@@ -24,7 +24,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [Nachricht](../resources/message.md) 
 - [Outlook-Aufgabe](../resources/outlooktask.md)
 - [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)
 
@@ -49,7 +49,7 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 | [event](../resources/event.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [post](../resources/post.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook-Aufgabe](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
 | [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
  
@@ -57,36 +57,36 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 
 Rufen Sie eine erweiterte Ressourceninstanz mit erweiterter Eigenschaft ab, die einem Filter für die **id**-Eigenschaft entspricht. Stellen Sie sicher, dass Sie die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) auf die Leerzeichen in der Filterzeichenfolge anwenden.
 
-Erhalten Sie eine Instanz der **Nachricht** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **message**-Instanz:
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **MailFolder** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **mailFolder**-Instanz:
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Rufen Sie eine Instanz **Ereignis** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **Kalender** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **calendar**-Instanz:
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Abrufen einer Instanz **wenden Sie sich an** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **contact**-Instanz:
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **ContactFolder** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **contactFolder**-Instanz:
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,12 +109,12 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Eine Gruppe **Ereignis** Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz für eine Gruppe:
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Eine Gruppe **Buchen** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **post**-Instanz für eine Gruppe:
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -192,10 +192,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get multiValueLegacyExtendedProperty",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

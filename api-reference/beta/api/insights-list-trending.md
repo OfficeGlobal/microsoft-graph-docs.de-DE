@@ -4,16 +4,16 @@ description: Berechnete Insight, der die Liste der Elemente, um den Benutzer Tre
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: bc0dcd70ef8fb527096e8142f188f9c2cbf02193
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 512dcdfb8a94a2a90c47c4005298537d1d83f137
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926218"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525108"
 ---
 # <a name="list-trending"></a>Liste Trend
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Berechnete Insight, der die Liste der Elemente, um den Benutzer Trend zurückgibt.
 
@@ -48,7 +48,7 @@ Finden Sie die verfügbaren Containertypen und Typen, die Sie nach [ResourceVisu
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       |  Wert|
+| Kopfzeile       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Annehmen  | application/json|
@@ -103,3 +103,11 @@ Die Ressource, die durch einen Trend Einblick kann erweitert werden.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

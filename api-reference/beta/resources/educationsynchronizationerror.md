@@ -4,16 +4,16 @@ description: Stellt einen Fehler bei der Validierung der Schule Profil und/oder 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525143"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>Ressourcentyp educationSynchronizationError
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Fehler bei der Validierung der Schule Profil und/oder Sync dar. Für jeden Eintrag, der nicht überprüfen und/oder Synchronisieren mit Azure Active Directory (AD Azure), ist ein eindeutiger Fehler generiert.
 
@@ -28,10 +28,10 @@ Stellt einen Fehler bei der Validierung der Schule Profil und/oder Sync dar. Fü
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
 | **entryType** | string |  Stellt die Sync-Entität (Schule, Abschnitt, Student, Lehrer).       |
-| **<ui>errorCode</ui>** | string |  Stellt den Fehlercode für diesen Fehler.         |
-| **errorMessage** | string |  Enthält eine Beschreibung des Fehlers.        |
+| errorCode | string |  Stellt den Fehlercode für diesen Fehler.         |
+| error.message | string |  Enthält eine Beschreibung des Fehlers.        |
 | **joiningValue** | string |  Der eindeutige Bezeichner für den Eintrag.         |
-| **recordedDateTime** | DateTimeOffset | Der Zeitpunkt des Auftretens dieses Fehlers.         |
+| recordedDateTime | DateTimeOffset | Der Zeitpunkt des Auftretens dieses Fehlers.         |
 | **reportableIdentifier** | string | Der Bezeichner für diesen Fehlereintrag.       |
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -53,3 +53,11 @@ Stellt einen Fehler bei der Validierung der Schule Profil und/oder Sync dar. Fü
     "reportableIdentifier": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

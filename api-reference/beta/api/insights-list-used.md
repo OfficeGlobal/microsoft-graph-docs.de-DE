@@ -4,16 +4,16 @@ description: Berechnete Insight, der die Liste der Dateien mit einem Benutzer zu
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 107e9429228bbedf131ae4ca4adde79e280cedb9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e73536d5933d6293539eb00ba8cdc2e85ce5fa93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990634"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526102"
 ---
 # <a name="list-used"></a>Verwendet wird
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Berechnete Insight, der die Liste der Dateien mit einem Benutzer zurückgibt.
 
@@ -50,7 +50,7 @@ Finden Sie die verfügbaren Containertypen und Typen, die Sie nach [ResourceVisu
 
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       |  Wert|
+| Kopfzeile       |  Wert|
 |:-------------|:------|
 | Authorization  | Bearer {token}. Erforderlich.|
 | Annehmen  | application/json|
@@ -107,3 +107,11 @@ Die Ressource, die durch eine verwendeten Erkenntnisse kann erweitert werden.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 'ServicePrincipal: Delta'
 description: Get neu erstellt, aktualisiert oder gelöscht Dienstprinzipale ohne ein alles Lesen der gesamte Ressource Auflistung ausführen. Einzelheiten finden Sie unter Delta-Abfrage verwenden.
 localization_priority: Normal
-ms.openlocfilehash: f1801f98950f132e8fdc94770d616fc2e523a2de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed0cf279d1d076e324d24e1774734e9aa14a6b34
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520074"
 ---
 # <a name="serviceprincipal-delta"></a>ServicePrincipal: Delta
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get neu erstellt, aktualisiert oder gelöscht Dienstprinzipale ohne ein alles Lesen der gesamte Ressource Auflistung ausführen. Einzelheiten finden Sie unter [Delta-Abfrage verwenden](/graph/delta-query-overview) .
 
@@ -126,10 +126,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c21c891981106faa4b631bb2713913bfa8ed0713
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856392"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521453"
 ---
-# <a name="sharinglink-resource-type"></a>Ressourcentyp sharingLink
+# <a name="sharinglink-resource-type"></a>SharingLink-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die Ressource **SharingLink** gruppiert Link-bezogene Datenelemente in eine einzelne Struktur.
+Die **SharingLink**-Ressource gruppiert linkbezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn eine [**Berechtigung**](permission.md) Ressource ein nicht-Null- **SharingLink** Aspekt ist, stellt die Berechtigung sharing Link (im Gegensatz zu einer Person oder Gruppe gewährten Berechtigungen) dar.
+Wenn eine [**Permission**](permission.md)-Ressource ein **sharingLink**-Facet ungleich Null aufweist, stellt die Berechtigung einen Freigabelink dar (im Gegensatz zu Berechtigungen, die einer Person oder Gruppe erteilten werden).
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -47,7 +47,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | application    | [Identität][]  | Die App, der der Link zugeordnet ist.
 | type           | String        | Der Typ des erstellten Links.
 | scope          | String        | Der Bereich des Links, der durch diese Berechtigung dargestellt wird. Der Wert `anonymous` gibt an, dass der Link von jedem Benutzer verwendet werden kann. `organization` gibt an, dass der Link von Benutzern verwendet werden kann, die bei dem gleichen Mandanten angemeldet sind.
-| preventsDownload | Boolean       | Wenn True, klicken Sie dann der Benutzer kann nur dieser Link zum Anzeigen des Elements im Web verwenden, und nicht verwenden, um den Inhalt des Artikels herunterladen. Nur für OneDrive für Unternehmen und SharePoint.
+| preventsDownload | Boolescher Wert       | Wenn True, klicken Sie dann der Benutzer kann nur dieser Link zum Anzeigen des Elements im Web verwenden, und nicht verwenden, um den Inhalt des Artikels herunterladen. Nur für OneDrive für Unternehmen und SharePoint.
 | webHtml        | Zeichenfolge        | Bei `embed` Links enthält diese Eigenschaft den HTML-Code für ein `<iframe>`-Element, das das Element in eine Webseite einbettet.
 | webUrl         | String        | Eine URL, mit der das Element im Browser auf der OneDrive-Website geöffnet wird.
 
@@ -76,10 +76,15 @@ Die folgende Tabelle zeigt die möglichen Werte für die Eigenschaft **Bereich**
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

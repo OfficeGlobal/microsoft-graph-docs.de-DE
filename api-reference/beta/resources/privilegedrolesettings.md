@@ -2,16 +2,16 @@
 title: Ressourcentyp privilegedRoleSettings
 description: Stellt die Einstellungen für eine privilegierten Rolle.
 localization_priority: Normal
-ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842742"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525696"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Ressourcentyp privilegedRoleSettings
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt die Einstellungen für eine privilegierten Rolle.
 
@@ -25,16 +25,16 @@ Stellt die Einstellungen für eine privilegierten Rolle.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Die Dauer, wenn die Rolle aktiviert ist.|
+|ElevationDuration|duration|Die Dauer, wenn die Rolle aktiviert ist.|
 |id|string| Der eindeutige Bezeichner für die rolleneinstellungen. Schreibgeschützt.|
-|isMfaOnElevationConfigurable|Boolean|**true,** Wenn MfaOnElevation konfigurierbar ist. **false,** Wenn MfaOnElevation nicht konfigurierbar ist.|
-|lastGlobalAdmin|Boolean|Verwendet nur intern.|
+|isMfaOnElevationConfigurable|Boolescher Wert|**true,** Wenn MfaOnElevation konfigurierbar ist. **false,** Wenn MfaOnElevation nicht konfigurierbar ist.|
+|lastGlobalAdmin|Boolescher Wert|Verwendet nur intern.|
 |maxElavationDuration|duration|Maximale Dauer für die aktivierte Rolle.|
-|mfaOnElevation|Boolean|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren.|
+|mfaOnElevation|Boolescher Wert|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren.|
 |minElevationDuration|duration|Minimale Dauer für die aktivierte Rolle.|
-|notificationToUserOnElevation|Boolean|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist.|
-|ticketingInfoOnElevation|Boolean|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren.|
-|approvalOnElevation|Boolean|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren.|
+|notificationToUserOnElevation|Boolescher Wert|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist.|
+|ticketingInfoOnElevation|Boolescher Wert|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren.|
+|approvalOnElevation|Boolescher Wert|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren.|
 |approverIds|Array|Liste der Genehmigung-Ids, wenn die Genehmigung für die Aktivierung erforderlich ist.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -72,10 +72,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Aktualisieren Sie die Eigenschaften des Application-Objekts.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecdf1d7f4f291b415e83b3926f8f82ea81f73390
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990705"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525948"
 ---
 # <a name="update-application"></a>Aktualisieren der Anwendung
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren Sie die Eigenschaften des Application-Objekts.
 ## <a name="permissions"></a>Berechtigungen
@@ -41,23 +41,23 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolescher Wert| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *False*. |
-|API|[API](../resources/api.md)| Gibt die Einstellungen für eine API-Anwendung. |
-|appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine Nullwerte zu.|
-|applicationAliases|Collection von Objekten des Typs „String“| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any* -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
+|allowPublicClient|Boolescher Wert| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *false*. |
+|API|API| Gibt die Einstellungen für eine API-Anwendung. |
+|appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine NULL-Werte zu.|
+|applicationAliases|Zeichenfolgenauflistung| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine NULL-Werte zu. |
 |createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
 |deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
 |displayName|Zeichenfolge|Der Anzeigename für die Anwendung. |
-|id|Zeichenfolge|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|id|String|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
 |Info|[informationalUrl](../resources/informationalurl.md)| Grundlegende Profilinformationen der Anwendung. | Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
 |keyCredentials|[KeyCredential](../resources/keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
-|logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine Nullwerte zu. |
-|orgRestrictions|Collection von Objekten des Typs „String“| Die Organisationseinheit TenantIds, die die Anwendung beschränkt ist.  Wenn die Auflistung leer ist, ist die Anwendung mit mehreren Mandanten (nicht eingeschränkt). Wenn die Auflistung TenantIds enthält, ist die Anwendung auf die Organisationseinheit TenantIds in der Auflistung beschränkt. Angeben von anderen Mandanten, aber nicht die TenantId, in dem die Anwendung registriert ist, impliziert, dass die TenantId der Anwendung indirekt enthalten ist. |
-|passwordCredentials|[PasswordCredential](../resources/passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen, die mit der Anwendung verbunden sind. Lässt keine Nullwerte zu.|
+|logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine NULL-Werte zu. |
+|orgRestrictions|Zeichenfolgenauflistung| Die Organisationseinheit TenantIds, die die Anwendung beschränkt ist.  Wenn die Auflistung leer ist, ist die Anwendung mit mehreren Mandanten (nicht eingeschränkt). Wenn die Auflistung TenantIds enthält, ist die Anwendung auf die Organisationseinheit TenantIds in der Auflistung beschränkt. Angeben von anderen Mandanten, aber nicht die TenantId, in dem die Anwendung registriert ist, impliziert, dass die TenantId der Anwendung indirekt enthalten ist. |
+|passwordCredentials|[PasswordCredential](../resources/passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen, die mit der Anwendung verbunden sind. Lässt keine NULL-Werte zu.|
 |preAuthorizedApplications|[PreAuthorizedApplication](../resources/preauthorizedapplication.md) -Auflistung| Listen-Anwendungen und angeforderten Berechtigungen für implizite Zustimmung. Erfordert ein Administrator Zustimmung an die Anwendung bereitgestellt haben. PreAuthorizedApplications erfordern keinen den Benutzer, die angeforderten Berechtigungen zuzustimmen. In PreAuthorizedApplications aufgelisteten Berechtigungen erfordern keine Zustimmung des Benutzers. Keine weiteren angeforderten Berechtigungen nicht in PreAuthorizedApplications aufgeführten erfordern jedoch Zustimmung des Benutzers. |
-|requiredResourceAccess|[RequiredResourceAccess](../resources/requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine Nullwerte zu.|
-|-Tags hinzugefügtes Markup|Collection von Objekten des Typs „String“| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
-|web|[Web](../resources/web.md)| Gibt die Einstellungen für eine Webanwendung. |
+|requiredResourceAccess|[RequiredResourceAccess](../resources/requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine NULL-Werte zu.|
+|tags|Zeichenfolgenauflistung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
+|web|Netz| Gibt die Einstellungen für eine Webanwendung. |
 
 ## <a name="response"></a>Antwort
 
@@ -92,10 +92,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update application",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

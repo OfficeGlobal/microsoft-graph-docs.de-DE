@@ -2,16 +2,16 @@
 title: IdentityProvider aktualisieren
 description: Aktualisieren von Eigenschaften in einer vorhandenen IdentityProvider.
 localization_priority: Normal
-ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832809"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525745"
 ---
 # <a name="update-identityprovider"></a>IdentityProvider aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren von Eigenschaften in einer vorhandenen [IdentityProvider](../resources/identityprovider.md).
 
@@ -47,9 +47,9 @@ Geben Sie im Textkörper Anforderung ein JSON-Objekt mit einer oder mehrerer Eig
 
 |Eigenschaft|Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|clientId|Zeichenfolge|Die Client-ID für die Anwendung. Dies ist die Client-ID abgerufen wird, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
-|clientSecret|Zeichenfolge|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
-|name|Zeichenfolge|Der Anzeigename des Identitätsanbieters.|
+|clientId|String|Die Client-ID für die Anwendung. Dies ist die Client-ID abgerufen wird, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
+|client_secret|String|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
+|name|String|Der Anzeigename des Identitätsanbieters.|
 
 ## <a name="response"></a>Antwort
 
@@ -87,10 +87,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update identityProvider",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

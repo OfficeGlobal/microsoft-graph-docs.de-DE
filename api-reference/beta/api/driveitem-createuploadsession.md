@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Wiederaufnehmbarer Dateien-Upload
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936830"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525339"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Wenn Sie eine Uploadsitzung erstellen, kann Ihre App Dateien bis zur maximal zulässigen Dateigröße hochladen. Eine Uploadsitzung erlaubt es der App, Bereiche einer Datei in sequenziellen API-Anfragen hochzuladen. Bricht die Verbindung während des Uploads ab, kann die Übertragung so anschließend fortgesetzt werden.
 
@@ -95,8 +95,8 @@ Im folgende Beispiel steuert das Verhalten, wenn der Dateiname bereits vergeben 
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| description          | Zeichenfolge             | Enthält eine Benutzer sichtbaren Beschreibung des Elements. Lese-/Schreibzugriff. Nur auf OneDrive persönlich.
-| name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
+| description          | String             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
+| name                 | String             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
 
 ### <a name="request"></a>Anforderung
 
@@ -204,7 +204,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * Die Eigenschaft `nextExpectedRanges` listet nicht immer alle fehlenden Bereiche auf.
 * Wird ein Segment geschrieben, gibt sie den nächsten Bereich zurück, ab dem begonnen wird (z. B. „523-“).
@@ -406,9 +406,14 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

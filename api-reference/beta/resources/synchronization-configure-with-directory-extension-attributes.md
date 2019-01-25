@@ -2,16 +2,16 @@
 title: Konfigurieren der Synchronisierung mit Verzeichnis Extension-Attribute
 description: 'Sie können das Synchronisierungsschema zum Einschließen von Azure Active Directory (AD Azure) Erweiterung Verzeichnisattributen anpassen. In diesem Artikel wird beschrieben, wie mithilfe einer Directory Extension-Attribut (**extension_9d98asdfl15980a_Nickname**) den Wert des User.CommunityNickname in Vertriebs aufgefüllt wird. In diesem Szenario müssen Sie Azure AD-Connect richten Sie eine Reihe von Attributen Erweiterung Directory von Windows Server Active Directory lokalen Azure AD bereit. '
 localization_priority: Normal
-ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850099"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523862"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Konfigurieren der Synchronisierung mit Verzeichnis Extension-Attribute
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sie können das Synchronisierungsschema zum Einschließen von Azure Active Directory (AD Azure) Erweiterung Verzeichnisattributen anpassen. In diesem Artikel wird beschrieben, wie mithilfe einer Directory Extension-Attribut (**extension_9d98asdfl15980a_Nickname**) den Wert des User.CommunityNickname in Vertriebs aufgefüllt wird. In diesem Szenario müssen Sie Azure AD-Connect richten Sie eine Reihe von Attributen Erweiterung Directory von Windows Server Active Directory lokalen Azure AD bereit. 
 
@@ -273,3 +273,11 @@ HTTP/1.1 201 No Content
 ```
 
 Wenn das Schema erfolgreich gespeichert wurde, auf die nächste Iteration des Synchronisierungsauftrags, wird es mit der Verarbeitung erneut alle Konten in Ihrer Azure AD, und die neuen Zuordnungen für alle bereitgestellten Konten angewendet werden.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

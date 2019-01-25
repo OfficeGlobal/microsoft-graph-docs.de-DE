@@ -4,16 +4,16 @@ description: Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: da881d46b69153a85de225b895f6b1c2d622ff09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d56b8dc4579f40156e30a46b00af0f5bfcd82b97
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984437"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520347"
 ---
 # <a name="list-directreports"></a>directReports auflisten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Dient zum Abrufen des direkten Vorgesetzten des Benutzers. Gibt die Benutzer und Kontakte zurück, für die dieser Benutzer als Vorgesetzter zugewiesen ist.
 ## <a name="permissions"></a>Berechtigungen
@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/directReports
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert|
+| Kopfzeile       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json  |
@@ -78,10 +78,15 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

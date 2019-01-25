@@ -3,16 +3,16 @@ title: Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 description: Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Einzelheiten, einschließlich das Abonnieren und behandeln eingehende Benachrichtigungen Set finden Sie unter Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fe571fe0a9a7c982ee7ce93b08457586134d7d91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02ab18d3fa8980211a4937433ad1616b0629bf8c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986136"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526214"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Informationen zum Abonnieren und behandeln eingehende Benachrichtigungen finden Sie unter [Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten](/graph/webhooks), einschließlich.
 
@@ -24,9 +24,9 @@ Mit der Microsoft Graph-API kann eine App Änderungen an den folgenden Ressource
 - Benutzer
 - Gruppen
 - Gruppenunterhaltungen
-- OneDrive, einschließlich SharePoint-Websites zugeordneten Laufwerke freigegebenen Inhalt
-- Persönliche OneDrive-Ordner von Benutzern
-- Sicherheitshinweise
+- Inhalten, die in OneDrive freigegeben werden, einschließlich der diesen SharePoint-Websites zugeordneten Laufwerke
+- Persönlichen OneDrive-Ordnern des Benutzers
+- Sicherheitswarnungen
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -53,5 +53,13 @@ In der Regel sind für Abonnementvorgänge Leseberechtigungen für die Ressource
 [Ereignis]: ./event.md
 [group]: ./group.md
 [message]: ./message.md
-[Benutzer]: ./user.md
-[Benachrichtigung]: ./alert.md
+[user]: ./user.md
+Alert
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

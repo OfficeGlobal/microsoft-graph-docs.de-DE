@@ -2,16 +2,16 @@
 title: itemAttachment-Ressourcentyp
 description: Ein Kontakt, ein Ereignis oder eine Nachricht, die mit einem anderen Ereignis zugeordnet ist,
 localization_priority: Normal
-ms.openlocfilehash: f7372db19a545bd7d6ae39121fd14be4c9f4436b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825004"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520109"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein Kontakt, ein Ereignis oder eine Nachricht, die an einem anderen [Ereignis](../resources/event.md), [Nachricht](../resources/message.md), [Outlook-Aufgabe](../resources/outlooktask.md)oder [Buchen](../resources/post.md)angefügt ist.  
 
@@ -21,15 +21,15 @@ Abgeleitet von [attachment](attachment.md).
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des itemAttachment-Objekts.|
+|[Get](../api/attachment-get.md) | itemAttachment |Dient zum Lesen der Eigenschaften und der Beziehungen des itemAttachment-Objekts.|
 |[Delete](../api/attachment-delete.md) | Keine |Dient zum Löschen des itemAttachment-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentType|String|Der Inhaltstyp der Anlage.|
-|id|String| Die Anlagen-ID.|
-|isInline|Boolean|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
+|id|Zeichenfolge| Die Anlagen-ID.|
+|isInline|Boolescher Wert|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
 |lastModifiedDateTime|DateTimeOffset|Letzte Uhrzeit und letztes Datum der Änderung der Anlage.|
 |name|String|Der Anzeigename der Anlage.|
 |size|Int32|Die Größe der Anlage in Byte.|
@@ -37,7 +37,7 @@ Abgeleitet von [attachment](attachment.md).
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
+|item|OutlookItem|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -64,10 +64,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "itemAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

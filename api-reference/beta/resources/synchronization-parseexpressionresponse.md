@@ -2,16 +2,16 @@
 title: Ressourcentyp parseExpressionResponse
 description: 'Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion.'
 localization_priority: Normal
-ms.openlocfilehash: 550a46b0c27c2ca8d2d4c01baa975d8a204546f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832949"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523890"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Ressourcentyp parseExpressionResponse
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion.
 
@@ -19,10 +19,10 @@ Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synch
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |error|OData.Error|Fehlerdetails, wenn die Auswertung von Ausdrücken ein Fehler aufgetreten.|
-|evaluationResult|Collection von Objekten des Typs „String“|Eine Auflistung von Werten, die mit der Auswertung des Ausdrucks.|
-|evaluationSucceeded|Boolean|`true`Wenn die Auswertung erfolgreich war.|
+|evaluationResult|Zeichenfolgenauflistung|Eine Auflistung von Werten, die mit der Auswertung des Ausdrucks.|
+|evaluationSucceeded|Boolescher Wert|`true`Wenn die Auswertung erfolgreich war.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Ein [AttributeMappingSource](synchronization-attributemappingsource.md) -Objekt, das den analysierten Ausdruck darstellt.|
-|parsingSucceeded|Boolean|`true`Wenn der Ausdruck erfolgreich analysiert wurde.|
+|parsingSucceeded|Boolescher Wert|`true`Wenn der Ausdruck erfolgreich analysiert wurde.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -49,10 +49,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "parseExpressionResponse resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-parseexpressionresponse.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

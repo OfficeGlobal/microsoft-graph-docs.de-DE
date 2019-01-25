@@ -4,16 +4,16 @@ description: 'Liste apps aus dem Microsoft-Teams, app-Katalog. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6f130d1842e8d860265adbdc82d8a5add9da025a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d43f9a8cca7c16bab3b0dec90b26d4c9c6d4d33c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963696"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519269"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Liste der veröffentlichten apps aus dem Microsoft-Teams, app-Katalog
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Liste der [apps](../resources/teamsapp.md) aus dem Microsoft-Teams, app-Katalog. Dazu gehören apps aus dem Microsoft-Teams Store als auch apps aus Ihrer Organisation app-Katalog (die Mandanten-app-Katalog). Wenn Sie apps aus app-Katalog nur Ihrer Organisation erhalten möchten, geben Sie `Organization` als die **DistributionMethod** in der [TeamsCatalogApp](../resources/teamsapp.md) -Ressource.
 
@@ -40,7 +40,7 @@ Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfragepar
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert           |
+| Kopfzeile        | Wert           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Erforderlich.  |
 
@@ -106,3 +106,11 @@ Content-Type: application/json
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: IncompleteData
 localization_priority: Normal
-ms.openlocfilehash: add1e3612f65e203f2437419cbb105b78025aa0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f2493263d5293b95cbe386b46c56429d11dda089
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807511"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525087"
 ---
 # <a name="incompletedata-resource-type"></a>Ressourcentyp incompleteData
 
- > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **IncompleteData** Facetten gibt an, dass eine Ressource mit unvollständiger Daten generiert wurde.
 Die Eigenschaften innerhalb können Informationen über bereitzustellen, Grund, warum es unvollständige Daten.
@@ -36,8 +36,13 @@ Die Eigenschaften innerhalb können Informationen über bereitzustellen, Grund, 
 | missingDataBeforeDateTime | DateTimeOffset | Der Dienst hat keine Quelldaten vor dem angegebenen Zeitpunkt.
 | wasThrottled              | Boolescher Wert        | Einige Daten wurde nicht übermäßig viele Aktivitäten aufgezeichnet.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/IncompleteData"
-} -->
+  "tocPath": "Facets/IncompleteData",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/incompletedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

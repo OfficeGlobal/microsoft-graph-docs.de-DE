@@ -4,16 +4,16 @@ description: Aktualisiert das PivotTable-Objekt in einem gegebenen Arbeitsblatt.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6edad0def37d67dddb6258814c6d4a4004a93366
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 734a1fa6e11211ca29a7a53a815ff88ebdd35fb5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525423"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisiert das PivotTable-Objekt in einem gegebenen Arbeitsblatt.
 
@@ -66,3 +66,11 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```http
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookpivottable-refreshall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

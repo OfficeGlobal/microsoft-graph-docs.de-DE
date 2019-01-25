@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
-ms.openlocfilehash: 952a86161047ab869238feaba50b8ad4d8ce0658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e674c996002b3a54c92886dd1c5dca7a76c56b51
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845598"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526270"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **CommentAction**-Ressource enthält Informationen zu einer für ein Element vorgenommenen [Kommentaraktivität][].
 
@@ -49,10 +49,15 @@ Die **CommentAction**-Ressource enthält Informationen zu einer für ein Element
 
 Elementaktivitätsdatensätze sind zurzeit nur für SharePoint und OneDrive for Business verfügbar.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The CommentAction object provides information about a comment that was made on an item.",
   "keywords": "activities,activity,action,comment",
   "section": "documentation",
-  "tocPath": "Resources/CommentAction"
-} -->
+  "tocPath": "Resources/CommentAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/commentaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

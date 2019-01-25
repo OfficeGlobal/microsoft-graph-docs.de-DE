@@ -4,16 +4,16 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: fa518e3820437ec02ee2b28e1b9a93fab3d4b100
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 22596f7e9fea5954fc9b6fceb8dae117cf762cb5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977689"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525983"
 ---
 # <a name="using-order-hints-in-planner"></a>Verwenden von ORDER-Hinweisen in Planner
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Objekte in Planner identifizieren ihre Sortierreihenfolge anhand von ORDER-Hinweisen. Die Werte von ORDER-Hinweisen sind Zeichenfolgen. Die Clients können die Zeichenfolgen basierend auf dem Ordnungswert von darin enthaltenen Zeichen sortieren, um die Reihenfolge von Elementen zu identifizieren. Die Zeichen werden ab dem Anfang der Zeichenfolge verglichen, bis ein Unterschied in den Ordnungswerten der Zeichen gefunden wird oder bis eine Zeichenfolge endet. In diesem Fall wird die kürzere Zeichenfolge vor der längeren sortiert. Die Werte können beliebige Zeichen zwischen den Ordnungszahlen 32 (Leerzeichen) und 126 enthalten (`~`).
 
@@ -81,3 +81,11 @@ Fügen Sie das dritte Element am Ende hinzu:
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/planner-order-hint-format.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

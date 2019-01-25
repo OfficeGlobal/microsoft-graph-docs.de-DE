@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Liste mit Zugriff auf eine Datei
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 224674d15f77794da798b3f5690c492089a932f1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: efd09838771adb656f5c32ade47d7b7de55ff6b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956494"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524926"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Auflisten von Berechtigungen für ein DriveItem
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listen Sie geltende Freigabe-Berechtigungen für ein [DriveItem](../resources/driveitem.md) auf.
 
@@ -142,10 +142,15 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Them
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
-} -->
+  "tocPath": "Sharing/Permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

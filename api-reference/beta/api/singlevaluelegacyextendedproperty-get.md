@@ -2,16 +2,16 @@
 title: singleValueLegacyExtendedProperty abrufen
 description: Sie können eine einzelne Ressourceninstanz erweitert mit einer bestimmten erweiterten Eigenschaft oder eine Auflistung von Resource-Instanzen abzurufen.
 localization_priority: Normal
-ms.openlocfilehash: ee9d51f945650c8051badd27f1b934d03f47cc7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ead4881737f4431138d444ffe8df131c22c131fc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873185"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525094"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty abrufen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sie können eine einzelne, mit einer bestimmten erweiterten Eigenschaft erweiterte Ressourceninstanz oder eine Sammlung von Ressourceninstanzen abrufen, die einem Filter entsprechende erweiterte Eigenschaften enthalten.
 
@@ -28,7 +28,7 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [contactFolder](../resources/contactfolder.md) 
 - [Ereignis](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [Nachricht](../resources/message.md) 
 - [Outlook-Aufgabe](../resources/outlooktask.md)
 - [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)
 
@@ -53,7 +53,7 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 | [event](../resources/event.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [post](../resources/post.md)-Ressourcen für Gruppen | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook-Aufgabe](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
 | [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Nicht unterstützt |
 
@@ -63,37 +63,37 @@ Je nach der Ressource kommen die erweiterte Eigenschaft aus und geben Sie die Be
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Abrufen einer Ressourceninstanz, erweitert um eine erweiterte Eigenschaft, die einem Filter entspricht
 Hier sehen Sie, wie Sie eine Ressourceninstanz abrufen können, erweitert um die erweiterte Eigenschaft, deren **id**-Eigenschaft dem definierten Filter entspricht. Stellen Sie sicher, dass Sie für die Leerzeichen in der Filterzeichenfolge die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) verwenden.
 
-Erhalten Sie eine Instanz der **Nachricht** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **message**-Instanz:
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **MailFolder** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **mailFolder**-Instanz:
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Rufen Sie eine Instanz **Ereignis** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **Kalender** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **calendar**-Instanz:
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Abrufen einer Instanz **wenden Sie sich an** :<!-- { "blockType": "ignored" } -->
+Abrufen einer **contact**-Instanz:
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Eine **ContactFolder** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **contactFolder**-Instanz:
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -116,12 +116,12 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProp
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Eine Gruppe **Ereignis** Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **event**-Instanz für eine Gruppe:
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Eine Gruppe **Buchen** -Instanz abrufen:<!-- { "blockType": "ignored" } -->
+Abrufen einer **post**-Instanz für eine Gruppe:
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -133,36 +133,36 @@ Rufen Sie Instanzen einer unterstützten Ressource ab, die eine numerische erwei
 
 Die folgenden Syntaxzeilen zeigen einen Filter, der den `eq`-Operator auf die ID anwendet, und einen `eq`-Operator, der auf den Eigenschaftswert angewandt wird. Sie können den `eq`-Operator, der auf den **Wert** angewandt wird, durch einen der anderen Operatoren (`ne`,`ge`, `gt`, `le` oder `lt`) ersetzen, die auf numerische Werte angewandt werden.
 
-**Nachricht** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **message**-Instanzen:
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**MailFolder** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **mailFolder**-Instanzen:
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-**Ereignis** -Instanzen abzurufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **event**-Instanzen:
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**Kalender** -Instanzen abzurufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **calendar**-Instanzen:
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**Wenden Sie sich an** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **contact**-Instanzen:
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-**ContactFolder** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **contactFolder**-Instanzen:
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -185,12 +185,12 @@ GET /me/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedPropertie
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Gruppe **Ereignis** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **event**-Instanzen für Gruppen:
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Gruppe **Buchen** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **post**-Instanzen für Gruppen:
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -201,7 +201,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 Rufen Sie Instanzen der Ressource **Nachricht** oder **Ereignis** mit einer erweiterten Eigenschaft des Typs Zeichenfolge ab, die einem Filter entspricht. Der Filter wendet einen `eq`-Operator auf die **ID**-Eigenschaft und einen der folgenden Operatoren auf die Eigenschaft **Wert** an: `contains`, `startswith`, `eq` oder `ne`. Stellen Sie sicher, dass Sie für die folgenden Zeichen in der Filterzeichenfolge die [URL-Codierung](https://www.w3schools.com/tags/ref_urlencode.asp) verwenden: Doppelpunkte, Vorwärtsschrägstriche und Leerzeichen.
 
 
-**Nachricht** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **message**-Instanzen:
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -220,7 +220,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-**Ereignis** -Instanzen abzurufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **event**-Instanzen:
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -235,7 +235,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Gruppe **Ereignis** Instanzen abgerufen:<!-- { "blockType": "ignored" } -->
+Abrufen von **event**-Instanzen für Gruppen:
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
@@ -397,10 +397,15 @@ Bei den zwei vorhergehenden Beispielen ist eine erfolgreiche Antwort durch den A
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get singleValueLegacyExtendedProperty",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

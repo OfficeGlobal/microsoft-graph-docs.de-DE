@@ -2,19 +2,19 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: SitePage
+title: sitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939238"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522301"
 ---
 # <a name="sitepage-resource"></a>SitePage-Ressource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Diese Ressource stellt eine Seite in der SitePages [Liste][]dar.
 Sie enthält den Titel, Layout und eine Auflistung von [WebPart][]s.
@@ -22,13 +22,13 @@ Sie enthält den Titel, Layout und eine Auflistung von [WebPart][]s.
 ## <a name="tasks-on-a-page"></a>Aufgaben auf einer Seite
 
 Die folgenden Aufgaben sind für **SitePage** Ressourcen verfügbar.
-Alle unten stehenden Beispiele sind relativ zu einer [Website][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+Alle Beispiele unten beziehen sich auf  eine Website, z. B.: [][].
 
 | Häufige Aufgaben                     | HTTP-Methode
 |:--------------------------------|:------------------------------
-| [Seiten auflisten][]                  | Abrufen von /pages
+| [Seiten auflisten][]                  | GET Pages
 | [Seite abrufen][]                    | Abrufen von /pages/ {Seiten-Id}
-| [Create][]                      | POST-/pages
+| [Create][]                      | POST Seiten
 | [Delete][]                      | Löschen von /pages/ {Seiten-Id}
 | [Publish][]                     | Posten Sie /pages/ {Seiten-Id} / veröffentlichen
 
@@ -89,7 +89,7 @@ Die Ressource **SitePage** hat die folgenden Felder Content.
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Der Titel der Seite.
 | pageLayout         | string                     | Der Name des auf der Seite auf das Seitenlayout.
-| webParts           | [webPart][]                | Die Webparts auf der Seite.
+| webParts           | Webpart                | Die Webparts auf der Seite.
 
 ## <a name="authoring-metadata"></a>Erstellen von Metadaten
 
@@ -125,10 +125,11 @@ Die Ressource **SitePage** hat keine Beziehung zu anderen Ressourcen.
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[Website]: site.md
-[webPart]: webpart.md
+[site]: site.md
+Webpart
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -136,8 +137,12 @@ Die Ressource **SitePage** hat keine Beziehung zu anderen Ressourcen.
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

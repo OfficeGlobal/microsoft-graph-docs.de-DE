@@ -4,16 +4,16 @@ description: 'Antwort an den Absender einer Nachricht, einen Kommentar hinzufüg
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e8931b315cd0ee21228cf70ca36fa7be5bed7f70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6461d9735459ff9cf956820b00bb61a4d42d1ec0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962877"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519010"
 ---
 # <a name="message-reply"></a>message: reply
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Antwortet dem Absender einer Nachricht, fügt einen Kommentar hinzu oder ändert aktualisierbare Eigenschaften in einem **reply**-Aufruf. Die Nachricht wird dann im Ordner „Gesendete Elemente“ gespeichert.
 
@@ -53,8 +53,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|comment|Zeichenfolge|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-|message|[message](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
+|comment|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
+|message|[Nachricht](../resources/message.md)|Alle schreibbaren Eigenschaften, die in der Antwortnachricht aktualisiert.|
 
 ## <a name="response"></a>Antwort
 
@@ -105,10 +105,15 @@ HTTP/1.1 201 Created
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-reply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

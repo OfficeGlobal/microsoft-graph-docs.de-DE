@@ -4,16 +4,16 @@ description: In Azure AD Access Feature überprüft, die Entscheidungen eines Ac
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f89fdbce1c87ce9ef8a6ba8c5b7f9b7be410617
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eeaa1374bbd44cfe9556e488d25e0fc2c7594cde
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927009"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521796"
 ---
 # <a name="list-accessreview-decisions"></a>Liste AccessReview Entscheidungen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abgerufen Sie in der Azure AD [Access überprüft](../resources/accessreviews-root.md) -Funktion werden die Entscheidungen eines [AccessReview](../resources/accessreview.md) -Objekts.
 
@@ -36,7 +36,7 @@ GET /accessReviews('{reviewId}')/decisions
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich.  |
+| Authorization | string | Bearertoken Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Keine Anforderungstext sollte angegeben werden.
@@ -92,10 +92,15 @@ Content-type: application/json
 |[Anwenden von AccessReview Entscheidungen](accessreview-apply.md) |        Keine.   |   Gelten Sie die Entscheidungen aus einer abgeschlossenen AccessReview.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview decisions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

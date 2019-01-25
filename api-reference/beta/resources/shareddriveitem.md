@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: d20656351725f23d4fd4c00b65fdc88fe2f449b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853067"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524121"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **sharedDriveItem**-Ressource wird zurückgegeben, wenn die [Freigabe](../api/shares-get.md)-API für den Zugriff auf ein freigegebenes[driveItem](driveitem.md)-Objekt verwendet wird.
 
@@ -61,7 +61,7 @@ Die **sharedDriveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgelei
 | **driveItem**     | [**driveItem**][driveItem] | Dient für den Zugriff auf das zugrunde liegende **driveItem**
 | **list**          | [**list**][list]           | Dient für den Zugriff auf das zugrunde liegende **list**
 | **listItem**      | [**listItem**][listItem]   | Dient für den Zugriff auf das zugrunde liegende **listItem**
-| **permission**    | [**Berechtigung**][permission] | Verwendet, um die **Berechtigung** für den zugrunde liegenden sharing Hyperlink zugreifen
+| **permission**    | Berechtigung | Verwendet, um die **Berechtigung** für den zugrunde liegenden sharing Hyperlink zugreifen
 | **site**          | [**site**][site]           | Dient für den Zugriff auf das zugrunde liegende **site**
 
 Für in persönlichen OneDrive-Konten freigegebene **driveItems** könnenSie alternativ ebenfalls folgende Beziehungen verwenden.
@@ -87,10 +87,15 @@ Für in persönlichen OneDrive-Konten freigegebene **driveItems** könnenSie alt
 
 Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Share resource returns information about a shared item or collection of items.",
   "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": "Resources/Share"
-} -->
+  "tocPath": "Resources/Share",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareddriveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

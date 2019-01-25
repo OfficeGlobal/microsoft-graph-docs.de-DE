@@ -4,16 +4,16 @@ description: Dient zum Aktualisieren der Eigenschaften des ChartDataLabels-Objek
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f61113f8cd0617d6d8eb3f3191112d74e55f27cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985438"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518296"
 ---
 # <a name="update-chartdatalabels"></a>ChartDataLabels aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Dient zum Aktualisieren der Eigenschaften des ChartDataLabels-Objekts.
 ## <a name="permissions"></a>Berechtigungen
@@ -43,12 +43,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |position|string|DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Mögliche Werte: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |Separator|string|Zeichenfolge, die das Trennzeichen für die Datenbeschriftungen in einem Diagramm darstellt.|
-|showBubbleSize|boolean|Boolescher Wert, der angibt, ob die Größe der Datenbeschriftungs-Sprechblase angezeigt wird.|
-|showCategoryName|boolean|Boolescher Wert, der angibt, ob der Kategoriename der Datenbeschriftung angezeigt wird.|
-|showLegendKey|boolean|Boolescher Wert, der angibt, ob das Legendensymbol der Datenbeschriftung angezeigt wird.|
-|showPercentage|boolean|Boolescher Wert, der angibt, ob der Prozentsatz der Datenbeschriftung angezeigt wird.|
-|showSeriesName|boolean|Boolescher Wert, der angibt, ob der Name der Datenbeschriftungsreihe angezeigt wird.|
-|showValue|boolean|Boolescher Wert, der angibt, ob der Datenbeschriftungswert angezeigt wird.|
+|showBubbleSize|Boolescher Wert|Boolescher Wert, der angibt, ob die Größe der Datenbeschriftungs-Sprechblase angezeigt wird.|
+|showCategoryName|Boolescher Wert|Boolescher Wert, der angibt, ob der Kategoriename der Datenbeschriftung angezeigt wird.|
+|showLegendKey|Boolescher Wert|Boolescher Wert, der angibt, ob das Legendensymbol der Datenbeschriftung angezeigt wird.|
+|showPercentage|Boolescher Wert|Boolescher Wert, der angibt, ob der Prozentsatz der Datenbeschriftung angezeigt wird.|
+|showSeriesName|Boolescher Wert|Boolescher Wert, der angibt, ob der Name der Datenbeschriftungsreihe angezeigt wird.|
+|showValue|Boolescher Wert|Boolescher Wert, der angibt, ob der Datenbeschriftungswert angezeigt wird.|
 
 ## <a name="response"></a>Antwort
 
@@ -96,10 +96,15 @@ Content-length: 134
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update chartdatalabels",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

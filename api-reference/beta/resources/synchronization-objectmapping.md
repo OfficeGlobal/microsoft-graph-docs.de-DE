@@ -2,16 +2,16 @@
 title: Ressourcentyp objectMapping
 description: Definiert, wie ein bestimmtes Objekt aus dem Quellverzeichnis zum Zielverzeichnis synchronisiert werden sollen. Insbesondere wird definiert, wie-Objekts in Quellverzeichnis ein Objekt im Zielverzeichnis, zugeordnet werden soll was (falls vorhanden) festlegen des Gültigkeitsbereichs Filter sollte verwendet werden, zu entscheiden, ob wir ein bestimmtes Objekt bereitstellen möchten, und Wechsel zu von transformiert wie Objektattribute werden sollten Quell-und Zielverzeichnis.
 localization_priority: Normal
-ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851751"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526914"
 ---
 # <a name="objectmapping-resource-type"></a>Ressourcentyp objectMapping
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Definiert, wie ein bestimmtes Objekt aus dem Quellverzeichnis zum Zielverzeichnis synchronisiert werden sollen. Insbesondere wird definiert, wie-Objekts in Quellverzeichnis ein Objekt im Zielverzeichnis, zugeordnet werden soll was (falls vorhanden) festlegen des Gültigkeitsbereichs Filter sollte verwendet werden, zu entscheiden, ob wir ein bestimmtes Objekt bereitstellen möchten, und Wechsel zu von transformiert wie Objektattribute werden sollten Quell-und Zielverzeichnis.
 
@@ -24,11 +24,11 @@ Objekt Zuordnungen der Hauptteil der [Synchronisierung Regel](synchronization-sy
 |attributeMappings  |[AttributeMapping](synchronization-attributemapping.md) -Auflistung    | Attribut Zuordnungen definieren, welche Attribute zuordnen aus dem Quellobjekt in das Zielobjekt und wie übertragen werden soll. Eine Reihe von Funktionen stehen die Transformation der ursprünglichen Quellwerte unterstützen.|
 |enabled        |Boolescher Wert    |Wenn `true`, diese objektzuordnung während der Synchronisation verarbeitet werden. Wenn `false`, diese objektzuordnung übersprungen.|
 |flowTypes      |objectFlowType    |Welche Ablauf für diese objektzuordnung aktiviert sind. `Add`erstellt neue Objekte in das Zielverzeichnis `Update` ändert vorhandene Objekte und `Delete` Verwaltungsagents vorhandener Benutzer. Der Standardwert ist `Add, Update, Delete`. |
-|Metadaten       |MetadataEntry-Auflistung    |Zusätzliche Erweiterungseigenschaften. Es sei denn, Sie explizit erwähnt, sollte Metadatenwerte nicht geändert werden.|
-|name           |Zeichenfolge     |Human-Anzeigenamen des Objekt-Zuordnung.|
-|scope          |[filter](synchronization-filter.md)     |Definiert einen Filter verwendet werden, bei der Entscheidung, ob ein bestimmtes Objekt bereitgestellt werden soll. Angenommen, möchten Sie nur für Benutzer bereitgestellt werden soll, die sich in den USA befinden.|
-|Objektname (Herkunft)           |Zeichenfolge     |Name des Objekts in das Quellverzeichnis. Muss die zu verwendenden Objektnamen aus der Quelle [Directory Definition](synchronization-directorydefinition.md)übereinstimmen.|
-|targetObjectName           |Zeichenfolge     |Name des Objekts in das Zielverzeichnis. Muss die zu verwendenden Objektnamen aus der Ziel- [Verzeichnis Definition](synchronization-directorydefinition.md)übereinstimmen.|
+|$metadata       |MetadataEntry-Auflistung    |Zusätzliche Erweiterungseigenschaften. Es sei denn, Sie explizit erwähnt, sollte Metadatenwerte nicht geändert werden.|
+|name           |String     |Human-Anzeigenamen des Objekt-Zuordnung.|
+|Bereich          |[filter](synchronization-filter.md)     |Definiert einen Filter verwendet werden, bei der Entscheidung, ob ein bestimmtes Objekt bereitgestellt werden soll. Angenommen, möchten Sie nur für Benutzer bereitgestellt werden soll, die sich in den USA befinden.|
+|Objektname (Herkunft)           |String     |Name des Objekts in das Quellverzeichnis. Muss die zu verwendenden Objektnamen aus der Quelle [Directory Definition](synchronization-directorydefinition.md)übereinstimmen.|
+|targetObjectName           |String     |Name des Objekts in das Zielverzeichnis. Muss die zu verwendenden Objektnamen aus der Ziel- [Verzeichnis Definition](synchronization-directorydefinition.md)übereinstimmen.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -348,10 +348,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectMapping resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

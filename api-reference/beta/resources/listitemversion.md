@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: ListItemVersion
+title: listItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: abc6187f4e0ef415ec8a01088fd02aa406b1bc50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1d153a8ae8291e0299d1a470db6c8c7e0c8bd3e4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524751"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **ListItemVersion**-Ressource stellt eine frühere Version der [ListItem](listitem.md)-Ressource dar.
 
@@ -67,10 +67,15 @@ In der folgenden Tabelle werden die Beziehungen der **driveItemVersion**-Ressour
 | **fields**        | [fieldValueSet](../resources/fieldvalueset.md) | Eine Auflistung der Felder und Werte für diese Version des Listenelements. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitemversion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

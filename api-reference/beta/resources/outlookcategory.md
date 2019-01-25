@@ -4,16 +4,16 @@ description: Stellt eine Kategorie dar, anhand der ein Benutzer Outlook-Elemente
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9e4aa0c381e42522f80d933052ad7f0386643c60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5124a681cd4dd1f37ef1ecfea250eb6eb2d228a3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524765"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Kategorie dar, anhand der ein Benutzer Outlook-Elemente, z. B. Nachrichten und Ereignisse, gruppieren kann. In Outlook wird der Benutzer Kategorien in einer Masterliste definiert und kann eine oder mehrere dieser benutzerdefinierten Kategorien einem Element anwenden. 
 
@@ -26,7 +26,7 @@ Jede Kategorie weist zwei Eigenschaften auf: **displayName** und **color**. Der 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |displayName|Zeichenfolge|Ein eindeutiger Name, der eine Kategorie im Postfach des Benutzers identifiziert. Nach der Erstellung einer Kategorie kann der Namen nicht geändert werden. Schreibgeschützt.|
-|color|Zeichenfolge|Eine voreingestellte Konstante, die eine Kategorie charakterisiert und einer von 25 vordefinierten Farben zugeordnet ist. Siehe folgenden Hinweis. |
+|color|String|Eine voreingestellte Konstante, die eine Kategorie charakterisiert und einer von 25 vordefinierten Farben zugeordnet ist. Siehe folgenden Hinweis. |
 
 > **Hinweis** Die möglichen Werte für **color** sind vordefinierte Konstanten wie `None`, `preset0` und `preset1`. Jede voreingestellte Konstante ist weiter einer Farbe zugeordnet. Die tatsächliche Farbe ist von dem Outlook-Client abhängig, auf dem die Kategorien angezeigt werden. In der folgenden Tabelle sind die Farben dargestellt, die den einzelnen vordefinierten Konstanten für Outlook (Desktopclient) zugeordnet sind. 
 
@@ -91,15 +91,17 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "tocPath": "",
   "suppressions": [
-      "Warning: /api-reference/beta/resources/outlookcategory.md:
-      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
-  ],
-  "tocPath": ""
-}-->
+    "Warning: /api-reference/beta/resources/outlookcategory.md:\r\n      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|",
+    "Error: /api-reference/beta/resources/outlookcategory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
  

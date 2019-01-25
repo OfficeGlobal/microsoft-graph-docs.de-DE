@@ -4,16 +4,16 @@ description: Wenn OAuth2 Client Anmeldeinformationen Grant in Verbindung mit den
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 8cf7ee292b819a05a735ce6bed2a2c4fc4275907
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 37121868793dd76aec2c3b48182e114348d21014
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425456"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523554"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings-Ressource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Wenn [OAuth2 Client Anmeldeinformationen Grant](https://tools.ietf.org/html/rfc6749#section-4.4) in Verbindung mit den Datenanbieter bestimmt ist, sollte dieser Einstellungen Verbindungstyp So richten Sie das Profil ein verwendet werden.
 
@@ -23,8 +23,8 @@ Wenn [OAuth2 Client Anmeldeinformationen Grant](https://tools.ietf.org/html/rfc6
 
 | Eigenschaft | Typ | Beschreibung |
 |:-|:-|:-|
-| **tokenUrl** | Zeichenfolge | Die URL für den Datenanbieter Zugriffstoken abgerufen. |
-| **scope** | Zeichenfolge | [Der Bereich der Access-Anforderung](https://tools.ietf.org/html/rfc6749#section-3.3). |
+| **tokenUrl** | String | Die URL für den Datenanbieter Zugriffstoken abgerufen. |
+| **scope** | String | [Der Bereich der Access-Anforderung](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 <!-- {
@@ -41,3 +41,11 @@ Wenn [OAuth2 Client Anmeldeinformationen Grant](https://tools.ietf.org/html/rfc6
     "scope": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationoauth2clientcredentialsconnectionsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,21 +1,21 @@
 ---
 title: 'group: unsubscribeByMail'
-description: 'Durch Aufrufen dieser Methode wird den aktuellen Benutzer Empfang von e-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und die Dateien in dieser Gruppe deaktiviert. Unterstützt nur die Office 365-Gruppen. '
+description: 'Durch Aufrufen dieser Methode wird den aktuellen Benutzer Empfang von e-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und die Dateien in dieser Gruppe deaktiviert. Wird nur für Office 365-Gruppen unterstützt. '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 34f231c4b2daa3faf2dc8a375bf397dc32225f01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7790ad68a99e13454add6db9a9e80229ab21254
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518072"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Durch Aufrufen dieser Methode wird den aktuellen Benutzer Empfang von e-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und die Dateien in dieser Gruppe deaktiviert. Unterstützt nur die Office 365-Gruppen. 
+Durch Aufrufen dieser Methode wird den aktuellen Benutzer Empfang von e-Mail-Benachrichtigungen für diese Gruppe über neue Beiträge, Ereignisse und die Dateien in dieser Gruppe deaktiviert. Wird nur für Office 365-Gruppen unterstützt. 
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -33,7 +33,7 @@ POST /groups/{id}/unsubscribeByMail
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Prefer | return=minimal. Wenn die Antwortkopfzeile „minimal“ in der Anforderungskopfzeile enthalten ist, gibt eine erfolgreiche Antwort den `204 No Content`-Code zurück.  Optional.  | 
@@ -67,10 +67,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: unsubscribeByMail",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-unsubscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

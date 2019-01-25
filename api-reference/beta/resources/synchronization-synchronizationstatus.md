@@ -2,16 +2,16 @@
 title: Ressourcentyp synchronizationStatus
 description: Stellt den aktuellen Status der SynchronizationJob.
 localization_priority: Normal
-ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 404fe4f7f58b8189b3059c212aa1ce858350bb01
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817031"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523764"
 ---
 # <a name="synchronizationstatus-resource-type"></a>Ressourcentyp synchronizationStatus
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt den aktuellen Status der [SynchronizationJob](synchronization-synchronizationjob.md).
 
@@ -19,7 +19,7 @@ Stellt den aktuellen Status der [SynchronizationJob](synchronization-synchroniza
 
 | Eigenschaft                              | Typ      | Beschreibung    |
 |:--------------------------------------|:----------|:---------------|
-|code|Zeichenfolge|Allgemeine Statuscode des Synchronisierungsauftrags. Mögliche Werte sind: `NotConfigured`, `NotRun`, `Active`, `Paused` und `Quarantine`.|
+|code|String|Allgemeine Statuscode des Synchronisierungsauftrags. Mögliche Werte sind: `NotConfigured`, `NotRun`, `Active`, `Paused` und `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Häufigkeit der aufeinander folgenden diesen Auftrag ist fehlgeschlagen.|
 |escrowsPruned|Boolescher Wert|`true`Wenn der Auftrag Artikel mit Treuhandservice (Fehler auf Objektebene) während der ersten Synchronisierung gelöscht wurden. Artikel mit Treuhandservice können gelöscht werden, wenn während der ersten Synchronisierung des Schwellenwerts für Fehler erreichen, die normalerweise den Auftrag in Quarantäne eingetragen wird. Statt in Quarantäne Synchronisierungsvorgangs löscht den Auftrag Fehler und wird fortgesetzt, bis die anfängliche Synchronisierung abgeschlossen ist. Wenn die anfängliche Synchronisierung abgeschlossen ist, wird der Auftrag anhalten und warten, bis der Kunde, um den Fehler zu bereinigen.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details der letzten Ausführung des Auftrags.|
@@ -30,7 +30,7 @@ Stellt den aktuellen Status der [SynchronizationJob](synchronization-synchroniza
 |steadyStateFirstAchievedTime|DateTimeOffset|Der Zeitpunkt, wann stabilen Zustand (keine weitere Änderungen an den Prozess) zuerst erreicht wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|Die Uhrzeit, wann zuletzt stabilen Zustand (keine weitere Änderungen an den Prozess) erreicht wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|[StringKeyLongValuePair](synchronization-stringkeylongvaluepair.md) -Auflistung|Anzahl der synchronisierten Objekte nach Objekttyp aufgeführt.|
-|troubleshootingUrl|Zeichenfolge|Im Fall eines Fehlers, die URL durch die Schritte zur Problembehandlung für das Problem.|
+|troubleshootingUrl|String|Im Fall eines Fehlers, die URL durch die Schritte zur Problembehandlung für das Problem.|
 
 ### <a name="synchronization-status-code-details"></a>Synchronisierung Status Code details
 
@@ -74,10 +74,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationStatus resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: Auflisten von Websites
 description: Liste der verfügbaren [Standorte] [] in einer Organisation, die bereitgestellten Filterkriterien entsprechen und Abfragen Optionen.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 05c3480181126d528657d0efacde97051a178bfd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939567"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520340"
 ---
 # <a name="enumerate-sites"></a>Auflisten von Websites
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Liste der verfügbaren [Websites][] in einer Organisation, die bereitgestellten Filterkriterien entsprechen und Abfragen Optionen.
 
@@ -24,7 +24,7 @@ Derzeit werden nur die folgenden Abfrageoptionen unterstützt:
 
 Darüber hinaus können Sie **[eine Suchabfrage für die Auflistung "/ sites"][]** angegebenen Schlüsselwörter übereinstimmenden Websites suchen verwenden.
 
-[search]: site-search.md
+Suche
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Berechtigungen
@@ -91,10 +91,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/List sites"
-} -->
+  "tocPath": "Site/List sites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
