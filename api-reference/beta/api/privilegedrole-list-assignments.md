@@ -2,16 +2,16 @@
 title: Liste Zuordnungen
 description: Abrufen einer Liste von PrivilegedRoleAssignment-Objekten, die die Rolle zugeordnet sind. Jeder PrivilegedRoleAssignment stellt eine rollenzuweisung an einen Benutzer.
 localization_priority: Normal
-ms.openlocfilehash: 575de54566a286146b35b4474a5ff0db600f109b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f7dd2b94c5d3ac49a6a8c9183373801f76e27964
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850043"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508272"
 ---
 # <a name="list-assignments"></a>Liste Zuordnungen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen einer Liste von [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) -Objekten, die die Rolle zugeordnet sind. Jeder [PrivilegedRoleAssignment](../resources/privilegedroleassignment.md) stellt eine rollenzuweisung an einen Benutzer.
 ## <a name="permissions"></a>Berechtigungen
@@ -88,10 +88,15 @@ Content-length: 237
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List assignments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrole-list-assignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

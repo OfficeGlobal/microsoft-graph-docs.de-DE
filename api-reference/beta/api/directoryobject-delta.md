@@ -4,16 +4,16 @@ description: 'Get neu erstellt, aktualisiert oder gelöscht Verzeichnisobjekten 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59ab4f819072120533215277b8b14ac1f3c94bf7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956199"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511842"
 ---
 # <a name="directoryobject-delta"></a>DirectoryObject: Delta
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get neu erstellt, aktualisiert oder gelöscht Verzeichnisobjekten der folgenden Typen: [Benutzer](../resources/user.md), [Gruppe](../resources/group.md) und [organisatorische Kontakt](../resources/orgcontact.md)in einer einzelnen Delta-Abfrage. Einzelheiten finden Sie unter [Nachverfolgen von Änderungen](/graph/delta-query-overview) .
 
@@ -63,7 +63,7 @@ Diese Methode unterstützt optionale Parameter der OData-Abfrage, mit denen die 
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | zurückgeben = minimal <br><br>Angabe dieser Header mit einer Anforderung, die verwendet eine `deltaLink` würde zurückgeben nur die Eigenschaften des Objekts, die seit der letzten Round geändert wurden. Optional. |
+| Prefer | return=minimal. <br><br>Angabe dieser Header mit einer Anforderung, die verwendet eine `deltaLink` würde zurückgeben nur die Eigenschaften des Objekts, die seit der letzten Round geändert wurden. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -298,15 +298,20 @@ Content-type: application/json
 }
 ```
 
-- [Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten verwenden](/graph/delta-query-overview).
-- [Inkrementelle Änderungen für Benutzer erhalten möchten](/graph/delta-query-users).
+- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview)
+- [Abrufen inkrementeller Änderungen für Benutzer](/graph/delta-query-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

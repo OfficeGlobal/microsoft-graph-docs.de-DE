@@ -4,16 +4,16 @@ description: Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Ta
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d04ebafda64f9a081096fbf0fd94461b9765a6db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: beffb9747045d0d3792d994237710e886ff0b3d8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926526"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509147"
 ---
 # <a name="worksheet-resource-type"></a>Worksheet-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.
 
@@ -22,20 +22,20 @@ Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagr
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Arbeitsblatt abrufen](../api/worksheet-get.md) | [Worksheet](worksheet.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des worksheet-Objekts.|
-|[Diagramm erstellen](../api/worksheet-post-charts.md) |[Chart](chart.md)| Dient zum Erstellen eines neuen Diagramms durch Veröffentlichen in der Diagrammsammlung.|
-|[Namen auflisten](../api/worksheet-list-names.md) |[NamedItem](nameditem.md) collection| Dient zum Abrufen der benannten Elementsammlung, die mit dem Arbeitsblatt verknüpft ist.|
-|[Diagramme auflisten](../api/worksheet-list-charts.md) |[Diagrammsammlung](chart.md)| Dient zum Abrufen einer Diagrammobjeksammlung.|
-|[Tabelle erstellen](../api/worksheet-post-tables.md) |[Table](table.md)| Dient zum Erstellen einer neuen Tabelle durch Veröffentlichen in der Diagrammsammlung.|
-|[Tabellen auflisten](../api/worksheet-list-tables.md) |[Tabellensammlung](table.md)| Dient zum Abrufen einer Tabellenobjeksammlung.|
+|Arbeitsblatt abrufen | [Worksheet](worksheet.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des worksheet-Objekts.|
+|Diagramm erstellen |[Chart](chart.md)| Dient zum Erstellen eines neuen Diagramms durch Veröffentlichen in der Diagrammsammlung.|
+|Namen auflisten |[NamedItem](nameditem.md) collection| Dient zum Abrufen der benannten Elementsammlung, die mit dem Arbeitsblatt verknüpft ist.|
+|Diagramme auflisten |Diagrammsammlung| Dient zum Abrufen einer Diagrammobjeksammlung.|
+|Tabelle erstellen |[Table](table.md)| Dient zum Erstellen einer neuen Tabelle durch Veröffentlichen in der Diagrammsammlung.|
+|Tabellen auflisten |[Tabellensammlung](table.md)| Dient zum Abrufen einer Tabellenobjeksammlung.|
 |[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |Dient zum Aktualisieren des Worksheet-Objekts. |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltenanzahl enthält. Die Zelle kann sich außerhalb ihres übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|Ruft das durch die Adresse oder den Namen angegebene Bereichsobjekt ab.|
-|[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das Arbeitsblatt leer ist, gibt diese Funktion die oberste linke Zelle zurück.|
+|Usedrange|[Range](range.md)|Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das Arbeitsblatt leer ist, gibt diese Funktion die oberste linke Zelle zurück.|
 |[Delete](../api/worksheet-delete.md)|Keine|Löscht das Arbeitsblatt aus der Arbeitsmappe.|
 |[List](../api/worksheet-list.md) | [Worksheet](worksheet.md) collection |Dient zum Abrufen der Arbeitsblatt-Objektsammlung. |
 |[Add](../api/worksheetcollection-add.md)|[Worksheet](worksheet.md)|Fügt der Arbeitsmappe ein neues Arbeitsblatt hinzu. Das Arbeitsblatt wird automatisch am Ende der vorhandenen Arbeitsblätter hinzugefügt. |
-|[pivotTables auflisten](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md)-Sammlung| Rufen Sie eine workbookPivotTable-Objektsammlung ab.|
+|pivotTables auflisten |workbookPivotTable-Sammlung| Rufen Sie eine workbookPivotTable-Objektsammlung ab.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -78,10 +78,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Worksheet resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/worksheet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

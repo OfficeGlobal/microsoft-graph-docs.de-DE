@@ -2,16 +2,16 @@
 title: Location-Ressourcentyp
 description: Stellt Standortinformationen eines Ereignisses dar.
 localization_priority: Normal
-ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879401"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508608"
 ---
 # <a name="location-resource-type"></a>Location-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt Standortinformationen eines [Ereignisses](event.md) dar.
 
@@ -32,12 +32,12 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
-| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
+| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts. |
 | locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
 | locationType | Zeichenfolge | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
-| uniqueId | Zeichenfolge | Nur für internen Gebrauch.|
-| uniqueIdType | Zeichenfolge | Nur für internen Gebrauch. |
+| uniqueId | String | Nur für internen Gebrauch.|
+| uniqueIdType | String | Nur für internen Gebrauch. |
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -67,10 +67,15 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "location resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/location.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

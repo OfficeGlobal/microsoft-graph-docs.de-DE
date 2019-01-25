@@ -2,16 +2,16 @@
 title: Ressourcentyp synchronizationJob
 description: Führt eine Synchronisierung von in regelmäßigen Abständen im Hintergrund ausgeführt, abrufen, damit die Änderungen in ein Verzeichnis und pushen von in ein anderes Verzeichnis. Der Synchronisierungsauftrag ist immer spezifisch für eine bestimmte Instanz einer Anwendung in Ihrem Mandanten. Im Rahmen der Synchronisierung Einrichtung müssen Sie die Autorisierung zum Lesen und Schreiben von Objekten in Ihrem Zielverzeichnis übergeben, und passen den Auftrag Synchronisierungsschema.
 localization_priority: Normal
-ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892148"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510568"
 ---
 # <a name="synchronizationjob-resource-type"></a>Ressourcentyp synchronizationJob
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Führt eine Synchronisierung von in regelmäßigen Abständen im Hintergrund ausgeführt, abrufen, damit die Änderungen in ein Verzeichnis und pushen von in ein anderes Verzeichnis. Der Synchronisierungsauftrag ist immer spezifisch für eine bestimmte Instanz einer Anwendung in Ihrem Mandanten. Im Rahmen der Synchronisierung Einrichtung müssen Sie die Autorisierung zum Lesen und Schreiben von Objekten in Ihrem Zielverzeichnis übergeben, und passen den Auftrag Synchronisierungsschema.
 
@@ -34,7 +34,7 @@ Führt eine Synchronisierung von in regelmäßigen Abständen im Hintergrund aus
 
 | Eigenschaft      | Typ      | Beschreibung    |
 |:--------------|:----------|:---------------|
-|id             |Zeichenfolge                     |Auftrags-ID eindeutig Synchronisierung. Schreibgeschützt.|
+|id             |String                     |Auftrags-ID eindeutig Synchronisierung. Schreibgeschützt.|
 |Zeitplan       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Zeitplan zum Ausführen des Auftrags verwendet. Schreibgeschützt.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status des Auftrags, die bei der letzten des Auftrags Ausführung enthält, aktuellen Auftragsstatus und Fehler.|
 |templateId     |Zeichenfolge    |Bezeichner der [Synchronisierung Vorlage](synchronization-synchronizationtemplate.md) basiert auf diesen Auftrag.|
@@ -68,10 +68,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

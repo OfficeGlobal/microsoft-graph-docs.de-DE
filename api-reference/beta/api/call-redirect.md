@@ -4,16 +4,16 @@ description: Umleiten eines eingehenden Anrufs an.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921724"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511989"
 ---
 # <a name="call-redirect"></a>Rufen Sie: Umleiten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Umleiten eines eingehenden Anrufs an.
 
@@ -44,7 +44,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |Ziele|[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung|Die Teilnehmer Ziel des Vorgangs umleiten.|
-|targetDisposition|Zeichenfolge|Der Wert ist:`default`|
+|targetDisposition|String|Der Wert ist:`default`|
 |timeout|Int32|Das Zeitlimit in Sekunden für den Umleitungsvorgang.|
 |maskCallee|Boolescher Wert|Gibt an, ob der aufgerufene maskieren.|
 |maskCaller|Boolescher Wert|Gibt an, ob den Anrufer maskieren.|
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -260,10 +260,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: redirect",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

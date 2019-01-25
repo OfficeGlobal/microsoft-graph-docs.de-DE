@@ -4,16 +4,16 @@ description: Die audio Routinggruppe speichert eine private audio Route zwischen
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980188"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509623"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Ressourcentyp audioRoutingGroup
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer an einer Unterhaltung mit mehreren Teilnehmern. Quelle der Teilnehmer selbst und die Empfänger sind eine Teilmenge der andere Teilnehmer an der Unterhaltung mit mehreren Teilnehmern.
 
@@ -31,9 +31,9 @@ Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer a
 
 | Eigenschaft      | Typ              | Beschreibung                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | Zeichenfolge            | Schreibgeschützt. Server generiert wurde.                                         |
+| id            | String            | Schreibgeschützt. Server generiert wurde.                                         |
 | Ereignisempfänger     | Zeichenfolgenauflistung | Liste der Teilnehmer Ids empfangen.                                   |
-| routingMode   | Zeichenfolge            | Routing Group-Modus.  Mögliche Werte sind: `oneToOne` und `multicast`.   |
+| routingMode   | String            | Routing Group-Modus.  Mögliche Werte sind: `oneToOne` und `multicast`.   |
 | sources       | Zeichenfolgenauflistung | Liste der Teilnehmer Source-Ids.                                      |
 
 > **Hinweis:** Routing Modus bestimmt die Einschränkungen auf die Quellen und Ereignisempfänger. Die folgenden Routinggruppen werden unterstützt.
@@ -66,10 +66,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioRoutingGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

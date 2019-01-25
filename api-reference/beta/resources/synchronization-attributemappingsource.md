@@ -2,16 +2,16 @@
 title: Ressourcentyp attributeMappingSource
 description: 'Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus dem Quellobjekt. Beispielsweise kann ein einfaches Wert aus einem gegebenen Attribut für das Quellobjekt sein oder einen komplexeren Ausdruck Zeichenfolge Verkettung/Extraction/Ersatz von basierend auf verschiedene Attribute für Datenquellen sind möglich. '
 localization_priority: Normal
-ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825011"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510407"
 ---
 # <a name="attributemappingsource-resource-type"></a>Ressourcentyp attributeMappingSource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus dem Quellobjekt. Beispielsweise kann ein einfaches Wert aus einem gegebenen Attribut für das Quellobjekt sein oder einen komplexeren Ausdruck Zeichenfolge Verkettung/Extraction/Ersatz von basierend auf verschiedene Attribute für Datenquellen sind möglich. 
 
@@ -20,7 +20,7 @@ Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus d
 | Eigenschaft              | Typ                      | Beschreibung               |
 |:----------------------|:--------------------------|:--------------------------|
 |Ausdruck             |String                     |Entsprechende Ausdruck Darstellung dieses **AttributeMappingSource** -Objekts.|
-|name                   |String                     |Name-Parameter der Zuordnungsquelle. Je nach der Wert der **Type** -Eigenschaft kann dies der Name der Funktion, die den Namen der Source-Attribut oder einen konstanten Wert geeignet sein. |
+|name                   |Zeichenfolge                     |Name-Parameter der Zuordnungsquelle. Je nach der Wert der **Type** -Eigenschaft kann dies der Name der Funktion, die den Namen der Source-Attribut oder einen konstanten Wert geeignet sein. |
 |parameters             |[StringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) -Auflistung | Wenn dieses Objekt eine Funktion darstellt, werden Funktionsparameter aufgelistet. Parameter bestehen aus **AttributeMappingSource** Objekte selbst komplexe Ausdrücke zulassen. **Typ** ist nicht `Function`, wird diese Eigenschaft Array Null/leer sein. |
 |type                   | String                    |Der Typ des in diesem Attribut Zuordnungsquelle. Mögliche Werte sind: `Attribute`, `Constant` und `Function`. Der Standardwert lautet `Attribute`.| 
 
@@ -114,10 +114,15 @@ Extrahieren von ersten 8 Zeichen aus dem Ausdruck
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attributeMappingSource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-attributemappingsource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

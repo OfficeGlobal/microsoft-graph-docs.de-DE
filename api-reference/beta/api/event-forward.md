@@ -4,16 +4,16 @@ description: 'Mit dieser Aktion kann der Organisator oder Teilnehmer einer Bespr
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe8d108ebeb15c2684e1997b8a02cc28a99101b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990672"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510386"
 ---
 # <a name="event-forward"></a>Ereignis: weiterleiten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Diese Aktion ermöglicht dem Organisator oder Teilnehmer einer Besprechung- [Ereignis](../resources/event.md) auf die Besprechungsanfrage an einen neuen Empfänger weiterleitet. 
 
@@ -60,8 +60,8 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Kommentar|Zeichenfolge|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
-|ToRecipients|[recipient](../resources/recipient.md)-Sammlung|Die Liste der Empfänger des Ereignisses zum Weiterleiten.|
+|Kommentar|String|Ein Kommentar, der eingefügt werden kann. Kann eine leere Zeichenfolge sein.|
+|ToRecipients|[recipient](../resources/recipient.md) collection|Die Liste der Empfänger des Ereignisses zum Weiterleiten.|
 
 ## <a name="response"></a>Antwort
 
@@ -106,10 +106,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-forward.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

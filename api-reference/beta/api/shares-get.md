@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Zugriff auf freigegebene Elemente
 localization_priority: Normal
-ms.openlocfilehash: 46779e40862c7056cc60ef4be55595da5615e9f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509581"
 ---
 # <a name="accessing-shared-driveitems"></a>Zugriff auf freigegebene DriveItems
 
@@ -32,14 +32,14 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### <a name="path-parameters"></a>Pfadparameter
 
-| Parametername        | Wert    | Beschreibung                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Erforderlich. Ein Freigabetoken, wie es von der API oder einer ordnungsgemäß codierten Freigabe-URL zurückgegeben wird. |
+| Parametername                 | Wert    | Beschreibung                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Erforderlich. Ein Freigabetoken, wie es von der API oder einer ordnungsgemäß codierten Freigabe-URL zurückgegeben wird. |
 
 ### <a name="encoding-sharing-urls"></a>Codieren von Freigabe-URLs
 
@@ -57,6 +57,21 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
+## <a name="optional-request-headers"></a>Optionale Anforderungsheader
+
+| Name       | Typ   | Beschreibung                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Optional. Legen Sie auf eine der der `prefer` Werte unterhalb dokumentiert.  |
+
+### <a name="prefer-header-values"></a>Lieber-Headerwerte
+
+| Name                          | Beschreibung                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | Wenn die **ShareIdOrEncodedSharingUrl** eine Freigabe-Verknüpfung ist, erteilen den Aufrufer dauerhaften Zugriff auf das Element    |
+| redeemSharingLinkIfNecessary  | Identisch mit RedeemSharingLink, aber Zugriff ist nur für die Dauer dieser Anforderung erteilt werden garantiert |
+
+RedeemSharingLink sollte als gleichwertig mit dem Anrufer zu navigieren, die Freigabe Link im Browser (und übernehmen Sie die Freigabe Bewegung), und RedeemSharingLinkIfNecessary für Szenarien ist, auf dem Zweck einfach vorgesehen ist auf des Links einsehen Metadaten.
+
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine [sharedDriveItem](../resources/shareddriveitem.md)-Ressource im Antworttext zurückgegeben.
@@ -70,7 +85,7 @@ Im Folgenden finden Sie ein Beispiel für die Anforderung zum Abrufen eines frei
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### <a name="response"></a>Antwort
@@ -91,10 +106,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```
@@ -141,7 +152,7 @@ Durch das Anfordern der **driveItem**-Beziehung und das Erweitern der **children
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrUrl}/driveItem?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
 ### <a name="response"></a>Antwort
@@ -175,9 +186,15 @@ Content-Type: application/json
 }
 ```
 
+## <a name="error-responses"></a>Fehlerantworten
+
+Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Thema [Fehlerantworten][error-response].
+
 ## <a name="remarks"></a>Bemerkungen
 
 * Bei OneDrive for Business und SharePoint erfordert die Freigabe-API immer eine Authentifizierung und kann nicht verwendet werden, um auf anonym freigegebene Inhalte ohne Benutzerkontext zuzugreifen.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

@@ -4,16 +4,16 @@ description: Eine Aktion, die angibt, dass ein Schüler mit der Arbeit erfolgt u
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d1fd41c66e3f54898f6086a9bf14a0b53763df88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915809"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510771"
 ---
 # <a name="educationsubmission-submit"></a>EducationSubmission: Absenden
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine Aktion, die angibt, dass ein Schüler mit der Arbeit erfolgt und kann sofort in die Zuordnung zu verweisen. Diese Aktion kann nur durch die Student übernommen werden. Dadurch wird der Status der Übermittlung von "in Bearbeitung", "abgesendet" geändert. Während des Aktivierungsvorgangs Submit werden alle Ressourcen in der SubmittedResources Bucket kopiert werden. Der Schulungsleiter wird die Ressourcenliste der übermittelten für Benotung angezeigt.
 
@@ -33,7 +33,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
@@ -69,10 +69,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission: submit",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

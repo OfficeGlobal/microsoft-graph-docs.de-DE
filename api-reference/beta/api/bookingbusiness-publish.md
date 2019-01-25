@@ -1,21 +1,21 @@
 ---
 title: 'BookingBusiness: Veröffentlichen'
-description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
+description: Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden zur Verfügung.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 33e11fac5690e66664038705b482480ef689db6e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 11d8bea864772c0bcc4365c056973fac782add5d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508657"
 ---
 # <a name="bookingbusiness-publish"></a>BookingBusiness: Veröffentlichen
 
- > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
- 
-Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden zur Verfügung. 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Stellen Sie die Terminplan Seite dieses Unternehmens externen Kunden zur Verfügung.
 
 **IsPublished** -Eigenschaft auf True festgelegt, und **PublicUrl** -Eigenschaft, um die URL der Seite planen.
 
@@ -26,7 +26,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  Bookings.Manage.All   |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt   |
-|Anwendung | Nicht unterstützt  |  
+|Anwendung | Nicht unterstützt  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ```
 
 ##### <a name="response"></a>Antwort
-Nachfolgend sehen Sie ein Beispiel der Antwort. 
+Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,10 +69,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingBusiness: publish",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

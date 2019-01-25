@@ -4,16 +4,16 @@ description: Dient zum Aktualisieren der Eigenschaften des Bereichsobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ca9744fa00fec2928b019dd45c7d503f7f35ee77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507705"
 ---
 # <a name="update-range"></a>range aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Dient zum Aktualisieren der Eigenschaften des Bereichsobjekts.
 ## <a name="permissions"></a>Berechtigungen
@@ -43,12 +43,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|Stellt dar, ob alle Spalten des aktuellen Bereichs ausgeblendet sind.|
+|columnHidden|Boolescher Wert|Stellt dar, ob alle Spalten des aktuellen Bereichs ausgeblendet sind.|
 |formulas|json|Stellt die Formel in der A1-Schreibweise dar.|
 |formulasLocal|json|Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar.  Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden.|
 |formulasR1C1|json|Stellt die Formel in der R1C1-Schreibweise dar.|
 |numberFormat|json|Stellt den Excel-Zahlenformatcode für die angegebene Zelle dar.|
-|rowHidden|boolean|Stellt dar, ob alle Zeilen des aktuellen Bereichs ausgeblendet sind.|
+|rowHidden|Boolescher Wert|Stellt dar, ob alle Zeilen des aktuellen Bereichs ausgeblendet sind.|
 |values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="response"></a>Antwort
@@ -97,10 +97,15 @@ Content-length: 169
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

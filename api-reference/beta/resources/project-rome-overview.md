@@ -2,22 +2,22 @@
 title: 'Verwenden Sie die Microsoft Graph-API Project ROM entwickelt '
 description: 'Project-ROM ist eine Microsoft-Initiative eine Plattform zu erstellen, mit die app-Entwickler umfangreiche Cross-Gerät Erfahrungen erstellen können. Project-ROM kann verschiedene Funktionen, die verschiedene Dienste und Clientendpunkte verbinden, wenn der Benutzer bei sich mit den gleichen Microsoft-Konto oder arbeiten oder Schule Konto. Dadurch können Sie Cross-Gerät und plattformübergreifende Erfahrungen implementieren, die um Benutzeraufgaben statt Geräte zentriert wird. '
 localization_priority: Normal
-ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830002"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509693"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Verwenden Sie die Microsoft Graph-API Project ROM entwickelt 
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Project-ROM](https://developer.microsoft.com/en-us/windows/project-rome) ist eine Microsoft-Initiative eine Plattform zu erstellen, mit die app-Entwickler umfangreiche Cross-Gerät Erfahrungen erstellen können. Project-ROM kann verschiedene Funktionen, die verschiedene Dienste und Clientendpunkte verbinden, wenn der Benutzer bei sich mit den gleichen Microsoft-Konto oder arbeiten oder Schule Konto. Dadurch können Sie Cross-Gerät und plattformübergreifende Erfahrungen implementieren, die um Benutzeraufgaben statt Geräte zentriert wird. 
 
 Drei Schlüsselfunktionen Project ROM über Microsoft Graph zur einfacheren hervorragende Cross-Gerät Erfahrungen aktivieren verfügbar gemacht werden: Aktivitäten, Geräte und Benachrichtigungen. 
 
-## <a name="activities"></a>Aktivitäten
+## <a name="activities"></a>activities
 
 Aktivitäten in Microsoft Graph können Sie zu Laufwerk Benutzer mit Ihren apps für Geräte und Plattformen. Eine Aktivität ist die Einheit eines Auftrags für Benutzer und besteht aus drei Komponenten:
 
@@ -62,3 +62,11 @@ Sie können eine Benachrichtigung Rohdaten oder eine direkte visuelle Benachrich
 
 Weitere Informationen hierzu finden Sie unter [Erstellen und senden Sie eine Benachrichtigung](../api/projectrome-notification-post.md).
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

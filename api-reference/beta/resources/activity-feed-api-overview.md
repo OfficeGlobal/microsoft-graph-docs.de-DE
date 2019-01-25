@@ -3,16 +3,16 @@ title: Verwenden Sie den Aktivitätsfeed REST-API
 description: 'Aktivitätsfeed API in Microsoft Graph können Sie die Aktivität des Benutzers Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und dem Benutzer die Berechtigung Aktivität, die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden kann. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943396"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509966"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Verwenden Sie den Aktivitätsfeed REST-API
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 Aktivitätsfeed API in Microsoft Graph können Sie die Aktivität des Benutzers Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über [Berechtigungen delegiert](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) und die [Benutzerberechtigungen für die Aktivität](/graph/permissions-reference), die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden können. 
@@ -72,3 +72,11 @@ Die Benutzeraktivitäten, die Sie erstellen variiert basierend auf der Interakti
 
 - Finden Sie unter [wie Microsoft guter Aktivitäten verwenden](https://channel9.msdn.com/events/Build/2017/B8108).
 - Informationen Sie über [die Aktivität feed API und wählen Sie aus, wo unterbrochen](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

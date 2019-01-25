@@ -2,16 +2,16 @@
 title: Abrufen von governanceRoleAssignment
 description: Abrufen der Eigenschaften und Beziehungen zwischen einer GovernanceRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: 838c096ccb8b719d9a07741aa80f3e132071a0c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f699e1b5332652b2b87f3972d2ae47b06894b2e4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887570"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508839"
 ---
 # <a name="get-governanceroleassignment"></a>Abrufen von governanceRoleAssignment
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen der Eigenschaften und Beziehungen zwischen einer [GovernanceRoleAssignment](../resources/governanceroleassignment.md).
 
@@ -89,10 +89,15 @@ Content-length: 182
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

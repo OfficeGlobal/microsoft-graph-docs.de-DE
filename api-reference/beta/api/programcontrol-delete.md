@@ -2,16 +2,16 @@
 title: ProgramControl löschen
 description: In Azure AD zugreifen auf Berichte-Funktion, löschen Sie ein ProgramControl-Objekt zu.  Dies hebt die Verknüpfung mit einer Access-Überprüfung aus einem Programm.
 localization_priority: Normal
-ms.openlocfilehash: 782cc8f336e84f82d937e3180d7de6af69e67e52
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7510dfe80f758a75f190402d3ae426138e60bbed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843918"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510834"
 ---
 # <a name="delete-programcontrol"></a>ProgramControl löschen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Löschen Sie in der Azure AD [Access überprüft](../resources/accessreviews-root.md) -Funktion ein [ProgramControl](../resources/programcontrol.md) -Objekt.  Dies hebt die Verknüpfung mit einer Access-Überprüfung aus einem Programm.
 ## <a name="permissions"></a>Berechtigungen
@@ -31,7 +31,7 @@ DELETE /programControls('<id>')
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearertoken Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -61,10 +61,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-25 00:00:01 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete programControl",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

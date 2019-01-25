@@ -2,16 +2,16 @@
 title: fileAttachment-Ressourcentyp
 description: Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein Ereignis zugeordnet ist,
 localization_priority: Normal
-ms.openlocfilehash: 7f7270bd5392e2d880daeb45491f4c65e9fca198
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869279"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510764"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein [Ereignis](../resources/event.md), [Nachricht](../resources/message.md), [Outlook-Aufgabe](../resources/outlooktask.md)oder [Buchen](../resources/post.md)zugeordnet ist. Die **ContentBytes** -Eigenschaft enthält die base64-codierten Inhalt der Datei.  
 
@@ -33,13 +33,13 @@ Abgeleitet von [attachment](attachment.md).
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
-|contentId|Zeichenfolge|Die ID der Anlage im Exchange-Speicher.|
-|contentLocation|Zeichenfolge|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
-|contentType|Zeichenfolge|Der Inhaltstyp der Anlage.|
+|contentId|String|Die ID der Anlage im Exchange-Speicher.|
+|contentLocation|String|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
+|contentType|String|Der Inhaltstyp der Anlage.|
 |id|Zeichenfolge|Die Anlagen-ID.|
 |isInline|Boolean|True, wenn es sich um eine Inlineanlage handelt.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage.|
-|name|Zeichenfolge|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
+|name|String|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
 |size|Int32|Die Größe der Anlage in Byte.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -75,10 +75,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

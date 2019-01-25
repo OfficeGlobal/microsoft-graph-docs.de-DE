@@ -4,16 +4,16 @@ description: Stellt einen Verweis auf ein Verzeichnisobjekt in einem Partner-Man
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17bab72fad3e03b843975ae62261fac9c09af791
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918539"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511051"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Ressourcentyp directoryObjectPartnerReference
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Verweis auf ein Verzeichnisobjekt in einer Partnerorganisation. Erbt von [directoryObject](directoryobject.md?view=graph-rest-beta).
 
@@ -22,10 +22,10 @@ Stellt einen Verweis auf ein Verzeichnisobjekt in einer Partnerorganisation. Erb
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
 |description|Zeichenfolge| Beschreibung des zurückgegebenen Objekts. Schreibgeschützt. |
-|displayName|Zeichenfolge| Name des Directory-Objekts zurückgegeben wird, wie die Gruppe oder eine andere Anwendung. Schreibgeschützt. |
+|displayName|String| Name des Directory-Objekts zurückgegeben wird, wie die Gruppe oder eine andere Anwendung. Schreibgeschützt. |
 |externalPartnerTenantId|Guid| Die Mandanten-ID für den Mandanten Partner. Schreibgeschützt. |
-|id|Zeichenfolge| Der eindeutige Bezeichner für die Ressource. Geerbt von [directoryObject](directoryobject.md?view=graph-rest-beta). Schreibgeschützt. |
-|objectType|Zeichenfolge| Der Typ des Objekts im Mandanten Partner verwiesen wird. Schreibgeschützt. |
+|id|string| Der eindeutige Bezeichner für die Ressource. Geerbt von [directoryObject](directoryobject.md?view=graph-rest-beta). Schreibgeschützt. |
+|objectType|String| Der Typ des Objekts im Mandanten Partner verwiesen wird. Schreibgeschützt. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -49,14 +49,19 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Directory-Objekte aus einer Liste von IDs abrufen](/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- Directory-Objekte aus einer Liste von IDs abrufen
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObjectPartnerReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryobjectpartnerreference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Die Ressource **EducationAssignment** stellt einen Vorgang oder ein
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 68bb881800e1c63acb588e39bb64e1d02e005cc3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982260"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508958"
 ---
 # <a name="educationassignment-resource-type"></a>Ressourcentyp educationAssignment
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die Ressource **EducationAssignment** stellt einen Vorgang oder eine Arbeitsschritt Mitglied Student oder ein Team in einer Klasse als Teil ihrer Studie zugewiesen. Nur Lehrer oder Team Besitzer können Zuordnungen erstellen. Zuordnungen enthalten, Handzettel und Aufgaben, die die Lehrer den Teilnehmern an arbeiten möchte. Jeder Student Zuordnung hat eine zugeordnete [Übermittlung](educationsubmissionresource.md) , die keine Arbeit enthält, die ihre Lehrer aufgefordert werden, die deaktiviert werden. Lehrer kann Bewertungen und Feedback der Übermittlung von den Teilnehmern Unternehmensadministrator hinzufügen.
 
@@ -37,19 +37,19 @@ Die Zuordnung APIs werden in den Klassennamespace verfügbar gemacht.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|Zeichenfolge| Schreibgeschützt.|
+|id|String| Schreibgeschützt.|
 |allowLateSubmissions|Boolescher Wert| Bestimmt, ob nach dem Fälligkeitsdatum Studenten übermitteln können. Wenn diese Eigenschaft nicht bei der Erstellung angegeben wird, wird standardmäßig auf "true". |
 |allowStudentsToAddResourcesToSubmission|Boolescher Wert| Gibt an, ob die eigene Ressourcen einer Übermittlung hinzugefügt werden können oder wenn sie nur Ressourcen hinzugefügt werden die Lehrer ändern können. |
-|assignDateTime|DateTimeOffset|Das Datum, wenn die Zuordnung aktiv werden sollen.  Wenn in der Zukunft wird die Zuordnung nicht zum Schüler bis zum aktuellen Datum angezeigt.  Der **Zeitstempel** Typ stellt Informationen zum Datum und Uhrzeit mit ISO 8601-Format dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|assignDateTime|DateTimeOffset|Das Datum, wenn die Zuordnung aktiv werden sollen.  Wenn in der Zukunft wird die Zuordnung nicht zum Schüler bis zum aktuellen Datum angezeigt.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Welche Benutzer oder die gesamte Klasse sollte ein Objekt zum Absenden erhalten, nachdem die Zuordnung veröffentlicht wird. |
 |assignedDateTime|DateTimeOffset|Auf der Zeitachse Studenten wird der Zeitpunkt, den die Zuordnung in Studenten und die Zuordnung veröffentlicht wurde.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|classId|Zeichenfolge| Klasse, die diese Zuordnung gehört. |
+|classId|String| Klasse, die diese Zuordnung gehört. |
 |createdBy|[identitySet](identityset.md)| Die die Zuordnung erstellt. |
 |createdDateTime|DateTimeOffset|Zeitpunkt der Erstellung die Zuordnung.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|displayName|Zeichenfolge|Name der Zuordnung.|
+|displayName|String|Name der Zuordnung.|
 |dueDateTime|DateTimeOffset|Datum die Studenten-Zuordnung fällig ist.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Benotung|[educationAssignmentGradeType](educationassignmentgradetype.md)|Wie wird die Zuordnung eingestuft. |
-|Anleitung|[itemBody](itembody.md)| Anleitung für die Zuordnung.  Dies zusammen mit dem Anzeigenamen lassen Sie den Kursteilnehmer Aktionen. |
+|Anweisungen|[itemBody](itembody.md)| Anleitung für die Zuordnung.  Dies zusammen mit dem Anzeigenamen lassen Sie den Kursteilnehmer Aktionen. |
 |lastModifiedBy|[identitySet](identityset.md)| Die die Zuordnung der letzten Änderung. |
 |lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten die Zuordnung Änderung.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |status|string| Status der **Zuordnung**.  Sie können nicht PATCH dieser Wert.  Mögliche Werte sind: `draft`, `published` und `assigned`.|
@@ -57,7 +57,7 @@ Die Zuordnung APIs werden in den Klassennamespace verfügbar gemacht.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|resources|[EducationAssignmentResource](educationassignmentresource.md) -Auflistung| Learning-Objekte, die diese Zuordnung zugeordnet sind.  Nur Lehrer können diese Liste ändern. Lässt Nullwerte zu.|
+|resources|[EducationAssignmentResource](educationassignmentresource.md) -Auflistung| Learning-Objekte, die diese Zuordnung zugeordnet sind.  Nur Lehrer können diese Liste ändern. Nullwerte zulassend.|
 |Übermittlungen|[EducationSubmission](educationsubmission.md) -Auflistung| Nachdem veröffentlicht, ist es ein Übermittlung-Objekt für jeden Kursteilnehmer, ihre Arbeit und Note darstellt.  Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -95,10 +95,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

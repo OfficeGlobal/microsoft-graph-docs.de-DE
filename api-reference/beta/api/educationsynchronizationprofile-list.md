@@ -4,16 +4,16 @@ description: Abrufen der Auflistung der Schule Daten Synchronisierungsprofile in
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ed001a7c265f16057ea216d21f7a05f672df7065
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425071"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509553"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Liste educationSynchronizationProfiles
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen der Auflistung der Schule Daten [Profile Synchronization](../resources/educationsynchronizationprofile.md) in den Mandanten an.
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 |:-----------|:----------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto) | EduAdministration.Read EduAdministration.ReadWrite |
-|Delegierte (Persönliches Microsoft-Konto|Nicht unterstützt|
+|Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -38,7 +38,7 @@ Diese Methode unterstützt die folgenden [Parameter für OData-Abfrage](https://
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
+| Authorization  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -165,3 +165,11 @@ Content-length: 3296
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

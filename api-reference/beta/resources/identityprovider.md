@@ -2,16 +2,16 @@
 title: Ressourcentyp identityProvider
 description: Stellt einen Identitätsanbieter Azure Active Directory (AD Azure). Der Identitätsanbieter kann Microsoft, Google, Facebook, LinkedIn oder Amazon sein.
 localization_priority: Normal
-ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511618"
 ---
 # <a name="identityprovider-resource-type"></a>Ressourcentyp identityProvider
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt einen Identitätsanbieter Azure Active Directory (AD Azure). Der Identitätsanbieter kann Microsoft, Google, Facebook, LinkedIn oder Amazon sein.
 
@@ -36,11 +36,11 @@ Konfigurieren einen Identitätsanbieter in Ihrem Azure AD-Mandanten ermöglicht 
 
 |Eigenschaft|Typ|Erforderlich|Nullwerte zulassen|Beschreibung|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Ja|Nein|Die Client-ID für die Anwendung. Dies ist die Client-ID abgerufen wird, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
-|clientSecret|String|Ja|Nein|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren. Dies ist lesegeschützt. Ein Lesevorgang zurückgegebenen "\*\*\*\*".|
-|id|String|Nein|Nein|Die ID des Identitätsanbieters.|
-|name|String|Nein|Nein|Der Anzeigename des Identitätsanbieters.|
-|type|String|Ja|Nein|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|String|Ja|No|Die Client-ID für die Anwendung. Dies ist die Client-ID abgerufen wird, wenn die Anwendung mit dem Identitätsanbieter registrieren.|
+|client_secret|String|Ja|No|Der geheime Clientschlüssel für die Anwendung. Dies ist der geheime Clientschlüssel erhalten Sie, wenn die Anwendung mit dem Identitätsanbieter registrieren. Dies ist lesegeschützt. Ein Lesevorgang zurückgegebenen "\*\*\*\*".|
+|id|String|Nein|No|Die ID des Identitätsanbieters.|
+|name|String|Nein|No|Der Anzeigename des Identitätsanbieters.|
+|type|String|Ja|No|Der Typ der Identität Anbieter. Es muss eine der folgenden Werte sein: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Wo Sie die Client-ID und geheimen Schlüssel erhalten
 
@@ -64,3 +64,11 @@ Es folgt eine JSON-Darstellung der Ressource.
     "clientSecret": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

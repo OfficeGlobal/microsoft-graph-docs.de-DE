@@ -4,16 +4,16 @@ description: Einladen von Teilnehmern zum aktiven Anruf.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5ba308b7d28fb2d2806f794ce6336c71068f6234
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954225"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510169"
 ---
 # <a name="participant-invite"></a>Teilnehmer: einladen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Einladen von Teilnehmern zum aktiven Anruf.
 
@@ -44,7 +44,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
 |participants|[InvitationParticipantInfo](../resources/invitationparticipantinfo.md) -Auflistung| Die Teilnehmer einladen.|
-|clientContext|Zeichenfolge|Der Clientkontext.|
+|ClientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.
@@ -101,7 +101,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ### <a name="invite-participants-in-existing-p2p-meeting"></a>Einladen von Teilnehmern in vorhandenen P2P-Besprechung
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -410,7 +410,7 @@ Content-Type: application/json
 
 > **Wichtig**: Wenn die Bot-Instanz verknüpft ist nur für die Erleichterung der Übertragung wird, sollte dies vermeiden Media-Aushandlung.  Aus diesem Grund wird empfohlen, es ohne hinzufügen `requestedModalities` oder `mediaConfig`.
 
-##### <a name="request"></a>Anforderung
+##### <a name="request"></a>Anfordern
 
 ``` http
 POST /app/calls
@@ -715,10 +715,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant: invite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/participant-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

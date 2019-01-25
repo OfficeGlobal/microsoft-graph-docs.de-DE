@@ -2,16 +2,16 @@
 title: Liste ProgramControls eines Programms
 description: In Azure AD Access Feature überprüft, eine Liste aller ProgramControl Objekte für ein bestimmtes Programm verknüpft.
 localization_priority: Normal
-ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508265"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Liste ProgramControls eines Programms
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure AD [Access überprüft](../resources/accessreviews-root.md) Feature Listen Sie aller [ProgramControl](../resources/programcontrol.md) -Objekte, um ein bestimmtes Programm verknüpft.
 ## <a name="permissions"></a>Berechtigungen
@@ -31,7 +31,7 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>Anforderungsheader
 | Name         | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Erforderlich. |
+| Authorization | string | Bearertoken Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Keine Anforderungstext sollte angegeben werden.
@@ -80,10 +80,15 @@ Content-type: application/json
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programControls of a program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

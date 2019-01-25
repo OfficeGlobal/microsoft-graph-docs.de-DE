@@ -3,16 +3,16 @@ title: 'DriveItem: Vorschau'
 description: Diese Aktion können Sie kurzlebige eingebettet werden URLs für ein Element abrufen, um eine temporäre Vorschau zu rendern.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980874"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508538"
 ---
 # <a name="driveitem-preview"></a>DriveItem: Vorschau
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Diese Aktion können Sie kurzlebige eingebettet werden URLs für ein Element abrufen, um eine temporäre Vorschau zu rendern.
 
@@ -53,8 +53,8 @@ Bei der Anforderung sollte es sich um ein JSON-Objekt mit folgenden Eigenschafte
 |   Name      |  Typ         | Beschreibung
 |:------------|:--------------|:-----------------------------------------------
 | Viewer      | string        | Optional. Preview-app verwendet. `onedrive` oder `office`. Wenn der Wert null ist, wird ein passender Viewer automatisch ausgewählt.
-| Chromeless  | Boolean       | Optional. Wenn `true` (Standard), die eingebettete Ansicht wird nicht schließen Sie alle Steuerelemente.
-| allowEdit   | Boolean       | Optional. Wenn `true`, die Datei aus der eingebetteten Benutzeroberfläche bearbeitet werden kann.
+| Chromeless  | Boolescher Wert       | Optional. Wenn `true` (Standard), die eingebettete Ansicht wird nicht schließen Sie alle Steuerelemente.
+| AllowEdit   | Boolescher Wert       | Optional. Wenn `true`, die Datei aus der eingebetteten Benutzeroberfläche bearbeitet werden kann.
 | page        | Zeichenfolge/eine einzelne Nummer | Optional. Seitenzahl des Dokuments an, falls zutreffend zu starten. Als Zeichenfolge für die zukünftige Verwendung Fällen um Dateitypen wie ZIP angegeben.
 | Zoom        | number        | Optional. Zoom-Wert auf, falls zutreffend.
 
@@ -92,7 +92,8 @@ Die folgenden Werte sind für den **Viewer** -Parameter zulässig.
 
 | Typwert | Beschreibung
 |:-----------|:----------------------------------------------------------------
-| (null)     | Wählt eine entsprechende app für das Rendern der Datei. Hiermit wird in den meisten Fällen verwendet die `onedrive` Vorschau, aber nach dem Dateityp variieren.
+| Null
+     | Wählt eine entsprechende app für das Rendern der Datei. Hiermit wird in den meisten Fällen verwendet die `onedrive` Vorschau, aber nach dem Dateityp variieren.
 | `onedrive` | Verwenden Sie die previewer OneDrive-app, um die Datei zu rendern.
 | `office`   | Verwenden Sie die WAC (online für Office), um die Datei zu rendern. Nur gültig für Office-Dokumenten.
 
@@ -109,3 +110,11 @@ Diese Funktion möglicherweise nicht für alle apps Preview oder Dateitypen zur 
 ### <a name="pagezoom"></a>Seite/zoom
 
 Die `page` und `zoom` Optionen möglicherweise nicht für alle Preview apps verfügbar, jedoch wird angewendet werden soll, wenn die app Preview unterstützt.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

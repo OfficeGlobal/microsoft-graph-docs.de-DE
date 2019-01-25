@@ -2,16 +2,16 @@
 title: Konfigurieren der Synchronisierung mit benutzerdefinierten Ziel-Attribute
 description: Sie können das Synchronisierungsschema, um benutzerdefinierte Attribute enthalten, die in das Zielverzeichnis definiert sind, anpassen. In diesem Artikel wird beschrieben, wie ein Abonnement Vertriebs anpassen, indem Sie ein neues Feld namens hinzufügen `officeCode`. Richten Sie die Synchronisierung von Azure Active Directory (AD Azure) zu Vertriebs, und für jeden Benutzer, füllen Sie die `officeCode` Feld Vertriebs mit dem Wert aus der `extensionAttribute10` in Azure AD-Feld.
 localization_priority: Normal
-ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806755"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508881"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Konfigurieren der Synchronisierung mit benutzerdefinierten Ziel-Attribute
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sie können das Synchronisierungsschema, um benutzerdefinierte Attribute enthalten, die in das Zielverzeichnis definiert sind, anpassen. In diesem Artikel wird beschrieben, wie ein Abonnement Vertriebs anpassen, indem Sie ein neues Feld namens hinzufügen `officeCode`. Richten Sie die Synchronisierung von Azure Active Directory (AD Azure) zu Vertriebs, und für jeden Benutzer, füllen Sie die `officeCode` Feld Vertriebs mit dem Wert aus der `extensionAttribute10` in Azure AD-Feld.
 
@@ -262,3 +262,11 @@ HTTP/1.1 201 No Content
 ```
 
 Wenn das Schema erfolgreich gespeichert wurde, auf die nächste Iteration des Synchronisierungsauftrags, wird es mit der Verarbeitung erneut alle Konten in Ihrer Azure AD, und die neuen Zuordnungen für alle bereitgestellten Konten angewendet werden.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
