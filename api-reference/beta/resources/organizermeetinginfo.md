@@ -4,29 +4,29 @@ description: Besprechungsinformationen, die den Organisator der Besprechung enth
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 66a08b30741d488edf2d514568a17f292e588c23
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957704"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512241"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="d9f45-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="d9f45-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="be26a-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="be26a-103">organizerMeetingInfo resource type</span></span>
 
-> <span data-ttu-id="d9f45-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d9f45-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9f45-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d9f45-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9f45-106">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="d9f45-106">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="be26a-104">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="be26a-104">Meeting information containing the organizer of the meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d9f45-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d9f45-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="be26a-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="be26a-105">Properties</span></span>
 
-| <span data-ttu-id="d9f45-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d9f45-108">Property</span></span>                     | <span data-ttu-id="d9f45-109">Typ</span><span class="sxs-lookup"><span data-stu-id="d9f45-109">Type</span></span>                          | <span data-ttu-id="d9f45-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d9f45-110">Description</span></span>                                     |
+| <span data-ttu-id="be26a-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="be26a-106">Property</span></span>                     | <span data-ttu-id="be26a-107">Typ</span><span class="sxs-lookup"><span data-stu-id="be26a-107">Type</span></span>                          | <span data-ttu-id="be26a-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="be26a-108">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="d9f45-111">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="d9f45-111">allowConversationWithoutHost</span></span> | <span data-ttu-id="d9f45-112">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="d9f45-112">Boolean</span></span>                       | <span data-ttu-id="d9f45-113">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="d9f45-113">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="d9f45-114">organizer</span><span class="sxs-lookup"><span data-stu-id="d9f45-114">organizer</span></span>                    | [<span data-ttu-id="d9f45-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="d9f45-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="d9f45-116">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="d9f45-116">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="be26a-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="be26a-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="be26a-110">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="be26a-110">Boolean</span></span>                       | <span data-ttu-id="be26a-111">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="be26a-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="be26a-112">organizer</span><span class="sxs-lookup"><span data-stu-id="be26a-112">organizer</span></span>                    | [<span data-ttu-id="be26a-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="be26a-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="be26a-114">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="be26a-114">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="d9f45-117">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d9f45-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="be26a-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="be26a-115">JSON representation</span></span>
 
-<span data-ttu-id="d9f45-118">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d9f45-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="be26a-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="be26a-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,7 +42,7 @@ ms.locfileid: "27957704"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="d9f45-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d9f45-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="be26a-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="be26a-117">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -62,10 +62,15 @@ ms.locfileid: "27957704"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "organizerMeetingInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/organizermeetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

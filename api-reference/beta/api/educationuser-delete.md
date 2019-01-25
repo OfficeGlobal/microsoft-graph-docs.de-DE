@@ -4,49 +4,49 @@ description: Löscht einen Benutzer.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 2d07a44cffc70e5ed247b80861e1660a105b1689
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: edc9272d8b31804b170424a27123ca66b4611e28
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930782"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513326"
 ---
-# <a name="delete-educationuser"></a><span data-ttu-id="b4ada-103">EducationUser löschen</span><span class="sxs-lookup"><span data-stu-id="b4ada-103">Delete educationUser</span></span>
+# <a name="delete-educationuser"></a><span data-ttu-id="57cf0-103">EducationUser löschen</span><span class="sxs-lookup"><span data-stu-id="57cf0-103">Delete educationUser</span></span>
 
-> <span data-ttu-id="b4ada-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="b4ada-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b4ada-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b4ada-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b4ada-106">Löscht einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="b4ada-106">Delete a user.</span></span>
+<span data-ttu-id="57cf0-104">Löscht einen Benutzer.</span><span class="sxs-lookup"><span data-stu-id="57cf0-104">Delete a user.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="b4ada-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b4ada-107">Permissions</span></span>
-<span data-ttu-id="b4ada-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b4ada-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="57cf0-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="57cf0-105">Permissions</span></span>
+<span data-ttu-id="57cf0-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57cf0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b4ada-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b4ada-110">Permission type</span></span>      | <span data-ttu-id="b4ada-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b4ada-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="57cf0-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="57cf0-108">Permission type</span></span>      | <span data-ttu-id="57cf0-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="57cf0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b4ada-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b4ada-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="b4ada-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b4ada-113">Not supported.</span></span>  |
-|<span data-ttu-id="b4ada-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b4ada-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b4ada-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b4ada-115">Not supported.</span></span>  |
-|<span data-ttu-id="b4ada-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b4ada-116">Application</span></span> | <span data-ttu-id="b4ada-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4ada-117">EduRoster.ReadWrite.All</span></span> |
+|<span data-ttu-id="57cf0-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="57cf0-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="57cf0-111">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="57cf0-111">Not supported.</span></span>  |
+|<span data-ttu-id="57cf0-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="57cf0-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="57cf0-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="57cf0-113">Not supported.</span></span>  |
+|<span data-ttu-id="57cf0-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="57cf0-114">Application</span></span> | <span data-ttu-id="57cf0-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57cf0-115">EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b4ada-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b4ada-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="57cf0-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="57cf0-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="b4ada-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b4ada-119">Request headers</span></span>
-| <span data-ttu-id="b4ada-120">Header</span><span class="sxs-lookup"><span data-stu-id="b4ada-120">Header</span></span>       | <span data-ttu-id="b4ada-121">Wert</span><span class="sxs-lookup"><span data-stu-id="b4ada-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="57cf0-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="57cf0-117">Request headers</span></span>
+| <span data-ttu-id="57cf0-118">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="57cf0-118">Header</span></span>       | <span data-ttu-id="57cf0-119">Wert</span><span class="sxs-lookup"><span data-stu-id="57cf0-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b4ada-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4ada-122">Authorization</span></span>  | <span data-ttu-id="b4ada-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b4ada-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="57cf0-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="57cf0-120">Authorization</span></span>  | <span data-ttu-id="57cf0-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="57cf0-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b4ada-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b4ada-125">Request body</span></span>
-<span data-ttu-id="b4ada-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b4ada-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="57cf0-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="57cf0-123">Request body</span></span>
+<span data-ttu-id="57cf0-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="57cf0-124">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="b4ada-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="b4ada-127">Response</span></span>
-<span data-ttu-id="b4ada-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b4ada-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="57cf0-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="57cf0-125">Response</span></span>
+<span data-ttu-id="57cf0-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="57cf0-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b4ada-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b4ada-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b4ada-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b4ada-131">Request</span></span>
-<span data-ttu-id="b4ada-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b4ada-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="57cf0-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="57cf0-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="57cf0-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="57cf0-129">Request</span></span>
+<span data-ttu-id="57cf0-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="57cf0-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationuser"
@@ -54,8 +54,8 @@ DELETE /education/users/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/users/13019
 ```
-##### <a name="response"></a><span data-ttu-id="b4ada-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="b4ada-133">Response</span></span>
-<span data-ttu-id="b4ada-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b4ada-134">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="57cf0-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="57cf0-131">Response</span></span>
+<span data-ttu-id="57cf0-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="57cf0-132">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -66,10 +66,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationuser-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

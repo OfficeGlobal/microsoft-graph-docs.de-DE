@@ -4,57 +4,57 @@ description: Dient zum Löschen einer Domäne aus einem Mandanten.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a870692e6a2710728dac4f2df55aaf8daf0eb95a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b17d8fea23b48cae8ed3227952fb952297a9aaa0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960126"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513207"
 ---
-# <a name="delete-domain"></a><span data-ttu-id="1e16d-103">Domäne löschen</span><span class="sxs-lookup"><span data-stu-id="1e16d-103">Delete domain</span></span>
+# <a name="delete-domain"></a><span data-ttu-id="1712a-103">Domäne löschen</span><span class="sxs-lookup"><span data-stu-id="1712a-103">Delete domain</span></span>
 
-> <span data-ttu-id="1e16d-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="1e16d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1e16d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1e16d-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e16d-106">Dient zum Löschen einer Domäne aus einem Mandanten.</span><span class="sxs-lookup"><span data-stu-id="1e16d-106">Deletes a domain from a tenant.</span></span>
+<span data-ttu-id="1712a-104">Dient zum Löschen einer Domäne aus einem Mandanten.</span><span class="sxs-lookup"><span data-stu-id="1712a-104">Deletes a domain from a tenant.</span></span>
 
-> <span data-ttu-id="1e16d-107">**Wichtig:** Gelöschte Domänen können nicht wiederhergestellt werden.</span><span class="sxs-lookup"><span data-stu-id="1e16d-107">**Important:** Deleted domains are not recoverable.</span></span>
+> <span data-ttu-id="1712a-105">**Wichtig:** Gelöschte Domänen können nicht wiederhergestellt werden.</span><span class="sxs-lookup"><span data-stu-id="1712a-105">**Important:** Deleted domains are not recoverable.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1e16d-108">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1e16d-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1712a-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1712a-106">Permissions</span></span>
 
-<span data-ttu-id="1e16d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e16d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1712a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1712a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1e16d-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1e16d-111">Permission type</span></span>      | <span data-ttu-id="1e16d-112">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1e16d-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1712a-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1712a-109">Permission type</span></span>      | <span data-ttu-id="1712a-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1712a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e16d-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1e16d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1e16d-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1e16d-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1e16d-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1e16d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e16d-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1e16d-116">Not supported.</span></span>    |
-|<span data-ttu-id="1e16d-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1e16d-117">Application</span></span> | <span data-ttu-id="1e16d-118">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e16d-118">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="1712a-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1712a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1712a-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1712a-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="1712a-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1712a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1712a-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1712a-114">Not supported.</span></span>    |
+|<span data-ttu-id="1712a-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1712a-115">Application</span></span> | <span data-ttu-id="1712a-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1712a-116">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e16d-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1e16d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1712a-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1712a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
 ```
 
-> <span data-ttu-id="1e16d-120">Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.</span><span class="sxs-lookup"><span data-stu-id="1e16d-120">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="1712a-118">Geben Sie für {id} die Domäne mit ihrem vollqualifizierten Domänennamen an.</span><span class="sxs-lookup"><span data-stu-id="1712a-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1e16d-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1e16d-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1712a-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1712a-119">Request headers</span></span>
 
-| <span data-ttu-id="1e16d-122">Name</span><span class="sxs-lookup"><span data-stu-id="1e16d-122">Name</span></span>       | <span data-ttu-id="1e16d-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1e16d-123">Description</span></span>|
+| <span data-ttu-id="1712a-120">Name</span><span class="sxs-lookup"><span data-stu-id="1712a-120">Name</span></span>       | <span data-ttu-id="1712a-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1712a-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1e16d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e16d-124">Authorization</span></span>  | <span data-ttu-id="1e16d-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1e16d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1e16d-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1e16d-127">Content-Type</span></span>  | <span data-ttu-id="1e16d-128">application/json</span><span class="sxs-lookup"><span data-stu-id="1e16d-128">application/json</span></span> |
+| <span data-ttu-id="1712a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1712a-122">Authorization</span></span>  | <span data-ttu-id="1712a-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1712a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1712a-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1712a-125">Content-Type</span></span>  | <span data-ttu-id="1712a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1712a-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1e16d-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1e16d-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1712a-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1712a-127">Request body</span></span>
 
-<span data-ttu-id="1e16d-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1e16d-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1712a-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="1712a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e16d-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="1e16d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1712a-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="1712a-129">Response</span></span>
 
-<span data-ttu-id="1e16d-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Es wird keine Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1e16d-p104">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
+<span data-ttu-id="1712a-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Es wird keine Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1712a-p103">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1e16d-134">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1e16d-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1e16d-135">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1e16d-135">Request</span></span>
+## <a name="example"></a><span data-ttu-id="1712a-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1712a-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1712a-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1712a-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -64,9 +64,9 @@ DELETE /domains/{id}
 DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
 
-##### <a name="response"></a><span data-ttu-id="1e16d-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="1e16d-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1712a-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="1712a-134">Response</span></span>
 
-<span data-ttu-id="1e16d-p105">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1e16d-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1712a-p104">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1712a-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -77,10 +77,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/domain-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

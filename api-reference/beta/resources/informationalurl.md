@@ -2,30 +2,30 @@
 title: Ressourcentyp informationalUrl
 description: Grundlegende Profilinformationen der Anwendung.
 localization_priority: Normal
-ms.openlocfilehash: 78fd03a2673b342d1a0c904f521fe5a0f8cba205
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5085c144045631c530cbb66f5e1f27186a63b380
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816982"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513648"
 ---
-# <a name="informationalurl-resource-type"></a><span data-ttu-id="a3c75-103">Ressourcentyp informationalUrl</span><span class="sxs-lookup"><span data-stu-id="a3c75-103">informationalUrl resource type</span></span>
+# <a name="informationalurl-resource-type"></a><span data-ttu-id="418f0-103">Ressourcentyp informationalUrl</span><span class="sxs-lookup"><span data-stu-id="418f0-103">informationalUrl resource type</span></span>
 
-> <span data-ttu-id="a3c75-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="a3c75-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a3c75-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a3c75-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a3c75-106">Grundlegende Profilinformationen der Anwendung.</span><span class="sxs-lookup"><span data-stu-id="a3c75-106">Basic profile information of the application.</span></span>
+<span data-ttu-id="418f0-104">Grundlegende Profilinformationen der Anwendung.</span><span class="sxs-lookup"><span data-stu-id="418f0-104">Basic profile information of the application.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a3c75-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a3c75-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="418f0-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="418f0-105">Properties</span></span>
 
-| <span data-ttu-id="a3c75-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a3c75-108">Property</span></span> | <span data-ttu-id="a3c75-109">Typ</span><span class="sxs-lookup"><span data-stu-id="a3c75-109">Type</span></span> | <span data-ttu-id="a3c75-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a3c75-110">Description</span></span> |
+| <span data-ttu-id="418f0-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="418f0-106">Property</span></span> | <span data-ttu-id="418f0-107">Typ</span><span class="sxs-lookup"><span data-stu-id="418f0-107">Type</span></span> | <span data-ttu-id="418f0-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="418f0-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a3c75-111">"Marketing"</span><span class="sxs-lookup"><span data-stu-id="a3c75-111">marketing</span></span>|<span data-ttu-id="a3c75-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a3c75-112">String</span></span>| <span data-ttu-id="a3c75-113">Link zu marketing Anwendungsseite.</span><span class="sxs-lookup"><span data-stu-id="a3c75-113">Link to the application's marketing page.</span></span> <span data-ttu-id="a3c75-114">Beispielsweise gibt https://www.contoso.com/app/marketing</span><span class="sxs-lookup"><span data-stu-id="a3c75-114">For example, https://www.contoso.com/app/marketing</span></span> |
-|<span data-ttu-id="a3c75-115">Datenschutz</span><span class="sxs-lookup"><span data-stu-id="a3c75-115">privacy</span></span>|<span data-ttu-id="a3c75-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a3c75-116">String</span></span>| <span data-ttu-id="a3c75-117">Link zu Datenschutzrichtlinie für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="a3c75-117">Link to the application's privacy statement.</span></span> <span data-ttu-id="a3c75-118">Beispielsweise gibt https://www.contoso.com/app/privacy</span><span class="sxs-lookup"><span data-stu-id="a3c75-118">For example, https://www.contoso.com/app/privacy</span></span> |
-|<span data-ttu-id="a3c75-119">Unterstützung</span><span class="sxs-lookup"><span data-stu-id="a3c75-119">support</span></span>|<span data-ttu-id="a3c75-120">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a3c75-120">String</span></span>| <span data-ttu-id="a3c75-121">Link zu der Anwendung Supportseite.</span><span class="sxs-lookup"><span data-stu-id="a3c75-121">Link to the application's support page.</span></span> <span data-ttu-id="a3c75-122">Beispielsweise gibt https://www.contoso.com/app/support</span><span class="sxs-lookup"><span data-stu-id="a3c75-122">For example, https://www.contoso.com/app/support</span></span> |
-|<span data-ttu-id="a3c75-123">termsOfService</span><span class="sxs-lookup"><span data-stu-id="a3c75-123">termsOfService</span></span>|<span data-ttu-id="a3c75-124">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="a3c75-124">String</span></span>| <span data-ttu-id="a3c75-125">Link zu der Anwendung Begriffe der Service-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="a3c75-125">Link to the application's terms of service statement.</span></span> <span data-ttu-id="a3c75-126">Beispielsweise gibt https://www.contoso.com/app/termsofservice</span><span class="sxs-lookup"><span data-stu-id="a3c75-126">For example, https://www.contoso.com/app/termsofservice</span></span> |
+|<span data-ttu-id="418f0-109">"Marketing"</span><span class="sxs-lookup"><span data-stu-id="418f0-109">marketing</span></span>|<span data-ttu-id="418f0-110">String</span><span class="sxs-lookup"><span data-stu-id="418f0-110">String</span></span>| <span data-ttu-id="418f0-111">Link zu marketing Anwendungsseite.</span><span class="sxs-lookup"><span data-stu-id="418f0-111">Link to the application's marketing page.</span></span> <span data-ttu-id="418f0-112">Beispiel: https://www.contoso.com/app/marketing</span><span class="sxs-lookup"><span data-stu-id="418f0-112">For example, https://www.contoso.com/app/marketing</span></span> |
+|<span data-ttu-id="418f0-113">Datenschutz</span><span class="sxs-lookup"><span data-stu-id="418f0-113">privacy</span></span>|<span data-ttu-id="418f0-114">String</span><span class="sxs-lookup"><span data-stu-id="418f0-114">String</span></span>| <span data-ttu-id="418f0-115">Link zu Datenschutzrichtlinie für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="418f0-115">Link to the application's privacy statement.</span></span> <span data-ttu-id="418f0-116">Beispiel: https://www.contoso.com/app/privacy</span><span class="sxs-lookup"><span data-stu-id="418f0-116">For example, https://www.contoso.com/app/privacy</span></span> |
+|<span data-ttu-id="418f0-117">Support</span><span class="sxs-lookup"><span data-stu-id="418f0-117">support</span></span>|<span data-ttu-id="418f0-118">String</span><span class="sxs-lookup"><span data-stu-id="418f0-118">String</span></span>| <span data-ttu-id="418f0-119">Link zu der Anwendung Supportseite.</span><span class="sxs-lookup"><span data-stu-id="418f0-119">Link to the application's support page.</span></span> <span data-ttu-id="418f0-120">Beispiel: https://www.contoso.com/app/support</span><span class="sxs-lookup"><span data-stu-id="418f0-120">For example, https://www.contoso.com/app/support</span></span> |
+|<span data-ttu-id="418f0-121">termsOfService</span><span class="sxs-lookup"><span data-stu-id="418f0-121">termsOfService</span></span>|<span data-ttu-id="418f0-122">String</span><span class="sxs-lookup"><span data-stu-id="418f0-122">String</span></span>| <span data-ttu-id="418f0-123">Link zu der Anwendung Begriffe der Service-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="418f0-123">Link to the application's terms of service statement.</span></span> <span data-ttu-id="418f0-124">Beispiel: https://www.contoso.com/app/termsofservice</span><span class="sxs-lookup"><span data-stu-id="418f0-124">For example, https://www.contoso.com/app/termsofservice</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a3c75-127">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a3c75-127">JSON representation</span></span>
-<span data-ttu-id="a3c75-128">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a3c75-128">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="418f0-125">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="418f0-125">JSON representation</span></span>
+<span data-ttu-id="418f0-126">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="418f0-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,10 +48,15 @@ ms.locfileid: "27816982"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "informationalUrl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/informationalurl.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

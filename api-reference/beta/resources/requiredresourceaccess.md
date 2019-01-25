@@ -2,23 +2,23 @@
 title: Ressourcentyp requiredResourceAccess
 description: Gibt den Satz von OAuth 2.0 berechtigungsbereiche und app-Rollen unter der angegebenen Ressource, der eine Anwendung Zugriff auf erforderlich ist. Die angegebene OAuth 2.0 berechtigungsbereiche möglicherweise beim von Clientanwendungen (über die **RequiredResourceAccess** -Auflistung) angefordert werden eine Anwendung Resource aufrufen. Die **RequiredResourceAccess** -Eigenschaft der Anwendung Entität ist eine Auflistung von **ReqiredResourceAccess**.
 localization_priority: Normal
-ms.openlocfilehash: 473126365a7f0b3ba3ab0371322ff90bd36318e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a2c7e337bbe441275f395c2333b8cee918e6b9da
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512969"
 ---
-# <a name="requiredresourceaccess-resource-type"></a><span data-ttu-id="2cc07-105">Ressourcentyp requiredResourceAccess</span><span class="sxs-lookup"><span data-stu-id="2cc07-105">requiredResourceAccess resource type</span></span>
+# <a name="requiredresourceaccess-resource-type"></a><span data-ttu-id="72e13-105">Ressourcentyp requiredResourceAccess</span><span class="sxs-lookup"><span data-stu-id="72e13-105">requiredResourceAccess resource type</span></span>
 
-> <span data-ttu-id="2cc07-106">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="2cc07-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2cc07-107">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2cc07-107">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2cc07-108">Gibt den Satz von OAuth 2.0 berechtigungsbereiche und app-Rollen unter der angegebenen Ressource, der eine Anwendung Zugriff auf erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="2cc07-108">Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to.</span></span> <span data-ttu-id="2cc07-109">Die angegebene OAuth 2.0 berechtigungsbereiche möglicherweise beim von Clientanwendungen (über die **RequiredResourceAccess** -Auflistung) angefordert werden eine Anwendung Resource aufrufen.</span><span class="sxs-lookup"><span data-stu-id="2cc07-109">The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application.</span></span> <span data-ttu-id="2cc07-110">Die **RequiredResourceAccess** -Eigenschaft der [Anwendung](application.md) Entität ist eine Auflistung von **ReqiredResourceAccess**.</span><span class="sxs-lookup"><span data-stu-id="2cc07-110">The **requiredResourceAccess** property of the [application](application.md) entity is a collection of **ReqiredResourceAccess**.</span></span>
+<span data-ttu-id="72e13-106">Gibt den Satz von OAuth 2.0 berechtigungsbereiche und app-Rollen unter der angegebenen Ressource, der eine Anwendung Zugriff auf erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="72e13-106">Specifies the set of OAuth 2.0 permission scopes and app roles under the specified resource that an application requires access to.</span></span> <span data-ttu-id="72e13-107">Die angegebene OAuth 2.0 berechtigungsbereiche möglicherweise beim von Clientanwendungen (über die **RequiredResourceAccess** -Auflistung) angefordert werden eine Anwendung Resource aufrufen.</span><span class="sxs-lookup"><span data-stu-id="72e13-107">The specified OAuth 2.0 permission scopes may be requested by client applications (through the **requiredResourceAccess** collection) when calling a resource application.</span></span> <span data-ttu-id="72e13-108">Die **RequiredResourceAccess** -Eigenschaft der [Anwendung](application.md) Entität ist eine Auflistung von **ReqiredResourceAccess**.</span><span class="sxs-lookup"><span data-stu-id="72e13-108">The **requiredResourceAccess** property of the [application](application.md) entity is a collection of **ReqiredResourceAccess**.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="2cc07-111">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2cc07-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="72e13-109">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="72e13-109">JSON representation</span></span>
 
-<span data-ttu-id="2cc07-112">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2cc07-112">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="72e13-110">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="72e13-110">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,18 +35,23 @@ ms.locfileid: "27856168"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="2cc07-113">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2cc07-113">Properties</span></span>
-| <span data-ttu-id="2cc07-114">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2cc07-114">Property</span></span>     | <span data-ttu-id="2cc07-115">Typ</span><span class="sxs-lookup"><span data-stu-id="2cc07-115">Type</span></span>   |<span data-ttu-id="2cc07-116">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2cc07-116">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="72e13-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="72e13-111">Properties</span></span>
+| <span data-ttu-id="72e13-112">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="72e13-112">Property</span></span>     | <span data-ttu-id="72e13-113">Typ</span><span class="sxs-lookup"><span data-stu-id="72e13-113">Type</span></span>   |<span data-ttu-id="72e13-114">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="72e13-114">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2cc07-117">resourceAccess</span><span class="sxs-lookup"><span data-stu-id="2cc07-117">resourceAccess</span></span>|<span data-ttu-id="2cc07-118">[ResourceAccess](resourceaccess.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="2cc07-118">[ResourceAccess](resourceaccess.md) collection</span></span>|<span data-ttu-id="2cc07-119">Die Liste der OAuth2.0 berechtigungsbereiche und app-Rollen, die die Anwendung aus der angegebenen Ressource erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="2cc07-119">The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.</span></span>|
-|<span data-ttu-id="2cc07-120">resourceAppId</span><span class="sxs-lookup"><span data-stu-id="2cc07-120">resourceAppId</span></span>|<span data-ttu-id="2cc07-121">String</span><span class="sxs-lookup"><span data-stu-id="2cc07-121">String</span></span>|<span data-ttu-id="2cc07-122">Der eindeutige Bezeichner für die Ressource, der Zugriff auf für die Anwendung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="2cc07-122">The unique identifier for the resource that the application requires access to.</span></span>  <span data-ttu-id="2cc07-123">Dies sollte der **AppId** für die Zielanwendung für die Ressource deklarierten gleich sein.</span><span class="sxs-lookup"><span data-stu-id="2cc07-123">This should be equal to the **appId** declared on the target resource application.</span></span>|
+|<span data-ttu-id="72e13-115">resourceAccess</span><span class="sxs-lookup"><span data-stu-id="72e13-115">resourceAccess</span></span>|<span data-ttu-id="72e13-116">[ResourceAccess](resourceaccess.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="72e13-116">[ResourceAccess](resourceaccess.md) collection</span></span>|<span data-ttu-id="72e13-117">Die Liste der OAuth2.0 berechtigungsbereiche und app-Rollen, die die Anwendung aus der angegebenen Ressource erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="72e13-117">The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.</span></span>|
+|<span data-ttu-id="72e13-118">resourceAppId</span><span class="sxs-lookup"><span data-stu-id="72e13-118">resourceAppId</span></span>|<span data-ttu-id="72e13-119">String</span><span class="sxs-lookup"><span data-stu-id="72e13-119">String</span></span>|<span data-ttu-id="72e13-120">Der eindeutige Bezeichner für die Ressource, der Zugriff auf für die Anwendung erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="72e13-120">The unique identifier for the resource that the application requires access to.</span></span>  <span data-ttu-id="72e13-121">Dies sollte der **AppId** für die Zielanwendung für die Ressource deklarierten gleich sein.</span><span class="sxs-lookup"><span data-stu-id="72e13-121">This should be equal to the **appId** declared on the target resource application.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "requiredResourceAccess resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/requiredresourceaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

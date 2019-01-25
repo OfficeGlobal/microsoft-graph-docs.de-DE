@@ -4,41 +4,41 @@ description: Stellt den Titel einer Diagrammachse dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 943d667891fcfca8a438f90a1e2a9c77dba069b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950634"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513123"
 ---
-# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="388f3-103">ChartAxisTitle-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="388f3-103">ChartAxisTitle resource type</span></span>
+# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="ed9fa-103">ChartAxisTitle-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ed9fa-103">ChartAxisTitle resource type</span></span>
 
-> <span data-ttu-id="388f3-104">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="388f3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="388f3-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="388f3-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="388f3-106">Stellt den Titel einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="388f3-106">Represents the title of a chart axis.</span></span>
+<span data-ttu-id="ed9fa-104">Stellt den Titel einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-104">Represents the title of a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="388f3-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="388f3-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="ed9fa-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="ed9fa-105">Methods</span></span>
 
-| <span data-ttu-id="388f3-108">Methode</span><span class="sxs-lookup"><span data-stu-id="388f3-108">Method</span></span>           | <span data-ttu-id="388f3-109">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="388f3-109">Return Type</span></span>    |<span data-ttu-id="388f3-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="388f3-110">Description</span></span>|
+| <span data-ttu-id="ed9fa-106">Methode</span><span class="sxs-lookup"><span data-stu-id="ed9fa-106">Method</span></span>           | <span data-ttu-id="ed9fa-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="ed9fa-107">Return Type</span></span>    |<span data-ttu-id="ed9fa-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="388f3-111">ChartAxisTitle abrufen</span><span class="sxs-lookup"><span data-stu-id="388f3-111">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="388f3-112">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="388f3-112">ChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="388f3-113">Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="388f3-113">Read properties and relationships of chartAxisTitle object.</span></span>|
-|[<span data-ttu-id="388f3-114">Update</span><span class="sxs-lookup"><span data-stu-id="388f3-114">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="388f3-115">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="388f3-115">ChartAxisTitle</span></span>](chartaxistitle.md)    |<span data-ttu-id="388f3-116">Dient zum Aktualisieren de chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="388f3-116">Update ChartAxisTitle object.</span></span> |
+|<span data-ttu-id="ed9fa-109">ChartAxisTitle abrufen</span><span class="sxs-lookup"><span data-stu-id="ed9fa-109">[Get ChartAxisTitle](../api/chartaxistitle-get.md)</span></span> | [<span data-ttu-id="ed9fa-110">chartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ed9fa-110">ChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="ed9fa-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-111">Read properties and relationships of chartAxisTitle object.</span></span>|
+|[<span data-ttu-id="ed9fa-112">Update</span><span class="sxs-lookup"><span data-stu-id="ed9fa-112">Update</span></span>](../api/chartaxistitle-update.md) | <span data-ttu-id="ed9fa-113">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ed9fa-113">[ChartAxisTitle](chartaxistitle.md)</span></span>    |<span data-ttu-id="ed9fa-114">Dient zum Aktualisieren de chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-114">Update ChartAxisTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="388f3-117">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="388f3-117">Properties</span></span>
-| <span data-ttu-id="388f3-118">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="388f3-118">Property</span></span>     | <span data-ttu-id="388f3-119">Typ</span><span class="sxs-lookup"><span data-stu-id="388f3-119">Type</span></span>   |<span data-ttu-id="388f3-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="388f3-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ed9fa-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ed9fa-115">Properties</span></span>
+| <span data-ttu-id="ed9fa-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ed9fa-116">Property</span></span>     | <span data-ttu-id="ed9fa-117">Typ</span><span class="sxs-lookup"><span data-stu-id="ed9fa-117">Type</span></span>   |<span data-ttu-id="ed9fa-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="388f3-121">text</span><span class="sxs-lookup"><span data-stu-id="388f3-121">text</span></span>|<span data-ttu-id="388f3-122">string</span><span class="sxs-lookup"><span data-stu-id="388f3-122">string</span></span>|<span data-ttu-id="388f3-123">Stellt den Achsentitel dar.</span><span class="sxs-lookup"><span data-stu-id="388f3-123">Represents the axis title.</span></span>|
-|<span data-ttu-id="388f3-124">visible</span><span class="sxs-lookup"><span data-stu-id="388f3-124">visible</span></span>|<span data-ttu-id="388f3-125">boolean</span><span class="sxs-lookup"><span data-stu-id="388f3-125">boolean</span></span>|<span data-ttu-id="388f3-126">Ein boolescher Wert, der die Sichtbarkeit eines Achsentitels angibt.</span><span class="sxs-lookup"><span data-stu-id="388f3-126">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="ed9fa-119">text</span><span class="sxs-lookup"><span data-stu-id="ed9fa-119">text</span></span>|<span data-ttu-id="ed9fa-120">string</span><span class="sxs-lookup"><span data-stu-id="ed9fa-120">string</span></span>|<span data-ttu-id="ed9fa-121">Stellt den Achsentitel dar.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-121">Represents the axis title.</span></span>|
+|<span data-ttu-id="ed9fa-122">visible</span><span class="sxs-lookup"><span data-stu-id="ed9fa-122">visible</span></span>|<span data-ttu-id="ed9fa-123">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ed9fa-123">boolean</span></span>|<span data-ttu-id="ed9fa-124">Ein boolescher Wert, der die Sichtbarkeit eines Achsentitels angibt.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-124">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="388f3-127">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="388f3-127">Relationships</span></span>
-| <span data-ttu-id="388f3-128">Beziehung</span><span class="sxs-lookup"><span data-stu-id="388f3-128">Relationship</span></span> | <span data-ttu-id="388f3-129">Typ</span><span class="sxs-lookup"><span data-stu-id="388f3-129">Type</span></span>   |<span data-ttu-id="388f3-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="388f3-130">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="ed9fa-125">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="ed9fa-125">Relationships</span></span>
+| <span data-ttu-id="ed9fa-126">Beziehung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-126">Relationship</span></span> | <span data-ttu-id="ed9fa-127">Typ</span><span class="sxs-lookup"><span data-stu-id="ed9fa-127">Type</span></span>   |<span data-ttu-id="ed9fa-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="388f3-131">format</span><span class="sxs-lookup"><span data-stu-id="388f3-131">format</span></span>|[<span data-ttu-id="388f3-132">ChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="388f3-132">ChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="388f3-p102">Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="388f3-p102">Represents the formatting of chart axis title. Read-only.</span></span>|
+|<span data-ttu-id="ed9fa-129">format</span><span class="sxs-lookup"><span data-stu-id="ed9fa-129">format</span></span>|[<span data-ttu-id="ed9fa-130">ChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="ed9fa-130">ChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="ed9fa-p101">Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-p101">Represents the formatting of chart axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="388f3-135">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="388f3-135">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ed9fa-133">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-133">JSON representation</span></span>
 
-<span data-ttu-id="388f3-136">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="388f3-136">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ed9fa-134">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-134">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,10 +58,15 @@ ms.locfileid: "27950634"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartAxisTitle resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartaxistitle.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

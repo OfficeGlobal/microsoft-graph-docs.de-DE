@@ -4,28 +4,28 @@ description: Eine Unterklasse der EducationResource. Diese Ressource ist ein Lin
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8cdcb47c02481f2f43ee71f46c24e2b8d8f5ba2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 09e7c7c5070d6f8f288dbf18d6fb9ce81b456092
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918049"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516959"
 ---
-# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="d190e-104">Ressourcentyp educationLinkResource</span><span class="sxs-lookup"><span data-stu-id="d190e-104">educationLinkResource resource type</span></span>
+# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="aebf5-104">Ressourcentyp educationLinkResource</span><span class="sxs-lookup"><span data-stu-id="aebf5-104">educationLinkResource resource type</span></span>
 
-> <span data-ttu-id="d190e-105">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="d190e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d190e-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d190e-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d190e-107">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="d190e-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="d190e-108">Diese Ressource ist ein Link, und ist nicht haben zusätzlichen Daten zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="d190e-108">This resource is a link and does not have any additional data associated with it.</span></span>
+<span data-ttu-id="aebf5-105">Eine Unterklasse der [EducationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="aebf5-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="aebf5-106">Diese Ressource ist ein Link, und ist nicht haben zusätzlichen Daten zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="aebf5-106">This resource is a link and does not have any additional data associated with it.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d190e-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d190e-109">Properties</span></span>
-| <span data-ttu-id="d190e-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d190e-110">Property</span></span>     | <span data-ttu-id="d190e-111">Typ</span><span class="sxs-lookup"><span data-stu-id="d190e-111">Type</span></span>   |<span data-ttu-id="d190e-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d190e-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="aebf5-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="aebf5-107">Properties</span></span>
+| <span data-ttu-id="aebf5-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="aebf5-108">Property</span></span>     | <span data-ttu-id="aebf5-109">Typ</span><span class="sxs-lookup"><span data-stu-id="aebf5-109">Type</span></span>   |<span data-ttu-id="aebf5-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="aebf5-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d190e-113">Link</span><span class="sxs-lookup"><span data-stu-id="d190e-113">link</span></span>|<span data-ttu-id="d190e-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d190e-114">String</span></span>|<span data-ttu-id="d190e-115">URL für die Ressource.</span><span class="sxs-lookup"><span data-stu-id="d190e-115">URL to the resource.</span></span>|
+|<span data-ttu-id="aebf5-111">Link</span><span class="sxs-lookup"><span data-stu-id="aebf5-111">link</span></span>|<span data-ttu-id="aebf5-112">String</span><span class="sxs-lookup"><span data-stu-id="aebf5-112">String</span></span>|<span data-ttu-id="aebf5-113">URL für die Ressource.</span><span class="sxs-lookup"><span data-stu-id="aebf5-113">URL to the resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d190e-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d190e-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aebf5-114">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="aebf5-114">JSON representation</span></span>
 
-<span data-ttu-id="d190e-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d190e-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="aebf5-115">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="aebf5-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,10 +44,15 @@ ms.locfileid: "27918049"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationLinkResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationlinkresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

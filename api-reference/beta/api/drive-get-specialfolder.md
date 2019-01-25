@@ -5,36 +5,36 @@ ms.date: 09/10/2017
 title: Spezielle Ordner abgerufen
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 39d4b3124b74cb1f164c5cd637a256b975365432
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fb7afa57093cf4ab1587654c840098deeceb0c24
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985123"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514593"
 ---
-# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="88ff0-102">Speziellen Ordner nach Name abrufen</span><span class="sxs-lookup"><span data-stu-id="88ff0-102">Get a special folder by name</span></span>
+# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="3c0c2-102">Speziellen Ordner nach Name abrufen</span><span class="sxs-lookup"><span data-stu-id="3c0c2-102">Get a special folder by name</span></span>
 
-> <span data-ttu-id="88ff0-103">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="88ff0-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="88ff0-104">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="88ff0-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88ff0-105">Verwenden Sie spezielle Auflistung, um auf einen speziellen Ordner basierend auf dem Namen zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="88ff0-105">Use the special collection to access a special folder by name.</span></span>
+<span data-ttu-id="3c0c2-103">Verwenden Sie spezielle Auflistung, um auf einen speziellen Ordner basierend auf dem Namen zuzugreifen.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-103">Use the special collection to access a special folder by name.</span></span>
 
-<span data-ttu-id="88ff0-p102">Spezielle Ordner bieten einfache Aliase für den Zugriff auf bekannte Ordner in OneDrive, ohne dass der Ordner anhand des Pfads nachgeschlagen werden muss (wofür eine Lokalisierung erforderlich wäre) oder anhand einer ID auf den Ordner verwiesen werden muss. Wenn ein spezieller Ordner umbenannt oder an eine andere Position innerhalb des Laufwerks verschoben wird, kann mit dieser Syntax weiterhin nach diesem Ordner gesucht werden.</span><span class="sxs-lookup"><span data-stu-id="88ff0-p102">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
+<span data-ttu-id="3c0c2-p101">Spezielle Ordner bieten einfache Aliase für den Zugriff auf bekannte Ordner in OneDrive, ohne dass der Ordner anhand des Pfads nachgeschlagen werden muss (wofür eine Lokalisierung erforderlich wäre) oder anhand einer ID auf den Ordner verwiesen werden muss. Wenn ein spezieller Ordner umbenannt oder an eine andere Position innerhalb des Laufwerks verschoben wird, kann mit dieser Syntax weiterhin nach diesem Ordner gesucht werden.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
 
-<span data-ttu-id="88ff0-p103">Spezielle Ordner werden automatisch erstellt, wenn eine Anwendung das erste Mal versucht, einen Ordner zu schreiben, wenn noch keiner vorhanden ist. Wenn ein Benutzer einen speziellen Ordner löscht, wird dieser neu erstellt, wenn erneut in den Ordner geschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="88ff0-p103">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+<span data-ttu-id="3c0c2-p102">Spezielle Ordner werden automatisch erstellt, wenn eine Anwendung das erste Mal versucht, einen Ordner zu schreiben, wenn noch keiner vorhanden ist. Wenn ein Benutzer einen speziellen Ordner löscht, wird dieser neu erstellt, wenn erneut in den Ordner geschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-> <span data-ttu-id="88ff0-110">**Hinweis:**  Wenn Sie nur über Leseberechtigungen verfügen und einen speziellen Ordner anfordern, der nicht vorhanden ist, wird ein `403 Forbidden`-Fehler angezeigt.</span><span class="sxs-lookup"><span data-stu-id="88ff0-110">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
+> <span data-ttu-id="3c0c2-108">**Hinweis:**  Wenn Sie nur über Leseberechtigungen verfügen und einen speziellen Ordner anfordern, der nicht vorhanden ist, wird ein `403 Forbidden`-Fehler angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-108">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88ff0-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="88ff0-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c0c2-109">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3c0c2-109">Permissions</span></span>
 
-<span data-ttu-id="88ff0-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88ff0-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3c0c2-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3c0c2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="88ff0-114">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="88ff0-114">Permission type</span></span>             |                                           <span data-ttu-id="88ff0-115">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="88ff0-115">Permissions (from least to most privileged)</span></span>                                            |
+|            <span data-ttu-id="3c0c2-112">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3c0c2-112">Permission type</span></span>             |                                           <span data-ttu-id="3c0c2-113">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3c0c2-113">Permissions (from least to most privileged)</span></span>                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="88ff0-116">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="88ff0-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="88ff0-117">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88ff0-117">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
-| <span data-ttu-id="88ff0-118">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="88ff0-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88ff0-119">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88ff0-119">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
-| <span data-ttu-id="88ff0-120">Anwendung</span><span class="sxs-lookup"><span data-stu-id="88ff0-120">Application</span></span>                            | <span data-ttu-id="88ff0-121">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88ff0-121">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
+| <span data-ttu-id="3c0c2-114">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3c0c2-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="3c0c2-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3c0c2-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="3c0c2-116">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3c0c2-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c0c2-117">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3c0c2-117">Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+| <span data-ttu-id="3c0c2-118">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3c0c2-118">Application</span></span>                            | <span data-ttu-id="3c0c2-119">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3c0c2-119">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="88ff0-122">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="88ff0-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c0c2-120">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3c0c2-120">HTTP Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
@@ -42,28 +42,28 @@ ms.locfileid: "27985123"
 GET /me/drive/special/{name}
 ```
 
-### <a name="special-folder-names"></a><span data-ttu-id="88ff0-123">Namen für spezielle Ordner</span><span class="sxs-lookup"><span data-stu-id="88ff0-123">Special folder names</span></span>
+### <a name="special-folder-names"></a><span data-ttu-id="3c0c2-121">Namen für spezielle Ordner</span><span class="sxs-lookup"><span data-stu-id="3c0c2-121">Special folder names</span></span>
 
-<span data-ttu-id="88ff0-124">Im Folgenden sind Namen für spezielle Ordner aufgelistet, die in OneDrive und OneDrive for Business zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="88ff0-124">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
+<span data-ttu-id="3c0c2-122">Im Folgenden sind Namen für spezielle Ordner aufgelistet, die in OneDrive und OneDrive for Business zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-122">The follow special folder names are available in OneDrive and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="88ff0-125">Name</span><span class="sxs-lookup"><span data-stu-id="88ff0-125">Name</span></span>        | <span data-ttu-id="88ff0-126">Ordner-ID</span><span class="sxs-lookup"><span data-stu-id="88ff0-126">Folder id</span></span>    | <span data-ttu-id="88ff0-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="88ff0-127">Description</span></span>                                                              |
+| <span data-ttu-id="3c0c2-123">Name</span><span class="sxs-lookup"><span data-stu-id="3c0c2-123">Name</span></span>        | <span data-ttu-id="3c0c2-124">Ordner-ID</span><span class="sxs-lookup"><span data-stu-id="3c0c2-124">Folder id</span></span>    | <span data-ttu-id="3c0c2-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3c0c2-125">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="88ff0-128">Dokumente</span><span class="sxs-lookup"><span data-stu-id="88ff0-128">Documents</span></span>   | `documents`  | <span data-ttu-id="88ff0-129">Der Ordner „Dokumente“.</span><span class="sxs-lookup"><span data-stu-id="88ff0-129">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="88ff0-130">Fotos</span><span class="sxs-lookup"><span data-stu-id="88ff0-130">Photos</span></span>      | `photos`     | <span data-ttu-id="88ff0-131">Der Ordner „Fotos“.</span><span class="sxs-lookup"><span data-stu-id="88ff0-131">The Photos folder.</span></span>                                                       |
-| <span data-ttu-id="88ff0-132">Eigene Aufnahmen</span><span class="sxs-lookup"><span data-stu-id="88ff0-132">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="88ff0-133">Der Sicherungsordner für Eigene Aufnahmen.</span><span class="sxs-lookup"><span data-stu-id="88ff0-133">The Camera Roll Backup folder.</span></span>                                           |
-| <span data-ttu-id="88ff0-134">Anwendungsstamm</span><span class="sxs-lookup"><span data-stu-id="88ff0-134">App Root</span></span>    | `approot`    | <span data-ttu-id="88ff0-p105">Der persönliche Ordner der Anwendung. In der Regel unter `/Apps/{Application Name}`</span><span class="sxs-lookup"><span data-stu-id="88ff0-p105">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="88ff0-137">Musik</span><span class="sxs-lookup"><span data-stu-id="88ff0-137">Music</span></span>       | `music`      | <span data-ttu-id="88ff0-138">Der Ordner „Musik“.</span><span class="sxs-lookup"><span data-stu-id="88ff0-138">The Music folder.</span></span>                                                        |
+| <span data-ttu-id="3c0c2-126">Dokumente</span><span class="sxs-lookup"><span data-stu-id="3c0c2-126">Documents</span></span>   | `documents`  | <span data-ttu-id="3c0c2-127">Der Ordner „Dokumente“.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-127">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="3c0c2-128">Fotos</span><span class="sxs-lookup"><span data-stu-id="3c0c2-128">Photos</span></span>      | `photos`     | <span data-ttu-id="3c0c2-129">Der Ordner „Fotos“.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-129">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="3c0c2-130">Eigene Aufnahmen</span><span class="sxs-lookup"><span data-stu-id="3c0c2-130">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="3c0c2-131">Der Sicherungsordner für Eigene Aufnahmen.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-131">The Camera Roll Backup folder.</span></span>                                           |
+| <span data-ttu-id="3c0c2-132">Anwendungsstamm</span><span class="sxs-lookup"><span data-stu-id="3c0c2-132">App Root</span></span>    | `approot`    | <span data-ttu-id="3c0c2-p104">Der persönliche Ordner der Anwendung. In der Regel unter `/Apps/{Application Name}`</span><span class="sxs-lookup"><span data-stu-id="3c0c2-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="3c0c2-135">Musik</span><span class="sxs-lookup"><span data-stu-id="3c0c2-135">Music</span></span>       | `music`      | <span data-ttu-id="3c0c2-136">Der Ordner „Musik“.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-136">The Music folder.</span></span>                                                        |
 
 
-### <a name="optional-query-parameters"></a><span data-ttu-id="88ff0-139">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="88ff0-139">Optional query parameters</span></span>
+### <a name="optional-query-parameters"></a><span data-ttu-id="3c0c2-137">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="3c0c2-137">Optional query parameters</span></span>
 
-<span data-ttu-id="88ff0-140">Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) von `$expand` und `$select` zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="88ff0-140">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="3c0c2-138">Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) von `$expand` und `$select` zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-138">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88ff0-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="88ff0-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3c0c2-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="3c0c2-139">Response</span></span>
 
-<span data-ttu-id="88ff0-142">Die Methode gibt den Antwortcode `200 OK` und das aktualisierte [driveItem](../resources/driveitem.md)-Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="88ff0-142">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="3c0c2-140">Die Methode gibt den Antwortcode `200 OK` und das aktualisierte [driveItem](../resources/driveitem.md)-Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-140">This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-<span data-ttu-id="88ff0-143">Sie können diese Methode der Adressierung eines speziellen Ordners mit dem zusätzlichen Aufruf der Eigenschaften oder Beziehungen auf das DriveItem anwenden.</span><span class="sxs-lookup"><span data-stu-id="88ff0-143">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
+<span data-ttu-id="3c0c2-141">Sie können diese Methode der Adressierung eines speziellen Ordners mit dem zusätzlichen Aufruf der Eigenschaften oder Beziehungen auf das DriveItem anwenden.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-141">You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -81,11 +81,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="88ff0-144">Abrufen der untergeordneten Elemente eines speziellen Ordners</span><span class="sxs-lookup"><span data-stu-id="88ff0-144">Get children of a special folder</span></span>
+## <a name="get-children-of-a-special-folder"></a><span data-ttu-id="3c0c2-142">Abrufen der untergeordneten Elemente eines speziellen Ordners</span><span class="sxs-lookup"><span data-stu-id="3c0c2-142">Get children of a special folder</span></span>
 
-<span data-ttu-id="88ff0-145">Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Sie die `children`-Sammlung anfordern oder die Option [expand](/graph/query-parameters) verwenden, um die Sammlung untergeordneter Elemente zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="88ff0-145">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
+<span data-ttu-id="3c0c2-143">Um die untergeordneten Elemente eines speziellen Ordners anzufordern, können Sie die `children`-Sammlung anfordern oder die Option [expand](/graph/query-parameters) verwenden, um die Sammlung untergeordneter Elemente zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-143">To request the children of a special folder, you can request the `children` collection or use the [expand](/graph/query-parameters) option to expand the children collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="88ff0-146">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="88ff0-146">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="3c0c2-144">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3c0c2-144">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
@@ -93,7 +93,7 @@ Content-type: application/json
 GET /me/drive/special/{name}/children
 ```
 
-### <a name="response"></a><span data-ttu-id="88ff0-147">Antwort</span><span class="sxs-lookup"><span data-stu-id="88ff0-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3c0c2-145">Antwort</span><span class="sxs-lookup"><span data-stu-id="3c0c2-145">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -111,16 +111,21 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="88ff0-148">Hinweise</span><span class="sxs-lookup"><span data-stu-id="88ff0-148">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c0c2-146">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3c0c2-146">Remarks</span></span>
 
-> <span data-ttu-id="88ff0-149">**Hinweis:** DriveItems mit der `specialFolder`-Facette geben an, dass das Element ein spezieller Ordner ist und der Zugriff über die `special`-Sammlung erfolgen kann.</span><span class="sxs-lookup"><span data-stu-id="88ff0-149">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
+> <span data-ttu-id="3c0c2-147">**Hinweis:** DriveItems mit der `specialFolder`-Facette geben an, dass das Element ein spezieller Ordner ist und der Zugriff über die `special`-Sammlung erfolgen kann.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-147">**Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.</span></span>
 
-<span data-ttu-id="88ff0-150">Wenn Ihre App über Leseberechtigungen verfügt, schläft die Anforderung zum Abrufen eines speziellen Ordners oder der untergeordneten Elemente eines speziellen Ordners mit dem Fehler `404 Not Found` oder `403 Forbidden` fehl, wenn der spezielle Ordner nicht bereits vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="88ff0-150">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
+<span data-ttu-id="3c0c2-148">Wenn Ihre App über Leseberechtigungen verfügt, schläft die Anforderung zum Abrufen eines speziellen Ordners oder der untergeordneten Elemente eines speziellen Ordners mit dem Fehler `404 Not Found` oder `403 Forbidden` fehl, wenn der spezielle Ordner nicht bereits vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="3c0c2-148">If your app has read-only permissions, the request to get a special folder or the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden` error if the special folder does not already exist.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders"
-} -->
+  "tocPath": "OneDrive/Drive/Special folders",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-get-specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

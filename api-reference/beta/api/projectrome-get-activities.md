@@ -3,30 +3,30 @@ title: Die Benutzeraktivitäten abrufen
 description: Rufen Sie Aktivitäten für einen bestimmten Benutzer. Aktivitäten ohne gespeichert werden soll, im Gegensatz zu der **letzte** OData-Funktion zurückgegeben. Die Berechtigung UserActivity.ReadWrite.CreatedByApp gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d6b2f4c14e1f33a09ed81aeb2c8d626ed70bcdc5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928185"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516910"
 ---
-# <a name="get-user-activities"></a><span data-ttu-id="56248-107">Die Benutzeraktivitäten abrufen</span><span class="sxs-lookup"><span data-stu-id="56248-107">Get user activities</span></span>
+# <a name="get-user-activities"></a><span data-ttu-id="20a20-107">Die Benutzeraktivitäten abrufen</span><span class="sxs-lookup"><span data-stu-id="20a20-107">Get user activities</span></span>
 
-> <span data-ttu-id="56248-108">**Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen.</span><span class="sxs-lookup"><span data-stu-id="56248-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="56248-109">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="56248-109">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="56248-110">Rufen Sie Aktivitäten für einen bestimmten Benutzer.</span><span class="sxs-lookup"><span data-stu-id="56248-110">Get activities for a given user.</span></span> <span data-ttu-id="56248-111">Aktivitäten ohne gespeichert werden soll, im Gegensatz zu der **letzte** OData-Funktion zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="56248-111">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="56248-112">Die Berechtigung UserActivity.ReadWrite.CreatedByApp gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="56248-112">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="56248-113">Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="56248-113">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="56248-114">Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung.</span><span class="sxs-lookup"><span data-stu-id="56248-114">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="20a20-108">Rufen Sie Aktivitäten für einen bestimmten Benutzer.</span><span class="sxs-lookup"><span data-stu-id="20a20-108">Get activities for a given user.</span></span> <span data-ttu-id="20a20-109">Aktivitäten ohne gespeichert werden soll, im Gegensatz zu der **letzte** OData-Funktion zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="20a20-109">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="20a20-110">Die Berechtigung UserActivity.ReadWrite.CreatedByApp gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="20a20-110">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="20a20-111">Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="20a20-111">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="20a20-112">Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung.</span><span class="sxs-lookup"><span data-stu-id="20a20-112">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="56248-115">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="56248-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="20a20-113">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="20a20-113">Permissions</span></span>
 
-<span data-ttu-id="56248-p104">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56248-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="20a20-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="20a20-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="56248-118">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="56248-118">Permission type</span></span>      | <span data-ttu-id="56248-119">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="56248-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="20a20-116">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="20a20-116">Permission type</span></span>      | <span data-ttu-id="20a20-117">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="20a20-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="56248-120">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="56248-120">Delegated (work or school account)</span></span> | <span data-ttu-id="56248-121">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="56248-121">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="56248-122">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="56248-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56248-123">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="56248-123">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="56248-124">Anwendung</span><span class="sxs-lookup"><span data-stu-id="56248-124">Application</span></span> | <span data-ttu-id="56248-125">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="56248-125">Not supported.</span></span> |
+|<span data-ttu-id="20a20-118">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="20a20-118">Delegated (work or school account)</span></span> | <span data-ttu-id="20a20-119">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="20a20-119">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="20a20-120">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="20a20-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="20a20-121">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="20a20-121">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="20a20-122">Anwendung</span><span class="sxs-lookup"><span data-stu-id="20a20-122">Application</span></span> | <span data-ttu-id="20a20-123">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="20a20-123">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="56248-126">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="56248-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20a20-124">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="20a20-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,15 +34,15 @@ ms.locfileid: "27928185"
 GET /me/activities
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="56248-127">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="56248-127">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="20a20-125">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="20a20-125">Optional query parameters</span></span>
 
-<span data-ttu-id="56248-128">Diese Methode unterstützt einige [OData-Abfrage-Parameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="56248-128">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="56248-129">Die folgenden Abfrageparameter werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="56248-129">The following query parameters are supported:</span></span>
+<span data-ttu-id="20a20-126">Diese Methode unterstützt einige [OData-Abfrage-Parameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="20a20-126">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="20a20-127">Die folgenden Abfrageparameter werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="20a20-127">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="56248-130">$ Erweitern Sie für die Eigenschaft **HistoryItems** Navigation.</span><span class="sxs-lookup"><span data-stu-id="56248-130">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="56248-131">$top um die maximale Anzahl von Elementen auf mehreren Seiten zu begrenzen.</span><span class="sxs-lookup"><span data-stu-id="56248-131">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="56248-132">$filter auf die **LastModifiedDateTime** -Eigenschaft für **Aktivitäten** oder **HistoryItems**, wenn erweitert.</span><span class="sxs-lookup"><span data-stu-id="56248-132">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="20a20-128">$ Erweitern Sie für die Eigenschaft **HistoryItems** Navigation.</span><span class="sxs-lookup"><span data-stu-id="20a20-128">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="20a20-129">$top um die maximale Anzahl von Elementen auf mehreren Seiten zu begrenzen.</span><span class="sxs-lookup"><span data-stu-id="20a20-129">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="20a20-130">$filter auf die **LastModifiedDateTime** -Eigenschaft für **Aktivitäten** oder **HistoryItems**, wenn erweitert.</span><span class="sxs-lookup"><span data-stu-id="20a20-130">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="56248-133">Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung:</span><span class="sxs-lookup"><span data-stu-id="56248-133">The following are some examples of supported queries with URL encoding:</span></span>
+<span data-ttu-id="20a20-131">Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung:</span><span class="sxs-lookup"><span data-stu-id="20a20-131">The following are some examples of supported queries with URL encoding:</span></span>
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -52,25 +52,25 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="56248-134">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="56248-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="20a20-132">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="20a20-132">Request headers</span></span>
 
-|<span data-ttu-id="56248-135">Name</span><span class="sxs-lookup"><span data-stu-id="56248-135">Name</span></span> | <span data-ttu-id="56248-136">Typ</span><span class="sxs-lookup"><span data-stu-id="56248-136">Type</span></span> | <span data-ttu-id="56248-137">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="56248-137">Description</span></span>|
+|<span data-ttu-id="20a20-133">Name</span><span class="sxs-lookup"><span data-stu-id="20a20-133">Name</span></span> | <span data-ttu-id="20a20-134">Typ</span><span class="sxs-lookup"><span data-stu-id="20a20-134">Type</span></span> | <span data-ttu-id="20a20-135">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="20a20-135">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="56248-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="56248-138">Authorization</span></span> | <span data-ttu-id="56248-139">string</span><span class="sxs-lookup"><span data-stu-id="56248-139">string</span></span> | <span data-ttu-id="56248-p106">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="56248-p106">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="20a20-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="20a20-136">Authorization</span></span> | <span data-ttu-id="20a20-137">string</span><span class="sxs-lookup"><span data-stu-id="20a20-137">string</span></span> | <span data-ttu-id="20a20-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="20a20-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="56248-142">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="56248-142">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="20a20-140">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="20a20-140">Request body</span></span>
 
-<span data-ttu-id="56248-143">Keine Anforderungstext.</span><span class="sxs-lookup"><span data-stu-id="56248-143">No request body.</span></span>
+<span data-ttu-id="20a20-141">Keine Anforderungstext.</span><span class="sxs-lookup"><span data-stu-id="20a20-141">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="56248-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="56248-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="20a20-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="20a20-142">Response</span></span>
 
-<span data-ttu-id="56248-145">Wenn der Vorgang erfolgreich war, gibt diese Methode die `200 OK` Antwortcode mit die Aktivitäten des Benutzers für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="56248-145">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
+<span data-ttu-id="20a20-143">Wenn der Vorgang erfolgreich war, gibt diese Methode die `200 OK` Antwortcode mit die Aktivitäten des Benutzers für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="20a20-143">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="56248-146">Beispiel</span><span class="sxs-lookup"><span data-stu-id="56248-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="20a20-144">Beispiel</span><span class="sxs-lookup"><span data-stu-id="20a20-144">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="56248-147">Anforderung</span><span class="sxs-lookup"><span data-stu-id="56248-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="20a20-145">Anforderung</span><span class="sxs-lookup"><span data-stu-id="20a20-145">Request</span></span>
 
-<span data-ttu-id="56248-148">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="56248-148">The following is an example of the request.</span></span>
+<span data-ttu-id="20a20-146">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="20a20-146">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -81,9 +81,9 @@ GET /me/activities
 GET https://graph.microsoft.com/beta/me/activities
 ```
 
-##### <a name="response"></a><span data-ttu-id="56248-149">Antwort</span><span class="sxs-lookup"><span data-stu-id="56248-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="20a20-147">Antwort</span><span class="sxs-lookup"><span data-stu-id="20a20-147">Response</span></span>
 
-<span data-ttu-id="56248-150">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="56248-150">The following is an example of the response.</span></span>
+<span data-ttu-id="20a20-148">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="20a20-148">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get activities",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-get-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
