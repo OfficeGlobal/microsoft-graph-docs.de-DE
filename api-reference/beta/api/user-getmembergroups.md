@@ -1,19 +1,19 @@
 ---
 title: 'user: getMemberGroups'
-description: Zurückgeben Sie aller Gruppen, denen der Benutzer Mitglied ist. Das Kontrollkästchen ist transitiv, im Gegensatz zum Lesen der
+description: Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv, im Gegensatz zum Lesen von
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb6a10a80503d8842442e2678bcf52ee6154e3f5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d4f9042be8be7f736ac585efaab0f2ebb16a6aab
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424210"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523701"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gibt alle Gruppen zurück, bei denen der Benutzer Mitglied ist. Die Überprüfung ist transitiv; im Gegensatz zum Lesen der Navigationseigenschaft [memberOf](../api/user-list-memberof.md), die nur die Gruppen zurückgibt, von denen der Benutzer ein direktes Mitglied ist.
 
@@ -29,8 +29,6 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt                                                                                                                                       |
 | Anwendung                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
-> **Hinweis:** Diese API derzeit erfordert die `Directory.Read.All` Berechtigung oder höher. Verwenden die Berechtigung Group.Read.All eigenständig oder in Kombination mit einem `User.` Berechtigung, wird ein Fehler zurückgegeben. Dies ist ein bekanntes Problem.
-
 ## <a name="http-request"></a>HTTP-Anforderung
 
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +39,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert                     |
+| Kopfzeile        | Wert                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json          |
@@ -107,10 +105,15 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

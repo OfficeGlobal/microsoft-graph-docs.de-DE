@@ -4,16 +4,16 @@ description: Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ccaf95dcc893e985f4421fa31bed99a770d546ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944397"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519437"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Verfügung stehen.
 
@@ -24,13 +24,13 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 | bodyOrSubjectContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper oder Betreff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
 | categories | Sammlung (Zeichenfolge) | Steht für die Kategorien, mit denen eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. |
 | fromAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die speziellen Absender-E-Mail-Adressen einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft. |
-| hasAttachments | Boolescher Wert | Gibt an, ob eine eingehende Nachricht Anlagen aufweisen muss, damit eine Bedingung oder Ausnahme zutrifft. |
+| hasAttachments | Boolean | Gibt an, ob eine eingehende Nachricht Anlagen aufweisen muss, damit eine Bedingung oder Ausnahme zutrifft. |
 | HeaderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| Wichtigkeit | Zeichenfolge | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
+| Wichtigkeit | String | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Genehmigungsanforderung sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticForward | Boolescher Wert | Gibt an, ob eine eingehende Nachricht automatisch weitergeleitet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticReply | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine automatische Antwort sein muss, damit die Bedingung oder Ausnahme zutrifft. |
-| isEncrypted | Boolescher Wert | Gibt an, ob eine eingehende Nachricht verschlüsselt sein muss, damit die Bedingung oder Ausnahme zutrifft. |
+| isEncrypted | Boolean | Gibt an, ob eine eingehende Nachricht verschlüsselt sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isMeetingRequest | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Besprechungsanfrage sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isMeetingResponse | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Besprechungsantwort sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isNonDeliveryReport | Boolescher Wert | Gibt an, ob eine eingehende Nachricht ein Unzustellbarkeitsbericht sein muss, damit die Bedingung oder Ausnahme zutrifft. |
@@ -42,7 +42,7 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 | notSentToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs kein Empfänger einer eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft. |
 | recipientContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Eigenschaften **toRecipients** oder **ccRecipients** einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
 | senderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in der **from**-Eigenschaft Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| sensitivity | Zeichenfolge | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte: `normal`, `personal`, `private`, `confidential` |
+| sensitivity | String | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte: `normal`, `personal`, `private`, `confidential` |
 | sentCcMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **ccRecipients**-Eigenschaft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentOnlyToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs der einzige Empfänger in einer eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die E-Mail-Adressen, an die eine eingehenden Nachricht gesendet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
@@ -101,10 +101,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "messageRulePredicates resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/messagerulepredicates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

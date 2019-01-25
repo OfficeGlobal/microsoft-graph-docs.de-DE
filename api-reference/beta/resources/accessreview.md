@@ -4,16 +4,16 @@ description: 'In Azure AD Access Feature, überprüft die `accessReview` eine Ü
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523519"
 ---
 # <a name="accessreview-resource-type"></a>Ressourcentyp accessReview
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In Azure AD [Access überprüft](accessreviews-root.md) Feature der `accessReview` eine Access-Überprüfung darstellt.  
 
@@ -78,9 +78,9 @@ Ob diese Beziehungen auf ein Objekt vorhanden sind, hängt davon ab, gibt an, ob
 
 | Szenario | Hat Bearbeiter? | Hat Entscheidungen und MyDecisions? | Hat Instanzen? |
 |:---------|:---------------|:---------------|:---------------|
-|Einmalige Access überprüfen|Ja | Ja, gestartet | Nein |
-| Überprüfen von sich wiederholenden Zugriff | Ja | Nein | Ja |
-| Instanz von sich wiederholenden Access Wiederholung | Ja | Ja, gestartet | Nein |
+|Einmalige Access überprüfen|Ja | Ja, gestartet | No |
+| Überprüfen von sich wiederholenden Zugriff | Ja | No | Ja |
+| Instanz von sich wiederholenden Access Wiederholung | Ja | Ja, gestartet | No |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -152,10 +152,15 @@ Die `accessReviewRecurrenceSettings` überprüfen Sie die Einstellungen der Acce
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "accessReview resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

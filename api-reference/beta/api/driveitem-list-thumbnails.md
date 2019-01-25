@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Abrufen von Miniaturansichten für eine Datei oder einen Ordner
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a64b8b7af4a1be82d4f14b4eedc17efd9839bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 53401c261a69872d57084b845e391615ef768fcb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975386"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525234"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Hier erklären wir Ihnen, wie Sie eine Liste der [ThumbnailSet](../resources/thumbnailset.md)-Ressourcen einer [DriveItem](../resources/driveitem.md)-Ressource abrufen können.
 
@@ -213,7 +213,7 @@ Content-type: application/json
 
 In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar können Sie jede beliebige Miniaturansichtgröße anfordern; bei den definierten Werten ist es jedoch wahrscheinlich, dass sie existieren und dass schnell ein Wert zurückgegeben wird:
 
-| Name           | Auflösung  | Seitenverhältnis | Beschreibung                                                          |
+| Name           | Lösung  | Seitenverhältnis | Beschreibung                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest
   | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
@@ -282,10 +282,15 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
-  "tocPath": "Items/Thumbnails"
-} -->
+  "tocPath": "Items/Thumbnails",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: Ressourcentyp synchronizationRule
 description: Definiert, wie die Synchronisierung für das Synchronisierungsmodul, einschließlich der zu synchronisierender Objekte und in welche Richtung ausgeführt werden sollen, wie Objekte in das Zielverzeichnis Objekte aus dem Quellverzeichnis zugeordnet werden soll und wie Attribute sollte transformiert werden, wenn sie von der Quelle in das Zielverzeichnis synchronisiert sind.
 localization_priority: Normal
-ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856154"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517925"
 ---
 # <a name="synchronizationrule-resource-type"></a>Ressourcentyp synchronizationRule
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Definiert, wie die Synchronisierung für das Synchronisierungsmodul, einschließlich der zu synchronisierender Objekte und in welche Richtung ausgeführt werden sollen, wie Objekte in das Zielverzeichnis Objekte aus dem Quellverzeichnis zugeordnet werden soll und wie Attribute sollte transformiert werden, wenn sie von der Quelle in das Zielverzeichnis synchronisiert sind.
 
@@ -23,10 +23,10 @@ Synchronisierungsregeln werden als Teil der [Synchronisierungsschema](synchroniz
 
 | Eigenschaft      | Typ      | Beschreibung    |
 |:--------------|:----------|:---------------|
-|bearbeitet werden       |Boolean    |`true`Wenn die Synchronisierung Regel angepasst werden kann. `false` Wenn diese Regel schreibgeschützt ist und nicht geändert werden sollte.|
+|bearbeitet werden       |Boolescher Wert    |`true`Wenn die Synchronisierung Regel angepasst werden kann. `false` Wenn diese Regel schreibgeschützt ist und nicht geändert werden sollte.|
 |id             |String     |Kennung für die Synchronisierung Regel. Einen der Bezeichner vom Synchronisierungsmodul erkannt muss werden. Unterstützt die Regel, die in der Synchronisierung-Vorlage, die von der API zurückgegebenen IDs gefunden werden können.|
-|Metadaten       |[StringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) -Auflistung |Zusätzliche Erweiterungseigenschaften. Wenn vom Supportteam explizit angewiesen, sollte Metadatenwerte nicht geändert werden.|
-|name           |String     |Lesbare Name der Regel Synchronisierung. Lässt keine Nullwerte zu.|
+|$metadata       |[StringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) -Auflistung |Zusätzliche Erweiterungseigenschaften. Wenn vom Supportteam explizit angewiesen, sollte Metadatenwerte nicht geändert werden.|
+|name           |Zeichenfolge     |Lesbare Name der Regel Synchronisierung. Lässt keine NULL-Werte zu.|
 |objectMappings |[ObjectMapping](synchronization-objectmapping.md) -Auflistung    |Auflistung von Objekt Zuordnungen von der Regel unterstützt. Weist das Synchronisierungsmodul welche Objekte synchronisiert werden sollen.|
 |Priorität       |Ganze Zahl    |Priorität relativ zu anderen Regeln in der [SynchronizationSchema](synchronization-synchronizationschema.md). Regeln mit der niedrigsten Prioritätsnummer werden zuerst verarbeitet werden.|
 |sourceDirectoryName       |String    |Name der Source-Verzeichnis. Muss eine der Definitionen in [SynchronizationSchema](synchronization-synchronizationschema.md)Verzeichnis übereinstimmen.|
@@ -60,10 +60,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationRule resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationrule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

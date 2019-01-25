@@ -4,16 +4,16 @@ description: Eine administrative Einheit enthält einen konzeptionellen Containe
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955317"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519745"
 ---
 # <a name="administrativeunit-resource-type"></a>Ressourcentyp administrativeUnit
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Eine administrative Einheit enthält einen konzeptionellen Container für Benutzer- und Verzeichnisobjekte. Verwenden von administrativen Einheiten, ein Unternehmensadministrator delegieren kann jetzt administrative Aufgaben zum Verwalten von Benutzern und Gruppen innerhalb oder auf eine administrative Einheit an einen Administrator regionalen oder auf Abteilungsebene bereichsbezogenen.
 
@@ -36,9 +36,9 @@ Dieses Thema enthält eine Beschreibung der deklarierte Eigenschaften und Naviga
 |[Ein Mitglied hinzufügen](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Fügen Sie ein Mitglied (Benutzer oder Gruppe).|
 |[Mitglieder auflisten](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Liste der Elemente (Benutzer und Gruppen).|
 |[Abrufen eines Elements](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Rufen Sie ein bestimmtes Element.|
-|[Mitglied entfernen](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Entfernen eines Mitglieds.|
+|[Mitglied entfernen](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Mitglied entfernen|
 |[Gültigkeitsbereich der Rolle hinzufügen](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Fügen Sie ein Mitglied einer bezogenen-Rolle hinzu.|
-|[Mitglieder der Liste bezogenen-Rolle](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)-Sammlung| Rufen Sie die Liste der Administratoren bezogenen-Rolle.|
+|[Mitglieder der Liste bezogenen-Rolle](../api/administrativeunit-list-scopedrolemembers.md) |scopedRoleMembership-Sammlung| Rufen Sie die Liste der Administratoren bezogenen-Rolle.|
 |[Ein Mitglied einer bezogenen Rolle abrufen](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Rufen Sie ein bestimmtes Element bezogenen-Rolle.|
 |[Entfernen eines Mitglieds bezogenen-Rolle](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Entfernen Sie ein Mitglied einer bezogenen-Rolle.|
 |**Offene Erweiterungen**| | |
@@ -58,9 +58,9 @@ Dieses Thema enthält eine Beschreibung der deklarierte Eigenschaften und Naviga
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für diese Administrative Einheit definiert. Lässt Nullwerte zu.|
-|Elemente|[directoryObject](directoryobject.md)-Sammlung|Benutzer und Gruppen, die Mitglieder dieser Adminsitrative Einheit sind. HTTP-Methoden: Abrufen (Listenmitglieder) POST (Hinzufügen von Mitgliedern), DELETE (Entfernen von Mitgliedern).|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md)-Sammlung| Bezogenen Rolle Mitglieder dieser Administrative Einheit.  HTTP-Methoden: Abrufen (Liste ScopedRoleMemberships), POST (ScopedRoleMembership hinzufügen), DELETE (Remove ScopedRoleMembership). |
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für diese Administrative Einheit definiert. Lässt NULL-Werte zu.|
+|members|[directoryObject](directoryobject.md)-Sammlung|Benutzer und Gruppen, die Mitglieder dieser Adminsitrative Einheit sind. HTTP-Methoden: Abrufen (Listenmitglieder) POST (Hinzufügen von Mitgliedern), DELETE (Entfernen von Mitgliedern).|
+|scopedRoleMembers|scopedRoleMembership-Sammlung| Bezogenen Rolle Mitglieder dieser Administrative Einheit.  HTTP-Methoden: Abrufen (Liste ScopedRoleMemberships), POST (ScopedRoleMembership hinzufügen), DELETE (Remove ScopedRoleMembership). |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -85,7 +85,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```
 
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)
@@ -94,10 +94,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "administrativeUnit resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

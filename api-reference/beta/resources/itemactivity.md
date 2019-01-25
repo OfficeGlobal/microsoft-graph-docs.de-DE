@@ -2,18 +2,18 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActivity
+title: itemActivity
 localization_priority: Normal
-ms.openlocfilehash: a29bdad0ae5e06d3d1b55f1fb7ceb630bec1b564
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819670"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517295"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die **ItemActivity**-Ressource stellt Informationen zu Aktivitäten bereit, die zu einem Element oder innerhalb eines Containers stattfanden.
 Zurzeit nur für SharePoint und OneDrive for Business verfügbar.
@@ -102,10 +102,15 @@ Zukünftig werden möglicherweise neue Aktionen protokolliert, vergewissern Sie 
 
 **ItemActivity** ist zurzeit nur für SharePoint und OneDrive for Business verfügbar.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivity object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivity"
-} -->
+  "tocPath": "Resources/ItemActivity",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

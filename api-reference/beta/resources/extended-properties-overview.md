@@ -4,16 +4,16 @@ description: 'Erweiterte Eigenschaften Speichern benutzerdefinierter Daten zulas
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 4aae656b996fb9d3a2acdc2ac1b77602e32d2073
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ead40279547fa838b7224a25c3605d0825c3f797
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966664"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517995"
 ---
 # <a name="outlook-extended-properties-overview"></a>Übersicht über erweiterte Outlook-Eigenschaften
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erweiterte Eigenschaften ermöglichen das Speichern von benutzerdefinierten Daten und dienen insbesondere als Fallbackmechanismus, mit dem Apps auf benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften zugreifen können, wenn diese Eigenschaften _noch nicht in den Microsoft Graph-API-Metadaten verfügbar gemacht wurden_. Sie können die REST-API für erweiterte Eigenschaften verwenden, um diese benutzerdefinierten Daten in folgenden Benutzerressourcen zu speichern oder abzurufen:
 
@@ -94,3 +94,11 @@ Vorgänge für erweiterte Eigenschaften mit mehreren Werten:
 - [Eine erweiterte Eigenschaft in einer neuen oder vorhandenen Ressourceninstanz erstellen](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Eine Ressourceninstanz mit einer erweiterten Eigenschaft mithilfe von `$expand` abrufen](../api/multivaluelegacyextendedproperty-get.md)
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/extended-properties-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

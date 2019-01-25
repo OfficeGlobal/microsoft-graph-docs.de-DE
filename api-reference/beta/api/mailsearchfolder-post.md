@@ -4,16 +4,16 @@ description: Verwenden Sie diese API, um eine neue MailSearchFolder in das angeg
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 626bf3a2e8bc77ba929895eed74ac0bb803aa5d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517729"
 ---
 # <a name="create-mailsearchfolder"></a>Erstellen von mailSearchFolder
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Verwenden Sie diese API, um eine neue [MailSearchFolder](../resources/mailsearchfolder.md) in das angegebene Postfach des Benutzers zu erstellen.
 
@@ -40,10 +40,10 @@ Geben Sie in der Abfrage-URL als eine Ordner-ID oder den Ordnernamen einer bekan
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header | Wert |
+| Kopfzeile | Wert |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Erforderlich.  |
-| Content-Type | `application/json`. Erforderlich.  |
+| Authorization | `Bearer {token}`. Erforderlich. |
+| Content-Type | `application/json`. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -51,11 +51,11 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter | Typ | Beschreibung |
 |:----------|:-----|:------------|
-| @odata.type | Zeichenfolge | Der Typ des zu erstellenden Ordners. Legen Sie auf "microsoft.graph.mailSearchFolder". |
-| displayName | Zeichenfolge | Der Anzeigename für den neuen Ordner.|
+| @odata.type | String | Der Typ des zu erstellenden Ordners. Legen Sie auf "microsoft.graph.mailSearchFolder". |
+| displayName | String | Der Anzeigename für den neuen Ordner.|
 | includeNestedFolders | Boolescher Wert | Wie sollte die Hierarchie der Postfach-Ordner durchlaufen werden. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
-| sourceFolderIDs | Collection von Objekten des Typs „String“ | Die Postfachordner, die durchsucht werden soll. |
-| filterQuery | Zeichenfolge | Der OData-Abfrage Nachrichten gefiltert werden soll. |
+| sourceFolderIDs | Zeichenfolgenauflistung | Die Postfachordner, die durchsucht werden soll. |
+| filterQuery | String | Der OData-Abfrage Nachrichten gefiltert werden soll. |
 
 ## <a name="response"></a>Antwort
 
@@ -89,7 +89,7 @@ Content-length: 159
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->**Hinweis:** im Response-Objekt dargestellten möglicherweise zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,10 +121,15 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create mailSearchFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

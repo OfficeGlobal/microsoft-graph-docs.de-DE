@@ -4,16 +4,16 @@ description: Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b753e904a0c70d5c0ae83dbb3d9a88aff8401eac
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e1b81ff14aca2b0f81a7f50e01aed6281d03d14d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523463"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Ressourcentyp educationSynchronizationProfile
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Reihe von Konfigurationen, die zum Synchronisieren von Education Entitäten und der Teilnehmerliste einer Informationen aus einem Quellverzeichnis in Azure Active Directory (AD Azure) verwendet. Diese Ressource enthält eine programmgesteuerte Darstellung in [Schule Daten Sync](https://sds.microsoft.com)verwendet.
 
@@ -73,3 +73,11 @@ Es folgt eine JSON-Darstellung der Ressource **EducationSynchronizationProfile**
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

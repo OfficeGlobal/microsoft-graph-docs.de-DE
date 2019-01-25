@@ -1,21 +1,21 @@
 ---
 title: Ressourcentyp directoryRole
-description: Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter Zuweisen von Administratorrollen in Azure Active Directory. Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Um anderen verfügbaren Verzeichnis-Rollen aktivieren möchten, senden Sie eine POST-Anforderung mit der ID der DirectoryRoleTemplate, auf dem die Rolle Directory basiert. Erbt von directoryObject.
+description: Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auch als *Administratorrollen* bezeichnet. Weitere Informationen zu diesen Verzeichnis-(Administrator)Rollen finden Sie unter Zuweisen von Administratorrollen in Azure AD. Mit Microsoft Graph können Sie Benutzer zu Verzeichnisrollen zuweisen, um ihnen Berechtigungen der Zielrolle zuzuweisen. Um eine Verzeichnisrolle zu lesen oder ihre Mitglieder zu aktualisieren, muss diese zuerst im Mandanten aktiviert werden. Nur die Unternehmensadministratoren sind standardmäßig aktiviert. Zum Aktivieren anderer verfügbarer Verzeichnisrollen senden Sie eine POST-Anforderung mit der ID der directoryRoleTemplate, auf der die Verzeichnisrolle basiert. Erbt von directoryObject.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e6753369be070ab04419cab0c870aec7e96b1fb2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 30b22313da70c33bffc0b759f9b474f4deac2ac1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927744"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521250"
 ---
 # <a name="directoryrole-resource-type"></a>Ressourcentyp directoryRole
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt eine Azure AD-Directory-Rolle. Azure Active Directory Directory Rollen sind auch bekannt als *Administratorrollen*. Weitere Informationen zu Rollen Verzeichnis (Administrator) finden Sie unter [Zuweisen von Administratorrollen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Mit dem Microsoft Graph können Sie Directory Rollen erteilen sie die Berechtigungen der Zielrolle Benutzer zuweisen. Um eine Rolle Directory lesen oder deren Member aktualisieren möchten, müssen sie zuerst im Mandanten aktiviert werden. Nur die Administratoren im Unternehmen Directory-Rolle ist standardmäßig aktiviert. Um anderen verfügbaren Verzeichnis-Rollen aktivieren möchten, senden Sie eine POST-Anforderung mit der ID der [DirectoryRoleTemplate](directoryroletemplate.md) , auf dem die Rolle Directory basiert. Erbt von [directoryObject](directoryobject.md).
+Stellt eine Azure AD-Verzeichnisrolle dar. Azure AD-Verzeichnisrollen werden auch als *Administratorrollen* bezeichnet. Weitere Informationen zu diesen Verzeichnis-(Administrator)Rollen finden Sie unter [Zuweisen von Administratorrollen in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Mit Microsoft Graph können Sie Benutzer zu Verzeichnisrollen zuweisen, um ihnen Berechtigungen der Zielrolle zuzuweisen. Um eine Verzeichnisrolle zu lesen oder ihre Mitglieder zu aktualisieren, muss diese zuerst im Mandanten aktiviert werden. Nur die Unternehmensadministratoren sind standardmäßig aktiviert. Zum Aktivieren anderer verfügbarer Verzeichnisrollen senden Sie eine POST-Anforderung mit der ID der [directoryRoleTemplate](directoryroletemplate.md), auf der die Verzeichnisrolle basiert. Erbt von [directoryObject](directoryobject.md).
 
 Standardmäßig werden Directory Rollen Recherchediensts Mandanten geltende sein.  Verzeichnis Rollen (derzeit nur das *Konto ein Benutzeradministrator* und *Helpdesk Admin*) können jedoch auch [administrative Einheiten](administrativeunit.md)zugewiesen werden.
 
@@ -32,22 +32,22 @@ Diese Ressource unterstützt Folgendes:
 |[Mitglied hinzufügen](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Fügen Sie der Verzeichnisrolle einen Benutzer durch Veröffentlichen in der Mitgliedernavitionseingenschaft hinzu.|
 |[Mitglieder auflisten](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, die Mitglieder der Verzeichnisrolle sind, aus der Mitgliedernavigationseigenschaft ab.|
 |[Mitglied entfernen](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Dient zum Entfernen eines Benutzers aus der Verzeichnisrolle.|
-|[Mitglieder der Liste bezogenen-Rolle](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md)-Sammlung| Die Elemente dieser Rolle Verzeichnis, die [administrative Einheiten](administrativeunit.md)mithilfe der Auflistung der ScopedRoleMembership Ressource zugeordnet werden aufgelistet.|
+|[Mitglieder der Liste bezogenen-Rolle](../api/directoryrole-list-members.md) |scopedRoleMembership-Sammlung| Die Elemente dieser Rolle Verzeichnis, die [administrative Einheiten](administrativeunit.md)mithilfe der Auflistung der ScopedRoleMembership Ressource zugeordnet werden aufgelistet.|
 |[delta](../api/directoryrole-delta.md)|directoryRole-Sammlung| Rufen Sie inkrementelle Änderungen für Directory Rollen. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |description|Zeichenfolge|Die Beschreibung für die Verzeichnisrolle. Schreibgeschützt. |
-|displayName|Zeichenfolge|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
+|displayName|String|Der Anzeigename für die Verzeichnisrolle. Schreibgeschützt. |
 |id|Zeichenfolge|Die eindeutige ID für die Verzeichnisrolle. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu, schreibgeschützt.|
 |roleTemplateId|String| Die **id** der [directoryRoleTemplate](directoryroletemplate.md), auf der diese Rolle basiert. Die Eigenschaft muss angegeben werden, wenn eine Verzeichnisrolle mit einer POST-Operation in einem Mandanten aktiviert wird. Nach der Aktivierung der Verzeichnisrolle ist die Eigenschaft schreibgeschützt. |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|Elemente|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die Mitglieder dieser Verzeichnisrolle sind. HTTP-Methoden: GET, POST, DELETE. Schreibgeschützt. Lässt Nullwerte zu.|
-|scopedMembers|[scopedRoleMembership](scopedrolemembership.md)-Sammlung| Mitglieder dieser Rolle Directory [administrative Einheiten](administrativeunit.md)zugeordnet sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|members|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die Mitglieder dieser Verzeichnisrolle sind. HTTP-Methoden: GET, POST, DELETE. Schreibgeschützt. Lässt Nullwerte zu.|
+|scopedMembers|scopedRoleMembership-Sammlung| Mitglieder dieser Rolle Directory [administrative Einheiten](administrativeunit.md)zugeordnet sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -77,10 +77,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryRole resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

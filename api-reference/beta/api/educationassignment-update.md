@@ -4,16 +4,16 @@ description: Aktualisieren Sie das Assignment-Objekt. Nur Lehrer in der Klasse i
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960350"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524961"
 ---
 # <a name="update-educationassignment"></a>Educationassignment aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisieren Sie das Assignment-Objekt. Nur Lehrer in der Klasse ist dies möglich. Beachten Sie, dass eine Anforderung PATCH zum Ändern des Status einer Zuordnung verwendet werden können. Verwenden Sie die Aktion [Veröffentlichen](../api/educationassignment-publish.md) , um den Status einer Aufgabe ändern.
 
@@ -32,7 +32,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /education/classes/{id}/assignments/{id}
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -46,10 +46,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |allowStudentsToAddResourcesToSubmission|Boolescher Wert| Gibt an, ob eine Student Ressourcen zu einer Übermittlung hinzufügen kann. Angegeben, ob die Ressourcenliste Zuordnung der einzige Elemente auf der Übermittlung stammt. |
 |assignDateTime|DateTimeOffset| Datum, an dem die Zuordnung für Studenten veröffentlicht werden soll. |
 |assignTo|educationAssignmentRecipient| Teilnehmer, die die Zuordnung zu erhalten.|
-|displayName|Zeichenfolge| Name der Zuordnung. |
+|displayName|String| Name der Zuordnung. |
 |dueDateTime|DateTimeOffset| Datum Aufgabe ist fällig. |
 |Benotung|educationAssignmentGradeType| Wie wird die Zuordnung eingestuft.|
-|Anleitung|itemBody| Anleitung für die Kursteilnehmer zusammen mit der Zuordnung angegeben. |
+|Anweisungen|itemBody| Anleitung für die Kursteilnehmer zusammen mit der Zuordnung angegeben. |
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [EducationAssignment](../resources/educationassignment.md) -Objekts in der Antworttext.
@@ -104,10 +104,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

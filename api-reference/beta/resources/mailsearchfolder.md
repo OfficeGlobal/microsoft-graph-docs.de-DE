@@ -4,16 +4,16 @@ description: Ein MailSearchFolder ist ein virtueller Ordner im Postfach des Benu
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ba9ce248071e3d806383b4cd7e7550c1e3aa145
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ba76029b69d91be39c9d63ca755e8a4603aec0b9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920912"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520984"
 ---
 # <a name="mailsearchfolder-resource-type"></a>Ressourcentyp mailSearchFolder
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein MailSearchFolder ist ein virtueller Ordner im Postfach des Benutzers, das alle angegebenen Suchkriterien e-Mail-Elemente enthält. MailSearchFolder erbt vom [MailFolder](mailfolder.md).
 
@@ -34,8 +34,8 @@ Ein MailSearchFolder ist ein virtueller Ordner im Postfach des Benutzers, das al
 |:---------------|:--------|:----------|
 | isSupported | Boolescher Wert | Gibt an, ob ein Suchordner mithilfe von REST-APIs bearbeitet werden. |
 | includeNestedFolders | Boolescher Wert | Gibt an, wie die Hierarchie der Postfach-Ordner durchlaufen werden soll. `true`bedeutet, dass eine umfassende Suche sollte erledigen `false` bedeutet, dass eine flache Suche sollte stattdessen durchgeführt werden. |
-| sourceFolderIDs | Collection von Objekten des Typs „String“ | Die Postfachordner, die durchsucht werden soll. |
-| filterQuery | Zeichenfolge | Der OData-Abfrage Nachrichten gefiltert werden soll. |
+| sourceFolderIDs | Zeichenfolgenauflistung | Die Postfachordner, die durchsucht werden soll. |
+| filterQuery | String | Der OData-Abfrage Nachrichten gefiltert werden soll. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -58,10 +58,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2018-01-23 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailSearchFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailsearchfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

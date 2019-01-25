@@ -2,16 +2,16 @@
 title: Prozess Ressourcentyp
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
-ms.openlocfilehash: 36acd6ed0f6e2cee5095d445de3ba4ff024a024a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 13de9a2485aeeaa06fdad3c7cce3eb1f81374193
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869468"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521208"
 ---
 # <a name="process-resource-type"></a>Prozess Ressourcentyp
 
- > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Statusinformationen über den Prozess im Zusammenhang mit der Benachrichtigung enthält.
 
@@ -19,8 +19,8 @@ Statusinformationen über den Prozess im Zusammenhang mit der Benachrichtigung e
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|accountName|Zeichenfolge|Benutzerkonto für Beispiel, Kontoname, SID und So weiter Bezeichner (Konto Benutzerkontext, unter dem Prozess steht).|
-|commandLine|Zeichenfolge|Vollständiger Prozess Aufruf Commandline einschließlich aller Parameter.|
+|accountName|String|Benutzerkonto für Beispiel, Kontoname, SID und So weiter Bezeichner (Konto Benutzerkontext, unter dem Prozess steht).|
+|commandLine|String|Vollständiger Prozess Aufruf Commandline einschließlich aller Parameter.|
 |createdDateTime|DateTimeOffset|Zeitpunkt, an dem der Prozess gestartet wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Komplexer Typ mit Dateihashes (cryptographic und der Speicherort).|
 |integrityLevel|processIntegrityLevel|Die Integritätsebene des Prozesses. Mögliche Werte sind: `unknown`, `untrusted`, `low`, `medium`, `high` und `system`.|
@@ -28,8 +28,8 @@ Statusinformationen über den Prozess im Zusammenhang mit der Benachrichtigung e
 |name|Zeichenfolge|Der Name der Bilddatei des Prozesses.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime, an dem der übergeordnete Prozess gestartet wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |Diese Eigenschaft|Int32|Die Prozess-ID (PID) des übergeordneten Vorgangs.|
-|parentProcessName|Zeichenfolge|Der Name der Bilddatei des übergeordneten Vorgangs.|
-|Pfad|Zeichenfolge|Vollständiger Pfad, einschließlich Dateiname.|
+|parentProcessName|String|Der Name der Bilddatei des übergeordneten Vorgangs.|
+|Pfad|String|Vollständiger Pfad, einschließlich Dateiname.|
 |processId|Int32|Die Prozess-ID (PID) des Prozesses.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -64,10 +64,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "process resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/process.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

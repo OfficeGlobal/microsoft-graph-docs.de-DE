@@ -2,16 +2,16 @@
 title: Gerätebefehl senden
 description: 'Diese API ermöglicht die Project-ROM-Funktionen, die ein Gerät mit einem Microsoft-Konto verknüpften Befehl. Nach dem Gespräch GET auf macht `me/devices`, übergeben Sie die ID des Geräts einen Befehl auf Ihrem Gerät ausgeben. Zwei Arten von Befehle werden unterstützt: LaunchURI und AppServices. Wenn Sie LaunchURI verwenden, geben Sie den Parameter *Typ* und *Nutzlast* . Geben Sie für einen Anruf AppService die '
 localization_priority: Normal
-ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526242"
 ---
 # <a name="send-device-command"></a>Gerätebefehl senden
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Diese API ermöglicht die Project-ROM-Funktionen, die ein Gerät mit einem Microsoft-Konto verknüpften Befehl. Nach dem Gespräch GET auf macht `me/devices`, übergeben Sie die ID des Geräts einen Befehl auf Ihrem Gerät ausgeben. Zwei Arten von Befehle werden unterstützt: LaunchURI und AppServices. Wenn Sie LaunchURI verwenden, geben Sie den Parameter *Typ* und *Nutzlast* . Geben Sie für einen Anruf AppService *Typ*, *Nutzlast*, *PackageFamilyName*und *AppServiceName* -Parameter.
 
@@ -37,7 +37,7 @@ POST me/devices/{id}/commands
 ## <a name="request-headers"></a>Anforderungsheader
 
 
-| Header |Wert
+| Kopfzeile |Wert
 |:----|:------|
 |Authorization| Bearer {token}. Erforderlich. |
 |Annehmen | application/json |
@@ -76,19 +76,19 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Command-Eigenschaften 
+## <a name="command-properties"></a>Command Properties 
 
 |**Name**|**Typ**|**Beschreibung**|
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Nutzlast zum Senden an ein app-Dienst oder um einen URI auf einem Gerät zu starten. |
 |responsePayload | Microsoft.Graph.JSON| Nutzlast von Zielgerät zurückgegeben. |
-|postBackURI | Zeichenfolge | Postback URI, um nachfolgende Benachrichtigungen von Updates zu senden. |
-|packageFamilyName | Zeichenfolge | Windows Paket Familienname der Anwendung. |
-|appServiceName | Zeichenfolge | Name des app-Dienst von der Zielanwendung definiert. Erforderlich, wenn einen app-Dienst zu starten. |
-|type| Zeichenfolge | LaunchURI oder AppService. |
+|postBackURI | String | Postback URI, um nachfolgende Benachrichtigungen von Updates zu senden. |
+|packageFamilyName | String | Windows Paket Familienname der Anwendung. |
+|appServiceName | String | Name des app-Dienst von der Zielanwendung definiert. Erforderlich, wenn einen app-Dienst zu starten. |
+|type| String | LaunchURI oder AppService. |
 |id| Zeichenfolge | Die ID eines Befehls, der an das Gerät gesendet wurde. |
-|actionStatus | Zeichenfolge | Der [Status](get-device-command-status.md) eines Befehls. |
-|error| Zeichenfolge| Alle Fehler im Zusammenhang mit der Anforderung aus der Zielanwendung. |
+|actionStatus | String | Der [Status](get-device-command-status.md) eines Befehls. |
+|error| String| Alle Fehler im Zusammenhang mit der Anforderung aus der Zielanwendung. |
 
 ## <a name="launch-uri-example"></a>Starten Sie die URI-Beispiel
 
@@ -150,7 +150,7 @@ Es folgt ein Beispiel einer Abfrage einen app-Dienst auf einem Gerät. Verwenden
 
 In den Anruf müssen verschiedene zusätzliche Eigenschaften festgelegt werden. *Typ* muss auf *AppService*festgelegt werden, *AppServiceName* muss festgelegt werden, auf den Namen des app-Diensts in der Anwendung definiert, *PackageFamilyName* muss auf den in der app-Manifest und *Nutzlast* definierten Familie Paketnamen festgelegt werden enthält die Schlüssel und Werte für den Dienst, den Sie innerhalb der Zielanwendung anrufen.
 
-#### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anfordern
 
 <!-- {
   "blockType": "ignored",
@@ -202,3 +202,11 @@ HTTP/1.1 201 OK
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

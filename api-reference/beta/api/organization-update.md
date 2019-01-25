@@ -4,16 +4,16 @@ description: Mit dieser API können Sie die Eigenschaften der aktuell authentifi
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ed49dcd0546fedf16572bcf75a8c4366395f1fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 090be61f98ecd8f55a5e1a9edfe45bf7b39f23de
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964438"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526844"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mit dieser API können Sie die Eigenschaften der aktuell authentifizierten Organisation aktualisieren. In diesem Fall `organization` versteht man eine Auflistung von genau einen Datensatz, und so dessen **ID** in der Anforderung muss angegeben werden.  Die **ID** wird auch als die **TenantId** der Organisation.
 
@@ -49,7 +49,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|Zeichenfolgenauflistung|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Das Datenschutzprofil einer Organisation ( „statementUrl“ und „contactEmail“ festlegen).            |
-|securityComplianceNotificationMails|Zeichenfolgenauflistung||
+|securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|Zeichenfolgenauflistung||
 |technicalNotificationMails|Zeichenfolgenauflistung|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
 
@@ -98,7 +98,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen (Preview)](/graph/extensibility-open-users)
@@ -109,10 +109,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update organization",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/organization-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

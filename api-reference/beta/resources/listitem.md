@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950725"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517442"
 ---
 # <a name="listitem-resource"></a>ListItem-Ressource
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Diese Ressource stellt ein Element in einer SharePoint-**[Liste][]** dar.
 Spaltenwerte in der Liste sind über das `fieldValueSet`-Wörterbuch verfügbar.
@@ -28,16 +28,16 @@ Alle Beispiele unten beziehen sich auf eine **[Liste][]**, z. B.: `https://graph
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Abrufen von Spaltenwerten][Get]       | GET /items/{item-id}?expand=fields
-| [Abrufen von analytics][]              | GET-/items/ {Element-Id} / Analytics
-| [Abrufen von Aktivitäten nach Intervall][] | GET-/items/ {Element-Id} / GetActivitiesByInterval
+| [Analysen abrufen][]              | GET-/items/ {Element-Id} / Analytics
+| [Aktivitäten nach Intervall abrufen][] | GET-/items/ {Element-Id} / GetActivitiesByInterval
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [Aktualisieren von Spaltenwerten][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listitem-get.md
-[Abrufen von analytics]: ../api/itemanalytics-get.md
-[Abrufen von Aktivitäten nach Intervall]: ../api/itemactivity-getbyinterval.md
+[Analysen abrufen]: ../api/itemanalytics-get.md
+[Aktivitäten nach Intervall abrufen]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
@@ -83,7 +83,7 @@ Es folgt eine JSON-Darstellung einer **listItem**-Ressource.
 
 Die **listItem**-Ressource weist folgende Eigenschaften auf.
 
-| Eigenschaftsname | Typ                | Beschreibung
+| Eigenschaftenname | Typ                | Beschreibung
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | Der Inhaltstyp dieses Listenelements
 
@@ -110,10 +110,10 @@ Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 | Beziehungsname | Typ                           | Beschreibung
 |:------------------|:-------------------------------|:-------------------------------
 | Aktivitäten        | [ItemActivity][]-Sammlung    | Die Liste der letzten Aktivitäten, die für dieses Element durchgeführt wurden.
-| Analytics         | [ItemAnalytics][] -Ressource     | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
+| analytics         | [itemAnalytics][]-Ressource     | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
 | driveItem         | [driveItem][]                  | Für Dokumentbibliotheken macht die **DriveItem** Beziehung das ListItem als ** [DriveItem][]** verfügbar
 | fields            | [fieldValueSet][]              | Die Werte der für dieses Listenelement festgelegten Spalte.
-| Versionen          | [ListItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Listenelements.
+| versions          | [ListItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Listenelements.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -127,7 +127,8 @@ Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
     "ListItem": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Stellt eine Datenreihe in einem Diagramm dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5a299c7140c2032a57cd47fb0880ae34620a920b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915816"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519661"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Datenreihe in einem Diagramm dar.
 
@@ -22,12 +22,12 @@ Stellt eine Datenreihe in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartSeries abrufen](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartSeries-Objekts.|
-|[ChartPoints erstellen](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Dient zum Erstellen eines neuen ChartPoints durch Veröffentlichen in der Punkteammlung.|
-|[Punkte auflisten](../api/chartseries-list-points.md) |[ChartPoints-Sammlung](chartpoint.md)| Dient zum Abrufen einer ChartPoints-Objeksammlung.|
-|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Dient zum Aktualisieren des ChartSeries-Objekts. |
-|[List](../api/chartseries-list.md) | [ChartSeries-Sammlung](chartseries.md) |Dient zum Abrufen der chartSeries-Objektsammlung. |
-|[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.|
+|ChartSeries abrufen | [chartSeries](chartseries.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartSeries-Objekts.|
+|ChartPoints erstellen |ChartPoints| Dient zum Erstellen eines neuen ChartPoints durch Veröffentlichen in der Punkteammlung.|
+|Punkte auflisten |ChartPoints-Sammlung| Dient zum Abrufen einer ChartPoints-Objeksammlung.|
+|[Update](../api/chartseries-update.md) | [chartSeries](chartseries.md) |Dient zum Aktualisieren des ChartSeries-Objekts. |
+|[List](../api/chartseries-list.md) | ChartSeries-Sammlung |Dient zum Abrufen der chartSeries-Objektsammlung. |
+|[Itemat](../api/chartseriescollection-itemat.md)|ChartSeries|Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -61,10 +61,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartSeries resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartseries.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

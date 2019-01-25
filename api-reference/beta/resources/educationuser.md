@@ -4,16 +4,16 @@ description: Ein Benutzer im System. Dies ist eine bildungsspezifische Variante 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e6fe0c40a9930b8ba1c7f200a44ab1d3ce444579
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8b1f9a98800330b2f46b9de1582c97e475cd162
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420857"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521152"
 ---
 # <a name="educationuser-resource-type"></a>educationUser-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ein Benutzer im System. Dies ist eine bildungsspezifische Variante des Benutzers mit derselben `id`, den Microsoft Graph vom nicht bildungsspezifischen `/users`-Endpunkt zurückgibt.
 Dieses Objekt enthält eine gezielte Teilmenge von Eigenschaften des [user](user.md)-Kernobjekts, erweitert um eine Reihe bildungsspezifischer Eigenschaften wie `primaryRole`, Kursteilnehmer- und Lehrerdaten.
@@ -36,35 +36,35 @@ Dieses Objekt enthält eine gezielte Teilmenge von Eigenschaften des [user](user
 |accountEnabled|Boolean| **True**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
 |assignedLicenses|[assignedLicense](assignedlicense.md)-Sammlung|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
-|businessPhones|String-Sammlung|Die Telefonnummern für den Benutzer. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
+|businessPhones|Zeichenfolgenauflistung|Die Telefonnummern für den Benutzer. HINWEIS: Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.|
 |createdBy|[identitySet](identityset.md)| Entität, die den Benutzer erstellt hat. |
-|department|Zeichenfolge|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
-|displayName|Zeichenfolge|Der Name des Benutzers, der im Adressbuch angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $filter und $orderby.|
+|department|String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
+|displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
 |externalSource|`educationExternalSource`| Quelle, aus der dieser Benutzer erstellt wurde. Mögliche Werte sind: `sis`, `manual` und `unkownFutureValue`.|
-|givenName|Zeichenfolge|Der Vorname des Benutzers. Unterstützt $filter.|
-|id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|givenName|String|Der Vorname des Benutzers. Unterstützt $filter.|
+|id|string|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |mail|String|Die SMTP-Adresse des Benutzers, z. B. „jeff@contoso.onmicrosoft.com“. Schreibgeschützt. Unterstützt $filter.|
 |mailingAddress|[physicalAddress](physicaladdress.md)| E-Mail-Adresse des Benutzers|
 |mailNickname|Zeichenfolge|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
 |middleName| String | Der zweite Vorname des Benutzers|
-|mobilePhone|Zeichenfolge|Die Nummer des primären Mobiltelefons für den Benutzer.|
+|mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
 |passwordPolicies|Zeichenfolge|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Die beiden können zusammen angegeben werden. Beispiel: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
-|preferredLanguage|Zeichenfolge|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
+|preferredLanguage|String|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
 |primaryRole|string| Standardrolle für einen Benutzer. Die Rolle des Benutzers kann in einer einzelnen Klasse unterschiedlich sein. Mögliche Werte sind: `student`, `teacher` und `enum_sentinel`. Unterstützt $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) -Auflistung|Die Pläne, die für den Benutzer bereitgestellt wurden. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Die Wohnadresse des Benutzers|
 |student|[educationStudent](educationstudent.md)| Ist die primäre Rolle Kursteilnehmer, enthält dieser Block spezifische Daten für Kursteilnehmer.|
-|surname|Zeichenfolge|Der Nachname des Benutzers. Unterstützt $filter.|
+|surname|String|Der Nachname des Benutzers. Unterstützt $filter.|
 |teacher|[educationTeacher](educationteacher.md)| Ist die primäre Rolle Lehrer, enthält dieser Block lehrerspezifische Daten.|
 |usageLocation|String|Ein aus zwei Buchstaben bestehender Ländercode (ISO-Standard 3166). Erforderlich für Benutzer, denen Lizenzen zugewiesen werden, aufgrund der gesetzlichen Vorschrift, dass die Verfügbarkeit von Diensten in einzelnen Ländern oder Regionen geprüft werden muss. Beispiele: "DE", "GB" und "US". Lässt keine Nullwerte zu. Unterstützt $filter.|
 |userPrincipalName|String|Der User Principal Name (UPN) des Benutzers. Der UPN ist ein Anmeldename des Benutzers im Internetformat, der auf dem Internetstandard RFC 822 basiert. Gemäß der Konvention sollte er dem E-Mail-Namen des Benutzers zugeordnet sein. Das allgemeine Format lautet „alias@domäne“, wobei „domäne“ in der Sammlung der verifizierten Domänen des Mandanten vorhanden sein muss. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Auf die verifizierten Domänen für den Mandanten kann über die **verifiedDomains** -Eigenschaft von [organization](organization.md) zugegriffen werden. Unterstützt $Filter und $orderby.
-|userType|Zeichenfolge|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |
+|userType|String|Ein Zeichenfolgenwert kann zum Klassifizieren der Benutzertypen in Ihrem Verzeichnis verwendet werden, z. B. „Member“ und „Guest“. Unterstützt $filter.          |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md)-Sammlung| Klassen, zu denen der Benutzer gehört. Lässt Nullwerte zu.|
+|classes|[educationClass](educationclass.md)-Sammlung| Klassen, zu denen der Benutzer gehört. Nullwerte zulassend.|
 |schools|[educationSchool](educationschool.md)-Sammlung| Schulen, zu denen der Benutzer gehört. Lässt Nullwerte zu.|
 |assignments| [educationAssignment](educationassignment.md)| Liste von Zuweisungen für den Benutzer. Lässt Nullwerte zu.|
 
@@ -102,10 +102,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

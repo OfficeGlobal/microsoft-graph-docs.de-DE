@@ -4,16 +4,16 @@ description: Komplexer Typ, der Eigenschaften von gemeinsamen Elementen enthält
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a263caa68280128a67a027b75682407fd4932605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523057"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Komplexer Typ, der Eigenschaften von [gemeinsamen](insights-shared.md) Elementen enthält. 
 
@@ -33,5 +33,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |-----------    | -------------|
 | displayName       | Zeichenfolge          | Der Anzeigename des Benutzers, der das Element freigegeben. |
-| id              | Zeichenfolge        | Die Id des Benutzers, der das Element freigegeben.     |
-| address             | Zeichenfolge      | Die e-Mail-Adresse des Benutzers, der das Element freigegeben werden soll.  |
+| id              | string        | Die Id des Benutzers, der das Element freigegeben.     |
+| address             | String      | Die e-Mail-Adresse des Benutzers, der das Element freigegeben werden soll.  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

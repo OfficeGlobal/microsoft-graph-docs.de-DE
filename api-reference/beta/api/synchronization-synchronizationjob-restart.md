@@ -2,16 +2,16 @@
 title: Starten Sie SynchronizationJob neu
 description: Starten Sie den Synchronisierungsauftrag erzwingen, um alle Objekte im Verzeichnis erneut zu verarbeiten. Optional löscht vorhandene Synchronisierungsstatus und vorherigen Fehler.
 localization_priority: Normal
-ms.openlocfilehash: 154ae4234eea6fb3499d36720e71b40cac727f9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841027"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526725"
 ---
 # <a name="restart-synchronizationjob"></a>Starten Sie SynchronizationJob neu
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Starten Sie den Synchronisierungsauftrag erzwingen, um alle Objekte im Verzeichnis erneut zu verarbeiten. Optional löscht vorhandene Synchronisierungsstatus und vorherigen Fehler.
 
@@ -82,10 +82,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob: restart",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-restart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

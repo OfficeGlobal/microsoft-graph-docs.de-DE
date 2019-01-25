@@ -2,16 +2,16 @@
 title: richtlinienressourcentyp
 description: 'Stellt eine Azure AD-Richtlinie. Richtlinien sind benutzerdefinierte Regeln, die erzwungen werden können, klicken Sie auf Anwendungen, Dienstprinzipale, Gruppen oder die gesamte Organisation, den, der Sie zugeordnet sind. Derzeit nur einen Typ der Richtlinie zur Verfügung stehen:'
 localization_priority: Normal
-ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830926"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518786"
 ---
 # <a name="policy-resource-type"></a>richtlinienressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stellt eine Azure AD-Richtlinie. Richtlinien sind benutzerdefinierte Regeln, die erzwungen werden können, klicken Sie auf Anwendungen, Dienstprinzipale, Gruppen oder die gesamte Organisation, den, der Sie zugeordnet sind. Derzeit nur einen Typ der Richtlinie zur Verfügung stehen:
 
@@ -34,8 +34,8 @@ Mit dieser Richtlinie wird ausführlich beschrieben.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |definition|String|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
-|displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
-|IsOrganizationDefault|Boolean|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
+|displayName|Zeichenfolge|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
+|IsOrganizationDefault|Boolescher Wert|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
 |type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich.|
 
 #### <a name="common-relationships"></a>Allgemeine Beziehungen
@@ -79,3 +79,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "type":"TokenLifetimePolicy",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

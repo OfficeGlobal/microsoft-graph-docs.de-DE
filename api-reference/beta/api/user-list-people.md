@@ -4,16 +4,16 @@ description: Abrufen einer Liste von Person-Objekten sortiert nach ihrer Relevan
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4233c0bc4015525bb474499366c084483ceaefe7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925042"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517813"
 ---
 # <a name="list-people"></a>Personen auflisten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen einer Liste von [Person](../resources/person.md) -Objekten sortiert nach ihrer Relevanz für den [Benutzer](../resources/user.md), die durch des Benutzers Kommunikation und Zusammenarbeit Muster und geschäftliche Beziehungen bestimmt wird.
 
@@ -70,7 +70,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode 
 
 Die Anforderungen in diesem Abschnitt die Personen Abrufen der angemeldeten Benutzer am relevantesten (`/me`), basierend auf Kommunikation, Zusammenarbeit und Business Beziehungen.
 
-Standardmäßig gibt jede Antwort 10 Datensätze zurück, aber Sie können dies mit dem Parameter *$top* ändern. Diese Anfragen erfordern die People.Read-Berechtigung an.
+Standardmäßig gibt jede Antwort 10 Datensätze zurück, aber Sie können *dies* mit dem Parameter $top ändern. Diese Anfragen erfordern die People.Read-Berechtigung an.
 
 #### <a name="request"></a>Anforderung
 
@@ -193,7 +193,7 @@ Standardmäßig werden die Personen in der Antwort nach ihrer Relevanz für die 
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
 
-#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a>Ändern der Anzahl der zurückgegebenen Personen und der zurückgegebenen Felder
+#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a> Ändern der Anzahl der zurückgegebenen Personen und der zurückgegebenen Felder
 
 Sie können die Anzahl der Personen ändern, die in der Antwort zurückgegeben wird, indem Sie den *$top*-Parameter festlegen.
 
@@ -203,7 +203,7 @@ Das folgende Beispiel fordert den 1.000 Mitarbeiter am relevantesten `/me`. Die 
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 ```
 
-#### <a name="selecting-the-fields-to-return"></a>Auswahl der zurückzugebenden Felder
+#### <a name="selecting-the-fields-to-return"></a> Auswahl der zurückzugebenden Felder
 
 Sie können die Menge der Daten vom Server mithilfe des *$select* -Parameters ein oder mehrere Felder auswählen zurückgegebenen einschränken. Das Feld *@odata.id* wird immer zurückgegeben.
 
@@ -213,7 +213,7 @@ Im folgende Beispiel wird die Antwort auf die *DisplayName* und *EmailAddress* d
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
 
-#### <a name="using-a-filter-to-limit-the-response"></a>Verwendung eines Filters zur Begrenzung der Antwort
+#### <a name="using-a-filter-to-limit-the-response"></a> Verwendung eines Filters zur Begrenzung der Antwort
 
 Sie können den *$filter*-Parameter zum Einschränken der Antwort auf diejenigen Personen einschränken, deren Datensätze die angegebenen Kriterien enthalten.
 
@@ -247,7 +247,7 @@ Die folgenden Suchabfrage zurückgibt Personen für die Überprüfung relevante 
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
 
-#### <a name="using-search-to-specify-a-relevant-topic"></a>Mit der Suche ein relevantes Thema angeben
+#### <a name="using-search-to-specify-a-relevant-topic"></a> Mit der Suche ein relevantes Thema angeben
 
 Die folgende Anforderung gibt Personen für die Überprüfung relevante `/me` , deren Namen enthält "Ma" und besitzen eine Zuordnung mit "Feature planen".
 
@@ -255,7 +255,7 @@ Die folgende Anforderung gibt Personen für die Überprüfung relevante `/me` , 
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
 
-#### <a name="performing-a-fuzzy-search"></a>Fuzzy-Suche durchführen
+#### <a name="performing-a-fuzzy-search"></a>  Fuzzy-Suche durchführen
 
 Die folgende Anforderung wird eine Suche nach einer Person, die mit dem Namen "Hermaini Saal." Da eine Person, die mit dem Namen "Herminia Hülle" für den angemeldeten Benutzer relevant ist, wird die Informationen für "Herminia Hülle" zurückgegeben.
 
@@ -273,10 +273,15 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

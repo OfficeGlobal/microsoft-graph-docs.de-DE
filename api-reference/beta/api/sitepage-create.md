@@ -5,16 +5,16 @@ ms.date: 05/07/2018
 title: Erstellen einer neuen Seite in einer SharePoint-Website
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 112c9f564c549bbae06430d4c2353c26abbac908
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921738"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523421"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Erstellen Sie eine Seite in der Liste der Website-Seiten einer Website
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erstellen Sie eine neue [SitePage][] in der Website-Seiten- [Liste][] in einer [Website][].
 
@@ -189,10 +189,15 @@ Content-type: application/json
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a sitePage in the SitePages list in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Create"
-} -->
+  "tocPath": "Pages/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

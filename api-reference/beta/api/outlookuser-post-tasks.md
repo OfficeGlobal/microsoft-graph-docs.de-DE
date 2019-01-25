@@ -4,16 +4,16 @@ description: Erstellen Sie eine Outlook-Aufgabe in der Standardgruppe Aufgabe (`
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 04cc91f9c6eee09f71783d0548470d167911ec91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 935732e14f7e467e3094d4a5a2f82d2922020569
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925595"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520991"
 ---
 # <a name="create-outlooktask"></a>Erstellen von outlookTask
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Erstellen Sie eine Outlook-Aufgabe in der Standardgruppe Aufgabe (`My Tasks`) und Aufgabe Standardordner (`Tasks`) in das Postfach des Benutzers.
 
@@ -78,7 +78,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../
 ##### <a name="response"></a>Antwort
 Die POST-Methode ignoriert den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung und geht davon aus der Zeit Mitternacht in der angegebenen Zeitzone (EST) zu.
 
-Da der `Prefer`-Header PST angibt, drückt die POST-Methode alle datumsbezogenen Eigenschaften in der Antwort in PST aus. Insbesondere für die Eigenschaften **StartDateTime** und **DueDateTime** die POST-Methode konvertiert Mitternacht in EST in PST-Dateien, und zurückgeben in PST-Datei in der Antwort.
+Da der `Prefer`-Header PST angibt, drückt die POST-Methode alle datumsbezogenen Eigenschaften in der Antwort in PST aus. Insbesondere für die Eigenschaften **StartDateTime** und **DueDateTime** konvertiert die POST-Methode Mitternacht in EST in PST und gibt sie in der Antwort in PST zurück.
 
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
@@ -126,10 +126,15 @@ Content-length: 576
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create outlookTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-post-tasks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
