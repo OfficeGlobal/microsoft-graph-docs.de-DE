@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerGroupsActivityDetail'
 description: Rufen Sie Details zur Yammer-Gruppenaktivität nach Gruppe ab.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 26df83b7e453c1e51edfccb2c8fd31df37917933
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: a8df675d76f554fc61737cc49942652772650f97
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512843"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575758"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 

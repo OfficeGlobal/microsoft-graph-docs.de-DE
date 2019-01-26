@@ -4,12 +4,12 @@ description: Der Einstiegspunkt für OneNote-Ressourcen.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6259f817058d0faebc77a0e1a22b478697d79b66
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508727"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576087"
 ---
 # <a name="onenote-resource-type"></a>onenote-Ressourcentyp
 
@@ -53,10 +53,10 @@ Informationen über die erforderlichen Berechtigungen zum Arbeiten mit OneNote-A
 |:---------------|:--------|:----------|
 |Notizbücher|[Notebook](notebook.md)-Sammlung|Die Sammlung von OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |Vorgänge|[Operation](onenoteoperation.md)-Sammlung |Der Status von OneNote-Vorgängen. Das Abrufen einer operations-Sammlung wird nicht unterstützt, Sie können aber den Status von lange dauernden Vorgängen abrufen, wenn der `Operation-Location`-Header in der Antwort zurückgegeben wird. Schreibgeschützt. Lässt Nullwerte zu.|
-|Seiten|[Page](page.md)-Sammlung|Die Seiten in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
-|Ressourcen|[Ressourcensammlung](resource.md) |Das Bild und andere Dateiressourcen in OneNote-Seiten. Das Abrufen einer Ressourcensammlung wird nicht unterstützt, Sie können aber [den binären Inhalt einer bestimmten Ressource abrufen](resource.md). Schreibgeschützt. Lässt Nullwerte zu.|
-|sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
-|Abschnitte|[Section](section.md)-Sammlung|Die Abschnitte in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
+|Seiten|[OnenotePage](onenotepage.md) -Auflistung|Die Seiten in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
+|Ressourcen|[GovernanceResource](resource.md) -Auflistung |Das Bild und andere Dateiressourcen in OneNote-Seiten. Das Abrufen einer Ressourcensammlung wird nicht unterstützt, Sie können aber [den binären Inhalt einer bestimmten Ressource abrufen](resource.md). Schreibgeschützt. Lässt Nullwerte zu.|
+|sectionGroups|[SectionGroup](sectiongroup.md) -Auflistung|Die Abschnittsgruppen in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte in allen OneNote-Notizbüchern, die im Besitz des Benutzers oder der Gruppe sind.  Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 
@@ -64,10 +64,19 @@ Informationen über die erforderlichen Berechtigungen zum Arbeiten mit OneNote-A
 |:---------------|:--------|:----------|
 |[Notizbuch erstellen](../api/onenote-post-notebooks.md) |[Notizbuch](notebook.md)| Dient zum Erstellen eines Notizbuchs durch Veröffentlichung in der notebooks-Sammlung.|
 |[Notizbücher auflisten](../api/onenote-list-notebooks.md) |[Notebook](notebook.md)-Sammlung| Dient zum Abrufen einer Sammlung von Notizbüchern.|
-|[Seite erstellen](../api/onenote-post-pages.md) |[Seite](page.md)| Dient zum Erstellen einer Seite durch Veröffentlichung in der pages-Sammlung.|
-|[Seiten auflisten](../api/onenote-list-pages.md) |[Page](page.md)-Sammlung| Dient zum Abrufen einer Sammlung von Seiten.|
+|[Seite erstellen](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md)| Dient zum Erstellen einer Seite durch Veröffentlichung in der pages-Sammlung.|
+|[Seiten auflisten](../api/onenote-list-pages.md) |[OnenotePage](onenotepage.md) -Auflistung| Dient zum Abrufen einer Sammlung von Seiten.|
 |[Abschnittsgruppen auflisten](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)-Sammlung| Dient zum Abrufen einer Sammlung von Abschnittsgruppen.|
 |[Abschnitte auflisten](../api/onenote-list-sections.md) |[Section](section.md)-Sammlung| Dient zum Abrufen einer Sammlung von Abschnitten.|
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.oneNote"
+}-->
+``` json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

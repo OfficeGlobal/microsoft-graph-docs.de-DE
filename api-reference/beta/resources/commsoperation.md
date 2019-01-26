@@ -4,12 +4,12 @@ description: Der Status der bestimmte langer Vorgänge.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5a82020741033f81d5a4394f2e32b3f0f76a6e03
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515748"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575646"
 ---
 # <a name="commsoperation-resource-type"></a>Ressourcentyp commsOperation
 
@@ -24,12 +24,12 @@ Keine
 
 | Eigenschaft           | Typ                        | Beschreibung                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| ClientContext      | String                      | Der Clientkontext.                                                             |
+| clientContext      | String                      | Der Clientkontext.                                                             |
 | createdDateTime    | DateTimeOffset              | Die Startzeit des Vorgangs.                                                |
-| id                 | String                      | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
+| id                 | Zeichenfolge (ID)         | Die Vorgangs-ID. Schreibgeschützt. Server generiert wurde.                                  |
 | lastActionDateTime | DateTimeOffset              | Der Zeitpunkt der letzten Aktion des Vorgangs.                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                            |
-| status             | String                      | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. |
+| errorInfo          | [resultInfo](resultinfo.md) | Informationen zu den Ergebnissen. Schreibgeschützt. Server generiert wurde.                            |
+| status             | operationStatus             | Mögliche Werte: `notStarted`, `running`, `completed`, `failed`. Schreibgeschützt. |
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -43,6 +43,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.commsOperation"
 }-->
 ```json
@@ -51,8 +52,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
-  "status": "notStarted | running | completed | failed"
+  "errorInfo": { "@odata.type": "microsoft.graph.resultInfo" },
+  "status": "operationStatus"
 }
 ```
 
@@ -69,7 +70,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "#microsoft.graph.resultInfo",
+    "@odata.type": "microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"

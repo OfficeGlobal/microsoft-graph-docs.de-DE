@@ -4,12 +4,12 @@ description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Post
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513088"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576731"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
@@ -34,12 +34,12 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |:-----------------------|:------------|
 | Archiv | Bei Verwendung von One_Click Archiv-Features in Outlook-Clients, die dies unterstützen, werden die Nachrichten archivieren Ordner an gesendet. **Hinweis:** Dies ist nicht das gleiche wie das Archivpostfach Feature von Exchange online. |
 | Unübersichtlichkeit | Die Unübersichtlichkeit Ordner niedriger Priorität Nachrichten werden in verschoben, beim Verwenden des Features Unübersichtlichkeit. |
-| Conflicts | Der Ordner, der miteinander in Konflikt stehende Elemente im Postfach enthält. |
+| Konflikte | Der Ordner, der miteinander in Konflikt stehende Elemente im Postfach enthält. |
 | conversationhistory | Der Ordner, in dem Skype Sofortnachrichtenunterhaltungen speichert (falls Skype dazu konfiguriert ist). |
 | deleteditems | Der Ordnerelemente werden in verschoben, wenn sie gelöscht werden. |
 | Entwürfe | Der Ordner, der nicht gesendete Nachrichten enthält. |
-| Posteingang | Der Ordner Posteingang. |
-| junkemail | Der Ordner Junk-E-Mail. |
+| Posteingang | Der Posteingangsordner. |
+| junkemail | Der junk-e-Mail-Ordner. |
 | localfailures | Der Ordner, der Elemente enthält, die auf dem lokalen Client vorhanden, jedoch nicht auf den Server hochgeladen werden konnte. |
 | msgfolderroot | Der Ordner "Oberste Ebene des Informationsspeichers". Dieser Ordner ist des übergeordneten Ordners für Ordner, in der normalen e-Mail-Clients, wie beispielsweise dem Posteingang angezeigt werden. |
 | Postausgang | Der Ordner Postausgang. |
@@ -75,7 +75,7 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Die Anzahl der unmittelbar untergeordneten mailFolders-Elemente in dem aktuellen mailFolder-Element.|
-|displayName|Zeichenfolge|Der Anzeigename des mailFolder-Elements.|
+|displayName|String|Der Anzeigename des mailFolder-Elements.|
 |id|String|Eindeutiger Bezeichner der MailFolder.|
 |parentFolderId|String|Die eindeutige ID für das übergeordnete mailFolder-Element des mailFolder-Elements.|
 |totalItemCount|Int32|Anzahl der Elemente im mailFolder-Element.|
@@ -100,8 +100,8 @@ E-Mail-Ordner in Outlook können mehrere Typen von Elementen enthalten, beispiel
 |childFolders|[MailFolder](mailfolder.md)-Sammlung|Die Sammlung der untergeordneten Ordner in dem mailFolder-Element.|
 |messageRules | [messageRule](messagerule.md)-Sammlung | Die Sammlung von Regeln, die für den Posteingangsordner des Benutzers gelten. |
 |Nachrichten|[Nachrichten](message.md)-Sammlung|Die Sammlung der Nachrichten in dem mailFolder-Element.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -113,8 +113,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

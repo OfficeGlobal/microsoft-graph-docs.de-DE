@@ -2,12 +2,12 @@
 title: Endpunkt abrufen
 description: Rufen Sie die Eigenschaften und die Beziehungen eines bestimmten Endpunkt-Objekts ab.
 localization_priority: Normal
-ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7b7f7bee3d6aa935ca4a0a15721363aa159a7b94
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511058"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576563"
 ---
 # <a name="get-endpoint"></a>Endpunkt abrufen
 
@@ -60,7 +60,7 @@ Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 } -->
 ```http
 HTTP/1.1 200 OK

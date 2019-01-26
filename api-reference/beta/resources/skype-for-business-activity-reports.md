@@ -3,12 +3,13 @@ title: Skype for Business-Aktivitätsberichte
 description: Sie können ausführliche Informationen zum Aktivität innerhalb Ihrer Organisation erhalten. Diese Details können Ihnen bei der Suche, Planung und Durchführung anderer Geschäftsentscheidungen innerhalb Ihrer Organisation helfen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a81e27d58316cb415d6296b4f77519a3f2125643
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 3f843efc6834ee59872e7bf750174558cdb0a103
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512395"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577382"
 ---
 # <a name="skype-for-business-activity-reports"></a>Skype for Business-Aktivitätsberichte
 
@@ -20,7 +21,7 @@ Sie können ausführliche Informationen zum Aktivität innerhalb Ihrer Organisat
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Stream          | [skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md) | Rufen Sie Details der Skype for Business-Aktivität nach Benutzer ab. |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream          | [skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md) | Rufen Sie die Trends dazu ab, wie viele Benutzer Konferenzsitzungen, die in Ihrem Unternehmen mit Skype for Business abgehalten wurden, organisiert und daran teilgenommen haben. Der Bericht enthält auch die Anzahl von Peer-to-Peer-Sitzungen. |

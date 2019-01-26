@@ -2,12 +2,12 @@
 title: richtlinienressourcentyp
 description: 'Stellt eine Azure AD-Richtlinie. Richtlinien sind benutzerdefinierte Regeln, die erzwungen werden können, klicken Sie auf Anwendungen, Dienstprinzipale, Gruppen oder die gesamte Organisation, den, der Sie zugeordnet sind. Derzeit nur einen Typ der Richtlinie zur Verfügung stehen:'
 localization_priority: Normal
-ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518786"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576199"
 ---
 # <a name="policy-resource-type"></a>richtlinienressourcentyp
 
@@ -33,9 +33,9 @@ Mit dieser Richtlinie wird ausführlich beschrieben.
 ### <a name="common-properties"></a>Allgemeine Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|definition|String|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
-|displayName|Zeichenfolge|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
-|IsOrganizationDefault|Boolescher Wert|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
+|definition|Zeichenfolgenauflistung|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
+|displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
+|IsOrganizationDefault|Boolean|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
 |type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich.|
 
 #### <a name="common-relationships"></a>Allgemeine Beziehungen
@@ -70,6 +70,13 @@ Die folgenden Eigenschaften bilden das JSON-Objekt, das eine Richtlinie Gültigk
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {

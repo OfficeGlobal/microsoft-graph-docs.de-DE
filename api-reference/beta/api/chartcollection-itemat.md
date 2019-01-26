@@ -4,12 +4,12 @@ description: Ruft ein Diagramm anhand seiner Position in der Sammlung ab.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 82e5d79ee4498a5b5b4e2fc2adc0461aec13cae4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 089977be0993f8ed5930b5a29c3b5ee880c6bc34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521712"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575940"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -42,11 +42,11 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Index|number|Index-Wert des abzurufenden Objekts. Nullindiziert.|
+|Index|Int32|Index-Wert des abzurufenden Objekts. Nullindiziert.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und [WorkbookChart](../resources/chart.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
@@ -54,7 +54,10 @@ Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
-  "name": "chartcollection_itemat"
+  "isComposable": true,
+  "name": "chartcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -62,8 +65,7 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 8
 }
 ```
 
@@ -72,7 +74,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

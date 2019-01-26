@@ -4,12 +4,12 @@ description: Stellt eine Excel-PivotTable dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 774c407022d700bc5856dc780eff3a6dafa6bc4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520459"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577459"
 ---
 # <a name="pivottable-resource-type"></a>Ressourcentyp pivotTable
 
@@ -34,13 +34,14 @@ Stellt eine Excel-PivotTable dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Arbeitsblatt|[Arbeitsblatt](worksheet.md)| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.   |
+|Arbeitsblatt|[WorkbookWorksheet](worksheet.md)| Das Arbeitsblatt, das die aktuelle PivotTable enthält. Schreibgeschützt.   |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

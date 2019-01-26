@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
 description: Abrufen der Anzahl der täglichen eindeutigen Benutzer des Microsoft Teams nach Gerätetyp im ausgewählten Zeitraum.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c1098bdda5d832aa98934b91c501f4e91a3512dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d0e83451b0be65e689549d415ef66fe5c9534687
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522546"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575877"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 

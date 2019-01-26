@@ -2,12 +2,12 @@
 title: multiValueLegacyExtendedProperty-Ressourcentyp
 description: Eine erweiterte Eigenschaft, die eine Sammlung von Werten enthält.
 localization_priority: Normal
-ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512948"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575891"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty-Ressourcentyp
 
@@ -21,7 +21,7 @@ Unter [Überblick über erweiterte Eigenschaften](../resources/extended-properti
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Eine Ressourceninstanz der unterstützten: [Nachricht](../resources/message.md), [MailFolder](../resources/mailfolder.md), [Ereignis](../resources/event.md), [Kalender](../resources/calendar.md), [wenden Sie sich an](../resources/contact.md), [ContactFolder](../resources/contactfolder.md), [Outlook-Aufgabe](../resources/outlooktask.md)oder [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md). Hinweis: dieser Gruppe [Buchen](../resources/post.md) nicht unterstützt werden. | Erstellen einer multiValueLegacyExtendedProperty in einer neuen oder vorhandenen Instanz einer unterstützten Ressource. |
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Eine Ressourceninstanz der unterstützten: [Nachricht](../resources/message.md), [MailFolder](../resources/mailfolder.md), [Ereignis](../resources/event.md), [Kalender](../resources/calendar.md), [wenden Sie sich an](../resources/contact.md), [ContactFolder](../resources/contactfolder.md), [Outlook-Aufgabe](../resources/outlooktask.md)oder [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md). Hinweis: dieser Gruppe [Buchen](../resources/post.md) nicht unterstützt werden. | Erstellen einer **multiValueLegacyExtendedProperty** in einer neuen oder vorhandenen Instanz einer unterstützten Ressource. |
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |Eine Ressourceninstanz unterstützte ([Nachricht](../resources/message.md), [MailFolder](../resources/mailfolder.md), [Ereignis](../resources/event.md), [Kalender](../resources/calendar.md), [wenden Sie sich an](../resources/contact.md), [ContactFolder](../resources/contactfolder.md), [Outlook-Aufgabe](../resources/outlooktask.md), [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)oder Gruppe [Buchen](../resources/post.md)) erweitert mit einem [ MultiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) Objekt. |Abrufen einer Ressourceninstanz mit einer erweiterten Eigenschaft mithilfe von `$expand`.|
 
 ## <a name="properties"></a>Eigenschaften
@@ -43,7 +43,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

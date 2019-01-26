@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Rufen Sie die Anzahl von Benutzern, die aktiviert sind und die aktiviert das Office-Abonnement auf Desktop- oder Geräte oder Computer freigegeben haben.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9b284793ba4031c9354e9134b81798e738410f38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 9a150911e9234cde7258acbeed7f825fb9db4c66
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921122"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576101"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 

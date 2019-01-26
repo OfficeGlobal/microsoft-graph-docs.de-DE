@@ -2,12 +2,12 @@
 title: Mehrwertige erweiterte Eigenschaft erstellen
 description: 'In diesem Artikel erläutern wir Ihnen,wie Sie eine oder mehrere mehrwertige erweiterte Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource erstellen können. '
 localization_priority: Normal
-ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4ed9af6fda2117fee7ef1ac50c69c4f006abd45d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510869"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576262"
 ---
 # <a name="create-multi-value-extended-property"></a>Mehrwertige erweiterte Eigenschaft erstellen
 
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie einen JSON-Text für jedes [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Objekt in der **multiValueExtendedProperties**-Sammlung der Ressourceninstanz an.
+Geben Sie einen JSON Rumpf jedes [MultiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) -Objekts in die **MultiValueLegacyExtendedProperty** Collection-Eigenschaft einer Instanz der Ressource.
 
 |**Eigenschaft**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| Ein Array aus einer oder mehreren mehrwertigen erweiterten Eigenschaften |
-|id|String|Geben Sie diesen Parameter für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Der Parameter muss einem der unterstützten Formate entsprechen. Weitere Informationen finden Sie unter [Outlook extended properties overview](../resources/extended-properties-overview.md) (Überblick über erweiterte Outlook-Eigenschaften). Erforderlich.|
-|value|string|Geben Sie für jede Eigenschaft in der **multiValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| Ein Array aus einer oder mehreren mehrwertigen erweiterten Eigenschaften |
+|id|String|Geben Sie für jede Eigenschaft in der Auflistung **MultiValueLegacyExtendedProperty** diese Option, damit die Eigenschaft ermitteln. Es muss eine der unterstützten Formate folgen. Weitere Informationen finden Sie unter [Outlook erweiterte Eigenschaften (Übersicht)](../resources/extended-properties-overview.md) . Erforderlich.|
+|Wert|string|Geben Sie für jede Eigenschaft in der Auflistung **MultiValueLegacyExtendedProperty** Wert der Eigenschaft. Erforderlich.|
 
-Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **multiValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz angeben (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
+Geben Sie beim Erstellen einer erweiterten Eigenschaft in eine _neue_ Instanz der Ressource, zusätzlich zu der neuen **MultiValueLegacyExtendedProperty** -Auflistung eine JSON-Darstellung der Ressourceninstanz (d. h., eine [Nachricht](../resources/message.md), [mailFolder](../resources/mailfolder.md) [Ereignis](../resources/event.md)usw..)
 
 ## <a name="response"></a>Antwort
 
@@ -178,7 +178,7 @@ Beim Erstellen einer erweiterten Eigenschaft in einem _neuen_ Gruppenbeitrag ent
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1
 
-Im ersten Beispiel wird mit einer einzigen POST-Operation eine mehrwertige erweiterte Eigenschaft in einem neuen Ereignis erstellt. Abgesehen von den Eigenschaften, die Sie normalerweise für ein neues Ereignis definieren würden, enthält der Anforderungstext die **multiValueExtendedProperties**-Sammlung. Diese wiederum enthält eine erweiterte Eigenschaft. Der Anforderungstext enthält die folgenden Parameter für diese mehrwertige erweiterte Eigenschaft:
+Im ersten Beispiel wird eine erweiterte Eigenschaft in ein neues Ereignis alle in den gleichen Vorgang der POST-Anforderung mit mehreren Werten. Abgesehen von den Eigenschaften, die Sie normalerweise für ein neues Ereignis aufnehmen möchten, enthält der Anforderungstext **MultiValueLegacyExtendedProperty** -Auflistung, die eine erweiterte Eigenschaft enthält. Textkörper der Anforderung umfasst die folgenden für erweiterte mehrwertige Eigenschaft:
 
 - **id**: Dieser Parameter definiert die Eigenschaft als ein Array von Zeichenfolgen mit der angegebenen GUID und dem Namen `Recreation`. 
 - **value**: Dieser Parameter definiert `Recreation` als ein Array von 3 Zeichenfolgewerten, `["Food", "Hiking", "Swimming"]`.
@@ -219,7 +219,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -239,7 +239,7 @@ Möchten Sie die neu erstellte erweiterte Eigenschaft sehen, [müssen Sie das um
 
 ##### <a name="request-2"></a>Anforderung 2
 
-Das zweite Beispiel erstellt eine mehrwertige erweiterte Eigenschaft für die angegebene Nachricht. Diese erweiterte Eigenschaft ist das einzige Element in der **multiValueExtendedProperties**-Sammlung. Der Anforderungstext enthält die folgenden Parameter für diese erweiterte Eigenschaft:
+Im zweite Beispiel erstellt eine erweiterte Eigenschaft für die angegebene Nachricht mit mehreren Werten. Mit der erweiterten Eigenschaft ist das einzige Element in der Auflistung **MultiValueLegacyExtendedProperty** . Textkörper der Anforderung umfasst folgende für die erweiterte Eigenschaft:
 
 - **id**: Dieser Parameter definiert die Eigenschaft als ein Array von Zeichenfolgen mit der angegebenen GUID und dem Namen `Palette`.
 - **value**: Dieser Parameter definiert `Palette` als ein Array von 3 Zeichenfolgewerten, `["Green", "Aqua", "Blue"]`.
@@ -251,7 +251,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

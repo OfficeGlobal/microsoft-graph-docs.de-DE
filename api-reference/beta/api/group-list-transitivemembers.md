@@ -4,12 +4,12 @@ description: Rufen Sie eine Liste der Mitglieder der Gruppe. Eine Gruppe kann Be
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed3d4e4a927181f6bf8ea2c90edf337b0f8f32d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523624"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576297"
 ---
 # <a name="list-group-transitive-members"></a>Transitive Gruppenmitglieder Liste
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ### <a name="response"></a>Antwort
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,8 +85,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

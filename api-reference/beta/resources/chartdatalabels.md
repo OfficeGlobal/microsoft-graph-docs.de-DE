@@ -4,12 +4,12 @@ description: Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpun
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f722dccd84d1861ff47e0aa073fe66f50372ad4f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510337"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576402"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels-Ressourcentyp
 
@@ -22,13 +22,13 @@ Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|ChartDataLabels abrufen | [chartDataLabels](chartdatalabels.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartDataLabels-Objekts.|
-|[Update](../api/chartdatalabels-update.md) | ChartDataLabels |Dient zum Aktualisieren des ChartDataLabels-Objekts. |
+|[ChartDataLabels abrufen](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartDataLabels-Objekts.|
+|[Aktualisieren](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Dient zum Aktualisieren des ChartDataLabels-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Mögliche Werte: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Die möglichen Werte sind: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |Separator|string|Zeichenfolge, die das Trennzeichen für die Datenbeschriftungen in einem Diagramm darstellt.|
 |showBubbleSize|Boolescher Wert|Boolescher Wert, der angibt, ob die Größe der Datenbeschriftungs-Sprechblase angezeigt wird.|
 |showCategoryName|Boolescher Wert|Boolescher Wert, der angibt, ob der Kategoriename der Datenbeschriftung angezeigt wird.|
@@ -40,18 +40,17 @@ Stellt eine Sammlung aller Datenbeschriftungen an einem Diagrammpunkt dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|format|[ChartDataLabelFormat](chartdatalabelformat.md)|Stellt das Format der Diagrammdatenbeschriftungen dar, einschließlich Füllung und Formatierung der Schriftart. Schreibgeschützt.|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|Stellt das Format der Diagrammdatenbeschriftungen dar, einschließlich Füllung und Formatierung der Schriftart. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 }-->
 
 ```json

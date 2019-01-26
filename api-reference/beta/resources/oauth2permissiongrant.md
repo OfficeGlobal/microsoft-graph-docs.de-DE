@@ -2,12 +2,12 @@
 title: Ressourcentyp oAuth2PermissionGrant
 description: Stellt die OAuth 2.0-Bereiche (delegierten Berechtigungen) zu einer Anwendung (dargestellt durch ein Dienstprinzipal) erteilt wurden im Rahmen des Prozesses Zustimmung Benutzer oder Administrator an.
 localization_priority: Normal
-ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516924"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576969"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Ressourcentyp oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 }-->
 
 ```json
@@ -44,9 +44,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |clientId|String| Die Id des Prinzipals Dienst gewährt Ihr Einverständnis der Benutzer Identitätswechsel für den Zugriff auf die Ressource (dargestellt durch die ResourceId-Eigenschaft). |
-|consentType|String| Gibt an, ob Zustimmung vom Administrator (im Namen der Organisation) oder von einer Person zur Verfügung gestellt wurde. Mögliche Werte sind „AllPrincipals“ oder „Principal“. |
-|ExpiryTime|DateTimeOffset| Derzeit ist der Ablauf Time-Wert ignoriert. |
-|id|Zeichenfolge| Eindeutiger Bezeichner Schreibgeschützt.|
+|consentType|String| Gibt an, ob Zustimmung vom Administrator (im Namen der Organisation) oder von einer Person zur Verfügung gestellt wurde. Die möglichen Werte sind *AllPrincipals* oder *Prinzipal*. |
+|expiryTime|DateTimeOffset| Derzeit ist der Ablauf Time-Wert ignoriert. |
+|id|String| Eindeutiger Bezeichner. Schreibgeschützt.|
 |principalId|String| Wenn ConsentType *AllPrincipals* ist dieser Wert ist null, und die Zustimmung gilt für alle Benutzer in der Organisation. Wenn ConsentType *Prinzipal*ist, gibt diese Eigenschaft die Id des Benutzers, der Zustimmung erteilt und gilt nur für diesen Benutzer an. |
 |resourceId|Zeichenfolge| Gibt die Id des Prinzipals Service Resource, der Zugriff gewährt wurde. |
 |Bereich|String| Gibt den Wert des Anspruchs [Bereich](/graph/permissions-reference) , der die Ressource Anwendung erwarten im Zugriffstoken OAuth 2.0 an. Beispielsweise *User.Read* |

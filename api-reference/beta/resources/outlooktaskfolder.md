@@ -4,12 +4,12 @@ description: 'Ein Ordner mit Outlook-Aufgaben (Auflistung von OutlookTask-Objekt
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a117e14ea1cfe4b69cbbf69720a22a0094fb0b72
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515300"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575667"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Ressourcentyp outlookTaskFolder
 
@@ -27,8 +27,8 @@ In Outlook, der Standardgruppe Aufgabe `My Tasks`, enthält einen Standardordner
 |[Abrufen von outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Rufen Sie die Eigenschaften und Beziehungen zwischen den angegebenen Outlook-Aufgabenordner.|
 |[Erstellen von outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.|
 |[Aufgaben auflisten](../api/outlooktaskfolder-list-tasks.md) |[OutlookTask](outlooktask.md) -Auflistung| Rufen Sie die Outlook-Aufgaben im angegebenen Ordner.|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe. |
-|[Delete](../api/outlooktaskfolder-delete.md) | Keine |Den angegebenen Outlook den Ordner zu löschen.|
+|[Aktualisieren](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe. |
+|[Löschen](../api/outlooktaskfolder-delete.md) | Keine |Den angegebenen Outlook den Ordner zu löschen.|
 |**Erweiterte Eigenschaften**| | |
 |[Einwertige erweiterte Eigenschaft erstellen](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Erstellen Sie eine oder mehrere einwertig erweiterte Eigenschaften in einem neuen oder vorhandenen Outlook-Aufgabenordner.   |
 |[Abrufen von Aufgabenordner mit erweiterten Eigenschaft einwertig](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Abrufen von Outlook-Aufgabenordner, die einen erweiterte Eigenschaft mithilfe von Single-Wert enthalten `$expand` oder `$filter`. |
@@ -39,16 +39,16 @@ In Outlook, der Standardgruppe Aufgabe `My Tasks`, enthält einen Standardordner
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |changeKey|String|Die Version des den Aufgabenordner.|
-|id|Zeichenfolge|Der Bezeichner des den Aufgabenordner, die im Postfach des Benutzers eindeutig. Schreibgeschützt.|
-|isDefaultFolder|Boolescher Wert|True, wenn der Ordner der Standardordner für die Aufgabe ist.|
-|name|Zeichenfolge|Der Name des Aufgabenordners.|
+|id|String|Der Bezeichner des den Aufgabenordner, die im Postfach des Benutzers eindeutig. Schreibgeschützt.|
+|isDefaultFolder|Boolean|True, wenn der Ordner der Standardordner für die Aufgabe ist.|
+|name|String|Der Name des Aufgabenordners.|
 |parentGroupKey|Guid|Der eindeutige GUID-Bezeichner für die übergeordnete Gruppe des vorgangsordners.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der Mehrfachwert erweiterte Eigenschaften für den Aufgabenordner definiert. Schreibgeschützt. Nullwerte zulassend.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der einwertig erweiterte Eigenschaften für den Aufgabenordner definiert. Schreibgeschützt. Nullwerte zulassend.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der Mehrfachwert erweiterte Eigenschaften für den Aufgabenordner definiert. Schreibgeschützt. Nullwerte zulassend.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der einwertig erweiterte Eigenschaften für den Aufgabenordner definiert. Schreibgeschützt. Nullwerte zulassend.|
 |tasks|[OutlookTask](outlooktask.md) -Auflistung|Die Aufgaben in diesem Aufgabenordner. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -57,8 +57,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty",
     "tasks"
   ],
   "@odata.type": "microsoft.graph.outlookTaskFolder"

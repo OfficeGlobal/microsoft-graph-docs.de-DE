@@ -4,12 +4,12 @@ description: Rufen Sie eine Liste der direkte Mitglieder der Gruppe. Eine Gruppe
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07004a315bc2b35777c080f7bbdbab8f433f0942
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509245"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577452"
 ---
 # <a name="list-group-members"></a>Liste Gruppenmitglieder
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,8 +75,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

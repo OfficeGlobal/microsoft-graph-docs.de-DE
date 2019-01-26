@@ -4,12 +4,12 @@ description: Eine Abschnittsgruppe in einem OneNote-Notizbuch. Abschnittsgruppen
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523708"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575520"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup-Ressourcentyp
 
@@ -29,7 +29,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -51,21 +51,21 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Abschnittsgruppe. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|string|Der eindeutige Bezeichner der Abschnittsgruppe. Schreibgeschützt.|
+|id|String|Der eindeutige Bezeichner der Abschnittsgruppe. Schreibgeschützt.|
 |lastModifiedBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Abschnittsgruppe. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|displayName|Zeichenfolge|Der Name der Abschnittsgruppe.|
+|displayName|String|Der Name der Abschnittsgruppe.|
 |sectionGroupsUrl|String|Die URL für die Navigationseigenschaft `sectionGroups`, die alle Abschnittsgruppen in der Abschnittsgruppe zurückgibt. Schreibgeschützt.|
 |sectionsUrl|String|Die URL für die Navigationseigenschaft `sections`, die alle Abschnitte in der Abschnittsgruppe zurückgibt. Schreibgeschützt.|
-|self|Zeichenfolge|Der Endpunkt, an dem Sie Details zur Abschnittsgruppe abrufen können. Schreibgeschützt.|
+|self|String|Der Endpunkt, an dem Sie Details zur Abschnittsgruppe abrufen können. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|Das Notizbuch, das die Abschnittsgruppe enthält. Schreibgeschützt.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|Die Abschnittsgruppe, die die Abschnittsgruppe enthält. Schreibgeschützt.|
-|sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen im Abschnitt. Schreibgeschützt. Lässt Nullwerte zu.|
-|Abschnitte|[Section](section.md)-Sammlung|Die Abschnitte in der Abschnittsgruppe. Schreibgeschützt. Lässt Nullwerte zu.|
+|parentNotebook|[Notizbuch](notebook.md)|Das Notizbuch, das die Abschnittsgruppe enthält. Schreibgeschützt.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|Die Abschnittsgruppe, die die Abschnittsgruppe enthält. Schreibgeschützt.|
+|sectionGroups|[SectionGroup](sectiongroup.md) -Auflistung|Die Abschnittsgruppen im Abschnitt. Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte in der Abschnittsgruppe. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

@@ -2,12 +2,12 @@
 title: Ressourcentyp „timeConstraint“
 description: Schränkt Vorschläge für Besprechungstermine entsprechend der angegebenen Art der Aktivität und der offenen Zeitfenster auf bestimmte Stunden und Tage der Woche ein.
 localization_priority: Normal
-ms.openlocfilehash: 88035d0617523c51bb01ee0a467e8c84785ad6aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 45469211aa4925834fd9d20da6a9905ac87d221e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519675"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577235"
 ---
 # <a name="timeconstraint-resource-type"></a>Ressourcentyp „timeConstraint“
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json

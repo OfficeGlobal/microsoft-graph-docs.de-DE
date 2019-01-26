@@ -3,12 +3,13 @@ title: Skype for Business-Peer-zu-Peer-Aktivitätsberichte
 description: Sie können die Skype for Business-Peer-to-Peer-Aktivitätsberichte verwenden, um Details über die Peer-to-Peer-Aktivitäten in Ihrer Organisation zu erhalten. Diese Details sind sehr hilfreich, wenn Sie andere Geschäftsentscheidungen für Ihre Organisation in Erwägung ziehen, planen und durchführen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 6c94b4fd09fb71af3c264664eaa0182256dfa949
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 395babe88a330ddbd037a23575b06ba1dfa8059f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920730"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576717"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business-Peer-zu-Peer-Aktivitätsberichte
 
@@ -18,7 +19,7 @@ Sie können die Skype for Business-Peer-to-Peer-Aktivitätsberichte verwenden, u
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md) | Stream      | Erhalten Sie Informationen über die Anzahl und Art der in Ihrem Unternehmen gehaltenen Sitzungen. Zu den Sitzungsarten gehören Chat, Audio, Video, Anwendungsfreigabe und Dateiübertragung. |
 | [Benutzeranzahl abrufen](../api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md) | Stream      | Erhalten Sie Informationen über die Anzahl der eindeutigen Benutzer und die Art der in Ihrem Unternehmen gehaltenen Peer-to-Peer-Sitzungen. Zu den Sitzungsarten gehören Chat, Audio, Video, Anwendungsfreigabe und Dateiübertragung in Peer-to-Peer-Sitzungen. |

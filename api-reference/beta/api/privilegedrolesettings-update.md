@@ -2,12 +2,12 @@
 title: PrivilegedRoleSettings aktualisieren
 description: Aktualisieren Sie die rolleneinstellungen für die bestimmten Rolle-Einstellung. Ein PrivilegedRoleSettings-Objekt wird zurückgegeben.
 localization_priority: Normal
-ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7b49d228372e2fa122f9461706f782c60cfea379
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527654"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577270"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings aktualisieren
 
@@ -44,17 +44,17 @@ Die folgende Tabelle enthält die Eigenschaften, die Sie angeben können, wenn S
 
 |Eigenschaft|Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|ElevationDuration|duration|Die Dauer, wenn die Rolle aktiviert ist. Erforderlich.|
-|id|string|Der eindeutige Bezeichner für die rolleneinstellungen. Schreibgeschützt. Erforderlich.|
+|elevationDuration |Zeichenfolge (Zeitstempel) |Die Dauer, wenn die Rolle aktiviert ist. Erforderlich.|
+|id| Zeichenfolge (ID) |Der eindeutige Bezeichner für die rolleneinstellungen. Schreibgeschützt. Erforderlich.|
 |isMfaOnElevationConfigurable|Boolescher Wert|**true,** Wenn MfaOnElevation konfigurierbar ist. **false,** Wenn MfaOnElevation nicht konfigurierbar ist. Erforderlich.|
-|lastGlobalAdmin|Boolescher Wert|Nur für internen Gebrauch.|
-|maxElavationDuration|duration|Maximale Speicherdauer für die aktivierte Rolle. Erforderlich.|
-|mfaOnElevation|Boolescher Wert|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich.|
-|minElevationDuration|duration|Minimale Dauer für die aktivierte Rolle. Erforderlich.|
-|notificationToUserOnElevation|Boolescher Wert|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist. Erforderlich.|
-|ticketingInfoOnElevation|Boolescher Wert|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren. Erforderlich.|
-|approvalOnElevation|Boolescher Wert|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren. Erforderlich.|
-|approverIds|Array|Liste der Genehmigung-IDs, wenn die Genehmigung für die Aktivierung erforderlich ist.|
+|lastGlobalAdmin| Boolean |Nur für internen Gebrauch.|
+|maxElavationDuration| Zeichenfolge (Zeitstempel)|Maximale Speicherdauer für die aktivierte Rolle. Erforderlich.|
+|mfaOnElevation| Boolean |**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich.|
+|minElevationDuration| Zeichenfolge (Zeitstempel) |Minimale Dauer für die aktivierte Rolle. Erforderlich.|
+|notificationToUserOnElevation|Boolean|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist. Erforderlich.|
+|ticketingInfoOnElevation|Boolean|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren. Erforderlich.|
+|approvalOnElevation|Boolean|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren. Erforderlich.|
+|approverIds| Zeichenfolgenauflistung (ID)|Liste der Genehmigung-IDs, wenn die Genehmigung für die Aktivierung erforderlich ist.|
 
 ## <a name="response"></a>Antwort
 

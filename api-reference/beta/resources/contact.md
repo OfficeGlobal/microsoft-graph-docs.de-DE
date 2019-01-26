@@ -4,12 +4,12 @@ description: Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen ü
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513578"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576857"
 ---
 # <a name="contact-resource-type"></a>Ressourcentyp contact
 
@@ -31,9 +31,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
     "photo",
-    "singleValueExtendedProperties"
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -94,11 +94,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 |displayName|String|Der Anzeigename des Kontakts. Sie können den Anzeigenamen in einem Vorgang [Erstellen](../api/user-post-contacts.md) oder [Aktualisieren](../api/contact-update.md) angeben. Beachten Sie, dass es sich bei spätere Aktualisierungen mit anderen Eigenschaften verursachen einen automatisch generierten Wert den Wert DisplayName überschrieben, den Sie angegeben haben. Um einen bereits vorhandenen Wert zu erhalten, immer als schließen Sie DisplayName in einem Vorgang [zu aktualisieren ein](../api/contact-update.md) .|
 |emailAddresses|[TypedEmailAddress](typedemailaddress.md) -Auflistung|Die E-Mail-Adressen des Kontakts.|
 |fileAs|String|Der Name, unter dem der Kontakt abgelegt ist.|
-|Flag|[followUpFlag](followupflag.md)|Das Flagwert, der den Status, Startdatum, Fälligkeitsdatum oder Fertigstellungstermin für den Kontakt angibt. |
+|Flag|[followupFlag](followupflag.md)|Das Flagwert, der den Status, Startdatum, Fälligkeitsdatum oder Fertigstellungstermin für den Kontakt angibt. |
 |gender |String |Geschlecht des Kontakts. |
 |generation|String|Die Generation des Kontakts.|
 |givenName|String|Der Vorname des Kontakts.|
-|id|string|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
+|id|String|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
 |imAddresses|Zeichenfolgenauflistung|Instant Messaging Chatadressen des Kontakts.|
 |initials|String|Die Initialen des Kontakts.|
 |jobTitle|String|Die Position des Kontakts.|
@@ -116,7 +116,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |surname|String|Der Nachname des Kontakts.|
 |title|String|Der Titel des Kontakts.|
 |websites |[website](website.md)-Sammlung|Websites, die dem Kontakt zugeordnet werden. |
-|WeddingAnniversary |Datum |Hochzeitstag des Kontakts. |
+|weddingAnniversary |Date |Hochzeitstag des Kontakts. |
 |yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts.|
 |yomiGivenName|String|Der phonetische japanische Vorname des Kontakts.|
 |yomiSurname|String|Der phonetische japanische Nachname des Kontakts.|
@@ -125,9 +125,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für den Kontakt definiert. Nullwerte zulassend.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[photo](profilephoto.md)| Optionales Kontaktbild. Sie können für einen Kontakt ein Foto abrufen oder einstellen.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 
 ## <a name="methods"></a>Methoden
 | Methode           | Rückgabetyp    |Beschreibung|

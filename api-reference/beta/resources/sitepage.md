@@ -2,15 +2,15 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: sitePage
+title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522301"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576241"
 ---
 # <a name="sitepage-resource"></a>SitePage-Ressource
 
@@ -22,14 +22,14 @@ Sie enthält den Titel, Layout und eine Auflistung von [WebPart][]s.
 ## <a name="tasks-on-a-page"></a>Aufgaben auf einer Seite
 
 Die folgenden Aufgaben sind für **SitePage** Ressourcen verfügbar.
-Alle Beispiele unten beziehen sich auf  eine Website, z. B.: [][].
+Alle unten stehenden Beispiele sind relativ zu einer [Website][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
 | Häufige Aufgaben                     | HTTP-Methode
 |:--------------------------------|:------------------------------
-| [Seiten auflisten][]                  | GET Pages
+| [Seiten auflisten][]                  | Abrufen von /pages
 | [Seite abrufen][]                    | Abrufen von /pages/ {Seiten-Id}
-| [Create][]                      | POST Seiten
-| [Delete][]                      | Löschen von /pages/ {Seiten-Id}
+| [Create][]                      | POST-/pages
+| [Löschen][]                      | Löschen von /pages/ {Seiten-Id}
 | [Publish][]                     | Posten Sie /pages/ {Seiten-Id} / veröffentlichen
 
 [Seiten auflisten]: ../api/sitepage-list.md
@@ -56,7 +56,7 @@ Es folgt eine JSON-Darstellung einer **SitePage** Ressource.
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
@@ -89,7 +89,7 @@ Die Ressource **SitePage** hat die folgenden Felder Content.
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Der Titel der Seite.
 | pageLayout         | string                     | Der Name des auf der Seite auf das Seitenlayout.
-| webParts           | Webpart                | Die Webparts auf der Seite.
+| webParts           | [webPart][]                | Die Webparts auf der Seite.
 
 ## <a name="authoring-metadata"></a>Erstellen von Metadaten
 
@@ -126,7 +126,7 @@ Die Ressource **SitePage** hat keine Beziehung zu anderen Ressourcen.
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [site]: site.md
-Webpart
+[webPart]: webpart.md
 
 <!--
 {

@@ -3,12 +3,13 @@ title: 'reportRoot: getEmailActivityCounts'
 description: Ermöglicht es Ihnen, einen Überblick über die E-Mail-Aktivitäten (z. B. wie viele E-Mails versendet, gelesen und empfangen wurden) in Ihrer Organisation zu gewinnen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 1482cf4ddef208c9cacb2d8efaa7eae0d43fda25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 5f3f5c1c9e9caebe1217a18597778c9324195f03
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517155"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575604"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 

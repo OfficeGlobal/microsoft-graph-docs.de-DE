@@ -3,12 +3,13 @@ title: Verwendungsberichte für Yammer-Gerät
 description: Die Verwendungsberichte für das Yammer-Gerät geben Aufschluss darüber, welche Geräte Ihre Benutzer für die Nutzung von Yammer verwenden. Sie können sich die Anzahl der Benutzer nach Gerätetyp für einen gewählten Zeitraum ansehen und Details für einzelne Benutzer anzeigen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f5b24d6d235a8719f5f4b7df0389b5e5971dd8cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521866"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577431"
 ---
 # <a name="yammer-device-usage-reports"></a>Verwendungsberichte für Yammer-Gerät
 
@@ -20,7 +21,7 @@ Die Verwendungsberichte für das Yammer-Gerät geben Aufschluss darüber, welche
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | Rufen Sie Details zur Yammer-Gerätenutzung nach Benutzer ab. |
 | [Benutzeranzahl für Verteilung abrufen](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md) | Erhalten Sie die Anzahl der Benutzer nach Gerätetyp.  |

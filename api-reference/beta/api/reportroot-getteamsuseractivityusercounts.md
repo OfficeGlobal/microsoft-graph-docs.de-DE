@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserCounts'
 description: Diese Methode ruft die Anzahl von Microsoft Teams-Benutzern nach Aktivitätstyp ab. Die Aktivitätstypen geben die Anzahl von Chatnachrichten, privaten Chatnachrichten, Anrufen oder Besprechungen der Teams an.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 08b7a148f9ff19c738a3a2b5a5b8e066c8abe155
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f8ef35813b523a28c5f6a7b455b729c144b0f072
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529999"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577172"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 

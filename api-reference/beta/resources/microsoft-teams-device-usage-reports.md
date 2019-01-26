@@ -3,12 +3,13 @@ title: Microsoft Teams-Gerätenutzungsberichte
 description: 'Verwenden Sie die Berichte zur Verwendung der Microsoft-Teams, Gerät, um Einblicke in die Microsoft-Teams Gerät Verwendung in Ihrer Organisation abzurufen. '
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f9240f6cb310ada94f1a6694efb0da6cd691dc13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d19df5132a67ac5862535a329eadbdff7044798c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519906"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576640"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Microsoft Teams-Gerätenutzungsberichte
 

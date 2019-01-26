@@ -4,12 +4,12 @@ description: 'In Azure AD Access Feature, überprüft die `accessReview` eine Ü
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a02cc7cfe74bf9f12c4e2a8568c764934cb0c842
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523519"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576346"
 ---
 # <a name="accessreview-resource-type"></a>Ressourcentyp accessReview
 
@@ -104,10 +104,10 @@ Es folgt eine JSON-Darstellung der Ressource.
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.userIdentity",
- "reviewedEntity": "microsoft.graph.identity",
- "settings": "microsoft.graph.accessReviewSettings",
- "reviewers": "Collection(microsoft.graph.userIdentity)"
+ "createdBy": "microsoft.graph.useridentity",
+ "reviewedEntity": "microsoft.graph.entity",
+ "settings": "microsoft.graph.entity",
+ "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
 }
 
 ```

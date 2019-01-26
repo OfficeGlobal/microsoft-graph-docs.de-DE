@@ -2,12 +2,12 @@
 title: Ressourcentyp programControl
 description: In Azure AD Access Feature überprüft, und das Programm Control-Objekt stellt ein Steuerelement, Verknüpfen einer Access-Überprüfung an ein Programm dar.
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511415"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576556"
 ---
 # <a name="programcontrol-resource-type"></a>Ressourcentyp programControl
 
@@ -43,7 +43,7 @@ In Azure AD [Access überprüft](accessreviews-root.md) Feature stellt das Progr
 | `status`                 |`String`                | Der Status des Lebenszyklus des Steuerelements.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | Das Erstellungsdatum und die Uhrzeit des Steuerelements Programm.                                        |
 | `owner`                  |[Benutzeridentität](useridentity.md)   | Der Benutzer, die das Programmsteuerelement erstellt.                                               |
-| `resource`               |`programResource`       | Die Ressource, eine Gruppe oder eine app, Ziel dieses Programm Steuerelement Access überprüfen.                   |
+| `resource`               | [programResource](programresource.md)       | Die Ressource, eine Gruppe oder eine app, Ziel dieses Programm Steuerelement Access überprüfen.                   |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

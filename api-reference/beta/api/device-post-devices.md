@@ -4,12 +4,12 @@ description: Erstellen Sie ein neues Gerät.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 30c4852d3e44e9318fef38018f1a99823e362112
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514810"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577060"
 ---
 # <a name="create-device"></a>Gerät erstellen
 
@@ -92,7 +92,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "binary"
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",

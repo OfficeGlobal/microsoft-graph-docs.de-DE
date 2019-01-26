@@ -4,12 +4,12 @@ description: Komplexer Typ, der Eigenschaften von gemeinsamen Elementen enthält
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47283a82260d4f03a271a16660d58aca60da94e1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523057"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577227"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -19,7 +19,15 @@ Komplexer Typ, der Eigenschaften von [gemeinsamen](insights-shared.md) Elementen
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",
@@ -32,8 +40,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft              | Typ          | Beschreibung  |
 | -------------         |-----------    | -------------|
-| displayName       | Zeichenfolge          | Der Anzeigename des Benutzers, der das Element freigegeben. |
-| id              | string        | Die Id des Benutzers, der das Element freigegeben.     |
+| displayName       | String          | Der Anzeigename des Benutzers, der das Element freigegeben. |
+| id              | String        | Die Id des Benutzers, der das Element freigegeben.     |
 | address             | String      | Die e-Mail-Adresse des Benutzers, der das Element freigegeben werden soll.  |
 <!--
 {

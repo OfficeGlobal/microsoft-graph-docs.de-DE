@@ -1,13 +1,13 @@
 ---
 title: verifiedDomain-Ressourcentyp
-description: Gibt eine Domäne für einen Mandanten an. Die **verifiedDomains**-Eigenschaft der **organization**-Entität ist eine Auflistung von VerifiedDomain.
+description: Gibt eine Domäne für einen Mandanten an. Die **verifiedDomains**-Eigenschaft der organization-Entität ist eine Auflistung von **VerifiedDomain**.
 localization_priority: Normal
-ms.openlocfilehash: c13c3b3da39b762c26d637deaddafbee5da40160
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 01e2d174f47d08bea4de9d582ffd6126002e8f1f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513396"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576871"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain-Ressourcentyp
 
@@ -20,9 +20,9 @@ Gibt eine Domäne für einen Mandanten an. Die **verifiedDomains**-Eigenschaft d
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Funktionen|String|Zum Beispiel „Email“, „OfficeCommunicationsOnline“.|
-|isDefault|Boolescher Wert|                **true**, wenn dies die Standarddomäne ist, die dem Mandanten zugeordnet ist, andernfalls **false**.            |
+|isDefault|Boolean|                **true**, wenn dies die Standarddomäne ist, die dem Mandanten zugeordnet ist, andernfalls **false**.            |
 |isInitial|Boolean|**true**, wenn dies die ursprüngliche Domäne ist, die dem Mandanten zugeordnet ist, andernfalls **false**.|
-|name|Zeichenfolge|Der Domänenname, zum Beispiel „contoso.onmicrosoft.com“|
+|name|String|Der Domänenname, zum Beispiel „contoso.onmicrosoft.com“|
 |type|String|Z. B. „verwaltet“.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -34,7 +34,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

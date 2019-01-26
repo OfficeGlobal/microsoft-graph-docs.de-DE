@@ -4,12 +4,12 @@ description: Medienstapel, die von der Anwendung gehostet wird.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2545d02301233dbe1657d94ec3cf4f953a43531b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511086"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575772"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Ressourcentyp appHostedMediaConfig
 
@@ -21,8 +21,8 @@ Medienstapel, die von der Anwendung gehostet wird.
 
 | Eigenschaft                          | Typ    | Beschreibung                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| blob()                              | String  | Die Medien Konfiguration Blob vom smart Media-Agent generiert.    |
-| removeFromDefaultAudioGroup       | Boolescher Wert | Entfernen von Audio aus der Standardgruppe audio                       |
+| BLOB                              | String  | Die Medien Konfiguration Blob vom smart Media-Agent generiert.    |
+| removeFromDefaultAudioGroup       | Boolean | Entfernen von Audio aus der Standardgruppe audio                       |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -33,6 +33,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 }-->
 ```json

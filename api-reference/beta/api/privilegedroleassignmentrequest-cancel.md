@@ -2,12 +2,12 @@
 title: PrivilegedRoleAssignmentRequest Abbrechen
 description: Abbrechen einer PrivilegedRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2d717f0ca6fccc274b4ee80cda6b65f02f01abec
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528473"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577508"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest Abbrechen
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 Ok` zurückgegeben. Es gibt [PrivilegedRoleAssignmentRequest] (... / resources/privilegedRoleAssignmentRequest.md) in den Antworttext.
+Wenn die Methode erfolgreich verläuft, wird der Antwortcode `200 Ok` zurückgegeben. [PrivilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) zurückgegeben im Antworttext.
 
 ### <a name="error-codes"></a>Fehlercodes
 Diese API gibt die standard-HTTP-Fehlercodes zurück. Darüber hinaus wird die benutzerdefinierte Fehlercodes in der folgenden Tabelle aufgeführten zurückgegeben.
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
