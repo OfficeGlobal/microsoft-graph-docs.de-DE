@@ -3,26 +3,27 @@ title: Microsoft Teams-Gerätenutzungsberichte
 description: 'Verwenden Sie die Berichte zur Verwendung der Microsoft-Teams, Gerät, um Einblicke in die Microsoft-Teams Gerät Verwendung in Ihrer Organisation abzurufen. '
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f9240f6cb310ada94f1a6694efb0da6cd691dc13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d19df5132a67ac5862535a329eadbdff7044798c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519906"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576640"
 ---
-# <a name="microsoft-teams-device-usage-reports"></a><span data-ttu-id="13903-103">Microsoft Teams-Gerätenutzungsberichte</span><span class="sxs-lookup"><span data-stu-id="13903-103">Microsoft Teams device usage reports</span></span>
+# <a name="microsoft-teams-device-usage-reports"></a><span data-ttu-id="d11d7-103">Microsoft Teams-Gerätenutzungsberichte</span><span class="sxs-lookup"><span data-stu-id="d11d7-103">Microsoft Teams device usage reports</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="13903-104">Verwenden Sie die Berichte zur Verwendung der Microsoft-Teams, Gerät, um Einblicke in die Microsoft-Teams Gerät Verwendung in Ihrer Organisation abzurufen.</span><span class="sxs-lookup"><span data-stu-id="13903-104">Use the Microsoft Teams device usage reports to get insights into the Microsoft Teams device usage in your organization.</span></span> 
+<span data-ttu-id="d11d7-104">Verwenden Sie die Berichte zur Verwendung der Microsoft-Teams, Gerät, um Einblicke in die Microsoft-Teams Gerät Verwendung in Ihrer Organisation abzurufen.</span><span class="sxs-lookup"><span data-stu-id="d11d7-104">Use the Microsoft Teams device usage reports to get insights into the Microsoft Teams device usage in your organization.</span></span> 
 
-## <a name="methods"></a><span data-ttu-id="13903-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="13903-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="d11d7-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="d11d7-105">Methods</span></span>
 
-| <span data-ttu-id="13903-106">Methode</span><span class="sxs-lookup"><span data-stu-id="13903-106">Method</span></span>                                   | <span data-ttu-id="13903-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="13903-107">Return Type</span></span>                              | <span data-ttu-id="13903-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="13903-108">Description</span></span>                              |
+| <span data-ttu-id="d11d7-106">Methode</span><span class="sxs-lookup"><span data-stu-id="d11d7-106">Method</span></span>                                   | <span data-ttu-id="d11d7-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="d11d7-107">Return Type</span></span>                              | <span data-ttu-id="d11d7-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d11d7-108">Description</span></span>                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [<span data-ttu-id="13903-109">Benutzerdetails abrufen</span><span class="sxs-lookup"><span data-stu-id="13903-109">Get user detail</span></span>](../api/reportroot-getteamsdeviceusageuserdetail.md) | [<span data-ttu-id="13903-110">teamsDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="13903-110">teamsDeviceUsageUserDetail</span></span>](../resources/teamsdeviceusageuserdetail.md) | <span data-ttu-id="13903-111">Abrufen von Details zur Microsoft Teams-Gerätenutzung nach Benutzer.</span><span class="sxs-lookup"><span data-stu-id="13903-111">Get details about Microsoft Teams device usage by user.</span></span> |
-| [<span data-ttu-id="13903-112">Benutzeranzahl abrufen</span><span class="sxs-lookup"><span data-stu-id="13903-112">Get user counts</span></span>](../api/reportroot-getteamsdeviceusageusercounts.md) | [<span data-ttu-id="13903-113">teamsDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="13903-113">teamsDeviceUsageUserCounts</span></span>](../resources/teamsdeviceusageusercounts.md) | <span data-ttu-id="13903-114">Abrufen der Anzahl der täglichen eindeutigen Benutzer nach Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="13903-114">Get the number of daily unique users by device type.</span></span> |
-| [<span data-ttu-id="13903-115">Benutzeranzahl für Verteilung abrufen</span><span class="sxs-lookup"><span data-stu-id="13903-115">Get distribution user counts</span></span>](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [<span data-ttu-id="13903-116">teamsDeviceUsagedistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="13903-116">teamsDeviceUsagedistributionUserCounts</span></span>](../resources/teamsdeviceusagedistributionusercounts.md) | <span data-ttu-id="13903-117">Abrufen der Anzahl der eindeutigen Benutzer nach Gerätetyp im ausgewählten Zeitraum.</span><span class="sxs-lookup"><span data-stu-id="13903-117">Get the number of unique users by device type over the selected time period.</span></span> |
+| [<span data-ttu-id="d11d7-109">Benutzerdetails abrufen</span><span class="sxs-lookup"><span data-stu-id="d11d7-109">Get user detail</span></span>](../api/reportroot-getteamsdeviceusageuserdetail.md) | [<span data-ttu-id="d11d7-110">teamsDeviceUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="d11d7-110">teamsDeviceUsageUserDetail</span></span>](../resources/teamsdeviceusageuserdetail.md) | <span data-ttu-id="d11d7-111">Abrufen von Details zur Microsoft Teams-Gerätenutzung nach Benutzer.</span><span class="sxs-lookup"><span data-stu-id="d11d7-111">Get details about Microsoft Teams device usage by user.</span></span> |
+| [<span data-ttu-id="d11d7-112">Benutzeranzahl abrufen</span><span class="sxs-lookup"><span data-stu-id="d11d7-112">Get user counts</span></span>](../api/reportroot-getteamsdeviceusageusercounts.md) | [<span data-ttu-id="d11d7-113">teamsDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="d11d7-113">teamsDeviceUsageUserCounts</span></span>](../resources/teamsdeviceusageusercounts.md) | <span data-ttu-id="d11d7-114">Abrufen der Anzahl der täglichen eindeutigen Benutzer nach Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="d11d7-114">Get the number of daily unique users by device type.</span></span> |
+| [<span data-ttu-id="d11d7-115">Benutzeranzahl für Verteilung abrufen</span><span class="sxs-lookup"><span data-stu-id="d11d7-115">Get distribution user counts</span></span>](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [<span data-ttu-id="d11d7-116">teamsDeviceUsagedistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="d11d7-116">teamsDeviceUsagedistributionUserCounts</span></span>](../resources/teamsdeviceusagedistributionusercounts.md) | <span data-ttu-id="d11d7-117">Abrufen der Anzahl der eindeutigen Benutzer nach Gerätetyp im ausgewählten Zeitraum.</span><span class="sxs-lookup"><span data-stu-id="d11d7-117">Get the number of unique users by device type over the selected time period.</span></span> |
 <!--
 {
   "type": "#page.annotation",

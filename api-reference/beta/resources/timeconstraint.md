@@ -2,29 +2,29 @@
 title: Ressourcentyp „timeConstraint“
 description: Schränkt Vorschläge für Besprechungstermine entsprechend der angegebenen Art der Aktivität und der offenen Zeitfenster auf bestimmte Stunden und Tage der Woche ein.
 localization_priority: Normal
-ms.openlocfilehash: 88035d0617523c51bb01ee0a467e8c84785ad6aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 45469211aa4925834fd9d20da6a9905ac87d221e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519675"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577235"
 ---
-# <a name="timeconstraint-resource-type"></a><span data-ttu-id="b16b1-103">Ressourcentyp „timeConstraint“</span><span class="sxs-lookup"><span data-stu-id="b16b1-103">timeConstraint resource type</span></span>
+# <a name="timeconstraint-resource-type"></a><span data-ttu-id="8cee0-103">Ressourcentyp „timeConstraint“</span><span class="sxs-lookup"><span data-stu-id="8cee0-103">timeConstraint resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b16b1-104">Schränkt Vorschläge für Besprechungstermine entsprechend der angegebenen Art der Aktivität und der offenen Zeitfenster auf bestimmte Stunden und Tage der Woche ein.</span><span class="sxs-lookup"><span data-stu-id="b16b1-104">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
+<span data-ttu-id="8cee0-104">Schränkt Vorschläge für Besprechungstermine entsprechend der angegebenen Art der Aktivität und der offenen Zeitfenster auf bestimmte Stunden und Tage der Woche ein.</span><span class="sxs-lookup"><span data-stu-id="8cee0-104">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b16b1-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b16b1-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8cee0-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8cee0-105">JSON representation</span></span>
 
-<span data-ttu-id="b16b1-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b16b1-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="8cee0-106">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8cee0-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -34,11 +34,11 @@ ms.locfileid: "29519675"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="b16b1-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b16b1-107">Properties</span></span>
-| <span data-ttu-id="b16b1-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b16b1-108">Property</span></span>     | <span data-ttu-id="b16b1-109">Typ</span><span class="sxs-lookup"><span data-stu-id="b16b1-109">Type</span></span>   |<span data-ttu-id="b16b1-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b16b1-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8cee0-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8cee0-107">Properties</span></span>
+| <span data-ttu-id="8cee0-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8cee0-108">Property</span></span>     | <span data-ttu-id="8cee0-109">Typ</span><span class="sxs-lookup"><span data-stu-id="8cee0-109">Type</span></span>   |<span data-ttu-id="8cee0-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8cee0-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b16b1-111">activityDomain</span><span class="sxs-lookup"><span data-stu-id="b16b1-111">activityDomain</span></span>|<span data-ttu-id="b16b1-112">String</span><span class="sxs-lookup"><span data-stu-id="b16b1-112">String</span></span>|<span data-ttu-id="b16b1-p101">Die Art der Aktivität. Diese Angabe ist optional. Mögliche Werte sind: `work`, `personal`, `unrestricted` oder `unknown`.</span><span class="sxs-lookup"><span data-stu-id="b16b1-p101">The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
-|<span data-ttu-id="b16b1-115">timeslots</span><span class="sxs-lookup"><span data-stu-id="b16b1-115">timeslots</span></span>|<span data-ttu-id="b16b1-116">[timeSlot](timeslot.md) collection</span><span class="sxs-lookup"><span data-stu-id="b16b1-116">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="b16b1-117">Ein Array von Zeitfenstern</span><span class="sxs-lookup"><span data-stu-id="b16b1-117">An array of time periods.</span></span>|
+|<span data-ttu-id="8cee0-111">activityDomain</span><span class="sxs-lookup"><span data-stu-id="8cee0-111">activityDomain</span></span>|<span data-ttu-id="8cee0-112">String</span><span class="sxs-lookup"><span data-stu-id="8cee0-112">String</span></span>|<span data-ttu-id="8cee0-p101">Die Art der Aktivität. Diese Angabe ist optional. Mögliche Werte sind: `work`, `personal`, `unrestricted` oder `unknown`.</span><span class="sxs-lookup"><span data-stu-id="8cee0-p101">The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
+|<span data-ttu-id="8cee0-115">timeslots</span><span class="sxs-lookup"><span data-stu-id="8cee0-115">timeslots</span></span>|<span data-ttu-id="8cee0-116">[timeSlot](timeslot.md) collection</span><span class="sxs-lookup"><span data-stu-id="8cee0-116">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="8cee0-117">Ein Array von Zeitfenstern</span><span class="sxs-lookup"><span data-stu-id="8cee0-117">An array of time periods.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
