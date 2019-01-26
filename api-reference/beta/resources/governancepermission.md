@@ -2,31 +2,38 @@
 title: Ressourcentyp governancePermission
 description: 'Stellt die Berechtigung, die ein GovernanceSubject hat für eine bestimmte GovernanceResource dar.  '
 localization_priority: Normal
-ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529838"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570722"
 ---
-# <a name="governancepermission-resource-type"></a><span data-ttu-id="31faa-103">Ressourcentyp governancePermission</span><span class="sxs-lookup"><span data-stu-id="31faa-103">governancePermission resource type</span></span>
+# <a name="governancepermission-resource-type"></a><span data-ttu-id="29f95-103">Ressourcentyp governancePermission</span><span class="sxs-lookup"><span data-stu-id="29f95-103">governancePermission resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31faa-104">Stellt die Berechtigung, die ein [GovernanceSubject](../resources/governancesubject.md) hat für eine bestimmte [GovernanceResource](../resources/governanceresource.md)dar.</span><span class="sxs-lookup"><span data-stu-id="31faa-104">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
+<span data-ttu-id="29f95-104">Stellt die Berechtigung, die ein [GovernanceSubject](../resources/governancesubject.md) hat für eine bestimmte [GovernanceResource](../resources/governanceresource.md)dar.</span><span class="sxs-lookup"><span data-stu-id="29f95-104">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="31faa-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="31faa-105">Properties</span></span>
-| <span data-ttu-id="31faa-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="31faa-106">Property</span></span>     | <span data-ttu-id="31faa-107">Typ</span><span class="sxs-lookup"><span data-stu-id="31faa-107">Type</span></span>   |<span data-ttu-id="31faa-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="31faa-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="29f95-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="29f95-105">Properties</span></span>
+| <span data-ttu-id="29f95-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="29f95-106">Property</span></span>     | <span data-ttu-id="29f95-107">Typ</span><span class="sxs-lookup"><span data-stu-id="29f95-107">Type</span></span>   |<span data-ttu-id="29f95-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="29f95-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="31faa-109">AccessLevel</span><span class="sxs-lookup"><span data-stu-id="31faa-109">accessLevel</span></span>|<span data-ttu-id="31faa-110">String</span><span class="sxs-lookup"><span data-stu-id="31faa-110">String</span></span>|<span data-ttu-id="31faa-111">Die Zugriffsebene.</span><span class="sxs-lookup"><span data-stu-id="31faa-111">The access level.</span></span> <span data-ttu-id="31faa-112">Gültige Werte: ``None``, ``UserRead``, ``AdminRead``, und ``AdminReadWrite``.</span><span class="sxs-lookup"><span data-stu-id="31faa-112">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
-|<span data-ttu-id="31faa-113">isActive</span><span class="sxs-lookup"><span data-stu-id="31faa-113">isActive</span></span>|<span data-ttu-id="31faa-114">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="31faa-114">Boolean</span></span>|<span data-ttu-id="31faa-115">Gibt an, ob der anfordernden Person hat aktiven rollenzuweisung für die Zugriffsebene.</span><span class="sxs-lookup"><span data-stu-id="31faa-115">Indicate if the the requestor has any active role assignment for the access level.</span></span>|
-|<span data-ttu-id="31faa-116">isEligible</span><span class="sxs-lookup"><span data-stu-id="31faa-116">isEligible</span></span>|<span data-ttu-id="31faa-117">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="31faa-117">Boolean</span></span>|<span data-ttu-id="31faa-118">Geben Sie an, ob der Requestor alle qualifizierten rollenzuweisung für die Zugriffsebene hat.</span><span class="sxs-lookup"><span data-stu-id="31faa-118">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
+|<span data-ttu-id="29f95-109">accessLevel</span><span class="sxs-lookup"><span data-stu-id="29f95-109">accessLevel</span></span>|<span data-ttu-id="29f95-110">String</span><span class="sxs-lookup"><span data-stu-id="29f95-110">String</span></span>|<span data-ttu-id="29f95-111">Die Zugriffsebene.</span><span class="sxs-lookup"><span data-stu-id="29f95-111">The access level.</span></span> <span data-ttu-id="29f95-112">Gültige Werte: ``None``, ``UserRead``, ``AdminRead``, und ``AdminReadWrite``.</span><span class="sxs-lookup"><span data-stu-id="29f95-112">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
+|<span data-ttu-id="29f95-113">isActive</span><span class="sxs-lookup"><span data-stu-id="29f95-113">isActive</span></span>|<span data-ttu-id="29f95-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="29f95-114">Boolean</span></span>|<span data-ttu-id="29f95-115">Gibt an, ob der anfordernden Person hat aktiven rollenzuweisung für die Zugriffsebene.</span><span class="sxs-lookup"><span data-stu-id="29f95-115">Indicate if the the requestor has any active role assignment for the access level.</span></span>|
+|<span data-ttu-id="29f95-116">isEligible</span><span class="sxs-lookup"><span data-stu-id="29f95-116">isEligible</span></span>|<span data-ttu-id="29f95-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="29f95-117">Boolean</span></span>|<span data-ttu-id="29f95-118">Geben Sie an, ob der Requestor alle qualifizierten rollenzuweisung für die Zugriffsebene hat.</span><span class="sxs-lookup"><span data-stu-id="29f95-118">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="31faa-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="31faa-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="29f95-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="29f95-119">JSON representation</span></span>
 
-<span data-ttu-id="31faa-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="31faa-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="29f95-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="29f95-120">Here is a JSON representation of the resource.</span></span>
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",

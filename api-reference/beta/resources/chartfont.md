@@ -4,51 +4,50 @@ description: Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgr
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7e9815d5d6d9bf7e7b0ef4ae97881e12c7ba9181
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518324"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573627"
 ---
-# <a name="chartfont-resource-type"></a><span data-ttu-id="ef808-103">ChartFont-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ef808-103">ChartFont resource type</span></span>
+# <a name="chartfont-resource-type"></a><span data-ttu-id="75222-103">ChartFont-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="75222-103">ChartFont resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef808-104">Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammobjekt dar.</span><span class="sxs-lookup"><span data-stu-id="ef808-104">This object represents the font attributes (font name, font size, color, etc.) for a chart object.</span></span>
+<span data-ttu-id="75222-104">Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammobjekt dar.</span><span class="sxs-lookup"><span data-stu-id="75222-104">This object represents the font attributes (font name, font size, color, etc.) for a chart object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ef808-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="ef808-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="75222-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="75222-105">Methods</span></span>
 
-| <span data-ttu-id="ef808-106">Methode</span><span class="sxs-lookup"><span data-stu-id="ef808-106">Method</span></span>           | <span data-ttu-id="ef808-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="ef808-107">Return Type</span></span>    |<span data-ttu-id="ef808-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ef808-108">Description</span></span>|
+| <span data-ttu-id="75222-106">Methode</span><span class="sxs-lookup"><span data-stu-id="75222-106">Method</span></span>           | <span data-ttu-id="75222-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="75222-107">Return Type</span></span>    |<span data-ttu-id="75222-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="75222-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef808-109">ChartFont abrufen</span><span class="sxs-lookup"><span data-stu-id="ef808-109">[Get ChartFont](../api/chartfont-get.md)</span></span> | <span data-ttu-id="ef808-110">ChartFont</span><span class="sxs-lookup"><span data-stu-id="ef808-110">[ChartFont](chartfont.md)</span></span> |<span data-ttu-id="ef808-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ef808-111">Read properties and relationships of chartFont object.</span></span>|
-|[<span data-ttu-id="ef808-112">Update</span><span class="sxs-lookup"><span data-stu-id="ef808-112">Update</span></span>](../api/chartfont-update.md) | <span data-ttu-id="ef808-113">ChartFont</span><span class="sxs-lookup"><span data-stu-id="ef808-113">[ChartFont](chartfont.md)</span></span>   |<span data-ttu-id="ef808-114">Dient zum Aktualisieren des ChartFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ef808-114">Update ChartFont object.</span></span> |
+|[<span data-ttu-id="75222-109">ChartFont abrufen</span><span class="sxs-lookup"><span data-stu-id="75222-109">Get ChartFont</span></span>](../api/chartfont-get.md) | [<span data-ttu-id="75222-110">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="75222-110">WorkbookChartFont</span></span>](chartfont.md) |<span data-ttu-id="75222-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="75222-111">Read properties and relationships of chartFont object.</span></span>|
+|[<span data-ttu-id="75222-112">Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="75222-112">Update</span></span>](../api/chartfont-update.md) | [<span data-ttu-id="75222-113">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="75222-113">WorkbookChartFont</span></span>](chartfont.md)   |<span data-ttu-id="75222-114">Dient zum Aktualisieren des ChartFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="75222-114">Update ChartFont object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="ef808-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ef808-115">Properties</span></span>
-| <span data-ttu-id="ef808-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ef808-116">Property</span></span>     | <span data-ttu-id="ef808-117">Typ</span><span class="sxs-lookup"><span data-stu-id="ef808-117">Type</span></span>   |<span data-ttu-id="ef808-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ef808-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="75222-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="75222-115">Properties</span></span>
+| <span data-ttu-id="75222-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="75222-116">Property</span></span>     | <span data-ttu-id="75222-117">Typ</span><span class="sxs-lookup"><span data-stu-id="75222-117">Type</span></span>   |<span data-ttu-id="75222-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="75222-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef808-119">bold</span><span class="sxs-lookup"><span data-stu-id="ef808-119">bold</span></span>|<span data-ttu-id="ef808-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ef808-120">boolean</span></span>|<span data-ttu-id="ef808-121">Stellt den Fett-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="ef808-121">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="ef808-122">color</span><span class="sxs-lookup"><span data-stu-id="ef808-122">color</span></span>|<span data-ttu-id="ef808-123">string</span><span class="sxs-lookup"><span data-stu-id="ef808-123">string</span></span>|<span data-ttu-id="ef808-p101">HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.</span><span class="sxs-lookup"><span data-stu-id="ef808-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="ef808-127">italic</span><span class="sxs-lookup"><span data-stu-id="ef808-127">italic</span></span>|<span data-ttu-id="ef808-128">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ef808-128">boolean</span></span>|<span data-ttu-id="ef808-129">Stellt den Kursiv-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="ef808-129">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="ef808-130">name</span><span class="sxs-lookup"><span data-stu-id="ef808-130">name</span></span>|<span data-ttu-id="ef808-131">string</span><span class="sxs-lookup"><span data-stu-id="ef808-131">string</span></span>|<span data-ttu-id="ef808-132">Schriftartname (z. B. "Calibri")</span><span class="sxs-lookup"><span data-stu-id="ef808-132">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="ef808-133">size</span><span class="sxs-lookup"><span data-stu-id="ef808-133">size</span></span>|<span data-ttu-id="ef808-134">double</span><span class="sxs-lookup"><span data-stu-id="ef808-134">double</span></span>|<span data-ttu-id="ef808-135">Der Schriftgrad (z. B. 11)</span><span class="sxs-lookup"><span data-stu-id="ef808-135">Size of the font (e.g. 11)</span></span>|
-|<span data-ttu-id="ef808-136">underline</span><span class="sxs-lookup"><span data-stu-id="ef808-136">underline</span></span>|<span data-ttu-id="ef808-137">string</span><span class="sxs-lookup"><span data-stu-id="ef808-137">string</span></span>|<span data-ttu-id="ef808-p102">Art der auf die Schriftart angewendeten Unterstreichung. Mögliche Werte: `None`, `Single`.</span><span class="sxs-lookup"><span data-stu-id="ef808-p102">Type of underline applied to the font. Possible values are: `None`, `Single`.</span></span>|
+|<span data-ttu-id="75222-119">bold</span><span class="sxs-lookup"><span data-stu-id="75222-119">bold</span></span>|<span data-ttu-id="75222-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="75222-120">boolean</span></span>|<span data-ttu-id="75222-121">Stellt den Fett-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="75222-121">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="75222-122">color</span><span class="sxs-lookup"><span data-stu-id="75222-122">color</span></span>|<span data-ttu-id="75222-123">string</span><span class="sxs-lookup"><span data-stu-id="75222-123">string</span></span>|<span data-ttu-id="75222-p101">HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.</span><span class="sxs-lookup"><span data-stu-id="75222-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="75222-127">italic</span><span class="sxs-lookup"><span data-stu-id="75222-127">italic</span></span>|<span data-ttu-id="75222-128">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="75222-128">boolean</span></span>|<span data-ttu-id="75222-129">Stellt den Kursiv-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="75222-129">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="75222-130">name</span><span class="sxs-lookup"><span data-stu-id="75222-130">name</span></span>|<span data-ttu-id="75222-131">string</span><span class="sxs-lookup"><span data-stu-id="75222-131">string</span></span>|<span data-ttu-id="75222-132">Schriftartname (z. B. "Calibri")</span><span class="sxs-lookup"><span data-stu-id="75222-132">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="75222-133">size</span><span class="sxs-lookup"><span data-stu-id="75222-133">size</span></span>|<span data-ttu-id="75222-134">double</span><span class="sxs-lookup"><span data-stu-id="75222-134">double</span></span>|<span data-ttu-id="75222-135">Der Schriftgrad (z. B. 11)</span><span class="sxs-lookup"><span data-stu-id="75222-135">Size of the font (e.g. 11)</span></span>|
+|<span data-ttu-id="75222-136">underline</span><span class="sxs-lookup"><span data-stu-id="75222-136">underline</span></span>|<span data-ttu-id="75222-137">string</span><span class="sxs-lookup"><span data-stu-id="75222-137">string</span></span>|<span data-ttu-id="75222-138">Typ der Unterstreichung auf die Schriftart.</span><span class="sxs-lookup"><span data-stu-id="75222-138">Type of underline applied to the font.</span></span> <span data-ttu-id="75222-139">Die möglichen Werte sind: `None`, `Single`.</span><span class="sxs-lookup"><span data-stu-id="75222-139">The possible values are: `None`, `Single`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ef808-140">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="ef808-140">Relationships</span></span>
-<span data-ttu-id="ef808-141">Keine</span><span class="sxs-lookup"><span data-stu-id="ef808-141">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="75222-140">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="75222-140">Relationships</span></span>
+<span data-ttu-id="75222-141">Keine</span><span class="sxs-lookup"><span data-stu-id="75222-141">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="ef808-142">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ef808-142">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="75222-142">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="75222-142">JSON representation</span></span>
 
-<span data-ttu-id="ef808-143">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ef808-143">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="75222-143">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="75222-143">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json

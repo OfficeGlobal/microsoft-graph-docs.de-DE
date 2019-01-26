@@ -2,28 +2,28 @@
 title: Ressourcentyp expressionInputObject
 description: 'Stellt ein Objekt als Eingabe Testdaten verwendet werden bei der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion ausführt Ausdruck in Bezug auf.'
 localization_priority: Normal
-ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510778"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570960"
 ---
-# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="60377-103">Ressourcentyp expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="60377-103">expressionInputObject resource type</span></span>
+# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="8defb-103">Ressourcentyp expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="8defb-103">expressionInputObject resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60377-104">Stellt ein Objekt als Eingabe Testdaten verwendet werden bei der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion ausführt Ausdruck in Bezug auf.</span><span class="sxs-lookup"><span data-stu-id="60377-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation.</span></span>
+<span data-ttu-id="8defb-104">Stellt ein Objekt als Eingabe Testdaten verwendet werden bei der [SynchronizationSchema: ParseExpression](../api/synchronization-synchronizationschema-parseexpression.md) Aktion ausführt Ausdruck in Bezug auf.</span><span class="sxs-lookup"><span data-stu-id="8defb-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action performs an expression evaluation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="60377-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="60377-105">Properties</span></span>
-| <span data-ttu-id="60377-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="60377-106">Property</span></span>     | <span data-ttu-id="60377-107">Typ</span><span class="sxs-lookup"><span data-stu-id="60377-107">Type</span></span>   |<span data-ttu-id="60377-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="60377-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8defb-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8defb-105">Properties</span></span>
+| <span data-ttu-id="8defb-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="8defb-106">Property</span></span>     | <span data-ttu-id="8defb-107">Typ</span><span class="sxs-lookup"><span data-stu-id="8defb-107">Type</span></span>   |<span data-ttu-id="8defb-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8defb-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="60377-109">definition</span><span class="sxs-lookup"><span data-stu-id="60377-109">definition</span></span>|[<span data-ttu-id="60377-110">Sind</span><span class="sxs-lookup"><span data-stu-id="60377-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="60377-111">Definition des Test-Objekts.</span><span class="sxs-lookup"><span data-stu-id="60377-111">Definition of the test object.</span></span>|
-|<span data-ttu-id="60377-112">properties</span><span class="sxs-lookup"><span data-stu-id="60377-112">properties</span></span>|<span data-ttu-id="60377-113">[StringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="60377-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="60377-114">Eigenschaftswerte des Test-Objekts.</span><span class="sxs-lookup"><span data-stu-id="60377-114">Property values of the test object.</span></span>|
+|<span data-ttu-id="8defb-109">definition</span><span class="sxs-lookup"><span data-stu-id="8defb-109">definition</span></span>|[<span data-ttu-id="8defb-110">Sind</span><span class="sxs-lookup"><span data-stu-id="8defb-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="8defb-111">Definition des Test-Objekts.</span><span class="sxs-lookup"><span data-stu-id="8defb-111">Definition of the test object.</span></span>|
+|<span data-ttu-id="8defb-112">properties</span><span class="sxs-lookup"><span data-stu-id="8defb-112">properties</span></span>|<span data-ttu-id="8defb-113">[StringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="8defb-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="8defb-114">Eigenschaftswerte des Test-Objekts.</span><span class="sxs-lookup"><span data-stu-id="8defb-114">Property values of the test object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="60377-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="60377-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8defb-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="8defb-115">JSON representation</span></span>
 
-<span data-ttu-id="60377-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="60377-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8defb-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="8defb-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

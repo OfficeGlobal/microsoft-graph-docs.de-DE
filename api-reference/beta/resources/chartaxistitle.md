@@ -4,54 +4,54 @@ description: Stellt den Titel einer Diagrammachse dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e0ad1385bb46dc4ff0e3f6bc9a3acfb861e7af88
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513123"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572710"
 ---
-# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="ed9fa-103">ChartAxisTitle-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ed9fa-103">ChartAxisTitle resource type</span></span>
+# <a name="chartaxistitle-resource-type"></a><span data-ttu-id="62f84-103">ChartAxisTitle-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="62f84-103">ChartAxisTitle resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ed9fa-104">Stellt den Titel einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-104">Represents the title of a chart axis.</span></span>
+<span data-ttu-id="62f84-104">Stellt den Titel einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="62f84-104">Represents the title of a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ed9fa-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="ed9fa-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="62f84-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="62f84-105">Methods</span></span>
 
-| <span data-ttu-id="ed9fa-106">Methode</span><span class="sxs-lookup"><span data-stu-id="ed9fa-106">Method</span></span>           | <span data-ttu-id="ed9fa-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="ed9fa-107">Return Type</span></span>    |<span data-ttu-id="ed9fa-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-108">Description</span></span>|
+| <span data-ttu-id="62f84-106">Methode</span><span class="sxs-lookup"><span data-stu-id="62f84-106">Method</span></span>           | <span data-ttu-id="62f84-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="62f84-107">Return Type</span></span>    |<span data-ttu-id="62f84-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="62f84-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ed9fa-109">ChartAxisTitle abrufen</span><span class="sxs-lookup"><span data-stu-id="ed9fa-109">[Get ChartAxisTitle](../api/chartaxistitle-get.md)</span></span> | [<span data-ttu-id="ed9fa-110">chartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ed9fa-110">ChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="ed9fa-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-111">Read properties and relationships of chartAxisTitle object.</span></span>|
-|[<span data-ttu-id="ed9fa-112">Update</span><span class="sxs-lookup"><span data-stu-id="ed9fa-112">Update</span></span>](../api/chartaxistitle-update.md) | <span data-ttu-id="ed9fa-113">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ed9fa-113">[ChartAxisTitle](chartaxistitle.md)</span></span>    |<span data-ttu-id="ed9fa-114">Dient zum Aktualisieren de chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-114">Update ChartAxisTitle object.</span></span> |
+|[<span data-ttu-id="62f84-109">ChartAxisTitle abrufen</span><span class="sxs-lookup"><span data-stu-id="62f84-109">Get ChartAxisTitle</span></span>](../api/chartaxistitle-get.md) | [<span data-ttu-id="62f84-110">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="62f84-110">WorkbookChartAxisTitle</span></span>](chartaxistitle.md) |<span data-ttu-id="62f84-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="62f84-111">Read properties and relationships of chartAxisTitle object.</span></span>|
+|[<span data-ttu-id="62f84-112">Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="62f84-112">Update</span></span>](../api/chartaxistitle-update.md) | [<span data-ttu-id="62f84-113">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="62f84-113">WorkbookChartAxisTitle</span></span>](chartaxistitle.md)    |<span data-ttu-id="62f84-114">Dient zum Aktualisieren de chartAxisTitle-Objekts.</span><span class="sxs-lookup"><span data-stu-id="62f84-114">Update ChartAxisTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="ed9fa-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ed9fa-115">Properties</span></span>
-| <span data-ttu-id="ed9fa-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ed9fa-116">Property</span></span>     | <span data-ttu-id="ed9fa-117">Typ</span><span class="sxs-lookup"><span data-stu-id="ed9fa-117">Type</span></span>   |<span data-ttu-id="ed9fa-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="62f84-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="62f84-115">Properties</span></span>
+| <span data-ttu-id="62f84-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="62f84-116">Property</span></span>     | <span data-ttu-id="62f84-117">Typ</span><span class="sxs-lookup"><span data-stu-id="62f84-117">Type</span></span>   |<span data-ttu-id="62f84-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="62f84-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ed9fa-119">text</span><span class="sxs-lookup"><span data-stu-id="ed9fa-119">text</span></span>|<span data-ttu-id="ed9fa-120">string</span><span class="sxs-lookup"><span data-stu-id="ed9fa-120">string</span></span>|<span data-ttu-id="ed9fa-121">Stellt den Achsentitel dar.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-121">Represents the axis title.</span></span>|
-|<span data-ttu-id="ed9fa-122">visible</span><span class="sxs-lookup"><span data-stu-id="ed9fa-122">visible</span></span>|<span data-ttu-id="ed9fa-123">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="ed9fa-123">boolean</span></span>|<span data-ttu-id="ed9fa-124">Ein boolescher Wert, der die Sichtbarkeit eines Achsentitels angibt.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-124">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="62f84-119">text</span><span class="sxs-lookup"><span data-stu-id="62f84-119">text</span></span>|<span data-ttu-id="62f84-120">string</span><span class="sxs-lookup"><span data-stu-id="62f84-120">string</span></span>|<span data-ttu-id="62f84-121">Stellt den Achsentitel dar.</span><span class="sxs-lookup"><span data-stu-id="62f84-121">Represents the axis title.</span></span>|
+|<span data-ttu-id="62f84-122">visible</span><span class="sxs-lookup"><span data-stu-id="62f84-122">visible</span></span>|<span data-ttu-id="62f84-123">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="62f84-123">boolean</span></span>|<span data-ttu-id="62f84-124">Ein boolescher Wert, der die Sichtbarkeit eines Achsentitels angibt.</span><span class="sxs-lookup"><span data-stu-id="62f84-124">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ed9fa-125">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="ed9fa-125">Relationships</span></span>
-| <span data-ttu-id="ed9fa-126">Beziehung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-126">Relationship</span></span> | <span data-ttu-id="ed9fa-127">Typ</span><span class="sxs-lookup"><span data-stu-id="ed9fa-127">Type</span></span>   |<span data-ttu-id="ed9fa-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-128">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="62f84-125">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="62f84-125">Relationships</span></span>
+| <span data-ttu-id="62f84-126">Beziehung</span><span class="sxs-lookup"><span data-stu-id="62f84-126">Relationship</span></span> | <span data-ttu-id="62f84-127">Typ</span><span class="sxs-lookup"><span data-stu-id="62f84-127">Type</span></span>   |<span data-ttu-id="62f84-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="62f84-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ed9fa-129">format</span><span class="sxs-lookup"><span data-stu-id="ed9fa-129">format</span></span>|[<span data-ttu-id="ed9fa-130">ChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="ed9fa-130">ChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="ed9fa-p101">Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-p101">Represents the formatting of chart axis title. Read-only.</span></span>|
+|<span data-ttu-id="62f84-129">format</span><span class="sxs-lookup"><span data-stu-id="62f84-129">format</span></span>|[<span data-ttu-id="62f84-130">WorkbookChartAxisTitleFormat</span><span class="sxs-lookup"><span data-stu-id="62f84-130">WorkbookChartAxisTitleFormat</span></span>](chartaxistitleformat.md)|<span data-ttu-id="62f84-p101">Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="62f84-p101">Represents the formatting of chart axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ed9fa-133">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ed9fa-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="62f84-133">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="62f84-133">JSON representation</span></span>
 
-<span data-ttu-id="ed9fa-134">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ed9fa-134">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="62f84-134">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="62f84-134">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```

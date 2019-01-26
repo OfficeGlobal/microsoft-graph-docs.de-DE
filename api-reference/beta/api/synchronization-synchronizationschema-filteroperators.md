@@ -2,29 +2,29 @@
 title: 'SynchronizationSchema: FilterOperators'
 description: Alle in den Gültigkeitsbereichen Filtern unterstützte Operatoren aufgelistet.
 localization_priority: Normal
-ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c564142aa6a26b3f83fa5f82036e3b97dc13e672
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516469"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573228"
 ---
-# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="9fa51-103">SynchronizationSchema: FilterOperators</span><span class="sxs-lookup"><span data-stu-id="9fa51-103">synchronizationSchema: filterOperators</span></span>
+# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="f7e9c-103">SynchronizationSchema: FilterOperators</span><span class="sxs-lookup"><span data-stu-id="f7e9c-103">synchronizationSchema: filterOperators</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9fa51-104">Alle in den [Gültigkeitsbereichen Filter](../resources/synchronization-filter.md)unterstützte Operatoren aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="9fa51-104">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
+<span data-ttu-id="f7e9c-104">Alle in den [Gültigkeitsbereichen Filter](../resources/synchronization-filter.md)unterstützte Operatoren aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-104">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9fa51-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9fa51-105">Permissions</span></span>
-<span data-ttu-id="9fa51-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9fa51-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7e9c-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="f7e9c-105">Permissions</span></span>
+<span data-ttu-id="f7e9c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7e9c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9fa51-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9fa51-108">Permission type</span></span>                        | <span data-ttu-id="9fa51-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9fa51-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f7e9c-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f7e9c-108">Permission type</span></span>                        | <span data-ttu-id="f7e9c-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f7e9c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9fa51-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9fa51-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="9fa51-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9fa51-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="9fa51-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9fa51-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="9fa51-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9fa51-113">Not supported.</span></span>|
-|<span data-ttu-id="9fa51-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9fa51-114">Application</span></span>                            |<span data-ttu-id="9fa51-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9fa51-115">Not supported.</span></span> | 
+|<span data-ttu-id="f7e9c-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f7e9c-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="f7e9c-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7e9c-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="f7e9c-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f7e9c-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="f7e9c-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f7e9c-113">Not supported.</span></span>|
+|<span data-ttu-id="f7e9c-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f7e9c-114">Application</span></span>                            |<span data-ttu-id="f7e9c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f7e9c-115">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="9fa51-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9fa51-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7e9c-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7e9c-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
@@ -32,24 +32,24 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/filter
 GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOperators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9fa51-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9fa51-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7e9c-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f7e9c-117">Request headers</span></span>
 
-| <span data-ttu-id="9fa51-118">Name</span><span class="sxs-lookup"><span data-stu-id="9fa51-118">Name</span></span>           | <span data-ttu-id="9fa51-119">Typ</span><span class="sxs-lookup"><span data-stu-id="9fa51-119">Type</span></span>    | <span data-ttu-id="9fa51-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9fa51-120">Description</span></span>|
+| <span data-ttu-id="f7e9c-118">Name</span><span class="sxs-lookup"><span data-stu-id="f7e9c-118">Name</span></span>           | <span data-ttu-id="f7e9c-119">Typ</span><span class="sxs-lookup"><span data-stu-id="f7e9c-119">Type</span></span>    | <span data-ttu-id="f7e9c-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f7e9c-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="9fa51-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9fa51-121">Authorization</span></span>  | <span data-ttu-id="9fa51-122">string</span><span class="sxs-lookup"><span data-stu-id="9fa51-122">string</span></span>  | <span data-ttu-id="9fa51-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9fa51-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f7e9c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7e9c-121">Authorization</span></span>  | <span data-ttu-id="f7e9c-122">string</span><span class="sxs-lookup"><span data-stu-id="f7e9c-122">string</span></span>  | <span data-ttu-id="f7e9c-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9fa51-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9fa51-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7e9c-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f7e9c-125">Request body</span></span>
 
-<span data-ttu-id="9fa51-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="9fa51-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f7e9c-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9fa51-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="9fa51-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7e9c-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7e9c-127">Response</span></span>
 
-<span data-ttu-id="9fa51-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200, OK` Antwortcode und ein [FilterOperatorSchema](../resources/synchronization-filteroperatorschema.md) -Auflistungsobjekt in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="9fa51-128">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
+<span data-ttu-id="f7e9c-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200, OK` Antwortcode und ein [FilterOperatorSchema](../resources/synchronization-filteroperatorschema.md) -Auflistungsobjekt in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-128">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9fa51-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9fa51-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f7e9c-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f7e9c-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9fa51-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9fa51-130">Request</span></span>
-<span data-ttu-id="9fa51-131">Es folgt ein Beispiel für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9fa51-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f7e9c-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7e9c-130">Request</span></span>
+<span data-ttu-id="f7e9c-131">Es folgt ein Beispiel für eine Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-131">The following is an example of a request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
@@ -58,10 +58,10 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
 ```
 
-##### <a name="response"></a><span data-ttu-id="9fa51-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="9fa51-132">Response</span></span>
-<span data-ttu-id="9fa51-133">Es folgt ein Beispiel für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="9fa51-133">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f7e9c-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7e9c-132">Response</span></span>
+<span data-ttu-id="f7e9c-133">Es folgt ein Beispiel für eine Antwort.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-133">The following is an example of a response.</span></span>
 
-><span data-ttu-id="9fa51-134">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="9fa51-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="9fa51-135">Alle Eigenschaften werden in eine tatsächliche Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9fa51-135">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="f7e9c-134">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f7e9c-135">Alle Eigenschaften werden in eine tatsächliche Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f7e9c-135">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -76,13 +76,11 @@ Content-type: application/json
 {
     "value": [
         {
-            "name": "EQUALS",
-            "arity": "Binary",
+            "arity": "Unary",
             "multivaluedComparisonType": "All",
-            "supportedAttributeTypes": [
-                "String",
-                "Integer"
-            ]
+            "supportedAttributeTypes": [                
+                "@string"
+             ]
         }
     ]
 }
@@ -98,8 +96,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+               "Boolean"
             ]
         },
         {
@@ -107,7 +104,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+              "Boolean"
             ]
         },
         {
@@ -115,9 +112,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -126,9 +120,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -145,8 +136,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -154,8 +144,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -163,8 +152,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         }
     ]

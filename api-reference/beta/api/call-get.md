@@ -4,53 +4,53 @@ description: Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekt
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 549c53c5e7dedc4d52cce9bbe5e592dc8622c4c7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530069"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575426"
 ---
-# <a name="get-call"></a><span data-ttu-id="7db2b-103">Abrufen von Anrufen</span><span class="sxs-lookup"><span data-stu-id="7db2b-103">Get call</span></span>
+# <a name="get-call"></a><span data-ttu-id="ff98c-103">Abrufen von Anrufen</span><span class="sxs-lookup"><span data-stu-id="ff98c-103">Get call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7db2b-104">Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="7db2b-104">Retrieve the properties and relationships of a call object.</span></span>
+<span data-ttu-id="ff98c-104">Rufen Sie die Eigenschaften und die Beziehungen eines Anrufs-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="ff98c-104">Retrieve the properties and relationships of a call object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7db2b-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7db2b-105">Permissions</span></span>
-<span data-ttu-id="7db2b-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7db2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff98c-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ff98c-105">Permissions</span></span>
+<span data-ttu-id="ff98c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff98c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7db2b-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7db2b-108">Permission type</span></span> | <span data-ttu-id="7db2b-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7db2b-109">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="ff98c-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ff98c-108">Permission type</span></span> | <span data-ttu-id="ff98c-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ff98c-109">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="7db2b-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7db2b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7db2b-111">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7db2b-111">Not Supported.</span></span>                         |
-| <span data-ttu-id="7db2b-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7db2b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7db2b-113">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7db2b-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="7db2b-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7db2b-114">Application</span></span>                            | <span data-ttu-id="7db2b-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="7db2b-115">None.</span></span>                                  |
+| <span data-ttu-id="ff98c-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ff98c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ff98c-111">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ff98c-111">Not Supported.</span></span>                         |
+| <span data-ttu-id="ff98c-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ff98c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff98c-113">Nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ff98c-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="ff98c-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ff98c-114">Application</span></span>                            | <span data-ttu-id="ff98c-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="ff98c-115">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="7db2b-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7db2b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff98c-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ff98c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
 GET /applications/{id}/calls/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7db2b-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="7db2b-117">Optional query parameters</span></span>
-<span data-ttu-id="7db2b-118">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="7db2b-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ff98c-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="ff98c-117">Optional query parameters</span></span>
+<span data-ttu-id="ff98c-118">Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.</span><span class="sxs-lookup"><span data-stu-id="ff98c-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7db2b-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7db2b-119">Request headers</span></span>
-| <span data-ttu-id="7db2b-120">Name</span><span class="sxs-lookup"><span data-stu-id="7db2b-120">Name</span></span>          | <span data-ttu-id="7db2b-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7db2b-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="ff98c-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ff98c-119">Request headers</span></span>
+| <span data-ttu-id="ff98c-120">Name</span><span class="sxs-lookup"><span data-stu-id="ff98c-120">Name</span></span>          | <span data-ttu-id="ff98c-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ff98c-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="7db2b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7db2b-122">Authorization</span></span> | <span data-ttu-id="7db2b-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7db2b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ff98c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff98c-122">Authorization</span></span> | <span data-ttu-id="ff98c-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ff98c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7db2b-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7db2b-125">Request body</span></span>
-<span data-ttu-id="7db2b-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="7db2b-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ff98c-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ff98c-125">Request body</span></span>
+<span data-ttu-id="ff98c-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ff98c-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7db2b-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="7db2b-127">Response</span></span>
-<span data-ttu-id="7db2b-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines Objekts [aufrufen,](../resources/call.md) in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="7db2b-128">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ff98c-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="ff98c-127">Response</span></span>
+<span data-ttu-id="ff98c-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines Objekts [aufrufen,](../resources/call.md) in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="ff98c-128">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7db2b-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7db2b-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ff98c-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ff98c-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7db2b-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7db2b-130">Request</span></span>
-<span data-ttu-id="7db2b-131">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="7db2b-131">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ff98c-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ff98c-130">Request</span></span>
+<span data-ttu-id="ff98c-131">Das folgende Beispiel zeigt die Antwort.</span><span class="sxs-lookup"><span data-stu-id="ff98c-131">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -60,9 +60,9 @@ GET /applications/{id}/calls/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="7db2b-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="7db2b-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ff98c-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="ff98c-132">Response</span></span>
 
-> <span data-ttu-id="7db2b-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="7db2b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ff98c-p103">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="ff98c-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,7 +115,7 @@ Content-Length: 2821
   "direction": "incoming",
   "id": "id-value",
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "@odata.type": "microsoft.graph.appHostedMediaConfig",
     "blob": "<media config blob>"
   },
   "meetingCapability": {
@@ -124,7 +124,7 @@ Content-Length: 2821
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "550fae72-d251-43ec-868c-373732c2704f",

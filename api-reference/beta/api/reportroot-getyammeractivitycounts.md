@@ -3,32 +3,33 @@ title: 'reportRoot: getYammerActivityCounts'
 description: Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0204c0ea634f8793d2f0ab58fdffc8c389443eed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 92dea308af9cd2ac00abbff0bf86073b0a0fac3b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514719"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573613"
 ---
-# <a name="reportroot-getyammeractivitycounts"></a><span data-ttu-id="81e44-103">reportRoot: getYammerActivityCounts</span><span class="sxs-lookup"><span data-stu-id="81e44-103">reportRoot: getYammerActivityCounts</span></span>
+# <a name="reportroot-getyammeractivitycounts"></a><span data-ttu-id="c2b54-103">reportRoot: getYammerActivityCounts</span><span class="sxs-lookup"><span data-stu-id="c2b54-103">reportRoot: getYammerActivityCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="81e44-104">Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden.</span><span class="sxs-lookup"><span data-stu-id="81e44-104">Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.</span></span>
+<span data-ttu-id="c2b54-104">Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden.</span><span class="sxs-lookup"><span data-stu-id="c2b54-104">Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.</span></span>
 
-> <span data-ttu-id="81e44-105">**Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Yammer-Aktivität](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span><span class="sxs-lookup"><span data-stu-id="81e44-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span></span>
+> <span data-ttu-id="c2b54-105">**Hinweis:** Ausführliche Informationen zu anderen Berichtsansichten und -namen finden Sie unter [Office 365-Berichte – Yammer-Aktivität](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span><span class="sxs-lookup"><span data-stu-id="c2b54-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="81e44-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="81e44-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c2b54-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c2b54-106">Permissions</span></span>
 
-<span data-ttu-id="81e44-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="81e44-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c2b54-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2b54-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="81e44-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="81e44-109">Permission type</span></span>                        | <span data-ttu-id="81e44-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="81e44-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c2b54-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c2b54-109">Permission type</span></span>                        | <span data-ttu-id="c2b54-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c2b54-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="81e44-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="81e44-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="81e44-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="81e44-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="81e44-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="81e44-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81e44-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="81e44-114">Not supported.</span></span>                           |
-| <span data-ttu-id="81e44-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="81e44-115">Application</span></span>                            | <span data-ttu-id="81e44-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="81e44-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="c2b54-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c2b54-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c2b54-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c2b54-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="c2b54-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c2b54-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2b54-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c2b54-114">Not supported.</span></span>                           |
+| <span data-ttu-id="c2b54-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c2b54-115">Application</span></span>                            | <span data-ttu-id="c2b54-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c2b54-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="81e44-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="81e44-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c2b54-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c2b54-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -36,52 +37,52 @@ ms.locfileid: "29514719"
 GET /reports/getYammerActivityCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="81e44-118">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="81e44-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="c2b54-118">Funktionsparameter</span><span class="sxs-lookup"><span data-stu-id="c2b54-118">Function parameters</span></span>
 
-<span data-ttu-id="81e44-119">Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.</span><span class="sxs-lookup"><span data-stu-id="81e44-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="c2b54-119">Geben Sie in der Anforderungs-URL den folgenden Parameter mit einem gültigen Wert an.</span><span class="sxs-lookup"><span data-stu-id="c2b54-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="81e44-120">Parameter</span><span class="sxs-lookup"><span data-stu-id="81e44-120">Parameter</span></span> | <span data-ttu-id="81e44-121">Typ</span><span class="sxs-lookup"><span data-stu-id="81e44-121">Type</span></span>   | <span data-ttu-id="81e44-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="81e44-122">Description</span></span>                              |
+| <span data-ttu-id="c2b54-120">Parameter</span><span class="sxs-lookup"><span data-stu-id="c2b54-120">Parameter</span></span> | <span data-ttu-id="c2b54-121">Typ</span><span class="sxs-lookup"><span data-stu-id="c2b54-121">Type</span></span>   | <span data-ttu-id="c2b54-122">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c2b54-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="81e44-123">Zeitraum</span><span class="sxs-lookup"><span data-stu-id="81e44-123">period</span></span>    | <span data-ttu-id="81e44-124">string</span><span class="sxs-lookup"><span data-stu-id="81e44-124">string</span></span> | <span data-ttu-id="81e44-125">Gibt die Zeitspanne an, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="81e44-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="81e44-126">Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180.</span><span class="sxs-lookup"><span data-stu-id="81e44-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="81e44-127">Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="81e44-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="81e44-128">Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="81e44-128">Required.</span></span> |
+| <span data-ttu-id="c2b54-123">Zeitraum</span><span class="sxs-lookup"><span data-stu-id="c2b54-123">period</span></span>    | <span data-ttu-id="c2b54-124">string</span><span class="sxs-lookup"><span data-stu-id="c2b54-124">string</span></span> | <span data-ttu-id="c2b54-125">Gibt die Zeitspanne an, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="c2b54-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="c2b54-126">Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180.</span><span class="sxs-lookup"><span data-stu-id="c2b54-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="c2b54-127">Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird.</span><span class="sxs-lookup"><span data-stu-id="c2b54-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="c2b54-128">Erforderlich. </span><span class="sxs-lookup"><span data-stu-id="c2b54-128">Required.</span></span> |
 
-<span data-ttu-id="81e44-129">Diese Methode unterstützt die `$format` [OData-Abfragezeichenfolgen-Parameter](/graph/query-parameters) zum Anpassen der Antwort.</span><span class="sxs-lookup"><span data-stu-id="81e44-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="81e44-130">Der Typ der Standardwert ist Text/Csv.</span><span class="sxs-lookup"><span data-stu-id="81e44-130">The default output type is text/csv.</span></span> <span data-ttu-id="81e44-131">Wenn Sie den Ausgabetyp angeben möchten, können Sie auf Text/Csv "oder" Application/Json festgelegt OData $format Abfragezeichenfolgen-Parameter verwenden.</span><span class="sxs-lookup"><span data-stu-id="81e44-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="c2b54-129">Diese Methode unterstützt die `$format` [OData-Abfragezeichenfolgen-Parameter](/graph/query-parameters) zum Anpassen der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c2b54-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="c2b54-130">Der Typ der Standardwert ist Text/Csv.</span><span class="sxs-lookup"><span data-stu-id="c2b54-130">The default output type is text/csv.</span></span> <span data-ttu-id="c2b54-131">Wenn Sie den Ausgabetyp angeben möchten, können Sie auf Text/Csv "oder" Application/Json festgelegt OData $format Abfragezeichenfolgen-Parameter verwenden.</span><span class="sxs-lookup"><span data-stu-id="c2b54-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="81e44-132">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="81e44-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c2b54-132">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c2b54-132">Request headers</span></span>
 
-| <span data-ttu-id="81e44-133">Name</span><span class="sxs-lookup"><span data-stu-id="81e44-133">Name</span></span>          | <span data-ttu-id="81e44-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="81e44-134">Description</span></span>               |
+| <span data-ttu-id="c2b54-133">Name</span><span class="sxs-lookup"><span data-stu-id="c2b54-133">Name</span></span>          | <span data-ttu-id="c2b54-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c2b54-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="81e44-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="81e44-135">Authorization</span></span> | <span data-ttu-id="81e44-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="81e44-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c2b54-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="c2b54-135">Authorization</span></span> | <span data-ttu-id="c2b54-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c2b54-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="81e44-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="81e44-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c2b54-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="c2b54-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="81e44-139">CSV</span><span class="sxs-lookup"><span data-stu-id="81e44-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="c2b54-139">CSV</span><span class="sxs-lookup"><span data-stu-id="c2b54-139">CSV</span></span>
 
-<span data-ttu-id="81e44-140">Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet.</span><span class="sxs-lookup"><span data-stu-id="81e44-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="81e44-141">Die URL finden Sie in der `Location`-Kopfzeile der Antwort.</span><span class="sxs-lookup"><span data-stu-id="81e44-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="c2b54-140">Wenn diese Methode erfolgreich ist, wird eine `302 Found`-Antwort zurückgegeben, die zu einer vorauthentifizierten Download-URL für den Bericht umleitet.</span><span class="sxs-lookup"><span data-stu-id="c2b54-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="c2b54-141">Die URL finden Sie in der `Location`-Kopfzeile der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c2b54-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="81e44-142">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.</span><span class="sxs-lookup"><span data-stu-id="81e44-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="c2b54-142">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header.</span><span class="sxs-lookup"><span data-stu-id="c2b54-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="81e44-143">Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.</span><span class="sxs-lookup"><span data-stu-id="81e44-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="c2b54-143">Die CSV-Datei verfügt über die folgenden Kopfzeilen für Spalten.</span><span class="sxs-lookup"><span data-stu-id="c2b54-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="81e44-144">Berichtsaktualisierungsdatum</span><span class="sxs-lookup"><span data-stu-id="81e44-144">Report Refresh Date</span></span>
-- <span data-ttu-id="81e44-145">Gelikt</span><span class="sxs-lookup"><span data-stu-id="81e44-145">Liked</span></span>
-- <span data-ttu-id="81e44-146">Gepostet</span><span class="sxs-lookup"><span data-stu-id="81e44-146">Posted</span></span>
-- <span data-ttu-id="81e44-147">Gelesen</span><span class="sxs-lookup"><span data-stu-id="81e44-147">Read</span></span>
-- <span data-ttu-id="81e44-148">Berichtsdatum</span><span class="sxs-lookup"><span data-stu-id="81e44-148">Report Date</span></span>
-- <span data-ttu-id="81e44-149">Berichtszeitraum</span><span class="sxs-lookup"><span data-stu-id="81e44-149">Report Period</span></span>
+- <span data-ttu-id="c2b54-144">Berichtsaktualisierungsdatum</span><span class="sxs-lookup"><span data-stu-id="c2b54-144">Report Refresh Date</span></span>
+- <span data-ttu-id="c2b54-145">Gelikt</span><span class="sxs-lookup"><span data-stu-id="c2b54-145">Liked</span></span>
+- <span data-ttu-id="c2b54-146">Gepostet</span><span class="sxs-lookup"><span data-stu-id="c2b54-146">Posted</span></span>
+- <span data-ttu-id="c2b54-147">Gelesen</span><span class="sxs-lookup"><span data-stu-id="c2b54-147">Read</span></span>
+- <span data-ttu-id="c2b54-148">Berichtsdatum</span><span class="sxs-lookup"><span data-stu-id="c2b54-148">Report Date</span></span>
+- <span data-ttu-id="c2b54-149">Berichtszeitraum</span><span class="sxs-lookup"><span data-stu-id="c2b54-149">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="81e44-150">JSON</span><span class="sxs-lookup"><span data-stu-id="81e44-150">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="c2b54-150">JSON</span><span class="sxs-lookup"><span data-stu-id="c2b54-150">JSON</span></span>
 
-<span data-ttu-id="81e44-151">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines **[YammerActivitySummary](../resources/yammeractivitysummary.md)** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="81e44-151">If successful, this method returns a `200 OK` response code and a **[yammerActivitySummary](../resources/yammeractivitysummary.md)** object in the response body.</span></span>
+<span data-ttu-id="c2b54-151">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eines **[YammerActivitySummary](../resources/yammeractivitysummary.md)** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="c2b54-151">If successful, this method returns a `200 OK` response code and a **[yammerActivitySummary](../resources/yammeractivitysummary.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="81e44-152">Beispiel</span><span class="sxs-lookup"><span data-stu-id="81e44-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c2b54-152">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c2b54-152">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="81e44-153">CSV</span><span class="sxs-lookup"><span data-stu-id="81e44-153">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="c2b54-153">CSV</span><span class="sxs-lookup"><span data-stu-id="c2b54-153">CSV</span></span>
 
-<span data-ttu-id="81e44-154">Es folgt ein Beispiel, das CSV ausgibt.</span><span class="sxs-lookup"><span data-stu-id="81e44-154">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="c2b54-154">Es folgt ein Beispiel, das CSV ausgibt.</span><span class="sxs-lookup"><span data-stu-id="c2b54-154">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="81e44-155">Anforderung</span><span class="sxs-lookup"><span data-stu-id="81e44-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c2b54-155">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c2b54-155">Request</span></span>
 
-<span data-ttu-id="81e44-156">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="81e44-156">The following is an example of the request.</span></span>
+<span data-ttu-id="c2b54-156">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c2b54-156">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -92,9 +93,9 @@ GET /reports/getYammerActivityCounts(period='{period_value}')
 GET https://graph.microsoft.com/beta/reports/getYammerActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="81e44-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="81e44-157">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c2b54-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="c2b54-157">Response</span></span>
 
-<span data-ttu-id="81e44-158">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="81e44-158">The following is an example of the response.</span></span>
+<span data-ttu-id="c2b54-158">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c2b54-158">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -104,7 +105,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="81e44-159">Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.</span><span class="sxs-lookup"><span data-stu-id="81e44-159">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="c2b54-159">Führen Sie die Umleitung 302 aus, und die heruntergeladene CSV-Datei besitzt das folgende Format.</span><span class="sxs-lookup"><span data-stu-id="c2b54-159">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -119,13 +120,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="81e44-160">JSON</span><span class="sxs-lookup"><span data-stu-id="81e44-160">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="c2b54-160">JSON</span><span class="sxs-lookup"><span data-stu-id="c2b54-160">JSON</span></span>
 
-<span data-ttu-id="81e44-161">Es folgt ein Beispiel, das JSON zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="81e44-161">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="c2b54-161">Es folgt ein Beispiel, das JSON zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c2b54-161">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="81e44-162">Anforderung</span><span class="sxs-lookup"><span data-stu-id="81e44-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c2b54-162">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c2b54-162">Request</span></span>
 
-<span data-ttu-id="81e44-163">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="81e44-163">The following is an example of the request.</span></span>
+<span data-ttu-id="c2b54-163">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c2b54-163">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -136,11 +137,11 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getYammerActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="81e44-164">Antwort</span><span class="sxs-lookup"><span data-stu-id="81e44-164">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c2b54-164">Antwort</span><span class="sxs-lookup"><span data-stu-id="c2b54-164">Response</span></span>
 
-<span data-ttu-id="81e44-165">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="81e44-165">The following is an example of the response.</span></span>
+<span data-ttu-id="c2b54-165">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c2b54-165">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="81e44-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="81e44-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c2b54-p106">**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="c2b54-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

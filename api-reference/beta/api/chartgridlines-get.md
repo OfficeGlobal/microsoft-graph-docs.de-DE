@@ -4,52 +4,52 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen von ChartGr
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 98cd42bc38f58a87a9c7abb28184958ae193b324
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7ee70c5afde0a5c6d66b8ce97f9feae861351375
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521775"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574502"
 ---
-# <a name="get-chartgridlines"></a><span data-ttu-id="c7175-103">ChartGridlines abrufen</span><span class="sxs-lookup"><span data-stu-id="c7175-103">Get ChartGridlines</span></span>
+# <a name="get-chartgridlines"></a><span data-ttu-id="2df37-103">ChartGridlines abrufen</span><span class="sxs-lookup"><span data-stu-id="2df37-103">Get ChartGridlines</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c7175-104">Dient zum Abrufen der Eigenschaften und der Beziehungen von ChartGridlines-Objekten.</span><span class="sxs-lookup"><span data-stu-id="c7175-104">Retrieve the properties and relationships of chartgridlines object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c7175-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c7175-105">Permissions</span></span>
-<span data-ttu-id="c7175-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7175-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2df37-104">Dient zum Abrufen der Eigenschaften und der Beziehungen von ChartGridlines-Objekten.</span><span class="sxs-lookup"><span data-stu-id="2df37-104">Retrieve the properties and relationships of chartgridlines object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2df37-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2df37-105">Permissions</span></span>
+<span data-ttu-id="2df37-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2df37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c7175-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c7175-108">Permission type</span></span>      | <span data-ttu-id="c7175-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c7175-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2df37-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2df37-108">Permission type</span></span>      | <span data-ttu-id="2df37-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2df37-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7175-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c7175-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c7175-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7175-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c7175-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c7175-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7175-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7175-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c7175-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c7175-114">Application</span></span> | <span data-ttu-id="c7175-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c7175-115">Not supported.</span></span> |
+|<span data-ttu-id="2df37-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2df37-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2df37-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2df37-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2df37-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2df37-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2df37-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2df37-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2df37-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2df37-114">Application</span></span> | <span data-ttu-id="2df37-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2df37-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7175-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c7175-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2df37-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2df37-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c7175-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="c7175-117">Optional query parameters</span></span>
-<span data-ttu-id="c7175-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c7175-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2df37-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="2df37-117">Optional query parameters</span></span>
+<span data-ttu-id="2df37-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2df37-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c7175-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c7175-119">Request headers</span></span>
-| <span data-ttu-id="c7175-120">Name</span><span class="sxs-lookup"><span data-stu-id="c7175-120">Name</span></span>      |<span data-ttu-id="c7175-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c7175-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2df37-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2df37-119">Request headers</span></span>
+| <span data-ttu-id="2df37-120">Name</span><span class="sxs-lookup"><span data-stu-id="2df37-120">Name</span></span>      |<span data-ttu-id="2df37-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2df37-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c7175-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7175-122">Authorization</span></span>  | <span data-ttu-id="c7175-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c7175-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c7175-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="c7175-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c7175-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="c7175-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2df37-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2df37-122">Authorization</span></span>  | <span data-ttu-id="2df37-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2df37-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2df37-125">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="2df37-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="2df37-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="2df37-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7175-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c7175-128">Request body</span></span>
-<span data-ttu-id="c7175-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c7175-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2df37-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2df37-128">Request body</span></span>
+<span data-ttu-id="2df37-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2df37-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c7175-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="c7175-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2df37-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="2df37-130">Response</span></span>
 
-<span data-ttu-id="c7175-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [ChartGridlines](../resources/chartgridlines.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c7175-131">If successful, this method returns a `200 OK` response code and [ChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c7175-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c7175-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c7175-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c7175-133">Request</span></span>
-<span data-ttu-id="c7175-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c7175-134">Here is an example of the request.</span></span>
+<span data-ttu-id="2df37-131">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [ChartGridlines](../resources/chartgridlines.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2df37-131">If successful, this method returns a `200 OK` response code and [ChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2df37-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2df37-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2df37-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2df37-133">Request</span></span>
+<span data-ttu-id="2df37-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2df37-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartgridlines"
@@ -57,12 +57,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
-##### <a name="response"></a><span data-ttu-id="c7175-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="c7175-135">Response</span></span>
-<span data-ttu-id="c7175-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c7175-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2df37-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="2df37-135">Response</span></span>
+<span data-ttu-id="2df37-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2df37-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
 ```http
 HTTP/1.1 200 OK

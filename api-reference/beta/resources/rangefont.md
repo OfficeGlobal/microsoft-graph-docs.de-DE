@@ -4,44 +4,44 @@ description: Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgr
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507964"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571135"
 ---
-# <a name="rangefont-resource-type"></a><span data-ttu-id="69835-103">RangeFont-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="69835-103">RangeFont resource type</span></span>
+# <a name="rangefont-resource-type"></a><span data-ttu-id="db369-103">RangeFont-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="db369-103">RangeFont resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="69835-104">Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Objekt dar.</span><span class="sxs-lookup"><span data-stu-id="69835-104">This object represents the font attributes (font name, font size, color, etc.) for an object.</span></span>
+<span data-ttu-id="db369-104">Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Objekt dar.</span><span class="sxs-lookup"><span data-stu-id="db369-104">This object represents the font attributes (font name, font size, color, etc.) for an object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="69835-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="69835-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="db369-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="db369-105">Methods</span></span>
 
-| <span data-ttu-id="69835-106">Methode</span><span class="sxs-lookup"><span data-stu-id="69835-106">Method</span></span>           | <span data-ttu-id="69835-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="69835-107">Return Type</span></span>    |<span data-ttu-id="69835-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="69835-108">Description</span></span>|
+| <span data-ttu-id="db369-106">Methode</span><span class="sxs-lookup"><span data-stu-id="db369-106">Method</span></span>           | <span data-ttu-id="db369-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="db369-107">Return Type</span></span>    |<span data-ttu-id="db369-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="db369-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="69835-109">RangeFont abrufen</span><span class="sxs-lookup"><span data-stu-id="69835-109">[Get RangeFont](../api/rangefont-get.md)</span></span> | <span data-ttu-id="69835-110">RangeFont</span><span class="sxs-lookup"><span data-stu-id="69835-110">[RangeFont](rangefont.md)</span></span> |<span data-ttu-id="69835-111">Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="69835-111">Read properties and relationships of rangeFont object.</span></span>|
-|[<span data-ttu-id="69835-112">Update</span><span class="sxs-lookup"><span data-stu-id="69835-112">Update</span></span>](../api/rangefont-update.md) | <span data-ttu-id="69835-113">RangeFont</span><span class="sxs-lookup"><span data-stu-id="69835-113">[RangeFont](rangefont.md)</span></span>   |<span data-ttu-id="69835-114">Dient zum Aktualisieren des RangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="69835-114">Update RangeFont object.</span></span> |
+|[<span data-ttu-id="db369-109">RangeFont abrufen</span><span class="sxs-lookup"><span data-stu-id="db369-109">Get RangeFont</span></span>](../api/rangefont-get.md) | [<span data-ttu-id="db369-110">RangeFont</span><span class="sxs-lookup"><span data-stu-id="db369-110">RangeFont</span></span>](rangefont.md) |<span data-ttu-id="db369-111">Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="db369-111">Read properties and relationships of rangeFont object.</span></span>|
+|[<span data-ttu-id="db369-112">Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="db369-112">Update</span></span>](../api/rangefont-update.md) | [<span data-ttu-id="db369-113">RangeFont</span><span class="sxs-lookup"><span data-stu-id="db369-113">RangeFont</span></span>](rangefont.md)   |<span data-ttu-id="db369-114">Dient zum Aktualisieren des RangeFont-Objekts.</span><span class="sxs-lookup"><span data-stu-id="db369-114">Update RangeFont object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="69835-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="69835-115">Properties</span></span>
-| <span data-ttu-id="69835-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="69835-116">Property</span></span>     | <span data-ttu-id="69835-117">Typ</span><span class="sxs-lookup"><span data-stu-id="69835-117">Type</span></span>   |<span data-ttu-id="69835-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="69835-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="db369-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="db369-115">Properties</span></span>
+| <span data-ttu-id="db369-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="db369-116">Property</span></span>     | <span data-ttu-id="db369-117">Typ</span><span class="sxs-lookup"><span data-stu-id="db369-117">Type</span></span>   |<span data-ttu-id="db369-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="db369-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="69835-119">bold</span><span class="sxs-lookup"><span data-stu-id="69835-119">bold</span></span>|<span data-ttu-id="69835-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="69835-120">boolean</span></span>|<span data-ttu-id="69835-121">Stellt den Fett-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="69835-121">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="69835-122">color</span><span class="sxs-lookup"><span data-stu-id="69835-122">color</span></span>|<span data-ttu-id="69835-123">string</span><span class="sxs-lookup"><span data-stu-id="69835-123">string</span></span>|<span data-ttu-id="69835-p101">HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.</span><span class="sxs-lookup"><span data-stu-id="69835-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="69835-127">italic</span><span class="sxs-lookup"><span data-stu-id="69835-127">italic</span></span>|<span data-ttu-id="69835-128">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="69835-128">boolean</span></span>|<span data-ttu-id="69835-129">Stellt den Kursiv-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="69835-129">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="69835-130">name</span><span class="sxs-lookup"><span data-stu-id="69835-130">name</span></span>|<span data-ttu-id="69835-131">string</span><span class="sxs-lookup"><span data-stu-id="69835-131">string</span></span>|<span data-ttu-id="69835-132">Schriftartname (z. B. "Calibri")</span><span class="sxs-lookup"><span data-stu-id="69835-132">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="69835-133">size</span><span class="sxs-lookup"><span data-stu-id="69835-133">size</span></span>|<span data-ttu-id="69835-134">double</span><span class="sxs-lookup"><span data-stu-id="69835-134">double</span></span>|<span data-ttu-id="69835-135">Schriftgrad</span><span class="sxs-lookup"><span data-stu-id="69835-135">Font size.</span></span>|
-|<span data-ttu-id="69835-136">underline</span><span class="sxs-lookup"><span data-stu-id="69835-136">underline</span></span>|<span data-ttu-id="69835-137">string</span><span class="sxs-lookup"><span data-stu-id="69835-137">string</span></span>|<span data-ttu-id="69835-p102">Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="69835-p102">Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
+|<span data-ttu-id="db369-119">bold</span><span class="sxs-lookup"><span data-stu-id="db369-119">bold</span></span>|<span data-ttu-id="db369-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="db369-120">boolean</span></span>|<span data-ttu-id="db369-121">Stellt den Fett-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="db369-121">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="db369-122">color</span><span class="sxs-lookup"><span data-stu-id="db369-122">color</span></span>|<span data-ttu-id="db369-123">string</span><span class="sxs-lookup"><span data-stu-id="db369-123">string</span></span>|<span data-ttu-id="db369-p101">HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.</span><span class="sxs-lookup"><span data-stu-id="db369-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="db369-127">italic</span><span class="sxs-lookup"><span data-stu-id="db369-127">italic</span></span>|<span data-ttu-id="db369-128">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="db369-128">boolean</span></span>|<span data-ttu-id="db369-129">Stellt den Kursiv-Status der Schriftart dar.</span><span class="sxs-lookup"><span data-stu-id="db369-129">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="db369-130">name</span><span class="sxs-lookup"><span data-stu-id="db369-130">name</span></span>|<span data-ttu-id="db369-131">string</span><span class="sxs-lookup"><span data-stu-id="db369-131">string</span></span>|<span data-ttu-id="db369-132">Schriftartname (z. B. "Calibri")</span><span class="sxs-lookup"><span data-stu-id="db369-132">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="db369-133">size</span><span class="sxs-lookup"><span data-stu-id="db369-133">size</span></span>|<span data-ttu-id="db369-134">double</span><span class="sxs-lookup"><span data-stu-id="db369-134">double</span></span>|<span data-ttu-id="db369-135">Schriftgrad</span><span class="sxs-lookup"><span data-stu-id="db369-135">Font size.</span></span>|
+|<span data-ttu-id="db369-136">underline</span><span class="sxs-lookup"><span data-stu-id="db369-136">underline</span></span>| <span data-ttu-id="db369-137">Enum-Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="db369-137">enum-string</span></span> |<span data-ttu-id="db369-p102">Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="db369-p102">Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="69835-140">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="69835-140">Relationships</span></span>
-<span data-ttu-id="69835-141">Keine</span><span class="sxs-lookup"><span data-stu-id="69835-141">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="db369-140">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="db369-140">Relationships</span></span>
+<span data-ttu-id="db369-141">Keine</span><span class="sxs-lookup"><span data-stu-id="db369-141">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="69835-142">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="69835-142">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="db369-142">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="db369-142">JSON representation</span></span>
 
-<span data-ttu-id="69835-143">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="69835-143">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="db369-143">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="db369-143">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,7 +58,7 @@ ms.locfileid: "29507964"
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "string"
+  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
 }
 
 ```
