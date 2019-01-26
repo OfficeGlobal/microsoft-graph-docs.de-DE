@@ -1,18 +1,16 @@
 ---
 title: Nationale Cloudbereitstellungen
-description: Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physische und logische netzwerkisolierte Instanzen von Microsoft Enterprise Cloud Services, die an die geografischen Grenzen von bestimmten Ländern gebunden sind und von lokalen Mitarbeitern betrieben werden. Weitere Informationen hierzu finden Sie unter „Nationale Clouds von Microsoft“.
-localization_priority: Priority
-ms.openlocfilehash: b22fce675bc97d0f22833d89dab01afd18e06032
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+description: Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physischen und logischen Netzwerk isoliert werden Instanzen des Microsoft Enterprise Cloud-Dienste, die vom lokalen Personal und innerhalb der geografischen Rahmen des bestimmten Ländern beschränkt.
+ms.openlocfilehash: a5f5c5d0ae8611957cb9087de53f5ddd87d1f25d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840418"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571296"
 ---
 # <a name="national-cloud-deployments"></a>Nationale Cloudbereitstellungen
 
-
-Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physische und logische netzwerkisolierte Instanzen von Microsoft Enterprise Cloud Services, die an die geografischen Grenzen von bestimmten Ländern gebunden sind und von lokalen Mitarbeitern betrieben werden. Weitere Informationen hierzu finden Sie unter [Nationale Clouds von Microsoft](https://www.microsoft.com/de-DE/TrustCenter/CloudServices/NationalCloud).
+Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physischen und logischen Netzwerk isoliert werden Instanzen des Microsoft Enterprise Cloud-Dienste, die vom lokalen Personal und innerhalb der geografischen Rahmen des bestimmten Ländern beschränkt.
 
 Aktuelle nationale Wolken umfassen Folgendes:
 
@@ -20,64 +18,76 @@ Aktuelle nationale Wolken umfassen Folgendes:
 - Microsoft Cloud Deutschland
 - Azure und Office 365, betrieben von 21Vianet in China
 
-Dieser Artikel enthält Informationen über die unterschiedlichen nationalen Cloudbereitstellungen von Microsoft Graph und die Features in jeder Bereitstellung, die Entwicklern zur Verfügung stehen.
+Jede Cloudumgebung national ist eindeutig und anderen als der globalen Microsoft-Umgebung. Es ist wichtig, dass einige der wichtigsten Unterschiede bei der Entwicklung von Anwendungen für national Cloud-Umgebungen. Registrierung von Anwendungen, dem Erwerb von Token und die Microsoft Graph-API aufrufen können beispielsweise anders lauten.
 
-## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a>Dienststammendpunkte von Microsoft Graph und Microsoft Graph-Tester
+Dieser Artikel enthält Informationen zu den verschiedenen Microsoft Graph national Cloud-Bereitstellungen und die Funktionen, die innerhalb der einzelnen Entwicklern zur Verfügung stehen.
 
-Die folgende Tabelle zeigt die Dienststammendpunkte für Microsoft Graph und Microsoft Graph-Tester für jede nationale Cloud.
+## <a name="app-registration-and-token-service-root-endpoints"></a>App-Registrierung und Token Stamm Dienstendpunkten
 
-| Nationale Cloud | Microsoft Graph | Microsoft Graph-Tester
+Vor dem Aufrufen der Microsoft Graph-APIs, sollten Sie zuerst registrieren Sie Ihre Anwendung und ein Token zu erwerben. Die folgende Tabelle enthält die Basis URLs für die Azure Active Directory (AD Azure) Endpunkte zum Registrieren der Anwendung und Token für die einzelnen nationalen Cloud zu erwerben.
+
+| National cloud | Azure AD-Portal-Endpunkt| Dem Azure AD-Endpunkt|
 |---------------------------|----------------|----------------|
-| Microsoft Graph China betrieben von 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
+|Azure AD für die US Regierung |https://portal.azure.us|`https://login.microsoftonline.us`|
+|Azure AD Deutschland |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
+|Azure AD China von 21vianet bedient |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
+|Azure AD (weltweiter Service)|https://portal.azure.com |`https://login.microsoftonline.com`|
+
+Weitere Informationen zu Azure AD-Token und Microsoft Graph Zugriff finden Sie unter [Auth-Token abzurufen](./auth-overview.md). Azure AD-Authentifizierungsszenarien finden Sie unter [Grundlagen der Azure AD-Authentifizierung](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+
+> **Hinweis:** Die [Autorisierungs- und Tokenendpunkte von Azure AD, Version 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) sind nur für den globalen Dienst verfügbar. Sie werden noch nicht für die Verwendung mit nationalen Cloudbereitstellungen unterstützt.
+
+
+## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph und Diagramm Explorer Stamm Dienstendpunkten
+
+In der folgenden Tabelle zeigt die Stamm-Endpunkte für Microsoft Graph und [Diagramm Explorer](https://developer.microsoft.com/graph/graph-explorer) für die einzelnen nationalen Cloud.
+
+| Nationale Cloud | Microsoft Graph | Graph-Tester |
+|---------------------------|----------------|----------------|
+| Microsoft Graph für die US-Regierung | https://graph.microsoft.us | Nicht unterstützt. |
 | Microsoft Graph Deutschland | https://graph.microsoft.de | Nicht unterstützt. |
-| Microsoft Graph für die US-Regierung | https://graph.microsoft.com | Nicht unterstützt. |
+| Microsoft Graph China betrieben von 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph weltweiter Service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
-> **Vermerk**:Apps können nur über die nationalen Cloudendpunkte auf Organisationsdaten zugreifen. Dies bedeutet, dass nur auf Daten in Mandanten zugegriffen werden kann, die in der jeweiligen nationalen Cloud registriert sind. Apps, die versuchen, über Microsoft Graph auf Benutzerdaten zuzugreifen, denen persönliche Microsoft-Konten zugeordnet sind, sollten den weltweiten Service verwenden (https://graph.microsoft.com). Zugriffstoken, die für eine nationale Cloudbereitstellung erworben wurden, können nicht mit Token ausgetauscht werden, die für den weltweiten Service erworben wurden.
-
-## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a>Endpunkte für Azure AD OpenID Connect und OAuth2.0
-
-In der folgenden Tabelle sind die Basis-URLs für die Azure Active Directory (Azure AD)-Endpunkte aufgeführt, die zum Erwerben von Token zum Aufrufen von Microsoft Graph für jede nationale Cloud verwendet werden.
-
-| Nationale Cloud | Azure AD-Stammendpunkt |
-|---------------------------|----------------|
-| Azure AD China von 21vianet bedient |https://login.chinacloudapi.cn |
-| Azure AD Deutschland | https://login.microsoftonline.de |
-| Azure AD für die US Regierung | https://login.microsoftonline.us |
-| Azure AD (weltweiter Service) | https://login.microsoftonline.com |
-
-Anforderungen an die Azure AD-Autorisierungs- oder Tokenendpunkte können mit der entsprechenden regionsspezifischen Basis-URL gebildet werden. Zum Beispiel für Deutschland:
-
-- Der allgemeine Endpunkt für die Autorisierung ist https://login.microsoftonline.de/common/oauth2/authorize.
-- Der allgemeine Endpunkt für das Token ist https://login.microsoftonline.de/common/oauth2/token.
-
-Mandantenspezifische Endpunkte können gebildet werden, indem die allgemeine Variable in den URLs oben entweder durch die Mandanten-ID oder durch eine verifizierte Domäne für den Mandanten ersetzt wird. Ob Sie die allgemeinen oder mandantenspezifischen Endpunkte verwenden, ist von den Anforderungen Ihrer App und dem Authentifizierungsfluss abhängig, den Sie zum Abrufen von Token verwenden. Weitere Informationen zu Azure AD-Zugriffstoken und Microsoft Graph finden Sie unter [Authentifizierungstoken abrufen](./auth-overview.md).
-
-> **Hinweis:** Die [Autorisierungs- und Tokenendpunkte von Azure AD, Version 2.0](https://azure.microsoft.com/de-DE/documentation/articles/active-directory-appmodel-v2-overview/) sind nur für den globalen Dienst verfügbar. Sie werden noch nicht für die Verwendung mit nationalen Cloudbereitstellungen unterstützt.
+> **Vermerk**:Apps können nur über die nationalen Cloudendpunkte auf Organisationsdaten zugreifen. Dies bedeutet, dass apps nur Daten im Mandanten zugreifen können, die in der Cloud für bestimmte national registriert sind. Apps, die zugeordneten persönlicher Microsoft-Konten über einen Microsoft Graph Consumer-Daten zugreifen möchten, sollten den globalen Dienst verwenden `https://graph.microsoft.com`. Für eine Cloudbereitstellung national erworbene Zugriffstoken sind nicht mit den für die globalen Dienst oder eine beliebige andere national Cloud erworben austauschbar.
 
 ## <a name="supported-features"></a>Unterstützte Features
 
-Die folgenden Microsoft Graph-Features sind im Allgemeinen in allen nationalen Cloudbereitstellungen (im `/v1.0`-Endpunkt) verfügbar, sofern nicht anders angegeben:
+Die folgenden Features von Microsoft Graph stehen in der Regel auf der `/v1.0` Endpunkt über alle nationalen Cloud-Bereitstellungen, soweit nicht anders angegeben.
 
-* Benutzer
-* Gruppen
-* Excel (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)
-* OneDrive (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)
-* Outlook Mail
-* Outlook-Kalender
-* Private Kontakte 
-* SharePoint (wird nur beschränkt auf Microsoft Graph, betrieben von 21Vianet in China, unterstützt)
-* Delta-Abfrage (Support variiert bei verschiedenen Ressourcen in jeder nationalen Cloudbereitstellung).
-* Webhooks (Support variiert bei verschiedenen Ressourcen in jeder nationalen Cloudbereitstellung).
-
-Die folgenden zusätzlichen Microsoft Graph-Features sind in allen nationalen Cloudbereitstellungen (im `/beta`-Endpunkt) in der Vorschau verfügbar, sofern nicht anders angegeben:
+| Microsoft Graph-features | Microsoft Cloud for US Government | Microsoft Cloud China vom Dienst 21Vianet | Microsoft Cloud Deutschland |
+|---------------------------|----------------|----------------|----------------|
+| Benutzer | ✔ | ✔ | ✔ |
+| Gruppen | ✔ | ✔ | ✔ |
+| Excel | ✔| ✔* | ✔ |
+| OneDrive | ✔ | ✔* | ✔ |
+| Outlook Mail | ✔ | ✔ | ✔ |
+| Outlook-Kalender | ✔ | ✔ | ✔ |
+| Private Kontakte | ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔* | ✔ |
+| Delta-Abfrage | ✔ | ✔ | ✔ |
+| Webhooks  | ✔ | ✔ | ✔ |
+| Berichte  |➖| ✔ |➖|
+| Microsoft Planner|➖|➖|➖|
+|Verzeichnisschemaerweiterungen |➖|➖|➖|
+| Offene Typerweiterungen|➖|➖|➖|
+  
+Die folgenden zusätzlichen Microsoft Graph-Funktionen stehen in der Vorschau (klicken Sie auf die `/beta` Endpunkt) über alle nationalen Cloud-Bereitstellungen, soweit nicht anders angegeben:
 
 * Organisationskontakte
 * Anwendungen
 * Dienstprinzipale
 
-Die folgenden Microsoft Graph-Features werden in nationalen Cloudbereitstellungen noch nicht unterstützt:
+(*) Eingeschränkte Unterstützung für diese API in dieser Cloud.
 
-* Microsoft Planner
-* Verzeichnisschemaerweiterungen
-* Offene Typerweiterungen
+ > **Wichtig:** Bestimmte Dienste und Features, die in bestimmten Regionen des globalen Diensts sind möglicherweise nicht in allen nationalen Wolken verfügbar. Um herauszufinden, welche Dienste zur Verfügung stehen, finden Sie unter [Produkte nach Region zur Verfügung](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
+
+
+Weitere Informationen zum National Wolken finden Sie in den folgenden Themen:
+- [Microsoft National Wolken](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
+- [Office 365 für US-Regierung](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Office 365 handelt, das von 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 Deutschland](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Azure Behörden](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
+- [Azure Deutschland](https://docs.microsoft.com/azure/germany/)

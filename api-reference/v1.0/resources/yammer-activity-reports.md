@@ -3,12 +3,13 @@ title: Yammer-Aktivitätsberichte
 description: Der Yammer-Aktivitätsbericht gibt Aufschluss darüber, in welchem Umfang Yammer in Ihrer Organisation genutzt wird, denn Sie erfahren, wie hoch die Aktivität innerhalb der Organisation ist und wie viele eindeutige Benutzer über Yammer Nachrichten veröffentlichen, liken und lesen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2a97b0d8020a5fce8777d93588e1a38a7ccd8355
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 3ceda4e5771e442f4b664de71b595f8c5b6aeaf7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937621"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573606"
 ---
 # <a name="yammer-activity-reports"></a>Yammer-Aktivitätsberichte
 
@@ -18,7 +19,7 @@ Der Yammer-Aktivitätsbericht gibt Aufschluss darüber, in welchem Umfang Yammer
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getyammeractivityuserdetail.md) | Stream      | Rufen Sie Details zu Yammer-Aktivitäten nach Benutzer ab. |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getyammeractivitycounts.md) | Stream      | Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden. |

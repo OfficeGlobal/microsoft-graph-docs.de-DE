@@ -3,12 +3,13 @@ title: Verwendungsberichte für SharePoint-Website
 description: Sie können die Verwendungsberichte für die SharePoint-Website nutzen, um eine allgemeine Übersicht über den Nutzungswert von SharePoint hinsichtlich der Gesamtzahl der Dateien, die Benutzer in SharePoint-Websites speichern, der Anzahl der aktiv genutzten Dateien und des Speicherplatzes, der für all diese Websites verbraucht wird, zu erhalten. Sie können auch einen Drilldown ausführen, um Trends zu erfassen und Details zu den einzelnen Websites zu erhalten.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: b5fdcf5c264fcbcc499759cf955cc49cdac2976b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 999be8cc10eb0bfa3c937d2fe3e5a849e7423a34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954393"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575069"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Verwendungsberichte für SharePoint-Website
 
@@ -18,7 +19,7 @@ Sie können die Verwendungsberichte für die SharePoint-Website nutzen, um eine 
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Websitedetails abrufen](../api/reportroot-getsharepointsiteusagedetail.md) | Stream      | Abrufen von Details zu SharePoint-Websiteverwendung. |
 | [Dateianzahl abrufen](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream      | Rufen Sie die Gesamtzahl der Dateien auf allen Websites und die Anzahl der aktiven Dateien ab. Eine Datei (Benutzer oder System) wird als aktiv betrachtet, wenn sie innerhalb des angegebenen Zeitraums gespeichert, synchronisiert, geändert oder freigegeben wurde. |

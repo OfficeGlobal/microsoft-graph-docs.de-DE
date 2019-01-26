@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts'
 description: Erhalten Sie Informationen über die Dauer (in Minuten) und die Art der von Benutzern aus Ihrem Unternehmen gehaltenen und organisierten Konferenzsitzungen. Arten von Konferenzsitzungen sind Audio/Video und Einwahl/Auswahl - Microsoft.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: b12a55c3d3d83bdd2dc5a42ec604e53f6b02b5e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 7b20fd8dd9636b55bd614ebee8b1a3c19f38d7b0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509273"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571667"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 

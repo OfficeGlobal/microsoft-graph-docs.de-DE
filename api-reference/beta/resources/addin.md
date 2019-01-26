@@ -2,12 +2,12 @@
 title: AddIn Ressourcentyp
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
-ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4e930ef3073cd3ea242522b537170aece8d49e0d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522329"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570617"
 ---
 # <a name="addin-resource-type"></a>AddIn Ressourcentyp
 
@@ -36,7 +36,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|Guid||
+|id|GUID||
 |properties|[KeyValue](keyvalue.md) -Auflistung||
 |type|string||
 

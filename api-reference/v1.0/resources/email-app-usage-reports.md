@@ -2,14 +2,14 @@
 title: E-Mail-App-Verwendungsbericht
 description: In den E-Mail-App-Verwendungsberichten erfahren Sie, wie viele E-Mail-Apps für die Verbindung mit Exchange Online verwendet werden. Sie können auch nachsehen, welche Versionen von Outlook-Apps verwendet werden, sodass Sie Benutzer informieren können, die auf unterstützte Outlook-Versionen upgraden sollten.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: d9d40ed06aae777ad403142a808035d57b078992
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919903"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574439"
 ---
 # <a name="email-app-usage-reports"></a>E-Mail-App-Verwendungsbericht
 
@@ -19,7 +19,7 @@ In den E-Mail-App-Verwendungsberichten erfahren Sie, wie viele E-Mail-Apps für 
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getemailappusageuserdetail.md) | Stream      | Erhalten Sie detaillierte Informationen darüber, welche Aktivitäten Benutzer mit den verschiedenen E-Mail-Apps ausgeführt haben. |
 | [Benutzeranzahl für Apps abrufen](../api/reportroot-getemailappusageappsusercounts.md) | Stream      | Rufen Sie die Anzahl der eindeutigen Benutzer pro E-Mail-App ab. |

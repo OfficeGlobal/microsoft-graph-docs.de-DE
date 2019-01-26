@@ -2,12 +2,12 @@
 title: Ressourcentyp privilegedApproval
 description: Stellt eine Genehmigung, die für die erste in einer Rolle in privilegierten Identity Management angefordert wird.
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 03cdba4eee7b031645928b2f512288a18ba18bf8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516889"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571017"
 ---
 # <a name="privilegedapproval-resource-type"></a>Ressourcentyp privilegedApproval
 
@@ -43,8 +43,8 @@ Stellt eine Genehmigung, die für die erste in einer Rolle in privilegierten Ide
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Schreibgeschützt. Lässt Nullwerte zu.|
-|Anforderung|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Schreibgeschützt. Die Rolle Zuordnung Anforderung für dieses Objekt Genehmigung|
+|roleInfo| [privilegedRole](privilegedrole.md) | Schreibgeschützt. Lässt Nullwerte zu.|
+|Anforderung| [privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md) | Schreibgeschützt. Die Rolle Zuordnung Anforderung für dieses Objekt Genehmigung|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

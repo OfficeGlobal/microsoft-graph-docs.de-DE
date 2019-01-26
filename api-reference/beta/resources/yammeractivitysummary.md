@@ -3,12 +3,13 @@ title: Ressourcentyp yammerActivitySummary
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 974e234db31a7942b2b1dcbfff469288c32b6749
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: c220ce211c9c6b61d41aa5773e3bcc01697f4e31
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974721"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574166"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>Ressourcentyp yammerActivitySummary
 
@@ -16,12 +17,12 @@ ms.locfileid: "27974721"
 
 | Eigenschaft          | Typ   |
 | :---------------- | :----- |
-| reportRefreshDate | Datum   |
+| reportRefreshDate | Date   |
 | gefallen             | Int64  |
 | gebucht            | Int64  |
 | Lesen              | Int64  |
-| reportDate        | Datum   |
-| reportPeriod      | Zeichenfolge |
+| reportDate        | Date   |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

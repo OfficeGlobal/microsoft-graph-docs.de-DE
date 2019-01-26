@@ -3,12 +3,13 @@ title: OneDrive-Verwendungsberichte
 description: Sie können eine grundlegende Übersicht über den Wert abrufen, die Sie aus OneDrive im Hinblick auf die Gesamtzahl der Dateien und allen OneDrive-Konten in Ihrer Organisation verwendeten Speicher erhalten. Sie können dann ein Drilldown ausführen, um die Trends aktiver OneDrive-Konten zu erfassen und zu erfahren, mit wie vielen Dateien Benutzer interagiert haben und wie viel Speicherplatz verwendet wird. Außerdem haben Sie die pro OneDrive Kontodetails.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c5a73b33f4422440df8817c3f6a69299eedeae50
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 1f899c3a60e1c0d66dd3b7e075bf0daf13de0b43
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519836"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574159"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive-Verwendungsberichte
 
@@ -20,7 +21,7 @@ Sie können eine grundlegende Übersicht über den Wert abrufen, die Sie aus One
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | ---------------------------------------- | ---------------------------------------- |
 | [Kontodetails abrufen](../api/reportroot-getonedriveusageaccountdetail.md) | Stream          | [oneDriveUsageAccountDetail](../resources/onedriveusageaccountdetail.md) | Rufen Sie Details zur OneDrive-Nutzung nach Konto ab. |
 | [Kontoanzahl abrufen](../api/reportroot-getonedriveusageaccountcounts.md) | Stream          | [oneDriveUsageAccountCounts](../resources/onedriveusageaccountcounts.md) | Rufen Sie die Anzahl der aktiven OneDrive for Business-Benutzer ab. Jede Website, über die der Benutzer Dateien angezeigt, geändert, hochgeladen, heruntergeladen, freigegeben oder synchronisiert hat, wird als aktive Website betrachtet. |

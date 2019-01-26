@@ -4,12 +4,12 @@ description: Basistyp Prompt-Aktion.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0176b2d55a91ffca6071279bc77b532a621496f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7261e25f1d0ccec85aad0cc19640e944177b5f0e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511758"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573641"
 ---
 # <a name="prompt-resource-type"></a>Prompt Ressourcentyp
 
@@ -20,6 +20,19 @@ Basistyp Prompt-Aktion.
 ## <a name="properties"></a>Eigenschaften
 
 Keine
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.prompt"
+}-->
+
+```json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: Legt die Füllung eines Diagrammelements auf einfarbige Füllung fe
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e841ee13719b7d19f1ca306ad3a555b447cb9cb6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6c9e7a897d0dfb7a2577f69dff4fb9ac8f841cce
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518492"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573081"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -72,8 +72,7 @@ Content-length: 28
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

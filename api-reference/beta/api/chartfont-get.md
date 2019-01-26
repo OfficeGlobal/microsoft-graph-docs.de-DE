@@ -4,12 +4,12 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartFo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3440b4c01988cfad6af10e40a36da6551f5ec854
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 45901dbbc011e99785bc585e128115aae740d09f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521103"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573277"
 ---
 # <a name="get-chartfont"></a>ChartFont abrufen
 
@@ -46,7 +46,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [ChartFont](../resources/chartfont.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookChartFont](../resources/chartfont.md) -Objekts in der Antworttext.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

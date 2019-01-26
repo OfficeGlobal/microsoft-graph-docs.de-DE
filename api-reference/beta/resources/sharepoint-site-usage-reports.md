@@ -3,12 +3,13 @@ title: Verwendungsberichte für SharePoint-Website
 description: Sie können den Wert eine Ansicht auf oberster Ebene abrufen, die Sie von SharePoint im Hinblick auf die Gesamtzahl der Dateien, die Benutzer in SharePoint-Websites erhalten, wie viele Dateien aktiv verwendet werden und den Speicher für alle diese Websites verbraucht speichern. Anschließend können Sie in der SharePoint-Websiteverwendungsbericht zu verstehen, die Trends und pro Ebene Standortdetails für alle Websites anzeigen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f9186c4caca6afe3f96eca8db2c6fc34131f0b98
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f25d752a179eac68b34465010ce6f2cb7fab08e8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508139"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575279"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Verwendungsberichte für SharePoint-Website
 
@@ -20,7 +21,7 @@ Sie können den Wert eine Ansicht auf oberster Ebene abrufen, die Sie von ShareP
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Websitedetails abrufen](../api/reportroot-getsharepointsiteusagedetail.md) | Stream          | [sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md) | Abrufen von Details zu SharePoint-Websiteverwendung. |
 | [Dateianzahl abrufen](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream          | [sharePointSiteUsageFileCounts](../resources/sharepointsiteusagefilecounts.md) | Rufen Sie die Gesamtzahl der Dateien auf allen Websites und die Anzahl der aktiven Dateien ab. Eine Datei (Benutzer oder System) wird als aktiv betrachtet, wenn sie innerhalb des angegebenen Zeitraums gespeichert, synchronisiert, geändert oder freigegeben wurde. |

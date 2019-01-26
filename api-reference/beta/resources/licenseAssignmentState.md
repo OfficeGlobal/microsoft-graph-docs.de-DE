@@ -2,12 +2,12 @@
 title: Ressourcentyp licenseAssignmentState
 description: 'Die **LicenseAssignmentStates** -Eigenschaft der Benutzerentität ist eine Auflistung von **LicenseAssignmentState**. Es enthält Details zur Lizenz Zuordnungen für einen Benutzer. Die Details enthält Informationen wie folgt:  '
 localization_priority: Normal
-ms.openlocfilehash: a33dce3550d5a842493b73c83e8222a579348c9a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f2f905baaba4dddd65266ffafab44febe7a61139
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515279"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575181"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Ressourcentyp licenseAssignmentState
 
@@ -25,7 +25,7 @@ Die **LicenseAssignmentStates** -Eigenschaft der Entität [Benutzer](user.md) is
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedByGroup|string|Die Id der Gruppe, die diese Lizenz zugewiesen. Wenn die Zuordnung einer Lizenz Direct zugewiesen ist, werden in diesem Feld auf Null festgelegt. Schreibgeschützt.|
-|disabledPlans|Collection(String)|Die Servicepläne, die in dieser Aufgabe deaktiviert sind. Schreibgeschützt.|
+|disabledPlans| Zeichenfolgenauflistung |Die Servicepläne, die in dieser Aufgabe deaktiviert sind. Schreibgeschützt.|
 |error|String|Lizenz-Zuordnung-Fehler. Wenn die Lizenz erfolgreich zugewiesen ist, werden in diesem Feld auf Null festgelegt. Schreibgeschützt. Mögliche Werte: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, und `Others`. Weitere Informationen zum Identifizieren und Beheben von lizenzzuweisung Fehler finden Sie [hier](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|String|Die eindeutige ID der SKU. Schreibgeschützt.|
 |state|String|Geben Sie den aktuellen Status dieser Aufgabe an. Schreibgeschützt. Mögliche Werte: aktiv "," ActiveWithError "," deaktiviert "und" Fehler.|
@@ -33,7 +33,11 @@ Die **LicenseAssignmentStates** -Eigenschaft der Entität [Benutzer](user.md) is
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.licenseAssignmentState"
+}-->
 ```json
 {
   "assignedByGroup": "String",

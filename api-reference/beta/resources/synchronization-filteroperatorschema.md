@@ -2,12 +2,12 @@
 title: Ressourcentyp filterOperatorSchema
 description: Beschreibt einen Operator, der in einem Filter verwendet werden kann.
 localization_priority: Normal
-ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 366e00b5d21efeaf67e3e799c5b1c2412a68e268
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515195"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573682"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Ressourcentyp filterOperatorSchema
 
@@ -19,10 +19,9 @@ Beschreibt einen Operator, der in einem [Filter](synchronization-filter.md)verwe
 
 | Eigenschaft                   | Typ                      | Beschreibung    |
 |:---------------------------|:--------------------------|:---------------|
-|Stelligkeit                       |String          |Stelligkeit des Operators. Mögliche Werte sind: `Binary` und `Unary`. Der Standardwert ist `Binary`.|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Mögliche Werte sind: `All` und `Any`. Gilt nur für mehrwertige Attribute. `All`bedeutet, dass alle Werte, die die Bedingung erfüllen müssen. `Any`bedeutet, dass mindestens ein Wert hat, um die Bedingung zu erfüllen. Der Standardwert ist `All`.|
-|name                        |String                     |Name des Operators. |
-|supportedAttributeTypes     |Zeichenfolgenauflistung         |Attribut Typen, die vom Operator unterstützt. Mögliche Werte sind: `Boolean`, `Binary`, `Reference`, `Integer` und `String`.|
+|Stelligkeit                       | microsoft.graph.scopeOperatorType         |Stelligkeit des Operators. Mögliche Werte sind: `Binary` und `Unary`. Der Standardwert ist `Binary`.|
+|multivaluedComparisonType   | microsoft.graph.scopeOperatorMultiValuedComparisonType          |Mögliche Werte sind: `All` und `Any`. Gilt nur für mehrwertige Attribute. `All`bedeutet, dass alle Werte, die die Bedingung erfüllen müssen. `Any`bedeutet, dass mindestens ein Wert hat, um die Bedingung zu erfüllen. Der Standardwert ist `All`.|
+|supportedAttributeTypes     | AttributeType-Auflistung         |Attribut Typen, die vom Operator unterstützt. Mögliche Werte sind: `Boolean`, `Binary`, `Reference`, `Integer` und `String`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -38,12 +37,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "arity": "String",
-  "multivaluedComparisonType": "String",
-  "name": "String",
-  "supportedAttributeTypes": ["String"]
+  "arity": "microsoft.graph.scopeOperatorType",
+  "multivaluedComparisonType": "microsoft.graph.scopeOperatorMultiValuedComparisonType",  
+  "supportedAttributeTypes": ["attributeType"]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

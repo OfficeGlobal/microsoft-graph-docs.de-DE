@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des Tabellenobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2b78603a261145e2047b5e16175143a3b3c591e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b056a4e2255d4f3627673cb93865ca521947d689
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529061"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574957"
 ---
 # <a name="update-table"></a>Tabelle aktualisieren
 
@@ -74,7 +74,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

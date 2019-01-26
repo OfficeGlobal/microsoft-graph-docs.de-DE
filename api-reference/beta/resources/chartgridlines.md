@@ -4,12 +4,12 @@ description: Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3c57c68e7d9dfcd26741d15e302dd5dddeaae378
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510309"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572535"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines-Ressourcentyp
 
@@ -22,8 +22,8 @@ Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachs
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|ChartGridlines abrufen | ChartGridlines |Dient zum Lesender Eigenschaften und der Beziehungen des chartGridlines-Objekts.|
-|[Update](../api/chartgridlines-update.md) | ChartGridlines    |Dient zum Aktualisieren des ChartGridlines-Objekts. |
+|[ChartGridlines abrufen](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |Dient zum Lesender Eigenschaften und der Beziehungen des chartGridlines-Objekts.|
+|[Aktualisieren](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Dient zum Aktualisieren des ChartGridlines-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -33,7 +33,7 @@ Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachs
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -41,10 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

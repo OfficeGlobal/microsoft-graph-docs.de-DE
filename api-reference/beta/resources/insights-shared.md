@@ -1,17 +1,17 @@
 ---
-title: Shared-Ressourcentyp
+title: freigegebene Ressource-Typ
 description: 'Einen Einblick, freigegebene mit oder von einem bestimmten Benutzer Dateien darstellt. Die folgenden freigegebenen Dateien werden unterstützt:'
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524688"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573179"
 ---
-# <a name="shared-resource-type"></a>Shared-Ressourcentyp
+# <a name="shared-resource-type"></a>freigegebene Ressource-Typ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,11 +41,17 @@ Einen Einblick, freigegebene mit oder von einem bestimmten Benutzer Dateien dars
 
 | Eigenschaft      | Typ          | Beschreibung  |
 | ------------- |---------------| -------------|
-| resource      | Entität        | Verwendet zum Navigieren zu dem Element, das freigegeben wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
+| resource      | Entity-Auflistung | Verwendet zum Navigieren zu dem Element, das freigegeben wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.shared"
+}-->
 ```json
 {
   "id": "string",

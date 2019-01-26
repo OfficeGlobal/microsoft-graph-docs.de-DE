@@ -4,12 +4,12 @@ description: Aktualisieren Sie die Eigenschaften des Event-Objekts.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ec895230ab981e4ccf9b2520a83f40a159386d64
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524975"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571821"
 ---
 # <a name="update-event"></a>Ereignis aktualisieren
 
@@ -60,17 +60,17 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | categories|String|Die Kategorien, die mit dem Ereignis verknüpft sind.|
 | end|DateTimeTimeZone|Datum und Uhrzeit für das Ende des Ereignisses.<br/><br/>Standardmäßig ist die Endzeit in UTC angegeben. Sie können eine optionale Zeitzone in EndTimeZone angeben, die Endzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von EndTimeZone auch ein Wert für StartTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird der 25. Februar 2015 21:34 in PST angegeben: „2015-02-25T21:34:00-08:00“. |
 | Wichtigkeit|String|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
-| isAllDay|Boolescher Wert|True, wenn das Ereignis den ganzen Tag andauert.|
+| isAllDay|Boolean|True, wenn das Ereignis den ganzen Tag andauert.|
 | isReminderOn|Boolean|True, wenn eine Benachrichtigung den Benutzer an das Ereignis erinnern soll.|
-| location|Ort|Der Ort des Ereignisses.|
-|locations|[Standort](../resources/location.md) -Auflistung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
-| recurrence|PatternedRecurrence|Das Serienmuster für das Ereignis.|
+| location| [location](../resources/location.md) |Der Ort des Ereignisses.|
+| locations| [location](../resources/location.md)-Sammlung|Die Orte, an denen die Veranstaltung stattfindet. Die Eigenschaften **location** und **locations** entsprechen sich immer gegenseitig. Wenn Sie die **location**-Eigenschaft aktualisieren, werden alle früheren Orte in der **locations**-Sammlung entfernt und durch den neuen **location**-Wert ersetzt. |
+| recurrence| [patternedRecurrence](../resources/patternedrecurrence.md) |Das Serienmuster für das Ereignis.|
 | reminderMinutesBeforeStart|Int32|Festlegung, wie viele Minuten vor Beginn des Ereignisses die Erinnerung angezeigt werden soll|
 | responseRequested|Boolean|Legen Sie „True“ fest, wenn der Absender eine Antwort erhalten soll, wenn das Ereignis akzeptiert oder abgelehnt wird.|
-| sensitivity|Zeichenfolge| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|String| Mögliche Werte: `normal`, `personal`, `private`, `confidential`.|
 | showAs|Zeichenfolge|Der anzuzeigende Status. Mögliche Werte sind: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|Die Startzeit des Ereignisses. <br/><br/>Standardmäßig ist die Startzeit in UTC angegeben. Sie können eine optionale Zeitzone in StartTimeZone angeben, die Startzeit in dieser Zeitzone angeben und einen Zeitunterschied zur UTC-Zeitzone angeben. Beachten Sie, dass bei Verwendung von StartTimeZone auch ein Wert für EndTimeZone angegeben werden muss.<br/><br/>In diesem Beispiel wird 25. Februar 2015 19:34 in PST angegeben: „2015-02-25T19:34:00-08:00“.  |
-| subject|String|Der Text der Betreffzeile des Ereignisses|
+| Betreff|String|Der Text der Betreffzeile des Ereignisses|
 
 Da die Ressource **Ereignis** [Extensions](/graph/extensibility-overview)unterstützt, können Sie mithilfe der `PATCH` Vorgang hinzufügen, aktualisieren oder Löschen von Ihren eigenen app-spezifischen Daten in benutzerdefinierten Eigenschaften einer Erweiterung in einer vorhandenen Instanz **Ereignis** .
 

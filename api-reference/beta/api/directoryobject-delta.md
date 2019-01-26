@@ -4,12 +4,12 @@ description: 'Get neu erstellt, aktualisiert oder gelöscht Verzeichnisobjekten 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4b00f86dcb3789a2117a23ffa20e6392e557910d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511842"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573256"
 ---
 # <a name="directoryobject-delta"></a>DirectoryObject: Delta
 
@@ -63,7 +63,7 @@ Diese Methode unterstützt optionale Parameter der OData-Abfrage, mit denen die 
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal. <br><br>Angabe dieser Header mit einer Anforderung, die verwendet eine `deltaLink` würde zurückgeben nur die Eigenschaften des Objekts, die seit der letzten Round geändert wurden. Optional. |
+| Prefer | zurückgeben = minimal <br><br>Angabe dieser Header mit einer Anforderung, die verwendet eine `deltaLink` würde zurückgeben nur die Eigenschaften des Objekts, die seit der letzten Round geändert wurden. Optional. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -108,7 +108,8 @@ Hinzufügen einer optionalen Anforderungsheader - `prefer:return=minimal` -führ
 Nachfolgend sehen Sie ein Beispiel der Anforderung. Es ist keine `$select` Parameter, damit ein Standardsatz Eigenschaften nachverfolgt und zurückgegeben wird.
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -150,8 +151,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -160,8 +160,7 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
+      "displayName": "testgp"
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -173,11 +172,8 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "id": "string (identifier)",
-      "jobTitle": "string",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "jobTitle": "string"
+    }    
   ]
 }
 ```
@@ -187,7 +183,8 @@ Content-type: application/json
 Im nächste Beispiel wird die Verwendung des Verhaltens alternative minimale Antwort:
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta"
+  "name": "directoryObject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -229,8 +226,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    },
-    <...response trimmed for brevity...>
+    }    
   ]
 }
 ```
@@ -240,7 +236,8 @@ Content-type: application/json
 Das nächste Beispiel veranschaulicht die erste Anforderung mithilfe der `isOf` Operator herausfiltern nur Benutzer- und Entitäten:
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta"
+  "name": "directoryobject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -280,8 +277,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -290,16 +286,14 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "displayName": "testgp"      
+    }    
   ]
 }
 ```
 
-- [Verwenden einer Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten](/graph/delta-query-overview)
-- [Abrufen inkrementeller Änderungen für Benutzer](/graph/delta-query-users)
+- [Delta-Abfrage zum Nachverfolgen von Änderungen in Microsoft Graph-Daten verwenden](/graph/delta-query-overview).
+- [Inkrementelle Änderungen für Benutzer erhalten möchten](/graph/delta-query-users).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

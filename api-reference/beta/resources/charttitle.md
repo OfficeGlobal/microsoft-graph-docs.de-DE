@@ -4,12 +4,12 @@ description: Ein Diagrammtitelobjekt eines Diagramms.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f0b669593bd9ca0768ad977ace8d54f5531301a4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514712"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573095"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle-Ressourcentyp
 
@@ -22,8 +22,8 @@ Ein Diagrammtitelobjekt eines Diagramms.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|ChartTitle abrufen | [ChartTitle](charttitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartTitle-Objekts.|
-|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Dient zum Aktualisieren des ChartTitle-Objekts. |
+|[ChartTitle abrufen](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartTitle-Objekts.|
+|[Aktualisieren](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |Dient zum Aktualisieren des ChartTitle-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -35,7 +35,7 @@ Ein Diagrammtitelobjekt eines Diagramms.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Stellt die Formatierung für einen Diagrammtitel dar, einschließlich Füllung und Schriftartformatierung. Schreibgeschützt.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Stellt die Formatierung für einen Diagrammtitel dar, einschließlich Füllung und Schriftartformatierung. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -43,10 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

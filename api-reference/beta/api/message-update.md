@@ -4,12 +4,12 @@ description: Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjek
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 78f030e49f5e9caad5cf505be0118eee5b732752
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515685"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573669"
 ---
 # <a name="update-message"></a>Nachricht aktualisieren
 
@@ -44,21 +44,21 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |bccRecipients|Empfänger|Die Bcc:-Empfänger der Nachricht. |
-|body|ItemBody|Der Text der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
+|body|ItemBody|Der Text der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|Empfänger-Sammlung|Die Cc:-Empfänger der Nachricht. |
 |from|Empfänger|Der Postfachbesitzer und Absender der Nachricht. Muss dem tatsächlich verwendeten Postfach entsprechen. |
 |importance|Zeichenfolge|Wichtigkeit der Nachricht Mögliche Werte: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused` oder `other`. |
-|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn IsDraft = True.|
+|internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn isDraft = True.|
 |isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
 |isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
 |replyTo|Empfänger-Sammlung|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Kann nur aktualisiert werden, wenn isDraft = True.|
 |sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Kann beim Senden einer Nachricht aus einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) oder beim Senden einer Nachricht als[Stellvertretung](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) aktualisiert werden. Der Wert muss auf jeden Fall dem tatsächlich verwendeten Postfach entsprechen.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
-|subject|String|Der Betreff der Nachricht. Kann nur aktualisiert werden, wenn IsDraft = True.|
+|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|subject|String|Der Betreff der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
 |toRecipients|Empfänger-Sammlung|Die An:-Empfänger der Nachricht. |
 
 Da die **message**-Ressource [Erweiterungen](/graph/extensibility-overview) unterstützt, erlaubt der `PATCH`-Vorgang das Hinzufügen, Aktualisieren oder Löschen eigener App-spezifischer Daten in den benutzerdefinierten Eigenschaften von Erweiterungen in vorhandenen **message**-Instanzen.

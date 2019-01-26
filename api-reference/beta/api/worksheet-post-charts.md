@@ -4,12 +4,12 @@ description: Verwenden Sie diese API zum Erstellen eines neuen Diagramms.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 27bd441e6002d69cf94f79b8e3de40f9614ad6a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07d310471aef6560557a8a78c62b8aa15767c90f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522770"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570869"
 ---
 # <a name="create-chart"></a>Diagramm erstellen
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Chart](../resources/chart.md)-Objekts an.
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [WorkbookChart](../resources/chart.md) -Objekts.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [WorkbookChart](../resources/chart.md) im Antworttext.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -62,13 +62,13 @@ Content-length: 52
   "left": 99
 }
 ```
-Geben Sie im Anforderungstext eine JSON-Darstellung des [Chart](../resources/chart.md)-Objekts an.
+Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [WorkbookChart](../resources/chart.md) -Objekts.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created

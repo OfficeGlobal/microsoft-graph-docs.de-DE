@@ -4,12 +4,12 @@ description: Erstellen Sie eine neue Tabelle. Die Bereichsquelladresse bestimmt 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a4d96ba219ffe10d0bb0a4e5d414fd474490e84a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d8b317bc3e7d91a17039b76199e0db830491e5ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522903"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571772"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -53,7 +53,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Table](../resources/table.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [WorkbookTable](../resources/table.md) im Antworttext.
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
@@ -79,7 +79,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: Office 365-Gruppenaktivitätsberichte
 description: Können Sie Einblicke in die Aktivität des Office 365-Gruppen in Ihrer Organisation erhalten und finden Sie unter wie viele Office 365-Gruppen werden erstellt und verwendet.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 42015937fc13e99373ee0a236f8b20696311028d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: e698a1096d244b864bbb15cf06c16e8cf79ff1f2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520473"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572199"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365-Gruppenaktivitätsberichte
 
@@ -20,7 +21,7 @@ Können Sie Einblicke in die Aktivität des Office 365-Gruppen in Ihrer Organisa
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Gruppendetails abrufen](../api/reportroot-getoffice365groupsactivitydetail.md) | Stream          | [office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md) | Rufen Sie Details zur Office 365-Gruppenaktivität nach Gruppe ab. |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getoffice365groupsactivitycounts.md) | Stream          | [office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md) | Rufen Sie die Anzahl der Gruppenaktivitäten für Gruppenarbeitslasten ab. |

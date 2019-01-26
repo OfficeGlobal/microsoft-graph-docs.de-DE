@@ -4,12 +4,12 @@ description: Stellt eine Excel-Tabelle dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510666"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572682"
 ---
 # <a name="table-resource-type"></a>Table-Ressourcentyp
 
@@ -33,7 +33,7 @@ Stellt eine Excel-Tabelle dar.
 |[Totalrowrange](../api/table-totalrowrange.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Tabelle verknüpft ist.|
 |[Clearfilters](../api/table-clearfilters.md)|Keine|Löscht alle Filter, die derzeit in der Tabelle verwendet werden.|
 |[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Wandelt die Tabelle in einen normalen Bereich von Zellen um. Alle Daten werden beibehalten.|
-|[Delete](../api/table-delete.md)|Keiner|Löscht die Tabelle.|
+|[Delete](../api/table-delete.md)|Keine|Löscht die Tabelle.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Keine|Wendet alle Filter erneut an, die derzeit in der Tabelle vorhanden sind.|
 |[List](../api/table-list.md) | [Tabellensammlung](table.md) |Dient zum Abrufen einer Tabellenobjektsammlung. |
 |[Add](../api/tablecollection-add.md)|[Table](table.md)|Erstellen Sie eine neue Tabelle. Die Bereichsquelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann, (z. B. da die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst.|
@@ -46,20 +46,20 @@ Stellt eine Excel-Tabelle dar.
 |showHeaders|Boolescher Wert|Gibt an, ob die Kopfzeile sichtbar oder nicht sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.|
 |showTotals|Boolescher Wert|Gibt an, ob die Ergebniszeile sichtbar ist oder nicht. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.|
 |style|string|Konstanter Wert, der das Tabellenformat darstellt. Die folgenden Werte sind möglich: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.|
-|highlightFirstColumn|Boolescher Wert|Gibt an, ob die erste Spalte spezielle Formatierung enthält.   |
-|highlightLastColumn|Boolescher Wert|Gibt an, ob die letzte Spalte spezielle Formatierung enthält. |
-|showBandedColumns|Boolescher Wert|Gibt an, ob die Spalten gebänderte Formatierung aufweisen, wobei ungerade Spalten anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.   |
+|highlightFirstColumn|Boolean|Gibt an, ob die erste Spalte spezielle Formatierung enthält.   |
+|highlightLastColumn|Boolean|Gibt an, ob die letzte Spalte spezielle Formatierung enthält. |
+|showBandedColumns|Boolean|Gibt an, ob die Spalten gebänderte Formatierung aufweisen, wobei ungerade Spalten anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.   |
 |showBandedRows|Boolean|Gibt an, ob die Zeilen gebänderte Formatierung aufweisen, wobei ungerade Zeilen anders hervorgehoben werden als gerade, um die Tabelle leichter lesbar zu machen.    |
-|showFilterButton|Boolescher Wert|Gibt an, ob die Filterschaltflächen am oberen Rand jedes Spaltenheaders sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.   |
+|showFilterButton|Boolean|Gibt an, ob die Filterschaltflächen am oberen Rand jedes Spaltenheaders sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.   |
 |legacyId|String|In älteren Excel-Clients verwendete Legacy-ID. Der Wert des Bezeichners bleibt unverändert, auch wenn die Tabelle umbenannt wird. Diese Eigenschaft sollte als nicht transparenter Zeichenfolgenwert interpretiert werden und sollte nicht in einen anderen Typ ausgewertet werden. Schreibgeschützt.   |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md)-Sammlung|Stellt eine Auflistung aller Spalten in der Tabelle dar. Schreibgeschützt.|
-|Rows|[TableRow](tablerow.md)-Sammlung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
-|sort|[TableSort](tablesort.md)|Stellt die Sortierung für die Tabelle dar. Schreibgeschützt.|
-|Arbeitsblatt|[Worksheet](worksheet.md)|Das Arbeitsblatt, das die aktuelle Tabelle enthält. Schreibgeschützt.|
+|columns|[TableColumn](tablecolumn.md) -Auflistung|Stellt eine Auflistung aller Spalten in der Tabelle dar. Schreibgeschützt.|
+|Rows|[TableRow](tablerow.md) -Auflistung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
+|sort|[tableSort](tablesort.md)|Stellt die Sortierung für die Tabelle dar. Schreibgeschützt.|
+|Arbeitsblatt|[workbookWorksheet](worksheet.md)|Das Arbeitsblatt, das die aktuelle Tabelle enthält. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -70,7 +70,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json

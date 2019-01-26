@@ -4,12 +4,12 @@ description: Die audio Routinggruppe speichert eine private audio Route zwischen
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509623"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573018"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Ressourcentyp audioRoutingGroup
 
@@ -24,8 +24,8 @@ Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer a
 | Methode                                                  | Rückgabetyp                               | Beschreibung                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Abrufen von audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Lesen Sie Eigenschaften und Beziehungen des AudioRoutingGroup-Objekts.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Aktualisieren Sie Ereignisempfänger Liste.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Keine                                      | Löschen der audio Routinggruppe.              |
+| [Aktualisieren](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Aktualisieren Sie Ereignisempfänger Liste.                       |
+| [Löschen](../api/audioroutinggroup-delete.md)            | Keine                                      | Löschen der audio Routinggruppe.              |
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -59,9 +59,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "receivers": [ "Guid" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "Guid" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

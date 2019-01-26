@@ -263,7 +263,7 @@ items:
                 href: api/group-addfavorite.md
               - name: Mitglied hinzufügen
                 href: api/group-post-members.md
-              - name: Add owner
+              - name: Besitzer hinzufügen
                 href: api/group-post-owners.md
               - name: Mitgliedergruppen prüfen
                 href: api/group-checkmembergroups.md
@@ -475,7 +475,7 @@ items:
       - name: Kalender
         href: resources/calendar.md
         items:
-          - name: Ereignis
+          - name: Veranstaltung
             href: resources/event.md
             items:
               - name: Ereignisse auflisten
@@ -6438,7 +6438,7 @@ items:
                 href: api/educationuser-get.md
               - name: Benutzer löschen
                 href: api/educationuser-delete.md
-          - name: Zuweisung
+          - name: Zuordnung
             href: resources/educationassignment.md
             items:
               - name: Erstellen der Zuordnung
@@ -6701,7 +6701,7 @@ items:
           - name: App-rollenzuweisung
             href: resources/approleassignment.md
             items:
-              - name: Abrufen von appRoleAssignment
+              - name: appRoleAssignment abrufen
                 href: api/approleassignment-get.md
               - name: Approleassignment aktualisieren
                 href: api/approleassignment-update.md
@@ -7410,8 +7410,8 @@ items:
                 href: api/sectiongroup-list-sections.md
               - name: Abschnitt erstellen
                 href: api/sectiongroup-post-sections.md
-          - name: Seiten
-            href: resources/page.md
+          - name: OneNote-Seiten
+            href: resources/onenotepage.md
             items:
               - name: Seiten auflisten
                 href: api/onenote-list-pages.md
@@ -7960,7 +7960,7 @@ items:
                 href: api/group-delete-members.md
               - name: Besitzer auflisten
                 href: api/group-list-owners.md
-              - name: Add owner
+              - name: Besitzer hinzufügen
                 href: api/group-post-owners.md
               - name: Besitzer entfernen
                 href: api/group-delete-owners.md
@@ -8175,7 +8175,7 @@ items:
       - name: Arbeitsmappen und Diagramme
         href: resources/excel.md
         items:
-          - name: Workbook
+          - name: Arbeitsmappe
             href: resources/workbook.md
             items:
               - name: Erstellen der Sitzung
@@ -8274,8 +8274,8 @@ items:
                 href: api/chart-setdata.md
               - name: Set Position-Daten
                 href: api/chart-setposition.md
-          - name: Benanntes Element
-            href: resources/nameditem.md
+          - name: Arbeitsmappe benannte Element
+            href: resources/workbooknameditem.md
             items:
               - name: Liste mit der Bezeichnung item
                 href: api/nameditem-get.md

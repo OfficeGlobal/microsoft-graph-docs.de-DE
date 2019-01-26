@@ -2,12 +2,12 @@
 title: recipient-Ressourcentyp
 description: 'Stellt Informationen zu einem Benutzer am sendenden oder empfangenden Ende eines Ereignisses, einer Nachricht oder einer Gruppenveröffentlichung dar. '
 localization_priority: Normal
-ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1ae49432e0ef6ab5881b41d9de5adebd306a4da8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525542"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574943"
 ---
 # <a name="recipient-resource-type"></a>recipient-Ressourcentyp
 
@@ -34,7 +34,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "emailAddress": {"@odata.type": "#microsoft.graph.emailAddress"}
 }
 
 ```

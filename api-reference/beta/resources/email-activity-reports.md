@@ -2,14 +2,14 @@
 title: E-Mail-Aktivitätsberichte
 description: Sie können eine Ansicht der e-Mail-Verkehr auf oberster Ebene innerhalb Ihrer Organisation über die Seite Berichte abrufen. Sie können auch in der e-Mail-Aktivität-Widget zu verstehen, die Trends und Details pro Benutzer, der die e-Mail-Aktivität in Ihrer Organisation anzeigen.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: e11de43f197e520d653961af9b9090d06b085369
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 748199a2e846cc71a3f04c3ea1bda97dcf2c7301
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528305"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573900"
 ---
 # <a name="email-activity-reports"></a>E-Mail-Aktivitätsberichte
 
@@ -21,7 +21,7 @@ Sie können eine Ansicht der e-Mail-Verkehr auf oberster Ebene innerhalb Ihrer O
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getemailactivityuserdetail.md) | Stream          | [emailActivityUserDetail](../resources/emailactivityuserdetail.md) | Erhalten Sie detaillierte Informationen über die von Benutzern ausgeführten E-Mail-Aktivitäten. |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getemailactivitycounts.md) | Stream          | [emailActivitySummary](../resources/emailactivitysummary.md) | Ermöglicht es Ihnen, einen Überblick über die E-Mail-Aktivitäten (z. B. wie viele E-Mails versendet, gelesen und empfangen wurden) in Ihrer Organisation zu gewinnen. |

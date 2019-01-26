@@ -2,12 +2,12 @@
 title: Ressourcentyp attachment
 description: Sie können ein Ereignis verwandten Inhalten hinzugefügt
 localization_priority: Normal
-ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526942"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573424"
 ---
 # <a name="attachment-resource-type"></a>Ressourcentyp attachment
 
@@ -27,9 +27,9 @@ Die folgenden Methoden gelten für alle abgeleiteten Typen von Anlagen (**fileAt
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Anlage abrufen](../api/attachment-get.md) | [Anlage](attachment.md) |Lesen Sie die Eigenschaften und Beziehungen der Anlage, die ein Ereignis, Nachricht, Outlook-Aufgabe oder Post zugeordnet ist.|
-|[Anlage einem Ereignis hinzufügen](../api/event-post-attachments.md) | [Anlage](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Ereignis.|
-|[Anlagen einer Nachricht hinzufügen](../api/message-post-attachments.md) | [Anlage](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einer Nachricht.|
+|[Anlage abrufen](../api/attachment-get.md) | [attachment](attachment.md) |Lesen Sie die Eigenschaften und Beziehungen der Anlage, die ein Ereignis, Nachricht, Outlook-Aufgabe oder Post zugeordnet ist.|
+|[Anlage einem Ereignis hinzufügen](../api/event-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Ereignis.|
+|[Anlagen einer Nachricht hinzufügen](../api/message-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einer Nachricht.|
 |[Hinzufügen einer Outlook-Aufgabe des Attachment-Objekts](../api/outlooktask-post-attachments.md) | [Anlage](attachment.md) |Hinzufügen einer Datei, Element oder Link Anlage zu einer Outlook-Aufgabe.|
 |[Anlage einem Beitrag hinzufügen](../api/post-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Beitrag.|
 |[Anlagen eines Ereignisses auflisten](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für ein Ereignis abrufen |
@@ -44,8 +44,8 @@ Nachfolgend finden Sie die grundlegenden Eigenschaften von attachment-Ressourcen
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contentType|Zeichenfolge|Der MIME-Typ.|
-|id|Zeichenfolge| Schreibgeschützt.|
+|contentType|String|Der MIME-Typ.|
+|id|String| Schreibgeschützt.|
 |isInline|Boolean|`true`, wenn die Anlage eine Inlineanlage ist, andernfalls `false`.|
 |lastModifiedDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |name|String|Der Anzeigename der Anlage. Dies muss nicht der tatsächliche Dateiname sein.|
@@ -60,6 +60,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

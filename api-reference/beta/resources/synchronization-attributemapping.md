@@ -2,12 +2,12 @@
 title: Ressourcentyp attributeMapping
 description: Definiert, wie die Werte für das angegebene Ziel-Attribut während der Synchronisation übertragen werden soll.
 localization_priority: Normal
-ms.openlocfilehash: 16235cce73a17b462f6f44aedf0c8759277983c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9f33aa9a784ba3e40fd8d38650737a9064a0831c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509322"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573662"
 ---
 # <a name="attributemapping-resource-type"></a>Ressourcentyp attributeMapping
 
@@ -21,8 +21,8 @@ Definiert, wie die Werte für das angegebene Ziel-Attribut während der Synchron
 |:--------------------------|:--------------------------|:---------------|
 |defaultValue               | Zeichenfolge                    |Standardwert verwendet werden, für den Fall, dass die **Source** -Eigenschaft auf ausgewertet wurde `null`. Optional.|
 |exportMissingReferences    |String                     |Nur für internen Gebrauch.|
-|flowBehavior               |attributeFlowBehavior      |Definiert, wenn dieses Attribut in das Zielverzeichnis exportiert werden sollen. Mögliche Werte sind: `FlowWhenChanged` und `FlowAlways`. Der Standardwert lautet `FlowWhenChanged`. |
-|Wechselkurs des Flusstyps                   |attributeFlowType          |Definiert, wenn dieses Attribut in das Zielverzeichnis aktualisiert werden soll. Mögliche Werte sind: `Always` (Standard), `ObjectAddOnly` (nur wenn neues Objekt erstellt wird), `MultiValueAddOnly` (nur wenn die Änderung neue Werte ein Attribut mit mehreren Werten hinzugefügt werden). |
+|flowBehavior               | Enum-Zeichenfolge      |Definiert, wenn dieses Attribut in das Zielverzeichnis exportiert werden sollen. Mögliche Werte sind: `FlowWhenChanged` und `FlowAlways`. Der Standardwert lautet `FlowWhenChanged`. |
+|Wechselkurs des Flusstyps                   | Ennum-Zeichenfolge          |Definiert, wenn dieses Attribut in das Zielverzeichnis aktualisiert werden soll. Mögliche Werte sind: `Always` (Standard), `ObjectAddOnly` (nur wenn neues Objekt erstellt wird), `MultiValueAddOnly` (nur wenn die Änderung neue Werte ein Attribut mit mehreren Werten hinzugefügt werden). |
 |matchingPriority           |Int32                      |Wenn größer als 0, wird dieses Attribut zum Ausführen einer anfänglichen Übereinstimmung zwischen Quell- und Ziel-Verzeichnissen-Objekte verwendet werden. Das Synchronisierungsmodul versucht, das mithilfe des Attributs mit dem niedrigsten Wert von übereinstimmenden Priorität zuerst übereinstimmende Objekt zu suchen. Wenn nicht gefunden, wird das Attribut mit der nächsten übereinstimmenden Priorität verwendet werden und so weiter ein bis Übereinstimmung gefunden wurde oder keine weiteren übereinstimmenden Attribute bleiben. Als übereinstimmende Attribute sollte nur Attribute, die erwartet werden, damit eindeutige Werte wie e-Mails, die verwendet werden.|
 |source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | Definiert, wie ein Wert sein sollte extrahiert haben (oder transformiert), aus dem Quellobjekt. |
 |targetAttributeName        |String                     |Name des Attributs im Zielobjekt. |
@@ -43,8 +43,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "defaultValue": "String",
   "exportMissingReferences": true,
-  "flowBehavior": "String",
-  "flowType": "String",
+  "flowBehavior": "FlowWhenChanged | FlowAlways",
+  "flowType": "Always |  ObjectAddOnly | MultiValueAddOnly ",
   "matchingPriority": 1024,
   "source": {"@odata.type": "microsoft.graph.attributeMappingSource"},
   "targetAttributeName": "String"

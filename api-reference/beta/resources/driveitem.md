@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516742"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572067"
 ---
 # <a name="driveitem-resource-type"></a>Ressourcentyp driveItem
 
@@ -38,16 +38,22 @@ Es folgt eine JSON-Darstellung einer **driveItem**-Ressource.
 
 Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erbt Eigenschaften von dieser Ressource.
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -100,17 +106,17 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
+| audio                | [audio](audio.md)  | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
 | createdBy            | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.
 | createdDateTime      | DateTimeOffset     | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.
 | cTag                 | String             | Ein ETag für den Inhalt des Elements. Dieses ETag wird nicht geändert, wenn nur die Metadaten geändert werden. **Hinweis:** Diese Eigenschaft wird nicht zurückgegeben, wenn das Element ein Ordner ist. Schreibgeschützt.
 | gelöscht              | [deleted][]        | Informationen zum „gelöscht“-Zustand des Elements. Schreibgeschützt.
-| description          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
-| eTag                 | Zeichenfolge             | ETag des gesamten Elements (Metadaten + Inhalt). Schreibgeschützt.
+| description          | String             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
+| eTag                 | String             | ETag des gesamten Elements (Metadaten + Inhalt). Schreibgeschützt.
 | file                 | [file][]           | Dateimetadaten, wenn das Element eine Datei ist. Schreibgeschützt.
 | fileSystemInfo       | [fileSystemInfo][] | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.
-| folder               | [Ordner][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
-| id                   | string             | Der eindeutige Bezeichner des Elements im Laufwerk. Schreibgeschützt.
+| folder               | [folder][]         | Ordnermetadaten, wenn das Element ein Ordner ist. Schreibgeschützt.
+| id                   | String             | Der eindeutige Bezeichner des Elements im Laufwerk. Schreibgeschützt.
 | Abbildung                | [image][]          | Bildmetadaten, wenn das Element ein Bild ist. Schreibgeschützt.
 | lastModifiedBy       | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.
 | lastModifiedDateTime | DateTimeOffset     | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.
@@ -140,7 +146,7 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | Aktivitäten         | [ItemActivity][]-Sammlung     | Die Liste der letzten Aktivitäten, die für dieses Element durchgeführt wurden.
 | analytics          | [itemAnalytics][]-Ressource      | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
 | content            | Stream                          | Der Inhaltsdatenstrom, wenn das Element eine Datei darstellt.
-| children           | driveitem-Sammlung            | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.
+| children           | driveitem-Sammlung            | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Nullwerte zulassend.
 | listItem           | [listItem][]                    | Für Laufwerke in SharePoint das zugehörige Dokumentbibliothek-Listenelement. Schreibgeschützt. Lässt Nullwerte zu.
 | Berechtigungen        | [permission][] collection       | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
 | thumbnails         | [thumbnailSet][] collection     | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Nullwerte zulassend.

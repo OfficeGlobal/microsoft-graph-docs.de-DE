@@ -2,12 +2,12 @@
 title: Ressourcentyp „locationConstraint“
 description: Die vom Client definierten Bedingungen für den Ort einer Besprechung
 localization_priority: Normal
-ms.openlocfilehash: f311ceae1718333ba6ffca55f046317d6da53705
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e15acbac529179b0d79fd8b9b52f691fa9ef1322
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522742"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573032"
 ---
 # <a name="locationconstraint-resource-type"></a>Ressourcentyp „locationConstraint“
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json
@@ -38,7 +38,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|isRequired|Boolescher Wert|Der Client fordert den Dienst auf, in der Antwort einen Besprechungsort für die Besprechung anzugeben. Ist diese Eigenschaft auf „true“ gesetzt und alle Ressourcen sind gebucht, gibt [findMeetingTimes](../api/user-findmeetingtimes.md) keine Besprechungsterminvorschläge zurück. Ist diese Eigenschaft auf „false“ gesetzt und alle Ressourcen sind gebucht, sucht **findMeetingTimes** trotzdem nach Besprechungsterminen, jedoch nicht nach Orten. |
+|isRequired|Boolean|Der Client fordert den Dienst auf, in der Antwort einen Besprechungsort für die Besprechung anzugeben. Ist diese Eigenschaft auf „true“ gesetzt und alle Ressourcen sind gebucht, gibt [findMeetingTimes](../api/user-findmeetingtimes.md) keine Besprechungsterminvorschläge zurück. Ist diese Eigenschaft auf „false“ gesetzt und alle Ressourcen sind gebucht, sucht **findMeetingTimes** trotzdem nach Besprechungsterminen, jedoch nicht nach Orten. |
 |locations|[locationConstraintItem](locationconstraintitem.md) collection|Einschränkungsinformationen für einen oder mehrere Orte, die der Kunde für die Besprechung anfordert|
 |suggestLocation|Boolean|Der Client fordert den Dienst auf, einen oder mehrere Besprechungsorte vorzuschlagen.|
 

@@ -3,12 +3,13 @@ title: Yammer-Aktivitätsberichte
 description: Wie viel Aktivität, über die Organisation und die Anzahl der eindeutigen Benutzer, die buchen generiert wird, like und Lesen von Nachrichten auf Yammer, können Sie die Ebene des Engagements mit Yammer Ihrer Organisation vertraut sein.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 252748b639f256467b2a01336488e1df086c69cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d5953d8bd53158b2ec0532deb47c48028ba1b8c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509938"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571800"
 ---
 # <a name="yammer-activity-reports"></a>Yammer-Aktivitätsberichte
 
@@ -20,7 +21,7 @@ Wie viel Aktivität, über die Organisation und die Anzahl der eindeutigen Benut
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
+| Function                                 | Rückgabetyp CSV | Rückgabetyp JSON                         | Beschreibung                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | [yammerActivityUserDetail](../resources/yammeractivityuserdetail.md) | Rufen Sie Details zu Yammer-Aktivitäten nach Benutzer ab. |
 | [Aktivitätsanzahl abrufen](../api/reportroot-getyammeractivitycounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Gewinnen Sie einen Eindruck der Yammer-Aktivitäten in Ihrer Organisation, indem Sie erfahren, wie viele Nachrichten gepostet, gelesen und gelikt wurden. |

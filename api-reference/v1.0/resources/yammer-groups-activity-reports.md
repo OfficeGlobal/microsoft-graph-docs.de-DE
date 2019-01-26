@@ -3,12 +3,13 @@ title: Yammer-Gruppenaktivitätsberichte
 description: Mit den Yammer-Gruppenaktivitätsberichten erhalten Sie Einblicke in die Aktivitäten der Yammer-Gruppen innerhalb Ihrer Organisation und erfahren, wie viele Yammer-Gruppen erstellt und verwendet wurden.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 435def4b4eec50b4c706ac3cdd3cd91c843f8818
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: fd29d0ed2e1bc551595c8b8403325f64fc44998d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927835"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571009"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer-Gruppenaktivitätsberichte
 
@@ -18,7 +19,7 @@ Mit den Yammer-Gruppenaktivitätsberichten erhalten Sie Einblicke in die Aktivit
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Gruppendetails abrufen](../api/reportroot-getyammergroupsactivitydetail.md) | Stream      | Rufen Sie Details zur Yammer-Gruppenaktivität nach Gruppe ab. |
 | [Gruppenanzahl abrufen](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Stream      | Erfahren Sie, wie viele Gruppen bisher vorhanden waren und bei wie vielen davon Gruppenunterhaltungsaktivitäten ausgeführt wurden. |

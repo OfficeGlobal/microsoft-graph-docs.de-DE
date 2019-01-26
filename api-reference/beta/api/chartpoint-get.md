@@ -4,12 +4,12 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartPo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d1150c2698f6842c8513977d8d49da264104a350
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a9eeb85a444a691c0bacfcf87142569ff36a83a3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519332"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573249"
 ---
 # <a name="get-chartpoint"></a>ChartPoint abrufen
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 200 OK

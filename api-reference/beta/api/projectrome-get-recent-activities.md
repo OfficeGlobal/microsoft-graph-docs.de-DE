@@ -1,14 +1,14 @@
 ---
 title: Abrufen aktueller Benutzeraktivitäten
-description: " API Der Dienst für die aktuelle HistoryItems Abfragen, und ziehen Sie die zugehörigen Aktivitäten. Aktivitäten werden entsprechend der neuesten **LastModified** auf die **HistoryItem**sortiert. Dies bedeutet, dass Aktivitäten ohne **HistoryItems** nicht in der Antwort enthalten sein werden. Die Berechtigung UserActivity.ReadWrite.CreatedByApp wird auch gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung."
+description: " API. Der Dienst für die aktuelle HistoryItems Abfragen, und ziehen Sie die zugehörigen Aktivitäten. Aktivitäten werden entsprechend der neuesten **LastModified** auf die **HistoryItem**sortiert. Dies bedeutet, dass Aktivitäten ohne **HistoryItems** nicht in der Antwort enthalten sein werden. Die Berechtigung UserActivity.ReadWrite.CreatedByApp wird auch gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f19dc8eea40d61afba8e34891431a73f565d6ec3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528963"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573165"
 ---
 # <a name="get-recent-user-activities"></a>Abrufen aktueller Benutzeraktivitäten
 
@@ -88,7 +88,8 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -99,7 +100,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",

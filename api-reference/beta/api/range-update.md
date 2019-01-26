@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des Bereichsobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507705"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574026"
 ---
 # <a name="update-range"></a>range aktualisieren
 
@@ -44,12 +44,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |columnHidden|Boolescher Wert|Stellt dar, ob alle Spalten des aktuellen Bereichs ausgeblendet sind.|
-|formulas|json|Stellt die Formel in der A1-Schreibweise dar.|
-|formulasLocal|json|Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar.  Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden.|
-|formulasR1C1|json|Stellt die Formel in der R1C1-Schreibweise dar.|
-|numberFormat|json|Stellt den Excel-Zahlenformatcode für die angegebene Zelle dar.|
+|formulas|Json|Stellt die Formel in der A1-Schreibweise dar.|
+|formulasLocal|Json|Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar.  Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden.|
+|formulasR1C1|Json|Stellt die Formel in der R1C1-Schreibweise dar.|
+|numberFormat|Json|Stellt den Excel-Zahlenformatcode für die angegebene Zelle dar.|
 |rowHidden|Boolescher Wert|Stellt dar, ob alle Zeilen des aktuellen Bereichs ausgeblendet sind.|
-|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="response"></a>Antwort
 

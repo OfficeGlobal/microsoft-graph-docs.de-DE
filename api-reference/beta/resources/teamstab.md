@@ -4,12 +4,12 @@ description: 'Eine TeamsTab ist eine Registerkarte, hat fixiert an einen Kanal i
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509287"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574950"
 ---
 # <a name="teamstab-resource-type"></a>Ressourcentyp teamsTab
 
@@ -36,7 +36,7 @@ Eine TeamsTab ist eine [Registerkarte](../resources/teamstab.md) , hat fixiert a
 |  displayName            |   string                  |  Der Name der Registerkarte.     |
 |  name            |   string                  |  (Veraltet) Der Name der Registerkarte.     |
 |  teamsAppId           |   string             |  App-Definition-Bezeichner der Registerkarte. Dieser Wert kann nach der Erstellung der Registerkarte geändert werden.     |
-|  sortOrderIndex  |   int                     |  Index der Reihenfolge für die Sortierung von Registerkarten verwendet werden soll.     |
+|  sortOrderIndex  |   string                  |  Index der Reihenfolge für die Sortierung von Registerkarten verwendet werden soll.     |
 |  webUrl          |   string                  |  Deep-Link-Url der Registerkarte-Instanz. Schreibgeschützt.     |
 |  Konfiguration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container für benutzerdefinierte Einstellungen angewendet auf die Registerkarte an. Die Registerkarte gilt nur, wenn diese Eigenschaft festgelegt ist konfiguriert.     |
 

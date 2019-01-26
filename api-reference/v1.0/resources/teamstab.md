@@ -4,12 +4,12 @@ description: 'Eine TeamsTab ist eine Registerkarte, hat fixiert an einen Kanal i
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 305b8d530eb0b10a658a1b5e5051f7854e3919ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 181d2fd23ff922709b3e098f6069adf300ad3928
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917776"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574670"
 ---
 # <a name="teamstab-resource-type"></a>Ressourcentyp teamsTab
 
@@ -34,7 +34,6 @@ Eine TeamsTab ist eine [Registerkarte](../resources/teamstab.md) , hat fixiert a
 |:---------------|:--------|:----------|
 |  id              |   string                  |  Bezeichner, die eine bestimmte Instanz von einer DDE-Kanal Registerkarte Lesen nur eindeutig identifiziert.     |
 |  displayName            |   string                  |  Der Name der Registerkarte.     |
-|  sortOrderIndex  |   int                     |  Index der Reihenfolge für die Sortierung von Registerkarten     |
 |  webUrl          |   string                  |  Deep-Link-Url der Registerkarte-Instanz. Schreibgeschützt.     |
 |  Konfiguration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container für benutzerdefinierte Einstellungen angewendet auf die Registerkarte an. Die Registerkarte gilt nur, wenn diese Eigenschaft festgelegt ist konfiguriert.     |
 
@@ -59,7 +58,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 {  
   "id": "string",
   "displayName": "string",
-  "sortOrderIndex": "string",
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }

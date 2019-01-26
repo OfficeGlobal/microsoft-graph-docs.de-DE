@@ -2,12 +2,12 @@
 title: Update secureScoreControlProfiles
 description: Aktualisieren einer bearbeitbaren SecureScoreControlProfiles-Eigenschaft in eine integrierte Lösung verschiedene Eigenschaften, wie AssignedTo oder TenantNote ändern.
 localization_priority: Normal
-ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510953"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573361"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Update secureScoreControlProfiles
 
@@ -21,9 +21,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) |   SecurityEvents.ReadWrite.All  |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) |   SecurityEvents.ReadWrite.All.  |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | SecurityEvents.ReadWrite.All |
+|Anwendung | SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -84,20 +84,16 @@ Es folgt ein Beispiel für eine erfolgreiche Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

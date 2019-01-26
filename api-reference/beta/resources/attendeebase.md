@@ -2,12 +2,12 @@
 title: Ressourcentyp „attendeeBase“
 description: Der Typ eines Teilnehmers.
 localization_priority: Normal
-ms.openlocfilehash: bce1550c107f2114d02744091b5863360ab0bcea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ec80f5505cb3dd742a2690ebb3cd5374635770d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517456"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572738"
 ---
 # <a name="attendeebase-resource-type"></a>Ressourcentyp „attendeeBase“
 
@@ -23,6 +23,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -39,7 +40,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|String| Der Typ eines Teilnehmers. Mögliche Werte sind: `required`, `optional` und `resource`. Ist der Teilnehmer eine Person, geht [findMeetingTimes](../api/user-findmeetingtimes.md) aktuell grundsätzlich davon aus, dass diese Person vom Typ `Required` ist.|
+|type|attendeeType| Der Typ eines Teilnehmers. Die möglichen Werte sind: `required`, `optional`, `resource`. Derzeit Wenn Teilnehmer einer Person ist, [FindMeetingTimes](../api/user-findmeetingtimes.md) immer berücksichtigt die Person ist, der die `Required` Typ.|
 |emailAddress|[emailAddress](emailaddress.md)|Enthält den Namen und die SMTP-Adresse des Teilnehmers.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

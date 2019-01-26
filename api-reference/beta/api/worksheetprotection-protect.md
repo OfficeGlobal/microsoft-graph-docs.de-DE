@@ -4,12 +4,12 @@ description: Schützen ein Arbeitsblatt. Wird ausgelöst, wenn das Arbeitsblatt 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4bb02bfd77cd1e86f6acf9b4f2f393474f484b11
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520130"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572955"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: Schützen
 
@@ -42,7 +42,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|options|WorksheetProtectionOptions|Optional. Optionen für den Arbeitsblattschutz.|
+|options|workbookWorksheetProtectionOptions|Optional. Optionen für den Arbeitsblattschutz.|
 
 ## <a name="response"></a>Antwort
 

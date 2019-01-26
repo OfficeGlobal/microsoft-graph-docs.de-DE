@@ -2,12 +2,12 @@
 title: Endpunkt-Ressourcentyp
 description: 'Endpunkte stellen URLs für eine Entität zugeordneten Ressourcen dar.  Wenn eine neue Office 365-Gruppe erstellt wird, werden zusätzliche Ressourcen beispielsweise auch als Teil der Office 365-Gruppe erstellt. Dazu gehören Dinge wie ein Gruppenpostfach für Unterhaltungen und eine OneDrive-Ordner für Dokumente und Dateien. Weitere Informationen über diese Office 365 Group-Ressourcen, einschließlich deren zugeordneten Ressource URLs kann nun mit der *Endpunkte* Navigation auf der Gruppe Ressourcentyp gelesen werden. Dies ist die Anwendung zu verstehen sind diese Ressourcen, und betten die Ressource, die URL guter sogar in ihrer eigenen Erfahrungen. '
 localization_priority: Normal
-ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39a6a2d8213e809f426c492654272aa994c25a6d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512059"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574482"
 ---
 # <a name="endpoint-resource-type"></a>Endpunkt-Ressourcentyp
 
@@ -28,7 +28,7 @@ Endpunkte stellen URLs für eine Entität zugeordneten Ressourcen dar.  Wenn ein
 | Funktion     | String  | Beschreibt die Fähigkeit, die diese Ressource zugeordnet ist. (z. B. Nachrichten, Unterhaltungen, usw.)  Nicht NULL-Werte zulässt. Schreibgeschützt. |
 | id             | String  | Eindeutiger Bezeichner für den Endpunkt; -Taste. Lässt keine Nullwerte zu. Schreibgeschützt.|
 | providerId     | String  | Id der das zugrunde liegende Dienst veröffentlichen. Lässt keine Nullwerte zu. Schreibgeschützt.|
-| ProviderName   | String  | Name der Veröffentlichung der zugrunde liegende Dienst. Schreibgeschützt.|
+| providerName   | String  | Name der Veröffentlichung der zugrunde liegende Dienst. Schreibgeschützt.|
 | providerResourceId|String| Für Office 365-Gruppen ist dies auf einen bekannten Namen für die Ressource (z. B. Yammer.FeedURL usw.) festgelegt. Lässt keine Nullwerte zu. Schreibgeschützt.|
 | uri            | String  | URL der veröffentlichten Ressource. Lässt keine Nullwerte zu. Schreibgeschützt.|
 
@@ -45,7 +45,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 }-->
 
 ```json

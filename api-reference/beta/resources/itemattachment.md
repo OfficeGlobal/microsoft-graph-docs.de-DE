@@ -2,12 +2,12 @@
 title: itemAttachment-Ressourcentyp
 description: Ein Kontakt, ein Ereignis oder eine Nachricht, die mit einem anderen Ereignis zugeordnet ist,
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520109"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571408"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment-Ressourcentyp
 
@@ -21,15 +21,15 @@ Abgeleitet von [attachment](attachment.md).
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | itemAttachment |Dient zum Lesen der Eigenschaften und der Beziehungen des itemAttachment-Objekts.|
-|[Delete](../api/attachment-delete.md) | Keine |Dient zum Löschen des itemAttachment-Objekts. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des itemAttachment-Objekts.|
+|[Löschen](../api/attachment-delete.md) | Keine |Dient zum Löschen des itemAttachment-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentType|String|Der Inhaltstyp der Anlage.|
-|id|Zeichenfolge| Die Anlagen-ID.|
-|isInline|Boolescher Wert|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
+|id|String| Die Anlagen-ID.|
+|isInline|Boolean|Legen Sie diesen auf „true“ fest, wenn es sich um eine Inlineanlage handelt, z. B. ein eingebettetes Bild innerhalb des Textkörpers des Elements.|
 |lastModifiedDateTime|DateTimeOffset|Letzte Uhrzeit und letztes Datum der Änderung der Anlage.|
 |name|String|Der Anzeigename der Anlage.|
 |size|Int32|Die Größe der Anlage in Byte.|
@@ -37,7 +37,7 @@ Abgeleitet von [attachment](attachment.md).
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|item|OutlookItem|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
+|item|[outlookItem](outlookitem.md)|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

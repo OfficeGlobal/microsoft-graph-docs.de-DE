@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessParticipantActivityUserCounts'
 description: Erhalten Sie einen Überblick über die Anzahl der eindeutigen Benutzer und die Art von Konferenzsitzungen, an denen Benutzer aus Ihrer Organisation teilgenommen haben. Zu den Arten von Konferenzsitzungen gehören Chat, Audio/Video, Anwendungsfreigabe, Web und Einwahl/Auswahl (Drittanbieter).
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 17e12e060e8ffbe6baf99c3bb68d2f999274932e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 531ef4002252c7c4a70b67d4326dbd9742b568f9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520848"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573011"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityusercounts"></a>reportRoot: getSkypeForBusinessParticipantActivityUserCounts
 

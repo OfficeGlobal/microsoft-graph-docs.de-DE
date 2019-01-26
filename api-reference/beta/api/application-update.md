@@ -4,12 +4,12 @@ description: Aktualisieren Sie die Eigenschaften des Application-Objekts.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9965a46e340063940e1a9af18a89ada7e492bf26
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525948"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572213"
 ---
 # <a name="update-application"></a>Aktualisieren der Anwendung
 
@@ -41,13 +41,13 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolescher Wert| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *false*. |
-|API|API| Gibt die Einstellungen für eine API-Anwendung. |
+|allowPublicClient|Boolean| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *false*. |
+|API|[API](../resources/api.md)| Gibt die Einstellungen für eine API-Anwendung. |
 |appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine NULL-Werte zu.|
 |applicationAliases|Zeichenfolgenauflistung| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine NULL-Werte zu. |
 |createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
 |deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
-|displayName|Zeichenfolge|Der Anzeigename für die Anwendung. |
+|displayName|String|Der Anzeigename für die Anwendung. |
 |id|String|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
 |Info|[informationalUrl](../resources/informationalurl.md)| Grundlegende Profilinformationen der Anwendung. | Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
 |keyCredentials|[KeyCredential](../resources/keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
@@ -57,7 +57,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |preAuthorizedApplications|[PreAuthorizedApplication](../resources/preauthorizedapplication.md) -Auflistung| Listen-Anwendungen und angeforderten Berechtigungen für implizite Zustimmung. Erfordert ein Administrator Zustimmung an die Anwendung bereitgestellt haben. PreAuthorizedApplications erfordern keinen den Benutzer, die angeforderten Berechtigungen zuzustimmen. In PreAuthorizedApplications aufgelisteten Berechtigungen erfordern keine Zustimmung des Benutzers. Keine weiteren angeforderten Berechtigungen nicht in PreAuthorizedApplications aufgeführten erfordern jedoch Zustimmung des Benutzers. |
 |requiredResourceAccess|[RequiredResourceAccess](../resources/requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine NULL-Werte zu.|
 |tags|Zeichenfolgenauflistung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
-|web|Netz| Gibt die Einstellungen für eine Webanwendung. |
+|web|[webApplication](../resources/web.md)| Gibt die Einstellungen für eine Webanwendung. |
 
 ## <a name="response"></a>Antwort
 

@@ -4,18 +4,19 @@ description: Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04ae713cca285bd9fc16c3957ea1ca71dfea01a6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529334"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574089"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verwenden Sie diese API zum Erstellen eines neuen Benutzers. Der Anforderungstext enthält den zu erstellenden Benutzer. Sie müssen für den Benutzer mindestens die erforderlichen Eigenschaften angeben. Optional können Sie weitere schreibbare Eigenschaften festlegen.
+Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
+Textkörper der Anforderung enthält den Benutzer zum Erstellen. Zumindest müssen Sie die erforderlichen Eigenschaften für den Benutzer angeben. Optional können Sie eine beliebige andere schreibbaren Eigenschaften angeben.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -44,10 +45,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 | Parameter | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 |accountEnabled |Boolescher Wert |true, wenn das Konto aktiviert ist; andernfalls false.|
-|displayName |String |Der Name des Benutzers, der im Adressbuch angezeigt wird.|
+|displayName |string |Der Name des Benutzers, der im Adressbuch angezeigt wird.|
 |onPremisesImmutableId |string |Muss nur angegeben werden, wenn ein neues Benutzerkonto erstellt wird, wenn Sie eine Verbunddomäne für die UserPrincipalName-Eigenschaft (UPN) des Benutzers verwenden.|
 |mailNickname |string |Der E-Mail-Alias für den Benutzer.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Das Kennwortprofil für den Benutzer.|
+|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |Das Kennwortprofil für den Benutzer.|
 |userPrincipalName |string |Der Benutzerprinzipalname (someuser@contoso.com).|
 
 Da die Ressource **Benutzer** [Extensions](/graph/extensibility-overview)unterstützt, können Sie die `POST` Vorgang und Hinzufügen von benutzerdefinierten Eigenschaften mit Ihren eigenen Daten auf die Benutzerinstanz beim Erstellen.

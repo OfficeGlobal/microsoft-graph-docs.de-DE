@@ -2,12 +2,12 @@
 title: NamedItemCollection auflisten
 description: Dient zum Abrufen einer Liste von nameditem-Objekten.
 localization_priority: Normal
-ms.openlocfilehash: 45286b37a69749e7d4ebb543466f69f7df8b4ac3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bcc9e52b6005c834aecd4ddca933f0503892b2ee
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512668"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572703"
 ---
 # <a name="list-nameditemcollection"></a>NamedItemCollection auflisten
 
@@ -42,7 +42,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [NamedItem](../resources/nameditem.md)-Objekten im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [NamedItem](../resources/workbooknameditem.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -58,7 +58,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem",
+  "@odata.type": "microsoft.graph.workbookNamedItem",
   "isCollection": true
 } -->
 ```http

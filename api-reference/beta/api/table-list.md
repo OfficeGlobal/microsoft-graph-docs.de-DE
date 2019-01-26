@@ -4,12 +4,12 @@ description: Dient zum Abrufen einer Liste von Tabellenobjekten.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 296fac43d0aa415effd35f4477994bd38763cf86
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aca860bb5896a8de43ea7479ad103deab6c0294e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512479"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570680"
 ---
 # <a name="list-tablecollection"></a>TableCollection auflisten
 
@@ -45,7 +45,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Table](../resources/table.md)-Objekten im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [WorkbookTable](../resources/table.md) .
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -61,7 +61,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table",
+  "@odata.type": "microsoft.graph.workbookTable",
   "isCollection": true
 } -->
 ```http

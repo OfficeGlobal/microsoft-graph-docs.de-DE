@@ -3,12 +3,12 @@ title: openTypeExtension-Ressourcentyp (offene Erweiterungen)
 description: Open-Erweiterungen (vormals Office 365 Daten Extensions) bieten eine einfache Möglichkeit nicht typisierte Eigenschaften auf eine Ressource in Microsoft Graph direkt hinzufügen.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508832"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574908"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension-Ressourcentyp (offene Erweiterungen)
 
@@ -43,7 +43,7 @@ Wenden Sie die folgenden Richtlinien beim Erstellen von open-Erweiterungen für 
 - Erstellen Sie die minimale Anzahl von Erweiterungen erforderlich. Die meisten Clientanwendungen sollten nicht mehr als eine Erweiterung erfordern. Erweiterungen haben keine Eigenschaften festgelegt wird, oder die Struktur, damit Sie mehrere Werte in einer Erweiterung speichern können.
 - Benennen Sie Erweiterungen in einer Variablen Weise (z. B. basierend auf Benutzereingaben usw..). Jedes Mal, wenn eine open Erweiterung mit einem neuen Namen erstellt wird, die nicht im Postfach eines Benutzers vor, verwendet wurde, wird ein neues MAPI benannte Eigenschaft erstellt. Entfernen die Erweiterung, die benannte Eigenschaft nicht entfernt.
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Sollen offene Erweiterungen (für Outlook-Ressourcen) oder erweiterte Eigenschaften verwendet werden?
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Verwenden Sie open-Erweiterungen (für Outlook-Ressourcen) oder erweiterten Eigenschaften
 
 Open Extensions ist die empfohlene Lösung für die meisten Szenarien im Zusammenhang mit Speichern von und Zugreifen auf benutzerdefinierte Daten. Wenn Sie benutzerdefinierte Daten für Outlook-MAPI-Eigenschaften, die noch nicht verfügbar gemacht werden über die [Microsoft Graph-API-Metadaten](https://developer.microsoft.com/graph/docs/overview/call_api)zugreifen möchten, können Sie [Erweiterte Eigenschaften und der REST-API](extended-properties-overview.md)verwenden. Sie können überprüfen, welche Eigenschaften die Metadaten zur verfügbar gemacht [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
@@ -54,9 +54,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+       "companyName",
+        "dealValue",
+        "expirationDate"
   ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json

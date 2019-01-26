@@ -4,12 +4,12 @@ description: Notieren Sie den Anruf.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518282"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574859"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 
@@ -43,15 +43,15 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|fordert|[Mediaprompt](../resources/mediaprompt.md) -Auflistung | Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet. Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden |
-|bargeInAllowed|Boolescher Wert| Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.                                                                 |
+|fordert|[MediaPrompt](../resources/mediaprompt.md) -Auflistung | Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet. Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden |
+|bargeInAllowed|Boolean| Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Maximale anfänglichen Silence zulässig, von dem Zeitpunkt wir den Eintrag Vorgang bevor wir Timeout und Fehlschlagen des Vorgangs zu starten. Wenn wir eine Aufforderung spielen, startet dieser Zeitgeber nach Aufforderung abgeschlossen ist. |
 |maxSilenceTimeoutInSeconds|Int32| Die maximale Silence Timeout in Sekunden.|
 |maxRecordDurationInSeconds|Int32| Die maximale Anzahl von Datensätzen Dauer in Sekunden.|
-|playBeep|Boolescher Wert| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
-|streamWhileRecording|Boolescher Wert|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
+|playBeep|Boolean| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
+|streamWhileRecording|Boolean|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
 |stopTones|Zeichenfolgenauflistung|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
-|ClientContext|String|Der Clientkontext.|
+|clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort
 Gibt `202 Accepted` Antwortcode und ein Location-Header mit einem Uri, um die [CommsOperation](../resources/commsoperation.md) für diese Anforderung erstellt.

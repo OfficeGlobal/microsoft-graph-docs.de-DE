@@ -4,12 +4,12 @@ description: Dient zum Löschen der Füllfarbe eines Diagrammelements.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a053814b1be4fdee947d4d28911263b7e53d55d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530055"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573039"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -40,6 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
+Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
@@ -61,8 +62,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: Stellt ein OneNote-Notizbuch dar.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518625"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573340"
 ---
 # <a name="notebook-resource-type"></a>notebook-Ressourcentyp
 
@@ -53,13 +53,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Notizbuchs. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|string|Der eindeutige Bezeichner des Notizbuchs. Schreibgeschützt.|
-|isDefault|Boolescher Wert|Gibt an, ob dies das Standardnotizbuch des Benutzers ist. Schreibgeschützt.|
+|id|String|Der eindeutige Bezeichner des Notizbuchs. Schreibgeschützt.|
+|isDefault|Boolean|Gibt an, ob dies das Standardnotizbuch des Benutzers ist. Schreibgeschützt.|
 |isShared|Boolean|Gibt an, ob das Notizbuch freigegeben ist. Wenn „true“, können auch andere Personen als der Besitzer den Inhalt des Notizbuchs sehen. Schreibgeschützt.|
 |lastModifiedBy|[identitySet](identityset.md)|Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung des Notizbuchs. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |links|[NotebookLinks](notebooklinks.md)|Links zum Öffnen des Notizbuchs. Der Link `oneNoteClientURL` öffnet das Notizbuch im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebURL` öffnet das Notizbuch in OneNote Online.|
-|displayName|Zeichenfolge|Der Name des Notizbuchs.|
+|displayName|String|Der Name des Notizbuchs.|
 |sectionGroupsUrl|String|Die URL für die Navigationseigenschaft `sectionGroups`, die alle Abschnittsgruppen im Notizbuch zurückgibt. Schreibgeschützt.|
 |sectionsUrl|String|Die URL für die Navigationseigenschaft `sections`, die alle Abschnitte im Notizbuch zurückgibt. Schreibgeschützt.|
 |self|String|Der Endpunkt, an dem Sie Details zum Notizbuch abrufen können. Schreibgeschützt.|
@@ -68,8 +68,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
-|Abschnitte|[Section](section.md)-Sammlung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
+|sectionGroups|[SectionGroup](sectiongroup.md) -Auflistung|Die Abschnittsgruppen im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

@@ -4,18 +4,18 @@ description: Mit dieser API können Sie eine Liste von Objekten des Typs page au
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: a87126876917b9fcdd4ed818a3e8efcef8a9635f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a68fef97f48c48f789317915dd2da0dacdd2f06f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525430"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571212"
 ---
 # <a name="list-pages"></a>Seiten auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mit dieser API können Sie eine Liste von Objekten des Typs [page](../resources/page.md) aus dem angegebenen Abschnitt abrufen.
+Abrufen einer Liste von [OnenotePage](../resources/onenotepage.md) -Objekten aus dem angegebenen Abschnitt.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -51,7 +51,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [page](../resources/page.md)-Objekten im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [OnenotePage](../resources/onenotepage.md) .
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

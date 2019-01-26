@@ -1,12 +1,12 @@
 ---
 title: TimeZoneStandard Werte
 description: " Wert"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fae641b0dbb7f87a55d5bca3db36c1f24c23ad29
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429931"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574761"
 ---
 ### <a name="timezonestandard-values"></a>TimeZoneStandard Werte
 
@@ -18,7 +18,7 @@ ms.locfileid: "29429931"
 
 ### <a name="freebusystatus-values"></a>FreeBusyStatus Werte
 
-| Member            |Wert
+| Element            |Wert
 |:------------------|:-------
 | frei              | 0
 | mit Vorbehalt         | 1
@@ -57,7 +57,7 @@ ms.locfileid: "29429931"
 
 ### <a name="calendarcolor-values"></a>CalendarColor Werte
 
-| Member     | Wert
+| Element     | Wert
 |:-----------|:----------
 | Auto       | -1
 | Hellblau  | 0
@@ -74,7 +74,7 @@ ms.locfileid: "29429931"
 
 ### <a name="educationsynchronizationprofilestate-values"></a>EducationSynchronizationProfileState Werte
 
-| Member     | Wert
+| Element     | Wert
 |:-----------|:----------
 | Löschen          | 2
 | deletionFailed    | 3
@@ -86,7 +86,7 @@ ms.locfileid: "29429931"
 
 ### <a name="educationsynchronizationstatus-values"></a>EducationSynchronizationStatus Werte
 
-| Member     | Wert
+| Element     | Wert
 |:-----------|:----------
 | angehalten          | 0
 | in Bearbeitung    | 1
@@ -260,7 +260,7 @@ ms.locfileid: "29429931"
 
 ### <a name="onenoteuserrole-values"></a>OnenoteUserRole Werte
 
-| Member      | Wert
+| Element      | Wert
 |:------------|:------------
 | Besitzer       | 0
 | Mitwirkender | 1
@@ -422,7 +422,7 @@ ms.locfileid: "29429931"
 
 ### <a name="categorycolor-values"></a>CategoryColor Werte
 
-| Member   |Wert    
+| Element   |Wert    
 |:---------|:--------
 | Keine     | -1      
 | preset0  | 0       
@@ -459,7 +459,7 @@ Feedback möglichen Werte auf die Benachrichtigung von Analysten bereitgestellt.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
 |truePositive|1|Benachrichtigung ist True Positive.|
@@ -472,7 +472,7 @@ Enum für Hash Dateitypen.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannten Typs.|
 |SHA1|1|SHA1 Hash-Typ.|
@@ -490,7 +490,7 @@ Option für die Richtung der Verbindung (eingehend/ausgehend).
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Verbindung.|
 |eingehend|1|Eingehende Verbindung.|
@@ -502,7 +502,7 @@ Enumeration für den Status der Verbindung.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Verbindungsstatus.|
 |Es wurde versucht|1|Verbindungsversuch.|
@@ -516,7 +516,7 @@ Integrität der möglichen Werte des Prozesses.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
 |nicht vertrauenswürdige|10|Integritätsebene ist nicht vertrauenswürdig.|
@@ -531,7 +531,7 @@ Enum für Registrierung Strukturen gemäß [https://docs.microsoft.com/en-us/win
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Struktur.|
 |currentConfig|1|HKEY_CURRENT_CONFIG-Hive.|
@@ -547,7 +547,7 @@ Der Vorgang, der der Name des Registrierungsschlüssels und/oder Wert geändert.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannter Typ.|
 |create|1|Erstellen Sie die Registrierung.|
@@ -560,7 +560,7 @@ Enumeration für den Registrierungswert eingibt, durch die definierten [https://
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannter Typ.|
 |Binär|1|Werttyp REG_BINARY-Registrierung.|
@@ -581,7 +581,7 @@ Enum für Schweregrad von Warnungen.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Schweregrad ist unbekannt.|
 |informative|1|Schweregrad dient nur zu Informationszwecken.|
@@ -595,7 +595,7 @@ Mögliche Werte von einer Warnung Lebenszyklusstatus (Phase).
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Status.|
 |newAlert|10| Benachrichtigung ist neu.|
@@ -608,7 +608,7 @@ Mögliche Werte für e-Mail-Rollen.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Rolle.|
 |sender|1|Der Absender der e-Mail.|
@@ -620,7 +620,7 @@ Mögliche Werte für die-Methode des Benutzers anmelden.
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|-1|Unbekannt.|
 |Interaktive|0|Anmeldung ist interaktiv.|
@@ -635,9 +635,216 @@ Mögliche Werte für Benutzerkontotypen (Gruppenmitgliedschaft) pro Windows-Defi
 
 ## <a name="members"></a>Elemente
 
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|-1|Unbekannt.|
 |Standard|0|Mitglied der Gruppe der Standard-Benutzer.|
 |Power|1| Mitglied der Gruppe Hauptbenutzer.|
 |Administrator|2| Mitglied der Gruppe Administratoren.|
+
+
+
+### <a name="scopeoperatortype-values"></a>ScopeOperatorType Werte
+
+| Element            |Wert
+|:------------------|:-------
+| Binär              | 0
+| unärer Operator         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>ScopeOperatorMultiValuedComparisonType Werte
+
+| Element            |Wert
+|:------------------|:-------
+| all              | 0
+| Beliebiger Wert         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>ScopeOperatorMultiValuedComparisonType Werte
+
+| Element            |Wert
+|:------------------|:-------
+| Niedrig              | 0
+| medium         | 1
+| hohe         | 2
+
+### <a name="exchangeidformat-values"></a>ExchangeIdFormat Werte
+
+| Element            |Wert
+|:------------------|:-------
+| entryId              | 0
+| ewsId         | 1
+| immutableEntryId         | 2
+| restId         | 2
+| restImmutableEntryId         | 2
+
+### <a name="risklevel-values"></a>RiskLevel Werte
+
+| Wert           
+|:------------------
+| Keine
+| Niedrig
+| medium
+| hohe
+| hidden
+| unknownFutureValue
+
+### <a name="riskstate-values"></a>RiskState Werte
+
+| Wert           
+|:------------------
+| Keine
+| Niedrig
+| medium
+| hohe
+| hidden
+| unknownFutureValue
+
+### <a name="riskdetail-values"></a>RiskDetail Werte
+
+| Wert           
+|:------------------
+| Keine
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
+
+# <a name="securitynetworkprotocol-values"></a>SecurityNetworkProtocol Werte
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|unknown|-1|Unbekanntes Protokoll.|
+|IP|0|Internetprotokoll.|
+|ICMP|1| Internet Control Message-Protokoll.|
+|IGMP|2| Internet Group Management Protocol.|
+|ggp|3| Gateway zu Gateway-Protokoll.|
+|IPv4|4| Internetprotokoll, Version 4.|
+|TCP|6| Transmission Control-Protokoll.|
+|PUP|12| PARC Universal Paket Protokoll.|
+|UDP|17| User Datagram-Protokoll.|
+|IDP|22| Internet Datagram-Protokoll.|
+|IPv6|41| Internetprotokoll, Version 6 (ipv6).|
+|ipv6RoutingHeader|43| IPv6-Routing-Header.|
+|ipv6FragmentHeader|44| IPv6-Fragment Header.|
+|ipSecEncapsulatingSecurityPayload|50| IPv6-Encapsulating Security Payload-Header.|
+|ipSecAuthenticationHeader|51| IPv6-Authentication-Header.|
+|icmpV6|58| Internet Control Message Protocol für ipv6.|
+|ipv6NoNextHeader|59| IPv6 keine nächste Kopfzeile.|
+|ipv6DestinationOptions|60| IPv6-Ziel-Optionen-Header.|
+|nd|77| NET Disk-Protokoll (nicht offizieller).|
+|unformatierte|255| Unformatierte Protokoll für die IP-Pakete.|
+|IPX|1000| Internet Packet Exchange-Protokoll.|
+|SPX|1256| Sequenzierten Pakets Exchange-Protokoll.|
+|spxII|1257| Sequenzierten Pakets Exchange Version 2-Protokoll.|
+
+
+
+### <a name="referenceattachmentpermission-values"></a>ReferenceAttachmentPermission Werte
+
+| Element            |Wert
+|:------------------|:-------
+| andere             | 0
+| Ansicht              | 1
+| Bearbeiten              | 2
+| anonymousView     | 3
+| anonymousEdit     | 4
+| organizationView  | 5
+| organizationEdit  | 6
+
+
+### <a name="referenceattachmentprovider-values"></a>ReferenceAttachmentProvider Werte
+
+| Element            |Wert
+|:------------------|:-------
+| andere             | 0
+| oneDriveBusiness  | 1
+| oneDriveConsumer  | 2
+| Ablage           | 3
+
+### <a name="modality-values"></a>Modalität Werte
+
+| Element                    |Wert
+|:--------------------------|:-------
+| unknown                   | 0
+| audio                     | 1
+| video                     | 2
+| videoBasedScreenSharing   | 3
+| data                      | 4
+
+### <a name="routingpolicy-values"></a>RoutingPolicy Werte
+
+| Element                        |Wert
+|:------------------------------|:-------
+| Keine                          | 0
+| noMissedCall                  | 1
+| disableForwardingExceptPhone  | 2
+| disableForwarding             | 3
+
+### <a name="callstate-values"></a>CallState Werte
+
+| Element               |Wert
+|:---------------------|:-------
+| incoming             | 0
+| Einrichten         | 1
+| Klingeln              | 2
+| eingerichtet          | 3
+| Halten Sie                 | 4
+| Übertragen von         | 5
+| transferAccepted     | 6
+| Umleiten von          | 7
+| Beenden          | 8
+| Communicator Web Access           | 9
+
+### <a name="calldirection-values"></a>CallDirection Werte
+
+| Element               |Wert
+|:---------------------|:-------
+| incoming             | 0
+| ausgehende             | 1
+
+### <a name="attributetype-values"></a>AttributeType Werte
+
+| Element               |Wert
+|:---------------------|:-------
+| dateTime             | 5
+| Boolescher Wert              | 4
+| Binär               | 3
+| Referenz            | 2
+| integer              | 1
+| @string              | 0
+
+### <a name="operationstatus-values"></a>OperationStatus Werte
+
+| Element               |Wert
+|:---------------------|:-------
+| nicht gestartet           | 0
+| Ausführen              | 1
+| abgeschlossen            | 2
+| failed               | 3
+
+### <a name="operationstatus-values"></a>OperationStatus Werte
+
+| Element               |Wert
+|:---------------------|:-------
+| default              | 0
+| Voicemail 1
+
+### <a name="recordcompletionreason-values"></a>RecordCompletionReason Werte
+
+| Element                    |Wert
+|:--------------------------|:-------
+| operationCanceled         | 0
+| stopToneDetected          | 1
+| maxRecordDurationReached  | 2
+| initialSilenceTimeout     | 3
+| maxSilenceTimeout         | 4
+| playPromptFailed          | 5
+| playBeepFailed            | 6
+| mediaReceiveTimeout       | 7
+| unspecifiedError          | 8

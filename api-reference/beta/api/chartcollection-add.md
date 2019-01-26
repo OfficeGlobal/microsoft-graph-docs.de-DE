@@ -4,12 +4,12 @@ description: Erstellt ein neues Diagramm.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f552e4d8f0c8dc9f1257baf02ebe7a449c98a348
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516336"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572115"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -42,13 +42,13 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|string|Stellt die Art des Diagramms dar.  Mögliche Werte: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|string|Das den Quelldaten entsprechende Range-Objekt.|
-|seriesBy|string|Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden.  Mögliche Werte: `Auto`, `Columns`, `Rows`.|
+|type|string|Stellt den Typ eines Diagramms dar.  Die möglichen Werte sind: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
+|sourceData|Json|Das den Quelldaten entsprechende Range-Objekt.|
+|seriesBy|string|Optional. Gibt an, dass die Möglichkeit Spalten und Zeilen als Datenreihen im Diagramm verwendet werden.  Die möglichen Werte sind: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortcode und [WorkbookChart](../resources/chart.md) -Objekts in der Antworttext.
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
@@ -75,7 +75,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

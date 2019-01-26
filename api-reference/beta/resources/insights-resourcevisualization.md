@@ -4,33 +4,31 @@ description: Komplexer Typ mit Eigenschaften des Insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526760"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575104"
 ---
 # <a name="resourcevisualization-resource-type"></a>Ressourcentyp resourceVisualization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Komplexer Typ mit Eigenschaften des [Insights](insights.md).
+Komplexer Typ mit Eigenschaften des [OfficeGraphInsights](insights.md).
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
 }
 ```
 
@@ -40,18 +38,18 @@ Es folgt eine JSON-Darstellung der Ressource.
 | -------------         |---------------| -------------|
 | title                 | String        | Text für das Element.               |
 | type              | String        | Medientyp für das Element. Kann zum Filtern von für eine bestimmte Datei auf Grundlage eines bestimmten Typs verwendet werden. Unterstützte Typen finden Sie weiter unten. |
-| MediaType             | String        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
-| PreviewImageUrl       | String        | Eine URL für das Element des Vorschaubilds führende. |
+| mediaType             | String        | Medientyp für das Element. Kann für verwendet werden, für die Filterung für einen bestimmten Typ der Datei basierend auf unterstützten IANA Media MIME-Typen. Beachten Sie, dass nicht alle Medien MIME-Typen unterstützt werden. |
+| Vorschaubild-URL       | String        | Eine URL für das Element des Vorschaubilds führende. |
 | previewText           | String        | Eine Vorschautext für das Element. |
 | containerWebUrl       | String        | Ein Pfad zu dem Ordner, in dem das Element gespeichert ist. |
 | containerDisplayName  | String        | Eine Zeichenfolge, die beschreibt, in dem das Element gespeichert ist. Beispielsweise der Name einer SharePoint-Website oder den Benutzernamen ein, die den Besitzer der OneDrive, speichern das Element identifiziert.  |
-| ContainerType         | String | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
+| containerType         | String | Kann verwendet werden, zum Filtern nach der Typ des Containers, in dem die Datei gespeichert ist. Wie Website oder OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Type-Eigenschaftenwerte
 -   PowerPoint
 -   Word
 -   Excel
--   PDF
+-   PDF-Datei
 -   OneNote
 -   OneNotePage
 -   InfoPath

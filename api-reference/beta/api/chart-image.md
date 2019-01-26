@@ -4,12 +4,12 @@ description: Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3405ebd80193028ad2e2150c800082993828183d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526648"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571779"
 ---
 # <a name="chart-image"></a>Diagramm: Bild
 
@@ -37,14 +37,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Authorization  | Bearer {token}. Erforderlich. |
 | Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
-## <a name="request-body"></a>Anforderungstext
+## <a name="path-parameters"></a>Pfadparameter
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|height|number|Optional. Die gewünschte Höhe des resultierenden Bilds.|
-|width|number|Optional. Die gewünschte Breite des resultierenden Bilds.|
-|fittingMode|string|Optional. Die Methode, die verwendet wird, um das Diagramm auf die angegebenen Maße zu skalieren (wenn Höhe und Breite festgelegt sind).  Mögliche Werte: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|Die gewünschte Höhe des resultierenden Bildes. Optional.|
+|width|Int32|Die gewünschte Breite des resultierenden Bildes. Optional.|
+|fittingMode|string|Die Methode verwendet, um das Diagramm zu den angegebenen Dimensionen skalieren (wenn die Höhe und Breite festgelegt werden)."  Die möglichen Werte sind: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Antwort
 
@@ -54,14 +54,15 @@ Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -72,7 +73,7 @@ Content-length: 3
 }
 ```
 
-##### <a name="usage"></a>Verwendung
+## <a name="usage"></a>Verwendung
 
 Sie können die Base64-Zeichenfolge innerhalb eines HTML-Bild-Tags anzeigen: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

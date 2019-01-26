@@ -2,12 +2,12 @@
 title: Liste servicePrincipals
 description: Abrufen einer Liste von ServicePrincipal-Objekten.
 localization_priority: Normal
-ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526088"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574257"
 ---
 # <a name="list-serviceprincipals"></a>Liste servicePrincipals
 
@@ -66,7 +66,7 @@ Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal",
+  "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
 ```http

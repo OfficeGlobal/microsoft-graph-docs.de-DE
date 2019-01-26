@@ -4,12 +4,12 @@ description: Komplexer Typ mit Eigenschaften des Insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8cc7e686aebd531a25b6c1637fcf99338df09396
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520004"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572297"
 ---
 # <a name="resourcereference-resource-type"></a>Ressourcentyp resourceReference
 
@@ -20,7 +20,15 @@ Komplexer Typ mit Eigenschaften des [Insights](insights.md).
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.resourceReference"
+}-->
 ```json
 {
   "webUrl": "string",
@@ -33,8 +41,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft      | Typ      | Beschreibung  |
 | ------------- |-----------| -------------|
-| webUrl        | Zeichenfolge    | Eine URL, die auf das verwiesene Element führende. |
-| id            | Zeichenfolge    | Eindeutiger Bezeichner des Elements.           |
+| webUrl        | String    | Eine URL, die auf das verwiesene Element führende. |
+| id            | String    | Eindeutiger Bezeichner des Elements.           |
 | type          | String    | Ein String-Wert, der verwendet werden kann, um das Element, wie beispielsweise "microsoft.graph.driveItem" klassifizieren |
 <!--
 {

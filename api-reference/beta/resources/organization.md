@@ -4,12 +4,12 @@ description: 'Stellt eine Azure Active Directory-Mandanten. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529425"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574992"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -35,29 +35,29 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
-| businessPhones                      | Zeichenfolgenauflistung                                         | Die Telefonnummer des Unternehmens **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
-|Ort|String| Der Name der Stadt aus der Unternehmensadresse |
+| businessPhones                      | Zeichenfolgenauflistung                                         | Telefonnummer für die Organisation. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
+|Ort|Zeichenfolge| Der Name der Stadt aus der Unternehmensadresse |
 |companyLastDirSyncTime|DateTimeOffset|Zeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Land|String| Der Name des Landes/der Region aus der Unternehmensadresse |
+|Land|Zeichenfolge| Der Name des Landes/der Region aus der Unternehmensadresse |
 |countryLetterCode|Zeichenfolge| Landes-/Regionsabkürzung für das Unternehmen |
 |createdDateTime|DateTimeOffset| Zeitstempel der Erstellung der Organisation. Der Wert kann nicht geändert werden und wird automatisch aufgefüllt, wenn die Organisation erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 | deletedDateTime                    | DateTimeOffset                                                    | Datum und Uhrzeit des darstellt, wenn es sich bei der Azure AD-Mandanten mit ISO 8601-Format gelöscht wurde, und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.                                                                                     |
 |dirSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard).|
 |displayName|String|Der Anzeigename für den Mandanten.|
-|id|string|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
-|isMultipleDataLocationsForServicesEnabled|Boolescher Wert|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine NULL-Werte zu.            |
+|id|String|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu.            |
 |objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
-|postalCode|String| Die Postleitzahl aus der Unternehmensadresse |
-|preferredLanguage|String| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
+|postalCode|Zeichenfolge| Die Postleitzahl aus der Unternehmensadresse |
+|preferredLanguage|Zeichenfolge| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Das Datenschutzprofil einer Organisation.            |
-|provisionedPlans|[ProvisionedPlan-Sammlung](provisionedplan.md)| Lässt keine NULL-Werte zu.            |
-|provisioningErrors|ProvisioningError-Sammlung| Lässt keine NULL-Werte zu.            |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) -Auflistung| Lässt keine Nullwerte zu.            |
+|provisioningErrors|onPremisesProvisioningError-Sammlung| Lässt keine Nullwerte zu.            |
 |securityComplianceNotificationMails|Zeichenfolgenauflistung||
 |securityComplianceNotificationPhones|Zeichenfolgenauflistung||
-|state|String| Der das Bundesland aus der Unternehmensadresse |
+|state|Zeichenfolge| Der das Bundesland aus der Unternehmensadresse |
 |street|Zeichenfolge| Der Straßenname aus der Unternehmensadresse |
-|technicalNotificationMails|String collection| Lässt keine NULL-Werte zu. |
+|technicalNotificationMails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
 |verifiedDomains|[VerifiedDomain-Sammlung](verifieddomain.md)|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
 
 ## <a name="relationships"></a>Beziehungen

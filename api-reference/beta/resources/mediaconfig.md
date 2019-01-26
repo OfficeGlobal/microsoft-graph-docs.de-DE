@@ -4,12 +4,12 @@ description: Die Medienkonfiguration für die Verbindung zu einem Anruf verwende
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b2d8b8063307660b0d4cce459e1906f0b0a99c5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515104"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573963"
 ---
 # <a name="mediaconfig-resource-type"></a>Ressourcentyp mediaConfig
 
@@ -21,7 +21,7 @@ Die Medienkonfiguration für die Verbindung zu einem Anruf verwendet.
 
 | Eigenschaft       | Typ    | Beschreibung|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolescher Wert |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -32,6 +32,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
+  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

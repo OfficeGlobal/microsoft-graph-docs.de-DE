@@ -3,12 +3,13 @@ title: SharePoint-Aktivitätsberichte
 description: Verwenden Sie die SharePoint-Aktivitätsberichte, um mehr über die Aktivität der für SharePoint lizenzierten Benutzer zu erfahren, indem Sie sich deren Interaktion mit Dateien ansehen. Sie können sich auch den Umfang der Zusammenarbeit basierend auf der Anzahl der freigegebenen Dateien ansehen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 5d43f2183c805a29c0bb7a4693a01e14236537d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 5754149f573798bfbb10a6ac6c2b9ca60fce597a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971893"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575216"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint-Aktivitätsberichte
 
@@ -18,7 +19,7 @@ Verwenden Sie die SharePoint-Aktivitätsberichte, um mehr über die Aktivität d
 
 ## <a name="reports"></a>Berichte
 
-| Funktion                                 | Rückgabetyp | Beschreibung                              |
+| Function                                 | Rückgabetyp | Beschreibung                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Benutzerdetails abrufen](../api/reportroot-getsharepointactivityuserdetail.md) | Stream      | Rufen Sie Details zu SharePoint-Aktivitäten nach Benutzer ab. |
 | [Dateianzahl abrufen](../api/reportroot-getsharepointactivityfilecounts.md) | Stream      | Erfahren Sie, wie viele eindeutige, lizenzierte Benutzer mit auf SharePoint-Websites gespeicherten Dateien interagiert haben. |

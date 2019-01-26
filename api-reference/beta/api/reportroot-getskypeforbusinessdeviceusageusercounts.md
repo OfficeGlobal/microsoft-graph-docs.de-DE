@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessDeviceUsageUserCounts'
 description: Erfahren Sie mehr über Auslastungstrends, indem Sie sich ansehen, wie viele Benutzer in Ihrer Organisation sich über die Skype for Business-App verbunden haben. Außerdem erhalten Sie eine Auflistung des Gerätetyps (Windows, Windows Phone, Android-Smartphone, iPhone oder iPad) auf dem die Skype for Business-Client-App installiert und in Ihrer Organisation verwendet wird.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 4191f398ee4a230a5ec3cce8123079f6fe1a3465
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f438cb217462616d7eb96c20675389c6f2dc7a75
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514488"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575076"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 

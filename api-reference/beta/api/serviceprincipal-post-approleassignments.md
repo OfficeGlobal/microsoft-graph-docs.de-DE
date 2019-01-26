@@ -2,12 +2,12 @@
 title: Erstellen von appRoleAssignment
 description: Verwenden Sie diese API, um eine neue AppRoleAssignment erstellen.
 localization_priority: Normal
-ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 33bf7a577b01b2f23132a2b761bd80f24e8268c7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528767"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574340"
 ---
 # <a name="create-approleassignment"></a>Erstellen von appRoleAssignment
 
@@ -68,7 +68,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK

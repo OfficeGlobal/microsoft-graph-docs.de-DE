@@ -4,12 +4,12 @@ description: Übersetzen Sie IDs von Outlook-bezogene Ressourcen zwischen den Fo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528228"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571289"
 ---
 # <a name="user-translateexchangeids"></a>Benutzer: TranslateExchangeIds
 
@@ -54,16 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Werte | Beschreibung |
 |:-------|:------------|
-| ENTRYID | Das Format von binären Eintrag ID von MAPI-Clients verwendet wird. |
-| EwsId | Das ID-Format wird von Exchange-Webdienste-Clients verwendet. |
+| entryId | Das Format von binären Eintrag ID von MAPI-Clients verwendet wird. |
+| ewsId | Das ID-Format wird von Exchange-Webdienste-Clients verwendet. |
 | immutableEntryId | Die MAPI-kompatibles unveränderlich ID Binärformat. |
 | restId | Das ID-Standardformat, von Microsoft Graph verwendet. |
 | restImmutableEntryId | Unveränderlich ID Format wird von Microsoft Graph. |
 
 Die binären Dateiformate (`entryId` und `immutableEntryId`) base64-codierte URL-sichere sind. URL-Safeness wird durch Ändern der base64-Codierung binäre Daten auf folgende Weise implementiert:
 
-- `+`
-- `/`
+- Ersetzen Sie `+` mit`-`
+- Ersetzen Sie `/` mit`_`
 - Entfernen Sie alle nachfolgenden Füllzeichen (`=`)
 - Eine ganze Zahl an das Ende der Zeichenfolge, die angibt, wie viele Füllzeichen aus der ursprünglichen Datei hinzufügen (`0`, `1`, oder `2`)
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

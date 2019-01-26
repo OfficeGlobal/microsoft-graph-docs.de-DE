@@ -2,12 +2,12 @@
 title: website-Ressourcentyp
 description: Stellt eine Website dar.
 localization_priority: Normal
-ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 74f8d9807ad2627b8f6df1b22af795308ff0e430
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511226"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572381"
 ---
 # <a name="website-resource-type"></a>website-Ressourcentyp
 
@@ -19,7 +19,7 @@ Stellt eine Website dar.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|type|Zeichenfolge| Mögliche Werte: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| Die möglichen Werte sind: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|Die URL der Website.|
 |displayName|string|Der Anzeigename der Website.|
 

@@ -4,12 +4,12 @@ description: Dient zum Erstellen einer neuen OneNote-Seite im Standardabschnitt 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c55a3f023ddaa50e7917aed8f1ec1b8bc9b8b6e7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528704"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573459"
 ---
 # <a name="create-page"></a>Seite erstellen
 
@@ -42,7 +42,7 @@ POST /sites/{id}/onenote/pages
 ## <a name="request-headers"></a>Anforderungsheader  
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | String  | Bearer {token}. Erforderlich. |
+| Authorization  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,7 +52,7 @@ Der Text kann HTML-Code enthalten, der direkt im Anforderungstext platziert ist,
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein neues [page](../resources/page.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode eine `201 Created` Antwortcode und das neue [OnenotePage](../resources/onenotepage.md) -Objekt aus der Antwort.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

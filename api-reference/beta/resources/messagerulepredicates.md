@@ -4,12 +4,12 @@ description: Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 324c46728b33e70bae66426c6fbfd46ba830246b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519437"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571835"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates-Ressourcentyp
 
@@ -20,17 +20,17 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| bodyContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| bodyOrSubjectContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Textkörper oder Betreff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| categories | Sammlung (Zeichenfolge) | Steht für die Kategorien, mit denen eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. |
-| fromAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die speziellen Absender-E-Mail-Adressen einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft. |
-| hasAttachments | Boolean | Gibt an, ob eine eingehende Nachricht Anlagen aufweisen muss, damit eine Bedingung oder Ausnahme zutrifft. |
-| HeaderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| Wichtigkeit | String | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
+| bodyContains |  Zeichenfolgenauflistung | Steht für die Zeichenfolgen, die im Textkörper einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| bodyOrSubjectContains |  Zeichenfolgenauflistung | Steht für die Zeichenfolgen, die im Textkörper oder Betreff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| categories | Zeichenfolgenauflistung | Steht für die Kategorien, mit denen eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. |
+| fromAddresses |  [recipient](recipient.md) collection | Steht für die speziellen Absender-E-Mail-Adressen einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft. |
+| hasAttachments | Boolescher Wert | Gibt an, ob eine eingehende Nachricht Anlagen aufweisen muss, damit eine Bedingung oder Ausnahme zutrifft. |
+| HeaderContains | Zeichenfolgenauflistung  | Steht für die Zeichenfolgen, die in den Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| Wichtigkeit | Zeichenfolge | Die Wichtigkeit einer eingehenden Nachricht, damit die Bedingung oder Ausnahme zutrifft: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Genehmigungsanforderung sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticForward | Boolescher Wert | Gibt an, ob eine eingehende Nachricht automatisch weitergeleitet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isAutomaticReply | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine automatische Antwort sein muss, damit die Bedingung oder Ausnahme zutrifft. |
-| isEncrypted | Boolean | Gibt an, ob eine eingehende Nachricht verschlüsselt sein muss, damit die Bedingung oder Ausnahme zutrifft. |
+| isEncrypted | Boolescher Wert | Gibt an, ob eine eingehende Nachricht verschlüsselt sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isMeetingRequest | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Besprechungsanfrage sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isMeetingResponse | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Besprechungsantwort sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | isNonDeliveryReport | Boolescher Wert | Gibt an, ob eine eingehende Nachricht ein Unzustellbarkeitsbericht sein muss, damit die Bedingung oder Ausnahme zutrifft. |
@@ -40,15 +40,15 @@ Steht für die Gruppe von Bedingungen und Ausnahmen, die für eine Regel zur Ver
 | isVoicemail | Boolescher Wert | Gibt an, ob eine eingehende Nachricht eine Voicemail sein muss, damit die Bedingung oder Ausnahme zutrifft. |
 | messageActionFlag | Zeichenfolge  | Steht für den flag-for-action-Wert, der in einer eingehenden Nachricht angezeigt wird, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte sind: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
 | notSentToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs kein Empfänger einer eingehenden Nachrichten sein darf, damit die Bedingung oder Ausnahme zutrifft. |
-| recipientContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in den Eigenschaften **toRecipients** oder **ccRecipients** einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| senderContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die in der **from**-Eigenschaft Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
-| sensitivity | String | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte: `normal`, `personal`, `private`, `confidential` |
+| recipientContains | Zeichenfolgenauflistung | Steht für die Zeichenfolgen, die in den Eigenschaften **toRecipients** oder **ccRecipients** einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| senderContains |  Zeichenfolgenauflistung | Steht für die Zeichenfolgen, die in der **from**-Eigenschaft Kopfzeilen einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| sensitivity | Zeichenfolge | Steht für die Vertraulichkeitsstufe, mit der eine eingehende Nachricht gekennzeichnet werden sollte, damit die Bedingung oder Ausnahme zutrifft. Mögliche Werte: `normal`, `personal`, `private`, `confidential` |
 | sentCcMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **ccRecipients**-Eigenschaft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentOnlyToMe | Boolescher Wert | Gibt an, ob der Besitzer des Postfachs der einzige Empfänger in einer eingehenden Nachrichten sein muss, damit die Bedingung oder Ausnahme zutrifft. |
-| sentToAddresses | Sammlung ([Empfänger](recipient.md)) | Steht für die E-Mail-Adressen, an die eine eingehenden Nachricht gesendet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
+| sentToAddresses |  [recipient](recipient.md) collection | Steht für die E-Mail-Adressen, an die eine eingehenden Nachricht gesendet werden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **toRecipients**-Eigenscahft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
 | sentToOrCcMe | Boolescher Wert | Gibt an, ob sich der Besitzer des Postfachs in der **toRecipients**-Eigenschaft oder in der **ccRecipients**-Eigenschaft einer eingehenden Nachrichten befinden muss, damit die Bedingung oder Ausnahme zutrifft. |
-| SubjectContains | Sammlung (Zeichenfolge) | Steht für die Zeichenfolgen, die im Betreiff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
+| SubjectContains | Zeichenfolgenauflistung | Steht für die Zeichenfolgen, die im Betreiff einer eingehenden Nachricht angezeigt werden sollten, damit die Bedingung oder Ausnahme zutrifft. |
 | withinSizeRange | [sizeRange](sizerange.md) | Gibt die maximale und minimale Größe (in Kilobyte) an, zwischen der eine eingehende Nachricht liegen muss, damit eine Bedingung oder Ausnahme zutrifft. |
 
 
@@ -68,7 +68,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "bodyContains": ["String"],
   "bodyOrSubjectContains": ["String"],
   "categories": ["String"],
-  "fromAddresses": [{"@odata.type": "microsoft.graph.recipient"}],
+  "fromAddresses": [{"@odata.type": "#microsoft.graph.recipient"}],
   "hasAttachments": "Boolean",
   "headerContains": ["String"],
   "importance": "String",
@@ -90,11 +90,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "sensitivity": "String",
   "sentCcMe": "Boolean",
   "sentOnlyToMe": "Boolean",
-  "sentToAddresses": [{"@odata.type": "microsoft.graph.recipient"}],
+  "sentToAddresses": [{"@odata.type": "#microsoft.graph.recipient"}],
   "sentToMe": "Boolean",
   "sentToOrCcMe": "Boolean",
   "subjectContains": ["String"],
-  "withinSizeRange": {"@odata.type": "microsoft.graph.sizeRange"}
+  "withinSizeRange": {"@odata.type": "#microsoft.graph.sizeRange"}
 }
 
 ```

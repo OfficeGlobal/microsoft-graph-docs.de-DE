@@ -2,12 +2,12 @@
 title: 'ServicePrincipal: oAuth2Permissiongrants auflisten'
 description: Abrufen einer Liste von oAuth2Permissiongrant-Objekten.
 localization_priority: Normal
-ms.openlocfilehash: 34f769f5bd194458689914dd608583c69bbe2076
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2d7e27b61dc9c0cdeb4f2f188bb945a3b4544f16
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512934"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572626"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>ServicePrincipal: oAuth2Permissiongrants auflisten
 
@@ -58,7 +58,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
   "isCollection": true
 } -->
 ```http

@@ -3,12 +3,13 @@ title: Ressourcentyp office365GroupsActivityCounts
 description: Es folgt eine JSON-Darstellung der Ressource.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: c94e79f688e117960b3a8a0f2c9888a908634a82
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968288"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572332"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Ressourcentyp office365GroupsActivityCounts
 
@@ -16,13 +17,13 @@ ms.locfileid: "27968288"
 
 | Eigenschaft               | Typ   | Beschreibung                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate      | Datum   | Das aktuelle Datum des Inhalts.          |
+| reportRefreshDate      | Date   | Das aktuelle Datum des Inhalts.          |
 | exchangeEmailsReceived | Int64  | Die Anzahl von Postfächern Gruppe empfangenen e-Mails. |
 | yammerMessagesPosted   | Int64  | Die Anzahl von Nachrichten zu Yammer-Gruppen bereitgestellt werden. |
 | yammerMessagesRead     | Int64  | Lesen Sie die Anzahl der Nachrichten in Yammer-Gruppen. |
 | yammerMessagesLiked    | Int64  | Die Anzahl der Nachrichten in Yammer-Gruppen gefallen. |
-| reportDate             | Datum   | Das Datum, an dem eine Anzahl von e-Mails an eine Gruppenpostfach gesendet wurden, oder eine Anzahl von Nachrichten gesendet wurden, lesen oder in einer Gruppe Yammer gefallen |
-| reportPeriod           | Zeichenfolge | Die Anzahl der Tage, die der Bericht wird behandelt.    |
+| reportDate             | Date   | Das Datum, an dem eine Anzahl von e-Mails an eine Gruppenpostfach gesendet wurden, oder eine Anzahl von Nachrichten gesendet wurden, lesen oder in einer Gruppe Yammer gefallen |
+| reportPeriod           | String | Die Anzahl der Tage, die der Bericht wird behandelt.    |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

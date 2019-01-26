@@ -2,12 +2,12 @@
 title: AppRole Ressourcentyp
 description: Stellt eine Anwendungsrolle, die von einer Clientanwendung aus einer anderen Anwendung aufrufen angefordert werden kann oder, die verwendet werden kann, eine Anwendung Benutzern oder Gruppen in einer angegebenen Anwendungsrolle zugewiesen. Die **AppRoles** -Eigenschaft der Entität ServicePrincipal und der Anwendung Entität ist eine Auflistung von **AppRole**.
 localization_priority: Normal
-ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f587c15073cf2ad5f6b9973de8f7ef66c294294
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525794"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571254"
 ---
 # <a name="approle-resource-type"></a>AppRole Ressourcentyp
 
@@ -26,7 +26,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approle"
+  "@odata.type": "microsoft.graph.appRole"
 }-->
 
 ```json

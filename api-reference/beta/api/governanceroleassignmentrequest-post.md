@@ -2,12 +2,12 @@
 title: Erstellen von governanceRoleAssignmentRequest
 description: Erstellen Sie eine Rolle Zuordnung Anforderung zur Darstellung der Operation in einer rollenzuweisung angezeigt werden soll. Die folgende Tabelle enthält die Vorgänge.
 localization_priority: Normal
-ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523239"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572367"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Erstellen von governanceRoleAssignmentRequest
 
@@ -54,13 +54,13 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [GovernanceRole
 
 | Eigenschaft     | Typ    |Erforderlich|  Beschreibung|
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|Die ID der Ressource.|
+|resourceId|String|Ja|Die ID der Ressource.|
 |roleDefinitionId|String|Ja|Die ID der Rollendefinition.|
 |subjectId|String|Ja|Die ID des Betreffs.|
 |assignmentState|String|Ja|Der Status der Zuordnung. Der Wert kann sein ``Eligible`` und ``Active``.|
 |type|String|Ja|Der Anforderungstyp. Der Wert kann sein `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`und `AdminExtend`.|
 |Grund|String| |Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)| | Den Zeitplan der Rolle Zuordnung Anforderung. Für Anforderungstyp `UserAdd`, `AdminAdd`, `AdminUpdate`, und `AdminExtend`, es ist erforderlich.|
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | Den Zeitplan der Rolle Zuordnung Anforderung. Für Anforderungstyp `UserAdd`, `AdminAdd`, `AdminUpdate`, und `AdminExtend`, es ist erforderlich.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) -Objekts in der Antworttext.
@@ -88,13 +88,13 @@ In diesem Beispiel weisen Sie Administratoren Benutzer nawu@fimdev.net Rolle Abr
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
 |type|String|Ja| AdminAdd|
 |Grund|String| hängt von der Rolle Einstellungen||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ In diesem Beispiel wird der Benutzer nawu@fimdev.net zu auswählbaren Abrechnung
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Aktiv|
 |type|String|Ja| UserAdd|
 |Grund|String| hängt von der Rolle Einstellungen||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ In diesem Beispiel deaktiviert die nawu@fimdev.net Benutzer die aktive Abrechnun
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Aktiv|
 |type|String|Ja| UserRemove|
 |Grund|String| Nein||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|No|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
@@ -329,13 +329,13 @@ In diesem Beispiel Entfernen von Administratoren die nawu@fimdev.net Benutzer au
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
 |type|String|Ja| AdminRemove|
 |Grund|String| Nein||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|No|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ In diesem Beispiel aktualisieren Administratoren die rollenzuweisung für den Be
 
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active|
 |type|String|Ja| AdminUpdate|
 |Grund|String| hängt von roleSettings||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ In diesem Beispiel wird erweitert die ablaufende rollenzuweisung für Benutzer A
  
 | Eigenschaft     | Typ    |Erforderlich|  Wert |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Zeichenfolge|Ja|resourceId|
+|resourceId|String|Ja|\<resourceId\>|
 |roleDefinitionId|String|Ja|\<roleDefinitionId\>|
 |subjectId|String|Ja|\<subjectId\>|
 |assignmentState|String|Ja| Berechtigte / Active |
 |type|String|Ja| AdminExtend|
 |Grund|String| hängt von roleSettings||
-|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Ja|        |
+|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Ja|        |
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",

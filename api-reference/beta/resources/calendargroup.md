@@ -4,12 +4,12 @@ description: Eine Gruppe der Benutzerkalender.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a40b01136df2bb20a143a8de01188efaa2585191
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515650"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574796"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup-Ressourcentyp
 
@@ -22,7 +22,7 @@ Eine Gruppe der Benutzerkalender.
 | Methode                                                      | Rückgabetyp                        | Beschreibung                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [Kalendergruppen auflisten](../api/user-list-calendargroups.md)  | [Kalendersammlung](calendar.md) | Dient zum Abrufen der Kalendergruppen des Benutzers.                               |
-| [Kalendergruppe erstellen](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Erstellt eine neue Kalendergruppe.                                  |
+| [Kalendergruppe erstellen](../api/user-post-calendargroups.md) | [Kalender](calendar.md)            | Erstellt eine neue Kalendergruppe.                                  |
 | [Kalendergruppe abrufen](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Dient zum Lesen der Eigenschaften und der Beziehungen eines Kalendergruppenobjekts. |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Dient zum Aktualisieren des calendarGroup-Objekts.                                  |
 | [Löschen](../api/calendargroup-delete.md)                    | Keine                               | Dient zum Löschen des calendarGroup-Objekts.                                  |
@@ -33,10 +33,10 @@ Eine Gruppe der Benutzerkalender.
 
 | Eigenschaft  | Typ   | Beschreibung                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | Zeichenfolge | Der Gruppenname.                                                                                                                                                                                           |
+| name      | String | Der Gruppenname.                                                                                                                                                                                           |
 | changeKey | String | Gibt die Version der Kalendergruppe an. Jedes Mal, wenn die Kalendergruppe geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen. Schreibgeschützt. |
 | classId   | Guid   | Die Klassen-ID. Schreibgeschützt.                                                                                                                                                                          |
-| id        | Zeichenfolge | Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.                                                                                                                                                                 |
+| id        | String | Eindeutiger Bezeichner für die Gruppe. Schreibgeschützt.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -54,7 +54,19 @@ Es folgt eine JSON-Darstellung der Ressource.
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

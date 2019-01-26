@@ -4,12 +4,12 @@ description: Stellt Azure AD-Benutzer, die gefährdet sind. Azure AD ständig we
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515713"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572185"
 ---
 # <a name="riskyusers-resource-type"></a>Ressourcentyp riskyUsers
 
@@ -46,9 +46,9 @@ Weitere Informationen zu Risiken-Ereignissen finden Sie unter [Azure Active Dire
 
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|id|UserObjectId| Der eindeutige Bezeichner des Benutzers, mit denen ein bestimmtes Risiko-Ereignis zugeordnet ist.|
-|isGuest|isGuest| Ein riskant Benutzer kann entweder ein Home-Benutzer (B2E) oder ein Gast (B2B, B2C) sein.|
-|isDeleted|isDeleted| Ein Benutzer kann oder kann nicht gelöscht werden. |
+|id|string| Der eindeutige Bezeichner des Benutzers, mit denen ein bestimmtes Risiko-Ereignis zugeordnet ist.|
+|isGuest|Boolescher Wert| Ein riskant Benutzer kann entweder ein Home-Benutzer (B2E) oder ein Gast (B2B, B2C) sein.|
+|isDeleted|Boolescher Wert| Ein Benutzer kann oder kann nicht gelöscht werden. |
 |riskState|riskState| Ein Benutzer riskant konnte in einem mehrerer Zustände vorhanden sein. |
 |riskDetail|riskDetail| Ein riskant Benutzer konnte aus mehreren Gründen in einem bestimmten Zustand sein. |
 |riskLevel|riskLevel| Ein riskant Benutzer kann eine der mehrere Risikoebenen betrachtet werden. |
@@ -60,9 +60,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json

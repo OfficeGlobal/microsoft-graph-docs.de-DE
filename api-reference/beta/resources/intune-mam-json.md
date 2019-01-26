@@ -4,12 +4,12 @@ description: Stellt die im JSON-Format zurückgegebenen Daten dar.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 9713cbaf47746a4a167c9c956e72d9088d0126c9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5fc4d6a90f54ec25a6860245d99da749b55bbbc5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402069"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570841"
 ---
 # <a name="json-resource-type"></a>Json-Ressourcentyp
 
@@ -35,7 +35,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.Json"
+  "@odata.type": "microsoft.graph.Json"
 }
 ```
 

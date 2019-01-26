@@ -2,12 +2,12 @@
 title: workingHours-Ressourcentyp
 description: Stellt die Wochentage und Zeiten in einer bestimmten Zeitzone dar, an bzw. zu denen der Benutzer arbeitet.
 localization_priority: Normal
-ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512283"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573823"
 ---
 # <a name="workinghours-resource-type"></a>workingHours-Ressourcentyp
 
@@ -25,9 +25,9 @@ Wenn andere Personen Arbeitsbesprechungen mit Ihnen an Ihrem üblichen Arbeitspl
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| daysOfWeek | Zeichenfolgenauflistung | Die Wochentage, an denen der Benutzer arbeitet. |
-| startTime | Edm.TimeOfDay | Die Tageszeit, zu der der Benutzer zu arbeiten beginnt. |
-| endTime | Edm.TimeOfDay | Die Tageszeit, zu der der Benutzer zu arbeiten aufhört. |
+| daysOfWeek | DayOfWeek-Auflistung | Die Wochentage, an denen der Benutzer arbeitet. |
+| startTime | Zeichenfolge (TimeOfDay) | Die Tageszeit, zu der der Benutzer zu arbeiten beginnt. |
+| endTime | Zeichenfolge (TimeOfDay) | Die Tageszeit, zu der der Benutzer zu arbeiten aufhört. |
 | timeZone | [timeZoneBase](timezonebase.md) | Die Zeitzone, für die die Arbeitszeiten gelten. |
 
 
@@ -45,9 +45,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "daysOfWeek": ["dayOfWeek"],
+  "startTime": "String (TimeOfDay)",
+  "endTime": "String (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

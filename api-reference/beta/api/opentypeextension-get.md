@@ -3,12 +3,12 @@ title: Datenerweiterung abrufen
 description: Dieser Artikel beschreibt, wie Sie eine offene Erweiterung (openTypeExtension-Objekt) basierend auf ihrem Namen oder ihrem vollqualifizierten Namen abrufen können.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 367e3613e309e02a8ca5ec82c5216e4aeae20d25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0d815b6c59165081b54afb3295f76b524cfaadc1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524303"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572353"
 ---
 # <a name="get-open-extension"></a>Datenerweiterung abrufen
 
@@ -32,7 +32,7 @@ Je nach der Ressource, die die Erweiterung und die Berechtigung enthält Typ (de
 |:-----|:-----|:-----|:-----|
 | [Gerät](../resources/device.md) | Directory.Read.All | Nicht unterstützt | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [Gruppe](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [group event](../resources/event.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
 | [group post](../resources/post.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
 | [Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
@@ -158,7 +158,7 @@ Hier sehen Sie die Antwort für Beispiel 1:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -166,7 +166,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -199,7 +199,7 @@ Die Antwort für das zweite Beispiel sieht so aus:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -207,7 +207,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -301,7 +301,7 @@ Content-type: application/json
     "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -334,7 +334,7 @@ Die Antwort für das vierte Beispiel sieht wie folgt aus:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -342,7 +342,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
-    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
     "extensionName": "Com.Contoso.Estimate",
     "companyName": "Contoso",
@@ -445,7 +445,7 @@ HTTP/1.1 200 OK
     "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",

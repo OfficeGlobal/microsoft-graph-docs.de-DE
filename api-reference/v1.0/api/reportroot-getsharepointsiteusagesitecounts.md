@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageSiteCounts'
 description: Rufen Sie die Gesamtzahl der Dateien auf allen Websites und die Anzahl der aktiven Dateien ab. Eine Datei (Benutzer oder System) wird als aktiv betrachtet, wenn sie innerhalb des angegebenen Zeitraums gespeichert, synchronisiert, geändert oder freigegeben wurde.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c4b9e5c24bc30e73336941f0a5fe9cee571bf879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: e0d55b24bc22c64adb7a17fe8fa3a56284301f00
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957970"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572892"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 

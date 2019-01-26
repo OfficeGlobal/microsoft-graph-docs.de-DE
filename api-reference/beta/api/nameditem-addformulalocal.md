@@ -2,12 +2,12 @@
 title: Benanntes Element „FormulaLocal“ hinzufügen
 description: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
 localization_priority: Normal
-ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d17734e4bdc407f6c24204f54f486d35d990d140
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859570"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574600"
 ---
 # <a name="add-named-item-formulalocal"></a>Benanntes Element „FormulaLocal“ hinzufügen
 Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
@@ -45,7 +45,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [NamedItem](../resources/nameditem.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwortobjekt Code und [WorkbookNamedItem](../resources/workbooknameditem.md) im Antworttext.
 
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
@@ -74,7 +74,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

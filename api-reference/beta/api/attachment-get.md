@@ -2,12 +2,12 @@
 title: Anlage abrufen
 description: Lesen Sie die Eigenschaften und Beziehungen der Anlage, die ein Ereignis, Nachricht, Outlook-Aufgabe oder Post zugeordnet ist.
 localization_priority: Normal
-ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509497"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574349"
 ---
 # <a name="get-attachment"></a>Anlage abrufen
 
@@ -27,8 +27,8 @@ All diese Typen von Anlagenressourcen werden von der Ressource [attachment](../r
 
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
-* Beim Zugriff auf Anlagen in Nachrichten: Mail.Read
-* Beim Zugriff auf Anlagen in Ereignissen: Calendars.Read
+* Wenn Anlagen in Nachrichten zugreifen: Mail.Read
+* Wenn das Zugreifen auf Anlagen in Ereignisse: Calendars.Read
 * Wenn auf Anlagen in Outlook-Aufgaben zugreifen: Tasks.Read
 * Wenn Anlagen in der Gruppe Beiträge zugreifen: Group.Read.All
 
@@ -67,7 +67,8 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anlagen für eine [Nachricht](../resources/message.md) in einem untergeordneten [MailFolder](../resources/mailfolder.md) im Postfach eines Benutzers.  Das Beispiel unten zeigt eine einzige Schachtelungsebene, aber eine Nachricht kann sich auch in einem untergeordneten Element eines untergeordneten Elements usw. befinden.
+Anlagen für eine [Nachricht](../resources/message.md) , die in einem untergeordneten Ordner von einem [MailFolder](../resources/mailfolder.md) im Postfach eines Benutzers enthalten sind.  Das folgende Beispiel zeigt eine Ebene von schachteln, aber eine Nachricht kann befinden in ein untergeordnetes Element des ein untergeordnetes Element und so weiter.
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -137,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

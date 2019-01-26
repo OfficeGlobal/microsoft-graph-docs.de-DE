@@ -4,12 +4,12 @@ description: 'Komplexer Typ, der Eigenschaften von gemeinsamen Elementen enthäl
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 380db80f120b29a0d1dca1a4b052679e483bc6f7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512269"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571037"
 ---
 # <a name="sharingdetail-resource-type"></a>Ressourcentyp sharingDetail
 
@@ -19,7 +19,13 @@ Komplexer Typ, der Eigenschaften von [gemeinsamen](insights-shared.md) Elementen
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.sharingDetail"
+}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",
@@ -36,7 +42,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| Das Datum und die Zeit, die die Datei zuletzt freigegeben wurde. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `2014-01-01T00:00:00Z`. Schreibgeschützt.  |
 | sharingSubject        | String          | Der Betreff, mit dem das Dokument freigegeben wurde. |
-| SharingType             | String        | Bestimmt, wie das Dokument freigegeben wurde, kann durch "Link", "Anlage", "Group", "Site" sein.     |
+| sharingType             | String        | Bestimmt, wie das Dokument freigegeben wurde, kann durch "Link", "Anlage", "Group", "Site" sein.     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | Der Benutzer, die das Dokument freigegeben.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
 <!--

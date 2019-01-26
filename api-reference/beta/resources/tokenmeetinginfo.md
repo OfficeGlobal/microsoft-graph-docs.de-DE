@@ -4,12 +4,12 @@ description: Der Typ des TokenMeetingInfo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513368"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571072"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Ressourcentyp tokenMeetingInfo
 
@@ -21,7 +21,7 @@ Der Typ des TokenMeetingInfo.
 
 | Eigenschaft                     | Typ    | Beschreibung                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolescher Wert | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
+| allowConversationWithoutHost | Boolean | Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt. |
 | token                        | String  | Das Token an der Besprechung teilnehmen/aktivieren.                                        |
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -33,6 +33,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

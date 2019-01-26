@@ -4,12 +4,12 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartAx
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 98ce124c35fa39c6ad2ae41565b7ef180ff57c55
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9fd966aa8cfa0ebd39d586d36f952e144989072f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519493"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571709"
 ---
 # <a name="get-chartaxis"></a>ChartAxis abrufen
 
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK

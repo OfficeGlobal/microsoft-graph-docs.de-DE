@@ -4,12 +4,12 @@ description: RangeView stellt einen Satz von sichtbaren Zellen des übergeordnet
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d01ab0b8b21814a363d838b61fca29aa90357156
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520830"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574362"
 ---
 # <a name="rangeview-resource-type"></a>Ressourcentyp rangeView
 
@@ -28,6 +28,7 @@ RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs d
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Stellt die Zelle Adressen
 |columnCount|Int32|Gibt die Anzahl der sichtbaren Spalten zurück. Schreibgeschützt.|
 |formulas|Json|Stellt die Formel in der A1-Schreibweise dar. |
 |formulasLocal|Json|Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel "= SUM(A1, 1.5)" in Deutsch "= SUMME(A1; 1,5) " werden.    |
@@ -36,7 +37,7 @@ RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs d
 |numberFormat|Json|Stellt den Excel-Zahlenformatcode für die angegebene Zelle dar. Schreibgeschützt. |
 |rowCount|Int32|Gibt die Anzahl der sichtbaren Zeilen zurück. Schreibgeschützt.  |
 |text|Json|Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des #-Zeichens, die in der Excel-Benutzeroberfläche passiert, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Schreibgeschützt.    |
-|valueTypes|Json|Stellt den Datentyp in jeder Zelle dar. Schreibgeschützt. Die folgenden Werte sind möglich: Unbekannt, leer, Zeichenfolge, Ganzzahl, Doppelwort, Boolesch, Fehler. |
+|valueTypes|Json|Stellt den Typ der Daten, die jeder Zelle an. Schreibgeschützt. Die möglichen Werte sind: unbekannt, leer, String, Integer, Double, Boolean, Fehler. |
 |values|Json|Stellt die Rohwerte der angegebenen Bereichsansicht dar. Die zurückgegebenen Daten können vom Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.   |
 
 ## <a name="relationships"></a>Beziehungen
@@ -48,6 +49,7 @@ RangeView stellt einen Satz von sichtbaren Zellen des übergeordneten Bereichs d
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->

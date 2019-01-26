@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts'
 description: Erhalten Sie Informationen über die Anzahl der eindeutigen Benutzer und die Art der in Ihrem Unternehmen gehaltenen Peer-to-Peer-Sitzungen. Zu den Sitzungsarten gehören Chat, Audio, Video, Anwendungsfreigabe und Dateiübertragung in Peer-to-Peer-Sitzungen.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a916e4c0d013f0961dd8e8e4e6daa477ef1bc788
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 98eadcbee3d2465446c3fe6b581da004f0c54ed4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916369"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574607"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 

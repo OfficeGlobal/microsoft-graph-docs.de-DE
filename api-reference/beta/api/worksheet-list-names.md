@@ -4,12 +4,12 @@ description: 'Dient zum Abrufen einer Liste von benannten Elementen, die mit dem
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f215441d8248752ac94b6d311b998412ac154ebd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f284063af0cf666f95561a7669419c62ad7211ca
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517904"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573977"
 ---
 # <a name="list-names"></a>Namen auflisten
 
@@ -44,7 +44,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [NamedItem](../resources/nameditem.md)-Objekten im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [NamedItem](../resources/workbooknameditem.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem",
+  "@odata.type": "microsoft.graph.workbookNamedItem",
   "isCollection": true
 } -->
 ```http

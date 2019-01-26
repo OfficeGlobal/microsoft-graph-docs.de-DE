@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des ChartAxisTitle-Objekt
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f8e1ba265246678bb930c1135fbf465147c1c7b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1c06cb996838adc82105a278d4f1182acccdc8a0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522616"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574075"
 ---
 # <a name="update-chartaxistitle"></a>ChartAxisTitle aktualisieren
 
@@ -48,7 +48,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartAxisTitle](../resources/chartaxistitle.md)-Objekt im Antworttext zurückgegeben.
+Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartAxisTitle](../resources/chartaxistitle.md) -Objekt aus der Antwort.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -71,7 +71,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

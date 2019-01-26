@@ -2,14 +2,14 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: baseItemVersion
+title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: fcf427300007277f7ea6382579ad3a0929ca97d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 92784fd9836c0ffd8fe748c2daee0947edefbbdc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519409"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571107"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion-Ressourcentyp
 
@@ -20,7 +20,13 @@ Die **baseItemVersion**-Ressource stellt eine frühere Version eines Elements od
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!--{
+  "blockType": "resource",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.baseItemVersion",
+  "@type.aka": "oneDrive.baseItemVersion"
+}-->
 
 ```json
 {
@@ -39,7 +45,7 @@ Die **baseItemVersion**-Ressource stellt eine frühere Version eines Elements od
 | **id**                   | string                                               | Die ID der Version. Schreibgeschützt.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Die Identität des Benutzers, der die Version zuletzt geändert hat. Schreibgeschützt.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Datum und Uhrzeit der letzten Änderung der Version. Schreibgeschützt.                 |
-| Veröffentlichung          | [PublicationFacet](../resources/publicationfacet.md) | Zeigt den Veröffentlichungsstatus dieser bestimmten Version an. Schreibgeschützt. |
+| **Veröffentlichung**          | [PublicationFacet](../resources/publicationfacet.md) | Zeigt den Veröffentlichungsstatus dieser bestimmten Version an. Schreibgeschützt. |
 
 
 <!--

@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des rangefont-Objekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5857941f8c08c9090ba05098ae1d69a34dead791
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ca64783c516e681c871acda76c8e26f1137b63
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529698"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572010"
 ---
 # <a name="update-rangefont"></a>rangefont aktualisieren
 
@@ -48,7 +48,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |italic|Boolescher Wert|Stellt den Kursiv-Status der Schriftart dar.|
 |name|string|Schriftartname (z. B. "Calibri")|
 |size|double|Schriftgrad|
-|underline|string|Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline| Enum-Zeichenfolge |Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="response"></a>Antwort
 
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 ##### <a name="response"></a>Antwort
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 
