@@ -3,12 +3,12 @@ title: Bekannte Probleme in Microsoft Graph
 description: Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im Microsoft Graph-Änderungsprotokoll.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 65a38e8852c878811d609b56b0f7f0ad1d4e73ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820223"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576787"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
@@ -370,6 +370,3 @@ In der Zwischenzeit können Sie die folgende Problemumgehung verwenden, um die E
 
 Einige Funktionen sind in Microsoft Graph noch nicht verfügbar. Wenn Sie die gesuchte Funktion nicht finden, können Sie die endpunktspezifischen [Office 365-REST-APIs](https://msdn.microsoft.com/office/office365/api/api-catalog) verwenden. Für Azure Active Directory finden Sie im Blogbeitrag [Microsoft Graph oder Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) Informationen über die Features, die nur über die Azure AD-Graph-API verfügbar sind.
 
-## <a name="feedback"></a>Feedback
-
-> Ihr Feedback ist uns wichtig. Nehmen Sie unter [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph) Kontakt mit uns auf.

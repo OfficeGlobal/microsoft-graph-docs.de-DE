@@ -3,12 +3,12 @@ title: Übersicht über Microsoft Graph
 description: Microsoft Graph ist das Gateway zu Daten und Intelligence in Microsoft 365. Microsoft Graph bietet ein einheitliches Programmiermodell, das Sie verwenden können, um die enorme Menge von Daten in Office 365, Enterprise Mobility + Security und Windows 10 zu nutzen.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b8256cebe9e8e706a655221c3e1acc5947f9eecd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879912"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573711"
 ---
 # <a name="overview-of-microsoft-graph"></a>Übersicht über Microsoft Graph
 
@@ -105,7 +105,4 @@ Weitere Informationen zu Microsoft Graph Data Connect finden Sie unter [Microsof
 - Erfahren Sie, wie Sie [ein Authentifizierungstoken](auth-overview.md) in Ihrer App erhalten.
 - Beginnen Sie damit, die [API zu verwenden](use-the-api.md).
 
-## <a name="feedback"></a>Feedback?
-
-Ihr Feedback ist uns wichtig. Nehmen Sie auf [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph) Kontakt mit uns auf. Taggen Sie Ihre Fragen mit {MicrosoftGraph}.
 

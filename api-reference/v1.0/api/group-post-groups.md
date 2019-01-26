@@ -4,12 +4,12 @@ description: 'Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß d
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
-ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
+ms.openlocfilehash: 8bf432d30ba000641654d8c5d457096f5bfcb70e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442318"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574866"
 ---
 # <a name="create-group"></a>Gruppe erstellen
 Verwenden Sie diese API zum Erstellen einer neuen Gruppe gemäß der Angabe im Anforderungstext. Sie können drei Typen von Gruppen erstellen:
@@ -43,6 +43,7 @@ POST /groups
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 Die folgende Tabelle enthält die Eigenschaften der [group](../resources/group.md)-Ressource, die Sie beim Erstellen einer Gruppe angeben müssen. 
