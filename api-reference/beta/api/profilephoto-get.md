@@ -1,21 +1,21 @@
 ---
 title: Foto abrufen
-description: Rufen Sie die angegebenen ProfilePhoto oder der Metadaten (**ProfilePhoto** Eigenschaften).
+description: Rufen Sie das angegebene profilePhoto oder die Metadaten (**profilePhoto**-Eigenschaften) ab.
 localization_priority: Priority
-ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 759c0ff3ac2585f43ea38963e10b001250702c56
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509630"
 ---
 # <a name="get-photo"></a>Foto abrufen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die angegebenen [ProfilePhoto](../resources/profilephoto.md) oder der Metadaten (**ProfilePhoto** Eigenschaften).
+Rufen Sie das angegebene [profilePhoto](../resources/profilephoto.md) oder die Metadaten (**profilePhoto**-Eigenschaften) ab.
 
-Ein GET Foto Vorgang ersten Versuch zum Abrufen des angegebenen Fotos aus Office 365. Wenn das Foto nicht in Office 365 verfügbar ist, versucht die API das Foto von Azure Active Directory abzurufen.
+Ein erster Versuch des Vorgangs „GET photo“ zum Abrufen des angegebenen Fotos aus Office 365. Wenn das Foto nicht in Office 365 verfügbar ist, versucht die API, das Foto aus Azure Active Directory abzurufen.
 
 Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind.
 
@@ -27,17 +27,17 @@ Wenn die angegebene Größe nicht im Postfach des Benutzers oder in Azure Active
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
-> **Hinweis:** GET-Operation Foto in Beta unterstützt Arbeit, Schule oder persönliche Konten eines Benutzers. Der GET-Foto Metadatenvorgang unterstützt jedoch nur der Benutzer Arbeit oder Schule Konten und keine persönlichen Konten.
+> **Hinweis** Der Vorgang „GET photo“ in der Betaversion unterstützt das private Konto sowie das Geschäfts- und Schulkonto eines Benutzers. Der Vorgang „GET photo metadata“ unterstützt jedoch nur Geschäfts- oder Schulkonten eines Benutzers, keine persönlichen Konten.
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Für **user**-Ressource:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Für **group**-Ressource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Für **contact**-Ressource:<br />Contacts.Read, Contacts.ReadWrite |
-|Delegiert (persönliches Microsoft-Konto)  <br /> **Hinweis**: Metadaten-Vorgang wird nicht unterstützt. | Für **user**-Ressource:<br/>User.Read, User.ReadWrite<br /><br />Für **contact**-Ressource:<br />Contacts.Read, Contacts.ReadWrite |
-|Anwendung                        | Für **user**-Ressource:<br/>User.Read.All, User.ReadWrite.All<br /><br />Für **group**-Ressource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Für **contact**-Ressource:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegiert (persönliches Microsoft-Konto)  <br /> **Hinweis**:Der Vorgang wird nicht unterstützt. | Für **user**-Ressource:<br/>User.Read, User.ReadWrite<br /><br />Für **contact**-Ressource:<br />Contacts.Read, Contacts.ReadWrite |
+|Application                        | Für **user**-Ressource:<br/>User.Read.All, User.ReadWrite.All<br /><br />Für **group**-Ressource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Für **contact**-Ressource:<br />Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-Anforderung 
 
-### <a name="get-the-photo"></a>Möchten Sie das Foto
+### <a name="get-the-photo"></a>Abrufen des Fotos
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>Abrufen der Metadaten des Fotos
+### <a name="get-the-metadata-of-the-photo"></a>Abrufen von Metadaten des Fotos
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -76,7 +76,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 |**Parameter**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|size  |Zeichenfolge  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
+|size  |String  | Eine Fotogröße. Die unterstützten Größen der HD-Fotos in Office 365 sind wie folgt: „48x48“, „64x64“, „96x96“, „120x120“, „240x240“, „360x360“,“432x432“, „504x504“ und „648x648“. Fotos können eine beliebige Größe aufweisen, wenn sie in Azure Active Directory gespeichert sind. |
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
@@ -194,10 +194,15 @@ Wenn Sie das Bild auf einer Webseite anzeigen möchten, erstellen Sie ein Objekt
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/profilephoto-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

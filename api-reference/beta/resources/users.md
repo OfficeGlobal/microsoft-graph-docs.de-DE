@@ -4,16 +4,16 @@ description: Mit Microsoft Graph können Sie überzeugende App-Erfahrung basiere
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e1ed5a2403def740d92b9f77d57a58f6d1a3e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912015"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518429"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Arbeiten mit Benutzern in Microsoft Graph
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mit Microsoft Graph können Sie überzeugende App-Erfahrung basierend auf Benutzern, Beziehungen mit anderen Benutzern und Gruppen, und E-Mails, Kalender und Dateien bieten.
 
@@ -42,7 +42,7 @@ Für den Zugriff auf Benutzervorgänge ist eine der folgenden [Berechtigungen](h
 |givenName| Der Vorname des Benutzers. |
 |surname| Der Nachname des Benutzers. |
 |mail| Die E-Mail-Adresse des Benutzers. |
-|photo| Profil-Foto des Benutzers. |
+|photo| Das Profilfoto des Benutzers. |
 
 Weitere Informationen und eine Liste aller Eigenschaften finden Sie unter [user](user.md)-Objekt.
 
@@ -59,4 +59,12 @@ Weitere Informationen und eine Liste aller Eigenschaften finden Sie unter [user]
 |[`/users/{id}/events`](../api/user-list-events.md) | Listet bevorstehende Ereignisse des Benutzers im Kalender auf. |
 |[`/users/{id}/drive`](../api/drive-get.md)| Ruft den OneDrive-Dateispeicher des Benutzers ab. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Listet die Gruppen auf, deren Mitglied der Benutzer ist. |
-|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Listet die Microsoft-Teams, die der Benutzer Mitglied ist. |
+|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Listet die Microsoft Teams auf, deren Mitglied der Benutzer ist. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

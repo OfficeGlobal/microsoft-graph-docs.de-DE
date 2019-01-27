@@ -1,23 +1,23 @@
 ---
-title: Erstellen von online-Besprechung
-description: Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.
+title: Erstellen einer Onlinebesprechung
+description: Erstellt eine Onlinebesprechung im Namen eines im Anforderungstext angegebenen Benutzers.
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: dc6521a09bcfaf52b7240d5ad63129fa729d7899
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946931"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516868"
 ---
-# <a name="create-online-meeting"></a>Erstellen von online-Besprechung
+# <a name="create-online-meeting"></a>Erstellen einer Onlinebesprechung
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellt eine onlinebesprechung im Auftrag eines Benutzers im Textkörper Anforderung angegeben.
+Erstellt eine Onlinebesprechung im Namen eines im Anforderungstext angegebenen Benutzers.
 
-> **Hinweis**: die Besprechung wird nicht auf den Kalender des Benutzers angezeigt.
+> **Hinweis**: Die Besprechung wird im Kalender des Benutzers nicht angezeigt.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -41,10 +41,10 @@ POST /applications/{id}/onlineMeetings
 | Authorization | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [onlineMeeting](../resources/onlinemeeting.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortcode und ein [OnlineMeeting](../resources/onlinemeeting.md) -Objekt aus der Antwort.
+Wenn erfolgreich ausgeführt, gibt diese Methode den Antwortcode `201 Created` und das [onlineMeeting](../resources/onlinemeeting.md)-Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
@@ -75,7 +75,7 @@ Content-Length: 1553
 }
 ```
 
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OnlineMeeting](../resources/onlinemeeting.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [onlineMeeting](../resources/onlinemeeting.md)-Objekts an.
 
 ##### <a name="response"></a>Antwort
 
@@ -133,10 +133,15 @@ Content-Length: 1574
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
