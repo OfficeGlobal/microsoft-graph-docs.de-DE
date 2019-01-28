@@ -1,58 +1,58 @@
 ---
-title: Anmeldung Ressourcentyp
-description: 'Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. '
+title: signIn-Ressourcentyp
+description: 'Diese Ressource enthält Informationen zu den Anmeldeaktivitäten von Benutzern oder Anwendungen in Ihrem Verzeichnis. '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 3d9b9ffab6b588cbe0a465a637b12649110415d2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889068"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571849"
 ---
-# <a name="signin-resource-type"></a>Anmeldung Ressourcentyp
-Diese Ressource werden Benutzer oder eine Anwendung Anmeldung Aktivitäten in Ihrem Verzeichnis. 
+# <a name="signin-resource-type"></a>signIn-Ressourcentyp
+Diese Ressource enthält Informationen zu den Anmeldeaktivitäten von Benutzern oder Anwendungen in Ihrem Verzeichnis. 
 
 ## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste Anmeldung](../api/signin-list.md) | [Anmeldung](signin.md) |Lesen Sie Eigenschaften und Beziehungen von Anmeldung-Objekten.|
-|[Erste Anmeldung](../api/signin-get.md) | [Anmeldung](signin.md) |Lesen Sie Eigenschaften und Beziehungen Anmeldung-Objekts.|
+|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Lesen von Eigenschaften und Beziehungen von signIn-Objekten.|
+|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Lesen von Eigenschaften und Beziehungen des signIn-Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|appDisplayName|String|Bezieht sich auf den Namen der Anwendung in der Azure-Verwaltungsportal angezeigt.|
-|appId|Zeichenfolge|Bezieht sich auf die eindeutige GUID, die Id der Anwendung in Azure Active Directory darstellt.|
-|clientAppUsed|String|Enthält den älteren Client für die Anmeldung activty.E.g verwendet. enthält Browser, Exchange Active Sync, moderne Clients, IMAP, MAPI, SMTP, POP.|
-|appliedConditionalAccessPolicy|[ConditionalAccessPolicy](conditionalaccesspolicy.md) -Auflistung|Enthält eine Liste der bedingten Zugriffsrichtlinien, die von der entsprechenden Anmeldung Aktivität ausgelöst werden.|
-|conditionalAccessStatus|string| Enthält den Status der bedingten Richtlinie ausgelöst. Mögliche Werte: sind `success`, `failure`, `notApplied` und `unknownFutureValue`.|
-|originalRequestId|String|Die Anforderung-Id der ersten Anforderung in der Reihenfolge für die Authentifizierung.|
-|isInteractive|Boolean|Gibt an, ob eine Anmeldung interaktiv ist.|
-|tokenIssuerName|String|Name der Identität Provider (z. B. sts.microsoft.com)|
-|tokenIssuerType|String|Stellt den Typ des IdentityProvider bereit. Mögliche Werte sind `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|correlationId|String|Bezieht sich auf die ID, die vom Client gesendet wird, wenn der Anmeldung gestartet wird. Hiermit wird die entsprechende Aktivität-Anmeldung beim Aufrufen von Helpdesk oder Unterstützung bei der Problembehandlung.|
-|createdDateTime|DateTimeOffset|Enthält das Datum und Uhrzeit der Anmeldung initiiert wurde. Der Zeitstempel-Typ ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|deviceDetail|[deviceDetail](devicedetail.md)|Enthält die Geräteinformationen aus, wo die Anmeldung aufgetreten. Es Inclules Informationen wie Geräte-ID, Betriebssystem, Browser. |
-|id|String|Gibt die eindeutige ID für die Anmeldung Aktivität an.|
-|ipAddress|Zeichenfolge|Enthält die IP-Adresse des Clients aus, wo die Anmeldung aufgetreten.|
-|location|[signInLocation](signinlocation.md)|Enthält den Ort, Bundesland und 2 Buchstaben Ländercode aus, wo die Anmeldung aufgetreten.|
-|processingTimeInMilliseconds|Int|Stellt die Zeit in Millisekunden in AD STS Verarbeitung die Anforderung|
-|riskDetail|`riskDetail`|Stellt die "Ursache" hinter einem bestimmten Zustand eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass keine Aktion in der Benutzer oder die Anmeldung bisher ausgeführt wurde. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
-|riskLevelAggregated|`riskLevel`|Enthält die aggregierten Risikostufe. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
-|riskLevelDuringSignIn|`riskLevel`|Enthält die Risikostufe während der Anmeldung an. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert. **Hinweis:** Details für diese Eigenschaft sind nur für Azure AD Premium P2-Kunden verfügbar. Alle anderen Kunden zurückgegeben `hidden`.|
-|riskEventTypes|`riskEventTypes`|Enthält eine Liste der Risiko Ereignistypen der Anmeldung zugeordnet. Die möglichen Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, und `unknownFutureValue`.|
-|riskState|`riskState`|Stellt den 'Risiko Zustand"eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|mfaDetail|[mfaDetail](mfadetail.md)|Enthält die mehrstufiger Authentifizierung das weiterführende Informationen wie mehrstufiger Authentifizierung das erforderlich, mehrstufiger Authentifizierung das Status für die entsprechenden anmelden.|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Enthält Informationen zu den Speicherort im Netzwerk.|
-|riskLevel|string| Enthält die Risikostufe der Anmeldung zugeordnet. Mögliche Werte sind: `low`, `medium`, `high`.|
-|status|[signInStatus](signinstatus.md)|Enthält die Anmeldestatus. Mögliche Werte sind `Success` und `Failure`.|
-|userDisplayName|String|Gibt die Anzeige des Benutzers an.|
-|userId|String|Gibt die Benutzer-ID des Benutzers an.|
+|appDisplayName|String|Bezieht sich auf den im Azure-Portal angezeigten Anwendungsnamen.|
+|appId|String|Bezieht sich auf die eindeutige GUID, die die Anwendungs-ID in Azure Active Directory darstellt.|
+|clientAppUsed|String|Gibt den Legacyclient an, der für die Anmeldeaktivtät verwendet wird. Beispiel: Browser, Exchange Active Sync, moderne Clients, IMAP, MAPI, SMTP, POP.|
+|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)-Sammlung|Stellt eine Liste von Richtlinien für bedingte Zugriffe bereit, die durch die entsprechende Anmeldeaktivität ausgelöst werden.|
+|conditionalAccessStatus|string| Stellt den Status der ausgelösten bedingten Zugriffsrichtlinie bereit. Mögliche Werte: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
+|originalRequestId|String|Die Anforderungs-ID der ersten Anforderung in der Authentifizierungssequenz.|
+|isInteractive|Boolesch|Gibt an, ob eine Anmeldung interaktiv ist.|
+|tokenIssuerName|String|Der Name des Identitätsanbieters (z. B. sts.microsoft.com).|
+|tokenIssuerType|String|Stellt den Typ des identityProvider bereit. Mögliche Werte sind `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
+|correlationId|String|Bezieht sich auf die ID, die vom Client gesendet wird, wenn die Anmeldung initiiert wird. Diese Angabe wird für die Problembehandlung der entsprechenden Anmeldeaktivität bei Inanspruchnahme von Helpdesk oder Support verwendet.|
+|createdDateTime|DateTimeOffset|Gibt das Datum und die Uhrzeit der Initiierung der Anmeldung an. Der Zeitstempeltyp liegt immer in UTC-Zeit vor. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|deviceDetail|[deviceDetail](devicedetail.md)|Gibt die Geräteinformationen an, von wo aus die Anmeldung erfolgt ist. Umfasst Informationen wie die Geräte-ID, das Betriebssystem und den Browser. |
+|id|String|Gibt die eindeutige ID an, die die Anmeldeaktivität darstellt.|
+|ipAddress|String|Gibt die IP-Adresse des Clients an, von dem aus die Anmeldung erfolgt ist.|
+|location|[signInLocation](signinlocation.md)|Gibt den Ort, das Bundesland und den aus 2 Buchstaben bestehenden Ländercode für die Anmeldung an.|
+|processingTimeInMilliseconds|Int|Gibt die Anforderungsverarbeitungszeit in Millisekunden in AD STS an.|
+|riskDetail| enum-string |Gibt den "Grund" für einen bestimmten Status eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass bisher keine Aktion für den Benutzer oder die Anmeldung ausgeführt wurde. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskLevelAggregated| enum-string |Stellt die aggregierten Risikostufe bereit. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskLevelDuringSignIn| enum-string |Gibt die Risikostufe während der Anmeldung an. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskEventTypes| enum-string |Gibt die Liste der mit der Anmeldung verbundenen Risikoereignistypen an. Mögliche Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic` und `unknownFutureValue`.|
+|riskState|`riskState`|Gibt den "Risikostatus" eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|mfaDetail|[mfaDetail](mfadetail.md)|Gibt die MFA-bezogenen Informationen wie "MFA erforderlich", "MFA-Status" für die entsprechende Anmeldung an.|
+|networkLocationDetail| [deviceDetail](networklocationdetail.md) |Gibt Details zur Netzwerkadresse an.|
+|riskLevel|string| Gibt die mit der Anmeldung verbundene Risikostufe an. Mögliche Werte sind: `low`, `medium`, `high`.|
+|status|[signInStatus](signinstatus.md)|Gibt den Anmeldestatus an. Mögliche Werte sind `Success` und `Failure`.|
+|userDisplayName|String|Gibt den Anzeigenamen des Benutzers an.|
+|userId|String|Gibt die userId des Benutzers an.|
 |userPrincipalName|String|Gibt den UPN des Benutzers an.|
-|resourceDisplayName|String|Gibt den Namen der Ressource, der der Benutzer bei angemeldet.|
-|resourceId|Zeichenfolge|Gibt die Id der Ressource, der der Benutzer bei angemeldet.|
-|authenticationMethodsUsed|String|Gibt die Liste der verwendeten Authentifizierungsmethoden|
+|resourceDisplayName|String|Gibt den Namen der Ressource an, bei der sich der Benutzer angemeldet hat.|
+|resourceId|String|Gibt die ID der Ressource an, bei der sich der Benutzer angemeldet hat.|
+|authenticationMethodsUsed|String|Gibt die Liste der verwendeten Authentifizierungsmethoden an.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -91,11 +91,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskDetail": "string",
-  "riskLevelAggregated": "string",
-  "riskLevelDuringSignIn": "string",
-  "riskState": "string",
-  "riskEventTypes": "string",
+  "riskDetail": "none | adminGeneratedTemporaryPassword | userPerformedSecuredPasswordChange | userPerformedSecuredPasswordReset | adminConfirmedSigninSafe | aiConfirmedSigninSafe | userPassedMFADrivenByRiskBasedPolicy | adminDismissedAllRiskForUser | adminConfirmedSigninCompromised | unknownFutureValue",
+  "riskLevelAggregated": "enum-string",
+  "riskLevelDuringSignIn": "enum-string",
+  "riskState": "riskState",
+  "riskEventTypes": "enum-string",
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

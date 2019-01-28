@@ -1,42 +1,42 @@
 ---
-title: Ressourcentyp directoryAudit
-description: Diese Ressource stellt die Directory Audit Elemente mit seiner Sammlung
+title: directoryAudit-Ressourcentyp
+description: Diese Ressource stellt Überwachungselemente des Verzeichnisses und seine Sammlung dar.
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991783"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573158"
 ---
-# <a name="directoryaudit-resource-type"></a>Ressourcentyp directoryAudit
-Diese Ressource stellt die Directory Audit Elemente mit seiner Sammlung
+# <a name="directoryaudit-resource-type"></a>directoryAudit-Ressourcentyp
+Diese Ressource stellt Überwachungselemente des Verzeichnisses und seine Sammlung dar.
 
 
 ## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |Die Directory Audit-Elemente in der Auflistung und deren Eigenschaften aufgelistet.|
-|[Abrufen von directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Rufen Sie ein bestimmtes Verzeichnis Audit-Element und seine Eigenschaften.|
+|[List directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |Listet die Überwachungselemente des Verzeichnisses in der Sammlung und ihre Eigenschaften auf.|
+|[Get directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Gibt ein bestimmtes Überwachungselement des Verzeichnisses und seine Eigenschaften an.|
 
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|activityDateTime|DateTimeOffset|Gibt an, das Datum und die Zeit, die die Aktivität ausgeführt wurde. Der Zeitstempel-Typ ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|activityDisplayName|Zeichenfolge|Gibt den Namen der Aktivität oder der Name des Vorgangs (z. B. "Erstellen von Benutzer", "Add Mitglied der Gruppe"). Eine Liste der Aktivitäten protokolliert finden Sie in der [Liste von Azure Ad-Aktivität](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|[KeyValue](keyvalue.md) -Auflistung|Gibt zusätzliche Informationen für die Aktivität an.|
-|category|String|Gibt an, welche Ressourcenkategorie, die von der Aktivität gerichtet ist. (Zum Beispiel: die Verwaltung von usw. Gruppe Management..)|
-|correlationId|GUID|Gibt eine eindeutige ID, mit deren Aktivitäten korrelieren, die über verschiedene Dienste erstrecken. Kann in Ablaufprotokolle zwischen Diensten verwendet werden.|
-|id|Zeichenfolge| Gibt die eindeutige ID für die Aktivität an. Dies ist eine GUID.|
-|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Gibt an, dass Informationen über den Benutzer oder die app die Aktivität initiiert hat.|
-|loggedByService|Zeichenfolge|Gibt an, auf dem Dienst die Aktivität initiiert, Informationen (zum Beispiel: Self-Service-Kennwortverwaltung, Core Directory, B2C, Benutzer eingeladen, Microsoft Identity Manager, privilegierten Identity Management.|
+|activityDateTime|DateTimeOffset|Gibt das Datum und die Uhrzeit der Ausführung der Aktivität an. Der Zeitstempeltyp liegt immer in UTC-Zeit vor. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|activityDisplayName|String|Gibt den Aktivitätsnamen oder den Vorgangsnamen an (z. B. "Benutzer erstellen", "Mitglied der Gruppe hinzufügen"). Eine Liste der protokollierten Aktivitäten finden Sie unter [Azure AD-Aktivitätsliste](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|additionalDetails|[keyvalue](keyvalue.md)-Sammlung|Gibt weitere Details zur Aktivität an.|
+|category|String|Gibt an, auf welche Ressourcenkategorie die Aktivität abzielt. (Beispiel: Benutzerverwaltung, Gruppenverwaltung usw.)|
+|correlationId| String (Bezeichner) |Gibt eine eindeutige ID an, die bei der Korrelation von Aktivitäten hilft, die sich über verschiedene Dienste erstrecken. Kann für die Ablaufverfolgung von Protokollen über Dienste hinweg verwendet werden.|
+|id|String| Gibt die eindeutige ID für die Aktivität an. Dies ist eine GUID.|
+|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Gibt Informationen zum Benutzer oder der App an, der bzw. die die Aktivität initiiert hat.|
+|loggedByService|String|Gibt Informationen dazu an, welcher Dienst die Aktivität ausgelöst hat (Beispiel: Self-Service-Kennwortverwaltung, Core Directory, B2C, Eingeladene Benutzer, Microsoft Identity Manager, Privileged Identity Management).|
 |result|string| Gibt das Ergebnis der Aktivität an. Mögliche Werte sind: `success`, `failure`, `timeout`, `unknownFutureValue`.||
-|resultReason|Zeichenfolge|Gibt die Ursache für Fehler an, ob das Ergebnis "Fehler" oder "Timeout" ist.|
-|targetResources|[TargetResource](targetresource.md) -Auflistung|Gibt Informationen für die Ressource der Aktivitäten geändert wurde. Ressource Zieltyp können Benutzer, Gerät, Directory, App, Rolle, Gruppe, Richtlinie oder andere sein.
+|resultReason|String|Gibt den Grund für den Fehler an, wenn das Ergebnis "Failure" oder "timeout" ist.|
+|targetResources|[targetResource](targetresource.md)-Sammlung|Gibt Informationen dazu an, welche Ressource aufgrund der Aktivität geändert wurde. Der Zielressourcentyp kann Benutzer, Gerät, Verzeichnis, App, Rolle, Gruppe, Richtlinie oder Andere sein.
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -60,7 +60,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "Guid",
+  "correlationId": "String (identifier)",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

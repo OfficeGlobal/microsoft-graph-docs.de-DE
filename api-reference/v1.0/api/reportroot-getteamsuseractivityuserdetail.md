@@ -1,14 +1,15 @@
 ---
 title: 'reportRoot: getTeamsUserActivityUserDetail'
-description: Abrufen von Details zur Microsoft Teams-Benutzeraktivität nach Benutzer.
+description: Ruft Details zur Microsoft Teams-Benutzeraktivität nach Benutzer ab.
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: b968a5cb17ad588ffea678b05a5752e226b5eb5d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: fdc9976847085eeea99ff504862a97450aea9a1b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960707"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577347"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -39,7 +40,7 @@ Geben Sie in der Anforderungs-URL einen der folgenden Parameter mit einem gülti
 
 | Parameter | Typ   | Beschreibung                              |
 | :-------- | :----- | :--------------------------------------- |
-| Zeitraum    | string | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
+| Zeitraum    | Zeichenfolge | Gibt die Zeitspanne an, für die der Bericht aggregiert wird. Die unterstützten Werte für {period_value} sind: D7, D30, D90 und D180. Diese Werte folgen dem Format D*n*, wobei *n* die Anzahl der Tage angibt, für die der Bericht aggregiert wird. |
 | date      | Datum   | Gibt das Datum an, für das die Benutzer angezeigt werden sollen, die Aktivitäten durchgeführt haben. {date_value} muss im Format JJJJ-MM-TT vorliegen. Da dieser Bericht nur für die letzten 30 Tage verfügbar ist, sollte {date_value} ein Datum aus diesem Zeitraum sein. |
 
 > **Hinweis:** Sie müssen in der URL entweder einen Zeitraum oder ein Datum festlegen.

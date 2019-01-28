@@ -1,19 +1,19 @@
 ---
-title: Liste directoryAudits
-description: Enthält eine Liste der Überwachungsprotokolle von Azure Active Directory generiert. Durch verschiedene Dienste innerhalb von Azure Active Directory wie Benutzer, App, Gerät und Verwaltung von Gruppen, privilegierten Identity Management, Access Bewertungen, rechtlichen Hinweise, Schutz, Kennwortverwaltung (SSPR und Admin das Zurücksetzen von Kennwörtern generiert Überwachungsprotokolle enthält ), Self-service Gruppe Management usw....
+title: List directoryAudits
+description: Stellt die Liste der von Azure Active Directory generierten Überwachungsprotokolle bereit. Enthält Überwachungsprotokolle, die von verschiedenen Diensten innerhalb von Azure Active Directory generiert werden, z. B. Benutzer-, App-, Geräte- und Gruppenverwaltung, Privileged Identity Management, Zugriffsüberprüfungen, Nutzungsbedingungen, Identity Protection, Kennwortverwaltung (SSPR- und Administratorkennwortzurücksetzungen), Self-Service-Gruppenverwaltung usw.
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2f9330cd8ca1bd2b17755ffd1e09fee7743355b2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921262"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576682"
 ---
-# <a name="list-directoryaudits"></a>Liste directoryAudits
+# <a name="list-directoryaudits"></a>List directoryAudits
 
-Enthält eine Liste der Überwachungsprotokolle von Azure Active Directory generiert. Durch verschiedene Dienste innerhalb von Azure Active Directory wie Benutzer, App, Gerät und Verwaltung von Gruppen, privilegierten Identity Management, Access Bewertungen, rechtlichen Hinweise, Schutz, Kennwortverwaltung (SSPR und Admin das Zurücksetzen von Kennwörtern generiert Überwachungsprotokolle enthält ), Self-service Gruppe Management usw....
+Stellt die Liste der von Azure Active Directory generierten Überwachungsprotokolle bereit. Enthält Überwachungsprotokolle, die von verschiedenen Diensten innerhalb von Azure Active Directory generiert werden, z. B. Benutzer-, App-, Geräte- und Gruppenverwaltung, Privileged Identity Management, Zugriffsüberprüfungen, Nutzungsbedingungen, Identity Protection, Kennwortverwaltung (SSPR- und Administratorkennwortzurücksetzungen), Self-Service-Gruppenverwaltung usw.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt   |
 |Anwendung | AuditLog.Read.All | 
 
-Darüber hinaus müssen apps Azure AD [ordnungsgemäß registriert](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) sein.
+Darüber hinaus müssen Apps bei Azure AD [ordnungsgemäß registriert](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) sein.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -32,27 +32,27 @@ Darüber hinaus müssen apps Azure AD [ordnungsgemäß registriert](https://docs
 GET /auditLogs/directoryAudits
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der Antwort. Überprüfen Sie die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) dafür, wie diese Parameter zu verwenden.
+Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der Antwort. Wenn Sie wissen möchten, wie diese Parameter verwendet werden, finden Sie weitere Informationen unter [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 |Name     |Beschreibung                            |Beispiel|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Dient zum Filtern von Ergebnissen (Zeilen). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/query-parameters#top-parameter)|Dient zum Festlegen der Seitengröße von Ergebnissen.|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Ruft ab, das die nächste Seite mit Ergebnissen aus Ergebnis, die festgelegt über mehrere Seiten erstrecken.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Dient zum Abrufen der nächsten Seite von Ergebnissen aus Resultsets, die mehrere Seiten umfassen.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>Liste der Attribute von $filter Parameter unterstützt werden
-|Name des Attributs |Unterstützte Operatoren|
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>Liste der Attribute, die durch den Parameter "$filter" unterstützt werden
+|Attributname |Unterstützte Operatoren|
 |:----------------|:------|
-|activityDisplayName| EQ startswith|
-|activityDateTime| EQ, ge, le|
+|activityDisplayName| eq, startswith|
+|activityDateTime| eq, ge, le|
 |loggedByService|eq|
-|InitiatedBy/Mitgliedsname|eq|
-|InitiatedBy/Benutzer/displayName| eq|
-|InitiatedBy/Benutzer/userPrincipalName| EQ startswith|
-|InitiatedBy/app/appId| eq|
-|InitiatedBy/app/appDisplayName| eq|
-|TargetResources/any(t: t/id)| eq|
-|targetResources/any(t:t/displayName)| EQ startswith|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq, startswith|
+|initiatedBy/app/appId| eq|
+|initiatedBy/app/appDisplayName| eq|
+|targetResources/any(t: t/id)| eq|
+|targetResources/any(t:t/displayName)| eq, startswith|
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
@@ -61,7 +61,7 @@ Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [DirectoryAudit](../resources/directoryaudit.md) .
+Bei Erfolg gibt diese Methode den Antwortcode `200 OK` und eine Sammlung von [directoryAudit](../resources/directoryaudit.md)-Objekten im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -107,7 +107,7 @@ Content-length: 271
             "app": null
         },
         "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
+            "@odata.type": "microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
             "displayName": "Lynda.com",
             "modifiedProperties": [{
@@ -117,7 +117,7 @@ Content-length: 271
             }],
             "groupType": "unifiedGroups"
         }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
+            "@odata.type": "microsoft.graph.targetResourceUser",
             "id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
             "displayName": null,
             "modifiedProperties": [],

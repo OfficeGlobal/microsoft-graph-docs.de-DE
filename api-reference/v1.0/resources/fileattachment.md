@@ -1,13 +1,13 @@
 ---
 title: fileAttachment-Ressourcentyp
-description: 'Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein Ereignis, Nachricht oder Post zugeordnet ist. Die **contentBytes** '
+description: 'Eine Datei (z. B. eine Textdatei oder ein Word-Dokument), die an ein Ereignis, eine Nachricht oder einen Beitrag angefügt ist. Der **contentBytes** '
 localization_priority: Priority
-ms.openlocfilehash: 81de7a12ca371158d7f6369861a8a197fd544821
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870056"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574817"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
 
@@ -31,13 +31,13 @@ Abgeleitet von [attachment](attachment.md).
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
-|contentId|Zeichenfolge|Die ID der Anlage im Exchange-Speicher.|
-|contentLocation|Zeichenfolge|Der URI (Uniform Resource Identifier), der dem Speicherort des Anlageninhalts entspricht.|
-|contentType|Zeichenfolge|Der Inhaltstyp der Anlage.|
-|id|Zeichenfolge|Die Anlagen-ID.|
+|contentId|String|Die ID der Anlage im Exchange-Speicher.|
+|contentLocation|String|Verwenden Sie diese Eigenschaft nicht, weil sie nicht unterstützt wird.|
+|contentType|String|Der Inhaltstyp der Anlage.|
+|id|String|Die Anlagen-ID.|
 |isInline|Boolean|True, wenn es sich um eine Inlineanlage handelt.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage.|
-|name|Zeichenfolge|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
+|name|String|Der Name, der den Text darstellt, der unter dem Symbol für die eingebettete Anlage angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein.|
 |size|Int32|Die Größe der Anlage in Byte.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,16 +1,16 @@
 ---
-title: Erste Anmeldung
-description: Ruft die Azure AD Benutzer Anmeldungen für Ihre Mandanten. In den Protokollen-Anmeldung sind derzeit interaktiv in Art sind (wobei ein Benutzername und Kennwort als Teil des Autorisierungstoken übergeben wird) und erfolgreicher federated Anmeldungen Anmeldevorgängen enthalten.
+title: Get signIn
+description: Ruft die Azure AD-Benutzeranmeldungen für Ihren Mandanten ab. Anmeldungen, die interaktiver Natur sind (wobei ein Benutzername/Kennwort als Teil des Autorisierungstokens übergeben wird) und erfolgreiche Verbundanmeldungen sind zurzeit in den Anmeldeprotokollen enthalten.
 localization_priority: Priority
-ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894495"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576612"
 ---
-# <a name="get-signin"></a>Erste Anmeldung
-Ruft die Azure AD Benutzer Anmeldungen für Ihre Mandanten. In den Protokollen-Anmeldung sind derzeit interaktiv in Art sind (wobei ein Benutzername und Kennwort als Teil des Autorisierungstoken übergeben wird) und erfolgreicher federated Anmeldungen Anmeldevorgängen enthalten.
+# <a name="get-signin"></a>Get signIn
+Ruft die Azure AD-Benutzeranmeldungen für Ihren Mandanten ab. Anmeldungen, die interaktiver Natur sind (wobei ein Benutzername/Kennwort als Teil des Autorisierungstokens übergeben wird) und erfolgreiche Verbundanmeldungen sind zurzeit in den Anmeldeprotokollen enthalten.
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt   |
 |Anwendung | AuditLog.Read.All | 
 
-Darüber hinaus müssen apps Azure AD [ordnungsgemäß registriert](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) sein.
+Darüber hinaus müssen Apps bei Azure AD [ordnungsgemäß registriert](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) sein.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ Darüber hinaus müssen apps Azure AD [ordnungsgemäß registriert](https://docs
 GET /auditLogs/signIns/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der Antwort. Überprüfen Sie die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) dafür, wie diese Parameter zu verwenden.
+Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der Antwort. Wenn Sie wissen möchten, wie diese Parameter verwendet werden, finden Sie weitere Informationen unter [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
@@ -40,13 +40,12 @@ Diese Methode unterstützt die folgende OData-Abfrageparameter zur Anpassung der
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [Anmeldung](../resources/signin.md) im Antworttext.
+Bei Erfolg gibt die Methode den Antwortcode `200 OK` und das [signIn](../resources/signin.md)-Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http
