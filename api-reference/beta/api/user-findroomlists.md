@@ -1,24 +1,24 @@
 ---
-title: 'Benutzer: FindRoomLists'
-description: Abrufen von Raumlisten in einem Mandanten definiert.
+title: 'user: findRoomLists'
+description: Abrufen der in einem Mandanten definierten Raumlisten.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520578"
 ---
-# <a name="user-findroomlists"></a>Benutzer: FindRoomLists
+# <a name="user-findroomlists"></a>user: findRoomLists
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrufen von Raumlisten in einem Mandanten definiert.
+Abrufen der in einem Mandanten definierten Raumlisten.
 
-Mandanten können Besprechungsräumen in Raumlisten zu organisieren. Jede Besprechungsraum und Raumliste wird von einer Instanz [EmailAddress](../resources/emailaddress.md) dargestellt.
-Sie können die Chatroom-Listen in den Mandanten, [erhalten alle Chatrooms](user-findrooms.md) im Mandanten oder eine bestimmte Raumliste [aller Chatrooms abrufen](user-findrooms.md) abrufen.
+Mandanten können Besprechungsräume in Raumlisten organisieren. Jeder Besprechungsraum und jede Raumliste wird durch eine [emailAddress](../resources/emailaddress.md)-Instanz dargestellt.
+Sie können alle Raumlisten im Mandanten, [alle Räume](user-findrooms.md) im Mandanten oder [alle Räume](user-findrooms.md) in einer bestimmten Raumliste abrufen.
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -27,9 +27,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadBasic.All User.Read.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadBasic.All, User.Read.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | User.Read.All |
+|Application | User.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -51,9 +51,9 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwort Code und [EmailAddress](../resources/emailaddress.md) -Auflistungsobjekt in der Antworttext.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [emailAddress](../resources/emailaddress.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
-Wenn keine Listen in den Mandanten definiert sind, wird ein leeres Array zurückgegeben.
+Wenn keine Listen im Mandanten definiert sind, wird ein leeres Array zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

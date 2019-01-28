@@ -1,21 +1,21 @@
 ---
 title: joinedTeams auflisten
-description: Abrufen des Teams für die der Microsoft-Teams, die der Benutzer ein direktes Mitglied ist.
+description: Ruft die Teams in Microsoft Teams ab, in denen der Benutzer ein direktes Mitglied ist.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 839b6531318ca9fc8abb3fd3544566622d02a78b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8695d97120da8d50bcc329bfec1aa0ee0c2b5434
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938202"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528760"
 ---
 # <a name="list-joinedteams"></a>joinedTeams auflisten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die [Teams](../resources/team.md) in Microsoft-Teams, die der Benutzer ein direktes Mitglied ist.
+Ruft die [Teams](../resources/team.md) in Microsoft Teams ab, in denen der Benutzer ein direktes Mitglied ist.
  
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -24,10 +24,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | User.Read.All, User.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | User.Read.All, User.ReadWrite.All |
+|Application | User.Read.All, User.ReadWrite.All |
 
-> Derzeit arbeitet mit Berechtigungen delegiert wurde dieser Vorgang nur für "me" Benutzer. 
-> Bei den Anwendungsberechtigungen funktioniert dies für alle Benutzer durch bestimmte Benutzer-Id angeben. ("me" ist alias nicht mit den Anwendungsberechtigungen unterstützt) Weitere Informationen hierzu finden Sie unter [bekannte Probleme](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
+> Derzeit kann dieser Vorgang mit delegierten Berechtigungen nur für Sie selbst verwendet werden. 
+> Mit Anwendungsberechtigungen kann der Vorgang für alle Benutzer verwendet werden, indem die ID des bestimmten Benutzers angegeben wird (Alias „ich“ wird mit Anwendungsberechtigungen nicht unterstützt). Weitere Informationen dazu finden Sie unter [Bekannte Probleme](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /users/{id}/joinedTeams
 Die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) werden derzeit nicht unterstützt.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Annehmen  | application/json|
@@ -85,14 +85,19 @@ Content-length: 55
 ```
 
 ## <a name="see-also"></a>Siehe auch
-[Listen Sie alle teams](/graph/teams-list-all-teams)
+[Auflisten aller Teams](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List joinedTeams",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-joinedteams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

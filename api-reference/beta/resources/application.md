@@ -1,23 +1,23 @@
 ---
-title: Anwendung Ressourcentyp
-description: 'Stellt eine Anwendung dar. Jede Anwendung, die Authentifizierung mit Azure Active Directory (AD Azure) mit dem Konfigurieren beauftragt muss in einem Verzeichnis registriert werden. Registrierung Anwendung umfasst darüber informiert Azure AD über die Anwendung, einschließlich der URL, in dem es wurde gefunden, die URL zum Senden von Antworten nach der Authentifizierung, den URI zum Identifizieren der Anwendung und vieles mehr. Weitere Informationen finden Sie unter Grundlagen der Registrieren einer Anwendung in Azure Active Directory. Erbt von directoryObject. '
+title: application-Ressourcentyp
+description: 'Steht für eine Anwendung. Jede Anwendung, bei der die Authentifizierung mit Azure Active Directory (Azure AD) erfolgt, muss in einem Verzeichnis registriert werden. Bei der Anwendungsregistrierung erhält Azure AD Informationen über Ihre Anwendung, darunter die URL, unter der sich die Anwendung befindet, die URL, an die Antworten nach Authentifizierung gesendet werden, der URI zum Identifizieren der Anwendung und mehr. Weitere Informationen finden Sie unter „Grundlegendes zur Registrierung einer Anwendung in Azure AD“. Erbt von directoryObject. '
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946679"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529222"
 ---
-# <a name="application-resource-type"></a>Anwendung Ressourcentyp
+# <a name="application-resource-type"></a>application-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt eine Anwendung dar. Jede Anwendung, die Authentifizierung mit Azure Active Directory (AD Azure) mit dem Konfigurieren beauftragt muss in einem Verzeichnis registriert werden. Registrierung Anwendung umfasst darüber informiert Azure AD über die Anwendung, einschließlich der URL, in dem es wurde gefunden, die URL zum Senden von Antworten nach der Authentifizierung, den URI zum Identifizieren der Anwendung und vieles mehr. Weitere Informationen finden Sie unter [Grundlagen der Registrieren einer Anwendung in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Erbt von [directoryObject](directoryobject.md). 
+Steht für eine Anwendung. Jede Anwendung, bei der die Authentifizierung mit Azure Active Directory (Azure AD) erfolgt, muss in einem Verzeichnis registriert werden. Bei der Anwendungsregistrierung erhält Azure AD Informationen über Ihre Anwendung, darunter die URL, unter der sich die Anwendung befindet, die URL, an die Antworten nach Authentifizierung gesendet werden, der URI zum Identifizieren der Anwendung und mehr. Weitere Informationen finden Sie unter [Grundlegendes zur Registrierung einer Anwendung in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Erbt von [directoryObject](directoryobject.md). 
 
-> **Hinweis:** Änderungen an der Anwendung Ressourcentyp sind derzeit in der Entwicklung. Weitere Informationen finden Sie unter [bekannte Probleme mit Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
+> **Hinweis:** Änderungen an dem application-Ressourcentyp befinden sich derzeit in der Entwicklung. Weitere Informationen finden Sie unter [Bekannte Probleme in Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
 Diese Ressource unterstützt Folgendes:
 
@@ -27,55 +27,55 @@ Diese Ressource unterstützt Folgendes:
 
 | Methode | Rückgabetyp | Beschreibung |
 |:---------------|:--------|:----------|
-|[Abrufen der Anwendung](../api/application-get.md) | Anwendung |Lesen Sie Eigenschaften und Beziehungen des Application-Objekts.|
-|[Erstellen der Anwendung](../api/application-post-applications.md) | Anwendung | (Register) erstellt eine neue Anwendung.|
-|[Liste applications](../api/application-list.md) | Anwendung | Abrufen der Liste der Programme in der Organisation. |
-|[Aktualisieren der Anwendung](../api/application-update.md) | Anwendung |Application-Objekt zu aktualisieren. |
-|[Löschen der Anwendung](../api/application-delete.md) | Keine |Application-Objekt zu löschen. |
-|[Zugewiesen-Listenrichtlinien](../api/policy-list-assigned.md)| Auflistung von [Gruppenrichtlinien](policy.md)| Rufen Sie alle Richtlinien, die auf dieses Objekt zugewiesen.|
-|[Ersteller-Besitzer](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Erstellen Sie einen neuen Besitzer durch die Veröffentlichung auf der Besitzer-Auflistung.|
-|[Besitzer auflisten](../api/application-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Abrufen eines Besitzers Auflistung-Objekts.|
-|[delta](../api/application-delta.md)|Application-Auflistung| Rufen Sie inkrementelle Änderungen für Applikationen. |
-|[Erstellen von Anrufen](../api/application-post-calls.md)|[Anruf](call.md)|Erstellen Sie einen neuen Anruf, indem Sie das Veröffentlichen in der Auflistung Anrufe.|
-|[Erstellen von online-Besprechung](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Erstellen einer neuen onlinebesprechung durch die Veröffentlichung auf der OnlineMeetings-Auflistung.|
+|[Get application](../api/application-get.md) | Anwendung |Dient zum Lesen der Eigenschaften und der Beziehungen des Anwendungsobjekts.|
+|[Create application](../api/application-post-applications.md) | Anwendung | Erstellt (registriert) eine neue Anwendung.|
+|[List applications](../api/application-list.md) | Anwendung | Dient zum Abrufen der Liste von Anwendungen in der Organisation. |
+|[Update application](../api/application-update.md) | Anwendung |Dient zum Aktualisieren des Anwendungsobjekts. |
+|[Delete application](../api/application-delete.md) | Keine |Dient zum Löschen des Anwendungsobjekts. |
+|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md)-Sammlung| Abrufen aller diesem Objekt zugewiesener Richtlinien.|
+|[Create owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Dient zum Erstellen eines neuen Besitzers durch Veröffentlichen in der Benutzersammlung.|
+|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen einer Besitzerobjektsammlung.|
+|[delta](../api/application-delta.md)|application-Sammlung| Ruft inkrementelle Änderungen für Anwendungen ab. |
+|[Create call](../api/application-post-calls.md)|[call](call.md)|Dient zum Erstellen eines neuen Aufrufs durch Veröffentlichen in der Aufrufsammlung.|
+|[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Dient zum Erstellen einer neuen Onlinebesprechung durch Veröffentlichen in der onlineMeetings-Sammlung.|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|API|[API](api.md)| Gibt die Einstellungen für eine API-Anwendung. |
-|appId| Zeichenfolge | Der eindeutige Bezeichner für die Anwendung, die eine Anwendung von Azure AD zugewiesen ist. Lässt keine Nullwerte zu. Schreibgeschützt. |
-|appRoles|[AppRole](approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine Nullwerte zu.|
-|createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
-|deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
-|displayName|Zeichenfolge|Der Anzeigename für die Anwendung. |
-|id|Zeichenfolge|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt. |
-|identifierUris|Collection von Objekten des Typs „String“| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any* -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
-|Info|[informationalUrl](informationalurl.md)| Grundlegende Profilinformationen der Anwendung. |
-|isFallbackPublicClient|Boolescher Wert| Gibt an, welche fallback app als öffentliche Client wie eine installierte app auf einem mobilen Gerät ausführen. Der Standardwert ist *false,* was den fallback-app-Typ bedeutet vertrauliche Client wie Web app. Es gibt bestimmte Szenarien Azure AD kann nicht, in dem den Client-app-Typ (z. B. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Fluss, in dem sie konfiguriert ist, ohne eine umleitungs-URI) ermitteln. In diesen Fällen wird Azure AD app Type basierend auf dem Wert dieser Eigenschaft interpretiert.|
-|keyCredentials|[KeyCredential](keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
-|logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine Nullwerte zu. |
+|api|[api](api.md)| Legt die Einstellungen für eine API-Anwendung fest. |
+|appId| String | Der eindeutige Bezeichner für die Anwendung, der einer Anwendung durch Azure AD zugewiesen ist. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|appRoles|[appRole](approle.md)-Sammlung|Die Sammlung der Anwendungsrollen, die eine Anwendung möglicherweise deklariert. Diese Rollen können Benutzern, Gruppen oder Dienstprinzipalen zugewiesen werden. Lässt keine Nullwerte zu.|
+|createdDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungsregistrierung. |
+|deletedDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungslöschung. |
+|displayName|String|Der Anzeigename der Anwendung. |
+|id|String|Eindeutiger Bezeichner für die Anwendung. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|identifierUris|String-Sammlung| Die URIs, die die Anwendung identifizieren. Weitere Informationen finden Sie unter [Anwendungsobjekte und Dienstprinzipalobjekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
+|info|[informationalUrl](informationalurl.md)| Grundlegende Profilinformationen der Anwendung. |
+|isFallbackPublicClient|Boolesch| Legt den Fallback-App-Typ auf öffentlichen Client fest, z. B. eine installierte App, die auf einem mobilen Gerät ausgeführt wird. Der Standardwert ist *false*, d. h. der Fallback-App-Typ ist vertraulicher Client, zum Beispiel Web-App. Bei einigen Szenarien kann Azure AD den Client-App-Typ nicht ermitteln (z. B. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)-Fluss, wo dieser ohne Angabe eines Umleitungs-URIs konfiguriert ist). In diesen Fällen interpretiert Azure AD den App-Typ basierend auf dem Wert dieser Eigenschaft.|
+|keyCredentials|[keyCredential](keycredential.md)-Sammlung|Die Sammlung der wichtigsten Anmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu. |
+|logo|Stream|Das Hauptlogo für die Anwendung. Lässt keine Nullwerte zu. |
 |optionalClaims|optionalClaims| Reserviert für zukünftige Verwendung. |
-|orgRestrictions|Collection von Objekten des Typs „String“| Reserviert für zukünftige Verwendung. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Gibt die Altersfreigabe Einstellungen für eine Anwendung.|
-|passwordCredentials|[PasswordCredential](passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen, die mit der Anwendung verbunden sind. Lässt keine Nullwerte zu.|
-|publicClient|[publicClient](publicclient.md)| Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
-|publisherDomain| Zeichenfolge | Die überprüften Publisher-Domäne für die Anwendung. Schreibgeschützt.|
-|requiredResourceAccess|[RequiredResourceAccess](requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine Nullwerte zu.|
-|signInAudience | Zeichenfolge | Gibt an, welche Microsoft-Konten für die aktuelle Anwendung unterstützt werden. Unterstützte Werte sind:<ul><li>**AzureADMyOrg**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in meiner Organisation Azure AD-Mandanten (d. h. mit einem einzelnen Mandanten)</li><li>**AzureADMultipleOrgs**: Benutzer mit einer Microsoft arbeiten oder Schule Konto in der Organisation Azure AD-Mandanten (d. h. mit mehreren Mandanten)</li> <li>**AzureADandPersonalMicrosoftAccount**: Benutzer mit einem persönlichen Microsoft-Konto oder ein Konto arbeiten oder Schule in der Organisation Azure AD-Mandanten</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-|-Tags hinzugefügtes Markup|Collection von Objekten des Typs „String“| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
-|web|[Web](web.md)| Gibt die Einstellungen für eine Webanwendung. |
+|orgRestrictions|String-Sammlung| Reserviert für zukünftige Verwendung. |
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Gibt die Jugendschutzeinstellungen für eine Anwendung an.|
+|passwordCredentials|[passwordCredential](passwordcredential.md)-Sammlung|Die Sammlung der Kennwortanmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu.|
+|publicClient|[publicClient](publicclient.md)| Legt die Einstellungen für installierte Clients wie Desktop- oder mobile Geräte fest. |
+|publisherDomain| String | Die bestätigte Herausgeberdomäne für die Anwendung. Schreibgeschützt.|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md)-Sammlung|Gibt Ressourcen an, auf die diese Anwendung zugreifen muss, sowie den Satz von OAuth-Berechtigungsbereichen und Anwendungsrollen, die unter den jeweiligen Ressourcen benötigt werden. Durch diese Vorkonfiguration des erforderlichen Ressourcenzugriffs wird die Zustimmungsoberfläche bestimmt. Lässt keine Nullwerte zu.|
+|signInAudience | String | Gibt an, welche Microsoft-Konten für die aktuelle Anwendung unterstützt werden. Unterstützte Werte:<ul><li>**AzureADMyOrg**: Benutzer mit einem Microsoft-Geschäfts-, Schul- oder Unikonto in dem Azure AD-Mandanten meiner Organisation (d. h. einzelner Mandant).</li><li>**AzureADMultipleOrgs**: Benutzer mit einem Microsoft-Geschäfts-, Schul- oder Unikonto in dem Azure AD-Mandanten einer Organisation (d. h. mehrere Mandanten).</li> <li>**AzureADandPersonalMicrosoftAccount**: Benutzer mit einem persönlichen Microsoft-Konto oder einem Geschäfts-, Schul- oder Unikonto im Azure AD-Mandanten einer Organisation.</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|tags|String-Sammlung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
+|web|[web](web.md)| Legt die Einstellungen für eine Webanwendung fest. |
 
 ## <a name="relationships"></a>Beziehungen
 
 | Beziehung | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|Anrufe           |[rufen Sie](call.md) -Auflistung                  |Schreibgeschützt. Lässt Nullwerte zu.|
-|connectorGroup|[connectorGroup](connectorgroup.md)| Die ConnectorGroup ist die Anwendung mit Azure AD-Anwendungsproxy verwendet. Lässt Nullwerte zu.|
+|Aufrufe           |[call](call.md)-Sammlung                  |Schreibgeschützt. Lässt Nullwerte zu.|
+|connectorGroup|[connectorGroup](connectorgroup.md)| Das connectorGroup-Objekt, das die Anwendung mit dem Azure AD-Anwendungsproxy verwendet. Lässt Nullwerte zu.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Schreibgeschützt.|
-|onlineMeetings  |[OnlineMeeting](onlinemeeting.md) -Auflistung|Schreibgeschützt. Lässt Nullwerte zu.|
-|owners|[directoryObject](directoryobject.md)-Sammlung|Directory-Objekte, die Besitzer der Anwendung sind. Die Besitzer sind eine Reihe von nicht-Administrator-Benutzer, die berechtigt sind, dieses Objekt zu ändern. Erfordert Version 2013-11-08 oder höher. Schreibgeschützt. Lässt Nullwerte zu.|
-|Richtlinie|Auflistung von [Gruppenrichtlinien](policy.md)|Die Richtlinien für diese Anwendung zugewiesen.|
+|onlineMeetings  |[onlineMeeting](onlinemeeting.md)-Sammlung|Schreibgeschützt. Lässt Nullwerte zu.|
+|Besitzer|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die Besitzer der Anwendung sind. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Version vom 08.11.2013 oder neuer erforderlich. Schreibgeschützt. Lässt Nullwerte zu.|
+|Richtlinie|[policy](policy.md)-Sammlung|Die dieser Anwendung zugewiesenen Richtlinien.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -120,10 +120,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

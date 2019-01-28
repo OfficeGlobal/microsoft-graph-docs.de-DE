@@ -1,25 +1,25 @@
 ---
-title: Erstellen von Teams aus Gruppe
-description: Erstellen Sie ein neues Team aus einer Gruppe.
+title: Team aus Gruppe erstellen
+description: Erstellen eines neuen Teams aus einer Gruppe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938692"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524793"
 ---
-# <a name="create-team-from-group"></a>Erstellen von Teams aus Gruppe
+# <a name="create-team-from-group"></a>Team aus Gruppe erstellen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie ein neues [Team](../resources/team.md) aus einer [Gruppe](../resources/group.md).
+Erstellen eines neuen [Teams](../resources/team.md) aus einer [Gruppe](../resources/group.md).
 
-Um ein Team zu erstellen, muss die Gruppe einen mindestens einen Besitzer haben.
+Damit ein Team daraus erstellt werden kann, muss die Gruppe mindestens einen Besitzer haben.
 
-Wenn die Gruppe vor weniger als 15 Minuten erstellt wurde, kann der erstellen teamanruf an einen Code 404-Fehler aufgrund von Replikation Verzögerungen auftreten. Das empfohlene Muster liegt, um den Aufruf der Create-Team drei Mal mit einer Verzögerung von 10 Sekunden zwischen aufrufen.
+Wenn die Gruppe vor weniger als 15 Minuten erstellt wurde, führt der Aufruf zum Erstellen eines Teams möglicherweise zu einem Fehler 404 aufgrund von Verzögerungen bei der Replikation. Das empfohlene Muster besteht darin, den Aufruf zum Erstellen des Teams drei Mal mit einer Verzögerung von 10 Sekunden zwischen Aufrufen zu wiederholen.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -31,7 +31,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung | Group.ReadWrite.All |
 
-> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Gruppen zugreifen, denen sie nicht Mitglied sind.
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft Teams-Dienstadministratoren können auf Gruppen zugreifen, in denen sie kein Mitglied sind.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -43,18 +43,18 @@ PUT /groups/{id}/team
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [Team](../resources/team.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [team](../resources/team.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn diese Methode erfolgreich ist, zurückgeben soll eine `201 Created` Antwortcode und ein [Team](../resources/team.md) -Objekt aus der Antwort.
+Bei erfolgreicher Ausführung sollte die Methode den Antwortcode `201 Created` und ein [team](../resources/team.md)-Objekt im Antworttext zurückgeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -130,14 +130,19 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-put-teams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Gruppe mit einem team](/graph/teams-create-group-and-team)
+- [Erstellen einer Gruppe mit einem Team](/graph/teams-create-group-and-team)

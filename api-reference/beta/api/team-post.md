@@ -1,21 +1,21 @@
 ---
-title: Erstellen eines Teams
-description: Erstellen Sie ein neues Team.
+title: Team erstellen
+description: Erstellt ein neues Team.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519612"
 ---
-# <a name="create-team"></a>Erstellen von Teams
+# <a name="create-team"></a>Team erstellen
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie ein neues [Team](../resources/team.md).
+Erstellt ein neues [Team](../resources/team.md).
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -37,24 +37,24 @@ POST /teams
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-| Header        | Wert                     |
+| Kopfzeile        | Wert                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Erforderlich. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [Team](../resources/team.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [team](../resources/team.md)-Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn erfolgreich, diese API gibt eine `202 Accepted` mit einem Link zu der [TeamsAsyncOperation](../resources/teamsasyncoperation.md)Antwort.
+Falls erfolgreich, gibt diese API eine `202 Accepted`-Antwort mit einem Link zu [teamsAsyncOperation](../resources/teamsasyncoperation.md) zurück.
 
 ## <a name="examples"></a>Beispiele
 
-### <a name="example---delegated-permissions"></a>Beispiel - delegierten Berechtigungen
+### <a name="example---delegated-permissions"></a>Beispiel zu delegierten Berechtigungen
 
-Hier ist ein Beispiel für eine minimale Anforderung. Durch andere Eigenschaften auslassen, ist der Client implizit Standardwerte aus der vordefinierten Vorlage dargestellt durch Offlineschalten `template`.
+Nachfolgend finden Sie ein Beispiel für eine Mindestanforderung. Durch Auslassen anderer Eigenschaften verwendet der Client implizit die Standardwerte aus der vordefinierten Vorlage, die durch `template` angegeben wird.
 
 #### <a name="request"></a>Anforderung
 
@@ -79,9 +79,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Beispiel: Erstellen Sie ein Team mit einer app installiert, mehrere Kanäle mit angeheftete Registerkarten von delegierten Berechtigungen
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Beispiel: Erstellen eines Teams mit einer App, mehreren Kanälen mit angehefteten Registerkarten unter Verwendung delegierter Berechtigungen
 
-Es folgt Anforderung mit einer vollständigen Nutzlast. Der Client-Werte in der Basisvorlage außer Kraft und Elementen durch Überprüfungsregeln für zulässigen soweit Array wiederholendem hinzufügen kann die `specialization`.
+Im Folgenden sehen Sie eine Anforderung mit vollständiger Nutzlast. Der Client kann Werte in der Basisvorlage außer Kraft setzen und zu Elementen mit Arraywerten hinzufügen, soweit es die Validierungsregeln für `specialization` zulassen.
 
 #### <a name="request"></a>Anforderung
 
@@ -177,9 +177,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>Beispiel - Berechtigungen
+### <a name="example---application-permissions"></a>Beispiel für Anwendungsberechtigungen
 
-Hier ist ein Beispiel für eine minimale Anforderung Anwendungsberechtigungen verwenden. Durch andere Eigenschaften auslassen, ist der Client implizit Standardwerte aus der vordefinierten Vorlage dargestellt durch Offlineschalten `template`. Wenn einer Anforderung mit Berechtigungen eines [Benutzers](../resources/user.md) ausstellen muss angegeben werden der `owners` Auflistung.
+Im Folgenden sehen Sie ein Beispiel für eine Mindestanforderung unter Verwendung der Anwendungsberechtigungen. Durch Auslassen anderer Eigenschaften verwendet der Client implizit die Standardwerte aus der vordefinierten Vorlage, die durch `template` angegeben wird. Wenn Sie eine Anforderung mit Anwendungsberechtigungen erstellen, muss ein [Benutzer](../resources/user.md) in der `owners`-Sammlung angegeben werden.
 
 #### <a name="request"></a>Anforderung
 
@@ -207,6 +207,14 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Gruppe mit einem team](/graph/teams-create-group-and-team)
+- [Erstellen einer Gruppe mit einem Team](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

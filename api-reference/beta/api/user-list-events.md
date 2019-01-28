@@ -1,28 +1,28 @@
 ---
 title: Ereignisse auflisten
-description: 'Abrufen einer Liste der Ereignisobjekte von Standardkalender des Benutzers oder '
+description: 'Abrufen einer Liste von Ereignisobjekten aus dem Standardkalender des Benutzers oder '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17e5123f5327ab3958f1ec9b2c53d49fc02ab74f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef16f9f0db1bc1e489bc7322ff72f58598d8d0a6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940092"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526662"
 ---
 # <a name="list-events"></a>Ereignisse auflisten
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie eine Liste der [Ereignisobjekte](../resources/event.md) aus Standardkalender des Benutzers oder einen angegebenen Kalender. Die Liste enthält Einzelinstanz Besprechungen und Series-Master.
+Abrufen einer Liste von [event](../resources/event.md)-Objekten aus dem Standardkalender des Benutzers oder einem angegebenen Kalender. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.
 
 Um erweiterte Ereignisinstanzen abzurufen, können Sie [die Kalenderansicht abrufen](calendar-list-calendarview.md) oder [die Instanzen eines Ereignisses abrufen](event-list-instances.md).
 
-Es gibt zwei Szenarien, in dem eine app Ereignisse im Kalender des Benutzers abzurufen:
+Es gibt zwei Szenarien, in denen eine App Ereignisse im Kalender eines anderen Benutzers abrufen kann:
 
-* Wenn die app Anwendungsberechtigungen verfügt oder,
-* Wenn die app verfügt die entsprechenden [Berechtigungen](#permissions) delegiert, von einem Benutzer und einen anderen Benutzer der Benutzer einen Kalender freigegeben hat, oder delegierten Zugriff, die diesem Benutzer zugewiesen hat. Finden Sie [ausführliche Informationen und ein Beispiel](/graph/outlook-get-shared-events-calendars).
+* Wenn die App Anwendungsberechtigungen besitzt oder
+* Wenn die App die entsprechenden delegierten [Berechtigungen](#permissions) von einem Benutzer besitzt und ein anderer Benutzer einen Kalender für diesen Benutzer freigegeben hat oder diesem Benutzer delegierten Zugriff erteilt hat. Hier finden Sie [weitere Informationen und ein Beispiel](/graph/outlook-get-shared-events-calendars).
 
 
 ### <a name="support-various-time-zones"></a>Unterstützen verschiedener Zeitzonen
@@ -82,12 +82,12 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [Event](../resources/event.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1
-Im erste Beispiel ruft die Ereignisse des Benutzers ab. Es gibt Folgendes an:
+Das erste Beispiel ruft alle Ereignisse des Benutzers ab. Es gibt Folgendes an:
 
-- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in 	Pacific Normalzeit. 
+- Einen `Prefer: outlook.timezone`-Header zum Abrufen von Datums- und Uhrzeitwerten in Pacific Normalzeit. 
 - Einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
 
-Die Anforderung gibt keine `Prefer: outlook.body-content-type` Kopfzeile an, dass ein bestimmtes Format für den Textkörper zurückgegebene Ereignis. 
+Die Anforderung gibt keinen `Prefer: outlook.body-content-type`-Header an, um ein bestimmtes Format für den zurückgegebenen Ereignistext anzuzeigen. 
 
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>Antwort 1
-Nachfolgend sehen Sie ein Beispiel der Antwort. Da kein `Prefer: outlook.body-content-type` Kopfzeile angegeben wurde, wird die **Body** -Eigenschaft in der Standard-HTML-Format zurückgegeben.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Da kein `Prefer: outlook.body-content-type`-Header angegeben wurde, wird die **body**-Eigenschaft im standardmäßigen HTML-Format zurückgegeben.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -181,9 +181,9 @@ Content-length: 1932
 ```
 
 ##### <a name="request-2"></a>Anforderung 2
-Das zweite Beispiel zeigt, wie Sie eine `Prefer: outlook.body-content-type="text"` Header, um die **Body** -Eigenschaft der angegebenen Nachricht im Textformat erhalten möchten.
+Das zweite Beispiel veranschaulicht, wie Sie einen `Prefer: outlook.body-content-type="text"`-Header verwenden, um die **body**-Eigenschaft der angegebenen Nachricht im Textformat abzurufen.
 
-Die Anforderung verwendet auch eine `$select` Parameter zum Zurückgeben bestimmter Eigenschaften abzufragen. Ohne ein `$select` -Parameter aller Ereigniseigenschaften zurückgegeben.
+Die Anforderung verwendet auch einen `$select`-Abfrageparameter zum Zurückgeben bestimmter Eigenschaften. Ohne `$select`-Parameter werden alle Ereigniseigenschaften zurückgegeben.
 <!-- {
   "blockType": "request",
   "name": "get_events_in_text"
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
 ##### <a name="response-2"></a>Antwort 2
-Nachfolgend sehen Sie ein Beispiel der Antwort. Die **Body** -Eigenschaft wird im Text-Format zurückgegeben. 
+Nachfolgend sehen Sie ein Beispiel der Antwort. Die **body**-Eigenschaft wird im Textformat zurückgegeben. 
 
 <!-- {
   "blockType": "response",
@@ -226,10 +226,15 @@ Content-length: 640
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

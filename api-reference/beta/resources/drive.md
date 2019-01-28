@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Laufwerk
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 581a611fa077eab6d44db01d998d5ea42886f052
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938188"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521271"
 ---
-# <a name="drive-resource-type"></a>Laufwerk Ressourcentyp
+# <a name="drive-resource-type"></a>Drive-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Die drive-Ressource ist das Objekt der obersten Ebene innerhalb des OneDrive eines Benutzers oder einer Dokumentbibliothek in SharePoint.
 
@@ -77,14 +77,14 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | createdDateTime      | dateTimeOffset                | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                                                                                       |
 | description          | Zeichenfolge                        | Stellt eine für den Benutzer sichtbare Beschreibung des Laufwerks bereit. Lese-/Schreibzugriff.
 | driveType            | String                        | Beschreibt den Typ des Laufwerks, der durch diese Ressource dargestellt wird. Persönliche OneDrive-Laufwerke geben `personal` zurück. OneDrive for Business gibt `business` zurück. SharePoint-Dokumentbibliotheken geben `documentLibrary` zurück. Schreibgeschützt. |
-| id                   | Zeichenfolge                        | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                                                                                                                                                                   |
+| id                   | String                        | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                                                                                                                                                             |
 | name                 | string                        | Der Name des Elements. Lese-/Schreibzugriff.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Optional.  Das Benutzerkonto, das das Laufwerk besitzt. Schreibgeschützt.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional.  Informationen zum Speicherkontingent des Laufwerks. Schreibgeschützt.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                                                                                                                                         |
-| System-               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
+| System               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
 | webUrl               | String (URL)                  | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -99,7 +99,7 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | Elemente        | [driveitem](driveitem.md) collection | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
 | root         | [driveitem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
 | Sonderfall      | [driveitem](driveitem.md) collection | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
-| in der folgenden    | [DriveItem](driveitem.md) -Auflistung | Die Liste der Elemente, die der Benutzer folgt. Nur in OneDrive für Unternehmen.
+| following    | [Driveitem](driveitem.md)-Sammlung | Die Liste von Elementen, denen der Benutzer folgt. Nur in OneDrive for Business.
 
 ## <a name="methods"></a>Methoden
 
@@ -108,13 +108,13 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | [Abrufen der Laufwerks-Metadaten eines anderen Laufwerks][drive-get]           | `GET /drives/{drive-id}`    |
 | [Abrufen des Stammordners des Standardlaufwerks des Benutzers][item-get]       | `GET /drive/root`           |
 | [Auflisten der Aktivitäten unter dem Laufwerk][drive-activities]        | `GET /drive/activities`     |
-| [Liste gefolgt Elemente][drive-following]                     | `GET /drive/following`      |
+| [Auflisten der Elemente, denen gefolgt wird][drive-following]                     | `GET /drive/following`      |
 | [Auflisten der untergeordneten Elemente des Laufwerks][item-children]             | `GET /drive/root/children`  |
 | [Auflisten der Änderungen für alle Elemente auf dem Laufwerk][item-changes]    | `GET /drive/root/delta`     |
 | [Suchen nach Elementen auf dem Laufwerk][item-search]               | `GET /drive/root/search`    |
 | [Abrufen spezieller Ordner](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-Verwenden Sie in der vorherigen Tabelle, in den Beispielen `/drive`, aber andere Pfade sind ungültig.
+In der vorstehenden Tabelle verwenden die Beispiele `/drive`, andere Pfade sind jedoch ebenfalls gültig.
 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
@@ -132,11 +132,18 @@ Verwenden Sie in der vorherigen Tabelle, in den Beispielen `/drive`, aber andere
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

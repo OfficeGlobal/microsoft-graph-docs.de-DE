@@ -1,23 +1,23 @@
 ---
-title: 'Benutzer: FindRooms'
-description: 'Rufen Sie allen Besprechungsräumen Mandant des Benutzers oder in einer bestimmten Raumliste. '
+title: 'user: findRooms'
+description: 'Abrufen aller Besprechungsräume im Mandanten des Benutzers oder in einer bestimmten Raumliste. '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 70bd060f3c2d5722dca365e4d5f4c7595eab26cd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934009"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524170"
 ---
-# <a name="user-findrooms"></a>Benutzer: FindRooms
+# <a name="user-findrooms"></a>user: findRooms
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie allen Besprechungsräumen Mandant des Benutzers oder in einer bestimmten Raumliste. 
+Abrufen aller Besprechungsräume im Mandanten des Benutzers oder in einer bestimmten Raumliste. 
 
-Mandanten können Besprechungsräumen in Raumlisten zu organisieren. Jede Besprechungsraum und Raumliste wird von einer Instanz [EmailAddress](../resources/emailaddress.md) dargestellt. Sie können [Alle Chatroom-Listen abrufen](user-findroomlists.md) im Mandanten, Abrufen von allen Chatrooms im Mandanten oder alle Chatrooms in einer bestimmten Raumliste abrufen. Sie können die ersten 100 Räume im Mandanten Einstieg.
+Mandanten können Besprechungsräume in Raumlisten organisieren. Jeder Besprechungsraum und jede Raumliste wird durch eine [emailAddress](../resources/emailaddress.md)-Instanz dargestellt. Sie können [alle Raumlisten im Mandanten](user-findroomlists.md), alle Räume im Mandanten oder alle Räume in einer bestimmten Raumliste abrufen. Sie können die ersten 100 Räume im Mandanten abrufen.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -25,13 +25,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadBasic.All User.Read.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadBasic.All, User.Read.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | User.Read.All |
+|Application | User.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-So erhalten Sie alle Chatrooms im Mandanten:
+So rufen Sie alle Räume im Mandanten ab:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /me/findRooms
 GET /users/<id>/findRooms
 ```
 
-So erhalten Sie alle Chatrooms in einer speziellen Raum des Mandantenverwaltungs
+So rufen Sie alle Räume in einer bestimmten Raumliste des Mandanten ab:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +51,7 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 | Abfrageparameter       | Typ | Beschreibung |
 |:---------------|:----------|:----------|
-| RoomList | string | Die SMTP-Adresse der Raumliste zugeordnet. Jede Raumliste wird von einer Instanz [EmailAddress](../resources/emailaddress.md) dargestellt, die eine SMTP-Adresse enthält. |
+| RoomList | string | Die der Raumliste zugeordnete SMTP-Adresse. Jede Raumliste wird durch eine [emailAddress](../resources/emailaddress.md)-Instanz dargestellt, die eine SMTP-Adresse enthält. |
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung |
@@ -65,14 +65,14 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwort Code und [EmailAddress](../resources/emailaddress.md) -Auflistungsobjekt in der Antworttext.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [emailAddress](../resources/emailaddress.md)-Sammlungsobjekt im Antworttext zurückgegeben.
 
 
 ## <a name="example"></a>Beispiel
 
 ##### <a name="request-1"></a>Anforderung 1
 
-Im erste Beispiel ruft alle Chatrooms, die gemäß der Mandant des angemeldeten Benutzers ab.
+Das erste Beispiel ruft alle Räume ab, die im Mandanten des angemeldeten Benutzers definiert sind.
 
 <!-- {
   "blockType": "request",
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>Anforderung 2
 
-Im zweiten Beispiel wird die Chatrooms in der angegebenen Raumliste durch die e-Mail-Adresse Building2Rooms@contoso.onmicrosoft.com identifiziert.
+Das zweite Beispiel ruft die Räume in der angegebenen Raumliste ab, die durch die E-Mail-Adresse Building2Rooms@contoso.onmicrosoft.com gekennzeichnet ist.
 
 <!-- {
   "blockType": "request",
@@ -177,10 +177,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRooms",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findrooms.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

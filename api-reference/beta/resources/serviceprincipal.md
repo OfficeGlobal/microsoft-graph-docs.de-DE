@@ -2,12 +2,12 @@
 title: servicePrincipal-Ressourcentyp
 description: Stellt eine Instanz einer Anwendung in einem Verzeichnis dar. Erbt von directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d36a82ae885725387e788cf280442afe09fa63de
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512115"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574187"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal-Ressourcentyp
 
@@ -34,7 +34,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 }-->
 
 ```json
@@ -88,14 +88,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Prinzipale (Benutzer, Gruppen und Dienstprinzipale), die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt.|
+|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |Prinzipale (Benutzer, Gruppen und Dienstprinzipale), die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md)-Auflistung|Anwendungen, denen der Dienstprinzipal zugewiesen ist. Schreibgeschützt. Lässt NULL-Werte zu.|
 |createdObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die von diesem Dienstprinzipal erstellt werden. Schreibgeschützt. Lässt Nullwerte zu.|
-|memberOf|[directoryObject](directoryobject.md)-Sammlung|Rollen, denen dieser Dienstprinzipal angehört. HTTP-Methoden: GET; schreibgeschützt. Nullwerte zulassend.|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md)-Auflistung|Gewährungen für den Identitätswechsel von Benutzern, die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|ownedObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die im Besitz dieses Dienstprinzipals sind. Schreibgeschützt. Nullwerte zulassend.|
-|owners|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die Besitzer dieses Dienstprinzipals sind. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Schreibgeschützt. Nullwerte zulassend.|
-|policy|[policy](policy.md)-Auflistung|Die diesem Dienstprinzipal zugewiesenen Richtlinien.|
+|memberOf| [directoryObject](directoryobject.md)-Sammlung|Rollen, denen dieser Dienstprinzipal angehört. HTTP-Methoden: GET; schreibgeschützt. Nullwerte zulassend.|
+|oauth2PermissionGrants| [oAuth2PermissionGrant](oauth2permissiongrant.md)-Auflistung|Gewährungen für den Identitätswechsel von Benutzern, die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|ownedObjects| [directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die im Besitz dieses Dienstprinzipals sind. Schreibgeschützt. Nullwerte zulassend.|
+|owners| [directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die Besitzer dieses Dienstprinzipals sind. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Schreibgeschützt. Nullwerte zulassend.|
+|policy| [policy](policy.md)-Auflistung|Die diesem Dienstprinzipal zugewiesenen Richtlinien.|
 
 ## <a name="methods"></a>Methoden
 
