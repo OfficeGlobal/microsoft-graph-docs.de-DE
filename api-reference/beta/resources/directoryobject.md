@@ -4,12 +4,12 @@ description: Stellt ein Azure Active Directory-Objekt dar. Der **directoryObject
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5ba2454a5eda90ec50dbd6a0c152383bb42a437d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521593"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573956"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject-Ressourcentyp
 
@@ -25,12 +25,12 @@ Diese Ressource unterstützt Folgendes:
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[directoryObject abrufen](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Dient zum Lesen der Eigenschaften des directory-Objekts.|
+|[directoryObject abrufen](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |Dient zum Lesen der Eigenschaften des directory-Objekts.|
 |[Delete](../api/directoryobject-delete.md) | Keine |Dient zum Löschen eines directory-Objekts. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Gibt alle Gruppen zurück, in denen das Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Gibt alle Gruppen und Verzeichnisrollen zurück, in denen ein Benutzer-, Gruppen- oder Verzeichnisobjekt Mitglied ist. Die Überprüfung ist transitiv. |
-|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md)-Sammlung | Dient zum Abrufen eines Satzes von Directory-Objekten basierend auf einem Satz angegebener IDs. |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](../resources/directoryobject.md)-Sammlung | Dient zum Abrufen eines Satzes von Directory-Objekten basierend auf einem Satz angegebener IDs. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Überprüft, ob der Anzeigename oder E-Mail-Kontoname einer Office 365-Gruppe den Benennungsrichtlinien entspricht. |
 |[delta](../api/directoryobject-delta.md)|directoryObject-Sammlung| Abrufen inkrementeller Änderungen für Verzeichnisobjekte. Unterstützt das Filtern nach abgeleitetem Typ. |
 
@@ -61,7 +61,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

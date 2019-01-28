@@ -4,12 +4,12 @@ description: 'Ein Outlook-Element, das ein Arbeitselement verfolgen kann. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a6d5809f2634f4b9e0f1e30e3fddb0c798f0f6c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513347"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576437"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask-Ressourcentyp
 
@@ -78,9 +78,9 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md)-Sammlung|Die Sammlung der [fileAttachment](fileattachment.md)-, [itemAttachment](itemattachment.md)- und [referenceAttachment](referenceattachment.md)-Anlagen der Aufgabe.  Schreibgeschützt. Lässt NULL-Werte zu.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter mehrwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter einwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|attachments|[attachment](attachment.md)-Sammlung|Die Sammlung der [fileAttachment](fileattachment.md)-, [itemAttachment](itemattachment.md)- und [referenceAttachment](referenceattachment.md)-Anlagen der Aufgabe.  Schreibgeschützt. Nullwerte zulassend.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter mehrwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Nullwerte zulassend.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter einwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -89,8 +89,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

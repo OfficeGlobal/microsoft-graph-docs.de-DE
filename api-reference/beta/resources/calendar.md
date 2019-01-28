@@ -4,12 +4,12 @@ description: Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 162c2a4787d7b89b55135f61f4334c580b224051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 832a7bc18018f4774e2c8ea8786d510c50e2580c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520270"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574705"
 ---
 # <a name="calendar-resource-type"></a>Ressourcentyp calendar
 
@@ -63,8 +63,8 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 |:---------------|:--------|:----------|
 |calendarView|[event](event.md)-Sammlung|Die Kalenderansicht für den Kalender. Navigationseigenschaft. Schreibgeschützt.|
 |Ereignisse|[event](event.md)-Sammlung|Die Ereignisse im Kalender. Navigationseigenschaft. Schreibgeschützt.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung | Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung | Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kalender definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -75,11 +75,35 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
     "calendarView",
     "events",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendar"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
