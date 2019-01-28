@@ -1,49 +1,49 @@
 ---
-title: Ressourcentyp chatMessage
-description: Stellt eine einzelne Chatnachricht innerhalb einer Entität Kanal oder Chat. Die Nachricht kann ein Stamm-Nachricht oder einen Teil davon ein Thread, der von der **ReplyToId** -Eigenschaft in der Nachricht definiert ist.
+title: chatMessage-Ressourcentyp
+description: Stellt eine einzelne Chatnachricht innerhalb eines Kanals oder einer Chatentität dar. Die Nachricht kann eine Stammnachricht oder Teil eines Threads sein, die bzw. der von der **replyToId**-Eigenschaft in der Nachricht definiert wird.
 localization_priority: Priority
-ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855993"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517967"
 ---
-# <a name="chatmessage-resource-type"></a>Ressourcentyp chatMessage
+# <a name="chatmessage-resource-type"></a>chatMessage-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt eine einzelne Chatnachricht innerhalb einer Entität [Kanal](channel.md) oder Chat. Die Nachricht kann ein Stamm-Nachricht oder einen Teil davon ein Thread, der von der **ReplyToId** -Eigenschaft in der Nachricht definiert ist.
+Stellt eine einzelne Chatnachricht innerhalb eines [Kanals](channel.md) oder einer Chatentität dar. Die Nachricht kann eine Stammnachricht oder Teil eines Threads sein, die bzw. der von der **replyToId**-Eigenschaft in der Nachricht definiert wird.
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste Channel Nachrichten](../api/channel-list-messages.md) | [Chatmessage](chatmessage.md) -Auflistung | Rufen Sie die Liste aller Stamm-Nachrichten in einem Kanal.|
-|[Get-Channel-Nachricht](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Rufen Sie eine Nachricht einzelnen Stamm aus einem Kanal.|
-|[Liste Antworten auf eine Nachricht](../api/channel-list-messagereplies.md) | [Chatmessage](chatmessage.md) -Auflistung| Abrufen der Liste mit allen Antworten auf eine Nachricht im Kanal.|
-|[Erhalten Sie eine Antwort auf eine Nachricht](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Abrufen einer einzigen Antwort auf eine Nachricht in einem Kanal.|
+|[Kanalnachrichten auflisten](../api/channel-list-messages.md) | [chatMessage](chatmessage.md)-Sammlung | Abrufen der Liste aller Stammnachrichten in einem Kanal.|
+|[Kanalnachricht abrufen](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Abrufen einer einzelnen Stammnachricht aus einem Kanal.|
+|[Antworten in einer Nachricht auflisten](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md)-Sammlung| Abrufen der Liste aller Antworten auf eine Nachricht im Kanal.|
+|[Antwort auf eine Nachricht abrufen](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Abrufen einer einzelnen Antwort auf eine Nachricht in einem Kanal.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id|Zeichenfolge| Schreibgeschützt. Eindeutige ID der Nachricht.|
-|replyToId| string | ID der übergeordneten Nachricht/Root Nachricht des Threads |
-|Von|[identitySet](identityset.md)| Details des Absenders der Nachricht|
-|etag| string | Versionsnummer der Nachricht |
-|messageType|Zeichenfolge|Der Typ der aktuellen Nachricht unterstützt Werte sind: Meldung, ChatEvent, Eingabe|
-|createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel der Erstellung der Nachricht|
-|lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Wenn die Nachricht bearbeitet/aktualisiert wurde Zeitstempel|
-|isDeleted|Boolean|Darstellt, wenn eine Nachricht weiche gelöscht wurde|
-|deletedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, an dem die Nachricht gelöscht wurde |
-|subject|string|Betreffzeile der Nachricht. Optional|
-|body|[itemBody](itembody.md)|Nur-Text/HTML-Darstellung des Inhalts der Nachricht. Gibt nur-Text in der Standardeinstellung kann Anwendung HTML als Teil einer Abfrage Param auswählen|
-|Zusammenfassung|string|Zusammengefassten Texts der Nachricht, die für Pushbenachrichtigungen und Übersichten oder fallen Back Ansichten verwendet werden können|
-|Erwähnungen|[ChatMessageMention](chatmention.md) -Auflistung| Liste der Entitäten, die in der Meldung genannten. Derzeit unterstützt Benutzer, Bot, Team, DDE-Kanal|
-|Wichtigkeit| string | Die Wichtigkeit der Nachricht: Normal, hoch|
-|Reaktionen| [ChatMessageReaction](chatreaction.md) -Auflistung | Reaktionen für diese Nachricht (beispielsweise wie)|
-|Gebietsschema|string|Gebietsschema der Nachricht vom Client festgelegt|
-|attachments|[ChatMessageAttachment](chatattachment.md) -Auflistung |Dateianlagen|
+|id|String| Schreibgeschützt. Eindeutige ID der Nachricht.|
+|replyToId| Zeichenfolge | ID der übergeordneten Nachricht/Stammnachricht des Threads |
+|von|[identitySet](identityset.md)| Einzelheiten über den Absender der Nachricht|
+|etag| Zeichenfolge | Versionsnummer der Nachricht |
+|messageType|Zeichenfolge|Der Typ der Nachricht; aktuell unterstützte Werte sind: message, chatEvent, Typing|
+|createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht erstellt wurde|
+|lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht bearbeitet/aktualisiert wurde|
+|isDeleted|Boolescher Wert|Gibt an, ob eine Nachricht vorläufig gelöscht wurde|
+|deletedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht gelöscht wurde |
+|subject|Zeichenfolge|Nachrichtenbetreff Optional|
+|Text|[itemBody](itembody.md)|Nur-Text-/HTML-Darstellung des Inhalts der Nachricht. Gibt standardmäßig Nur-Text wieder; Anwendung kann HTML wahlweise als Teil eines Abfrageparameters auswählen|
+|Zusammenfassung|Zeichenfolge|Zusammenfassungstext der Nachricht, die für Pushbenachrichtigungen und Zusammenfassungs- oder Fallbackansichten verwendet werden kann |
+|Erwähnungen|[chatMessageMention](chatmention.md)-Sammlung| Liste der Entitäten, die in der Nachricht angegeben werden. Derzeit unterstützt: user, bot, team, channel|
+|Wichtigkeit| Zeichenfolge | Legt die Wichtigkeit der Nachricht fest: Hoch, Niedrig|
+|Reaktionen| [chatMessageReaction](chatreaction.md)-Sammlung | Reaktionen auf diese Nachricht (z. B. Gefällt mir)|
+|Gebietsschema|Zeichenfolge|Vom Client festgelegtes Gebietsschema der Nachricht|
+|Anlagen|[chatMessageAttachment](chatattachment.md)-Sammlung |Angefügte Dateien|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -91,10 +91,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,37 +1,37 @@
 ---
-title: Einblicke in die Ressourcentyp
-description: Einblicke in die sind Beziehungen mit erweiterten Analyse- und Techniken erlernen Computer berechnet. Sie können, zum Beispiel OneDrive Dokumente, um Benutzer Trend identifizieren.
+title: insights-Ressourcentyp
+description: Einblicke sind Beziehungen, die mithilfe erweiterter Analysetechniken und computergestützter Lerntechniken berechnet werden. Sie können z. B. OneDrive-Dokumente für Benutzer identifizieren.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 38f7afb40c1618a8a7cf9d585c99633e2bb8d940
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513690"
 ---
-# <a name="insights-resource-type"></a>Einblicke in die Ressourcentyp
+# <a name="insights-resource-type"></a>insights-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Einblicke in die sind Beziehungen mit erweiterten Analyse- und Techniken erlernen Computer berechnet. Sie können, zum Beispiel OneDrive Dokumente, um Benutzer Trend identifizieren.
+Einblicke sind Beziehungen, die mithilfe erweiterter Analysetechniken und computergestützter Lerntechniken berechnet werden. Sie können z. B. OneDrive-Dokumente für Benutzer identifizieren.
 
-Einblicke in die werden durch die folgenden APIs zurückgegeben:
+Einblicke werden von den folgenden APIs zurückgegeben:
 
-- [Trending](insights-trending.md) - gibt Dokumente aus OneDrive und aus SharePoint-Websites, um einen Benutzer Trend zurück.
-- [Used](insights-used.md) - gibt Dokumente angezeigt und geändert werden, von einem Benutzer zurück. Enthält Dokumente, die der Benutzer verwendet in OneDrive für Unternehmen, SharePoint, als e-Mail-Anlagen und als Link Anlagen aus Quellen wie Feld, Ablage und Google Laufwerk geöffnet wurde.
-- [Shared](insights-shared.md) - gibt mit einem Benutzer freigegebene Dokumente zurück. Dokumente können als e-Mail-Anlage oder als OneDrive freigegeben werden for Business in gesendete e-Mails verknüpft.
+- [Trending](insights-trending.md): Gibt Dokumente von OneDrive- und SharePoint-Websites zurück, die bei einem Benutzer beliebt sind.
+- [Used](insights-used.md): Gibt die zuletzt von einem Benutzer angezeigten oder geänderten Dokumente zurück. Umfasst Dokumente, die der Benutzer in OneDrive for Business und SharePoint verwendet und als E-Mail-Anlagen und als Linkanlagen von Quellen wie Box, DropBox and Google Drive geöffnet hat.
+- [Shared](insights-shared.md): Gibt Dokumente zurück, die für einen Benutzer freigegeben wurden. Dokumente können als E-Mail-Anlagen oder als OneDrive for Business-Links freigegeben werden, die in E-Mails gesendet werden.
 
-Jede Erkenntnisse wird zurückgegeben, mit einer `resourceVisualization` und `resourceReference` komplexe Werttyp (CVT). Die ResourceVisualization CVT enthält Eigenschaften wie `title` und `previewImageUrl`. Microsoft verwendet die Visualisierungseigenschaften zum Rendern von Dateien im Erfahrungen wie Office ausführlicher behandelt.
+Jeder Einblick wird mit einem komplexen Werttyp von `resourceVisualization` und `resourceReference` zurückgegeben. Der komplexe Werttyp „ResourceVisualization“ enthält Eigenschaften wie `title` und `previewImageUrl`. Microsoft verwendet die Visualisierungseigenschaften, um die Dateien in Oberflächen wie Office Delve zu rendern.
 
 ## <a name="relationships"></a>Beziehungen
 
 | Beziehung      | Typ          | Beschreibung  |
 | ------------- |---------------| -------------|
-| Trend      | [Trending](insights-trending.md) -Auflistung       | Berechnete Beziehung Identifizieren von Trend Dokumenten. Trend Dokumente können in OneDrive oder in SharePoint-Websites gespeichert werden.   |
-| verwendet      | [Used](insights-used.md) -Auflistung       | Identifizieren von Dokumenten angezeigt und geändert werden, von einem Benutzer Beziehung berechnet. Enthält Dokumente, die der Benutzer verwendet in OneDrive für Unternehmen, SharePoint, als e-Mail-Anlagen und als Link Anlagen aus Quellen wie Feld, Ablage und Google Laufwerk geöffnet wurde.  |
-| shared        | [Shared](insights-shared.md) -Auflistung       | Berechnete Beziehung Identifizieren von Dokumenten, die ein Benutzer freigegeben. Dokumente können als e-Mail-Anlage oder als OneDrive freigegeben werden for Business in gesendete e-Mails verknüpft.   |
+| trending      | [Trending](insights-trending.md)-Auflistung       | Berechnete Beziehung, die beliebte Dokumente identifiziert. Beliebte Dokumente können auf OneDrive- oder auf SharePoint-Websites gespeichert werden.   |
+| verwendet      | [Used](insights-used.md)-Auflistung       | Berechnete Beziehung, die die von einem Benutzer angezeigten und geänderten Dokumente identifiziert. Umfasst Dokumente, die der Benutzer in OneDrive for Business und SharePoint verwendet und als E-Mail-Anlagen und als Linkanlagen von Quellen wie Box, DropBox and Google Drive geöffnet hat.  |
+| shared        | [Shared](insights-shared.md)-Auflistung       | Berechnete Beziehung, die Dokumente identifiziert, die für einen Benutzer freigegeben wurden. Dokumente können als E-Mail-Anlagen oder als OneDrive for Business-Links freigegeben werden, die in E-Mails gesendet werden.   |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -43,3 +43,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

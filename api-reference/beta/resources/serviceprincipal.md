@@ -1,19 +1,19 @@
 ---
-title: Ressourcentyp servicePrincipal
-description: Stellt eine Instanz einer Anwendung in einem Verzeichnis. Erbt von directoryObject.
+title: servicePrincipal-Ressourcentyp
+description: Stellt eine Instanz einer Anwendung in einem Verzeichnis dar. Erbt von directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880206"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512115"
 ---
-# <a name="serviceprincipal-resource-type"></a>Ressourcentyp servicePrincipal
+# <a name="serviceprincipal-resource-type"></a>servicePrincipal-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt eine Instanz einer Anwendung in einem Verzeichnis. Erbt von [directoryObject](directoryobject.md).
+Stellt eine Instanz einer Anwendung in einem Verzeichnis dar. Erbt von [directoryObject](directoryobject.md).
 
 Diese Ressource unterstützt Folgendes:
 
@@ -65,67 +65,72 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolescher Wert| **true,** Wenn das Dienstkonto für den Prinzipal aktiviert ist. anderenfalls **false**.            |
-|appDisplayName|Zeichenfolge|Der Anzeigename, der von der zugeordneten Anwendung verfügbar gemacht werden.|
-|appId|Zeichenfolge|Der eindeutige Bezeichner für die zugewiesene Anwendung (dessen **AppId** -Eigenschaft).|
-|appRoleAssignmentRequired|Boolescher Wert|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt. Lässt keine Nullwerte zu. |
-|appRoles|[AppRole](approle.md) -Auflistung|Die Rollen der Anwendung von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **AppRoles** -Eigenschaft in der [Anwendung](application.md) Entität. Lässt keine Nullwerte zu. |
+|accountEnabled|Boolescher Wert| **True**, wenn das Dienstprinzipalkonto aktiviert ist; andernfalls **false**.            |
+|appDisplayName|Zeichenfolge|Der von der verknüpften Anwendung verfügbar gemachte Anzeigename.|
+|appId|Zeichenfolge|Die eindeutige ID für die verknüpfte Anwendung (die **appId**-Eigenschaft).|
+|appRoleAssignmentRequired|Boolescher Wert|Gibt an, ob eine **eppRoleAssignment** für einen Benutzer oder eine Gruppe erforderlichist, bevor Azure Active Directory ein Benutzer- oder Zugriffstoken für die Anwendung ausstellt. Lässt keine Nullwerte zu. |
+|appRoles|[appRole](approle.md)-Auflistung|Die von der verknüpften Anwendung verfügbar gemachten Anwendungsrollen. Weitere Informationen finden Sie in der **appRoles**-Eigenschaftsdefinition in der [application](application.md)-Entität. Lässt keine Nullwerte zu. |
 |displayName|Zeichenfolge|Der Anzeigename für den Dienstprinzipal.|
 |errorUrl|Zeichenfolge|            |
-|Homepage|Zeichenfolge|Die URL zur Homepage der zugehörigen Anwendung.|
-|keyCredentials|[KeyCredential](keycredential.md) -Auflistung|Die Auflistung von wichtigen Anmeldeinformationen, die dem Prinzipal Dienst zugeordnet sind. Lässt keine Nullwerte zu.            |
-|logoutUrl|Zeichenfolge| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll.  |
-|oauth2Permissions|[oAuth2Permission](oauth2permission.md) -Auflistung|Die OAuth 2.0-Berechtigungen von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **oauth2Permissions** -Eigenschaft in der [Anwendung](application.md) Entität. Lässt keine Nullwerte zu.            |
-|id|Zeichenfolge|Der eindeutige Bezeichner für den Dienstprinzipal. Geerbt von [directoryObject](directoryobject.md). Schlüssel. Lässt keine Nullwerte zu. Schreibgeschützt.|
-|passwordCredentials|[PasswordCredential](passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen den Dienstprinzipal zugeordnet. Lässt keine Nullwerte zu. |
-|preferredTokenSigningKeyThumbprint|Zeichenfolge|Nur für interne Zwecke vorbehalten. Schreiben oder verlassen sich andernfalls auf diese Eigenschaft nicht. Kann in zukünftigen Versionen entfernt werden. |
-|publisherName|Zeichenfolge|Der Anzeigename des Mandanten in dem verbundenen Anwendung angegeben wird.|
-|replyUrls|Collection von Objekten des Typs „String“|Die URLs, dass Benutzertoken, um für die Anmeldung mit der zugeordneten Anwendung oder die Umleitung URIs, dass OAuth 2.0 Autorisierungscodes gesendet werden und Zugriffstoken werden für die zugewiesene Anwendung an. Lässt keine Nullwerte zu. |
+|homepage|Zeichenfolge|Die URL für die Startseite der verknüpften Anwendung.|
+|keyCredentials|[keyCredential](keycredential.md)-Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen, die mit dem Dienstprinzipal verknüpft sind. Lässt keine Nullwerte zu.            |
+|logoutUrl|Zeichenfolge| Gibt die URL an, die vom Autorisierungsdienst von Microsoft verwendet wird, um einen Benutzer mithilfe von [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html)-, [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html)- oder SAML-Abmeldeprotokollen abzumelden.  |
+|oauth2Permissions|[oAuth2Permission](oauth2permission.md)-Auflistung|Die von der verknüpften Anwendung verfügbar gemachten OAuth 2.0-Berechtigungen. Weitere Informationen finden Sie in der **oauth2Permissions**-Eigenschaftsdefinition in der [application](application.md)-Entität. Lässt keine Nullwerte zu.            |
+|id|Zeichenfolge|Der eindeutige Bezeichner für den Dienstprinzipal. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|passwordCredentials|[passwordCredential](passwordcredential.md)-Auflistung|Die Auflistung der Kennwortanmeldeinformationen, die mit dem Dienstprinzipal verknüpft sind. Lässt keine Nullwerte zu. |
+|preferredTokenSigningKeyThumbprint|Zeichenfolge|Nur für die interne Verwendung reserviert. Schreiben Sie diese Eigenschaft nicht, und verwenden Sie diese Eigenschaft nicht anderweitig. Sie kann in zukünftigen Versionen möglicherweise entfernt werden. |
+|publisherName|Zeichenfolge|Der Anzeigename des Mandanten, in dem verknüpfte Anwendung angegeben wird.|
+|replyUrls|Zeichenfolgenauflistung|Die URLs, an die Benutzertoken zur Anmeldung bei der verknüpften Anwendung gesendet werden, oder die Umleitungs-URIs, an die die OAuth 2.0-Autorisierungscodes und Zugriffstoken für die verknüpfte Anwendung gesendet werden. Lässt keine Nullwerte zu. |
 |samlMetadataUrl|Zeichenfolge| |
-|servicePrincipalNames|Collection von Objekten des Typs „String“|Die URIs, mit denen die zugewiesene Anwendung identifiziert. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://msdn.microsoft.com/library/azure/dn132633.aspx). Der **any** -Operator ist für Filterausdrücke auf mehrwertige Eigenschaften erforderlich.  Lässt keine Nullwerte zu. |
-|-Tags hinzugefügtes Markup|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
+|servicePrincipalNames|Zeichenfolgenauflistung|Die URLs, die die verknüpfte Anwendung identifizieren. Weitere Informationen finden Sie unter [Anwendungs- und Dienstprinzipalobjekte](https://msdn.microsoft.com/library/azure/dn132633.aspx). Der **any**-Operator ist für Filterausdrücke in mehrwertigen Eigenschaften erforderlich.  Lässt keine Nullwerte zu. |
+|tags|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Prinzipale (Benutzer, Gruppen und Dienstprinzipale), die diese Dienstprinzipal zugewiesen sind. Schreibgeschützt.|
-|appRoleAssignments|[AppRoleAssignment](approleassignment.md) -Auflistung|Anwendungen, denen der Dienstprinzipal zugewiesen ist. Schreibgeschützt. Lässt Nullwerte zu.|
-|createdObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnis Objekte, die von diesem Dienstprinzipal erstellt. Schreibgeschützt. Lässt Nullwerte zu.|
-|memberOf|[directoryObject](directoryobject.md)-Sammlung|Rollen, denen diese Dienstprinzipal ein Mitglied ist. HTTP-Methoden: GET schreibgeschützt. Lässt Nullwerte zu.|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) -Auflistung|Benutzer Identitätswechsel gewährt dieser Dienstprinzipal zugeordnet sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|ownedObjects|[directoryObject](directoryobject.md)-Sammlung|Directory-Objekte, die diese Dienstprinzipal gehören. Schreibgeschützt. Lässt Nullwerte zu.|
-|owners|[directoryObject](directoryobject.md)-Sammlung|Directory-Objekte, die Besitzer des Prinzipals Service sind. Die Besitzer sind eine Reihe von nicht-Administrator-Benutzer, die berechtigt sind, dieses Objekt zu ändern. Schreibgeschützt. Lässt Nullwerte zu.|
-|Richtlinie|Auflistung von [Gruppenrichtlinien](policy.md)|Die Richtlinien, diese Dienstprinzipal zugewiesen sind.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Prinzipale (Benutzer, Gruppen und Dienstprinzipale), die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md)-Auflistung|Anwendungen, denen der Dienstprinzipal zugewiesen ist. Schreibgeschützt. Lässt NULL-Werte zu.|
+|createdObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die von diesem Dienstprinzipal erstellt werden. Schreibgeschützt. Lässt Nullwerte zu.|
+|memberOf|[directoryObject](directoryobject.md)-Sammlung|Rollen, denen dieser Dienstprinzipal angehört. HTTP-Methoden: GET; schreibgeschützt. Nullwerte zulassend.|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md)-Auflistung|Gewährungen für den Identitätswechsel von Benutzern, die diesem Dienstprinzipal zugewiesen sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|ownedObjects|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die im Besitz dieses Dienstprinzipals sind. Schreibgeschützt. Nullwerte zulassend.|
+|owners|[directoryObject](directoryobject.md)-Sammlung|Verzeichnisobjekte, die Besitzer dieses Dienstprinzipals sind. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Schreibgeschützt. Nullwerte zulassend.|
+|policy|[policy](policy.md)-Auflistung|Die diesem Dienstprinzipal zugewiesenen Richtlinien.|
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen von servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Lesen Sie Eigenschaften und Beziehungen des ServicePrincipal-Objekts.|
-|[Liste servicePrincipals](../api/serviceprincipal-list.md) | [ServicePrincipal](serviceprincipal.md) -Auflistung | Abrufen einer Liste von ServicePrincipal-Objekten. |
-|[Erstellen von appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Erstellen Sie eine neue AppRoleAssignment, durch die Veröffentlichung auf der AppRoleAssignments-Auflistung.|
-|[Liste appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[AppRoleAssignment](approleassignment.md) -Auflistung| Rufen Sie eine Auflistung der AppRoleAssignment-Objekts.|
-|[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Rufen Sie eine Auflistung der CreatedObject-Objekts.|
-|[memberOf auflisten](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie die Gruppen, die dieser Dienst Prinzipal ein direktes Mitglied in der Navigationseigenschaft Mitglied ist.|
-|[Transitive Mitglied Liste](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen diese Dienstprinzipal ein Mitglied ist. Dieser Vorgang ist transitiv und enthält die Gruppen, denen dieser Dienst principal geschachtelte Mitglied ist. |
-|[Zugewiesen-Listenrichtlinien](../api/policy-list-assigned.md)| Auflistung von [Gruppenrichtlinien](policy.md)| Rufen Sie alle Richtlinien, die auf dieses Objekt zugewiesen.|
-|[Liste oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) -Auflistung| Rufen Sie eine Auflistung der oAuth2PermissionGrant-Objekts.|
-|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Rufen Sie eine Auflistung der OwnedObject-Objekts.|
-|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Erstellen Sie einen neuen Besitzer durch die Veröffentlichung auf der Besitzer-Auflistung.|
-|[Besitzer auflisten](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Rufen Sie einen Besitzer Auflistung-Objekts.|
-|[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |ServicePrincipal-Objekt zu aktualisieren. |
-|[Delete](../api/serviceprincipal-delete.md) | Keine |ServicePrincipal-Objekt zu löschen. |
+|[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Dient zum Lesen der Eigenschaften und Beziehungen des servicePrincipal-Objekts.|
+|[List servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md)-Auflistung | Abrufen einer Liste von servicePrincipal-Objekten. |
+|[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Erstellen einer neuen appRoleAssignment durch Veröffentlichen in der appRoleAssignments-Auflistung.|
+|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md)-Auflistung| Abrufen einer appRoleAssignment-Objektauflistung.|
+|[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md)-Sammlung| Abrufen einer createdObject-Objektauflistung.|
+|[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Gruppen, bei denen dieser Dienstprinzipal direktes Mitglied ist, aus der memberOf-Navigationseigenschaft ab.|
+|[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen dieser Dienstprinzipal angehört. Dieser Vorgang ist transitiv und schließt die Gruppen ein, in denen dieser Dienstprinzipal ein geschachteltes Mitglied. |
+|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md)-Auflistung| Abrufen aller diesem Objekt zugewiesene Richtlinien.|
+|[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md)-Auflistung| Abrufen einer oAuth2PermissionGrant-Objektauflistung.|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md)-Sammlung| Abrufen einer ownedObject-Objektauflistung.|
+|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Dient zum Erstellen eines neuen Besitzers durch Veröffentlichen in der Benutzersammlung.|
+|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen einer Besitzerobjektsammlung.|
+|[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Aktualisieren des servicePrincipal-Objekts. |
+|[Delete](../api/serviceprincipal-delete.md) | Keine |Löschen des servicePrincipal-Objekts. |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Zeichenfolgenauflistung||
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Zeichenfolgenauflistung||
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Zeichenfolgenauflistung||
-|[delta](../api/serviceprincipal-delta.md)|ServicePrincipal-Auflistung| Möchten Sie inkrementelle Änderungen für Dienstprinzipale erhalten. |
+|[delta](../api/serviceprincipal-delta.md)|servicePrincipal-Auflistung| Ruft inkrementelle Änderungen für Dienstprinzipale ab. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

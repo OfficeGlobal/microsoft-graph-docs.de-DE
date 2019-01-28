@@ -2,12 +2,12 @@
 title: appRoleAssignment-Ressourcentyp
 description: Dient zum Aufzeichnen, wann ein Benutzer oder eine Gruppe einer Anwendung zugewiesen wird. In diesem Fall führt die Rollenzuweisung dazu, dass die Anwendungskachel im App-Zugriffsbereich des Benutzers angezeigt wird. Diese Entität kann auch verwendet werden, um einer anderen Anwendung (als Dienstprinzipal modelliert) Zugriff auf eine Ressourcenanwendung in einer bestimmten Rolle zu gewähren. Sie können Rollenzuweisungen erstellen, lesen, aktualisieren und löschen.
 localization_priority: Priority
-ms.openlocfilehash: 6255642f47f0e1454fb64440d4938605a2de5df4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4e4bb6e2c9f94780dba642167ecdb9200849038f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513900"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576619"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment-Ressourcentyp
 
@@ -25,7 +25,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 }-->
 
 ```json

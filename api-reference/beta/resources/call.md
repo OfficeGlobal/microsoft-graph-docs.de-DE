@@ -1,91 +1,91 @@
 ---
-title: Rufen Sie Ressourcentyp
-description: Die Ressource **aufrufen,** wird erstellt, wenn ein eingehender Anruf für die Anwendung vorhanden ist oder die Anwendung einen neuen ausgehenden Anruf über erstellt eine `POST` auf `app/calls`.
+title: call-Ressourcentyp
+description: Die **call**-Ressource wird erstellt, wenn es einen eingehenden Anruf für die Anwendung gibt oder die Anwendung einen neuen ausgehenden Anruf über `POST` in `app/calls` erstellt.
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6c303ebe01e6051a29a932d9547f20293cb07a53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958558"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510715"
 ---
-# <a name="call-resource-type"></a>Rufen Sie Ressourcentyp
+# <a name="call-resource-type"></a>call-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die Ressource **aufrufen,** wird erstellt, wenn ein eingehender Anruf für die Anwendung vorhanden ist oder die Anwendung einen neuen ausgehenden Anruf über erstellt eine `POST` auf `app/calls`.
+Die **call**-Ressource wird erstellt, wenn es einen eingehenden Anruf für die Anwendung gibt oder die Anwendung einen neuen ausgehenden Anruf über `POST` in `app/calls` erstellt.
 
-Anrufe können als eine Peer-zu-Peer- oder als Gespräch mit mehreren Teilnehmern eingerichtet sein. Geben Sie zum Erstellen oder Verknüpfen eines Anrufs mit mehreren Teilnehmern, die `chatInfo` und `meetingInfo`. Wenn dies nicht angegeben werden, wird eine neue ad-hoc-Besprechung automatisch erstellt. Für einen eingehenden Anruf, tragen Sie diese Werte in einem Speicher hochverfügbare, sodass die Anwendung für den Anruf erneut an den Fall, dass die Anwendung stürzt ab.
+Anrufe können als Peer-to-Peer-Anruf oder als Anruf mit mehreren Teilnehmern eingerichtet werden. Geben Sie zum Erstellen oder Beitreten eines Anrufs mit mehreren Teilnehmern `chatInfo` und `meetingInfo` an. Wenn Sie diese Informationen nicht angeben, wird automatisch eine neue Ad-hoc-Besprechung erstellt. Zeichnen Sie diese Werte für einen eingehenden Anruf in einem hoch verfügbaren Speicher auf, damit die Anwendung dem Anruf erneut beitreten kann, falls sie abstürzt.
 
-Obwohl die gleiche Identität kann nicht mehrere Male eingeladen werden, ist es möglich, für eine Anwendung zur Teilnahme an der gleichen Besprechung mehrmals. Jedes Mal, wenn die Anwendung Joins Gespräch distinct `id` wird bereitgestellt, um dieses Aufrufs zur Besprechung. Es wird empfohlen, dass Sie separate Identitäten verwenden, an der Besprechung teilnehmen, damit die Clients wie die verschiedenen Teilnehmer anzeigen.
+Dieselbe Identität kann zwar nicht mehrere Male verwendet werden, eine Anwendung kann aber derselben Besprechung mehrere Male beitreten. Jedes Mal, wenn die Anwendung beitritt, wird ein anderer Anruf `id` für diesen Anruf für die Besprechung bereitgestellt. Es wird empfohlen, dass Sie separate Identitäten verwenden, um an der Besprechung teilzunehmen, damit diese in den Clients als unterschiedliche Teilnehmer angezeigt werden.
 
 ## <a name="methods"></a>Methoden
 
 | Methode                                                            | Rückgabetyp                                       | Beschreibung                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Abrufen von Anrufen](../api/call-get.md)                                    | [Anruf](call.md)                                   | Lesen Sie die Eigenschaften des Objekts **aufrufen** .      |
-| [Delete](../api/call-delete.md)                                   |                                                   | Löschen oder Auflegen einer aktiven **aufrufen**.        |
-| **Behandlung von Anrufen**                                                 |                                                   |                                              |
-| [Antwort](../api/call-answer.md)                                   |                                                   | Beantworten eines eingehenden Anrufs an.                     |
-| [Ablehnen](../api/call-reject.md)                                   |                                                   | Ablehnen eines eingehenden Anrufs an.                     |
-| [Redirect](../api/call-redirect.md)                               |                                                   | Umleiten eines eingehenden Anrufs an.                   |
-| [Transfer](../api/call-transfer.md)                               |                                                   | Weiterleiten eines Anrufs                              |
+| [Get call](../api/call-get.md)                                    | [call](call.md)                                   | Lesen der Eigenschaften des **call**-Objekts.      |
+| [Delete](../api/call-delete.md)                                   |                                                   | Löschen oder Auflegen eines aktiven **Anrufs**.        |
+| **Anrufverarbeitung**                                                 |                                                   |                                              |
+| [Answer](../api/call-answer.md)                                   |                                                   | Beantworten eines eingehenden Anrufs.                     |
+| [Reject](../api/call-reject.md)                                   |                                                   | Ablehnen eines eingehenden Anrufs.                     |
+| [Redirect](../api/call-redirect.md)                               |                                                   | Umleiten eines eingehenden Anrufs.                   |
+| [Transfer](../api/call-transfer.md)                               |                                                   | Weiterleiten eines Anrufs.                              |
 | **Mehrere Teilnehmer**                                                   |                                                   |                                              |
-| [Liste Teilnehmer](../api/call-list-participants.md)             | [Teilnehmer](participant.md) -Auflistung          | Rufen Sie eine objektauflistung von Teilnehmer.         |
-| [Einladen von Teilnehmern](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Einladen von Teilnehmern zum aktiven Anruf.      |
-| [Stummschalten Sie aller Teilnehmer](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Stummschalten Sie aller Teilnehmer in den Anruf.           |
-| [Konfigurieren von Audiomixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Konfigurieren von Audio in der Unterhaltung mit mehreren Teilnehmern.  |
-| [Erstellen von audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Erstellen Sie eine neue AudioRoutingGroup, durch die Veröffentlichung auf der AudioRoutingGroups-Auflistung. |
-| [Liste audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [AudioRoutingGroup](audioroutinggroup.md) -Auflistung|Rufen Sie eine Auflistung der AudioRoutingGroup-Objekts.  |
-| **Interaktive Sprachantwort**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Wiedergabe Prompt in den Anruf.                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Notieren Sie den Anruf.                             |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Medienverarbeitung abzubrechen.                     |
-| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Abonnieren Sie DTMF-Töne.                     |
-| **Teilnehmerliste Self-Vorgänge**                                   |                                                   |                                              |
-| [Stummschalten](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Stumm Zuschalten in den Anruf.                       |
-| [Stummschaltung aufheben](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Aktiviert self in den Anruf.                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Aktualisieren Sie in der Teilnehmerliste einer Metadaten für sich selbst.          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Starten Sie und beenden Sie die Freigabe Bildschirm in den Anruf                                             |
+| [List participants](../api/call-list-participants.md)             | [participant](participant.md)-Auflistung          | Abrufen einer Auflistung von Teilnehmerobjekten.         |
+| [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Einladen von Teilnehmern zum aktiven Anruf.      |
+| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Stummschalten aller Teilnehmer in dem Anruf.           |
+| [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Konfigurieren von Audio in der Unterhaltung mit mehreren Teilnehmern.  |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Erstellen einer neuen audioRoutingGroup durch Veröffentlichen in der audioRoutingGroup-Auflistung. |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)-Auflistung|Abrufen einer aAudioRoutingGroup-Objektauflistung.  |
+| **Interactive-Voice-Response**                                    |                                                   |                                              |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Wiedergabeaufforderung in dem Anruf.                     |
+| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Aufzeichnen des Anrufs.                             |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Abbrechen der Medienverarbeitung.                     |
+| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Abonnieren von DTMF-Tönen.                     |
+| **Self Participant Operations**                                   |                                                   |                                              |
+| [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Sich selbst stummschalten in dem Anruf.                       |
+| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Stummschaltung für sich selbst in dem Anruf aufheben.                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Aktualisieren der Metadaten für sich selbst in der Teilnehmerliste.          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Starten und Beenden des Freigabebildschirms in dem Anruf.                                             |
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft            | Typ                                                                                                   | Beschreibung                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activeModalities    | Zeichenfolgenauflistung                                                                                      | Die Liste der aktiven Modalitäten. Mögliche Werte sind: `unknown`, `audio`, `video`, `videoBasedScreenSharing` und `data`. Schreibgeschützt. Server generiert wurde.                                                    |
-| answeredBy          | [participantInfo](participantinfo.md)                                                                  | Der Teilnehmer, der den Anruf beantwortet. Schreibgeschützt. Server generiert wurde.                                                                                                                                |
-| callRoutes          | [CallRoute](callroute.md) -Auflistung                                                                   | Die Routinginformationen wie der Anruf umgeleitet wurde. Schreibgeschützt. Server generiert wurde.                                                                                                                |
-| callbackUri         | Zeichenfolge                                                                                                 | Der Rückruf oder Abonnement-ID auf dem Rückrufe zugestellt werden.                                                                                                                               |
-| chatInfo            | [chatInfo](chatinfo.md)                                                                                | Die Chat-Informationen.                                                                                                                                                                               |
-| Richtung           | Zeichenfolge                                                                                                 | Die Richtung des Anrufs. Die mögliche Werte sind `incoming` oder `outgoing`. Schreibgeschützt. Server generiert wurde.                                                                                            |
-| id                  | Zeichenfolge                                                                                                 | Schreibgeschützt. Server generiert wurde.                                                                                                                                                                        |
-| mediaConfig         | [AppHostedMediaConfig](apphostedmediaconfig.md) oder [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Die Medienkonfiguration.                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Die Funktionen von einer Besprechung enthält.                                                                                                                                                             |
-| meetingInfo         | [OrganizerMeetingInfo](organizermeetinginfo.md) oder [tokenMeetingInfo](tokenmeetinginfo.md)             | Die Informationen der Besprechung.                                                                                                                                                                            |
-| myParticipantId     | Zeichenfolge                                                                                                 | Schreibgeschützt. Server generiert wurde.                                                                                                                                                                        |
-| requestedModalities | Collection von Objekten des Typs „String“                                                                                      | Die Liste der angeforderten Modalitäten. | Mögliche Werte sind: `unknown`, `audio`, `video`, `videoBasedScreenSharing` und `data`.                                                                            |
-| resultInfo          | [resultInfo](resultinfo.md)                                                                            | Informationen zu den Ergebnissen. Beispielsweise kann der Grund für die Beendigung enthalten. Schreibgeschützt. Server generiert wurde.                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              | Timeout für ausgehende Peer-zu-Peer-Anrufe Klingeln                                                                                                                                                     |
-| routingPolicies     | Collection von Objekten des Typs „String“                                                                                      | Mögliche Werte: sind `none`, `noMissedCall`, `disableForwardingExceptPhone` und `disableForwarding`.                                                                                                   |
-| source              | [participantInfo](participantinfo.md)                                                                  | Der Absender des Anrufs.                                                                                                                                                                         |
-| state               | Zeichenfolge                                                                                                 | Der Zustand des Anrufs. Mögliche Werte: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Schreibgeschützt. Server generiert wurde.                         |
-| Betreff             | Zeichenfolge                                                                                                 | Der Betreff der Unterhaltung.                                                                                                                                                                    |
-| Ziele             | [ParticipantInfo](participantinfo.md) -Auflistung                                                       | Die Ziele des Anrufs.                                                                                                                                                                            |
-| tenantId            | Zeichenfolge                                                                                                 | TenantId in Azure Active Directory.                                                                                                                                                                 |
-| terminationReason   | Zeichenfolge                                                                                                 | Schreibgeschützt. Server generiert wurde.                                                                                                                                                                        |
-| toneInfo            | [toneInfo](toneinfo.md)                                                                                | Schreibgeschützt. Server generiert wurde.                                                                                                                                                                        |
+| activeModalities    | Zeichenfolgenauflistung                                                                                      | Die Liste der aktiven Modalitäten. Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Schreibgeschützt. Vom Server generiert.                                                    |
+| answeredBy          | [participantInfo](participantinfo.md)                                                                  | Der Teilnehmer, der den Anruf angenommen hat. Schreibgeschützt. Vom Server generiert.                                                                                                                                |
+| callRoutes          | [callRoute](callroute.md)-Auflistung                                                                   | Die Routinginformationen, wie der Anruf umgeleitet wurde. Schreibgeschützt. Vom Server generiert.                                                                                                                |
+| callbackUri         | Zeichenfolge                                                                                                 | Die Rückruf- oder Abonnement-ID für Rückrufe.                                                                                                                               |
+| chatInfo            | [chatInfo](chatinfo.md)                                                                                | Die Chatinformationen.                                                                                                                                                                               |
+| direction           | Zeichenfolge                                                                                                 | Die Richtung des Anrufs. Die möglichen Werte sind: `incoming` oder `outgoing`. Schreibgeschützt. Vom Server generiert.                                                                                            |
+| id                  | String                                                                                                 | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) oder [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Die Medienkonfiguration.                                                                                                                                                                        |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Enthält die Funktionen einer Besprechung.                                                                                                                                                             |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) oder [tokenMeetingInfo](tokenmeetinginfo.md)             | Die Besprechungsinformationen.                                                                                                                                                                            |
+| myParticipantId     | Zeichenfolge                                                                                                 | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
+| requestedModalities | Zeichenfolgenauflistung                                                                                      | Die Liste der angeforderten Modalitäten. | Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| resultInfo          | [resultInfo](resultinfo.md)                                                                            | Die Ergebnisinformationen. Kann beispielsweise einen Grund für die Beendigung enthalten. Schreibgeschützt. Vom Server generiert.                                                                                                       |
+| ringingTimeoutInSeconds | Int32                                                                                              | Timeout für Rufzeichen für ausgehende Peer-to-Peer-Anrufe                                                                                                                                                     |
+| routingPolicies     | Zeichenfolgenauflistung                                                                                      | Mögliche Werte: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`                                                                                                   |
+| source              | [participantInfo](participantinfo.md)                                                                  | Ursprung des Anrufs.                                                                                                                                                                         |
+| state               | Zeichenfolge                                                                                                 | Der Anrufstatus. Mögliche Werte: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Schreibgeschützt. Vom Server generiert.                         |
+| subject             | Zeichenfolge                                                                                                 | Der Betreff der Unterhaltung.                                                                                                                                                                    |
+| targets             | [participantInfo](participantinfo.md)-Auflistung                                                       | Die Ziele des Anrufs.                                                                                                                                                                            |
+| tenantId            | Zeichenfolge                                                                                                 | Mandanten-ID in Azure Active Directory.                                                                                                                                                                 |
+| terminationReason   | Zeichenfolge                                                                                                 | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
+| toneInfo            | [toneInfo](toneinfo.md)                                                                                | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
 
-> Hinweis: Eigenschaften als markiert `Server generated` werden ignoriert, bei der Verarbeitung von `POST` auf `app/calls`.
+> Hinweis: Eigenschaften, die als `Server generated` gekennzeichnet sind, werden bei der Verarbeitung von `POST` in `app/calls` ignoriert.
 
 ## <a name="relationships"></a>Beziehungen
 
 | Beziehung        | Typ                                                 | Beschreibung                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [AudioRoutingGroup](audioroutinggroup.md) -Auflistung | Schreibgeschützt. Lässt Nullwerte zu.                                                |
-| Vorgänge          | [CommsOperation](commsoperation.md) -Auflistung       | Schreibgeschützt. Lässt Nullwerte zu.                                                |
-| participants        | [Teilnehmer](participant.md) -Auflistung             | Schreibgeschützt. Lässt Nullwerte zu.                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md)-Auflistung | Schreibgeschützt. Nullwerte zulassend.                                                |
+| operations          | [commsOperation](commsoperation.md)-Auflistung       | Schreibgeschützt. Nullwerte zulassend.                                                |
+| participants        | [participant](participant.md)-Auflistung             | Schreibgeschützt. Nullwerte zulassend.                                                |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -141,7 +141,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-> **Hinweis:** Join-URL aus einer Besprechung, die mit Microsoft-Teams, werden Sie feststellen. So extrahieren Sie die Daten aus der URL und die Füllung `chatInfo` und `meetingInfo`.
+> **Hinweis:** In einer mit Microsoft Teams geplanten Besprechung finden Sie eine Teilnahme-URL. So extrahieren Sie die Daten aus der URL und füllen `chatInfo` und `meetingInfo`.
 
 ```http
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d
@@ -175,10 +175,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/call.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

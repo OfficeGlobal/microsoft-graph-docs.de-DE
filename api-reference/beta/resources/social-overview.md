@@ -1,32 +1,32 @@
 ---
-title: Verwenden Sie die Microsoft Graph-API für soziale Netzwerke Intelligence in einer app integrieren
-description: Microsoft Graph unterstützt für soziale Netzwerke Gesten in sozialen Kontext des Benutzers und ermöglicht den Zugriff auf nützliche Personen und Daten in sozialen Netzwerken.
+title: Verwenden der Microsoft Graph-API, um soziale Intelligenz in eine App zu integrieren
+description: Microsoft Graph unterstützt soziale Gesten im sozialen Kontext des Benutzers und bietet Zugriff auf hilfreiche Personen- und soziale Daten.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 3ccc574a966c5a0dc81f62fe4fa0a595fb25a982
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b5a89f46c8480fb90cd019e5b4fb370e0a6592bf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944880"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509595"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Verwenden Sie die Microsoft Graph-API für soziale Netzwerke Intelligence in einer app integrieren
+# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Verwenden der Microsoft Graph-API, um soziale Intelligenz in eine App zu integrieren
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph unterstützt für soziale Netzwerke Gesten in sozialen Kontext des Benutzers und ermöglicht den Zugriff auf nützliche Personen und Daten in sozialen Netzwerken.
+Microsoft Graph unterstützt soziale Gesten im sozialen Kontext des Benutzers und bietet Zugriff auf hilfreiche Personen- und soziale Daten.
 
-## <a name="aggregate-and-extract-specific-information-about-people"></a>Aggregieren Sie und extrahieren Sie spezifische Informationen zu Personen
+## <a name="aggregate-and-extract-specific-information-about-people"></a>Sammeln und Extrahieren von spezifischen Informationen zu Personen
 
-Verwenden Sie die [Person](../resources/person.md) -Ressource und die API Personen aggregierte Informationen von einer Person über e-Mail, Kontakte und sozialen Netzwerken. Die Ergebnisse werden nach ihrer Relevanz basierend auf mehreren Kommunikation, Zusammenarbeit und Business Beziehungen sortiert. Die API können Sie durchsuchen, sortieren, auswählen, filtern oder suchen Sie nach Personen basierend auf den angegebenen Suchkriterien.
+Sie können die [person](../resources/person.md)-Ressource und die Personen-API zum Aggregieren von Informationen über eine Person aus E-Mails, Kontakten und sozialen Netzwerken verwenden. Die Ergebnisse werden nach ihrer Relevanz basierend auf Mustern bei der Kommunikation und Zusammenarbeit sowie auf Geschäftsbeziehungen sortiert. Mit der API können Sie Personen durchsuchen, sortieren, auswählen, filtern oder anhand eigener Kriterien nach Personen suchen.
 
-- [List people](../api/user-list-people.md)
+- [Personen auflisten](../api/user-list-people.md)
 
-## <a name="manage--mentions"></a>Verwalten von @ Erwähnungen
+## <a name="manage--mentions"></a>Verwalten von @-Erwähnungen
 
-Aufrufen von einen Empfänger zu benachrichtigen und Aufmerksamkeit des Empfängers in einer Nachricht erhalten möchten, ist eine allgemeine für soziale Netzwerke Eingabeaktion.
-Die Ressource [erwähnen](../resources/mention.md) und die API erwähnt bieten einen leicht Mechanismus, rufen Sie einen Empfänger in einer [Nachricht](../resources/message.md), erhalten alle Nachrichten, die in denen ein Benutzer benachrichtigt wird mithilfe der @ Erwähnung oder jede Erwähnung in einer Nachricht erhalten möchten.
+Es ist eine häufige soziale Geste, einen Empfänger zu benachrichtigen und die Aufmerksamkeit des Empfängers auf eine Nachricht zu lenken.
+Die [mention](../resources/mention.md)-Ressource und die Erwähnungs-API bieten eine einfache Methode, um einen Empfänger in einer [Nachricht](../resources/message.md) zu benachrichtigen, alle Nachrichten mithilfe einer @-Erwähnung abzurufen, in denen ein Benutzer benachrichtigt wird, oder alle Erwähnungen in einer Nachricht abzurufen.
 
 <!--
 Include the next sentence when supporting events.
@@ -35,21 +35,29 @@ Include the next sentence when supporting events.
 
 -->
 
-- Erstellen von erwähnungen in einer neuen Nachricht
+- Erstellen von Erwähnungen in einer neuen Nachricht
 
-  - [Erstellen und Senden von erwähnungen im Rahmen einer neuen Nachricht](../api/user-sendmail.md#request-2)
-  - [Erstellen von erwähnungen als Teil eines e-Mail-Entwurfs](../api/user-post-messages.md#request-2)
+  - [Erstellen und Senden von Erwähnungen als Teil einer neuen Nachricht](../api/user-sendmail.md#request-2)
+  - [Erstellen von Erwähnungen als Teil eines E-Mail-Entwurfs](../api/user-post-messages.md#request-2)
 
-- Abrufen von Informationen über erwähnungen in einer Nachricht
+- Abrufen von Informationen zu Erwähnungen in einer Nachricht
 
-  - [Abrufen Sie aller Nachrichten im Postfach des angemeldeten Benutzers, in denen den Benutzer erwähnt](../api/user-list-messages.md#request-2)
-  - [Abrufen von Details der einzelnen Erwähnung in einer Nachricht](../api/message-get.md#request-2)
+  - [Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers, in denen der Benutzer erwähnt wird](../api/user-list-messages.md#request-2)
+  - [Abrufen von Details zu den einzelnen Erwähnungen in einer Nachricht](../api/message-get.md#request-2)
 
-- [Löschen der Vermerk](../api/message-delete.md#request-2) in einer Nachricht
+- [Löschen einer Erwähnung](../api/message-delete.md#request-2) in einer Nachricht
 
-## <a name="access-social-data-around-and-about-a-user"></a>Zugriff auf Daten in sozialen Netzwerken um sowie zu einem Benutzer
+## <a name="access-social-data-around-and-about-a-user"></a>Zugriff auf Daten aus sozialen Netzwerken und über einen Benutzer
 
-Office-Diagramm kapselt die Beziehungen zwischen verschiedenen Entitäten in Office 365. Verwenden Sie Office-Diagramm um soziale Einsichten in einzelne Benutzer über Office 365 abzurufen.
+Office Graph fasst die Beziehungen zwischen unterschiedlichen Entitäten in Office 365 zusammen. Verwenden Sie Office Graph, um soziale Einblicke zu einzelnen Benutzern in Office 365 zu erhalten.
 
-- Liste der Elemente [Trend, um](../api/insights-list-trending.md) einen Benutzer
-- Auflisten von Waren, [Arbeiten mit](../api/user-list-people.md) Benutzern eines Benutzers
+- Auflisten der Elemente, die bei einem Benutzer [beliebt sind](../api/insights-list-trending.md)
+- Auflisten der Benutzer, die [mit einem Benutzer gearbeitet haben](../api/user-list-people.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/social-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
