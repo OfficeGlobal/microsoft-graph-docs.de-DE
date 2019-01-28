@@ -1,25 +1,25 @@
 ---
-title: Ressourcentyp outlookTask
-description: 'Ein Outlook-Element, das eine Arbeitsaufgabe überwachen kann. '
+title: outlookTask-Ressourcentyp
+description: 'Ein Outlook-Element, das ein Arbeitselement verfolgen kann. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f49c74af92037f430b72d7b9fffa4a85aba00942
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943273"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513347"
 ---
-# <a name="outlooktask-resource-type"></a>Ressourcentyp outlookTask
+# <a name="outlooktask-resource-type"></a>outlookTask-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ein Outlook-Element, das eine Arbeitsaufgabe überwachen kann. 
+Ein Outlook-Element, das ein Arbeitselement verfolgen kann. 
 
-Eine Aufgabe können Sie den Anfang Fälligkeitsdatum und tatsächlichen Durchführung Datums- und Zeitangaben, dessen Status oder Status, nachverfolgen, ob sie wiederholt sich, und einer Erinnerung erfordert.
+Sie können eine Aufgabe verwenden, um Datumsangaben und Uhrzeiten für das Startdatum, das Fälligkeitsdatum und den tatsächlichen Abschluss sowie den Fortschritt oder Status anzugeben. Außerdem können Sie angeben, ob sich die Aufgabe wiederholt und eine Erinnerung erfordert.
 
-Die folgenden: Eigenschaften in der Ressource **OutlookTask** datumsspezifische
+Datumsbezogene Eigenschaften in der **outlookTask**-Ressource umfassen Folgendes:
 
 - completedDateTime
 - createdDateTime
@@ -28,7 +28,7 @@ Die folgenden: Eigenschaften in der Ressource **OutlookTask** datumsspezifische
 - reminderDateTime
 - startDateTime
 
-In der Standardeinstellung zurückgeben die POST, GET, Patches und [vollständige](../api/outlooktask-complete.md) Vorgänge datumsspezifische Eigenschaften in ihren REST Antworten in UTC. Sie können mit dem `Prefer: outlook.timezone`-Header alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darstellen. Das folgende Beispiel gibt datumsbezogene Eigenschaften in EST in der entsprechenden Antwort zurück:
+Die POST-, GET-, PATCH- und [complete](../api/outlooktask-complete.md)-Vorgänge geben datumsbezogene Eigenschaften in ihren REST-Antworten standardmäßig in UTC zurück. Sie können die `Prefer: outlook.timezone`-Kopfzeile verwenden, um alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darzustellen. Das folgende Beispiel gibt datumsbezogene Eigenschaften in der entsprechenden Antwort in EST zurück:
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -38,49 +38,49 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen von outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Rufen Sie die Eigenschaften und Beziehungen zwischen Outlook-Aufgaben in das Postfach des Benutzers an.|
-|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Ändern Sie die schreibbare Eigenschaften des Outlook-Aufgaben. |
-|[Delete](../api/outlooktask-delete.md) | Keine |Löscht die angegebene Aufgabe im Postfach des Benutzers. |
-|[Complete](../api/outlooktask-complete.md)|[OutlookTask](outlooktask.md) -Auflistung|Führen Sie eine Outlook-Aufgabe, die auf das aktuelle Datum und die **Status** -Eigenschaft, um die **CompletedDateTime** -Eigenschaft festgelegt wird `completed`.|
+|[Get outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Abrufen der Eigenschaften und Beziehungen einer Outlook-Aufgabe im Postfach des Benutzers.|
+|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Ändern der schreibbaren Eigenschaften einer Outlook-Aufgabe. |
+|[Delete](../api/outlooktask-delete.md) | Keine |Löschen der angegebenen Aufgabe im Postfach des Benutzers. |
+|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md)-Sammlung|Abschließen einer Outlook-Aufgabe, durch die die **CompletedDateTime**-Eigenschaft auf das aktuelle Datum und die **status**-Eigenschaft auf `completed` festgelegt wird.|
 |**Anlagen**| | |
-|[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) collection| Rufen Sie alle Anlagen auf eine Outlook-Aufgabe.|
-|[Hinzufügen einer Anlage](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Hinzufügen einer Datei, Element (Nachricht, Ereignis oder Kontakt) oder Link in eine Datei als Anlage zu einem Vorgang.|
+|[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md)-Sammlung| Ruft alle Anlagen für eine Outlook-Aufgabe ab.|
+|[Anlage hinzufügen](../api/outlooktask-post-attachments.md) |[Anlage](attachment.md)| Hinzufügen einer Datei, eines Elements (Nachricht, Ereignis oder Kontakt) oder eines Links zu einer Datei als Anlage einer Aufgabe.|
 |**Erweiterte Eigenschaften**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Erstellen Sie mindestens einen Single-Wert erweiterte Eigenschaften in einer neuen oder vorhandenen Outlook-Aufgabe.   |
-|[Aufgabe mit erweiterten Eigenschaft einwertig abrufen](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Abrufen von Outlook-Aufgaben, die einen erweiterte Eigenschaft mithilfe von Single-Wert enthalten `$expand` oder `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Erstellen Sie eine oder mehrere erweiterte mehrwertige Eigenschaften in einer neuen oder vorhandenen Outlook-Aufgabe.  |
-|[Aufgabe mit erweiterten Mehrfachwert-Eigenschaft abrufen](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Abrufen eine Outlook-Aufgabe, die mithilfe eine erweiterte Eigenschaft mit mehreren Werte enthält `$expand`. |
+|[Einwertige erweiterte Eigenschaft erstellen](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Erstellt eine oder mehrere einwertige erweiterte Eigenschaften in einer neuen oder vorhandenen Outlook-Aufgabe.   |
+|[Aufgabe mit erweiterter einwertiger Eigenschaft abrufen](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Ruft mithilfe von `$expand` oder `$filter` Outlook-Aufgaben mit einer einwertigen erweiterten Eigenschaft ab. |
+|[Mehrwertige erweiterte Eigenschaft erstellen](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Erstellt eine oder mehrere mehrwertige erweiterte Eigenschaften in einer neuen oder vorhandenen Outlook-Aufgabe.  |
+|[Aufgabe mit erweiterter mehrwertiger Eigenschaft abrufen](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Ruft mithilfe von `$expand` eine Outlook-Aufgabe mit einer bestimmten mehrwertigen erweiterten Eigenschaft ab. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|Zeichenfolge|Der Name der Person, die die Aufgabe zugewiesen wurde.|
-|body|[itemBody](itembody.md)|Der Hauptteil der Aufgabe, die in der Regel Informationen zum Vorgang enthält. Beachten Sie, dass nur HTML-Typ unterstützt wird.|
-|categories|Zeichenfolgenauflistung|Die Kategorien, die dem Vorgang zugeordnet. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft von einer [OutlookCategory](outlookcategory.md) , die der Benutzer definiert wurde.|
-|changeKey|Zeichenfolge|Die Version des Vorgangs.|
-|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, dass der Vorgang abgeschlossen wurde.|
-|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung die Aufgabe. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft verwendet die ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, die die Aufgabe fertig gestellt werden.|
-|hasAttachments|Boolescher Wert|Legen Sie auf true zurück, wenn der Vorgang Anlagen hat.|
-|id|Zeichenfolge|Der eindeutige Bezeichner des Vorgangs. Schreibgeschützt|
-|importance|string|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
-|isReminderOn|Boolean|Legen Sie auf true zurück, wenn eine Warnung festgelegt ist, um die Benutzer über die Aufgabe zu erinnern.|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten die Aufgabe Änderung. Standardmäßig ist es in UTC. Sie können eine benutzerdefinierte Zeitzone in der Kopfzeile der Anforderung bereitstellen. Wert der Eigenschaft um ISO 8601-Format verwendet und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|owner|Zeichenfolge|Der Name der Person, die die Aufgabe erstellt.|
-|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für die Aufgabe übergeordneten Ordner.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|Das Serienmuster für den Vorgang.|
-|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Zeit für eine Erinnerung des Vorgangs erfolgt.|
-|sensitivity|string|Gibt die Ebene des Datenschutzes für den Vorgang an. Mögliche Werte: sind `normal`, `personal`, `private` und `confidential`.|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, wenn der Vorgang zu beginnen.|
-|status|string|Gibt das Bundesland oder den Fortschritt des Vorgangs. Mögliche Werte sind: `notStarted`, `inProgress`, `completed`, `waitingOnOthers` und `deferred`.|
-|Betreff|Zeichenfolge|Eine kurze Beschreibung oder Titel des Vorgangs.|
+|assignedTo|Zeichenfolge|Der Name der Person, der die Aufgabe zugewiesen wurde.|
+|body|[itemBody](itembody.md)|Der Aufgabentext, der in der Regel Informationen zu der Aufgabe enthält. Beachten Sie, dass nur der HTML-Typ unterstützt wird.|
+|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Aufgabe verknüpft sind. Jede Kategorie entspricht der **displayName**-Eigenschaft einer vom Benutzer definierten [outlookCategory](outlookcategory.md).|
+|changeKey|Zeichenfolge|Version der Aufgabe.|
+|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, an dem die Aufgabe abgeschlossen wurde.|
+|createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Aufgabe. Die Standardeinstellung ist UTC. Sie können eine benutzerdefinierte Zeitzone im Anforderungsheader bereitstellen. Der Wert der Eigenschaft verwendet das ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
+|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, in der die Aufgabe abgeschlossen werden soll.|
+|hasAttachments|Boolescher Wert|„true“, wenn die Aufgabe Anlagen hat.|
+|id|Zeichenfolge|Der eindeutige Bezeichner der Aufgabe. Schreibgeschützt.|
+|importance|Zeichenfolge|Die Wichtigkeit des Ereignisses. Mögliche Werte sind: `low`, `normal` und `high`.|
+|isReminderOn|Boolescher Wert|„true“, wenn eingestellt ist, dass der Benutzer an die Aufgabe erinnert werden soll.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Aufgabe. Die Standardeinstellung ist UTC. Sie können eine benutzerdefinierte Zeitzone im Anforderungsheader bereitstellen. Der Eigenschaftswert verwendet das ISO 8601-Format, und die Angabe erfolgt immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
+|owner|Zeichenfolge|Der Name der Person, die die Aufgabe erstellt hat.|
+|parentFolderId|Zeichenfolge|Der eindeutige Bezeichner für den übergeordneten Ordner der Aufgabe.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|Das Serienmuster für die Aufgabe.|
+|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit für eine Erinnerung der Aufgabe.|
+|sensitivity|Zeichenfolge|Gibt den Grad des Datenschutzes für die Aufgabe an. Mögliche Werte: `normal`, `personal`, `private`, `confidential`|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Das Datum in der angegebenen Zeitzone, an dem die Aufgabe begonnen werden soll.|
+|status|Zeichenfolge|Gibt den Status oder den Fortschritt der Aufgabe an. Mögliche Werte: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|subject|Zeichenfolge|Eine kurze Beschreibung oder ein Titel für die Aufgabe.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für den Vorgang.  Schreibgeschützt. Lässt Nullwerte zu.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der Mehrfachwert erweiterte Eigenschaften für den Task definiert. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Auflistung der einwertig erweiterte Eigenschaften für den Task definiert. Schreibgeschützt. Lässt Nullwerte zu.|
+|attachments|[attachment](attachment.md)-Sammlung|Die Sammlung der [fileAttachment](fileattachment.md)-, [itemAttachment](itemattachment.md)- und [referenceAttachment](referenceattachment.md)-Anlagen der Aufgabe.  Schreibgeschützt. Lässt NULL-Werte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter mehrwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung|Die Sammlung erweiterter einwertiger Eigenschaften, die für die Aufgabe definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -123,10 +123,15 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTask resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

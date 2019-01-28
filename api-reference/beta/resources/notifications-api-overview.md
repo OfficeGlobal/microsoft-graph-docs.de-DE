@@ -1,22 +1,30 @@
 ---
-title: Verwenden Sie die Benachrichtigungen REST-API in Microsoft Graph
-description: Die API-Benachrichtigungen in Microsoft Graph können Sie um Pushbenachrichtigungen an einen Benutzer zu senden. Einfach Adressieren eines Benutzerkontos, um eine Benachrichtigung gesendet, und die Plattform bietet, die Benachrichtigung an alle Geräte Endpunkte. Benachrichtigungen API Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und die [Benachrichtigung über die Berechtigung]( /graph/permissions_reference), der mit einer Microsoft-Konten verwendet werden kann oder Arbeit oder Schule Konten.
+title: Verwenden der Benachrichtigungs-REST-API in Microsoft Graph
+description: Sie können die Benachrichtigungs-API in Microsoft Graph verwenden, um Pushbenachrichtigungen an einen Benutzer zu senden. Wählen Sie einfach ein Benutzerkonto aus, an das eine Benachrichtigung gesendet werden soll; die Plattform übermittelt die Benachrichtigung dann an alle Geräteendpunkte. Benachrichtigungs-API-Anfragen werden im Auftrag eines Benutzers über delegierte Berechtigungen und die [Benachrichtigungsberechtigung]( /graph/permissions_reference) ausgeführt, die mit Microsoft-Konten oder mit Geschäfts-oder Schulkonten verwendet werden können.
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 68a20b655eecea7d5afb82677178593b094a9cc3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2a4c23955e348159d2e17514d6041260f13cffba
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931496"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513984"
 ---
-# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Verwenden Sie die Benachrichtigungen REST-API in Microsoft Graph
+# <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Verwenden der Benachrichtigungs-REST-API in Microsoft Graph
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die API-Benachrichtigungen in Microsoft Graph können Sie um Pushbenachrichtigungen an einen Benutzer zu senden. Einfach Adressieren eines Benutzerkontos, um eine Benachrichtigung gesendet, und die Plattform bietet, die Benachrichtigung an alle Geräte Endpunkte. Benachrichtigungen API Anfragen werden ausgeführt, im Auftrag eines Benutzers über [Berechtigungen delegiert](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) und die [Benachrichtigung über die Berechtigung]( /graph/permissions_reference), der mit einer Microsoft-Konten verwendet werden kann oder Arbeit oder Schule Konten.
-Diese Art von Benutzer-centric Benachrichtigung wird durch die [Benachrichtigung](../resources/projectrome-notification.md) Ressource dargestellt und in Microsoft Graph gespeichert ist. Es kann dann zugegriffen und verwaltet werden von der Veröffentlichung app über die [Project-ROM-SDK-APIs](https://github.com/Microsoft/project-rome). 
+Sie können die Benachrichtigungs-API in Microsoft Graph verwenden, um Pushbenachrichtigungen an einen Benutzer zu senden. Wählen Sie einfach ein Benutzerkonto aus, an das eine Benachrichtigung gesendet werden soll; die Plattform übermittelt die Benachrichtigung dann an alle Geräteendpunkte. Benachrichtigungs-API-Anfragen werden im Auftrag eines Benutzers über [delegierte Berechtigungen](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) und die [Benachrichtigungsberechtigung]( /graph/permissions_reference) ausgeführt, die mit Microsoft-Konten oder mit Geschäfts-oder Schulkonten verwendet werden können.
+Diese Art von benutzerzentrierter Benachrichtigung wird von der [notification](../resources/projectrome-notification.md)-Ressource dargestellt und wird in Microsoft Graph gespeichert. Diese kann dann von der Veröffentlichungs-App über die [Project Rome-SDK-APIs](https://github.com/Microsoft/project-rome) geöffnet und verwaltet werden. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-- Finden Sie in der [Benachrichtigung Ressource](../resources/projectrome-notification.md) und erstellen Sie Benachrichtigungen ausschließlich für die Benutzer zu. 
+- Sehen Sie sich die [notification-Ressource](../resources/projectrome-notification.md) an, und erstellen Sie Benachrichtigungen, um mit Ihren Benutzern zu interagieren. 
 - Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/notifications-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

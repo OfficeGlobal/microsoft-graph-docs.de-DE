@@ -1,42 +1,42 @@
 ---
 title: Verwenden der Planner-REST-API
-description: Sie können die Planner-API in Microsoft Graph zum Erstellen von Aufgaben, und weisen Sie diese Benutzer in einer Gruppe im Office 365.
+description: Mit der Planner-API in Microsoft Graph können Sie Aufgaben erstellen und diese Benutzern in einer Office 365-Gruppe zuweisen.
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 2995cfe32e921889a55ec56c67989ecdfc9716ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 327701fde2679ab4c90061cf2ed98c4967a5cf58
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942570"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509868"
 ---
 # <a name="use-the-planner-rest-api"></a>Verwenden der Planner-REST-API
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sie können die Planner-API in Microsoft Graph zum Erstellen von Aufgaben, und weisen Sie diese Benutzer in einer Gruppe im Office 365.
+Mit der Planner-API in Microsoft Graph können Sie Aufgaben erstellen und diese Benutzern in einer Office 365-Gruppe zuweisen.
 
-Bevor Sie mit der API Planner beginnen, wird es hilfreich sein, zu verstehen, wie die Hauptobjekte aufeinander sowie über Office 365 Gruppen beziehen.
+Bevor Sie mit der Arbeit in der Planner-API beginnen, sollten Sie wissen, wie die wichtigsten Objekte in der Planner-API zueinander und zu Office 365-Gruppen in Beziehung stehen.
 
 ## <a name="office-365-groups"></a>Office 365-Gruppen
 
 Office 365-Gruppen sind die Besitzer der Pläne in der Planner-API.
-Stellen Sie um [den Besitz einer Gruppe Pläne erhalten möchten](../api/plannergroup-list-plans.md)die folgenden HTTP-Anforderung.
+Um [die im Besitz einer Gruppe befindlichen Pläne abzurufen](../api/plannergroup-list-plans.md), stellen Sie die folgende HTTP-Anforderung.
 
 ``` http
 GET /groups/{id}/planner/plans
 ```
 
-Beim [Erstellen eines neuen Plans](../api/planner-post-plans.md), stellen Sie einer Gruppe Besitzer durch Festlegen der `owner` -Eigenschaft für ein Objekt Plan. Pläne müssen im Besitz von Gruppen.
+Wenn Sie [einen neuen Plan erstellen](../api/planner-post-plans.md), definieren Sie eine Gruppe als dessen Besitzer, indem Sie einfach die `owner`-Eigenschaft für ein Planobjekt festlegen. Pläne müssen im Besitz von Gruppen sein.
 
->**Hinweis:** Der Benutzer, der den Plan erstellen wird, muss ein Mitglied der Gruppe, die Besitzer des Plans. Wenn Sie eine neue Gruppe erstellen, mit der [Gruppe erstellen](../api/group-post-groups.md), werden Sie nicht als Mitglied der Gruppe hinzugefügt. Nach dem Erstellen der Gruppe fügen selbst mithilfe der [Gruppe Mitglieder buchen](../api/group-post-members.md)als Mitglied hinzu.
+>**Hinweis:** Der Benutzer, der den Plan erstellt, muss ein Mitglied der Gruppe sein, die den Plan besitzt. Wenn Sie eine neue Gruppe über [Gruppe erstellen](../api/group-post-groups.md) erstellen, werden Sie nicht automatisch als Mitglied zur Gruppe hinzugefügt. Nachdem die Gruppe erstellt wurde, fügen Sie sich selbst mithilfe der Option zum [Veröffentlichen der Gruppenmitglieder](../api/group-post-members.md) als Mitglied hinzu.
 
 ## <a name="plans"></a>Pläne
 
-[Plant](plannerplan.md) , sind die Container von [Aufgaben](plannertask.md). Legen Sie zum [Erstellen einer Aufgabe in einem Plan](../api/planner-post-tasks.md), der `planId` -Eigenschaft für das Task-Objekt auf die ID des Plans beim Erstellen der Aufgabe.
-Aufgaben können derzeit ohne Wählpläne erstellt werden.
-Stellen Sie [die Aufgaben in einem Plan abrufen](../api/plannerplan-list-tasks.md)die folgenden HTTP-Anforderung.
+[Pläne](plannerplan.md) sind die Container von [Aufgaben](plannertask.md). Um [eine Aufgabe in einem Plan zu erstellen](../api/planner-post-tasks.md), legen Sie die `planId`-Eigenschaft des Aufgabenobjekts beim Erstellen der Aufgabe auf die ID des Plans fest.
+Aufgaben können derzeit nicht ohne Pläne erstellt werden.
+Um [die Aufgaben in einem Plan abzurufen](../api/plannerplan-list-tasks.md), stellen Sie die folgende HTTP-Anforderung.
 
 ``` http
 GET /planner/plans/{id}/tasks
@@ -52,7 +52,7 @@ Planner-Ressourcen sind in einfache Objekte und Detailobjekte unterteilt. Einfac
 
 ## <a name="visualization"></a>Visualisierung
 
-Neben dem Aufgaben- und Plan Daten außerdem die Planner-API Ressourcen für eine gemeinsame Visualisierung von Daten über Clients erstellt. Verschiedene Typen von Visualisierungsdaten stehen für Aufgaben vorgestellt, wie in der folgenden Tabelle aufgeführt.
+Neben Aufgaben- und Plandaten stellt die Planner-API auch Ressourcen zum Erstellen einer allgemeinen Visualisierung von Daten für alle Clients bereit. Für Aufgaben stehen mehrere Arten von Visualisierungsdaten zur Verfügung, wie in der folgenden Tabelle aufgeführt.
 
 | Aufgaben werden angezeigt als                                                                        | Aufgaben werden sortiert mit Informationen aus                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -64,25 +64,25 @@ Neben dem Aufgaben- und Plan Daten außerdem die Planner-API Ressourcen für ein
 
 Die benutzerdefinierten Spalten im Bucket-Task Board werden durch [bucket](plannerbucket.md)-Objekte dargestellt und ihre Reihenfolge durch die `orderHint`-Eigenschaft des Objekts.
 
-Gesamten Sortierung wird durch in [Planner Reihenfolge Hinweise](planner-order-hint-format.md)beschriebenen Grundsätze gesteuert.
+Die gesamte Sortierung wird durch die unter [ORDER-Hinweise in Planner ](planner-order-hint-format.md) genannten Grundsätze gesteuert.
 
-## <a name="delta">Nachverfolgen von Änderungen mithilfe von Delta-Abfrage</a>
+## <a name="delta">Nachverfolgen von Änderungen mithilfe einer Delta-Abfrage</a>
 
-Planner Delta Query unterstützt abfragende-Objekten, die der Benutzer abonniert.
+Die Delta-Abfrage von Planner unterstützt das Abfragen von Objekten, die der Benutzer abonniert hat.
 
 Benutzer haben die folgenden Objekte abonniert.
 
-| Ressourcentyp Planner | Abonnierten Instanzen                                                                                                                                                                                    |
+| Planner-Ressourcentyp | Abonnierte Instanzen                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Aufgaben                 | <ul><li>Vom Benutzer erstellt</li><li>Dem Benutzer zugewiesene</li><li>Gehören Sie zu einem Plan, den der Benutzer besitzt</li><li>In einem Plan gemeinsam mit dem Benutzer über den Plan **SharedWith** -Auflistung enthalten sind</li> |
-| Pläne                 | <ul><li>Gemeinsam mit dem Benutzer über den Plan **SharedWith** -Auflistung</li></ul>                                                                                                                     |
-| Buckets               | <ul><li>In einem Plan gemeinsam mit dem Benutzer über den Plan **SharedWith** -Auflistung enthalten sind</li></ul>                                                                                                 |  |
+| Aufgaben                 | <ul><li>Vom Benutzer erstellt</li><li>Dem Benutzer zugewiesen</li><li>Gehören zu einem Plan, den der Benutzer besitzt</li><li>In einem Plan enthalten, der für den Benutzer über die **SharedWith**-Sammlung des Plans freigegeben wird.</li> |
+| Pläne                 | <ul><li>Für den Benutzer über die **SharedWith**-Sammlung des Plans freigegeben.</li></ul>                                                                                                                     |
+| Buckets               | <ul><li>In einem Plan enthalten, der für den Benutzer über die **SharedWith**-Sammlung des Plans freigegeben wird.</li></ul>                                                                                                 |  |
 
-### <a name="objectcache">Füllen Sie den Objektcache für Delta-Abfragen</a>
+### <a name="objectcache">Auffüllen des Objektcaches für Delta-Abfragen</a>
 
-Wenn Sie die Planner Delta-Abfrage-API verwenden möchten, müssen verwalten Sie einen lokalen Cache der Objekte, die der Benutzer verwendet, um die Änderungen aus dem Delta-Antwort-Feed zu übernehmen und möchte.
+Wenn Sie die Delta-Abfrage-API von Planner verwenden möchten, verwalten Sie einen lokalen Cache von Objekten, die der Benutzer beobachten möchte, um die Änderungen aus dem Delta-Antwortfeed anzuwenden.
 
-Die Delta-Nutzlast-Objekte, die die Planner Delta-Abfrage, die derzeit werden kann, die folgenden Typen werden:
+Die Delta-Nutzlastobjekte, die die Planner-Delta-Abfrage derzeit zurückgeben kann, weisen einen der folgenden Typen auf:
 
 * [plannerTask](plannertask.md)
 * [plannerTaskDetails](plannertaskdetails.md)
@@ -93,36 +93,36 @@ Die Delta-Nutzlast-Objekte, die die Planner Delta-Abfrage, die derzeit werden ka
 * [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)
 * [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
 
-Verwenden Sie die entsprechende `GET` Methoden für die Ressource den Anfangszustand der Objekte in den lokalen Cache aufgefüllt werden abgerufen.
+Verwenden Sie die entsprechenden `GET`-Methoden in der Ressource, um den ursprünglichen Status von Objekten abzurufen, die im lokalen Cache aufgefüllt werden sollen.
 
-### <a name="differentiating-between-object-creation-and-object-modification"></a>Unterscheidung zwischen Erstellung und Änderung Objekt
+### <a name="differentiating-between-object-creation-and-object-modification"></a>Unterscheidung zwischen Objekterstellung und Objektänderung
 
-In bestimmten Szenarien sollten der Aufrufer zur Unterscheidung zwischen Erstellung und Änderung in Planner Delta Abfrage feed Objekt.
+In bestimmten Szenarien möchte der Aufrufer innerhalb des Delta-Abfragefeeds von Planner vielleicht zwischen Objekterstellung und Objektänderung unterscheiden.
 
-Diese Richtlinien können zum Erstellen eines Objekts ableiten verwendet werden:
+Die folgenden Richtlinien können für das Ableiten der Objekterstellung verwendet werden:
 
-* Die `createdBy` Eigenschaft wird nur für neu erstellte Objekte angezeigt.
-* Ein neu erstelltes `plannerTask` Objekt gefolgt von dem zugehörigen `plannerTaskDetails` Objekt.
-* Ein neu erstelltes `plannerPlan` Objekt gefolgt von dem zugehörigen `plannerPlanDetails` Objekt.
+* Die `createdBy`-Eigenschaft wird nur für neu erstellte Objekte angezeigt.
+* Auf ein neu erstelltes `plannerTask`-Objekt folgen entsprechende `plannerTaskDetails`-Objekte.
+* Auf ein neu erstelltes `plannerPlan`-Objekt folgen entsprechende `plannerPlanDetails`-Objekte.
 
 ### <a name="usage"></a>Verwendung
 
-Der Anrufer wird erwartet, dass einen Cache mit abonnierten Objekten haben. Ausführliche Informationen zum Auffüllen des lokalen Caches der abonnierten Objekte finden Sie unter [Auffüllen des Objektcaches für Delta-Abfragen](#populate-the-object-cache-for-delta-queries).
+Vom Aufrufer wird erwartet, dass er einen Cache aufweist, der abonnierte Objekte enthält. Weitere Informationen zum Füllen des lokalen Caches abonnierter Objekte finden Sie unter [Auffüllen des Objektcaches für Delta-Abfragen](#populate-the-object-cache-for-delta-queries).
 
-Planner Delta Abfrage Anruffluss lautet wie folgt:
+Der Aufruffluss von Delta-Abfragen in Planner ist wie folgt:
 
-1. Der Aufrufer initiiert eine Delta Sync-Abfrage, Abrufen von einem `nextLink` und eine leere Auflistung von Änderungen.
-2. Der Aufrufer muss [den Objektcache für Delta Abfragen Auffüllen](#populate-the-object-cache-for-delta-queries) mit Objekten, die der Benutzer, abonniert ist Aktualisieren des Caches.
-3. Der Aufrufer folgt die `nextLink` bereitgestellt, in der anfänglichen Delta Sync-Abfrage zum Abrufen einer neuen `deltaLink` um Änderungen seit dem vorherigen Schritt.
-4. Der Anrufer die Änderungen in der zurückgegebenen Delta-Antwort auf die Objekte im Cache angewendet.
-5. Der Aufrufer die neue DeltaLink zum Abrufen der nächsten DeltaLink folgt und geändert, seit die aktuelle `deltaLink` generiert wurde.
-6. Der Aufrufer die Änderungen (falls vorhanden) angewendet und wartet, bis ein kurzes Zeitformat an erneutes Ausführen der vorherigen Schritt und diesen Schritt.
+1. Der Aufrufer initiiert eine Delta-Synchronisierungsabfrage, wodurch ein `nextLink`-Element und eine leere Auflistung von Änderungen abgerufen wird.
+2. Der Aufrufer muss [den Objektcache für Delta-Abfragen](#populate-the-object-cache-for-delta-queries) mit Objekten auffüllen, die der Benutzer abonniert hat, wodurch der Cache aktualisiert wird.
+3. Der Aufrufer folgt dem in der ursprünglichen Delta-Synchronisierungsabfrage bereitgestellten `nextLink`, um einen neuen `deltaLink` für alle Änderungen seit dem vorherigen Schritt abzurufen.
+4. Der Aufrufer wendet die Änderungen in der zurückgegebenen Delta-Antwort auf die Objekte im Cache an.
+5. Der Aufrufer folgt dem neuen deltaLink, um den nächsten deltaLink und Änderungen abzurufen, seit das aktuelle `deltaLink`-Element generiert wurde.
+6. Der Aufrufer wendet die Änderungen (sofern vorhanden) an und wartet einen Moment, bevor der vorherige Schritt und dieser Schritt erneut ausgeführt werden.
 
 ## <a name="planner-resource-versioning"></a>Versionsverwaltung für Planner-Ressourcen
 
-Planner Versionen alle **Etags**mit Ressourcen. Diese **Etags** mit zurückgegeben werden `@odata.etag` -Eigenschaft in jeder Ressource. `PATCH`und `DELETE` Anfragen erfordern das letzte **Etag** bekanntermaßen vom Client angegeben werden, mit einem `If-Match` Kopfzeile.
-Planner ermöglicht Änderungen an ältere Versionen von Ressourcen, wenn die vorgesehene Änderung mit neuere Änderungen, die von den Planner-Dienst auf dieselbe Ressource akzeptiert keine entstehen. Die Clients können identifiziert, welche **Etag** für dieselbe Ressource ist neuer Berechnung, welche **Etag** -Wert in einem Zeichenfolgenvergleich Vergleich größer ist. Jede Ressource verfügt über eine eindeutige **Etag**. ETag-Werte für verschiedene Ressourcen, einschließlich derjenigen Kapselung Beziehungen, können nicht verglichen werden.
-Erwartet die Client-apps Versioning behandeln [Fehlercodes](/graph/errors) **409** und **412** durch die neueste Version des Elements zu lesen und Beheben von miteinander in Konflikt stehende Änderungen verknüpft sind.
+Planner verwendet für alle Ressourcen **ETags** zur Versionsverwaltung. Diese **ETags** werden mit der `@odata.etag`-Eigenschaft in jeder Ressource zurückgegeben. `PATCH`- und `DELETE`-Anfragen erfordern, dass das letzte **ETag**, das dem Client bekannt ist, mit einer `If-Match`-Kopfzeile angegeben wird.
+Planner erlaubt Änderungen an älteren Versionen von Ressourcen, sofern die beabsichtigte Änderung nicht in Konflikt mit neueren Änderungen steht, die vom Planner-Dienst für dieselbe Ressource akzeptiert wurden. Die Clients können ermitteln, welches **ETag** für eine bestimmte Ressource neuer ist, indem sie berechnen, welcher **Etag**-Wert in einem Vergleich von Ordnungszeichenfolgen größer ist. Jede Ressource verfügt über ein eigenes **ETag**. ETag-Werte für verschiedene Ressourcen, einschließlich solcher mit Einschlussbeziehungen, können nicht verglichen werden.
+Die Client-Apps müssen die [Fehlercodes](/graph/errors) **409** und **412** im Zusammenhang mit der Versionsverwaltung verarbeiten können, indem sie die aktuelle Version des Elements lesen und in Konflikt stehende Änderungen beheben.
 
 ## <a name="common-planner-error-conditions"></a>Häufige Planner-Fehlerbedingungen
 
@@ -130,16 +130,16 @@ Neben [allgemeinen Fehlern](/graph/errors), die für Microsoft Graph gelten, sin
 
 ### <a name="400-bad-request"></a>400 Ungültige Anforderung
 
-In einigen häufigen Szenarien `POST` und `PATCH` Anfragen 400 Statuscode zurückgeben können. Es folgen einige häufige Ursachen:
+In einigen häufigen Szenarios können `POST`- und `PATCH`-Anforderungen auch den Fehlerstatuscode 400 zurückgeben. Nachfolgend sehen Sie die häufigsten Ursachen:
 
-* Eigenschaften mit offenem Typ weisen nicht den richtigen Typ auf, der Typ ist nicht angegeben oder sie enthalten keine Eigenschaften. Beispielsweise müssen [plannerAssignments](plannerassignments.md)-Eigenschaften mit komplexen Werten die `@odata.type`-Eigenschaft mit dem Wert `microsoft.graph.plannerAssignment` deklarieren.
-* Werte von Anordnungshinweisen weisen nicht das [richtige Format](planner-order-hint-format.md) auf. Beispiel: Ein Anordnungshinweiswert ist direkt auf den vom Client zurückgegebenen Wert festgelegt.
-* Die Daten sind logisch inkonsistent. Beispiel: Das Startdatum einer Aufgabe liegt nach dem Fälligkeitsdatum der Aufgabe.
+* Eigenschaften mit offenem Typ weisen nicht den richtigen Typ auf, der Typ ist nicht angegeben oder sie enthalten keine Eigenschaften. Beispielsweise müssen plannerAssignments-Eigenschaften mit komplexen Werten die -Eigenschaft mit dem Wert  deklarieren.
+* Werte von Anordnungshinweisen weisen nicht das richtige Format auf. Beispiel: Ein Anordnungshinweiswert ist direkt auf den vom Client zurückgegebenen Wert festgelegt.
+* Die Daten sind logisch inkonsistent. Das Startdatum einer Aufgabe liegt z. B. nach dem Fälligkeitsdatum der Aufgabe.
 
 ### <a name="403-forbidden"></a>403 Verboten
 
-Zusätzlich zu den allgemeinen Fehlern gibt die Planner-API auch den Statuscode 403 zurück, wenn ein Dienst definiert Grenzwert überschritten wurde. Wenn dies der Fall ist die `code` -Eigenschaft in den Fehlertyp Ressource wird angeben des Typs des der durch die Anforderung wurde überschritten.
-Im folgenden werden die möglichen Werte für die Typen der Grenzwert.
+Zusätzlich zu den allgemeinen Fehlern gibt die Planner-API auch den Statuscode 403 zurück, wenn ein von einem Dienst definierter Grenzwert überschritten wurde. In diesem Fall gibt die `code`-Eigenschaft des error-Ressourcentyps den Typ des Grenzwerts an, der von der Anforderung überschritten wurde.
+Nachfolgend finden Sie die möglichen Werte für die Grenzwerttypen.
 
 | Wert                         | Beschreibung                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -154,13 +154,21 @@ Im folgenden werden die möglichen Werte für die Typen der Grenzwert.
 | MaximumReferencesOnTask       | Die `references`-Eigenschaft der [plannerTaskDetails](plannertaskdetails.md)-Ressource enthält zu viele Werte.                                                                                          |
 | MaximumChecklistItemsOnTask   | Die `checklist`-Eigenschaft der [plannerTaskDetails](plannertaskdetails.md)-Ressource enthält zu viele Werte.                                                                                           |
 | MaximumAssigneesInTasks       | Die `assignments`-Eigenschaft der [plannerTask](plannertask.md)-Ressource enthält zu viele Werte.                                                                                                       |
-| MaximumFavoritePlansForUser   | Die `favoritePlanReferences` -Eigenschaft für die Ressource [PlannerUser](planneruser.md) enthält zu viele Werte.                                                                                            |
-| MaximumRecentPlansForUser     | Die `recentPlanReferences` -Eigenschaft für die Ressource [PlannerUser](planneruser.md) enthält zu viele Werte.                                                                                              |
-| MaximumContextsOnPlan         | Die `contexts` -Eigenschaft für die Ressource [PlannerPlan](plannerplan.md) enthält zu viele Werte.                                                                                                          |
-| MaximumPlannerPlans       | Die Gruppe enthält bereits einen Plan. Gruppen können derzeit nur einen Plan enthalten. **Hinweis:** Einige Microsoft-apps können diesen Grenzwert überschreiten. In der Zukunft werden wir diese Funktion für alle apps erweitern.                                                                                                      |
+| MaximumFavoritePlansForUser   | Die `favoritePlanReferences`-Eigenschaft der [plannerUser](planneruser.md)-Ressource enthält zu viele Werte.                                                                                            |
+| MaximumRecentPlansForUser     | Die `recentPlanReferences`-Eigenschaft der [plannerUser](planneruser.md)-Ressource enthält zu viele Werte.                                                                                              |
+| MaximumContextsOnPlan         | Die `contexts`-Eigenschaft der [plannerPlan](plannerplan.md)-Ressource enthält zu viele Werte.                                                                                                          |
+| MaximumPlannerPlans       | Die Gruppe enthält bereits einen Plan. Gruppen können derzeit nur einen Plan enthalten. **Hinweis:** Einige Microsoft-Apps können diesen Grenzwert überschreiten. Diese Funktion wird in Zukunft auf alle Apps erweitert.                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 Fehler bei Vorbedingung 
 
-Alle Planer API `POST`, `PATCH`, und `DELETE` Anfragen erfordern die `If-Match` Kopfzeile mit dem letzten bekannten Etag-Wert der Ressource angegeben werden, das die Anforderung fällt.
-Der 412 Statuscode kann auch zurückgegeben werden, wenn in der Anforderung angegebene Etag-Wert nicht mehr eine Version der Ressource in den Dienst entspricht. In diesem Fall sollte die Clients die Ressource erneut lesen und erhalten eine neue Etag.
+Alle `POST`-, `PATCH`- und `DELETE` Anforderungen in der Planner-API erfordern, dass im `If-Match`-Header der letzte bekannte Etag-Wert der Ressource angegeben wird, für die die Anforderung gilt.
+Der Statuscode 412 kann auch zurückgegeben werden, wenn der in der Anforderung angegeben Etag-Wert nicht mehr einer Version der Ressource im Dienst entspricht. In diesem Fall sollten die Clients die Ressource erneut lesen und ein neues Etag abrufen.
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/planner-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

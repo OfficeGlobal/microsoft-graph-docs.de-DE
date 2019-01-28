@@ -1,19 +1,19 @@
 ---
-title: Ressourcentyp appRoleAssignment
-description: Verwendet zum Aufzeichnen, wenn ein Benutzer oder eine Gruppe zu einer Anwendung zugewiesen wird. In diesem Fall führt die rollenzuweisung Kachel Anwendung Einrichten des Benutzers app Zugriff im Bereich angezeigt. Dieser Entität kann auch verwendet werden, zu einer anderen (modelliert als Dienst principal) Anwendungszugriff auf eine Ressource-Anwendung in einer bestimmten Rolle erteilen. Sie können erstellen, lesen, aktualisieren und Löschen von rollenzuweisungen.
+title: appRoleAssignment-Ressourcentyp
+description: Dient zum Aufzeichnen, wann ein Benutzer oder eine Gruppe einer Anwendung zugewiesen wird. In diesem Fall führt die Rollenzuweisung dazu, dass die Anwendungskachel im App-Zugriffsbereich des Benutzers angezeigt wird. Diese Entität kann auch verwendet werden, um einer anderen Anwendung (als Dienstprinzipal modelliert) Zugriff auf eine Ressourcenanwendung in einer bestimmten Rolle zu gewähren. Sie können Rollenzuweisungen erstellen, lesen, aktualisieren und löschen.
 localization_priority: Priority
-ms.openlocfilehash: 3276c1f34b91dc628ed00f2ffbc64ffe56899bdf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 6255642f47f0e1454fb64440d4938605a2de5df4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845472"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513900"
 ---
-# <a name="approleassignment-resource-type"></a>Ressourcentyp appRoleAssignment
+# <a name="approleassignment-resource-type"></a>appRoleAssignment-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verwendet zum Aufzeichnen, wenn ein Benutzer oder eine Gruppe zu einer Anwendung zugewiesen wird. In diesem Fall führt die rollenzuweisung Kachel Anwendung Einrichten des Benutzers app Zugriff im Bereich angezeigt. Dieser Entität kann auch verwendet werden, zu einer anderen (modelliert als Dienst principal) Anwendungszugriff auf eine Ressource-Anwendung in einer bestimmten Rolle erteilen. Sie können erstellen, lesen, aktualisieren und Löschen von rollenzuweisungen.
+Dient zum Aufzeichnen, wann ein Benutzer oder eine Gruppe einer Anwendung zugewiesen wird. In diesem Fall führt die Rollenzuweisung dazu, dass die Anwendungskachel im App-Zugriffsbereich des Benutzers angezeigt wird. Diese Entität kann auch verwendet werden, um einer anderen Anwendung (als Dienstprinzipal modelliert) Zugriff auf eine Ressourcenanwendung in einer bestimmten Rolle zu gewähren. Sie können Rollenzuweisungen erstellen, lesen, aktualisieren und löschen.
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -43,13 +43,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|creationTimestamp|DateTimeOffset|Die Uhrzeit der Erstellung der erteilen. Der Zeitstempeltyp stellt Informationen zum Datum und Uhrzeit mit ISO 8601-Format dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|id|Guid|Die Rolle-Id, die den Prinzipal zugewiesen wurde.  Diese Rolle muss mit der Ziel-Ressource Anwendung **ResourceId** in seiner **AppRoles** -Eigenschaft deklariert werden. In denen die Ressource keine Berechtigungen nicht deklarieren, muss eine Standard-Id (0 (null) GUID) angegeben werden. Schlüssel. Lässt keine Nullwerte zu. |
-|principalDisplayName|Zeichenfolge|Der Anzeigename des Prinzipals, die der Zugriff gewährt wurde.|
-|principalId|Guid|Der eindeutige Bezeichner (**Id**) für den Prinzipal, den Zugriff gewährt wird. Erforderliche auf erstellen.            |
-|principalType|Zeichenfolge|Der Typ des Prinzipals.  Dies kann entweder "User", "Group" oder "ServicePrincipal" sein.|
-|resourceDisplayName|Zeichenfolge|Der Anzeigename der Ressource mit der die Zuordnung hergestellt wurde.|
-|resourceId|Guid|Der eindeutige Bezeichner (**Id**) für die Zielressource (Service Principal) für die die Zuordnung erstellt wurde.|
+|creationTimestamp|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen:  Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|id|Guid|Die Rollen-ID, die dem Prinzipal zugewiesen wurde.  Diese Rolle muss von der Zielressourcenanwendung **ResourceId** in der **appRoles**-Eigenschaft deklariert werden. Wenn die Ressource keine Berechtigungen deklariert, muss eine Standard-ID (GUID von 0) angegeben werden. Schlüssel. Nullwerte zulassend. |
+|principalDisplayName|Zeichenfolge|Der Anzeigename des Prinzipals, dem Zugriff gewährt wurde.|
+|principalId|Guid|Der eindeutige Bezeichner (**Id**) für den Prinzipal, dem Zugriff gewährt wird. Beim Erstellen erforderlich.            |
+|principalType|Zeichenfolge|Der Prinzipaltyp.  Dies kann entweder „Benutzer“, „Gruppe“ oder „ServicePrincipal“ sein.|
+|resourceDisplayName|Zeichenfolge|Der Anzeigename der Ressource, für die die Zuweisung erfolgte.|
+|resourceId|Guid|Die eindeutige ID (**Id**) für die Zielressource (Dienstprinzipal), für die die Zuweisung vorgenommen wurde.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -59,16 +59,21 @@ Keine
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen von appRoleAssignment](../api/approleassignment-get.md) | [appRoleAssignment](approleassignment.md) |Lesen Sie Eigenschaften und Beziehungen des AppRoleAssignment-Objekts.|
-|[Update](../api/approleassignment-update.md) | [appRoleAssignment](approleassignment.md)   |AppRoleAssignment-Objekt zu aktualisieren. |
-|[Delete](../api/approleassignment-delete.md) | Keine |AppRoleAssignment-Objekt zu löschen. |
+|[appRoleAssignment abrufen](../api/approleassignment-get.md) | [appRoleAssignment](approleassignment.md) |Lesen von Eigenschaften und Beziehungen des approleAssignment-Objekts.|
+|[Update](../api/approleassignment-update.md) | [appRoleAssignment](approleassignment.md)   |Aktualisieren des approleassignment-Objekts. |
+|[Delete](../api/approleassignment-delete.md) | Keine |Löschen des approleassignment-Objekts. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "appRoleAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/approleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
