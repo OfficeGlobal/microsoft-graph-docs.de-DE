@@ -4,12 +4,12 @@ description: Mit Microsoft Graph können Sie überzeugende App-Erfahrung basiere
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b98bdd3f84171823942b3a48dd49a8993597a5ee
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518429"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572178"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Arbeiten mit Benutzern in Microsoft Graph
 
@@ -36,13 +36,23 @@ Für den Zugriff auf Benutzervorgänge ist eine der folgenden [Berechtigungen](h
 
 ## <a name="common-properties"></a>Allgemeine Eigenschaften
 
-| Eigenschaft | Beschreibung |
-|----------|-------------|
-| displayName | Der Name des Benutzers, der im Adressbuch angezeigt wird.|
+Im Folgenden werden standardmäßige Eigenschaften dargestellt, die beim Abrufen eines Benutzers oder beim Auflisten von Benutzern zurückgegeben werden. Diese stellen eine Teilmenge aller verfügbaren Eigenschaften. Verwenden Sie zum Abrufen weiterer Benutzereigenschaften den `$select`-Abfrageparameter. 
+
+|Eigenschaft |Beschreibung |
+|:----------|:-------------|
+|id | Die eindeutige ID des Benutzers.|
+|businessPhones | Telefonnummern des Benutzers.|
+|displayName | Der Name des Benutzers, der im Adressbuch angezeigt wird.|
 |givenName| Der Vorname des Benutzers. |
+|jobTitle | Die Position des Benutzers.|
+|mail| Die E-Mail-Adresse des Benutzers. |
+|mobilePhone | Die Mobiltelefonnummern des Benutzers.|
+|officeLocation | Der Bürostandort des Benutzers.|
+|preferredLanguage | Die vom Benutzer bevorzugte Sprache.|
 |surname| Der Nachname des Benutzers. |
 |mail| Die E-Mail-Adresse des Benutzers. |
 |photo| Das Profilfoto des Benutzers. |
+|userPrincipalName| Der Benutzerprinzipalname. |
 
 Weitere Informationen und eine Liste aller Eigenschaften finden Sie unter [user](user.md)-Objekt.
 
@@ -50,7 +60,7 @@ Weitere Informationen und eine Liste aller Eigenschaften finden Sie unter [user]
 >**Hinweis:** Einige dieser Vorgänge erfordern zusätzliche Berechtigungen.
 
 | Pfad    | Beschreibung |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user-list.md) | Listet die Benutzer in der Organisation auf. |
 |[`/users/{id}`](../api/user-get.md) | Ruft einen bestimmten Benutzer anhand der ID ab. |
 |[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| Ruft das Profilfoto des Benutzers ab. |
