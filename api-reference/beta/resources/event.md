@@ -4,12 +4,12 @@ description: Ein Ereignis in einem Kalender.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1c8ba23c6137bdedbf282c5bfcaf1a63b975efac
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516049"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577354"
 ---
 # <a name="event-resource-type"></a>Ressourcentyp „event“
 
@@ -40,8 +40,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -56,7 +56,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -87,8 +87,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -133,12 +133,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anlagen|[Attachment](attachment.md)-Sammlung|Die Sammlung der [FileAttachment](fileattachment.md)-, [ItemAttachment](itemattachment.md)- und [referenceAttachment](referenceattachment.md)-Anlagen für das Ereignis. Navigationseigenschaft. Schreibgeschützt. Lässt Nullwerte zu.|
+|attachments|[attachment](attachment.md)-Sammlung|Die Sammlung der [FileAttachment](fileattachment.md)-, [ItemAttachment](itemattachment.md)- und [referenceAttachment](referenceattachment.md)-Anlagen für das Ereignis. Navigationseigenschaft. Schreibgeschützt. Lässt Nullwerte zu.|
 |Kalender|[Kalender](calendar.md)|Der Kalender, der das Ereignis enthält. Navigationseigenschaft. Schreibgeschützt.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)|Die Sammlung der für das Ereignis definierten offenen Erweiterungen. Nullwerte zulassend.|
 |instances|[Event](event.md)-Sammlung|Die Instanzen des Ereignisses. Navigationseigenschaft. Schreibgeschützt. Nullwerte zulassend.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Nullwerte zulassend.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für das Ereignis definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Nullwerte zulassend.|
 
 ## <a name="methods"></a>Methoden
 

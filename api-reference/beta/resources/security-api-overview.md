@@ -4,12 +4,12 @@ description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befi
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 042c63cfee833a1f9c7493a9e35a6bbb8eb2fbaa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cd55b2d26d7460e7421b9da19658990b53dd7580
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511828"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571695"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Sicherheits-API von Microsoft Graph
 
@@ -44,7 +44,7 @@ In Microsoft Graph-Sicherheit integrierte Lösungen erhalten Warnungen von den f
 
 ## <a name="secure-score-preview"></a>Secure Score (Vorschau)
 
-[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) ist eine Sicherheitsanalyselösung, mit der Sie Einblicke in Ihr Sicherheitsportfolio und in Verbesserungsmöglichkeiten erhalten. Anhand eines einzigen Faktors können Sie verstehen, wie Sie die Risiken in Microsoft-Lösungen minimieren können. Außerdem können Sie Ihre Bewertung mit anderen Organisationen vergleichen und sehen, wie sich Ihre Bewertung im Laufe der Zeit entwickelt hat. Mit der [SecureScore](securescores.md)- und der [SecureScoreControlProfiles](securescorecontrolprofiles.md)-Entität von Microsoft Graph-Sicherheit können Sie die Sicherheits- und Produktivitätsanforderungen Ihrer Organisation abwägen und dabei gleichzeitig die korrekte Mischung von Sicherheitsfunktionen aktivieren. Sie können auch projizieren, wie Ihre Bewertung nach Einführung von Sicherheitsfeatures aussehen würde.
+[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) ist eine Sicherheitsanalyselösung, mit der Sie Einblicke in Ihr Sicherheitsportfolio und in Verbesserungsmöglichkeiten erhalten. Anhand eines einzigen Faktors können Sie verstehen, wie Sie die Risiken in Microsoft-Lösungen minimieren können. Außerdem können Sie Ihre Bewertung mit anderen Organisationen vergleichen und sehen, wie sich Ihre Bewertung im Laufe der Zeit entwickelt hat. Mit der [SecureScore](securescores.md)- und der [SecureScoreControlProfile](securescorecontrolprofiles.md)-Entität von Microsoft Graph-Sicherheit können Sie die Sicherheits- und Produktivitätsanforderungen Ihrer Organisation abwägen und dabei gleichzeitig die korrekte Mischung von Sicherheitsfunktionen aktivieren. Sie können auch projizieren, wie Ihre Bewertung nach Einführung von Sicherheitsfeatures aussehen würde.
 
 ## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle
 
@@ -64,7 +64,7 @@ Sie können Microsoft Graph-[Webhooks](/graph/webhooks) verwenden, um Benachrich
 
 Die Sicherheits-API von Microsoft Graph kann neue Möglichkeiten zum Arbeiten mit anderen Sicherheitslösungen von Microsoft und Partnern eröffnen. Gehen Sie folgendermaßen vor, um loszulegen:
 
-- Führen Sie einen Drilldown zu [Warnungen](alert.md), [secureScore](securescores.md) (Vorschau) und [secureScoreControlProfiles](securescorecontrolprofiles.md) (Vorschau) aus.
+- Führen Sie einen Drilldown zu [Warnungen](alert.md), [secureScore](securescores.md) (Vorschau) und [secureScoreControlProfile](securescorecontrolprofiles.md) (Vorschau) aus.
 - Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus. Klicken Sie unter **Beispielabfragen** auf **Mehr Beispiele anzeigen**, und legen Sie die Kategorie „Sicherheit“ auf **ein** fest.
 - Versuchen Sie, [Benachrichtigungen zu Entitätsänderungen zu abonnieren und zu erhalten](/graph/webhooks).
 

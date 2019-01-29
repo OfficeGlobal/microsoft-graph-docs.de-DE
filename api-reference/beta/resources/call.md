@@ -4,12 +4,12 @@ description: Die **call**-Ressource wird erstellt, wenn es einen eingehenden Anr
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a7eb47d65d07cbdb88712a3b71b7de24b7d366cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510715"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572962"
 ---
 # <a name="call-resource-type"></a>call-Ressourcentyp
 
@@ -54,23 +54,23 @@ Dieselbe Identität kann zwar nicht mehrere Male verwendet werden, eine Anwendun
 
 | Eigenschaft            | Typ                                                                                                   | Beschreibung                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activeModalities    | Zeichenfolgenauflistung                                                                                      | Die Liste der aktiven Modalitäten. Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Schreibgeschützt. Vom Server generiert.                                                    |
+| activeModalities    | „modality“-Auflistung                                                                                      | Die Liste der aktiven Modalitäten. Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Schreibgeschützt. Vom Server generiert.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | Der Teilnehmer, der den Anruf angenommen hat. Schreibgeschützt. Vom Server generiert.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md)-Auflistung                                                                   | Die Routinginformationen, wie der Anruf umgeleitet wurde. Schreibgeschützt. Vom Server generiert.                                                                                                                |
 | callbackUri         | Zeichenfolge                                                                                                 | Die Rückruf- oder Abonnement-ID für Rückrufe.                                                                                                                               |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Die Chatinformationen.                                                                                                                                                                               |
-| direction           | Zeichenfolge                                                                                                 | Die Richtung des Anrufs. Die möglichen Werte sind: `incoming` oder `outgoing`. Schreibgeschützt. Vom Server generiert.                                                                                            |
+| direction           | callDirection                                                                                          | Die Richtung des Anrufs. Die möglichen Werte sind: `incoming` oder `outgoing`. Schreibgeschützt. Vom Server generiert.                                                                                            |
 | id                  | String                                                                                                 | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) oder [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Die Medienkonfiguration.                                                                                                                                                                        |
+| mediaConfig         | [mediaConfig](mediaconfig.md)                                                                          | Die Medienkonfiguration.                                                                                                                                                                        |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Enthält die Funktionen einer Besprechung.                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) oder [tokenMeetingInfo](tokenmeetinginfo.md)             | Die Besprechungsinformationen.                                                                                                                                                                            |
+| meetingInfo         | [meetingInfo](meetinginfo.md)                                                                          | Die Besprechungsinformationen.                                                                                                                                                                            |
 | myParticipantId     | Zeichenfolge                                                                                                 | Schreibgeschützt. Vom Server generiert.                                                                                                                                                                        |
-| requestedModalities | Zeichenfolgenauflistung                                                                                      | Die Liste der angeforderten Modalitäten. | Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | „modality“-Auflistung                                                                                      | Die Liste der angeforderten Modalitäten. | Mögliche Werte: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Die Ergebnisinformationen. Kann beispielsweise einen Grund für die Beendigung enthalten. Schreibgeschützt. Vom Server generiert.                                                                                                       |
 | ringingTimeoutInSeconds | Int32                                                                                              | Timeout für Rufzeichen für ausgehende Peer-to-Peer-Anrufe                                                                                                                                                     |
-| routingPolicies     | Zeichenfolgenauflistung                                                                                      | Mögliche Werte: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`                                                                                                   |
+| routingPolicies     | „routingPolicy“-Auflistung                                                                                      | Mögliche Werte: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | Ursprung des Anrufs.                                                                                                                                                                         |
-| state               | Zeichenfolge                                                                                                 | Der Anrufstatus. Mögliche Werte: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Schreibgeschützt. Vom Server generiert.                         |
+| state               | callState                                                                                                 | Der Anrufstatus. Mögliche Werte: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Schreibgeschützt. Vom Server generiert.                         |
 | subject             | Zeichenfolge                                                                                                 | Der Betreff der Unterhaltung.                                                                                                                                                                    |
 | targets             | [participantInfo](participantinfo.md)-Auflistung                                                       | Die Ziele des Anrufs.                                                                                                                                                                            |
 | tenantId            | Zeichenfolge                                                                                                 | Mandanten-ID in Azure Active Directory.                                                                                                                                                                 |
@@ -100,6 +100,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "chatInfo",
     "direction",
     "id",
+    "mediaConfig",
     "meetingCapability",
     "meetingInfo",
     "myParticipantId",
@@ -116,28 +117,28 @@ Es folgt eine JSON-Darstellung der Ressource.
 }-->
 ```json
 {
-  "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
+  "activeModalities": ["modality"],
+  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
-  "direction": "incoming | outgoing",
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "direction": "callDirection",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
+  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
-  "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "requestedModalities": ["modality"],
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 1024,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
+  "routingPolicies": ["routingPolicy"],
+  "source": {"@odata.type": "microsoft.graph.participantInfo"},
+  "state": "callState",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
 }
 ```
 
@@ -152,7 +153,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call",
-  truncated: true
+  "truncated": true
 }-->
 ```json
 {
