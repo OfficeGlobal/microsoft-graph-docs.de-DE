@@ -1,15 +1,15 @@
 ---
-title: Ressourcentyp officeGraphInsights
+title: insights-Ressourcentyp
 description: Einblicke sind Beziehungen, die mithilfe erweiterter Analysetechniken und computergestützter Lerntechniken berechnet werden. Sie können z. B. OneDrive-Dokumente für Benutzer identifizieren.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: daded26bff88d611ea39754d98007fa3329d142b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572458"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640168"
 ---
 # <a name="insights-resource-type"></a>insights-Ressourcentyp
 
@@ -30,22 +30,12 @@ Jeder Einblick wird mit einem komplexen Werttyp von `resourceVisualization` und 
 | Beziehung      | Typ          | Beschreibung  |
 | ------------- |---------------| -------------|
 | trending      | [Trending](insights-trending.md)-Auflistung       | Berechnete Beziehung, die beliebte Dokumente identifiziert. Beliebte Dokumente können auf OneDrive- oder auf SharePoint-Websites gespeichert werden.   |
-| used      | [UsedInsight](insights-used.md)-Auflistung        | Berechnete Beziehung, die die von einem Benutzer angezeigten und geänderten Dokumente identifiziert. Umfasst Dokumente, die der Benutzer in OneDrive for Business und SharePoint verwendet und als E-Mail-Anlagen und als Linkanlagen von Quellen wie Box, DropBox and Google Drive geöffnet hat.  |
+| verwendet      | [Used](insights-used.md)-Auflistung       | Berechnete Beziehung, die die von einem Benutzer angezeigten und geänderten Dokumente identifiziert. Umfasst Dokumente, die der Benutzer in OneDrive for Business und SharePoint verwendet und als E-Mail-Anlagen und als Linkanlagen von Quellen wie Box, DropBox and Google Drive geöffnet hat.  |
 | shared        | [Shared](insights-shared.md)-Auflistung       | Berechnete Beziehung, die Dokumente identifiziert, die für einen Benutzer freigegeben wurden. Dokumente können als E-Mail-Anlagen oder als OneDrive for Business-Links freigegeben werden, die in E-Mails gesendet werden.   |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.officeGraphInsights"
-}-->
-
 ```json
 {
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],

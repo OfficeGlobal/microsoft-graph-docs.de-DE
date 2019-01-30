@@ -4,12 +4,12 @@ description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der e
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 85a921449a57b3e65d4a10e2d0439542f7bb1810
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574411"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641764"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -161,8 +161,8 @@ Im Folgenden wird die Bedeutung der einzelnen Werte der Eigenschaft **visibility
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung|Die Sammlung der Lebenszyklusrichtlinien für diese Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
 |memberOf|[directoryObject](directoryobject.md)-Sammlung|Gruppen und administrative Einheiten, in denen dieser Benutzer Mitglied ist. HTTP-Methoden: GET (für alle Gruppen unterstützt). Schreibgeschützt. Lässt NULL-Werte zu.|
 |members|[directoryObject](directoryobject.md)-Sammlung| Benutzer, Kontakte und Gruppen, die Mitglieder dieser Gruppe sind. HTTP-Methoden: GET (für alle Gruppen unterstützt), POST (für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt), DELETE (nur für Sicherheitsgruppen unterstützt). Schreibgeschützt. Nullwerte zulassend.|
-|membersWithLicenseErrors|[user](user.md)-Sammlung|Eine Liste von Gruppenmitgliedern mit Lizenzfehlern aus dieser gruppenbasierten Lizenzizenzzuweisung. Schreibgeschützt.|
-|onenote|[oneNote](onenote.md)| Schreibgeschützt.|
+|membersWithLicenseErrors|[User](user.md)-Sammlung|Eine Liste von Gruppenmitgliedern mit Lizenzfehlern aus dieser gruppenbasierten Lizenzizenzzuweisung. Schreibgeschützt.|
+|onenote|[OneNote](onenote.md)| Schreibgeschützt.|
 |owners|[directoryObject](directoryobject.md)-Sammlung|Die Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. HTTP-Methoden: GET (für alle Gruppen unterstützt), POST (für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt), DELETE (nur für Sicherheitsgruppen unterstützt). Schreibgeschützt. Nullwerte zulassend.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto der Gruppe. |
 |Fotos|[profilePhoto](profilephoto.md)-Sammlung| Die Profilfotos im Besitz der  Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
@@ -189,7 +189,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "extensions",
     "memberOf",
     "members",
-    "oneNote",
+    "onenote",
     "owners",
     "photo",
     "photos",    
@@ -223,7 +223,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
+  "preferredDataLocation": ["string"],
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

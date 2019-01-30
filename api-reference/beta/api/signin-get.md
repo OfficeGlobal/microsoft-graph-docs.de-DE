@@ -2,12 +2,12 @@
 title: Get signIn
 description: Ruft die Azure AD-Benutzeranmeldungen für Ihren Mandanten ab. Anmeldungen, die interaktiver Natur sind (wobei ein Benutzername/Kennwort als Teil des Autorisierungstokens übergeben wird) und erfolgreiche Verbundanmeldungen sind zurzeit in den Anmeldeprotokollen enthalten.
 localization_priority: Priority
-ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576612"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643881"
 ---
 # <a name="get-signin"></a>Get signIn
 Ruft die Azure AD-Benutzeranmeldungen für Ihren Mandanten ab. Anmeldungen, die interaktiver Natur sind (wobei ein Benutzername/Kennwort als Teil des Autorisierungstokens übergeben wird) und erfolgreiche Verbundanmeldungen sind zurzeit in den Anmeldeprotokollen enthalten.
@@ -45,7 +45,8 @@ Bei Erfolg gibt die Methode den Antwortcode `200 OK` und das [signIn](../resourc
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
-  "blockType": "request",
+  "blockType": "reque|location/city| eq, startswith|
+st",
   "name": "get_signin"
 }-->
 ```http

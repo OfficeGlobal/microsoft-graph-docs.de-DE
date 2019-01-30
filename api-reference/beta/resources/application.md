@@ -4,12 +4,12 @@ description: 'Steht für eine Anwendung. Jede Anwendung, bei der die Authentifiz
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ba7bebb1165710c68f4714050109b5c927bddbd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575055"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641554"
 ---
 # <a name="application-resource-type"></a>application-Ressourcentyp
 
@@ -43,25 +43,25 @@ Diese Ressource unterstützt Folgendes:
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|api|[microsoft.graph.api](api.md)| Legt die Einstellungen für eine API-Anwendung fest. |
+|api|[api](api.md)| Legt die Einstellungen für eine API-Anwendung fest. |
 |appId| String | Der eindeutige Bezeichner für die Anwendung, der einer Anwendung durch Azure AD zugewiesen ist. Lässt keine Nullwerte zu. Schreibgeschützt. |
-|appRoles|[microsoft.graph.entity](approle.md)-Sammlung|Die Sammlung der Anwendungsrollen, die eine Anwendung möglicherweise deklariert. Diese Rollen können Benutzern, Gruppen oder Dienstprinzipalen zugewiesen werden. Lässt keine Nullwerte zu.|
+|appRoles|[appRole](approle.md)-Sammlung|Die Sammlung der Anwendungsrollen, die eine Anwendung möglicherweise deklariert. Diese Rollen können Benutzern, Gruppen oder Dienstprinzipalen zugewiesen werden. Lässt keine Nullwerte zu.|
 |createdDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungsregistrierung. |
 |deletedDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungslöschung. |
 |displayName|String|Der Anzeigename der Anwendung. |
-|id|String|Eindeutiger Bezeichner für die Anwendung. Geerbt von [microsoft.graph.directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|id|String|Eindeutiger Bezeichner für die Anwendung. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
 |identifierUris|String-Sammlung| Die URIs, die die Anwendung identifizieren. Weitere Informationen finden Sie unter [Anwendungsobjekte und Dienstprinzipalobjekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
-|info|[microsoft.graph.informationalUrl](informationalurl.md)| Grundlegende Profilinformationen der Anwendung. |
+|info|[informationalUrl](informationalurl.md)| Grundlegende Profilinformationen der Anwendung. |
 |isFallbackPublicClient|Boolesch| Legt den Fallback-App-Typ auf öffentlichen Client fest, z. B. eine installierte App, die auf einem mobilen Gerät ausgeführt wird. Der Standardwert ist *false*, d. h. der Fallback-App-Typ ist vertraulicher Client, zum Beispiel Web-App. Bei einigen Szenarien kann Azure AD den Client-App-Typ nicht ermitteln (z. B. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)-Fluss, wo dieser ohne Angabe eines Umleitungs-URIs konfiguriert ist). In diesen Fällen interpretiert Azure AD den App-Typ basierend auf dem Wert dieser Eigenschaft.|
-|keyCredentials|[microsoft.graph.keyCredential](keycredential.md)-Sammlung|Die Sammlung der wichtigsten Anmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu. |
+|keyCredentials|[keyCredential](keycredential.md)-Sammlung|Die Sammlung der wichtigsten Anmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu. |
 |logo|Stream|Das Hauptlogo für die Anwendung. Lässt keine Nullwerte zu. |
-|optionalClaims|[microsoft.graph.entity](entity.md)-Sammlung| Reserviert für zukünftige Verwendung. |
+|optionalClaims|optionalClaims| Reserviert für zukünftige Verwendung. |
 |orgRestrictions|String-Sammlung| Reserviert für zukünftige Verwendung. |
-|parentalControlSettings|[microsoft.graph.parentalControlSettings](parentalcontrolsettings.md)-Sammlung |Gibt die Jugendschutzeinstellungen für eine Anwendung an.|
-|passwordCredentials|[microsoft.graph.passwordCredential](passwordcredential.md)-Sammlung|Die Sammlung der Kennwortanmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu.|
-|publicClient|[microsoft.graph.publicClient](publicclient.md)| Legt die Einstellungen für installierte Clients wie Desktop- oder mobile Geräte fest. |
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Gibt die Jugendschutzeinstellungen für eine Anwendung an.|
+|passwordCredentials|[passwordCredential](passwordcredential.md)-Sammlung|Die Sammlung der Kennwortanmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu.|
+|publicClient|[publicClient](publicclient.md)| Legt die Einstellungen für installierte Clients wie Desktop- oder mobile Geräte fest. |
 |publisherDomain| String | Die bestätigte Herausgeberdomäne für die Anwendung. Schreibgeschützt.|
-|requiredResourceAccess|[microsoft.graph.requiredResourceAccess](requiredresourceaccess.md)-Auflistung|Gibt Ressourcen an, auf die diese Anwendung zugreifen muss, sowie den Satz von OAuth-Berechtigungsbereichen und Anwendungsrollen, die unter den jeweiligen Ressourcen benötigt werden. Durch diese Vorkonfiguration des erforderlichen Ressourcenzugriffs wird die Zustimmungsoberfläche bestimmt. Lässt keine Nullwerte zu.|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md)-Sammlung|Gibt Ressourcen an, auf die diese Anwendung zugreifen muss, sowie den Satz von OAuth-Berechtigungsbereichen und Anwendungsrollen, die unter den jeweiligen Ressourcen benötigt werden. Durch diese Vorkonfiguration des erforderlichen Ressourcenzugriffs wird die Zustimmungsoberfläche bestimmt. Lässt keine Nullwerte zu.|
 |signInAudience | String | Gibt an, welche Microsoft-Konten für die aktuelle Anwendung unterstützt werden. Unterstützte Werte:<ul><li>**AzureADMyOrg**: Benutzer mit einem Microsoft-Geschäfts-, Schul- oder Unikonto in dem Azure AD-Mandanten meiner Organisation (d. h. einzelner Mandant).</li><li>**AzureADMultipleOrgs**: Benutzer mit einem Microsoft-Geschäfts-, Schul- oder Unikonto in dem Azure AD-Mandanten einer Organisation (d. h. mehrere Mandanten).</li> <li>**AzureADandPersonalMicrosoftAccount**: Benutzer mit einem persönlichen Microsoft-Konto oder einem Geschäfts-, Schul- oder Unikonto im Azure AD-Mandanten einer Organisation.</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String-Sammlung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
 |web|[web](web.md)| Legt die Einstellungen für eine Webanwendung fest. |
@@ -92,29 +92,29 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "api": {"@odata.type": "#microsoft.graph.application"},
+  "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
-  "appRoles": [{"@odata.type": "#microsoft.graph.approle"}],
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
   "identifierUris": ["String"],
-  "info": {"@odata.type": "#microsoft.graph.informationalUrl"},
+  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "isFallbackPublicClient": true,
-  "keyCredentials": [{"@odata.type": "#microsoft.graph.keyCredential"}],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "#microsoft.graph.entity"}],
+  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
-  "passwordCredentials": [{"@odata.type": "#microsoft.graph.passwordCredential"}],
-  "preAuthorizedApplications": [{"@odata.type": "#microsoft.graph.preAuthorizedApplication"}],
-  "publicClient": {"@odata.type": "#microsoft.graph.publicClientApplication"},
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
+  "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
+  "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
-  "requiredResourceAccess": [{"@odata.type": "#microsoft.graph.requiredResourceAccess"}],
+  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
-  "web": {"@odata.type": "#microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
 

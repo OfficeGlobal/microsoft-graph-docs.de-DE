@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Laufwerk
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: e788765c3405a1455eda55f6fefdc21ade3da8fd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573928"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641869"
 ---
 # <a name="drive-resource-type"></a>Drive-Ressourcentyp
 
@@ -96,10 +96,10 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | Beziehung | Typ                                 | Beschreibung
 |:-------------|:-------------------------------------|:-----------------------
 | Aktivitäten   | [itemActivity][]-Sammlung          | Die Liste der letzten Aktivitäten, die für dieses Laufwerk durchgeführt wurden.
-| items        | [driveItem](driveitem.md)-Sammlung | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
-| root         | [driveItem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
-| Sonderfall      | [driveItem](driveitem.md)-Sammlung | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
-| following    | [driveItem](driveitem.md)-Sammlung | Die Liste von Elementen, denen der Benutzer folgt. Nur in OneDrive for Business.
+| Elemente        | [driveitem](driveitem.md) collection | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
+| root         | [driveitem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
+| Sonderfall      | [driveitem](driveitem.md) collection | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
+| following    | [Driveitem](driveitem.md)-Sammlung | Die Liste von Elementen, denen der Benutzer folgt. Nur in OneDrive for Business.
 
 ## <a name="methods"></a>Methoden
 

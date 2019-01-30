@@ -4,12 +4,12 @@ description: Dient zum Auflisten aller in einer Organisation verfügbaren Gruppe
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5081c5013c1bf7c1a1bfbcff58afe5a83aa67bc9
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 8ede194abffe745bee9a23906b965d43de93cec8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726575"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643741"
 ---
 # <a name="list-groups"></a>Gruppen auflisten
 Dient zum Auflisten aller in einer Organisation verfügbaren Gruppen, einschließlich, aber nicht beschränkt auf Office 365-Gruppen.
@@ -17,6 +17,8 @@ Dient zum Auflisten aller in einer Organisation verfügbaren Gruppen, einschlie�
 Dieser Vorgang gibt standardmäßig nur eine Untergruppe der Eigenschaften für jede Gruppe zurück. Diese Standardeigenschaften werden im Abschnitt [Eigenschaften](../resources/group.md#properties) aufgeführt. 
 
 Um Eigenschaften abzurufen, die _nicht_ standardmäßig zurückgegeben werden, führen Sie eine [GET](group-get.md)-Operation für die Gruppe aus, und geben Sie die Eigenschaften in einer OData-Abfrageoption `$select` an. Sehen Sie sich das [Beispiel](group-get.md#request-2) an.
+
+Eine Ausnahme ist die **hasMembersWithLicenseErrors**-Eigenschaft. Sehen Sie sich ein [Beispiel](#request-2) für die Verwendung dieser Eigenschaft an.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -58,7 +60,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [group](../resources/group.md)-Objekten im Antworttext zurückgegeben. Die Antwort enthält nur die Standardeigenschaften der einzelnen Gruppen.
 
 ## <a name="example"></a>Beispiel
-#### <a name="request"></a>Anforderung
+#### <a name="request-1"></a>Anforderung 1
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -68,10 +70,10 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response"></a>Antwort
+#### <a name="response-1"></a>Antwort 1
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Alle Standardeigenschaften werden für jede Gruppe einem tatsächlichen Aufruf zurückgegeben.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Alle Standardeigenschaften werden für jede Gruppe in einem tatsächlichen Aufruf zurückgegeben.
 
 <!-- {
   "blockType": "response",
@@ -146,6 +148,44 @@ Content-type: application/json
     ]
 }
 
+```
+#### <a name="request-2"></a>Anforderung 2
+Dieses Beispiel verwendet eine `$filter`-Abfrageoption, um die Gruppen abzurufen, die Mitglieder mit Lizenzfehlern in ihren gruppenbasierten Lizenzzuordnungen aufweisen. Außerdem wird eine `$select`-Abfrageoption verwendet, um nur die **id**- und die **displayName**-Eigenschaft jeder Gruppe in der Antwort und keine anderen standardmäßigen oder nicht standardmäßigen Eigenschaften abzurufen.
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### <a name="response-2"></a>Antwort 2
+Nachfolgend finden Sie ein Beispiel der Antwort, die nur die angeforderten Eigenschaften umfasst.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

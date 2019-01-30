@@ -4,12 +4,12 @@ description: Eine Nachricht in einem Postfachordner.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ffcd2bc0b61cd53285110b1700fd789124d893e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573648"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641218"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -33,8 +33,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -49,7 +49,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": { "type":"String", "format":"base64"},
+  "conversationIndex": "binary",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -80,8 +80,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -130,8 +130,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 |Anlagen|[Anlagensammlung](attachment.md)|Die [fileAttachment](fileattachment.md)- und [itemAttachment](itemattachment.md)-Anlagen der Nachricht.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)| Die Sammlung der für die Nachricht definierten offenen Erweiterungen. Nullwerte zulassend.|
 |Erwähnungen|[Erwähnungssammlung](mention.md) | Eine Sammlung von Erwähnungen in der Nachricht, sortiert nach **createdDateTime** vom neuesten zum ältesten Element. Standardmäßig gibt `GET` /message diese Eigenschaft nicht zurück, es sei denn, Sie wenden `$expand` auf die Eigenschaft an.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
 
 ## <a name="methods"></a>Methoden
 

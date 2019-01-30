@@ -4,12 +4,12 @@ description: Diese Ressource stellt Überwachungselemente des Verzeichnisses und
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573158"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643755"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit-Ressourcentyp
 Diese Ressource stellt Überwachungselemente des Verzeichnisses und seine Sammlung dar.
@@ -28,9 +28,9 @@ Diese Ressource stellt Überwachungselemente des Verzeichnisses und seine Sammlu
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Gibt das Datum und die Uhrzeit der Ausführung der Aktivität an. Der Zeitstempeltyp liegt immer in UTC-Zeit vor. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|Gibt den Aktivitätsnamen oder den Vorgangsnamen an (z. B. "Benutzer erstellen", "Mitglied der Gruppe hinzufügen"). Eine Liste der protokollierten Aktivitäten finden Sie unter [Azure AD-Aktivitätsliste](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|[keyvalue](keyvalue.md)-Sammlung|Gibt weitere Details zur Aktivität an.|
+|additionalDetails|[keyValue](keyvalue.md)-Sammlung|Gibt weitere Details zur Aktivität an.|
 |category|String|Gibt an, auf welche Ressourcenkategorie die Aktivität abzielt. (Beispiel: Benutzerverwaltung, Gruppenverwaltung usw.)|
-|correlationId| String (Bezeichner) |Gibt eine eindeutige ID an, die bei der Korrelation von Aktivitäten hilft, die sich über verschiedene Dienste erstrecken. Kann für die Ablaufverfolgung von Protokollen über Dienste hinweg verwendet werden.|
+|correlationId|GUID|Gibt eine eindeutige ID an, die bei der Korrelation von Aktivitäten hilft, die sich über verschiedene Dienste erstrecken. Kann für die Ablaufverfolgung von Protokollen über Dienste hinweg verwendet werden.|
 |id|String| Gibt die eindeutige ID für die Aktivität an. Dies ist eine GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Gibt Informationen zum Benutzer oder der App an, der bzw. die die Aktivität initiiert hat.|
 |loggedByService|String|Gibt Informationen dazu an, welcher Dienst die Aktivität ausgelöst hat (Beispiel: Self-Service-Kennwortverwaltung, Core Directory, B2C, Eingeladene Benutzer, Microsoft Identity Manager, Privileged Identity Management).|
@@ -60,7 +60,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "String (identifier)",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

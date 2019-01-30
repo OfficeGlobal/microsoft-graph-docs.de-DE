@@ -2,12 +2,12 @@
 title: Abrufen des Dienstprinzipals
 description: Dient zum Abrufen der Eigenschaften und Beziehungen eines serviceprincipal-Objekts.
 localization_priority: Priority
-ms.openlocfilehash: 2fca7895b03a52e5fda06df940782b716e8ca1c4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 53f8755f11e7e8e71a3ab339e0f9cced7adec3d1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575153"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642835"
 ---
 # <a name="get-serviceprincipal"></a>Abrufen des Dienstprinzipals
 
@@ -58,7 +58,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -7,7 +7,7 @@ Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält die erforderli
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[Abrufen von dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Rufen Sie die Eigenschaften des **DataPolicyOperation** -Objekts ab.|
-|[Exportieren von persönlichen Daten](../api/user-exportpersonaldata.md) | Keines |Fordern Sie Daten Richtlinie Vorgang zur Organisationseinheit Benutzerdaten exportieren, die später mithilfe [DataPolicyOperation](../api/datapolicyoperation-get.md) wiedergegeben werden können|
+|[Exportieren von persönlichen Daten](../api/user-exportpersonaldata.md) | Keine |Fordern Sie Daten Richtlinie Vorgang zur Organisationseinheit Benutzerdaten exportieren, die später mithilfe [DataPolicyOperation](../api/datapolicyoperation-get.md) wiedergegeben werden können|
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -17,11 +17,11 @@ Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält die erforderli
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Stellt die bei die Anforderung für diese Richtlinie Datenvorgangs, in UTC-Zeit mit abgeschlossen wurde im ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. "NULL", bis der Vorgang abgeschlossen ist.|
 |id|String| Eindeutiger Schlüssel für diesen Vorgang. |
-|status|string| Mögliche Werte sind: `notStarted`, `running`, `complete`, `failed` und `unknownFutureValue`.|
+|status|string| Mögliche Werte: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|Der URL-Adresse an, in dem Daten für exportanforderungen exportiert werden.|
 |userId|String|Die Id für den Benutzer, auf dem die Operation ausgeführt wird.|
 |submittedDateTime|DateTimeOffset|Stellt die bei die Anforderung für diesen Datenvorgang im ISO 8601-Format verwenden übermittelt wurde, im UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Fortschritt|String|Gibt den Fortschritt eines Vorgangs an.|
+|progress|String|Gibt den Fortschritt eines Vorgangs an.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine.

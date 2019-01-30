@@ -4,17 +4,17 @@ description: Dient zum Abrufen der Eigenschaften und Beziehungen eines Gruppenob
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353090"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641337"
 ---
 # <a name="get-group"></a>Gruppe abrufen
 Dient zum Abrufen der Eigenschaften und Beziehungen eines Gruppenobjekts.
 
-Dieser Vorgang gibt standardmäßig nur eine Teilmenge aller verfügbaren Eigenschaften zurück, wie im Abschnitt [Eigenschaften](../resources/group.md#properties) beschrieben. Zum Abrufen von Eigenschaften, die _nicht_ standardmäßig zurückgegeben werden, geben sie diese in einer OData-Abfrageoption `$select` an. Sehen Sie sich das [Beispiel](#request-2) an.
+Dieser Vorgang gibt standardmäßig nur eine Teilmenge aller verfügbaren Eigenschaften zurück, wie im Abschnitt [Eigenschaften](../resources/group.md#properties) beschrieben. Zum Abrufen von Eigenschaften, die _nicht_ standardmäßig zurückgegeben werden, geben sie diese in einer OData-Abfrageoption `$select` an. Sehen Sie sich ein [Beispiel](#request-2) für `$select` an. Eine Ausnahme ist die **hasMembersWithLicenseErrors**-Eigenschaft. Sehen Sie sich ein [Beispiel](group-list.md#request-2) für die Verwendung dieser Eigenschaft an.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
