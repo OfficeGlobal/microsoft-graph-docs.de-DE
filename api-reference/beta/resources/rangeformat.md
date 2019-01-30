@@ -1,15 +1,15 @@
 ---
-title: Ressourcentyp rangeFormat
+title: RangeFormat-Ressourcentyp
 description: Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572423"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643930"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat-Ressourcentyp
 
@@ -23,9 +23,9 @@ Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[RangeFormat abrufen](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFormat-Objekts.|
-|[RangeBorder erstellen](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Dient zum Erstellen eines neues RangeBorder durch Veröffentlichen in der Rahmensammlung.|
-|[Rahmen auflisten](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) -Auflistung| Dient zum Abrufen einer RangeBorder-Objeksammlung.|
-|[Aktualisieren](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |Dient zum Aktualisieren des RangeFormat-Objekts. |
+|[RangeBorder erstellen](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Dient zum Erstellen eines neues RangeBorder durch Veröffentlichen in der Rahmensammlung.|
+|[Rahmen auflisten](../api/rangeformat-list-borders.md) |[RangeBorder-Sammlung](rangeborder.md)| Dient zum Abrufen einer RangeBorder-Objeksammlung.|
+|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Dient zum Aktualisieren des RangeFormat-Objekts. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Keine|Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Keine|Ändert die Höhe der Zeilen des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Zeilen die optimale Höhe zu erzielen.|
 
@@ -41,10 +41,10 @@ Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Borders|[RangeBorder](rangeborder.md) -Auflistung|Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten, schreibgeschützt.|
-|fill|[rangeFill](rangefill.md)|Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist. Schreibgeschützt.|
-|Schriftart|[rangeFont](rangefont.md)|Gibt das Font-Objekt zurück, das für den gesamten ausgewählten Bereich definiert ist, schreibgeschützt.|
-|protection|[formatProtection](formatprotection.md)|Gibt das Formatschutz-Objekt für einen Bereich zurück. Schreibgeschützt.|
+|Borders|[RangeBorder-Sammlung](rangeborder.md)|Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten, schreibgeschützt.|
+|fill|[RangeFill](rangefill.md)|Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist. Schreibgeschützt.|
+|Schriftart|[RangeFont](rangefont.md)|Gibt das Font-Objekt zurück, das für den gesamten ausgewählten Bereich definiert ist, schreibgeschützt.|
+|protection|[FormatProtection](formatprotection.md)|Gibt das Formatschutz-Objekt für einen Bereich zurück. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

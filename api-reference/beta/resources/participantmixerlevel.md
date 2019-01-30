@@ -4,12 +4,12 @@ description: Konfiguration der Mixer Ebenen zur angegebenen audio-Teilnehmer
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bb5d28ac45d510a715dcc5001c8ee02b8352bb8c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575419"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643832"
 ---
 # <a name="participantmixerlevel-resource-type"></a>Ressourcentyp participantMixerLevel
 
@@ -39,10 +39,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

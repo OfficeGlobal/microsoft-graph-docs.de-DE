@@ -4,12 +4,12 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartAx
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6ce8b7d9518df01ec04b1191a9784ea015e83c7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1912cc6ea38eef71d8ecade964b976725b91b5d9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576143"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644000"
 ---
 # <a name="get-chartaxistitle"></a>ChartAxisTitle abrufen
 
@@ -46,7 +46,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und [WorkbookChartAxisTitle](../resources/chartaxistitle.md) -Objekts in der Antworttext.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [ChartAxisTitle](../resources/chartaxistitle.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

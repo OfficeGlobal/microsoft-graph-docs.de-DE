@@ -4,12 +4,12 @@ description: Mit dieser API können Sie Benutzer oder Gruppen aus der Liste „r
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 841b7fc1a58b0ec77b240bfdbfe9c286ac38b310
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570646"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643944"
 ---
 # <a name="remove-rejectedsender"></a>rejectedSender entfernen
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:---------------------------------------|:-------------------------------------------- |
 | Delegiert (Geschäfts-, Schul- oder Unikonto)     | Group.ReadWrite.All  |  
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-| Anwendung                            | Nicht unterstützt |
+| Application                            | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +54,7 @@ Nachfolgend finden Sie ein paar Beispiele der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
 
+DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
 #### <a name="response"></a>Antwort

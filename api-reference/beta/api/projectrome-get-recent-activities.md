@@ -3,12 +3,12 @@ title: Abrufen aktueller Benutzeraktivitäten
 description: " API. Der Dienst für die aktuelle HistoryItems Abfragen, und ziehen Sie die zugehörigen Aktivitäten. Aktivitäten werden entsprechend der neuesten **LastModified** auf die **HistoryItem**sortiert. Dies bedeutet, dass Aktivitäten ohne **HistoryItems** nicht in der Antwort enthalten sein werden. Die Berechtigung UserActivity.ReadWrite.CreatedByApp wird auch gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: f19dc8eea40d61afba8e34891431a73f565d6ec3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573165"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643958"
 ---
 # <a name="get-recent-user-activities"></a>Abrufen aktueller Benutzeraktivitäten
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | UserActivity.ReadWrite.CreatedByApp    |
 |Delegiert (persönliches Microsoft-Konto) | UserActivity.ReadWrite.CreatedByApp    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -56,7 +56,7 @@ Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung.
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Erforderlich.|
+|Autorisierung | string | Bearer {token}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -88,8 +88,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.activity"
+  "@odata.type": "Collection(microsoft.graph.activity)"
 } -->
 
 ```http
@@ -100,7 +99,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",

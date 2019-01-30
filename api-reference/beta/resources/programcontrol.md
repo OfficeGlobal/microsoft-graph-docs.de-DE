@@ -2,12 +2,12 @@
 title: Ressourcentyp programControl
 description: In Azure AD Access Feature überprüft, und das Programm Control-Objekt stellt ein Steuerelement, Verknüpfen einer Access-Überprüfung an ein Programm dar.
 localization_priority: Normal
-ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576556"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644007"
 ---
 # <a name="programcontrol-resource-type"></a>Ressourcentyp programControl
 
@@ -30,20 +30,20 @@ In Azure AD [Access überprüft](accessreviews-root.md) Feature stellt das Progr
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)     | ProgramControl.Read.All ProgramControl.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-|Anwendung                            | Nicht unterstützt |
+|Application                            | Nicht unterstützt |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | Die Feature-zugewiesenen Bezeichner der Verknüpfung zwischen Programm und Steuerelement                                      |
-| `programId`              |`String`                | Die ProgramId des Programms dieses Steuerelement ist ein Teil der. Erforderliche auf erstellen.                            |
-| `controlId`              |`String`                | Die ControlId des Steuerelements, insbesondere die eine Access-ID überprüfen. Erforderliche auf erstellen.                                                |
-| `controlTypeId`          |`String`                | Die ProgramControlType identifiziert den Typ des programmfreigabesteuerung – beispielsweise ein Steuerelement verknüpfen mit Gast Access überprüft. Erforderliche auf erstellen. |
+| `programId`              |`String`                | Die ProgramId des Programms dieses Steuerelement ist ein Teil der. Beim Erstellen erforderlich.                            |
+| `controlId`              |`String`                | Die ControlId des Steuerelements, insbesondere die eine Access-ID überprüfen. Beim Erstellen erforderlich.                                                |
+| `controlTypeId`          |`String`                | Die ProgramControlType identifiziert den Typ des programmfreigabesteuerung – beispielsweise ein Steuerelement verknüpfen mit Gast Access überprüft. Beim Erstellen erforderlich. |
 | `displayName`            |`String`                | Der Name des Steuerelements.                                                             |
 | `status`                 |`String`                | Der Status des Lebenszyklus des Steuerelements.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | Das Erstellungsdatum und die Uhrzeit des Steuerelements Programm.                                        |
 | `owner`                  |[Benutzeridentität](useridentity.md)   | Der Benutzer, die das Programmsteuerelement erstellt.                                               |
-| `resource`               | [programResource](programresource.md)       | Die Ressource, eine Gruppe oder eine app, Ziel dieses Programm Steuerelement Access überprüfen.                   |
+| `resource`               |`programResource`       | Die Ressource, eine Gruppe oder eine app, Ziel dieses Programm Steuerelement Access überprüfen.                   |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

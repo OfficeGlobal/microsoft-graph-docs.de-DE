@@ -4,12 +4,12 @@ description: Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570925"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643993"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Ressourcentyp dataPolicyOperation
 
@@ -29,10 +29,11 @@ Stellt einen gesendete Daten Richtlinie Vorgang dar. Sie enthält die erforderli
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Stellt die bei die Anforderung für diese Richtlinie Datenvorgangs, in UTC-Zeit mit abgeschlossen wurde im ISO 8601-Format. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. "NULL", bis der Vorgang abgeschlossen ist.|
 |id|String| Eindeutiger Schlüssel für diesen Vorgang. |
-|status|string| Mögliche Werte sind: `notStarted`, `running`, `complete`, `failed` und `unknownFutureValue`.|
+|status|string| Mögliche Werte: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|Der URL-Adresse an, in dem Daten für exportanforderungen exportiert werden.|
 |userId|String|Die Id für den Benutzer, auf dem die Operation ausgeführt wird.|
 |submittedDateTime|DateTimeOffset|Stellt die bei die Anforderung für diesen Datenvorgang im ISO 8601-Format verwenden übermittelt wurde, im UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|progress|Gleitkommawert mit doppelter Genauigkeit|Gibt den Fortschritt eines Vorgangs an.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -57,7 +58,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

@@ -4,12 +4,12 @@ description: Dient zum Abrufen der Eigenschaften und der Beziehungen des ChartSe
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b080393246163ff70484460cdcac984eb92c7eba
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 03087ae52746af9e5f069ae2d7e4f229c3ee7302
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577123"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640042"
 ---
 # <a name="get-chartseries"></a>ChartSeries abrufen
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

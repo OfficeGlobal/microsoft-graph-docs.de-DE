@@ -2,12 +2,12 @@
 title: fileAttachment-Ressourcentyp
 description: Eine Datei (beispielsweise eine Textdatei oder Word-Dokument), ein Ereignis zugeordnet ist,
 localization_priority: Normal
-ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572801"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644091"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment-Ressourcentyp
 
@@ -32,9 +32,9 @@ Abgeleitet von [attachment](attachment.md).
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|contentBytes|String|Der base64-codierte Inhalt der Datei.|
+|contentBytes|Binär|Der base64-codierte Inhalt der Datei.|
 |contentId|String|Die ID der Anlage im Exchange-Speicher.|
-|contentLocation|String|Verwenden Sie diese Eigenschaft nicht auf, da es nicht unterstützt wird.|
+|contentLocation|String|Verwenden Sie diese Eigenschaft nicht, weil sie nicht unterstützt wird.|
 |contentType|String|Der Inhaltstyp der Anlage.|
 |id|String|Die Anlagen-ID.|
 |isInline|Boolean|True, wenn es sich um eine Inlineanlage handelt.|
@@ -60,7 +60,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "contentBytes": "String",
+  "contentBytes": "binary",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

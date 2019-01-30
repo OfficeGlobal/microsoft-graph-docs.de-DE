@@ -5,18 +5,18 @@ ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8f87ff4969cb4ad254813a01415628d8a8dbec8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576486"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644021"
 ---
 # <a name="sitepagedata-resource"></a>SitePageData-Ressource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die Ressource **SitePageData** stellt die Eigenschaften für ein [WebPart](webpart.md)dar. Wie diese Eigenschaften von Webpart variieren, ist dies eine OpenType ohne festen Eigenschaften.
+Die Ressource **SitePageData** stellt die Eigenschaften für ein [WebPart][]dar. Wie diese Eigenschaften von Webpart variieren, ist dies eine OpenType ohne festen Eigenschaften.
 
 [webPart]: webpart.md
 
@@ -24,7 +24,7 @@ Die Ressource **SitePageData** stellt die Eigenschaften für ein [WebPart](webpa
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],  
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sitePageData"
 }-->
 

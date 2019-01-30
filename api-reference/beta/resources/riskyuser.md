@@ -4,12 +4,12 @@ description: Stellt Azure AD-Benutzer, die gefährdet sind. Azure AD ständig we
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572185"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643909"
 ---
 # <a name="riskyusers-resource-type"></a>Ressourcentyp riskyUsers
 
@@ -35,9 +35,9 @@ Weitere Informationen zu Risiken-Ereignissen finden Sie unter [Azure Active Dire
 |`id`|`string`|Eindeutige Id des Benutzers gefährdet|
 |`isDeleted`|`bool`|Gibt an, ob der Benutzer gelöscht wurde. Mögliche Werte sind: `true`,`false`|
 |`isGuest`|`bool`|Gibt an, ob der Benutzer ein Gastbenutzer ist. Mögliche Werte sind: `true` und `false`. True, wenn die Identität des Benutzers im Hinblick auf die außerhalb der Mandant in Erwägung. Dieser Benutzer kann sein, eine B2B oder B2C Benutzer mit der Identität in Azure AD, MSA oder 3. Partei Identitätsanbieter vertraut wird. False, wenn die Identität des Benutzers im Hinblick auf die in den Mandanten in Erwägung|
-|`riskDetail`|`riskDetail`|Stellt die "Ursache" hinter einem bestimmten Zustand eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass keine Aktion in der Benutzer oder die Anmeldung bisher ausgeführt wurde.|
-|`riskLevel`|`riskLevel`|Stellt die allgemeinen Risikostufe eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `low`, `medium`, `high`, `hidden`, und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung wurde für den Schutz von Azure Active Directory-Identität nicht aktiviert.|
-|`riskState`|`riskState`|Stellt den 'Risiko Zustand"eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Die möglichen Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|`riskDetail`|`riskDetail`|Gibt den "Grund" für einen bestimmten Status eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass bisher keine Aktion für den Benutzer oder die Anmeldung ausgeführt wurde.|
+|`riskLevel`|`riskLevel`|Stellt die allgemeinen Risikostufe eines Benutzers riskant, Anmeldung oder ein Risikoereignis bereit. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war.|
+|`riskState`|`riskState`|Gibt den "Risikostatus" eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |`riskLastUpdatedDateTime`|`datetime`|Datum und Uhrzeit der letzten Aktualisierung der Benutzer riskant.|
 |`userDisplayName`|`string`|Anzeigename des Benutzers riskant.|
 |`userPrincipalName`|`string`|Benutzerprinzipalname riskant.|
@@ -46,9 +46,9 @@ Weitere Informationen zu Risiken-Ereignissen finden Sie unter [Azure Active Dire
 
 | Beziehung | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|id|string| Der eindeutige Bezeichner des Benutzers, mit denen ein bestimmtes Risiko-Ereignis zugeordnet ist.|
-|isGuest|Boolescher Wert| Ein riskant Benutzer kann entweder ein Home-Benutzer (B2E) oder ein Gast (B2B, B2C) sein.|
-|isDeleted|Boolescher Wert| Ein Benutzer kann oder kann nicht gelöscht werden. |
+|id|UserObjectId| Der eindeutige Bezeichner des Benutzers, mit denen ein bestimmtes Risiko-Ereignis zugeordnet ist.|
+|isGuest|isGuest| Ein riskant Benutzer kann entweder ein Home-Benutzer (B2E) oder ein Gast (B2B, B2C) sein.|
+|isDeleted|isDeleted| Ein Benutzer kann oder kann nicht gelöscht werden. |
 |riskState|riskState| Ein Benutzer riskant konnte in einem mehrerer Zustände vorhanden sein. |
 |riskDetail|riskDetail| Ein riskant Benutzer konnte aus mehreren Gründen in einem bestimmten Zustand sein. |
 |riskLevel|riskLevel| Ein riskant Benutzer kann eine der mehrere Risikoebenen betrachtet werden. |
@@ -60,8 +60,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyusers"
 }-->
 
 ```json

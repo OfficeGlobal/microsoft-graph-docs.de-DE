@@ -4,12 +4,12 @@ description: Es folgt eine JSON-Darstellung der Ressource.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe582c4568995710d882ab22ebb7f4683469fc0f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574747"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643797"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem-Ressourcentyp
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookItem"
+  "@odata.type": "microsoft.graph.outlookitem"
 }-->
 
 ```json
@@ -40,7 +40,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|categories|Zeichenfolgenauflistung||
+|categories|String collection||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |id|String| Schreibgeschützt.|

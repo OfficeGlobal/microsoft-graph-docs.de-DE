@@ -2,12 +2,12 @@
 title: Ressourcentyp publicClient
 description: Gibt die Einstellungen für nicht Web App oder Web-Api. (Mobile oder anderen öffentlichen Client wie eine installierte Anwendung, die auf einem Desktopgerät ausgeführt)
 localization_priority: Normal
-ms.openlocfilehash: 866e27b4ea3e1386b7cc69f967635d38641f121c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571842"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644056"
 ---
 # <a name="publicclient-resource-type"></a>Ressourcentyp publicClient
 
@@ -19,7 +19,7 @@ Gibt die Einstellungen für nicht Web App oder Web-Api. (Mobile oder anderen öf
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|redirectUris|Zeichenfolgenauflistung| Gibt die URLs der Benutzertoken für die Anmeldung an gesendet werden, oder die Umleitung, URIs, dass OAuth 2.0 Autorisierungscodes und Zugriffstoken gesendet werden. |
+|redirectUris|String-Sammlung| Gibt die URLs der Benutzertoken für die Anmeldung an gesendet werden, oder die Umleitung, URIs, dass OAuth 2.0 Autorisierungscodes und Zugriffstoken gesendet werden. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -29,7 +29,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publicClientApplication"
+  "@odata.type": "microsoft.graph.installedClient"
 }-->
 
 ```json

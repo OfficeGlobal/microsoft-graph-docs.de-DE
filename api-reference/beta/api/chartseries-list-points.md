@@ -4,12 +4,12 @@ description: Dient zum Abrufen einer Liste von chartPoints-Objekten.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4b58884e486f6c462401489540a85fe25352c1c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 435e7cbd53653c925740bdcbf823a6f91009b3a9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572948"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643825"
 ---
 # <a name="list-points"></a>Punkte auflisten
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint",
+  "@odata.type": "microsoft.graph.chartPoint",
   "isCollection": true
 } -->
 ```http

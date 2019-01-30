@@ -4,12 +4,12 @@ description: Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjek
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 78f030e49f5e9caad5cf505be0118eee5b732752
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573669"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644049"
 ---
 # <a name="update-message"></a>Nachricht aktualisieren
 
@@ -54,10 +54,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
 |isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
-|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten mehrwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
 |replyTo|Empfänger-Sammlung|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen. Kann nur aktualisiert werden, wenn isDraft = True.|
 |sender|Empfänger|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren. Kann beim Senden einer Nachricht aus einem [freigegebenen Postfach](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) oder beim Senden einer Nachricht als[Stellvertretung](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) aktualisiert werden. Der Wert muss auf jeden Fall dem tatsächlich verwendeten Postfach entsprechen.|
-|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die Nachricht definierten einwertigen erweiterten Eigenschaften. Nullwerte zulassend.|
 |subject|String|Der Betreff der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
 |toRecipients|Empfänger-Sammlung|Die An:-Empfänger der Nachricht. |
 

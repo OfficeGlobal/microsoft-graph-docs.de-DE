@@ -4,12 +4,12 @@ description: Kapselt die Formateigenschaften einer Diagrammlegende.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0ce9ac757f255bbee0334f5c6a3f397736a81884
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570946"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640077"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat-Ressourcentyp
 
@@ -27,28 +27,8 @@ Keine
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Stellt die Füllung eines Objekts dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
-|Schriftart|[WorkbookChartFont](chartfont.md)|Stellt die Zeichenformatierung wie Schriftart, Schriftgrad, Farbe usw. einer Diagrammlegende dar. Schreibgeschützt.|
-
-
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartLegendFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
-
+|fill|[ChartFill](chartfill.md)|Stellt die Füllung eines Objekts dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
+|Schriftart|[ChartFont](chartfont.md)|Stellt die Zeichenformatierung wie Schriftart, Schriftgrad, Farbe usw. einer Diagrammlegende dar. Schreibgeschützt.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

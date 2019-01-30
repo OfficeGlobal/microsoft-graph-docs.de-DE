@@ -2,12 +2,12 @@
 title: referenceAttachment-Ressourcentyp
 description: 'Einen Link zu einem Ordner oder Datei (beispielsweise eine Textdatei oder Word-Dokument) auf einen OneDrive for Business Cloud Laufwerk oder andere unterstützte Speicherorte, zugeordnet ist '
 localization_priority: Normal
-ms.openlocfilehash: adf078f7ba678a4fe90a51972c5e4be4788c9c0c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 59ebb0af10a64195643cb7073d1206790ae6a875
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574558"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644070"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment-Ressourcentyp
 
@@ -32,12 +32,12 @@ Abgeleitet von [attachment](attachment.md).
 |isFolder|Boolean|Gibt an, ob die Anlage eine Verknüpfung zu einem Ordner ist. Setzen Sie müssen diese auf "true" Wenn **SourceUrl** eine Verknüpfung zu einem Ordner ist. Optional.|
 |isInline|Boolean|Wird auf „true“ festgelegt, wenn die Anlage inline im Text des einbettenden Objekts angezeigt wird. Optional.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Anlage. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Optional.|
-|name|String|Der Text, der unterhalb des Symbols, das die eingebettete Anlage darstellt angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein. Erforderlich.|
-|Berechtigung|referenceAttachmentPermission|Gibt die Berechtigungen für die Anlage durch den Typ des Anbieters in **ProviderType**erteilt. Mögliche Werte sind: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView` und `organizationEdit`. Optional.|
+|name|String|Der Text, der unterhalb des Symbols, das die eingebettete Anlage darstellt angezeigt wird. Dies muss nicht der tatsächliche Dateiname sein. Erforderlich. |
+|Berechtigung|ReferenceAttachmentPermissions|Gibt die Berechtigungen für die Anlage durch den Typ des Anbieters in **ProviderType**erteilt. Mögliche Werte sind: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView` und `organizationEdit`. Optional.|
 |previewUrl|String|Betrifft nur eine Referenz Anlage ein Bild - URL, um ein Vorschaubild abzurufen. Verwenden Sie **ThumbnailUrl** und **PreviewUrl** nur, wenn **SourceUrl** eine Bilddatei identifiziert. Optional.|
-|providerType| referenceAttachmentProvider |Der Typ der Anbieter, der eine Anlage von diesem ContentType unterstützt. Mögliche Werte: sind `other`, `oneDriveBusiness`, `oneDriveConsumer` und `dropbox`. Optional.|
+|providerType|ReferenceAttachmentProviders|Der Typ der Anbieter, der eine Anlage von diesem ContentType unterstützt. Mögliche Werte: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Optional.|
 |size|Int32|Die Größe der Metadaten in Bytes, die für die Nachricht für die Anlage Verweis gespeichert ist. Dieser Wert gibt nicht die Größe der tatsächlichen Datei an. Optional.|
-|SourceUrl|String|URL, um den Inhalt der Anlage abzurufen. Ist dies eine URL zu einem Ordner, legen Sie dann für den Ordner in Outlook oder Outlook im Web ordnungsgemäß anzuzeigende **IsFolder** auf "true". Erforderlich.|
+|SourceUrl|String|URL, um den Inhalt der Anlage abzurufen. Ist dies eine URL zu einem Ordner, legen Sie dann für den Ordner in Outlook oder Outlook im Web ordnungsgemäß anzuzeigende **IsFolder** auf "true". Erforderlich. |
 |thumbnailUrl|String|Betrifft nur eine Referenz Anlage ein Bild - URL ein Miniaturbild abgerufen. Verwenden Sie **ThumbnailUrl** und **PreviewUrl** nur, wenn **SourceUrl** eine Bilddatei identifiziert. Optional.|
 
 ## <a name="relationships"></a>Beziehungen
@@ -65,9 +65,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "permission": "referenceAttachmentPermission",
+  "permission": "string",
   "previewUrl": "string",
-  "providerType": "referenceAttachmentProvider",
+  "providerType": "string",
   "size": 1024,
   "sourceUrl": "string",
   "thumbnailUrl": "string"

@@ -4,12 +4,12 @@ description: Stellt den Titel einer Diagrammachse dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e0ad1385bb46dc4ff0e3f6bc9a3acfb861e7af88
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572710"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644084"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle-Ressourcentyp
 
@@ -22,8 +22,8 @@ Stellt den Titel einer Diagrammachse dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartAxisTitle abrufen](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.|
-|[Aktualisieren](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |Dient zum Aktualisieren de chartAxisTitle-Objekts. |
+|[ChartAxisTitle abrufen](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartAxisTitle-Objekts.|
+|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |Dient zum Aktualisieren de chartAxisTitle-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -34,24 +34,24 @@ Stellt den Titel einer Diagrammachse dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.|
+|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Stellt die Formatierung des Diagrammachsentitels dar. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
+  "visible": true
 }
 
 ```

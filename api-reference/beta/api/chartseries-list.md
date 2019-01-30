@@ -4,12 +4,12 @@ description: Dient zum Abrufen einer Liste von chartseries-Objekten.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c3d8cfbe604145965ad31ea951d7bb399468210
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 158446a1164dfbde5ae249fdd8e506f8aa99cf51
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571002"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643895"
 ---
 # <a name="list-chartseriescollection"></a>ChartSeriesCollection auflisten
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries",
+  "@odata.type": "microsoft.graph.chartSeries",
   "isCollection": true
 } -->
 ```http
