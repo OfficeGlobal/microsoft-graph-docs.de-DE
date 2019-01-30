@@ -3,12 +3,12 @@ title: Ressourcentyp Aktivität
 description: Stellt eine einzelne Aktivität in einer app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als Element Verlauf erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3d05c684d9498378a07a944f7aebd5e8a6b97f53
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573837"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641274"
 ---
 # <a name="activity-resource-type"></a>Ressourcentyp Aktivität
 
@@ -45,10 +45,10 @@ Ihre Benutzeraktivitäten werden in Cortana und Windows-Zeitachsen Benutzererleb
 |activationUrl | Zeichenfolge | Erforderlich. So starten Sie die Aktivität im systemeigenen optimal dargestellt durch die AppId verwendete URL. Starten eine webbasierten app möglicherweise, wenn keine systemeigene Anwendung vorhanden ist.|
 |fallbackUrl | Zeichenfolge | Optional. URL zum Starten der Aktivitätsfeeds in einer webbasierten-app verwendet werden, falls verfügbar.|
 |contentUrl | Zeichenfolge | Optional. Verwendet den Fall, dass der Inhalt außerhalb einer systemeigenen oder webbasierte app-Benutzeroberfläche (beispielsweise einen Zeiger auf ein Element in einem RSS-Feed) gerendert werden kann.|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Erforderlich. Das Objekt mit Informationen zum Rendern der Aktivitätsfeeds in die UX.|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Erforderlich.  Das Objekt mit Informationen zum Rendern der Aktivitätsfeeds in die UX.|
 |ContentInfo dar | Nicht typisierte JSON-Objekt | Optional. Eine benutzerdefinierte Datenelement - JSON-LD extensible Beschreibung des Inhalts entsprechend [schema.org](https://schema.org) Syntax.|
 |expirationDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server abgelaufen.|
-|status | Enum-Zeichenfolge | Vom Server festgelegt. Einen Statuscode verwendet, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
+|status | EnumType | Vom Server festgelegt. Einen Statuscode verwendet, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -87,7 +87,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "active | updated | deleted | ignored",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

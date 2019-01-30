@@ -1,17 +1,17 @@
 ---
-title: Aktualisieren der Anwendung
+title: Update application
 description: Aktualisieren Sie die Eigenschaften des Application-Objekts.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9965a46e340063940e1a9af18a89ada7e492bf26
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572213"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642828"
 ---
-# <a name="update-application"></a>Aktualisieren der Anwendung
+# <a name="update-application"></a>Update application
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Application.ReadWrite.OwnedBy Application.ReadWrite.All |
+|Anwendung | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ PATCH /applications/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich.  |
+| Autorisierung  | string  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
@@ -42,22 +42,22 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |allowPublicClient|Boolean| Gibt an, ob die Anwendung als öffentliche Client fungieren kann. Beispielsweise eine installierte Anwendung, die auf einem mobilen Gerät ausgeführt. Der Standardwert lautet *false*. |
-|API|[API](../resources/api.md)| Gibt die Einstellungen für eine API-Anwendung. |
-|appRoles|[AppRole](../resources/approle.md) -Auflistung|Die Auflistung der Anwendungsrollen, die eine Anwendung deklarieren kann. Diese Funktionen können Benutzer, Gruppen oder Dienstprinzipale zugewiesen werden. Lässt keine NULL-Werte zu.|
-|applicationAliases|Zeichenfolgenauflistung| Die URIs, die die Anwendung zu bestimmen. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine NULL-Werte zu. |
-|createdDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung registriert wurde. |
-|deletedDateTime|DateTimeOffset| Das Datum und die Zeit, die die Anwendung gelöscht wurde. |
-|displayName|String|Der Anzeigename für die Anwendung. |
-|id|String|Der eindeutige Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
-|Info|[informationalUrl](../resources/informationalurl.md)| Grundlegende Profilinformationen der Anwendung. | Gibt die Einstellungen für installierte Clients wie desktop oder mobilen Geräten. |
-|keyCredentials|[KeyCredential](../resources/keycredential.md) -Auflistung|Die Auflistung der wichtigsten Anmeldeinformationen der Anwendung nicht zugeordnete NULL-Werte zulässt. |
-|logo|Stream|Das Hauptfenster Logo für die Anwendung. Lässt keine NULL-Werte zu. |
-|orgRestrictions|Zeichenfolgenauflistung| Die Organisationseinheit TenantIds, die die Anwendung beschränkt ist.  Wenn die Auflistung leer ist, ist die Anwendung mit mehreren Mandanten (nicht eingeschränkt). Wenn die Auflistung TenantIds enthält, ist die Anwendung auf die Organisationseinheit TenantIds in der Auflistung beschränkt. Angeben von anderen Mandanten, aber nicht die TenantId, in dem die Anwendung registriert ist, impliziert, dass die TenantId der Anwendung indirekt enthalten ist. |
-|passwordCredentials|[PasswordCredential](../resources/passwordcredential.md) -Auflistung|Die Auflistung von Anmeldeinformationen, die mit der Anwendung verbunden sind. Lässt keine NULL-Werte zu.|
+|api|[api](../resources/api.md)| Legt die Einstellungen für eine API-Anwendung fest. |
+|appRoles|[appRole](../resources/approle.md)-Sammlung|Die Sammlung der Anwendungsrollen, die eine Anwendung möglicherweise deklariert. Diese Rollen können Benutzern, Gruppen oder Dienstprinzipalen zugewiesen werden. Lässt keine Nullwerte zu.|
+|applicationAliases|String-Sammlung| Die URIs, die die Anwendung identifizieren. Weitere Informationen finden Sie unter [Anwendungsobjekte und Dienstprinzipalobjekte](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Der *any*-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Lässt keine Nullwerte zu. |
+|createdDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungsregistrierung. |
+|deletedDateTime|DateTimeOffset| Datum und Uhrzeit der Anwendungslöschung. |
+|displayName|String|Der Anzeigename der Anwendung. |
+|id|String|Eindeutiger Bezeichner für die Anwendung. Geerbt von [directoryObject](../resources/directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt. |
+|info|[informationalUrl](../resources/informationalurl.md)| Grundlegende Profilinformationen der Anwendung. | Legt die Einstellungen für installierte Clients wie Desktop- oder mobile Geräte fest. |
+|keyCredentials|[keyCredential](../resources/keycredential.md)-Sammlung|Die Sammlung der wichtigsten Anmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu. |
+|logo|Stream|Das Hauptlogo für die Anwendung. Lässt keine Nullwerte zu. |
+|orgRestrictions|String-Sammlung| Die Organisationseinheit TenantIds, die die Anwendung beschränkt ist.  Wenn die Auflistung leer ist, ist die Anwendung mit mehreren Mandanten (nicht eingeschränkt). Wenn die Auflistung TenantIds enthält, ist die Anwendung auf die Organisationseinheit TenantIds in der Auflistung beschränkt. Angeben von anderen Mandanten, aber nicht die TenantId, in dem die Anwendung registriert ist, impliziert, dass die TenantId der Anwendung indirekt enthalten ist. |
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md)-Sammlung|Die Sammlung der Kennwortanmeldeinformationen, die mit der Anwendung verknüpft sind. Lässt keine Nullwerte zu.|
 |preAuthorizedApplications|[PreAuthorizedApplication](../resources/preauthorizedapplication.md) -Auflistung| Listen-Anwendungen und angeforderten Berechtigungen für implizite Zustimmung. Erfordert ein Administrator Zustimmung an die Anwendung bereitgestellt haben. PreAuthorizedApplications erfordern keinen den Benutzer, die angeforderten Berechtigungen zuzustimmen. In PreAuthorizedApplications aufgelisteten Berechtigungen erfordern keine Zustimmung des Benutzers. Keine weiteren angeforderten Berechtigungen nicht in PreAuthorizedApplications aufgeführten erfordern jedoch Zustimmung des Benutzers. |
-|requiredResourceAccess|[RequiredResourceAccess](../resources/requiredresourceaccess.md) -Auflistung|Gibt die Ressourcen, die diese Anwendung benötigt Zugriff auf und den Satz von OAuth berechtigungsbereiche und Anwendungsrollen, die unter jeder dieser Ressourcen benötigt werden. Diese vor Konfiguration erforderlichen Ressourcenzugriff Laufwerke der Zustimmung wünschen. Lässt keine NULL-Werte zu.|
-|tags|Zeichenfolgenauflistung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
-|web|[webApplication](../resources/web.md)| Gibt die Einstellungen für eine Webanwendung. |
+|requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md)-Sammlung|Gibt Ressourcen an, auf die diese Anwendung zugreifen muss, sowie den Satz von OAuth-Berechtigungsbereichen und Anwendungsrollen, die unter den jeweiligen Ressourcen benötigt werden. Durch diese Vorkonfiguration des erforderlichen Ressourcenzugriffs wird die Zustimmungsoberfläche bestimmt. Lässt keine Nullwerte zu.|
+|tags|String-Sammlung| Benutzerdefinierte Zeichenfolgen, die zum Kategorisieren und Identifizieren der Anwendung verwendet werden können. |
+|web|[web](../resources/web.md)| Legt die Einstellungen für eine Webanwendung fest. |
 
 ## <a name="response"></a>Antwort
 

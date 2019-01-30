@@ -2,12 +2,12 @@
 title: Ressourcentyp stringKeyObjectValuePair
 description: Schlüssel-Wert-Paar, in denen der Schlüssel ist eine Zeichenfolge und der Wert ist ein beliebiges JSON-Objekt, darstellt. Dies ist ein open OData-Typ, die eine Eigenschaft mit dem Namen haben erwartet `value` also ein gültiges JSON-Objekt.
 localization_priority: Normal
-ms.openlocfilehash: 819a2e004ee712f1250652ce0b3811940545e643
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572171"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642926"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>Ressourcentyp stringKeyObjectValuePair
 
@@ -19,7 +19,7 @@ Schlüssel-Wert-Paar, in denen der Schlüssel ist eine Zeichenfolge und der Wert
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Key|String|Key.|
-|Wert|Json|Beliebige JSON-Objekt.|
+|Wert|Jede|Beliebige JSON-Objekt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -35,8 +35,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "key": "String",
-  "value":"Json"
+  "key": "String"
 }
 
 ```

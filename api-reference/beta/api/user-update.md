@@ -4,12 +4,12 @@ description: Mit dieser API können Sie die Eigenschaften eines Benutzerobjekts 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: beb8277e843b9514d9588ed915ad07040b73fb43
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f8be2b9fa3c135e710b8a0bcf819187e6cb57959
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577130"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643220"
 ---
 # <a name="update-user"></a>Benutzer aktualisieren
 
@@ -43,16 +43,16 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |:---------------|:--------|:----------|
 |aboutMe|String|Ein Freihandform-Texteingabefeld, in dem der Benutzer sich selbst beschreiben kann.|
 |accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Unterstützt $filter.    |
-|assignedLicenses|[microsoft.graph.assignedLicense](../resources/assignedlicense.md) -Auflistung|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|Die Lizenzen, die dem Benutzer zugewiesen sind. Lässt keine NULL-Werte zu.            |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |city|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
 |Land|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |department|String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
 |displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
-|employeeId|String|Die Mitarbeiter-ID von der Organisation, die dem Benutzer zugewiesen. Unterstützt $filter.|
+|employeeId|String|Die Mitarbeiter-ID, die dem Benutzer von der Organisation zugewiesen wurde. Unterstützt $filter.|
 |givenName|String|Der Vorname des Benutzers. Unterstützt $filter.|
 |hireDate|DateTimeOffset|Das Einstellungsdatum des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|interests|Zeichenfolgenauflistung|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
+|interests|String collection|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |mailNickname|String|Der E-Mail-Alias für den Benutzer. Diese Eigenschaft muss beim Erstellen eines Benutzers angegeben werden. Unterstützt $filter.|
 |mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
@@ -60,14 +60,14 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |officeLocation|String|Der Bürostandort der Firma des Benutzers|
 |onPremisesImmutableId|String|Diese Eigenschaft wird verwendet, um ein lokales Active Directory-Benutzerkonto dem Azure AD-Benutzerobjekt zuzuordnen. Diese Eigenschaft muss angegeben werden, wenn ein neues Benutzerkonto in Graph erstellt wird, wenn Sie eine Verbunddomäne für die **UserPrincipalName**-Eigenschaft (UPN) des Benutzers verwenden. **Wichtig:** Die Zeichen **$** und **_** können nicht verwendet werden, wenn Sie diese Eigenschaft angeben. Unterstützt $filter.                            |
 |passwordPolicies|String|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Beide können zusammen angegeben werden, z. B.: „DisablePasswordExpiration, DisableStrongPassword“.|
-|passwordProfile|[microsoft.graph.passwordProfile](../resources/passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
-|pastProjects|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der erledigten Projekte eines Benutzers.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
+|pastProjects|String collection|Eine Liste zur Aufzählung der erledigten Projekte eines Benutzers.|
 |postalCode|String|Die Postleitzahl für die Postanschrift des Benutzers. Die Postleitzahl ist für das Land/die Region des Benutzers spezifisch. In den USA enthält dieses Attribut den ZIP Code.|
 |preferredLanguage|String|Die bevorzugte Sprache für den Benutzer. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en-US“.|
 |preferredName|String|Der bevorzugte Name für den Benutzer.|
-|responsibilities|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der Verantwortlichkeiten eines Benutzers.|
-|schools|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der vom Benutzer besuchten Schulen.|
-|skills|Zeichenfolgenauflistung|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
+|responsibilities|String collection|Eine Liste zur Aufzählung der Verantwortlichkeiten eines Benutzers.|
+|schools|String collection|Eine Liste zur Aufzählung der vom Benutzer besuchten Schulen.|
+|skills|String collection|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
 |state|String|Bundesland oder Kanton in der Adresse des Benutzers. Unterstützt $filter.|
 |streetAddress|String|Die Straße der Firma des Benutzers.|
 |surname|String|Der Nachname des Benutzers. Unterstützt $filter.|

@@ -4,12 +4,12 @@ description: Rufen Sie eine Liste der direkte Mitglieder der Gruppe. Eine Gruppe
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 07004a315bc2b35777c080f7bbdbab8f433f0942
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577452"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640889"
 ---
 # <a name="list-group-members"></a>Liste Gruppenmitglieder
 
@@ -25,7 +25,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Directory.Read.All User.Read.All |
+|Application | Directory.Read.All User.Read.All |
 
 > Hinweis: Um die Mitglieder einer Gruppe ausgeblendeten Mitgliedschaften aufzulisten, ist die Berechtigung Member.Read.Hidden erforderlich.
  
@@ -41,7 +41,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters)
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
@@ -75,9 +75,8 @@ Content-type: application/json
 
 {
   "value": [
-    {
     "@odata.type": "#microsoft.graph.user",
-    
+    {
       "businessPhones": [
         "businessPhones-value"
       ],

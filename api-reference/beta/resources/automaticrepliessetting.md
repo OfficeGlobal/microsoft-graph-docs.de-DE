@@ -2,12 +2,12 @@
 title: Ressourcentyp automaticRepliesSetting
 description: 'Konfigurationseinstellungen automatisch benachrichtigt den Absender einer eingehenden e-Mail mit einer Nachricht aus der '
 localization_priority: Normal
-ms.openlocfilehash: 6755fda99f7a6186316b6198bfa975d73e14b09b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5ff16aa93042e0d66063cb62de7a8dcdf870c892
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576773"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641253"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Ressourcentyp automaticRepliesSetting
 
@@ -19,12 +19,12 @@ Konfigurationseinstellungen zum automatischen Benachrichtigen des Absenders bei 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|externalAudience|externalAudienceScope| Der Satz von außerhalb des angemeldeten Benutzers Unternehmens Benutzergruppe, die **ExternalReplyMessage**erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled`. Die möglichen Werte sind: `none`, `contactsOnly`, `all`.|
+|externalAudience|String| Die Zielgruppe außerhalb der Organisation des angemeldeten Benutzers, der **ExternalReplyMessage** erhält, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. Mögliche Werte: `none`, `contactsOnly`, `all`.|
 |externalReplyMessage|string|Die automatische Antwort an die angegebene externe Zielgruppe, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist.|
 |internalReplyMessage|string|Die automatische Antwort an die interne Zielgruppe in der Organisation des angemeldeten Benutzers, wenn **Status** `AlwaysEnabled` oder `Scheduled` ist. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die zum Beenden der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Datum und Uhrzeit, die für den Beginn der automatischen Antworten festgelegt werden, wenn **Status** auf `Scheduled` gesetzt ist.|
-|status|automaticRepliesStatus|Status der Konfigurationen für automatische Antworten. Die möglichen Werte sind: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|String|Konfigurationensstatus für automatische Antworten. Mögliche Werte: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

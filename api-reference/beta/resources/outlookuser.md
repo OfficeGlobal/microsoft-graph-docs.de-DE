@@ -4,12 +4,12 @@ description: Stellt die für einen Benutzer verfügbaren Outlook-Dienste dar.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f8265f9da285ce0f52e6201ffdb1298893b86753
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574096"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643545"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser-Ressourcentyp
 
@@ -29,7 +29,7 @@ Stellt die für einen Benutzer verfügbaren Outlook-Dienste dar.
 |[Erstellen von outlookTaskGroup](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| Erstellen eines Outlook-"Task Group" im Postfach des Benutzers an.|
 |[Liste taskGroups](../api/outlookuser-list-taskgroups.md) |[OutlookTaskGroup](outlooktaskgroup.md) -Auflistung| Rufen Sie die Outlook-Vorgangsgruppen im Postfach des Benutzers.|
 |[Erstellen von outlookTask](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| Erstellen Sie eine Outlook-Aufgabe in der Standardgruppe Aufgabe (`My Tasks`) und Aufgabe Standardordner (`Tasks`) in das Postfach des Benutzers.|
-|[Aufgaben auflisten](../api/outlookuser-list-tasks.md) |[OutlookTask](outlooktask.md) -Auflistung| Rufen Sie die Outlook-Aufgaben in das Postfach des Benutzers.|
+|[Aufgaben auflisten](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md)-Sammlung| Rufen Sie die Outlook-Aufgaben in das Postfach des Benutzers.|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md)-Sammlung | Abrufen der Liste von Gebietsschemas und Sprachen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert. |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md)-Sammlung | Abrufen der Liste von Zeitzonen, die für den Benutzer unterstützt werden, wie auf dem Postfachserver des Benutzers konfiguriert. |
 
@@ -41,21 +41,10 @@ Keine
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md)-Sammlung| Eine Liste von Kategorien, die für den Benutzer definiert sind. | 
-|taskFolders|[OutlookTaskFolder](outlooktaskfolder.md) -Auflistung| Outlook-Aufgabe-Ordner des Benutzers. Schreibgeschützt. Nullwerte zulassend.|
-|taskGroups|[OutlookTaskGroup](outlooktaskgroup.md) -Auflistung| Der Benutzer Outlook Vorgangsgruppen. Schreibgeschützt. Nullwerte zulassend.|
-|tasks|[OutlookTask](outlooktask.md) -Auflistung| Outlook-Aufgaben des Benutzers. Schreibgeschützt. Nullwerte zulassend.|
+|taskFolders|[OutlookTaskFolder](outlooktaskfolder.md) -Auflistung| Outlook-Aufgabe-Ordner des Benutzers. Schreibgeschützt. Lässt Nullwerte zu.|
+|taskGroups|[OutlookTaskGroup](outlooktaskgroup.md) -Auflistung| Der Benutzer Outlook Vorgangsgruppen. Schreibgeschützt. Lässt Nullwerte zu.|
+|tasks|[outlookTask](outlooktask.md)-Sammlung| Outlook-Aufgaben des Benutzers. Schreibgeschützt. Lässt Nullwerte zu.|
 
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.outlookUser"
-}-->
-```json
-{
-}
-
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

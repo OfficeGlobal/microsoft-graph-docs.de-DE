@@ -1,19 +1,19 @@
 ---
-title: Liste servicePrincipals
-description: Abrufen einer Liste von ServicePrincipal-Objekten.
+title: List servicePrincipals
+description: Abrufen einer Liste von servicePrincipal-Objekten.
 localization_priority: Normal
-ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574257"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643629"
 ---
-# <a name="list-serviceprincipals"></a>Liste servicePrincipals
+# <a name="list-serviceprincipals"></a>List servicePrincipals
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrufen einer Liste von ServicePrincipal-Objekten.
+Abrufen einer Liste von servicePrincipal-Objekten.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Application.ReadWrite.All Directory.Read.All |
+|Anwendung | Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -39,7 +39,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 ## <a name="request-headers"></a>Anforderungsheader
 | Name | Beschreibung |
 |:----------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -66,7 +66,7 @@ Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
+  "@odata.type": "microsoft.graph.serviceprincipal",
   "isCollection": true
 } -->
 ```http

@@ -3,12 +3,12 @@ title: Datenerweiterung erstellen
 description: Erstellen Sie eine open-Erweiterung (OpenTypeExtension-Objekt) und Hinzufügen von benutzerdefinierten Eigenschaften
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: cce327258ac0cf4e0bf626cbaed33d6d125c8acf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571747"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642709"
 ---
 # <a name="create-open-extension"></a>Datenerweiterung erstellen
 
@@ -22,9 +22,9 @@ Erstellen Sie eine open-Erweiterung ([OpenTypeExtension](../resources/opentypeex
 
 Je nach der Ressource, die Sie die Erweiterung im erstellen und die Berechtigung Typ (delegierte oder-Anwendung) angefordert, die Berechtigung, die in der folgenden Tabelle angegebenen mit den geringsten ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).
 
-| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Application |
 |:-----|:-----|:-----|:-----|
-| [Gerät](../resources/device.md) | Directory.AccessAsUser.All | Nicht unterstützt | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Nicht unterstützt | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Nicht unterstützt | Group.ReadWrite.All |
 | [group event](../resources/event.md) | Group.ReadWrite.All | Nicht unterstützt | Nicht unterstützt |
@@ -94,7 +94,7 @@ Bieten Sie ein JSON-Hauptteil eines [OpenTypeExtension](../resources/opentypeext
 
 | Name       | Wert |
 |:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
+| @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
 Beim Erstellen einer Erweiterung in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu dem neuen **openTypeExtension**-Objekt eine JSON-Darstellung der zur Erstellung einer solchen Ressourceninstanz erforderlichen Eigenschaften angeben.
@@ -125,7 +125,7 @@ Im ersten Beispiel werden mit ein und demselben Aufruf eine Nachricht und eine E
 - Die für eine neue Nachricht typischen Eigenschaften **subject**, **body** und **toRecipients**
 - Daneben die folgenden Parameter der Erweiterung:
 
-  - Den Typ `microsoft.graph.openTypeExtension`
+  - Den Typ `Microsoft.Graph.OpenTypeExtension`
   - Den Erweiterungsnamen „Com.Contoso.Referral“
   - Zusätzliche Daten, die als drei benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden: `companyName`, `expirationDate`, und `dealValue`.
 
@@ -151,7 +151,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "microsoft.graph.openTypeExtension",
+      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -228,7 +228,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "microsoft.graph.openTypeExtension",
+      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -247,7 +247,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 Das zweite Beispiel erstellt eine Erweiterung in der angegebenen Nachricht. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ `microsoft.graph.openTypeExtension`
+- Den Typ `Microsoft.Graph.OpenTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Referral“
 - Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`
 
@@ -259,7 +259,7 @@ Das zweite Beispiel erstellt eine Erweiterung in der angegebenen Nachricht. Der 
 POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 
 {
-  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -278,7 +278,7 @@ Die Antwort für das zweite Beispiel sehen Sie unten. Der Antworttext enthält d
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -286,7 +286,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -303,7 +303,7 @@ Content-type: application/json
 
 Das dritte Beispiel erstellt eine Erweiterung in dem angegebenen Gruppenereignis. Der Anforderungstext enthält die folgenden Parameter für die Erweiterung:
 
-- Den Typ `microsoft.graph.openTypeExtension`
+- Den Typ `Microsoft.Graph.OpenTypeExtension`
 - Den Erweiterungsnamen „Com.Contoso.Deal“
 - Zusätzliche Daten, die als 3 benutzerdefinierte Eigenschaften in der JSON-Nutzlast gespeichert werden sollen: `companyName`, `dealValue` und `expirationDate`
 
@@ -315,7 +315,7 @@ Das dritte Beispiel erstellt eine Erweiterung in dem angegebenen Gruppenereignis
 POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
 
 {
-  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -330,7 +330,7 @@ Unten sehen Sie die Antwort auf die Anforderung im dritten Beispiel:
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -338,7 +338,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -372,7 +372,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "microsoft.outlookServices.openTypeExtension",
+      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",

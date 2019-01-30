@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des tablecolumn-Objekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b56a37cd0fa55c2d996b8df16a7bf326daaa0da3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1287cb8c7c8e9b477d1e103a1dc845cbb37b3b87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575237"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641673"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn aktualisieren
 
@@ -42,7 +42,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|values|microsoft.graph.Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="response"></a>Antwort
 

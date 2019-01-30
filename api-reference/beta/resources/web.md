@@ -1,28 +1,28 @@
 ---
 title: Web-Ressourcentyp
-description: Gibt die Einstellungen für eine Webanwendung.
+description: Legt die Einstellungen für eine Webanwendung fest.
 localization_priority: Normal
-ms.openlocfilehash: 281a3f23dd0e22cae6b3ca2b67e2e9cd8b400740
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572717"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643510"
 ---
 # <a name="web-resource-type"></a>Web-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gibt die Einstellungen für eine Webanwendung.
+Legt die Einstellungen für eine Webanwendung fest.
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft | Typ | Beschreibung |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Gibt an, ob dieser Webanwendung mithilfe des impliziten OAuth 2.0-Fluss Token angefordert werden kann.|
-|logoutUrl|String| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll. |
+|logoutUrl|Zeichenfolge| Gibt die URL an, die vom Autorisierungsdienst von Microsoft verwendet wird, um einen Benutzer mithilfe von [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html)-, [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html)- oder SAML-Abmeldeprotokollen abzumelden. |
 |oauth2AllowImplicitFlow|Boolean| Veraltet. Nicht verwenden. | 
-|redirectUris|Zeichenfolgenauflistung| Gibt die URLs der Benutzertoken für die Anmeldung an gesendet werden, oder die Umleitung, URIs, dass OAuth 2.0 Autorisierungscodes und Zugriffstoken gesendet werden. |
+|redirectUris|String-Sammlung| Gibt die URLs der Benutzertoken für die Anmeldung an gesendet werden, oder die Umleitung, URIs, dass OAuth 2.0 Autorisierungscodes und Zugriffstoken gesendet werden. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -32,7 +32,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.webApplication"
+  "@odata.type": "microsoft.graph.web"
 }-->
 
 ```json

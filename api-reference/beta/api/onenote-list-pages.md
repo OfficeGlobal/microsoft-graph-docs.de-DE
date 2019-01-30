@@ -4,18 +4,18 @@ description: Mit dieser API können Sie eine Liste von Objekten des Typs page ab
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1048988d5fc0e942fe3433f6ef29b1376d4d6591
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4717428dc7b45d893993dd366eb33137000d3bb3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571142"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640798"
 ---
 # <a name="list-pages"></a>Seiten auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mit dieser API können Sie eine Liste von Objekten des Typs [page](../resources/onenotepage.md) abrufen.
+Mit dieser API können Sie eine Liste von Objekten des Typs [page](../resources/page.md) abrufen.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -51,7 +51,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [page](../resources/onenotepage.md)-Objekten im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [page](../resources/page.md)-Objekten im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

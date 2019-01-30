@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des Diagrammobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e668b8d9d6184398729ed5079be27f75ae5d3e03
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572885"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640266"
 ---
 # <a name="update-chart"></a>Diagramm aktualisieren
 
@@ -49,7 +49,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChart](../resources/chart.md) -Objekt aus der Antwort.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [Chart](../resources/chart.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -72,7 +72,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 200 OK

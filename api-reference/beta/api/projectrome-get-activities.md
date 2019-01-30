@@ -3,12 +3,12 @@ title: Die Benutzeraktivitäten abrufen
 description: Rufen Sie Aktivitäten für einen bestimmten Benutzer. Aktivitäten ohne gespeichert werden soll, im Gegensatz zu der **letzte** OData-Funktion zurückgegeben. Die Berechtigung UserActivity.ReadWrite.CreatedByApp gelten zusätzliche Filter auf die Antwort, damit nur Aktivitäten, die von der Anwendung erstellt zurückgegeben werden. Diese serverseitige Filterung auftreten auf leere Seiten, wenn der Benutzer besonders aktiv ist und anderen Applikationen neuere Aktivitäten erstellt haben. Wenn Sie Ihre Anwendung Aktivitäten erhalten möchten, verwenden Sie die **NextLink** -Eigenschaft für die Paginierung.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: acca0926e08887143c12bed6517efbc87e41d178
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575730"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643461"
 ---
 # <a name="get-user-activities"></a>Die Benutzeraktivitäten abrufen
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | UserActivity.ReadWrite.CreatedByApp    |
 |Delegiert (persönliches Microsoft-Konto) | UserActivity.ReadWrite.CreatedByApp    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -56,7 +56,7 @@ Es folgen einige Beispiele für unterstützte Abfragen mit URL-Codierung:
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Erforderlich.|
+|Autorisierung | string | Bearer {token}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -88,8 +88,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.activity"
+  "@odata.type": "Collection(microsoft.graph.activity)"
 } -->
 
 ```http
@@ -100,7 +99,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",

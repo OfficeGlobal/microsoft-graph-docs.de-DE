@@ -4,12 +4,12 @@ description: Dient zum Abrufen einer Liste von Diagrammobjekten.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e4739d90e3e80335ad99b8b7645f48001f1c77e0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f20ce9298ebf61b080a8d815e7b87579322b307b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574677"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640231"
 ---
 # <a name="list-chartcollection"></a>ChartCollection auflisten
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart",
+  "@odata.type": "microsoft.graph.chart",
   "isCollection": true
 } -->
 ```http

@@ -1,21 +1,21 @@
 ---
 title: 'Rufen Sie: Datensatz'
-description: Notieren Sie den Anruf.
+description: Aufzeichnen des Anrufs.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574859"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641904"
 ---
 # <a name="call-record"></a>Rufen Sie: Datensatz
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Notieren Sie den Anruf.
+Aufzeichnen des Anrufs.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -43,14 +43,14 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 
 | Parameter      | Typ    |Beschreibung|
 |:---------------|:--------|:----------|
-|fordert|[MediaPrompt](../resources/mediaprompt.md) -Auflistung | Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet. Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden |
+|fordert|[Mediaprompt](../resources/mediaprompt.md) -Auflistung | Auflistung von Ansagen wiedergegeben (falls vorhanden) vor der Aufzeichnung startet. Kunden die Möglichkeit, geben Sie "PlayPrompt" Aktion separat oder als Teil des "Aufzeichnen" - hauptsächlich alle Datensätze einer Aufforderung vorangestellt werden |
 |bargeInAllowed|Boolean| Benutzern Sie die Eingabe Auswahl, bevor Aufforderung beendet wurde.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Maximale anfänglichen Silence zulässig, von dem Zeitpunkt wir den Eintrag Vorgang bevor wir Timeout und Fehlschlagen des Vorgangs zu starten. Wenn wir eine Aufforderung spielen, startet dieser Zeitgeber nach Aufforderung abgeschlossen ist. |
 |maxSilenceTimeoutInSeconds|Int32| Die maximale Silence Timeout in Sekunden.|
 |maxRecordDurationInSeconds|Int32| Die maximale Anzahl von Datensätzen Dauer in Sekunden.|
 |playBeep|Boolean| Gibt einen Signalton nach Wiedergabe der Eingabeaufforderung aus.|
 |streamWhileRecording|Boolean|Wenn es sich bei Festlegung auf true festgelegt ist, einen Speicherort der Ressource bereitgestellt werden, sobald die Aufzeichnung gestartet wird. |
-|stopTones|Zeichenfolgenauflistung|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
+|stopTones|String-Sammlung|Beenden Sie Töne angegeben, um die Aufzeichnung zu beenden.|
 |clientContext|String|Der Clientkontext.|
 
 ## <a name="response"></a>Antwort

@@ -4,12 +4,12 @@ description: 'Verwenden Sie den Einladungs-Manager, um eine Einladung zum Hinzuf
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 05330d0a8d62dc3afdff5c90301ed4d4a60b2be0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577445"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640553"
 ---
 # <a name="invitation-manager"></a>Einladungs-Manager
 
@@ -30,15 +30,15 @@ Durch Erstellen einer Einladung wird eine URL für die Einlösung in der Antwort
 ## <a name="methods"></a>Methoden
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-| [Einladung erstellen](../api/invitation-post.md) | invitation | Dient zum Schreiben der Eigenschaften und der Beziehungen des Einladungsobjekts.|
+|[Einladung erstellen](../api/invitation-post.md) | invitation | Dient zum Schreiben der Eigenschaften und der Beziehungen des Einladungsobjekts.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Der Anzeigename des eingeladenen Benutzers.|
 |invitedUserEmailAddress|String|Die E-Mail-Adresse des eingeladenen Benutzers. Erforderlich. |
-|invitedUserMessageInfo| [invitedUserMessageInfo](../resources/invitedusermessageinfo.md)|Zusätzliche Konfiguration für die an den eingeladenen Benutzer gesendete Nachricht, einschließlich des Anpassens des Nachrichtentexts, der Sprache und der Empfängerliste in CC.|
-|sendInvitationMessage|Boolean|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Zusätzliche Konfiguration für die an den eingeladenen Benutzer gesendete Nachricht, einschließlich des Anpassens des Nachrichtentexts, der Sprache und der Empfängerliste in CC.|
+|sendInvitationMessage|Boolesch|Gibt an, ob eine E-Mail-Nachricht an den eingeladenen Benutzer gesendet werden soll oder nicht. Der Standardwert ist „false“.|
 |inviteRedirectUrl|String|Die URL, an die der eingeladene Benutzer umgeleitet werden sollte, nachdem die Einladung eingelöst wurde. Erforderlich. |
 |inviteRedeemUrl|String|Die URL, die der Benutzer zum Einlösen seiner Einladung verwenden kann. Schreibgeschützt|
 |invitedUserType|String|Der userType des eingeladenen Benutzers. Standardmäßig ist dieser Wert auf „Gast“ festgelegt. Wenn Sie der Unternehmensadministrator sind, können Sie ihn als „Mitglied“ einladen. |
@@ -47,7 +47,7 @@ Durch Erstellen einer Einladung wird eine URL für die Einlösung in der Antwort
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|invitedUser| [User](../resources/user.md)-Sammlung|Der Benutzer, der im Rahmen der Einladungserstellung erstellt wurde. Schreibgeschützt|
+|invitedUser|[Benutzer](user.md)|Der Benutzer, der im Rahmen der Einladungserstellung erstellt wurde. Schreibgeschützt|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -57,13 +57,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
-  "invitedUserMessageInfo": {"@odata.type": "#microsoft.graph.invitedUserMessageInfo"},
+  "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
 
-  "invitedUser": [{"@odata.type": "#microsoft.graph.user"}]
+  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
 }
 ```
 

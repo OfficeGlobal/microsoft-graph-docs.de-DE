@@ -4,12 +4,12 @@ description: Ein Ordner, der Kontakte enthält.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a4fcb5152a3d7cb5f26214cf2b0a1e4a31dc1ffb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575870"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640868"
 ---
 # <a name="contactfolder-resource-type"></a>Ressourcentyp contactFolder
 
@@ -27,7 +27,7 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 |[contactFolder abrufen](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Dient zum Abrufen eines Kontaktordners anhand der Kontaktordner-ID.|
 |[Aktualisieren](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Dient zum Aktualisieren des contactFolder-Objekts. |
 |[Löschen](../api/contactfolder-delete.md) | Keine |Dient zum Löschen des contactFolder-Objekts. |
-|[childFolders auflisten](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) -Auflistung| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
+|[childFolders auflisten](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md)-Sammlung| Dient zum Abrufen einer Sammlung von untergeordneten Ordnern unter dem angegebenen Kontaktordner.|
 |[Untergeordneten contactFolder erstellen](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Dient zum Erstellen eines neuen contactFolder als untergeordnetes Element eines bestimmten Ordners.|
 |[delta](../api/contact-delta.md)|[contact](contact.md)-Sammlung| Dient zum Abrufen eines Satzes von Kontaktordnern, die dem Postfach des Benutzers hinzugefügt bzw. daraus gelöscht oder entfernt wurden.|
 |[Kontakte im Ordner auflisten](../api/contactfolder-list-contacts.md) |[contact](contact.md)-Sammlung| Dient zum Abrufen einer Kontaktsammlung aus dem Standardkontaktordner des angemeldeten Benutzers (`.../me/contacts`) oder aus dem angegebenen Kontaktordner.|
@@ -51,8 +51,8 @@ Diese Ressource unterstützt die Verwendung einer [Delta-Abfrage](/graph/delta-q
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md)-Sammlung|Die Sammlung der untergeordneten Ordner im Ordner. Navigationseigenschaft. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Kontakte|[Contact](contact.md)-Sammlung|Die Kontakte im Ordner. Navigationseigenschaft. Schreibgeschützt. Lässt NULL-Werte zu.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das contactFolder-Element definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das contactFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das contactFolder-Element definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das contactFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -63,8 +63,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
     "childFolders",
     "contacts",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contactFolder"

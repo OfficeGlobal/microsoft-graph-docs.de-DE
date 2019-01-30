@@ -4,12 +4,12 @@ description: Stellt eine Spalte in einer Tabelle dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10c5dbffcb5460ea029368a4c9b6dcfb6c21f256
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574663"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643101"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn-Ressourcentyp
 
@@ -39,7 +39,7 @@ Stellt eine Spalte in einer Tabelle dar.
 |id|int|Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt. Schreibgeschützt.|
 |Index|int|Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
 |name|string|Gibt den Namen der Tabellenspalte zurück. Schreibgeschützt.|
-|values|Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|

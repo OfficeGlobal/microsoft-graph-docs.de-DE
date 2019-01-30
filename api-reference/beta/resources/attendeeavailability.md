@@ -2,12 +2,12 @@
 title: Ressourcentyp „attendeeAvailability“
 description: Typ und Verfügbarkeit eines Teilnehmers
 localization_priority: Normal
-ms.openlocfilehash: 37b344f110557d6e04129a2b93592009635bddcf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f831a88a14fc6ec970332208389e15a5adc49377
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576283"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640490"
 ---
 # <a name="attendeeavailability-resource-type"></a>Ressourcentyp „attendeeAvailability“
 
@@ -38,7 +38,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|Der Typ des Teilnehmers. Unterschieden wird zwischen Personen und Ressourcen. Bei Personen wird zusätzlich differenziert zwischen erforderlichen und optionalen Teilnehmern.|
-|availability|freeBusyStatus| Der Verfügbarkeitsstatus des Teilnehmers. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|String| Der Verfügbarkeitsstatus des Teilnehmers. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere` und `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

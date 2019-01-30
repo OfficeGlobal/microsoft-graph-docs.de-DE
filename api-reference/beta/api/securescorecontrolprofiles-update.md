@@ -2,12 +2,12 @@
 title: Update secureScoreControlProfiles
 description: Aktualisieren einer bearbeitbaren SecureScoreControlProfiles-Eigenschaft in eine integrierte Lösung verschiedene Eigenschaften, wie AssignedTo oder TenantNote ändern.
 localization_priority: Normal
-ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573361"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642030"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Update secureScoreControlProfiles
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |   SecurityEvents.ReadWrite.All.  |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | SecurityEvents.ReadWrite.All. |
+|Application | SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -37,7 +37,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Name       | Beschreibung|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}. Erforderlich.|
+| Autorisierung  | Bearer {code}. Erforderlich.|
 |Prefer | zurückgeben = Darstellung. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -46,7 +46,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Werte für die en
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name des der Analyst das Steuerelement wird für die Ursachenanalyse, Implementierung und-Wartung zugewiesen.|
+|assignedTo|Zeichenfolge|Name des der Analyst das Steuerelement wird für die Ursachenanalyse, Implementierung und-Wartung zugewiesen.|
 |tenantNote|String|Analyst von Kommentaren auf das Steuerelement (für Kunden Steuerelement Management).|
 |controlStateUpdates| String|Analyst gesteuerte Einstellung für das Steuerelement. Mögliche Werte sind: `ignore`, `thirdParty` und `reviewed`.|
 
@@ -84,16 +84,20 @@ Es folgt ein Beispiel für eine erfolgreiche Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+
+
+
+<!--
+{
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfile",
+  "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

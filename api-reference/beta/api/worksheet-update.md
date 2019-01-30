@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des Arbeitsblattobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571716"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641540"
 ---
 # <a name="update-worksheet"></a>Arbeitsblatt aktualisieren
 
@@ -71,7 +71,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

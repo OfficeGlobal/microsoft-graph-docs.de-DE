@@ -4,12 +4,12 @@ description: Kapselt die Formateigenschaften für die Diagrammachse.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 587c35f0bf28d695f67e61a8eefa1593317a8d5d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 87ed72ab4a07ffbe3d8757b4283f85aa5f4791d3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577109"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643377"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat-Ressourcentyp
 
@@ -26,28 +26,8 @@ Keine
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Schriftart|[WorkbookChartFont](chartfont.md)|Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammachsenelement dar. Schreibgeschützt.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Stellt die Formatierung der Diagrammlinien dar. Schreibgeschützt.|
-
-
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxisFormat"
-}-->
-
-```json
-{
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
-}
-```
-
+|Schriftart|[ChartFont](chartfont.md)|Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammachsenelement dar. Schreibgeschützt.|
+|line|[ChartLineFormat](chartlineformat.md)|Stellt die Formatierung der Diagrammlinien dar. Schreibgeschützt.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

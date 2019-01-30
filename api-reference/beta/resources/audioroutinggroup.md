@@ -4,12 +4,12 @@ description: Die audio Routinggruppe speichert eine private audio Route zwischen
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573018"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643171"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Ressourcentyp audioRoutingGroup
 
@@ -24,14 +24,14 @@ Die audio Routinggruppe speichert eine private audio Route zwischen Teilnehmer a
 | Methode                                                  | Rückgabetyp                               | Beschreibung                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Abrufen von audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Lesen Sie Eigenschaften und Beziehungen des AudioRoutingGroup-Objekts.|
-| [Aktualisieren](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Aktualisieren Sie Ereignisempfänger Liste.                       |
-| [Löschen](../api/audioroutinggroup-delete.md)            | Keine                                      | Löschen der audio Routinggruppe.              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Aktualisieren Sie Ereignisempfänger Liste.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | Keine                                      | Löschen der audio Routinggruppe.              |
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft      | Typ              | Beschreibung                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Schreibgeschützt. Server generiert wurde.                                         |
+| id            | String            | Schreibgeschützt. Vom Server generiert.                                         |
 | Ereignisempfänger     | Zeichenfolgenauflistung | Liste der Teilnehmer Ids empfangen.                                   |
 | routingMode   | String            | Routing Group-Modus.  Mögliche Werte sind: `oneToOne` und `multicast`.   |
 | sources       | Zeichenfolgenauflistung | Liste der Teilnehmer Source-Ids.                                      |
@@ -59,9 +59,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "Guid" ],
+  "receivers": [ "String" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "Guid" ]
+  "sources": [ "String" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

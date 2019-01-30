@@ -2,12 +2,12 @@
 title: List secureScores
 description: Rufen Sie die Eigenschaften und die Beziehungen eines SecureScores-Objekts ab.
 localization_priority: Normal
-ms.openlocfilehash: 034a333dec6b96919ffd01a49ed05cb16ca19a48
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573403"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642961"
 ---
 # <a name="list-securescores"></a>List secureScores
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
+|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -37,7 +37,7 @@ GET /security/secureScores
 
 | Name      |Beschreibung|
 |:----------|:----------|
-| Authorization  | Bearer {code}. Erforderlich.|
+| Autorisierung  | Bearer {code}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -66,46 +66,55 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.secureScore"
+  "truncated": false,
+  "@odata.type": "microsoft.graph.secureScores"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
     "value": [
         {
-            "activeUserCount": 12,
-            "createdDate": "createdDateTime.value",
-            "currentScore": 12.4566633444,
-            "enabledServices": ["Skype"],
-            "licensedUserCount": 12,
-            "maxScore": 45.2324443,
-            "id": "id.value",            
+            "activeUserCount": "activeUserCount.value",
+            "createdDateTime": "createdDateTime.value",
+            "currentScore": "currentScore.value",
+            "enabledServices": "enabledServices.value",
+            "licensedUserCount": "licensedUserCount.value",
+            "maxScore": "maxScore.value",
+            "id": "id.value",
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "AllTenants",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value"
                 },
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "TotalSeats",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value",
+                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
+                    "categoryValue": "categoryValue.value",
+                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
                 },
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "IndustryTypes",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value",
+                    "categoryValue": "categoryValue.value"
                 }
             ],
             "controlScores": [
                 {
-                    "@odata.type":"microsoft.graph.controlScores",
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",

@@ -2,24 +2,24 @@
 title: Ressourcentyp parseExpressionResponse
 description: 'Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion.'
 localization_priority: Normal
-ms.openlocfilehash: fc37c963e9c9588241d84570edc73a933eec49fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572878"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641057"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Ressourcentyp parseExpressionResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization-synchronizationschema-parseexpression.md) Aktion.
+Stellt die Antwort von der [SynchronizationSchema: ParseExpression](../api/synchronization_synchronizationschema_parseexpression.md) Aktion.
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|error| publicError |Fehlerdetails, wenn die Auswertung von Ausdrücken ein Fehler aufgetreten.|
-|evaluationResult|Zeichenfolgenauflistung|Eine Auflistung von Werten, die mit der Auswertung des Ausdrucks.|
+|error|OData.Error|Fehlerdetails, wenn die Auswertung von Ausdrücken ein Fehler aufgetreten.|
+|evaluationResult|String-Sammlung|Eine Auflistung von Werten, die mit der Auswertung des Ausdrucks.|
 |evaluationSucceeded|Boolean|`true`Wenn die Auswertung erfolgreich war.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Ein [AttributeMappingSource](synchronization-attributemappingsource.md) -Objekt, das den analysierten Ausdruck darstellt.|
 |parsingSucceeded|Boolean|`true`Wenn der Ausdruck erfolgreich analysiert wurde.|

@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des ChartFont-Objekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a8e7d2665ce93a62ea27c1a5459382ab07e1184d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574971"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642303"
 ---
 # <a name="update-chartfont"></a>ChartFont aktualisieren
 
@@ -43,16 +43,16 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|bold| Boolescher Wert |Stellt den Fett-Status der Schriftart dar.|
-|color| string |HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
-|italic| Boolescher Wert |Stellt den Kursiv-Status der Schriftart dar.|
-|name| string |Schriftartname (z. B. "Calibri")|
-|size| double |Der Schriftgrad (z. B. 11)|
-|underline| Enum-Zeichenfolge |Art der auf die Schriftart angewendeten Unterstreichung. Mögliche Werte: `None`, `Single`.|
+|bold|Boolescher Wert|Stellt den Fett-Status der Schriftart dar.|
+|color|string|HTML-Farbcodedarstellung der Textfarbe. #ff0000 stellt beispielsweise Rot dar.|
+|italic|Boolescher Wert|Stellt den Kursiv-Status der Schriftart dar.|
+|name|string|Schriftartname (z. B. "Calibri")|
+|size|double|Der Schriftgrad (z. B. 11)|
+|underline|string|Art der auf die Schriftart angewendeten Unterstreichung. Mögliche Werte: `None`, `Single`.|
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartFont](../resources/chartfont.md) -Objekts in der Antworttext.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartFont](../resources/chartfont.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### <a name="response"></a>Antwort
@@ -79,7 +79,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

@@ -2,12 +2,12 @@
 title: Ressourcentyp oAuth2PermissionGrant
 description: Stellt die OAuth 2.0-Bereiche (delegierten Berechtigungen) zu einer Anwendung (dargestellt durch ein Dienstprinzipal) erteilt wurden im Rahmen des Prozesses Zustimmung Benutzer oder Administrator an.
 localization_priority: Normal
-ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576969"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640777"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Ressourcentyp oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 }-->
 
 ```json
@@ -48,7 +48,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |expiryTime|DateTimeOffset| Derzeit ist der Ablauf Time-Wert ignoriert. |
 |id|String| Eindeutiger Bezeichner. Schreibgeschützt.|
 |principalId|String| Wenn ConsentType *AllPrincipals* ist dieser Wert ist null, und die Zustimmung gilt für alle Benutzer in der Organisation. Wenn ConsentType *Prinzipal*ist, gibt diese Eigenschaft die Id des Benutzers, der Zustimmung erteilt und gilt nur für diesen Benutzer an. |
-|resourceId|Zeichenfolge| Gibt die Id des Prinzipals Service Resource, der Zugriff gewährt wurde. |
+|resourceId|String| Gibt die Id des Prinzipals Service Resource, der Zugriff gewährt wurde. |
 |Bereich|String| Gibt den Wert des Anspruchs [Bereich](/graph/permissions-reference) , der die Ressource Anwendung erwarten im Zugriffstoken OAuth 2.0 an. Beispielsweise *User.Read* |
 |startTime|DateTimeOffset| Derzeit wird der Wert für die Startzeit ignoriert. |
 
@@ -61,7 +61,7 @@ Keine
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[Abrufen von oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Lesen Sie Eigenschaften und Beziehungen des oAuth2PermissionGrant-Objekts.|
-|[Liste oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) -Auflistung | Abrufen einer Liste von oauth2PermissionGrant-Objekten. |
+|[Liste oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)-Auflistung | Abrufen einer Liste von oauth2PermissionGrant-Objekten. |
 |[OAuth2PermissionGrant aktualisieren](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |OAuth2PermissionGrant-Objekt zu aktualisieren. |
 |[OAuth2PermissionGrant löschen](../api/oauth2permissiongrant-delete.md) | Keine |OAuth2PermissionGrant-Objekt zu löschen. |
 

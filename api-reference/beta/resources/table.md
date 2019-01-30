@@ -4,12 +4,12 @@ description: Stellt eine Excel-Tabelle dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572682"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642646"
 ---
 # <a name="table-resource-type"></a>Table-Ressourcentyp
 
@@ -56,10 +56,10 @@ Stellt eine Excel-Tabelle dar.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) -Auflistung|Stellt eine Auflistung aller Spalten in der Tabelle dar. Schreibgeschützt.|
-|Rows|[TableRow](tablerow.md) -Auflistung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
-|sort|[tableSort](tablesort.md)|Stellt die Sortierung für die Tabelle dar. Schreibgeschützt.|
-|Arbeitsblatt|[workbookWorksheet](worksheet.md)|Das Arbeitsblatt, das die aktuelle Tabelle enthält. Schreibgeschützt.|
+|columns|[TableColumn](tablecolumn.md)-Sammlung|Stellt eine Auflistung aller Spalten in der Tabelle dar. Schreibgeschützt.|
+|Rows|[TableRow](tablerow.md)-Sammlung|Stellt eine Auflistung aller Zeilen in der Tabelle dar. Schreibgeschützt.|
+|sort|[TableSort](tablesort.md)|Stellt die Sortierung für die Tabelle dar. Schreibgeschützt.|
+|Arbeitsblatt|[Worksheet](worksheet.md)|Das Arbeitsblatt, das die aktuelle Tabelle enthält. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -70,7 +70,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 }-->
 
 ```json

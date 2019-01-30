@@ -4,12 +4,12 @@ description: Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cadfcec8b2d114697d6a5c015aa6715ec90eee31
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 063a5a605908693e5b189c92865eaec2c0dba1ba
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576192"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640252"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -72,7 +72,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

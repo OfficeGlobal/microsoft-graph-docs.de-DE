@@ -4,12 +4,12 @@ description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines 
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 7b0f0b0ec19c64a6e703ce41d024b3112c354da7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2bacba09167724935123becbb5d8194385b5b215
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575688"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643426"
 ---
 # <a name="get-sectiongroup"></a>sectionGroup abrufen
 
@@ -41,7 +41,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -65,7 +65,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK

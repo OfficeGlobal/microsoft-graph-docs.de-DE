@@ -2,12 +2,12 @@
 title: 'PrivilegedRoleAssignmentRequest: Meine'
 description: Abrufen der anfordernden Person privilegierten Role Assignment Anforderungen.
 localization_priority: Normal
-ms.openlocfilehash: 2107256f9ead89950ba23bec49a81839347f7b7e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577368"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643108"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>PrivilegedRoleAssignmentRequest: Meine
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-|Anwendung                            | Nicht unterstützt |
+|Application                            | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ Wenn der Vorgang erfolgreich war, gibt diese Methode `200 OK` Antwort Code und [
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
-  "name": "privilegedroleassignmentrequest_my"
+  "name": "privilegedroleassignmentrequest_my)"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
@@ -77,7 +77,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-         "userId": "Self",
+         "userId": "Self"，
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",
@@ -101,7 +101,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
-        "userId": "Self",
+        "userId": "Self"，
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",

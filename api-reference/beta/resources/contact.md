@@ -4,12 +4,12 @@ description: Ein Kontakt ist ein Element in Outlook, in dem Sie Informationen ü
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576857"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642450"
 ---
 # <a name="contact-resource-type"></a>Ressourcentyp contact
 
@@ -31,9 +31,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
     "photo",
-    "singleValueLegacyExtendedProperty"
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -85,9 +85,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 |assistantName|String|Der Name des Assistenten des Kontakts.|
 |birthday|DateTimeOffset|Das Geburtsdatum des Kontakts. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Kontakt verknüpft sind. Jeder Kategorie entspricht der **displayName**-Eigenschaft einer für den Benutzer definierten [outlookCategory](outlookcategory.md).|
+|categories|String collection|Die Kategorien, die mit dem Kontakt verknüpft sind. Jeder Kategorie entspricht der **displayName**-Eigenschaft einer für den Benutzer definierten [outlookCategory](outlookcategory.md).|
 |changeKey|String|Gibt die Version des Kontakts an. Jedes Mal, wenn der Kontakt geändert wird, wird auch die Eigenschaft „changeKey“ geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
-|children|Zeichenfolgenauflistung|Die Namen der Kinder des Kontakts.|
+|children|String collection|Die Namen der Kinder des Kontakts.|
 |companyName|String|Der Name des Unternehmens des Kontakts.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Abteilung|String|Die Abteilung des Kontakts.|
@@ -99,7 +99,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |generation|String|Die Generation des Kontakts.|
 |givenName|String|Der Vorname des Kontakts.|
 |id|String|Eindeutiger Bezeichner für den Kontakt. Schreibgeschützt.|
-|imAddresses|Zeichenfolgenauflistung|Instant Messaging Chatadressen des Kontakts.|
+|imAddresses|String collection|Instant Messaging Chatadressen des Kontakts.|
 |initials|String|Die Initialen des Kontakts.|
 |jobTitle|String|Die Position des Kontakts.|
 |lastModifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Kontakt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
@@ -116,7 +116,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |surname|String|Der Nachname des Kontakts.|
 |title|String|Der Titel des Kontakts.|
 |websites |[website](website.md)-Sammlung|Websites, die dem Kontakt zugeordnet werden. |
-|weddingAnniversary |Date |Hochzeitstag des Kontakts. |
+|weddingAnniversary |Datum |Hochzeitstag des Kontakts. |
 |yomiCompanyName|String|Der phonetische japanische Firmenname des Kontakts.|
 |yomiGivenName|String|Der phonetische japanische Vorname des Kontakts.|
 |yomiSurname|String|Der phonetische japanische Nachname des Kontakts.|
@@ -124,10 +124,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für den Kontakt definiert. Nullwerte zulassend.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für den Kontakt definiert. Lässt NULL-Werte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 |Foto|[photo](profilephoto.md)| Optionales Kontaktbild. Sie können für einen Kontakt ein Foto abrufen oder einstellen.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Kontakt definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
 
 ## <a name="methods"></a>Methoden
 | Methode           | Rückgabetyp    |Beschreibung|

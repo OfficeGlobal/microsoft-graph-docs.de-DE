@@ -2,12 +2,12 @@
 title: Serviceprincipal aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Serviceprincipal-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 946db869863d74a94e2e9adc04a66c8d9a50e4f5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573858"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641176"
 ---
 # <a name="update-serviceprincipal"></a>Serviceprincipal aktualisieren
 
@@ -21,7 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Application.ReadWrite.OwnedBy Application.ReadWrite.All |
+|Anwendung | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -31,30 +31,30 @@ PATCH /servicePrincipals/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                **true,** Wenn das Dienstkonto für den Prinzipal aktiviert ist. anderenfalls **false**.            |
-|appDisplayName|String|Der Anzeigename, der von der zugeordneten Anwendung verfügbar gemacht werden.|
-|appId|Zeichenfolge|Der eindeutige Bezeichner für die zugewiesene Anwendung (dessen **AppId** -Eigenschaft).|
-|appRoleAssignmentRequired|Boolean|Gibt an, ob ein **AppRoleAssignment** für einen Benutzer oder Gruppe erforderlich ist, bevor Azure AD einen Benutzer oder eine Zugriffstoken an die Anwendung ausstellt.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
-|appRoles| [microsoft.graph.appRole](../resources/approle.md) -Auflistung|Die Rollen der Anwendung von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **AppRoles** -Eigenschaft in der Anwendung Entität **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
-|displayName|String|Der Anzeigename für den Dienstprinzipal.|
-|errorUrl|String|            |
-|Homepage|String|Die URL zur Homepage der zugehörigen Anwendung.|
-|keyCredentials|microsoft.graph.keyCredential|Die Auflistung von wichtigen Anmeldeinformationen, die dem Prinzipal Dienst zugeordnet sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|logoutUrl|String| Gibt die URL, die von Microsoft Autorisierungsdienst Abmelden ein Benutzer mit der [Vorderseite-Kanal](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [Back-Kanal](https://openid.net/specs/openid-connect-backchannel-1_0.html) oder SAML Abmeldung Protokolle verwendet werden soll. |
-|oauth2Permissions|microsoft.graph.oAuth2Permission|Die OAuth 2.0-Berechtigungen von der zugeordneten Anwendung verfügbar gemacht werden. Weitere Informationen finden Sie in der Definition der **oauth2Permissions** -Eigenschaft in der Anwendung Entität.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
-|passwordCredentials|microsoft.graph.passwordCredential|Die Auflistung von Anmeldeinformationen den Dienstprinzipal zugeordnet.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|preferredTokenSigningKeyThumbprint|String|Nur für interne Zwecke vorbehalten. Schreiben oder verlassen sich andernfalls auf diese Eigenschaft nicht. Kann in zukünftigen Versionen entfernt werden.                            **Notes**: erfordert Version 1.5 oder höher.            |
-|publisherName|String|Der Anzeigename des Mandanten in dem verbundenen Anwendung angegeben wird.|
-|replyUrls|String|Die URLs, dass Benutzertoken, um für die Anmeldung mit der zugeordneten Anwendung oder die Umleitung URIs, dass OAuth 2.0 Autorisierungscodes gesendet werden und Zugriffstoken werden für die zugewiesene Anwendung an.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|samlMetadataUrl|String|            |
-|servicePrincipalNames|String|Die URIs, mit denen die zugewiesene Anwendung identifiziert. Weitere Informationen finden Sie unter [Application Objects und Service Principal-Objekte](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notes**: keine Nullwerte zulassen der **any** -Operator ist erforderlich für Filterausdrücke auf mehrwertige Eigenschaften; Weitere Informationen finden Sie unter [unterstützte Abfragen, Filter, und Paging-Optionen](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|accountEnabled|Boolescher Wert|                **True**, wenn das Dienstprinzipalkonto aktiviert ist; andernfalls **false**.            |
+|appDisplayName|Zeichenfolge|Der von der verknüpften Anwendung verfügbar gemachte Anzeigename.|
+|appId|Zeichenfolge|Die eindeutige ID für die verknüpfte Anwendung (die **appId**-Eigenschaft).|
+|appRoleAssignmentRequired|Boolescher Wert|Gibt an, ob eine **eppRoleAssignment** für einen Benutzer oder eine Gruppe erforderlichist, bevor Azure Active Directory ein Benutzer- oder Zugriffstoken für die Anwendung ausstellt.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
+|appRoles|appRole|Die von der verknüpften Anwendung verfügbar gemachten Anwendungsrollen. Weitere Informationen finden Sie in der Definition der **AppRoles** -Eigenschaft in der Anwendung Entität **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
+|displayName|Zeichenfolge|Der Anzeigename für den Dienstprinzipal.|
+|errorUrl|Zeichenfolge|            |
+|homepage|Zeichenfolge|Die URL zur Homepage der zugehörigen Anwendung.|
+|keyCredentials|keyCredential|Die Auflistung der wichtigsten Anmeldeinformationen, die mit dem Dienstprinzipal verknüpft sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
+|logoutUrl|Zeichenfolge| Gibt die URL an, die vom Autorisierungsdienst von Microsoft verwendet wird, um einen Benutzer mithilfe von [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html)-, [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html)- oder SAML-Abmeldeprotokollen abzumelden. |
+|oauth2Permissions|oAuth2Permission|Die von der verknüpften Anwendung verfügbar gemachten OAuth 2.0-Berechtigungen. Weitere Informationen finden Sie in der **oauth2Permissions**-Eigenschaftsdefinition in der application-Entität.                            **Notes**: erfordert Version 1.5 oder neuere, nicht NULL-Werte zulässt.            |
+|passwordCredentials|passwordCredential|Die Auflistung der Kennwortanmeldeinformationen, die mit dem Dienstprinzipal verknüpft sind.                            **Hinweis:** Lässt keine Nullwerte zu.            |
+|preferredTokenSigningKeyThumbprint|Zeichenfolge|Nur für die interne Verwendung reserviert. Schreiben Sie diese Eigenschaft nicht, und verwenden Sie diese Eigenschaft nicht anderweitig. Sie kann in zukünftigen Versionen möglicherweise entfernt werden.                            **Notes**: erfordert Version 1.5 oder höher.            |
+|publisherName|Zeichenfolge|Der Anzeigename des Mandanten, in dem verknüpfte Anwendung angegeben wird.|
+|replyUrls|String|Die URLs, an die Benutzertoken zur Anmeldung bei der verknüpften Anwendung gesendet werden, oder die Umleitungs-URIs, an die die OAuth 2.0-Autorisierungscodes und Zugriffstoken für die verknüpfte Anwendung gesendet werden.                            **Hinweis:** Lässt keine Nullwerte zu.            |
+|samlMetadataUrl|Zeichenfolge|            |
+|servicePrincipalNames|String|Die URLs, die die verknüpfte Anwendung identifizieren. Weitere Informationen finden Sie unter [Anwendungsobjekte und Dienstprinzipalobjekte](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notes**: keine Nullwerte zulassen der **any** -Operator ist erforderlich für Filterausdrücke auf mehrwertige Eigenschaften; Weitere Informationen finden Sie unter [unterstützte Abfragen, Filter, und Paging-Optionen](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
 |tags|String|                                        **Hinweis:** Lässt keine Nullwerte zu.            |
 
 ## <a name="response"></a>Antwort
@@ -97,7 +97,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -2,12 +2,12 @@
 title: Approleassignment aktualisieren
 description: Aktualisieren Sie die Eigenschaften des Approleassignment-Objekts.
 localization_priority: Normal
-ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572913"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643475"
 ---
 # <a name="update-approleassignment"></a>Approleassignment aktualisieren
 
@@ -21,7 +21,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All   |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.
@@ -41,11 +41,11 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|Die Uhrzeit der Erstellung der erteilen.|
-|id|Guid|Die Rolle-Id, die den Prinzipal zugewiesen wurde.  Diese Rolle muss mit der Ziel-Ressource Anwendung **ResourceId** in seiner **AppRoles** -Eigenschaft deklariert werden. In denen die Ressource keine Berechtigungen nicht deklarieren, muss eine Standard-Id (0 (null) GUID) angegeben werden.                            **Hinweis:** Lässt keine Nullwerte zu.            |
-|principalDisplayName|String|Der Anzeigename des Prinzipals, die der Zugriff gewährt wurde.|
+|id|Guid|Die Rollen-ID, die dem Prinzipal zugewiesen wurde.  Diese Rolle muss von der Zielressourcenanwendung **ResourceId** in der **appRoles**-Eigenschaft deklariert werden. Wenn die Ressource keine Berechtigungen deklariert, muss eine Standard-ID (GUID von 0) angegeben werden.                            **Hinweis:** Lässt keine Nullwerte zu.            |
+|principalDisplayName|Zeichenfolge|Der Anzeigename des Prinzipals, dem Zugriff gewährt wurde.|
 |principalId|Guid|Der eindeutige Bezeichner (**ObjectId**) für den Prinzipal, den Zugriff gewährt wird.                            **Notes**: erforderlich.            |
-|principalType|String|Der Typ des Prinzipals.  Dies kann entweder "User", "Group" oder "ServicePrincipal" sein.|
-|resourceDisplayName|String|Der Anzeigename der Ressource mit der die Zuordnung hergestellt wurde.|
+|principalType|Zeichenfolge|Der Prinzipaltyp.  Dies kann entweder „Benutzer“, „Gruppe“ oder „ServicePrincipal“ sein.|
+|resourceDisplayName|Zeichenfolge|Der Anzeigename der Ressource, für die die Zuweisung erfolgte.|
 |resourceId|Guid|Der eindeutige Bezeichner (**ObjectId**) für die Zielressource (Service Principal) für die die Zuordnung erstellt wurde.|
 
 ## <a name="response"></a>Antwort
@@ -76,7 +76,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

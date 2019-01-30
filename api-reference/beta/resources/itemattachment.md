@@ -2,12 +2,12 @@
 title: itemAttachment-Ressourcentyp
 description: Ein Kontakt, ein Ereignis oder eine Nachricht, die mit einem anderen Ereignis zugeordnet ist,
 localization_priority: Normal
-ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571408"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640420"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment-Ressourcentyp
 
@@ -22,7 +22,7 @@ Abgeleitet von [attachment](attachment.md).
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des itemAttachment-Objekts.|
-|[Löschen](../api/attachment-delete.md) | Keine |Dient zum Löschen des itemAttachment-Objekts. |
+|[Delete](../api/attachment-delete.md) | Keine |Dient zum Löschen des itemAttachment-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -37,7 +37,7 @@ Abgeleitet von [attachment](attachment.md).
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|item|[outlookItem](outlookitem.md)|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
+|item|[OutlookItem](outlookitem.md)|Das angefügte Kontakt Nachricht oder Ereignis. Navigationseigenschaft.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

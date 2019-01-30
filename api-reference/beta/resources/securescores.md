@@ -2,12 +2,12 @@
 title: Ressourcentyp secureScores
 description: 'Top n =, wobei n = Anzahl der Tage, die Daten, die Sie abrufen möchten. '
 localization_priority: Normal
-ms.openlocfilehash: fef5c43130aecf1604677d07f785a0cee0539568
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576080"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640182"
 ---
 # <a name="securescores-resource-type"></a>Ressourcentyp secureScores
 
@@ -35,10 +35,10 @@ Typ mit Eigenschaften der Mandant Sicherheit Entität Punktzahl (tägliche Momen
 |   activeUserCount |   Int32   |   Aktive Benutzeranzahl des angegebenen Mandanten.  |
 |   currentScore    |   Gleitkommawert mit doppelter Genauigkeit  |   Mandanten aktuellen erreicht Score am angegebenen Datum.    |
 |   MaxErgebnis |  Gleitkommawert mit doppelter Genauigkeit  |   Mandanten maximale Bewertung am angegebenen Datum.    |
-|   enabledServices |   Zeichenfolgenauflistung   |   Microsoft-Dienste für den Mandanten (beispielsweise Exchange online, Skype, Sharepoint).   |
+|   enabledServices |   String-Sammlung   |   Microsoft-Dienste für den Mandanten (beispielsweise Exchange online, Skype, Sharepoint).   |
 |   averageComparativeScores |  [AverageComparativeScore](averagecomparativescore.md) -Auflistung    |Durchschnittliche Bewertung von unterschiedlichen Bereichen (beispielsweise Durchschnitt nach Branche, durchschnittliche durch Sitzplätze) und Steuerelement Kategorie (Identität, Daten, Gerät, Apps, Infrastruktur) innerhalb des Bereichs. |
 |   controlScores | [ControlScore](controlscore.md) -Auflistung  |   Mandanten Bewertungen für eine Gruppe von Steuerelementen enthält.   |
-|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker).|
+
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -53,23 +53,24 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScore"
+  "@odata.type": "microsoft.graph.secureScores"
 }-->
 
 ```json
 {
-    "id": "String",
-    "azureTenantId": "String (identifier)",
-    "createdDateTime": "DateTimeOffset",
-    "licensedUserCount": "Int32",
-    "activeUserCount": "Int32",
-    "currentScore": "Double",
-    "maxScore": "Double",    
-    "enabledServices": ["String"],
-    "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
-    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
-    "vendorInformation" : "microsoft.graph.securityVendorInformation"
+"id": "String",
+"azureTenantId": "Guid",
+"createdDate": "DateTimeOffset",
+"licensedUserCount": "Int32",
+"activeUserCount": "Int32",
+"currentScore": "Int32",
+"maxScore": "Int32",
+"averageScore": "Double",
+"enabledServices": "Collection(string)",
+"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
 }
+
 ```
 
 

@@ -2,14 +2,14 @@
 title: Ressourcentyp governanceSchedule
 description: 'Stellt den Zeitplan für einen GovernanceRoleAssignmentRequest dar. Der Zeitplan für eine Rolle Zuordnung Anforderung steuert beim Ausführen dieses Vorgangs Rolle Zuordnung für die rollenzuweisung beenden und wie häufig die Rolle Zuordnung Operation durchzuführen. '
 localization_priority: Normal
-ms.openlocfilehash: 11ac010829309c9b701e20da8ad40ebf905e02ba
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575251"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643412"
 ---
-# <a name="microsoftgraphgovernanceschedule-resource-type"></a>Ressourcentyp microsoft.graph.governanceSchedule
+# <a name="governanceschedule-resource-type"></a>Ressourcentyp governanceSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

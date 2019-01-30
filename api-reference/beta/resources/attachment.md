@@ -2,12 +2,12 @@
 title: Ressourcentyp attachment
 description: Sie können ein Ereignis verwandten Inhalten hinzugefügt
 localization_priority: Normal
-ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573424"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643150"
 ---
 # <a name="attachment-resource-type"></a>Ressourcentyp attachment
 
@@ -34,7 +34,7 @@ Die folgenden Methoden gelten für alle abgeleiteten Typen von Anlagen (**fileAt
 |[Anlage einem Beitrag hinzufügen](../api/post-post-attachments.md) | [attachment](attachment.md) |Dient dem Hinzufügen einer Datei, eines Elements oder einer verknüpften Anlage zu einem Beitrag.|
 |[Anlagen eines Ereignisses auflisten](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für ein Ereignis abrufen |
 |[Anlagen einer Nachricht auflisten](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für eine Nachricht abrufen |
-|[Liste von Anlagen eines Outlook-Aufgaben](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) collection | Abrufen einer Liste von Anlagen für eine Outlook-Aufgabe. |
+|[Liste von Anlagen eines Outlook-Aufgaben](../api/outlooktask-list-attachments.md) | [attachment](attachment.md)-Sammlung | Abrufen einer Liste von Anlagen für eine Outlook-Aufgabe. |
 |[Anlagen eines Beitrags auflisten](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Liste der Anlagen für einen Beitrag abrufen |
 |[Löschen](../api/attachment-delete.md) | Keine |Löschen einer Anlage auf ein Ereignis, Nachricht, Outlook-Aufgabe oder Post. |
 
@@ -60,8 +60,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "abstract": true,
   "optionalProperties": [
 
   ],

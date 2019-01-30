@@ -4,12 +4,12 @@ description: Mit dieser API können Sie eine Liste von Abschnittsgruppen aus dem
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 466503a1ebeefcab9ad1e4de961872230e534ea4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 554366d30258e731f5521b0744245947ca506572
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573984"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642723"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups auflisten
 
@@ -43,7 +43,7 @@ Die Standardabfrage erweitert `parentNotebook` und wählt die zugehörigen Eigen
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup",
+  "@odata.type": "microsoft.graph.sectiongroup",
   "isCollection": true
 } -->
 ```http

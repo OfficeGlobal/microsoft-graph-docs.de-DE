@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd1f1af0e1ddcd1d56853c708da7ba03be740812
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573634"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642275"
 ---
 # <a name="audio-facet"></a>Facet „Audio“
 
@@ -50,11 +50,11 @@ Wenn ein [**DriveItem**](driveitem.md)-Element ein **file**-Facet ungleich Null 
 | **album**             | string  | Der Titel des Albums, zu dem die Audiodatei gehört                          |
 | **albumArtist**       | string  | Der Künstler, der für das Album genannt ist, zu dem die Audiodatei gehört                    |
 | **artist**            | string  | Der zur Audiodatei gehörende Künstler                            |
-| **bitrate**           | Int64   | Die Bitrate in KBit/s                                           |
+| **bitrate**           | Int32   | Die Bitrate in KBit/s                                           |
 | **composers**         | string  | Der Name des Komponisten der Audiodatei                          |
 | **copyright**         | string  | Urheberrechtsinformationen zur Audiodatei                            |
-| **disc**              | Int16   | Die Nummer der CD, von der die Audiodatei stammt                    |
-| **discCount**         | Int16   | Die Gesamtanzahl von CDs im Album                             |
+| **disc**              | Int32   | Die Nummer der CD, von der die Audiodatei stammt                    |
+| **discCount**         | Int32   | Die Gesamtanzahl von CDs im Album                             |
 | **duration**          | Int64   | Die Dauer der Audiodatei in Millisekunden                |
 | **genre**             | string  | Das Genre der Audiodatei                                        |
 | **hasDrm**            | boolean | Angabe, ob die Datei DRM-geschützt ist (Digital Rights Management, Verwaltung digitaler Rechte)   |

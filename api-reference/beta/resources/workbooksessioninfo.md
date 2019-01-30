@@ -4,12 +4,12 @@ description: Enthält Informationen zu Arbeitsmappensitzungen.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 502781c4049c9451f5ed67ff97222abf4df462d7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575618"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642219"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo-Ressourcentyp
 
@@ -38,5 +38,5 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft | Typ  | Beschreibung                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | Die ID der Arbeitsmappensitzung. |
-| persistChanges | Boolescher Wert |  `true` für eine beständige Sitzung `false` für eine nicht-beständige Sitzung (Ansichtsmodus) |
+| persistChanges | string |  `true` für eine beständige Sitzung `false` für eine nicht-beständige Sitzung (Ansichtsmodus) |
 

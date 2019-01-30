@@ -2,12 +2,12 @@
 title: GovernanceRoleAssignmentRequests aktualisieren
 description: So aktualisieren Sie ihre Entscheidungen Administratoren können (`AdminApproved` oder `AdminDenied`) auf GovernanceRoleAssignmentRequests, die in den Status der sind `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576528"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643262"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests aktualisieren
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | PrivilegedAccess.ReadWrite.AzureResources |
+|Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ## <a name="request-headers"></a>Anforderungsheader
 | Name           | Beschreibung|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Autorisierung  | Bearer {code}|
 | Content-type  | application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -44,7 +44,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |:-------------|:----------------------|:--------|:----------|
 |Grund        |String                 |✓        |Der Grund für seine Entscheidung vom Administrator bereitgestellten.|
 |Entscheidung        |String                 |✓        |Die Entscheidung Administrator der Rolle Zuordnung Anforderung. Der Wert aktualisiert werden sollen, als `AdminApproved` oder `AdminDenied`.|
-|Zeitplan      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | Den Zeitplan der Rolle Zuordnung Anforderung. Status der `AdminApproved`, es ist erforderlich.|
+|Zeitplan      |[governanceSchedule](../resources/governanceschedule.md)|        | Den Zeitplan der Rolle Zuordnung Anforderung. Status der `AdminApproved`, es ist erforderlich.|
 |assignmentState      |String|         | Der Status der Aufgabe und die Werte sind möglich `Eligible` oder `Active`. Für die Entscheidung der `AdminApproved`, es ist erforderlich. |
 ### <a name="response"></a>Antwort
 Diese Methode kann nur angewendet werden, auf Anfragen, die in den Status der sind `PendingAdminDecision`.

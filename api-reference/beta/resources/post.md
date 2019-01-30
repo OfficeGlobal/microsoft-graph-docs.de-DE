@@ -4,12 +4,12 @@ description: Stellt ein einzelnes Post-Element innerhalb einer ConverstaionThrea
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 007eb540ef4a4f99742a745dcf257f2cd39d5ef9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576913"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643601"
 ---
 # <a name="post-resource-type"></a>Beitragsressourcentyp
 
@@ -36,8 +36,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "attachments",
     "extensions",
     "inReplyTo",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
@@ -65,14 +65,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Der Inhalt des Beitrags. Dies ist eine Standardeigenschaft. Für diese Eigenschaft sind Nullwerte zulässig.|
-|categories|Zeichenfolgenauflistung|Die Kategorien, die mit dem Beitrag verknüpft sind. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) , der für einen Benutzer definiert wurde.|
+|categories|String collection|Die Kategorien, die mit dem Beitrag verknüpft sind. Jeder Kategorie entspricht die **DisplayName** -Eigenschaft des ein [OutlookCategory](outlookcategory.md) , der für einen Benutzer definiert wurde.|
 |changeKey|String|Gibt die Version des Beitrags an. Jedes Mal, wenn der Beitrag geändert wird, wird auch ChangeKey geändert. Auf diese Weise kann Exchange Änderungen an der korrekten Version des Objekts vornehmen.|
 |conversationId|String|Eindeutige ID der Unterhaltung. Schreibgeschützt.|
 |conversationThreadId|String|Eindeutige ID des Unterhaltungsthreads. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Gibt an, wann der Beitrag erstellt wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Von|[Empfänger](recipient.md)|Wird in Zugriffsszenarien mit Stellvertretungen verwendet. Gibt an, wer die Nachricht im Auftrag eines anderen Benutzers veröffentlicht hat. Dies ist eine Standardeigenschaft.|
 |hasAttachments|Boolean|Gibt an, ob der Beitrag mindestens eine Anlage enthält. Dies ist eine Standardeigenschaft.|
-|id|String| Schreibgeschützt|
+|id|String| Schreibgeschützt.|
 |importance | String | Die Bedeutung der einer Gruppe Post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Gibt an, wann der Beitrag zuletzt geändert wurde. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|Teilnehmer einer Unterhaltung, die im Rahmen des Beitrags zu dem Thread hinzugefügt wurden.|
@@ -82,11 +82,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Anlagen|[Anlagensammlung](attachment.md)|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Bereitstellung. Schreibgeschützt. Nullwerte zulassend.|
+|Anlagen|[Attachment](attachment.md)-Sammlung|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Bereitstellung. Schreibgeschützt. Lässt Nullwerte zu.|
 |Erweiterungen|[Erweiterungssammlung](extension.md)|Die Sammlung der für den Beitrag definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
 |inReplyTo|[Post](post.md)|Frühere Beitrags, den dieser Beitrag in der [ConversationThread](conversationthread.md)beantwortet wird. Schreibgeschützt.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Beitrag definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Beitrag definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für den Beitrag definiert sind. Schreibgeschützt. Lässt NULL-Werte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für den Beitrag definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

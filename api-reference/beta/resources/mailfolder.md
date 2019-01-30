@@ -4,12 +4,12 @@ description: Ein mailFolder-Element im Postfach eines Benutzers, wie z. B. Post
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576731"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642695"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder-Ressoucentyp
 
@@ -57,8 +57,8 @@ Bekannte Namen arbeiten unabhängig von dem Gebietsschema des Postfach des Benut
 |[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des mailFolder-Objekts.|
 |[Create MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Dient zum Erstellen eines neuen mailFolder-Elements unter dem aktuellen durch die Veröffentlichung der childFolders-Sammlung.|
 |[List childFolders](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md)-Sammlung| Dient zum Abrufen der Ordnersammlung unter dem angegebenen Ordner. Sie können die `.../me/MailFolders`Verknüpfung zum Abrufen der Ordnersammlung auf oberster Ebene und zum Navigieren zu einem anderen Ordner verwenden.|
-|[Create Message](../api/mailfolder-post-messages.md) |[Nachricht](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
-|[Nachrichten auflisten](../api/mailfolder-list-messages.md) |Sammlung von [Nachrichten](message.md)| Dient zum Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers oder Nachrichten in einen bestimmten Ordner im Postfach.|
+|[Create Message](../api/mailfolder-post-messages.md) |[message](message.md)| Dient zum Erstellen einer neuen Nachricht in dem aktuellen mailFolder-Element durch die Veröffentlichung in der Nachrichtensammlung.|
+|[List messages](../api/mailfolder-list-messages.md) |Sammlung von [Nachrichten](message.md)| Dient zum Abrufen aller Nachrichten im Postfach des angemeldeten Benutzers oder Nachrichten in einen bestimmten Ordner im Postfach.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Dient zum Aktualisieren des angegebenen mailFolder-Objekts. |
 |[Delete](../api/mailfolder-delete.md) | Keine |Dient zum Löschen des angegebenen mailFolder-Objekts. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Dient zum Kopieren eines mailFolder-Elements und seiner Inhalte in ein anderes mailFolder-Element.|
@@ -100,8 +100,8 @@ E-Mail-Ordner in Outlook können mehrere Typen von Elementen enthalten, beispiel
 |childFolders|[MailFolder](mailfolder.md)-Sammlung|Die Sammlung der untergeordneten Ordner in dem mailFolder-Element.|
 |messageRules | [messageRule](messagerule.md)-Sammlung | Die Sammlung von Regeln, die für den Posteingangsordner des Benutzers gelten. |
 |Nachrichten|[Nachrichten](message.md)-Sammlung|Die Sammlung der Nachrichten in dem mailFolder-Element.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter mehrwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung erweiterter einwertiger Eigenschaften, die für das mailFolder-Element definiert sind. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -113,8 +113,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

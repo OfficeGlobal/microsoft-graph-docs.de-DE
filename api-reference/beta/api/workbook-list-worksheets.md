@@ -4,12 +4,12 @@ description: Dient zum Abrufen einer Liste von Arbeitsblattobjekten.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 02d26e4130019e232a23af0eae7ea25678285d3c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 79cf4b8fd4a3de5b92176d6ae907a78048053988
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575321"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641799"
 ---
 # <a name="list-worksheets"></a>Arbeitsblätter auflisten
 
@@ -60,7 +60,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet",
+  "@odata.type": "microsoft.graph.worksheet",
   "isCollection": true
 } -->
 ```http

@@ -4,12 +4,12 @@ description: Stellt ein Gerät im Verzeichnis registriert. Geräte werden mithil
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42b1f0625cfa14f7beff1d4206bd93abb9f9a9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574873"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641372"
 ---
 # <a name="device-resource-type"></a>Geräteressourcentyp
 
@@ -27,7 +27,7 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |[List devices](../api/device-list.md) | [Geräte](device.md)sammlung| Dient zum Abrufen einer Liste von Geräten, die in dem Verzeichnis registriert sind. |
 |[Update device](../api/device-update.md) | [Gerät](device.md)  |Aktualisieren Sie die Eigenschaften des Geräts-Objekts. |
 |[Delete device](../api/device-delete.md) | Keine |Das Objekt zu löschen. |
-|[memberOf auflisten](../api/device-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen das Gerät ein direktes Mitglied ist. |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen das Gerät ein direktes Mitglied ist. |
 |[Transitive memberOf auflisten](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen das Gerät ein Mitglied ist. Dieser Vorgang ist transitiv. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen der Benutzer, die registrierte Besitzer des Geräts in der registeredOwners-Navigationseigenschaft sind.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen registrierter Benutzer des Geräts aus der registeredUsers-Navigationseigenschaft.|
@@ -41,9 +41,9 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Der Standardwert ist true.|
-|alternativeSecurityIds| microsoft.graph.alternativeSecurityId-Auflistung | Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
+|alternativeSecurityIds|alternativeSecurityId-Sammlung| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
 |approximateLastSignInDateTime|DateTimeOffset| Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
-|deviceId|Zeichenfolge (ID)| Der eindeutige Bezeichner, der vom Azure-Geräteregistrierungsdienst bei der Registrierung festgelegt wird. |
+|deviceId|Guid| Der eindeutige Bezeichner, der vom Azure-Geräteregistrierungsdienst bei der Registrierung festgelegt wird. |
 |deviceMetadata|String| Nur für internen Gebrauch. Auf Null festgelegt. |
 |deviceVersion|Int32| Nur für internen Gebrauch. |
 |displayName|String| Der Anzeigename für das Gerät. Erforderlich. |
@@ -54,8 +54,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |onPremisesSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt.|
 |operatingSystem|String| Der Typ des Betriebssystems auf dem Gerät. Erforderlich. |
 |operatingSystemVersion|String| Auf dem Gerät installierte Betriebssystemversion.
- Erforderlich. |
-|physicalIds|Zeichenfolgenauflistung| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
+ Erforderlich.  |
+|physicalIds|String collection| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
 |trustType|String| Typ von Vertrauensstellung für das beigetretene Gerät. Schreibgeschützt. Mögliche Werte: <br />**Arbeitsplatz** - Gibt an *, dass eigene persönliche Geräte mitgebracht werden sollen*<br />**AzureAd** - Nur Geräte, die mit der Cloud verknüpft sind<br />**ServerAd** - Lokale Geräte, die der Domäne beigetreten sind, die mit Azure AD verknüpft sind. Weitere Informationen hierzu finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |Name| String | Der Anzeigename eines Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
 |Status | String| Gerät ist online oder offline. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
@@ -69,11 +69,11 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |:---------------|:--------|:----------|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für das Gerät definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
 |registeredOwners|[directoryObject](directoryobject.md)-Sammlung| Der Benutzer, dessen Gerät mit der Cloud verknüpft ist oder der sein persönliches Gerät registriert hat. Der registrierte Besitzer wird zum Zeitpunkt der Registrierung festgelegt. Derzeit kann jeweils nur ein Besitzer vorhanden sein. Schreibgeschützt. Lässt Nullwerte zu.|
-|registeredUsers|[directoryObject](directoryobject.md)-Sammlung| Auflistung von Benutzern, die registrierte Benutzer des Geräts sind. Für mit der Cloud verknüpfte Geräte und registrierte persönliche Geräte werden registrierte Benutzer bei der Registrierung auf den gleichen Wert wie registrierte Besitzer festgelegt. Schreibgeschützt. Nullwerte zulassend.|
-|extensions|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für das Gerät definiert. Nullwerte zulassend.|
+|registeredUsers|[directoryObject](directoryobject.md)-Sammlung| Auflistung von Benutzern, die registrierte Benutzer des Geräts sind. Für mit der Cloud verknüpfte Geräte und registrierte persönliche Geräte werden registrierte Benutzer bei der Registrierung auf den gleichen Wert wie registrierte Besitzer festgelegt. Schreibgeschützt. Lässt Nullwerte zu.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für das Gerät definiert. Lässt Nullwerte zu.|
 |registeredOwners|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Besitzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |registeredUsers|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Benutzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|Befehle | Microsoft.Graph.Command-Auflistung | Befehle, die an dieses Gerät gesendet|
+|Befehle | Collection(Microsoft.Graph.Command) | Befehle, die an dieses Gerät gesendet|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -93,7 +93,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",

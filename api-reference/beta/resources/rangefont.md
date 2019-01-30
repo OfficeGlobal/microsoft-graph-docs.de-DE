@@ -4,12 +4,12 @@ description: Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgr
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571135"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640161"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont-Ressourcentyp
 
@@ -23,7 +23,7 @@ Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[RangeFont abrufen](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des rangeFont-Objekts.|
-|[Aktualisieren](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Dient zum Aktualisieren des RangeFont-Objekts. |
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Dient zum Aktualisieren des RangeFont-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -33,7 +33,7 @@ Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw
 |italic|Boolescher Wert|Stellt den Kursiv-Status der Schriftart dar.|
 |name|string|Schriftartname (z. B. "Calibri")|
 |size|double|Schriftgrad|
-|underline| Enum-Zeichenfolge |Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|string|Art der auf die Schriftart angewendete Unterstreichung. Die folgenden Werte sind möglich: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -58,7 +58,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
+  "underline": "string"
 }
 
 ```

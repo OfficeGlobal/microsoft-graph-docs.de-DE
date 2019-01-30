@@ -1,18 +1,18 @@
 ---
 title: Verwenden Sie den Aktivitätsfeed REST-API
-description: 'Der Aktivitätsfeed-API in Microsoft Graph können Sie eines Benutzers Actiity Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und dem Benutzer die Berechtigung Aktivität, die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden kann. '
+description: 'Aktivitätsfeed API in Microsoft Graph können Sie die Aktivität des Benutzers Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über delegierten Berechtigungen und dem Benutzer die Berechtigung Aktivität, die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden kann. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a229a5231894598fce0ff11f15926256987caa84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971844"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641071"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Verwenden Sie den Aktivitätsfeed REST-API
 
-Der Aktivitätsfeed-API in Microsoft Graph können Sie eines Benutzers Actiity Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über [Berechtigungen delegiert](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) und die [Benutzerberechtigungen für die Aktivität](/graph/permissions-reference), die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden können. 
+Aktivitätsfeed API in Microsoft Graph können Sie die Aktivität des Benutzers Geräte-und plattformübergreifend fortsetzen. Aktivität feed API-Anfragen werden ausgeführt, im Auftrag eines Benutzers über [Berechtigungen delegiert](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) und die [Benutzerberechtigungen für die Aktivität](/graph/permissions-reference), die mit entweder persönliche oder Arbeit und Schule Konten verwendet werden können. 
 
 Die Benutzeraktivitäten werden von der Ressource [Aktivität](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) dargestellt und sind organisiert ein Feed zeitbasierte dargestellt durch die Auflistung mich / Aktivitäten. 
 <!-- Add missing content.

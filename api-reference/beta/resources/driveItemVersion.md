@@ -2,15 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: driveItemVersion
+title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528970"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642023"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion-Ressourcentyp
 
@@ -28,7 +28,7 @@ Die folgenden Aufgaben sind für driveItemVersion-Ressourcen verfügbar.
 | [Versionen auflisten][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Version abrufen][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Inhalte abrufen][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Version wiederherstellen][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [Version wiederherstellen][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -58,7 +58,7 @@ Im Beispiel der vorstehenden Tabelle wird `/drive` verwendet, aber es gibt viele
 | **id**                   | string                                               | Die ID der Version. Schreibgeschützt.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Die Identität des Benutzers, der die Version zuletzt geändert hat. Schreibgeschützt.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Datum und Uhrzeit der letzten Änderung der Version. Schreibgeschützt.                 |
-| Veröffentlichung          | [PublicationFacet](../resources/publicationfacet.md) | Zeigt den Veröffentlichungsstatus dieser bestimmten Version an. Schreibgeschützt. |
+| **Veröffentlichung**          | [PublicationFacet](../resources/publicationfacet.md) | Zeigt den Veröffentlichungsstatus dieser bestimmten Version an. Schreibgeschützt. |
 | **size**                 | Int64                                                | Gibt die Größe des Inhalt-Streams für diese Version des Elements an.  |
 
 ## <a name="relationships"></a>Beziehungen

@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des ChartLegend-Objekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b1356e8e32fee08584774a16959d91a3fa3c149a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572983"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641113"
 ---
 # <a name="update-chartlegend"></a>ChartLegend aktualisieren
 
@@ -42,12 +42,12 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Overlay|Boolescher Wert|Boolescher Wert, der angibt, ob die Diagrammlegende mit dem Text des Diagramms überlappen soll.|
-|Position|string|Die Position der Legende im Diagramm darstellt. Die möglichen Werte sind: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|Position|string|Gibt die Position der Legende im Diagramm an. Mögliche Werte: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|Boolescher Wert|Ein boolescher Wert, der die Sichtbarkeit eines ChartLegend-Objekts darstellt.|
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [WorkbookChartLegend](../resources/chartlegend.md) -Objekt aus der Antwort.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [ChartLegend](../resources/chartlegend.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
@@ -71,7 +71,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartLegend"
+  "@odata.type": "microsoft.graph.chartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

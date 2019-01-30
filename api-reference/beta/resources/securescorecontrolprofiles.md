@@ -2,12 +2,12 @@
 title: Ressourcentyp secureScoreControlProfiles
 description: Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardeinstellung alle Steuerelemente für einen Mandanten zurückgegeben und einzelne Steuerelemente können explizit abrufen.
 localization_priority: Normal
-ms.openlocfilehash: 4e599bbffd291de51ba478f8661999d01c8c8998
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576059"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641610"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>Ressourcentyp secureScoreControlProfiles
 
@@ -20,7 +20,7 @@ Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardein
 
 | Methode   | Rückgabetyp|Beschreibung|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScoreControlProfiles-Objekts.|
+|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Lesen Sie Eigenschaften und Metadaten eines SecureScoreControlProfiles-Objekts.|
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -30,10 +30,11 @@ Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardein
 |   azureTenantId   |   String  |   GUID-Zeichenfolge für Mandanten-ID ein.  |
 |   Steuerelementname |   String  |   Name des Steuerelements. |
 |   title   |   String  |   Titel des Steuerelements.   |
+| complianceInformation | [ComplianceInformation](complianceinformation.md) -Auflistung | Die Auflistung der Informationen im Zusammenhang mit Compliance secure Score-Steuerelement |
 |   controlCategory |   String  |   Steuerelement-Aktionskategorie (Konto, Daten, Gerät, Apps, Infrastruktur).  |
 |   actionType  |   String  |   Steuerelementtyp Aktion (Config überprüfen, Verhalten). |
 |   service |   String  |   Dienst, der das Steuerelement (Exchange, Sharepoint, Azure AD) besitzt. |
-|   MaxErgebnis |  Gleitkommawert mit doppelter Genauigkeit  |   Aktuelle abgerufen max Score am angegebenen Datum.   |
+|   MaxErgebnis |  String  |   Aktuelle abgerufen max Score am angegebenen Datum.   |
 |   Tier |  String  |   Steuerelement-Tier (Quad-Core, mehrstufige im Detail, erweiterte.)    |
 |   userImpact |    String  | Beeinträchtigung für die Benutzer Implementieren von Steuerelement (niedrig, Mittel, hoch).    |
 |   implementationCost |    String  |   Ressourcenkosten Implemmentating-Steuerelements (niedrig, Mittel, hoch). |
@@ -43,9 +44,7 @@ Stellt einen Mandanten sichere Faktor pro Steuerelementdaten. In der Standardein
 |   Wartung |   String  |   Beschreibung, wie das Steuerelement helfen warten. |
 |   remediationImpact | String  |   Beschreibung der Auswirkung auf den Benutzer von der Wartung. |
 |   actionUrl | String  |   URL zu, in dem das Steuerelement verarbeitet werden kann. |
-|   lastModifiedDateTime |  Zeichenfolge (DateTimeOffset) |   Datum der letzten Änderung |
-|   controlStateUpdates |   [SecureScoreControlStateUpdate](securescorecontrolstateupdate.md) -Auflistung |  Kennzeichnung, die angibt, für der Mandanten ein Steuerelement markiert wurde (ignorieren, ThirdParty, überprüft) (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)). |
-|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker).|
+|   controlStateUpdates |   [SecureScoreControlStateUpdate](securescorecontrolstateupdate.md) -Auflistung |    Kennzeichnung, die angibt, für der Mandanten ein Steuerelement markiert wurde (ignorieren, ThirdParty, überprüft) (unterstützt [Aktualisieren](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -60,32 +59,32 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScores"
 }-->
 
 ```json
 {
-    "title": "String", 
-    "azureTenantId": "String (identifier)", 
-    "referenceId": "String", 
-    "controlName": "String", 
-    "maxScore": "Double",
-    "controlCategory": "string",
-    "actionType": "string",
-    "service": "String",
-    "tier": "string",
-    "userImpact": "string",
-    "implementationCost ": "string",
-    "rank ": "Int32",
-    "deprecated ": "Boolean",
-    "remediation": "String",
-    "remediationImpact ": "String",
-    "actionUrl": "String",
-    "lastModifiedDateTime": "   String (DateTimeOffset)",
-    "controlStateUpdates": [{"odata.type":"microsoft.graph.secureScorecontrolStateUpdates"}],
-    "tenantNotes": "String",
-    "upn": "String",    
-    "vendorInformation" : "microsoft.graph.securityVendorInformation"
+"title": "String", 
+"azureTenantId": "Guid", 
+"referenceId": "String", 
+"controlName": "String", 
+"maxScore": "Int32",
+"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
+"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
+"service": "String",
+"tier": "Collection(microsoft.graph.SecureScore.tier)",
+"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
+"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
+"rank ": "Int32",
+"threats": "Collection(microsoft.graph.SecureScore.threat)",
+"deprecated ": "Boolean",
+"remediation": "String",
+"remediationImpact ": "String",
+"actionUrl": "String",
+"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
+"tenantNotes": "String",
+"upn": "String",
+"comments": "String",
 }
 
 

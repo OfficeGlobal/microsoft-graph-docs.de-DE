@@ -4,12 +4,12 @@ description: Dient zum Abrufen eines Punkts anhand seiner Position in der Datenr
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a7a4274790f39bc8443273df0fb617e65a564372
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 79ed2cdd747436ffa8dc52013722fd943ff431c4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577207"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641519"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -72,7 +72,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "@odata.type": "microsoft.graph.chartPoint"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -1,15 +1,15 @@
 ---
-title: Ressourcentyp usedInsight
+title: Ressourcentyp verwendet
 description: Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblicke in die gibt, die zutreffenden Dokumente, die ein Benutzer anzeigen oder darauf zugreifen.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 056654a5e467e202b2bde5ac8ee98dccab93d7c9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574229"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642541"
 ---
 # <a name="used-resource-type"></a>Ressourcentyp verwendet
 
@@ -39,17 +39,11 @@ Einen Einblick, Dokumente, die von einem bestimmten Benutzer darstellt. Einblick
 
 | Eigenschaft      | Typ          | Beschreibung  |
 | ------------- |---------------| -------------|
-| resource      | Entity-Auflistung | Verwendet zum Navigieren zu dem Element, das verwendet wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
+| resource      | Entität        | Verwendet zum Navigieren zu dem Element, das verwendet wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.usedInsight"
-}-->
 ```json
 {
   "id": "string",

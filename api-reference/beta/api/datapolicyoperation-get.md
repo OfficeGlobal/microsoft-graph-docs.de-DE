@@ -4,12 +4,12 @@ description: Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46839a9b2bf45cb54342de86f3db476de24689e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577396"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640756"
 ---
 # <a name="get-datapolicyoperation"></a>Abrufen von dataPolicyOperation
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  User.Export.All und User.Read.All  |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht zutreffend  |
-|Anwendung | User.Export.All und User.Read.All | 
+|Application | User.Export.All und User.Read.All | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

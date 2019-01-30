@@ -4,12 +4,12 @@ description: .Activate() darauf.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4c943cc041c00cd0f1a50384f5e891472f214301
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0958f8f82502c92eff08ec80a7b116c1b0c4a5f0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577515"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640840"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: Hinzufügen
 
@@ -71,7 +71,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

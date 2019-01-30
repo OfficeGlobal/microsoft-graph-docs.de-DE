@@ -2,12 +2,12 @@
 title: Erstellen von privilegedRoleAssignmentRequest
 description: Erstellen Sie ein Privilegedroleassignmentrequest-Objekt.
 localization_priority: Normal
-ms.openlocfilehash: 69e095e13d89ed780feeb7ea32b7aa9ac10de055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575293"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641687"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Erstellen von privilegedRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-|Anwendung                            | Nicht unterstützt |
+|Application                            | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +41,10 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Privilegedroleas
 | Eigenschaft     | Typ    |  Beschreibung|
 |:---------------|:--------|:----------|
 |roleId|String|Die ID der Rolle. Erforderlich.|
-|type|String|Stellt die den Typ des Vorgangs für die rollenzuweisung. Der Wert kann sein `AdminAdd`: Administratoren hinzufügen von Benutzern zu Rollen; `UserAdd`: Hinzufügen von Benutzern rollenzuweisungen. Erforderlich.|
-|assignmentState|String|Der Status der Zuordnung. Der Wert kann sein `Eligible` für die Zuweisung von zu auswählbaren `Active` – Wenn sie direkt zugeordnet ist `Active` von Administratoren, oder an einer Zuordnung zu auswählbaren durch den Benutzer aktiviert. Mögliche Werte: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Erforderlich.|
+|type|String|Stellt die den Typ des Vorgangs für die rollenzuweisung. Der Wert kann sein `AdminAdd`: Administratoren hinzufügen von Benutzern zu Rollen; `UserAdd`: Hinzufügen von Benutzern rollenzuweisungen. Erforderlich. |
+|assignmentState|String|Der Status der Zuordnung. Der Wert kann sein `Eligible` für die Zuweisung von zu auswählbaren `Active` – Wenn sie direkt zugeordnet ist `Active` von Administratoren, oder an einer Zuordnung zu auswählbaren durch den Benutzer aktiviert. Mögliche Werte: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Erforderlich. |
 |Grund|String|Der Grund muss bereitgestellt werden, für die Rolle Zuordnung Anforderung zur Überwachung und Zweck überprüfen.|
-|Zeitplan|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Den Zeitplan der Rolle Zuordnung Anforderung.|
+|Zeitplan|[governanceSchedule](../resources/governanceschedule.md)|Den Zeitplan der Rolle Zuordnung Anforderung.|
 
 ## <a name="response"></a>Antwort
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) -Objekts in der Antworttext.
@@ -107,6 +107,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 304
 
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
     "schedule": {
@@ -125,7 +126,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self",
+    "userId": "Self"，
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

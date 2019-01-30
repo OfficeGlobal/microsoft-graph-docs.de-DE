@@ -4,12 +4,12 @@ description: Die **InvitationParticipant** wird verwendet, um die Darstellung ei
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573599"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641918"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Ressourcentyp invitationParticipantInfo
 
@@ -21,7 +21,7 @@ Die **InvitationParticipant** wird verwendet, um die Darstellung eines Satzes vo
 
 | Eigenschaft                           | Typ                          | Beschreibung                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | Mögliche Werte sind: `default` und `voicemail`. |
+| endpointType                       | String                        | Mögliche Werte: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | Die [IdentitySet](identityset.md) Einladung zugeordnet.                   |
 | languageId                         | String                        | Die Sprache-Kultur-Zeichenfolge.                                                                                     |
 | Region                             | String                        | Region des Teilnehmers.                                                           |
@@ -40,7 +40,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

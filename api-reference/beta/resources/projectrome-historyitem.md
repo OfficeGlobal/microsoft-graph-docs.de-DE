@@ -3,12 +3,12 @@ title: Ressourcentyp historyItem
 description: Stellt ein Verlaufselement für eine Aktivität in einer app. Die Benutzeraktivitäten darstellen ein einziges Ziel in der app - beispielsweise ein TV-Programm, ein Dokument oder eine aktuelle Kampagne in einem Video Spiel. Wenn ein Benutzer Aktivität einbezieht, wird das Engagement als Element Verlauf erfasst, das die Start- und Endzeit für diese Aktivität angibt. Wie der Benutzer Aktivität über einen Zeitraum erneut einbezieht, werden mehrere Verlaufselemente für eine einzelne Benutzeraktivität aufgezeichnet.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 582cfe71ab85602efc087d5e39005d5a9763394d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576304"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640588"
 ---
 # <a name="historyitem-resource-type"></a>Ressourcentyp historyItem
 
@@ -29,12 +29,12 @@ Wenn eine app eine Sitzung erstellt, sollte ein **HistoryItem** -Objekt auf die 
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|status | Enum-Zeichenfolge | Vom Server festgelegt. Einen Statuscode verwendet, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
+|status | EnumType | Vom Server festgelegt. Einen Statuscode verwendet, um gültige Objekte identifizieren. Werte: aktiv, aktualisiert, gelöscht, ignoriert.|
 |userTimezone | Zeichenfolge | Optional. Die Zeitzone, in der das Gerät des Benutzers verwendet, um die Aktivität generieren zum Zeitpunkt der Erstellung Aktivität gefunden wurde. Werte, die zur Unterstützung der plattformübergreifende Darstellung als Olson-IDs angegeben.|
 |createdDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server erstellt wurde.|
 |lastModifiedDateTime | DateTimeOffset | Vom Server festgelegt. DateTime in UTC, wenn das Objekt auf dem Server geändert wurde.|
 |id | Zeichenfolge | Erforderlich. Client-Set-GUID für das **HistoryItem** -Objekt.|
-|startedDateTime | DateTimeOffset | Erforderlich. UTC-DateTime beim **HistoryItem** (Aktivität Sitzung) gestartet wurde. Erforderlich für die Versionsgeschichte der Zeitachse.|
+|startedDateTime | DateTimeOffset | Erforderlich.  UTC-DateTime beim **HistoryItem** (Aktivität Sitzung) gestartet wurde. Erforderlich für die Versionsgeschichte der Zeitachse.|
 |lastActiveDateTime | DateTimeOffset | Optional. UTC-DateTime beim letzten **HistoryItem** (Aktivität Sitzung) als aktiv oder fertig - bei null **HistoryItem** Status erkannt wurden, sollte laufend Besprechung sein.|
 |expirationDateTime | DateTimeOffset | Optional. UTC-DateTime, wenn die **HistoryItem** harten Löschens durchläuft. Kann vom Client festgelegt werden.|
 |activeDurationSeconds | int | Optional. Die Dauer des Engagements aktiver Benutzer. Wenn nicht angegeben ist, erfolgt die Berechnung von der **StartedDateTime** und **LastActiveDateTime**.|
@@ -61,7 +61,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-    "status": "enum-string",
+    "status": "String (EnumType)",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

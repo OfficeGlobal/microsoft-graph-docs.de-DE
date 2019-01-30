@@ -4,12 +4,12 @@ description: 'In Azure AD Access Feature, überprüft die `accessReview` eine Ü
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a02cc7cfe74bf9f12c4e2a8568c764934cb0c842
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576346"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642492"
 ---
 # <a name="accessreview-resource-type"></a>Ressourcentyp accessReview
 
@@ -42,22 +42,22 @@ In Azure AD [Access überprüft](accessreviews-root.md) Feature der `accessRevie
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)     | AccessReview.Read.All AccessReview.ReadWrite.All |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-|Anwendung                            | Nicht unterstützt |
+|Application                            | Nicht unterstützt |
 
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | Das Feature zugewiesen Eindeutiger Bezeichner der einer Access-Überprüfung. |
-| `displayName`             |`String`                                                        | Der Name des Access überprüfen. Erforderliche auf erstellen. |
-| `startDateTime`           |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, gestartet werden.  Dabei kann es sich um ein Datum in der Zukunft handeln.  Erforderliche auf erstellen. |
-| `endDateTime`             |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, um zu beenden. Dies muss mindestens einen Tag später als das Startdatum sein.  Erforderliche auf erstellen. |
+| `displayName`             |`String`                                                        | Der Name des Access überprüfen. Beim Erstellen erforderlich. |
+| `startDateTime`           |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, gestartet werden.  Dabei kann es sich um ein Datum in der Zukunft handeln.  Beim Erstellen erforderlich. |
+| `endDateTime`             |`DateTimeOffset`                                                | Den DateTime-Wert, wenn die Überprüfung geplant ist, um zu beenden. Dies muss mindestens einen Tag später als das Startdatum sein.  Beim Erstellen erforderlich. |
 | `status`                  |`String`                                                        | Dieses schreibgeschützte Feld gibt den Status eines AccessReview an. Die normale Statusarten `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, und `AutoReviewed`. |
 | `description`             |`String`                                                        | Die Beschreibung, die vom Ersteller überprüfen Access so, dass der Bearbeiter bereitgestellt. |
-| `businessFlowTemplateId`  |`String`                                                        | Der Bezeichner der Business-Fluss-Vorlage. Erforderliche auf erstellen. |
-| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer auf das Zielobjekt, eine der `self`, `delegated` oder `entityOwners`. Erforderliche auf erstellen. | 
+| `businessFlowTemplateId`  |`String`                                                        | Der Bezeichner der Business-Fluss-Vorlage. Beim Erstellen erforderlich. |
+| `reviewerType`            |`String`                                                        | Die Beziehungstyp des Reviewer auf das Zielobjekt, eine der `self`, `delegated` oder `entityOwners`. Beim Erstellen erforderlich. | 
 | `createdBy`               |[Benutzeridentität](useridentity.md)                                 | Der Benutzer, die diese Überprüfung erstellt hat. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt für das das Access überprüft überprüft die zugewiesenen Zugriffsrechte. Dies kann die Gruppe für die Überprüfung von Mitgliedschaften von Benutzern in einer Gruppe oder der app für eine Überprüfung der Zuordnungen von Benutzern zu einer Anwendung sein. Erforderliche auf erstellen. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | Das Objekt für das das Access überprüft überprüft die zugewiesenen Zugriffsrechte. Dies kann die Gruppe für die Überprüfung von Mitgliedschaften von Benutzern in einer Gruppe oder der app für eine Überprüfung der Zuordnungen von Benutzern zu einer Anwendung sein. Beim Erstellen erforderlich. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | Die Einstellungen für ein AccessReview finden Sie unter Typdefinition unten. |
 
 
@@ -104,10 +104,10 @@ Es folgt eine JSON-Darstellung der Ressource.
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.useridentity",
- "reviewedEntity": "microsoft.graph.entity",
- "settings": "microsoft.graph.entity",
- "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
+ "createdBy": "microsoft.graph.userIdentity",
+ "reviewedEntity": "microsoft.graph.identity",
+ "settings": "microsoft.graph.accessReviewSettings",
+ "reviewers": "Collection(microsoft.graph.userIdentity)"
 }
 
 ```

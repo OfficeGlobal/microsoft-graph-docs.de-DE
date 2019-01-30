@@ -4,12 +4,12 @@ description: Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8ede39ef53bfc39574ebfc86c8138a70fc31ad6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573067"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641967"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint-Ressourcentyp
 
@@ -22,37 +22,35 @@ Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[ChartPoint abrufen](../api/chartpoint-get.md) | [workbookChartPoint](chartpoint.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.|
-|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md) -Auflistung |Dient zum Abrufen der ChartPoint-Objektsammlung. |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](chartpoint.md)|Abrufen eines Punkts anhand seiner Position in der Datenreihe.|
+|[ChartPoint abrufen](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.|
+|[List](../api/chartpoint-list.md) | [ChartPoint-Sammlung](chartpoint.md) |Dient zum Abrufen der ChartPoint-Objektsammlung. |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|Abrufen eines Punkts anhand seiner Position in der Datenreihe.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Wert|Json|Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.|
-|id|string|Eindeutiger Bezeichner|
+|Wert|object|Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.|
+|format|[ChartPointFormat](chartpointformat.md)|Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

@@ -2,12 +2,12 @@
 title: attendee-Ressourcentyp
 description: Ein Teilnehmer eines Ereignisses. Dies kann eine Person oder eine Ressource sein, wie z. B. Besprechungsräume oder Geräte, die als Ressource auf dem Exchange-Server für den Mandanten eingerichtet wurden.
 localization_priority: Normal
-ms.openlocfilehash: a59868477629c36995a38f736c7087a16791cac3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d50b6756c7d0077ec95f10988d06fa2ff81631fc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576514"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642877"
 ---
 # <a name="attendee-resource-type"></a>attendee-Ressourcentyp
 
@@ -30,7 +30,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

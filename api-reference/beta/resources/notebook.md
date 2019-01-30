@@ -4,12 +4,12 @@ description: Stellt ein OneNote-Notizbuch dar.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573340"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641624"
 ---
 # <a name="notebook-resource-type"></a>notebook-Ressourcentyp
 
@@ -68,8 +68,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|sectionGroups|[SectionGroup](sectiongroup.md) -Auflistung|Die Abschnittsgruppen im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
-|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
+|sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[Section](section.md)-Sammlung|Die Abschnitte im Notizbuch. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

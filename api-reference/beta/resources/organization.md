@@ -4,12 +4,12 @@ description: 'Stellt eine Azure Active Directory-Mandanten. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574992"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642142"
 ---
 # <a name="organization-resource-type"></a>organization-Ressourcentyp
 
@@ -35,8 +35,8 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md)-Sammlung|Die Sammlung von Serviceplänen, die dem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
-| businessPhones                      | Zeichenfolgenauflistung                                         | Telefonnummer für die Organisation. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
-|Ort|Zeichenfolge| Der Name der Stadt aus der Unternehmensadresse |
+| businessPhones                      | String-Sammlung                                         | Telefonnummer für die Organisation. **Hinweis:** Obwohl dies eine String-Sammlung ist, kann nur eine Nummer für diese Eigenschaft festgelegt werden.                                                                                            |
+|city|Zeichenfolge| Der Name der Stadt aus der Unternehmensadresse |
 |companyLastDirSyncTime|DateTimeOffset|Zeit und Datum der letzten Synchronisierung des Mandanten mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |Land|Zeichenfolge| Der Name des Landes/der Region aus der Unternehmensadresse |
 |countryLetterCode|Zeichenfolge| Landes-/Regionsabkürzung für das Unternehmen |
@@ -46,18 +46,18 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 |displayName|String|Der Anzeigename für den Mandanten.|
 |id|String|Die Mandanten-ID eine eindeutige ID, die Organisation (oder des Mandanten) darstellt. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isMultipleDataLocationsForServicesEnabled|Boolean|**true,** Wenn Organisation Multi-Geo aktiviert ist; **"false"** Wenn Organisation nicht aktiviert Multi-Geo. **null** (Standard). Schreibgeschützt. Weitere Informationen finden Sie unter [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu.            |
+|marketingNotificationEmails|String collection| Lässt keine Nullwerte zu.            |
 |objectType|String|Eine Zeichenfolge, die den Objekttyp identifiziert. Für Mandanten ist der Wert immer „Unternehmen“. |
 |postalCode|Zeichenfolge| Die Postleitzahl aus der Unternehmensadresse |
 |preferredLanguage|Zeichenfolge| Die bevorzugte Sprache für das Unternehmen. Muss im ISO 639-1-Code angegeben werden. Beispiel: „en“. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Das Datenschutzprofil einer Organisation.            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) -Auflistung| Lässt keine Nullwerte zu.            |
-|provisioningErrors|onPremisesProvisioningError-Sammlung| Lässt keine Nullwerte zu.            |
-|securityComplianceNotificationMails|Zeichenfolgenauflistung||
-|securityComplianceNotificationPhones|Zeichenfolgenauflistung||
+|provisionedPlans|[ProvisionedPlan-Sammlung](provisionedplan.md)| Lässt keine Nullwerte zu.            |
+|provisioningErrors|ProvisioningError-Sammlung| Lässt keine Nullwerte zu.            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String collection||
 |state|Zeichenfolge| Der das Bundesland aus der Unternehmensadresse |
 |street|Zeichenfolge| Der Straßenname aus der Unternehmensadresse |
-|technicalNotificationMails|Zeichenfolgenauflistung| Lässt keine Nullwerte zu. |
+|technicalNotificationMails|String collection| Lässt keine Nullwerte zu. |
 |verifiedDomains|[VerifiedDomain-Sammlung](verifieddomain.md)|Die Sammlung von Domänen, die diesem Mandanten zugeordnet sind. Lässt keine Nullwerte zu.            |
 
 ## <a name="relationships"></a>Beziehungen
@@ -108,7 +108,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Hinzufügen von benutzerdefinierten Daten zu Ressourcen mithilfe von Erweiterungen](/graph/extensibility-overview)
 - [Hinzufügen von benutzerdefinierten Daten zu Benutzern mithilfe offener Erweiterungen](/graph/extensibility-open-users)

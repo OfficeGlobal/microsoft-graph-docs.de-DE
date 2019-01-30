@@ -1,21 +1,21 @@
 ---
 title: 'Benutzer: TranslateExchangeIds'
-description: Übersetzen Sie IDs von Outlook-bezogene Ressourcen zwischen den Formaten.
+description: Übersetzt IDs von Outlook-bezogenen Ressourcen zwischen den Formaten.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571289"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643615"
 ---
 # <a name="user-translateexchangeids"></a>Benutzer: TranslateExchangeIds
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Übersetzen Sie IDs von Outlook-bezogene Ressourcen zwischen den Formaten.
+Übersetzt IDs von Outlook-bezogenen Ressourcen zwischen den Formaten.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -25,7 +25,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:----------------|:--------------------------------------------|
 | Delegiert (Geschäfts-, Schul- oder Unikonto) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegiert (persönliches Microsoft-Konto) | User.ReadBasic, User.Read, User.ReadWrite |
-| Anwendung | User.Read.All, User.ReadWrite.All |
+| Application | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1}",
+      "sourceId": "{rest-formatted-id-1},
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2}",
+      "sourceId": "{rest-formatted-id-2},
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

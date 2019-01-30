@@ -4,12 +4,12 @@ description: 'Einen Einblick, freigegebene mit oder von einem bestimmten Benutze
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573179"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640126"
 ---
 # <a name="shared-resource-type"></a>freigegebene Ressource-Typ
 
@@ -41,17 +41,11 @@ Einen Einblick, freigegebene mit oder von einem bestimmten Benutzer Dateien dars
 
 | Eigenschaft      | Typ          | Beschreibung  |
 | ------------- |---------------| -------------|
-| resource      | Entity-Auflistung | Verwendet zum Navigieren zu dem Element, das freigegeben wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
+| resource      | Entität        | Verwendet zum Navigieren zu dem Element, das freigegeben wurde. Dateianlagen ist der Typ *FileAttachment*. Für verknüpfte Anlagen ist der Typ *DriveItem*. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.shared"
-}-->
 ```json
 {
   "id": "string",

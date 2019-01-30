@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576241"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640658"
 ---
 # <a name="sitepage-resource"></a>SitePage-Ressource
 
@@ -29,7 +29,7 @@ Alle unten stehenden Beispiele sind relativ zu einer [Website][], eg: `https://g
 | [Seiten auflisten][]                  | Abrufen von /pages
 | [Seite abrufen][]                    | Abrufen von /pages/ {Seiten-Id}
 | [Create][]                      | POST-/pages
-| [Löschen][]                      | Löschen von /pages/ {Seiten-Id}
+| [Delete][]                      | Löschen von /pages/ {Seiten-Id}
 | [Publish][]                     | Posten Sie /pages/ {Seiten-Id} / veröffentlichen
 
 [Seiten auflisten]: ../api/sitepage-list.md
@@ -56,7 +56,7 @@ Es folgt eine JSON-Darstellung einer **SitePage** Ressource.
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },

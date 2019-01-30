@@ -2,12 +2,12 @@
 title: richtlinienressourcentyp
 description: 'Stellt eine Azure AD-Richtlinie. Richtlinien sind benutzerdefinierte Regeln, die erzwungen werden können, klicken Sie auf Anwendungen, Dienstprinzipale, Gruppen oder die gesamte Organisation, den, der Sie zugeordnet sind. Derzeit nur einen Typ der Richtlinie zur Verfügung stehen:'
 localization_priority: Normal
-ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576199"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642128"
 ---
 # <a name="policy-resource-type"></a>richtlinienressourcentyp
 
@@ -28,15 +28,15 @@ Mit dieser Richtlinie wird ausführlich beschrieben.
 |[Löschrichtlinie](../api/policy-delete.md)|Keine|Löschen Sie Richtlinienobjekt.|
 |[Zuweisen der Richtlinie](../api/policy-assign.md)|Keine|Zuweisen einer Richtlinie zu einer Anwendung Dienstprinzipal.|
 |[Listenrichtlinien](../api/policy-list.md)|Auflistung von Gruppenrichtlinien|Rufen Sie aller Gruppenrichtlinienobjekte in der Organisation ab.|
-|[Zugewiesen-Listenrichtlinien](../api/policy-list-assigned.md)|Auflistung von Gruppenrichtlinien|Rufen Sie alle Richtlinienobjekte an eine Anwendung oder Dienstprinzipal zugewiesen.|
+|[List assigned policies](../api/policy-list-assigned.md)|Auflistung von Gruppenrichtlinien|Rufen Sie alle Richtlinienobjekte an eine Anwendung oder Dienstprinzipal zugewiesen.|
 
 ### <a name="common-properties"></a>Allgemeine Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|definition|Zeichenfolgenauflistung|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
-|displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich.|
+|definition|String|Die Version der bestimmte Richtlinie Zeichenfolge. Siehe unten. Erforderlich.|
+|displayName|String|Ein benutzerdefinierter Name für die Richtlinie ein. Erforderlich. |
 |IsOrganizationDefault|Boolean|Wenn auf true ist, aktivieren Sie diese Richtlinie festgelegt. Viele Richtlinien für den gleichen Richtlinientyp kann, jedoch nur eine Organisation standardmäßig aktiviert werden kann. Optional, ist Standardwert false.|
-|type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich.|
+|type|String|Gibt den Typ der Richtlinie an. Derzeit muss "TokenLifetimePolicy". Erforderlich. |
 
 #### <a name="common-relationships"></a>Allgemeine Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -66,17 +66,10 @@ Die folgenden Eigenschaften bilden das JSON-Objekt, das eine Richtlinie Gültigk
 |MaxAgeMultiFactor|String|Aktualisierungstoken verwenden, um neue Access/aktualisieren abzurufen token-Paare nach dem letzten Mal, das Sie authentifiziert, erfolgreich mit mehreren Faktoren kann Steuerelemente wie lange ein Benutzer weiterhin.|10 Minuten|erst gesperrt|365 Tage oder erst gesperrt|
 |MaxAgeSessionSingleFactor|String|Steuerelemente wie lange kann Benutzer weiterhin Sitzungstoken verwenden, um neue ID-Sitzung-Token abzurufen, nach dem Zeitpunkt der letzten sie mit nur einem einzigen Faktor erfolgreich authentifiziert. Da einfache weniger als mehrstufige Authentifizierung sicher angesehen wird, wird empfohlen, dass diese Richtlinie auf einen Wert gleich oder kleiner als der MultiFactorSessionTokenMaxAge festgelegt ist|10 Minuten|erst gesperrt|365 oder erst gesperrt|
 |MaxAgeSessionMultiFactor|String|Steuerelemente wie lange kann Benutzer weiterhin Sitzungstoken verwenden, um neue ID-Sitzung Token nach dem Zeitpunkt der letzten abrufen, die sie mit mehreren Faktoren erfolgreich authentifiziert.|10 Minuten|erst gesperrt|365 oder erst gesperrt|
-|Version|Ganze Zahl|Der Wert 1 festgelegt. Erforderlich.|Keine|Keine|Keine|
+|Version|Ganze Zahl|Der Wert 1 festgelegt. Erforderlich. |Keine|Keine|Keine|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.policy"
-}-->
 
 ```json
 {

@@ -4,12 +4,12 @@ description: Stellt das Formatierungsobjekt für Diagrammpunkte dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3004577a5ca9687b4bef85f59cfcc8eb528c4a66
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: da06bd0e399d095f525d5feaeb47b2d27d281cbc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573305"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642989"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat-Ressourcentyp
 
@@ -27,26 +27,7 @@ Keine
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Stellt die Füllung eines Diagramms dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
-
-
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPointFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"}
-}
-```
-
+|fill|[ChartFill](chartfill.md)|Stellt die Füllung eines Diagramms dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,18 +4,18 @@ description: Mit dieser API können Sie eine neue Ressource des Typs page in dem
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f397b10e914a779a153e78e1e10e906925aec9a1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570918"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640287"
 ---
 # <a name="create-page"></a>Seite erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mit dieser API können Sie eine neue Ressource des Typs [page](../resources/onenotepage.md) in dem jeweils angegebenen Abschnitt erstellen.
+Mit dieser API können Sie eine neue Ressource des Typs [page](../resources/page.md) in dem jeweils angegebenen Abschnitt erstellen.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Content-Type | string | `text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -46,7 +46,7 @@ Der Text kann HTML-Code enthalten, der direkt im Anforderungstext platziert ist,
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein neues [page](../resources/onenotepage.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein neues [page](../resources/page.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung

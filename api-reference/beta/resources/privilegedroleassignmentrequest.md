@@ -2,12 +2,12 @@
 title: Ressourcentyp privilegedRoleAssignmentRequest
 description: Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Management.
 localization_priority: Normal
-ms.openlocfilehash: a0cb0bc03d8bb2436e45139bc9db5322cc3970cf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571748"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642429"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>Ressourcentyp privilegedRoleAssignmentRequest
 
@@ -21,10 +21,10 @@ Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Mana
 
 | Methode       | Rückgabetyp | Beschreibung |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | [PrivilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) -Auflistung|Role Assignment Anforderungen aufgelistet.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|Erstellen Sie eine Anforderung an den Lebenszyklus von vorhandenen oder neuen rollenzuweisung zu verwalten.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | [Privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) -Auflistung|Role Assignment Anforderungen aufgelistet.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Erstellen Sie eine Anforderung an den Lebenszyklus von vorhandenen oder neuen rollenzuweisung zu verwalten.|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Ausstehende Role Assignment Anforderung abbrechen.|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |GET-Anforderung für Rolle-Zuordnung für aktuellen Requestor.|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |GET-Anforderung für Rolle-Zuordnung für aktuellen Requstor.|
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -36,7 +36,7 @@ Stellt die Anforderung für Role Assignment Vorgänge in Privilegd Identity Mana
 |Grund|String| Der Grund für die rollenzuweisung.|
 |requestedDateTime|DateTimeOffset| Schreibgeschützt. Die Zeit zu erstellen. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| Die Id der Rolle.|
-|Zeitplan|[microsoft.graph.governanceSchedule](governanceschedule.md)| Das der Rolle Zuordnung Anforderung Zeitplan-Objekt.|
+|Zeitplan|[governanceSchedule](governanceschedule.md)| Das der Rolle Zuordnung Anforderung Zeitplan-Objekt.|
 |status|String| Lesen vorbehalten Status der Anforderung Zuordnung Rolle. Der Wert kann sein `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
 |ticketNumber|String| Die TicketNumber für die rollenzuweisung. |
 |ticketSystem|String| Die TicketSystem für die rollenzuweisung.|

@@ -3,12 +3,12 @@ title: Aktivität erstellen oder ersetzen
 description: Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie die Tiefe einfügen.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 1e5a7956ab5ac151613ac3559415b16570a2b087
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4875c54ff6dc0b90f5f25afecedac9d4f5529094
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966685"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643342"
 ---
 # <a name="create-or-replace-an-activity"></a>Aktivität erstellen oder ersetzen
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | UserActivity.ReadWrite.CreatedByApp    |
 |Delegiert (persönliches Microsoft-Konto) | UserActivity.ReadWrite.CreatedByApp    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -39,7 +39,7 @@ PUT /me/activities/{appActivityId}
 
 |Name | Typ | Beschreibung|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Erforderlich.|
+|Autorisierung | string | Bearer {token}. Erforderlich.|
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -83,7 +83,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false,
+            "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -131,7 +131,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -192,7 +192,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false,
+            "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -211,7 +211,7 @@ Content-length: 364
         {
             "userTimezone": "Africa/Casablanca",
             "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
         }
     ]
 }
@@ -247,7 +247,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {

@@ -4,12 +4,12 @@ description: Stellt eine Zeile in einer Tabelle dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577222"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643748"
 ---
 # <a name="tablerow-resource-type"></a>TableRow-Ressourcentyp
 
@@ -23,9 +23,9 @@ Stellt eine Zeile in einer Tabelle dar.
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
 |[TableRow abrufen](../api/tablerow-get.md) | [TableRow](tablerow.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des tableRow-Objekts.|
-|[Aktualisieren](../api/tablerow-update.md) | [TableRow](tablerow.md)  |Dient zum Aktualisieren des TableRow-Objekts. |
+|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |Dient zum Aktualisieren des TableRow-Objekts. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Ruft das Bereichsobjekt ab, das mit der gesamten Zeile verknüpft ist.|
-|[Löschen](../api/tablerow-delete.md)|Keine|Löscht die Zeile aus der Tabelle.|
+|[Delete](../api/tablerow-delete.md)|Keine|Löscht die Zeile aus der Tabelle.|
 |[List](../api/tablerow-list.md) | [TableRow](tablerow.md)-Sammlung |Dient zum Abrufen einer tableRow-Objektsammlung. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|Ruft eine Zeile anhand ihrer Position in der Auflistung ab.|
 |[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|Fügt der Tabelle eine neue Zeile hinzu.|
@@ -34,7 +34,7 @@ Stellt eine Zeile in einer Tabelle dar.
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Index|int|Gibt die Indexnummer der Zeile in der Zeilenauflistung der Tabelle zurück. Nullindiziert. Schreibgeschützt.|
-|values|Json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
+|values|json|Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können den Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zelle, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

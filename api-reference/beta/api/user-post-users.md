@@ -4,12 +4,12 @@ description: Verwenden Sie diese API, um einen neuen Benutzer zu erstellen.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04ae713cca285bd9fc16c3957ea1ca71dfea01a6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574089"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642527"
 ---
 # <a name="create-user"></a>Benutzer erstellen
 
@@ -48,7 +48,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen e
 |displayName |string |Der Name des Benutzers, der im Adressbuch angezeigt wird.|
 |onPremisesImmutableId |string |Muss nur angegeben werden, wenn ein neues Benutzerkonto erstellt wird, wenn Sie eine Verbunddomäne für die UserPrincipalName-Eigenschaft (UPN) des Benutzers verwenden.|
 |mailNickname |string |Der E-Mail-Alias für den Benutzer.|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |Das Kennwortprofil für den Benutzer.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Das Kennwortprofil für den Benutzer.|
 |userPrincipalName |string |Der Benutzerprinzipalname (someuser@contoso.com).|
 
 Da die Ressource **Benutzer** [Extensions](/graph/extensibility-overview)unterstützt, können Sie die `POST` Vorgang und Hinzufügen von benutzerdefinierten Eigenschaften mit Ihren eigenen Daten auf die Benutzerinstanz beim Erstellen.

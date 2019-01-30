@@ -4,12 +4,12 @@ description: 'Eine Nachricht, die für eine Besprechungsanfrage, -absage oder -a
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 669f1a81f76decf8103b7d6e6acba2fb93c458dc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575744"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643419"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage-Ressourcentyp
 
@@ -35,8 +35,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "attachments",
     "event",
     "extensions",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.eventMessage"
 }-->
@@ -69,10 +69,10 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
-  "meetingMessageType": "none | meetingRequest | meetingCancelled | meetingAccepted | meetingTenativelyAccepted | meetingDeclined",
+  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -94,7 +94,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |bccRecipients|[recipient](recipient.md) collection|Die Bcc:-Empfänger der Nachricht.|
 |body|[itemBody](itembody.md)|Der Text der Nachricht. Er kann im HTML- oder Textformat vorliegen.|
 |bodyPreview|String|Die ersten 255 Zeichen des Nachrichtentexts. Liegt im Textformat vor. |
-|categories|Zeichenfolgenauflistung|Die Kategorien, die mit der Nachricht verknüpft sind.|
+|categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|[recipient](recipient.md) collection|Die Cc:-Empfänger der Nachricht.|
 |changeKey|String|Die Version der Nachricht.|
 |conversationId|String|Die ID der Unterhaltung, zu der die E-Mail gehört.|
@@ -117,7 +117,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
 |location|[location](location.md)|Der Speicherort der angeforderten Besprechung.|
-|meetingMessageType| Enum-Zeichenfolge | Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|String| Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Das Serienmuster der angeforderten Besprechung.|
@@ -125,7 +125,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |sender|[Empfänger](recipient.md)|Das Konto, das tatsächlich verwendet wird, um die Nachricht zu generieren.|
 |sentDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht gesendet wurde.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Die Anfangszeit der angeforderten Besprechung.|
-|Betreff|String|Der Betreff der Nachricht.|
+|subject|String|Der Betreff der Nachricht.|
 |toRecipients|[recipient](recipient.md) collection|Die An:-Empfänger der Nachricht.|
 |type|String|Die Art der angeforderten Besprechung: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Der Teil des Textkörpers der Nachricht, der für die aktuelle Nachricht eindeutig ist.|
@@ -136,11 +136,11 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Nachricht. Schreibgeschützt. Nullwerte zulassend.|
+|attachments|[attachment](attachment.md)-Sammlung|Die Auflistung von [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)und [ReferenceAttachment](referenceattachment.md) Anlagen für die Nachricht. Schreibgeschützt. Lässt Nullwerte zu.|
 |event|[event](event.md)| Das Ereignis, das der Ereignisnachricht zugeordnet ist. Für Teilnehmer oder Raumressourcen wird davon ausgegangen, dass die Kalenderautomatik für die automatische Aktualisierung des Kalenders mit einem Ereignis festgelegt ist, wenn Ereignisnachrichten mit Besprechungsanfragen eingehen Navigationseigenschaft.  Schreibgeschützt.|
 |Erweiterungen|[extension](extension.md)-Sammlung| Die Sammlung der für das Ereignis definierten offenen Erweiterungen. Schreibgeschützt. Lässt NULL-Werte zu.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die eventMessage definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die eventMessage definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die eventMessage definierten mehrwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)-Sammlung| Die Sammlung der für die eventMessage definierten einwertigen erweiterten Eigenschaften. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

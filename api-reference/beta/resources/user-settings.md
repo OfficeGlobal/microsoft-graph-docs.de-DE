@@ -4,12 +4,12 @@ description: 'Den aktuellen benutzereinstellungen. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5812141d21a32b8ab1835a75c05cbd57ea25a3a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571814"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640511"
 ---
 # <a name="settings-resource-type"></a>Ressourcentyp Einstellungen
 
@@ -38,11 +38,7 @@ Diese Ressource unterstützt Folgendes:
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.userSettings"
-}-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

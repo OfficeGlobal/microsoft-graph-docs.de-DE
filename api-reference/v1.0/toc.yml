@@ -87,7 +87,7 @@ items:
                 href: api/user-post-events.md
               - name: Kalender auflisten
                 href: api/user-list-calendars.md
-              - name: Kalender erstellen
+              - name: Create calendar
                 href: api/user-post-calendars.md
               - name: Kalendergruppen auflisten
                 href: api/user-list-calendargroups.md
@@ -138,7 +138,7 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Gruppen
             href: resources/group.md
@@ -170,9 +170,9 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Regel erstellen
                 href: api/mailfolder-post-messagerules.md
-              - name: Abrufen von e-Mail-Infos
+              - name: MailTips abrufen
                 href: api/user-getmailtips.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -228,7 +228,7 @@ items:
                 href: api/group-addfavorite.md
               - name: Mitglied hinzufügen
                 href: api/group-post-members.md
-              - name: Add owner
+              - name: Besitzer hinzufügen
                 href: api/group-post-owners.md
               - name: Mitgliedergruppen prüfen
                 href: api/group-checkmembergroups.md
@@ -368,7 +368,7 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Erweiterte Eigenschaften
             href: resources/extended-properties-overview.md
@@ -387,7 +387,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -516,7 +516,7 @@ items:
             items:
               - name: Kalender auflisten
                 href: api/user-list-calendars.md
-              - name: Kalender erstellen
+              - name: Create calendar
                 href: api/user-post-calendars.md
               - name: Kalender abrufen
                 href: api/calendar-get.md
@@ -560,7 +560,7 @@ items:
                 href: api/calendargroup-list-calendars.md
               - name: Kalender im Kalendergruppe erstellen
                 href: api/calendargroup-post-calendars.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -2974,7 +2974,7 @@ items:
                 href: api/drive-get.md
               - name: Laufwerke auflisten
                 href: api/drive-list.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
               - name: Zuletzt verwendete Dateien
                 href: api/drive-recent.md
@@ -2985,9 +2985,9 @@ items:
           - name: Laufwerk-Elemente
             href: resources/driveitem.md
             items:
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
-              - name: Element abrufen
+              - name: Get item
                 href: api/driveitem-get.md
               - name: Abrufen von Miniaturansichten
                 href: api/driveitem-list-thumbnails.md
@@ -2999,7 +2999,7 @@ items:
                 href: api/driveitem-delete.md
               - name: Move item
                 href: api/driveitem-move.md
-              - name: Element kopieren
+              - name: Copy item
                 href: api/driveitem-copy.md
               - name: Herunterladen der Datei
                 href: api/driveitem-get-content.md
@@ -3015,18 +3015,18 @@ items:
                 href: api/driveitem-delta.md
               - name: Versionen auflisten
                 href: api/driveitem-list-versions.md
-              - name: Preview-Element
+              - name: Element in Vorschau anzeigen
                 href: api/driveitem-preview.md
           - name: Berechtigungen
             href: resources/permission.md
             items:
-              - name: Freigabelink erstellen
+              - name: Create sharing link
                 href: api/driveitem-createlink.md
               - name: Freigeben von Links verwenden
                 href: api/shares-get.md
-              - name: Listenberechtigungen
+              - name: List permissions
                 href: api/driveitem-list-permissions.md
-              - name: Berechtigungen hinzufügen
+              - name: Add permissions
                 href: api/driveitem-invite.md
               - name: Berechtigung abrufen
                 href: api/permission-get.md
@@ -3158,6 +3158,19 @@ items:
                 href: api/groupsettingtemplate-list.md
               - name: Abrufen der Einstellung Gruppenvorlage
                 href: api/groupsettingtemplate-get.md
+          - name: Identitätsanbieter
+            href: resources/identityprovider.md
+            items:
+              - name: Liste Identitätsanbieter
+                href: api/identityprovider-list.md
+              - name: Erstellen von STS-Anbieter
+                href: api/identityprovider-post-identityproviders.md
+              - name: Abrufen von STS-Anbieter
+                href: api/identityprovider-get.md
+              - name: Unsuccessfully written Identitätsanbieter
+                href: api/identityprovider-update.md
+              - name: Löschen von STS-Anbieter
+                href: api/identityprovider-delete.md
           - name: Einladungs-Manager
             href: resources/invitation.md
             items:
@@ -3276,7 +3289,7 @@ items:
                 href: api/mailfolder-list-childfolders.md
               - name: Erstellen von Mail-untergeordneten Ordner
                 href: api/mailfolder-post-childfolders.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -3319,10 +3332,10 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Rufen Sie Mehrfachwert-Eigenschaft
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Anmerkungen
+      - name: Hinweise
         href: resources/onenote-api-overview.md
         items:
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -3455,7 +3468,7 @@ items:
                 href: api/contactfolder-post-contacts.md
               - name: Abrufen von Kontaktinformationen delta
                 href: api/contact-delta.md
-          - name: Categories
+          - name: Kategorien
             href: resources/outlookcategory.md
             items:
               - name: Kategorien auflisten
@@ -3722,9 +3735,9 @@ items:
           - name: ListItems
             href: resources/listitem.md
             items:
-              - name: Element abrufen
+              - name: Get item
                 href: api/listitem-get.md
-              - name: Create item
+              - name: Element erstellen
                 href: api/listitem-create.md
               - name: Update item
                 href: api/listitem-update.md
@@ -3825,21 +3838,21 @@ items:
           - name: Team
             href: resources/team.md
             items:
-              - name: Erstellen von Teams
+              - name: Team erstellen
                 href: api/team-put-teams.md
-              - name: Get-team
+              - name: Team abrufen
                 href: api/team-get.md
-              - name: Update-team
+              - name: Team aktualisieren
                 href: api/team-update.md
-              - name: Archiv-team
+              - name: Team archivieren
                 href: api/team-archive.md
-              - name: Entpackt team
+              - name: Archivierung von Team aufheben
                 href: api/team-unarchive.md
-              - name: Wenn Sie den Klon-team
+              - name: Team klonen
                 href: api/team-clone.md
-              - name: Listen Sie Ihren teams
+              - name: Ihre Teams auflisten
                 href: api/user-list-joinedteams.md
-              - name: Listen Sie alle teams
+              - name: Auflisten aller Teams
                 href: /graph/teams-list-all-teams?toc=./ref/toc.json
           - name: Gruppe (Team)
             href: resources/group.md
@@ -3864,7 +3877,7 @@ items:
                 href: api/group-delete-members.md
               - name: Besitzer auflisten
                 href: api/group-list-owners.md
-              - name: Add owner
+              - name: Besitzer hinzufügen
                 href: api/group-post-owners.md
               - name: Besitzer entfernen
                 href: api/group-delete-owners.md
@@ -3887,18 +3900,18 @@ items:
           - name: Kanal
             href: resources/channel.md
             items:
-              - name: Liste Kanäle
+              - name: Kanäle auflisten
                 href: api/channel-list.md
-              - name: Erstellen von DDE-Kanal
+              - name: Create channel
                 href: api/channel-post.md
-              - name: Abrufen von DDE-Kanal
+              - name: Get channel
                 href: api/channel-get.md
           - name: Apps
             href: resources/teamsapp.md
             items:
               - name: Liste apps im team
                 href: api/teamsappinstallation-list.md
-              - name: Team app hinzufügen
+              - name: App zu Team hinzufügen
                 href: api/teamsappinstallation-add.md
               - name: Entfernen von app-Teams
                 href: api/teamsappinstallation-delete.md
@@ -3948,14 +3961,14 @@ items:
             items:
               - name: Laufwerk abrufen
                 href: api/drive-get.md
-              - name: Untergeordnete Objekte auflisten
+              - name: Untergeordnete Elemente auflisten
                 href: api/driveitem-list-children.md
           - name: Pläne
             href: resources/plannerplan.md
             items:
               - name: Pläne auflisten
                 href: api/plannergroup-list-plans.md
-          - name: Anmerkungen
+          - name: Hinweise
             href: resources/onenote.md
             items:
               - name: Notizbücher auflisten
@@ -3965,7 +3978,7 @@ items:
       - name: Arbeitsmappen und Diagramme
         href: resources/excel.md
         items:
-          - name: Workbook
+          - name: Arbeitsmappe
             href: resources/workbook.md
             items:
               - name: Erstellen der Sitzung

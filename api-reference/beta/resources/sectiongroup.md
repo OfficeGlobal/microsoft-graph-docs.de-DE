@@ -4,12 +4,12 @@ description: Eine Abschnittsgruppe in einem OneNote-Notizbuch. Abschnittsgruppen
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575520"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640952"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup-Ressourcentyp
 
@@ -29,7 +29,7 @@ Es folgt eine JSON-Darstellung der Ressource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 }-->
 
 ```json
@@ -62,10 +62,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notizbuch](notebook.md)|Das Notizbuch, das die Abschnittsgruppe enthält. Schreibgeschützt.|
-|parentSectionGroup|[sectionGroup](sectiongroup.md)|Die Abschnittsgruppe, die die Abschnittsgruppe enthält. Schreibgeschützt.|
-|sectionGroups|[SectionGroup](sectiongroup.md) -Auflistung|Die Abschnittsgruppen im Abschnitt. Schreibgeschützt. Lässt Nullwerte zu.|
-|Abschnitte|[OnenoteSection](section.md) -Auflistung|Die Abschnitte in der Abschnittsgruppe. Schreibgeschützt. Lässt Nullwerte zu.|
+|parentNotebook|[Notebook](notebook.md)|Das Notizbuch, das die Abschnittsgruppe enthält. Schreibgeschützt.|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|Die Abschnittsgruppe, die die Abschnittsgruppe enthält. Schreibgeschützt.|
+|sectionGroups|[SectionGroup](sectiongroup.md)-Sammlung|Die Abschnittsgruppen im Abschnitt. Schreibgeschützt. Lässt Nullwerte zu.|
+|Abschnitte|[Section](section.md)-Sammlung|Die Abschnitte in der Abschnittsgruppe. Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="methods"></a>Methoden
 

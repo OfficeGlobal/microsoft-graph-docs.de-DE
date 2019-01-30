@@ -4,12 +4,12 @@ description: Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b038ecc79f497a2c52cda180217f290c7fb2de6a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572003"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643234"
 ---
 # <a name="chart-resource-type"></a>Chart-Ressourcentyp
 
@@ -22,17 +22,17 @@ Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Chart abrufen](../api/chart-get.md) | [WorkbookChart](chart.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chart-Objekts.|
-|[ChartSeries erstellen](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.|
-|[Reihe auflisten](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) -Auflistung| Dient zum Abrufen einer ChartSeries-Objektsammlung.|
-|[Aktualisieren](../api/chart-update.md) | [WorkbookChart](chart.md)   |Dient zum Aktualisieren des Chart-Objekts. |
+|[Chart abrufen](../api/chart-get.md) | [Chart](chart.md) |Dient zum Lesen der Eigenschaften und der Beziehungen des chart-Objekts.|
+|[ChartSeries erstellen](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Dient zum Erstellen einer neuen ChartSeries durch Veröffentlichen in der Datenreihensammlung.|
+|[Reihe auflisten](../api/chart-list-series.md) |[ChartSeries-Sammlung](chartseries.md)| Dient zum Abrufen einer ChartSeries-Objektsammlung.|
+|[Update](../api/chart-update.md) | [Chart](chart.md)   |Dient zum Aktualisieren des Chart-Objekts. |
 |[Image](../api/chart-image.md)|Abbildung der base64-codierten Zeichenfolge|Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen.|
-|[Löschen](../api/chart-delete.md)|Keine|Löscht das Diagrammobjekt.|
+|[Delete](../api/chart-delete.md)|Keine|Löscht das Diagrammobjekt.|
 |[Setdata](../api/chart-setdata.md)|Keine|Setzt die Quelldaten für das Diagramm zurück.|
 |[Setposition](../api/chart-setposition.md)|Keine|Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.|
-|[List](../api/chart-list.md) | [WorkbookChart](chart.md) -Auflistung |Dient zum Abrufen der Diagrammobjeksammlung. |
-|[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Ruft ein Diagramm anhand seiner Position in der Sammlung ab.|
-|[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Erstellt ein neues Diagramm.|
+|[List](../api/chart-list.md) | [Diagrammsammlung](chart.md) |Dient zum Abrufen der Diagrammobjeksammlung. |
+|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|Ruft ein Diagramm anhand seiner Position in der Sammlung ab.|
+|[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Erstellt ein neues Diagramm.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
@@ -47,13 +47,13 @@ Steht für ein Diagrammobjekt in einer Arbeitsmappe.
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Achsen|[WorkbookChartAxes](chartaxes.md)|Die Achsen des Diagramms. Schreibgeschützt.|
-|dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Stellt die Datenbeschriftungen im Diagramm dar. Schreibgeschützt.|
-|Format|[WorkbookChartAreaFormat](chartareaformat.md)|Kapselt die Formateigenschaften für den Diagrammbereich. Schreibgeschützt.|
-|legend|[WorkbookChartLegend](chartlegend.md)|Die Legende für das Diagramm. Schreibgeschützt.|
-|series|[WorkbookChartSeries](chartseries.md) -Auflistung|Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm. Schreibgeschützt.|
-|title|[WorkbookChartTitle](charttitle.md)|Der Titel des angegebenen Diagramms, einschließlich Text, Sichtbarkeit, Position und Formatierung des Titels. Schreibgeschützt.|
-|Arbeitsblatt|[WorkbookWorksheet](worksheet.md)|Das Arbeitsblatt, das das aktuelle Diagramm enthält. Schreibgeschützt.|
+|Achsen|[ChartAxes](chartaxes.md)|Die Achsen des Diagramms. Schreibgeschützt.|
+|dataLabels|[ChartDataLabels](chartdatalabels.md)|Stellt die Datenbeschriftungen im Diagramm dar. Schreibgeschützt.|
+|Format|[ChartAreaFormat](chartareaformat.md)|Kapselt die Formateigenschaften für den Diagrammbereich. Schreibgeschützt.|
+|legend|[ChartLegend](chartlegend.md)|Die Legende für das Diagramm. Schreibgeschützt.|
+|series|[ChartSeries-Sammlung](chartseries.md)|Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm. Schreibgeschützt.|
+|title|[ChartTitle](charttitle.md)|Der Titel des angegebenen Diagramms, einschließlich Text, Sichtbarkeit, Position und Formatierung des Titels. Schreibgeschützt.|
+|Arbeitsblatt|[Worksheet](worksheet.md)|Das Arbeitsblatt, das das aktuelle Diagramm enthält. Schreibgeschützt.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -61,10 +61,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChart"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chart"
 }-->
 
 ```json

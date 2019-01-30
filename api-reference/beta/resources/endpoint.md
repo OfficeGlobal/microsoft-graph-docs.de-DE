@@ -2,12 +2,12 @@
 title: Endpunkt-Ressourcentyp
 description: 'Endpunkte stellen URLs für eine Entität zugeordneten Ressourcen dar.  Wenn eine neue Office 365-Gruppe erstellt wird, werden zusätzliche Ressourcen beispielsweise auch als Teil der Office 365-Gruppe erstellt. Dazu gehören Dinge wie ein Gruppenpostfach für Unterhaltungen und eine OneDrive-Ordner für Dokumente und Dateien. Weitere Informationen über diese Office 365 Group-Ressourcen, einschließlich deren zugeordneten Ressource URLs kann nun mit der *Endpunkte* Navigation auf der Gruppe Ressourcentyp gelesen werden. Dies ist die Anwendung zu verstehen sind diese Ressourcen, und betten die Ressource, die URL guter sogar in ihrer eigenen Erfahrungen. '
 localization_priority: Normal
-ms.openlocfilehash: 39a6a2d8213e809f426c492654272aa994c25a6d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574482"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640854"
 ---
 # <a name="endpoint-resource-type"></a>Endpunkt-Ressourcentyp
 
@@ -45,7 +45,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.endpoint"
+  "@odata.type": "microsoft.graph.Endpoint"
 }-->
 
 ```json

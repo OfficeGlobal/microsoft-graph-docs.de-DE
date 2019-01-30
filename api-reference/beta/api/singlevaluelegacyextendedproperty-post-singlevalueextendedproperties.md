@@ -2,12 +2,12 @@
 title: Erweiterte einwertige Eigenschaft erstellen
 description: 'Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einer neuen oder vorhandenen Instanz einer Ressource. '
 localization_priority: Normal
-ms.openlocfilehash: 6a9ddee699cac0e11a5656fc12174a9d4fb610c3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575447"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641393"
 ---
 # <a name="create-single-value-extended-property"></a>Erweiterte einwertige Eigenschaft erstellen
 
@@ -20,9 +20,9 @@ Die folgenden Benutzerressourcen werden unterstützt:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [Ereignis](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [Nachricht](../resources/message.md)
+- [message](../resources/message.md)
 - [Outlook-Aufgabe](../resources/outlooktask.md)
 - [Outlook-Ordner "Aufgaben"](../resources/outlooktaskfolder.md)
 
@@ -37,7 +37,7 @@ Im [Übersichtsartikel zu erweiterten Eigenschaften](../resources/extended-prope
 ## <a name="permissions"></a>Berechtigungen
 Erstellen Sie je nach der Ressource in die erweiterte Eigenschaft und die Berechtigung geben (delegierte oder-Anwendung) Sie Anforderung, die Berechtigung, die in der folgenden Tabelle angegeben ist mindestens erforderlich, um diese API-aufrufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).
 
-| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Application |
 |:-----|:-----|:-----|:-----|
 | [Kalender](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [Kontakt](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie einen JSON Rumpf jedes [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) -Objekts in die **SingleValueLegacyExtendedProperty** Collection-Eigenschaft einer Instanz der Ressource.
+Stellen Sie einen JSON-Text für jedes [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Objekt in der **singleValueExtendedProperties**-Sammlungseigenschaft der Ressourceninstanz bereit.
 
 |**Eigenschaft**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Ein Array aus erweiterten mehrwertigen Eigenschaften. |
-|id|String|Geben Sie für jede Eigenschaft in der Auflistung **SingleValueLegacyExtendedProperty** diese Option, damit die Eigenschaft ermitteln. Es muss eine der unterstützten Formate folgen. Weitere Informationen finden Sie unter [Outlook erweiterte Eigenschaften (Übersicht)](../resources/extended-properties-overview.md) . Erforderlich.|
-|Wert|string|Geben Sie für jede Eigenschaft in der Auflistung **SingleValueLegacyExtendedProperty** Wert der Eigenschaft. Erforderlich.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)-Sammlung| Ein Array aus erweiterten mehrwertigen Eigenschaften. |
+|id|String|Geben Sie diese für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung an, um die Eigenschaft zu identifizieren. Sie muss eins der unterstützten Formate aufweisen. Weitere Informationen finden Sie unter [Überblick über erweiterte Eigenschaften in Outlook](../resources/extended-properties-overview.md). Erforderlich.|
+|value|string|Geben Sie für jede Eigenschaft in der **singleValueExtendedProperties**-Sammlung den Eigenschaftswert an. Erforderlich.|
 
-Geben Sie beim Erstellen einer erweiterten Eigenschaft in eine _neue_ Instanz der Ressource, zusätzlich zu der neuen **SingleValueLegacyExtendedProperty** -Auflistung eine JSON-Darstellung der Ressourceninstanz (d. h., eine [Nachricht](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [Ereignis](../resources/event.md)usw..)
+Beim Erstellen einer erweiterten Eigenschaft in einer _neuen_ Ressourceninstanz müssen Sie zusätzlich zu der neuen **singleValueExtendedProperties**-Sammlung eine JSON-Darstellung der betreffenden Ressourceninstanz spezifizieren (d. h. eine Ressource des Typs [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) usw.).
 
 ## <a name="response"></a>Antwort
 
@@ -179,9 +179,9 @@ Beim Erstellen einer erweiterten Eigenschaft in einem _neuen_ [Gruppenbeitrag](.
 ## <a name="example"></a>Beispiel
 ##### <a name="request-1"></a>Anforderung 1
 
-Im erste Beispiel erstellt ein neues Ereignis und eine erweiterte Einzelwert-Eigenschaft in der gleichen POST-Operation. Abgesehen von den Eigenschaften, die Sie normalerweise für ein neues Ereignis aufnehmen möchten, enthält der Anforderungstext **SingleValueLegacyExtendedProperty** -Auflistung, die eine erweiterte einwertig-Eigenschaft und die folgenden für die Eigenschaft enthält:
+Im ersten Beispiel wird mit einer einzigen POST-Operation ein neuer Ereignis und eine einwertige erweiterte Eigenschaft erstellt. Abgesehen von den Eigenschaften, die Sie normalerweise für ein neues Ereignis definieren würden, enthält der Anforderungstext die **singleValueExtendedProperties**-Sammlung. Diese wiederum enthält eine erweiterte einwertige Eigenschaft und folgende Angaben für die Eigenschaft:
 
-- **ID** Gibt den Eigenschaftstyp als `String`, die GUID und die `Fun`-Eigenschaft an.
+- **ID** Gibt den Eigenschaftstyp als `String`, die GUID und die Eigenschaft mit dem Namen `Fun` an.
 - **Wert** Gibt `Food` als den Wert der `Fun`-Eigenschaft an. 
 
 <!-- { "blockType": "ignored" } -->
@@ -212,7 +212,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -232,7 +232,7 @@ Möchten Sie die neu erstellte erweiterte Eigenschaft sehen, [müssen Sie das um
 
 ##### <a name="request-2"></a>Anforderung 2
 
-Im zweite Beispiel erstellt einen Single-Wert, erweiterte Eigenschaft für die angegebene vorhandene Nachricht. Mit der erweiterten Eigenschaft ist das einzige Element im Array **SingleValueLegacyExtendedProperty** . Textkörper der Anforderung umfasst folgende für die erweiterte Eigenschaft:
+Das zweite Beispiel erstellt eine einwertige erweiterte Eigenschaft für die angegebene vorhandene Nachricht. Diese erweiterte Eigenschaft ist das einzige Element in dem **singleValueExtendedProperties**-Array. Der Anforderungstext enthält die folgenden Parameter für diese erweiterte Eigenschaft:
 - **ID** Gibt den Eigenschaftstyp als `String`, die GUID und die `Color`-Eigenschaft an.
 - **Wert** Gibt `Green` als den Wert der `Color`-Eigenschaft an.
 
@@ -243,7 +243,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

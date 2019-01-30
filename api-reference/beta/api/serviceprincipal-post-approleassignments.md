@@ -1,15 +1,15 @@
 ---
-title: Erstellen von appRoleAssignment
+title: Create appRoleAssignment
 description: Verwenden Sie diese API, um eine neue AppRoleAssignment erstellen.
 localization_priority: Normal
-ms.openlocfilehash: 33bf7a577b01b2f23132a2b761bd80f24e8268c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574340"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643650"
 ---
-# <a name="create-approleassignment"></a>Erstellen von appRoleAssignment
+# <a name="create-approleassignment"></a>Create appRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [AppRoleAssignment](../resources/approleassignment.md) -Objekts.
@@ -68,7 +68,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

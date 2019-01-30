@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572067"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641379"
 ---
 # <a name="driveitem-resource-type"></a>Ressourcentyp driveItem
 
@@ -38,22 +38,16 @@ Es folgt eine JSON-Darstellung einer **driveItem**-Ressource.
 
 Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erbt Eigenschaften von dieser Ressource.
 
-<!-- { 
-       "blockType": "resource", 
-       "@odata.type": "microsoft.graph.driveItem", 
-       "@type.aka": "oneDrive.item",
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true 
-    } 
--->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
-  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -106,7 +100,7 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio](audio.md)  | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
+| audio                | [audio][]          | Audiometadaten, wenn das Element eine Audiodatei ist. Schreibgeschützt.
 | createdBy            | [identitySet][]    | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.
 | createdDateTime      | DateTimeOffset     | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.
 | cTag                 | String             | Ein ETag für den Inhalt des Elements. Dieses ETag wird nicht geändert, wenn nur die Metadaten geändert werden. **Hinweis:** Diese Eigenschaft wird nicht zurückgegeben, wenn das Element ein Ordner ist. Schreibgeschützt.
@@ -129,7 +123,7 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | remoteItem           | [remoteItem][]     | Daten zum Remoteelement, wenn das Element von einem anderen Laufwerk freigegeben ist als dem, auf das zugegriffen wird. Schreibgeschützt.
 | root                 | [root][]           | Wenn diese Eigenschaft nicht Null ist, bedeutet dies, dass es sich bei der driveItem-Ressource um die oberste driveItem-Ressource auf dem Laufwerk handelt.
 | searchResult         | [searchResult][]   | Suchmetadaten, wenn das Element aus einem Suchergebnis stammt. Schreibgeschützt.
-| freigegeben               | [shared][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
+| shared               | [shared][]         | Gibt an, dass das Element für andere freigegeben wurde, und enthält den „freigegeben“-Status des Elements. Schreibgeschützt.
 | sharepointIds        | [sharepointIds][]  | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
 | size                 | Int64              | Größe des Elements in Byte. Schreibgeschützt.
 | specialFolder        | [specialFolder][]  | Facet, das zurückgegeben wird, wenn das aktuelle Element auch als spezieller Ordner verfügbar ist. Schreibgeschützt.
@@ -146,7 +140,7 @@ Die **driveItem**-Ressource wird von [**baseItem**][baseItem] abgeleitet und erb
 | Aktivitäten         | [ItemActivity][]-Sammlung     | Die Liste der letzten Aktivitäten, die für dieses Element durchgeführt wurden.
 | analytics          | [itemAnalytics][]-Ressource      | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
 | content            | Stream                          | Der Inhaltsdatenstrom, wenn das Element eine Datei darstellt.
-| children           | driveitem-Sammlung            | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Nullwerte zulassend.
+| children           | driveitem-Sammlung            | Sammlung von Elementobjekten der direkten untergeordneten Elemente eines Elements. Nur Elemente, die Ordner repräsentieren, haben untergeordnete Elemente. Schreibgeschützt. Lässt Nullwerte zu.
 | listItem           | [listItem][]                    | Für Laufwerke in SharePoint das zugehörige Dokumentbibliothek-Listenelement. Schreibgeschützt. Lässt Nullwerte zu.
 | Berechtigungen        | [permission][] collection       | Der Satz von Berechtigungen für das Element. Schreibgeschützt. Lässt Nullwerte zu.
 | thumbnails         | [thumbnailSet][] collection     | Sammlung der dem Element zugeordneten [ThumbnailSet][]-Objekte. Weitere Informationen finden Sie im Artikel zum [Abrufen von Miniaturansichten][]. Schreibgeschützt. Nullwerte zulassend.

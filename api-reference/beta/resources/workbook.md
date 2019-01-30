@@ -4,35 +4,16 @@ description: Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehör
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 930a36f32b0768609050e200d705254cf600be4f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572059"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641351"
 ---
 # <a name="workbook-resource-type"></a>Ressourcentyp „workbook“
 
 Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehörige Arbeitsmappenobjekte wie z. B. Arbeitsblätter, Tabellen, Bereiche usw. enthält.
-
-## <a name="json-representation"></a>JSON-Darstellung
-
-Es folgt eine JSON-Darstellung der Ressource.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
 
 ## <a name="properties"></a>Eigenschaften
 Keine
@@ -49,9 +30,9 @@ Keine
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|names|[WorkbookNamedItem](workbooknameditem.md) -Auflistung|Stellt eine Auflistung der benannten Elemente des Arbeitsmappenbereichs dar (benannte Bereiche und Konstanten). Schreibgeschützt.|
-|Tabellen|[WorkbookTable](table.md) -Auflistung|Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Tabellen dar. Schreibgeschützt.|
-|worksheets|[WorkbookWorksheet](worksheet.md) -Auflistung|Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Arbeitsblätter dar. Schreibgeschützt.|
+|names|[NamedItem](nameditem.md) collection|Stellt eine Auflistung der benannten Elemente des Arbeitsmappenbereichs dar (benannte Bereiche und Konstanten). Schreibgeschützt.|
+|Tabellen|[Table](table.md) collection|Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Tabellen dar. Schreibgeschützt.|
+|worksheets|[Worksheet](worksheet.md) collection|Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Arbeitsblätter dar. Schreibgeschützt.|
 
 ## <a name="functions"></a>Funktionen
 

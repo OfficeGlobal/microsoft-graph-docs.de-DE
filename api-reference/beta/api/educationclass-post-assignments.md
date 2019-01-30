@@ -4,12 +4,12 @@ description: 'Erstellt eine neue Zuordnung. Nur Lehrer in einer Klasse können e
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4a7f7da89343156267a307c66abe73b4a352da17
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bac79b8f85eb6141b5159ac5dc7acbf067bf571c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519556"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643300"
 ---
 # <a name="create-educationassignment"></a>Erstellen von educationAssignment
 
@@ -24,7 +24,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | Nicht unterstützt | 
+|Application | Nicht unterstützt | 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
     "instructions":  {
-      "contentType": "Text",
+      "contentType": "text",
       "content": "Read chapters 1 through 3"
     },
       "grading": {
@@ -80,7 +80,7 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [EducationAssig
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "ignored",
@@ -115,7 +115,7 @@ Content-length: 279
     "maxPoints": 100
   },
   "instructions": {
-    "contentType": "Text",
+    "contentType": "text",
     "content": "Read chapters 1 through 3"
   },
   "lastModifiedBy": {

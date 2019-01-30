@@ -4,18 +4,18 @@ description: Dient zum Abrufen der Eigenschaften und Beziehungen eines page-Obje
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1cafa1b430f20fc74d045c498d7bba81eb160463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572633"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642947"
 ---
 # <a name="get-page"></a>Seite abrufen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Dient zum Abrufen der Eigenschaften und Beziehungen eines [page](../resources/onenotepage.md)-Objekts.
+Dient zum Abrufen der Eigenschaften und Beziehungen eines [page](../resources/page.md)-Objekts.
 
 **Seiteninformationen abrufen**
 
@@ -61,7 +61,7 @@ Die Standardantwort erweitert `parentSection` und wählt die Eigenschaften `id`,
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+| Autorisierung  | string  | Bearer {token}. Erforderlich. |
 | Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
@@ -69,7 +69,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [page](../resources/onenotepage.md)-Objekt im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [page](../resources/page.md)-Objekt im Antworttext zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

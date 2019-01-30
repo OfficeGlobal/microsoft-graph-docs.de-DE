@@ -4,12 +4,12 @@ description: Komplexer Typ, die Eigenschaften des verwendeten Elemente enthält.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 04e064d5ebf8599466218722d89f46ececc5e58c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577487"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641526"
 ---
 # <a name="usagedetails-resource-type"></a>Ressourcentyp usageDetails
 
@@ -20,13 +20,7 @@ Komplexer Typ, enthält die Eigenschaften von Elementen [verwendet](insights-use
 ## <a name="json-representation"></a>JSON-Darstellung
 
 Es folgt eine JSON-Darstellung der Ressource.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.usageDetails"
-}-->
 ```json
 {
   "lastAccessedDateTime": "DateTimeOffset",

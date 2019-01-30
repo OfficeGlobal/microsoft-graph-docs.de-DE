@@ -4,12 +4,12 @@ description: 'Fügen Sie eine neue ScopedRoleMembership hinzu. Hinweis: Nur die 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e93dc3bc245b323e3c40fdd5678f4bfba495eafd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2f94c66bd804d2771987ee58539abdbe073abc03
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571828"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640357"
 ---
 # <a name="add-a-scopedrolemember"></a>Hinzufügen einer scopedRoleMember
 
@@ -25,7 +25,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Directory.AccessAsUser.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Application | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +69,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedRoleMembership"
+  "@odata.type": "microsoft.graph.scopedrolemembership"
 } -->
 ```http
 HTTP/1.1 201 Created
