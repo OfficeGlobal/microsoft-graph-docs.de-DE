@@ -4,51 +4,31 @@ description: Kapselt die Formateigenschaften einer Diagrammlegende.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0ce9ac757f255bbee0334f5c6a3f397736a81884
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570946"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640077"
 ---
-# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="c8206-103">ChartLegendFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="c8206-103">ChartLegendFormat resource type</span></span>
+# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="f7580-103">ChartLegendFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f7580-103">ChartLegendFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8206-104">Kapselt die Formateigenschaften einer Diagrammlegende.</span><span class="sxs-lookup"><span data-stu-id="c8206-104">Encapsulates the format properties of a chart legend.</span></span>
+<span data-ttu-id="f7580-104">Kapselt die Formateigenschaften einer Diagrammlegende.</span><span class="sxs-lookup"><span data-stu-id="f7580-104">Encapsulates the format properties of a chart legend.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="c8206-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="c8206-105">Methods</span></span>
-<span data-ttu-id="c8206-106">Keine</span><span class="sxs-lookup"><span data-stu-id="c8206-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="f7580-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="f7580-105">Methods</span></span>
+<span data-ttu-id="f7580-106">Keine</span><span class="sxs-lookup"><span data-stu-id="f7580-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c8206-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c8206-107">Properties</span></span>
-<span data-ttu-id="c8206-108">Keine</span><span class="sxs-lookup"><span data-stu-id="c8206-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="f7580-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f7580-107">Properties</span></span>
+<span data-ttu-id="f7580-108">Keine</span><span class="sxs-lookup"><span data-stu-id="f7580-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="c8206-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c8206-109">Relationships</span></span>
-| <span data-ttu-id="c8206-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="c8206-110">Relationship</span></span> | <span data-ttu-id="c8206-111">Typ</span><span class="sxs-lookup"><span data-stu-id="c8206-111">Type</span></span>   |<span data-ttu-id="c8206-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c8206-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="f7580-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f7580-109">Relationships</span></span>
+| <span data-ttu-id="f7580-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="f7580-110">Relationship</span></span> | <span data-ttu-id="f7580-111">Typ</span><span class="sxs-lookup"><span data-stu-id="f7580-111">Type</span></span>   |<span data-ttu-id="f7580-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f7580-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c8206-113">fill</span><span class="sxs-lookup"><span data-stu-id="c8206-113">fill</span></span>|[<span data-ttu-id="c8206-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="c8206-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="c8206-p101">Stellt die Füllung eines Objekts dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c8206-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="c8206-117">Schriftart</span><span class="sxs-lookup"><span data-stu-id="c8206-117">font</span></span>|[<span data-ttu-id="c8206-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="c8206-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="c8206-p102">Stellt die Zeichenformatierung wie Schriftart, Schriftgrad, Farbe usw. einer Diagrammlegende dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c8206-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
-
-
-## <a name="json-representation"></a><span data-ttu-id="c8206-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c8206-121">JSON representation</span></span>
-
-<span data-ttu-id="c8206-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c8206-122">Here is a JSON representation of the resource.</span></span>
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartLegendFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
-
+|<span data-ttu-id="f7580-113">fill</span><span class="sxs-lookup"><span data-stu-id="f7580-113">fill</span></span>|[<span data-ttu-id="f7580-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="f7580-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="f7580-p101">Stellt die Füllung eines Objekts dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f7580-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="f7580-117">Schriftart</span><span class="sxs-lookup"><span data-stu-id="f7580-117">font</span></span>|[<span data-ttu-id="f7580-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="f7580-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="f7580-p102">Stellt die Zeichenformatierung wie Schriftart, Schriftgrad, Farbe usw. einer Diagrammlegende dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f7580-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

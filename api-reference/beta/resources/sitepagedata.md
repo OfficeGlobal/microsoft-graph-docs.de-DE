@@ -5,26 +5,26 @@ ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8f87ff4969cb4ad254813a01415628d8a8dbec8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576486"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644021"
 ---
-# <a name="sitepagedata-resource"></a><span data-ttu-id="475ae-102">SitePageData-Ressource</span><span class="sxs-lookup"><span data-stu-id="475ae-102">sitePageData resource</span></span>
+# <a name="sitepagedata-resource"></a><span data-ttu-id="11c19-102">SitePageData-Ressource</span><span class="sxs-lookup"><span data-stu-id="11c19-102">sitePageData resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="475ae-103">Die Ressource **SitePageData** stellt die Eigenschaften für ein [WebPart](webpart.md)dar.</span><span class="sxs-lookup"><span data-stu-id="475ae-103">The **sitePageData** resource represents the properties of a [webPart](webpart.md).</span></span> <span data-ttu-id="475ae-104">Wie diese Eigenschaften von Webpart variieren, ist dies eine OpenType ohne festen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="475ae-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
+<span data-ttu-id="11c19-103">Die Ressource **SitePageData** stellt die Eigenschaften für ein [WebPart][]dar.</span><span class="sxs-lookup"><span data-stu-id="11c19-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="11c19-104">Wie diese Eigenschaften von Webpart variieren, ist dies eine OpenType ohne festen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="11c19-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
 
 [webPart]: webpart.md
 
-## <a name="json-representation"></a><span data-ttu-id="475ae-105">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="475ae-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="11c19-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="11c19-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],  
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sitePageData"
 }-->
 
@@ -33,8 +33,8 @@ ms.locfileid: "29576486"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="475ae-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="475ae-106">Properties</span></span>
-<span data-ttu-id="475ae-107">Diese Ressource hat keine festen Eigenschaften, jedoch ist eine OpenType enthält alle Eigenschaften, die erforderlich sind, um ein Webpart zu definieren.</span><span class="sxs-lookup"><span data-stu-id="475ae-107">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
+## <a name="properties"></a><span data-ttu-id="11c19-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="11c19-107">Properties</span></span>
+<span data-ttu-id="11c19-108">Diese Ressource hat keine festen Eigenschaften, jedoch ist eine OpenType enthält alle Eigenschaften, die erforderlich sind, um ein Webpart zu definieren.</span><span class="sxs-lookup"><span data-stu-id="11c19-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
 
 <!--
 {
