@@ -4,36 +4,36 @@ description: '**Unterstützung in Kürze verfügbar**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: dc8256cb2459ae23fcdae9e2e658394df899a134
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e149d5548ce3585bbcda1f0a199fa97d7543af77
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577291"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642471"
 ---
-# <a name="onenoteidentityset-resource-type"></a><span data-ttu-id="860c8-103">Ressourcentyp oneNoteIdentitySet</span><span class="sxs-lookup"><span data-stu-id="860c8-103">oneNoteIdentitySet resource type</span></span>
+# <a name="onenoteidentityset-resource-type"></a><span data-ttu-id="1faf7-103">Ressourcentyp oneNoteIdentitySet</span><span class="sxs-lookup"><span data-stu-id="1faf7-103">oneNoteIdentitySet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="860c8-104">**Unterstützung in Kürze verfügbar**</span><span class="sxs-lookup"><span data-stu-id="860c8-104">**Support coming soon**</span></span>
+<span data-ttu-id="1faf7-104">**Unterstützung in Kürze verfügbar**</span><span class="sxs-lookup"><span data-stu-id="1faf7-104">**Support coming soon**</span></span>
 
-<span data-ttu-id="860c8-105">Der OneNoteIdentitySet-Typ ist eine verschlüsselte Auflistung von [OneNoteIdentity](onenoteidentity.md) -Objekten.</span><span class="sxs-lookup"><span data-stu-id="860c8-105">The OneNoteIdentitySet type is a keyed collection of [OneNoteIdentity](onenoteidentity.md) objects.</span></span>
-<span data-ttu-id="860c8-106">Es wird verwendet, um einen Satz von Identitäten zugeordnet sind verschiedene Ereignisse für einen _Notizbuch_, einem _Bereich_ oder einer _Seite_, z. B. _von erstellt_ oder _zuletzt geändert von_darstellen.</span><span class="sxs-lookup"><span data-stu-id="860c8-106">It is used to represent a set of identities associated with various events for a _Notebook_, _Section_ or _Page_, such as _created by_ or _last modified by_.</span></span> 
+<span data-ttu-id="1faf7-105">Der OneNoteIdentitySet-Typ ist eine verschlüsselte Auflistung von [OneNoteIdentity](onenoteidentity.md) -Objekten.</span><span class="sxs-lookup"><span data-stu-id="1faf7-105">The OneNoteIdentitySet type is a keyed collection of [OneNoteIdentity](onenoteidentity.md) objects.</span></span>
+<span data-ttu-id="1faf7-106">Es wird verwendet, um einen Satz von Identitäten zugeordnet sind verschiedene Ereignisse für einen _Notizbuch_, einem _Bereich_ oder einer _Seite_, z. B. _von erstellt_ oder _zuletzt geändert von_darstellen.</span><span class="sxs-lookup"><span data-stu-id="1faf7-106">It is used to represent a set of identities associated with various events for a _Notebook_, _Section_ or _Page_, such as _created by_ or _last modified by_.</span></span> 
  
-<span data-ttu-id="860c8-107">Aktuell enthält einen einzelnen Schlüssel, _**Benutzer**_.</span><span class="sxs-lookup"><span data-stu-id="860c8-107">Currently it contains a single key, _**user**_.</span></span>  <span data-ttu-id="860c8-108">In Zukunft können die Schlüssel wie das Gerät oder einer Anwendung das Element hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="860c8-108">In future, keys such as the device or application to change the item may be added.</span></span>
+<span data-ttu-id="1faf7-107">Aktuell enthält einen einzelnen Schlüssel, _**Benutzer**_.</span><span class="sxs-lookup"><span data-stu-id="1faf7-107">Currently it contains a single key, _**user**_.</span></span>  <span data-ttu-id="1faf7-108">In Zukunft können die Schlüssel wie das Gerät oder einer Anwendung das Element hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="1faf7-108">In future, keys such as the device or application to change the item may be added.</span></span>
 
-<span data-ttu-id="860c8-109">In Zukunft werden sollen dieses Typs mit [IdentitySet](identityset.md) zusammengeführt</span><span class="sxs-lookup"><span data-stu-id="860c8-109">In future, this type will be merged with [IdentitySet](identityset.md)</span></span>
+<span data-ttu-id="1faf7-109">In Zukunft werden sollen dieses Typs mit [IdentitySet](identityset.md) zusammengeführt</span><span class="sxs-lookup"><span data-stu-id="1faf7-109">In future, this type will be merged with [IdentitySet](identityset.md)</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="860c8-110">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="860c8-110">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1faf7-110">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="1faf7-110">JSON representation</span></span>
 
-<span data-ttu-id="860c8-111">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="860c8-111">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1faf7-111">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="1faf7-111">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentitySet"
+  "@odata.type": "microsoft.graph.onenoteidentityset"
 }-->
 
 ```json
@@ -42,10 +42,10 @@ ms.locfileid: "29577291"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="860c8-112">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="860c8-112">Properties</span></span>
-| <span data-ttu-id="860c8-113">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="860c8-113">Property</span></span>     | <span data-ttu-id="860c8-114">Typ</span><span class="sxs-lookup"><span data-stu-id="860c8-114">Type</span></span>   |<span data-ttu-id="860c8-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="860c8-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1faf7-112">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1faf7-112">Properties</span></span>
+| <span data-ttu-id="1faf7-113">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="1faf7-113">Property</span></span>     | <span data-ttu-id="1faf7-114">Typ</span><span class="sxs-lookup"><span data-stu-id="1faf7-114">Type</span></span>   |<span data-ttu-id="1faf7-115">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1faf7-115">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="860c8-116">user</span><span class="sxs-lookup"><span data-stu-id="860c8-116">user</span></span>|[<span data-ttu-id="860c8-117">oneNoteIdentity</span><span class="sxs-lookup"><span data-stu-id="860c8-117">oneNoteIdentity</span></span>](onenoteidentity.md)|<span data-ttu-id="860c8-118">Eine OneNoteIdentity-Ressource, die einen Benutzer darstellt.</span><span class="sxs-lookup"><span data-stu-id="860c8-118">A OneNoteIdentity resource that represents a user.</span></span>|
+|<span data-ttu-id="1faf7-116">user</span><span class="sxs-lookup"><span data-stu-id="1faf7-116">user</span></span>|[<span data-ttu-id="1faf7-117">oneNoteIdentity</span><span class="sxs-lookup"><span data-stu-id="1faf7-117">oneNoteIdentity</span></span>](onenoteidentity.md)|<span data-ttu-id="1faf7-118">Eine OneNoteIdentity-Ressource, die einen Benutzer darstellt.</span><span class="sxs-lookup"><span data-stu-id="1faf7-118">A OneNoteIdentity resource that represents a user.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

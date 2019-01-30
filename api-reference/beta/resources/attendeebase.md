@@ -2,28 +2,27 @@
 title: Ressourcentyp „attendeeBase“
 description: Der Typ eines Teilnehmers.
 localization_priority: Normal
-ms.openlocfilehash: 6ec80f5505cb3dd742a2690ebb3cd5374635770d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bce1550c107f2114d02744091b5863360ab0bcea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572738"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643440"
 ---
-# <a name="attendeebase-resource-type"></a><span data-ttu-id="d8c94-103">Ressourcentyp „attendeeBase“</span><span class="sxs-lookup"><span data-stu-id="d8c94-103">attendeeBase resource type</span></span>
+# <a name="attendeebase-resource-type"></a><span data-ttu-id="877b8-103">Ressourcentyp „attendeeBase“</span><span class="sxs-lookup"><span data-stu-id="877b8-103">attendeeBase resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d8c94-104">Der Typ eines Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="d8c94-104">The type of attendee.</span></span>
+<span data-ttu-id="877b8-104">Der Typ eines Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="877b8-104">The type of attendee.</span></span>
 
-<span data-ttu-id="d8c94-105">Abgeleitet von [recipient](recipient.md).</span><span class="sxs-lookup"><span data-stu-id="d8c94-105">Derived from [recipient](recipient.md).</span></span>
+<span data-ttu-id="877b8-105">Abgeleitet von [recipient](recipient.md).</span><span class="sxs-lookup"><span data-stu-id="877b8-105">Derived from [recipient](recipient.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d8c94-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d8c94-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="877b8-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="877b8-106">JSON representation</span></span>
 
-<span data-ttu-id="d8c94-107">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d8c94-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="877b8-107">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="877b8-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -37,11 +36,11 @@ ms.locfileid: "29572738"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="d8c94-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d8c94-108">Properties</span></span>
-| <span data-ttu-id="d8c94-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d8c94-109">Property</span></span>     | <span data-ttu-id="d8c94-110">Typ</span><span class="sxs-lookup"><span data-stu-id="d8c94-110">Type</span></span>   |<span data-ttu-id="d8c94-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d8c94-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="877b8-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="877b8-108">Properties</span></span>
+| <span data-ttu-id="877b8-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="877b8-109">Property</span></span>     | <span data-ttu-id="877b8-110">Typ</span><span class="sxs-lookup"><span data-stu-id="877b8-110">Type</span></span>   |<span data-ttu-id="877b8-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="877b8-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d8c94-112">type</span><span class="sxs-lookup"><span data-stu-id="d8c94-112">type</span></span>|<span data-ttu-id="d8c94-113">attendeeType</span><span class="sxs-lookup"><span data-stu-id="d8c94-113">attendeeType</span></span>| <span data-ttu-id="d8c94-114">Der Typ eines Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="d8c94-114">The type of attendee.</span></span> <span data-ttu-id="d8c94-115">Die möglichen Werte sind: `required`, `optional`, `resource`.</span><span class="sxs-lookup"><span data-stu-id="d8c94-115">The possible values are: `required`, `optional`, `resource`.</span></span> <span data-ttu-id="d8c94-116">Derzeit Wenn Teilnehmer einer Person ist, [FindMeetingTimes](../api/user-findmeetingtimes.md) immer berücksichtigt die Person ist, der die `Required` Typ.</span><span class="sxs-lookup"><span data-stu-id="d8c94-116">Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.</span></span>|
-|<span data-ttu-id="d8c94-117">emailAddress</span><span class="sxs-lookup"><span data-stu-id="d8c94-117">emailAddress</span></span>|[<span data-ttu-id="d8c94-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="d8c94-118">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="d8c94-119">Enthält den Namen und die SMTP-Adresse des Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="d8c94-119">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="877b8-112">type</span><span class="sxs-lookup"><span data-stu-id="877b8-112">type</span></span>|<span data-ttu-id="877b8-113">String</span><span class="sxs-lookup"><span data-stu-id="877b8-113">String</span></span>| <span data-ttu-id="877b8-p101">Der Typ eines Teilnehmers. Mögliche Werte sind: `required`, `optional` und `resource`. Ist der Teilnehmer eine Person, geht [findMeetingTimes](../api/user-findmeetingtimes.md) aktuell grundsätzlich davon aus, dass diese Person vom Typ `Required` ist.</span><span class="sxs-lookup"><span data-stu-id="877b8-p101">The type of attendee. Possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.</span></span>|
+|<span data-ttu-id="877b8-117">emailAddress</span><span class="sxs-lookup"><span data-stu-id="877b8-117">emailAddress</span></span>|[<span data-ttu-id="877b8-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="877b8-118">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="877b8-119">Enthält den Namen und die SMTP-Adresse des Teilnehmers.</span><span class="sxs-lookup"><span data-stu-id="877b8-119">Includes the name and SMTP address of the attendee.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

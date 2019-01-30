@@ -4,55 +4,53 @@ description: Stellt einen Punkt einer Datenreihe in einem Diagramm dar.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8ede39ef53bfc39574ebfc86c8138a70fc31ad6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573067"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641967"
 ---
-# <a name="chartpoint-resource-type"></a><span data-ttu-id="53429-103">ChartPoint-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="53429-103">ChartPoint resource type</span></span>
+# <a name="chartpoint-resource-type"></a><span data-ttu-id="31a9d-103">ChartPoint-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="31a9d-103">ChartPoint resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="53429-104">Stellt einen Punkt einer Datenreihe in einem Diagramm dar.</span><span class="sxs-lookup"><span data-stu-id="53429-104">Represents a point of a series in a chart.</span></span>
+<span data-ttu-id="31a9d-104">Stellt einen Punkt einer Datenreihe in einem Diagramm dar.</span><span class="sxs-lookup"><span data-stu-id="31a9d-104">Represents a point of a series in a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="53429-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="53429-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="31a9d-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="31a9d-105">Methods</span></span>
 
-| <span data-ttu-id="53429-106">Methode</span><span class="sxs-lookup"><span data-stu-id="53429-106">Method</span></span>           | <span data-ttu-id="53429-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="53429-107">Return Type</span></span>    |<span data-ttu-id="53429-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="53429-108">Description</span></span>|
+| <span data-ttu-id="31a9d-106">Methode</span><span class="sxs-lookup"><span data-stu-id="31a9d-106">Method</span></span>           | <span data-ttu-id="31a9d-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="31a9d-107">Return Type</span></span>    |<span data-ttu-id="31a9d-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="31a9d-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="53429-109">ChartPoint abrufen</span><span class="sxs-lookup"><span data-stu-id="53429-109">Get ChartPoint</span></span>](../api/chartpoint-get.md) | [<span data-ttu-id="53429-110">workbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="53429-110">workbookChartPoint</span></span>](chartpoint.md) |<span data-ttu-id="53429-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.</span><span class="sxs-lookup"><span data-stu-id="53429-111">Read properties and relationships of chartPoint object.</span></span>|
-|[<span data-ttu-id="53429-112">List</span><span class="sxs-lookup"><span data-stu-id="53429-112">List</span></span>](../api/chartpoint-list.md) | <span data-ttu-id="53429-113">[WorkbookChartPoint](chartpoint.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="53429-113">[workbookChartPoint](chartpoint.md) collection</span></span> |<span data-ttu-id="53429-114">Dient zum Abrufen der ChartPoint-Objektsammlung.</span><span class="sxs-lookup"><span data-stu-id="53429-114">Get chartPoint object collection.</span></span> |
-|[<span data-ttu-id="53429-115">ItemAt</span><span class="sxs-lookup"><span data-stu-id="53429-115">ItemAt</span></span>](../api/chartpointscollection-itemat.md)|[<span data-ttu-id="53429-116">workbookChartPoint</span><span class="sxs-lookup"><span data-stu-id="53429-116">workbookChartPoint</span></span>](chartpoint.md)|<span data-ttu-id="53429-117">Abrufen eines Punkts anhand seiner Position in der Datenreihe.</span><span class="sxs-lookup"><span data-stu-id="53429-117">Retrieve a point based on its position within the series.</span></span>|
+|[<span data-ttu-id="31a9d-109">ChartPoint abrufen</span><span class="sxs-lookup"><span data-stu-id="31a9d-109">Get ChartPoint</span></span>](../api/chartpoint-get.md) | [<span data-ttu-id="31a9d-110">ChartPoint</span><span class="sxs-lookup"><span data-stu-id="31a9d-110">ChartPoint</span></span>](chartpoint.md) |<span data-ttu-id="31a9d-111">Dient zum Lesen der Eigenschaften und der Beziehungen des chartPoint-Objekts.</span><span class="sxs-lookup"><span data-stu-id="31a9d-111">Read properties and relationships of chartPoint object.</span></span>|
+|[<span data-ttu-id="31a9d-112">List</span><span class="sxs-lookup"><span data-stu-id="31a9d-112">List</span></span>](../api/chartpoint-list.md) | <span data-ttu-id="31a9d-113">[ChartPoint-Sammlung](chartpoint.md)</span><span class="sxs-lookup"><span data-stu-id="31a9d-113">[ChartPoint](chartpoint.md) collection</span></span> |<span data-ttu-id="31a9d-114">Dient zum Abrufen der ChartPoint-Objektsammlung.</span><span class="sxs-lookup"><span data-stu-id="31a9d-114">Get chartPoint object collection.</span></span> |
+|[<span data-ttu-id="31a9d-115">Itemat</span><span class="sxs-lookup"><span data-stu-id="31a9d-115">Itemat</span></span>](../api/chartpointscollection-itemat.md)|[<span data-ttu-id="31a9d-116">ChartPoint</span><span class="sxs-lookup"><span data-stu-id="31a9d-116">ChartPoint</span></span>](chartpoint.md)|<span data-ttu-id="31a9d-117">Abrufen eines Punkts anhand seiner Position in der Datenreihe.</span><span class="sxs-lookup"><span data-stu-id="31a9d-117">Retrieve a point based on its position within the series.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="53429-118">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="53429-118">Properties</span></span>
-| <span data-ttu-id="53429-119">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="53429-119">Property</span></span>     | <span data-ttu-id="53429-120">Typ</span><span class="sxs-lookup"><span data-stu-id="53429-120">Type</span></span>   |<span data-ttu-id="53429-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="53429-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="31a9d-118">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="31a9d-118">Properties</span></span>
+| <span data-ttu-id="31a9d-119">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="31a9d-119">Property</span></span>     | <span data-ttu-id="31a9d-120">Typ</span><span class="sxs-lookup"><span data-stu-id="31a9d-120">Type</span></span>   |<span data-ttu-id="31a9d-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="31a9d-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="53429-122">Wert</span><span class="sxs-lookup"><span data-stu-id="53429-122">value</span></span>|<span data-ttu-id="53429-123">Json</span><span class="sxs-lookup"><span data-stu-id="53429-123">Json</span></span>|<span data-ttu-id="53429-p101">Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="53429-p101">Returns the value of a chart point. Read-only.</span></span>|
-|<span data-ttu-id="53429-126">id</span><span class="sxs-lookup"><span data-stu-id="53429-126">id</span></span>|<span data-ttu-id="53429-127">string</span><span class="sxs-lookup"><span data-stu-id="53429-127">string</span></span>|<span data-ttu-id="53429-128">Eindeutiger Bezeichner</span><span class="sxs-lookup"><span data-stu-id="53429-128">unique identifier</span></span>|
+|<span data-ttu-id="31a9d-122">Wert</span><span class="sxs-lookup"><span data-stu-id="31a9d-122">value</span></span>|<span data-ttu-id="31a9d-123">object</span><span class="sxs-lookup"><span data-stu-id="31a9d-123">object</span></span>|<span data-ttu-id="31a9d-p101">Gibt den Wert eines Diagrammpunkts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="31a9d-p101">Returns the value of a chart point. Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="53429-129">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="53429-129">Relationships</span></span>
-| <span data-ttu-id="53429-130">Beziehung</span><span class="sxs-lookup"><span data-stu-id="53429-130">Relationship</span></span> | <span data-ttu-id="53429-131">Typ</span><span class="sxs-lookup"><span data-stu-id="53429-131">Type</span></span>   |<span data-ttu-id="53429-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="53429-132">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="31a9d-126">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="31a9d-126">Relationships</span></span>
+| <span data-ttu-id="31a9d-127">Beziehung</span><span class="sxs-lookup"><span data-stu-id="31a9d-127">Relationship</span></span> | <span data-ttu-id="31a9d-128">Typ</span><span class="sxs-lookup"><span data-stu-id="31a9d-128">Type</span></span>   |<span data-ttu-id="31a9d-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="31a9d-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="53429-133">format</span><span class="sxs-lookup"><span data-stu-id="53429-133">format</span></span>|[<span data-ttu-id="53429-134">workbookChartPointFormat</span><span class="sxs-lookup"><span data-stu-id="53429-134">workbookChartPointFormat</span></span>](chartpointformat.md)|<span data-ttu-id="53429-p102">Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="53429-p102">Encapsulates the format properties chart point. Read-only.</span></span>|
+|<span data-ttu-id="31a9d-130">format</span><span class="sxs-lookup"><span data-stu-id="31a9d-130">format</span></span>|[<span data-ttu-id="31a9d-131">ChartPointFormat</span><span class="sxs-lookup"><span data-stu-id="31a9d-131">ChartPointFormat</span></span>](chartpointformat.md)|<span data-ttu-id="31a9d-p102">Kapselt die Formateigenschaften eines Diagrammpunkts. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="31a9d-p102">Encapsulates the format properties chart point. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="53429-137">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="53429-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="31a9d-134">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="31a9d-134">JSON representation</span></span>
 
-<span data-ttu-id="53429-138">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="53429-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="31a9d-135">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="31a9d-135">Here is a JSON representation of the resource.</span></span>
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

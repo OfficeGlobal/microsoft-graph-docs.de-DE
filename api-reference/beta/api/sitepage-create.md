@@ -5,30 +5,30 @@ ms.date: 05/07/2018
 title: Erstellen einer neuen Seite in einer SharePoint-Website
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be3f24f3d4795c473562ddc01d75d54117dcedd3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572787"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640154"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="ba259-102">Erstellen Sie eine Seite in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="ba259-102">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="b240a-102">Erstellen Sie eine Seite in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="b240a-102">Create a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ba259-103">Erstellen Sie eine neue [SitePage][] in der Website-Seiten- [Liste][] in einer [Website][].</span><span class="sxs-lookup"><span data-stu-id="ba259-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="b240a-103">Erstellen Sie eine neue [SitePage][] in der Website-Seiten- [Liste][] in einer [Website][].</span><span class="sxs-lookup"><span data-stu-id="b240a-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ba259-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ba259-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b240a-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b240a-104">Permissions</span></span>
 
-<span data-ttu-id="ba259-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba259-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b240a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b240a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ba259-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ba259-107">Permission type</span></span>      | <span data-ttu-id="ba259-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ba259-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b240a-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b240a-107">Permission type</span></span>      | <span data-ttu-id="b240a-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b240a-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ba259-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ba259-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ba259-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba259-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ba259-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ba259-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba259-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ba259-112">Not supported.</span></span>    |
-|<span data-ttu-id="ba259-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ba259-113">Application</span></span> | <span data-ttu-id="ba259-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba259-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b240a-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b240a-109">Delegated (work or school account)</span></span> | <span data-ttu-id="b240a-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b240a-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b240a-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b240a-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b240a-112">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b240a-112">Not supported.</span></span>    |
+|<span data-ttu-id="b240a-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b240a-113">Application</span></span> | <span data-ttu-id="b240a-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b240a-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ba259-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ba259-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b240a-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b240a-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,13 +36,13 @@ ms.locfileid: "29572787"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="ba259-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ba259-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b240a-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b240a-116">Request body</span></span>
 
-<span data-ttu-id="ba259-117">Geben Sie im Textkörper Anforderung eine JSON-Darstellung der [SitePage][] Ressource zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="ba259-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="b240a-117">Geben Sie im Textkörper Anforderung eine JSON-Darstellung der [SitePage][] Ressource zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b240a-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ba259-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ba259-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b240a-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b240a-118">Example</span></span>
 
-<span data-ttu-id="ba259-119">Im folgenden Beispiel wird gezeigt, wie eine neue Seite zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="ba259-119">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="b240a-119">Im folgenden Beispiel wird gezeigt, wie eine neue Seite zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b240a-119">The following example shows how to create a new page.</span></span>
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -99,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="ba259-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="ba259-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b240a-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="b240a-120">Response</span></span>
 
-<span data-ttu-id="ba259-121">Wenn erfolgreich, gibt diese Methode eine [SitePage][] im Antworttext für die Seite erstellt.</span><span class="sxs-lookup"><span data-stu-id="ba259-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="b240a-121">Wenn erfolgreich, gibt diese Methode eine [SitePage][] im Antworttext für die Seite erstellt.</span><span class="sxs-lookup"><span data-stu-id="b240a-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -182,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="ba259-122">**Hinweis:** Das „Response“-Objekt wurde zwecks besserer Übersichtlichkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="ba259-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="ba259-123">Der tatsächliche Aufruf gibt die Standardeigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="ba259-123">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="b240a-122">**Hinweis:** Das „Response“-Objekt wurde zwecks besserer Übersichtlichkeit gekürzt.</span><span class="sxs-lookup"><span data-stu-id="b240a-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="b240a-123">Der tatsächliche Aufruf gibt die Standardeigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="b240a-123">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md

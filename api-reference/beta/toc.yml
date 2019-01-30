@@ -87,7 +87,7 @@ items:
                 href: api/user-post-events.md
               - name: Kalender auflisten
                 href: api/user-list-calendars.md
-              - name: Kalender erstellen
+              - name: Create calendar
                 href: api/user-post-calendars.md
               - name: Kalendergruppen auflisten
                 href: api/user-list-calendargroups.md
@@ -165,7 +165,7 @@ items:
             items:
               - name: Nachrichten auflisten
                 href: api/user-list-messages.md
-              - name: Nachricht erstellen
+              - name: Erstellen der Nachricht
                 href: api/user-post-messages.md
               - name: Liste Außerkraftsetzungen
                 href: api/inferenceclassification-list-overrides.md
@@ -181,7 +181,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Erstellen von Regeln
                 href: api/mailfolder-post-messagerules.md
-              - name: Abrufen von e-Mail-Infos
+              - name: MailTips abrufen
                 href: api/user-getmailtips.md
           - name: Hinweise
             href: resources/onenote.md
@@ -475,7 +475,7 @@ items:
       - name: Kalender
         href: resources/calendar.md
         items:
-          - name: Veranstaltung
+          - name: Ereignis
             href: resources/event.md
             items:
               - name: Ereignisse auflisten
@@ -567,7 +567,7 @@ items:
             items:
               - name: Kalender auflisten
                 href: api/user-list-calendars.md
-              - name: Kalender erstellen
+              - name: Create calendar
                 href: api/user-post-calendars.md
               - name: Kalender abrufen
                 href: api/calendar-get.md
@@ -655,13 +655,13 @@ items:
             items:
               - name: Erstellen
                 href: api/application-post-calls.md
-              - name: Abrufen von Anrufen
+              - name: Get call
                 href: api/call-get.md
               - name: Delete/Auflegen
                 href: api/call-delete.md
               - name: Antwort
                 href: api/call-answer.md
-              - name: Ablehnen
+              - name: Reject
                 href: api/call-reject.md
               - name: Redirect
                 href: api/call-redirect.md
@@ -689,7 +689,7 @@ items:
                     href: api/participant-mute.md
                   - name: Stummschalten Sie aller Teilnehmer
                     href: api/participant-muteall.md
-                  - name: Liste Teilnehmer
+                  - name: List participants
                     href: api/call-list-participants.md
                   - name: Einladen von Teilnehmern
                     href: api/participant-invite.md
@@ -713,7 +713,7 @@ items:
           - name: Online-Besprechung
             href: resources/onlinemeeting.md
             items:
-              - name: Erstellen von online-Besprechung
+              - name: Erstellen einer Onlinebesprechung
                 href: api/application-post-onlinemeetings.md
               - name: Erste onlinebesprechung
                 href: api/onlinemeeting-get.md
@@ -6607,7 +6607,7 @@ items:
           Identität und Zugriff 
         href: resources/azure-ad-overview.md
         items:
-          - name: Access Reviews (engl.)
+          - name: Zugriffsüberprüfungen
             href: resources/accessreviews-root.md
             items:
               - name: Access überprüfen
@@ -6707,18 +6707,18 @@ items:
                 href: api/approleassignment-update.md
               - name: AppRoleAssignment löschen
                 href: api/approleassignment-delete.md
-          - name: Anwendung
+          - name: Application
             href: resources/application.md
             items:
-              - name: Liste applications
+              - name: Anwendungen auflisten
                 href: api/application-list.md
-              - name: Erstellen der Anwendung
+              - name: Create application
                 href: api/application-post-applications.md
-              - name: Abrufen der Anwendung
+              - name: Anwendung abrufen
                 href: api/application-get.md
-              - name: Aktualisieren der Anwendung
+              - name: Update application
                 href: api/application-update.md
-              - name: Löschen der Anwendung
+              - name: Delete application
                 href: api/application-delete.md
               - name: Besitzer auflisten
                 href: api/application-list-owners.md
@@ -6986,7 +6986,7 @@ items:
                 href: api/policy-delete.md
               - name: Zuweisen der Richtlinie
                 href: api/policy-assign.md
-              - name: Zugewiesen-Listenrichtlinien
+              - name: List assigned policies
                 href: api/policy-list-assigned.md
               - name: Liste für Clientanwendungen angewendet
                 href: api/policy-list-appliesto.md
@@ -7000,7 +7000,7 @@ items:
                     href: api/privilegedrole-list.md
                   - name: Privilegierten Rolle abrufen
                     href: api/privilegedrole-get.md
-                  - name: Liste von rollenzuweisungen
+                  - name: Rollenzuweisungen auflisten
                     href: api/privilegedrole-list-assignments.md
                   - name: Aktivieren von Self-Rolle
                     href: api/privilegedrole-selfactivate.md
@@ -7015,7 +7015,7 @@ items:
               - name: Privilegierten rollenzuweisung
                 href: resources/privilegedroleassignment.md
                 items:
-                  - name: Liste von rollenzuweisungen
+                  - name: Rollenzuweisungen auflisten
                     href: api/privilegedroleassignment-list.md
                   - name: Abrufen von rollenzuweisung
                     href: api/privilegedroleassignment-get.md
@@ -7032,7 +7032,7 @@ items:
               - name: Privilegierten Role Assignment-Anforderung
                 href: resources/privilegedroleassignmentrequest.md
                 items:
-                  - name: Liste von rollenzuweisungen
+                  - name: Rollenzuweisungen auflisten
                     href: api/privilegedroleassignmentrequest-list.md
                   - name: Erstellen von rollenzuweisungen
                     href: api/privilegedroleassignmentrequest-post.md
@@ -7186,7 +7186,7 @@ items:
             items:
               - name: Nachrichten auflisten
                 href: api/user-list-messages.md
-              - name: Nachricht erstellen
+              - name: Erstellen der Nachricht
                 href: api/user-post-messages.md
               - name: Nachricht abrufen
                 href: api/message-get.md
@@ -7218,7 +7218,7 @@ items:
                 href: api/user-sendmail.md
               - name: Abonnement kündigen
                 href: api/message-unsubscribe.md
-              - name: Abrufen von e-Mail-Infos
+              - name: MailTips abrufen
                 href: api/user-getmailtips.md
               - name: Anlagen auflisten
                 href: api/message-list-attachments.md
@@ -7410,8 +7410,8 @@ items:
                 href: api/sectiongroup-list-sections.md
               - name: Abschnitt erstellen
                 href: api/sectiongroup-post-sections.md
-          - name: OneNote-Seiten
-            href: resources/onenotepage.md
+          - name: Seiten
+            href: resources/page.md
             items:
               - name: Seiten auflisten
                 href: api/onenote-list-pages.md
@@ -7721,14 +7721,14 @@ items:
           - name: Sichere Bewertungen
             href: resources/securescores.md
             items:
-              - name: Liste sicherer Bewertungen
+              - name: Sicherheitsbewertungen auflisten
                 href: api/securescores-list.md
           - name: Sichere Score steuern Profile
             href: resources/securescorecontrolprofiles.md
             items:
-              - name: Liste sicherer Score Steuerelement Profile
+              - name: Profile für Steuerung der Sicherheitsbewertung auflisten
                 href: api/securescorecontrolprofiles-list.md
-              - name: Update secure Score Steuerelement Profile
+              - name: Profile für Steuerung der Sicherheitsbewertung aktualisieren
                 href: api/securescorecontrolprofiles-update.md
           - name: Fehler
             href: resources/security-error-codes.md
@@ -7919,21 +7919,21 @@ items:
           - name: Team
             href: resources/team.md
             items:
-              - name: Erstellen von Teams
+              - name: Team erstellen
                 href: api/team-post.md
-              - name: Erstellen von Teams aus Gruppe
+              - name: Team aus Gruppe erstellen
                 href: api/team-put-teams.md
-              - name: Get-team
+              - name: Team abrufen
                 href: api/team-get.md
-              - name: Update-team
+              - name: Team aktualisieren
                 href: api/team-update.md
-              - name: Archiv-team
+              - name: Team archivieren
                 href: api/team-archive.md
-              - name: Entpackt team
+              - name: Archivierung von Team aufheben
                 href: api/team-unarchive.md
-              - name: Wenn Sie den Klon-team
+              - name: Team klonen
                 href: api/team-clone.md
-              - name: Listen Sie Ihren teams
+              - name: Ihre Teams auflisten
                 href: api/user-list-joinedteams.md
               - name: Auflisten aller Teams
                 href: /graph/teams-list-all-teams?toc=./ref/toc.json
@@ -7983,15 +7983,15 @@ items:
           - name: Kanal
             href: resources/channel.md
             items:
-              - name: Liste Kanäle
+              - name: Kanäle auflisten
                 href: api/channel-list.md
-              - name: Erstellen von DDE-Kanal
+              - name: Create channel
                 href: api/channel-post.md
-              - name: Abrufen von DDE-Kanal
+              - name: Get channel
                 href: api/channel-get.md
-              - name: Liste Channel Nachrichten
+              - name: Kanalnachrichten auflisten
                 href: api/channel-list-messages.md
-              - name: Kanal-Meldung
+              - name: Kanalnachricht abrufen
                 href: api/channel-get-message.md
               - name: Antworten auf Nachrichten Liste
                 href: api/channel-list-messagereplies.md
@@ -8000,14 +8000,14 @@ items:
           - name: Chat thread
             href: resources/chatthread.md
             items:
-              - name: Chat Thread erstellen
+              - name: Chatthread erstellen
                 href: api/channel-post-chatthreads.md
           - name: Apps
             href: resources/teamsapp.md
             items:
               - name: Liste apps im team
                 href: api/teamsappinstallation-list.md
-              - name: Team app hinzufügen
+              - name: App zu Team hinzufügen
                 href: api/teamsappinstallation-add.md
               - name: Entfernen von app-Teams
                 href: api/teamsappinstallation-delete.md
@@ -8274,8 +8274,8 @@ items:
                 href: api/chart-setdata.md
               - name: Set Position-Daten
                 href: api/chart-setposition.md
-          - name: Arbeitsmappe benannte Element
-            href: resources/workbooknameditem.md
+          - name: Benanntes Element
+            href: resources/nameditem.md
             items:
               - name: Liste mit der Bezeichnung item
                 href: api/nameditem-get.md

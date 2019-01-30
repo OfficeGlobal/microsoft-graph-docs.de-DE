@@ -4,43 +4,43 @@ description: Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46839a9b2bf45cb54342de86f3db476de24689e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577396"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640756"
 ---
-# <a name="get-datapolicyoperation"></a><span data-ttu-id="06e0e-103">Abrufen von dataPolicyOperation</span><span class="sxs-lookup"><span data-stu-id="06e0e-103">Get dataPolicyOperation</span></span>
+# <a name="get-datapolicyoperation"></a><span data-ttu-id="3355a-103">Abrufen von dataPolicyOperation</span><span class="sxs-lookup"><span data-stu-id="3355a-103">Get dataPolicyOperation</span></span>
 
-<span data-ttu-id="06e0e-104">Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="06e0e-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
+<span data-ttu-id="3355a-104">Rufen Sie die Eigenschaften des DataPolicyOperation-Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="3355a-104">Retrieve the properties of the dataPolicyOperation object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="06e0e-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="06e0e-105">Permissions</span></span>
-<span data-ttu-id="06e0e-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06e0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3355a-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3355a-105">Permissions</span></span>
+<span data-ttu-id="3355a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3355a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06e0e-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="06e0e-108">Permission type</span></span>      | <span data-ttu-id="06e0e-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="06e0e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3355a-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3355a-108">Permission type</span></span>      | <span data-ttu-id="3355a-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3355a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="06e0e-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="06e0e-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="06e0e-111">User.Export.All und User.Read.All</span><span class="sxs-lookup"><span data-stu-id="06e0e-111">User.Export.All and User.Read.All</span></span>  |
-|<span data-ttu-id="06e0e-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="06e0e-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="06e0e-113">Nicht zutreffend</span><span class="sxs-lookup"><span data-stu-id="06e0e-113">Not applicable</span></span>  |
-|<span data-ttu-id="06e0e-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="06e0e-114">Application</span></span> | <span data-ttu-id="06e0e-115">User.Export.All und User.Read.All</span><span class="sxs-lookup"><span data-stu-id="06e0e-115">User.Export.All and User.Read.All</span></span> | 
+|<span data-ttu-id="3355a-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3355a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3355a-111">User.Export.All und User.Read.All</span><span class="sxs-lookup"><span data-stu-id="3355a-111">User.Export.All and User.Read.All</span></span>  |
+|<span data-ttu-id="3355a-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3355a-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3355a-113">Nicht zutreffend</span><span class="sxs-lookup"><span data-stu-id="3355a-113">Not applicable</span></span>  |
+|<span data-ttu-id="3355a-114">Application</span><span class="sxs-lookup"><span data-stu-id="3355a-114">Application</span></span> | <span data-ttu-id="3355a-115">User.Export.All und User.Read.All</span><span class="sxs-lookup"><span data-stu-id="3355a-115">User.Export.All and User.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="06e0e-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="06e0e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3355a-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3355a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /dataPolicyOperations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="06e0e-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="06e0e-117">Request headers</span></span>
-| <span data-ttu-id="06e0e-118">Name</span><span class="sxs-lookup"><span data-stu-id="06e0e-118">Name</span></span>      |<span data-ttu-id="06e0e-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="06e0e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3355a-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3355a-117">Request headers</span></span>
+| <span data-ttu-id="3355a-118">Name</span><span class="sxs-lookup"><span data-stu-id="3355a-118">Name</span></span>      |<span data-ttu-id="3355a-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3355a-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="06e0e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="06e0e-120">Authorization</span></span>  | <span data-ttu-id="06e0e-121">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="06e0e-121">Bearer {token}</span></span>|
+| <span data-ttu-id="3355a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3355a-120">Authorization</span></span>  | <span data-ttu-id="3355a-121">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="3355a-121">Bearer {token}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="06e0e-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="06e0e-122">Request body</span></span>
-<span data-ttu-id="06e0e-123">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="06e0e-123">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="06e0e-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="06e0e-124">Response</span></span>
-<span data-ttu-id="06e0e-125">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [DataPolicyOperation](../resources/datapolicyoperation.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="06e0e-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="06e0e-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="06e0e-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="06e0e-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="06e0e-127">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="3355a-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3355a-122">Request body</span></span>
+<span data-ttu-id="3355a-123">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="3355a-123">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="3355a-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="3355a-124">Response</span></span>
+<span data-ttu-id="3355a-125">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [DataPolicyOperation](../resources/datapolicyoperation.md) im Antworttext.</span><span class="sxs-lookup"><span data-stu-id="3355a-125">If successful, this method returns a `200 OK` response code and [dataPolicyOperation](../resources/datapolicyoperation.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3355a-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3355a-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3355a-127">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3355a-127">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_datapolicyoperation"
@@ -48,8 +48,8 @@ GET /dataPolicyOperations/{id}
 ```http
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="06e0e-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="06e0e-128">Response</span></span>
-<span data-ttu-id="06e0e-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="06e0e-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3355a-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="3355a-128">Response</span></span>
+<span data-ttu-id="3355a-p102">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3355a-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,7 +66,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

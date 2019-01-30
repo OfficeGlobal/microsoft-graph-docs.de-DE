@@ -4,51 +4,31 @@ description: Kapselt die Formateigenschaften für den Diagrammdatenreihe.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c5fdfffdf5bcf6aeefc5068392f689cbf66d683d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 739da09fccc1d2c40b103397b8a10e91eab39fdf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573585"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643206"
 ---
-# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="ef38d-103">ChartSeriesFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="ef38d-103">ChartSeriesFormat resource type</span></span>
+# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="91c9f-103">ChartSeriesFormat-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="91c9f-103">ChartSeriesFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef38d-104">Kapselt die Formateigenschaften für den Diagrammdatenreihe.</span><span class="sxs-lookup"><span data-stu-id="ef38d-104">encapsulates the format properties for the chart series</span></span>
+<span data-ttu-id="91c9f-104">Kapselt die Formateigenschaften für den Diagrammdatenreihe.</span><span class="sxs-lookup"><span data-stu-id="91c9f-104">encapsulates the format properties for the chart series</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ef38d-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="ef38d-105">Methods</span></span>
-<span data-ttu-id="ef38d-106">Keine</span><span class="sxs-lookup"><span data-stu-id="ef38d-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="91c9f-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="91c9f-105">Methods</span></span>
+<span data-ttu-id="91c9f-106">Keine</span><span class="sxs-lookup"><span data-stu-id="91c9f-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ef38d-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ef38d-107">Properties</span></span>
-<span data-ttu-id="ef38d-108">Keine</span><span class="sxs-lookup"><span data-stu-id="ef38d-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="91c9f-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="91c9f-107">Properties</span></span>
+<span data-ttu-id="91c9f-108">Keine</span><span class="sxs-lookup"><span data-stu-id="91c9f-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="ef38d-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="ef38d-109">Relationships</span></span>
-| <span data-ttu-id="ef38d-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="ef38d-110">Relationship</span></span> | <span data-ttu-id="ef38d-111">Typ</span><span class="sxs-lookup"><span data-stu-id="ef38d-111">Type</span></span>   |<span data-ttu-id="ef38d-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ef38d-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="91c9f-109">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="91c9f-109">Relationships</span></span>
+| <span data-ttu-id="91c9f-110">Beziehung</span><span class="sxs-lookup"><span data-stu-id="91c9f-110">Relationship</span></span> | <span data-ttu-id="91c9f-111">Typ</span><span class="sxs-lookup"><span data-stu-id="91c9f-111">Type</span></span>   |<span data-ttu-id="91c9f-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="91c9f-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef38d-113">fill</span><span class="sxs-lookup"><span data-stu-id="ef38d-113">fill</span></span>|[<span data-ttu-id="ef38d-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="ef38d-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="ef38d-p101">Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ef38d-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="ef38d-117">line</span><span class="sxs-lookup"><span data-stu-id="ef38d-117">line</span></span>|[<span data-ttu-id="ef38d-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="ef38d-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="ef38d-p102">Die Zeilenformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ef38d-p102">Represents line formatting. Read-only.</span></span>|
-
-
-## <a name="json-representation"></a><span data-ttu-id="ef38d-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="ef38d-121">JSON representation</span></span>
-
-<span data-ttu-id="ef38d-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="ef38d-122">Here is a JSON representation of the resource.</span></span>
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
-}
-```
-
+|<span data-ttu-id="91c9f-113">fill</span><span class="sxs-lookup"><span data-stu-id="91c9f-113">fill</span></span>|[<span data-ttu-id="91c9f-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="91c9f-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="91c9f-p101">Stellt die Füllung einer Diagrammdatenreihe dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="91c9f-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="91c9f-117">line</span><span class="sxs-lookup"><span data-stu-id="91c9f-117">line</span></span>|[<span data-ttu-id="91c9f-118">ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="91c9f-118">ChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="91c9f-p102">Die Zeilenformatierung. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="91c9f-p102">Represents line formatting. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,48 +4,47 @@ description: Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c57c68e7d9dfcd26741d15e302dd5dddeaae378
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572535"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640210"
 ---
-# <a name="chartgridlines-resource-type"></a><span data-ttu-id="345eb-103">ChartGridlines-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="345eb-103">ChartGridlines resource type</span></span>
+# <a name="chartgridlines-resource-type"></a><span data-ttu-id="c7947-103">ChartGridlines-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="c7947-103">ChartGridlines resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="345eb-104">Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="345eb-104">Represents major or minor gridlines on a chart axis.</span></span>
+<span data-ttu-id="c7947-104">Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachse dar.</span><span class="sxs-lookup"><span data-stu-id="c7947-104">Represents major or minor gridlines on a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="345eb-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="345eb-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="c7947-105">Methoden</span><span class="sxs-lookup"><span data-stu-id="c7947-105">Methods</span></span>
 
-| <span data-ttu-id="345eb-106">Methode</span><span class="sxs-lookup"><span data-stu-id="345eb-106">Method</span></span>           | <span data-ttu-id="345eb-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="345eb-107">Return Type</span></span>    |<span data-ttu-id="345eb-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="345eb-108">Description</span></span>|
+| <span data-ttu-id="c7947-106">Methode</span><span class="sxs-lookup"><span data-stu-id="c7947-106">Method</span></span>           | <span data-ttu-id="c7947-107">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="c7947-107">Return Type</span></span>    |<span data-ttu-id="c7947-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c7947-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="345eb-109">ChartGridlines abrufen</span><span class="sxs-lookup"><span data-stu-id="345eb-109">Get ChartGridlines</span></span>](../api/chartgridlines-get.md) | [<span data-ttu-id="345eb-110">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="345eb-110">WorkbookChartGridlines</span></span>](chartgridlines.md) |<span data-ttu-id="345eb-111">Dient zum Lesender Eigenschaften und der Beziehungen des chartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="345eb-111">Read properties and relationships of chartGridlines object.</span></span>|
-|[<span data-ttu-id="345eb-112">Aktualisieren</span><span class="sxs-lookup"><span data-stu-id="345eb-112">Update</span></span>](../api/chartgridlines-update.md) | [<span data-ttu-id="345eb-113">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="345eb-113">WorkbookChartGridlines</span></span>](chartgridlines.md)    |<span data-ttu-id="345eb-114">Dient zum Aktualisieren des ChartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="345eb-114">Update ChartGridlines object.</span></span> |
+|[<span data-ttu-id="c7947-109">ChartGridlines abrufen</span><span class="sxs-lookup"><span data-stu-id="c7947-109">Get ChartGridlines</span></span>](../api/chartgridlines-get.md) | [<span data-ttu-id="c7947-110">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="c7947-110">ChartGridlines</span></span>](chartgridlines.md) |<span data-ttu-id="c7947-111">Dient zum Lesender Eigenschaften und der Beziehungen des chartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c7947-111">Read properties and relationships of chartGridlines object.</span></span>|
+|[<span data-ttu-id="c7947-112">Update</span><span class="sxs-lookup"><span data-stu-id="c7947-112">Update</span></span>](../api/chartgridlines-update.md) | [<span data-ttu-id="c7947-113">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="c7947-113">ChartGridlines</span></span>](chartgridlines.md)    |<span data-ttu-id="c7947-114">Dient zum Aktualisieren des ChartGridlines-Objekts.</span><span class="sxs-lookup"><span data-stu-id="c7947-114">Update ChartGridlines object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="345eb-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="345eb-115">Properties</span></span>
-| <span data-ttu-id="345eb-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="345eb-116">Property</span></span>     | <span data-ttu-id="345eb-117">Typ</span><span class="sxs-lookup"><span data-stu-id="345eb-117">Type</span></span>   |<span data-ttu-id="345eb-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="345eb-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c7947-115">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c7947-115">Properties</span></span>
+| <span data-ttu-id="c7947-116">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c7947-116">Property</span></span>     | <span data-ttu-id="c7947-117">Typ</span><span class="sxs-lookup"><span data-stu-id="c7947-117">Type</span></span>   |<span data-ttu-id="c7947-118">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c7947-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="345eb-119">visible</span><span class="sxs-lookup"><span data-stu-id="345eb-119">visible</span></span>|<span data-ttu-id="345eb-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="345eb-120">boolean</span></span>|<span data-ttu-id="345eb-121">Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="345eb-121">Boolean value representing if the axis gridlines are visible or not.</span></span>|
+|<span data-ttu-id="c7947-119">visible</span><span class="sxs-lookup"><span data-stu-id="c7947-119">visible</span></span>|<span data-ttu-id="c7947-120">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="c7947-120">boolean</span></span>|<span data-ttu-id="c7947-121">Boolescher Wert, der angibt, ob die Achsengitternetzlinien angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="c7947-121">Boolean value representing if the axis gridlines are visible or not.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="345eb-122">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="345eb-122">Relationships</span></span>
-| <span data-ttu-id="345eb-123">Beziehung</span><span class="sxs-lookup"><span data-stu-id="345eb-123">Relationship</span></span> | <span data-ttu-id="345eb-124">Typ</span><span class="sxs-lookup"><span data-stu-id="345eb-124">Type</span></span>   |<span data-ttu-id="345eb-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="345eb-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="c7947-122">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="c7947-122">Relationships</span></span>
+| <span data-ttu-id="c7947-123">Beziehung</span><span class="sxs-lookup"><span data-stu-id="c7947-123">Relationship</span></span> | <span data-ttu-id="c7947-124">Typ</span><span class="sxs-lookup"><span data-stu-id="c7947-124">Type</span></span>   |<span data-ttu-id="c7947-125">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c7947-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="345eb-126">format</span><span class="sxs-lookup"><span data-stu-id="345eb-126">format</span></span>|[<span data-ttu-id="345eb-127">WorkbookChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="345eb-127">WorkbookChartGridlinesFormat</span></span>](chartgridlinesformat.md)|<span data-ttu-id="345eb-p101">Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="345eb-p101">Represents the formatting of chart gridlines. Read-only.</span></span>|
+|<span data-ttu-id="c7947-126">format</span><span class="sxs-lookup"><span data-stu-id="c7947-126">format</span></span>|[<span data-ttu-id="c7947-127">ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="c7947-127">ChartGridlinesFormat</span></span>](chartgridlinesformat.md)|<span data-ttu-id="c7947-p101">Stellt die Formatierung der Diagrammgitternetzlinien dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="c7947-p101">Represents the formatting of chart gridlines. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="345eb-130">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="345eb-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c7947-130">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c7947-130">JSON representation</span></span>
 
-<span data-ttu-id="345eb-131">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="345eb-131">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c7947-131">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c7947-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartGridlines"
+  "@odata.type": "microsoft.graph.chartGridLines"
 }-->
 
 ```json

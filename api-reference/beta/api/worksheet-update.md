@@ -4,53 +4,53 @@ description: Dient zum Aktualisieren der Eigenschaften des Arbeitsblattobjekts.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571716"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641540"
 ---
-# <a name="update-worksheet"></a><span data-ttu-id="740de-103">Arbeitsblatt aktualisieren</span><span class="sxs-lookup"><span data-stu-id="740de-103">Update worksheet</span></span>
+# <a name="update-worksheet"></a><span data-ttu-id="1edc1-103">Arbeitsblatt aktualisieren</span><span class="sxs-lookup"><span data-stu-id="1edc1-103">Update worksheet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="740de-104">Dient zum Aktualisieren der Eigenschaften des Arbeitsblattobjekts.</span><span class="sxs-lookup"><span data-stu-id="740de-104">Update the properties of worksheet object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="740de-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="740de-105">Permissions</span></span>
-<span data-ttu-id="740de-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="740de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1edc1-104">Dient zum Aktualisieren der Eigenschaften des Arbeitsblattobjekts.</span><span class="sxs-lookup"><span data-stu-id="1edc1-104">Update the properties of worksheet object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1edc1-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="1edc1-105">Permissions</span></span>
+<span data-ttu-id="1edc1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1edc1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="740de-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="740de-108">Permission type</span></span>      | <span data-ttu-id="740de-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="740de-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1edc1-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="1edc1-108">Permission type</span></span>      | <span data-ttu-id="1edc1-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="1edc1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="740de-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="740de-110">Delegated (work or school account)</span></span> | <span data-ttu-id="740de-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="740de-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="740de-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="740de-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="740de-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="740de-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="740de-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="740de-114">Application</span></span> | <span data-ttu-id="740de-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="740de-115">Not supported.</span></span> |
+|<span data-ttu-id="1edc1-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="1edc1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1edc1-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1edc1-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1edc1-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="1edc1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1edc1-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1edc1-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1edc1-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="1edc1-114">Application</span></span> | <span data-ttu-id="1edc1-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="1edc1-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="740de-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="740de-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1edc1-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="1edc1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="740de-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="740de-117">Optional request headers</span></span>
-| <span data-ttu-id="740de-118">Name</span><span class="sxs-lookup"><span data-stu-id="740de-118">Name</span></span>       | <span data-ttu-id="740de-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="740de-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="1edc1-117">Optionale Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="1edc1-117">Optional request headers</span></span>
+| <span data-ttu-id="1edc1-118">Name</span><span class="sxs-lookup"><span data-stu-id="1edc1-118">Name</span></span>       | <span data-ttu-id="1edc1-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1edc1-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="740de-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="740de-120">Authorization</span></span>  | <span data-ttu-id="740de-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="740de-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="740de-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="740de-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="740de-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="740de-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="1edc1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1edc1-120">Authorization</span></span>  | <span data-ttu-id="1edc1-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1edc1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1edc1-123">Arbeitsmappensitzungs-ID</span><span class="sxs-lookup"><span data-stu-id="1edc1-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="1edc1-p103">Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.</span><span class="sxs-lookup"><span data-stu-id="1edc1-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="740de-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="740de-126">Request body</span></span>
-<span data-ttu-id="740de-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="740de-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1edc1-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="1edc1-126">Request body</span></span>
+<span data-ttu-id="1edc1-p104">Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurden, nicht angeben.</span><span class="sxs-lookup"><span data-stu-id="1edc1-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="740de-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="740de-130">Property</span></span>     | <span data-ttu-id="740de-131">Typ</span><span class="sxs-lookup"><span data-stu-id="740de-131">Type</span></span>   |<span data-ttu-id="740de-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="740de-132">Description</span></span>|
+| <span data-ttu-id="1edc1-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="1edc1-130">Property</span></span>     | <span data-ttu-id="1edc1-131">Typ</span><span class="sxs-lookup"><span data-stu-id="1edc1-131">Type</span></span>   |<span data-ttu-id="1edc1-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1edc1-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="740de-133">name</span><span class="sxs-lookup"><span data-stu-id="740de-133">name</span></span>|<span data-ttu-id="740de-134">string</span><span class="sxs-lookup"><span data-stu-id="740de-134">string</span></span>|<span data-ttu-id="740de-135">Der Anzeigename des Arbeitsblatts.</span><span class="sxs-lookup"><span data-stu-id="740de-135">The display name of the worksheet.</span></span>|
-|<span data-ttu-id="740de-136">position</span><span class="sxs-lookup"><span data-stu-id="740de-136">position</span></span>|<span data-ttu-id="740de-137">int</span><span class="sxs-lookup"><span data-stu-id="740de-137">int</span></span>|<span data-ttu-id="740de-138">Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.</span><span class="sxs-lookup"><span data-stu-id="740de-138">The zero-based position of the worksheet within the workbook.</span></span>|
-|<span data-ttu-id="740de-139">visibility</span><span class="sxs-lookup"><span data-stu-id="740de-139">visibility</span></span>|<span data-ttu-id="740de-140">string</span><span class="sxs-lookup"><span data-stu-id="740de-140">string</span></span>|<span data-ttu-id="740de-p105">Die Sichtbarkeit des Arbeitsblatts. Mögliche Werte: `Visible`, `Hidden`, `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="740de-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
+|<span data-ttu-id="1edc1-133">name</span><span class="sxs-lookup"><span data-stu-id="1edc1-133">name</span></span>|<span data-ttu-id="1edc1-134">string</span><span class="sxs-lookup"><span data-stu-id="1edc1-134">string</span></span>|<span data-ttu-id="1edc1-135">Der Anzeigename des Arbeitsblatts.</span><span class="sxs-lookup"><span data-stu-id="1edc1-135">The display name of the worksheet.</span></span>|
+|<span data-ttu-id="1edc1-136">position</span><span class="sxs-lookup"><span data-stu-id="1edc1-136">position</span></span>|<span data-ttu-id="1edc1-137">int</span><span class="sxs-lookup"><span data-stu-id="1edc1-137">int</span></span>|<span data-ttu-id="1edc1-138">Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.</span><span class="sxs-lookup"><span data-stu-id="1edc1-138">The zero-based position of the worksheet within the workbook.</span></span>|
+|<span data-ttu-id="1edc1-139">visibility</span><span class="sxs-lookup"><span data-stu-id="1edc1-139">visibility</span></span>|<span data-ttu-id="1edc1-140">string</span><span class="sxs-lookup"><span data-stu-id="1edc1-140">string</span></span>|<span data-ttu-id="1edc1-p105">Die Sichtbarkeit des Arbeitsblatts. Mögliche Werte: `Visible`, `Hidden`, `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="1edc1-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="740de-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="740de-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1edc1-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="1edc1-143">Response</span></span>
 
-<span data-ttu-id="740de-144">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Worksheet](../resources/worksheet.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="740de-144">If successful, this method returns a `200 OK` response code and updated [Worksheet](../resources/worksheet.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="740de-145">Beispiel</span><span class="sxs-lookup"><span data-stu-id="740de-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="740de-146">Anforderung</span><span class="sxs-lookup"><span data-stu-id="740de-146">Request</span></span>
-<span data-ttu-id="740de-147">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="740de-147">Here is an example of the request.</span></span>
+<span data-ttu-id="1edc1-144">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das [Worksheet](../resources/worksheet.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1edc1-144">If successful, this method returns a `200 OK` response code and updated [Worksheet](../resources/worksheet.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1edc1-145">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1edc1-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1edc1-146">Anforderung</span><span class="sxs-lookup"><span data-stu-id="1edc1-146">Request</span></span>
+<span data-ttu-id="1edc1-147">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="1edc1-147">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_worksheet"
@@ -66,12 +66,12 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="740de-148">Antwort</span><span class="sxs-lookup"><span data-stu-id="740de-148">Response</span></span>
-<span data-ttu-id="740de-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="740de-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1edc1-148">Antwort</span><span class="sxs-lookup"><span data-stu-id="1edc1-148">Response</span></span>
+<span data-ttu-id="1edc1-p106">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1edc1-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

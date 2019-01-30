@@ -4,28 +4,28 @@ description: Mit dieser API können Sie eine neue Ressource des Typs page in dem
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f397b10e914a779a153e78e1e10e906925aec9a1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570918"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640287"
 ---
-# <a name="create-page"></a><span data-ttu-id="5ca36-103">Seite erstellen</span><span class="sxs-lookup"><span data-stu-id="5ca36-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="15fe8-103">Seite erstellen</span><span class="sxs-lookup"><span data-stu-id="15fe8-103">Create page</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5ca36-104">Mit dieser API können Sie eine neue Ressource des Typs [page](../resources/onenotepage.md) in dem jeweils angegebenen Abschnitt erstellen.</span><span class="sxs-lookup"><span data-stu-id="5ca36-104">Create a new [page](../resources/onenotepage.md) in the specified section.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5ca36-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="5ca36-105">Permissions</span></span>
-<span data-ttu-id="5ca36-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ca36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15fe8-104">Mit dieser API können Sie eine neue Ressource des Typs [page](../resources/page.md) in dem jeweils angegebenen Abschnitt erstellen.</span><span class="sxs-lookup"><span data-stu-id="15fe8-104">Create a new [page](../resources/page.md) in the specified section.</span></span>
+## <a name="permissions"></a><span data-ttu-id="15fe8-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="15fe8-105">Permissions</span></span>
+<span data-ttu-id="15fe8-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15fe8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ca36-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5ca36-108">Permission type</span></span>      | <span data-ttu-id="5ca36-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5ca36-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15fe8-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="15fe8-108">Permission type</span></span>      | <span data-ttu-id="15fe8-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="15fe8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5ca36-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5ca36-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5ca36-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ca36-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5ca36-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5ca36-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ca36-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ca36-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="5ca36-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5ca36-114">Application</span></span> | <span data-ttu-id="5ca36-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ca36-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="15fe8-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="15fe8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="15fe8-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15fe8-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="15fe8-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="15fe8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15fe8-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15fe8-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="15fe8-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="15fe8-114">Application</span></span> | <span data-ttu-id="15fe8-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15fe8-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5ca36-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5ca36-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15fe8-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="15fe8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/pages
@@ -33,24 +33,24 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
 POST /sites/{id}/onenote/sections/{id}/pages
 ```
-## <a name="request-headers"></a><span data-ttu-id="5ca36-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5ca36-117">Request headers</span></span>
-| <span data-ttu-id="5ca36-118">Name</span><span class="sxs-lookup"><span data-stu-id="5ca36-118">Name</span></span>       | <span data-ttu-id="5ca36-119">Typ</span><span class="sxs-lookup"><span data-stu-id="5ca36-119">Type</span></span> | <span data-ttu-id="5ca36-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5ca36-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15fe8-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="15fe8-117">Request headers</span></span>
+| <span data-ttu-id="15fe8-118">Name</span><span class="sxs-lookup"><span data-stu-id="15fe8-118">Name</span></span>       | <span data-ttu-id="15fe8-119">Typ</span><span class="sxs-lookup"><span data-stu-id="15fe8-119">Type</span></span> | <span data-ttu-id="15fe8-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="15fe8-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5ca36-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ca36-121">Authorization</span></span>  | <span data-ttu-id="5ca36-122">string</span><span class="sxs-lookup"><span data-stu-id="5ca36-122">string</span></span>  | <span data-ttu-id="5ca36-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5ca36-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5ca36-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5ca36-125">Content-Type</span></span> | <span data-ttu-id="5ca36-126">string</span><span class="sxs-lookup"><span data-stu-id="5ca36-126">string</span></span> | <span data-ttu-id="5ca36-p103">`text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="5ca36-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="15fe8-121">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="15fe8-121">Authorization</span></span>  | <span data-ttu-id="15fe8-122">string</span><span class="sxs-lookup"><span data-stu-id="15fe8-122">string</span></span>  | <span data-ttu-id="15fe8-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="15fe8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="15fe8-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15fe8-125">Content-Type</span></span> | <span data-ttu-id="15fe8-126">string</span><span class="sxs-lookup"><span data-stu-id="15fe8-126">string</span></span> | <span data-ttu-id="15fe8-p103">`text/html` oder `application/xhtml+xml` für den HTML-Inhalt, auch für den erforderlichen Teil „Präsentation“ von mehrteiligen Anforderungen. Mehrteilige Anforderungen verwenden den Inhaltstyp `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="15fe8-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5ca36-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5ca36-129">Request body</span></span>
-<span data-ttu-id="5ca36-130">Geben Sie im Anforderungstext den HTML-Inhalt für die Seite an.</span><span class="sxs-lookup"><span data-stu-id="5ca36-130">In the request body, supply the page HTML content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15fe8-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="15fe8-129">Request body</span></span>
+<span data-ttu-id="15fe8-130">Geben Sie im Anforderungstext den HTML-Inhalt für die Seite an.</span><span class="sxs-lookup"><span data-stu-id="15fe8-130">In the request body, supply the page HTML content.</span></span>
 
-<span data-ttu-id="5ca36-p104">Der Text kann HTML-Code enthalten, der direkt im Anforderungstext platziert ist, oder er kann ein mehrteiliges Nachrichtenformat enthalten, wie im Beispiel gezeigt. Wenn Sie Binärdaten senden, müssen Sie eine mehrteilige Anforderung senden.</span><span class="sxs-lookup"><span data-stu-id="5ca36-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="15fe8-p104">Der Text kann HTML-Code enthalten, der direkt im Anforderungstext platziert ist, oder er kann ein mehrteiliges Nachrichtenformat enthalten, wie im Beispiel gezeigt. Wenn Sie Binärdaten senden, müssen Sie eine mehrteilige Anforderung senden.</span><span class="sxs-lookup"><span data-stu-id="15fe8-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5ca36-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="5ca36-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15fe8-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="15fe8-133">Response</span></span>
 
-<span data-ttu-id="5ca36-134">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein neues [page](../resources/onenotepage.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5ca36-134">If successful, this method returns `201 Created` response code and the new [page](../resources/onenotepage.md) object in the response body.</span></span>
+<span data-ttu-id="15fe8-134">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `201 Created` und ein neues [page](../resources/page.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="15fe8-134">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5ca36-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5ca36-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5ca36-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5ca36-136">Request</span></span>
-<span data-ttu-id="5ca36-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5ca36-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="15fe8-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="15fe8-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15fe8-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="15fe8-136">Request</span></span>
+<span data-ttu-id="15fe8-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="15fe8-137">Here is an example of the request.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -92,8 +92,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="5ca36-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="5ca36-138">Response</span></span>
-<span data-ttu-id="5ca36-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="5ca36-139">Here is an example of the response.</span></span> <span data-ttu-id="5ca36-140">Hinweis: Das hier gezeigte Response-Objekt wird aus Platzgründen Zahl gekürzt.</span><span class="sxs-lookup"><span data-stu-id="5ca36-140">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="5ca36-141">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5ca36-141">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="15fe8-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="15fe8-138">Response</span></span>
+<span data-ttu-id="15fe8-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="15fe8-139">Here is an example of the response.</span></span> <span data-ttu-id="15fe8-140">Hinweis: Das hier gezeigte Response-Objekt wird aus Platzgründen Zahl gekürzt.</span><span class="sxs-lookup"><span data-stu-id="15fe8-140">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="15fe8-141">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="15fe8-141">All of the properties will be returned from an actual call.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

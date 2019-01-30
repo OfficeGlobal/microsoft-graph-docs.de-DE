@@ -4,46 +4,45 @@ description: Besprechungsinformationen, die den Organisator der Besprechung enth
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1aa72e37e1f2332b10fd5aecc38b1b8d42ce1303
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575006"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641995"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="3b0b8-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="3b0b8-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="f529a-103">Ressourcentyp organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="f529a-103">organizerMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3b0b8-104">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="3b0b8-104">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="f529a-104">Besprechungsinformationen, die den Organisator der Besprechung enthält.</span><span class="sxs-lookup"><span data-stu-id="f529a-104">Meeting information containing the organizer of the meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3b0b8-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3b0b8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f529a-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f529a-105">Properties</span></span>
 
-| <span data-ttu-id="3b0b8-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3b0b8-106">Property</span></span>                     | <span data-ttu-id="3b0b8-107">Typ</span><span class="sxs-lookup"><span data-stu-id="3b0b8-107">Type</span></span>                          | <span data-ttu-id="3b0b8-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3b0b8-108">Description</span></span>                                     |
+| <span data-ttu-id="f529a-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f529a-106">Property</span></span>                     | <span data-ttu-id="f529a-107">Typ</span><span class="sxs-lookup"><span data-stu-id="f529a-107">Type</span></span>                          | <span data-ttu-id="f529a-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f529a-108">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="3b0b8-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="3b0b8-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="3b0b8-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="3b0b8-110">Boolean</span></span>                       | <span data-ttu-id="3b0b8-111">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="3b0b8-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="3b0b8-112">organizer</span><span class="sxs-lookup"><span data-stu-id="3b0b8-112">organizer</span></span>                    | [<span data-ttu-id="3b0b8-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="3b0b8-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="3b0b8-114">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="3b0b8-114">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="f529a-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="f529a-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="f529a-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="f529a-110">Boolean</span></span>                       | <span data-ttu-id="f529a-111">Gibt an, ob eine Unterhaltung fortgesetzt werden kann, sobald der Host der Unterhaltung verlässt.</span><span class="sxs-lookup"><span data-stu-id="f529a-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="f529a-112">organizer</span><span class="sxs-lookup"><span data-stu-id="f529a-112">organizer</span></span>                    | [<span data-ttu-id="f529a-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="f529a-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="f529a-114">Der Organisator Azure Active Directory-Identität.</span><span class="sxs-lookup"><span data-stu-id="f529a-114">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="3b0b8-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3b0b8-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f529a-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f529a-115">JSON representation</span></span>
 
-<span data-ttu-id="3b0b8-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3b0b8-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f529a-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f529a-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="3b0b8-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3b0b8-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f529a-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f529a-117">Example</span></span>
 
 <!-- {
   "blockType": "example",

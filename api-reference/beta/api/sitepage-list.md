@@ -5,45 +5,43 @@ ms.date: 03/15/2018
 title: Seiten Sie die in einer Website
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d3d164c2d4f349b605823af3273ae84f6eea3627
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576038"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641190"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9b621-102">Seiten Sie die in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="9b621-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="dc73d-102">Seiten Sie die in der Liste der Website-Seiten einer Website</span><span class="sxs-lookup"><span data-stu-id="dc73d-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9b621-103">Rufen Sie die Auflistung der [SitePages](../resources/sitepage.md) aus der Website-Seiten- [Liste](../resources/list.md) in einer Website- [Website](../resources/site.md).</span><span class="sxs-lookup"><span data-stu-id="9b621-103">Get the collection of [sitePages](../resources/sitepage.md) from the site pages [list](../resources/list.md) in a site [site](../resources/site.md).</span></span> <span data-ttu-id="9b621-104">Alle Seiten auf der Website werden (mit Paginierung) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9b621-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="dc73d-103">Rufen Sie die Auflistung von [SitePages] [] aus der Website-Seiten- [Liste][] in einer Website- [Website][].</span><span class="sxs-lookup"><span data-stu-id="dc73d-103">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="dc73d-104">Alle Seiten auf der Website werden (mit Paginierung) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dc73d-104">All pages in the site are returned (with pagination).</span></span>
 
-<span data-ttu-id="9b621-105">[SitePage](../resources/sitepage.md)
-[Liste](../resources/list.md)
-[Website](../resources/site.md)</span><span class="sxs-lookup"><span data-stu-id="9b621-105">[sitePage](../resources/sitepage.md)
-[list](../resources/list.md)
-[site](../resources/site.md)</span></span>
+[sitePage]: ../resources/sitepage.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9b621-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9b621-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc73d-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="dc73d-107">Permissions</span></span>
 
-<span data-ttu-id="9b621-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9b621-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dc73d-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc73d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9b621-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9b621-109">Permission type</span></span>      | <span data-ttu-id="9b621-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9b621-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc73d-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="dc73d-110">Permission type</span></span>      | <span data-ttu-id="dc73d-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="dc73d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9b621-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9b621-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9b621-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b621-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9b621-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9b621-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9b621-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9b621-114">Not supported.</span></span>    |
-|<span data-ttu-id="9b621-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9b621-115">Application</span></span> | <span data-ttu-id="9b621-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b621-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dc73d-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="dc73d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dc73d-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc73d-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dc73d-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="dc73d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc73d-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="dc73d-115">Not supported.</span></span>    |
+|<span data-ttu-id="dc73d-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="dc73d-116">Application</span></span> | <span data-ttu-id="dc73d-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc73d-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9b621-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9b621-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc73d-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="dc73d-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="9b621-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9b621-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dc73d-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dc73d-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9b621-119">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9b621-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc73d-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="dc73d-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -51,18 +49,11 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="9b621-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="9b621-120">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="dc73d-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="dc73d-121">Response</span></span>
 
-<!-- 
-{ 
-    "blockType": "response", 
-    "@odata.type": "microsoft.graph.sitePage", 
-    "truncated": true,
-    "isCollection" : true
-} 
--->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -127,12 +118,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
+                            "query": { ... },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
+                            "displayMaps": { ... },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -142,7 +133,7 @@ Content-type: application/json
             ]
         },
         {
-            "id": "2",
+            "id": 2,
             "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
