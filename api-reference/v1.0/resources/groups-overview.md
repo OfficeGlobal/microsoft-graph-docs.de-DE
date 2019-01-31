@@ -4,12 +4,12 @@ description: Gruppen sind Auflistungen von Benutzern und anderen Hauptbenutzern,
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 031d67db4f0ad151175fc244aefdfd31615b221c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961687"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642268"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Arbeiten mit Gruppen in Microsoft Graph
 
@@ -65,13 +65,13 @@ Es folgt eine JSON-Darstellung von Gruppen in Outlook.
     "visibility": "Public"
 }
 ```
-Weitere Informationen zu Office 365-Gruppen und der Administratorerfahrung finden Sie unter [Weitere Informationen zu Gruppen in Office 365](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Weitere Informationen zu Office 365-Gruppen und der Administratorerfahrung finden Sie unter [Weitere Informationen zu Gruppen in Office 365](https://support.office.com/de-DE/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>Sicherheitsgruppen und E-Mail-aktivierte Sicherheitsgruppen
 
 Sicherheitsgruppen sind für das Steuern des Benutzerzugriffs auf Ressourcen gedacht. Durch Überprüfen, ob ein Benutzer ein Mitglied einer Sicherheitsgruppe ist, kann Ihre App Autorisierungsentscheidungen treffen, wenn dieser Benutzer versucht, auf sichere Ressourcen in Ihrer App zuzugreifen. Sicherheitsgruppen können Benutzer und andere Sicherheitsgruppen als Mitglieder haben.
 
-E-Mail-aktivierte Sicherheitsgruppen werden auf die gleiche Weise wie Sicherheitsgruppen verwendet, weisen jedoch das zusätzliche Feature eines freigegebenen Postfachs für die Gruppen auf. E-Mail-aktivierte Sicherheitsgruppen können nicht über die API erstellt werden, aber andere Gruppenvorgänge funktionieren weiterhin.  E-Mail-aktivierte Sicherheitsgruppen sind schreibgeschützt. Weitere Informationen finden Sie im Exchange-Artikel  [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
+E-Mail-aktivierte Sicherheitsgruppen werden auf die gleiche Weise wie Sicherheitsgruppen verwendet, weisen jedoch das zusätzliche Feature eines freigegebenen Postfachs für die Gruppen auf. E-Mail-aktivierte Sicherheitsgruppen können nicht über die API erstellt werden, aber andere Gruppenvorgänge funktionieren weiterhin.  E-Mail-aktivierte Sicherheitsgruppen sind schreibgeschützt. Weitere Informationen finden Sie im Exchange-Artikel  [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://technet.microsoft.com/de-DE/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Beispiel für eine Sicherheitsgruppe
 
@@ -116,13 +116,17 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-Weitere Informationen zum Verfassen von membershipRules finden Sie unter [Erstellen von attributbasierten Regeln für dynamische Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+Weitere Informationen zum Verfassen von membershipRules finden Sie unter [Erstellen von attributbasierten Regeln für dynamische Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
-> **Hinweis**: Regeln für dynamische Mitgliedschaft erfordern eine Lizenz vom Mandanten auf der Ebene [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) oder höher.
+> **Hinweis**: Regeln für dynamische Mitgliedschaft erfordern eine Lizenz vom Mandanten auf der Ebene [Azure Active Directory Premium P1](https://azure.microsoft.com/de-DE/pricing/details/active-directory/) oder höher.
 
 ## <a name="other-types-of-groups"></a>Andere Arten von Gruppen
 
-Office 365-Gruppen in Yammer werden verwendet, um die Zusammenarbeit von Benutzern über Yammer-Beiträge zu ermöglichen. Diese Art von Gruppe kann über eine Leseanforderung zurückgegeben werden, auf die Beiträge kann jedoch nicht über die API zugegriffen werden. Wenn Yammer-Beiträge und Unterhaltungs-Feeds für eine Gruppe aktiviert sind, werden standardmäßige Office 365-Gruppenunterhaltungen deaktiviert. Weitere Informationen finden Sie unter [Yammer-Entwickler-API Dokumente](https://developer.yammer.com/docs).
+Office 365-Gruppen in Yammer werden verwendet, um die Zusammenarbeit von Benutzern über Yammer-Beiträge zu ermöglichen. Diese Art von Gruppe kann über eine Leseanforderung zurückgegeben werden, auf die Beiträge kann jedoch nicht über die API zugegriffen werden. Wenn Yammer-Beiträge und Unterhaltungs-Feeds für eine Gruppe aktiviert sind, werden standardmäßige Office 365-Gruppenunterhaltungen deaktiviert. Weitere Informationen finden Sie in den [Yammer-Entwickler-API-Dokumenten](https://developer.yammer.com/docs).
+
+## <a name="group-based-licensing"></a>Gruppenbasierte Lizenzierung 
+
+Sie können die gruppenbasierte Lizenzierung verwenden, um eine oder mehrere Produktlizenzen einer Azure AD-Gruppe zuzuweisen. Azure AD stellt sicher, dass die Lizenzen allen Mitgliedern der Gruppe zugewiesen werden. Allen neuen Mitgliedern, die der Gruppe beitreten, werden die entsprechenden Lizenzen zugewiesen. Wenn sie die Gruppe verlassen, werden diese Lizenzen entfernt. Das Feature kann nur in Sicherheitsgruppen und in Office 365-Gruppen mit `securityEnabled=TRUE` verwendet werden. Weitere Informationen zur gruppenbasierten Lizenzierung finden Sie unter [Was ist die gruppenbasierte Lizenzierung in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle
 
