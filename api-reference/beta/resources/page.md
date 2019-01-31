@@ -3,11 +3,11 @@ title: page-Ressourcentyp
 description: Eine Seite in einem OneNote-Notizbuch.
 localization_priority: Normal
 ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519241"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649415"
 ---
 # <a name="page-resource-type"></a>page-Ressourcentyp
 
@@ -51,12 +51,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 |contentUrl|String|Die URL für die HTML-Inhalt der Seite.  Schreibgeschützt.|
 |createdByAppId|String|Der eindeutige Bezeichner der Anwendung, mit der die Seite erstellt wurde. Schreibgeschützt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
-|id|Zeichenfolge|Der eindeutige Bezeichner der Seite.  Schreibgeschützt.|
+|id|String|Der eindeutige Bezeichner der Seite.  Schreibgeschützt.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit der letzten Änderung der Seite. Der Zeitstempel stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt.|
 |Ebene|Int32|Die Einzugsebene der Seite. Schreibgeschützt.|
 |links|[PageLinks](pagelinks.md)|Links zum Öffnen der Seite. Der Link `oneNoteClientURL` öffnet die Seite im systemeigenen OneNote-Client, sofern er installiert ist. Der Link `oneNoteWebUrl` öffnet die Seite in OneNote Online. Schreibgeschützt.|
 |order|Int32|Die Anordnung der Seite im übergeordneten Abschnitt. Schreibgeschützt.|
-|self|Zeichenfolge|Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.|
+|self|String|Der Endpunkt, an dem Sie Details zur Seite abrufen können. Schreibgeschützt.|
 |title|String|Der Titel der Seite. |
 
 ## <a name="relationships"></a>Beziehungen

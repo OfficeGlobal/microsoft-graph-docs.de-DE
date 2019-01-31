@@ -3,11 +3,11 @@ title: GetNamedItem Ressourcenart
 description: Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen können einfach benannte Objekte (wie unten dargestellt), Bereichsobjekte, Verweise auf einen Bereich sein. Dieses Objekt kann zum Abrufen des mit Namen verknüpften Bereichsobjekts verwendet werden.
 localization_priority: Normal
 ms.openlocfilehash: 5dd093976b2c09ae93c608144c8d6c2b7d7161c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815372"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649414"
 ---
 # <a name="nameditem-resource-type"></a>GetNamedItem Ressourcenart
 
@@ -33,7 +33,7 @@ Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen
 |scope|string|Gibt an, ob der Name im Bereich der Arbeitsmappe oder im Bereich eines bestimmten Arbeitsblatts liegt. Schreibgeschützt.|
 |type|string|Gibt an, welche Art von Verweis mit dem Namen verknüpft ist. Mögliche Werte:`String`, `Integer`, `Double`, `Boolean`, `Range`. Schreibgeschützt.|
 |Wert|string|Stellt die Formel dar, auf die der Name verweist. z. B. =Sheet14!$B$2:$H$12, =4.75 usw. Schreibgeschützt.|
-|visible|boolean|Gibt an, ob das Objekt sichtbar ist.|
+|visible|Boolescher Wert|Gibt an, ob das Objekt sichtbar ist.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung     | Typ   |Beschreibung|
