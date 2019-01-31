@@ -4,12 +4,12 @@ description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der e
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726610"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641281"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -98,14 +98,17 @@ Diese Ressource unterstützt Folgendes:
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolesch| Gibt an, ob Personen außerhalb der Organisation Nachrichten an die Gruppe senden können. Der Standardwert lautet **false**. <br><br>Wird nur für $select zurückgegeben. |
+|assignedLicenses|[assignedLicense](assignedlicense.md)-Sammlung|Die Lizenzen, die der Gruppe zugewiesen sind. <br><br>Wird nur für $select zurückgegeben. Schreibgeschützt.|
 |autoSubscribeNewMembers|Boolesch|Gibt an, ob neu zur Gruppe hinzugefügte Mitglieder automatisch E-Mail-Benachrichtigungen erhalten. Sie können diese Eigenschaft in einer PATCH-Anforderung für die Gruppe festlegen; legen Sie sie nicht in der anfänglichen POST-Anforderung fest, mit der die Gruppe erstellt wird. Der Standardwert lautet **false**. <br><br>Wird nur für $select zurückgegeben.|
 |classification|Zeichenfolge|Beschreibt eine Klassifizierung für die Gruppe (z. B. niedrige, mittlere oder hohe geschäftliche Auswirkungen). Gültige Werte für diese Eigenschaft werden durch die Erstellung eines ClassificationList-[setting](groupsetting.md)-Werts basierend auf der [Vorlagendefinition](groupsettingtemplate.md) erstellt.<br><br>Wird standardmäßig zurückgegeben.|
 |createdDateTime|DateTimeOffset| Zeitstempel der Gruppenerstellung. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Gruppe erstellt wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. <br><br>Wird standardmäßig zurückgegeben. Schreibgeschützt. |
 |description|String|Eine optionale Beschreibung für die Gruppe. <br><br>Wird standardmäßig zurückgegeben.|
 |displayName|Zeichenfolge|Der Anzeigename der Gruppe. Diese Eigenschaft ist beim Erstellen einer Gruppe erforderlich und kann bei Updates nicht gelöscht werden. <br><br>Wird standardmäßig zurückgegeben. Unterstützt $filter und $orderby. |
 |groupTypes|Zeichenfolgenauflistung| Gibt den Typ der zu erstellenden Gruppe an. Mögliche Werte sind `Unified` zum Erstellen einer Office 365-Gruppe oder `DynamicMembership` für dynamische Gruppen.  Legen Sie für alle anderen Gruppentypen wie Gruppen mit aktivierter Sicherheit und E-Mail-fähige Sicherheitsgruppen diese Eigenschaft nicht fest. <br><br>Wird standardmäßig zurückgegeben. Unterstützt $filter.|
-|ID|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. <br><br>Wird standardmäßig zurückgegeben. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
+|hasMembersWithLicenseErrors|Boolesch|Gibt an, ob es in dieser Gruppe Mitglieder mit Lizenzfehlern aus ihrer gruppenbasierten Lizenzzuweisung gibt. <br><br>Diese Eigenschaft wird nie bei einem GET-Vorgang zurückgegeben. Sie können sie als $filter-Argument verwenden, um Gruppen abzurufen, die Mitglieder mit Lizenzfehlern enthalten (d. h., Sie filtern nach dieser Eigenschaft mit dem Wert true). Sehen Sie sich das [Beispiel](../api/group-list.md) an.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Gruppe. <br><br>Wird standardmäßig zurückgegeben. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |isSubscribedByMail|Boolesch|Gibt an, ob der angemeldete Benutzer den Erhalt von E-Mail-Unterhaltungen abonniert hat. Der Standardwert ist **true**. <br><br>Wird nur für $select zurückgegeben. |
+|licenseProcessingState|Zeichenfolge|Gibt den Status der Gruppenlizenzzuweisung an alle Mitglieder der Gruppe an. Der Standardwert lautet **false**. Schreibgeschützt. Mögliche Werte: `QueuedForProcessing`, `ProcessingInProgress` und `ProcessingComplete`.<br><br>Wird nur für $select zurückgegeben. Schreibgeschützt.|
 |mail|Zeichenfolge|Die SMTP-Adresse für die Gruppe, z. B. „serviceadmins@contoso.onmicrosoft.com“. <br><br>Wird standardmäßig zurückgegeben. Schreibgeschützt. Unterstützt $filter.|
 |mailEnabled|Boolesch|Gibt an, ob es sich bei der Gruppe um eine E-Mail-fähige Gruppe handelt. Wenn die **securityEnabled**-Eigenschaft auch auf **true** festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls handelt es sich bei der Gruppe um eine Microsoft Exchange-Verteilergruppe. <br><br>Wird standardmäßig zurückgegeben.|
 |mailNickname|Zeichenfolge|Der E-Mail-Alias für die Gruppe, in der Organisation eindeutig. Diese Eigenschaft muss beim Erstellen einer Gruppe angegeben werden. <br><br>Wird standardmäßig zurückgegeben. Unterstützt $filter.|
@@ -119,6 +122,7 @@ Diese Ressource unterstützt Folgendes:
 |securityEnabled|Boolean|Gibt an, ob es sich bei der Gruppe um eine Sicherheitsgruppe handelt. Wenn die **mailEnabled**-Eigenschaft auch auf „true“ festgelegt ist, handelt es sich bei der Gruppe um eine E-Mail-fähige Sicherheitsgruppe; andernfalls ist die Gruppe eine Sicherheitsgruppe. Muss für Office 365-Gruppen auf **false** festgelegt sein. <br><br>Wird standardmäßig zurückgegeben. Unterstützt $filter.|
 |unseenCount|Int32|Die Anzahl von Unterhaltungen, die neue Beiträge erhalten haben, da der angemeldete Benutzer die Gruppe zuletzt besucht hat. <br><br>Wird nur für $select zurückgegeben. |
 |visibility|Zeichenfolge| Gibt die Sichtbarkeit einer Office 365-Gruppe an. Mögliche Werte sind: `private`, `public` oder `hiddenmembership`; leere Werte werden als „public“ behandelt.  Weitere Informationen finden Sie unter [Sichtbarkeitsoptionen für Gruppen](#group-visibility-options).<br>Die Sichtbarkeit kann nur beim Erstellen einer Gruppe festgelegt und anschließend nicht mehr bearbeitet werden.<br>Sichtbarkeit wird nur für einheitliche Gruppen unterstützt. Für Sicherheitsgruppen wird sie nicht unterstützt. <br><br>Wird standardmäßig zurückgegeben.|
+
 
 ### <a name="group-visibility-options"></a>Sichtbarkeitsoptionen für Gruppen
 
@@ -146,6 +150,7 @@ Im Folgenden wird die Bedeutung der einzelnen Werte der Eigenschaft **visibility
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md)-Sammlung|Die Sammlung der Lebenszyklusrichtlinien für diese Gruppe. Schreibgeschützt. Lässt Nullwerte zu.|
 |memberOf|[directoryObject](directoryobject.md)-Sammlung|Gruppen, bei denen diese Gruppe Mitglied ist. HTTP-Methoden: GET (unterstützt für alle Gruppen). Schreibgeschützt. Lässt NULL-Werte zu.|
 |Elemente|[directoryObject](directoryobject.md)-Sammlung| Benutzer und Gruppen, die Mitglieder dieser Gruppe sind. HTTP-Methoden: GET (unterstützt für alle Gruppen), POST (unterstützt für Office 365-Gruppen, Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen), DELETE (unterstützt für Office 365-Gruppen und Sicherheitsgruppen), lässt NULL-Werte zu.|
+|membersWithLicenseErrors|[User](user.md)-Sammlung|Eine Liste von Gruppenmitgliedern mit Lizenzfehlern aus dieser gruppenbasierten Lizenzizenzzuweisung. Schreibgeschützt.|
 |onenote|[Onenote](onenote.md)| Schreibgeschützt.|
 |owners|[directoryObject](directoryobject.md)-Sammlung|Die Besitzer der Gruppe. Bei den Besitzern handelt es sich um eine Reihe von Benutzern, die keine Administratoren sind und die berechtigt sind, dieses Objekt zu ändern. Beschränkt auf 10 Besitzer. HTTP-Methoden: GET (unterstützt für alle Gruppen), POST (unterstützt für Office 365-Gruppen, Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen), DELETE (unterstützt für Office 365-Gruppen und Sicherheitsgruppen). Lässt NULL-Werte zu.|
 |Foto|[profilePhoto](profilephoto.md)| Das Profilfoto der Gruppe. |
@@ -282,14 +287,17 @@ Es folgt eine JSON-Darstellung der Ressource.
 ```json
 {
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
@@ -312,6 +320,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "events": [ { "@odata.type": "microsoft.graph.event" }],
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

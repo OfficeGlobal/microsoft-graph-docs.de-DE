@@ -2,12 +2,12 @@
 title: signIn-Ressourcentyp
 description: 'Diese Ressource enthält Informationen zu den Anmeldeaktivitäten von Benutzern oder Anwendungen in Ihrem Verzeichnis. '
 localization_priority: Priority
-ms.openlocfilehash: 3d9b9ffab6b588cbe0a465a637b12649110415d2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571849"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640966"
 ---
 # <a name="signin-resource-type"></a>signIn-Ressourcentyp
 Diese Ressource enthält Informationen zu den Anmeldeaktivitäten von Benutzern oder Anwendungen in Ihrem Verzeichnis. 
@@ -38,13 +38,13 @@ Diese Ressource enthält Informationen zu den Anmeldeaktivitäten von Benutzern 
 |ipAddress|String|Gibt die IP-Adresse des Clients an, von dem aus die Anmeldung erfolgt ist.|
 |location|[signInLocation](signinlocation.md)|Gibt den Ort, das Bundesland und den aus 2 Buchstaben bestehenden Ländercode für die Anmeldung an.|
 |processingTimeInMilliseconds|Int|Gibt die Anforderungsverarbeitungszeit in Millisekunden in AD STS an.|
-|riskDetail| enum-string |Gibt den "Grund" für einen bestimmten Status eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass bisher keine Aktion für den Benutzer oder die Anmeldung ausgeführt wurde. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
-|riskLevelAggregated| enum-string |Stellt die aggregierten Risikostufe bereit. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
-|riskLevelDuringSignIn| enum-string |Gibt die Risikostufe während der Anmeldung an. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
-|riskEventTypes| enum-string |Gibt die Liste der mit der Anmeldung verbundenen Risikoereignistypen an. Mögliche Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic` und `unknownFutureValue`.|
+|riskDetail|`riskDetail`|Gibt den "Grund" für einen bestimmten Status eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Der Wert `none` bedeutet, dass bisher keine Aktion für den Benutzer oder die Anmeldung ausgeführt wurde. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskLevelAggregated|`riskLevel`|Stellt die aggregierten Risikostufe bereit. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskLevelDuringSignIn|`riskLevel`|Gibt die Risikostufe während der Anmeldung an. Mögliche Werte sind: `none`, `low`, `medium`, `high`, `hidden` und `unknownFutureValue`. Der Wert `hidden` bedeutet, dass der Benutzer oder die Anmeldung nicht für Azure AD Identity Protection aktiviert war. **Hinweis:** Details für diese Eigenschaft sind nur für Kunden von Azure AD Premium P2 verfügbar. Für alle anderen Kunden wird `hidden` zurückgegeben.|
+|riskEventTypes|`riskEventTypes`|Gibt die Liste der mit der Anmeldung verbundenen Risikoereignistypen an. Mögliche Werte sind: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic` und `unknownFutureValue`.|
 |riskState|`riskState`|Gibt den "Risikostatus" eines riskanten Benutzers, einer Anmeldung oder eines Risikoereignisses an. Mögliche Werte sind: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Gibt die MFA-bezogenen Informationen wie "MFA erforderlich", "MFA-Status" für die entsprechende Anmeldung an.|
-|networkLocationDetail| [deviceDetail](networklocationdetail.md) |Gibt Details zur Netzwerkadresse an.|
+|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Gibt Details zur Netzwerkadresse an.|
 |riskLevel|string| Gibt die mit der Anmeldung verbundene Risikostufe an. Mögliche Werte sind: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Gibt den Anmeldestatus an. Mögliche Werte sind `Success` und `Failure`.|
 |userDisplayName|String|Gibt den Anzeigenamen des Benutzers an.|
@@ -91,11 +91,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskDetail": "none | adminGeneratedTemporaryPassword | userPerformedSecuredPasswordChange | userPerformedSecuredPasswordReset | adminConfirmedSigninSafe | aiConfirmedSigninSafe | userPassedMFADrivenByRiskBasedPolicy | adminDismissedAllRiskForUser | adminConfirmedSigninCompromised | unknownFutureValue",
-  "riskLevelAggregated": "enum-string",
-  "riskLevelDuringSignIn": "enum-string",
-  "riskState": "riskState",
-  "riskEventTypes": "enum-string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

@@ -4,12 +4,12 @@ description: 'Ein Team in Microsoft Teams ist eine Sammlung von Kanälen. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526207"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643776"
 ---
 # <a name="team-resource-type"></a>team-Ressourcentyp
 
@@ -64,6 +64,7 @@ Weitere Informationen zum Arbeiten mit Gruppen und Mitgliedern in Teams finden S
 |channels|[channel](channel.md)-Sammlung|Die Sammlung von Kanälen und Nachrichten, die mit dem Team verknüpft ist.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md)-Sammlung|Die in diesem Team installierten Apps.|
 |owners|[user](user.md)| Die Liste der Besitzer des Teams. |
+|operations|[teamsAsyncOperation](teamsasyncoperation.md)-Auflistung| Die asynchronen Vorgänge, die ausgeführt wurden oder in diesem Team ausgeführt werden. | 
 |template|[teamsTemplate](teamstemplate.md)| Die Vorlage, von der dieses Team erstellt wurde. |
 
 ## <a name="json-representation"></a>JSON-Darstellung
