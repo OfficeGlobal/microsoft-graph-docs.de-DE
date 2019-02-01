@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577200"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641309"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -17,6 +17,12 @@ Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschl
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known-issues.md).
 
 ## <a name="january-2019"></a>Januar 2019
+
+### <a name="azure-ad-apis"></a>Azure AD-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen |v1.0|Der neue Ressourcentyp für die [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0)-Entität und die Vorgänge [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [list](/graph/api/identityprovider-list?view=graph-rest-v1.0), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/identityprovider-update?view=graph-rest-v1.0) und [delete](/graph/api/identityprovider-delete?view=graph-rest-v1.0) wurden hinzugefügt.|
 
 ### <a name="reports-apis"></a>Bericht-APIs
 
@@ -29,6 +35,10 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Ergänzungen | v1.0 | Eigenschaft **forceChangePasswordNextSignInWithMfa** zum komplexen Typ [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) hinzugefügt.|
+| Ergänzungen | v1.0 | Eigenschaft **licenseAssignmentStates** zur Entität [User](../api-reference/v1.0/resources/user.md) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
+| Ergänzungen | v1.0 | Ressource **licenseAssignmentState** für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.| 
+| Ergänzungen | v1.0 | Eigenschaften **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** und die Beziehung **membersWithLicenseErrors** wurden zur Entität [Group](../api-reference/v1.0/resources/group.md) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
+| Ergänzungen | Beta | Eigenschaft **createdDateTime** wurde zur [user](/graph/api/resources/user?view=graph-rest-beta)-Ressource hinzugefügt.|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune-APIs
 
@@ -55,6 +65,11 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Ergänzungen|Beta|Navigationseigenschaft **mobileAppTroubleshootingEvents** wurde zur Entität [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) hinzugefügt|
 |Ergänzungen|Beta|Navigationseigenschaft **appLogCollectionRequests** wurde zur Entität [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) hinzugefügt|
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen |Beta| educationStandard, educationClass, educationProfessionalLearningCommunity, educationStaff und unknownFutureValue wurde der [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta)-Enumeration hinzugefügt.|
 
 ## <a name="december-2018"></a>Dezember 2018
 

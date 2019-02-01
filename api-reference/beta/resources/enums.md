@@ -1,13 +1,26 @@
 ---
-title: TimeZoneStandard Werte
-description: " Wert"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+title: Enum-Werte
+description: Microsoft Graph-Enumerationswerte
+ms.openlocfilehash: ab73a185b9e37f99a413486ef4fcdf50bbced7b2
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640980"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690938"
 ---
+### <a name="contactrelationship-values"></a>ContactRelationship Werte
+
+|Element|Wert|Beschreibung|
+|:---|:---|:---|
+|das übergeordnete|0|Übergeordnete des Benutzers.|
+|relative|1| Relative des Benutzers.|
+|aIDE|2| Aide des Benutzers.|
+|Arzt|3| Arzt des Benutzers.|
+|Guardian|4| Guardian des Benutzers.|
+|untergeordnetes Element|5| Untergeordnete des Benutzers.|
+|andere|6| Eine nicht spezifizierte Beziehung an den Benutzer.|
+|unknownFutureValue|7| Wert der Markierung für die zukünftige Kompatibilität.|
+
 ### <a name="timezonestandard-values"></a>TimeZoneStandard Werte
 
 | Wert
@@ -451,13 +464,9 @@ ms.locfileid: "29640980"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>Sicherheit-API-Enumerationen
-
-# <a name="alertfeedback-enum-type"></a>AlertFeedback Enum-Typ
+### <a name="alertfeedback-values"></a>AlertFeedback Werte
 
 Feedback möglichen Werte auf die Benachrichtigung von Analysten bereitgestellt.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -466,11 +475,7 @@ Feedback möglichen Werte auf die Benachrichtigung von Analysten bereitgestellt.
 |falsePositive|2| Benachrichtigung ist falsch Positive.|
 |benignPositive|3| Benachrichtigung ist duldet positiv.|
 
-# <a name="filehashtype-enum-type"></a>FileHashType Enum-Typ
-
-Enum für Hash Dateitypen.
-
-## <a name="members"></a>Elemente
+### <a name="filehashtype-values"></a>FileHashType Werte
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -484,11 +489,7 @@ Enum für Hash Dateitypen.
 |peSha1|7| PESHA1 Hash-Typ.|
 |peSha256|8| PESHA256 Hash-Typ.|
 
-# <a name="connectiondirection-enum-type"></a>ConnectionDirection Enum-Typ
-
-Option für die Richtung der Verbindung (eingehend/ausgehend).
-
-## <a name="members"></a>Elemente
+### <a name="connectiondirection-values"></a>ConnectionDirection Werte
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -496,11 +497,7 @@ Option für die Richtung der Verbindung (eingehend/ausgehend).
 |eingehend|1|Eingehende Verbindung.|
 |ausgehende|2| Ausgehende Verbindung.|
 
-# <a name="connectionstatus-enum-type"></a>ConnectionStatus Enum-Typ
-
-Enumeration für den Status der Verbindung.
-
-## <a name="members"></a>Elemente
+### <a name="connectionstatus-values"></a>ConnectionStatus Werte
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -510,11 +507,7 @@ Enumeration für den Status der Verbindung.
 |gesperrt|3| Verbindung blockiert.|
 |failed|4| Verbindung ist fehlgeschlagen.|
 
-# <a name="processintegritylevel-enum-type"></a>ProcessIntegrityLevel Enum-Typ
-
-Integrität der möglichen Werte des Prozesses.
-
-## <a name="members"></a>Elemente
+### <a name="processintegritylevel-values"></a>ProcessIntegrityLevel Werte
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -525,11 +518,9 @@ Integrität der möglichen Werte des Prozesses.
 |hohe|40| Integrität ist hoch.|
 |System|50| Integrität ist System.|
 
-# <a name="registryhive-enum-type"></a>RegistryHive Enum-Typ
+### <a name="registryhive-values"></a>RegistryHive Werte
 
 Enum für Registrierung Strukturen gemäß [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -541,11 +532,9 @@ Enum für Registrierung Strukturen gemäß [https://docs.microsoft.com/en-us/win
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\SYSTEM-Hive.|
 |usersDefault|6| HKEY_USERS\\. Standard-Hive.|
 
-# <a name="registryoperation-enum-type"></a>RegistryOperation Enum-Typ
+### <a name="registryoperation-values"></a>RegistryOperation Werte
 
 Der Vorgang, der der Name des Registrierungsschlüssels und/oder Wert geändert.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -554,11 +543,9 @@ Der Vorgang, der der Name des Registrierungsschlüssels und/oder Wert geändert.
 |Ändern|2|Ändern Sie die Registrierung.|
 |Löschen|3|Registrierung zu löschen.|
 
-# <a name="registryvaluetype-enum-type"></a>RegistryValueType Enum-Typ
+### <a name="registryvaluetype-values"></a>RegistryValueType Werte
 
 Enumeration für den Registrierungswert eingibt, durch die definierten [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -575,11 +562,9 @@ Enumeration für den Registrierungswert eingibt, durch die definierten [https://
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN Registrierung Werttyp.|
 |su|11| Werttyp REG_SZ-Registrierung.|
 
-# <a name="alertseverity-enum-type"></a>AlertSeverity Enum-Typ
+### <a name="alertseverity-values"></a>AlertSeverity Werte
 
 Enum für Schweregrad von Warnungen.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -589,11 +574,9 @@ Enum für Schweregrad von Warnungen.
 |medium|3| Schweregrad ist Medium.|
 |hohe|4| Schweregrad ist hoch.|
 
-# <a name="alertstatus-enum-type"></a>AlertStatus Enum-Typ
+### <a name="alertstatus-values"></a>AlertStatus Werte
 
 Mögliche Werte von einer Warnung Lebenszyklusstatus (Phase).
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -602,11 +585,9 @@ Mögliche Werte von einer Warnung Lebenszyklusstatus (Phase).
 |in Bearbeitung|20|Warnung wird gerade durchgeführt.|
 |aufgelöst|30|Warnung wird aufgelöst.|
 
-# <a name="emailrole-enum-type"></a>EmailRole Enum-Typ
+### <a name="emailrole-values"></a>EmailRole Werte
 
 Mögliche Werte für e-Mail-Rollen.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -614,11 +595,9 @@ Mögliche Werte für e-Mail-Rollen.
 |sender|1|Der Absender der e-Mail.|
 |Empfänger|2|Der Empfänger der e-Mail.|
 
-# <a name="logontype-enum-type"></a>LogonType Enum-Typ
+### <a name="logontype-values"></a>LogonType Werte
 
 Mögliche Werte für die-Methode des Benutzers anmelden.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
@@ -629,11 +608,9 @@ Mögliche Werte für die-Methode des Benutzers anmelden.
 |batch|3| Anmeldung ist Batch.|
 |service|4| Anmeldung ist Dienst.|
 
-# <a name="useraccountsecuritytype-enum-type"></a>UserAccountSecurityType Enum-Typ
+### <a name="useraccountsecuritytype-values"></a>UserAccountSecurityType Werte
 
 Mögliche Werte für Benutzerkontotypen (Gruppenmitgliedschaft) pro Windows-Definition.
-
-## <a name="members"></a>Elemente
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
