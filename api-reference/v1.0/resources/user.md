@@ -4,12 +4,12 @@ description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 64c8cb0c580af0692ddc4aacca984774bc76ab2f
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642534"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690959"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -49,7 +49,8 @@ Diese Ressource unterstützt Folgendes:
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| Ruft die Benutzer und Kontakte, die an den Benutzer berichten, aus der directReports-Navigationseigenschaft ab.|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Ruft den Benutzer oder Kontakt, der Vorgesetzter dieses Benutzers ist, aus der manager-Navigationseigenschaft ab.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Ruft die Gruppen und Verzeichnisrollen, bei denen dieser Benutzer direktes Mitglied ist, aus der memberOf-Navigationseigenschaft ab.|
-|[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
+|[Transitive memberOf auflisten](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Die Gruppen und Verzeichnisrollen auflisten, bei denen der Benutzer Mitglied ist. Dieser Vorgang ist transitiv und schließt die Gruppen ein, in denen der Benutzer ein geschachteltes Mitglied ist. |
+|[ownedDevices auflisten](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die dem Benutzer gehören, aus der ownedDevices-Navigationseigenschaft ab.|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| Ruft die Geräte, die für den Benutzer registriert sind, aus der registeredDevices-Navigationseigenschaft ab.|
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Ruft die Verzeichnisobjekte, die von dem Benutzer erstellt wurden, aus der createdObjects-Navigationseigenschaft ab.|
@@ -83,7 +84,9 @@ Diese Ressource unterstützt Folgendes:
 |Land|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |createdDateTime | DateTimeOffset |Das Erstellungsdatum des Benutzerobjekts. |
 |department|String|Der Name der Abteilung, in der der Benutzer arbeitet. Unterstützt $filter.|
-|displayName|String|cDer Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
+|displayName|String|Der Name, der im Adressbuch für den Benutzer angezeigt wird. Dies ist normalerweise eine Kombination aus dem Vornamen, der Initiale des weiteren Vornamens und des Nachnamens. Diese Eigenschaft ist beim Erstellen eines Benutzers erforderlich und kann nicht bei Updates deaktiviert werden. Unterstützt $Filter und $orderby.|
+|employeeId|String|Die Mitarbeiter-ID, die dem Benutzer von der Organisation zugewiesen wurde. Unterstützt $filter.|
+|faxNumber|String|Die Faxnummer des Benutzers.|
 |givenName|String|Der Vorname des Benutzers. Unterstützt $filter.|
 |hireDate|DateTimeOffset|Das Einstellungsdatum des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
@@ -98,6 +101,7 @@ Diese Ressource unterstützt Folgendes:
 |mobilePhone|String|Die Nummer des primären Mobiltelefons für den Benutzer.|
 |mySite|String|Die URL für die persönliche Website des Benutzers.|
 |officeLocation|String|Der Bürostandort der Firma des Benutzers.|
+|onPremisesDistinguishedName|String| Enthält das lokale Active Directory `distinguished name` oder `DN`. Die Eigenschaft wird nur für Kunden ausgefüllt, die ihr lokales Verzeichnis in Azure Active Directory über Azure AD Connect synchronisieren. Schreibgeschützt. |
 |onPremisesDomainName|String| Enthält lokale `domainFQDN`, die auch als dnsDomainName bezeichnet und aus dem lokalen Verzeichnis synchronisiert werden. Die Eigenschaft wird nur für Kunden ausgefüllt, die ihr lokales Verzeichnis in Azure Active Directory über Azure AD Connect synchronisieren. Schreibgeschützt. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Enthält die Erweiterungsattribute 1 bis 15 für den Benutzer. Beachten Sie, dass die einzelnen Erweiterungsattribute weder ausgewählt noch gefiltert werden können. Für einen `onPremisesSyncEnabled`-Benutzer wird dieser Eigenschaftensatz lokal gemastert, und er ist schreibgeschützt. Bei einem reinen Cloud-Benutzer (wenn `onPremisesSyncEnabled` auf „false“ gesetzt ist) können diese Eigenschaften beim Erstellen oder Aktualisieren festgelegt werden. |
 |onPremisesImmutableId|Zeichenfolge|Diese Eigenschaft wird verwendet, um ein lokales Active Directory-Benutzerkonto dem Azure AD-Benutzerobjekt zuzuordnen. Diese Eigenschaft muss angegeben werden, wenn ein neues Benutzerkonto in Graph erstellt wird, wenn Sie eine Verbunddomäne für die **UserPrincipalName**-Eigenschaft (UPN) des Benutzers verwenden. **Wichtig:** Die Zeichen **$** und **\_** können nicht verwendet werden, wenn Sie diese Eigenschaft angeben. Unterstützt $filter.                            |
@@ -107,6 +111,7 @@ Diese Ressource unterstützt Folgendes:
 |onPremisesSecurityIdentifier|String|Enthält die lokale Sicherheits-ID (SID) für den Benutzer, der von der lokalen Bereitstellung in der Cloud synchronisiert wurde. Schreibgeschützt.|
 |onPremisesSyncEnabled|Boolean| **true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt |
 |onPremisesUserPrincipalName|String| Enthält lokale `userPrincipalName`, die aus dem lokalen Verzeichnis synchronisiert werden. Die Eigenschaft wird nur für Kunden ausgefüllt, die ihr lokales Verzeichnis in Azure Active Directory über Azure AD Connect synchronisieren. Schreibgeschützt. |
+|otherMails|String| Eine Liste zusätzlicher E-Mail-Adressen für den Benutzer; z. B.: `["bob@contoso.com", "Robert@fabrikam.com"]`. Unterstützt $filter.|
 |passwordPolicies|String|Gibt die Kennwortrichtlinien für den Benutzer an. Dieser Wert ist eine Enumeration, deren einziger möglicher Wert „DisableStrongPassword“ lautet. Damit können schwächere Kennwörter als in der Standardrichtlinie angegeben festgelegt werden. Auch „DisablePasswordExpiration“ kann angegeben werden. Beide können zusammen angegeben werden, z. B.: „DisablePasswordExpiration, DisableStrongPassword“.|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Gibt das Kennwortprofil für den Benutzer an. Das Profil enthält das Kennwort des Benutzers. Diese Eigenschaft ist erforderlich, wenn ein Benutzer erstellt wird. Das Kennwort im Profil muss den Mindestanforderungen entsprechen, wie von der **passwordPolicies**-Eigenschaft angegeben. Standardmäßig ist ein sicheres Kennwort erforderlich.|
 |pastProjects|String collection|Eine Liste zur Aufzählung der erledigten Projekte eines Benutzers.|
@@ -118,6 +123,7 @@ Diese Ressource unterstützt Folgendes:
 |proxyAddresses|String collection|Beispiel: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` Der **any**-Operator ist für Filterausdrücke für mehrwertige Eigenschaften erforderlich. Schreibgeschützt, lässt keine NULL-Werte zu. Unterstützt $filter.          |
 |responsibilities|String collection|Eine Liste zur Aufzählung der Verantwortlichkeiten eines Benutzers.|
 |schools|String collection|Eine Liste zur Aufzählung der vom Benutzer besuchten Schulen.|
+|showInAddressList|Boolescher Wert|**true**, wenn die globale Outlook-Adressliste diesen Benutzer enthalten soll, andernfalls **false**. Wenn nicht festgelegt, wird dies als **true** behandelt. Für Benutzer, die mit dem Einladungsmanager eingeladen wurden, wird diese Eigenschaft auf **false** festgelegt.|
 |skills|String collection|Eine Liste zur Aufzählung der Qualifikationen eines Benutzers.|
 |state|String|Bundesland oder Kanton in der Adresse des Benutzers. Unterstützt $filter.|
 |streetAddress|String|Die Straße der Firma des Benutzers.|
@@ -375,6 +381,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "country": "string",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
+  "faxNumber" : "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -389,6 +397,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
   "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
@@ -398,6 +407,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -409,6 +419,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "proxyAddresses": ["string"],
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
