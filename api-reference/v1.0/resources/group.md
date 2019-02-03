@@ -4,12 +4,12 @@ description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der e
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: aa3dd6974a0e75661b91d155a19bd197d3fe742e
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641281"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690952"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -42,6 +42,8 @@ Diese Ressource unterstützt Folgendes:
 |[Besitzer entfernen](../api/group-delete-owners.md) | Keiner |Entfernt einen Besitzer aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe über die **owners**-Navigationseigenschaft.|
 |[Mitglied hinzufügen](../api/group-post-members.md) |Keiner| Fügt dieser Gruppe einen Benutzer oder eine Gruppe durch Bereitstellung an die **members**-Navigationseigenschaft hinzu (wird nur für Sicherheitsgruppen und E-Mail-fähige Sicherheitsgruppen unterstützt).|
 |[Mitglieder auflisten](../api/group-list-members.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer und Gruppen, die direkte Mitglieder dieser Gruppe sind, aus der **members**-Navigationseigenschaft ab.|
+|[Transitive Mitglieder auflisten](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Benutzer, Gruppen und Geräte ab, die Mitglieder sind, einschließlich der geschachtelten Mitglieder dieser Gruppe.|
+|[Transitive memberOf auflisten](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Listet die Gruppen auf, deren Mitglied der Benutzer ist. Dieser Vorgang ist transitiv und schließt die Gruppen ein, in denen diese Gruppe ein geschachteltes Mitglied. |
 |[Mitglied entfernen](../api/group-delete-members.md) | Keine |Entfernt ein Mitglied aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe anhand der **members**-Navigationseigenschaft. Sie können Benutzer oder andere Gruppen entfernen. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Prüft die Mitgliedschaft dieser Gruppe in einer Liste von Gruppen. Die Funktion ist transitiv.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv.|
