@@ -3,18 +3,27 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 7d5d0a9e7d19a2ae51ed2843a3aa56b9119163a4
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641309"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690973"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
 Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known-issues.md).
+
+## <a name="february-2019"></a>Februar 2019
+
+### <a name="education-apis"></a>Bildungs-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen |Beta|Neue relatedContacts Eigenschaft für [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) eingeführt.|
+|Ergänzungen |v1.0|Neue relatedContacts Eigenschaft für [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) eingeführt.|
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -30,14 +39,18 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |:----------------|:------------|:-----------------------------------------|
 | Ergänzungen        | Beta  | Eigenschaften **office365Active** und **office365Inactive** zu Entität [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) hinzugefügt.|
 
+
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Ergänzungen | v1.0 | Neue Methode „transitiveMembers“ für [groups](/graph/api/group-list-transitivemembers?view=graph-rest-1.0) hinzugefügt. Diese Methode gibt eine flache Liste der Member einschließlich geschachtelter Member zurück.|
+| Ergänzungen | v1.0 | Neue Methode „transitiveMemberOf“ für [users](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta) und [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0) hinzugefügt.|
+| Ergänzungen | v1.0 | Neue Eigenschaften für [users](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** und **otherMails** hinzugefügt.|
 | Ergänzungen | v1.0 | Eigenschaft **forceChangePasswordNextSignInWithMfa** zum komplexen Typ [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) hinzugefügt.|
-| Ergänzungen | v1.0 | Eigenschaft **licenseAssignmentStates** zur Entität [User](../api-reference/v1.0/resources/user.md) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
+| Ergänzungen | v1.0 | Eigenschaft **licenseAssignmentStates** zur Entität [User](/graph/api/resources/user?view=graph-rest-1.0) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
 | Ergänzungen | v1.0 | Ressource **licenseAssignmentState** für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.| 
-| Ergänzungen | v1.0 | Eigenschaften **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** und die Beziehung **membersWithLicenseErrors** wurden zur Entität [Group](../api-reference/v1.0/resources/group.md) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
+| Ergänzungen | v1.0 | Eigenschaften **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** und die Beziehung **membersWithLicenseErrors** wurden zur Entität [Group](/graph/api/resources/group?view=graph-rest-1.0) für [Gruppenbasierte Lizenzierung](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) hinzugefügt.|
 | Ergänzungen | Beta | Eigenschaft **createdDateTime** wurde zur [user](/graph/api/resources/user?view=graph-rest-beta)-Ressource hinzugefügt.|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune-APIs
