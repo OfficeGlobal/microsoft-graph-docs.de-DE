@@ -263,7 +263,7 @@ items:
                 href: api/group-addfavorite.md
               - name: Mitglied hinzufügen
                 href: api/group-post-members.md
-              - name: Besitzer hinzufügen
+              - name: Add owner
                 href: api/group-post-owners.md
               - name: Mitgliedergruppen prüfen
                 href: api/group-checkmembergroups.md
@@ -6646,13 +6646,13 @@ items:
                 href: resources/program.md
                 items:
                   - name: Erstellen
-                    href: api/program-list.md
+                    href: api/program-create.md
                   - name: Löschen
-                    href: api/program-list.md
+                    href: api/program-delete.md
                   - name: Liste
                     href: api/program-list.md
                   - name: Aktualisieren
-                    href: api/program-list.md
+                    href: api/program-update.md
                   - name: Listensteuerelemente
                     href: api/program-listcontrols.md
               - name: Programmfreigabesteuerung
@@ -6707,7 +6707,7 @@ items:
                 href: api/approleassignment-update.md
               - name: AppRoleAssignment löschen
                 href: api/approleassignment-delete.md
-          - name: Application
+          - name: Anwendung
             href: resources/application.md
             items:
               - name: Anwendungen auflisten
@@ -7960,7 +7960,7 @@ items:
                 href: api/group-delete-members.md
               - name: Besitzer auflisten
                 href: api/group-list-owners.md
-              - name: Besitzer hinzufügen
+              - name: Add owner
                 href: api/group-post-owners.md
               - name: Besitzer entfernen
                 href: api/group-delete-owners.md
