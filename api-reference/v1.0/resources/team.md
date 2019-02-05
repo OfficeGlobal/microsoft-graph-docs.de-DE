@@ -1,60 +1,61 @@
 ---
-title: Team Ressourcentyp
-description: 'Ein Team in Microsoft-Teams ist eine Auflistung der Kanäle. '
+title: team-Ressourcentyp
+description: 'Ein Team in Microsoft Teams ist eine Sammlung von Kanälen. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7dff1bb05b2abe604963657d4691766eeeaae4ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 692f0d12c172fb6b7088912eec952b519d852cac
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976933"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735572"
 ---
-# <a name="team-resource-type"></a>Team Ressourcentyp
+# <a name="team-resource-type"></a>team-Ressourcentyp
 
 
 
-Ein Team in Microsoft-Teams ist eine Auflistung der [Kanäle](channel.md). Ein Kanal stellt ein Thema und daher eine logische Isolierung von Diskussion, innerhalb eines Teams.
+Ein Team in Microsoft Teams ist eine Sammlung von [Kanälen](channel.md). Ein Kanal stellt ein Thema und somit eine logische Trennung einer Unterhaltung in einem Team dar.
 
-Jedes Team ist eine [Gruppe](../resources/group.md)zugeordnet.
-Die Gruppe verfügt über die gleiche ID wie die Team - beispielsweise /groups/ {Id} / Team ist identisch mit /teams/ {Id}.
-Weitere Informationen über das Arbeiten mit Gruppen und Membern im Teams finden Sie unter [Verwenden der Microsoft Graph-REST-API entwickelt Microsoft-Teams](teams-api-overview.md).
+Jedes Team wird einer [Gruppe](../resources/group.md) zugeordnet.
+Die Gruppe hat die gleiche ID wie das Team – z. B. ist /groups/{id}/team identisch mit /teams/{id}.
+Weitere Informationen zum Arbeiten mit Gruppen und Mitgliedern in Teams finden Sie unter [Verwenden der Microsoft Graph REST-API zum Arbeiten mit Microsoft Teams](teams-api-overview.md).
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Erstellen von Teams](../api/team-put-teams.md) | [Team](team.md) | Erstellen Sie ein neues Team oder fügen Sie ein Team an eine vorhandene Gruppe hinzu.|
-|[Get-team](../api/team-get.md) | [Team](team.md) | Abrufen der Eigenschaften und Beziehungen zwischen dem angegebenen Team.|
-|[Update-team](../api/team-update.md) | [Team](team.md) |Aktualisieren Sie die Eigenschaften des angegebenen Teams. |
-|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keine |Das Team und der zugeordneten Gruppe zu löschen. |
-|[Wenn Sie den Klon-team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Kopieren Sie das Team und dessen zugehörige Gruppe. |
-|[Archiv-team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Platzieren Sie das Team in einem schreibgeschützten Zustand. |
-|[Entpackt team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Wiederherstellen Sie das Team eine Lese-/ Schreibzugriff Zustand. |
-|[Listen Sie Ihren teams](../api/user-list-joinedteams.md) | [Team](team.md) -Auflistung | Listen Sie Teams, denen Sie Mitglied sind. |
-|[Listen Sie alle teams](/graph/teams-list-all-teams) | [Gruppensammlung](group.md) | Listen Sie alle Gruppen, bei die Teams haben. |
-|[Veröffentlichen von apps in Ihrer Organisation](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Erstellen von Teams apps wird nur für Ihre Organisation angezeigt. |
-|[Team app hinzufügen](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Fügt (installiert) einer app zu einem Team.|
-|[Registerkarte Channel hinzufügen](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Fügt (installiert) eine Registerkarte, um ein Team des DDE-Kanal.|
+|[Team erstellen](../api/team-put-teams.md) | [team](team.md) | Erstellen eines neuen Teams oder Hinzufügen eines Teams zu einer vorhandenen Gruppe.|
+|[Team abrufen](../api/team-get.md) | [team](team.md) | Abrufen der Eigenschaften und Beziehungen des angegebenen Teams.|
+|[Team aktualisieren](../api/team-update.md) | [team](team.md) |Aktualisieren der Eigenschaften des angegebenen Teams. |
+|[Team löschen](/graph/api/group-delete?view=graph-rest-1.0) | Keine |Löschen des Teams und der zugehörigen Gruppe. |
+|[Team klonen](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Kopieren des Teams und der zugehörigen Gruppe. |
+|[Team archivieren](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Versetzen des Teams in einen schreibgeschützten Zustand. |
+|[Archivierung von Team aufheben](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Zurückversetzen des Teams in den Zustand Lesen/Schreiben. |
+|[Ihre Teams auflisten](../api/user-list-joinedteams.md) | [team](team.md)-Sammlung | Auflisten der Teams, in denen Sie Mitglied sind. |
+|[Auflisten aller Teams](/graph/teams-list-all-teams) | [group](group.md)-Sammlung | Auflisten aller Gruppen, die über Teams verfügen. |
+|[Apps in Ihrer Organisation veröffentlichen](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Erstellen von Teams-Apps, die nur für Ihre Organisation sichtbar sind. |
+|[App zu Team hinzufügen](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Hinzufügen (Installieren) einer App zu einem Team.|
+|[Registerkarte zu Kanal hinzufügen](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Hinzufügen (Installieren) einer Registerkarte zum Kanal des Teams.|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft | Typ   | Beschreibung |
 |:---------------|:--------|:----------|
-|funSettings|[teamFunSettings](teamfunsettings.md) |So konfigurieren Sie Einstellungen Verwenden von Giphy, Memes und Aufkleber im Team.|
-|guestSettings|[teamGuestSettings](teamguestsettings.md) |Einstellungen konfigurieren können, ob Gäste erstellen, aktualisieren oder Löschen von Kanälen im Team können.|
-|isArchived|Boolescher Wert|Gibt an, ob dieses Team im schreibgeschützten Modus ist. |
-|memberSettings|[teamMemberSettings](teammembersettings.md) |Einstellungen konfigurieren können, ob Mitglieder bestimmter Aktionen ausführen können beispielsweise Kanäle erstellen und Hinzufügen von Programmen, im Team.|
-|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |So konfigurieren Sie die messaging-Einstellungen und erwähnungen im Team.|
-|webUrl|Zeichenfolge (schreibgeschützt) | Ein Hyperlink, der an das Team in der Microsoft-Teams, Client gesendet wird. Dies ist die URL, die Sie erhalten, wenn Sie mit der rechten ein Team in der Microsoft-Teams, Client Maustaste und wählen Sie **Link an das Team abrufen**. Diese URL sollte als nicht transparentes Blob behandelt und nicht analysiert werden. |
+|funSettings|[teamFunSettings](teamfunsettings.md) |Einstellungen zum Konfigurieren der Verwendung von Giphy, Memen und Aufklebern im Team.|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |Einstellungen zum Konfigurieren, ob Gäste Kanäle im Team erstellen, aktualisieren oder löschen können.|
+|internalId | Zeichenfolge | Eine eindeutige ID für das Team, das an einigen Stellen verwendet wurde, zum Beispiel Überwachungsprotokoll/[Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/de-DE/office/office-365-management-api/office-365-management-activity-api-reference). |
+|isArchived|Boolesch|Gibt an, ob sich das Team im schreibgeschützten Modus befindet. |
+|memberSettings|[teamMemberSettings](teammembersettings.md) |Einstellungen zum Konfigurieren, ob Mitglieder bestimmte Aktionen, z. B. Kanäle erstellen und Bots hinzufügen, im Team ausführen können.|
+|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Einstellungen zum Konfigurieren von Messaging und Erwähnungen im Team.|
+|webUrl|string (schreibgeschützt) | Ein Link, der im Microsoft Teams-Client zu dem Team führt. Dies ist die URL, die Sie erhalten, wenn Sie im Microsoft Teams-Client mit der rechten Maustaste auf ein Team klicken und **Link zum Team abrufen** auswählen. Diese URL sollte als nicht transparenter Blob behandelt und nicht analysiert werden. |
 
 ## <a name="relationships"></a>Beziehungen
 
 | Beziehung | Typ   | Beschreibung |
 |:---------------|:--------|:----------|
-|Kanäle|[Kanal](channel.md) -Auflistung|Die Auflistung der Kanäle & Nachrichten, die dem Team zugeordnet.|
-|installedApps|[TeamsAppInstallation](teamsappinstallation.md) -Auflistung|Die apps in dieser Gruppe installiert.|
+|channels|[channel](channel.md)-Sammlung|Die Sammlung von Kanälen und Nachrichten, die mit dem Team verknüpft ist.|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md)-Sammlung|Die in diesem Team installierten Apps.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -72,6 +73,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
@@ -89,5 +91,5 @@ Es folgt eine JSON-Darstellung der Ressource.
 }-->
 
 ## <a name="see-also"></a>Siehe auch
-- [Erstellen einer Gruppe mit einem team](/graph/teams-create-group-and-team)
-- [Verwenden von Teams-APIs](teams-api-overview.md)
+- [Erstellen einer Gruppe mit einem Team](/graph/teams-create-group-and-team)
+- [Verwenden der Teams-API](teams-api-overview.md)

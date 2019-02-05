@@ -2,12 +2,12 @@
 title: chatMessage-Ressourcentyp
 description: Stellt eine einzelne Chatnachricht innerhalb eines Kanals oder einer Chatentität dar. Die Nachricht kann eine Stammnachricht oder Teil eines Threads sein, die bzw. der von der **replyToId**-Eigenschaft in der Nachricht definiert wird.
 localization_priority: Priority
-ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517967"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735579"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage-Ressourcentyp
 
@@ -34,7 +34,7 @@ Stellt eine einzelne Chatnachricht innerhalb eines [Kanals](channel.md) oder ein
 |messageType|Zeichenfolge|Der Typ der Nachricht; aktuell unterstützte Werte sind: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht erstellt wurde|
 |lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht bearbeitet/aktualisiert wurde|
-|isDeleted|Boolescher Wert|Gibt an, ob eine Nachricht vorläufig gelöscht wurde|
+|deleted|Boolesch|Gibt an, ob eine Nachricht vorläufig gelöscht wurde.|
 |deletedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht gelöscht wurde |
 |subject|Zeichenfolge|Nachrichtenbetreff Optional|
 |Text|[itemBody](itembody.md)|Nur-Text-/HTML-Darstellung des Inhalts der Nachricht. Gibt standardmäßig Nur-Text wieder; Anwendung kann HTML wahlweise als Teil eines Abfrageparameters auswählen|
@@ -53,7 +53,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",

@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7d5d0a9e7d19a2ae51ed2843a3aa56b9119163a4
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690973"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735621"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -24,6 +24,12 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | :-------------- | :------------ | :--------------------------------------- |
 |Ergänzungen |Beta|Neue relatedContacts Eigenschaft für [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) eingeführt.|
 |Ergänzungen |v1.0|Neue relatedContacts Eigenschaft für [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) eingeführt.|
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen |Beta und Version 1.0| Die **internalId**-Eigenschaft wurde zur [team](/graph/api/resources/team?view=graph-rest-v1.0)-Ressource hinzugefügt.|
 
 ## <a name="january-2019"></a>Januar 2019
 

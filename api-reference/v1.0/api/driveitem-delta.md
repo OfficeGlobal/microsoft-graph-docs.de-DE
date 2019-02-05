@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eac24ac60b176547b56d75ba23972e649c025578
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987846"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735594"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -206,10 +206,22 @@ Content-type: application/json
 * Die Eigenschaft `parentReference` von Elementen enthält keinen Wert für **path**. Der Grund: Wenn ein Ordner umbenannt wird, gibt **delta** keine Nachfolger dieses Ordners zurück. **Bei Verwendung von „delta“ sollten Sie Elemente immer anhand ihrer ID nachverfolgen.**
 * In OneDrive for Business und SharePoint wird `delta` nur für den Ordner `root` unterstützt, für andere Ordner auf einem Laufwerk jedoch nicht.
 
-* Delta gibt keine der folgenden „DriveItem“-Eigenschaften zurück:
-  * **cTag**
-  * **lastModifiedBy**
-  * **size**
+* Mit der Delta-Abfrage werden je nach Vorgangs- und Diensttyp einige DriveItem-Eigenschaften nicht zurückgegeben (siehe folgende Tabellen).
+
+    **OneDrive for Business**
+    
+    | Typ des Vorgangs | Eigenschaften, die von der Delta-Abfrage ausgelassen werden |
+    |---------|----------|
+    | Create/Modify | `ctag`, `lastModifiedBy` |
+    | Delete | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive (Consumer)**
+    
+    | Typ des Vorgangs | Eigenschaften, die von der Delta-Abfrage ausgelassen werden |
+    |---------|----------|
+    | Create/Modify | n/v |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>Fehlerantworten
 
