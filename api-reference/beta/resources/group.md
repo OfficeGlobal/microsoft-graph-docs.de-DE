@@ -4,12 +4,12 @@ description: Stellt eine Azure Active Directory (Azure AD)-Gruppe dar, bei der e
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641764"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745559"
 ---
 # <a name="group-resource-type"></a>Gruppen-Ressourcentyp
 
@@ -47,9 +47,9 @@ Diese Ressource unterstützt Folgendes:
 |[Mitglied entfernen](../api/group-delete-members.md) | Keine |Entfernt ein Mitglied aus einer Office 365-Gruppe, einer Sicherheitsgruppe oder einer E-Mail-fähigen Sicherheitsgruppe anhand der **members**-Navigationseigenschaft. Sie können Benutzer oder andere Gruppen entfernen. |
 |[memberOf auflisten](../api/group-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Ruft die Gruppen und administrativen Einheiten, in denen diese Gruppe ein direktes Mitglied ist, aus der memberOf-Navigationseigenschaft ab.|
 |[Transitive memberOf auflisten](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Listet die Gruppen und administrativen Einheiten auf, bei denen der Benutzer Mitglied ist. Dieser Vorgang ist transitiv und schließt die Gruppen ein, in denen diese Gruppe ein geschachteltes Mitglied. |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|Zeichenfolgenauflistung|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Funktion ist transitiv.|
+|[checkMemberGroups](../api/group-checkmembergroups.md)|String-Sammlung|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Funktion ist transitiv.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Gibt alle Gruppen zurück, bei denen die Gruppe Mitglied ist. Die Funktion ist transitiv.|
-|[getMemberObjects](../api/group-getmemberobjects.md)|Zeichenfolgenauflistung|Gibt alle Gruppen und administrativen Einheiten zurück, in denen der Benutzer Mitglied ist. Die Funktion ist transitiv. |
+|[getMemberObjects](../api/group-getmemberobjects.md)|String-Sammlung|Gibt alle Gruppen und administrativen Einheiten zurück, in denen der Benutzer Mitglied ist. Die Funktion ist transitiv. |
 |[Einstellung erstellen](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Erstellt ein Einstellungsobjekt basierend auf einer directorySettingTemplate. Die POST-Anforderung muss settingValues für alle Einstellungen angeben, die in der Vorlage definiert sind. Für diesen Vorgang können nur gruppenspezifische Vorlagen verwendet werden.|
 |[Einstellung abrufen](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Dient zum Lesen der Eigenschaften eines bestimmten Einstellungsobjekts.|
 |[Einstellungen auflisten](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) collection |Listet Eigenschaften aller Einstellungsobjekte auf.|
@@ -179,22 +179,38 @@ Es folgt eine JSON-Darstellung der Ressource.
   "blockType": "resource",
   "optionalProperties": [
     "acceptedSenders",
-    "appRoleAssignments",
     "calendar",
     "calendarView",
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
+    "endpoints",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
+    "membersWithLicenseErrors",
     "onenote",
     "owners",
     "photo",
-    "photos",    
+    "photos",
+    "planner",    
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"

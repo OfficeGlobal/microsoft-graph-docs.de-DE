@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735621"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745594"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -17,6 +17,12 @@ Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschl
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known-issues.md).
 
 ## <a name="february-2019"></a>Februar 2019
+
+### <a name="directory-apis"></a>Verzeichnis-APIs
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Änderung |Beta und Version 1.0| Die Eigenschaft **companyName** der Ressource [user](/graph/api/resources/user?view=graph-rest-v1.0) wurde aktualisiert, um beschreibbar zu sein.|
 
 ### <a name="education-apis"></a>Bildungs-APIs
 

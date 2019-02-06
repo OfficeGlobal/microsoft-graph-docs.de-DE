@@ -4,12 +4,12 @@ description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2feb77d02e575d378ad54bde9d10e98a9f5db093
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: c8184f858dceec1904678829d54817e86dff3606
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643818"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745580"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -90,7 +90,7 @@ Diese Ressource unterstützt Folgendes:
 |assignedPlans|[assignedPlan](assignedplan.md) collection|Die Pläne, die dem Benutzer zugewiesen sind. Schreibgeschützt. Lässt keine NULL-Werte zu. |
 |birthday|DateTimeOffset|Der Geburtstag des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |city|String|Die Stadt, in der sich der Benutzer befindet. Unterstützt $filter.|
-|companyName| String | Der Unternehmensname, dem der Benutzer zugewiesen ist. Schreibgeschützt.
+|companyName| String | Der Unternehmensname, dem der Benutzer zugewiesen ist. Diese Eigenschaft kann nützlich sein, um die Firma zu beschreiben, aus der ein externer Benutzer kommt. |
 |consentProvidedForMinor|String|Legt fest, ob die Einverständniserklärung für Minderjährige eingeholt wurde. Zulässige Werte: `null`, `granted`, `denied` und `notRequired`. Weitere Informationen finden Sie in den [gesetzlichen Eigenschaftsdefinitionen für Altersgruppen](#legal-age-group-property-definitions).|
 |Land|String|Land/Region, in dem/der sich der Benutzer befindet; z. B. „USA“ oder „UK“. Unterstützt $filter.|
 |createdDateTime|DateTimeOffset|Das Datum und die Zeit, zu dem der Benutzer erstellt wurde. Der Wert kann nicht geändert werden und wird automatisch ausgefüllt, wenn die Entität erstellt wird. Der DateTimeOffset-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Die Eigenschaft lässt Nullwerte zu. Ein Nullwert gibt an, dass eine genaue Erstellungszeit für den Benutzer nicht bestimmt werden konnte. Schreibgeschützt. Unterstützt $filter.|

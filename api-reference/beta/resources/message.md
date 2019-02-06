@@ -4,12 +4,12 @@ description: Eine Nachricht in einem Postfachordner.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641218"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745538"
 ---
 # <a name="message-resource-type"></a>Nachrichtenressourcentyp
 
@@ -35,7 +35,9 @@ Es folgt eine JSON-Darstellung der Ressource.
     "extensions",
     "singleValueExtendedProperties",
     "multiValueExtendedProperties",
-    "mentions"
+    "mentions",
+
+    "internetMessageHeaders"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -103,7 +105,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |id|String|Eindeutiger Bezeichner für die Nachricht (beachten Sie, dass sich dieser Wert ändern kann, wenn eine Nachricht verschoben oder geändert wird)|
 |Wichtigkeit|String| Wichtigkeit der Nachricht: `Low`, `Normal`, `High`.|
 |inferenceClassification|Zeichenfolge| Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Mögliche Werte sind: `focused`, `other`.|
-|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Der Satz enthält Nachrichtenkopfzeilen, die den Netzwerkpfad angeben, den eine Nachricht vom Absender zum Empfänger nimmt. Er kann auch benutzerdefinierte Nachrichtenkopfzeilen umfassen, die App-Daten für die Nachricht enthalten. |
+|internetMessageHeaders | [internetinternetMessageHeaders](internetmessageheader.md)-Sammlung | Eine Sammlung von Nachrichtenkopfzeilen, definiert von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Der Satz enthält Nachrichtenkopfzeilen, die den Netzwerkpfad angeben, den eine Nachricht vom Absender zum Empfänger nimmt. Er kann auch benutzerdefinierte Nachrichtenkopfzeilen umfassen, die App-Daten für die Nachricht enthalten. <br><br> Wird nur bei Anwenden einer `$select`-Abfrageoption zurückgegeben. Schreibgeschützt.|
 |internetMessageId | Zeichenfolge | Die Nachrichten-ID im von [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) angegebenen Format. Kann nur aktualisiert werden, wenn **isDraft** „true“ ist.|
 |isDeliveryReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |isDraft|Boolean|Gibt an, ob die Nachricht ein Entwurf ist. Eine Nachricht ist ein Entwurf, solange sie noch nicht gesendet wurde.|
@@ -190,4 +192,4 @@ Es folgt eine JSON-Darstellung der Ressource.
     "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
--->
+
