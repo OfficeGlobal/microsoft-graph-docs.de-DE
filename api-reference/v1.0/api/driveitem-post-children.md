@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Einen neuen Ordner erstellen
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 26a87aefdf692562491f0bda1fcc87a48b4079fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4771782804f5fc69db0cf25b6e3f30f176a68e6b
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986712"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760867"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Neuen Ordner in OneDrive erstellen
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird der neu erstelle Ordner als [DriveItem][item-resource]- zurückgegeben.
+Wenn die Methode erfolgreich verläuft, wird der neu erstelle Ordner als [DriveItem][item-resource]-Ressource zurückgegeben.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,8 +108,11 @@ Content-Type: application/json
 
 ## <a name="error-response"></a>Fehlerantwort
 
-Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Artikel zum Thema [Fehlerantworten][error-response].
-[Fehlerantwort]: / Diagramm/Fehler [Element-Ressource]:... /Resources/driveitem.MD [Ordner Facetten]:... /Resources/Folder.MD
+Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [Fehlerantworten][error-response].
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!-- {
   "type": "#page.annotation",

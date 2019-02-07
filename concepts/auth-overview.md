@@ -1,15 +1,15 @@
 ---
 title: Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph
-description: 'Zum Aufrufen von Microsoft Graph muss Ihre App ein Zugriffstoken von Azure Active Directory (Azure AD) abrufen, dem Cloudidentitätsdienst von Microsoft. Das Zugriffstoken enthält Informationen (bzw. Ansprüche) zu Ihrer App und die Berechtigungen, über die es für die Ressourcen und APIs verfügt, die über Microsoft Graph bereitgestellt werden. Um ein Zugriffstoken abzurufen, muss Ihre App sich bei Azure AD authentifizieren können und entweder durch einen Benutzer oder einen Administrator zum Zugreifen auf die benötigten Microsoft Graph-Ressourcen autorisiert werden. '
+description: Zum Aufrufen von Microsoft Graph muss Ihre App ein Zugriffstoken von Azure Active Directory (Azure AD) abrufen, dem Cloudidentitätsdienst von Microsoft.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d08c481ab7a42eee4cfabb8c6869225cb6d547ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5438dfd81dddb2089792f37a42f87070d337a6b4
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932070"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760922"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Abrufen von Zugriffstoken zum Aufrufen von Microsoft Graph
 
@@ -147,7 +147,7 @@ Da Azure AD v2.0 neuer als Azure AD ist und immer noch neue Features hinzugefüg
 
 * Einige Features sind möglicherweise noch nicht vollständig in v2.0 implementiert. Ihre App funktioniert z. B. möglicherweise nicht, wenn Ihr Unternehmenskunde Enterprise Mobility-Sicherheitsfeatures wie [bedingten Gerätezugriff](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies) aktiviert.
 * Sie können keine Apps von Cloud-Lösungsanbietern aufrufen.
-* [Integrierte Windows-Authentifizierung für Partnermandanten](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts) wird nicht unterstützt. Dies bedeutet, dass Benutzer von Azure AD-Partnermandanten sich nicht im Hintergrund mit ihrer lokalen Active Directory-Instanz authentifizieren können. Sie müssen ihre Anmeldeinformationen erneut eingeben.
+* [Integrierte Windows-Authentifizierung für Partnermandanten](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#limitations) wird nicht unterstützt. Dies bedeutet, dass Benutzer von Azure AD-Partnermandanten sich nicht im Hintergrund mit ihrer lokalen Active Directory-Instanz authentifizieren können. Sie müssen ihre Anmeldeinformationen erneut eingeben.
 
 Weitere Informationen zu den Unterschieden zwischen dem Azure AD v2.0- und dem Azure AD-Endpunkt finden Sie unter [Wo liegen die Unterschiede beim v2.0-Endpunkt?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare)
 

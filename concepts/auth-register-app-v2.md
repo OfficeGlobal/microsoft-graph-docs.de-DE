@@ -1,15 +1,15 @@
 ---
 title: Registrieren Ihrer App beim Azure AD v2.0-Endpunkt
-description: 'Ihre App muss bei Azure AD registriert werden. Durch Registrieren Ihrer App werden eine eindeutige Anwendungs-ID und andere Werte erstellt, die die App zum Authentifizieren bei Azure AD und zum Abrufen von Tokens verwendet. Für den Azure AD v2.0-Endpunkt registrieren Sie Ihre App mit dem Microsoft App-Registrierungsportal. Sie können entweder ein Microsoft-Konto oder ein Geschäfts-, Schul- oder Unikonto zum Registrieren Ihrer App verwenden. Abhängig vom Typ der von Ihnen entwickelten App müssen Sie während der Registrierung eine oder mehrere Eigenschaften kopieren, die beim Konfigurieren von Authentifizierung und Autorisierung für die App verwendet werden sollen. '
+description: Ihre App muss bei Azure AD registriert werden. Durch Registrieren Ihrer App werden eine eindeutige Anwendungs-ID und andere Werte erstellt, die die App zum Authentifizieren bei Azure AD und zum Abrufen von Tokens verwendet.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930558"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760958"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrieren Ihrer App beim Azure AD v2.0-Endpunkt
 
@@ -91,4 +91,4 @@ Sie verwenden das [Azure-Portal](https://aka.ms/aadapplist), um Ihre App beim Az
 - Wenn Ihre App mehrinstanzenfähig ist, müssen Sie sie im Portal explizit als mehrinstanzenfähig konfigurieren.
 - Sie müssen alle Berechtigungen (einschließlich Microsoft Graph-Berechtigungen), die Ihre App im Portal benötigt, vorab konfigurieren. 
 
-Eine Anleitung zur Verwendung des Azure-Portals zum Hinzufügen einer App finden Sie unter [Integrieren von Anwendungen in Azure Active Directory: Hinzufügen einer Anwendung](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+Eine Anleitung zur Verwendung des Azure-Portals zum Hinzufügen einer App finden Sie unter [Registrieren einer App beim Azure Active Directory v2.0-Endpunkt](https://docs.microsoft.com/de-DE/azure/active-directory/develop/quickstart-v2-register-an-app).

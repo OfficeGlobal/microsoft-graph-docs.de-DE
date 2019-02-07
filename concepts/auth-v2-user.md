@@ -1,17 +1,17 @@
 ---
 title: Im Namen eines Benutzers zugreifen
-description: 'Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. '
+description: Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914269"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760930"
 ---
-# <a name="get-access-on-behalf-of-a-user"></a>Im Namen eines Benutzers zugreifen
+# <a name="get-access-on-behalf-of-a-user"></a>Zugreifen im Namen eines Benutzers
 Um Microsoft Graph zum Lesen und Schreiben von Ressourcen im Namen eines Benutzers zu verwenden, muss Ihre App ein Zugriffstoken von Azure AD abrufen und das Token an Anforderungen anfügen, die die API an Microsoft Graph sendet. Welchen Authentifizierungsfluss genau Sie zum Abrufen von Zugriffstoken verwenden, ist davon abhängig, welche Art von App Sie entwickeln und ob Sie OpenID Connect zum Anmelden des Benutzers bei Ihrer App verwenden möchten. Ein Fluss, der häufig von systemeigenen und mobilen Apps und auch von einigen Web-Apps verwendet wird, ist der Fluss zur Erteilung von OAuth 2.0-Autorisierungscodes. In diesem Thema werden anhand eines Beispiels die einzelnen Schritte dieses Flusses erläutert. 
 
 ## <a name="authentication-and-authorization-steps"></a>Authentifizierungs- und Autorisierungsschritte
@@ -239,9 +239,9 @@ Sie können Microsoft Graph aus den folgenden Arten von Apps im Namen eines Benu
 - Einzelseiten-App (Single Page App, SPA)
 - Back-End-Web-APIs: Beispielsweise in Szenarios, in denen eine Client-App, wie eine systemeigene App, Funktionen in einem Web-API-Back-End implementiert. Beim Azure AD v2.0-Endpunkt müssen die Client-App und die Back-End-Web-API die gleiche Anwendungs-ID haben. 
 
-Weitere Informationen zu für den Azure AD v2.0-Endpunkt unterstützten App-Typen finden Sie unter [App-Typen für den Azure Active Directory v2.0-Endpunkt](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
+Weitere Informationen zu für den Azure AD v2.0-Endpunkt unterstützten App-Typen finden Sie unter [Anwendungstypen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
 
-> **Hinweis**: Das Aufrufen von Microsoft Graph aus einer [eigenständigen Web-API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) wird derzeit vom Azure AD v2.0-Endpunkt nicht unterstützt. Für dieses Szenario müssen Sie den Azure AD-Endpunkt verwenden.
+> **Hinweis**: Das Aufrufen von Microsoft Graph aus einer eigenständigen Web-API wird derzeit vom Azure AD v2.0-Endpunkt nicht unterstützt. Für dieses Szenario müssen Sie den Azure AD-Endpunkt verwenden.
 
 Hier finden Sie weitere Informationen zum Zugreifen auf Microsoft Graph im Namen eines Benutzers über den Azure AD-v2.0-Endpunkt:
 
@@ -252,7 +252,7 @@ Hier finden Sie weitere Informationen zum Zugreifen auf Microsoft Graph im Namen
 ## <a name="azure-ad-endpoint-considerations"></a>Überlegungen zum Azure AD-Endpunkt
 Es gibt einige Unterschiede zwischen der Verwendung des Azure AD-Endpunkts und des Azure AD v2.0-Endpunkts. Beispiel:
 
-- Sie verwenden das [Azure-Portal](https://portal.azure.com) zum Konfigurieren Ihrer App. Weitere Informationen zum Konfigurieren von Apps mit dem Azure-Portal finden Sie unter [Integrieren von Anwendungen in Azure Active Directory: Hinzufügen einer Anwendung](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+- Sie verwenden das [Azure-Portal](https://portal.azure.com) zum Konfigurieren Ihrer App. Weitere Informationen zum Konfigurieren von Apps mit dem Azure-Portal finden Sie unter [Registrieren einer App beim Azure Active Directory v2.0-Endpunkt](https://docs.microsoft.com/de-DE/azure/active-directory/develop/quickstart-v2-register-an-app).
 - Ihre App erfordert für jede Plattform eine andere Anwendungs-ID (Client-ID).
 - Wenn Ihre App mehrinstanzenfähig ist, müssen Sie sie im [Azure-Portal](https://portal.azure.com) explizit als mehrinstanzenfähig konfigurieren.
 - Beim Azure AD-Endpunkt müssen alle Berechtigungen, die Ihre App benötigt, vom Entwickler konfiguriert werden. Der Azure AD-Endpunkt unterstützt keine dynamische (inkrementelle) Zustimmung.
