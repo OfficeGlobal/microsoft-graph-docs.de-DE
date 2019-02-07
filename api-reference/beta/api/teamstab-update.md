@@ -4,12 +4,12 @@ description: Aktualisieren Sie die Eigenschaften der angegebenen Registerkarte.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 031f6f91576df2b19382e78461e6a42e2274ae0c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7a87839a1a6a151708b485d8c3fec9657f21f11a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576178"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760965"
 ---
 # <a name="update-tab"></a>Registerkarte "Aktualisieren"
 
@@ -27,7 +27,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 |Anwendung                            | Group.ReadWrite.All                         |
 
-> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft Teams-Dienstadministratoren können auf Teams zugreifen, in denen sie kein Mitglied sind.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```http
@@ -56,7 +56,7 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "name": "My Contoso Tab - updated"
+  "displayName": "My Contoso Tab - updated"
 }
 ```
 #### <a name="response"></a>Antwort
@@ -66,7 +66,7 @@ Content-type: application/json
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
+  "displayName": "My Contoso Tab - updated",
   "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -79,7 +79,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Konfigurieren der integrierten Registerkartentypen](/graph/teams-configuring-builtin-tabs)
 
