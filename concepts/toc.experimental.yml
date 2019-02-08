@@ -1,249 +1,255 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3082d30048f39e6ae7e67635f10cc029dd43d8c4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29431222"
 name: Graph-Dokumente
 metadata: {}
 items:
-  - name: Übersicht über Microsoft Graph
-    href: overview.md
+- name: Übersicht über Microsoft Graph
+  href: overview.md
+  expanded: true
+  items:
+  - name: Erkunden
     expanded: true
     items:
-      - name: Erkunden
-        expanded: true
+    - name: Dienste in Microsoft Graph
+      href: overview-major-services.md
+      expanded: true
+      items:
+      - name: Benutzer, die Sie erreichen können
+        href: users-you-can-reach.md
         items:
-          - name: Dienste in Microsoft Graph
-            href: overview-major-services.md
-            expanded: true
-            items:
-              - name: 'Benutzer, die Sie erreichen können'
-                href: users-you-can-reach.md
-                items:
-                  - name: Nationale Cloudbereitstellungen
-                    href: deployments.md
-                  - name: Hybridbereitstellungen (Vorschau)
-                    href: hybrid-rest-support.md
-              - name: Versionsverwaltung und Support
-                href: versioning-and-support.md
-              - name: Nutzungsbedingungen
-                href: 'https://developer.microsoft.com/graph/terms-of-use'
-          - name: Microsoft Graph Data Connect (Vorschau)
-            href: data-connect-overview.md
-          - name: Lernprogramme
-            href: tutorials.md
-            items:
-              - name: Angular
-                href: /graph/tutorials/angular
-              - name: ASP.NET
-                href: /graph/tutorials/aspnet
-              - name: Microsoft Flow
-                href: /graph/tutorials/flow
-              - name: Node.js
-                href: /graph/tutorials/node
-              - name: PHP
-                href: /graph/tutorials/php
-              - name: Python
-                href: /graph/tutorials/python
-              - name: Ruby
-                href: /graph/tutorials/ruby
-              - name: React
-                href: /graph/tutorials/react
-              - name: UWP
-                href: /graph/tutorials/uwp
-      - name: Lernen
-        expanded: true
+        - name: Nationale Cloudbereitstellungen
+          href: deployments.md
+        - name: Hybridbereitstellungen (Vorschau)
+          href: hybrid-rest-support.md
+      - name: Versionsverwaltung und Support
+        href: versioning-and-support.md
+      - name: Nutzungsbedingungen
+        href: https://developer.microsoft.com/graph/terms-of-use
+    - name: Microsoft Graph Data Connect (Vorschau)
+      href: data-connect-overview.md
+    - name: Lernprogramme
+      href: tutorials.md
+      items:
+      - name: Angular
+        href: /graph/tutorials/angular
+      - name: ASP.NET
+        href: /graph/tutorials/aspnet
+      - name: Microsoft Flow
+        href: /graph/tutorials/flow
+      - name: Node.js
+        href: /graph/tutorials/node
+      - name: PHP
+        href: /graph/tutorials/php
+      - name: Python
+        href: /graph/tutorials/python
+      - name: Ruby
+        href: /graph/tutorials/ruby
+      - name: React
+        href: /graph/tutorials/react
+      - name: UWP
+        href: /graph/tutorials/uwp
+  - name: Lernen
+    expanded: true
+    items:
+    - name: Benutzer
+      href: azuread-users-concept-overview.md
+    - name: Gruppen
+      href: office365-groups-concept-overview.md
+    - name: Kalender
+      href: outlook-calendar-concept-overview.md
+      items:
+      - name: Suchen von Besprechungszeiten
+        href: findmeetingtimes-example.md
+      - name: Abrufen des Frei-/Gebucht-Zeitplans
+        href: outlook-get-free-busy-schedule.md
+      - name: Planen wiederkehrender Termine
+        href: outlook-schedule-recurring-events.md
+      - name: Abrufen freigegebener Ereignisse
+        href: outlook-get-shared-events-calendars.md
+      - name: Unveränderliche ID (Vorschau)
+        href: outlook-immutable-id.md
+    - name: Geräteübergreifende Oberfläche
+      href: cross-device-concept-overview.md
+      items:
+      - name: Aktivitätsfeed
+        href: activity-feed-concept-overview.md
+      - name: Geräte-Relay (Vorschau)
+        href: device-relay-concept-overview.md
+      - name: Benachrichtigungen (Vorschau)
+        href: notifications-concept-overview.md
+      - name: Erstellen geräteübergreifender Apps
+        href: cross-device-app-configuration.md
+    - name: Kundenterminvereinbarung (Vorschau)
+      href: booking-concept-overview.md
+    - name: Datenzugriff (Vorschau)
+      href: data-connect-concept-overview.md
+      items:
+      - name: Erste Schritte
+        href: data-connect-get-started.md
+    - name: Geräte und Apps
+      href: intune-concept-overview.md
+    - name: Schulung und Weiterbildung
+      href: education-concept-overview.md
+    - name: Dateien
+      href: onedrive-concept-overview.md
+    - name: "Identität und Zugriff \n"
+      href: azuread-identity-access-management-concept-overview.md
+    - name: E-Mail
+      href: outlook-mail-concept-overview.md
+      items:
+      - name: Automatisieren von Nachrichten
+        href: outlook-create-send-messages.md
+      - name: Organisieren von Nachrichten
+        href: outlook-organize-messages.md
+      - name: Abrufen freigegebener Nachrichten
+        href: outlook-share-messages-folders.md
+      - name: Unveränderliche ID (Vorschau)
+        href: outlook-immutable-id.md
+      - name: Senden von E-Mails von einem anderen Benutzer
+        href: outlook-send-mail-from-other-user.md
+    - name: Hinweise
+      href: integrate-with-onenote.md
+      items:
+      - name: Abrufen von OneNote-Inhalten
+        href: onenote-get-content.md
+      - name: Öffnen des OneNote-Clients
+        href: open-onenote-client.md
+      - name: Erstellen von Seiten
+        href: onenote-create-page.md
+      - name: Aktualisieren von Seiteninhalten
+        href: onenote-update-page.md
+      - name: Hinzufügen von Bildern, Videos und Dateien
+        href: onenote-images-files.md
+      - name: Erstellen von absolut positionierten Elementen
+        href: onenote-abs-pos.md
+      - name: Extrahieren von Daten
+        href: onenote-extract-data.md
+      - name: Verwenden von Notiztags
+        href: onenote-note-tags.md
+      - name: RESSOURCEN
+      - name: Eingabe- und Ausgabe-HTML
+        href: onenote-input-output-html.md
+      - name: Bewährte Methoden
+        href: onenote-best-practices.md
+      - name: Brandingrichtlinien
+        href: onenote-branding.md
+      - name: Fehlercodes
+        href: onenote-error-codes.md
+    - name: Persönliche Kontakte
+      href: outlook-contacts-concept-overview.md
+      items:
+      - name: Abrufen freigegebener Kontakte
+        href: outlook-get-shared-contacts-folders.md
+      - name: Unveränderliche ID (Vorschau)
+        href: outlook-immutable-id.md
+    - name: Berichte
+      href: reportroot-concept-overview.md
+    - name: Sicherheit
+      href: security-concept-overview.md
+      items:
+      - name: Datenfluss
+        href: security-dataflow.md
+      - name: Autorisierung
+        href: security-authorization.md
+      - name: Integrieren in SIEM
+        href: security-siemintegration.md
         items:
-          - name: Benutzer
-            href: azuread-users-concept-overview.md
-          - name: Gruppen
-            href: office365-groups-concept-overview.md
-          - name: Kalender
-            href: outlook-calendar-concept-overview.md
-            items:
-              - name: Suchen von Besprechungszeiten
-                href: findmeetingtimes-example.md
-              - name: Abrufen des Frei-/Gebucht-Zeitplans
-                href: outlook-get-free-busy-schedule.md
-              - name: Planen wiederkehrender Termine
-                href: outlook-schedule-recurring-events.md
-              - name: Abrufen freigegebener Ereignisse
-                href: outlook-get-shared-events-calendars.md
-              - name: Unveränderliche ID (Vorschau)
-                href: outlook-immutable-id.md
-          - name: Geräteübergreifende Oberfläche
-            href: cross-device-concept-overview.md
-            items:
-              - name: Aktivitätsfeed
-                href: activity-feed-concept-overview.md
-              - name: Geräte-Relay (Vorschau)
-                href: device-relay-concept-overview.md
-              - name: Benachrichtigungen (Vorschau)
-                href: notifications-concept-overview.md
-              - name: Erstellen geräteübergreifender Apps
-                href: cross-device-app-configuration.md
-          - name: Kundenterminvereinbarung (Vorschau)
-            href: booking-concept-overview.md
-          - name: Datenzugriff (Vorschau)
-            href: data-connect-concept-overview.md
-            items:
-              - name: Erste Schritte
-                href: data-connect-get-started.md
-          - name: Geräte und Apps
-            href: intune-concept-overview.md
-          - name: Schulung und Weiterbildung
-            href: education-concept-overview.md
-          - name: Dateien
-            href: onedrive-concept-overview.md
-          - name: |
-              Identität und Zugriff 
-            href: azuread-identity-access-management-concept-overview.md
-          - name: E-Mail
-            href: outlook-mail-concept-overview.md
-            items:
-              - name: Automatisieren von Nachrichten
-                href: outlook-create-send-messages.md
-              - name: Organisieren von Nachrichten
-                href: outlook-organize-messages.md
-              - name: Abrufen freigegebener Nachrichten
-                href: outlook-share-messages-folders.md
-              - name: Unveränderliche ID (Vorschau)
-                href: outlook-immutable-id.md
-              - name: Senden von E-Mails von einem anderen Benutzer
-                href: outlook-send-mail-from-other-user.md
-          - name: Hinweise
-            href: integrate-with-onenote.md
-            items:
-              - name: Abrufen von OneNote-Inhalten
-                href: onenote-get-content.md
-              - name: Öffnen des OneNote-Clients
-                href: open-onenote-client.md
-              - name: Erstellen von Seiten
-                href: onenote-create-page.md
-              - name: Aktualisieren von Seiteninhalten
-                href: onenote-update-page.md
-              - name: 'Hinzufügen von Bildern, Videos und Dateien'
-                href: onenote-images-files.md
-              - name: Erstellen von absolut positionierten Elementen
-                href: onenote-abs-pos.md
-              - name: Extrahieren von Daten
-                href: onenote-extract-data.md
-              - name: Verwenden von Notiztags
-                href: onenote-note-tags.md
-              - name: RESSOURCEN
-              - name: Eingabe- und Ausgabe-HTML
-                href: onenote-input-output-html.md
-              - name: Bewährte Methoden
-                href: onenote-best-practices.md
-              - name: Brandingrichtlinien
-                href: onenote-branding.md
-              - name: Fehlercodes
-                href: onenote-error-codes.md
-          - name: Persönliche Kontakte
-            href: outlook-contacts-concept-overview.md
-            items:
-              - name: Abrufen freigegebener Kontakte
-                href: outlook-get-shared-contacts-folders.md
-              - name: Unveränderliche ID (Vorschau)
-                href: outlook-immutable-id.md
-          - name: Berichte
-            href: reportroot-concept-overview.md
-          - name: Sicherheit
-            href: security-concept-overview.md
-            items:
-              - name: Datenfluss
-                href: security-dataflow.md
-              - name: Autorisierung
-                href: security-authorization.md
-              - name: Integrieren in SIEM
-                href: security-siemintegration.md
-                items:
-                  - name: Splunk
-                    href: security-splunk-siemintegration.md
-                  - name: QRadar
-                    href: security-qradar-siemintegration.md
-          - name: Websites und Listen
-            href: sharepoint-concept-overview.md
-          - name: Soziale Intelligenz
-            href: social-intel-concept-overview.md
-            items:
-              - name: Abrufen von Informationen über die entsprechenden Personen
-                href: people-example.md
-          - name: Aufgaben und Pläne
-            href: planner-concept-overview.md
-          - name: Teamarbeit
-            href: teams-concept-overview.md
-            items:
-              - name: Erstellen einer Gruppe und eines Teams
-                href: teams-create-group-and-team.md
-              - name: Auflisten aller Teams
-                href: teams-list-all-teams.md
-              - name: Konfigurieren integrierter Registerkarten
-                href: teams-configuring-builtin-tabs.md
-          - name: Arbeitsmappen und Diagramme
-            href: excel-concept-overview.md
-            items:
-              - name: Sitzungen verwalten
-                href: excel-manage-sessions.md
-              - name: Diagrammbild anzeigen
-                href: excel-display-chart-image.md
-              - name: Arbeitsmappenfunktionen verwenden
-                href: excel-use-functions.md
-              - name: Bereichsformat aktualisieren
-                href: excel-update-range-format.md
-              - name: Schreiben von Daten in eine Arbeitsmappe
-                href: excel-write-to-workbook.md
-      - name: Entwickeln
-        expanded: true
+        - name: Splunk
+          href: security-splunk-siemintegration.md
+        - name: QRadar
+          href: security-qradar-siemintegration.md
+    - name: Websites und Listen
+      href: sharepoint-concept-overview.md
+    - name: Soziale Intelligenz
+      href: social-intel-concept-overview.md
+      items:
+      - name: Abrufen von Informationen über die entsprechenden Personen
+        href: people-example.md
+    - name: Aufgaben und Pläne
+      href: planner-concept-overview.md
+    - name: Teamarbeit
+      href: teams-concept-overview.md
+      items:
+      - name: Erstellen einer Gruppe und eines Teams
+        href: teams-create-group-and-team.md
+      - name: Auflisten aller Teams
+        href: teams-list-all-teams.md
+      - name: Konfigurieren integrierter Registerkarten
+        href: teams-configuring-builtin-tabs.md
+    - name: Arbeitsmappen und Diagramme
+      href: excel-concept-overview.md
+      items:
+      - name: Sitzungen verwalten
+        href: excel-manage-sessions.md
+      - name: Diagrammbild anzeigen
+        href: excel-display-chart-image.md
+      - name: Arbeitsmappenfunktionen verwenden
+        href: excel-use-functions.md
+      - name: Bereichsformat aktualisieren
+        href: excel-update-range-format.md
+      - name: Schreiben von Daten in eine Arbeitsmappe
+        href: excel-write-to-workbook.md
+  - name: Entwickeln
+    expanded: true
+    items:
+    - name: Abrufen von Authentifizierungstoken
+      href: auth-overview.md
+      items:
+      - name: Registrieren der App
+        href: auth-register-app-v2.md
+      - name: Zugreifen im Namen eines Benutzers
+        href: auth-v2-user.md
+      - name: Ohne Benutzer zugreifen
+        href: auth-v2-service.md
+      - name: Berechtigungen
+        href: permissions-reference.md
+      - name: Verwalten des App-Zugriffs (CSPs)
+        href: auth-cloudsolutionprovider.md
+    - name: Verwenden der API
+      href: use-the-api.md
+      items:
+      - name: Paging
+        href: paging.md
+      - name: Verwenden von Abfrageparametern
+        href: query-parameters.md
+      - name: Batchanforderungen
+        href: json-batching.md
+      - name: Einschränkung
+        href: throttling.md
+      - name: Benachrichtigungen ändern
+        href: webhooks.md
+      - name: Änderungen nachverfolgen
+        href: delta-query-overview.md
         items:
-          - name: Abrufen von Authentifizierungstoken
-            href: auth-overview.md
-            items:
-              - name: Registrieren der App
-                href: auth-register-app-v2.md
-              - name: Zugreifen im Namen eines Benutzers
-                href: auth-v2-user.md
-              - name: Ohne Benutzer zugreifen
-                href: auth-v2-service.md
-              - name: Berechtigungen
-                href: permissions-reference.md
-              - name: Verwalten des App-Zugriffs (CSPs)
-                href: auth-cloudsolutionprovider.md
-          - name: Verwenden der API
-            href: use-the-api.md
-            items:
-              - name: Paging
-                href: paging.md
-              - name: Verwenden von Abfrageparametern
-                href: query-parameters.md
-              - name: Batchanforderungen
-                href: json-batching.md
-              - name: Einschränkung
-                href: throttling.md
-              - name: Benachrichtigungen ändern
-                href: webhooks.md
-              - name: Änderungen nachverfolgen
-                href: delta-query-overview.md
-                items:
-                  - name: Änderungen an Ereignissen abrufen (Beispiel)
-                    href: delta-query-events.md
-                  - name: Änderungen an Gruppen abrufen (Beispiel)
-                    href: delta-query-groups.md
-                  - name: Änderungen an Nachrichten abrufen (Beispiel)
-                    href: delta-query-messages.md
-                  - name: Änderungen an Benutzern abrufen (Beispiel)
-                    href: delta-query-users.md
-              - name: Benutzerdefinierte Daten hinzufügen
-                href: extensibility-overview.md
-                items:
-                  - name: Offene Erweiterungen verwenden (Beispiel)
-                    href: extensibility-open-users.md
-                  - name: Schemaerweiterungen verwenden (Beispiel)
-                    href: extensibility-schema-groups.md
-              - name: Bewährte Methoden
-                href: best-practices-concept.md
-              - name: Bekannte Probleme
-                href: known-issues.md
-              - name: Änderungsprotokoll
-                href: changelog.md
-              - name: Fehler
-                href: errors.md
-      - name: v1.0-Referenz
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-      - name: Beta-Referenz
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        - name: Änderungen an Ereignissen abrufen (Beispiel)
+          href: delta-query-events.md
+        - name: Änderungen an Gruppen abrufen (Beispiel)
+          href: delta-query-groups.md
+        - name: Änderungen an Nachrichten abrufen (Beispiel)
+          href: delta-query-messages.md
+        - name: Änderungen an Benutzern abrufen (Beispiel)
+          href: delta-query-users.md
+      - name: Benutzerdefinierte Daten hinzufügen
+        href: extensibility-overview.md
+        items:
+        - name: Offene Erweiterungen verwenden (Beispiel)
+          href: extensibility-open-users.md
+        - name: Schemaerweiterungen verwenden (Beispiel)
+          href: extensibility-schema-groups.md
+      - name: Bewährte Methoden
+        href: best-practices-concept.md
+      - name: Bekannte Probleme
+        href: known-issues.md
+      - name: Änderungsprotokoll
+        href: changelog.md
+      - name: Fehler
+        href: errors.md
+  - name: v1.0-Referenz
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+  - name: Beta-Referenz
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
