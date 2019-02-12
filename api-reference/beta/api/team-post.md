@@ -4,12 +4,12 @@ description: Erstellt ein neues Team.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e34a095597064401f59ad5f78f8ca092e93b94b4
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: d5463bdc2cc5aa5b471e9526be579364991645ad
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745531"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892519"
 ---
 # <a name="create-team"></a>Team erstellen
 
@@ -119,7 +119,7 @@ Im Folgenden sehen Sie eine Anforderung mit vollständiger Nutzlast. Der Client 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
