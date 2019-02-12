@@ -1,12 +1,12 @@
 ---
 title: Nationale Cloudbereitstellungen
 description: Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physischen und logischen Netzwerk isoliert werden Instanzen des Microsoft Enterprise Cloud-Dienste, die vom lokalen Personal und innerhalb der geografischen Rahmen des bestimmten Ländern beschränkt.
-ms.openlocfilehash: a5f5c5d0ae8611957cb9087de53f5ddd87d1f25d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571296"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892498"
 ---
 # <a name="national-cloud-deployments"></a>Nationale Cloudbereitstellungen
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle zeigt die Stamm-Endpunkte für Microsoft Graph und [Dia
 | Nationale Cloud | Microsoft Graph | Graph-Tester |
 |---------------------------|----------------|----------------|
 | Microsoft Graph für die US-Regierung | https://graph.microsoft.us | Nicht unterstützt. |
-| Microsoft Graph Deutschland | https://graph.microsoft.de | Nicht unterstützt. |
+| Microsoft Graph Deutschland | https://graph.microsoft.de | Nicht unterstützt |
 | Microsoft Graph China betrieben von 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph weltweiter Service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
@@ -65,10 +65,10 @@ Die folgenden Features von Microsoft Graph stehen in der Regel auf der `/v1.0` E
 | Outlook-Kalender | ✔ | ✔ | ✔ |
 | Private Kontakte | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔* | ✔ |
-| Delta-Abfrage | ✔ | ✔ | ✔ |
-| Webhooks  | ✔ | ✔ | ✔ |
+| Planner|✔ |✔ |✔ |
 | Berichte  |➖| ✔ |➖|
-| Microsoft Planner|➖|➖|➖|
+| Delta-Abfrage | ➖ | ➖| ➖ |
+| Webhooks  | ➖| ➖| ➖
 |Verzeichnisschemaerweiterungen |➖|➖|➖|
 | Offene Typerweiterungen|➖|➖|➖|
   
