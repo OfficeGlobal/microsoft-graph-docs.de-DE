@@ -3,31 +3,30 @@ title: Aktivität erstellen oder ersetzen
 description: Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie die Tiefe einfügen.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 99c1abc800464a6b3c4113ba825a8455f6cdea40
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642282"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967340"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="7cd2f-104">Aktivität erstellen oder ersetzen</span><span class="sxs-lookup"><span data-stu-id="7cd2f-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="8b525-104">Aktivität erstellen oder ersetzen</span><span class="sxs-lookup"><span data-stu-id="8b525-104">Create or replace an activity</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7cd2f-105">Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="7cd2f-106">Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](projectrome-put-activity.md#example-2---deep-insert).</span><span class="sxs-lookup"><span data-stu-id="7cd2f-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
+<span data-ttu-id="8b525-105">Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app.</span><span class="sxs-lookup"><span data-stu-id="8b525-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="8b525-106">Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](#example-2-deep-insert).</span><span class="sxs-lookup"><span data-stu-id="8b525-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7cd2f-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="7cd2f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8b525-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8b525-107">Permissions</span></span>
 
-<span data-ttu-id="7cd2f-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cd2f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8b525-p103">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b525-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
+| <span data-ttu-id="8b525-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8b525-110">Permission type</span></span>                        | <span data-ttu-id="8b525-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8b525-111">Permissions (from least to most privileged)</span></span> |
+|:---------------------------------------|:------------------------------------|
+| <span data-ttu-id="8b525-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8b525-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="8b525-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="8b525-113">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="8b525-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8b525-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b525-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="8b525-115">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="8b525-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8b525-116">Application</span></span>                            | <span data-ttu-id="8b525-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8b525-117">Not supported.</span></span>                      |
 
-|<span data-ttu-id="7cd2f-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7cd2f-110">Permission type</span></span>      | <span data-ttu-id="7cd2f-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7cd2f-111">Permissions (from least to most privileged)</span></span>              |
-|:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7cd2f-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7cd2f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7cd2f-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7cd2f-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="7cd2f-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7cd2f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cd2f-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7cd2f-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="7cd2f-116">Application</span><span class="sxs-lookup"><span data-stu-id="7cd2f-116">Application</span></span> | <span data-ttu-id="7cd2f-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7cd2f-117">Not supported.</span></span> |
-
-## <a name="http-request"></a><span data-ttu-id="7cd2f-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7cd2f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8b525-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8b525-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +34,29 @@ ms.locfileid: "29642282"
 PUT /me/activities/{appActivityId}
 ```
 
-><span data-ttu-id="7cd2f-119">**Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+> <span data-ttu-id="8b525-119">**Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.</span><span class="sxs-lookup"><span data-stu-id="8b525-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7cd2f-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7cd2f-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8b525-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8b525-120">Request headers</span></span>
 
-|<span data-ttu-id="7cd2f-121">Name</span><span class="sxs-lookup"><span data-stu-id="7cd2f-121">Name</span></span> | <span data-ttu-id="7cd2f-122">Typ</span><span class="sxs-lookup"><span data-stu-id="7cd2f-122">Type</span></span> | <span data-ttu-id="7cd2f-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7cd2f-123">Description</span></span>|
-|:----|:-----|:-----------|
-|<span data-ttu-id="7cd2f-124">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="7cd2f-124">Authorization</span></span> | <span data-ttu-id="7cd2f-125">string</span><span class="sxs-lookup"><span data-stu-id="7cd2f-125">string</span></span> | <span data-ttu-id="7cd2f-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="8b525-121">Name</span><span class="sxs-lookup"><span data-stu-id="8b525-121">Name</span></span>          | <span data-ttu-id="8b525-122">Typ</span><span class="sxs-lookup"><span data-stu-id="8b525-122">Type</span></span>   | <span data-ttu-id="8b525-123">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8b525-123">Description</span></span>               |
+|:--------------|:-------|:--------------------------|
+| <span data-ttu-id="8b525-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8b525-124">Authorization</span></span> | <span data-ttu-id="8b525-125">string</span><span class="sxs-lookup"><span data-stu-id="8b525-125">string</span></span> | <span data-ttu-id="8b525-p104">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8b525-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7cd2f-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7cd2f-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8b525-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8b525-128">Request body</span></span>
 
-<span data-ttu-id="7cd2f-129">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Aktivität](../resources/projectrome-activity.md) aus.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="8b525-129">Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Aktivität](../resources/projectrome-activity.md) aus.</span><span class="sxs-lookup"><span data-stu-id="8b525-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7cd2f-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="7cd2f-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8b525-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="8b525-130">Response</span></span>
 
-<span data-ttu-id="7cd2f-131">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die Aktivität erstellt wurde oder `200 OK` , wenn die Aktivität ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="8b525-131">Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die Aktivität erstellt wurde oder `200 OK` , wenn die Aktivität ersetzt wurde.</span><span class="sxs-lookup"><span data-stu-id="8b525-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="7cd2f-132">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="7cd2f-132">Example 1</span></span>
+## <a name="examples"></a><span data-ttu-id="8b525-132">Beispiele</span><span class="sxs-lookup"><span data-stu-id="8b525-132">Examples</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7cd2f-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7cd2f-133">Request</span></span>
+### <a name="example-1-create-an-activity"></a><span data-ttu-id="8b525-133">In Beispiel 1: Erstellen einer Aktivitätsfeeds</span><span class="sxs-lookup"><span data-stu-id="8b525-133">Example 1: Create an activity</span></span>
 
-<span data-ttu-id="7cd2f-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-134">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="8b525-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8b525-134">Request</span></span>
+
+<span data-ttu-id="8b525-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8b525-135">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -65,47 +66,49 @@ PUT /me/activities/{appActivityId}
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
-Content-length: 364
 
 {
-    "appActivityId": "/article?12345",
-    "activitySourceHost": "https://www.contoso.com",
-    "userTimezone": "Africa/Casablanca",
-    "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
+  "appActivityId": "/article?12345",
+  "activitySourceHost": "https://www.contoso.com",
+  "userTimezone": "Africa/Casablanca",
+  "appDisplayName": "Contoso, Ltd.",
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "visualElements": {
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "visualElements": {
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#ff0000",
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "backgroundColor": "#ff0000",
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
+      ]
     }
+  }
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="7cd2f-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="7cd2f-135">Response</span></span>
+<!-- markdownlint-disable MD024 -->
 
-<span data-ttu-id="7cd2f-136">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-136">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="8b525-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="8b525-136">Response</span></span>
+
+<span data-ttu-id="8b525-137">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8b525-137">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -116,55 +119,56 @@ Content-length: 364
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "https://contoso.com",
-    "createdDateTime": "2017-06-09T20:54:43.969Z",
-    "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
-    "id": "14332800362997268276",
-    "appActivityId": "/article?12345",
-    "status":"updated",
-    "expirationDateTime": "2017-02-26T20:20:48.114Z",
-    "id": "14332800362997268276",
-    "visualElements": {
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "backgroundColor": "#ff0000",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
+  "appActivityId": "/article?12345",
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
+  "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
+    },
+    "backgroundColor": "#ff0000",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    },
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "appDisplayName": "Contoso, Ltd.",
-    "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
-    },
+      ]
+    }
+  },
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "appDisplayName": "Contoso, Ltd.",
+  "userTimezone": "Africa/Casablanca",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  }
 }
 ```
 
-## <a name="example-2---deep-insert"></a><span data-ttu-id="7cd2f-137">Beispiel 2 – Tiefe einfügen</span><span class="sxs-lookup"><span data-stu-id="7cd2f-137">Example 2 - Deep insert</span></span>
+### <a name="example-2-deep-insert"></a><span data-ttu-id="8b525-138">Beispiel 2: Tiefe einfügen</span><span class="sxs-lookup"><span data-stu-id="8b525-138">Example 2: Deep insert</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7cd2f-138">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7cd2f-138">Request</span></span>
+<span data-ttu-id="8b525-139">Dieses Beispiel erstellt eine neue Aktivität und Historienelement für diese Aktivität in einer Anforderung an.</span><span class="sxs-lookup"><span data-stu-id="8b525-139">This example creates a new activity and a history item for that activity in one request.</span></span>
 
-<span data-ttu-id="7cd2f-139">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-139">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="8b525-140">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8b525-140">Request</span></span>
+
+<span data-ttu-id="8b525-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8b525-141">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -174,54 +178,54 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
-Content-length: 364
 
 {
-    "appActivityId": "/article?12345",
-    "activitySourceHost": "https://www.contoso.com",
-    "userTimezone": "Africa/Casablanca",
-    "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
+  "appActivityId": "/article?12345",
+  "activitySourceHost": "https://www.contoso.com",
+  "userTimezone": "Africa/Casablanca",
+  "appDisplayName": "Contoso, Ltd.",
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "visualElements": {
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "visualElements": {
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#ff0000",
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
-        }
-    },
-    "historyItems":[
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "backgroundColor": "#ff0000",
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
         {
-            "userTimezone": "Africa/Casablanca",
-            "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    ]
+      ]
+    }
+  },
+  "historyItems": [
+    {
+      "userTimezone": "Africa/Casablanca",
+      "startedDateTime": "2018-02-26T20:54:04.345Z",
+      "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
+    }
+  ]
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="7cd2f-140">Antwort</span><span class="sxs-lookup"><span data-stu-id="7cd2f-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8b525-142">Antwort</span><span class="sxs-lookup"><span data-stu-id="8b525-142">Response</span></span>
 
-<span data-ttu-id="7cd2f-141">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7cd2f-141">The following is an example of the response.</span></span>
+<span data-ttu-id="8b525-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8b525-143">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -232,60 +236,59 @@ Content-length: 364
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "https://contoso.com",
-    "createdDateTime": "2017-06-09T20:54:43.969Z",
-    "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
-    "id": "14332800362997268276",
-    "appActivityId": "/article?12345",
-    "status":"updated",
-    "expirationDateTime": "2017-02-26T20:20:48.114Z",
-    "id": "14332800362997268276",
-    "visualElements": {
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "backgroundColor": "#ff0000",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
-        }
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
+  "appActivityId": "/article?12345",
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
+  "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "appDisplayName": "Contoso, Ltd.",
-    "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
-    },
-    "historyItems":[
+    "backgroundColor": "#ff0000",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
         {
-            "status": "updated",
-            "userTimezone": "Africa/Casablanca",
-            "createdDateTime": "2018-04-12T21:42:42.495Z",
-            "lastModifiedDateTime": "2018-04-12T21:42:42.495Z",
-            "id": "61fc8f36-919f-4b73-89d4-1cb7b159d912",
-            "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
-            "expirationDateTime": "2018-05-12T21:42:42.495Z",
-            "activeDurationSeconds": 20
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    ]
+      ]
+    }
+  },
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "appDisplayName": "Contoso, Ltd.",
+  "userTimezone": "Africa/Casablanca",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "historyItems": [
+    {
+      "status": "updated",
+      "userTimezone": "Africa/Casablanca",
+      "createdDateTime": "2018-04-12T21:42:42.495Z",
+      "lastModifiedDateTime": "2018-04-12T21:42:42.495Z",
+      "id": "61fc8f36-919f-4b73-89d4-1cb7b159d912",
+      "startedDateTime": "2018-02-26T20:54:04.345Z",
+      "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+      "expirationDateTime": "2018-05-12T21:42:42.495Z",
+      "activeDurationSeconds": 20
+    }
+  ]
 }
 ```
 
