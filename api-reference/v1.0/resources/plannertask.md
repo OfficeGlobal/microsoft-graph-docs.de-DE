@@ -4,12 +4,12 @@ description: Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3a90dcdc2cbad09355619c1afe1ff3200181fb39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917587"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892512"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask-Ressourcentyp
 
@@ -27,11 +27,11 @@ Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Anzahl Prüflistenelemente, deren Wert auf „false“ festgelegt ist, was unvollständige Elemente darstellt.|
+|activeChecklistItemCount|Int32|Anzahl der Prüflistenelemente, deren Wert auf `false` festgelegt ist, was unvollständige Elemente darstellt.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Die Kategorien, auf die die Aufgabe angewendet wurde. Mögliche Werte finden Sie unter [angewendete Kategorien](plannerappliedcategories.md).|
 |assigneePriority|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner-order-hint-format.md) beschrieben definiert.|
 |assignments|[plannerAssignments](plannerassignments.md)|Der Satz von zugewiesenen Personen, denen die Aufgabe zugewiesen wurde.|
-|bucketId|Zeichenfolge|Bucket-ID, zu der die Aufgabe gehört. Der Bucket muss im Plan sein, die die Aufgabe ist. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst. |
+|bucketId|String|Bucket-ID, zu der die Aufgabe gehört. Der Bucket muss in dem Plan enthalten sein, in dem sich die Aufgabe befindet. Sie ist 28 Zeichen lang und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner-identifiers-disclaimer.md) durchgeführt. |
 |checklistItemCount|Int32|Anzahl der Prüflistenelemente, die für die Aufgabe vorhanden sind.|
 |completedBy|[identitySet](identityset.md)|Die Identität des Benutzers, der die Aufgabe abgeschlossen hat.|
 |completedDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit, zu dem bzw. der die `'percentComplete'` der Aufgabe auf `'100'` festgelegt ist. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
@@ -40,11 +40,11 @@ Die **plannerTask**-Ressource stellt eine Planer-Aufgabe in Office 365 dar. Eine
 |createdDateTime|DateTimeOffset|Schreibgeschützt. Datum und Uhrzeit der Erstellung der Aufgabe. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|Datum und Uhrzeit der Fälligkeit der Aufgabe. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolescher Wert|Schreibgeschützt. Der Wert ist `true`, wenn das Detailobjekt der Aufgabe eine nicht leere Beschreibung und aufweist, andernfalls `false`.|
-|id|Zeichenfolge|Schreibgeschützt. ID des Vorgangs. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](planner-identifiers-disclaimer.md) erfolgt für den Dienst.|
+|id|String|Schreibgeschützt. ID der Aufgabe. Sie ist 28 Zeichen lang und es wird zwischen Groß-und Kleinschreibung unterschieden. Für den Dienst wird eine [Formatüberprüfung](planner-identifiers-disclaimer.md) durchgeführt.|
 |orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](planner-order-hint-format.md) beschrieben definiert.|
 |percentComplete|Int32|Abgeschlossener Prozentsatz der Aufgabe. Bei Festlegung auf `100` wird die Aufgabe als abgeschlossen betrachtet. |
 |planId|String|Plan-ID, zu der die Aufgabe gehört.|
-|previewType|plannerPreviewType|Hierdurch wird den Typ der Vorschau, die für den Vorgang wird angezeigt. Die möglichen Werte sind: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|Zeichenfolge|Hierdurch wird der Typ der Vorschau festgelegt, die für die Aufgabe angezeigt wird. Mögliche Werte sind: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Anzahl externer Bezüge, die für die Aufgabe vorhanden sind.|
 |startDateTime|DateTimeOffset|Datum und Uhrzeit des Aufgabenbeginns. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |title|String|Titel der Aufgabe.|
@@ -88,7 +88,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
