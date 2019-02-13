@@ -4,12 +4,12 @@ description: So erstellen oder konfigurieren Sie eine Microsoft Teams-Registerka
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
-ms.translationtype: HT
+ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726540"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967193"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 
@@ -18,9 +18,9 @@ In diesem Artikel wird erläutert, wie Sie diese Werte für die integrierten Reg
 
 ## <a name="custom-tabs"></a>Benutzerdefinierte Registerkarten
 
-Um Microsoft Graph zum Konfigurieren einer Registerkarte zu verwenden, die einem von Ihnen geschriebenen [Registerkartenanbieter](https://docs.microsoft.com/de-DE/microsoftteams/platform/concepts/tabs/tabs-overview)zugeordnet ist, identifizieren Sie die `entityId`, `contentUrl`, `removeUrl` und `websiteUrl`, die die [Konfigurations-Benutzeroberfläche für Microsoft Teams bereitstellt](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), und übergeben Sie eben diese Werte für `entityId`, `contentUrl`, `removeUrl` und `websiteUrl` an Microsoft Graph.
+Um Microsoft Graph zum Konfigurieren einer Registerkarte zu verwenden, die einem von Ihnen geschriebenen [Registerkartenanbieter](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview)zugeordnet ist, identifizieren Sie die `entityId`, `contentUrl`, `removeUrl` und `websiteUrl`, die die [Konfigurations-Benutzeroberfläche für Microsoft Teams bereitstellt](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), und übergeben Sie eben diese Werte für `entityId`, `contentUrl`, `removeUrl` und `websiteUrl` an Microsoft Graph.
 
-Die `teamsAppId` ist die gleiche wie die `id` im [App-Manifestschema für Microsoft Teams](https://docs.microsoft.com/de-DE/microsoftteams/platform/resources/schema/manifest-schema).
+Die `teamsAppId` ist die gleiche wie die `id` im [App-Manifestschema für Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Website-Registerkarten
 
@@ -115,7 +115,32 @@ Beachten Sie aber, dass es auch nicht viel zu konfigurieren gibt – auf einer n
 
 ## <a name="document-library-tabs"></a>Registerkarten der Dokumentbibliothek
 
-Für Registerkarten der Dokumentbibliothek ist die `teamsAppId` `com.microsoft.teamspace.tab.files.sharepoint`. Konfiguration wird nicht unterstützt.
+Für Registerkarten der Dokumentbibliothek ist die `teamsAppId` `com.microsoft.teamspace.tab.files.sharepoint`. Die folgende Tabelle zeigt die Konfiguration.
+
+| Eigenschaft   | Typ        | Beschreibung                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | Zeichenfolge      | Eine leere Zeichenfolge ("")                                        |
+| contentUrl | Zeichenfolge      | Die URL des im Stammordner der Dokumentbibliothek. Sie finden diese URL, indem Sie den SharePoint-Ordner in Ihrem Browser öffnen, kopieren die URL und Löschen von "/ Forms/AllItems.aspx" und alle Daten nach. |
+| removeUrl  | Zeichenfolge      | Null                                                     |
+| websiteUrl | string      | Null                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>Beispiel: Erstellen einer konfigurierten Dokumentregisterkarte Bibliothek
+
+Im folgenden Beispiel wird eine konfigurierte Word-Registerkarte erstellt.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
 
 ## <a name="onenote-tabs"></a>OneNote-Registerkarten
 
@@ -123,9 +148,9 @@ Für OneNote-Registerkarten ist die `teamsAppId` `0d820ecd-def2-4297-adad-78056c
 
 | Eigenschaft   | Typ        | Beschreibung                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | `{randomGuid}_{notebookId}`, wobei {randomGuid} eine von Ihnen generierte GUID ist.                                      |
-| contentUrl | string      | Eine URL der Form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
-| removeUrl  | string      | Eine URL der Form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
+| entityId   | Zeichenfolge      | `{randomGuid}_{notebookId}`, wobei {randomGuid} eine von Ihnen generierte GUID ist.                                      |
+| contentUrl | Zeichenfolge      | Eine URL der Form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
+| removeUrl  | Zeichenfolge      | Eine URL der Form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
 | websiteUrl | string      | Eine URL der Form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, wobei `oneNoteWebUrl` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden ist. |
 
 ## <a name="power-bi-tabs"></a>Power BI-Registerkarten

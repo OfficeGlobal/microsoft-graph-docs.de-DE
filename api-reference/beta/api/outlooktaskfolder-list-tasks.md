@@ -4,12 +4,12 @@ description: Rufen Sie die Outlook-Aufgaben im angegebenen Ordner.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 892409d6622ffd7b6e0243f7bcdb8807f2ee1305
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: dfcd1438d55a22654c5601bc55827d0dedbdc6b2
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509343"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967263"
 ---
 # <a name="list-tasks"></a>Aufgaben auflisten
 
@@ -17,9 +17,9 @@ ms.locfileid: "29509343"
 
 Rufen Sie die Outlook-Aufgaben im angegebenen Ordner.
 
-Standardmäßig wird dieses Vorgangs (und die POST, PATCH und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben.  Sie können eine `Prefer: outlook.timezone` Anforderungsheader alle datumsspezifische Eigenschaften in der Antwort in einer anderen als UTC Zeitzone dargestellt werden. Finden Sie ein [Beispiel](outlooktask-get.md#example-2) für eine einzelne Aufgabe abrufen. Sie können die Kopfzeile auf ähnliche Weise, um mehrere Aufgaben erhalten anwenden.
+Standardmäßig wird dieses Vorgangs (und die POST, PATCH und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben.  Sie können eine `Prefer: outlook.timezone` Anforderungsheader alle datumsspezifische Eigenschaften in der Antwort in einer anderen als UTC Zeitzone dargestellt werden. Finden Sie ein [Beispiel](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) für eine einzelne Aufgabe abrufen. Sie können die Kopfzeile auf ähnliche Weise, um mehrere Aufgaben erhalten anwenden.
 
-Wenn es mehr als eine Aufgabengruppe gibt und Sie alle Aufgaben in einer bestimmten Aufgabengruppe abrufen möchten, rufen Sie zunächst [alle Aufgabenordner in dieser Aufgabengruppe](outlooktaskgroup-list-taskfolders.md) ab und danach die Aufgaben in jedem dieser Aufgabenordner. 
+Wenn mehr als ein "Task Group" vorhanden ist, und rufen alle Aufgaben in eine bestimmte Aufgabengruppe zuerst [Alle Aufgabenordner in dieser Aufgabengruppe erhalten möchten](outlooktaskgroup-list-taskfolders.md), und klicken Sie dann die Aufgaben in jeder dieser Aufgabenordner werden soll.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).

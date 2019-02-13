@@ -1,21 +1,21 @@
 ---
-title: Registerkarte Channel hinzufügen
-description: 'Fügt (Pins) einer Registerkarte an den angegebenen Kanal innerhalb eines Teams. '
+title: Hinzufügen einer Registerkarte zum Kanal
+description: 'Fügt eine Registerkarte zum angegebenen Kanal innerhalb eines Teams hinzu (heftet sie an). '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1de8cfe1d553a6e0f70653aa4fe1d978c8d92323
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570932"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967228"
 ---
-# <a name="add-tab-to-channel"></a>Registerkarte Channel hinzufügen
+# <a name="add-tab-to-channel"></a>Hinzufügen einer Registerkarte zum Kanal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fügt (Pins) einer [Registerkarte](../resources/teamstab.md) an den angegebenen [DDE-Kanal](../resources/channel.md) in einem [Team](../resources/team.md). Die entsprechende app muss bereits [im Team installiert](../api/teamsappinstallation-add.md)sein.
+Fügt eine [Registerkarte](../resources/teamstab.md) zum angegebenen [Kanal](../resources/channel.md) innerhalb eines [Teams](../resources/team.md) hinzu (heftet sie an). Die entsprechende App muss bereits [im Team installiert](../api/teamsappinstallation-add.md) sein.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
 | Anwendung                            | Group.ReadWrite.All                         |
 
-> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft-Teams Dienstadministratoren können Teams zugreifen, denen sie nicht Mitglied sind.
+> **Hinweis**: Diese API unterstützt Administratorberechtigungen. Globale Administratoren und Microsoft Teams-Dienstadministratoren können auf Teams zugreifen, in denen sie kein Mitglied sind.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -85,7 +85,7 @@ Content-type: application/json
 
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",

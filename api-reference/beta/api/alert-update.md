@@ -4,12 +4,12 @@ description: Warnung Eigenschaft bearbeitbare in eine integrierte Lösung alert 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fc0bc88dad83024d3da2d6f2adf3f16288719cb2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517414"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967326"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 
@@ -49,11 +49,11 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung der Werte für die en
 
 | Eigenschaft   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
+|assignedTo|Zeichenfolge|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation zugewiesen.|
 |closedDateTime|DateTimeOffset|Zeitpunkt, an dem die Benachrichtigung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|comments|Zeichenfolgenauflistung|Analystenkommentare auf die Benachrichtigung (für Kunden alert Management).|
-|Feedback|AlertFeedback-Enumeration|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: sind `unknown`, `truePositive`, `falsePositive` und `benignPositive`.|
-|status|AlertStatus-Enumeration|Warnung Lebenszyklusstatus (Phase). Mögliche Werte: sind `unknown`, `newAlert`, `inProgress` und `resolved`.|
+|comments|String collection|Analystenkommentare auf die Benachrichtigung (für Kunden alert Management).|
+|Feedback|AlertFeedback-Enumeration|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
+|status|AlertStatus-Enumeration|Warnung Lebenszyklus-Status (Phase). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|Zeichenfolgenauflistung|Benutzer definierbare Beschriftungen, die auf eine Warnung angewendet werden können und als filterbedingungen (beispielsweise "HVA", "MAUERN) dienen.|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Komplexer Typ, das Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider enthält (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker). **Anbieter und Hersteller Felder sind erforderlich.**|
 
@@ -63,11 +63,13 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zu
 
 Wenn der optionale Anforderungsheader verwendet wird, gibt die Methode eine `200 OK` Antwortcode und das aktualisierte [Warnung](../resources/alert.md) -Objekt aus der Antwort.
 
-## <a name="example-1"></a>Beispiel 1
+## <a name="examples"></a>Beispiele
 
-### <a name="request"></a>Anforderung
+### <a name="example-1-request-without-prefer-header"></a>In Beispiel 1: Anforderung ohne bevorzugen-header
 
-Nachfolgend sehen Sie ein Beispiel der Anforderung.
+#### <a name="request"></a>Anforderung
+
+Im folgenden ist ein Beispiel für die Anforderung ohne die `Prefer` Kopfzeile.
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -92,7 +94,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Antwort
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Antwort
 
 Es folgt ein Beispiel für eine erfolgreiche Antwort.
 <!-- {
@@ -105,9 +109,9 @@ Es folgt ein Beispiel für eine erfolgreiche Antwort.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>Beispiel 2
+### <a name="example-2-request-with-prefer-header"></a>Beispiel 2: Anforderung mit bevorzugen-header
 
-### <a name="request"></a>Anforderung
+#### <a name="request"></a>Anforderung
 
 Das folgende Beispiel zeigt eine Anforderung, die umfasst die `Prefer` Anforderungsheader.
 
@@ -136,11 +140,11 @@ Prefer: return=representation
 }
 ```
 
-### <a name="response"></a>Antwort
+#### <a name="response"></a>Antwort
 
 Im folgenden ist ein Beispiel für die Antwort bei der optionalen `Prefer: return=representation` Anforderungsheader wird verwendet.
 
->**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

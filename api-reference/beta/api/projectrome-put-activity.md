@@ -3,29 +3,28 @@ title: Aktivität erstellen oder ersetzen
 description: Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie die Tiefe einfügen.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 99c1abc800464a6b3c4113ba825a8455f6cdea40
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642282"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967340"
 ---
 # <a name="create-or-replace-an-activity"></a>Aktivität erstellen oder ersetzen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](projectrome-put-activity.md#example-2---deep-insert).
+Erstellen Sie ein neues, oder Ersetzen Sie eine vorhandene Benutzeraktivität für Ihre app. Wenn Sie eine Benutzeraktivität und die zugehörigen **HistoryItems** in einer Anforderung erstellen möchten, können Sie [intensive einfügen](#example-2-deep-insert).
 
 ## <a name="permissions"></a>Berechtigungen
 
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
-
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegiert (persönliches Microsoft-Konto) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Nicht unterstützt |
+| Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
+|:---------------------------------------|:------------------------------------|
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | UserActivity.ReadWrite.CreatedByApp |
+| Delegiert (persönliches Microsoft-Konto) | UserActivity.ReadWrite.CreatedByApp |
+| Anwendung                            | Nicht unterstützt                      |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -35,13 +34,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PUT /me/activities/{appActivityId}
 ```
 
->**Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.
+> **Hinweis:** Die AppActivityId in der URL muss URL-sichere (alle Zeichen mit Ausnahme der RFC 2396 nicht reservierte Zeichen in ihre hexadezimale Darstellung konvertiert werden müssen) sein, aber die ursprünglichen AppActivityId benötigt keinen URL-sicheren.
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Name | Typ | Beschreibung|
-|:----|:-----|:-----------|
-|Autorisierung | string | Bearer {token}. Erforderlich.|
+| Name          | Typ   | Beschreibung               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
 
@@ -51,7 +50,9 @@ Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines Objekts [Aktivi
 
 Wenn der Vorgang erfolgreich war, gibt diese Methode die `201 Created` Antwortcode, wenn die Aktivität erstellt wurde oder `200 OK` , wenn die Aktivität ersetzt wurde.
 
-## <a name="example-1"></a>Beispiel 1
+## <a name="examples"></a>Beispiele
+
+### <a name="example-1-create-an-activity"></a>In Beispiel 1: Erstellen einer Aktivitätsfeeds
 
 #### <a name="request"></a>Anforderung
 
@@ -65,43 +66,45 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
-Content-length: 364
 
 {
-    "appActivityId": "/article?12345",
-    "activitySourceHost": "https://www.contoso.com",
-    "userTimezone": "Africa/Casablanca",
-    "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
+  "appActivityId": "/article?12345",
+  "activitySourceHost": "https://www.contoso.com",
+  "userTimezone": "Africa/Casablanca",
+  "appDisplayName": "Contoso, Ltd.",
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "visualElements": {
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "visualElements": {
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#ff0000",
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "backgroundColor": "#ff0000",
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
+      ]
     }
+  }
 }
 ```
+
+<!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>Antwort
 
@@ -116,51 +119,52 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "https://contoso.com",
-    "createdDateTime": "2017-06-09T20:54:43.969Z",
-    "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
-    "id": "14332800362997268276",
-    "appActivityId": "/article?12345",
-    "status":"updated",
-    "expirationDateTime": "2017-02-26T20:20:48.114Z",
-    "id": "14332800362997268276",
-    "visualElements": {
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "backgroundColor": "#ff0000",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
+  "appActivityId": "/article?12345",
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
+  "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
+    },
+    "backgroundColor": "#ff0000",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    },
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "appDisplayName": "Contoso, Ltd.",
-    "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
-    },
+      ]
+    }
+  },
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "appDisplayName": "Contoso, Ltd.",
+  "userTimezone": "Africa/Casablanca",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  }
 }
 ```
 
-## <a name="example-2---deep-insert"></a>Beispiel 2 – Tiefe einfügen
+### <a name="example-2-deep-insert"></a>Beispiel 2: Tiefe einfügen
+
+Dieses Beispiel erstellt eine neue Aktivität und Historienelement für diese Aktivität in einer Anforderung an.
 
 #### <a name="request"></a>Anforderung
 
@@ -174,48 +178,48 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
-Content-length: 364
 
 {
-    "appActivityId": "/article?12345",
-    "activitySourceHost": "https://www.contoso.com",
-    "userTimezone": "Africa/Casablanca",
-    "appDisplayName": "Contoso, Ltd.",
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
+  "appActivityId": "/article?12345",
+  "activitySourceHost": "https://www.contoso.com",
+  "userTimezone": "Africa/Casablanca",
+  "appDisplayName": "Contoso, Ltd.",
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "visualElements": {
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "visualElements": {
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "backgroundColor": "#ff0000",
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
-        }
-    },
-    "historyItems":[
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "backgroundColor": "#ff0000",
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
         {
-            "userTimezone": "Africa/Casablanca",
-            "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    ]
+      ]
+    }
+  },
+  "historyItems": [
+    {
+      "userTimezone": "Africa/Casablanca",
+      "startedDateTime": "2018-02-26T20:54:04.345Z",
+      "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
+    }
+  ]
 }
 ```
 
@@ -232,60 +236,59 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 {
-    "activitySourceHost": "https://contoso.com",
-    "createdDateTime": "2017-06-09T20:54:43.969Z",
-    "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
-    "id": "14332800362997268276",
-    "appActivityId": "/article?12345",
-    "status":"updated",
-    "expirationDateTime": "2017-02-26T20:20:48.114Z",
-    "id": "14332800362997268276",
-    "visualElements": {
-        "displayText": "Contoso How-To: How to Tie a Reef Knot",
-        "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-        "attribution": {
-            "iconUrl": "https://www.contoso.com/icon",
-            "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false"
-        },
-        "backgroundColor": "#ff0000",
-        "content": {
-            "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "body":
-            [{
-                "type": "TextBlock",
-                "text": "Contoso MainPage"
-            }]
-        }
+  "activitySourceHost": "https://contoso.com",
+  "createdDateTime": "2017-06-09T20:54:43.969Z",
+  "lastModifiedDateTime": "2017-06-09T20:54:43.969Z",
+  "id": "14332800362997268276",
+  "appActivityId": "/article?12345",
+  "status": "updated",
+  "expirationDateTime": "2017-02-26T20:20:48.114Z",
+  "visualElements": {
+    "displayText": "Contoso How-To: How to Tie a Reef Knot",
+    "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+    "attribution": {
+      "iconUrl": "https://www.contoso.com/icon",
+      "alternateText": "Contoso, Ltd.",
+      "addImageQuery": "false"
     },
-    "activationUrl": "https://www.contoso.com/article?id=12345",
-    "appDisplayName": "Contoso, Ltd.",
-    "userTimezone": "Africa/Casablanca",
-    "fallbackUrl": "https://www.contoso.com/article?id=12345",
-    "contentUrl": "https://www.contoso.com/article?id=12345",
-    "contentInfo": {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "author": "Jennifer Booth",
-        "name": "How to Tie a Reef Knot"
-    },
-    "historyItems":[
+    "backgroundColor": "#ff0000",
+    "content": {
+      "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "body": [
         {
-            "status": "updated",
-            "userTimezone": "Africa/Casablanca",
-            "createdDateTime": "2018-04-12T21:42:42.495Z",
-            "lastModifiedDateTime": "2018-04-12T21:42:42.495Z",
-            "id": "61fc8f36-919f-4b73-89d4-1cb7b159d912",
-            "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
-            "expirationDateTime": "2018-05-12T21:42:42.495Z",
-            "activeDurationSeconds": 20
+          "type": "TextBlock",
+          "text": "Contoso MainPage"
         }
-    ]
+      ]
+    }
+  },
+  "activationUrl": "https://www.contoso.com/article?id=12345",
+  "appDisplayName": "Contoso, Ltd.",
+  "userTimezone": "Africa/Casablanca",
+  "fallbackUrl": "https://www.contoso.com/article?id=12345",
+  "contentUrl": "https://www.contoso.com/article?id=12345",
+  "contentInfo": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": "Jennifer Booth",
+    "name": "How to Tie a Reef Knot"
+  },
+  "historyItems": [
+    {
+      "status": "updated",
+      "userTimezone": "Africa/Casablanca",
+      "createdDateTime": "2018-04-12T21:42:42.495Z",
+      "lastModifiedDateTime": "2018-04-12T21:42:42.495Z",
+      "id": "61fc8f36-919f-4b73-89d4-1cb7b159d912",
+      "startedDateTime": "2018-02-26T20:54:04.345Z",
+      "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+      "expirationDateTime": "2018-05-12T21:42:42.495Z",
+      "activeDurationSeconds": 20
+    }
+  ]
 }
 ```
 

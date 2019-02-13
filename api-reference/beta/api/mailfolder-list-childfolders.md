@@ -4,12 +4,12 @@ description: 'Rufen Sie die Ordner-Auflistung, unter dem angegebenen Ordner. Sie
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9d54828b97bb82c9ce0ee9eceeee86a4aa975c3d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96dec9ca1ba6dbd8e50e8eb978756a98657d2c9d
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512549"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967235"
 ---
 # <a name="list-childfolders"></a>childFolders auflisten
 
@@ -18,49 +18,66 @@ ms.locfileid: "29512549"
 Dient zum Abrufen der Ordnersammlung unter dem angegebenen Ordner. Sie können die `.../me/MailFolders`-Verknüpfung zum Abrufen der Ordnersammlung auf oberster Ebene und zum Navigieren zu einem anderen Ordner verwenden.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
-|Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Mail.Read, Mail.ReadWrite    |
-|Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite    |
-|Anwendung | Mail.Read, Mail.ReadWrite |
+| Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
+|:---------------------------------------|:------------------------------------|
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | Mail.Read, Mail.ReadWrite           |
+| Delegiert (persönliches Microsoft-Konto) | Mail.Read, Mail.ReadWrite           |
+| Anwendung                            | Mail.Read, Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-| Name       | Typ | Beschreibung|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Erforderlich. |
+
+| Name          | Typ   | Beschreibung               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Sammlung von [MailFolder](../resources/mailfolder.md)-Objekten im Antworttext zurückgegeben.
 
-## <a name="example-1"></a>Beispiel 1
-#### <a name="request-1"></a>Anforderung 1
+## <a name="examples"></a>Beispiele
+
+### <a name="example-1-list-mail-folders"></a>In Beispiel 1: Liste e-Mail-Ordner
+
+#### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 
-#### <a name="response-1"></a>Antwort 1
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+
+> **Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "response",
@@ -68,58 +85,64 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
   "@odata.type": "microsoft.graph.mailFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Project Falcon",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders"
     }
   ]
 }
 ```
 
-## <a name="example-2"></a>Beispiel 2
-#### <a name="request-2"></a>Anforderung 2
+### <a name="example-2-list-mail-search-folders"></a>Beispiel 2: Liste Mail Suchordner
+
+#### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
 
-#### <a name="response-2"></a>Antwort 2
+#### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+
+> **Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
 <!-- {
   "blockType": "response",
@@ -127,39 +150,36 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
   "@odata.type": "microsoft.graph.mailSearchFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMz",
+      "displayName": "Get MyAnalytics",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 6,
+      "totalItemCount": 6,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'MyAnalytics')"
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
-    },
-    {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMy",
+      "displayName": "Action Required",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 4,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'ACTION REQUIRED')"
     }
   ]
 }

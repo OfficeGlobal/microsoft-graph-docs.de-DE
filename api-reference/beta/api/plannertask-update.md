@@ -4,12 +4,12 @@ description: Dient zum Aktualisieren der Eigenschaften des **plannertask**-Objek
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d33df32ace59884298ca6f8773cbbe2100f32f85
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523813"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967242"
 ---
 # <a name="update-plannertask"></a>plannerTask aktualisieren
 
@@ -45,11 +45,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |assigneePriority|String|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Der Satz von Benutzern, denen die Aufgabe zugewiesen wurde.|
 |bucketId|String|Bucket-Id, zu der die Aufgabe gehört. Der Bucket muss im Plan sein, die die Aufgabe ist. Es ist eine 28 Zeichen lang und Groß-/Kleinschreibung beachtet. [Format Validierung](../resources/tasks-identifiers-disclaimer.md) erfolgt für den Dienst. |
-|conversationThreadId|String|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
+|conversationThreadId|Zeichenfolge|Thread-ID der Unterhaltung zur Aufgabe. Dies ist die ID des Unterhaltungsthreadobjekts, das in der Gruppe erstellt wurde.|
 |dueDateTime|DateTimeOffset|Datum und Uhrzeit der Fälligkeit der Aufgabe. Der Zeitstempeltyp stellt die Datums- und Uhrzeitinformationen im ISO 8601-Format dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |orderHint|Zeichenfolge|Hinweis, der zum Anordnen von Elementen dieses Typs in einer Listenansicht verwendet wird. Das Format ist wie [hier](../resources/planner-order-hint-format.md) beschrieben definiert.|
 |percentComplete|Int32|Abgeschlossener Prozentsatz der Aufgabe. Bei Festlegung auf `100` wird die Aufgabe als abgeschlossen betrachtet. |
-|planId|String|Plan-ID, zu der die Aufgabe gehört.|
 |startDateTime|DateTimeOffset|Datum und Uhrzeit des Aufgabenbeginns. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |title|String|Titel der Aufgabe.|
 

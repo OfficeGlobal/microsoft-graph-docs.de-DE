@@ -1,23 +1,24 @@
 ---
-title: Liste Teilnehmer
+title: Teilnehmer auflisten
 description: Abrufen einer Liste der Teilnehmer-Objekte in den Anruf.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f4eb95e4aed03dfd9809f8afb0e3f3557717430
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507621"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967347"
 ---
-# <a name="list-participants"></a>Liste Teilnehmer
+# <a name="list-participants"></a>Teilnehmer auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abrufen einer Liste der Teilnehmer-Objekte in den Anruf.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 | Berechtigungstyp | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
@@ -27,42 +28,49 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 | Anwendung     | Keine                                        |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
+
 Diese Methode unterstützt die [OData-Abfrage-Parameter](/graph/query-parameters) , mit denen die Antwort anpassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name          | Beschreibung               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [Teilnehmer](../resources/participant.md) .
 
 ## <a name="examples"></a>Beispiele
 
-### <a name="example-1"></a>Beispiel 1
-
-##### <a name="request"></a>Anforderung
-Das folgende Beispiel zeigt die Antwort.
+### <a name="request"></a>Anforderung
 
 <!-- {
   "blockType": "request",
   "name": "get-participants"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants
+GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
+Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a>Antwort
+<!-- markdownlint-disable MD024 -->
+
+### <a name="response"></a>Antwort
 
 > **Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 
@@ -73,66 +81,11 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
   "isCollection": true,
   "truncated": true
 } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1152
-
-{
-  "value": [
-    {
-      "id": "id-value",
-      "info": {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "languageId": "languageId-value",
-        "region": "region-value"
-      },
-      "isInLobby": false,
-      "isMuted": true,
-      "mediaStreams": [
-        {
-          "sourceId": "1",
-          "direction": "sendReceive",
-          "label": "main-audio",
-          "mediaType": "audio",
-          "serverMuted": false
-        }
-      ],
-      "metadata": "metadata-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2"></a>Beispiel 2
-
-##### <a name="request"></a>Anfordern
-
-```http
-GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
-Authorization: Bearer <TOKEN>
-```
-
-##### <a name="response"></a>Antwort
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
-}-->
-```json
 {
   "value": [
     {
