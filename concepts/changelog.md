@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745594"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967214"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -17,6 +17,12 @@ Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschl
 Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs finden Sie unter [Bekannte Probleme](known-issues.md).
 
 ## <a name="february-2019"></a>Februar 2019
+
+### <a name="onenote"></a>OneNote
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Ergänzungen        | Beta und Version 1.0 | Die [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)-Methode wurde hinzugefügt. |
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
@@ -36,6 +42,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Ergänzungen |Beta und Version 1.0| Die **internalId**-Eigenschaft wurde zur [team](/graph/api/resources/team?view=graph-rest-v1.0)-Ressource hinzugefügt.|
+|Ergänzungen |Beta und Version 1.0| Zusätzliche Unterstützung für die Konfiguration von [Registerkarten](teams-configuring-builtin-tabs.md) für Word, Excel, PowerPoint, PDF und Dokumentbibliotheken. |
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -50,7 +57,6 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | **Änderungstyp** | **Version** | **Beschreibung**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Ergänzungen        | Beta  | Eigenschaften **office365Active** und **office365Inactive** zu Entität [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) hinzugefügt.|
-
 
 ### <a name="directory-apis"></a>Verzeichnis-APIs
 
