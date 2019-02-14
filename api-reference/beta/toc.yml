@@ -7383,6 +7383,8 @@ items:
                 href: api/notebook-copynotebook.md
               - name: Zuletzt verwendete Notizbücher abrufen
                 href: api/notebook-getrecentnotebooks.md
+              - name: Notizbuch von Web-URL abrufen
+                href: api/notebook-getnotebookfromweburl.md
               - name: Abschnitte auflisten
                 href: api/notebook-list-sections.md
               - name: Abschnitt erstellen
