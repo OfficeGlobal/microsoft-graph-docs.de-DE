@@ -3,12 +3,12 @@ title: Bekannte Probleme in Microsoft Graph
 description: Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im Microsoft Graph-Änderungsprotokoll.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576787"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994398"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
@@ -37,11 +37,7 @@ Benutzerprofilfotos können nur gelesen und aktualisiert werden, wenn der Benutz
 
 Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [ Delta-Abfrage](#delta-query) in diesem Artikel.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="create-chat-thread-api"></a>Chatthread-API erstellen
-
-Die aktuelle API zum [Erstellen eines Chatthreads](/graph/api/channel-post-chatthreads?view=graph-rest-beta) wird durch eine funktionsreichere API ersetzt, die mit dem Schema zum [Auflisten von Kanalnachrichten](/graph/api/channel-list-messages?view=graph-rest-beta) konsistent ist.
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph-Explorer und globale Administratoren
 

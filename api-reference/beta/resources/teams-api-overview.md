@@ -4,12 +4,12 @@ description: Microsoft Teams ist ein Chat-basierter Arbeitsbereich in Office 365
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f101560bf716fcb3455346f7d6a3e01912e5451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7e902300a52773a7a177ee590b49c1cb615f7e2f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523176"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994433"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Verwenden der Microsoft Graph-API zum Arbeiten mit Microsoft Teams
 
@@ -21,14 +21,14 @@ Microsoft Teams ist ein Chat-basierter Arbeitsbereich in Office 365, der integri
 
 | Ressource | Methoden |
 |:---------------|:--------|
-|[team](../resources/team.md)| [list your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
-|[channel](../resources/channel.md)|[list](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[list](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[list](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [list](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-| (Vorschau) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) und [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [list](/graph/api/channel-list-messages?view=graph-rest-beta), [create](/graph/api/channel-post-chatthreads?view=graph-rest-beta), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
-| (Vorschau) [call](/graph/api/resources/call?view=graph-rest-beta) | [answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
+|[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
+|[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
+|[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
+| [chatMessage](../resources/chatmessage.md) (Vorschau)| [List](../api/channel-list-messages.md), [send](../api/channel-post-chatmessage.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [call](/graph/api/resources/call?view=graph-rest-beta) (Vorschau) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>Teams und Gruppen
 
@@ -41,7 +41,7 @@ Jede Gruppe, die über ein Team verfügt, besitzt die **ResourceProvisioningOpti
 
 Im folgenden werden die Unterschiede zwischen Teams und Gruppen auf der API-Ebene aufgelistet:
 
-- Beständiger Chat steht nur für Microsoft Teams zur Verfügung. Dieses Feature wird von den Ressourcen [channel](../resources/channel.md), [chatThread](../resources/chatthread.md) und [chatMessage](../resources/chatmessage.md) hierarchisch dargestellt.
+- Beständiger Chat steht nur für Microsoft Teams zur Verfügung. Dieses Feature wird von den Ressourcen [channel](../resources/channel.md) und [chatMessage](../resources/chatmessage.md) hierarchisch dargestellt.
 - Gruppenunterhaltungen sind nur für Office 365-Gruppen verfügbar. Dieses Feature wird von den Ressourcen [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) und [post](../resources/post.md) hierarchisch dargestellt. 
 - Die [Liste joined teams](../api/user-list-joinedteams.md)-Methode gilt nur für Microsoft Teams.
 - [Anruf- und Onlinebesprechungs-APIs](./calls-api-overview.md) gelten nur für Microsoft Teams.

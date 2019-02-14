@@ -4,12 +4,12 @@ description: 'Ein Team in Microsoft Teams ist eine Sammlung von Kanälen. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: bcf6602dcb9673ffd7b1fb81a0d9349392fd6d3f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745545"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994461"
 ---
 # <a name="team-resource-type"></a>team-Ressourcentyp
 
@@ -39,6 +39,7 @@ Weitere Informationen zum Arbeiten mit Gruppen und Mitgliedern in Teams finden S
 |[App zu Team hinzufügen](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Hinzufügen (Installieren) einer App zu einem Team.|
 |[Registerkarte zu Kanal hinzufügen](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Hinzufügen (Installieren) einer Registerkarte zum Kanal des Teams.|
 |[Kanalnachrichten auflisten](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Abrufen von Nachrichten in einem Kanal](../api/channel-list-messages.md) |
+|[Kanalnachricht senden](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Senden einer Nachricht an einen Kanal](../api/channel-post-chatmessage.md) |
 
 ## <a name="properties"></a>Eigenschaften
 

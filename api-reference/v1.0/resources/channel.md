@@ -1,44 +1,44 @@
 ---
-title: DDE-Kanal Ressourcentyp
-description: 'Ein Kanal ist eine Auflistung von Nachrichten in einem Team. '
+title: channel-Ressourcentyp
+description: 'Ein Kanal ist eine Auflistung von Nachrichten innerhalb eines Teams. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 052c6d8fc298e929dfd1c69e1b64debb7e14eb4a
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986348"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994454"
 ---
-# <a name="channel-resource-type"></a>DDE-Kanal Ressourcentyp
+# <a name="channel-resource-type"></a>channel-Ressourcentyp
 
 
 
-Ein Kanal ist eine Auflistung von Nachrichten in einem [Team](../resources/team.md). Ein Kanal stellt ein Thema und daher eine logische Isolierung von Diskussion, innerhalb eines Teams. Beispiele für können DDE-Kanal "Freitag Team Mittagessen" und "Diskussion über Architektur" Channel sein.
+Ein Kanal ist eine Auflistung von Nachrichten innerhalb eines [Teams](../resources/team.md). Ein Kanal stellt ein Thema und somit eine logische Trennung einer Unterhaltung in einem Team dar. Beispiele sind der Kanal „Mittagessen mit dem Team am Freitag“ und „Besprechung der Architektur“.
 
 
 ## <a name="methods"></a>Methoden
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Liste Kanäle](../api/channel-list.md) | [Kanal](channel.md) -Auflistung | Rufen Sie die Liste der Kanäle in dieser Gruppe.|
-|[Erstellen von DDE-Kanal](../api/channel-post.md) | [DDE-Kanal](channel.md) | Erstellen Sie einen neuen Kanal durch das Einbeziehen von den Anzeigenamen und die Beschreibung ein.|
-|[Abrufen von DDE-Kanal](../api/channel-get.md) | [DDE-Kanal](channel.md) | Lesen Sie Eigenschaften und Beziehungen des Kanals.|
-|[Aktualisieren der DDE-Kanal](../api/channel-patch.md) | [DDE-Kanal](channel.md) | Aktualisieren Sie die Eigenschaften des Kanals.|
-|[DDE-Kanal löschen](../api/channel-delete.md) | Keine | Löschen Sie einen Kanal.|
+|[List channels](../api/channel-list.md) | [channel](channel.md)-Auflistung | Abrufen der Liste von Kanälen in diesem Team.|
+|[Create channel](../api/channel-post.md) | [channel](channel.md) | Erstellen eines neuen Kanals durch Einschließen des Anzeigenamen und der Beschreibung.|
+|[Get channel](../api/channel-get.md) | [channel](channel.md) | Lesen von Eigenschaften und Beziehungen des Kanals.|
+|[Updatekanal](../api/channel-patch.md) | [channel](channel.md) | Aktualisieren der Eigenschaften des Kanals.|
+|[Delete channel](../api/channel-delete.md) | Keine | Löschen eines Kanals.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|description|Zeichenfolge|Optionale Beschreibung für den Kanal.|
-|displayName|Zeichenfolge|Channel-Namen, die dem Benutzer in Microsoft-Teams, erscheint.|
-|id|Zeichenfolge|Eindeutiger Bezeichner der Kanäle. Schreibgeschützt.|
+|description|Zeichenfolge|Optionale Textbeschreibung für den Kanal.|
+|displayName|Zeichenfolge|Kanalname wie er in Microsoft Teams für den Benutzer angezeigt wird.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für den Kanal. Schreibgeschützt.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|Registerkarten|[TeamsTab](../resources/teamstab.md) -Auflistung|Eine Auflistung aller Registerkarten im Kanal. Eine Navigationseigenschaft.|
+|Registerkarten|[teamsTab](../resources/teamstab.md)-Auflistung|Eine Auflistung aller Registerkarten im Kanal. Eine Navigationseigenschaft.|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -47,9 +47,6 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "chatthreads"
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->

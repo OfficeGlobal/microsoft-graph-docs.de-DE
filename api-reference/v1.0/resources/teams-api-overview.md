@@ -1,85 +1,85 @@
 ---
 title: Verwenden der Microsoft Graph-API zum Arbeiten mit Microsoft Teams
-description: Microsoft-Teams, ist ein Chat-basierten Arbeitsbereich in Office 365, das integrierte Zugriff auf Team-spezifischen Kalender, Dateien, OneNote-Notizen, Planner Pläne und bietet.
+description: Microsoft Teams ist ein Chat-basierter Arbeitsbereich in Office 365, der integrierten Zugriff auf Team-spezifische Kalender, Dateien, OneNote-Notizen, Planner-Pläne und vieles mehr bietet.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: a7928bd4f9f7fefbbf87a42e9850e76ef5d1fcaf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 07281fef3a3e7dd5ee396bb49a0409c23d57c45f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947498"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994440"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Verwenden der Microsoft Graph-API zum Arbeiten mit Microsoft Teams
 
 
 
-Microsoft-Teams, ist ein Chat-basierten Arbeitsbereich in Office 365, das integrierte Zugriff auf Team-spezifischen Kalender, Dateien, OneNote-Notizen, Planner Pläne und bietet.
+Microsoft Teams ist ein Chat-basierter Arbeitsbereich in Office 365, der integrierten Zugriff auf Team-spezifische Kalender, Dateien, OneNote-Notizen, Planner-Pläne und vieles mehr bietet.
 
-## <a name="key-resources-in-microsoft-teams"></a>Wichtige Ressourcen im Microsoft-Teams
+## <a name="key-resources-in-microsoft-teams"></a>Wichtige Ressourcen in Microsoft Teams
 
 | Ressource | Methoden |
 |:---------------|:--------|
-|[Team](../resources/team.md)| [Ihren Teams bei der Liste](../api/user-list-joinedteams.md), [teams, die Liste alle](/graph/teams-list-all-teams), [Erstellen](../api/team-put-teams.md), [Lesen](../api/team-get.md), [Aktualisieren](../api/team-update.md), [Löschen](/graph/api/group-delete?view=graph-rest-1.0), [Wenn Sie den Klon](../api/team-clone.md), [Archiv](../api/team-archive.md), [entpackt](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Mitglied hinzufügen](../api/group-post-members.md), [Entfernen von Mitgliedern](../api/group-delete-members.md), [Besitzer hinzufügen](../api/group-post-owners.md), [Entfernen Besitzer](../api/group-delete-owners.md), [Dateien abrufen](drive.md), [Notizbuch erhalten möchten](/graph/api/resources/notebook?view=graph-rest-1.0), [Pläne erhalten möchten](plannergroup.md), [Kalender erhalten möchten](event.md) |
-|[DDE-Kanal](../resources/channel.md)|[Liste](../api/channel-list.md), [Erstellen](../api/channel-post.md), [Lesen](../api/channel-get.md), [Aktualisieren](../api/channel-patch.md), [Löschen](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[Liste](../api/teamstab-list.md), [Erstellen](../api/teamstab-add.md), [Lesen](../api/teamstab-get.md), [Aktualisieren](../api/teamstab-update.md), [Löschen](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[Liste](../api/teamsapp-list.md), [Veröffentlichen](../api/teamsapp-publish.md), [Aktualisieren](../api/teamsapp-update.md), [Entfernen](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Liste](../api/teamsappinstallation-list.md), [Installieren](../api/teamsappinstallation-add.md), [Aktualisieren](../api/teamsappinstallation-delete.md), [Entfernen](../api/teamsappinstallation-delete.md) |
-| (Vorschau) [ChatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) und [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [Liste](/graph/api/channel-list-messages?view=graph-rest-beta), [Erstellen](/graph/api/channel-post-chatthreads?view=graph-rest-beta), [Lesen](/graph/api/channel-get-message?view=graph-rest-beta) |
-| (Vorschau) [rufen Sie](/graph/api/resources/call?view=graph-rest-beta) | [annehmen](/graph/api/call-answer?view=graph-rest-beta), [Ablehnen](/graph/api/call-reject?view=graph-rest-beta), [Umleiten](/graph/api/call-redirect?view=graph-rest-beta), [stumm schalten](/graph/api/call-mute?view=graph-rest-beta), [stummschaltung aufheben](/graph/api/call-unmute?view=graph-rest-beta), [Metadaten zu aktualisieren](/graph/api/call-updatemetadata?view=graph-rest-beta), [Ändern Bildschirmfreigabe Rolle](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [Liste Teilnehmer](/graph/api/call-list-participants?view=graph-rest-beta), [Einladen von Teilnehmern](/graph/api/participant-invite?view=graph-rest-beta), [Stummschalten aller Teilnehmer](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
+|[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
+|[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
+|[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
+| [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (Vorschau)| [List](/graph/api/channel-list-messages?view=graph-rest-beta), [send](/graph/api/channel-post-chatmessage?view=graph-rest-beta), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [call](/graph/api/resources/call?view=graph-rest-beta) (Vorschau)| [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>Teams und Gruppen
 
-Microsoft-Teams, wird in Microsoft Graph wird durch ein [Group](../resources/group.md) -Ressource dargestellt. Microsoft-Teams und Office 365 Gruppen behandelt die verschiedenen Anforderungen der für die Gruppenzusammenarbeit. Fast alle Gruppen basierende Funktionen gelten für Microsoft-Teams und Office 365-Gruppen, wie für einen Gruppenkalender, Dateien, Notizen, Foto, Pläne, und so weiter. Der Hauptunterschied zwischen einem [Team](team.md) und einer Office 365-Gruppe ist die Kommunikation zwischen Mitgliedern. Teammitglieder kommunizieren per persistent Chat im Zusammenhang mit einem bestimmten Team. Office 365 Gruppenmitglieder kommunizieren, indem Sie Gruppe Unterhaltungen, die e-Mail-Unterhaltungen sind, die im Kontext einer Gruppe in Outlook auftreten.
+In Microsoft Graph wird Microsoft Teams durch eine [group](../resources/group.md)-Ressource dargestellt. Sowohl Microsoft Teams- als auch Office 365-Gruppen erfüllen die unterschiedlichen Anforderungen der Zusammenarbeit in Gruppen. Fast alle gruppenbasierten Funktionen gelten sowohl für Microsoft Teams- als auch für Office 365-Gruppen, wie z. B. Gruppenkalender, Dateien, Notizen, Fotos, Pläne usw. Der Hauptunterschied zwischen einer [Team](team.md)- und Office 365-Gruppe ist der Kommunikationsmodus zwischen den Mitgliedern. Team-Mitglieder kommunizieren innerhalb eines beständigen Chats im Kontext eines bestimmten Teams. Office 365-Gruppenmitglieder kommunizieren in Gruppenunterhaltungen, wobei es sich um E-Mail-Kommunikationen handelt, die im Kontext einer Gruppe in Outlook ausgeführt werden.
 
-Jede Gruppe, die ein Team hat hat eine **ResourceProvisioningOptions** -Eigenschaft, "Team" enthält. 
+Jede Gruppe, die über ein Team verfügt, besitzt die **ResourceProvisioningOptions**-Eigenschaft, die "Team" enthält. 
 
->**Hinweis:** Die **Group.resourceProvisioningOptions** -Eigenschaft kann geändert werden.
-Hinzufügen oder Entfernen von "Team" aus der Auflistung nicht; Andernfalls erhalten Sie falsche Ergebnisse, wenn Sie alle Teams anbieten.
+>**Hinweis:** Die **Group.resourceProvisioningOptions**-Eigenschaft kann geändert werden.
+"Team" sollte nicht zu dieser Sammlung hinzugefügt oder aus ihr entfernt werden; andernfalls erhalten Sie bei der Auflistung aller Teams falsche Ergebnisse.
 
-Im folgenden sind die Unterschiede zwischen Teams und Gruppen auf der Ebene der API:
+Im folgenden werden die Unterschiede zwischen Teams und Gruppen auf der API-Ebene aufgelistet:
 
-- Die [Liste verknüpft Teams](../api/user-list-joinedteams.md) -Methode gilt nur für Microsoft-Teams.
-- Siehe auch die [bekannte Probleme](/graph/known-issues) für diese APIs.
+- Die [List joined teams](../api/user-list-joinedteams.md)-Methode gilt nur für Microsoft Teams.
+- Weitere Informationen finden Sie im Abschnitt [Bekannte Probleme](/graph/known-issues) für diese APIs.
 
->**Hinweis:** Bei Verwendung von Gruppen API nicht in einer eigenständigen-app, sondern in einer [Microsoft-Teams, app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) - Beispiel im Rahmen einer Registerkarte oder die Ausführung in Microsoft-Teams, Bot - befolgen Sie die Anweisungen im Artikel [Verwenden von Microsoft Graph in Ihren Microsoft-Teams, Seiten](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
+>Hinweis: Wenn Sie die Gruppen-APIs in einer Microsoft Teams-App und nicht in einer eigenständigen App verwenden, z. B. als Teil einer Registerkarte oder eines Bots, der in Microsoft Teams ausgeführt wird, folgen Sie den Anweisungen im Artikel Verwenden von Microsoft Graph in Ihren Microsoft Teams-Seiten.
 
-## <a name="membership-changes-in-microsoft-teams"></a>Mitgliedschaftsänderungen in Microsoft-Teams
+## <a name="membership-changes-in-microsoft-teams"></a>Ändern der Mitgliedschaft in Microsoft Teams
 
-Um ein Team Mitgliedern und Besitzern hinzuzufügen, ändern Sie die Mitgliedschaft der [Gruppe](../resources/group.md) mit der gleichen ID.
+Wenn Sie Mitglieder und Besitzer zu einem Team hinzufügen möchten, ändern Sie die Mitgliedschaft der [Gruppe](../resources/group.md) mit der gleichen ID.
 
-| Anwendungsfall      | Aktion      | URL |
+| Anwendungsfall      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Mitglied hinzufügen](../api/group-post-members.md)    | POST      | /Groups/ {Id} /members/$ ref  |
-| [Mitglied entfernen](../api/group-delete-members.md)   | DELETE    | /Groups/ {Id} /members/ {Benutzer-ID} / $ref |
-| [Add owner](../api/group-post-owners.md)     | POST       | /Groups/ {Id} /owners/$ ref |
-| [Besitzer entfernen](../api/group-delete-owners.md) | DELETE    | /Groups/ {Id} /owners/ {Benutzer-ID} / $ref |
-| [Update-team](../api/team-update.md)  | PATCH     | /Teams/ {Id} |
+| [Mitglied hinzufügen](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
+| [Mitglied entfernen](../api/group-delete-members.md)   | LÖSCHEN    | /groups/{id}/members/{userId}/$ref |
+| [Besitzer hinzufügen](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
+| [Besitzer entfernen](../api/group-delete-owners.md) | LÖSCHEN    | /groups/{id}/owners/{userId}/$ref |
+| [Team aktualisieren](../api/team-update.md)  | PATCH     | /teams/{id} |
 
-Es wird empfohlen, wenn Sie einen Besitzer hinzufügen, auch diesen Benutzer als Mitglied hinzuzufügen. Wenn ein Team einen Besitzer, der kein Mitglied ist umfasst, möglicherweise Änderungen des websitebesitzes und der Mitgliedschaft nicht sofort in Microsoft-Teams angezeigt wird. Darüber hinaus wird verschiedene apps und APIs, die unterschiedlich behandelt. Microsoft-Teams, beispielsweise zeigt Teams an, dass der Benutzer ein Element oder Besitzer, ist die Microsoft-Teams PowerShell-Cmdlets und/me/JoinedTeams API Teams nur angezeigt wird, den, denen der Benutzer Mitglied ist. Um Verwechslungen zu vermeiden, fügen Sie alle Besitzer sowie der Liste Elemente hinzu. 
+Wenn Sie einen Besitzer hinzufügen, sollten Sie diesen auch als Mitglied hinzufügen. Wenn ein Team über einen Besitzer verfügt, der kein Mitglied ist, werden Besitzer- und Mitgliedschaftsänderungen möglicherweise nicht sofort in Microsoft Teams angezeigt. Darüber hinaus wird dies je nach App oder API unterschiedlich behandelt. In Microsoft Teams werden z. B. Teams, in denen der Benutzer entweder Mitglied oder Besitzer ist, angezeigt, während die Microsoft Teams PowerShell-Cmdlets und die me/joinedTeams-API nur Teams anzeigt, in denen der Benutzer Mitglied ist. Um Verwirrung zu vermeiden, fügen Sie alle Besitzer auch zur Mitgliederliste hinzu. 
 
-Bekanntes Problem: Wenn löschen /groups/ {Id} / Besitzer aufgerufen wird, der Benutzer auch aus der /groups/ {Id} entfernt / Mitgliederliste. Zum Umgehen dieses Problems wird empfohlen, entfernen Sie den Benutzer aus der Besitzer und Mitglieder, und klicken Sie dann warten Sie 10 Sekunden und dann wieder an Mitglieder hinzufügen.
+Bekanntes Problem: Wenn /groups/{Id}/owners LÖSCHEN aufgerufen wird, wird der Besitzer auch von der /groups/{Id}/members-Liste entfernt. Um dieses Problem zu umgehen, sollten Sie den Benutzer sowohl aus der Besitzer- als auch aus der Mitgliederliste entfernen, 10 Sekunden warten, und ihn dann wieder zur Liste der Mitglieder hinzufügen.
 
-Beim Hinzufügen und Entfernen von Mitgliedern und Besitzern, setzen Sie keiner geschweifte Klammern {}, um die-ID.
+Fassen Sie die ID beim Hinzufügen und Entfernen von Mitgliedern und Besitzern nicht in geschweifte Klammern {} ein.
 
-| Speed | Syntax | 
+| Geschwindigkeit | Syntax | 
 | ------ | ----- |
 | Schnell | https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
 | Langsam | https://graph.microsoft.com/v1.0/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
 
-Auf ähnliche Weise, wenn die `userId` in die URL oder Nutzlast ausgedrückt als UPN statt als GUID, die Leistung langsamer sein.
+Wenn `userId` in der URL oder Nutzlast als UPN und nicht als GUID ausgedrückt wird, ist die Leistung geringer.
 
-| Speed | Syntax | 
+| Geschwindigkeit | Syntax | 
 | ------ | ----- |
 | Schnell | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
-| Langsam | John@example.com | 
+| Langsam | john@example.com | 
 
-Wenn Sie der Pfad langsamere ausgeführt wird, wenn ein Teammitglied aktuelle oder Besitzer auf der Microsoft-Teams Anwendung/Website angemeldet ist, wird die Änderung innerhalb einer Stunde übernommen.
-Wenn keine dieser Benutzer auf die Microsoft-Teams Anwendung/Website angemeldet sind, wird die Änderung nicht übernommen werden, bis eine Stunde nach einer von ihnen anmeldet.
+Wenn der langsamere Pfad ausgewählt wird und ein aktuelles Teammitglied oder ein Besitzer bei der Microsoft Teams-Anwendung/Website angemeldet ist, wird die Änderung innerhalb einer Stunde angezeigt.
+Wenn keiner dieser Benutzer bei der Microsoft Teams- Anwendung/Website angemeldet ist, wird die Änderung erst eine Stunde nachdem sich einer dieser Benutzer angemeldet hat sichtbar.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Microsoft Teams-APIs](/graph/teams-concept-overview)
-- Beispielcode: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C#-Mini-Beispiele](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+- Beispielcode: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [Minibeispiele in C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)
