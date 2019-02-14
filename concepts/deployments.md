@@ -1,12 +1,12 @@
 ---
 title: Nationale Cloudbereitstellungen
 description: Zusätzlich zu unserem globalen Netzwerk von Rechenzentren sind Microsoft Cloud Services in drei separaten nationalen Clouds verfügbar. Diese nationalen Cloudversionen sind physischen und logischen Netzwerk isoliert werden Instanzen des Microsoft Enterprise Cloud-Dienste, die vom lokalen Personal und innerhalb der geografischen Rahmen des bestimmten Ländern beschränkt.
-ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.openlocfilehash: e32330397a75670238f090599635ca68a89f115e
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892498"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994391"
 ---
 # <a name="national-cloud-deployments"></a>Nationale Cloudbereitstellungen
 
@@ -64,11 +64,11 @@ Die folgenden Features von Microsoft Graph stehen in der Regel auf der `/v1.0` E
 | Outlook Mail | ✔ | ✔ | ✔ |
 | Outlook-Kalender | ✔ | ✔ | ✔ |
 | Private Kontakte | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔* | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Berichte  |➖| ✔ |➖|
+| Webhooks  | ➖|✔* |✔* |
 | Delta-Abfrage | ➖ | ➖| ➖ |
-| Webhooks  | ➖| ➖| ➖
 |Verzeichnisschemaerweiterungen |➖|➖|➖|
 | Offene Typerweiterungen|➖|➖|➖|
   
@@ -78,7 +78,7 @@ Die folgenden zusätzlichen Microsoft Graph-Funktionen stehen in der Vorschau (k
 * Anwendungen
 * Dienstprinzipale
 
-(*) Eingeschränkte Unterstützung für diese API in dieser Cloud.
+(*) Eingeschränkte Unterstützung für Exchange und OneDrive-Dienste. Azure Active Directory-Diensten werden nicht unterstützt. 
 
  > **Wichtig:** Bestimmte Dienste und Features, die in bestimmten Regionen des globalen Diensts sind möglicherweise nicht in allen nationalen Wolken verfügbar. Um herauszufinden, welche Dienste zur Verfügung stehen, finden Sie unter [Produkte nach Region zur Verfügung](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 

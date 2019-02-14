@@ -4,12 +4,12 @@ description: 'Microsoft Teams ist der ultimative Hub für Zusammenarbeit und int
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e1ac6977add3de95b76f27a5e9184ee9f79e798a
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 251bb02af83fc86f996c8bbf0c9ea10a5efad8ad
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760818"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994405"
 ---
 # <a name="microsoft-teams-api-overview"></a>Übersicht über Microsoft Teams-APIs
 
@@ -36,7 +36,7 @@ Erstellen Sie automatisch Teams für Klassen am Anfang des Schuljahrs, und archi
 Ermöglichen Sie Kunden das Erstellen neuer [Teams](/graph/api/resources/team?view=graph-rest-1.0) und [Kanäle](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Installieren Sie ](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) Ihre [Teams-App](https://docs.microsoft.com/de-DE/microsoftteams/platform/#pivot=home&panel=home-all) für neue Teams. 
 [Heften Sie Ihre App an eine Registerkarte](/graph/api/teamstab-add?view=graph-rest-1.0) im neuen Kanal an. 
-[Senden Sie Nachrichten](/graph/api/channel-post-chatthreads?view=graph-rest-beta) an den Kanal zurück, der mit Ihrer Website verknüpft ist.
+[Senden Sie Nachrichten](/graph/api/channel-post-chatmessage?view=graph-rest-beta) an den Kanal zurück, der mit Ihrer Website verknüpft ist.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Erstellen und Verwalten mehrerer Teams und Kanäle
 
