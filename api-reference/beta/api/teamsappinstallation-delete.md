@@ -1,21 +1,23 @@
 ---
-title: Löschen von app-Teams
-description: Deinstalliert eine app aus dem angegebenen Team.
+title: Löschen der APP aus dem Team
+description: Deinstalliert eine APP aus dem angegebenen Team.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47db9ece65eea6d91d03b4c4652a8c5df59e9e7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521986"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057022"
 ---
-# <a name="delete-app-from-team"></a>Löschen von app-Teams
+# <a name="delete-app-from-team"></a>Löschen der APP aus dem Team
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deinstalliert eine [app](../resources/teamsappinstallation.md) aus dem angegebenen [Team](../resources/team.md).
+Deinstalliert eine [App](../resources/teamsappinstallation.md) aus dem angegebenen [Team](../resources/team.md).
+
+>**Hinweis:** Wenn Sie Anwendungsberechtigungen verwenden, tritt ein bekanntes Problem auf. Einzelheiten hierzu finden Sie unter [bekannte Probleme](graph/concepts/known-issues.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -24,7 +26,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->

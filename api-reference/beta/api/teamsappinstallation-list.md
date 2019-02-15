@@ -1,21 +1,21 @@
 ---
-title: Liste apps im team
-description: Abrufen der Liste apps im angegebenen Team installiert.
+title: Apps im Team auflisten
+description: Ruft die Liste der im angegebenen Team installierten apps ab.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe3ba5cd3be91c7e69b77f67cb53ab702741c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524611"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057008"
 ---
-# <a name="list-apps-in-team"></a>Liste apps im team
+# <a name="list-apps-in-team"></a>Apps im Team auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrufen der Liste der in das angegebene [Team](../resources/team.md) [apps installiert](../resources/teamsappinstallation.md) .
+Ruft die Liste der im angegebenen [Team](../resources/team.md) [installierten apps](../resources/teamsappinstallation.md) ab.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -25,7 +25,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Group.Read.All, Group.ReadWrite.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -37,7 +37,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die $filter $select, und $erweitern [OData-Abfrageparameter](/graph/query-parameters) helfen, die Antwort anzupassen.
+Diese Methode unterstützt die $filter, $select und $expand [OData-Abfrageparameter](/graph/query-parameters) , um die Antwort anzupassen.
 
 ## <a name="request-headers"></a>Anforderungsheader
 
@@ -51,7 +51,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [TeamsApp](../resources/teamsapp.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [teamsApp](../resources/teamsapp.md) -Objekten im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ### <a name="response"></a>Antwort
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>Beispiel: Abrufen der Namen der installierten apps
+## <a name="example----getting-the-names-of-the-installed-apps"></a>Beispiel: Aufrufen der Namen der installierten apps
 
 ### <a name="request"></a>Anforderung
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDe
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->**Hinweis:**  Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:**  Das hier gezeigte Antwortobjekt ist möglicherweise zur besseren Lesbarkeit gekürzt worden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "response",
   "truncated": true,

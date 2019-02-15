@@ -1,21 +1,21 @@
 ---
 title: 'user: findMeetingTimes'
-description: Schlagen Sie vor Besprechungszeiten und Speicherorte basierend auf der Organisator und Teilnehmer Verfügbarkeit und Zeit oder Ort Einschränkungen, die als Parameter angegeben.
+description: Vorschlagen von Besprechungszeiten und Orten basierend auf der Verfügbarkeit von Organisatoren und Teilnehmern sowie Zeit-oder standorteinschränkungen, die als Parameter angegeben sind.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cf836ca85839ff4f4d92036cd1a8a6036f3df9d8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 345b42690644fb94a2b6b2bdf6b3cfcc9ead6333
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513298"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057057"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Schlagen Sie vor Besprechungszeiten und Speicherorte basierend auf der Organisator und Teilnehmer Verfügbarkeit und Zeit oder Ort Einschränkungen, die als Parameter angegeben.
+Vorschlagen von Besprechungszeiten und Orten basierend auf der Verfügbarkeit von Organisatoren und Teilnehmern sowie Zeit-oder standorteinschränkungen, die als Parameter angegeben sind.
 
 Wenn **findMeetingTimes** keine Besprechungsvorschläge zurückgeben kann, enthält die Antwort einen Grund, angegeben in der Eigenschaft **emptySuggestionsReason**. Ausgehend von diesem Wert können Sie die Parameter optimieren und **findMeetingTimes** erneut aufrufen.
 
@@ -47,14 +47,14 @@ In der Tabelle unten sind alle unterstützten Parameter aufgeführt. Geben Sie a
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) collection|Eine Sammlung von Teilnehmern oder Ressourcen für die Besprechung. Da findMeetingTimes davon ausgeht, dass jeder Teilnehmer, bei dem es sich um eine Person handelt, immer erforderlich ist, geben Sie `required` für eine Person und `resource` für eine Ressource in der entsprechenden **type**-Eigenschaft an. Ist diese Sammlung leer, sucht **findMeetingTimes** nur für den Organisator nach freien Zeitfenstern. Optional.|
+|attendees|[attendeeDataModel](../resources/attendeedatamodel.md) -Sammlung|Eine Sammlung von Teilnehmern oder Ressourcen für die Besprechung. Geben Sie `required` in der entsprechenden **Type** -Eigenschaft `optional` oder für eine Person `resource` und für eine Ressource wie den Besprechungsraum an. Wenn nicht angegeben, **findMeetingTimes** `required` für die **Type** -Eigenschaft. Eine leere Auflistung bewirkt, dass **findMeetingTimes** nach freien Zeitschlitzen nur für den Organisator sucht. Optional.|
 |isOrganizerOptional|Edm.Boolean|Geben Sie `True` an, wenn der Organisator nicht zwingend teilnehmen muss. Der Standardwert lautet `false`. Optional.|
-|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Die Anforderungen des Organisators bezüglich des Besprechungsorts, z. B. ob ein Vorschlag für einen Besprechungsort erforderlich ist oder nur bestimmte Besprechungsorte zulässig sind. Optional.|
+|locationConstraint|[locationConstraints](../resources/locationconstraints.md)|Die Anforderungen des Organisators bezüglich des Besprechungsorts, z. B. ob ein Vorschlag für einen Besprechungsort erforderlich ist oder nur bestimmte Besprechungsorte zulässig sind. Optional.|
 |maxCandidates|Edm.Int32|Die maximale Anzahl an zurückgegebenen Besprechungsterminvorschlägen. Optional.|
-|meetingDuration|Edm.Duration|Die Dauer der Besprechung im Format [ISO8601](https://www.iso.org/iso/iso8601). 1 Stunde wird beispielsweise als „PT1H“ angegeben. Dabei ist „P“ der Bezeichner für die Dauer, „T“ der Bezeichner für die Zeit und „H“ der Bezeichner für die Zeiteinheit Stunde. Verwenden Sie „M“ zum Angeben von Minuten für die Dauer. Beispiel: 2 Stunden und 30 Minuten wäre „PT2H30M“. Wenn keine Besprechungsdauer angegeben wird, verwendet **findMeetingTimes** den Standardwert von 30 Minuten. Optional.|
+|meetingDuration|Edm.Duration|Die Länge der Besprechung, die im [ISO 8601](https://www.iso.org/iso/iso8601) -Format angegeben ist. Beispielsweise wird 1 Stunde als "PT1H" bezeichnet, wobei ' P ' der Dauer Kennzeichner ist, "t" der Zeit Kennzeichner ist und "H" der Stunden-Kennzeichner. Verwenden Sie M, um Minuten für die Dauer anzugeben; Beispielsweise wäre 2 Stunden und 30 Minuten ' PT2H30M '. Wenn keine Besprechungsdauer angegeben wird, verwendet **findMeetingTimes** den Standardwert von 30 Minuten. Optional.|
 |minimumAttendeePercentage|Edm.Double| Die mindestens erforderliche [Konfidenz](#the-confidence-of-a-meeting-suggestion), damit ein bestimmtes Zeitfenster in der Antwort zurückgegeben wird. Hierbei handelt es sich um einen Prozentwert zwischen 0 und 100. Optional.|
 |returnSuggestionReasons|Edm.Boolean|Geben Sie `True` an, wenn für jeden Besprechungsvorschlag ein Grund in der Eigenschaft **suggestionReason** zurückgegeben werden soll. Der Standardwert ist `false`, damit diese Eigenschaft nicht zurückgegeben wird. Optional.|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Alle Zeiteinschränkungen für eine Besprechung, z. B. die Art der Besprechung (Eigenschaft **activityDomain**) und mögliche Besprechungszeiträume (Eigenschaft **timeSlots**). **findMeetingTimes** geht davon aus, dass **activityDomain** auf `work` festgelegt ist, wenn Sie diesen Parameter nicht angeben. Optional.|
+|timeConstraint|[findMeetingTimesTimeConstraints](../resources/findmeetingtimestimeconstraints.md)|Alle Zeiteinschränkungen für eine Besprechung, z. B. die Art der Besprechung (Eigenschaft **activityDomain**) und mögliche Besprechungszeiträume (Eigenschaft **timeSlots**). **findMeetingTimes** geht davon aus, dass **activityDomain** auf `work` festgelegt ist, wenn Sie diesen Parameter nicht angeben. Optional.|
 
 In der folgenden Tabelle werden die Einschränkungen beschrieben, die Sie im Parameter **timeConstraint** genauer angeben können.
 
@@ -63,16 +63,16 @@ In der folgenden Tabelle werden die Einschränkungen beschrieben, die Sie im Par
 |work| Vorschläge liegen innerhalb der Arbeitszeit des Benutzers, die in der Kalenderkonfiguration des Benutzers definiert wird, und können vom Benutzer oder Administrator angepasst werden. Die Standardarbeitszeit ist Montag bis Freitag von 08:00 Uhr bis 17:00 Uhr in der Zeitzone, die für das Postfach festgelegt ist. Dies ist der Standardwert, wenn keine **activityDomain** angegeben ist. |
 |personal| Vorschläge liegen innerhalb der Arbeitszeit des Benutzers sowie am Samstag und Sonntag. Der Standardwert ist Montag bis Sonntag von 08:00 Uhr bis 17:00 Uhr in der Zeitzone, die für das Postfach festgelegt ist.|
 |unrestricted | Vorschläge können für jede Zeit des Tages an jedem Tag der Woche gemacht werden.|
-|unknown | Verwenden Sie diesen Wert nicht, da er in Zukunft veraltet sein wird. Aktuell verhält er sich genauso wie `work`. Ändern Sie vorhandenen Code so, dass er `work`, `personal` bzw. `unrestricted` verwendet.
+|unknown | Verwenden Sie diesen Wert nicht, da er in Zukunft veraltet sein wird. Aktuell verhält er sich genauso wie `work`. Ändern Sie vorhandenen Code so, dass er `work`, `personal` bzw. `unrestricted` verwendet.|
 
 
 Ausgehend von den angegebenen Parametern überprüft **findMeetingTimes** den Frei-/Gebucht-Status im Hauptkalender des Organisators und in den Hauptkalendern der Teilnehmer. Die Aktion berechnet die bestmöglichen Besprechungstermine und gibt Besprechungsvorschläge zurück.
 
 ## <a name="response"></a>Antwort
 
-Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und eine Ressource des Typs [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) im Antworttext zurück. 
+Bei erfolgreicher Ausführung gibt diese Methode `200 OK` den Antwortcode und eine [findMeetingTimesResponse](../resources/findmeetingtimesresponse.md) im Antworttext zurück. 
 
-Eine Ressource des Typs **meetingTimeSuggestionsResult** enthält eine Sammlung von Besprechungsvorschlägen und eine Eigenschaft **emptySuggestionsReason**. Jeder Vorschlag ist als eine Ressource des Typs [meetingTimeSuggestion](../resources/meetingtimesuggestion.md) definiert, für die die durchschnittliche Teilnahmekonfidenz der Teilnehmer bei 50 % oder einem spezifischen Prozentwert liegt, den Sie im Parameter **minimumAttendeePercentage** festgelegt haben. 
+Ein **findMeetingTimesResponse** enthält eine Sammlung von Besprechungs Vorschlägen und eine **emptySuggestionsReason** -Eigenschaft. Jeder Vorschlag ist als ein [meetingTimeSuggestion](../resources/meetingtimesuggestion.md)definiert, wobei die Teilnehmer durchschnittlich eine Konfidenz stufe von 50% oder einen bestimmten% haben, den Sie im Parameter **minimumAttendeePercentage** angegeben haben. 
 
 Standardmäßig wird jeder Besprechungsterminvorschlag in UTC zurückgegeben. 
 
@@ -106,13 +106,14 @@ Das folgende Beispiel veranschaulicht, wie Sie einen Besprechungstermin für ein
 - **attendees**
 - **locationConstraint**
 - **timeConstraint**
+- **isOrganizerOptional**
 - **meetingDuration**
 - **returnSuggestionReasons**
 - **minimumAttendeePercentage**
 
 Durch Setzen des Parameters **returnSuggestionReasons** wird für jeden Vorschlag auch eine Erklärung in der Eigenschaft **suggestionReason** vermerkt, sofern **findMeetingTimes** Vorschläge zurückgibt.
 
-Beachten Sie: In der Anforderung gilt für die Zeit die Zeitzone PST. Die Antwort gibt Besprechungsterminvorschläge jedoch standardmäßig in UTC zurück. Sie können den Anforderungsheader `Prefer: outlook.timezone` verwenden, um auch für die Zeitwerte in der Antwort die Zeitzone PST festzulegen.
+Beachten Sie, dass die Anforderung die Uhrzeit in der PST-Zeitzone angibt. Standardmäßig gibt die Antwort Besprechungszeit Vorschläge in UTC zurück. Sie können den `Prefer: outlook.timezone` Anforderungsheader verwenden, um PST als auch für die Zeitwerte in der Antwort anzugeben.
 
 ##### <a name="request"></a>Anforderung
 Hier sehen Sie die Beispielanforderung:
@@ -130,8 +131,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com" 
+        "name": "Alex Wilbur",
+        "address": "alexw@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -146,21 +147,22 @@ Content-Type: application/json
     ] 
   },  
   "timeConstraint": {
-    "activityDomain":"unrestricted", 
+    "activityDomain":"work", 
     "timeslots": [ 
       { 
         "start": { 
-          "dateTime": "2017-04-17T09:00:00",  
+          "dateTime": "2019-04-16T09:00:00",  
           "timeZone": "Pacific Standard Time" 
         },  
         "end": { 
-          "dateTime": "2017-04-19T17:00:00",  
+          "dateTime": "2019-04-18T17:00:00",  
           "timeZone": "Pacific Standard Time" 
         } 
       } 
     ] 
   },  
-  "meetingDuration": "PT2H",
+  "isOrganizerOptional": "false",
+  "meetingDuration": "PT1H",
   "returnSuggestionReasons": "true",
   "minimumAttendeePercentage": "100"
 }
@@ -171,82 +173,109 @@ Unten sehen Sie eine Beispielantwort. Hinweis: Das hier gezeigte Antwortobjekt i
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
+  "@odata.type": "microsoft.graph.findMeetingTimesResponse",
   "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-Length: 976
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
-    "emptySuggestionsReason":"",
-    "meetingTimeSuggestions":[
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.findMeetingTimesResponse",
+    "emptySuggestionsReason": "",
+    "meetingTimeSuggestions": [
         {
-            "confidence":100.0,
-            "organizerAvailability":"free",
-            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
-            "meetingTimeSlot":{
-                "start":{
-                    "dateTime":"2017-04-17T18:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                },
-                "end":{
-                    "dateTime":"2017-04-17T20:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                }
-            },
-            "attendeeAvailability":[
+            "confidence": 100,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
                 {
-                    "availability":"free",
-                    "attendee":{
-                        "type":"required",
-                        "emailAddress":{
-                            "address":"samanthab@contoso.onmicrosoft.com"
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
                         }
                     }
                 }
             ],
-            "locations":[
+            "locations": [
                 {
-                    "displayName":"Conf room Hood"
+                    "displayName": "Conf room Hood"
                 }
-            ]
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T08:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T09:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
         },
         {
-            "confidence":100.0,
-            "organizerAvailability":"free",
-            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
-            "meetingTimeSlot":{
-                "start":{
-                    "dateTime":"2017-04-17T20:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                },
-                "end":{
-                    "dateTime":"2017-04-17T22:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                }
-            },
-            "attendeeAvailability":[
+            "confidence": 100,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
                 {
-                    "availability":"free",
-                    "attendee":{
-                        "type":"required",
-                        "emailAddress":{
-                            "address":"samanthab@contoso.onmicrosoft.com"
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
                         }
                     }
                 }
             ],
-            "locations":[
+            "locations": [
                 {
-                    "displayName":"Conf room Hood"
+                    "displayName": "Conf room Hood"
                 }
-            ]
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T12:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T13:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T17:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
         }
-   ]
+    ]
 }
 ```
 

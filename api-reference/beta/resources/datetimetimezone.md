@@ -2,12 +2,12 @@
 title: Ressourcentyp dateTimeTimeZone
 description: Beschreibt das Datum, die Uhrzeit und Zeitzone eines Zeitpunkts.
 localization_priority: Normal
-ms.openlocfilehash: aad1318e1623b41a67eb23c20ad42dc48553d81c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee5359c0ababad2a4f785d17a02ac5bb618d2681
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521278"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057043"
 ---
 # <a name="datetimetimezone-resource-type"></a>Ressourcentyp dateTimeTimeZone
 
@@ -18,10 +18,10 @@ Beschreibt das Datum, die Uhrzeit und Zeitzone eines Zeitpunkts.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|DateTime|String|Ein bestimmter Zeitpunkt in einer kombinierten Datums- und Uhrzeitsdarstellung (`<date>T<time>`).|
-|TimeZone|Zeichenfolge|Einer der folgenden Zeitzonennamen.|
+|dateTime|String|Ein bestimmter Zeitpunkt in einer kombinierten Datums- und Uhrzeitsdarstellung (`{date}T{time}`). Beispielsweise "2019-04-16T09:00:00".|
+|timeZone|Zeichenfolge|Ein Zeitzonenname, wie unten beschrieben.|
 
-Die Eigenschaft _TimeZone_ kann auf eine beliebige, von Windows unterstützte Zeitzone und auf einen der folgenden Zeitzonennamen eingestellt werden .
+Die **TimeZone** -Eigenschaft kann auf eine der von Windows unterstützten Zeitzonen sowie die folgenden Zeitzonen-Namen festgelegt werden.
 
 Etc/GMT+12
 
