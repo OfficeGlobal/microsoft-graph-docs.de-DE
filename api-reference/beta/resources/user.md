@@ -4,12 +4,12 @@ description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c8184f858dceec1904678829d54817e86dff3606
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 5b9d3def25d4039b1c5c7efd520671333c69ae55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745580"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057078"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -63,7 +63,7 @@ Diese Ressource unterstützt Folgendes:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Fügt Abonnements für den Benutzer hinzu bzw. entfernt sie. Sie können auch bestimmte Pläne aktivieren oder deaktivieren, die mit einem Abonnement verknüpft sind.|
 |[licenseDetails auflisten](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md)-Sammlung| Dient zum Abrufen einer licenseDetails-Objektsammlung.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Sucht nach einer Mitgliedschaft in einer Liste von Gruppen. Die Überprüfung ist transitiv.|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Sucht Zeiten und Orte für Besprechungen basierend auf der Teilnehmerverfügbarkeit, dem Standort oder zeitlichen Einschränkungen.|
+|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|Sucht Zeiten und Orte für Besprechungen basierend auf der Teilnehmerverfügbarkeit, dem Standort oder zeitlichen Einschränkungen.|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md)-Sammlung | Abrufen der in einem Mandanten definierten Raumlisten.|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md)-Sammlung | Abrufen aller Besprechungsräume im Mandanten des Benutzers oder in einer bestimmten Raumliste. |
 |[getMailTips](../api/user-getmailtips.md)|[mailTips](mailtips.md)-Sammlung|Geben Sie die MailTips für einen oder mehrere Empfänger als verfügbar für den angemeldeten Benutzer zurück. |
