@@ -1,32 +1,32 @@
 ---
-title: Ressourcentyp registryKeyState
-description: Enthält Informationen zur Registrierung wichtige Änderungen im Zusammenhang mit der Benachrichtigung, und der Prozess, der die Registrierungsschlüssel geändert.
+title: registryKeyState-Ressourcentyp
+description: Enthält Informationen zu Registrierungsschlüssel Änderungen im Zusammenhang mit der Warnung und dem Prozess, der die Registrierungsschlüssel geändert hat.
 localization_priority: Normal
-ms.openlocfilehash: 688c690083e24dc6c8ee7229498910befd0fdf3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884826"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070813"
 ---
-# <a name="registrykeystate-resource-type"></a>Ressourcentyp registryKeyState
+# <a name="registrykeystate-resource-type"></a>registryKeyState-Ressourcentyp
 
-Enthält Informationen zur Registrierung wichtige Änderungen im Zusammenhang mit der Benachrichtigung, und der Prozess, der die Registrierungsschlüssel geändert.
+Enthält Informationen zu Registrierungsschlüssel Änderungen im Zusammenhang mit der Warnung und dem Prozess, der die Registrierungsschlüssel geändert hat.
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|Struktur|registryHive|Ein [Windows-Registrierungsstruktur](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\SYSTEM</li> <li>HKEY_USERS\\. Die standardmäßigen.</li></ul> Mögliche Werte sind: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem` und `usersDefault`.|
-|Key|Zeichenfolge|Aktuelle (d. h. geänderten) Registrierungsschlüssel (schließt die Struktur).|
-|oldKey|Zeichenfolge|Frühere (d. h., bevor geändert) Registrierungsschlüssel (schließt die Struktur).|
-|oldValueData|Zeichenfolge|Frühere (d. h., bevor geändert) Schlüsselwert Registrierungsdaten (Inhalt).|
-|oldValueName|Zeichenfolge|Frühere (d. h., bevor geändert) Registrierung Schlüsselwertname.|
-|Operation|registryOperation|Der Vorgang, der der Name des Registrierungsschlüssels und/oder Wert geändert. Mögliche Werte: sind `unknown`, `create`, `modify` und `delete`.|
-|processId|Int32|Werden Sie ID (PID) des Prozesses, der den Registrierungsschlüssel (Prozess, der in der Auflistung Warnung 'Prozesse' Details angezeigt werden) geändert.|
-|valueData|Zeichenfolge|Aktuelle (d. h. geänderten) Schlüsselwert Registrierungsdaten (Inhalt).|
-|Wertname|Zeichenfolge|Aktuelle (d. h. geänderten) Registrierung Schlüsselwertname|
-|Werttyp|registryValueType|[Schlüsselwert Registrierungstyp](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Mögliche Werte sind: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian` und `sz`.|
+|Struktur|registryHive|Eine [Windows-Registrierungsstruktur](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\. Standard.</li></ul> Mögliche Werte sind: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem` und `usersDefault`.|
+|Key|String|Aktueller (d.h. Geänderter) Registrierungsschlüssel (schließt HIVE aus).|
+|oldKey|String|Vorheriger (d. h. vor geänderter) Registrierungsschlüssel (schließt HIVE aus).|
+|oldValueData|String|Frühere (d. h. geänderte) Registrierungsschlüssel Wertdaten (Inhalte).|
+|oldValueName|String|Vorheriger (also vor geänderter) Registrierungsschlüssel-Wertname.|
+|Operation|registryOperation|Vorgang, der den Namen und/oder Wert des Registrierungsschlüssels geändert hat. Mögliche Werte: `unknown`, `create`, `modify`, `delete`.|
+|processId|Int32|Prozess-ID (PID) des Prozesses, der den Registrierungsschlüssel geändert hat (Prozessdetails werden in der Alert ' Processes '-Auflistung angezeigt).|
+|valueData|String|Aktuelle (d.h. geänderte) Registrierungsschlüssel Wertdaten (Inhalte).|
+|valueName|String|Aktueller (d.h. Geänderter) Registrierungsschlüssel-Wertname|
+|valueType|registryValueType|[Registrierungsschlüssel-Werttyp](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Mögliche Werte sind: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian` und `sz`.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
