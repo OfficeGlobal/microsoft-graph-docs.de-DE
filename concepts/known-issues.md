@@ -3,12 +3,12 @@ title: Bekannte Probleme in Microsoft Graph
 description: Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im Microsoft Graph-Änderungsprotokoll.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994398"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056966"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
@@ -39,10 +39,6 @@ Bekannte Probleme bei der Verwendung der Delta-Abfrage finden Sie im Abschnitt [
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="graph-explorer-and-global-admins"></a>Graph-Explorer und globale Administratoren
-
-Derzeit lässt Graph Explorer die Bearbeitung von Teams durch globale Administratoren zu, die weder Besitzer noch Mitglied dieser Teams sind, bei den gleichen API-Aufrufen durch andere Apps tritt jedoch ein Fehler auf, wenn der aktuelle Benutzer kein Mitglied oder Besitzer des Teams ist.
-
 ### <a name="get-teams-and-post-teams-are-not-supported"></a>"GET /teams" und "POST /teams" werden nicht unterstützt
 
 Informationen zum Auflisten aller Teams finden Sie unter [Alle Teams auflisten](teams-list-all-teams.md) und [Ihre Teams auflisten](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
@@ -54,6 +50,12 @@ Einige Teams, die früher erstellt, in letzter Zeit aber nicht von einem Microso
 Neue Teams werden aufgelistet.
 Bestimmte alte Teams weisen keine Eigenschaft **resourceProvisioningOptions** auf, die "Team" enthält und bei neu erstellten Teams und in Microsoft Teams besuchten Teams festgelegt wird.
 Wir legen **resourceProvisioningOptions** zukünftig für vorhandene Teams fest, die nicht in Microsoft Teams geöffnet wurden.
+
+### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Installieren und Deinstallieren von Anwendungen mithilfe von Anwendungsberechtigungen
+
+Beim Deinstallieren einer App aus einem Team mithilfe von Anwendungsberechtigungen gibt die API den Fehlercode 500 zurück, auch wenn die App erfolgreich deinstalliert wurde.
+
+Beim Installieren, Aktualisieren und Deinstallieren von Apps in einem Team mithilfe von Anwendungsberechtigungen werden keine Überwachungsprotokollereignisse geschrieben.
 
 ## <a name="groups"></a>Gruppen
 
