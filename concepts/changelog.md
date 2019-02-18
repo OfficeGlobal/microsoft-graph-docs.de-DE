@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: dc4c2d62bbbf3191c2472891e828c13a386e3c7c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967214"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057071"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -43,6 +43,25 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | :-------------- | :------------ | :--------------------------------------- |
 |Ergänzungen |Beta und Version 1.0| Die **internalId**-Eigenschaft wurde zur [team](/graph/api/resources/team?view=graph-rest-v1.0)-Ressource hinzugefügt.|
 |Ergänzungen |Beta und Version 1.0| Zusätzliche Unterstützung für die Konfiguration von [Registerkarten](teams-configuring-builtin-tabs.md) für Word, Excel, PowerPoint, PDF und Dokumentbibliotheken. |
+|Ergänzungen |Beta| Die API [Erstellen einer Nachricht in einem Kanal](/graph/api/channel-post-chatmessage?view=graph-rest-beta) wurde eingeführt. |
+|Ergänzungen |Beta| Die API [Antworten auf eine Nachricht in einem Kanal](/graph/api/channel-post-messagereply?view=graph-rest-beta) wurde eingeführt. |
+|Löschung |Beta| POST /teams/{Id}/channels/{Id}/chatThreads API entfernt. Verwenden Sie stattdessen [Erstellen einer Nachricht in einem Kanal](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
+|Ergänzungen |Beta | Unterstützung für Anwendungsberechtigungen wurde zur Ressource [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) hinzugefügt.|
+
+### <a name="outlook-calendar"></a>Outlook-Kalender
+
+| **Änderungstyp** | **Version**   | **Beschreibung**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Änderung | Beta | Der Datentyp folgender Parameter von [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) wurde geändert: <br>**attendees**: von **attendeeBase** auf [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br>**locationConstraint**: von **locationConstraint** auf [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> **timeConstraint**: von **timeConstraint** auf [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)|
+|Änderung | Beta | Der Rückgabetyp von **findMeetingTimes** wurde von **meetingTimeSuggestionsResult** auf [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) geändert |
+|Änderung | Beta | Die Antwortnutzlast von **findMeetingTimes** wurde geändert, um den **type** jedes Teilnehmers auszuschließen, der angibt, ob der Teilnehmer erforderlich, optional oder eine Ressource ist |
+|Änderung | Beta | Basistyp von [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) wurde von [location](/graph/api/resources/location?view=graph-rest-beta) auf [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) geändert |
+|Änderung | Beta | Die Datentypen der folgenden Eigenschaften von [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) wurden geändert: <br> **attendeeAvailability**: von Sammlung von **attendeeAvailability** auf Sammlung von [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> **locations**: von Sammlung von [location](/graph/api/resources/location?view=graph-rest-beta) auf Sammlung von [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> **meetingTimeSlot**: von [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) auf [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> **organizerAvailability**: von **freeBusyStatus** auf **availabilityStatus** |
+|Ergänzungen | Beta | Neue komplexe Typen: <br> [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br> [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) <br> [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) <br> [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> [postalAddress](/graph/api/resources/postaladdress?view=graph-rest-beta) <br> [searchWindowTimeSlot](/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)|
+|Ergänzungen | Beta | Neue Aufzählungen: <br> **addressType** <br> **availabilityStatus** |
+|Ergänzungen | Beta | Die **order**-Eigenschaft wurde [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) hinzugefügt |
+|Löschung | Beta | Die folgenden komplexen Typen wurden entfernt: <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
+
 
 ## <a name="january-2019"></a>Januar 2019
 
