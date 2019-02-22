@@ -1,35 +1,35 @@
 ---
-title: RatingCanadaTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Kanada
-localization_priority: Normal
+title: ratingCanadaTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Kanada
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 174a6d893220f21bafaafdc03880801947c2cd25
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bab12884cd87c18c5c303a075fc26033f188ffea
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415642"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144520"
 ---
-# <a name="ratingcanadatelevisiontype-enum-type"></a>RatingCanadaTelevisionType Enum-Typ
+# <a name="ratingcanadatelevisiontype-enum-type"></a>ratingCanadaTelevisionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Kanada
+TV-Inhalts Klassifikations Bezeichnungen in Kanada
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|children|2|Die C-Klassifikation eignet sich für untergeordnete Elemente Jahren 2 bis 7 Jahre|
-|childrenAbove8|3|Die Klassifizierung C8 eignet sich für die untergeordneten Elemente im Alter von 8 +|
-|Allgemeine|4|Die Klassifizierung G eignet sich für allgemeine Zielgruppen|
-|parentalGuidance|5|Bild Eltern Anleitungen|
-|agesAbove14|6|Die Klassifizierung 14 + ist für Leser von Berichten Jahren 14 und ältere vorgesehen.|
-|agesAbove18|7|Die Klassifizierung 18 + ist für Leser von Berichten Jahren 18 und ältere vorgesehen.|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|Untergeordnetes Element|2|Die C-Klassifikation eignet sich für Kinder von 2 bis 7 Jahren.|
+|childrenAbove8|3|Die C8-Klassifikation eignet sich für Kinder unter 8 Jahren|
+|allgemeine|4|Die G-Klassifikation eignet sich für allgemeine Zielgruppen|
+|parentalGuidance|5|PG, elterliche Unterstützung|
+|agesAbove14|6|Die 14 +-Klassifikation ist für Zuschauer ab 14 Jahren vorgesehen.|
+|agesAbove18|7|Die 18 +-Klassifikation ist für Zuschauer ab 18 Jahren vorgesehen.|
 
 
 

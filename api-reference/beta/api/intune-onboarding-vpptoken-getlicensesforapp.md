@@ -1,21 +1,21 @@
 ---
-title: GetLicensesForApp-Funktion
+title: getLicensesForApp-Funktion
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aeb2e008f3df1c230349eac303d529467a652775
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4bc1fd7ef455ce28ffee570e9490d75588e95ff5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144051"
 ---
-# <a name="getlicensesforapp-function"></a>GetLicensesForApp-Funktion
+# <a name="getlicensesforapp-function"></a>getLicensesForApp-Funktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
@@ -38,9 +38,9 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -49,12 +49,12 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|bundleId|Zeichenfolge|Noch nicht dokumentiert|
+|bundleId|Zeichenfolge|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich, diese Funktion gibt eine `200 OK` Antwortcode und eine [VppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine [vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,31 +1,31 @@
 ---
-title: EdgeCookiePolicy Enum-Typ
-description: Mögliche Werte angeben, welche Cookies in Microsoft Edge zulässig sind.
-localization_priority: Normal
+title: edgeCookiePolicy-Enumerationstyp
+description: Mögliche Werte, um anzugeben, welche Cookies in Microsoft Edge zulässig sind.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3afbe36c8d08105341cbc6d0fa54220eb22dbf8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c00e16e80847b5ab0f9ed7d8175fcc13fa92a582
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422390"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143925"
 ---
-# <a name="edgecookiepolicy-enum-type"></a>EdgeCookiePolicy Enum-Typ
+# <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte angeben, welche Cookies in Microsoft Edge zulässig sind.
+Mögliche Werte, um anzugeben, welche Cookies in Microsoft Edge zulässig sind.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
+|userDefined|0|Zulassen, dass der Benutzer festgelegt wird.|
 |zulassen|1|Zulassen.|
-|blockThirdParty|2|Nur Drittanbieter-Cookies zu blockieren.|
-|blockAll|3|Sperren Sie alle Cookies.|
+|blockThirdParty|2|Blockieren Sie nur Cookies von Drittanbietern.|
+|blockAll|3|Alle Cookies blockieren.|
 
 
 

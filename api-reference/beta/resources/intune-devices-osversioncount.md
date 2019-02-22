@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp osVersionCount
-description: Anzahl der Geräte mit Malware für jede Version des Betriebssystems
-localization_priority: Normal
+title: osVersionCount-Ressourcentyp
+description: Anzahl der Geräte mit Schadsoftware für jede Betriebssystemversion
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbe0d8ac149ad84ba4cd1286fb0f2303cdfb52a1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 12ee68855f45ed6827f84a64084118c24081d266
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410462"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142749"
 ---
-# <a name="osversioncount-resource-type"></a>Ressourcentyp osVersionCount
+# <a name="osversioncount-resource-type"></a>osVersionCount-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Anzahl der Geräte mit Malware für jede Version des Betriebssystems
+Anzahl der Geräte mit Schadsoftware für jede Betriebssystemversion
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|osVersion|Zeichenfolge|Version des Betriebssystems|
-|deviceCount|Int32|Anzahl der Geräte mit Malware für die Version des Betriebssystems|
-|lastUpdateDateTime|DateTimeOffset|Der Zeitstempel der letzten Aktualisierung für die Anzahl der Geräte in UTC|
+|osVersion|Zeichenfolge|Betriebssystemversion|
+|deviceCount|Int32|Anzahl der Geräte mit Schadsoftware für die Betriebssystemversion|
+|lastUpdateDateTime|DateTimeOffset|Der Zeitstempel der letzten Aktualisierung für die Geräteanzahl in UTC|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

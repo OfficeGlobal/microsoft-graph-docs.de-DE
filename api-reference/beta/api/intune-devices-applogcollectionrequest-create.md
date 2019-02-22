@@ -1,23 +1,23 @@
 ---
-title: Erstellen von appLogCollectionRequest
-description: Erstellen eines neuen AppLogCollectionRequest-Objekts.
-localization_priority: Normal
+title: AppLogCollectionRequest erstellen
+description: Erstellen eines neuen appLogCollectionRequest-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3afd1cf00ba706e3fbc1e960e649fc010ae582f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144996"
 ---
-# <a name="create-applogcollectionrequest"></a>Erstellen von appLogCollectionRequest
+# <a name="create-applogcollectionrequest"></a>AppLogCollectionRequest erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekts.
+Erstellen eines neuen [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,28 +38,28 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt AppLogCollectionRequest eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das appLogCollectionRequest-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die AppLogCollectionRequest erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der appLogCollectionRequest erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der eindeutige Bezeichner. Dies ist die Id der UserId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Melden Sie sich Upload-Status. Mögliche Werte sind: `pending`, `completed` und `failed`.|
-|errorMessage|Zeichenfolge|Fehlermeldung gegebenenfalls beim Hochladen|
-|customLogFolders|Zeichenfolgenauflistung|Liste der Protokollordner. |
-|completedDateTime|DateTimeOffset|Zeit an, die die Upload Protokoll Anforderung einen Endzustand erreicht|
+|id|Zeichenfolge|Der eindeutige Bezeichner. Dies ist userId_DeviceId_AppId-ID.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Protokoll Uploadstatus. Mögliche Werte sind: `pending`, `completed` und `failed`.|
+|errorMessage|Zeichenfolge|Fehlermeldung, falls vorhanden, während des Uploads|
+|customLogFolders|String collection|Liste der Protokollordner. |
+|completedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Upload-Protokollanforderung einen Terminalstatus erreicht hat|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

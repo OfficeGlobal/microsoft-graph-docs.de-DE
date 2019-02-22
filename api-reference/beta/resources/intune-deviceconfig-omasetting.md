@@ -1,21 +1,21 @@
 ---
 title: omaSetting-Ressourcentyp
 description: Definition der OMA-Einstellungen.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdf74ba7e8932ce06bca83d88336239c2abcacf4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab80ad06fb5654578f29b92e3b0f3aa9c09abdb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143848"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Definition der OMA-Einstellungen.
 
@@ -23,7 +23,7 @@ Definition der OMA-Einstellungen.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename.|
-|description|Zeichenfolge|Beschreibung.|
+|description|String|Beschreibung.|
 |omaUri|Zeichenfolge|OMA.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,62 +1,62 @@
 ---
-title: Ressourcentyp intuneBrandingProfile
-description: Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
-localization_priority: Normal
+title: intuneBrandingProfile-Ressourcentyp
+description: Diese Entität enthält Daten, die beim Anpassen der Darstellung der Mandantenebene der Unternehmensportal Anwendungen sowie des Webportals für Endbenutzer verwendet werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411099"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144702"
 ---
-# <a name="intunebrandingprofile-resource-type"></a>Ressourcentyp intuneBrandingProfile
+# <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Entität enthält Daten, die bei der Anpassung der Mandant Ebene das Unternehmensportal Applications als auch die Endbenutzer Webportal verwendet werden.
+Diese Entität enthält Daten, die beim Anpassen der Darstellung der Mandantenebene der Unternehmensportal Anwendungen sowie des Webportals für Endbenutzer verwendet werden.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekte.|
-|[Abrufen von intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
-|[Erstellen von intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Erstellen eines neuen [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
-|[IntuneBrandingProfile löschen](../api/intune-wip-intunebrandingprofile-delete.md)|Keine|Löscht eine [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
-|[IntuneBrandingProfile aktualisieren](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Aktualisieren Sie die Eigenschaften eines [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
+|[IntuneBrandingProfiles aufListen](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekte.|
+|[IntuneBrandingProfile abrufen](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Lesen von Eigenschaften und Beziehungen des [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
+|[IntuneBrandingProfile erstellen](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Erstellen eines neuen [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
+|[IntuneBrandingProfile löschen](../api/intune-wip-intunebrandingprofile-delete.md)|Keine|Löscht eine [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
+|[IntuneBrandingProfile aktualisieren](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Aktualisieren der Eigenschaften eines [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.|
 |[assign-Aktion](../api/intune-wip-intunebrandingprofile-assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Profil-Taste|
+|id|Zeichenfolge|Profilschlüssel|
 |Profilname|Zeichenfolge|Name des Profils|
 |profileDescription|Zeichenfolge|Beschreibung des Profils|
-|isDefaultProfile|Boolean|Zeigt an, wenn das Profil für standardmäßig verwendet wird.|
-|createdDateTime|DateTimeOffset|Wenn die BrandingProfile erstellt wurde.|
-|lastModifiedDateTime|DateTimeOffset|Wann die BrandingProfile zuletzt geändert wurde.|
-|displayName|String|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
-|contactITName|String|Name der für den IT-Support zuständigen Person/Organisation|
-|contactITPhoneNumber|String|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
-|contactITEmailAddress|String|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
-|contactITNotes|String|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
-|privacyUrl|String|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
-|onlineSupportSiteUrl|String|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
+|isDefaultProfile|Boolescher Wert|Zeigt an, ob das Profil standardmäßig verwendet wird.|
+|createdDateTime|DateTimeOffset|Bei der Erstellung des BrandingProfile.|
+|lastModifiedDateTime|DateTimeOffset|Wenn die BrandingProfile zuletzt geändert wurde.|
+|displayName|Zeichenfolge|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
+|contactITName|Zeichenfolge|Name der für den IT-Support zuständigen Person/Organisation|
+|contactITPhoneNumber|Zeichenfolge|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
+|contactITEmailAddress|Zeichenfolge|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
+|contactITNotes|Zeichenfolge|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
+|privacyUrl|Zeichenfolge|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
+|onlineSupportSiteUrl|Zeichenfolge|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
 |onlineSupportSiteName|String|Anzeigename der IT-Helpdesk-Website des Unternehmens/der Organisation|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primäres Farbdesign für die Unternehmensportal-Anwendungen und das Webportal|
-|showLogo|Boolean|Boolescher Wert, der angibt, ob die vom Administrator bereitgestellten Logobilder angezeigt werden sollen|
+|showLogo|Boolescher Wert|Boolescher Wert, der angibt, ob die vom Administrator bereitgestellten Logobilder angezeigt werden sollen|
 |showDisplayNameNextToLogo|Boolean|Boolescher Wert, der angibt, ob der vom Administrator angegebene Anzeigename neben dem Logobild angezeigt werden soll|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo-Bilds im Unternehmensportal apps auf Design farbigen Hintergrund angezeigt.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo-Bilds im Unternehmensportal apps heller Hintergrund angezeigt.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Angepasste Bild im Unternehmensportal apps Zielseite|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmens Portal-apps auf Design Farbhintergründen angezeigt wird.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmens Portal-apps auf hellen Hintergründen angezeigt wird.|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Angepasstes Bild, das auf der Startseite der Unternehmens Portal-apps angezeigt wird|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Auflistung|Die Liste der Gruppe Zuordnungen für das branding Profil.|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Sammlung|Die Liste der Gruppenzuweisungen für das Branding-Profil.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

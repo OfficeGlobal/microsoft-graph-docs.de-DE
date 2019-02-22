@@ -1,34 +1,34 @@
 ---
-title: LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
+title: localSecurityOptionsAdministratorElevationPromptBehaviorType-Enumerationstyp
 description: Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 978436bca4ac0ca281fde61e046e854ba3725c73
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5deaccdd8e1f3707617fe2df06a5fec087a47625
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413759"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139340"
 ---
-# <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>LocalSecurityOptionsAdministratorElevationPromptBehaviorType Enum-Typ
+# <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für LocalSecurityOptionsAdministratorElevationPromptBehavior
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert|
-|elevateWithoutPrompting|1|Zu erhöhen, ohne aufzufordern.|
-|promptForCredentialsOnTheSecureDesktop|2|Aufforderung zur erneuten Eingabe auf dem sicheren desktop|
-|promptForConsentOnTheSecureDesktop|3|Aufforderung zur Bestätigung auf dem sicheren desktop|
-|promptForCredentials|4|Aufforderung zur erneuten Eingabe|
-|promptForConsent|5|Aufforderung zur Bestätigung|
-|promptForConsentForNonWindowsBinaries|6|Aufforderung zur Bestätigung für nicht-Windows-Binärdateien|
+|notConfigured|0|Nicht konfiguriert|
+|elevateWithoutPrompting|1|Ohne Ansagen erhöhen.|
+|promptForCredentialsOnTheSecureDesktop|2|Anfordern von Anmeldeinformationen auf dem sicheren Desktop|
+|promptForConsentOnTheSecureDesktop|3|Anfordern der Zustimmung auf dem sicheren Desktop|
+|promptForCredentials|4|Anfordern von Anmeldeinformationen|
+|promptForConsent|5|Bestätigung anfordern|
+|promptForConsentForNonWindowsBinaries|6|Anfordern der Zustimmung für nicht-Windows-Binärdateien|
 
 
 

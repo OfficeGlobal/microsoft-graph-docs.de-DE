@@ -1,31 +1,31 @@
 ---
-title: WebBrowserCookieSettings Enum-Typ
-description: Web-Browser-Cookie-Einstellungen.
-localization_priority: Normal
+title: webBrowserCookieSettings-Enumerationstyp
+description: Webbrowser-Cookieeinstellungen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a43577fa8db16016f47ed06b5deb1db37bfca39
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 713782f86aed9b5cb2ebd3fd0336c1fafc5f02c6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410805"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140285"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>WebBrowserCookieSettings Enum-Typ
+# <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Web-Browser-Cookie-Einstellungen.
+Webbrowser-Cookieeinstellungen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|browserDefault|0|Standardwert Browser, keine beabsichtigt.|
-|blockAlways|1|Sperren Sie Cookies immer.|
-|allowCurrentWebSite|2|Zulassen von Cookies aus der aktuellen Website.|
-|allowFromWebsitesVisited|3|Zulassen von Cookies von besuchten Websites.|
+|browserDefault|0|Browser-Standardwert, keine Absicht.|
+|blockAlways|1|Cookies immer blockieren.|
+|allowCurrentWebSite|2|Cookies von der aktuellen Website zulassen.|
+|allowFromWebsitesVisited|3|Cookies von besuchten Websites zulassen.|
 |allowAlways|4|Cookies immer zulassen.|
 
 

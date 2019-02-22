@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp vpnProxyServer
-description: VPN-Proxy-Server.
-localization_priority: Normal
+title: vpnProxyServer-Ressourcentyp
+description: VPN-Proxy Server.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 676e56771f021a79179e268280f5e3190754eef2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b8a452cdde7c4c360107a67396d8f5ce49d6eb1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425673"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145276"
 ---
-# <a name="vpnproxyserver-resource-type"></a>Ressourcentyp vpnProxyServer
+# <a name="vpnproxyserver-resource-type"></a>vpnProxyServer-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN-Proxy-Server.
+VPN-Proxy Server.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|Zeichenfolge|Automatische Konfiguration Skript-Url des Proxys.|
+|automaticConfigurationScriptUrl|Zeichenfolge|URL des automatischen Konfigurationsskripts des Proxys.|
 |address|Zeichenfolge|Adresse.|
-|port|Int32|Port. Gültige Werte zwischen 0 und 65535|
+|port|Int32|Port. Gültige Werte 0 bis 65535|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp macOSFirewallApplication
-description: Stellt eine app in der Liste der Mac OS-Firewall-Anwendung
-localization_priority: Normal
+title: macOSFirewallApplication-Ressourcentyp
+description: Stellt eine app in der Liste der macOS-Firewall-Anwendungen dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe3bbd83c3101420ec011fda85304fabce06daf0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 477911dba492bdda09eb815aba968bb7f63955bf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404211"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145402"
 ---
-# <a name="macosfirewallapplication-resource-type"></a>Ressourcentyp macOSFirewallApplication
+# <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt eine app in der Liste der Mac OS-Firewall-Anwendung
+Stellt eine app in der Liste der macOS-Firewall-Anwendungen dar.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|bundleId|Zeichenfolge|Bundlekennung der Anwendung.|
-|allowsIncomingConnections|Boolean|Unabhängig davon, ob eingehende Verbindungen zulässig sind.|
+|bundleId|Zeichenfolge|Bündeln der Anwendung.|
+|allowsIncomingConnections|Boolescher Wert|Gibt an, ob eingehende Verbindungen zulässig sind.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

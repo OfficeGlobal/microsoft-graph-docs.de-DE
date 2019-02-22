@@ -1,26 +1,26 @@
 ---
-title: AndroidForWorkBindStatus Enum-Typ
-description: Binden der Status des Mandanten mit der Google EMM-API
-localization_priority: Normal
+title: androidForWorkBindStatus-Enumerationstyp
+description: Binden des Status des Mandanten mit der Google EMM-API
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acb6fbf3946973dec75da5ea3b31a6e3faa486d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f926f808e566263fd59526aa5531baf827ce3f72
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139564"
 ---
-# <a name="androidforworkbindstatus-enum-type"></a>AndroidForWorkBindStatus Enum-Typ
+# <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Binden der Status des Mandanten mit der Google EMM-API
+Binden des Status des Mandanten mit der Google EMM-API
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notBound|0|Noch nicht dokumentiert|
 |Gebunden|1|Noch nicht dokumentiert|

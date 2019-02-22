@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp windowsKioskAppBase
-description: Die Basisklasse für einen Typ von apps
-localization_priority: Normal
+title: Zum-Ressourcentyp
+description: Die Basisklasse für eine Art von apps
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ca86969eb32a1a1d129fb5ba4cd48bbb04ffd78
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b0247febfbeebe7fc047df4bb14a9d421b79bf01
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407144"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145297"
 ---
-# <a name="windowskioskappbase-resource-type"></a>Ressourcentyp windowsKioskAppBase
+# <a name="windowskioskappbase-resource-type"></a>Zum-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Basisklasse für einen Typ von apps
+Die Basisklasse für eine Art von apps
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die app-Kachelgröße für das Layout Start. Mögliche Werte sind: `hidden`, `small`, `medium`, `wide` und `large`.|
-|name|Zeichenfolge|Stellt den Anzeigenamen einer App|
-|der appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Der app-Typ. Mögliche Werte: `unknown`, `store`, `desktop`, `aumId`.|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die Größe der APP-Kachel für das Start Layout. Mögliche Werte: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|Zeichenfolge|Stellt den Anzeigenamen einer APP dar.|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Der APP-Typ. Mögliche Werte: `unknown`, `store`, `desktop`, `aumId`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,32 +1,32 @@
 ---
-title: win32LobAppReturnCodeType Enum-Typ
-description: Gibt den Typ der Rückgabecode.
-localization_priority: Normal
+title: win32LobAppReturnCodeType-Enumerationstyp
+description: Gibt den Typ des Rückgabecodes an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42491bd49759dbb7642fc968cd8957d5a2948305
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e49268447551a3c86752536cf3b1f8f052d8fb2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412387"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145759"
 ---
-# <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType Enum-Typ
+# <a name="win32lobappreturncodetype-enum-type"></a>win32LobAppReturnCodeType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt den Typ der Rückgabecode.
+Gibt den Typ des Rückgabecodes an.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|failed|0|Fehler bei.|
+|failed|0|Nicht.|
 |Erfolgreich|1|Erfolg.|
-|softReboot|2|Ist vorläufig Neustart erforderlich.|
-|hardReboot|3|Es ist schwierig-Neustart erforderlich.|
-|"Wiederholen"|4|Wiederholen Sie den Vorgang.|
+|softReboot|2|Soft-Reboot ist erforderlich.|
+|hardReboot|3|Hard-Reboot ist erforderlich.|
+|Wiederholungs|4|Wiederholungs.|
 
 
 

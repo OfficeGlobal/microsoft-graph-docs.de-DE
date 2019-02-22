@@ -1,35 +1,35 @@
 ---
-title: DevicePlatformType Enum-Typ
-description: Plattformtypen unterstützt.
-localization_priority: Normal
+title: devicePlatformType-Enumerationstyp
+description: Unterstützte Plattformtypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0927464dc16a7b2a0c2f1f580316c81774499287
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e060cba22c0f5dcb45ab17f5624f7a0246123810
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139907"
 ---
-# <a name="deviceplatformtype-enum-type"></a>DevicePlatformType Enum-Typ
+# <a name="deviceplatformtype-enum-type"></a>devicePlatformType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Plattformtypen unterstützt.
+Unterstützte Plattformtypen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Android (engl.)|0|Android.|
+|Android|0|Android.|
 |androidForWork|1|AndroidForWork.|
-|iOS|2|iOS.|
-|Mac OS|3|Mac OS.|
-|windowsPhone81|4|WindowsPhone 8.1.|
-|windows81AndLater|5|Windows 8.1 und höher|
+|iOS|2|IOS.|
+|macOS|3|MacOS.|
+|windowsPhone81|4|WindowsPhone 8,1.|
+|windows81AndLater|5|Windows 8,1 und höher|
 |windows10AndLater|6|Windows 10 und höher.|
-|androidWorkProfile|7|Android Arbeit Profil.|
+|androidWorkProfile|7|Android-Arbeitsprofil.|
 
 
 

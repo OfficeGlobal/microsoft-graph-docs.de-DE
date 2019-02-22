@@ -1,32 +1,32 @@
 ---
-title: RatingNewZealandTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Neuseeland
-localization_priority: Normal
+title: ratingNewZealandTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Neuseeland
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4030ce62a3ae37166c0f9f64d62e513db5a22baf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399108"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144597"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a>RatingNewZealandTelevisionType Enum-Typ
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Neuseeland
+TV-Inhalts Klassifikations Bezeichnungen in Neuseeland
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|Allgemeine|2|Die Klassifizierung G schließt untergeordnete Elemente unter 14 Schaden Materialien|
-|parentalGuidance|3|Die Klassifizierung PGR fördert Eltern und Aufsichtspersonen jüngere Leser von Berichten über innehaben.|
-|Erwachsene|4|Die Klassifizierung AO eignet sich nicht für untergeordnete Elemente|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|allgemeine|2|Die G-Klassifikation schließt Materialien aus, die Kinder unter 14 Jahren schädigen können.|
+|parentalGuidance|3|Die PGR-Klassifizierung ermutigt Eltern und Erziehungsberechtigte, jüngere Betrachter zu überwachen|
+|Erwachsene|4|Die AO-Klassifikation eignet sich nicht für Kinder|
 
 
 

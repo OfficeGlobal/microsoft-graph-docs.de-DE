@@ -1,32 +1,32 @@
 ---
-title: MdmAppConfigKeyType Enum-Typ
-description: Wichtige Typen der App-Konfiguration.
-localization_priority: Normal
+title: mdmAppConfigKeyType-Enumerationstyp
+description: App-Konfigurationsschlüssel Typen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d5c7c87f91a538a6afce5e790b69f0ae09b364d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 220e3ebf0bb9482b64c894025f233404769bff8c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145220"
 ---
-# <a name="mdmappconfigkeytype-enum-type"></a>MdmAppConfigKeyType Enum-Typ
+# <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Wichtige Typen der App-Konfiguration.
+App-Konfigurationsschlüssel Typen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |stringType|0|Noch nicht dokumentiert|
 |integerType|1|Noch nicht dokumentiert|
 |realType|2|Noch nicht dokumentiert|
 |booleanType|3|Noch nicht dokumentiert|
-|"TokenType"|4|Noch nicht dokumentiert|
+|tokenType|4|Noch nicht dokumentiert|
 
 
 

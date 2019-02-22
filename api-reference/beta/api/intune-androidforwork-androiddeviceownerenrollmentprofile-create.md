@@ -1,23 +1,23 @@
 ---
-title: Erstellen von androidDeviceOwnerEnrollmentProfile
-description: Erstellen eines neuen AndroidDeviceOwnerEnrollmentProfile-Objekts.
-localization_priority: Normal
+title: Androiddeviceownerenrollmentprofile hinzugefügt erstellen
+description: Erstellen eines neuen Androiddeviceownerenrollmentprofile hinzugefügt-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0c766106d4467e54bda3465ff360bfcadfe71c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 888c20a0e8b409137501695b9363019d61c732b1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401992"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142399"
 ---
-# <a name="create-androiddeviceownerenrollmentprofile"></a>Erstellen von androidDeviceOwnerEnrollmentProfile
+# <a name="create-androiddeviceownerenrollmentprofile"></a>Androiddeviceownerenrollmentprofile hinzugefügt erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.
+Erstellen eines neuen [androiddeviceownerenrollmentprofile hinzugefügt](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,26 +38,26 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt AndroidDeviceOwnerEnrollmentProfile eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das Androiddeviceownerenrollmentprofile hinzugefügt-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die AndroidDeviceOwnerEnrollmentProfile erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der Androiddeviceownerenrollmentprofile hinzugefügt erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|Zeichenfolge|Eindeutige GUID des Registrierungsprofils|
+|id|string|Eindeutige GUID des Registrierungsprofils|
 |displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
-|description|Zeichenfolge|Beschreibung des Registrierungsprofils|
+|description|String|Beschreibung des Registrierungsprofils|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
 |tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
-|tokenCreationDateTime|DateTimeOffset|Datum-Uhrzeit das zuletzt erstellte Token erstellt wurde.|
+|tokenCreationDateTime|DateTimeOffset|Datum der Erstellung des zuletzt erstellten Tokens.|
 |tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
 |enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
 |qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
@@ -66,7 +66,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [androiddeviceownerenrollmentprofile hinzugefügt](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

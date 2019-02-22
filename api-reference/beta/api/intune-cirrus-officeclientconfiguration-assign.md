@@ -1,23 +1,23 @@
 ---
-title: Aktion „assign“
-description: Ersetzen Sie alle Gruppen für eine Richtlinie.
+title: Aktion zuweisen
+description: Ersetzen Sie alle Zielgruppen für eine Richtlinie.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 37143c09382ae08b600aeacd6af02ebb44c86bf1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6dfde86fe1163ea7cb9f86720a979c79e99671c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409258"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145661"
 ---
-# <a name="assign-action"></a>Aktion „assign“
+# <a name="assign-action"></a>Aktion zuweisen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ersetzen Sie alle Gruppen für eine Richtlinie.
+Ersetzen Sie alle Zielgruppen für eine Richtlinie.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -38,9 +38,9 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,12 +50,12 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|officeConfigurationAssignments|[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung|Liste der Zuordnungen für Office-Konfiguration|
+|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Sammlung|Liste der Office-Konfigurations Zuordnungen|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich ist, diese Aktion gibt eine `200 OK` Antwortcode und eine [OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Aktion den `200 OK` Antwortcode und eine [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,29 +1,29 @@
 ---
-title: AdministratorConfiguredDeviceComplianceState Enum-Typ
-description: Administrator konfiguriert Compliance Gerätestatus Enum
-localization_priority: Normal
+title: administratorConfiguredDeviceComplianceState-Enumerationstyp
+description: Vom Administrator konfigurierte Geräte Konformitätsstatus-Enumeration
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9075a578dc2dc2a1f511975631e5239c733c1a22
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0735c93122972b7961cef86cd6bc0e0acdff4b4d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402419"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144310"
 ---
-# <a name="administratorconfigureddevicecompliancestate-enum-type"></a>AdministratorConfiguredDeviceComplianceState Enum-Typ
+# <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Administrator konfiguriert Compliance Gerätestatus Enum
+Vom Administrator konfigurierte Geräte Konformitätsstatus-Enumeration
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|basedOnDeviceCompliancePolicy|0|Compliance-Status festlegen basierend auf anderen Compliance-Richtlinien|
-|nicht konformer|1|Nicht konformer Set Einhaltung|
+|basedOnDeviceCompliancePolicy|0|Festlegen des Kompatibilitätsstatus basierend auf anderen Kompatibilitätsrichtlinien|
+|Konform|1|Festlegen der Kompatibilität mit "nicht kompatibel"|
 
 
 

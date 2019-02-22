@@ -1,35 +1,35 @@
 ---
-title: EmbeddedSIMDeviceStateValue Enum-Typ
-description: Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.
-localization_priority: Normal
+title: embeddedSIMDeviceStateValue-Enumerationstyp
+description: Beschreibt die verschiedenen Status für einen eingebetteten SIM-Aktivierungscode.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2da255ef2d0cf192dd09a6351bbd337f3cd9b5c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9bdc3250605de7db7a3778d64b5e743a415de4c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421326"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145423"
 ---
-# <a name="embeddedsimdevicestatevalue-enum-type"></a>EmbeddedSIMDeviceStateValue Enum-Typ
+# <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Beschreibt die verschiedenen Zustände für einen eingebetteten SIM Aktivierungscode.
+Beschreibt die verschiedenen Status für einen eingebetteten SIM-Aktivierungscode.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notEvaluated|0|Legt fest, dass der eingebettete SIM Aktivierungscode kostenlosen und verfügbar ist, ein Gerät zugewiesen werden soll.|
-|failed|1|Legt fest, dass Intune Service konnte nicht an einem Gerät dieses Profil übermitteln.|
-|Installieren von|2|Legt fest, dass der eingebettete SIM Aktivierungscode zu einem Gerät zugewiesen wurde, und das Gerät wird das Token installieren.|
-|installiert|3|Legt fest, dass der eingebettete SIM Aktivierungscode auf das Zielgerät erfolgreich installiert wurde.|
-|Löschen|4|Legt fest, dass Intune Service versucht, um das Profil vom Gerät zu löschen.|
-|error|5|Legt fest, dass Fehler mit diesem Profil vorhanden ist.|
-|gelöscht|6|Legt fest, dass das Profil vom Gerät gelöscht wird.|
-|removedByUser|7|Legt fest, dass das Profil des Benutzers vom Gerät entfernt wird|
+|notEvaluated|0|Gibt an, dass der eingebettete SIM-Aktivierungscode kostenlos ist und einem Gerät zugewiesen werden kann.|
+|failed|1|Gibt an, dass InTune-Dienst dieses Profil nicht an ein Gerät übermitteln konnte.|
+|Installieren|2|Gibt an, dass der eingebettete SIM-Aktivierungscode einem Gerät zugewiesen wurde und das Gerät das Token installiert.|
+|installiert|3|Gibt an, dass der eingebettete SIM-Aktivierungscode erfolgreich auf dem Zielgerät installiert wurde.|
+|Löschen|4|Gibt an, dass InTune-Dienst versucht, das Profil vom Gerät zu löschen.|
+|error|5|Gibt an, dass ein Fehler mit diesem Profil vorliegt.|
+|deleted|6|Legt fest, dass das Profil vom Gerät gelöscht wird.|
+|removedByUser|7|Legt fest, dass das Profil vom Benutzer vom Gerät entfernt wurde.|
 
 
 

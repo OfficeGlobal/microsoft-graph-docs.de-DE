@@ -1,30 +1,30 @@
 ---
-title: SharedPCAccountDeletionPolicyType Enum-Typ
-description: Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
-localization_priority: Normal
+title: sharedPCAccountDeletionPolicyType-Enumerationstyp
+description: Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645cd3dfd4121c6c9bdd9d57a0dc3b63723cc461
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415166"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139935"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>SharedPCAccountDeletionPolicyType Enum-Typ
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
+Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht werden.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Direktfenster|0|Löschen Sie sofort.|
-|diskSpaceThreshold|1|Löschen Sie Disk Space Schwellenwert.|
-|diskSpaceThresholdOrInactiveThreshold|2|Löschen Sie Disk Space Schwellenwert oder inaktiv Schwellenwert.|
+|direkt|0|Sofort löschen.|
+|diskSpaceThreshold|1|DELETE bei Speicherplatz-Schwellenwert.|
+|Diskspacethresholdorinactivethreshold hat|2|DELETE bei Speicherplatz Schwellenwert oder inaktiver Schwellenwert.|
 
 
 

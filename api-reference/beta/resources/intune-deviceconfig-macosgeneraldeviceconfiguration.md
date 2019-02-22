@@ -1,21 +1,21 @@
 ---
 title: Ressourcentyp „macOSGeneralDeviceConfiguration“
 description: In diesem Artikel werden die deklarierten Methoden, Eigenschaften und Beziehungen beschrieben, die von der Ressource „macOSGeneralDeviceConfiguration“ verfügbar gemacht werden.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38e99c1df2f570e06fec22e47e0286eeb4dc76ad
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c8fadc8f8aa91caec0596650765c1feada58cecc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146242"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Ressourcentyp „macOSGeneralDeviceConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 In diesem Artikel werden die deklarierten Methoden, Eigenschaften und Beziehungen beschrieben, die von der Ressource „macOSGeneralDeviceConfiguration“ verfügbar gemacht werden.
 
@@ -34,17 +34,17 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|emailInDomainSuffixes|Zeichenfolgenauflistung|E-Mail-Adressen, deren Suffix keiner dieser Zeichenfolgen entspricht, gelten als domänenextern.|
+|emailInDomainSuffixes|String collection|E-Mail-Adressen, deren Suffix keiner dieser Zeichenfolgen entspricht, gelten als domänenextern.|
 |passwordBlockSimple|Boolean|Unterbindet die Verwendung einfacher Kennwörter.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts|
 |passwordMinimumCharacterSetCount|Int32|Anzahl von Zeichensätzen, die ein Kennwort enthalten muss. Gültige Werte: 0 bis 4.|
@@ -53,40 +53,43 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, nach dem es zu einem Bildschirmtimeout kommt|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
-|keychainBlockCloudSync|Boolean|Gibt an, ob iCloud Schlüsselsammlung Synchronisierung blockierte (Mac OS 10.12 und höher) ist.|
-|airPrintBlocked|Boolean|Gibt an, ob AirPrint blockierte (Mac OS 10.12 und höher) ist.|
-|airPrintForceTrustedTLS|Boolean|Gibt an, ob vertrauenswürdige Zertifikate für Drucken TLS-Kommunikation (Mac OS 10.13 und höher) erforderlich sind.|
-|airPrintBlockiBeaconDiscovery|Boolean|Gibt an, ob iBeacon Ermittlung von AirPrint Drucker ausgeschlossen wird. Dies verhindert, dass falsche AirPrint Bluetooth Beacons vor Phishing für den Netzwerkdatenverkehr (Mac OS 10.3 und höher).|
-|safariBlockAutofill|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer AutoAusfüllen in Safari verwendet.|
-|cameraBlocked|Boolean|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
-|iTunesBlockMusicService|Boolean|Gibt an, ob Musik Service blockieren und Musik-app im klassischen Modus zurücksetzen.|
-|spotlightBlockInternetResults|Boolean|Gibt an, ob Spotlight blockieren aus einer Internet-Suche Ergebnisse zurückgegeben.|
-|keyboardBlockDictation|Boolean|Gibt an, ob die Benutzer mit Dictation Input blockieren.|
-|definitionLookupBlocked|Boolean|Gibt an, ob Definition Lookup blockieren.|
-|appleWatchBlockAutoUnlock|Boolean|Gibt an, ob oder blockieren Benutzer ihre Mac mit Apple Watch entsperren.|
-|iTunesBlockFileSharing|Boolean|Gibt an, ob Dateien verhindern blockieren übertragen iTunes verwenden.|
-|iCloudBlockDocumentSync|Boolean|Gibt an, ob die iCloud-Dokumentsynchronisierung blockiert werden soll.|
-|iCloudBlockMail|Boolean|Gibt an, ob iCloud aus der Synchronisierung von e-Mail-Nachrichten zu blockieren.|
-|iCloudBlockAddressBook|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Kontakten zu blockieren.|
-|iCloudBlockCalendar|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Kalendern blockieren.|
-|iCloudBlockReminders|Boolean|Gibt an, ob iCloud aus der Synchronisierung Erinnerungen blockieren.|
-|iCloudBlockBookmarks|Boolean|Gibt an, ob iCloud von Lesezeichen synchronisieren blockieren.|
-|iCloudBlockNotes|Boolean|Gibt an, ob iCloud aus der Synchronisierung von Notizen zu blockieren.|
-|airDropBlocked|Boolean|Gibt an, ob AirDrop zulassen.|
-|passwordBlockModification|Boolean|Gibt an, ob Kennung für die Änderung zu ermöglichen.|
+|passwordRequired|Boolescher Wert|Legt fest, ob ein Kennwort gefordert wird.|
+|keychainBlockCloudSync|Boolescher Wert|Gibt an, ob die iCloud-Schlüsselbund Synchronisierung blockiert ist (macOS 10,12 und höher).|
+|airPrintBlocked|Boolescher Wert|Gibt an, ob der druckDruck blockiert ist (macOS 10,12 und höher).|
+|airPrintForceTrustedTLS|Boolescher Wert|Gibt an, ob vertrauenswürdige Zertifikate für die TLS-Druckkommunikation erforderlich sind (macOS 10,13 und höher).|
+|airPrintBlockiBeaconDiscovery|Boolescher Wert|Gibt an, ob die iBeacon-Erkennung von Druckern blockiert wird. Dadurch wird verhindert, dass falsche druckfunk-Bluetooth-Baken für Netzwerkdatenverkehr von Phishing (macOS 10,3 und höher).|
+|safariBlockAutofill|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer AutoAusfüllen in Safari verwendet.|
+|cameraBlocked|Boolescher Wert|Gibt an, ob verhindert werden soll, dass der Benutzer auf die Kamera des Geräts zugreift.|
+|iTunesBlockMusicService|Boolescher Wert|Gibt an, ob der Musikdienst blockiert und die Musik-app im klassischen Modus wiederhergestellt werden soll.|
+|spotlightBlockInternetResults|Boolescher Wert|Gibt an, ob Spotlight die Rückgabe von Ergebnissen aus einer Internet Suche blockieren soll.|
+|keyboardBlockDictation|Boolescher Wert|Gibt an, ob die Verwendung der Diktat Eingabe durch den Benutzer blockiert werden soll.|
+|definitionLookupBlocked|Boolescher Wert|Gibt an, ob die Definitions Suche blockiert werden soll.|
+|appleWatchBlockAutoUnlock|Boolescher Wert|Gibt an, ob Benutzer das Aufheben der Sperre für Ihren Mac mit Apple Watch blockieren möchten.|
+|iTunesBlockFileSharing|Boolescher Wert|Gibt an, ob das Übertragen von Dateien mithilfe von iTunes verhindert werden soll.|
+|iCloudBlockDocumentSync|Boolescher Wert|Gibt an, ob die iCloud-Dokumentsynchronisierung blockiert werden soll.|
+|iCloudBlockMail|Boolescher Wert|Gibt an, ob die Synchronisierung von e-Mails durch iCloud blockiert werden soll.|
+|iCloudBlockAddressBook|Boolescher Wert|Gibt an, ob die Synchronisierung von Kontakten durch iCloud verhindert werden soll.|
+|iCloudBlockCalendar|Boolescher Wert|Gibt an, ob das Synchronisieren von Kalendern für iCloud verhindert werden soll.|
+|iCloudBlockReminders|Boolescher Wert|Gibt an, ob das Synchronisieren von Erinnerungen durch iCloud verhindert werden soll.|
+|iCloudBlockBookmarks|Boolescher Wert|Gibt an, ob das Synchronisieren von Textmarken durch iCloud verhindert werden soll.|
+|iCloudBlockNotes|Boolescher Wert|Gibt an, ob das Synchronisieren von Notizen durch iCloud verhindert werden soll.|
+|airDropBlocked|Boolescher Wert|Gibt an, ob das abLegen zugelassen werden soll.|
+|passwordBlockModification|Boolescher Wert|Gibt an, ob die Änderung von Passwörtern zulässig ist.|
 |passwordBlockFingerprintUnlock|Boolean|Gibt an, ob die Entsperrung durch Fingerabdruck blockiert werden soll.|
-|passwordBlockAutoFill|Boolean|Gibt an, ob das Feature AutoAusfüllen-Kennwörter zu blockieren.|
-|passwordBlockProximityRequests|Boolean|Gibt an, ob anfordernde Kennwörter von Geräten in der Nähe zu blockieren.|
-|passwordBlockAirDropSharing|Boolean|Gibt an, ob sharing Kennwörter mit dem AirDrop Kennwörter Feature blockieren.|
+|passwordBlockAutoFill|Boolescher Wert|Gibt an, ob das Feature AutoFill passwords blockiert werden soll.|
+|passwordBlockProximityRequests|Boolescher Wert|Gibt an, ob das Anfordern von Kennwörtern von benachbarten Geräten blockiert werden soll.|
+|passwordBlockAirDropSharing|Boolescher Wert|Gibt an, ob das Freigeben von Kennwörtern mit der Funktion für Kennwörter blockiert werden soll.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Legt fest, wie viele Tage ein Software Update für ein überwachte Gerät delyed wird. Gültige Werte: 0 bis 90.|
+|softwareUpdatesForceDelayed|Boolescher Wert|Gibt an, ob die Benutzersicht barkeit von Softwareupdates verzögert werden soll, wenn sich das Gerät im überwachten Modus befindet.|
+|contentCachingBlocked|Boolescher Wert|Gibt an, ob das Zwischenspeichern von Inhalten zulässig ist.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|groupAssignments|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Auflistung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Gerät Konfiguration Installationsstatus durch Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries| [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -158,7 +161,10 @@ Es folgt eine JSON-Darstellung der Ressource.
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 1024,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
 

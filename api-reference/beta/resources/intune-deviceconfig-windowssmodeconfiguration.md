@@ -1,30 +1,30 @@
 ---
-title: WindowsSModeConfiguration Enum-Typ
-description: Entsperren die möglichen Optionen S-Modus konfigurieren
-localization_priority: Normal
+title: windowsSModeConfiguration-Enumerationstyp
+description: Die möglichen Optionen zum Konfigurieren des S-Modus entsperren
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 858be5b3a55fbbf4454aa576785ba793f501079c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a451108c6e55f8587317dfc43caf8bc84cca673
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144716"
 ---
-# <a name="windowssmodeconfiguration-enum-type"></a>WindowsSModeConfiguration Enum-Typ
+# <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Entsperren die möglichen Optionen S-Modus konfigurieren
+Die möglichen Optionen zum Konfigurieren des S-Modus entsperren
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|noRestriction|0|Diese Option entfernt alle Einschränkungen zum Entsperren S Modus - Standard|
-|Blockieren|1|Diese Option wird den Benutzer zum Entsperren des Geräts vom S Modus blockiert.|
-|Entsperren|2|Diese Option wird das Gerät vom S Modus entsperren.|
+|noRestriction|0|Mit dieser Option werden alle Einschränkungen für den Unlock-Modus-Standard|
+|Block|1|Mit dieser Option wird verhindert, dass der Benutzer das Gerät im S-Modus entsperren kann.|
+|Entsperren|2|Mit dieser Option wird das Gerät im S-Modus gesperrt.|
 
 
 

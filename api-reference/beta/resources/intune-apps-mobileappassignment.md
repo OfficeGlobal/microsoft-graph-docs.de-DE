@@ -1,21 +1,21 @@
 ---
 title: mobileAppAssignment-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App enthält.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec9901c8f07e2ae56500c1b99aac1fcce1bfb379
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 77816742d4e7d736cad2941c3a49f2f6350ebd84
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404519"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140635"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine Klasse, die die Eigenschaften für die Gruppenzuordnung einer mobilen App enthält.
 

@@ -1,29 +1,29 @@
 ---
-title: BinaryManagementConditionExpressionOperatorType Enum-Typ
-description: Unterstützte binäre Operatoren für Management Bedingungsausdrücke.
-localization_priority: Normal
+title: binaryManagementConditionExpressionOperatorType-Enumerationstyp
+description: Unterstützte binäre Operatoren für Ausdrücke der Verwaltungsbedingung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05b195df95d6f7a85673a352edf090cea7f074aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143806"
 ---
-# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>BinaryManagementConditionExpressionOperatorType Enum-Typ
+# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Unterstützte binäre Operatoren für Management Bedingungsausdrücke.
+Unterstützte binäre Operatoren für Ausdrücke der Verwaltungsbedingung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|oder|0|Eine Reihe von Operanden als True ausgewertet, nur, wenn eine oder mehrere der Operanden "true" ist.|
-|und|1|Eine Reihe von Operanden als True ausgewertet, wenn alle Operanden "true" sind.|
+|oder|0|Wertet eine Gruppe von Operanden als true aus, wenn und nur dann, wenn mindestens einer der Operanden true ist.|
+|und|1|Wertet eine Gruppe von Operanden als true aus, wenn alle Operanden true sind.|
 
 
 

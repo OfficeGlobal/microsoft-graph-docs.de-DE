@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp officeUserCheckinSummary
-description: Entität, die Mandanten Einchecken Stats beschreibt.
+title: officeUserCheckinSummary-Ressourcentyp
+description: Entität, die den Eincheckstatus für Mandanten beschreibt.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: d44c978ff1442c98038bf627397de5ca3a0ca3bf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b74d7508c9ef3b1d7183c806783e567cb75859ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411008"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143358"
 ---
-# <a name="officeusercheckinsummary-resource-type"></a>Ressourcentyp officeUserCheckinSummary
+# <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Entität, die Mandanten Einchecken Stats beschreibt.
+Entität, die den Eincheckstatus für Mandanten beschreibt.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|succeededUserCount|Int32|Gesamtzahl erfolgreicher Benutzer überprüfen ins für die letzten drei Monate angezeigt.|
-|failedUserCount|Int32|Benutzer gesamt fehlgeschlagenen überprüfen ins für die letzten drei Monate angezeigt.|
+|succeededUserCount|Int32|Erfolgreiche Einchecken von Benutzern für die letzten drei Monate.|
+|failedUserCount|Int32|Insgesamt fehlgeschlagene Benutzer Einchecken für die letzten 3 Monate.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

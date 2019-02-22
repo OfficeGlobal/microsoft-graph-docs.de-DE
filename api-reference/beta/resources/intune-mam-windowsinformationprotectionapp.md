@@ -1,21 +1,21 @@
 ---
 title: windowsInformationProtectionApp-Ressourcentyp
 description: App für Windows-Informationsschutz
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45d428ee18e92e76f5a13c568373219f904fd886
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e2b8739fd045d4b8e6293164fc7e9b14154a475c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403686"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139284"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 App für Windows-Informationsschutz
 
@@ -23,10 +23,10 @@ App für Windows-Informationsschutz
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename der App|
-|description|Zeichenfolge|Beschreibung der App|
+|description|String|Beschreibung der App|
 |publisherName|Zeichenfolge|Name des Verlegers|
-|productName|Zeichenfolge|Produktname|
-|denied|Boolean|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert.|
+|productName|String|Produktname|
+|denied|Boolescher Wert|Bei „true“ wird der App der Schutz oder eine Ausnahme verweigert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

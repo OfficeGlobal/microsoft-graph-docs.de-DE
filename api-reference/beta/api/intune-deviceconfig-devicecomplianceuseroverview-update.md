@@ -1,21 +1,21 @@
 ---
 title: Aktualisieren von „deviceComplianceUserOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceComplianceUserOverview.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69c1d0ca5571e16cadf4b6697c5b6ffd5b16a59d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c82332f83e79ca9d5ccfceb1967b4d8df76bd7fd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146277"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Aktualisieren von „deviceComplianceUserOverview“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md).
 
@@ -38,9 +38,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,11 +52,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
-|notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
+|notApplicableCount|Int32|Anzahl der nicht anwendbaren Benutzer|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|
 |errorCount|Int32|Anzahl der Benutzer mit Fehlern|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Benutzer|
-|conflictCount|Int32|Anzahl von Benutzern in Konflikt|
+|Conflictcount zur|Int32|Anzahl der in Konflikt stehenden Benutzer|
 |lastUpdateDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Aktualisierung|
 |configurationVersion|Int32|Version der Richtlinie für diese Übersicht|
 

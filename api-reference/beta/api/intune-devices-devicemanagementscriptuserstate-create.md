@@ -1,23 +1,23 @@
 ---
-title: Erstellen von deviceManagementScriptUserState
-description: Erstellen eines neuen DeviceManagementScriptUserState-Objekts.
-localization_priority: Normal
+title: DeviceManagementScriptUserState erstellen
+description: Erstellen eines neuen deviceManagementScriptUserState-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01ab54a736a5e9d1a305bff44a601494e8ec8860
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e7e0a0f7f8c3f837d6125b6c91eee51f1bfed7e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424266"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139347"
 ---
-# <a name="create-devicemanagementscriptuserstate"></a>Erstellen von deviceManagementScriptUserState
+# <a name="create-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts.
+Erstellen eines neuen [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,27 +38,27 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt DeviceManagementScriptUserState eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das deviceManagementScriptUserState-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die DeviceManagementScriptUserState erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der deviceManagementScriptUserState erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Das Gerät Management Skript Zustand Benutzerentität-Taste.|
-|successDeviceCount|Int32|Anzahl der Erfolg Geräte für bestimmte Benutzer.|
-|errorDeviceCount|Int32|Anzahl der Fehler Geräte für bestimmte Benutzer.|
-|userPrincipalName|Zeichenfolge|Prinzip-Benutzernamen eines bestimmten Benutzers.|
+|id|string|Schlüssel der Benutzerstatus Entität des Device Management-Skripts.|
+|successDeviceCount|Int32|Anzahl der erfolgreichen Geräte für einen bestimmten Benutzer.|
+|errorDeviceCount|Int32|Fehlergeräte Anzahl für einen bestimmten Benutzer.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des jeweiligen Benutzers.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

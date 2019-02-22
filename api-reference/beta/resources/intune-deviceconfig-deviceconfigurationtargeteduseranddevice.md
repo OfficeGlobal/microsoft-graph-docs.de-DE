@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp deviceConfigurationTargetedUserAndDevice
-description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
-localization_priority: Normal
+title: deviceConfigurationTargetedUserAndDevice-Ressourcentyp
+description: Konflikt Zusammenfassung für eine Reihe von Geräte Konfigurationsrichtlinien.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410742"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144142"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Ressourcentyp deviceConfigurationTargetedUserAndDevice
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
+Konflikt Zusammenfassung für eine Reihe von Geräte Konfigurationsrichtlinien.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceId|Zeichenfolge|Die Id des Geräts in das Einchecken.|
-|deviceName|Zeichenfolge|Der Name des Geräts in das Einchecken.|
-|userId|Zeichenfolge|Die Id des Benutzers in das Einchecken.|
-|userDisplayName|Zeichenfolge|Der Anzeigename des Benutzers in das Einchecken|
-|userPrincipalName|Zeichenfolge|Den UPN des Benutzers in das Einchecken.|
-|lastCheckinDateTime|DateTimeOffset|Zeitpunkt der letzten Checkin für diese Benutzer/Geräte-Paar.|
+|deviceId|Zeichenfolge|Die ID des Geräts in der einchecken.|
+|deviceName|Zeichenfolge|Der Name des Geräts in der einchecken.|
+|userId|Zeichenfolge|Die ID des Benutzers in der einchecken.|
+|userDisplayName|String|Der Anzeigename des Benutzers in der Einchecken|
+|userPrincipalName|String|Der UPN des Benutzers beim Einchecken.|
+|lastCheckinDateTime|DateTimeOffset|Letzter Eincheck Zeitpunkt für dieses Benutzer/Gerät-Paar.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

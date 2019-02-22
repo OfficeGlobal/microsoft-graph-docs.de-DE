@@ -1,23 +1,23 @@
 ---
 title: WindowsOfficeClientConfiguration aktualisieren
-description: Eine bestimmte nicht sicherheitsrelevante Richtlinie Nutzlast Patch.
+description: Patchen einer bestimmten nichtsicherheitsbezogenen Richtlinien Nutzlast.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: cb9078e630ab20c38bcf9cb41a08d6e94f370311
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d116d846b6540ea2b9e2a91f54a5abdfa81e2409
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401362"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139249"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Eine bestimmte nicht sicherheitsrelevante Richtlinie Nutzlast Patch.
+Patchen einer bestimmten nichtsicherheitsbezogenen Richtlinien Nutzlast.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -38,31 +38,31 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|Zeichenfolge|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|Priorität|Int32|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|checkinStatuses|[OfficeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Auflistung|Noch nicht dokumentiert Inherited aus [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|string|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|Zeichenfolge|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|Zeichenfolge|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|Priorität|Int32|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Sammlung|Noch nicht dokumentiert geerbt von [für](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [für](../resources/intune-cirrus-officeclientconfiguration.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

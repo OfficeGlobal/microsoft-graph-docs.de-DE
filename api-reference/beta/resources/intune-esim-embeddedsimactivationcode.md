@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp embeddedSIMActivationCode
-description: Der eingebettete SIM Aktivierungscode bereitgestellt vom Mobilfunkbetreiber.
-localization_priority: Normal
+title: embeddedSIMActivationCode-Ressourcentyp
+description: Der eingebettete SIM-Aktivierungscode, der vom Mobilfunkanbieter bereitgestellt wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74f1725ab8f12cb103144dc1897e9bf965c5361b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 955dccb226332b297e30c4d40768f84936b04dbe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145227"
 ---
-# <a name="embeddedsimactivationcode-resource-type"></a>Ressourcentyp embeddedSIMActivationCode
+# <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der eingebettete SIM Aktivierungscode bereitgestellt vom Mobilfunkbetreiber.
+Der eingebettete SIM-Aktivierungscode, der vom Mobilfunkanbieter bereitgestellt wird.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|Zeichenfolge|Chip Karte Bezeichner (ICCID) für diesen eingebettet SIM Aktivierungscode vom Mobilfunkbetreiber bereitgestellt.
-Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^\[0-9\]{19}\[0-9\]?$ '.|
-|matchingIdentifier|Zeichenfolge|Die MatchingIdentifier (MatchingID) gemäß den GSMA Zuordnung SGP.22 RSP technischen Spezifikationen Abschnitt 4.1.
-Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^\[a-zA-Z0-9\-\]* $'.|
-|smdpPlusServerAddress|Zeichenfolge|Der vollqualifizierte Domänenname des des SM-DP + Server wie in der technischen g/m2 Zuordnung SPG.22 RSP-Spezifikation angegeben.
-Die Eingabe muss den folgenden regulären Ausdruck übereinstimmen: ' ^ (\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+) *\.) +\[a-zA-Z\]{2,}$'.|
+|integratedCircuitCardIdentifier|Zeichenfolge|Der integrierte Leiterkarten Bezeichner (ICCID) für diesen eingebetteten SIM-Aktivierungscode, der vom Mobilfunkanbieter bereitgestellt wird.
+die eingabe muss mit dem folgenden regulären ausdruck übereinstimmen:\['\]{19}\[^\]0-9 0-9 ? $ '.|
+|matchingIdentifier|Zeichenfolge|Die MatchingIdentifier (übereinstimmende) gemäß der GSMA Association SGP. 22 RSP Technical Specification section 4,1.
+Die Eingabe muss mit dem folgenden regulären Ausdruck übereinstimmen:\[' ^ a-zA-Z0\-\]-9 * $ '.|
+|smdpPlusServerAddress|Zeichenfolge|Der vollqualifizierte Domänenname des SM-DP +-Servers gemäß der technischen Spezifikation des GSM-Verbandes SPG .22 RSP.
+Die Eingabe muss mit dem folgenden regulären Ausdruck übereinstimmen: '\[^ (a-zA-Z0\]-9 +\[(-a-zA-Z0\]-9 +\.) *\[) + a-za\]{2,}-Z $ '.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

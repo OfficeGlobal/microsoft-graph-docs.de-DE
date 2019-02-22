@@ -1,27 +1,27 @@
 ---
-title: GetLoggedOnManagedDevices-Funktion
+title: getLoggedOnManagedDevices-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f9768956201e5537964493f32273664b47f2983d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 673fbe18f5d94c1e797f323ee9c408f4d5de4777
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144499"
 ---
-# <a name="getloggedonmanageddevices-function"></a>GetLoggedOnManagedDevices-Funktion
+# <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices-Funktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der/Beta-Version in Microsoft Graph können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -41,9 +41,9 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,7 +52,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn erfolgreich, diese Funktion gibt eine `200 OK` Antwortcode und eine [ManagedDevice](../resources/intune-devices-manageddevice.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine [managedDevice](../resources/intune-devices-manageddevice.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

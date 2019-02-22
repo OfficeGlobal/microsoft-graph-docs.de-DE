@@ -1,36 +1,36 @@
 ---
-title: RatingAustraliaTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Australien
-localization_priority: Normal
+title: ratingAustraliaTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Australien
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 148e8c1bb12f8563261402b98e4ff0552e83f3f6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a223f19a0360f9fef851bcd1576187a2f5a7f58e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392892"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139389"
 ---
-# <a name="ratingaustraliatelevisiontype-enum-type"></a>RatingAustraliaTelevisionType Enum-Typ
+# <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Australien
+TV-Inhalts Klassifikations Bezeichnungen in Australien
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|preschoolers|2|Die Klassifizierung P ist für Preschoolers vorgesehen.|
-|children|3|Die C-Klassifikation ist für die untergeordneten Elemente unter 14 vorgesehen.|
-|Allgemeine|4|Die Klassifizierung G eignet sich für alle Jahren|
-|parentalGuidance|5|Die Bild-Klassifizierung wird für young Viewer empfohlen.|
-|Erfahrungswerte|6|Die M-Klassifizierung wird für Leser von Berichten über 15 empfohlen.|
-|agesAbove15|7|Die Klassifizierung MA15 + eignet sich nicht für Leser von Berichten unter 15|
-|agesAbove15AdultViolence|8|Die Klassifizierung AV15 + eignet sich nicht für Leser von Berichten unter 15, Versender nicht jugendfreier Gewalt-spezifischen|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|Vorschüler|2|Die P-Klassifikation ist für Vorschüler vorgesehen|
+|Untergeordnetes Element|3|Die C-Klassifikation ist für Kinder unter 14 Jahren vorgesehen.|
+|allgemeine|4|Die G-Klassifikation eignet sich für alle Altersgruppen|
+|parentalGuidance|5|Die PG-Klassifikation wird für junge Betrachter empfohlen|
+|Reifen|6|Die M-Klassifikation wird für Zuschauer über 15 empfohlen|
+|agesAbove15|7|Die MA15 +-Klassifikation eignet sich nicht für Zuschauer unter 15|
+|agesAbove15AdultViolence|8|Die AV15 +-Klassifikation eignet sich nicht für Zuschauer unter 15, für Erwachsene Gewalt spezifische|
 
 
 

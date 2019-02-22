@@ -1,46 +1,46 @@
 ---
-title: Ressourcentyp restrictedAppsViolation
-description: Verletzung der eingeschränkten apps Konfigurationsprofil pro Gerät pro Benutzer
-localization_priority: Normal
+title: restrictedAppsViolation-Ressourcentyp
+description: Verletzung des Konfigurationsprofils für eingeschränkte apps pro Gerät und Benutzer
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcbd7def59d17dcd6e906e1e6bef85e3a448b880
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c8764d3d84ba0706f3769ef019def43cb080660d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424980"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139914"
 ---
-# <a name="restrictedappsviolation-resource-type"></a>Ressourcentyp restrictedAppsViolation
+# <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Verletzung der eingeschränkten apps Konfigurationsprofil pro Gerät pro Benutzer
+Verletzung des Konfigurationsprofils für eingeschränkte apps pro Gerät und Benutzer
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste restrictedAppsViolations](../api/intune-deviceconfig-restrictedappsviolation-list.md)|[RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Auflistung|Listeneigenschaften und Beziehungen der [RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekte.|
-|[Abrufen von restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-get.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Lesen Sie Eigenschaften und Beziehungen des [RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
-|[Erstellen von restrictedAppsViolation](../api/intune-deviceconfig-restrictedappsviolation-create.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Erstellen eines neuen [RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
-|[RestrictedAppsViolation löschen](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|Keine|Löscht eine [RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).|
-|[RestrictedAppsViolation aktualisieren](../api/intune-deviceconfig-restrictedappsviolation-update.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Aktualisieren Sie die Eigenschaften eines [RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
+|[RestrictedAppsViolations aufListen](../api/intune-deviceconfig-restrictedappsviolation-list.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekte.|
+|[RestrictedAppsViolation abrufen](../api/intune-deviceconfig-restrictedappsviolation-get.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Lesen von Eigenschaften und Beziehungen des [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
+|[RestrictedAppsViolation erstellen](../api/intune-deviceconfig-restrictedappsviolation-create.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Erstellen eines neuen [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
+|[RestrictedAppsViolation löschen](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|Keine|Löscht eine [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).|
+|[RestrictedAppsViolation aktualisieren](../api/intune-deviceconfig-restrictedappsviolation-update.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Aktualisieren der Eigenschaften eines [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Objekt. Besteht aus den AccountId, Geräte-ID, PolicyId und Benutzer-ID|
-|userId|Zeichenfolge|Eindeutige Benutzer-ID muss Guid|
+|id|string|Eindeutiger Bezeichner für das Objekt. Zusammengesetzt aus "Account-ID", "Device", "Policies" und "userId"|
+|userId|String|Benutzer eindeutiger Bezeichner, muss GUID sein|
 |userName|Zeichenfolge|Benutzername|
-|managedDeviceId|Zeichenfolge|Eindeutiger Bezeichner der verwalteten Gerät, muss die Guid|
+|managedDeviceId|Zeichenfolge|Eindeutiger Bezeichner für verwaltetes Gerät, muss GUID sein|
 |deviceName|Zeichenfolge|Gerätename|
-|deviceConfigurationId|Zeichenfolge|Gerät Konfiguration Profil Eindeutiger Bezeichner muss Guid|
-|deviceConfigurationName|Zeichenfolge|Gerätename Konfiguration-Profil|
+|deviceConfigurationId|Zeichenfolge|Device Configuration Profile Unique Identifier, must be GUID|
+|deviceConfigurationName|Zeichenfolge|Name des Geräte Konfigurationsprofils|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plattformtyp. Mögliche Werte: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
-|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Eingeschränkte apps Zustand. Mögliche Werte sind: `prohibitedApps` und `notApprovedApps`.|
-|restrictedApps|[ManagedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) -Auflistung|Liste der verletzte eingeschränkte apps|
+|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Eingeschränkter apps-Status. Mögliche Werte sind: `prohibitedApps` und `notApprovedApps`.|
+|restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) -Sammlung|Liste der verletzten eingeschränkten apps|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
