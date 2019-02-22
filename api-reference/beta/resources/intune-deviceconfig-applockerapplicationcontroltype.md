@@ -1,32 +1,32 @@
 ---
-title: AppLockerApplicationControlType Enum-Typ
-description: Mögliche Werte Anwendungstypen AppLocker-Steuerelement
-localization_priority: Normal
+title: appLockerApplicationControlType-Enumerationstyp
+description: Mögliche Werte von AppLocker-Anwendungs Steuerelementtypen
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3bc89620a6dd13a65cfe40f37ba2f775e6a9c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 22d108dd3bad90341031d1e965948a9daa59efa1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425722"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141356"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="3b30a-103">AppLockerApplicationControlType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="3b30a-103">appLockerApplicationControlType enum type</span></span>
+# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="437fb-103">appLockerApplicationControlType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="437fb-103">appLockerApplicationControlType enum type</span></span>
 
-> <span data-ttu-id="3b30a-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="3b30a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3b30a-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3b30a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="437fb-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="437fb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3b30a-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3b30a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="437fb-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="437fb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3b30a-107">Mögliche Werte Anwendungstypen AppLocker-Steuerelement</span><span class="sxs-lookup"><span data-stu-id="3b30a-107">Possible values of AppLocker Application Control Types</span></span>
+<span data-ttu-id="437fb-106">Mögliche Werte von AppLocker-Anwendungs Steuerelementtypen</span><span class="sxs-lookup"><span data-stu-id="437fb-106">Possible values of AppLocker Application Control Types</span></span>
 
-## <a name="members"></a><span data-ttu-id="3b30a-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="3b30a-108">Members</span></span>
-|<span data-ttu-id="3b30a-109">Member</span><span class="sxs-lookup"><span data-stu-id="3b30a-109">Member</span></span>|<span data-ttu-id="3b30a-110">Wert</span><span class="sxs-lookup"><span data-stu-id="3b30a-110">Value</span></span>|<span data-ttu-id="3b30a-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3b30a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="437fb-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="437fb-107">Members</span></span>
+|<span data-ttu-id="437fb-108">Element</span><span class="sxs-lookup"><span data-stu-id="437fb-108">Member</span></span>|<span data-ttu-id="437fb-109">Wert</span><span class="sxs-lookup"><span data-stu-id="437fb-109">Value</span></span>|<span data-ttu-id="437fb-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="437fb-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3b30a-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="3b30a-112">notConfigured</span></span>|<span data-ttu-id="3b30a-113">0</span><span class="sxs-lookup"><span data-stu-id="3b30a-113">0</span></span>|<span data-ttu-id="3b30a-114">Gerät Standardwert, keine Anwendung Steuerelementtyp ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="3b30a-114">Device default value, no Application Control type selected.</span></span>|
-|<span data-ttu-id="3b30a-115">enforceComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="3b30a-115">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="3b30a-116">1</span><span class="sxs-lookup"><span data-stu-id="3b30a-116">1</span></span>|<span data-ttu-id="3b30a-117">Windows-Komponente und Store-apps zu erzwingen.</span><span class="sxs-lookup"><span data-stu-id="3b30a-117">Enforce Windows component and store apps.</span></span>|
-|<span data-ttu-id="3b30a-118">auditComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="3b30a-118">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="3b30a-119">2</span><span class="sxs-lookup"><span data-stu-id="3b30a-119">2</span></span>|<span data-ttu-id="3b30a-120">Überwachen Sie Windows-Komponente und Store-apps.</span><span class="sxs-lookup"><span data-stu-id="3b30a-120">Audit Windows component and store apps.</span></span>|
-|<span data-ttu-id="3b30a-121">enforceComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="3b30a-121">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3b30a-122">3</span><span class="sxs-lookup"><span data-stu-id="3b30a-122">3</span></span>|<span data-ttu-id="3b30a-123">Erzwingen Sie Windows-Komponenten zu, apps und intelligente Locker.</span><span class="sxs-lookup"><span data-stu-id="3b30a-123">Enforce Windows components, store apps and smart locker.</span></span>|
-|<span data-ttu-id="3b30a-124">auditComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="3b30a-124">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3b30a-125">4</span><span class="sxs-lookup"><span data-stu-id="3b30a-125">4</span></span>|<span data-ttu-id="3b30a-126">Überwachen von Windows-Komponenten, apps und intelligente Locker.</span><span class="sxs-lookup"><span data-stu-id="3b30a-126">Audit Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="437fb-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="437fb-111">notConfigured</span></span>|<span data-ttu-id="437fb-112">0</span><span class="sxs-lookup"><span data-stu-id="437fb-112">0</span></span>|<span data-ttu-id="437fb-113">Geräte-Standardwert, kein Anwendungs Steuerelementtyp ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="437fb-113">Device default value, no Application Control type selected.</span></span>|
+|<span data-ttu-id="437fb-114">enforceComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="437fb-114">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="437fb-115">1</span><span class="sxs-lookup"><span data-stu-id="437fb-115">1</span></span>|<span data-ttu-id="437fb-116">Erzwingen Sie Windows Component-und Store-Apps.</span><span class="sxs-lookup"><span data-stu-id="437fb-116">Enforce Windows component and store apps.</span></span>|
+|<span data-ttu-id="437fb-117">auditComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="437fb-117">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="437fb-118">2</span><span class="sxs-lookup"><span data-stu-id="437fb-118">2</span></span>|<span data-ttu-id="437fb-119">ÜberWachen von Windows Component-und Store-Apps.</span><span class="sxs-lookup"><span data-stu-id="437fb-119">Audit Windows component and store apps.</span></span>|
+|<span data-ttu-id="437fb-120">enforceComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="437fb-120">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="437fb-121">3</span><span class="sxs-lookup"><span data-stu-id="437fb-121">3</span></span>|<span data-ttu-id="437fb-122">Erzwingen Sie Windows-Komponenten, Store-Apps und Smart locker.</span><span class="sxs-lookup"><span data-stu-id="437fb-122">Enforce Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="437fb-123">auditComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="437fb-123">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="437fb-124">4</span><span class="sxs-lookup"><span data-stu-id="437fb-124">4</span></span>|<span data-ttu-id="437fb-125">ÜberWachen Sie Windows-Komponenten, Store-Apps und Smart locker.</span><span class="sxs-lookup"><span data-stu-id="437fb-125">Audit Windows components, store apps and smart locker.</span></span>|
 
 
 

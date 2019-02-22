@@ -3,38 +3,46 @@ title: Abonnement löschen
 description: Mit dieser API können Sie Abonnements löschen.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 9ca4c772cb6d7de088550a16262275b4c43fb9c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9fa5a60bbb00bb7d15ae14a0b76235a5629f2c42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509462"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140453"
 ---
-# <a name="delete-subscription"></a><span data-ttu-id="d9d52-103">Abonnement löschen</span><span class="sxs-lookup"><span data-stu-id="d9d52-103">Delete subscription</span></span>
+# <a name="delete-subscription"></a><span data-ttu-id="c5530-103">Abonnement löschen</span><span class="sxs-lookup"><span data-stu-id="c5530-103">Delete subscription</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9d52-104">Mit dieser API können Sie Abonnements löschen.</span><span class="sxs-lookup"><span data-stu-id="d9d52-104">Delete a subscription.</span></span>
+<span data-ttu-id="c5530-104">Mit dieser API können Sie Abonnements löschen.</span><span class="sxs-lookup"><span data-stu-id="c5530-104">Delete a subscription.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9d52-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d9d52-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5530-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c5530-105">Permissions</span></span>
 
-<span data-ttu-id="d9d52-p101">In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9d52-p101">The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c5530-106">Abhängig von der angeforderten Ressource und dem Berechtigungstyp (Delegierte oder Anwendung) ist die in der folgenden Tabelle angegebene Berechtigung die am wenigsten privilegierten Berechtigungen zum Aufrufen dieser API.</span><span class="sxs-lookup"><span data-stu-id="c5530-106">Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="c5530-107">Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5530-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d9d52-108">Ressourcentyp/Element</span><span class="sxs-lookup"><span data-stu-id="d9d52-108">Resource type / Item</span></span>        | <span data-ttu-id="d9d52-109">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="d9d52-109">Permission</span></span>          |
-|-----------------------------|---------------------|
-| <span data-ttu-id="d9d52-110">Kontakte</span><span class="sxs-lookup"><span data-stu-id="d9d52-110">Contacts</span></span>                    | <span data-ttu-id="d9d52-111">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="d9d52-111">Contacts.Read</span></span>       |
-| <span data-ttu-id="d9d52-112">Unterhaltungen</span><span class="sxs-lookup"><span data-stu-id="d9d52-112">Conversations</span></span>               | <span data-ttu-id="d9d52-113">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9d52-113">Group.Read.All</span></span>      |
-| <span data-ttu-id="d9d52-114">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="d9d52-114">Events</span></span>                      | <span data-ttu-id="d9d52-115">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="d9d52-115">Calendars.Read</span></span>      |
-| <span data-ttu-id="d9d52-116">Nachrichten</span><span class="sxs-lookup"><span data-stu-id="d9d52-116">Messages</span></span>                    | <span data-ttu-id="d9d52-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="d9d52-117">Mail.Read</span></span>           |
-| <span data-ttu-id="d9d52-118">Gruppen</span><span class="sxs-lookup"><span data-stu-id="d9d52-118">Groups</span></span>                      | <span data-ttu-id="d9d52-119">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9d52-119">Group.Read.All</span></span>      |
-| <span data-ttu-id="d9d52-120">Benutzer</span><span class="sxs-lookup"><span data-stu-id="d9d52-120">Users</span></span>                       | <span data-ttu-id="d9d52-121">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9d52-121">User.Read.All</span></span>       |
-| <span data-ttu-id="d9d52-122">Laufwerk (OneDrive eines Benutzers)</span><span class="sxs-lookup"><span data-stu-id="d9d52-122">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="d9d52-123">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d9d52-123">Files.ReadWrite</span></span>     |
-| <span data-ttu-id="d9d52-124">Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke)</span><span class="sxs-lookup"><span data-stu-id="d9d52-124">Drives (SharePoint shared content and drives)</span></span> | <span data-ttu-id="d9d52-125">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9d52-125">Files.ReadWrite.All</span></span> |
-| <span data-ttu-id="d9d52-126">Sicherheitshinweis</span><span class="sxs-lookup"><span data-stu-id="d9d52-126">Security alert</span></span>              | <span data-ttu-id="d9d52-127">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9d52-127">SecurityEvents.ReadWrite.All</span></span> |
+| <span data-ttu-id="c5530-108">Unterstützte Ressource</span><span class="sxs-lookup"><span data-stu-id="c5530-108">Supported resource</span></span> | <span data-ttu-id="c5530-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c5530-109">Delegated (work or school account)</span></span> | <span data-ttu-id="c5530-110">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c5530-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5530-111">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c5530-111">Application</span></span> |
+|:-----|:-----|:-----|:-----|
+|[<span data-ttu-id="c5530-112">Kontakt</span><span class="sxs-lookup"><span data-stu-id="c5530-112">contact</span></span>](../resources/contact.md) | <span data-ttu-id="c5530-113">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-113">Contacts.Read</span></span> | <span data-ttu-id="c5530-114">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-114">Contacts.Read</span></span> | <span data-ttu-id="c5530-115">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-115">Contacts.Read</span></span> |
+|<span data-ttu-id="c5530-116">[driveItem](../resources/driveitem.md) (persönliche OneDrive des Benutzers)</span><span class="sxs-lookup"><span data-stu-id="c5530-116">[driveItem](../resources/driveitem.md) (user's personal OneDrive)</span></span> | <span data-ttu-id="c5530-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-117">Not supported</span></span> | <span data-ttu-id="c5530-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c5530-118">Files.ReadWrite</span></span> | <span data-ttu-id="c5530-119">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-119">Not supported</span></span> |
+|<span data-ttu-id="c5530-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span><span class="sxs-lookup"><span data-stu-id="c5530-120">[driveItem](../resources/driveitem.md) (OneDrive for Business)</span></span> | <span data-ttu-id="c5530-121">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5530-121">Files.ReadWrite.All</span></span> | <span data-ttu-id="c5530-122">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-122">Not supported</span></span> | <span data-ttu-id="c5530-123">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5530-123">Files.ReadWrite.All</span></span> |
+|[<span data-ttu-id="c5530-124">event</span><span class="sxs-lookup"><span data-stu-id="c5530-124">event</span></span>](../resources/event.md) | <span data-ttu-id="c5530-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-125">Calendars.Read</span></span> | <span data-ttu-id="c5530-126">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-126">Calendars.Read</span></span> | <span data-ttu-id="c5530-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-127">Calendars.Read</span></span> |
+|[<span data-ttu-id="c5530-128">group</span><span class="sxs-lookup"><span data-stu-id="c5530-128">group</span></span>](../resources/group.md) | <span data-ttu-id="c5530-129">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-129">Group.Read.All</span></span> | <span data-ttu-id="c5530-130">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-130">Not supported</span></span> | <span data-ttu-id="c5530-131">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-131">Group.Read.All</span></span> |
+|[<span data-ttu-id="c5530-132">Gruppenunterhaltung</span><span class="sxs-lookup"><span data-stu-id="c5530-132">group conversation</span></span>](../resources/conversation.md) | <span data-ttu-id="c5530-133">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-133">Group.Read.All</span></span> | <span data-ttu-id="c5530-134">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-134">Not supported</span></span> | <span data-ttu-id="c5530-135">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-135">Not supported</span></span> |
+|[<span data-ttu-id="c5530-136">Nachricht</span><span class="sxs-lookup"><span data-stu-id="c5530-136">message</span></span>](../resources/message.md) | <span data-ttu-id="c5530-137">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-137">Mail.Read</span></span> | <span data-ttu-id="c5530-138">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-138">Mail.Read</span></span> | <span data-ttu-id="c5530-139">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c5530-139">Mail.Read</span></span> |
+|[<span data-ttu-id="c5530-140">Sicherheitswarnung</span><span class="sxs-lookup"><span data-stu-id="c5530-140">security alert</span></span>](../resources/alert.md) | <span data-ttu-id="c5530-141">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5530-141">SecurityEvents.ReadWrite.All</span></span> | <span data-ttu-id="c5530-142">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c5530-142">Not supported</span></span> | <span data-ttu-id="c5530-143">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5530-143">SecurityEvents.ReadWrite.All</span></span> |
+|[<span data-ttu-id="c5530-144">user</span><span class="sxs-lookup"><span data-stu-id="c5530-144">user</span></span>](../resources/user.md) | <span data-ttu-id="c5530-145">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-145">User.Read.All</span></span> | <span data-ttu-id="c5530-146">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-146">User.Read.All</span></span> | <span data-ttu-id="c5530-147">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="c5530-147">User.Read.All</span></span> |
 
-<span data-ttu-id="d9d52-128">***Hinweis:*** Der Endpunkt /beta kann Berechtigungen für die meisten Ressourcen.</span><span class="sxs-lookup"><span data-stu-id="d9d52-128">***Note:*** The /beta endpoint allows application permissions for most resources.</span></span> <span data-ttu-id="d9d52-129">Unterhaltungen in einer Gruppe und OneDrive Laufwerk Stammelemente werden mit den Anwendungsberechtigungen nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d9d52-129">Conversations in a Group and OneDrive drive root items are not supported with application permissions.</span></span>
+> <span data-ttu-id="c5530-148">**Hinweis:** Es gibt zusätzliche Einschränkungen für Abonnements für OneDrive-und Outlook-Elemente.</span><span class="sxs-lookup"><span data-stu-id="c5530-148">**Note:** There are additional limitations for subscriptions on OneDrive and Outlook items.</span></span> <span data-ttu-id="c5530-149">Die Einschränkungen gelten für das Erstellen und Verwalten von Abonnements (erhalten, aktualisieren und Löschen von Abonnements).</span><span class="sxs-lookup"><span data-stu-id="c5530-149">The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d9d52-130">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d9d52-130">HTTP request</span></span>
+- <span data-ttu-id="c5530-150">In persönlichen OneDrive können Sie den Stammordner oder einen beliebigen Unterordner in diesem Laufwerk abonnieren.</span><span class="sxs-lookup"><span data-stu-id="c5530-150">On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive.</span></span> <span data-ttu-id="c5530-151">In OneDrive for Business können Sie nur den Stammordner abonnieren.</span><span class="sxs-lookup"><span data-stu-id="c5530-151">On OneDrive for Business, you can subscribe to only the root folder.</span></span> <span data-ttu-id="c5530-152">Benachrichtigungen werden für die angeforderten Arten von Änderungen im abonnierten Ordner oder in einer beliebigen Datei, einem Ordner oder einem anderen driveItem-Objekt in der Hierarchie gesendet.</span><span class="sxs-lookup"><span data-stu-id="c5530-152">Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy.</span></span> <span data-ttu-id="c5530-153">Sie können keine **Laufwerks** -oder **driveItem** -Instanzen abonnieren, die keine Ordner sind, wie beispielsweise einzelne Dateien.</span><span class="sxs-lookup"><span data-stu-id="c5530-153">You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.</span></span>
+
+- <span data-ttu-id="c5530-154">In Outlook unterstützt die Delegierte Berechtigung das Abonnieren von Elementen in Ordnern nur im Postfach des angemeldeten Benutzers.</span><span class="sxs-lookup"><span data-stu-id="c5530-154">In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox.</span></span> <span data-ttu-id="c5530-155">Das kann beispielsweise nicht die Delegierte Berechtigung Calendars. Read verwenden, um Ereignisse im Postfach eines anderen Benutzers zu abonnieren.</span><span class="sxs-lookup"><span data-stu-id="c5530-155">That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.</span></span>
+- <span data-ttu-id="c5530-156">So abonnieren Sie Änderungsbenachrichtigungen für Outlook-Kontakte,-Ereignisse oder-Nachrichten in _freigegebenen oder Delegierten_ Ordnern:</span><span class="sxs-lookup"><span data-stu-id="c5530-156">To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:</span></span>
+
+  - <span data-ttu-id="c5530-157">Verwenden Sie die entsprechende Anwendungsberechtigung, um Änderungen an Elementen in einem Ordner oder Postfach eines _beliebigen_ Benutzers im Mandanten zu abonnieren.</span><span class="sxs-lookup"><span data-stu-id="c5530-157">Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.</span></span>
+  - <span data-ttu-id="c5530-158">Verwenden Sie nicht die Outlook-Freigabeberechtigungen (Contacts. Read. Shared, Calendars. Read. Shared, Mail. Read. Shared und ihre Pendants für Lese-/Schreibzugriff), da Sie das Abonnieren von Änderungsbenachrichtigungen für Elemente in freigegebenen oder Delegierten Ordnern **nicht** unterstützen.</span><span class="sxs-lookup"><span data-stu-id="c5530-158">Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="c5530-159">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c5530-159">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,25 +50,25 @@ ms.locfileid: "29509462"
 DELETE /subscriptions/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9d52-131">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d9d52-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c5530-160">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c5530-160">Request headers</span></span>
 
-| <span data-ttu-id="d9d52-132">Name</span><span class="sxs-lookup"><span data-stu-id="d9d52-132">Name</span></span>       | <span data-ttu-id="d9d52-133">Typ</span><span class="sxs-lookup"><span data-stu-id="d9d52-133">Type</span></span> | <span data-ttu-id="d9d52-134">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d9d52-134">Description</span></span>|
+| <span data-ttu-id="c5530-161">Name</span><span class="sxs-lookup"><span data-stu-id="c5530-161">Name</span></span>       | <span data-ttu-id="c5530-162">Typ</span><span class="sxs-lookup"><span data-stu-id="c5530-162">Type</span></span> | <span data-ttu-id="c5530-163">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c5530-163">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="d9d52-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9d52-135">Authorization</span></span>  | <span data-ttu-id="d9d52-136">string</span><span class="sxs-lookup"><span data-stu-id="d9d52-136">string</span></span>  | <span data-ttu-id="d9d52-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d9d52-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c5530-164">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5530-164">Authorization</span></span>  | <span data-ttu-id="c5530-165">string</span><span class="sxs-lookup"><span data-stu-id="c5530-165">string</span></span>  | <span data-ttu-id="c5530-p105">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c5530-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d9d52-139">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d9d52-139">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5530-168">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c5530-168">Request body</span></span>
 
-<span data-ttu-id="d9d52-140">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d9d52-140">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c5530-169">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c5530-169">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9d52-141">Antwort</span><span class="sxs-lookup"><span data-stu-id="d9d52-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c5530-170">Antwort</span><span class="sxs-lookup"><span data-stu-id="c5530-170">Response</span></span>
 
-<span data-ttu-id="d9d52-142">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d9d52-142">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="c5530-171">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c5530-171">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9d52-143">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d9d52-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c5530-172">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c5530-172">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d9d52-144">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d9d52-144">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c5530-173">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c5530-173">Request</span></span>
 
-<span data-ttu-id="d9d52-145">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d9d52-145">Here is an example of the request.</span></span>
+<span data-ttu-id="c5530-174">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c5530-174">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_subscription"
@@ -70,9 +78,9 @@ DELETE /subscriptions/{id}
 DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="d9d52-146">Antwort</span><span class="sxs-lookup"><span data-stu-id="d9d52-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c5530-175">Antwort</span><span class="sxs-lookup"><span data-stu-id="c5530-175">Response</span></span>
 
-<span data-ttu-id="d9d52-147">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d9d52-147">Here is an example of the response.</span></span>
+<span data-ttu-id="c5530-176">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c5530-176">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

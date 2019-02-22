@@ -1,30 +1,30 @@
 ---
-title: WindowsSModeConfiguration Enum-Typ
-description: Entsperren die möglichen Optionen S-Modus konfigurieren
-localization_priority: Normal
+title: windowsSModeConfiguration-Enumerationstyp
+description: Die möglichen Optionen zum Konfigurieren des S-Modus entsperren
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 858be5b3a55fbbf4454aa576785ba793f501079c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a451108c6e55f8587317dfc43caf8bc84cca673
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144716"
 ---
-# <a name="windowssmodeconfiguration-enum-type"></a><span data-ttu-id="7436a-103">WindowsSModeConfiguration Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="7436a-103">windowsSModeConfiguration enum type</span></span>
+# <a name="windowssmodeconfiguration-enum-type"></a><span data-ttu-id="83968-103">windowsSModeConfiguration-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="83968-103">windowsSModeConfiguration enum type</span></span>
 
-> <span data-ttu-id="7436a-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="7436a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7436a-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7436a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="83968-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="83968-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7436a-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7436a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="83968-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="83968-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7436a-107">Entsperren die möglichen Optionen S-Modus konfigurieren</span><span class="sxs-lookup"><span data-stu-id="7436a-107">The possible options to configure S mode unlock</span></span>
+<span data-ttu-id="83968-106">Die möglichen Optionen zum Konfigurieren des S-Modus entsperren</span><span class="sxs-lookup"><span data-stu-id="83968-106">The possible options to configure S mode unlock</span></span>
 
-## <a name="members"></a><span data-ttu-id="7436a-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="7436a-108">Members</span></span>
-|<span data-ttu-id="7436a-109">Member</span><span class="sxs-lookup"><span data-stu-id="7436a-109">Member</span></span>|<span data-ttu-id="7436a-110">Wert</span><span class="sxs-lookup"><span data-stu-id="7436a-110">Value</span></span>|<span data-ttu-id="7436a-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7436a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="83968-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="83968-107">Members</span></span>
+|<span data-ttu-id="83968-108">Element</span><span class="sxs-lookup"><span data-stu-id="83968-108">Member</span></span>|<span data-ttu-id="83968-109">Wert</span><span class="sxs-lookup"><span data-stu-id="83968-109">Value</span></span>|<span data-ttu-id="83968-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="83968-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7436a-112">noRestriction</span><span class="sxs-lookup"><span data-stu-id="7436a-112">noRestriction</span></span>|<span data-ttu-id="7436a-113">0</span><span class="sxs-lookup"><span data-stu-id="7436a-113">0</span></span>|<span data-ttu-id="7436a-114">Diese Option entfernt alle Einschränkungen zum Entsperren S Modus - Standard</span><span class="sxs-lookup"><span data-stu-id="7436a-114">This option will remove all restrictions to unlock S mode - default</span></span>|
-|<span data-ttu-id="7436a-115">Blockieren</span><span class="sxs-lookup"><span data-stu-id="7436a-115">block</span></span>|<span data-ttu-id="7436a-116">1</span><span class="sxs-lookup"><span data-stu-id="7436a-116">1</span></span>|<span data-ttu-id="7436a-117">Diese Option wird den Benutzer zum Entsperren des Geräts vom S Modus blockiert.</span><span class="sxs-lookup"><span data-stu-id="7436a-117">This option will block the user to unlock the device from S mode</span></span>|
-|<span data-ttu-id="7436a-118">Entsperren</span><span class="sxs-lookup"><span data-stu-id="7436a-118">unlock</span></span>|<span data-ttu-id="7436a-119">2</span><span class="sxs-lookup"><span data-stu-id="7436a-119">2</span></span>|<span data-ttu-id="7436a-120">Diese Option wird das Gerät vom S Modus entsperren.</span><span class="sxs-lookup"><span data-stu-id="7436a-120">This option will unlock the device from S mode</span></span>|
+|<span data-ttu-id="83968-111">noRestriction</span><span class="sxs-lookup"><span data-stu-id="83968-111">noRestriction</span></span>|<span data-ttu-id="83968-112">0</span><span class="sxs-lookup"><span data-stu-id="83968-112">0</span></span>|<span data-ttu-id="83968-113">Mit dieser Option werden alle Einschränkungen für den Unlock-Modus-Standard</span><span class="sxs-lookup"><span data-stu-id="83968-113">This option will remove all restrictions to unlock S mode - default</span></span>|
+|<span data-ttu-id="83968-114">Block</span><span class="sxs-lookup"><span data-stu-id="83968-114">block</span></span>|<span data-ttu-id="83968-115">1</span><span class="sxs-lookup"><span data-stu-id="83968-115">1</span></span>|<span data-ttu-id="83968-116">Mit dieser Option wird verhindert, dass der Benutzer das Gerät im S-Modus entsperren kann.</span><span class="sxs-lookup"><span data-stu-id="83968-116">This option will block the user to unlock the device from S mode</span></span>|
+|<span data-ttu-id="83968-117">Entsperren</span><span class="sxs-lookup"><span data-stu-id="83968-117">unlock</span></span>|<span data-ttu-id="83968-118">2</span><span class="sxs-lookup"><span data-stu-id="83968-118">2</span></span>|<span data-ttu-id="83968-119">Mit dieser Option wird das Gerät im S-Modus gesperrt.</span><span class="sxs-lookup"><span data-stu-id="83968-119">This option will unlock the device from S mode</span></span>|
 
 
 

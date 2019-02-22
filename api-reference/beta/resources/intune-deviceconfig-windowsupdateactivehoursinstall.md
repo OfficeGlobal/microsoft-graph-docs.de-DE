@@ -1,38 +1,38 @@
 ---
 title: windowsUpdateActiveHoursInstall-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28f40501123f465d8fcbfa05c3febb8ffab6f27a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9deab255749e70cfd165f28c27c09182b298e00a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144093"
 ---
-# <a name="windowsupdateactivehoursinstall-resource-type"></a><span data-ttu-id="0f6eb-103">windowsUpdateActiveHoursInstall-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="0f6eb-103">windowsUpdateActiveHoursInstall resource type</span></span>
+# <a name="windowsupdateactivehoursinstall-resource-type"></a><span data-ttu-id="b542b-103">windowsUpdateActiveHoursInstall-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b542b-103">windowsUpdateActiveHoursInstall resource type</span></span>
 
-> <span data-ttu-id="0f6eb-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="0f6eb-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0f6eb-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0f6eb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b542b-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b542b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0f6eb-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0f6eb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b542b-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="b542b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0f6eb-107">Noch nicht dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="0f6eb-107">Not yet documented</span></span>
+<span data-ttu-id="b542b-106">Noch nicht dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="b542b-106">Not yet documented</span></span>
 
 
-<span data-ttu-id="0f6eb-108">Erbt von [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span><span class="sxs-lookup"><span data-stu-id="0f6eb-108">Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span></span>
+<span data-ttu-id="b542b-107">Erbt von [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span><span class="sxs-lookup"><span data-stu-id="b542b-107">Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0f6eb-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="0f6eb-109">Properties</span></span>
-|<span data-ttu-id="0f6eb-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="0f6eb-110">Property</span></span>|<span data-ttu-id="0f6eb-111">Typ</span><span class="sxs-lookup"><span data-stu-id="0f6eb-111">Type</span></span>|<span data-ttu-id="0f6eb-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0f6eb-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b542b-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b542b-108">Properties</span></span>
+|<span data-ttu-id="b542b-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b542b-109">Property</span></span>|<span data-ttu-id="b542b-110">Typ</span><span class="sxs-lookup"><span data-stu-id="b542b-110">Type</span></span>|<span data-ttu-id="b542b-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b542b-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0f6eb-113">activeHoursStart</span><span class="sxs-lookup"><span data-stu-id="0f6eb-113">activeHoursStart</span></span>|<span data-ttu-id="0f6eb-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="0f6eb-114">TimeOfDay</span></span>|<span data-ttu-id="0f6eb-115">Beginn der aktiven Stunden</span><span class="sxs-lookup"><span data-stu-id="0f6eb-115">Active Hours Start</span></span>|
-|<span data-ttu-id="0f6eb-116">activeHoursEnd</span><span class="sxs-lookup"><span data-stu-id="0f6eb-116">activeHoursEnd</span></span>|<span data-ttu-id="0f6eb-117">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="0f6eb-117">TimeOfDay</span></span>|<span data-ttu-id="0f6eb-118">Ende der aktiven Stunden</span><span class="sxs-lookup"><span data-stu-id="0f6eb-118">Active Hours End</span></span>|
+|<span data-ttu-id="b542b-112">activeHoursStart</span><span class="sxs-lookup"><span data-stu-id="b542b-112">activeHoursStart</span></span>|<span data-ttu-id="b542b-113">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b542b-113">TimeOfDay</span></span>|<span data-ttu-id="b542b-114">Beginn der aktiven Stunden</span><span class="sxs-lookup"><span data-stu-id="b542b-114">Active Hours Start</span></span>|
+|<span data-ttu-id="b542b-115">activeHoursEnd</span><span class="sxs-lookup"><span data-stu-id="b542b-115">activeHoursEnd</span></span>|<span data-ttu-id="b542b-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="b542b-116">TimeOfDay</span></span>|<span data-ttu-id="b542b-117">Ende der aktiven Stunden</span><span class="sxs-lookup"><span data-stu-id="b542b-117">Active Hours End</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0f6eb-119">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="0f6eb-119">Relationships</span></span>
-<span data-ttu-id="0f6eb-120">Keine</span><span class="sxs-lookup"><span data-stu-id="0f6eb-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b542b-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b542b-118">Relationships</span></span>
+<span data-ttu-id="b542b-119">Keine</span><span class="sxs-lookup"><span data-stu-id="b542b-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0f6eb-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="0f6eb-121">JSON Representation</span></span>
-<span data-ttu-id="0f6eb-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="0f6eb-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b542b-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b542b-120">JSON Representation</span></span>
+<span data-ttu-id="b542b-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b542b-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"

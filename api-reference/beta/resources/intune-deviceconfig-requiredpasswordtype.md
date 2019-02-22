@@ -1,30 +1,30 @@
 ---
-title: RequiredPasswordType Enum-Typ
+title: requiredPasswordType-Enumerationstyp
 description: Mögliche Werte der erforderlichen Kennwörter.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d254c18fd827db961c1d31e962a506fb82d32cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 756a4623e117b8925c682d4a599d0f6ec05ebde0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416153"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145472"
 ---
-# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="13e6c-103">RequiredPasswordType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="13e6c-103">requiredPasswordType enum type</span></span>
+# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="a3542-103">requiredPasswordType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="a3542-103">requiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="13e6c-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="13e6c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="13e6c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="13e6c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a3542-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a3542-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="13e6c-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="13e6c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a3542-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="a3542-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="13e6c-107">Mögliche Werte der erforderlichen Kennwörter.</span><span class="sxs-lookup"><span data-stu-id="13e6c-107">Possible values of required passwords.</span></span>
+<span data-ttu-id="a3542-106">Mögliche Werte der erforderlichen Kennwörter.</span><span class="sxs-lookup"><span data-stu-id="a3542-106">Possible values of required passwords.</span></span>
 
-## <a name="members"></a><span data-ttu-id="13e6c-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="13e6c-108">Members</span></span>
-|<span data-ttu-id="13e6c-109">Member</span><span class="sxs-lookup"><span data-stu-id="13e6c-109">Member</span></span>|<span data-ttu-id="13e6c-110">Wert</span><span class="sxs-lookup"><span data-stu-id="13e6c-110">Value</span></span>|<span data-ttu-id="13e6c-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="13e6c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="a3542-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="a3542-107">Members</span></span>
+|<span data-ttu-id="a3542-108">Element</span><span class="sxs-lookup"><span data-stu-id="a3542-108">Member</span></span>|<span data-ttu-id="a3542-109">Wert</span><span class="sxs-lookup"><span data-stu-id="a3542-109">Value</span></span>|<span data-ttu-id="a3542-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a3542-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="13e6c-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="13e6c-112">deviceDefault</span></span>|<span data-ttu-id="13e6c-113">0</span><span class="sxs-lookup"><span data-stu-id="13e6c-113">0</span></span>|<span data-ttu-id="13e6c-114">Gerät Standardwert, keine beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="13e6c-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="13e6c-115">Alphanumerisch</span><span class="sxs-lookup"><span data-stu-id="13e6c-115">alphanumeric</span></span>|<span data-ttu-id="13e6c-116">1</span><span class="sxs-lookup"><span data-stu-id="13e6c-116">1</span></span>|<span data-ttu-id="13e6c-117">Alphanumerisches Kennwort erforderlich.</span><span class="sxs-lookup"><span data-stu-id="13e6c-117">Alphanumeric password required.</span></span>|
-|<span data-ttu-id="13e6c-118">numerische</span><span class="sxs-lookup"><span data-stu-id="13e6c-118">numeric</span></span>|<span data-ttu-id="13e6c-119">2</span><span class="sxs-lookup"><span data-stu-id="13e6c-119">2</span></span>|<span data-ttu-id="13e6c-120">Numerische erforderliche Kennwort.</span><span class="sxs-lookup"><span data-stu-id="13e6c-120">Numeric password required.</span></span>|
+|<span data-ttu-id="a3542-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="a3542-111">deviceDefault</span></span>|<span data-ttu-id="a3542-112">0</span><span class="sxs-lookup"><span data-stu-id="a3542-112">0</span></span>|<span data-ttu-id="a3542-113">Geräte-Standardwert, keine Absicht.</span><span class="sxs-lookup"><span data-stu-id="a3542-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="a3542-114">Alphanumerisch</span><span class="sxs-lookup"><span data-stu-id="a3542-114">alphanumeric</span></span>|<span data-ttu-id="a3542-115">1</span><span class="sxs-lookup"><span data-stu-id="a3542-115">1</span></span>|<span data-ttu-id="a3542-116">Alphanumerisches Kennwort erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a3542-116">Alphanumeric password required.</span></span>|
+|<span data-ttu-id="a3542-117">numerischen</span><span class="sxs-lookup"><span data-stu-id="a3542-117">numeric</span></span>|<span data-ttu-id="a3542-118">2</span><span class="sxs-lookup"><span data-stu-id="a3542-118">2</span></span>|<span data-ttu-id="a3542-119">Numerisches Kennwort erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a3542-119">Numeric password required.</span></span>|
 
 
 

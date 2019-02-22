@@ -1,40 +1,40 @@
 ---
-title: Ressourcentyp mobileContainedApp
-description: Eine abstrakte Klasse, die eine enthaltene-app in einem MobileApp fungiert als Paket darstellt.
-localization_priority: Normal
+title: mobileContainedApp-Ressourcentyp
+description: Eine abstrakte Klasse, die eine enthaltene app in einem mobileApp darstellt, das als Paket fungiert.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5d4ed392d681d97478cb1baf5ff6f854cb74011
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3400349244e738644d4885b2265c5f7f4ceb84e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425666"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145199"
 ---
-# <a name="mobilecontainedapp-resource-type"></a><span data-ttu-id="2db6b-103">Ressourcentyp mobileContainedApp</span><span class="sxs-lookup"><span data-stu-id="2db6b-103">mobileContainedApp resource type</span></span>
+# <a name="mobilecontainedapp-resource-type"></a><span data-ttu-id="f7e3d-103">mobileContainedApp-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="f7e3d-103">mobileContainedApp resource type</span></span>
 
-> <span data-ttu-id="2db6b-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="2db6b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2db6b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2db6b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f7e3d-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2db6b-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2db6b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f7e3d-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2db6b-107">Eine abstrakte Klasse, die eine enthaltene-app in einem MobileApp fungiert als Paket darstellt.</span><span class="sxs-lookup"><span data-stu-id="2db6b-107">An abstract class that represents a contained app in a mobileApp acting as a package.</span></span>
+<span data-ttu-id="f7e3d-106">Eine abstrakte Klasse, die eine enthaltene app in einem mobileApp darstellt, das als Paket fungiert.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-106">An abstract class that represents a contained app in a mobileApp acting as a package.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="2db6b-108">Methoden</span><span class="sxs-lookup"><span data-stu-id="2db6b-108">Methods</span></span>
-|<span data-ttu-id="2db6b-109">Methode</span><span class="sxs-lookup"><span data-stu-id="2db6b-109">Method</span></span>|<span data-ttu-id="2db6b-110">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="2db6b-110">Return Type</span></span>|<span data-ttu-id="2db6b-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2db6b-111">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="f7e3d-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="f7e3d-107">Methods</span></span>
+|<span data-ttu-id="f7e3d-108">Methode</span><span class="sxs-lookup"><span data-stu-id="f7e3d-108">Method</span></span>|<span data-ttu-id="f7e3d-109">Rückgabetyp</span><span class="sxs-lookup"><span data-stu-id="f7e3d-109">Return Type</span></span>|<span data-ttu-id="f7e3d-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f7e3d-110">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="2db6b-112">Liste mobileContainedApps</span><span class="sxs-lookup"><span data-stu-id="2db6b-112">List mobileContainedApps</span></span>](../api/intune-apps-mobilecontainedapp-list.md)|<span data-ttu-id="2db6b-113">[MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="2db6b-113">[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection</span></span>|<span data-ttu-id="2db6b-114">Listeneigenschaften und Beziehungen der [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="2db6b-114">List properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) objects.</span></span>|
-|[<span data-ttu-id="2db6b-115">Abrufen von mobileContainedApp</span><span class="sxs-lookup"><span data-stu-id="2db6b-115">Get mobileContainedApp</span></span>](../api/intune-apps-mobilecontainedapp-get.md)|[<span data-ttu-id="2db6b-116">mobileContainedApp</span><span class="sxs-lookup"><span data-stu-id="2db6b-116">mobileContainedApp</span></span>](../resources/intune-apps-mobilecontainedapp.md)|<span data-ttu-id="2db6b-117">Lesen Sie Eigenschaften und Beziehungen des [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="2db6b-117">Read properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) object.</span></span>|
+|[<span data-ttu-id="f7e3d-111">MobileContainedApps aufListen</span><span class="sxs-lookup"><span data-stu-id="f7e3d-111">List mobileContainedApps</span></span>](../api/intune-apps-mobilecontainedapp-list.md)|<span data-ttu-id="f7e3d-112">[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Sammlung</span><span class="sxs-lookup"><span data-stu-id="f7e3d-112">[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection</span></span>|<span data-ttu-id="f7e3d-113">AufListen von Eigenschaften und Beziehungen der [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-113">List properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) objects.</span></span>|
+|[<span data-ttu-id="f7e3d-114">MobileContainedApp abrufen</span><span class="sxs-lookup"><span data-stu-id="f7e3d-114">Get mobileContainedApp</span></span>](../api/intune-apps-mobilecontainedapp-get.md)|[<span data-ttu-id="f7e3d-115">mobileContainedApp</span><span class="sxs-lookup"><span data-stu-id="f7e3d-115">mobileContainedApp</span></span>](../resources/intune-apps-mobilecontainedapp.md)|<span data-ttu-id="f7e3d-116">Lesen von Eigenschaften und Beziehungen des [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-116">Read properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="2db6b-118">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2db6b-118">Properties</span></span>
-|<span data-ttu-id="2db6b-119">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2db6b-119">Property</span></span>|<span data-ttu-id="2db6b-120">Typ</span><span class="sxs-lookup"><span data-stu-id="2db6b-120">Type</span></span>|<span data-ttu-id="2db6b-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2db6b-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f7e3d-117">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f7e3d-117">Properties</span></span>
+|<span data-ttu-id="f7e3d-118">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f7e3d-118">Property</span></span>|<span data-ttu-id="f7e3d-119">Typ</span><span class="sxs-lookup"><span data-stu-id="f7e3d-119">Type</span></span>|<span data-ttu-id="f7e3d-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f7e3d-120">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2db6b-122">id</span><span class="sxs-lookup"><span data-stu-id="2db6b-122">id</span></span>|<span data-ttu-id="2db6b-123">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2db6b-123">String</span></span>|<span data-ttu-id="2db6b-124">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="2db6b-124">Key of the entity.</span></span>|
+|<span data-ttu-id="f7e3d-121">id</span><span class="sxs-lookup"><span data-stu-id="f7e3d-121">id</span></span>|<span data-ttu-id="f7e3d-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="f7e3d-122">String</span></span>|<span data-ttu-id="f7e3d-123">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="f7e3d-123">Key of the entity.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2db6b-125">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="2db6b-125">Relationships</span></span>
-<span data-ttu-id="2db6b-126">Keine</span><span class="sxs-lookup"><span data-stu-id="2db6b-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f7e3d-124">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="f7e3d-124">Relationships</span></span>
+<span data-ttu-id="f7e3d-125">Keine</span><span class="sxs-lookup"><span data-stu-id="f7e3d-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2db6b-127">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2db6b-127">JSON Representation</span></span>
-<span data-ttu-id="2db6b-128">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2db6b-128">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f7e3d-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="f7e3d-126">JSON Representation</span></span>
+<span data-ttu-id="f7e3d-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="f7e3d-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

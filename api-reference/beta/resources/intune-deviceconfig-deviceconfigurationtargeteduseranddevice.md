@@ -1,39 +1,39 @@
 ---
-title: Ressourcentyp deviceConfigurationTargetedUserAndDevice
-description: Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.
-localization_priority: Normal
+title: deviceConfigurationTargetedUserAndDevice-Ressourcentyp
+description: Konflikt Zusammenfassung für eine Reihe von Geräte Konfigurationsrichtlinien.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410742"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144142"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="da728-103">Ressourcentyp deviceConfigurationTargetedUserAndDevice</span><span class="sxs-lookup"><span data-stu-id="da728-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a><span data-ttu-id="3d4c1-103">deviceConfigurationTargetedUserAndDevice-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="3d4c1-103">deviceConfigurationTargetedUserAndDevice resource type</span></span>
 
-> <span data-ttu-id="da728-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="da728-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="da728-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="da728-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3d4c1-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="da728-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="da728-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d4c1-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da728-107">Zusammenfassung für einen Satz von Richtlinien für die Konfiguration von Geräte Konflikt.</span><span class="sxs-lookup"><span data-stu-id="da728-107">Conflict summary for a set of device configuration policies.</span></span>
+<span data-ttu-id="3d4c1-106">Konflikt Zusammenfassung für eine Reihe von Geräte Konfigurationsrichtlinien.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-106">Conflict summary for a set of device configuration policies.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="da728-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="da728-108">Properties</span></span>
-|<span data-ttu-id="da728-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="da728-109">Property</span></span>|<span data-ttu-id="da728-110">Typ</span><span class="sxs-lookup"><span data-stu-id="da728-110">Type</span></span>|<span data-ttu-id="da728-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="da728-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3d4c1-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3d4c1-107">Properties</span></span>
+|<span data-ttu-id="3d4c1-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3d4c1-108">Property</span></span>|<span data-ttu-id="3d4c1-109">Typ</span><span class="sxs-lookup"><span data-stu-id="3d4c1-109">Type</span></span>|<span data-ttu-id="3d4c1-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3d4c1-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da728-112">deviceId</span><span class="sxs-lookup"><span data-stu-id="da728-112">deviceId</span></span>|<span data-ttu-id="da728-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="da728-113">String</span></span>|<span data-ttu-id="da728-114">Die Id des Geräts in das Einchecken.</span><span class="sxs-lookup"><span data-stu-id="da728-114">The id of the device in the checkin.</span></span>|
-|<span data-ttu-id="da728-115">deviceName</span><span class="sxs-lookup"><span data-stu-id="da728-115">deviceName</span></span>|<span data-ttu-id="da728-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="da728-116">String</span></span>|<span data-ttu-id="da728-117">Der Name des Geräts in das Einchecken.</span><span class="sxs-lookup"><span data-stu-id="da728-117">The name of the device in the checkin.</span></span>|
-|<span data-ttu-id="da728-118">userId</span><span class="sxs-lookup"><span data-stu-id="da728-118">userId</span></span>|<span data-ttu-id="da728-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="da728-119">String</span></span>|<span data-ttu-id="da728-120">Die Id des Benutzers in das Einchecken.</span><span class="sxs-lookup"><span data-stu-id="da728-120">The id of the user in the checkin.</span></span>|
-|<span data-ttu-id="da728-121">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="da728-121">userDisplayName</span></span>|<span data-ttu-id="da728-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="da728-122">String</span></span>|<span data-ttu-id="da728-123">Der Anzeigename des Benutzers in das Einchecken</span><span class="sxs-lookup"><span data-stu-id="da728-123">The display name of the user in the checkin</span></span>|
-|<span data-ttu-id="da728-124">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="da728-124">userPrincipalName</span></span>|<span data-ttu-id="da728-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="da728-125">String</span></span>|<span data-ttu-id="da728-126">Den UPN des Benutzers in das Einchecken.</span><span class="sxs-lookup"><span data-stu-id="da728-126">The UPN of the user in the checkin.</span></span>|
-|<span data-ttu-id="da728-127">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="da728-127">lastCheckinDateTime</span></span>|<span data-ttu-id="da728-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da728-128">DateTimeOffset</span></span>|<span data-ttu-id="da728-129">Zeitpunkt der letzten Checkin für diese Benutzer/Geräte-Paar.</span><span class="sxs-lookup"><span data-stu-id="da728-129">Last checkin time for this user/device pair.</span></span>|
+|<span data-ttu-id="3d4c1-111">deviceId</span><span class="sxs-lookup"><span data-stu-id="3d4c1-111">deviceId</span></span>|<span data-ttu-id="3d4c1-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d4c1-112">String</span></span>|<span data-ttu-id="3d4c1-113">Die ID des Geräts in der einchecken.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-113">The id of the device in the checkin.</span></span>|
+|<span data-ttu-id="3d4c1-114">deviceName</span><span class="sxs-lookup"><span data-stu-id="3d4c1-114">deviceName</span></span>|<span data-ttu-id="3d4c1-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d4c1-115">String</span></span>|<span data-ttu-id="3d4c1-116">Der Name des Geräts in der einchecken.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-116">The name of the device in the checkin.</span></span>|
+|<span data-ttu-id="3d4c1-117">userId</span><span class="sxs-lookup"><span data-stu-id="3d4c1-117">userId</span></span>|<span data-ttu-id="3d4c1-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3d4c1-118">String</span></span>|<span data-ttu-id="3d4c1-119">Die ID des Benutzers in der einchecken.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-119">The id of the user in the checkin.</span></span>|
+|<span data-ttu-id="3d4c1-120">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="3d4c1-120">userDisplayName</span></span>|<span data-ttu-id="3d4c1-121">String</span><span class="sxs-lookup"><span data-stu-id="3d4c1-121">String</span></span>|<span data-ttu-id="3d4c1-122">Der Anzeigename des Benutzers in der Einchecken</span><span class="sxs-lookup"><span data-stu-id="3d4c1-122">The display name of the user in the checkin</span></span>|
+|<span data-ttu-id="3d4c1-123">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="3d4c1-123">userPrincipalName</span></span>|<span data-ttu-id="3d4c1-124">String</span><span class="sxs-lookup"><span data-stu-id="3d4c1-124">String</span></span>|<span data-ttu-id="3d4c1-125">Der UPN des Benutzers beim Einchecken.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-125">The UPN of the user in the checkin.</span></span>|
+|<span data-ttu-id="3d4c1-126">lastCheckinDateTime</span><span class="sxs-lookup"><span data-stu-id="3d4c1-126">lastCheckinDateTime</span></span>|<span data-ttu-id="3d4c1-127">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3d4c1-127">DateTimeOffset</span></span>|<span data-ttu-id="3d4c1-128">Letzter Eincheck Zeitpunkt für dieses Benutzer/Gerät-Paar.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-128">Last checkin time for this user/device pair.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="da728-130">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="da728-130">Relationships</span></span>
-<span data-ttu-id="da728-131">Keine</span><span class="sxs-lookup"><span data-stu-id="da728-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3d4c1-129">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="3d4c1-129">Relationships</span></span>
+<span data-ttu-id="3d4c1-130">Keine</span><span class="sxs-lookup"><span data-stu-id="3d4c1-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="da728-132">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="da728-132">JSON Representation</span></span>
-<span data-ttu-id="da728-133">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="da728-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d4c1-131">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="3d4c1-131">JSON Representation</span></span>
+<span data-ttu-id="3d4c1-132">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="3d4c1-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationTargetedUserAndDevice"

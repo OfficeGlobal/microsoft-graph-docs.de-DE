@@ -1,35 +1,35 @@
 ---
-title: AndroidForWorkAppConfigurationSchemaItemDataType Enum-Typ
-description: Datentyp für ein Configuration-Element in einer Android für die Arbeit der Anwendung benutzerdefinierte Konfigurationsschema
-localization_priority: Normal
+title: androidForWorkAppConfigurationSchemaItemDataType-Enumerationstyp
+description: Datentyp für ein Konfigurationselement innerhalb des benutzerdefinierten Konfigurationsschemas der Android for Work-Anwendung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4a32d8306fc279819ce9fb6e2b6a7b39eca91a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 384a51a2f2e7ac3639934e8446aa4dc54303d022
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406444"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139669"
 ---
-# <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a><span data-ttu-id="24475-103">AndroidForWorkAppConfigurationSchemaItemDataType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="24475-103">androidForWorkAppConfigurationSchemaItemDataType enum type</span></span>
+# <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a><span data-ttu-id="41702-103">androidForWorkAppConfigurationSchemaItemDataType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="41702-103">androidForWorkAppConfigurationSchemaItemDataType enum type</span></span>
 
-> <span data-ttu-id="24475-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="24475-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="24475-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="24475-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="41702-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="41702-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="24475-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="24475-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="41702-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="41702-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="24475-107">Datentyp für ein Configuration-Element in einer Android für die Arbeit der Anwendung benutzerdefinierte Konfigurationsschema</span><span class="sxs-lookup"><span data-stu-id="24475-107">Data type for a configuration item inside an Android for Work application's custom configuration schema</span></span>
+<span data-ttu-id="41702-106">Datentyp für ein Konfigurationselement innerhalb des benutzerdefinierten Konfigurationsschemas der Android for Work-Anwendung</span><span class="sxs-lookup"><span data-stu-id="41702-106">Data type for a configuration item inside an Android for Work application's custom configuration schema</span></span>
 
-## <a name="members"></a><span data-ttu-id="24475-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="24475-108">Members</span></span>
-|<span data-ttu-id="24475-109">Member</span><span class="sxs-lookup"><span data-stu-id="24475-109">Member</span></span>|<span data-ttu-id="24475-110">Wert</span><span class="sxs-lookup"><span data-stu-id="24475-110">Value</span></span>|<span data-ttu-id="24475-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="24475-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="41702-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="41702-107">Members</span></span>
+|<span data-ttu-id="41702-108">Element</span><span class="sxs-lookup"><span data-stu-id="41702-108">Member</span></span>|<span data-ttu-id="41702-109">Wert</span><span class="sxs-lookup"><span data-stu-id="41702-109">Value</span></span>|<span data-ttu-id="41702-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="41702-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="24475-112">bool</span><span class="sxs-lookup"><span data-stu-id="24475-112">bool</span></span>|<span data-ttu-id="24475-113">0</span><span class="sxs-lookup"><span data-stu-id="24475-113">0</span></span>|<span data-ttu-id="24475-114">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-114">Not yet documented</span></span>|
-|<span data-ttu-id="24475-115">integer</span><span class="sxs-lookup"><span data-stu-id="24475-115">integer</span></span>|<span data-ttu-id="24475-116">1</span><span class="sxs-lookup"><span data-stu-id="24475-116">1</span></span>|<span data-ttu-id="24475-117">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-117">Not yet documented</span></span>|
-|<span data-ttu-id="24475-118">string</span><span class="sxs-lookup"><span data-stu-id="24475-118">string</span></span>|<span data-ttu-id="24475-119">2</span><span class="sxs-lookup"><span data-stu-id="24475-119">2</span></span>|<span data-ttu-id="24475-120">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-120">Not yet documented</span></span>|
-|<span data-ttu-id="24475-121">Wahl</span><span class="sxs-lookup"><span data-stu-id="24475-121">choice</span></span>|<span data-ttu-id="24475-122">3</span><span class="sxs-lookup"><span data-stu-id="24475-122">3</span></span>|<span data-ttu-id="24475-123">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-123">Not yet documented</span></span>|
-|<span data-ttu-id="24475-124">MultiSelect</span><span class="sxs-lookup"><span data-stu-id="24475-124">multiselect</span></span>|<span data-ttu-id="24475-125">4</span><span class="sxs-lookup"><span data-stu-id="24475-125">4</span></span>|<span data-ttu-id="24475-126">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-126">Not yet documented</span></span>|
-|<span data-ttu-id="24475-127">bundle</span><span class="sxs-lookup"><span data-stu-id="24475-127">bundle</span></span>|<span data-ttu-id="24475-128">5</span><span class="sxs-lookup"><span data-stu-id="24475-128">5</span></span>|<span data-ttu-id="24475-129">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-129">Not yet documented</span></span>|
-|<span data-ttu-id="24475-130">bundleArray</span><span class="sxs-lookup"><span data-stu-id="24475-130">bundleArray</span></span>|<span data-ttu-id="24475-131">6</span><span class="sxs-lookup"><span data-stu-id="24475-131">6</span></span>|<span data-ttu-id="24475-132">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-132">Not yet documented</span></span>|
-|<span data-ttu-id="24475-133">hidden</span><span class="sxs-lookup"><span data-stu-id="24475-133">hidden</span></span>|<span data-ttu-id="24475-134">7</span><span class="sxs-lookup"><span data-stu-id="24475-134">7</span></span>|<span data-ttu-id="24475-135">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="24475-135">Not yet documented</span></span>|
+|<span data-ttu-id="41702-111">bool</span><span class="sxs-lookup"><span data-stu-id="41702-111">bool</span></span>|<span data-ttu-id="41702-112">0</span><span class="sxs-lookup"><span data-stu-id="41702-112">0</span></span>|<span data-ttu-id="41702-113">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-113">Not yet documented</span></span>|
+|<span data-ttu-id="41702-114">integer</span><span class="sxs-lookup"><span data-stu-id="41702-114">integer</span></span>|<span data-ttu-id="41702-115">1</span><span class="sxs-lookup"><span data-stu-id="41702-115">1</span></span>|<span data-ttu-id="41702-116">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-116">Not yet documented</span></span>|
+|<span data-ttu-id="41702-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="41702-117">string</span></span>|<span data-ttu-id="41702-118">2</span><span class="sxs-lookup"><span data-stu-id="41702-118">2</span></span>|<span data-ttu-id="41702-119">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-119">Not yet documented</span></span>|
+|<span data-ttu-id="41702-120">Auswahl</span><span class="sxs-lookup"><span data-stu-id="41702-120">choice</span></span>|<span data-ttu-id="41702-121">3</span><span class="sxs-lookup"><span data-stu-id="41702-121">3</span></span>|<span data-ttu-id="41702-122">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-122">Not yet documented</span></span>|
+|<span data-ttu-id="41702-123">MultiSelect</span><span class="sxs-lookup"><span data-stu-id="41702-123">multiselect</span></span>|<span data-ttu-id="41702-124">4</span><span class="sxs-lookup"><span data-stu-id="41702-124">4</span></span>|<span data-ttu-id="41702-125">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-125">Not yet documented</span></span>|
+|<span data-ttu-id="41702-126">bundle</span><span class="sxs-lookup"><span data-stu-id="41702-126">bundle</span></span>|<span data-ttu-id="41702-127">5</span><span class="sxs-lookup"><span data-stu-id="41702-127">5</span></span>|<span data-ttu-id="41702-128">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-128">Not yet documented</span></span>|
+|<span data-ttu-id="41702-129">bundleArray</span><span class="sxs-lookup"><span data-stu-id="41702-129">bundleArray</span></span>|<span data-ttu-id="41702-130">6</span><span class="sxs-lookup"><span data-stu-id="41702-130">6</span></span>|<span data-ttu-id="41702-131">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-131">Not yet documented</span></span>|
+|<span data-ttu-id="41702-132">hidden</span><span class="sxs-lookup"><span data-stu-id="41702-132">hidden</span></span>|<span data-ttu-id="41702-133">7</span><span class="sxs-lookup"><span data-stu-id="41702-133">7</span></span>|<span data-ttu-id="41702-134">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="41702-134">Not yet documented</span></span>|
 
 
 

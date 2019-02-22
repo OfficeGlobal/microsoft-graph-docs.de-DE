@@ -1,30 +1,30 @@
 ---
-title: SharedPCAccountDeletionPolicyType Enum-Typ
-description: Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.
-localization_priority: Normal
+title: sharedPCAccountDeletionPolicyType-Enumerationstyp
+description: Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645cd3dfd4121c6c9bdd9d57a0dc3b63723cc461
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415166"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139935"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="df38e-103">SharedPCAccountDeletionPolicyType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="df38e-103">sharedPCAccountDeletionPolicyType enum type</span></span>
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="55895-103">sharedPCAccountDeletionPolicyType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="55895-103">sharedPCAccountDeletionPolicyType enum type</span></span>
 
-> <span data-ttu-id="df38e-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="df38e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="df38e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="df38e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="55895-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="55895-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="df38e-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="df38e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="55895-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="55895-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="df38e-107">Mögliche Werte für wann Konten auf einem freigegebenen PC gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="df38e-107">Possible values for when accounts are deleted on a shared PC.</span></span>
+<span data-ttu-id="55895-106">Mögliche Werte für den Fall, dass Konten auf einem freigegebenen PC gelöscht werden.</span><span class="sxs-lookup"><span data-stu-id="55895-106">Possible values for when accounts are deleted on a shared PC.</span></span>
 
-## <a name="members"></a><span data-ttu-id="df38e-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="df38e-108">Members</span></span>
-|<span data-ttu-id="df38e-109">Member</span><span class="sxs-lookup"><span data-stu-id="df38e-109">Member</span></span>|<span data-ttu-id="df38e-110">Wert</span><span class="sxs-lookup"><span data-stu-id="df38e-110">Value</span></span>|<span data-ttu-id="df38e-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="df38e-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="55895-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="55895-107">Members</span></span>
+|<span data-ttu-id="55895-108">Element</span><span class="sxs-lookup"><span data-stu-id="55895-108">Member</span></span>|<span data-ttu-id="55895-109">Wert</span><span class="sxs-lookup"><span data-stu-id="55895-109">Value</span></span>|<span data-ttu-id="55895-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="55895-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="df38e-112">Direktfenster</span><span class="sxs-lookup"><span data-stu-id="df38e-112">immediate</span></span>|<span data-ttu-id="df38e-113">0</span><span class="sxs-lookup"><span data-stu-id="df38e-113">0</span></span>|<span data-ttu-id="df38e-114">Löschen Sie sofort.</span><span class="sxs-lookup"><span data-stu-id="df38e-114">Delete immediately.</span></span>|
-|<span data-ttu-id="df38e-115">diskSpaceThreshold</span><span class="sxs-lookup"><span data-stu-id="df38e-115">diskSpaceThreshold</span></span>|<span data-ttu-id="df38e-116">1</span><span class="sxs-lookup"><span data-stu-id="df38e-116">1</span></span>|<span data-ttu-id="df38e-117">Löschen Sie Disk Space Schwellenwert.</span><span class="sxs-lookup"><span data-stu-id="df38e-117">Delete at disk space threshold.</span></span>|
-|<span data-ttu-id="df38e-118">diskSpaceThresholdOrInactiveThreshold</span><span class="sxs-lookup"><span data-stu-id="df38e-118">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="df38e-119">2</span><span class="sxs-lookup"><span data-stu-id="df38e-119">2</span></span>|<span data-ttu-id="df38e-120">Löschen Sie Disk Space Schwellenwert oder inaktiv Schwellenwert.</span><span class="sxs-lookup"><span data-stu-id="df38e-120">Delete at disk space threshold or inactive threshold.</span></span>|
+|<span data-ttu-id="55895-111">direkt</span><span class="sxs-lookup"><span data-stu-id="55895-111">immediate</span></span>|<span data-ttu-id="55895-112">0</span><span class="sxs-lookup"><span data-stu-id="55895-112">0</span></span>|<span data-ttu-id="55895-113">Sofort löschen.</span><span class="sxs-lookup"><span data-stu-id="55895-113">Delete immediately.</span></span>|
+|<span data-ttu-id="55895-114">diskSpaceThreshold</span><span class="sxs-lookup"><span data-stu-id="55895-114">diskSpaceThreshold</span></span>|<span data-ttu-id="55895-115">1</span><span class="sxs-lookup"><span data-stu-id="55895-115">1</span></span>|<span data-ttu-id="55895-116">DELETE bei Speicherplatz-Schwellenwert.</span><span class="sxs-lookup"><span data-stu-id="55895-116">Delete at disk space threshold.</span></span>|
+|<span data-ttu-id="55895-117">Diskspacethresholdorinactivethreshold hat</span><span class="sxs-lookup"><span data-stu-id="55895-117">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="55895-118">2</span><span class="sxs-lookup"><span data-stu-id="55895-118">2</span></span>|<span data-ttu-id="55895-119">DELETE bei Speicherplatz Schwellenwert oder inaktiver Schwellenwert.</span><span class="sxs-lookup"><span data-stu-id="55895-119">Delete at disk space threshold or inactive threshold.</span></span>|
 
 
 
