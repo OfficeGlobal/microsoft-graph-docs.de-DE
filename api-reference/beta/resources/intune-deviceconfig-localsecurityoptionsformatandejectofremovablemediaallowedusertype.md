@@ -1,31 +1,31 @@
 ---
-title: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType Enum-Typ
+title: localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType-Enumerationstyp
 description: Mögliche Werte für LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b708f1ec4afb3165cfa8f8d59d492f4b6ae4c6c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e740f5a7e70d4244a1b0216b4d8c9719b2d82304
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161208"
 ---
-# <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a><span data-ttu-id="bdea0-103">LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="bdea0-103">localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type</span></span>
+# <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a><span data-ttu-id="cc2a2-103">localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="cc2a2-103">localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type</span></span>
 
-> <span data-ttu-id="bdea0-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="bdea0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bdea0-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bdea0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cc2a2-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="cc2a2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bdea0-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bdea0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cc2a2-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="cc2a2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bdea0-107">Mögliche Werte für LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span><span class="sxs-lookup"><span data-stu-id="bdea0-107">Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span></span>
+<span data-ttu-id="cc2a2-106">Mögliche Werte für LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span><span class="sxs-lookup"><span data-stu-id="cc2a2-106">Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser</span></span>
 
-## <a name="members"></a><span data-ttu-id="bdea0-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="bdea0-108">Members</span></span>
-|<span data-ttu-id="bdea0-109">Member</span><span class="sxs-lookup"><span data-stu-id="bdea0-109">Member</span></span>|<span data-ttu-id="bdea0-110">Wert</span><span class="sxs-lookup"><span data-stu-id="bdea0-110">Value</span></span>|<span data-ttu-id="bdea0-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bdea0-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="cc2a2-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="cc2a2-107">Members</span></span>
+|<span data-ttu-id="cc2a2-108">Element</span><span class="sxs-lookup"><span data-stu-id="cc2a2-108">Member</span></span>|<span data-ttu-id="cc2a2-109">Wert</span><span class="sxs-lookup"><span data-stu-id="cc2a2-109">Value</span></span>|<span data-ttu-id="cc2a2-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cc2a2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bdea0-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="bdea0-112">notConfigured</span></span>|<span data-ttu-id="bdea0-113">0</span><span class="sxs-lookup"><span data-stu-id="bdea0-113">0</span></span>|<span data-ttu-id="bdea0-114">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="bdea0-114">Not Configured</span></span>|
-|<span data-ttu-id="bdea0-115">Administratoren</span><span class="sxs-lookup"><span data-stu-id="bdea0-115">administrators</span></span>|<span data-ttu-id="bdea0-116">1</span><span class="sxs-lookup"><span data-stu-id="bdea0-116">1</span></span>|<span data-ttu-id="bdea0-117">Administratoren</span><span class="sxs-lookup"><span data-stu-id="bdea0-117">Administrators</span></span>|
-|<span data-ttu-id="bdea0-118">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="bdea0-118">administratorsAndPowerUsers</span></span>|<span data-ttu-id="bdea0-119">2</span><span class="sxs-lookup"><span data-stu-id="bdea0-119">2</span></span>|<span data-ttu-id="bdea0-120">Administratoren und Hauptbenutzer</span><span class="sxs-lookup"><span data-stu-id="bdea0-120">Administrators and Power Users</span></span>|
-|<span data-ttu-id="bdea0-121">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="bdea0-121">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="bdea0-122">3</span><span class="sxs-lookup"><span data-stu-id="bdea0-122">3</span></span>|<span data-ttu-id="bdea0-123">Administratoren und interaktive Benutzer</span><span class="sxs-lookup"><span data-stu-id="bdea0-123">Administrators and Interactive Users</span></span> |
+|<span data-ttu-id="cc2a2-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="cc2a2-111">notConfigured</span></span>|<span data-ttu-id="cc2a2-112">0</span><span class="sxs-lookup"><span data-stu-id="cc2a2-112">0</span></span>|<span data-ttu-id="cc2a2-113">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="cc2a2-113">Not Configured</span></span>|
+|<span data-ttu-id="cc2a2-114">Administratoren</span><span class="sxs-lookup"><span data-stu-id="cc2a2-114">administrators</span></span>|<span data-ttu-id="cc2a2-115">1</span><span class="sxs-lookup"><span data-stu-id="cc2a2-115">1</span></span>|<span data-ttu-id="cc2a2-116">Administratoren</span><span class="sxs-lookup"><span data-stu-id="cc2a2-116">Administrators</span></span>|
+|<span data-ttu-id="cc2a2-117">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="cc2a2-117">administratorsAndPowerUsers</span></span>|<span data-ttu-id="cc2a2-118">2</span><span class="sxs-lookup"><span data-stu-id="cc2a2-118">2</span></span>|<span data-ttu-id="cc2a2-119">Administratoren und Hauptbenutzer</span><span class="sxs-lookup"><span data-stu-id="cc2a2-119">Administrators and Power Users</span></span>|
+|<span data-ttu-id="cc2a2-120">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="cc2a2-120">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="cc2a2-121">3</span><span class="sxs-lookup"><span data-stu-id="cc2a2-121">3</span></span>|<span data-ttu-id="cc2a2-122">Administratoren und interaktive Benutzer</span><span class="sxs-lookup"><span data-stu-id="cc2a2-122">Administrators and Interactive Users</span></span> |
 
 
 

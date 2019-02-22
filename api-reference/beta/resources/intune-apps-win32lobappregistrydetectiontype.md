@@ -1,33 +1,33 @@
 ---
-title: win32LobAppRegistryDetectionType Enum-Typ
-description: Enthält alle Erkennung Datentyp unterstützt.
-localization_priority: Normal
+title: win32LobAppRegistryDetectionType-Enumerationstyp
+description: Enthält alle unterstützten Registrierungsdaten-Erkennungstypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 188f206e42b55e0c2cc2f8b6ed831f19a4b2052a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 62028eefbfa85bceb669cbe8cc4bee8261d5837e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411085"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158457"
 ---
-# <a name="win32lobappregistrydetectiontype-enum-type"></a><span data-ttu-id="a552d-103">win32LobAppRegistryDetectionType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="a552d-103">win32LobAppRegistryDetectionType enum type</span></span>
+# <a name="win32lobappregistrydetectiontype-enum-type"></a><span data-ttu-id="44ba5-103">win32LobAppRegistryDetectionType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="44ba5-103">win32LobAppRegistryDetectionType enum type</span></span>
 
-> <span data-ttu-id="a552d-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="a552d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a552d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a552d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="44ba5-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="44ba5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a552d-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="a552d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="44ba5-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="44ba5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a552d-107">Enthält alle Erkennung Datentyp unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a552d-107">Contains all supported registry data detection type.</span></span>
+<span data-ttu-id="44ba5-106">Enthält alle unterstützten Registrierungsdaten-Erkennungstypen.</span><span class="sxs-lookup"><span data-stu-id="44ba5-106">Contains all supported registry data detection type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a552d-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="a552d-108">Members</span></span>
-|<span data-ttu-id="a552d-109">Member</span><span class="sxs-lookup"><span data-stu-id="a552d-109">Member</span></span>|<span data-ttu-id="a552d-110">Wert</span><span class="sxs-lookup"><span data-stu-id="a552d-110">Value</span></span>|<span data-ttu-id="a552d-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a552d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="44ba5-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="44ba5-107">Members</span></span>
+|<span data-ttu-id="44ba5-108">Element</span><span class="sxs-lookup"><span data-stu-id="44ba5-108">Member</span></span>|<span data-ttu-id="44ba5-109">Wert</span><span class="sxs-lookup"><span data-stu-id="44ba5-109">Value</span></span>|<span data-ttu-id="44ba5-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="44ba5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a552d-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="a552d-112">notConfigured</span></span>|<span data-ttu-id="a552d-113">0</span><span class="sxs-lookup"><span data-stu-id="a552d-113">0</span></span>|<span data-ttu-id="a552d-114">Nicht konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="a552d-114">Not configured.</span></span>|
-|<span data-ttu-id="a552d-115">vorhanden ist</span><span class="sxs-lookup"><span data-stu-id="a552d-115">exists</span></span>|<span data-ttu-id="a552d-116">1</span><span class="sxs-lookup"><span data-stu-id="a552d-116">1</span></span>|<span data-ttu-id="a552d-117">Der angegebene Registrierungsschlüssel oder Wert vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="a552d-117">The specified registry key or value exists.</span></span>|
-|<span data-ttu-id="a552d-118">doesNotExist</span><span class="sxs-lookup"><span data-stu-id="a552d-118">doesNotExist</span></span>|<span data-ttu-id="a552d-119">2</span><span class="sxs-lookup"><span data-stu-id="a552d-119">2</span></span>|<span data-ttu-id="a552d-120">Der angegebene Registrierungsschlüssel oder Wert ist nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="a552d-120">The specified registry key or value does not exist.</span></span>|
-|<span data-ttu-id="a552d-121">string</span><span class="sxs-lookup"><span data-stu-id="a552d-121">string</span></span>|<span data-ttu-id="a552d-122">3</span><span class="sxs-lookup"><span data-stu-id="a552d-122">3</span></span>|<span data-ttu-id="a552d-123">String-Werttyp.</span><span class="sxs-lookup"><span data-stu-id="a552d-123">String value type.</span></span>|
-|<span data-ttu-id="a552d-124">integer</span><span class="sxs-lookup"><span data-stu-id="a552d-124">integer</span></span>|<span data-ttu-id="a552d-125">4</span><span class="sxs-lookup"><span data-stu-id="a552d-125">4</span></span>|<span data-ttu-id="a552d-126">Typ der Integer-Wert.</span><span class="sxs-lookup"><span data-stu-id="a552d-126">Integer value type.</span></span>|
-|<span data-ttu-id="a552d-127">Version</span><span class="sxs-lookup"><span data-stu-id="a552d-127">version</span></span>|<span data-ttu-id="a552d-128">5</span><span class="sxs-lookup"><span data-stu-id="a552d-128">5</span></span>|<span data-ttu-id="a552d-129">Version-Werttyp.</span><span class="sxs-lookup"><span data-stu-id="a552d-129">Version value type.</span></span>|
+|<span data-ttu-id="44ba5-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="44ba5-111">notConfigured</span></span>|<span data-ttu-id="44ba5-112">0</span><span class="sxs-lookup"><span data-stu-id="44ba5-112">0</span></span>|<span data-ttu-id="44ba5-113">Nicht konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="44ba5-113">Not configured.</span></span>|
+|<span data-ttu-id="44ba5-114">existiert</span><span class="sxs-lookup"><span data-stu-id="44ba5-114">exists</span></span>|<span data-ttu-id="44ba5-115">1</span><span class="sxs-lookup"><span data-stu-id="44ba5-115">1</span></span>|<span data-ttu-id="44ba5-116">Der angegebene Registrierungsschlüssel oder Wert ist vorhanden.</span><span class="sxs-lookup"><span data-stu-id="44ba5-116">The specified registry key or value exists.</span></span>|
+|<span data-ttu-id="44ba5-117">doesNotExist</span><span class="sxs-lookup"><span data-stu-id="44ba5-117">doesNotExist</span></span>|<span data-ttu-id="44ba5-118">2</span><span class="sxs-lookup"><span data-stu-id="44ba5-118">2</span></span>|<span data-ttu-id="44ba5-119">Der angegebene Registrierungsschlüssel oder Wert ist nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="44ba5-119">The specified registry key or value does not exist.</span></span>|
+|<span data-ttu-id="44ba5-120">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="44ba5-120">string</span></span>|<span data-ttu-id="44ba5-121">3</span><span class="sxs-lookup"><span data-stu-id="44ba5-121">3</span></span>|<span data-ttu-id="44ba5-122">Zeichenfolgen Werttyp.</span><span class="sxs-lookup"><span data-stu-id="44ba5-122">String value type.</span></span>|
+|<span data-ttu-id="44ba5-123">integer</span><span class="sxs-lookup"><span data-stu-id="44ba5-123">integer</span></span>|<span data-ttu-id="44ba5-124">4</span><span class="sxs-lookup"><span data-stu-id="44ba5-124">4</span></span>|<span data-ttu-id="44ba5-125">Ganzzahliger Werttyp.</span><span class="sxs-lookup"><span data-stu-id="44ba5-125">Integer value type.</span></span>|
+|<span data-ttu-id="44ba5-126">Version</span><span class="sxs-lookup"><span data-stu-id="44ba5-126">version</span></span>|<span data-ttu-id="44ba5-127">5</span><span class="sxs-lookup"><span data-stu-id="44ba5-127">5</span></span>|<span data-ttu-id="44ba5-128">Versions Werttyp.</span><span class="sxs-lookup"><span data-stu-id="44ba5-128">Version value type.</span></span>|
 
 
 

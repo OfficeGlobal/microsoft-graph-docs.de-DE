@@ -1,40 +1,40 @@
 ---
-title: Ressourcentyp mobileAppTroubleshootingAppTargetHistory
-description: Historienelement im Mobile App Problembehandlung Ereignis enthaltenen.
-localization_priority: Normal
+title: mobileAppTroubleshootingAppTargetHistory-Ressourcentyp
+description: Verlaufselement, das im Problem Behandlungs Ereignis für Mobile Apps enthalten ist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0a1d37f86ebb43b7d697a9407ce0e3a479b2350
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a7171cdde4889ba97a9cd29c4cc8c81ab1a9d58
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402965"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159353"
 ---
-# <a name="mobileapptroubleshootingapptargethistory-resource-type"></a><span data-ttu-id="6e866-103">Ressourcentyp mobileAppTroubleshootingAppTargetHistory</span><span class="sxs-lookup"><span data-stu-id="6e866-103">mobileAppTroubleshootingAppTargetHistory resource type</span></span>
+# <a name="mobileapptroubleshootingapptargethistory-resource-type"></a><span data-ttu-id="6a60f-103">mobileAppTroubleshootingAppTargetHistory-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6a60f-103">mobileAppTroubleshootingAppTargetHistory resource type</span></span>
 
-> <span data-ttu-id="6e866-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="6e866-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6e866-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6e866-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6a60f-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6a60f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6e866-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6e866-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6a60f-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="6a60f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6e866-107">Historienelement im Mobile App Problembehandlung Ereignis enthaltenen.</span><span class="sxs-lookup"><span data-stu-id="6e866-107">History Item contained in the Mobile App Troubleshooting Event.</span></span>
+<span data-ttu-id="6a60f-106">Verlaufselement, das im Problem Behandlungs Ereignis für Mobile Apps enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="6a60f-106">History Item contained in the Mobile App Troubleshooting Event.</span></span>
 
 
-<span data-ttu-id="6e866-108">Erbt vom [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="6e866-108">Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>
+<span data-ttu-id="6a60f-107">Erbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="6a60f-107">Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6e866-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6e866-109">Properties</span></span>
-|<span data-ttu-id="6e866-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6e866-110">Property</span></span>|<span data-ttu-id="6e866-111">Typ</span><span class="sxs-lookup"><span data-stu-id="6e866-111">Type</span></span>|<span data-ttu-id="6e866-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6e866-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6a60f-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6a60f-108">Properties</span></span>
+|<span data-ttu-id="6a60f-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6a60f-109">Property</span></span>|<span data-ttu-id="6a60f-110">Typ</span><span class="sxs-lookup"><span data-stu-id="6a60f-110">Type</span></span>|<span data-ttu-id="6a60f-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6a60f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6e866-113">occurrenceDateTime</span><span class="sxs-lookup"><span data-stu-id="6e866-113">occurrenceDateTime</span></span>|<span data-ttu-id="6e866-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6e866-114">DateTimeOffset</span></span>|<span data-ttu-id="6e866-115">Zeitpunkt, wenn das Historienelement aufgetreten.</span><span class="sxs-lookup"><span data-stu-id="6e866-115">Time when the history item occurred.</span></span> <span data-ttu-id="6e866-116">Geerbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="6e866-116">Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>|
-|<span data-ttu-id="6e866-117">securityGroupId</span><span class="sxs-lookup"><span data-stu-id="6e866-117">securityGroupId</span></span>|<span data-ttu-id="6e866-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6e866-118">String</span></span>|<span data-ttu-id="6e866-119">AAD Sicherheit Gruppen-Id, der als Ziel angegeben wurde.</span><span class="sxs-lookup"><span data-stu-id="6e866-119">AAD security group id to which it was targeted.</span></span>|
-|<span data-ttu-id="6e866-120">runState</span><span class="sxs-lookup"><span data-stu-id="6e866-120">runState</span></span>|[<span data-ttu-id="6e866-121">runState</span><span class="sxs-lookup"><span data-stu-id="6e866-121">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="6e866-122">Status des Elements.</span><span class="sxs-lookup"><span data-stu-id="6e866-122">Status of the item.</span></span> <span data-ttu-id="6e866-123">Mögliche Werte sind: `unknown`, `success` und `fail`.</span><span class="sxs-lookup"><span data-stu-id="6e866-123">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="6e866-124">errorCode</span><span class="sxs-lookup"><span data-stu-id="6e866-124">errorCode</span></span>|<span data-ttu-id="6e866-125">String</span><span class="sxs-lookup"><span data-stu-id="6e866-125">String</span></span>|<span data-ttu-id="6e866-126">Der Fehlercode des Fehlers, leer, wenn kein Fehler.</span><span class="sxs-lookup"><span data-stu-id="6e866-126">Error code for the failure, empty if no failure.</span></span>|
+|<span data-ttu-id="6a60f-112">occurrenceDateTime</span><span class="sxs-lookup"><span data-stu-id="6a60f-112">occurrenceDateTime</span></span>|<span data-ttu-id="6a60f-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6a60f-113">DateTimeOffset</span></span>|<span data-ttu-id="6a60f-114">Zeitpunkt, zu dem das Verlaufselement aufgetreten ist.</span><span class="sxs-lookup"><span data-stu-id="6a60f-114">Time when the history item occurred.</span></span> <span data-ttu-id="6a60f-115">Geerbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="6a60f-115">Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>|
+|<span data-ttu-id="6a60f-116">securityGroupId</span><span class="sxs-lookup"><span data-stu-id="6a60f-116">securityGroupId</span></span>|<span data-ttu-id="6a60f-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6a60f-117">String</span></span>|<span data-ttu-id="6a60f-118">AAD-Sicherheitsgruppen-ID, auf die Sie gezielt wurde.</span><span class="sxs-lookup"><span data-stu-id="6a60f-118">AAD security group id to which it was targeted.</span></span>|
+|<span data-ttu-id="6a60f-119">runState</span><span class="sxs-lookup"><span data-stu-id="6a60f-119">runState</span></span>|[<span data-ttu-id="6a60f-120">runState</span><span class="sxs-lookup"><span data-stu-id="6a60f-120">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="6a60f-121">Status des Elements.</span><span class="sxs-lookup"><span data-stu-id="6a60f-121">Status of the item.</span></span> <span data-ttu-id="6a60f-122">Mögliche Werte sind: `unknown`, `success` und `fail`.</span><span class="sxs-lookup"><span data-stu-id="6a60f-122">Possible values are: `unknown`, `success`, `fail`.</span></span>|
+|<span data-ttu-id="6a60f-123">errorCode</span><span class="sxs-lookup"><span data-stu-id="6a60f-123">errorCode</span></span>|<span data-ttu-id="6a60f-124">String</span><span class="sxs-lookup"><span data-stu-id="6a60f-124">String</span></span>|<span data-ttu-id="6a60f-125">Fehlercode für den Fehler, leer, wenn kein Fehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="6a60f-125">Error code for the failure, empty if no failure.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6e866-127">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="6e866-127">Relationships</span></span>
-<span data-ttu-id="6e866-128">Keine</span><span class="sxs-lookup"><span data-stu-id="6e866-128">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6a60f-126">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="6a60f-126">Relationships</span></span>
+<span data-ttu-id="6a60f-127">Keine</span><span class="sxs-lookup"><span data-stu-id="6a60f-127">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6e866-129">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6e866-129">JSON Representation</span></span>
-<span data-ttu-id="6e866-130">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6e866-130">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a60f-128">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6a60f-128">JSON Representation</span></span>
+<span data-ttu-id="6a60f-129">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="6a60f-129">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingAppTargetHistory"

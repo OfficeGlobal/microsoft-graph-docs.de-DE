@@ -1,32 +1,32 @@
 ---
-title: CertificateRevocationStatus Enum-Typ
-description: Status der Zertifikatsperre.
-localization_priority: Normal
+title: certificateRevocationStatus-Enumerationstyp
+description: Status der Zertifikatssperrung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 373cb6247a695a5912d02d4fb1a353c40aeac581
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c182cf2317f185108570116a283973d481f17ab2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421970"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159444"
 ---
-# <a name="certificaterevocationstatus-enum-type"></a><span data-ttu-id="c41fe-103">CertificateRevocationStatus Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="c41fe-103">certificateRevocationStatus enum type</span></span>
+# <a name="certificaterevocationstatus-enum-type"></a><span data-ttu-id="28ab2-103">certificateRevocationStatus-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="28ab2-103">certificateRevocationStatus enum type</span></span>
 
-> <span data-ttu-id="c41fe-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="c41fe-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c41fe-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c41fe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="28ab2-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="28ab2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c41fe-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c41fe-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="28ab2-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="28ab2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c41fe-107">Status der Zertifikatsperre.</span><span class="sxs-lookup"><span data-stu-id="c41fe-107">Certificate Revocation Status.</span></span>
+<span data-ttu-id="28ab2-106">Status der Zertifikatssperrung.</span><span class="sxs-lookup"><span data-stu-id="28ab2-106">Certificate Revocation Status.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c41fe-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="c41fe-108">Members</span></span>
-|<span data-ttu-id="c41fe-109">Member</span><span class="sxs-lookup"><span data-stu-id="c41fe-109">Member</span></span>|<span data-ttu-id="c41fe-110">Wert</span><span class="sxs-lookup"><span data-stu-id="c41fe-110">Value</span></span>|<span data-ttu-id="c41fe-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c41fe-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="28ab2-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="28ab2-107">Members</span></span>
+|<span data-ttu-id="28ab2-108">Element</span><span class="sxs-lookup"><span data-stu-id="28ab2-108">Member</span></span>|<span data-ttu-id="28ab2-109">Wert</span><span class="sxs-lookup"><span data-stu-id="28ab2-109">Value</span></span>|<span data-ttu-id="28ab2-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="28ab2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c41fe-112">Keine</span><span class="sxs-lookup"><span data-stu-id="c41fe-112">none</span></span>|<span data-ttu-id="c41fe-113">0</span><span class="sxs-lookup"><span data-stu-id="c41fe-113">0</span></span>|<span data-ttu-id="c41fe-114">Nicht gesperrt.</span><span class="sxs-lookup"><span data-stu-id="c41fe-114">Not revoked.</span></span>|
-|<span data-ttu-id="c41fe-115">Ausstehende</span><span class="sxs-lookup"><span data-stu-id="c41fe-115">pending</span></span>|<span data-ttu-id="c41fe-116">1</span><span class="sxs-lookup"><span data-stu-id="c41fe-116">1</span></span>|<span data-ttu-id="c41fe-117">OCSP ausstehende.</span><span class="sxs-lookup"><span data-stu-id="c41fe-117">Revocation pending.</span></span>|
-|<span data-ttu-id="c41fe-118">ausgestellt</span><span class="sxs-lookup"><span data-stu-id="c41fe-118">issued</span></span>|<span data-ttu-id="c41fe-119">2</span><span class="sxs-lookup"><span data-stu-id="c41fe-119">2</span></span>|<span data-ttu-id="c41fe-120">OCSP-Befehl ausgegeben.</span><span class="sxs-lookup"><span data-stu-id="c41fe-120">Revocation command issued.</span></span>|
-|<span data-ttu-id="c41fe-121">failed</span><span class="sxs-lookup"><span data-stu-id="c41fe-121">failed</span></span>|<span data-ttu-id="c41fe-122">3</span><span class="sxs-lookup"><span data-stu-id="c41fe-122">3</span></span>|<span data-ttu-id="c41fe-123">OCSP ist fehlgeschlagen.</span><span class="sxs-lookup"><span data-stu-id="c41fe-123">Revocation failed.</span></span>|
-|<span data-ttu-id="c41fe-124">widerrufen</span><span class="sxs-lookup"><span data-stu-id="c41fe-124">revoked</span></span>|<span data-ttu-id="c41fe-125">4</span><span class="sxs-lookup"><span data-stu-id="c41fe-125">4</span></span>|<span data-ttu-id="c41fe-126">Widerrufen.</span><span class="sxs-lookup"><span data-stu-id="c41fe-126">Revoked.</span></span>|
+|<span data-ttu-id="28ab2-111">Keine</span><span class="sxs-lookup"><span data-stu-id="28ab2-111">none</span></span>|<span data-ttu-id="28ab2-112">0</span><span class="sxs-lookup"><span data-stu-id="28ab2-112">0</span></span>|<span data-ttu-id="28ab2-113">Nicht widerrufen.</span><span class="sxs-lookup"><span data-stu-id="28ab2-113">Not revoked.</span></span>|
+|<span data-ttu-id="28ab2-114">ausstehenden</span><span class="sxs-lookup"><span data-stu-id="28ab2-114">pending</span></span>|<span data-ttu-id="28ab2-115">1</span><span class="sxs-lookup"><span data-stu-id="28ab2-115">1</span></span>|<span data-ttu-id="28ab2-116">Sperrung ausstehend.</span><span class="sxs-lookup"><span data-stu-id="28ab2-116">Revocation pending.</span></span>|
+|<span data-ttu-id="28ab2-117">ausgegeben</span><span class="sxs-lookup"><span data-stu-id="28ab2-117">issued</span></span>|<span data-ttu-id="28ab2-118">2</span><span class="sxs-lookup"><span data-stu-id="28ab2-118">2</span></span>|<span data-ttu-id="28ab2-119">Sperrungs Befehl ausgegeben.</span><span class="sxs-lookup"><span data-stu-id="28ab2-119">Revocation command issued.</span></span>|
+|<span data-ttu-id="28ab2-120">failed</span><span class="sxs-lookup"><span data-stu-id="28ab2-120">failed</span></span>|<span data-ttu-id="28ab2-121">3</span><span class="sxs-lookup"><span data-stu-id="28ab2-121">3</span></span>|<span data-ttu-id="28ab2-122">Sperrung fehlgeschlagen.</span><span class="sxs-lookup"><span data-stu-id="28ab2-122">Revocation failed.</span></span>|
+|<span data-ttu-id="28ab2-123">gesperrt</span><span class="sxs-lookup"><span data-stu-id="28ab2-123">revoked</span></span>|<span data-ttu-id="28ab2-124">4</span><span class="sxs-lookup"><span data-stu-id="28ab2-124">4</span></span>|<span data-ttu-id="28ab2-125">Gesperrt.</span><span class="sxs-lookup"><span data-stu-id="28ab2-125">Revoked.</span></span>|
 
 
 

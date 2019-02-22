@@ -1,33 +1,33 @@
 ---
-title: WiFiSecurityType Enum-Typ
-description: Wi-Fi-Sicherheitstypen.
-localization_priority: Normal
+title: wiFiSecurityType-Enumerationstyp
+description: WLAN-Sicherheitstypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73724041c223d50d0030bf27b780d6b694792a16
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c16265ecf9b4fa56536838dde1f4f1f757d8b1f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422131"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159045"
 ---
-# <a name="wifisecuritytype-enum-type"></a><span data-ttu-id="25d41-103">WiFiSecurityType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="25d41-103">wiFiSecurityType enum type</span></span>
+# <a name="wifisecuritytype-enum-type"></a><span data-ttu-id="4cfac-103">wiFiSecurityType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="4cfac-103">wiFiSecurityType enum type</span></span>
 
-> <span data-ttu-id="25d41-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="25d41-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="25d41-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="25d41-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4cfac-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4cfac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="25d41-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="25d41-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4cfac-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="4cfac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="25d41-107">Wi-Fi-Sicherheitstypen.</span><span class="sxs-lookup"><span data-stu-id="25d41-107">Wi-Fi Security Types.</span></span>
+<span data-ttu-id="4cfac-106">WLAN-Sicherheitstypen.</span><span class="sxs-lookup"><span data-stu-id="4cfac-106">Wi-Fi Security Types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="25d41-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="25d41-108">Members</span></span>
-|<span data-ttu-id="25d41-109">Member</span><span class="sxs-lookup"><span data-stu-id="25d41-109">Member</span></span>|<span data-ttu-id="25d41-110">Wert</span><span class="sxs-lookup"><span data-stu-id="25d41-110">Value</span></span>|<span data-ttu-id="25d41-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="25d41-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="4cfac-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="4cfac-107">Members</span></span>
+|<span data-ttu-id="4cfac-108">Element</span><span class="sxs-lookup"><span data-stu-id="4cfac-108">Member</span></span>|<span data-ttu-id="4cfac-109">Wert</span><span class="sxs-lookup"><span data-stu-id="4cfac-109">Value</span></span>|<span data-ttu-id="4cfac-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4cfac-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="25d41-112">Öffnen Sie</span><span class="sxs-lookup"><span data-stu-id="25d41-112">open</span></span>|<span data-ttu-id="25d41-113">0</span><span class="sxs-lookup"><span data-stu-id="25d41-113">0</span></span>|<span data-ttu-id="25d41-114">Öffnen Sie (keine Authentifizierung).</span><span class="sxs-lookup"><span data-stu-id="25d41-114">Open (No Authentication).</span></span>|
-|<span data-ttu-id="25d41-115">wpaPersonal</span><span class="sxs-lookup"><span data-stu-id="25d41-115">wpaPersonal</span></span>|<span data-ttu-id="25d41-116">1</span><span class="sxs-lookup"><span data-stu-id="25d41-116">1</span></span>|<span data-ttu-id="25d41-117">WPA-Persönlich.</span><span class="sxs-lookup"><span data-stu-id="25d41-117">WPA-Personal.</span></span>|
-|<span data-ttu-id="25d41-118">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="25d41-118">wpaEnterprise</span></span>|<span data-ttu-id="25d41-119">2</span><span class="sxs-lookup"><span data-stu-id="25d41-119">2</span></span>|<span data-ttu-id="25d41-120">WPA-Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="25d41-120">WPA-Enterprise.</span></span> <span data-ttu-id="25d41-121">Muss einen IOSEnterpriseWifiConfiguration-Typ verwenden, um Enterprise-Optionen zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="25d41-121">Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
-|<span data-ttu-id="25d41-122">WEP</span><span class="sxs-lookup"><span data-stu-id="25d41-122">wep</span></span>|<span data-ttu-id="25d41-123">3</span><span class="sxs-lookup"><span data-stu-id="25d41-123">3</span></span>|<span data-ttu-id="25d41-124">WEP-Verschlüsselung.</span><span class="sxs-lookup"><span data-stu-id="25d41-124">WEP Encryption.</span></span>|
-|<span data-ttu-id="25d41-125">wpa2Personal</span><span class="sxs-lookup"><span data-stu-id="25d41-125">wpa2Personal</span></span>|<span data-ttu-id="25d41-126">4</span><span class="sxs-lookup"><span data-stu-id="25d41-126">4</span></span>|<span data-ttu-id="25d41-127">WPA2-Persönlich.</span><span class="sxs-lookup"><span data-stu-id="25d41-127">WPA2-Personal.</span></span>|
-|<span data-ttu-id="25d41-128">wpa2Enterprise</span><span class="sxs-lookup"><span data-stu-id="25d41-128">wpa2Enterprise</span></span>|<span data-ttu-id="25d41-129">5</span><span class="sxs-lookup"><span data-stu-id="25d41-129">5</span></span>|<span data-ttu-id="25d41-130">WPA2-Unternehmen.</span><span class="sxs-lookup"><span data-stu-id="25d41-130">WPA2-Enterprise.</span></span> <span data-ttu-id="25d41-131">Muss einen WindowsWifiEnterpriseEAPConfiguration-Typ verwenden, um Enterprise-Optionen zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="25d41-131">Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.</span></span>|
+|<span data-ttu-id="4cfac-111">Öffnen</span><span class="sxs-lookup"><span data-stu-id="4cfac-111">open</span></span>|<span data-ttu-id="4cfac-112">0</span><span class="sxs-lookup"><span data-stu-id="4cfac-112">0</span></span>|<span data-ttu-id="4cfac-113">Open (keine Authentifizierung).</span><span class="sxs-lookup"><span data-stu-id="4cfac-113">Open (No Authentication).</span></span>|
+|<span data-ttu-id="4cfac-114">wpaPersonal</span><span class="sxs-lookup"><span data-stu-id="4cfac-114">wpaPersonal</span></span>|<span data-ttu-id="4cfac-115">1</span><span class="sxs-lookup"><span data-stu-id="4cfac-115">1</span></span>|<span data-ttu-id="4cfac-116">WPA-persönlich.</span><span class="sxs-lookup"><span data-stu-id="4cfac-116">WPA-Personal.</span></span>|
+|<span data-ttu-id="4cfac-117">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="4cfac-117">wpaEnterprise</span></span>|<span data-ttu-id="4cfac-118">2</span><span class="sxs-lookup"><span data-stu-id="4cfac-118">2</span></span>|<span data-ttu-id="4cfac-119">WPA-Enterprise.</span><span class="sxs-lookup"><span data-stu-id="4cfac-119">WPA-Enterprise.</span></span> <span data-ttu-id="4cfac-120">Verwenden Sie zum Konfigurieren von Enterprise-Optionen IOSEnterpriseWifiConfiguration.</span><span class="sxs-lookup"><span data-stu-id="4cfac-120">Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
+|<span data-ttu-id="4cfac-121">WEP</span><span class="sxs-lookup"><span data-stu-id="4cfac-121">wep</span></span>|<span data-ttu-id="4cfac-122">3</span><span class="sxs-lookup"><span data-stu-id="4cfac-122">3</span></span>|<span data-ttu-id="4cfac-123">WEP-Verschlüsselung.</span><span class="sxs-lookup"><span data-stu-id="4cfac-123">WEP Encryption.</span></span>|
+|<span data-ttu-id="4cfac-124">wpa2Personal</span><span class="sxs-lookup"><span data-stu-id="4cfac-124">wpa2Personal</span></span>|<span data-ttu-id="4cfac-125">4</span><span class="sxs-lookup"><span data-stu-id="4cfac-125">4</span></span>|<span data-ttu-id="4cfac-126">WPA2-Persönlich.</span><span class="sxs-lookup"><span data-stu-id="4cfac-126">WPA2-Personal.</span></span>|
+|<span data-ttu-id="4cfac-127">wpa2Enterprise</span><span class="sxs-lookup"><span data-stu-id="4cfac-127">wpa2Enterprise</span></span>|<span data-ttu-id="4cfac-128">5</span><span class="sxs-lookup"><span data-stu-id="4cfac-128">5</span></span>|<span data-ttu-id="4cfac-129">WPA2-Enterprise.</span><span class="sxs-lookup"><span data-stu-id="4cfac-129">WPA2-Enterprise.</span></span> <span data-ttu-id="4cfac-130">Verwenden Sie zum Konfigurieren von Enterprise-Optionen WindowsWifiEnterpriseEAPConfiguration.</span><span class="sxs-lookup"><span data-stu-id="4cfac-130">Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.</span></span>|
 
 
 

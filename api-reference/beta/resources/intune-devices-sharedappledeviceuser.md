@@ -1,37 +1,37 @@
 ---
-title: Ressourcentyp sharedAppleDeviceUser
+title: sharedAppleDeviceUser-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46e0993c69a8ae34a54a654959d8d67a1b7f4747
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f737432597d4528d1a682cd15552230af0ae83e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394432"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156504"
 ---
-# <a name="sharedappledeviceuser-resource-type"></a><span data-ttu-id="042cd-103">Ressourcentyp sharedAppleDeviceUser</span><span class="sxs-lookup"><span data-stu-id="042cd-103">sharedAppleDeviceUser resource type</span></span>
+# <a name="sharedappledeviceuser-resource-type"></a><span data-ttu-id="725ef-103">sharedAppleDeviceUser-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="725ef-103">sharedAppleDeviceUser resource type</span></span>
 
-> <span data-ttu-id="042cd-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="042cd-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="042cd-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="042cd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="725ef-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="725ef-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="042cd-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="042cd-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="725ef-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="725ef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="042cd-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="042cd-107">Not yet documented</span></span>
+<span data-ttu-id="725ef-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="725ef-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="042cd-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="042cd-108">Properties</span></span>
-|<span data-ttu-id="042cd-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="042cd-109">Property</span></span>|<span data-ttu-id="042cd-110">Typ</span><span class="sxs-lookup"><span data-stu-id="042cd-110">Type</span></span>|<span data-ttu-id="042cd-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="042cd-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="725ef-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="725ef-107">Properties</span></span>
+|<span data-ttu-id="725ef-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="725ef-108">Property</span></span>|<span data-ttu-id="725ef-109">Typ</span><span class="sxs-lookup"><span data-stu-id="725ef-109">Type</span></span>|<span data-ttu-id="725ef-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="725ef-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="042cd-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="042cd-112">userPrincipalName</span></span>|<span data-ttu-id="042cd-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="042cd-113">String</span></span>|<span data-ttu-id="042cd-114">Benutzername</span><span class="sxs-lookup"><span data-stu-id="042cd-114">User name</span></span>|
-|<span data-ttu-id="042cd-115">dataToSync</span><span class="sxs-lookup"><span data-stu-id="042cd-115">dataToSync</span></span>|<span data-ttu-id="042cd-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="042cd-116">Boolean</span></span>|<span data-ttu-id="042cd-117">Daten synchronisieren</span><span class="sxs-lookup"><span data-stu-id="042cd-117">Data to sync</span></span>|
-|<span data-ttu-id="042cd-118">dataQuota</span><span class="sxs-lookup"><span data-stu-id="042cd-118">dataQuota</span></span>|<span data-ttu-id="042cd-119">Int64</span><span class="sxs-lookup"><span data-stu-id="042cd-119">Int64</span></span>|<span data-ttu-id="042cd-120">Datenträgerkontingent</span><span class="sxs-lookup"><span data-stu-id="042cd-120">Data quota</span></span>|
-|<span data-ttu-id="042cd-121">dataUsed</span><span class="sxs-lookup"><span data-stu-id="042cd-121">dataUsed</span></span>|<span data-ttu-id="042cd-122">Int64</span><span class="sxs-lookup"><span data-stu-id="042cd-122">Int64</span></span>|<span data-ttu-id="042cd-123">Datenträgerkontingent</span><span class="sxs-lookup"><span data-stu-id="042cd-123">Data quota</span></span>|
+|<span data-ttu-id="725ef-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="725ef-111">userPrincipalName</span></span>|<span data-ttu-id="725ef-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="725ef-112">String</span></span>|<span data-ttu-id="725ef-113">Benutzername</span><span class="sxs-lookup"><span data-stu-id="725ef-113">User name</span></span>|
+|<span data-ttu-id="725ef-114">dataToSync</span><span class="sxs-lookup"><span data-stu-id="725ef-114">dataToSync</span></span>|<span data-ttu-id="725ef-115">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="725ef-115">Boolean</span></span>|<span data-ttu-id="725ef-116">Zu synchronisierende Daten</span><span class="sxs-lookup"><span data-stu-id="725ef-116">Data to sync</span></span>|
+|<span data-ttu-id="725ef-117">dataQuota</span><span class="sxs-lookup"><span data-stu-id="725ef-117">dataQuota</span></span>|<span data-ttu-id="725ef-118">Int64</span><span class="sxs-lookup"><span data-stu-id="725ef-118">Int64</span></span>|<span data-ttu-id="725ef-119">Datenkontingent</span><span class="sxs-lookup"><span data-stu-id="725ef-119">Data quota</span></span>|
+|<span data-ttu-id="725ef-120">dataUsed</span><span class="sxs-lookup"><span data-stu-id="725ef-120">dataUsed</span></span>|<span data-ttu-id="725ef-121">Int64</span><span class="sxs-lookup"><span data-stu-id="725ef-121">Int64</span></span>|<span data-ttu-id="725ef-122">Datenkontingent</span><span class="sxs-lookup"><span data-stu-id="725ef-122">Data quota</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="042cd-124">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="042cd-124">Relationships</span></span>
-<span data-ttu-id="042cd-125">Keine</span><span class="sxs-lookup"><span data-stu-id="042cd-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="725ef-123">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="725ef-123">Relationships</span></span>
+<span data-ttu-id="725ef-124">Keine</span><span class="sxs-lookup"><span data-stu-id="725ef-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="042cd-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="042cd-126">JSON Representation</span></span>
-<span data-ttu-id="042cd-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="042cd-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="725ef-125">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="725ef-125">JSON Representation</span></span>
+<span data-ttu-id="725ef-126">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="725ef-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharedAppleDeviceUser"

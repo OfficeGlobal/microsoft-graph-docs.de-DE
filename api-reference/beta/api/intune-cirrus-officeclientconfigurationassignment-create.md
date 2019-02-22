@@ -1,34 +1,34 @@
 ---
-title: Erstellen von officeClientConfigurationAssignment
-description: Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie.
+title: OfficeClientConfigurationAssignment erstellen
+description: Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c1f09ba2dfabf85501120cb2099373e5664deb08
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155265"
 ---
-# <a name="create-officeclientconfigurationassignment"></a><span data-ttu-id="2b479-103">Erstellen von officeClientConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="2b479-103">Create officeClientConfigurationAssignment</span></span>
+# <a name="create-officeclientconfigurationassignment"></a><span data-ttu-id="ebbab-103">OfficeClientConfigurationAssignment erstellen</span><span class="sxs-lookup"><span data-stu-id="ebbab-103">Create officeClientConfigurationAssignment</span></span>
 
-> <span data-ttu-id="2b479-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="2b479-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2b479-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2b479-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ebbab-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ebbab-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2b479-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2b479-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ebbab-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="ebbab-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2b479-107">Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie.</span><span class="sxs-lookup"><span data-stu-id="2b479-107">Add a target group to an existing policy.</span></span>
+<span data-ttu-id="ebbab-106">Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie</span><span class="sxs-lookup"><span data-stu-id="ebbab-106">Add a target group to an existing policy.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2b479-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="2b479-108">Prerequisites</span></span>
-<span data-ttu-id="2b479-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2b479-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ebbab-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="ebbab-107">Prerequisites</span></span>
+<span data-ttu-id="ebbab-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ebbab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2b479-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2b479-111">Permission type</span></span>|<span data-ttu-id="2b479-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2b479-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ebbab-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ebbab-110">Permission type</span></span>|<span data-ttu-id="ebbab-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ebbab-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2b479-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2b479-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2b479-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b479-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2b479-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2b479-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2b479-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2b479-116">Not supported.</span></span>|
-|<span data-ttu-id="2b479-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2b479-117">Application</span></span>|<span data-ttu-id="2b479-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2b479-118">Not supported.</span></span>|
+|<span data-ttu-id="ebbab-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ebbab-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ebbab-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ebbab-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ebbab-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ebbab-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ebbab-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ebbab-115">Not supported.</span></span>|
+|<span data-ttu-id="ebbab-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ebbab-116">Application</span></span>|<span data-ttu-id="ebbab-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ebbab-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2b479-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2b479-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ebbab-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ebbab-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "29425197"
 POST /officeConfiguration/clientConfigurations/{key}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2b479-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2b479-120">Request headers</span></span>
-|<span data-ttu-id="2b479-121">Header</span><span class="sxs-lookup"><span data-stu-id="2b479-121">Header</span></span>|<span data-ttu-id="2b479-122">Wert</span><span class="sxs-lookup"><span data-stu-id="2b479-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ebbab-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ebbab-119">Request headers</span></span>
+|<span data-ttu-id="ebbab-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="ebbab-120">Header</span></span>|<span data-ttu-id="ebbab-121">Wert</span><span class="sxs-lookup"><span data-stu-id="ebbab-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2b479-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="2b479-123">Authorization</span></span>|<span data-ttu-id="2b479-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="2b479-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2b479-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="2b479-125">Accept</span></span>|<span data-ttu-id="2b479-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2b479-126">application/json</span></span>|
+|<span data-ttu-id="ebbab-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebbab-122">Authorization</span></span>|<span data-ttu-id="ebbab-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="ebbab-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ebbab-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="ebbab-124">Accept</span></span>|<span data-ttu-id="ebbab-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ebbab-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2b479-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2b479-127">Request body</span></span>
-<span data-ttu-id="2b479-128">Geben Sie im Textkörper Anforderung für das Objekt OfficeClientConfigurationAssignment eine JSON-Darstellung.</span><span class="sxs-lookup"><span data-stu-id="2b479-128">In the request body, supply a JSON representation for the officeClientConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ebbab-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ebbab-126">Request body</span></span>
+<span data-ttu-id="ebbab-127">Geben Sie im Anforderungstext eine JSON-Darstellung für das officeClientConfigurationAssignment-Objekt an.</span><span class="sxs-lookup"><span data-stu-id="ebbab-127">In the request body, supply a JSON representation for the officeClientConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="2b479-129">In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die OfficeClientConfigurationAssignment erstellen.</span><span class="sxs-lookup"><span data-stu-id="2b479-129">The following table shows the properties that are required when you create the officeClientConfigurationAssignment.</span></span>
+<span data-ttu-id="ebbab-128">In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der officeClientConfigurationAssignment erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="ebbab-128">The following table shows the properties that are required when you create the officeClientConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="2b479-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2b479-130">Property</span></span>|<span data-ttu-id="2b479-131">Typ</span><span class="sxs-lookup"><span data-stu-id="2b479-131">Type</span></span>|<span data-ttu-id="2b479-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2b479-132">Description</span></span>|
+|<span data-ttu-id="ebbab-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ebbab-129">Property</span></span>|<span data-ttu-id="ebbab-130">Typ</span><span class="sxs-lookup"><span data-stu-id="ebbab-130">Type</span></span>|<span data-ttu-id="ebbab-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ebbab-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2b479-133">id</span><span class="sxs-lookup"><span data-stu-id="2b479-133">id</span></span>|<span data-ttu-id="2b479-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2b479-134">String</span></span>|<span data-ttu-id="2b479-135">ID des der OfficeConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="2b479-135">Id of the OfficeConfigurationAssignment.</span></span>|
-|<span data-ttu-id="2b479-136">target</span><span class="sxs-lookup"><span data-stu-id="2b479-136">target</span></span>|[<span data-ttu-id="2b479-137">officeConfigurationAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="2b479-137">officeConfigurationAssignmentTarget</span></span>](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|<span data-ttu-id="2b479-138">Die Ziel-Zuordnung, die durch den Administrator definiert</span><span class="sxs-lookup"><span data-stu-id="2b479-138">The target assignment defined by the admin.</span></span>|
+|<span data-ttu-id="ebbab-132">id</span><span class="sxs-lookup"><span data-stu-id="ebbab-132">id</span></span>|<span data-ttu-id="ebbab-133">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="ebbab-133">String</span></span>|<span data-ttu-id="ebbab-134">ID des OfficeConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="ebbab-134">Id of the OfficeConfigurationAssignment.</span></span>|
+|<span data-ttu-id="ebbab-135">target</span><span class="sxs-lookup"><span data-stu-id="ebbab-135">target</span></span>|[<span data-ttu-id="ebbab-136">officeConfigurationAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ebbab-136">officeConfigurationAssignmentTarget</span></span>](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|<span data-ttu-id="ebbab-137">Die vom Administrator definierte Zielzuweisung.</span><span class="sxs-lookup"><span data-stu-id="ebbab-137">The target assignment defined by the admin.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2b479-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="2b479-139">Response</span></span>
-<span data-ttu-id="2b479-140">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 Created` Antwortcode und eines [OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="2b479-140">If successful, this method returns a `200 Created` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ebbab-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="ebbab-138">Response</span></span>
+<span data-ttu-id="ebbab-139">Bei erfolgreicher Ausführung gibt diese Methode den `200 Created` Antwortcode und ein [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="ebbab-139">If successful, this method returns a `200 Created` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2b479-141">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2b479-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ebbab-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ebbab-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2b479-142">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2b479-142">Request</span></span>
-<span data-ttu-id="2b479-143">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2b479-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ebbab-141">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ebbab-141">Request</span></span>
+<span data-ttu-id="ebbab-142">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ebbab-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}/assignments
 Content-type: application/json
@@ -75,8 +75,8 @@ Content-length: 172
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2b479-144">Antwort</span><span class="sxs-lookup"><span data-stu-id="2b479-144">Response</span></span>
-<span data-ttu-id="2b479-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2b479-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ebbab-143">Antwort</span><span class="sxs-lookup"><span data-stu-id="ebbab-143">Response</span></span>
+<span data-ttu-id="ebbab-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ebbab-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

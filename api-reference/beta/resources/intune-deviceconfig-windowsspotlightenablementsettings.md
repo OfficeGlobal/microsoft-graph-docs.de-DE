@@ -1,30 +1,30 @@
 ---
-title: WindowsSpotlightEnablementSettings Enum-Typ
-description: Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
-localization_priority: Normal
+title: windowsSpotlightEnablementSettings-Enumerationstyp
+description: Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d23e481ff6d5ae7b1c36bf09a31753f4a7c6d734
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d20abb4e0ffb6dc6a99ea323c920dc2065eb36e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161614"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a><span data-ttu-id="c4e5f-103">WindowsSpotlightEnablementSettings Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="c4e5f-103">windowsSpotlightEnablementSettings enum type</span></span>
+# <a name="windowsspotlightenablementsettings-enum-type"></a><span data-ttu-id="3c73b-103">windowsSpotlightEnablementSettings-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="3c73b-103">windowsSpotlightEnablementSettings enum type</span></span>
 
-> <span data-ttu-id="c4e5f-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="c4e5f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c4e5f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c4e5f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3c73b-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3c73b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c4e5f-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c4e5f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3c73b-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="3c73b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c4e5f-107">Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen</span><span class="sxs-lookup"><span data-stu-id="c4e5f-107">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
+<span data-ttu-id="3c73b-106">Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen</span><span class="sxs-lookup"><span data-stu-id="3c73b-106">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
 
-## <a name="members"></a><span data-ttu-id="c4e5f-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="c4e5f-108">Members</span></span>
-|<span data-ttu-id="c4e5f-109">Member</span><span class="sxs-lookup"><span data-stu-id="c4e5f-109">Member</span></span>|<span data-ttu-id="c4e5f-110">Wert</span><span class="sxs-lookup"><span data-stu-id="c4e5f-110">Value</span></span>|<span data-ttu-id="c4e5f-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c4e5f-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3c73b-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="3c73b-107">Members</span></span>
+|<span data-ttu-id="3c73b-108">Element</span><span class="sxs-lookup"><span data-stu-id="3c73b-108">Member</span></span>|<span data-ttu-id="3c73b-109">Wert</span><span class="sxs-lookup"><span data-stu-id="3c73b-109">Value</span></span>|<span data-ttu-id="3c73b-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3c73b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c4e5f-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="c4e5f-112">notConfigured</span></span>|<span data-ttu-id="c4e5f-113">0</span><span class="sxs-lookup"><span data-stu-id="c4e5f-113">0</span></span>|<span data-ttu-id="c4e5f-114">Spotlight auf Lock-Bildschirm ist nicht konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="c4e5f-114">Spotlight on lock screen is not configured</span></span>|
-|<span data-ttu-id="c4e5f-115">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="c4e5f-115">disabled</span></span>|<span data-ttu-id="c4e5f-116">1</span><span class="sxs-lookup"><span data-stu-id="c4e5f-116">1</span></span>|<span data-ttu-id="c4e5f-117">Deaktivieren des Windows-Spotlight für Sperren des Bildschirms</span><span class="sxs-lookup"><span data-stu-id="c4e5f-117">Disable Windows Spotlight on lock screen</span></span>|
-|<span data-ttu-id="c4e5f-118">enabled</span><span class="sxs-lookup"><span data-stu-id="c4e5f-118">enabled</span></span>|<span data-ttu-id="c4e5f-119">2</span><span class="sxs-lookup"><span data-stu-id="c4e5f-119">2</span></span>|<span data-ttu-id="c4e5f-120">Aktivieren Sie Windows Spotlight auf Sperren des Bildschirms</span><span class="sxs-lookup"><span data-stu-id="c4e5f-120">Enable Windows Spotlight on lock screen</span></span>|
+|<span data-ttu-id="3c73b-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3c73b-111">notConfigured</span></span>|<span data-ttu-id="3c73b-112">0</span><span class="sxs-lookup"><span data-stu-id="3c73b-112">0</span></span>|<span data-ttu-id="3c73b-113">Der Bildschirm "Spotlight on Lock" ist nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="3c73b-113">Spotlight on lock screen is not configured</span></span>|
+|<span data-ttu-id="3c73b-114">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="3c73b-114">disabled</span></span>|<span data-ttu-id="3c73b-115">1</span><span class="sxs-lookup"><span data-stu-id="3c73b-115">1</span></span>|<span data-ttu-id="3c73b-116">Deaktivieren von Windows Spotlight auf dem Sperrbildschirm</span><span class="sxs-lookup"><span data-stu-id="3c73b-116">Disable Windows Spotlight on lock screen</span></span>|
+|<span data-ttu-id="3c73b-117">enabled</span><span class="sxs-lookup"><span data-stu-id="3c73b-117">enabled</span></span>|<span data-ttu-id="3c73b-118">2</span><span class="sxs-lookup"><span data-stu-id="3c73b-118">2</span></span>|<span data-ttu-id="3c73b-119">Aktivieren von Windows Spotlight auf dem Sperrbildschirm</span><span class="sxs-lookup"><span data-stu-id="3c73b-119">Enable Windows Spotlight on lock screen</span></span>|
 
 
 

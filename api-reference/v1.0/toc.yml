@@ -431,6 +431,7 @@ items:
                 href: api/opentypeextension-get.md
       - name: Kalender
         href: resources/calendar.md
+        displayname: Outlook calendar
         items:
           - name: Ereignis
             href: resources/event.md
@@ -1138,7 +1139,7 @@ items:
               - name: Importierte Windows Autopilot-Geräteidentität
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Auflisten
+                  - name: Liste
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Abrufen
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -3709,6 +3710,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Sicherheit
         href: resources/security-api-overview.md
+        displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
           - name: Warnungen
             href: resources/alert.md

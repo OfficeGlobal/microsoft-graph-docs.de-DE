@@ -1,29 +1,30 @@
 ---
-title: ManagedAppRemediationAction Enum-Typ
-description: Ein Administrator initiiert Aktion einer verwalteten app angewendet werden sollen.
-localization_priority: Normal
+title: managedAppRemediationAction-Enumerationstyp
+description: Eine vom Administrator initiierte Aktion, die auf eine verwaltete App angewendet werden soll.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b46b0a9ca4afd3a086b04aa4db29c45383fcaaea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eabaa59c9419193d6dd984eaaa791e395f67eb50
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394866"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161719"
 ---
-# <a name="managedappremediationaction-enum-type"></a><span data-ttu-id="87af2-103">ManagedAppRemediationAction Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="87af2-103">managedAppRemediationAction enum type</span></span>
+# <a name="managedappremediationaction-enum-type"></a><span data-ttu-id="d9ccf-103">managedAppRemediationAction-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="d9ccf-103">managedAppRemediationAction enum type</span></span>
 
-> <span data-ttu-id="87af2-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="87af2-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="87af2-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="87af2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d9ccf-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d9ccf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="87af2-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="87af2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d9ccf-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="d9ccf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="87af2-107">Ein Administrator initiiert Aktion einer verwalteten app angewendet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="87af2-107">An admin initiated action to be applied on a managed app.</span></span>
+<span data-ttu-id="d9ccf-106">Eine vom Administrator initiierte Aktion, die auf eine verwaltete App angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="d9ccf-106">An admin initiated action to be applied on a managed app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="87af2-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="87af2-108">Members</span></span>
-|<span data-ttu-id="87af2-109">Member</span><span class="sxs-lookup"><span data-stu-id="87af2-109">Member</span></span>|<span data-ttu-id="87af2-110">Wert</span><span class="sxs-lookup"><span data-stu-id="87af2-110">Value</span></span>|<span data-ttu-id="87af2-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="87af2-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d9ccf-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="d9ccf-107">Members</span></span>
+|<span data-ttu-id="d9ccf-108">Element</span><span class="sxs-lookup"><span data-stu-id="d9ccf-108">Member</span></span>|<span data-ttu-id="d9ccf-109">Wert</span><span class="sxs-lookup"><span data-stu-id="d9ccf-109">Value</span></span>|<span data-ttu-id="d9ccf-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d9ccf-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="87af2-112">Blockieren</span><span class="sxs-lookup"><span data-stu-id="87af2-112">block</span></span>|<span data-ttu-id="87af2-113">0</span><span class="sxs-lookup"><span data-stu-id="87af2-113">0</span></span>|<span data-ttu-id="87af2-114">App und den entsprechenden Mandantendaten blockiert werden sollen</span><span class="sxs-lookup"><span data-stu-id="87af2-114">app and the corresponding company data to be blocked</span></span>|
-|<span data-ttu-id="87af2-115">Wischen</span><span class="sxs-lookup"><span data-stu-id="87af2-115">wipe</span></span>|<span data-ttu-id="87af2-116">1</span><span class="sxs-lookup"><span data-stu-id="87af2-116">1</span></span>|<span data-ttu-id="87af2-117">App und den entsprechenden Mandantendaten Kennworteingaben gelöscht werden</span><span class="sxs-lookup"><span data-stu-id="87af2-117">app and the corresponding company data to be wiped</span></span>|
+|<span data-ttu-id="d9ccf-111">Block</span><span class="sxs-lookup"><span data-stu-id="d9ccf-111">block</span></span>|<span data-ttu-id="d9ccf-112">0</span><span class="sxs-lookup"><span data-stu-id="d9ccf-112">0</span></span>|<span data-ttu-id="d9ccf-113">App und die entsprechenden Unternehmensdaten, die blockiert werden sollen</span><span class="sxs-lookup"><span data-stu-id="d9ccf-113">app and the corresponding company data to be blocked</span></span>|
+|<span data-ttu-id="d9ccf-114">Zurücksetzung</span><span class="sxs-lookup"><span data-stu-id="d9ccf-114">wipe</span></span>|<span data-ttu-id="d9ccf-115">1</span><span class="sxs-lookup"><span data-stu-id="d9ccf-115">1</span></span>|<span data-ttu-id="d9ccf-116">App und die entsprechenden Unternehmensdaten, die gelöscht werden sollen</span><span class="sxs-lookup"><span data-stu-id="d9ccf-116">app and the corresponding company data to be wiped</span></span>|
+|<span data-ttu-id="d9ccf-117">warnen</span><span class="sxs-lookup"><span data-stu-id="d9ccf-117">warn</span></span>|<span data-ttu-id="d9ccf-118">2</span><span class="sxs-lookup"><span data-stu-id="d9ccf-118">2</span></span>|<span data-ttu-id="d9ccf-119">App und der entsprechende zu warnende Benutzer</span><span class="sxs-lookup"><span data-stu-id="d9ccf-119">app and the corresponding user to be warned</span></span>|
 
 
 

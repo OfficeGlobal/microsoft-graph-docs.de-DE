@@ -1,34 +1,34 @@
 ---
-title: WindowsAutopilotProfileAssignmentStatus Enum-Typ
+title: windowsAutopilotProfileAssignmentStatus-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68612e2f4ccee46612c82237630efafda484b7e9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156378"
 ---
-# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a><span data-ttu-id="69d3d-103">WindowsAutopilotProfileAssignmentStatus Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="69d3d-103">windowsAutopilotProfileAssignmentStatus enum type</span></span>
+# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a><span data-ttu-id="8bf56-103">windowsAutopilotProfileAssignmentStatus-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="8bf56-103">windowsAutopilotProfileAssignmentStatus enum type</span></span>
 
-> <span data-ttu-id="69d3d-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="69d3d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="69d3d-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="69d3d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8bf56-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8bf56-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="69d3d-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="69d3d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8bf56-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="8bf56-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="69d3d-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="69d3d-107">Not yet documented</span></span>
+<span data-ttu-id="8bf56-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="8bf56-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="69d3d-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="69d3d-108">Members</span></span>
-|<span data-ttu-id="69d3d-109">Member</span><span class="sxs-lookup"><span data-stu-id="69d3d-109">Member</span></span>|<span data-ttu-id="69d3d-110">Wert</span><span class="sxs-lookup"><span data-stu-id="69d3d-110">Value</span></span>|<span data-ttu-id="69d3d-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="69d3d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8bf56-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="8bf56-107">Members</span></span>
+|<span data-ttu-id="8bf56-108">Element</span><span class="sxs-lookup"><span data-stu-id="8bf56-108">Member</span></span>|<span data-ttu-id="8bf56-109">Wert</span><span class="sxs-lookup"><span data-stu-id="8bf56-109">Value</span></span>|<span data-ttu-id="8bf56-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8bf56-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="69d3d-112">unknown</span><span class="sxs-lookup"><span data-stu-id="69d3d-112">unknown</span></span>|<span data-ttu-id="69d3d-113">0</span><span class="sxs-lookup"><span data-stu-id="69d3d-113">0</span></span>|<span data-ttu-id="69d3d-114">Unbekannte Zuordnungsstatus</span><span class="sxs-lookup"><span data-stu-id="69d3d-114">Unknown assignment status</span></span>|
-|<span data-ttu-id="69d3d-115">assignedInSync</span><span class="sxs-lookup"><span data-stu-id="69d3d-115">assignedInSync</span></span>|<span data-ttu-id="69d3d-116">1</span><span class="sxs-lookup"><span data-stu-id="69d3d-116">1</span></span>|<span data-ttu-id="69d3d-117">Zugewiesene erfolgreich in Intune und Synchronisierung mit Windows automatische Pilotprogramm</span><span class="sxs-lookup"><span data-stu-id="69d3d-117">Assigned successfully in Intune and in sync with Windows auto pilot program</span></span>|
-|<span data-ttu-id="69d3d-118">assignedOutOfSync</span><span class="sxs-lookup"><span data-stu-id="69d3d-118">assignedOutOfSync</span></span>|<span data-ttu-id="69d3d-119">2</span><span class="sxs-lookup"><span data-stu-id="69d3d-119">2</span></span>|<span data-ttu-id="69d3d-120">Zugewiesene erfolgreich in Intune und nicht synchron mit Windows automatische Pilotprogramm</span><span class="sxs-lookup"><span data-stu-id="69d3d-120">Assigned successfully in Intune and not in sync with Windows auto pilot program</span></span>|
-|<span data-ttu-id="69d3d-121">assignedUnkownSyncState</span><span class="sxs-lookup"><span data-stu-id="69d3d-121">assignedUnkownSyncState</span></span>|<span data-ttu-id="69d3d-122">3</span><span class="sxs-lookup"><span data-stu-id="69d3d-122">3</span></span>|<span data-ttu-id="69d3d-123">Zugeordnete erfolgreich in Intune und entweder synchron oder synchron mit Windows automatische Pilotprogramm</span><span class="sxs-lookup"><span data-stu-id="69d3d-123">Assigned successfully in Intune and either in-sync or out of sync with Windows auto pilot program</span></span>|
-|<span data-ttu-id="69d3d-124">nicht zugewiesen</span><span class="sxs-lookup"><span data-stu-id="69d3d-124">notAssigned</span></span>|<span data-ttu-id="69d3d-125">4</span><span class="sxs-lookup"><span data-stu-id="69d3d-125">4</span></span>|<span data-ttu-id="69d3d-126">Nicht zugewiesen</span><span class="sxs-lookup"><span data-stu-id="69d3d-126">Not assigned</span></span>|
-|<span data-ttu-id="69d3d-127">Ausstehende</span><span class="sxs-lookup"><span data-stu-id="69d3d-127">pending</span></span>|<span data-ttu-id="69d3d-128">5</span><span class="sxs-lookup"><span data-stu-id="69d3d-128">5</span></span>|<span data-ttu-id="69d3d-129">Ausstehende Zuordnung</span><span class="sxs-lookup"><span data-stu-id="69d3d-129">Pending assignment</span></span>|
-|<span data-ttu-id="69d3d-130">failed</span><span class="sxs-lookup"><span data-stu-id="69d3d-130">failed</span></span>|<span data-ttu-id="69d3d-131">6</span><span class="sxs-lookup"><span data-stu-id="69d3d-131">6</span></span>| <span data-ttu-id="69d3d-132">Fehler bei Zuweisung</span><span class="sxs-lookup"><span data-stu-id="69d3d-132">Assignment failed</span></span>|
+|<span data-ttu-id="8bf56-111">unknown</span><span class="sxs-lookup"><span data-stu-id="8bf56-111">unknown</span></span>|<span data-ttu-id="8bf56-112">0</span><span class="sxs-lookup"><span data-stu-id="8bf56-112">0</span></span>|<span data-ttu-id="8bf56-113">UnBekannter Zuordnungsstatus</span><span class="sxs-lookup"><span data-stu-id="8bf56-113">Unknown assignment status</span></span>|
+|<span data-ttu-id="8bf56-114">assignedInSync</span><span class="sxs-lookup"><span data-stu-id="8bf56-114">assignedInSync</span></span>|<span data-ttu-id="8bf56-115">1</span><span class="sxs-lookup"><span data-stu-id="8bf56-115">1</span></span>|<span data-ttu-id="8bf56-116">Erfolgreich zugewiesen in InTune und synchron mit Windows Auto Pilot Program</span><span class="sxs-lookup"><span data-stu-id="8bf56-116">Assigned successfully in Intune and in sync with Windows auto pilot program</span></span>|
+|<span data-ttu-id="8bf56-117">assignedOutOfSync</span><span class="sxs-lookup"><span data-stu-id="8bf56-117">assignedOutOfSync</span></span>|<span data-ttu-id="8bf56-118">2</span><span class="sxs-lookup"><span data-stu-id="8bf56-118">2</span></span>|<span data-ttu-id="8bf56-119">Erfolgreich zugewiesen in InTune und nicht synchron mit Windows Auto Pilot Program</span><span class="sxs-lookup"><span data-stu-id="8bf56-119">Assigned successfully in Intune and not in sync with Windows auto pilot program</span></span>|
+|<span data-ttu-id="8bf56-120">assignedUnkownSyncState</span><span class="sxs-lookup"><span data-stu-id="8bf56-120">assignedUnkownSyncState</span></span>|<span data-ttu-id="8bf56-121">3</span><span class="sxs-lookup"><span data-stu-id="8bf56-121">3</span></span>|<span data-ttu-id="8bf56-122">Erfolgreich in InTune zugewiesen und entweder synchron oder nicht mit Windows Auto Pilot Program</span><span class="sxs-lookup"><span data-stu-id="8bf56-122">Assigned successfully in Intune and either in-sync or out of sync with Windows auto pilot program</span></span>|
+|<span data-ttu-id="8bf56-123">notAssigned</span><span class="sxs-lookup"><span data-stu-id="8bf56-123">notAssigned</span></span>|<span data-ttu-id="8bf56-124">4</span><span class="sxs-lookup"><span data-stu-id="8bf56-124">4</span></span>|<span data-ttu-id="8bf56-125">Nicht zugewiesen</span><span class="sxs-lookup"><span data-stu-id="8bf56-125">Not assigned</span></span>|
+|<span data-ttu-id="8bf56-126">ausstehenden</span><span class="sxs-lookup"><span data-stu-id="8bf56-126">pending</span></span>|<span data-ttu-id="8bf56-127">5</span><span class="sxs-lookup"><span data-stu-id="8bf56-127">5</span></span>|<span data-ttu-id="8bf56-128">AusStehende Zuweisung</span><span class="sxs-lookup"><span data-stu-id="8bf56-128">Pending assignment</span></span>|
+|<span data-ttu-id="8bf56-129">failed</span><span class="sxs-lookup"><span data-stu-id="8bf56-129">failed</span></span>|<span data-ttu-id="8bf56-130">6</span><span class="sxs-lookup"><span data-stu-id="8bf56-130">6</span></span>| <span data-ttu-id="8bf56-131">Zuweisung fehlgeschlagen</span><span class="sxs-lookup"><span data-stu-id="8bf56-131">Assignment failed</span></span>|
 
 
 

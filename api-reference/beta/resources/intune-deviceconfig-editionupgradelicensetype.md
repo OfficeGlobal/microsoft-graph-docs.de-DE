@@ -1,30 +1,30 @@
 ---
-title: EditionUpgradeLicenseType Enum-Typ
-description: Edition Upgrade Lizenztyp
-localization_priority: Normal
+title: editionUpgradeLicenseType-Enumerationstyp
+description: Lizenztyp für Editions Upgrade
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8641586492de039bf5bae93b41909156ec5ab921
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ab47ffc46dbaecd833830d797c8b341688b8dbec
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414088"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155783"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a><span data-ttu-id="7fcd6-103">EditionUpgradeLicenseType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="7fcd6-103">editionUpgradeLicenseType enum type</span></span>
+# <a name="editionupgradelicensetype-enum-type"></a><span data-ttu-id="5f73b-103">editionUpgradeLicenseType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="5f73b-103">editionUpgradeLicenseType enum type</span></span>
 
-> <span data-ttu-id="7fcd6-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="7fcd6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7fcd6-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7fcd6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5f73b-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5f73b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7fcd6-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7fcd6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5f73b-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="5f73b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7fcd6-107">Edition Upgrade Lizenztyp</span><span class="sxs-lookup"><span data-stu-id="7fcd6-107">Edition Upgrade License type</span></span>
+<span data-ttu-id="5f73b-106">Lizenztyp für Editions Upgrade</span><span class="sxs-lookup"><span data-stu-id="5f73b-106">Edition Upgrade License type</span></span>
 
-## <a name="members"></a><span data-ttu-id="7fcd6-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="7fcd6-108">Members</span></span>
-|<span data-ttu-id="7fcd6-109">Member</span><span class="sxs-lookup"><span data-stu-id="7fcd6-109">Member</span></span>|<span data-ttu-id="7fcd6-110">Wert</span><span class="sxs-lookup"><span data-stu-id="7fcd6-110">Value</span></span>|<span data-ttu-id="7fcd6-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7fcd6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="5f73b-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="5f73b-107">Members</span></span>
+|<span data-ttu-id="5f73b-108">Element</span><span class="sxs-lookup"><span data-stu-id="5f73b-108">Member</span></span>|<span data-ttu-id="5f73b-109">Wert</span><span class="sxs-lookup"><span data-stu-id="5f73b-109">Value</span></span>|<span data-ttu-id="5f73b-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5f73b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7fcd6-112">productKey</span><span class="sxs-lookup"><span data-stu-id="7fcd6-112">productKey</span></span>|<span data-ttu-id="7fcd6-113">0</span><span class="sxs-lookup"><span data-stu-id="7fcd6-113">0</span></span>|<span data-ttu-id="7fcd6-114">Product Key-Typ</span><span class="sxs-lookup"><span data-stu-id="7fcd6-114">Product Key Type</span></span>|
-|<span data-ttu-id="7fcd6-115">licenseFile</span><span class="sxs-lookup"><span data-stu-id="7fcd6-115">licenseFile</span></span>|<span data-ttu-id="7fcd6-116">1</span><span class="sxs-lookup"><span data-stu-id="7fcd6-116">1</span></span>|<span data-ttu-id="7fcd6-117">Lizenz-Dateityp</span><span class="sxs-lookup"><span data-stu-id="7fcd6-117">License File Type</span></span>|
-|<span data-ttu-id="7fcd6-118">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="7fcd6-118">notConfigured</span></span>|<span data-ttu-id="7fcd6-119">2</span><span class="sxs-lookup"><span data-stu-id="7fcd6-119">2</span></span>|<span data-ttu-id="7fcd6-120">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="7fcd6-120">NotConfigured</span></span>|
+|<span data-ttu-id="5f73b-111">productKey</span><span class="sxs-lookup"><span data-stu-id="5f73b-111">productKey</span></span>|<span data-ttu-id="5f73b-112">0</span><span class="sxs-lookup"><span data-stu-id="5f73b-112">0</span></span>|<span data-ttu-id="5f73b-113">Product Key-Typ</span><span class="sxs-lookup"><span data-stu-id="5f73b-113">Product Key Type</span></span>|
+|<span data-ttu-id="5f73b-114">licenseFile</span><span class="sxs-lookup"><span data-stu-id="5f73b-114">licenseFile</span></span>|<span data-ttu-id="5f73b-115">1</span><span class="sxs-lookup"><span data-stu-id="5f73b-115">1</span></span>|<span data-ttu-id="5f73b-116">Lizenz Dateityp</span><span class="sxs-lookup"><span data-stu-id="5f73b-116">License File Type</span></span>|
+|<span data-ttu-id="5f73b-117">notConfigured</span><span class="sxs-lookup"><span data-stu-id="5f73b-117">notConfigured</span></span>|<span data-ttu-id="5f73b-118">2</span><span class="sxs-lookup"><span data-stu-id="5f73b-118">2</span></span>|<span data-ttu-id="5f73b-119">NotConfigured</span><span class="sxs-lookup"><span data-stu-id="5f73b-119">NotConfigured</span></span>|
 
 
 

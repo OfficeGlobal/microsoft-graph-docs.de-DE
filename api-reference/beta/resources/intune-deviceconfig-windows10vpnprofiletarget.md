@@ -1,30 +1,30 @@
 ---
-title: windows10VpnProfileTarget Enum-Typ
-description: Windows-10-VPN-Profil Zieltypen.
-localization_priority: Normal
+title: windows10VpnProfileTarget-Enumerationstyp
+description: Windows 10-VPN-Profil Ziel Typen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c5f5a1f288ad1af3d682e5bbdee9325ac17053
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc2d6e19a50002c8985d1b29be040c4fa2339bf6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161810"
 ---
-# <a name="windows10vpnprofiletarget-enum-type"></a><span data-ttu-id="5a625-103">windows10VpnProfileTarget Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="5a625-103">windows10VpnProfileTarget enum type</span></span>
+# <a name="windows10vpnprofiletarget-enum-type"></a><span data-ttu-id="561c2-103">windows10VpnProfileTarget-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="561c2-103">windows10VpnProfileTarget enum type</span></span>
 
-> <span data-ttu-id="5a625-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="5a625-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5a625-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5a625-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="561c2-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="561c2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5a625-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5a625-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="561c2-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="561c2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5a625-107">Windows-10-VPN-Profil Zieltypen.</span><span class="sxs-lookup"><span data-stu-id="5a625-107">Windows 10 VPN profile target types.</span></span>
+<span data-ttu-id="561c2-106">Windows 10-VPN-Profil Ziel Typen.</span><span class="sxs-lookup"><span data-stu-id="561c2-106">Windows 10 VPN profile target types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="5a625-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="5a625-108">Members</span></span>
-|<span data-ttu-id="5a625-109">Member</span><span class="sxs-lookup"><span data-stu-id="5a625-109">Member</span></span>|<span data-ttu-id="5a625-110">Wert</span><span class="sxs-lookup"><span data-stu-id="5a625-110">Value</span></span>|<span data-ttu-id="5a625-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5a625-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="561c2-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="561c2-107">Members</span></span>
+|<span data-ttu-id="561c2-108">Element</span><span class="sxs-lookup"><span data-stu-id="561c2-108">Member</span></span>|<span data-ttu-id="561c2-109">Wert</span><span class="sxs-lookup"><span data-stu-id="561c2-109">Value</span></span>|<span data-ttu-id="561c2-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="561c2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5a625-112">user</span><span class="sxs-lookup"><span data-stu-id="5a625-112">user</span></span>|<span data-ttu-id="5a625-113">0</span><span class="sxs-lookup"><span data-stu-id="5a625-113">0</span></span>|<span data-ttu-id="5a625-114">Benutzer geplant, VPN-Profil.</span><span class="sxs-lookup"><span data-stu-id="5a625-114">User targeted VPN profile.</span></span>|
-|<span data-ttu-id="5a625-115">Gerät</span><span class="sxs-lookup"><span data-stu-id="5a625-115">device</span></span>|<span data-ttu-id="5a625-116">1</span><span class="sxs-lookup"><span data-stu-id="5a625-116">1</span></span>|<span data-ttu-id="5a625-117">Gerät geplant, VPN-Profil.</span><span class="sxs-lookup"><span data-stu-id="5a625-117">Device targeted VPN profile.</span></span>|
-|<span data-ttu-id="5a625-118">autoPilotDevice</span><span class="sxs-lookup"><span data-stu-id="5a625-118">autoPilotDevice</span></span>|<span data-ttu-id="5a625-119">2</span><span class="sxs-lookup"><span data-stu-id="5a625-119">2</span></span>|<span data-ttu-id="5a625-120">AutoPilot Gerät geplant, VPN-Profil.</span><span class="sxs-lookup"><span data-stu-id="5a625-120">AutoPilot Device targeted VPN profile.</span></span>|
+|<span data-ttu-id="561c2-111">user</span><span class="sxs-lookup"><span data-stu-id="561c2-111">user</span></span>|<span data-ttu-id="561c2-112">0</span><span class="sxs-lookup"><span data-stu-id="561c2-112">0</span></span>|<span data-ttu-id="561c2-113">VPN-Profil des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="561c2-113">User targeted VPN profile.</span></span>|
+|<span data-ttu-id="561c2-114">Gerät</span><span class="sxs-lookup"><span data-stu-id="561c2-114">device</span></span>|<span data-ttu-id="561c2-115">1</span><span class="sxs-lookup"><span data-stu-id="561c2-115">1</span></span>|<span data-ttu-id="561c2-116">VPN-Profil des Geräts.</span><span class="sxs-lookup"><span data-stu-id="561c2-116">Device targeted VPN profile.</span></span>|
+|<span data-ttu-id="561c2-117">autoPilotDevice</span><span class="sxs-lookup"><span data-stu-id="561c2-117">autoPilotDevice</span></span>|<span data-ttu-id="561c2-118">2</span><span class="sxs-lookup"><span data-stu-id="561c2-118">2</span></span>|<span data-ttu-id="561c2-119">AutoPilot Device Targeted VPN-Profil.</span><span class="sxs-lookup"><span data-stu-id="561c2-119">AutoPilot Device targeted VPN profile.</span></span>|
 
 
 
