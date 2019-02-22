@@ -1,28 +1,28 @@
 ---
-title: Ressourcentyp vpnRoute
-description: VPN-Route Definition.
-localization_priority: Normal
+title: vpnRoute-Ressourcentyp
+description: Definition der VPN-Route.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628e2f384b06dece13da1595a4111a2d1022a673
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 54706d47267eef8fff6c465f24e4e9caa183ccc3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423020"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154299"
 ---
-# <a name="vpnroute-resource-type"></a>Ressourcentyp vpnRoute
+# <a name="vpnroute-resource-type"></a>vpnRoute-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN-Route Definition.
+Definition der VPN-Route.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|destinationPrefix|Zeichenfolge|Ziel-Präfix (/ v6 IPv4-Adresse).|
+|destinationPrefix|Zeichenfolge|Ziel Präfix (IPv4/V6-Adresse).|
 |prefixSize|Int32|Präfix Größe. (1-32). Gültige Werte 1 bis 32|
 
 ## <a name="relationships"></a>Beziehungen

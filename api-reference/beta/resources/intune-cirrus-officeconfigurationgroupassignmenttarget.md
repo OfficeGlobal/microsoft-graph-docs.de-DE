@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp officeConfigurationGroupAssignmentTarget
-description: Office-Client-Konfiguration AAD Zuordnung Ziel gruppieren
+title: officeConfigurationGroupAssignmentTarget-Ressourcentyp
+description: Office-Client Konfigurations Ziel für AAD-Gruppenzuweisung.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 411af117999498050288405874bd6b5baff5b6b5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a3451d4bddec96c1e21cd605b05cb34d96372ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422747"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153550"
 ---
-# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Ressourcentyp officeConfigurationGroupAssignmentTarget
+# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Office-Client-Konfiguration AAD Zuordnung Ziel gruppieren
+Office-Client Konfigurations Ziel für AAD-Gruppenzuweisung.
 
-Erbt vom [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
+Erbt von [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|groupId|Zeichenfolge|Die Id der Gruppe AAD sind wir Gerätekonfiguration zu adressieren.|
+|groupId|Zeichenfolge|Die ID der AAD-Gruppe, auf die die Gerätekonfiguration zielt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

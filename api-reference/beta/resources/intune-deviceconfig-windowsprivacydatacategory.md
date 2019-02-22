@@ -1,46 +1,46 @@
 ---
-title: WindowsPrivacyDataCategory Enum-Typ
-description: Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
-localization_priority: Normal
+title: windowsPrivacyDataCategory-Enumerationstyp
+description: Windows-Datenschutzkategorie-Spezifizierer für Datenschutz.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 484042130a4a1d6a3732ddd1b3ac7fc4aec41da3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3097ed916ec9f215880caf46bcdc02616ce5d2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154453"
 ---
-# <a name="windowsprivacydatacategory-enum-type"></a>WindowsPrivacyDataCategory Enum-Typ
+# <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows private Daten Kategorie Bezeichner für den Datenschutz Datenzugriff.
+Windows-Datenschutzkategorie-Spezifizierer für Datenschutz.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Keine Zugriffsebene angegeben, keine Intents. Gerät kann entweder wie in UserInControl oder ForceAllow Verhalten. Es kann die private Daten abhängen wurde Zugriff auf Windows-Versionen und anderen Faktoren.|
-|Kontostatus|1|Lassen Sie apps Zugriff Benutzernamen ein, Bild und andere Kontoinformationen in Microsoft-Konto erstellt. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|appsRunInBackground|2|Zulassen Sie der apps erhalten Informationen, Benachrichtigungen senden, und kommunizieren von Unternehmensinformationen Sie aktuellen, wenn der Benutzer nicht verwendet werden. Beachten Sie, dass bei der Kommunikation apps (E-Mail, Voicemail, usw.) aus Hintergrund Zugriff deaktivieren diese apps können oder nicht funktioniert, wie sie mit dem Hintergrund Zugriff sind. In Windows 10, Version 1703 hinzugefügt.|
-|Kalender|3|Lassen Sie apps Access Benutzer Kalenders. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|callHistory|4|Lassen Sie Anrufliste apps zugreifen auf Benutzer. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|Kamera|5|Können Sie apps, die die Kamera auf das Gerät des Benutzers zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|contacts|6|Lassen Sie die Kontaktinformationen apps zugreifen auf Benutzer. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|diagnosticsInfo|7|Können Sie apps, die Diagnoseinformationen zu anderen ausgeführten apps zugreifen. In Windows 10, Version 1703 hinzugefügt.|
-|E-Mail|8|Lassen Sie apps Access und senden Sie e-Mail. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|location|9|Können Sie apps, die genaue Speicherort Daten des Benutzers Gerät zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|Messaging|10|Lassen Sie apps lesen oder Senden von Nachrichten, Text oder MMS. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|microphone|11|Können Sie apps, die auf dem Benutzergerät Mikrofon verwenden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|Bewegung|12|Können Sie apps Motion-Daten auf den Benutzer des Geräts generiert verwenden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|Benachrichtigungen|13|Lassen Sie Benachrichtigungen apps zugreifen auf Benutzer. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|phone|14|Lassen Sie apps Access Daten Telefon und tätigen von Telefonanrufen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|Sender|15|Können Sie apps Sender, einschließlich Bluetooth, senden und Empfangen von Daten verwenden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|tasks|16|Let apps Zugriff Taskplaner. In Windows 10, Version 1703 hinzugefügt.|
-|syncWithDevices|17|Können Sie apps, automatisch freigeben und Info mit drahtlosen Geräten, die explizit mit Gerät des Benutzers ein nicht synchronisieren. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
-|trustedDevices|18|Können Sie apps, die vertrauenswürdige Geräte zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|notConfigured|0|Keine Zugriffsebene angegeben, keine Absichten. Das Gerät kann sich entweder wie in UserInControl oder in ForceAllow Verhalten. Es kann davon abhängen, auf welche Daten auf dem Datenschutz zugegriffen wurde, wie Windows-Versionen und andere Faktoren.|
+|accountInfo|1|Apps können auf den Namen des Benutzers, Bild und andere Kontoinformationen zugreifen, die in Microsoft-Konto erstellt wurden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|appsRunInBackground|2|Zulassen, dass apps Informationen empfangen, Benachrichtigungen senden und auf dem neuesten Stand bleiben, auch wenn der Benutzer Sie nicht verwendet. Beachten Sie, dass bei der Deaktivierung von Kommunikations-Apps (E-Mail, Sprachausgabe usw.) aus dem Hintergrund Zugriff diese apps möglicherweise nicht wie beim Hintergrund Zugriff funktionieren. HinzugeFügt in Windows 10, Version 1703.|
+|calendar|3|Apps können auf den Kalender des Benutzers zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|callHistory|4|Apps können auf den Anrufverlauf von Benutzern zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|Kamera|5|Apps können auf dem Gerät des Benutzers auf die Kamera zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|contacts|6|Apps können auf die Kontaktinformationen des Benutzers zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|diagnosticsInfo|7|Apps können auf Diagnoseinformationen zu anderen laufenden apps zugreifen. HinzugeFügt in Windows 10, Version 1703.|
+|email|8|Apps können auf e-Mail zugreifen und e-Mails senden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|location|9|Apps können auf die genauen Standortdaten des Geräte Benutzers zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|Messaging|10|Apps können Nachrichten, Text oder MMS lesen oder senden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|microphone|11|Lassen Sie die apps Mikrofon auf dem Benutzergerät verwenden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|Bewegung|12|Apps verwenden Bewegungsdaten, die auf dem Geräte Benutzer generiert werden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|Benachrichtigungen|13|Apps können auf Benutzer Benachrichtigungen zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|phone|14|Apps können auf Telefondaten zugreifen und telefonieren. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|Radios|15|Lassen Sie apps Funkgeräte, einschließlich Bluetooth, zum Senden und empfangen von Daten verwenden. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|tasks|16|Apps können auf die Aufgabenplanung zugreifen. HinzugeFügt in Windows 10, Version 1703.|
+|syncWithDevices|17|Lassen Sie Apps automatisch Informationen mit Drahtlosgeräten freigeben und synchronisieren, die nicht explizit mit dem Benutzergerät verbunden sind. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
+|trustedDevices|18|Apps können auf vertrauenswürdige Geräte zugreifen. Dies wurde in Windows 10, Version 1607, hinzugefügt.|
 
 
 

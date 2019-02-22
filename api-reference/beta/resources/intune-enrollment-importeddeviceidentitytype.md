@@ -1,30 +1,30 @@
 ---
-title: ImportedDeviceIdentityType Enum-Typ
+title: importedDeviceIdentityType-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9674172e99fa6e26c3998c8f797e4bc972c94e4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d2fba97d83cf59add652c05fb7cf315d6885e29c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147880"
 ---
-# <a name="importeddeviceidentitytype-enum-type"></a>ImportedDeviceIdentityType Enum-Typ
+# <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannten Wert von ImportedDeviceIdentityType.|
-|imei|1|Identität des Geräts ist vom Typ Imei.|
-|serialNumber|2|Gerät Identity ist der Typ Seriennummer.|
+|unknown|0|UnBekannter Wert von importedDeviceIdentityType.|
+|imei|1|Die Geräte Identität ist vom Typ IMEI.|
+|serialNumber|2|Die Geräte Identität hat den Typ Seriennummer.|
 
 
 

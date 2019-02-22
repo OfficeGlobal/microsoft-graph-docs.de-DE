@@ -1,31 +1,31 @@
 ---
-title: DefenderScanType Enum-Typ
-description: Mögliche Werte für System überprüft den Typ.
-localization_priority: Normal
+title: defenderScanType-Enumerationstyp
+description: Mögliche Werte für den System Scantyp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa60ef6358ac6d78a6b89f65b57345d127cc32e5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8871fca2c46d18ef1de3bab5a5ce88525109b234
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150722"
 ---
-# <a name="defenderscantype-enum-type"></a>DefenderScanType Enum-Typ
+# <a name="defenderscantype-enum-type"></a>defenderScanType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für System überprüft den Typ.
+Mögliche Werte für den System Scantyp.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|deaktiviert|1|System-Überprüfung deaktiviert.|
-|Schnelles|2|Schnelles Systemscan.|
-|vollständige|3|Vollständige Überprüfung.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|deaktiviert|1|System Überprüfung deaktiviert.|
+|schnell|2|Schnelle Systemüberprüfung.|
+|vollständige|3|Vollständige Systemüberprüfung.|
 
 
 

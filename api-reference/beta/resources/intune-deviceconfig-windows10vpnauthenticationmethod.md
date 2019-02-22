@@ -1,30 +1,30 @@
 ---
-title: windows10VpnAuthenticationMethod Enum-Typ
-description: Windows-10-VPN-Verbindungstypen.
-localization_priority: Normal
+title: windows10VpnAuthenticationMethod-Enumerationstyp
+description: Windows 10-VPN-Verbindungstypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa011b6231f6b430fcefcc36affbf92c2fd5d717
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 771186b28b2c6fc1c4ecee2e3cb58518f2a27d10
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148559"
 ---
-# <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod Enum-Typ
+# <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-10-VPN-Verbindungstypen.
+Windows 10-VPN-Verbindungstypen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|certificate|0|Die Authentifizierung mit einem Zertifikat.|
-|usernameAndPassword|1|Verwenden Sie Benutzername und Kennwort für die Authentifizierung.|
-|customEapXml|2|Authentifizierungsmethode wird in benutzerdefinierten EAP XML angegeben.|
+|certificate|0|Authentifizieren mit einem Zertifikat.|
+|usernameAndPassword|1|Verwenden Sie username und Password für die Authentifizierung.|
+|customEapXml|2|Die Authentifizierungsmethode wird in benutzerdefiniertem EAP-XML angegeben.|
 
 
 

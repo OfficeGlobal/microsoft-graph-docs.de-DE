@@ -1,29 +1,29 @@
 ---
-title: ManagedAppFlaggedReason Enum-Typ
-description: Der Grund für den ein Benutzer markiert wurde
-localization_priority: Normal
+title: managedAppFlaggedReason-Enumerationstyp
+description: Der Grund für die Kennzeichnung eines Benutzers
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d2d956107d8a8ecbc40f90d29260c2ac06064f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 13b5cdb11725452c78543a9a8d08823eafd426b5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154068"
 ---
-# <a name="managedappflaggedreason-enum-type"></a>ManagedAppFlaggedReason Enum-Typ
+# <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Grund für den ein Benutzer markiert wurde
+Der Grund für die Kennzeichnung eines Benutzers
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Keine|0|Kein Problem.|
-|rootedDevice|1|Die app-Registrierung wird auf einem Gerät Stamm/entsperrt ausgeführt.|
+|rootedDevice|1|Die APP-Registrierung läuft auf einem Rooted/Unlocked-Gerät.|
 
 
 

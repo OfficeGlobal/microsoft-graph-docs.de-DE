@@ -1,31 +1,31 @@
 ---
-title: WindowsUpdateStatus Enum-Typ
-description: Windows-update für Business Konfiguration Gerätestatus
-localization_priority: Normal
+title: windowsUpdateStatus-Enumerationstyp
+description: Windows Update for Business-Konfigurations Gerätestatus
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74493359eeccdbc6df1c351ecec771b5990649b6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed7549fb77cf5a9f7c3014192d5524019323405f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154159"
 ---
-# <a name="windowsupdatestatus-enum-type"></a>WindowsUpdateStatus Enum-Typ
+# <a name="windowsupdatestatus-enum-type"></a>windowsUpdateStatus-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-update für Business Konfiguration Gerätestatus
+Windows Update for Business-Konfigurations Gerätestatus
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Aktuellste|0|Es gibt keine ausstehende Updates, keine ausstehende Updates einen Neustart und keine fehlgeschlagenen Updates.|
-|pendingInstallation|1|Es sind Updates, die die ausstehende Installation der Updates enthält, die nicht genehmigt werden. Es sind keine ausstehenden Neustarts Updates, keine fehlgeschlagenen Updates.|
-|pendingReboot|2|Es sind Updates, die Neustart erforderlich ist. Es sind nicht fehlgeschlagenen Updates.|
-|failed|3|Es sind Updates konnte nicht auf dem Gerät installiert werden.|
+|upToDate|0|Es sind keine Updates, keine ausstehenden Neustart Updates und keine fehlerhaften Updates vorhanden.|
+|pendingInstallation|1|Es gibt Updates für die Installation, die nicht genehmigte Updates enthalten. Es sind keine Updates für den Neustart vorhanden, keine fehlerhaften Aktualisierungen.|
+|pendingReboot|2|Es gibt Updates, die einen Neustart erfordern. Es sind keine fehlerhaften Aktualisierungen vorhanden.|
+|failed|3|Es sind keine Updates auf dem Gerät installiert.|
 
 
 

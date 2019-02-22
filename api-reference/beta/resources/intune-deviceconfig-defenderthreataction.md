@@ -1,34 +1,34 @@
 ---
-title: DefenderThreatAction Enum-Typ
-description: Defender Standardaktion durchführen erkannt Schadsoftware.
-localization_priority: Normal
+title: defenderThreatAction-Enumerationstyp
+description: Die Standardaktion des Verteidigers für erkannte Schadsoftware.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d092d5a23fc006a9accdf9062a27cd79f323d208
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4849f369aa5dd04a68599050aa097b2ac63f5ef1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154782"
 ---
-# <a name="defenderthreataction-enum-type"></a>DefenderThreatAction Enum-Typ
+# <a name="defenderthreataction-enum-type"></a>defenderThreatAction-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Defender Standardaktion durchführen erkannt Schadsoftware.
+Die Standardaktion des Verteidigers für erkannte Schadsoftware.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Wenden Sie Aktion basierend auf der Definition Update an.|
-|clean|1|Bereinigen der erkannten Bedrohung.|
-|Quarantäne|2|Isolieren Sie erkannte Bedrohung.|
-|remove|3|Erkannte Bedrohung zu entfernen.|
-|zulassen|4|Zulassen der erkannten Bedrohung.|
-|vom Typ userDefined|5|Ermöglicht es dem Benutzer die erkannten Bedrohung auszuführende Aktion zu bestimmen.|
-|Blockieren|6|Blockieren der erkannten Bedrohung.|
+|deviceDefault|0|Anwenden einer Aktion basierend auf der Updatedefinition.|
+|clean|1|BeReinigen Sie die erkannte Bedrohung.|
+|Quarantäne|2|Isolieren Sie die erkannte Bedrohung.|
+|remove|3|Entfernen Sie die erkannte Bedrohung.|
+|zulassen|4|Die erkannte Bedrohung zulassen.|
+|userDefined|5|Der Benutzer kann die Aktion bestimmen, die mit der erkannten Bedrohung ausgeführt werden soll.|
+|Block|6|Die erkannte Bedrohung blockieren.|
 
 
 

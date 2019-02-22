@@ -1,21 +1,21 @@
 ---
 title: androidMinimumOperatingSystem-Ressourcentyp
 description: Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4328cfe06180be138b2c33840c72620efdaa277b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3f18e21dcc6e67eb7285bf15c29e76d2c64eff18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403126"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153809"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderlichen Betriebssystems.
 
@@ -30,11 +30,11 @@ Enthält die Eigenschaften des für eine mobile Android-App mindestens erforderl
 |v4_4|Boolescher Wert|Version 4.4 oder höher|
 |v5_0|Boolescher Wert|Version 5.0 oder höher|
 |v5_1|Boolescher Wert|Version 5.1 oder höher|
-|v6_0|Boolean|Version 6.0 oder höher.|
-|v7_0|Boolean|Version 7.0 oder höher.|
-|v7_1|Boolean|Version 7.1 oder später.|
+|v6_0|Boolescher Wert|Version 6,0 oder höher.|
+|v7_0|Boolescher Wert|Version 7,0 oder höher.|
+|v7_1|Boolescher Wert|Version 7,1 oder höher.|
 |v8_0|Boolescher Wert|Version 8.0 oder höher|
-|v8_1|Boolescher Wert|Version 8.1 oder höher.|
+|v8_1|Boolescher Wert|Version 8,1 oder höher.|
 |v9_0|Boolescher Wert|Version 9.0 oder höher|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,21 +1,21 @@
 ---
 title: Aktualisieren von „deviceConfigurationDeviceOverview“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceConfigurationDeviceOverview.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 180778580f7737141efa935a2dfe87b412b677e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fcb04aaa007bcab0a625d3f8cfb437bbe71f4a89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147180"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Aktualisieren von „deviceConfigurationDeviceOverview“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).
 
@@ -46,9 +46,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -61,11 +61,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
 |notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
-|notApplicablePlatformCount|Int32|Anzahl der Geräte, die aufgrund von Konflikt Plattform und Richtlinie nicht zutreffend|
+|notApplicablePlatformCount|Int32|Anzahl der nicht anwendbaren Geräte aufgrund fehlender Platt Form und Richtlinie|
 |successCount|Int32|Anzahl der erfolgreichen Geräte|
 |errorCount|Int32|Anzahl der fehlerhaften Geräte|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Geräte|
-|conflictCount|Int32|Anzahl der Geräte in Konflikt|
+|Conflictcount zur|Int32|Anzahl der in Konflikt stehenden Geräte|
 |lastUpdateDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Aktualisierung|
 |configurationVersion|Int32|Version der Richtlinie für diese Übersicht|
 

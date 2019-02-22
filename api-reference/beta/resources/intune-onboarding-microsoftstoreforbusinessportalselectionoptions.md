@@ -1,30 +1,30 @@
 ---
-title: MicrosoftStoreForBusinessPortalSelectionOptions Enum-Typ
-description: Dem Webportal synchronisiert Admin verfügbaren Microsoft Store für Business apps. Dies ist in der Verwaltungskonsole Intune verfügbar.
-localization_priority: Normal
+title: microsoftStoreForBusinessPortalSelectionOptions-Enumerationstyp
+description: Portal, in dem der Administrator die verfügbaren Microsoft Store for Business-Apps synchronisiert. Dies ist in der InTune-Verwaltungskonsole verfügbar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 589a6058a7ff2c30a967192b90c700f30068ab3c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419331"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147943"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>MicrosoftStoreForBusinessPortalSelectionOptions Enum-Typ
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Dem Webportal synchronisiert Admin verfügbaren Microsoft Store für Business apps. Dies ist in der Verwaltungskonsole Intune verfügbar.
+Portal, in dem der Administrator die verfügbaren Microsoft Store for Business-Apps synchronisiert. Dies ist in der InTune-Verwaltungskonsole verfügbar.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Diese Option ist nicht verfügbar für das Konto|
-|companyPortal|1|Nur Intune Unternehmen Portal.|
-|privateStore|2|Nur MSFB Private Store.|
+|Keine|0|Diese Option ist für das Konto nicht verfügbar.|
+|companyPortal|1|Nur InTune-Unternehmens Portal.|
+|privateStore|2|Nur MSFB-privater Speicher.|
 
 
 

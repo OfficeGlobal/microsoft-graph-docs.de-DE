@@ -1,33 +1,33 @@
 ---
-title: RatingJapanMoviesType Enum-Typ
-description: Filme Bewertung Beschriftungen in Japan
-localization_priority: Normal
+title: ratingJapanMoviesType-Enumerationstyp
+description: Movies Rating Labels in Japan
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc8b5a6ba4790f749fb2da5c1e8c6ec1c000b962
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f327bd9c3623cbe768e7a87ba8af416ae9b0e4e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422040"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147642"
 ---
-# <a name="ratingjapanmoviestype-enum-type"></a>RatingJapanMoviesType Enum-Typ
+# <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Beschriftungen in Japan
+Movies Rating Labels in Japan
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Geeignet für alle Jahren|
-|parentalGuidance|3|Die Bild-12-Klassifizierung fordert Eltern Anleitungen für young Personen unter 12|
-|agesAbove15|4|Die Klassifizierung R15 + ist geeignet für Leser von Berichten 15 oder älter|
-|agesAbove18|5|Die Klassifizierung R18 + ist geeignet für Leser von Berichten von 18 oder älter|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Geeignet für alle Altersgruppen|
+|parentalGuidance|3|Die PG-12-Klassifikation fordert die elterliche Betreuung für Jugendliche unter 12 Jahren an.|
+|agesAbove15|4|Die R15 +-Klassifikation eignet sich für Zuschauer ab 15 Jahren.|
+|agesAbove18|5|Die R18 +-Klassifikation eignet sich für Zuschauer ab 18 Jahren.|
 
 
 

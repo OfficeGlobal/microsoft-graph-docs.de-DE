@@ -1,36 +1,36 @@
 ---
-title: RatingUnitedKingdomMoviesType Enum-Typ
-description: Filme Bewertung Beschriftungen in Großbritannien
-localization_priority: Normal
+title: ratingUnitedKingdomMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Vereinigtes Königreich
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62194038006b011fdc8a70c4b399beef5e8c742b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412534"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148118"
 ---
-# <a name="ratingunitedkingdommoviestype-enum-type"></a>RatingUnitedKingdomMoviesType Enum-Typ
+# <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Beschriftungen in Großbritannien
+Movies-Bewertungs Bezeichnungen in Vereinigtes Königreich
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Die Klassifizierung U eignet sich für alle Jahren|
-|universalChildren|3|Die UC-Klassifizierung eignet sich für untergeordnete Elemente vor dem Schule, ein alte Bewertung Bezeichnung|
-|parentalGuidance|4|Die Bild-Klassifizierung eignet sich für ausgereiften|
-|agesAbove12Video|5|12, video release 12 Jahren und über geeignete|
-|agesAbove12Cinema|6|12a Cinema Version 12 Jahren und über geeignete|
-|agesAbove15|7|15, nur für 15 Jahren geeignet und ältere|
-|Erwachsene|8|Nur für Erwachsene geeignet ist|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Die U-Klassifikation eignet sich für alle Altersgruppen|
+|universalChildren|3|Die UC-Klassifikation eignet sich für Vorschulkinder, eine alte Bewertungs Bezeichnung|
+|parentalGuidance|4|Die PG-Klassifikation eignet sich für ältere|
+|agesAbove12Video|5|12, Videofreigabe ab 12 Jahren geeignet|
+|agesAbove12Cinema|6|12A, Kino Release ab 12 Jahren geeignet|
+|agesAbove15|7|15, geeignet nur für 15 Jahre und älter|
+|Erwachsene|8|Nur für Erwachsene geeignet|
 
 
 

@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp managementConditionExpressionString
-description: Eine Zeichenfolge Management Bedingung ist eine Zeichenfolgendarstellung eines Ausdrucks Bedingung Management.
-localization_priority: Normal
+title: managementConditionExpressionString-Ressourcentyp
+description: Eine Ausdruckszeichenfolge für die Verwaltungsbedingung ist eine Zeichenfolgendarstellung eines Ausdrucks der Verwaltungsbedingung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b8abc3492690afe6709070decbfe050356fd614
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc4552ab6cc97676ced32ae7e7f5649262c4f4f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419191"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151009"
 ---
-# <a name="managementconditionexpressionstring-resource-type"></a>Ressourcentyp managementConditionExpressionString
+# <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Eine Zeichenfolge Management Bedingung ist eine Zeichenfolgendarstellung eines Ausdrucks Bedingung Management.
+Eine Ausdruckszeichenfolge für die Verwaltungsbedingung ist eine Zeichenfolgendarstellung eines Ausdrucks der Verwaltungsbedingung.
 
 
-Erbt vom [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
+Erbt von [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Wert|Zeichenfolge|Die Verwaltung Condition-Anweisung Ausdruck String-Wert.|
+|Wert|Zeichenfolge|Der Ausdruck String-Wert der Verwaltungs Bedingungsanweisung.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

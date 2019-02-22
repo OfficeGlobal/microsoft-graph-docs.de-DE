@@ -1,28 +1,28 @@
 ---
-title: IntendedPurpose Enum-Typ
-description: Importoptionen PFX.
-localization_priority: Normal
+title: intendedPurpose-Enumerationstyp
+description: Optionen für PFX-Import.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3965ae57d98bd0a0cebaa1e0c5dbaf052fc8e2fa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4933386599e7d99494d2972734653569854e89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150596"
 ---
-# <a name="intendedpurpose-enum-type"></a>IntendedPurpose Enum-Typ
+# <a name="intendedpurpose-enum-type"></a>intendedPurpose-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Importoptionen PFX.
+Optionen für PFX-Import.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht zugewiesene|1|Nicht zugewiesene|
+|zugewiesen|1|Zugewiesen|
 |smimeEncryption|2|SmimeEncryption|
 |smimeSigning|3|SmimeSigning|
 |VPN|4|VPN|

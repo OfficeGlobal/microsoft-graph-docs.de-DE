@@ -1,44 +1,44 @@
 ---
-title: Ressourcentyp mobileAppInstallSummary
-description: Enthält Eigenschaften für die Zusammenfassung der Installation einer mobilen App.
-localization_priority: Normal
+title: mobileAppInstallSummary-Ressourcentyp
+description: Enthält Eigenschaften für die Installationszusammenfassung einer mobilen App.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bd7c30c1b00e83731766bcd80f9a9fafd8e8b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416713"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150764"
 ---
-# <a name="mobileappinstallsummary-resource-type"></a>Ressourcentyp mobileAppInstallSummary
+# <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für die Zusammenfassung der Installation einer mobilen App.
+Enthält Eigenschaften für die Installationszusammenfassung einer mobilen App.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Lesen Sie Eigenschaften und Beziehungen des [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.|
-|[MobileAppInstallSummary aktualisieren](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Aktualisieren Sie die Eigenschaften eines [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.|
+|[MobileAppInstallSummary abrufen](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Lesen von Eigenschaften und Beziehungen des [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.|
+|[MobileAppInstallSummary aktualisieren](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Aktualisieren der Eigenschaften eines [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|installedDeviceCount|Int32|Anzahl der Geräte, die diese app erfolgreich installiert haben.|
-|failedDeviceCount|Int32|Anzahl der Geräte, die fehlgeschlagen sind, um diese app zu installieren.|
-|notApplicableDeviceCount|Int32|Anzahl der Geräte, die für diese app nicht zutreffen.|
-|notInstalledDeviceCount|Int32|Anzahl der Geräte, die diese app installiert nicht vorhanden ist.|
-|pendingInstallDeviceCount|Int32|Anzahl der Geräte, die diese app installieren benachrichtigt wurden.|
-|installedUserCount|Int32|Anzahl der Benutzer, deren Geräte alle erfolgreich ausgeführt wurden, um diese app zu installieren.|
-|failedUserCount|Int32|Anzahl der Benutzer, die 1 haben oder weitere Gerät, deren Installation diese app fehlschlug.|
-|notApplicableUserCount|Int32|Anzahl der Benutzer, deren Geräte alle nicht zutreffend für diese app waren.|
-|notInstalledUserCount|Int32|Anzahl der Benutzer mit 1 oder mehrere Geräte, die diese app nicht installiert haben.|
-|pendingInstallUserCount|Int32|Anzahl der Benutzer, die 1 haben oder weitere Geräte, die diese app installieren und 0 Geräte mit Fehlern benachrichtigt wurden.|
+|installedDeviceCount|Int32|Die Anzahl der Geräte, die diese APP erfolgreich installiert haben.|
+|failedDeviceCount|Int32|Anzahl der Geräte, die diese APP nicht installiert haben.|
+|notApplicableDeviceCount|Int32|Die Anzahl der Geräte, die für diese APP nicht anwendbar sind.|
+|notInstalledDeviceCount|Int32|Anzahl der Geräte, auf denen diese APP nicht installiert ist.|
+|pendingInstallDeviceCount|Int32|Anzahl der Geräte, die zur Installation dieser APP benachrichtigt wurden.|
+|installedUserCount|Int32|Die Anzahl der Benutzer, deren Geräte alle für die Installation dieser APP erfolgreich waren.|
+|failedUserCount|Int32|Die Anzahl der Benutzer, die über ein Gerät verfügen, für das diese APP nicht installiert werden konnte.|
+|notApplicableUserCount|Int32|Die Anzahl der Benutzer, deren Geräte für diese APP nicht anwendbar waren.|
+|notInstalledUserCount|Int32|Die Anzahl von Benutzern, die über 1 oder mehr Geräte verfügen, die diese APP nicht installiert haben.|
+|pendingInstallUserCount|Int32|Die Anzahl der Benutzer mit mindestens 1 Gerät, die zur Installation dieser APP benachrichtigt wurden und über 0 Geräte mit Fehlern verfügen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

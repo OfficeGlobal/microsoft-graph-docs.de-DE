@@ -1,29 +1,29 @@
 ---
-title: WiFiAuthenticationMethod Enum-Typ
+title: wiFiAuthenticationMethod-Enumerationstyp
 description: Wi-Fi-Authentifizierungsmethode.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af03f9136718d644c427e4261f74099df0be168c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 530265fc23a3ae94470779fb2b830aa6c677fb18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146718"
 ---
-# <a name="wifiauthenticationmethod-enum-type"></a>WiFiAuthenticationMethod Enum-Typ
+# <a name="wifiauthenticationmethod-enum-type"></a>wiFiAuthenticationMethod-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Wi-Fi-Authentifizierungsmethode.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|certificate|0|Verwenden Sie ein Zertifikat Identität für die Authentifizierung.|
-|usernameAndPassword|1|Verwenden Sie Benutzername und Kennwort für die Authentifizierung.|
+|certificate|0|Verwenden Sie ein Identitätszertifikat für die Authentifizierung.|
+|usernameAndPassword|1|Verwenden Sie username und Password für die Authentifizierung.|
 
 
 

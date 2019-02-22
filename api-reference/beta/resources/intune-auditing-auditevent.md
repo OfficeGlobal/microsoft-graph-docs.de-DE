@@ -1,21 +1,21 @@
 ---
 title: auditEvent-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für das Audit-Ereignis enthält.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3eddfcbd94153bfc1f7d1798f8806fb84b6341bd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8fd9971b5b6ddce9b3a826ff569d1925ef9cff97
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425162"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153676"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine Klasse, die die Eigenschaften für das Audit-Ereignis enthält.
 
@@ -27,21 +27,21 @@ Eine Klasse, die die Eigenschaften für das Audit-Ereignis enthält.
 |[auditEvent erstellen](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Erstellen eines neuen [auditEvent](../resources/intune-auditing-auditevent.md)-Objekts.|
 |[auditEvent löschen](../api/intune-auditing-auditevent-delete.md)|Keine|Löscht ein [auditEvent](../resources/intune-auditing-auditevent.md)-Objekt.|
 |[auditEvent aktualisieren](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Aktualisieren der Eigenschaften eines [auditEvent](../resources/intune-auditing-auditevent.md)-Objekts.|
-|[getAuditCategories-Funktion](../api/intune-auditing-auditevent-getauditcategories.md)|String-Sammlung|Noch nicht dokumentiert|
-|[getAuditActivityTypes-Funktion](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String-Sammlung|Noch nicht dokumentiert|
+|[getAuditCategories-Funktion](../api/intune-auditing-auditevent-getauditcategories.md)|Zeichenfolgenauflistung|Noch nicht dokumentiert|
+|[getAuditActivityTypes-Funktion](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String-Sammlung|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|displayName|String|Anzeigename des Ereignisses|
-|componentName|String|Name der Komponente|
+|displayName|Zeichenfolge|Anzeigename des Ereignisses|
+|componentName|Zeichenfolge|Name der Komponente|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|String|Anzeigename der Aktivität|
+|activity|Zeichenfolge|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|String|Typ der durchgeführten Aktivität|
-|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
-|activityResult|String|Ergebnis der Aktivität|
+|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
+|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
+|activityResult|Zeichenfolge|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
 |resources|Collection von Objekten des Typs [auditResource](../resources/intune-auditing-auditresource.md)|Ressourcen, die geändert werden|
 |category|String|Audit-Kategorie|

@@ -1,21 +1,21 @@
 ---
 title: windowsMinimumOperatingSystem-Ressourcentyp
 description: Das mindestens für eine mobile Windows-App erforderliche Betriebssystem.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c293e7490df1e7a6c53628b49440a050ee21a39
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9f230ed4860e3ff8bad7968367ce5337b59521d4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395818"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152885"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Das mindestens für eine mobile Windows-App erforderliche Betriebssystem.
 
@@ -25,10 +25,10 @@ Das mindestens für eine mobile Windows-App erforderliche Betriebssystem.
 |v8_0|Boolescher Wert|Windows-Version 8.0 oder höher|
 |v8_1|Boolescher Wert|Windows-Version 8.1 oder höher|
 |v10_0|Boolescher Wert|Windows-Version 10.0 oder höher|
-|v10_1607|Boolean|Windows 1607 10 oder höher.|
-|v10_1703|Boolean|Windows 1703 10 oder höher.|
-|v10_1709|Boolean|Windows 1709 10 oder höher.|
-|v10_1803|Boolean|Windows 1803 10 oder höher.|
+|v10_1607|Boolescher Wert|Windows 10 1607 oder höher.|
+|v10_1703|Boolescher Wert|Windows 10 1703 oder höher.|
+|v10_1709|Boolescher Wert|Windows 10 1709 oder höher.|
+|v10_1803|Boolescher Wert|Windows 10 1803 oder höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

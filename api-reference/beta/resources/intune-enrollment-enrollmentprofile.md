@@ -1,35 +1,35 @@
 ---
-title: Ressourcentyp enrollmentProfile
-description: Die Ressource EnrollmentProfile stellt eine Auflistung von Konfigurationen, die bereitgestellt werden müssen vor dem Registrierung zum Registrieren von bestimmten Geräten, deren Identitäten vorab bereitgestellt wurden, aktivieren. Provisorisch Gerät Identitäten werden mit diesem Profil zugewiesen, das Profil Konfigurationen zur Registrierung des entsprechenden Geräts angewendet.
-localization_priority: Normal
+title: enrollmentProfile-Ressourcentyp
+description: Die enrollmentProfile-Ressource stellt eine Auflistung von Konfigurationen dar, die vor der Registrierung bereitgestellt werden müssen, um die Anmeldung bestimmter Geräte zu ermöglichen, deren Identitäten bereits vorbereitt wurden. Diesem Profiltyp werden Pre-Staging-Geräte Identitäten zugewiesen, um die Konfigurationen des Profils bei der Registrierung des entsprechenden Geräts anzuwenden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a7ce4aac1e22610d539419dd6a63d124616b83f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3d8947864611ac2c0d26256a5d739d41b86c383f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396840"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151177"
 ---
-# <a name="enrollmentprofile-resource-type"></a>Ressourcentyp enrollmentProfile
+# <a name="enrollmentprofile-resource-type"></a>enrollmentProfile-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Ressource EnrollmentProfile stellt eine Auflistung von Konfigurationen, die bereitgestellt werden müssen vor dem Registrierung zum Registrieren von bestimmten Geräten, deren Identitäten vorab bereitgestellt wurden, aktivieren. Provisorisch Gerät Identitäten werden mit diesem Profil zugewiesen, das Profil Konfigurationen zur Registrierung des entsprechenden Geräts angewendet.
+Die enrollmentProfile-Ressource stellt eine Auflistung von Konfigurationen dar, die vor der Registrierung bereitgestellt werden müssen, um die Anmeldung bestimmter Geräte zu ermöglichen, deren Identitäten bereits vorbereitt wurden. Diesem Profiltyp werden Pre-Staging-Geräte Identitäten zugewiesen, um die Konfigurationen des Profils bei der Registrierung des entsprechenden Geräts anzuwenden.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Auflistung|Listeneigenschaften und Beziehungen der [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekte.|
-|[Abrufen von enrollmentProfile](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
-|[Erstellen von enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Erstellen eines neuen [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
-|[EnrollmentProfile löschen](../api/intune-enrollment-enrollmentprofile-delete.md)|Keine|Löscht eine [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
-|[EnrollmentProfile aktualisieren](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Aktualisieren Sie die Eigenschaften eines [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
-|[SetDefaultProfile Aktion](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Keine|Noch nicht dokumentiert|
-|[ExportMobileConfig-Funktion](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Zeichenfolge|Exportiert die mobile Konfiguration|
-|[UpdateDeviceProfileAssignment Aktion](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Keine|Noch nicht dokumentiert|
+|[EnrollmentProfiles aufListen](../api/intune-enrollment-enrollmentprofile-list.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekte.|
+|[EnrollmentProfile abrufen](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Lesen von Eigenschaften und Beziehungen des [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
+|[EnrollmentProfile erstellen](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Erstellen eines neuen [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
+|[EnrollmentProfile löschen](../api/intune-enrollment-enrollmentprofile-delete.md)|Keine|Löscht eine [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
+|[EnrollmentProfile aktualisieren](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Aktualisieren der Eigenschaften eines [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.|
+|[setDefaultProfile-Aktion](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Keine|Noch nicht dokumentiert|
+|[exportMobileConfig-Funktion](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Zeichenfolge|Exportiert die Mobile Konfiguration|
+|[updateDeviceProfileAssignment-Aktion](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
@@ -37,10 +37,10 @@ Die Ressource EnrollmentProfile stellt eine Auflistung von Konfigurationen, die 
 |id|String|GUID des Objekts|
 |displayName|Zeichenfolge|Name des Profils|
 |description|Zeichenfolge|Beschreibung des Profils|
-|requiresUserAuthentication|Boolean|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert|
-|configurationEndpointUrl|Zeichenfolge|Endpunkt-Url für die Registrierung zu verwendende Konfiguration|
-|enableAuthenticationViaCompanyPortal|Boolean|Gibt an, dass die Authentifizierung mit Apple Setup-Assistenten anstelle von Unternehmensportal.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Gibt an, dass Unternehmensportal auf Setup-Assistent registriert Geräten erforderlich ist|
+|requiresUserAuthentication|Boolescher Wert|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert.|
+|configurationEndpointUrl|Zeichenfolge|Konfigurations Endpunkt-URL für die Registrierung|
+|enableAuthenticationViaCompanyPortal|Boolescher Wert|Gibt an, dass der Apple-Setup-Assistent anstelle des Unternehmensportals authentifiziert werden soll.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolescher Wert|Gibt an, dass das Unternehmens Portal auf dem Setup-Assistenten für registrierte Geräte erforderlich ist.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

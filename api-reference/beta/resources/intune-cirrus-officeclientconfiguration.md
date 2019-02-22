@@ -1,49 +1,49 @@
 ---
-title: Ressourcentyp officeClientConfiguration
-description: Office-Client-Konfiguration.
+title: Für-Ressourcentyp
+description: Office-Client Konfiguration.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c171f5f9f3dcedcab0d14b98a6fea0ba8fbe41eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a8371da85ee4bbc54943a8fbb29ec99dcb49a49
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393235"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150561"
 ---
-# <a name="officeclientconfiguration-resource-type"></a>Ressourcentyp officeClientConfiguration
+# <a name="officeclientconfiguration-resource-type"></a>Für-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Office-Client-Konfiguration.
+Office-Client Konfiguration.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Objekte.|
-|[Abrufen von officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Objekts.|
-|[assign-Aktion](../api/intune-cirrus-officeclientconfiguration-assign.md)|[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung|Ersetzen Sie alle Gruppen für eine Richtlinie.|
-|[UpdatePriorities Aktion](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Keine|Aktualisieren Sie die Richtlinie Prioritäten.|
+|[OfficeClientConfigurations aufListen](../api/intune-cirrus-officeclientconfiguration-list.md)|[für](../resources/intune-cirrus-officeclientconfiguration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [für](../resources/intune-cirrus-officeclientconfiguration.md) -Objekte.|
+|[Für abrufen](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [für](../resources/intune-cirrus-officeclientconfiguration.md) -Objekts.|
+|[assign-Aktion](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Sammlung|Ersetzen Sie alle Zielgruppen für eine Richtlinie.|
+|[updatePriorities-Aktion](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|Keine|Aktualisieren der Richtlinien Prioritäten.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|ID des die Richtlinie Office-Client-Konfiguration.|
-|userPreferencePayload|Stream|Vorgaben JSON-Zeichenfolge im Binärformat, können diese Werte vom Benutzer außer Kraft gesetzt werden.|
-|policyPayload|Stream|Richtlinieneinstellungen für JSON-Zeichenfolge im Binärformat, diese Werte können nicht vom Benutzer geändert werden.|
+|id|string|ID der Office-Client Konfigurationsrichtlinie.|
+|userPreferencePayload|Stream|Einstellungs Einstellungen JSON-Zeichenfolge im Binärformat können diese Werte vom Benutzer außer Kraft gesetzt werden.|
+|policyPayload|Stream|JSON-Zeichenfolge für Richtlinieneinstellungen im Binärformat können diese Werte nicht vom Benutzer geändert werden.|
 |description|Zeichenfolge|Noch nicht dokumentiert|
-|displayName|Zeichenfolge|Admin bereitgestellte Beschreibung für den Office-Client Konfigurationsrichtlinie.|
-|lastModifiedDateTime|DateTime|Zuletzt geänderte Datetime-Stempel der Richtlinie.|
-|Priorität|Int32|Prioritätswert sollte eindeutigen Wert für jede Richtlinie unter einem Mandanten sein und für konfliktlösung verwendet werden, niedrigere Werte bedeuten, dass Priorität hoch ist.|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Benutzer Einchecken Zusammenfassung für die Richtlinie ein.|
-|checkinStatuses|[OfficeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Auflistung|Liste der Office-Client Einchecken Status.|
+|displayName|Zeichenfolge|Administrator: Beschreibung der Office-Client Konfigurationsrichtlinie.|
+|lastModifiedDateTime|DateTime|Datum der letzten Änderung der Richtlinie.|
+|Priorität|Int32|Der Prioritätswert sollte für jede Richtlinie unter einem Mandanten eindeutig sein und für die Konfliktlösung verwendet werden, niedrigere Werte bedeuten eine hohe Priorität.|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Zusammenfassung der Benutzer Einchecken für die Richtlinie.|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Sammlung|Liste der Office-Client Eincheckstatus.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Auflistung|Die Liste der zugewiesenen Gruppe für die Richtlinie ein.|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Sammlung|Die Liste der Gruppenzuweisungen für die Richtlinie.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

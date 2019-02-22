@@ -1,42 +1,43 @@
 ---
-title: Ressourcentyp windowsInformationProtectionWipeAction
-description: Stellt Wischen Anforderungen einstufen der mandantenadministrator für Bring-Your-Own-Device(BYOD) Windows-Geräte.
-localization_priority: Normal
+title: windowsInformationProtectionWipeAction-Ressourcentyp
+description: Stellt Löschanforderungen dar, die vom mandantenadministrator für BYOD-Windows-Geräte (Bring-your-own-Device) ausgestellt wurden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67af8bdde412381bb6362ef1768dca12fdfce6c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e08cd6a2cf27830f6f88328440fb100bcd77ef6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148006"
 ---
-# <a name="windowsinformationprotectionwipeaction-resource-type"></a>Ressourcentyp windowsInformationProtectionWipeAction
+# <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt Wischen Anforderungen einstufen der mandantenadministrator für Bring-Your-Own-Device(BYOD) Windows-Geräte.
+Stellt Löschanforderungen dar, die vom mandantenadministrator für BYOD-Windows-Geräte (Bring-your-own-Device) ausgestellt wurden.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windowsInformationProtectionWipeActions](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekte.|
-|[Abrufen von windowsInformationProtectionWipeAction](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
-|[Erstellen von windowsInformationProtectionWipeAction](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Erstellen eines neuen [WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
-|[WindowsInformationProtectionWipeAction löschen](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|Keine|Löscht eine [WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md).|
-|[WindowsInformationProtectionWipeAction aktualisieren](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Aktualisieren Sie die Eigenschaften eines [WindowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
+|[WindowsInformationProtectionWipeActions aufListen](../api/intune-mam-windowsinformationprotectionwipeaction-list.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekte.|
+|[WindowsInformationProtectionWipeAction abrufen](../api/intune-mam-windowsinformationprotectionwipeaction-get.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Lesen von Eigenschaften und Beziehungen des [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
+|[WindowsInformationProtectionWipeAction erstellen](../api/intune-mam-windowsinformationprotectionwipeaction-create.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Erstellen eines neuen [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
+|[WindowsInformationProtectionWipeAction löschen](../api/intune-mam-windowsinformationprotectionwipeaction-delete.md)|Keine|Löscht eine [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md).|
+|[WindowsInformationProtectionWipeAction aktualisieren](../api/intune-mam-windowsinformationprotectionwipeaction-update.md)|[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)|Aktualisieren der Eigenschaften eines [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Wischen Sie Aktionsstatus. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
-|targetedUserId|Zeichenfolge|Die Benutzer-ID, die diese Aktion Remotegerätzurücksetzung darstellt.|
-|targetedDeviceRegistrationId|Zeichenfolge|Die DeviceRegistrationId diese Aktion Remotegerätzurücksetzung darstellt.|
-|targetedDeviceName|Zeichenfolge|Gezielte Gerätename.|
-|targetedDeviceMacAddress|Zeichenfolge|Zielgerät Mac-Adresse.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Aktionsstatus wischen. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
+|targetedUserId|Zeichenfolge|Die UserId, die von dieser Löschaktion bestimmt wird.|
+|targetedDeviceRegistrationId|Zeichenfolge|Die DeviceRegistrationId, die von dieser Löschaktion bestimmt wird.|
+|targetedDeviceName|Zeichenfolge|Name des Zielgeräts.|
+|targetedDeviceMacAddress|Zeichenfolge|Mac-Adresse des Zielgeräts.|
+|lastCheckInDateTime|DateTimeOffset|Letzter Eincheck Zeitpunkt des Geräts, das von dieser Löschaktion bestimmt wurde.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -57,7 +58,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "targetedUserId": "String",
   "targetedDeviceRegistrationId": "String",
   "targetedDeviceName": "String",
-  "targetedDeviceMacAddress": "String"
+  "targetedDeviceMacAddress": "String",
+  "lastCheckInDateTime": "String (timestamp)"
 }
 ```
 

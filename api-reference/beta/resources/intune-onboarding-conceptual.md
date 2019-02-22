@@ -1,15 +1,15 @@
 ---
-title: Registrieren von Geräten für die Verwaltung in Intune
-description: " Registrierung (BYOD) kann Benutzer ihre persönliche Telefone, Tablets oder PCs zu registrieren. Die Registrierung unternehmenseigener Geräte (COD) ermöglicht Verwaltungsszenarien wie Remotezurücksetzung, gemeinsam genutzte Geräte oder Benutzeraffinität für ein Gerät."
+title: Integrierte verwaltete Geräte mit InTune – Microsoft Graph-API
+description: Listet die Microsoft Graph-API für InTune-Endpunkte (REST) auf, die zum Onboarding (configure and initialize) Devices for a Mandanten Organization verwendet werden.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 895977194822918fc2ac61ed13e0aae938a25166
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2acd4310c07fd1532a1a16bdc419d7bad23bc973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923747"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147831"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrieren von Geräten für die Verwaltung in Intune
 
@@ -21,39 +21,39 @@ Sie können Geräte wie z. B. Windows-PCs registrieren, um die Verwaltung mobile
 
 Die folgenden Graph-Ressourcen stehen für die Registrierungsverwaltung in Intune zur Verfügung:
 
-- [Zertifikat Connector-Einstellung](intune-onboarding-certificateconnectorsetting.md)
-- [Gerät und app-Management-Daten](intune-onboarding-deviceandappmanagementdata.md)
+- [Certificate Connector-Einstellung](intune-onboarding-certificateconnectorsetting.md)
+- [Geräte- und App-Verwaltungsdaten](intune-onboarding-deviceandappmanagementdata.md)
 - [Konfiguration der Geräteregistrierung](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Konfiguration der Geräteregistrierungsgrenze](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Geräteregistrierung – Plattformeinschränkung](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Konfiguration der Plattformeinschränkungen für Geräteregistrierung](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Geräteregistrierung – Windows Hello für Business-Konfiguration](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
-- [Gerät Management Exchange Zugriffsebene](intune-onboarding-devicemanagementexchangeaccesslevel.md)
-- [Verwaltung von Exchange-gerätezugriffsregel](intune-onboarding-devicemanagementexchangeaccessrule.md)
-- [Verwaltung von Exchange Zugriff Regel Gerätetyp](intune-onboarding-devicemanagementexchangeaccessruletype.md)
+- [Exchange-Zugriffsebene für Geräteverwaltung](intune-onboarding-devicemanagementexchangeaccesslevel.md)
+- [Exchange-Zugriffsregel für Geräteverwaltung](intune-onboarding-devicemanagementexchangeaccessrule.md)
+- [Exchange-Zugriffsregeltyp für Geräteverwaltung](intune-onboarding-devicemanagementexchangeaccessruletype.md)
 - [Exchange Connector für Geräteverwaltung](intune-onboarding-devicemanagementexchangeconnector.md)
-- [Verwaltung von Exchange Connector Gerätestatus](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
-- [Verwaltung von Exchange Connector Sync Gerätetyp](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
-- [Verwaltung von Exchange Connector Gerätetyp](intune-onboarding-devicemanagementexchangeconnectortype.md)
-- [Gerät-Management-Klasse für Exchange-Gerät](intune-onboarding-devicemanagementexchangedeviceclass.md)
-- [Gerät Management lokale Exchange-Richtlinie](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+- [Status des Exchange Connectors für Geräteverwaltung](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
+- [Synchronisierungstyp des Exchange Connectors für Geräteverwaltung](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
+- [Typ des Exchange Connectors für Geräteverwaltung](intune-onboarding-devicemanagementexchangeconnectortype.md)
+- [Exchange-Geräteklasse für Geräteverwaltung](intune-onboarding-devicemanagementexchangedeviceclass.md)
+- [Richtlinie von lokalem Exchange für Geräteverwaltung](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [Geräteverwaltungspartner](intune-onboarding-devicemanagementpartner.md)
-- [Gerät Management Partner app-Typ](intune-onboarding-devicemanagementpartnerapptype.md)
-- [Management Partner Mandanten Gerätestatus](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [App-Typ für Geräteverwaltungspartner](intune-onboarding-devicemanagementpartnerapptype.md)
+- [Mandantenstatus für Geräteverwaltungspartner](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [Zuweisung der Registrierungskonfiguration](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune-Marke](intune-onboarding-intunebrand.md)
-- [MDM Autorität](intune-onboarding-mdmauthority.md)
-- [Microsoft Store für Business Portal Auswahloptionen](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
+- [MDM-Zertifizierungsstelle](intune-onboarding-mdmauthority.md)
+- [Microsoft Store für Business-Portal – Auswahloptionen](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
 - [MTD-Connector (Mobile Threat Defense)](intune-onboarding-mobilethreatdefenseconnector.md)
-- [Mobile Bedrohung Partner Mandanten Zustand](intune-onboarding-mobilethreatpartnertenantstate.md)
+- [Mandantenstatus für Mobile Threat-Partner](intune-onboarding-mobilethreatpartnertenantstate.md)
 - [Einstellungen für lokalen, bedingten Zugriff](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [Organisation](intune-onboarding-organization.md)
-- [Seite Loading-Taste](intune-onboarding-sideloadingkey.md)
-- [VPP token](intune-onboarding-vpptoken.md)
-- [VPP token Aktionsergebnis](intune-onboarding-vpptokenactionresult.md)
-- [Token Lizenz VPP Zusammenfassung](intune-onboarding-vpptokenlicensesummary.md)
-- [VPP token Revoke-Lizenzen Aktionsergebnis](intune-onboarding-vpptokenrevokelicensesactionresult.md)
-- [VPP token Zustand](intune-onboarding-vpptokenstate.md)
-- [VPP token Synchronisierungsstatus](intune-onboarding-vpptokensyncstatus.md)
-- [Windows 10 Abschluss Seitenkonfiguration der Registrierung](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
-- [Windows Hello für die Verwendung der Business-PIN](intune-onboarding-windowshelloforbusinesspinusage.md)
+- [Querladeschlüssel](intune-onboarding-sideloadingkey.md)
+- [VPP-Token](intune-onboarding-vpptoken.md)
+- [VPP-Token – Aktionsergebnis](intune-onboarding-vpptokenactionresult.md)
+- [VPP-Token – Lizenzzusammenfassung](intune-onboarding-vpptokenlicensesummary.md)
+- [VPP-Token – Lizenzen widerrufen – Aktionsergebnis](intune-onboarding-vpptokenrevokelicensesactionresult.md)
+- [VPP-Tokenstatus](intune-onboarding-vpptokenstate.md)
+- [Synchronisierungsstatus des VPP-Tokens](intune-onboarding-vpptokensyncstatus.md)
+- [Konfiguration der Fertigstellungsseite der Windows 10-Registrierung](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+- [PIN-Verwendung für Windows Hello for Business ](intune-onboarding-windowshelloforbusinesspinusage.md)

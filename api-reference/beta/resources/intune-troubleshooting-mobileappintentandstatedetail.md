@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp mobileAppIntentAndStateDetail
-description: Mobile App beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
-localization_priority: Normal
+title: mobileAppIntentAndStateDetail-Ressourcentyp
+description: Ziel für Mobile Apps und Installationsstatus für ein bestimmtes Gerät.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ef88a1fa346784ae00a125a487ca844c58d62eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76db364b53c9ccb6b4057835b853705cd49ca410
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414256"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146753"
 ---
-# <a name="mobileappintentandstatedetail-resource-type"></a>Ressourcentyp mobileAppIntentAndStateDetail
+# <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mobile App beabsichtigt und Installationsstatus für ein bestimmtes Gerät.
+Ziel für Mobile Apps und Installationsstatus für ein bestimmtes Gerät.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |applicationId|Zeichenfolge|MobieApp-Bezeichner.|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App.|
-|mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|Mobile App beabsichtigt. Mögliche Werte sind: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment` und `exclude`.|
-|displayVersion|Zeichenfolge|Menschen lesbare Version der Anwendung|
+|mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|Mobile App-Absicht. Mögliche Werte sind: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment` und `exclude`.|
+|Display Version|Zeichenfolge|Lesbare Version der Anwendung|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
-|supportedDeviceTypes|[MobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) -Auflistung|Die unterstützten Plattformen für die app.|
+|Mobileappintentandstatedetail|[mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) -Sammlung|Die unterstützten Plattformen für die app.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

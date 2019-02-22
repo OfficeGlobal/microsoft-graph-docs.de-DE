@@ -1,31 +1,31 @@
 ---
-title: WindowsUserAccountControlSettings Enum-Typ
-description: Mögliche Werte für Windows-Benutzerkonto steuern Einstellungen.
-localization_priority: Normal
+title: windowsUserAccountControlSettings-Enumerationstyp
+description: Mögliche Werte für Einstellungen für die Windows-Benutzerkontensteuerung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff348fd33e6bbc8370378783cf0a517a205ea101
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8302566eea465ec4477a01845778ab2d7ddee9fe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146711"
 ---
-# <a name="windowsuseraccountcontrolsettings-enum-type"></a>WindowsUserAccountControlSettings Enum-Typ
+# <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Windows-Benutzerkonto steuern Einstellungen.
+Mögliche Werte für Einstellungen für die Windows-Benutzerkontensteuerung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
 |alwaysNotify|1|Immer benachrichtigen.|
-|notifyOnAppChanges|2|Benachrichtigen Sie app geändert wird.|
-|notifyOnAppChangesWithoutDimming|3|Benachrichtigen Sie ohne Abblenden Desktop app geändert wird.|
+|notifyOnAppChanges|2|Benachrichtigung bei App-Änderungen.|
+|notifyOnAppChangesWithoutDimming|3|Benachrichtigung bei App-Änderungen ohne Dimmen des Desktops.|
 |neverNotify|4|Nie benachrichtigen.|
 
 

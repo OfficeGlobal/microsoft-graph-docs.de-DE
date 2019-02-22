@@ -1,47 +1,47 @@
 ---
-title: Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
-description: Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Einzelheiten, einschließlich das Abonnieren und behandeln eingehende Benachrichtigungen Set finden Sie unter Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten.
+title: Verwenden der Microsoft Graph-API zum Abrufen von Änderungsbenachrichtigungen
+description: Die Microsoft Graph-REST-API verwendet einen webhook-Mechanismus, um Änderungsbenachrichtigungen an Clients zu übermitteln. Ein Client ist ein Webdienst, der seine eigene URL für den Empfang von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um Ihren Status bei Änderungen zu aktualisieren. Weitere Informationen, einschließlich des Abonnierens und behandeln eingehender Benachrichtigungen, finden Sie unter Einrichten von Benachrichtigungen für Änderungen in Benutzerdaten.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 02ab18d3fa8980211a4937433ad1616b0629bf8c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1d7a3d868ffc640f7659623942ac102575fb94fc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526214"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151492"
 ---
-# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Verwenden der Microsoft Graph-API zum Abrufen Benachrichtigungen ändern
+# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Verwenden der Microsoft Graph-API zum Abrufen von Änderungsbenachrichtigungen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die Microsoft Graph-REST-API verwendet einen Webhook Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der den eigenen URL Erhalt von Benachrichtigungen konfiguriert. Client-apps verwenden Benachrichtigungen, um deren Status nach Änderungen zu aktualisieren. Weitere Informationen zum Abonnieren und behandeln eingehende Benachrichtigungen finden Sie unter [Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten](/graph/webhooks), einschließlich.
+Die Microsoft Graph-REST-API verwendet einen webhook-Mechanismus, um Änderungsbenachrichtigungen an Clients zu übermitteln. Ein Client ist ein Webdienst, der seine eigene URL für den Empfang von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um Ihren Status bei Änderungen zu aktualisieren. Weitere Informationen, einschließlich des Abonnierens und behandeln eingehender Benachrichtigungen, finden Sie unter [Einrichten von Benachrichtigungen für Änderungen in Benutzerdaten](/graph/webhooks).
 
 Mit der Microsoft Graph-API kann eine App Änderungen an den folgenden Ressourcen abonnieren:
 
-- Nachrichten
-- Ereignisse
-- Kontakte
-- Benutzer
-- Gruppen
-- Gruppenunterhaltungen
-- Inhalten, die in OneDrive freigegeben werden, einschließlich der diesen SharePoint-Websites zugeordneten Laufwerke
-- Persönlichen OneDrive-Ordnern des Benutzers
-- Sicherheitswarnungen
+- Outlook- [Nachricht][]
+- Outlook- [Ereignis][]
+- Persönlicher Outlook- [Kontakt][]
+- [user][]
+- [Gruppe][]
+- Office 365-Gruppen [Unterhaltung][]
+- Inhalt innerhalb der Hierarchie eines _beliebigen Ordners_ [DriveItem][] auf persönliche OneDrive eines Benutzers
+- Inhalt in der Hierarchie des _Stammordners_ [driveItem][] auf OneDrive for Business
+- Sicherheits [Warnung][]
 
 ## <a name="permissions"></a>Berechtigungen
 
 In der Regel sind für Abonnementvorgänge Leseberechtigungen für die Ressource erforderlich. Beispiel: um Benachrichtigungen zu Nachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. Unter [Abonnement erstellen](../api/subscription-post-subscriptions.md) werden die Berechtigungen aufgeführt, die für den jeweiligen Ressourcentyp erforderlich sind. Die folgende Tabelle enthält die Typen von Berechtigungen, die Ihre App für die Verwendung von Webhooks für bestimmte Ressourcentypen anfordern kann.
 
-| Berechtigungstyp                        | Unterstützten Ressourcentypen                                                      |
+| Berechtigungstyp                        | Unterstützte Ressourcentypen                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegiert – Geschäfts-, Schul- oder Unikonto     | [wenden Sie sich an][], [Unterhaltung][], [Laufwerk][], [Ereignis][], [Gruppe][], [Nachricht][], [Benutzer][], [Benachrichtigung][] |
-| Delegiert – persönliches Microsoft-Konto | [wenden Sie sich an][], [Laufwerk][], [Ereignis][], [Nachricht][]                                        |
-| Anwendung                            | [wenden Sie sich an][], [Unterhaltung][], [Laufwerk][], [Ereignis][], [Gruppe][], [Nachricht][], [Benutzer][], [Benachrichtigung][] |
+| Delegiert – Geschäfts-, Schul- oder Unikonto     | [Warnung][], [Kontakt][], unter [Haltung][], [driveItem][], [Ereignis][], [Gruppe][], [Nachricht][], [Benutzer][]|
+| Delegiert – persönliches Microsoft-Konto | [Kontakt][], [driveItem][], [Ereignis][], [Nachricht][]                                        |
+| Anwendung                            | [Alert][], [Contact][], [driveItem][], [Ereignis][], [Gruppe][], [Nachricht][], [Benutzer][]|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Abonnementressourcentyp](subscription.md)
-- [Liste von Abonnements](../api/subscription-list.md)
+- [Listen Abonnements](../api/subscription-list.md)
 - [Abonnement abrufen](../api/subscription-get.md)
 - [Abonnement erstellen](../api/subscription-post-subscriptions.md)
 - [Update subscription](../api/subscription-update.md)
@@ -49,12 +49,12 @@ In der Regel sind für Abonnementvorgänge Leseberechtigungen für die Ressource
 
 [Kontakt]: ./contact.md
 [Unterhaltung]: ./conversation.md
-[Laufwerk]: ./drive.md
-[Ereignis]: ./event.md
+[driveItem]: ./driveitem.md
+[event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
-Alert
+[Warnung]: ./alert.md
 <!--
 {
   "type": "#page.annotation",

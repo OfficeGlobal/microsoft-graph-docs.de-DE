@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp appLogCollectionDownloadDetails
+title: appLogCollectionDownloadDetails-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6946b3cd1aa60c4025859bd8d41d2dc4775bf39d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429920"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147754"
 ---
-# <a name="applogcollectiondownloaddetails-resource-type"></a>Ressourcentyp appLogCollectionDownloadDetails
+# <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|downloadUrl|Zeichenfolge|SAS-Url für abgeschlossene AppLogUploadRequest herunterladen|
+|downloadUrl|Zeichenfolge|Download der SAS-URL für completed AppLogUploadRequest|
 |decryptionKey|Zeichenfolge|DecryptionKey als Zeichenfolge|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm für Inhalte. Mögliche Werte sind: `aes256`.|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm für Inhalt. Mögliche Werte sind: `aes256`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

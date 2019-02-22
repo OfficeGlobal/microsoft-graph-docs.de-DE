@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp windowsKioskActiveDirectoryGroup
-description: Die Klasse, die zur Identifizierung einer Azure-Directory-Gruppe für die Kiosk-Konfiguration
-localization_priority: Normal
+title: windowsKioskActiveDirectoryGroup-Ressourcentyp
+description: Die Klasse, die zum Identifizieren einer Azure-Verzeichnisgruppe für die Kiosk Konfiguration verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88b151b856809247cfa6e5e211cc45c6f33c4c53
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9f3345462583ab24850449d4a6178df7d5e3688
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415712"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147075"
 ---
-# <a name="windowskioskactivedirectorygroup-resource-type"></a>Ressourcentyp windowsKioskActiveDirectoryGroup
+# <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Klasse, die zur Identifizierung einer Azure-Directory-Gruppe für die Kiosk-Konfiguration
+Die Klasse, die zum Identifizieren einer Azure-Verzeichnisgruppe für die Kiosk Konfiguration verwendet wird.
 
 
-Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Erbt von [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|groupName|Zeichenfolge|Der Name des AD-Gruppe ein, die mit dieser Konfiguration Kiosk gesperrt wird|
+|groupName|Zeichenfolge|Der Name der AD-Gruppe, die für diese Kiosk-Konfiguration gesperrt wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

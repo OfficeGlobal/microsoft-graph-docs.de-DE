@@ -1,26 +1,26 @@
 ---
-title: Ressourcentyp windowsKioskAutologon
-description: Die Klasse verwendet, um eine automatische Anmeldung Kiosk-Konfiguration identifizieren
-localization_priority: Normal
+title: windowsKioskAutologon-Ressourcentyp
+description: Die Klasse, die zum Identifizieren einer Autologon-Kiosk Konfiguration verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8869a11277cf070895a3ca9add5bb29dac7a80aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a754e53b6d23aacc469947318e8e1b9acfb3818f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410707"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149266"
 ---
-# <a name="windowskioskautologon-resource-type"></a>Ressourcentyp windowsKioskAutologon
+# <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Klasse verwendet, um eine automatische Anmeldung Kiosk-Konfiguration identifizieren
+Die Klasse, die zum Identifizieren einer Autologon-Kiosk Konfiguration verwendet wird.
 
 
-Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Erbt von [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

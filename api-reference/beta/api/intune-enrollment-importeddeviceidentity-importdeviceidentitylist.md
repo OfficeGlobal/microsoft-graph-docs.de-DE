@@ -1,21 +1,21 @@
 ---
-title: ImportDeviceIdentityList Aktion
+title: importDeviceIdentityList-Aktion
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0e00279f40d05e0162485d62a09b0b6827f25f7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 01c3afc4178cdce791312507becc9f1ee681e1f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423286"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146760"
 ---
-# <a name="importdeviceidentitylist-action"></a>ImportDeviceIdentityList Aktion
+# <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList-Aktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
@@ -38,9 +38,9 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,13 +50,13 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|importedDeviceIdentities|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Auflistung|Noch nicht dokumentiert|
-|overwriteImportedDeviceIdentities|Boolean|Noch nicht dokumentiert|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Sammlung|Noch nicht dokumentiert|
+|overwriteImportedDeviceIdentities|Boolescher Wert|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich ist, diese Aktion gibt eine `200 OK` Antwortcode und eine [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Aktion den `200 OK` Antwortcode und eine [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

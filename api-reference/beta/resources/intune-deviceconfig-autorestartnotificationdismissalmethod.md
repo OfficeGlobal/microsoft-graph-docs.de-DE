@@ -1,28 +1,28 @@
 ---
-title: AutoRestartNotificationDismissalMethod Enum-Typ
-description: Automatische Neustart erforderlich Kündigung Benachrichtigungsmethode
-localization_priority: Normal
+title: autoRestartNotificationDismissalMethod-Enumerationstyp
+description: Automatische Neustart erforderliche Benachrichtigungsmethode
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41201fdf6b1c8484ecb808d3d8e0a2e069dededd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 49d09923bcd0648b225666937820f86f4a73525f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393130"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151604"
 ---
-# <a name="autorestartnotificationdismissalmethod-enum-type"></a>AutoRestartNotificationDismissalMethod Enum-Typ
+# <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Automatische Neustart erforderlich Kündigung Benachrichtigungsmethode
+Automatische Neustart erforderliche Benachrichtigungsmethode
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert|
+|notConfigured|0|Nicht konfiguriert|
 |Automatisch|1|Automatische Kündigung|
 |user|2|Benutzer Kündigung|
 

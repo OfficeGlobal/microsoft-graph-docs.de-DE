@@ -1,28 +1,28 @@
 ---
-title: MiracastChannel Enum-Typ
-description: Mögliche Werte für Miracast DDE-Kanal.
-localization_priority: Normal
+title: miracastChannel-Enumerationstyp
+description: Mögliche Werte für Miracast-Kanal.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b516a0e5e54737c0857aba137be3614cecd60292
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0527aac2e78c7abdbc9f816f2a16d549f781947e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405002"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148874"
 ---
-# <a name="miracastchannel-enum-type"></a>MiracastChannel Enum-Typ
+# <a name="miracastchannel-enum-type"></a>miracastChannel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Miracast DDE-Kanal.
+Mögliche Werte für Miracast-Kanal.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
 |one|1|Eine.|
 |two|2|Zwei.|
 |three|3|Drei.|
@@ -34,15 +34,15 @@ Mögliche Werte für Miracast DDE-Kanal.
 |Neun|9|Neun.|
 |Zehn|10|Zehn.|
 |elf|11|Elf.|
-|thirtySix|36|30-sechs.|
+|thirtySix|36|36.|
 |40|40|40.|
-|fortyFour|44|Vierundvierzig.|
-|fortyEight|48|Achtundvierzig.|
-|oneHundredFortyNine|149|OneHundredForty-neun.|
-|oneHundredFiftyThree|153|3-OneHundredFifty.|
+|fortyFour|44|44.|
+|fortyEight|48|48.|
+|oneHundredFortyNine|149|OneHundredForty-Nine.|
+|oneHundredFiftyThree|153|OneHundredFifty-drei.|
 |oneHundredFiftySeven|157|OneHundredFifty-sieben.|
-|oneHundredSixtyOne|161|OneHundredSixty: 1.|
-|oneHundredSixtyFive|165|OneHundredSixty-5.|
+|oneHundredSixtyOne|161|OneHundredSixty-One.|
+|oneHundredSixtyFive|165|OneHundredSixty-fünf.|
 
 
 

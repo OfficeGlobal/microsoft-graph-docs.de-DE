@@ -1,21 +1,21 @@
 ---
 title: Abrufen von „windows10GeneralConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windows10GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ace54358e3526229f1557f9dbef0ab2f80ebd17a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3fdb31e2832e7405ae561cff16911a0399bfd3a4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154082"
 ---
 # <a name="get-windows10generalconfiguration"></a>Abrufen von „windows10GeneralConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
 
@@ -43,9 +43,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 13865
+Content-Length: 14159
 
 {
   "value": {
@@ -180,6 +180,8 @@ Content-Length: 13865
     "edgeBlockPrelaunch": true,
     "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
     "edgePreventCertificateErrorOverride": true,
+    "edgeKioskModeRestriction": "digitalSignage",
+    "edgeKioskResetAfterIdleTimeInMinutes": 4,
     "cellularBlockDataWhenRoaming": true,
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,
@@ -214,6 +216,9 @@ Content-Length: 13865
     "defenderRequireRealTimeMonitoring": true,
     "defenderScanArchiveFiles": true,
     "defenderScanDownloads": true,
+    "defenderScheduleScanEnableLowCpuPriority": true,
+    "defenderDisableCatchupQuickScan": true,
+    "defenderDisableCatchupFullScan": true,
     "defenderScanNetworkFiles": true,
     "defenderScanIncomingMail": true,
     "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -322,6 +327,7 @@ Content-Length: 13865
     "safeSearchFilter": "strict",
     "edgeBlockPopups": true,
     "edgeBlockSearchSuggestions": true,
+    "edgeBlockSearchEngineCustomization": true,
     "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
     "edgeSendIntranetTrafficToInternetExplorer": true,
     "edgeRequireSmartScreen": true,

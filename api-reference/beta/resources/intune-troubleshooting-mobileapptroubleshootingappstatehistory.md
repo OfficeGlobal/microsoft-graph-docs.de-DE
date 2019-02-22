@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp mobileAppTroubleshootingAppStateHistory
-description: Historienelement im Mobile App Problembehandlung Ereignis enthaltenen.
-localization_priority: Normal
+title: mobileAppTroubleshootingAppStateHistory-Ressourcentyp
+description: Verlaufselement, das im Problem Behandlungs Ereignis für Mobile Apps enthalten ist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57e10fcabc0aa3def07872c0e520f09c6ee90fc3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bd39115de207532b42d1554da54e154a5066eb76
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411239"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150960"
 ---
-# <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Ressourcentyp mobileAppTroubleshootingAppStateHistory
+# <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Historienelement im Mobile App Problembehandlung Ereignis enthaltenen.
+Verlaufselement, das im Problem Behandlungs Ereignis für Mobile Apps enthalten ist.
 
 
-Erbt vom [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
+Erbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Zeitpunkt, wenn das Historienelement aufgetreten. Geerbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|AAD Sicherheit Gruppen-Id, der als Ziel angegeben wurde. Mögliche Werte sind: `unknown`, `installCommandSent`, `installed`, `uninstalled` und `userRequestedInstall`.|
+|occurrenceDateTime|DateTimeOffset|Zeitpunkt, zu dem das Verlaufselement aufgetreten ist. Geerbt von [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|AAD-Sicherheitsgruppen-ID, auf die Sie gezielt wurde. Mögliche Werte: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status des Elements. Mögliche Werte sind: `unknown`, `success` und `fail`.|
-|errorCode|String|Der Fehlercode des Fehlers, leer, wenn kein Fehler.|
+|errorCode|String|Fehlercode für den Fehler, leer, wenn kein Fehler auftritt.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

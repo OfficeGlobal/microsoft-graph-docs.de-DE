@@ -1,56 +1,56 @@
 ---
-title: Ressourcentyp windowsProtectionState
-description: Gerät Protection Status Entität.
-localization_priority: Normal
+title: Windowsprotectionstate wurde-Ressourcentyp
+description: Geräteschutz Status-Entität.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eebf798a41e5cbab27fab849cdead8a288a782e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148314"
 ---
-# <a name="windowsprotectionstate-resource-type"></a>Ressourcentyp windowsProtectionState
+# <a name="windowsprotectionstate-resource-type"></a>Windowsprotectionstate wurde-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gerät Protection Status Entität.
+Geräteschutz Status-Entität.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von windowsProtectionState](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) -Objekts.|
-|[WindowsProtectionState aktualisieren](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Aktualisieren Sie die Eigenschaften eines [WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) -Objekts.|
+|[Windowsprotectionstate wurde abrufen](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Lesen von Eigenschaften und Beziehungen des [windowsprotectionstate wurde](../resources/intune-devices-windowsprotectionstate.md) -Objekts.|
+|[Windowsprotectionstate wurde aktualisieren](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Aktualisieren der Eigenschaften eines [windowsprotectionstate wurde](../resources/intune-devices-windowsprotectionstate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der eindeutige Bezeichner für das Gerät Protection Status-Objekt. Dies ist die Geräte-Id des Geräts|
-|malwareProtectionEnabled|Boolean|Anti-Malware ist oder nicht aktiviert|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Zustand des Computers (wie bereinigen oder ausstehende vollständigen Scan oder Ausstehender Neustart usw.). Mögliche Werte sind: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending` und `critical`.|
-|realTimeProtectionEnabled|Boolean|Echtzeit-Schutz ist oder nicht aktiviert?|
-|networkInspectionSystemEnabled|Boolean|Netzwerk-Prüfung System aktiviert ist oder nicht?|
-|quickScanOverdue|Boolean|Quick scan überfällige oder nicht?|
-|fullScanOverdue|Boolean|Des vollständigen Scan überfällige oder nicht?|
-|signatureUpdateOverdue|Boolean|Signatur veraltet oder nicht?|
-|rebootRequired|Boolean|Neustart erforderlich oder nicht?|
-|fullScanRequired|Boolean|Vollständigen Scan erforderlich oder nicht?|
-|%ENGINEVERSION%|Zeichenfolge|Aktuelle Endpoint Protection Datenbankmodul, version|
+|id|Zeichenfolge|Der eindeutige Bezeichner für das Statusobjekt des Geräteschutzes. Dies ist die Geräte-ID des Geräts.|
+|malwareProtectionEnabled|Boolescher Wert|Antischadsoftware ist aktiviert oder nicht|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Status des Computers (wie Clean oder ausstehender vollständiger Scan oder ausstehender Neustart usw.). Mögliche Werte sind: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending` und `critical`.|
+|realTimeProtectionEnabled|Boolescher Wert|Echtzeitschutz ist aktiviert oder nicht?|
+|networkInspectionSystemEnabled|Boolescher Wert|Netzwerk Inspektionssystem aktiviert oder nicht?|
+|quickScanOverdue|Boolescher Wert|Schnellscan überfällig oder nicht?|
+|fullScanOverdue|Boolescher Wert|Vollständiger Scan überfällig oder nicht?|
+|signatureUpdateOverdue|Boolescher Wert|Signatur veraltet oder nicht?|
+|rebootRequired|Boolescher Wert|Neustart erforderlich oder nicht?|
+|fullScanRequired|Boolescher Wert|Vollständige Überprüfung erforderlich oder nicht?|
+|engineVersion|Zeichenfolge|Version des aktuellen Endpoint Protection-Moduls|
 |signatureVersion|Zeichenfolge|Aktuelle Version der Malware-Definitionen|
-|antiMalwareVersion|Zeichenfolge|Aktuelle anti-Malware-version|
-|lastQuickScanDateTime|DateTimeOffset|Letzte schnell-Scan datetime|
-|lastFullScanDateTime|DateTimeOffset|Letzte schnell-Scan datetime|
-|lastQuickScanSignatureVersion|Zeichenfolge|Letzte schnell-Scan Signatur-version|
-|lastFullScanSignatureVersion|Zeichenfolge|Letzte vollständige Überprüfung Signatur-version|
-|lastReportedDateTime|DateTimeOffset|Letzte Gerät Integritätsstatus gemeldet Zeit|
+|antiMalwareVersion|Zeichenfolge|Aktuelle Antischadsoftware-Version|
+|lastQuickScanDateTime|DateTimeOffset|Datum der letzten Schnellüberprüfung|
+|lastFullScanDateTime|DateTimeOffset|Datum der letzten Schnellüberprüfung|
+|lastQuickScanSignatureVersion|Zeichenfolge|Letzte Schnellscan-Signaturversion|
+|lastFullScanSignatureVersion|Zeichenfolge|Letzte vollständige Scan-Signaturversion|
+|lastReportedDateTime|DateTimeOffset|Zeitpunkt des letzten Geräte Integritätsstatus|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|detectedMalwareState|[WindowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md) -Auflistung|Liste der Geräte Schadsoftware|
+|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md) -Sammlung|Liste der Geräte Schadsoftware|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

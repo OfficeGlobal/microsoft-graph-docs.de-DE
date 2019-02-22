@@ -1,31 +1,31 @@
 ---
-title: IosWallpaperDisplayLocation Enum-Typ
-description: Ein Enum-Typ für Hintergrundbild anzeigebezeichners Speicherort.
-localization_priority: Normal
+title: iosWallpaperDisplayLocation-Enumerationstyp
+description: Ein Enum-Typ für die Anzeige des Standort Bezeichners für Wallpaper.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdf6a0a837d420d37641221bf39b5b64f1046591
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429999"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146627"
 ---
-# <a name="ioswallpaperdisplaylocation-enum-type"></a>IosWallpaperDisplayLocation Enum-Typ
+# <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ein Enum-Typ für Hintergrundbild anzeigebezeichners Speicherort.
+Ein Enum-Typ für die Anzeige des Standort Bezeichners für Wallpaper.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Kein Standort für Hintergrundbild angegeben.|
-|lockScreen|1|Ein konfigurierten Hintergrundbild wird auf Sperren des Bildschirms angezeigt.|
-|Startseite|2|Ein konfigurierten Hintergrundbild wird auf Startseite (Symbol List) angezeigt.|
-|lockAndHomeScreens|3|Ein konfigurierten Hintergrundbild wird auf dem Bildschirm sperren und Startbildschirm angezeigt.|
+|notConfigured|0|Kein Speicherort für die Bildschirmhintergrund Anzeige angegeben.|
+|Irgendein lockscreen|1|Ein konfiguriertes Hintergrundbild wird auf dem Sperrbildschirm angezeigt.|
+|homeScreen|2|Ein konfiguriertes Hintergrundbild wird auf der Startseite (Symbolliste) angezeigt.|
+|lockAndHomeScreens|3|Ein konfiguriertes Hintergrundbild wird auf dem Sperrbildschirm und der Startseite angezeigt.|
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: DefenderScheduleScanDay Enum-Typ
-description: 'Mögliche Werte für DefenderScheduleScanDay '
-localization_priority: Normal
+title: defenderScheduleScanDay-Enumerationstyp
+description: 'Mögliche Werte von DefenderScheduleScanDay '
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee08566d0811666dacad158e380f86b30417a3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5dc459479fb74214f0efe1913a3d281445bc49f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415180"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154558"
 ---
-# <a name="defenderschedulescanday-enum-type"></a>DefenderScheduleScanDay Enum-Typ
+# <a name="defenderschedulescanday-enum-type"></a>defenderScheduleScanDay-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für DefenderScheduleScanDay 
+Mögliche Werte von DefenderScheduleScanDay 
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|alltägliche|0|Täglich|
+|alltäglichen|0|Alltäglichen|
 |Montag|1|Montag|
 |Dienstag|2|Dienstag|
 |Mittwoch|3|Mittwoch|
@@ -30,7 +30,7 @@ Mögliche Werte für DefenderScheduleScanDay
 |Freitag|5|Freitag|
 |Samstag|6|Samstag|
 |Sonntag|7|Sonntag|
-|noScheduledScan|8|Keine geplanten Scan|
+|noScheduledScan|8|Keine geplante überPrüfung|
 
 
 

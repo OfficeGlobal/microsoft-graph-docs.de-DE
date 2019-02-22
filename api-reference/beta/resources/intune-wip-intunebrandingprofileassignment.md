@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp intuneBrandingProfileAssignment
-description: Diese Entität enthält die Eigenschaften verwendet, um einer Gruppe ein branding Profil zuzuweisen.
-localization_priority: Normal
+title: intuneBrandingProfileAssignment-Ressourcentyp
+description: Diese Entität enthält die Eigenschaften, die zum Zuweisen eines Branding-Profils zu einer Gruppe verwendet werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcc0b625bc3918206a1d75ae7ef123484ae0357c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 956cf652167714270dfcaf348523db236fb62941
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431523"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151394"
 ---
-# <a name="intunebrandingprofileassignment-resource-type"></a>Ressourcentyp intuneBrandingProfileAssignment
+# <a name="intunebrandingprofileassignment-resource-type"></a>intuneBrandingProfileAssignment-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Entität enthält die Eigenschaften verwendet, um einer Gruppe ein branding Profil zuzuweisen.
+Diese Entität enthält die Eigenschaften, die zum Zuweisen eines Branding-Profils zu einer Gruppe verwendet werden.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste intuneBrandingProfileAssignments](../api/intune-wip-intunebrandingprofileassignment-list.md)|[IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Auflistung|Listeneigenschaften und Beziehungen der [IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekte.|
-|[Abrufen von intuneBrandingProfileAssignment](../api/intune-wip-intunebrandingprofileassignment-get.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Lesen Sie Eigenschaften und Beziehungen des [IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
-|[Erstellen von intuneBrandingProfileAssignment](../api/intune-wip-intunebrandingprofileassignment-create.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Erstellen eines neuen [IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
-|[IntuneBrandingProfileAssignment löschen](../api/intune-wip-intunebrandingprofileassignment-delete.md)|Keine|Löscht eine [IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).|
-|[IntuneBrandingProfileAssignment aktualisieren](../api/intune-wip-intunebrandingprofileassignment-update.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Aktualisieren Sie die Eigenschaften eines [IntuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
+|[IntuneBrandingProfileAssignments aufListen](../api/intune-wip-intunebrandingprofileassignment-list.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekte.|
+|[IntuneBrandingProfileAssignment abrufen](../api/intune-wip-intunebrandingprofileassignment-get.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Lesen von Eigenschaften und Beziehungen des [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
+|[IntuneBrandingProfileAssignment erstellen](../api/intune-wip-intunebrandingprofileassignment-create.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Erstellen eines neuen [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
+|[IntuneBrandingProfileAssignment löschen](../api/intune-wip-intunebrandingprofileassignment-delete.md)|Keine|Löscht eine [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).|
+|[IntuneBrandingProfileAssignment aktualisieren](../api/intune-wip-intunebrandingprofileassignment-update.md)|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Aktualisieren der Eigenschaften eines [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner der Entität|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuordnungsfeld Ziel an, die das branding Profil zugewiesen ist.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuordnungsziel, dem das Branding-Profil zugeordnet ist.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

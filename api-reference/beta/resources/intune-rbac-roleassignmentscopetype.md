@@ -1,31 +1,31 @@
 ---
-title: RoleAssignmentScopeType Enum-Typ
-description: Gibt den Typ des Bereichs für eine Rollenzuweisung.
-localization_priority: Normal
+title: roleAssignmentScopeType-Enumerationstyp
+description: Gibt den Typ des Bereichs für eine Rollenzuweisung an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b815cf7eb396aa82f49df792ceee0612678077c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6089021851e3d953fce4874b11e343b4747adf40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419891"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150694"
 ---
-# <a name="roleassignmentscopetype-enum-type"></a>RoleAssignmentScopeType Enum-Typ
+# <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt den Typ des Bereichs für eine Rollenzuweisung.
+Gibt den Typ des Bereichs für eine Rollenzuweisung an.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|resourceScope|0|Zuordnungen für den angegebenen ResourceScopes zulassen.|
-|allDevices|1|Zuordnungen für alle Intune Geräte zulassen|
-|allLicensedUsers|2|Zuordnungen für alle Intune lizenzierten Benutzer zulassen.|
-|allDevicesAndLicensedUsers|3|Zuordnungen für alle Intune Geräte und lizenzierte Benutzer zulassen.|
+|resourceScope|0|Zuordnungen für die angegebene ResourceScopes zulassen.|
+|allDevices|1|Zuweisungen für alle InTune-Geräte zulassen.|
+|allLicensedUsers|2|Zuweisungen für alle InTune-lizenzierten Benutzer zulassen.|
+|allDevicesAndLicensedUsers|3|Zuweisungen für alle InTune-Geräte und lizenzierten Benutzer zulassen.|
 
 
 

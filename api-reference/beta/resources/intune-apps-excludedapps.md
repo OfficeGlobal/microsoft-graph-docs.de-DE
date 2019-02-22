@@ -1,40 +1,40 @@
 ---
-title: Ressourcentyp excludedApps
-description: Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
-localization_priority: Normal
+title: excludedApps-Ressourcentyp
+description: Enthält Eigenschaften für ausgeschlossene Office365-apps.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d3cd9a159597689a64070181640415a6ce2fc61
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154026"
 ---
-# <a name="excludedapps-resource-type"></a>Ressourcentyp excludedApps
+# <a name="excludedapps-resource-type"></a>excludedApps-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für die ausgeschlossenen Office365 Apps.
+Enthält Eigenschaften für ausgeschlossene Office365-apps.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|access|Boolean|Der Wert für die If MS Office Access davon ausgeschlossen werden soll.|
-|Excel-|Boolean|Der Wert für die If MS Office Excel davon ausgeschlossen werden soll.|
-|Groove|Boolean|Der Wert für die If MS Office OneDrive for Business - Groove ausgeschlossen werden soll, oder nicht.|
-|infoPath|Boolean|Der Wert für die If MS Office InfoPath davon ausgeschlossen werden soll.|
-|Lync|Boolean|Der Wert für die If MS Office Skype for Business – Lync ausgeschlossen werden soll, oder nicht.|
-|oneDrive|Boolean|Der Wert für die If MS Office OneDrive davon ausgeschlossen werden soll.|
-|oneNote|Boolean|Der Wert für die If MS Office OneNote davon ausgeschlossen werden soll.|
-|Outlook|Boolean|Der Wert für die If MS Office Outlook oder nicht ausgeschlossen werden soll.|
-|powerPoint|Boolean|Der Wert für die If MS Office PowerPoint davon ausgeschlossen werden soll.|
-|publisher|Boolean|Der Wert für die If MS Office Publisher davon ausgeschlossen werden soll.|
-|SharePoint Designer|Boolean|Der Wert für die If MS Office SharePoint Designer davon ausgeschlossen werden soll.|
-|Visio|Boolean|Der Wert für die If MS Office Visio davon ausgeschlossen werden soll.|
-|Word|Boolean|Der Wert für die If MS Office Word davon ausgeschlossen werden soll.|
+|access|Boolescher Wert|Der Wert für, wenn MS Office Access ausgeschlossen werden soll oder nicht.|
+|Excel|Boolescher Wert|Der Wert für, wenn MS Office Excel ausgeschlossen werden soll oder nicht.|
+|Groove|Boolescher Wert|Der Wert für IF MS Office OneDrive for Business-Groove sollte ausgeschlossen werden oder nicht.|
+|infoPath|Boolescher Wert|Der Wert für, wenn MS Office InfoPath ausgeschlossen werden soll oder nicht.|
+|lync|Boolescher Wert|Der Wert für, wenn MS Office Skype for Business-lync ausgeschlossen werden soll oder nicht.|
+|oneDrive|Boolescher Wert|Der Wert für, wenn MS Office OneDrive ausgeschlossen werden soll oder nicht.|
+|oneNote|Boolescher Wert|Der Wert für, wenn MS Office OneNote ausgeschlossen werden soll oder nicht.|
+|outlook|Boolescher Wert|Der Wert für, wenn MS Office Outlook ausgeschlossen werden soll oder nicht.|
+|Kulissen|Boolescher Wert|Der Wert für IF MS Office PowerPoint sollte ausgeschlossen werden oder nicht.|
+|publisher|Boolescher Wert|Der Wert für, wenn MS Office Publisher ausgeschlossen werden soll oder nicht.|
+|sharePointDesigner|Boolescher Wert|Der Wert für, wenn MS Office SharePointDesigner ausgeschlossen werden soll oder nicht.|
+|Visio|Boolescher Wert|Der Wert für, wenn MS Office Visio ausgeschlossen werden soll oder nicht.|
+|Wort|Boolescher Wert|Der Wert für, wenn MS Office Word ausgeschlossen werden soll oder nicht.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

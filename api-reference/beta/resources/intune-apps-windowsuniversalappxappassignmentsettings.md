@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp windowsUniversalAppXAppAssignmentSettings
-description: Enthält Eigenschaften verwendet, wenn eine universelle AppX Windows mobile app zu einer Gruppe zuweisen.
-localization_priority: Normal
+title: windowsUniversalAppXAppAssignmentSettings-Ressourcentyp
+description: Enthält Eigenschaften, die beim Zuweisen einer mobilen Windows Mobile-AppX-APP zu einer Gruppe verwendet werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27755a483be44584aeb82166f56e825df79f8eaa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 58e0c656464d962d1a16a7c4651c4379876bf6ae
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400718"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153732"
 ---
-# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>Ressourcentyp windowsUniversalAppXAppAssignmentSettings
+# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>windowsUniversalAppXAppAssignmentSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften verwendet, wenn eine universelle AppX Windows mobile app zu einer Gruppe zuweisen.
+Enthält Eigenschaften, die beim Zuweisen einer mobilen Windows Mobile-AppX-APP zu einer Gruppe verwendet werden.
 
 
 Erbt von [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -25,7 +25,7 @@ Erbt von [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|useDeviceContext|Boolescher Wert|Ob Ausführungskontexts Gerät für universelle AppX Windows mobile app verwenden.|
+|useDeviceContext|Boolescher Wert|Gibt an, ob der Geräte Ausführungskontext für die Mobile Windows Universal AppX-App verwendet werden soll.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
