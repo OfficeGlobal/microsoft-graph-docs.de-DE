@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp windowsKioskLocalGroup
-description: Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren
-localization_priority: Normal
+title: windowsKioskLocalGroup-Ressourcentyp
+description: Die Klasse, die zum Identifizieren einer lokalen Gruppe für die Kiosk Konfiguration verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1134b6a842b54dc49fcd15a92d21aef227b35182
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3479226d770c7030fefed1a7f2f65a02808479d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169524"
 ---
-# <a name="windowskiosklocalgroup-resource-type"></a>Ressourcentyp windowsKioskLocalGroup
+# <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Klasse verwendet, um eine lokale Gruppe für die Konfiguration Kiosk identifizieren
+Die Klasse, die zum Identifizieren einer lokalen Gruppe für die Kiosk Konfiguration verwendet wird.
 
 
-Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Erbt von [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|groupName|Zeichenfolge|Der Name der lokalen Gruppe, die mit dieser Konfiguration Kiosk gesperrt wird|
+|groupName|Zeichenfolge|Der Name der lokalen Gruppe, die für diese Kiosk Konfiguration gesperrt wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

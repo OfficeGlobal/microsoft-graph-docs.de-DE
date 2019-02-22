@@ -1,42 +1,42 @@
 ---
-title: Ressourcentyp sideLoadingKey
-description: SideLoadingKey Entität ist für Windows 8 und Anwendungsservercomputern installiert Zeile des Geschäfts-Apps für einen Mandanten 8.1 Geräte erforderlich.
-localization_priority: Normal
+title: sideLoadingKey-Ressourcentyp
+description: SideLoadingKey-Entität ist für Windows 8-und 8,1-Geräte mit intallen Branchen-Apps für einen Mandanten erforderlich.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7be853faae78e0ac7528d0127fd11b928164ee9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7897a50861910b67763b7d694a30096509c6c56c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410042"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170525"
 ---
-# <a name="sideloadingkey-resource-type"></a>Ressourcentyp sideLoadingKey
+# <a name="sideloadingkey-resource-type"></a>sideLoadingKey-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-SideLoadingKey Entität ist für Windows 8 und Anwendungsservercomputern installiert Zeile des Geschäfts-Apps für einen Mandanten 8.1 Geräte erforderlich.
+SideLoadingKey-Entität ist für Windows 8-und 8,1-Geräte mit intallen Branchen-Apps für einen Mandanten erforderlich.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Auflistung|Listeneigenschaften und Beziehungen der [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekte.|
-|[Abrufen von sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Lesen Sie Eigenschaften und Beziehungen des [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
-|[Erstellen von sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Erstellen eines neuen [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
-|[SideLoadingKey löschen](../api/intune-onboarding-sideloadingkey-delete.md)|Keine|Löscht eine [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
-|[SideLoadingKey aktualisieren](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Aktualisieren Sie die Eigenschaften eines [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
+|[SideLoadingKeies aufListen](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekte.|
+|[SideLoadingKey abrufen](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Lesen von Eigenschaften und Beziehungen des [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
+|[SideLoadingKey erstellen](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Erstellen eines neuen [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
+|[SideLoadingKey löschen](../api/intune-onboarding-sideloadingkey-delete.md)|Keine|Löscht eine [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
+|[SideLoadingKey aktualisieren](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Aktualisieren der Eigenschaften eines [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Seite laden wichtige eindeutigen Bezeichner ab.|
-|Wert|Zeichenfolge|Seite Laden von Schlüssel-Wert ist es 5 x 5-Wert durch Hiphens getrennt.|
-|displayName|Zeichenfolge|Seite laden Schlüsselname der ITPro Admins angezeigt.|
-|description|Zeichenfolge|Seite laden Schlüssel Beschreibung der ITPro Admins angezeigt.|
-|totalActivation|Int32|Seite laden Key insgesamt Aktivierung der ITPro Admins angezeigt.|
-|lastUpdatedDateTime|Zeichenfolge|Seite laden Schlüssel aktualisiert Datum der letzten die ITPro Admins angezeigt.|
+|id|string|Eindeutige ID des seitlichen Lade Schlüssels.|
+|Wert|Zeichenfolge|Seiten Ladeschlüssel Wert, es ist 5x5-Wert, getrennt durch hiphens.|
+|displayName|Zeichenfolge|Der Name des Seiten Lade Schlüssels wird den ITPro-Administratoren angezeigt.|
+|description|String|Seiten Ladeschlüssel Beschreibung, die den ITPro-Administratoren angezeigt wird..|
+|totalActivation|Int32|Die Gesamt Aktivierung des Seiten Lade Schlüssels wird den ITPro-Administratoren angezeigt.|
+|lastUpdatedDateTime|Zeichenfolge|Das Datum der letzten Aktualisierung, die den ITPro-Administratoren angezeigt werden.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,30 +1,30 @@
 ---
-title: ServiceStartType Enum-Typ
-description: Mögliche Werte für Xbox Dienst starten Typ
-localization_priority: Normal
+title: serviceStartType-Enumerationstyp
+description: Mögliche Werte für den Starttyp des Xbox-Diensts
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78651de02db6f07d63549b3f1edff5bb6503069b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7d078db092dd6cc316fc2c48f6b0bd9889957088
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422523"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168761"
 ---
-# <a name="servicestarttype-enum-type"></a>ServiceStartType Enum-Typ
+# <a name="servicestarttype-enum-type"></a>serviceStartType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Xbox Dienst starten Typ
+Mögliche Werte für den Starttyp des Xbox-Diensts
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Manuell|0|Manueller Dienst Start type(default)|
-|Automatisch|1|Automatische Start Diensttyp|
-|deaktiviert|2|Diensttyp Start deaktiviert|
+|Manuell|0|Manueller Dienststarttyp (Standard)|
+|Automatisch|1|Automatischer Dienststarttyp|
+|deaktiviert|2|Dienststarttyp deaktiviert|
 
 
 

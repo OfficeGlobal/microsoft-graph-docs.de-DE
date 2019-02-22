@@ -1,23 +1,23 @@
 ---
-title: RemoteActionAudit aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines RemoteActionAudit-Objekts.
-localization_priority: Normal
+title: Remote Action Audit aktualisieren
+description: Aktualisieren der Eigenschaften eines Remote Action Audit-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6078b3f6fd5236bd0e6e1a51f5f52cbf69a59c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6105145c9e284c1f522c85f6a1237dcb2320fa28
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170224"
 ---
-# <a name="update-remoteactionaudit"></a>RemoteActionAudit aktualisieren
+# <a name="update-remoteactionaudit"></a>Remote Action Audit aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.
+Aktualisieren der Eigenschaften eines [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,32 +38,32 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Berichts-ID|
-|deviceDisplayName|Zeichenfolge|Name des Aufnahmegeräts Intune.|
-|userName|Zeichenfolge|\[veraltete\] verwenden Sie stattdessen InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|Zeichenfolge|Benutzer, der die Aktion Gerät gestartet UPN-Format vorliegt.|
-|Aktion|[remoteAction](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
-|requestDateTime|DateTimeOffset|Zeit, wenn die Aktion ausgestellt wurde, in UTC angegeben.|
-|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Besitzers Gerät.|
+|id|String|Berichts-ID.|
+|deviceDisplayName|Zeichenfolge|InTune-Gerätename.|
+|userName|Zeichenfolge|\[veraltet verwenden\] Sie stattdessen Eigenschaften initiatedbyuserprincipalname.|
+|Eigenschaften initiatedbyuserprincipalname|Zeichenfolge|Benutzer, der die Geräte Aktion initiiert hat, Format ist UPN.|
+|Aktion|[Remote-Steuerung](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures`,,,,,,,, `factoryResetKeepEnrollmentData`,, `shutDown` ,,,,,, `updateDeviceAccount` `automaticRedeployment` `locateDevice` .|
+|requestDateTime|DateTimeOffset|Zeitpunkt der Ausgabe der Aktion in UTC.|
+|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Geräte Besitzers.|
 |deviceIMEI|Zeichenfolge|IMEI des Geräts.|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Aktionsstatus. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

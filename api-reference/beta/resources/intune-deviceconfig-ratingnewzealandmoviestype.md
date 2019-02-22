@@ -1,38 +1,38 @@
 ---
-title: RatingNewZealandMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Neuseeland
-localization_priority: Normal
+title: ratingNewZealandMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Neuseeland
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b60bb2d443763115bb547c254ab086b171033658
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd20f1e8c675efba2919d8e192c4955b39484849
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402944"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169181"
 ---
-# <a name="ratingnewzealandmoviestype-enum-type"></a>RatingNewZealandMoviesType Enum-Typ
+# <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Bezeichnungen in Neuseeland
+Movies-Bewertungs Bezeichnungen in Neuseeland
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Geeignet für allgemeine Zielgruppen|
-|parentalGuidance|3|Die Bild-Klassifizierung empfiehlt Eltern Anleitungen|
-|Erfahrungswerte|4|Die M-Klassifizierung eignet sich für über Erfahrungswerte zur Benutzergruppe|
-|agesAbove13|5|Die R13 Klassifikation ist auf Personen 13 Jahre und über beschränkt|
-|agesAbove15|6|Die R15 Klassifikation ist auf Personen 15 Jahre und über beschränkt|
-|agesAbove16|7|Die R16 Klassifikation ist auf Personen 16 Jahre und über beschränkt|
-|agesAbove18|8|Die R18 Klassifikation ist auf Personen 18 Jahre und über beschränkt|
-|eingeschränkt|9|Die R-Klassifikation ist auf eine bestimmte Benutzergruppe beschränkt|
-|agesAbove16Restricted|10|Die Klassifizierung RP16 erfordert Viewer unter 16 begleitet durch ein übergeordnetes oder oben|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Geeignet für allgemeine Zielgruppe|
+|parentalGuidance|3|Die PG-Klassifikation empfiehlt die elterliche Unterstützung|
+|Reifen|4|Die M-Klassifikation eignet sich für ältere Benutzer|
+|agesAbove13|5|Die R13-Klassifikation ist auf Personen ab 13 Jahren beschränkt.|
+|agesAbove15|6|Die R15-Klassifizierung ist auf Personen ab 15 Jahren beschränkt.|
+|agesAbove16|7|Die R16-Klassifizierung ist auf Personen ab 16 Jahren beschränkt.|
+|agesAbove18|8|Die R18-Klassifizierung ist auf Personen ab 18 Jahren beschränkt.|
+|eingeschränkt|9|Die R-Klassifizierung ist auf eine bestimmte Zielgruppe beschränkt.|
+|agesAbove16Restricted|10|Die RP16-Klassifikation erfordert Zuschauer unter 16 Jahren, die von einem Elternteil oder einem Erwachsenen begleitet werden.|
 
 
 

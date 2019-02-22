@@ -1,36 +1,36 @@
 ---
-title: Ressourcentyp win32LobAppRegistryDetection
-description: Enthält Registrierungseigenschaften zum Erkennen von einer App Win32
-localization_priority: Normal
+title: win32LobAppRegistryDetection-Ressourcentyp
+description: Enthält Registrierungseigenschaften zum Auffinden einer Win32-App
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb10a96a14d3c26503b33191fbb3c1b883245da7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 076251ea185359127c3dad3610ec944f7cdb3178
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402664"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169545"
 ---
-# <a name="win32lobappregistrydetection-resource-type"></a>Ressourcentyp win32LobAppRegistryDetection
+# <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Registrierungseigenschaften zum Erkennen von einer App Win32
+Enthält Registrierungseigenschaften zum Auffinden einer Win32-App
 
 
-Erbt vom [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Erbt von [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|check32BitOn64System|Boolean|Ein Wert, der angibt, ob in diesem Registrierungspfad ist für die Überprüfung auf 32-Bit-app auf 64-Bit-system|
-|keyPath|Zeichenfolge|Registrierungsschlüsselpfad zum Erkennen von Win32 Line of Business (LoB)-app|
-|Wertname|Zeichenfolge|Der Name des Registrierungsschlüssels|
-|detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Der Erkennung Datentyp. Mögliche Werte sind: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer` und `version`.|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator für die Registrierung Daten Erkennung. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
-|detectionValue|Zeichenfolge|Den Registrierungswert Erkennung|
+|check32BitOn64System|Boolescher Wert|Ein Wert, der angibt, ob dieser Registrierungspfad zum Überprüfen der 32-Bit-App auf dem 64-Bit-System dient.|
+|keyPath|Zeichenfolge|Registrierungsschlüsselpfad zum Aufspüren der Win32-Branchen-App|
+|valueName|Zeichenfolge|Der Name des Registrierungswerts|
+|detectiontype|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Der Erkennungstyp der Registrierungsdaten. Mögliche Werte sind: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer` und `version`.|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator für die Erkennung von Registrierungsdaten. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
+|Erkennungs-Value|Zeichenfolge|Der Registrierungs Erkennungswert|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

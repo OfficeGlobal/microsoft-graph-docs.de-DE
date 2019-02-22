@@ -1,47 +1,47 @@
 ---
-title: Ressourcentyp deviceManagementScriptDeviceState
-description: Enthält Eigenschaften für Gerät Zustand des Skripts Management Gerät ausführen.
-localization_priority: Normal
+title: deviceManagementScriptDeviceState-Ressourcentyp
+description: Enthält Eigenschaften für den Geräte Ausführungsstatus des Geräteverwaltungsskripts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8274a6dd5b38ee419738d250af0267533de6f00a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 390c48a6c7d0cf040891cf77e4e89bae3aeca79e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169762"
 ---
-# <a name="devicemanagementscriptdevicestate-resource-type"></a>Ressourcentyp deviceManagementScriptDeviceState
+# <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für Gerät Zustand des Skripts Management Gerät ausführen.
+Enthält Eigenschaften für den Geräte Ausführungsstatus des Geräteverwaltungsskripts.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste deviceManagementScriptDeviceStates](../api/intune-devices-devicemanagementscriptdevicestate-list.md)|[DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekte.|
-|[Abrufen von deviceManagementScriptDeviceState](../api/intune-devices-devicemanagementscriptdevicestate-get.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
-|[Erstellen von deviceManagementScriptDeviceState](../api/intune-devices-devicemanagementscriptdevicestate-create.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Erstellen eines neuen [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
-|[DeviceManagementScriptDeviceState löschen](../api/intune-devices-devicemanagementscriptdevicestate-delete.md)|Keine|Löscht eine [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).|
-|[DeviceManagementScriptDeviceState aktualisieren](../api/intune-devices-devicemanagementscriptdevicestate-update.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Aktualisieren Sie die Eigenschaften eines [DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
+|[DeviceManagementScriptDeviceStates aufListen](../api/intune-devices-devicemanagementscriptdevicestate-list.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekte.|
+|[DeviceManagementScriptDeviceState abrufen](../api/intune-devices-devicemanagementscriptdevicestate-get.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Lesen von Eigenschaften und Beziehungen des [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
+|[DeviceManagementScriptDeviceState erstellen](../api/intune-devices-devicemanagementscriptdevicestate-create.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Erstellen eines neuen [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
+|[DeviceManagementScriptDeviceState löschen](../api/intune-devices-devicemanagementscriptdevicestate-delete.md)|Keine|Löscht eine [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).|
+|[DeviceManagementScriptDeviceState aktualisieren](../api/intune-devices-devicemanagementscriptdevicestate-update.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Aktualisieren der Eigenschaften eines [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Taste der Gerät Management Skript Gerät Zustand Entität.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status der letzten Ausführung des Skripts Management Gerät. Mögliche Werte sind: `unknown`, `success` und `fail`.|
-|resultMessage|Zeichenfolge|Details der Ausgabe.|
-|lastStateUpdateDateTime|DateTimeOffset|Zeitpunkt führt das Gerät Management-Skript aus.|
-|errorCode|Int32|Fehlercode, fehlerhafte Ausführung des Skripts Management Gerät entspricht.|
-|errorDescription|Zeichenfolge|Fehlerhafte Ausführung des Skripts Management Gerät entsprechend der Beschreibung des Fehlers.|
+|id|Zeichenfolge|Schlüssel der Gerätestatus Entität des Device Management-Skripts.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status der letzten Ausführung des Geräteverwaltungs-Skripts. Mögliche Werte sind: `unknown`, `success` und `fail`.|
+|resultMessage|Zeichenfolge|Details der Ausführungs Ausgabe.|
+|lastStateUpdateDateTime|DateTimeOffset|Der letzte Zeitpunkt, zu dem das Geräte Verwaltungsskript ausgeführt wird.|
+|errorCode|Int32|Fehlercode, der einer fehlerhaften Ausführung des Geräteverwaltungsskripts entspricht.|
+|errorDescription|Zeichenfolge|Fehlerbeschreibung, die dem fehlerhaften Ausführen des Geräteverwaltungsskripts entspricht.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|Die verwaltete Geräte, die das Gerät Management Skript ausgeführt wird.|
+|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|Die verwalteten Geräte, die das Geräte Verwaltungsskript ausführen.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

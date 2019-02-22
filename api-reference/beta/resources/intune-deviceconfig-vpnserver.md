@@ -1,30 +1,30 @@
 ---
-title: VpnServer Ressourcentyp
-description: VPN-Server-Definition.
-localization_priority: Normal
+title: vpnServer-Ressourcentyp
+description: VPN-Server Definition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0febdae5745f1295e9c690213d4a51b79d7d3bdb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170462"
 ---
-# <a name="vpnserver-resource-type"></a>VpnServer Ressourcentyp
+# <a name="vpnserver-resource-type"></a>vpnServer-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN-Server-Definition.
+VPN-Server Definition.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |description|Zeichenfolge|Beschreibung.|
-|address|Zeichenfolge|(IP-Adresse, FQDN oder die URL)|
-|isDefaultServer|Boolean|Standardserver.|
+|address|String|Adresse (IP-Adresse, FQDN oder URL)|
+|isDefaultServer|Boolescher Wert|Standardserver.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp iosVppAppAssignedLicense
-description: iOS Volume Purchase Program lizenzzuweisung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
-localization_priority: Normal
+title: iosVppAppAssignedLicense-Ressourcentyp
+description: iOS Volume Purchase Program-Lizenzzuweisung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ff1d467dd0bd5ef34836d77f2f7dd034d877f1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3499f3cfb1b15c76dbd70ec1a0634367c3107f87
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395657"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169335"
 ---
-# <a name="iosvppappassignedlicense-resource-type"></a>Ressourcentyp iosVppAppAssignedLicense
+# <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-iOS Volume Purchase Program lizenzzuweisung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
+iOS Volume Purchase Program-Lizenzzuweisung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste iosVppAppAssignedLicenses](../api/intune-apps-iosvppappassignedlicense-list.md)|[IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Auflistung|Listeneigenschaften und Beziehungen der [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekte.|
-|[Abrufen von iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-get.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Lesen Sie Eigenschaften und Beziehungen des [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
-|[Erstellen von iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-create.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Erstellen eines neuen [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
-|[IosVppAppAssignedLicense löschen](../api/intune-apps-iosvppappassignedlicense-delete.md)|Keine|Löscht eine [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).|
-|[IosVppAppAssignedLicense aktualisieren](../api/intune-apps-iosvppappassignedlicense-update.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Aktualisieren Sie die Eigenschaften eines [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
+|[IosVppAppAssignedLicenses aufListen](../api/intune-apps-iosvppappassignedlicense-list.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekte.|
+|[IosVppAppAssignedLicense abrufen](../api/intune-apps-iosvppappassignedlicense-get.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Lesen von Eigenschaften und Beziehungen des [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
+|[IosVppAppAssignedLicense erstellen](../api/intune-apps-iosvppappassignedlicense-create.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Erstellen eines neuen [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
+|[IosVppAppAssignedLicense löschen](../api/intune-apps-iosvppappassignedlicense-delete.md)|Keine|Löscht eine [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).|
+|[IosVppAppAssignedLicense aktualisieren](../api/intune-apps-iosvppappassignedlicense-update.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Aktualisieren der Eigenschaften eines [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|userEmailAddress|Zeichenfolge|Die e-Mail-Adresse des Benutzers.|
+|userEmailAddress|Zeichenfolge|Die Benutzer-e-Mail-Adresse.|
 |userId|Zeichenfolge|Die Benutzer-ID.|
 |userName|Zeichenfolge|Der Benutzername.|
 |userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname.|

@@ -1,26 +1,26 @@
 ---
-title: Ressourcentyp managementConditionExpressionModel
-description: Eine Bedingung Ausdruck Model im Projektmanagement ist ein Modell Darstellung einer Bedingungsausdruck Management.
-localization_priority: Normal
+title: managementConditionExpressionModel-Ressourcentyp
+description: Ein Ausdrucks Modell für die Verwaltungsbedingung ist eine Modelldarstellung eines Ausdrucks der Verwaltungsbedingung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24c9cd42519c1b8c75d6fb71f357abd7388b3136
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5bb32ffb546f8c47153bea9445e8c238bac22ceb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168894"
 ---
-# <a name="managementconditionexpressionmodel-resource-type"></a>Ressourcentyp managementConditionExpressionModel
+# <a name="managementconditionexpressionmodel-resource-type"></a>managementConditionExpressionModel-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Eine Bedingung Ausdruck Model im Projektmanagement ist ein Modell Darstellung einer Bedingungsausdruck Management.
+Ein Ausdrucks Modell für die Verwaltungsbedingung ist eine Modelldarstellung eines Ausdrucks der Verwaltungsbedingung.
 
 
-Erbt vom [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
+Erbt von [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

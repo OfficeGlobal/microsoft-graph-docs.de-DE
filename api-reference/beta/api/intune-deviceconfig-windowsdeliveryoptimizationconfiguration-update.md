@@ -1,23 +1,23 @@
 ---
 title: WindowsDeliveryOptimizationConfiguration aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines WindowsDeliveryOptimizationConfiguration-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines windowsDeliveryOptimizationConfiguration-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82e2a225d8492f78d908a3c52987ae24037e5b59
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 844cb46a4696b3eacad842e7b938734e412ce572
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168530"
 ---
 # <a name="update-windowsdeliveryoptimizationconfiguration"></a>WindowsDeliveryOptimizationConfiguration aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekts.
+Aktualisieren der Eigenschaften eines [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -40,32 +40,51 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Gibt die Methode zum Herunterladen dieser Übermittlung Optimierung können Sie Netzwerkbandbreite für große Verteilung von Inhalten Szenarien verwalten. Mögliche Werte sind: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` und `bypassMode`.|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Gibt die Downloadmethode an, die von der Zustellungsoptimierung zur Verwaltung der Netzwerkbandbreite bei umfangreichen Inhalts Verteilungsszenarien verwendet werden kann. Mögliche Werte sind: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` und `bypassMode`.|
+|restrictPeerSelectionBy|[deliveryOptimizationRestrictPeerSelectionByOptions](../resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)|Gibt an, dass die Peer Auswahl über die ausgewählte Option eingeschränkt werden soll.
+Option 1 (subNetzmaske) gilt nur für die Bereitstellungs Optimierungs Modi Download Modus LAN (1) und Gruppe (2). Mögliche Werte sind: `notConfigured` und `subnetMask`.|
+|groupIdSource|[deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)|Gibt an, dass die Peer Auswahl auf eine Specfic-Quelle beschränkt werden soll.
+Die in dieser Richtlinie festgelegten Optionen gelten nur für den Downloadmodus für den Bereitstellungs Optimierungsmodus (2). Wenn die Gruppe (2) nicht als Download Modus festgelegt ist, wird diese Richtlinie ignoriert. Bei Option 3-DHCP-Options-ID fragt der Client die DHCP-Optionskennung 234 ab und verwendet den zurückgegebenen GUID-Wert als Gruppen-ID.|
+|bandwidthMode|[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)|Gibt die Nutzung von Vordergrund-und Hintergrund Bandbreite unter Verwendung von Prozentsätzen, absoluten Werten oder Stunden an.|
+|backgroundDownloadFromHttpDelayInSeconds|Int64|Gibt die Anzahl der Sekunden an, die eine HTTP-Quelle in einem Hintergrund Download verzögert werden soll, der die Verwendung von Peer-to-Peer ermöglicht. Gültige Werte 0 bis 4294967295|
+|foregroundDownloadFromHttpDelayInSeconds|Int64|Gibt die Anzahl von Sekunden an, die eine HTTP-Quelle in einem Vordergrund heruntergeladen wird, für die Peer-to-Peer (0-86400) verwendet werden darf. Gültige Werte 0 bis 86400
+Durch Angeben von 0 wird die zuStellungsOptimierung zum Verwalten dieser Einstellung mithilfe des Cloud-Diensts festgelegt. Gültige Werte 0 bis 86400|
+|minimumRamAllowedToPeerInGigabytes|Int32|Gibt die minimale RAM-Größe in GB an, um die Peer Zwischenspeicherung zu verwenden (1-100000). Gültige Werte 1 bis 100000|
+|minimumDiskSizeAllowedToPeerInGigabytes|Int32|Gibt die minimale Datenträgergröße in GB für die Verwendung der Peer Zwischenspeicherung an (1-100000). Gültige Werte 1 bis 100000
+Empfohlene Werte: 64 GB bis 256 GB. Gültige Werte 1 bis 100000|
+|minimumFileSizeToCacheInMegabytes|Int32|Gibt die minimale Größe der Inhaltsdatei in MB an, die für die Verwendung der Peer Zwischenspeicherung aktiviert ist (1-100000). Gültige Werte 1 bis 100000
+Empfohlene Werte: 1 MB bis 100.000 MB. Gültige Werte 1 bis 100000|
+|minimumBatteryPercentageAllowedToUpload|Int32|Gibt den Mindestprozentsatz für die Batterie an, damit das Gerät Daten hochladen kann (0-100). Gültige Werte: 0 bis 100.
+Der Standardwert ist 0. Der Wert 0 (null) ist "unbegrenzt" und der Standardwert des Cloud-Diensts wird verwendet. Gültige Werte: 0 bis 100.|
+|modifyCacheLocation|Zeichenfolge|Gibt das Laufwerk an, das von der BereitstellungsOptimierung für den Cache verwendet werden soll.|
+|maximumCacheAgeInDays|Int32|Gibt die maximale Zeitdauer in Tagen an, die jede Datei im Bereitstellungs Optimierungs Cache aufbewahrt wird, nachdem Sie erfolgreich heruntergeladen wurde (0-49710). Gültige Werte 0 bis 49710|
+|maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Gibt die maximale Cachegröße an, die von der zugestellten Optimierung als Prozentsatz oder in GB angegeben wird.|
+|vpnPeerCaching|[Aktivierung](../resources/intune-shared-enablement.md)|Gibt an, ob das Gerät an Peer-Zwischenspeicherung während der Verbindung über VPN mit dem Domänennetzwerk teilnehmen darf. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [WindowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
@@ -74,7 +93,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 313
+Content-length: 1060
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -85,7 +104,26 @@ Content-length: 313
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 
@@ -94,7 +132,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 1232
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -108,7 +146,26 @@ Content-Length: 485
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 

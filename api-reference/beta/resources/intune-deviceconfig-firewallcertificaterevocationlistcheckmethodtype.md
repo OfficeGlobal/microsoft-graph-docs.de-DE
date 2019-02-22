@@ -1,31 +1,31 @@
 ---
-title: FirewallCertificateRevocationListCheckMethodType Enum-Typ
+title: firewallCertificateRevocationListCheckMethodType-Enumerationstyp
 description: Mögliche Werte für firewallCertificateRevocationListCheckMethod
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4585c30c0a910befd8df8482636916af9ad9c0d6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 74989961978ddd10f2c14e57cfe31e25ac831703
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396413"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170077"
 ---
-# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>FirewallCertificateRevocationListCheckMethodType Enum-Typ
+# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für firewallCertificateRevocationListCheckMethod
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|Keine|1|Zertifikatsperrliste nicht prüfen|
-|Versuchen Sie|2|Versuchen Sie Zertifikatsperrlistenprüfung und zulassen Sie ein Zertifikat nur, wenn das Zertifikat mithilfe der Kontrollkästchen bestätigt wird|
-|erfordern|3|Erfordern Sie eine erfolgreiche Zertifikatsperrlistenprüfung, bevor Sie ein Zertifikat|
+|deviceDefault|0|Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts|
+|Keine|1|Zertifikatsperrliste nicht überprüfen|
+|Versuch|2|Versuchen Sie die Zertifikatsperrlistenüberprüfung und lassen Sie ein Zertifikat nur zu, wenn es von der Prüfung bestätigt wird.|
+|erfordern|3|Erfolgreiche CRL-Überprüfung erfordern, bevor ein Zertifikat zugelassen wird|
 
 
 

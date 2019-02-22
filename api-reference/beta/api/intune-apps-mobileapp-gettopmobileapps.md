@@ -1,21 +1,21 @@
 ---
-title: GetTopMobileApps-Funktion
+title: Gettopmobileappcount-Funktion
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4f29c6dfe6502b1520e2100781d47688bbbe5d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e233feb9966fc90a56f38eff91c6bdab141b7462
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169727"
 ---
-# <a name="gettopmobileapps-function"></a>GetTopMobileApps-Funktion
+# <a name="gettopmobileapps-function"></a>Gettopmobileappcount-Funktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
@@ -38,9 +38,9 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,12 +50,12 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |status|Zeichenfolge|Noch nicht dokumentiert|
-|count|Int64|Noch nicht dokumentiert|
+|count|Int64|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich, diese Funktion gibt eine `200 OK` Antwortcode und eine [MobileApp](../resources/intune-apps-mobileapp.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine [mobileApp](../resources/intune-apps-mobileapp.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,30 +1,30 @@
 ---
-title: DefenderAttackSurfaceType Enum-Typ
-description: Mögliche Werte Defender Angriff Fläche Verringerung der Regeln
-localization_priority: Normal
+title: defenderAttackSurfaceType-Enumerationstyp
+description: Mögliche Werte für die Richtlinien zur Abwehr von anGriffen
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8972fff25cb75d3cef1848985db0292753959fa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 85e305b4798d29bc3d3b607ce031b72a10a3de80
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399661"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169944"
 ---
-# <a name="defenderattacksurfacetype-enum-type"></a>DefenderAttackSurfaceType Enum-Typ
+# <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte Defender Angriff Fläche Verringerung der Regeln
+Mögliche Werte für die Richtlinien zur Abwehr von anGriffen
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Gerät Standardwert, keine beabsichtigt.|
-|Blockieren|1|Blockiert Funktionalität.|
-|auditMode|2|Wird nicht geändert Funktionalität, die Protokolle zu generieren.|
+|userDefined|0|Geräte-Standardwert, keine Absicht.|
+|Block|1|Blockieren der Funktionalität.|
+|auditMode|2|Die Funktionalität wird nicht geändert, aber es werden Protokolle generiert.|
 
 
 

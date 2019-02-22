@@ -1,21 +1,21 @@
 ---
 title: managedAppPolicyDeploymentSummary-Ressourcentyp
 description: ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im App-Verwaltungsworkflow.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63cdd2352da09d652ca5e07245b0d8d32c25fe0e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9b9467b4f33c00031c972fa8e02bb90a6b3540ee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168845"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im App-Verwaltungsworkflow.
 
@@ -32,7 +32,7 @@ ManagedAppEntity ist der Basisentitätstyp für alle anderen Entitätstypen im A
 |configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
 |lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
 |configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|string|Schlüssel der Entität|
 |Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen

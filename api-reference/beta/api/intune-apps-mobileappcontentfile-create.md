@@ -1,21 +1,21 @@
 ---
 title: Erstellen von „mobileAppContentFile“
 description: Diese Methode erstellt ein neues Objekt des Typs mobileAppContentFile.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c815cfcb272e0eb79465d81702e158934ec8c42a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 43e56cbf1fd3419cae2d0b88ac64225985e07b5f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394243"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167004"
 ---
 # <a name="create-mobileappcontentfile"></a>Erstellen von „mobileAppContentFile“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode erstellt ein neues Objekt des Typs [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md).
 
@@ -38,9 +38,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,16 +52,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |azureStorageUri|String|Azure Storage-URI|
 |isCommitted|Boolean|Wert, der angibt, ob für die Datei ein Commit ausgeführt wurde|
-|id|String|ID der Datei|
+|id|Zeichenfolge|ID der Datei|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der Datei|
-|name|String|Name der Datei|
+|name|Zeichenfolge|Name der Datei|
 |size|Int64|Größe der Datei vor der Verschlüsselung|
 |sizeEncrypted|Int64|Größe der Datei nach der Verschlüsselung|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Azure Storage-URI|
 |manifest|Binär|Manifestinformationen|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Ein Wert, der angibt, ob die Datei Framework handelt.|
-|isDependency|Boolean|Gibt an, ob die Datei eine Abhängigkeit für die wichtigsten Inhaltsdatei ist.|
+|isFrameworkdatei|Boolescher Wert|Ein Wert, der angibt, ob es sich bei der Datei um eine frameworkdatei handelt.|
+|isDependency|Boolescher Wert|Gibt an, ob die Inhaltsdatei eine Abhängigkeit für die Hauptinhaltsdatei ist.|
 
 
 

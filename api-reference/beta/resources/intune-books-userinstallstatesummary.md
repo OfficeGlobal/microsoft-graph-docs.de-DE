@@ -1,21 +1,21 @@
 ---
 title: userInstallStateSummary-Ressourcentyp
 description: Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für einen Benutzer.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cecb608467efa312ea218197707cc14d55f3da04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ac15a6cc16a80199c807aab9569c5449ecde5273
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399332"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169055"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für einen Benutzer.
 
@@ -31,7 +31,7 @@ Enthält Eigenschaften für die Zusammenfassung des Installationsstatus für ein
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |userName|String|Name des Benutzers|
 |installedDeviceCount|Int32|Anzahl der installierten Geräte|
 |failedDeviceCount|Int32|Anzahl der fehlgeschlagenen Geräte|

@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp variableManagementConditionExpression
-description: Ergibt die Bedingung Verwaltungsstatus als boolescher Ausdruck.
-localization_priority: Normal
+title: variableManagementConditionExpression-Ressourcentyp
+description: Wertet den Status der Verwaltungsbedingung als booleschen Ausdruck aus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a5e7efd0c8213f40d1dfb5f86d2f86c999069d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab070cc9d2c51fbe1dc4b33c82fb823a849b7cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399626"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168229"
 ---
-# <a name="variablemanagementconditionexpression-resource-type"></a>Ressourcentyp variableManagementConditionExpression
+# <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ergibt die Bedingung Verwaltungsstatus als boolescher Ausdruck.
+Wertet den Status der Verwaltungsbedingung als booleschen Ausdruck aus.
 
 
-Erbt vom [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Erbt von [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|managementConditionId|Zeichenfolge|Die Bedingung Management-Id, die verwendet wird, für den Ausdruck ausgewertet werden soll.|
+|managementConditionId|Zeichenfolge|Die Verwaltungs Bedingungs-ID, die zum Auswerten des Ausdrucks verwendet wird.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

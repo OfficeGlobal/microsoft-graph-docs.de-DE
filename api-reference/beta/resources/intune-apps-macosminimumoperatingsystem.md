@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp macOSMinimumOperatingSystem
-description: Das Betriebssystem (mindestens) für eine Mac OS-app erforderlich.
-localization_priority: Normal
+title: macOSMinimumOperatingSystem-Ressourcentyp
+description: Das minimale Betriebssystem, das für eine MacOS-App erforderlich ist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1b5bb3c31f876cb7444ff90cad5060c08d2f60b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f6975690361c981d6b5aaf1d9dae959ad6f8be5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425925"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169937"
 ---
-# <a name="macosminimumoperatingsystem-resource-type"></a>Ressourcentyp macOSMinimumOperatingSystem
+# <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Das Betriebssystem (mindestens) für eine Mac OS-app erforderlich.
+Das minimale Betriebssystem, das für eine MacOS-App erforderlich ist.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|v10_7|Boolean|Mac OS 10,7 oder höher.|
-|v10_8|Boolean|Mac OS 10,8 oder höher.|
-|v10_9|Boolean|Mac OS 10.9 oder höher.|
-|v10_10|Boolean|Mac OS 10.10 oder höher.|
-|v10_11|Boolean|Mac OS 10.11 oder höher.|
-|v10_12|Boolean|Mac OS 10.12 oder höher.|
-|v10_13|Boolean|Mac OS 10.13 oder höher.|
+|v10_7|Boolescher Wert|Mac OS 10,7 oder höher.|
+|v10_8|Boolescher Wert|Mac OS 10,8 oder höher.|
+|v10_9|Boolescher Wert|Mac OS 10,9 oder höher.|
+|v10_10|Boolescher Wert|Mac OS 10,10 oder höher.|
+|v10_11|Boolescher Wert|Mac OS 10,11 oder höher.|
+|v10_12|Boolescher Wert|Mac OS 10,12 oder höher.|
+|v10_13|Boolescher Wert|Mac OS 10,13 oder höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

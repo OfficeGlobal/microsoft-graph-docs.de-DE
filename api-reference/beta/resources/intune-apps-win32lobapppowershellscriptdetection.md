@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp win32LobAppPowerShellScriptDetection
-description: Enthält Eigenschaften, die PowerShell-Skript zum Erkennen von einer Win32-App
-localization_priority: Normal
+title: win32LobAppPowerShellScriptDetection-Ressourcentyp
+description: Enthält PowerShell-Skripteigenschaften zum Auffinden einer Win32-App
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5c02228589042d0abf36c34c5818c5a4610514e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399640"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168523"
 ---
-# <a name="win32lobapppowershellscriptdetection-resource-type"></a>Ressourcentyp win32LobAppPowerShellScriptDetection
+# <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften, die PowerShell-Skript zum Erkennen von einer Win32-App
+Enthält PowerShell-Skripteigenschaften zum Auffinden einer Win32-App
 
 
-Erbt vom [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Erbt von [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|enforceSignatureCheck|Boolean|Ein Wert, der angibt, ob die Signatur Kontrollkästchen erzwungen wird|
-|runAs32Bit|Boolean|Ein Wert, der angibt, ob dieses Skript als 32-Bit ausgeführt werden soll|
-|scriptContent|Zeichenfolge|Die base64-codierten Skriptinhalt zum Erkennen von Win32 Line of Business (LoB)-app|
+|enforceSignatureCheck|Boolescher Wert|Ein Wert, der angibt, ob die Signaturüberprüfung erzwungen wird.|
+|runAs32Bit|Boolescher Wert|Ein Wert, der angibt, ob dieses Skript als 32-Bit ausgeführt werden soll|
+|scriptContent|Zeichenfolge|Der Base64-codierte Skriptinhalt zum Aufspüren der Win32-Branchen-App|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

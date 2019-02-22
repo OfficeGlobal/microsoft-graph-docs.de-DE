@@ -1,23 +1,23 @@
 ---
-title: Liste embeddedSIMDeviceStates
-description: Listeneigenschaften und Beziehungen der EmbeddedSIMDeviceState-Objekte.
-localization_priority: Normal
+title: EmbeddedSIMDeviceStates aufListen
+description: AufListen von Eigenschaften und Beziehungen der embeddedSIMDeviceState-Objekte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05874888c28b3288e417a1f1212a1ab149b85ff7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d604859f0d63aa200728fe33e83d8745a79afb5b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417637"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166997"
 ---
-# <a name="list-embeddedsimdevicestates"></a>Liste embeddedSIMDeviceStates
+# <a name="list-embeddedsimdevicestates"></a>EmbeddedSIMDeviceStates aufListen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Listeneigenschaften und Beziehungen der [EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) -Objekte.
+AufListen von Eigenschaften und Beziehungen der [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,16 +38,16 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) -Objekten im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

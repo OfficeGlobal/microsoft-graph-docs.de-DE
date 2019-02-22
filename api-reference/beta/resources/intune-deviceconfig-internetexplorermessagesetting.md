@@ -1,28 +1,28 @@
 ---
-title: InternetExplorerMessageSetting Enum-Typ
-description: Welche Meldung Edge angezeigt wird, bevor Sie in Internet Explorer wechseln.
-localization_priority: Normal
+title: internetExplorerMessageSetting-Enumerationstyp
+description: Welche Nachricht vor dem Wechsel zu Internet Explorer angezeigt wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e09a8aedf76707809be8625558a7c7ae6cf9cc6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bd803ba1bf201b68278e8dc1bc67a27bbb3dd9a7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431538"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168054"
 ---
-# <a name="internetexplorermessagesetting-enum-type"></a>InternetExplorerMessageSetting Enum-Typ
+# <a name="internetexplorermessagesetting-enum-type"></a>internetExplorerMessageSetting-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Welche Meldung Edge angezeigt wird, bevor Sie in Internet Explorer wechseln.
+Welche Nachricht vor dem Wechsel zu Internet Explorer angezeigt wird.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert.|
+|notConfigured|0|Nicht konfiguriert.|
 |deaktiviert|1|Deaktiviert.|
 |enabled|2|Aktiviert.|
 |keepGoing|3|KeepGoing.|

@@ -1,33 +1,33 @@
 ---
-title: WindowsUpdateType Enum-Typ
-description: Welche Geräte Branch erhält ihre Updates aus
-localization_priority: Normal
+title: windowsUpdateType-Enumerationstyp
+description: Welche Zweigstellen-Geräte erhalten Ihre Updates von
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d3dd0f6d8ba46d7f1cc803b217a98a862602149
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17aad82b25982b90ecea348d959e2ed2ec94a483
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400137"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169160"
 ---
-# <a name="windowsupdatetype-enum-type"></a>WindowsUpdateType Enum-Typ
+# <a name="windowsupdatetype-enum-type"></a>windowsUpdateType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Welche Geräte Branch erhält ihre Updates aus
+Welche Zweigstellen-Geräte erhalten Ihre Updates von
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
-|all|1|Semikolons jährlichen Channel (Ziel). Gerät Ruft alle anwendbaren Feature Updates aus Semikolons jährlichen Channel (gezielte) ab.|
-|businessReadyOnly|2|Semikolons jährlichen Channel. Gerät ruft Feature Updates aus Semikolons jährlichen Channel ab.|
-|windowsInsiderBuildFast|3|Erstellen von Windows-Insider - Fast|
-|windowsInsiderBuildSlow|4|Erstellen von Windows-Insider - langsam|
-|windowsInsiderBuildRelease|5|Windows-Insider Build-Version|
+|userDefined|0|Zulassen, dass der Benutzer festgelegt wird.|
+|all|1|Halbjährlicher Kanal (gezielt). Gerät Ruft alle relevanten Feature-Updates vom halbjährlichen Kanal ab (gezielt).|
+|businessReadyOnly|2|Halbjährlicher Kanal. Gerät ruft Feature-Updates vom halbjährlichen Kanal ab.|
+|windowsInsiderBuildFast|3|Windows Insider-Erstellung – schnell|
+|windowsInsiderBuildSlow|4|Windows Insider Build – langsam|
+|windowsInsiderBuildRelease|5|Freigeben von Windows Insider Build|
 
 
 

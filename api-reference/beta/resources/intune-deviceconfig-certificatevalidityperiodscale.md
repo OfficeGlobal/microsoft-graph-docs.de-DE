@@ -1,30 +1,30 @@
 ---
-title: CertificateValidityPeriodScale Enum-Typ
-description: Zertifikat Gültigkeit Period-Optionen.
-localization_priority: Normal
+title: Certificatevalidityperiodscale wurden-Enumerationstyp
+description: Optionen für Zertifikats Gültigkeitszeitraum.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b6e090743ec8096254adbded3be8cd3279b5cdc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c573605a0aa91955b52ea65e62af1ff326545374
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402895"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170063"
 ---
-# <a name="certificatevalidityperiodscale-enum-type"></a>CertificateValidityPeriodScale Enum-Typ
+# <a name="certificatevalidityperiodscale-enum-type"></a>Certificatevalidityperiodscale wurden-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zertifikat Gültigkeit Period-Optionen.
+Optionen für Zertifikats Gültigkeitszeitraum.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Tage|0|Tage.|
 |Monate|1|Monate.|
-|Jahre|2|Jahre.|
+|Jahren|2|Jahre.|
 
 
 

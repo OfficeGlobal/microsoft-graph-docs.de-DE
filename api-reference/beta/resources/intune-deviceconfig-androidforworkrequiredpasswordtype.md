@@ -1,35 +1,35 @@
 ---
-title: AndroidForWorkRequiredPasswordType Enum-Typ
-description: Android für Arbeit erforderliche Kennworttyp.
-localization_priority: Normal
+title: androidForWorkRequiredPasswordType-Enumerationstyp
+description: Android for Work erforderlicher Kennworttyp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3da48449de63fa134c68e3f27fd415c286666e4e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0e0e99a5e54797441070308882d4137859390820
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169475"
 ---
-# <a name="androidforworkrequiredpasswordtype-enum-type"></a>AndroidForWorkRequiredPasswordType Enum-Typ
+# <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android für Arbeit erforderliche Kennworttyp.
+Android for Work erforderlicher Kennworttyp.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|lowSecurityBiometric|1|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|lowSecurityBiometric|1|Niedriges Biometrie-basiertes Kennwort erforderlich.|
 |erforderlich|2|Erforderlich.|
-|atLeastNumeric|3|Mindestens numerische erforderliche Kennwort.|
-|numericComplex|4|Numerische komplexe Kennwort erforderlich.|
-|atLeastAlphabetic|5|Mindestens alphabetische erforderliche Kennwort.|
-|atLeastAlphanumeric|6|Mindestens Alphanumerisches Kennwort erforderlich.|
-|alphanumericWithSymbols|7|Mindestens alphanumerisch Symbole erforderliche Kennwort.|
+|atLeastNumeric|3|Mindestens ein numerisches Kennwort ist erforderlich.|
+|numericComplex|4|Numerisches komplexes Kennwort erforderlich.|
+|atLeastAlphabetic|5|Mindestens ein alphabetisches Kennwort erforderlich.|
+|atLeastAlphanumeric|6|Mindestens alphanumerisches Kennwort erforderlich.|
+|alphanumericWithSymbols|7|Mindestens alphanumerisch mit Symbol Kennwort erforderlich.|
 
 
 

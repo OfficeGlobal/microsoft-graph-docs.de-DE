@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp airPrintDestination
-description: Stellt ein AirPrint Ziel.
-localization_priority: Normal
+title: airPrintDestination-Ressourcentyp
+description: Stellt ein Druckziel dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f56578427427d45a69c4c64fe9fde3cf31f8fd9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f09301bd791b5fd8b3fa430b50f7cdf58de43944
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422495"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167333"
 ---
-# <a name="airprintdestination-resource-type"></a>Ressourcentyp airPrintDestination
+# <a name="airprintdestination-resource-type"></a>airPrintDestination-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt ein AirPrint Ziel.
+Stellt ein Druckziel dar.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|ipAddress|Zeichenfolge|Die IP-Adresse des Ziels AirPrint.|
-|Http://|Zeichenfolge|Der Pfad der Ressource mit dem Drucker verknüpft ist. Dies entspricht dem Rp-Parameter, der die _ipps.tcp Bonjour Datensatz. Beispiel: Drucker/Canon_MG5300_series, Drucker/Xerox_Phaser_7600, Ipp/Epson_IPP_Printer drucken.|
-|port|Int32|Der Überwachungsport des Ziels AirPrint. Wenn dieser Schlüssel nicht angegeben ist, wird AirPrint den Standardport verwenden. In iOS 11.0 und höher verfügbar.|
-|forceTls|Boolean|Wenn true AirPrint Verbindungen von Transport Layer Security (TLS) gesichert werden. Standard ist false. In iOS 11.0 und höher verfügbar.|
+|ipAddress|Zeichenfolge|Die IP-Adresse des Druckziels.|
+|resourcePath|Zeichenfolge|Der dem Drucker zugeordnete Ressourcenpfad. Dies entspricht dem RP-Parameter des Bonjour-Eintrags _ipps. TCP. Beispiel: Printers/Canon_MG5300_series, Printers/Xerox_Phaser_7600, IPP/Print, Epson_IPP_Printer.|
+|port|Int32|Der Überwachungs-Port des Druckziels. Wenn dieser Schlüssel nicht angegeben ist, verwendet der standardmäßige Port. Verfügbar in iOS 11,0 und höher.|
+|forceTls|Boolescher Wert|Wenn true-druckverbindungs Verbindungen durch Transport Layer Security (TLS) gesichert werden. Der Standardwert ist false. Verfügbar in iOS 11,0 und höher.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

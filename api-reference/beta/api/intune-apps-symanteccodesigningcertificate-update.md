@@ -1,23 +1,23 @@
 ---
 title: SymantecCodeSigningCertificate aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines SymantecCodeSigningCertificate-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines symantecCodeSigningCertificate-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5da263a8b4c2bbf121fb994b4d20168c45da9e03
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 26a56296956c3955808a308989a0ca8ded5d4ae5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168754"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekts.
+Aktualisieren der Eigenschaften eines [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,33 +38,33 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|content|Binär|Das Windows Symantec Codesignierung-Zertifikat im Format Rohdaten.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Status Cert bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
-|password|Zeichenfolge|Das Kennwort für die PFX-Datei.|
-|subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|subject|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
-|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
+|content|Binär|Das Windows Symantec Code Signing Certificate im RAW-Datenformat.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der CERT-Status, der für die Einrichtung oder nicht-Einrichtung vorgesehen ist. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
+|password|String|Das für die PFX-Datei erforderliche Kennwort.|
+|subjectName|Zeichenfolge|Der AntragsTeller Name für das Zertifikat.|
+|subject|Zeichenfolge|Der Subject-Wert für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Aussteller Name für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Aussteller Wert für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
-|uploadDateTime|DateTimeOffset|Der Typ des der Cert CodeSigning als Symantec Cert.|
+|uploadDateTime|DateTimeOffset|Der Typ des deSign Zertifikats als Symantec cert.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

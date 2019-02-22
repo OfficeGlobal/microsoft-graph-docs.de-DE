@@ -1,29 +1,29 @@
 ---
-title: KeySize Enum-Typ
-description: Optionen für die Größe des Schlüssels.
-localization_priority: Normal
+title: KeySize-Enumerationstyp
+description: Optionen für die Schlüsselgröße.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdfc2418c3de1c798b0bc8756aed67bde285547a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e558cb0b11ca1c4afc555dbb3dff2e41264b2cf1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413738"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167746"
 ---
-# <a name="keysize-enum-type"></a>KeySize Enum-Typ
+# <a name="keysize-enum-type"></a>KeySize-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Optionen für die Größe des Schlüssels.
+Optionen für die Schlüsselgröße.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |size1024|0|1024 Bits.|
-|size2048|1|2048 Bit.|
+|size2048|1|2048 Bits.|
 
 
 

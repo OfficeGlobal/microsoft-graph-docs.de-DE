@@ -1,33 +1,33 @@
 ---
-title: ConfigurationManagerClientState Enum-Typ
-description: Konfigurations-Manager-Clientzustand
-localization_priority: Normal
+title: configurationManagerClientState-Enumerationstyp
+description: Konfigurations-Manager-Client – Status
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82f4b677001346f9bd32c1bc54bed6e7fbac253d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe8474e6886c1312fde4ce3afde3c3fe0185574c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425785"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170700"
 ---
-# <a name="configurationmanagerclientstate-enum-type"></a>ConfigurationManagerClientState Enum-Typ
+# <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Konfigurations-Manager-Clientzustand
+Konfigurations-Manager-Client – Status
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Konfigurations-Manager-Agent ist älter als 1806 oder nicht installiert oder dieses Gerät mehr als 30 Tage lang nicht in Intune eingecheckt wurde.|
-|installiert|1|Der Konfigurations-Manager-Agent ist installiert, aber möglicherweise nicht angezeigt werden Sie in der Configuration Manager-Konsole noch. Warten Sie einige Stunden für die Aktualisierung.|
-|fehlerfrei|7|Dieses Gerät konnte sich mit den Konfigurations-Manager-Dienst erfolgreich zu überprüfen.|
-|installFailed|8|Der Konfigurations-Manager-Agent konnte nicht installiert werden.|
-|updateFailed|11|Fehler beim Aktualisieren von Version X y Version der Konfigurations-Manager-Agent. |
-|communicationError|19|Der Konfigurations-Manager-Agent in der Vergangenheit den Konfigurations-Manager-Dienst erreichen konnte jedoch kann jetzt nicht mehr. |
+|unknown|0|Der Configuration Manager-Agent ist älter als 1806 oder nicht installiert, oder dieses Gerät wurde seit über 30 Tagen nicht in InTune eingecheckt.|
+|installiert|1|Der Configuration Manager-Agent ist installiert, wird jedoch möglicherweise noch nicht in der Configuration Manager-Konsole angezeigt. Warten Sie einige Stunden, bis es aktualisiert wird.|
+|gesunde|7|Dieses Gerät konnte den Configuration Manager-Dienst erfolgreich einchecken.|
+|installFailed|8|Fehler beim Installieren des Configuration Manager-Agents.|
+|updateFailed|11|Fehler bei der Aktualisierung von Version x auf Version y des Configuration Manager-Agents. |
+|communicationError|19|Der Configuration Manager-Agent konnte den Configuration Manager-Dienst in der Vergangenheit erreichen, ist aber jetzt nicht mehr in der Lage. |
 
 
 

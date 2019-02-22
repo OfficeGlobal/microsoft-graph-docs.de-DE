@@ -1,49 +1,50 @@
 ---
-title: Ressourcentyp windowsAutopilotDeploymentProfile
-description: Windows Autopilot Bereitstellung Benutzerprofil
-localization_priority: Normal
+title: Windowsautopilotdeploymentprofile hinzugefügt-Ressourcentyp
+description: Windows Autopilot-BereitstellungsProfil
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f97603980f4e76c4dd2f63287822a1e8e984ded
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b3b815e0184ab9969af348338c07c3fabf0b0597
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394110"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168873"
 ---
-# <a name="windowsautopilotdeploymentprofile-resource-type"></a>Ressourcentyp windowsAutopilotDeploymentProfile
+# <a name="windowsautopilotdeploymentprofile-resource-type"></a>Windowsautopilotdeploymentprofile hinzugefügt-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows Autopilot Bereitstellung Benutzerprofil
+Windows Autopilot-BereitstellungsProfil
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) -Objekts.|
+|[Windowsautopilotdeploymentprofile hinzugefügt abrufen](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Lesen von Eigenschaften und Beziehungen des [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) -Objekts.|
 |[assign-Aktion](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Profil-Taste|
+|id|string|Profilschlüssel|
 |displayName|Zeichenfolge|Name des Profils|
 |description|Zeichenfolge|Beschreibung des Profils|
-|language|Zeichenfolge|Auf dem Gerät konfigurierten Sprache|
-|createdDateTime|DateTimeOffset|Erstellungszeit Profil|
-|lastModifiedDateTime|DateTimeOffset|Profil Zeitpunkt der letzten Änderung|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Erleben Sie die Einstellung im Lieferzustand|
-|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Registrierung Status Bildschirm Einstellung|
-|extractHardwareHash|Boolean|Extraktion von HardwareHash für das Profil|
-|deviceNameTemplate|Zeichenfolge|Die Vorlage verwendet, um das Gerät AutoPilot nennen. Dies kann ein benutzerdefinierter Text und kann auch die Seriennummer des Geräts, oder aber eine zufällig erzeugte Zahl enthalten. Die gesamte Länge des Texts von der Vorlage generierte kann nicht mehr als 15 Zeichen sein.|
+|language|Zeichenfolge|Auf dem Gerät konfigurierte Sprache|
+|createdDateTime|DateTimeOffset|Erstellungszeit für profile|
+|lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten Änderung des Profils|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Einstellung für die Out-of-Box-Erfahrung|
+|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Einstellung für den Registrierungsstatus|
+|extractHardwareHash|Boolescher Wert|HardwareHash-Extraktion für das Profil|
+|deviceNameTemplate|Zeichenfolge|Die Vorlage, die zum Benennen des autoPilot-Geräts verwendet wird. Dabei kann es sich um einen benutzerdefinierten Text handeln, der entweder die Seriennummer des Geräts oder eine zufällig generierte Zahl enthalten kann. Die Gesamtlänge des von der Vorlage generierten Texts darf nicht mehr als 15 Zeichen betragen.|
+|enableWhiteGlove|Boolescher Wert|Aktivieren Sie den weißen Handschuh Autopilot für das Profil.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|assignedDevices|[WindowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Auflistung|Die Liste der Geräte für das Profil.|
-|assignments|[WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Auflistung|Die Liste der Gruppe Zuordnungen für das Profil.|
+|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) -Sammlung|Die Liste der zugewiesenen Geräte für das Profil.|
+|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) -Sammlung|Die Liste der Gruppenzuweisungen für das Profil.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -82,7 +83,8 @@ Es folgt eine JSON-Darstellung der Ressource.
     "allowDeviceUseOnInstallFailure": true
   },
   "extractHardwareHash": true,
-  "deviceNameTemplate": "String"
+  "deviceNameTemplate": "String",
+  "enableWhiteGlove": true
 }
 ```
 

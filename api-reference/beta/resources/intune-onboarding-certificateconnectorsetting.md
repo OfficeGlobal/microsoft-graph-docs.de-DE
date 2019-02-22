@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp certificateConnectorSetting
-description: Connector-Einstellungen für Zertifikate.
-localization_priority: Normal
+title: certificateConnectorSetting-Ressourcentyp
+description: Zertifikat-konnektoreinstellungen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5886418aaddede43f2397ad626028598a63a0066
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168306"
 ---
-# <a name="certificateconnectorsetting-resource-type"></a>Ressourcentyp certificateConnectorSetting
+# <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Connector-Einstellungen für Zertifikate.
+Zertifikat-konnektoreinstellungen.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|status|Int32|Zertifikat Connectorstatus|
-|certExpiryTime|DateTimeOffset|Zertifikat abläuft Zeit|
-|enrollmentError|Zeichenfolge|Zertifikatfehler Connector-Registrierung|
-|lastConnectorConnectionTime|DateTimeOffset|Zuletzt Zertifikat Connector verbunden|
-|connectorVersion|Zeichenfolge|Version des Zertifikat-Connectors|
-|lastUploadVersion|Int64|Version des letzten hochgeladenen Zertifikat connector|
+|status|Int32|Zertifikat-Connectorstatus|
+|certExpiryTime|DateTimeOffset|Dauer des Zertifikats Ablaufs|
+|enrollmentError|Zeichenfolge|Zertifikat-Connector-Registrierungsfehler|
+|lastConnectorConnectionTime|DateTimeOffset|Letzter Zeitpunkt der Verbindung mit dem Zertifikat-Konnektor|
+|connectorVersion|Zeichenfolge|Version von Certificate Connector|
+|lastUploadVersion|Int64|Version des zuletzt hochgeladenen Zertifikats-Konnektors|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
