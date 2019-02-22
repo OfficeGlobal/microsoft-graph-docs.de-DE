@@ -1,30 +1,30 @@
 ---
-title: DeviceGuardLocalSystemAuthorityCredentialGuardType Enum-Typ
-description: Mögliche Werte von Anmeldeinformationen Guard-Einstellungen.
-localization_priority: Normal
+title: deviceGuardLocalSystemAuthorityCredentialGuardType-Enumerationstyp
+description: Mögliche Werte der Einstellungen für den Anmelde Informationenschutz.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d8643744e1f5c36cf6c620ac85a6a99c9a77548
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8452f24f0bc5641d9d7ebcfd68c8cd593443554d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398093"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167858"
 ---
-# <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a><span data-ttu-id="26e52-103">DeviceGuardLocalSystemAuthorityCredentialGuardType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="26e52-103">deviceGuardLocalSystemAuthorityCredentialGuardType enum type</span></span>
+# <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a><span data-ttu-id="b8145-103">deviceGuardLocalSystemAuthorityCredentialGuardType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="b8145-103">deviceGuardLocalSystemAuthorityCredentialGuardType enum type</span></span>
 
-> <span data-ttu-id="26e52-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="26e52-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="26e52-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="26e52-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b8145-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b8145-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="26e52-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="26e52-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b8145-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="b8145-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26e52-107">Mögliche Werte von Anmeldeinformationen Guard-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="26e52-107">Possible values of Credential Guard settings.</span></span>
+<span data-ttu-id="b8145-106">Mögliche Werte der Einstellungen für den Anmelde Informationenschutz.</span><span class="sxs-lookup"><span data-stu-id="b8145-106">Possible values of Credential Guard settings.</span></span>
 
-## <a name="members"></a><span data-ttu-id="26e52-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="26e52-108">Members</span></span>
-|<span data-ttu-id="26e52-109">Member</span><span class="sxs-lookup"><span data-stu-id="26e52-109">Member</span></span>|<span data-ttu-id="26e52-110">Wert</span><span class="sxs-lookup"><span data-stu-id="26e52-110">Value</span></span>|<span data-ttu-id="26e52-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="26e52-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="b8145-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="b8145-107">Members</span></span>
+|<span data-ttu-id="b8145-108">Element</span><span class="sxs-lookup"><span data-stu-id="b8145-108">Member</span></span>|<span data-ttu-id="b8145-109">Wert</span><span class="sxs-lookup"><span data-stu-id="b8145-109">Value</span></span>|<span data-ttu-id="b8145-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b8145-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="26e52-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="26e52-112">notConfigured</span></span>|<span data-ttu-id="26e52-113">0</span><span class="sxs-lookup"><span data-stu-id="26e52-113">0</span></span>|<span data-ttu-id="26e52-114">Schaltet Anmeldeinformationen Guard Remote Wenn zuvor ohne UEFI Sperre konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="26e52-114">Turns off Credential Guard remotely if configured previously without UEFI Lock.</span></span>|
-|<span data-ttu-id="26e52-115">enableWithUEFILock</span><span class="sxs-lookup"><span data-stu-id="26e52-115">enableWithUEFILock</span></span>|<span data-ttu-id="26e52-116">1</span><span class="sxs-lookup"><span data-stu-id="26e52-116">1</span></span>|<span data-ttu-id="26e52-117">Aktiviert die Anmeldeinformationen Guard mit UEFI sperren.</span><span class="sxs-lookup"><span data-stu-id="26e52-117">Turns on Credential Guard with UEFI lock.</span></span>|
-|<span data-ttu-id="26e52-118">enableWithoutUEFILock</span><span class="sxs-lookup"><span data-stu-id="26e52-118">enableWithoutUEFILock</span></span>|<span data-ttu-id="26e52-119">2</span><span class="sxs-lookup"><span data-stu-id="26e52-119">2</span></span>|<span data-ttu-id="26e52-120">Aktiviert die Anmeldeinformationen Guard ohne UEFI sperren.</span><span class="sxs-lookup"><span data-stu-id="26e52-120">Turns on Credential Guard without UEFI lock.</span></span>|
+|<span data-ttu-id="b8145-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="b8145-111">notConfigured</span></span>|<span data-ttu-id="b8145-112">0</span><span class="sxs-lookup"><span data-stu-id="b8145-112">0</span></span>|<span data-ttu-id="b8145-113">Deaktiviert die Überwachung der Anmeldeinformationen, wenn Sie zuvor ohne UEFI-Sperre konfiguriert wurden.</span><span class="sxs-lookup"><span data-stu-id="b8145-113">Turns off Credential Guard remotely if configured previously without UEFI Lock.</span></span>|
+|<span data-ttu-id="b8145-114">enableWithUEFILock</span><span class="sxs-lookup"><span data-stu-id="b8145-114">enableWithUEFILock</span></span>|<span data-ttu-id="b8145-115">1</span><span class="sxs-lookup"><span data-stu-id="b8145-115">1</span></span>|<span data-ttu-id="b8145-116">Aktiviert den Schutz von Anmeldeinformationen mit UEFI-Sperre.</span><span class="sxs-lookup"><span data-stu-id="b8145-116">Turns on Credential Guard with UEFI lock.</span></span>|
+|<span data-ttu-id="b8145-117">enableWithoutUEFILock</span><span class="sxs-lookup"><span data-stu-id="b8145-117">enableWithoutUEFILock</span></span>|<span data-ttu-id="b8145-118">2</span><span class="sxs-lookup"><span data-stu-id="b8145-118">2</span></span>|<span data-ttu-id="b8145-119">Aktiviert den Schutz von Anmeldeinformationen ohne UEFI-Sperre.</span><span class="sxs-lookup"><span data-stu-id="b8145-119">Turns on Credential Guard without UEFI lock.</span></span>|
 
 
 

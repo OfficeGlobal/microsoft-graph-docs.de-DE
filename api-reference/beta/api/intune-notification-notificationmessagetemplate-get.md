@@ -1,34 +1,34 @@
 ---
 title: Abrufen von „notificationMessageTemplate“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs notificationMessageTemplate.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50918819004d39b5d6d0d33d806b8434bbf9cbf6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6b8a6e50f6348445511f9363fc663cd1b09f2fd8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419478"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169314"
 ---
-# <a name="get-notificationmessagetemplate"></a><span data-ttu-id="00aa4-103">Abrufen von „notificationMessageTemplate“</span><span class="sxs-lookup"><span data-stu-id="00aa4-103">Get notificationMessageTemplate</span></span>
+# <a name="get-notificationmessagetemplate"></a><span data-ttu-id="b4dac-103">Abrufen von „notificationMessageTemplate“</span><span class="sxs-lookup"><span data-stu-id="b4dac-103">Get notificationMessageTemplate</span></span>
 
-> <span data-ttu-id="00aa4-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="00aa4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="00aa4-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="00aa4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b4dac-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b4dac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="00aa4-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="00aa4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b4dac-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="b4dac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="00aa4-107">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="00aa4-107">Read properties and relationships of the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
+<span data-ttu-id="b4dac-106">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="b4dac-106">Read properties and relationships of the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="00aa4-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="00aa4-108">Prerequisites</span></span>
-<span data-ttu-id="00aa4-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="00aa4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b4dac-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b4dac-107">Prerequisites</span></span>
+<span data-ttu-id="b4dac-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="b4dac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="00aa4-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="00aa4-111">Permission type</span></span>|<span data-ttu-id="00aa4-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="00aa4-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b4dac-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b4dac-110">Permission type</span></span>|<span data-ttu-id="b4dac-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b4dac-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="00aa4-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="00aa4-113">Delegated (work or school account)</span></span>|<span data-ttu-id="00aa4-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="00aa4-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="00aa4-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="00aa4-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="00aa4-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="00aa4-116">Not supported.</span></span>|
-|<span data-ttu-id="00aa4-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="00aa4-117">Application</span></span>|<span data-ttu-id="00aa4-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="00aa4-118">Not supported.</span></span>|
+|<span data-ttu-id="b4dac-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b4dac-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b4dac-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="b4dac-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="b4dac-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b4dac-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b4dac-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b4dac-115">Not supported.</span></span>|
+|<span data-ttu-id="b4dac-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b4dac-116">Application</span></span>|<span data-ttu-id="b4dac-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b4dac-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="00aa4-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="00aa4-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4dac-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b4dac-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "29419478"
 GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="00aa4-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="00aa4-120">Optional query parameters</span></span>
-<span data-ttu-id="00aa4-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="00aa4-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b4dac-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="b4dac-119">Optional query parameters</span></span>
+<span data-ttu-id="b4dac-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b4dac-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="00aa4-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="00aa4-122">Request headers</span></span>
-|<span data-ttu-id="00aa4-123">Header</span><span class="sxs-lookup"><span data-stu-id="00aa4-123">Header</span></span>|<span data-ttu-id="00aa4-124">Wert</span><span class="sxs-lookup"><span data-stu-id="00aa4-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b4dac-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b4dac-121">Request headers</span></span>
+|<span data-ttu-id="b4dac-122">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="b4dac-122">Header</span></span>|<span data-ttu-id="b4dac-123">Wert</span><span class="sxs-lookup"><span data-stu-id="b4dac-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="00aa4-125">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="00aa4-125">Authorization</span></span>|<span data-ttu-id="00aa4-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="00aa4-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="00aa4-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="00aa4-127">Accept</span></span>|<span data-ttu-id="00aa4-128">application/json</span><span class="sxs-lookup"><span data-stu-id="00aa4-128">application/json</span></span>|
+|<span data-ttu-id="b4dac-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4dac-124">Authorization</span></span>|<span data-ttu-id="b4dac-125">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="b4dac-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b4dac-126">Annehmen</span><span class="sxs-lookup"><span data-stu-id="b4dac-126">Accept</span></span>|<span data-ttu-id="b4dac-127">application/json</span><span class="sxs-lookup"><span data-stu-id="b4dac-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="00aa4-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="00aa4-129">Request body</span></span>
-<span data-ttu-id="00aa4-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="00aa4-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b4dac-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b4dac-128">Request body</span></span>
+<span data-ttu-id="b4dac-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b4dac-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="00aa4-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="00aa4-131">Response</span></span>
-<span data-ttu-id="00aa4-132">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="00aa4-132">If successful, this method returns a `200 OK` response code and [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b4dac-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="b4dac-130">Response</span></span>
+<span data-ttu-id="b4dac-131">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="b4dac-131">If successful, this method returns a `200 OK` response code and [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="00aa4-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="00aa4-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b4dac-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b4dac-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="00aa4-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="00aa4-134">Request</span></span>
-<span data-ttu-id="00aa4-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="00aa4-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b4dac-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b4dac-133">Request</span></span>
+<span data-ttu-id="b4dac-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b4dac-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="00aa4-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="00aa4-136">Response</span></span>
-<span data-ttu-id="00aa4-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="00aa4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b4dac-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="b4dac-135">Response</span></span>
+<span data-ttu-id="b4dac-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b4dac-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
