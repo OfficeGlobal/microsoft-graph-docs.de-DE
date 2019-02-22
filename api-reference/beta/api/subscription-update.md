@@ -3,12 +3,12 @@ title: Abonnement aktualisieren
 description: Erneuert ein Abonnement durch Verlängern seiner Ablaufzeit.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 19355ff8acbcdade689b140abca63e8d9885e3fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e868489ca5eb95cdc2ee8c33176c8da20271bd12
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512780"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159535"
 ---
 # <a name="update-subscription"></a>Abonnement aktualisieren
 
@@ -16,25 +16,33 @@ ms.locfileid: "29512780"
 
 Erneuert ein Abonnement durch Verlängern seiner Ablaufzeit.
 
-Abonnements laufen ab nach der Zeitspanne, die nach Ressourcentyp variiert. Zur Vermeidung von Benachrichtigungen fehlende sollten eine app seine Abonnements im Vorfeld ihrem Ablaufdatum erneuern. Finden Sie unter [Abonnement](../resources/subscription.md) für die maximale Länge eines Abonnements für jeden Ressourcentyp.
+Abonnements laufen nach einer vom Ressourcentyp unterschiedlichen Zeitspanne ab. Um fehlende Benachrichtigungen zu vermeiden, sollte eine APP Ihre Abonnements vor Ablauf des Gültigkeitszeitraums verlängern. Weitere Informationen finden Sie unter [Abonnement](../resources/subscription.md) für die maximale Länge eines Abonnements für die einzelnen Ressourcentypen.
 
 ## <a name="permissions"></a>Berechtigungen
 
-In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Abhängig von der angeforderten Ressource und dem Berechtigungstyp (Delegierte oder Anwendung) ist die in der folgenden Tabelle angegebene Berechtigung die am wenigsten privilegierten Berechtigungen zum Aufrufen dieser API. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).
 
-| Ressourcentyp/Element        | Berechtigung          |
-|-----------------------------|---------------------|
-| Kontakte                    | Contacts.Read       |
-| Unterhaltungen               | Group.Read.All      |
-| Ereignisse                      | Calendars.Read      |
-| Nachrichten                    | Mail.Read           |
-| Gruppen                      | Group.Read.All      |
-| Benutzer                       | User.Read.All       |
-| Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
-|Sicherheitshinweis               | SecurityEvents.ReadWrite.All |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+|:-----|:-----|:-----|:-----|
+|[Kontakt](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (persönliche OneDrive des Benutzers) | Nicht unterstützt | Files.ReadWrite | Nicht unterstützt |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Nicht unterstützt | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+|[Gruppenunterhaltung](../resources/conversation.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
+|[Nachricht](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[Sicherheitswarnung](../resources/alert.md) | SecurityEvents.ReadWrite.All | Nicht unterstützt | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-***Hinweis:*** Der Endpunkt /beta kann Berechtigungen für die meisten Ressourcen. Unterhaltungen in einer Gruppe und OneDrive Laufwerk Stammelemente werden mit den Anwendungsberechtigungen nicht unterstützt.
+> **Hinweis:** Es gibt zusätzliche Einschränkungen für Abonnements für OneDrive-und Outlook-Elemente. Die Einschränkungen gelten für das Erstellen und Verwalten von Abonnements (erhalten, aktualisieren und Löschen von Abonnements).
+
+- In persönlichen OneDrive können Sie den Stammordner oder einen beliebigen Unterordner in diesem Laufwerk abonnieren. In OneDrive for Business können Sie nur den Stammordner abonnieren. Benachrichtigungen werden für die angeforderten Arten von Änderungen im abonnierten Ordner oder in einer beliebigen Datei, einem Ordner oder einem anderen driveItem-Objekt in der Hierarchie gesendet. Sie können keine **Laufwerks** -oder **driveItem** -Instanzen abonnieren, die keine Ordner sind, wie beispielsweise einzelne Dateien.
+
+- In Outlook unterstützt die Delegierte Berechtigung das Abonnieren von Elementen in Ordnern nur im Postfach des angemeldeten Benutzers. Das kann beispielsweise nicht die Delegierte Berechtigung Calendars. Read verwenden, um Ereignisse im Postfach eines anderen Benutzers zu abonnieren.
+- So abonnieren Sie Änderungsbenachrichtigungen für Outlook-Kontakte,-Ereignisse oder-Nachrichten in _freigegebenen oder Delegierten_ Ordnern:
+
+  - Verwenden Sie die entsprechende Anwendungsberechtigung, um Änderungen an Elementen in einem Ordner oder Postfach eines _beliebigen_ Benutzers im Mandanten zu abonnieren.
+  - Verwenden Sie nicht die Outlook-Freigabeberechtigungen (Contacts. Read. Shared, Calendars. Read. Shared, Mail. Read. Shared und ihre Pendants für Lese-/Schreibzugriff), da Sie das Abonnieren von Änderungsbenachrichtigungen für Elemente in freigegebenen oder Delegierten Ordnern **nicht** unterstützen.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

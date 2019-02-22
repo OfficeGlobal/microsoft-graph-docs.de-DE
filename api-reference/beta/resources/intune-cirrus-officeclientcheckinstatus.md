@@ -1,35 +1,35 @@
 ---
-title: Ressourcentyp officeClientCheckinStatus
-description: Entität, die Mandanten Einchecken Stats beschreibt.
+title: officeClientCheckinStatus-Ressourcentyp
+description: Entität, die den Eincheckstatus für Mandanten beschreibt.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: aebc534a6c424a9dac4316d0029e2fd35839f0a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403259"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156056"
 ---
-# <a name="officeclientcheckinstatus-resource-type"></a>Ressourcentyp officeClientCheckinStatus
+# <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Entität, die Mandanten Einchecken Stats beschreibt.
+Entität, die den Eincheckstatus für Mandanten beschreibt.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des Geräts.|
-|deviceName|Zeichenfolge|Name des Aufnahmegeräts einchecken möchten.|
-|devicePlatform|Zeichenfolge|Geräteplattform einchecken möchten.|
-|devicePlatformVersion|Zeichenfolge|Gerät Plattformversion einchecken möchten.|
-|wasSuccessful|Boolean|Wenn das letzte Einchecken erfolgreich war.|
-|userId|Zeichenfolge|Benutzer-ID des Geräts.|
-|checkinDateTime|DateTimeOffset|Letzte Gerät Einchecken Zeitpunkt in UTC.|
-|errorMessage|Zeichenfolge|Fehlermeldung, wenn alle zugeordneten für das letzte einchecken.|
-|appliedPolicies|Zeichenfolgenauflistung|Liste der Richtlinien an das Gerät als letzten Checkin übermittelt wurden.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipalname, der das Gerät verwendet.|
+|deviceName|Zeichenfolge|Gerätename, der versucht einzuchecken.|
+|Deviceplatform wurde|Zeichenfolge|Geräteplattform, die versucht, einzuchecken.|
+|devicePlatformVersion|Zeichenfolge|Geräte Plattformversion, die versucht, einzuchecken.|
+|wasSuccessful|Boolescher Wert|Wenn das letzte Einchecken erfolgreich war.|
+|userId|String|Benutzer-ID, die das Gerät verwendet.|
+|checkinDateTime|DateTimeOffset|Zeitpunkt der letzten Geräteüberprüfung in UTC.|
+|errorMessage|Zeichenfolge|Fehlermeldung, wenn für das letzte Einchecken verknüpft.|
+|appliedPolicies|String collection|Liste der Richtlinien, die beim letzten Einchecken an das Gerät übermittelt wurden.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

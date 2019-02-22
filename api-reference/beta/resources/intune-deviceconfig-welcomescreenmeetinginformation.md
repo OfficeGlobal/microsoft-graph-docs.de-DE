@@ -1,30 +1,30 @@
 ---
-title: WelcomeScreenMeetingInformation Enum-Typ
-description: Mögliche Werte für die Willkommensseite Besprechungsinformationen.
-localization_priority: Normal
+title: welcomeScreenMeetingInformation-Enumerationstyp
+description: Mögliche Werte für die Begrüßungsbildschirm-Besprechungsinformationen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b07694bbc5ecb6f7232d3ef4089b9705c1d3519f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 296b2e90542c9042e04c4153e9314872b530c451
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399031"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158373"
 ---
-# <a name="welcomescreenmeetinginformation-enum-type"></a>WelcomeScreenMeetingInformation Enum-Typ
+# <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Willkommensseite Besprechungsinformationen.
+Mögliche Werte für die Begrüßungsbildschirm-Besprechungsinformationen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|showOrganizerAndTimeOnly|1|Organisator und Uhrzeit nur anzeigen.|
-|showOrganizerAndTimeAndSubject|2|Organizer, Zeit und Betreff anzeigen (Subject ist für private Konferenzen ausgeblendet).|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|showOrganizerAndTimeOnly|1|Organizer und nur Zeit anzeigen.|
+|showOrganizerAndTimeAndSubject|2|Organisator, Uhrzeit und Betreff anzeigen (Betreff wird für private Besprechungen ausgeblendet).|
 
 
 

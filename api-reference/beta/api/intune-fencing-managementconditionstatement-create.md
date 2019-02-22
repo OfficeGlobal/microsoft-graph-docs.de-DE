@@ -1,23 +1,23 @@
 ---
-title: Erstellen von managementConditionStatement
-description: Erstellen eines neuen ManagementConditionStatement-Objekts.
-localization_priority: Normal
+title: ManagementConditionStatement erstellen
+description: Erstellen eines neuen managementConditionStatement-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba9d3f96d7d3a8b1f855c94b18aab6a6450651f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f19cef2899a11a57b06590c006de2181865a9d45
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156861"
 ---
-# <a name="create-managementconditionstatement"></a>Erstellen von managementConditionStatement
+# <a name="create-managementconditionstatement"></a>ManagementConditionStatement erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Objekts.
+Erstellen eines neuen [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -39,32 +39,32 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt ManagementConditionStatement eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das managementConditionStatement-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die ManagementConditionStatement erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der managementConditionStatement erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Verwaltung Condition-Anweisung. System generierten Wert, die beim Erstellen zugewiesen.|
-|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung-Anweisung Management.|
-|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Management Condition-Anweisung.|
-|createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Management Condition-Anweisung erstellt wurde. Generierte Service-Seite.|
-|modifiedDateTime|DateTimeOffset|Der Zeitpunkt der letzten Änderung die Management Condition-Anweisung. Aktualisierte Service-Seite.|
-|Ausdruck|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Die Verwaltung Bedingungsausdruck-Anweisung verwendet, um ausgewertet werden soll, wenn eine Management Anweisung Bedingung wurde aktiviert/deaktiviert.|
-|eTag|Zeichenfolge|ETag der Management Condition-Anweisung. Aktualisierte Service-Seite.|
-|applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Management Condition-Anweisung.
-Dieser Wert ergibt Suche die Management Bedingungen verknüpft ist, für die Verwaltung von Bedingung-Anweisung die Warteschlange gestellt und Schnittpunkt der Plattformen. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
+|id|string|Eindeutiger Bezeichner für die Verwaltungs Bedingungsanweisung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
+|displayName|Zeichenfolge|Der vom Administrator definierte Name der Verwaltungs Bedingungsanweisung.|
+|description|Zeichenfolge|Die vom Administrator definierte Beschreibung der Verwaltungs Bedingungsanweisung.|
+|createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Verwaltungs Bedingungsanweisung erstellt wurde. Generierte Dienstseite.|
+|modifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Anweisung für die Verwaltungsbedingung zuletzt geändert wurde. Aktualisierte Dienstseite.|
+|Ausdruck|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Der Ausdruck der Verwaltungs Bedingungsanweisung, mit dem ausgewertet wird, ob eine Anweisung für die Verwaltungsbedingung aktiviert/deaktiviert wurde.|
+|eTag|Zeichenfolge|ETag der Verwaltungs Bedingungsanweisung. Aktualisierte Dienstseite.|
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Sammlung|Die entsprechenden Plattformen für diese Verwaltungs Bedingungsanweisung.
+Dies wird berechnet anhand der Verwaltungsbedingungen, die mit der Verwaltungs Bedingungsanweisung verbunden sind, und dem Auffinden der Schnittstelle der entsprechenden Plattformen. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

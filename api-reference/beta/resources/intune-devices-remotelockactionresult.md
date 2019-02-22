@@ -1,21 +1,21 @@
 ---
 title: remoteLockActionResult-Ressourcentyp
 description: Ergebnis einer Sperraktion mit einem Pin zum Entsperren
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e57949e689f3d8e26c5217acec1a36662145b1a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f90cbc46ca4bc9476ad5d9386581385ae7354261
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159024"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Ergebnis einer Sperraktion mit einem Pin zum Entsperren
 
@@ -26,7 +26,7 @@ Erbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |actionName|Zeichenfolge|Aktionsname, geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion Inherited aus [DeviceActionResult](../resources/intune-devices-deviceactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der von [DeviceActionResult](../resources/intune-devices-deviceactionresult.md)geerbten Aktion. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeit, zu der die Aktion initiiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Zeit, zu der der Aktionszustand zuletzt aktualisiert wurde. Geerbt von [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |unlockPin|String|Pin zum Entsperren des Clients|

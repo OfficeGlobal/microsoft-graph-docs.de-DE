@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp vppTokenLicenseSummary
-description: Lizenz-Zusammenfassung der eine bestimmte app in einem Token.
-localization_priority: Normal
+title: vppTokenLicenseSummary-Ressourcentyp
+description: Lizenzzusammenfassung einer bestimmten app in einem Token.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fb84a549d95459db1e4b39c11b526f73db08752
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f9c126323e0f5785752238ec64cfade2c34d5c24
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395181"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161061"
 ---
-# <a name="vpptokenlicensesummary-resource-type"></a>Ressourcentyp vppTokenLicenseSummary
+# <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Lizenz-Zusammenfassung der eine bestimmte app in einem Token.
+Lizenzzusammenfassung einer bestimmten app in einem Token.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|vppTokenId|Zeichenfolge|Bezeichner des Tokens VPP.|
+|vppTokenId|Zeichenfolge|Bezeichner des VPP-Tokens.|
 |appleId|Zeichenfolge|Apple-ID, die dem Apple Volume Purchase Program-Token zugeordnet ist|
-|organizationName|String|Die Organisation Apple Volume Purchase Programm Token zugeordnet.|
-|availableLicenseCount|Int32|Die Anzahl der VPP Lizenzen zur Verfügung.|
+|organizationName|String|Die Organisation, die dem Apple Volume Purchase Program-Token zugeordnet ist.|
+|availableLicenseCount|Int32|Die Anzahl der verfügbaren VPP-Lizenzen.|
 |usedLicenseCount|Int32|Anzahl von VPP-Lizenzen, die aktuell verwendet werden.|
 
 ## <a name="relationships"></a>Beziehungen

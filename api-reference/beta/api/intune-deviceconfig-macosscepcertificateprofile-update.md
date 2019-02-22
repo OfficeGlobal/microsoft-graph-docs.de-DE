@@ -1,23 +1,23 @@
 ---
 title: MacOSScepCertificateProfile aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines MacOSScepCertificateProfile-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines macOSScepCertificateProfile-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 547a4468015a68bcbdb8bbfe13839f98edd6d9d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 29b34723f32476dcc8d52a02998f242ea8539da4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412205"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160935"
 ---
 # <a name="update-macosscepcertificateprofile"></a>MacOSScepCertificateProfile aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [MacOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) -Objekts.
+Aktualisieren der Eigenschaften eines [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -40,45 +40,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [MacOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [MacOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|renewalThresholdPercentage|Int32|Zertifikat Erneuerung Schwellenwertprozentsatz. Geerbt von [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
-|subjectNameFormat|[appleSubjectNameFormat](../resources/intune-deviceconfig-applesubjectnameformat.md)|Format des Antragstellernamen Zertifikat. Geerbt von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Mögliche Werte sind: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI` und `commonNameAsSerialNumber`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Subject Alternative Name Zertifikattyp. Geerbt von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Wert für die Gültigkeitsdauer des Zertifikats. Geerbt von [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für die Gültigkeitsdauer des Zertifikats. Geerbt von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Mögliche Werte sind: `days`, `months` und `years`.|
-|scepServerUrls|Zeichenfolgenauflistung|SCEP Server URL(s) hinzu.|
-|subjectNameFormatString|Zeichenfolge|Benutzerdefiniertes Format zur Verwendung mit SubjectNameFormat = Custom. Beispiel: CN = {{EmailAddress}} E = {{EmailAddress}}, OU = Unternehmensbenutzer, O = Contoso Corporation, L = Redmond, ST = WA, C = US|
-|Schlüsselverwendung|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP Enhanced Key Usage. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
-|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|Wichtige SCEP-Größe. Mögliche Werte sind: `size1024` und `size2048`.|
-|hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP Hashalgorithmus. Mögliche Werte sind: `sha1` und `sha2`.|
-|extendedKeyUsages|[ExtendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) -Auflistung|Erweiterte Schlüsselverwendung (EKU)-Einstellungen. Diese Collection darf maximal 500 Elemente enthalten.|
-|subjectAlternativeNameFormatString|Zeichenfolge|Benutzerdefinierte Zeichenfolge, die die AAD-Attribut definiert.|
-|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Ziel-Zertifikatspeicher. Mögliche Werte sind: `user` und `machine`.|
-|customSubjectAlternativeNames|[CustomSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) -Auflistung|Benutzerdefinierte Subject Alternative Name Einstellungen. Diese Collection darf maximal 500 Elemente enthalten.|
+|Eigenschaften renewalthresholdpercentage|Int32|Schwellenwert für die Zertifikaterneuerung. Geerbt von [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
+|subjectNameFormat|[appleSubjectNameFormat](../resources/intune-deviceconfig-applesubjectnameformat.md)|Format des Zertifikatsantrags Teller namens. Von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)geerbt. Mögliche Werte sind: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI` und `commonNameAsSerialNumber`.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Alternativer Namenstyp des Zertifikats betreffs. Von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)geerbt. Mögliche Werte: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificateValidityPeriodValue|Int32|Wert für den Gültigkeitszeitraum des Zertifikats. Geerbt von [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
+|Certificatevalidityperiodscale wurden|[Certificatevalidityperiodscale wurden](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für den Gültigkeitszeitraum des Zertifikats. Von [MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)geerbt. Mögliche Werte sind: `days`, `months` und `years`.|
+|scepServerUrls|String collection|SCEP-Server-URL (s).|
+|subjectNameFormatString|Zeichenfolge|Benutzerdefiniertes Format, das mit SubjectNameFormat = Custom verwendet werden soll. Beispiel: CN = {{Email Adresse}}, E = {Email Adresse}}, OU = Enterprise users, O = Contoso Corporation, L = Redmond, ST = WA, C = US|
+|keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP-Schlüsselverwendung. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
+|keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|SCEP-Schlüsselgröße. Mögliche Werte sind: `size1024` und `size2048`.|
+|hashAlgorithm|[hashAlgorithm](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP-Hash Algorithmus. Mögliche Werte sind: `sha1` und `sha2`.|
+|extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) -Sammlung|EKU-Einstellungen (Extended Key Usage). Diese Collection darf maximal 500 Elemente enthalten.|
+|subjectAlternativeNameFormatString|Zeichenfolge|Benutzerdefinierte Zeichenfolge, die das AAD-Attribut definiert.|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Zielspeicher Zertifikat. Mögliche Werte sind: `user` und `machine`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) -Sammlung|Einstellungen für benutzerdefinierte Alternative AntragsTellernamen. Diese Collection darf maximal 500 Elemente enthalten.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [MacOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

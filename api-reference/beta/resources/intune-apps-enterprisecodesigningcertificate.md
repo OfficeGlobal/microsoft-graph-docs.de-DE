@@ -1,45 +1,45 @@
 ---
-title: Ressourcentyp enterpriseCodeSigningCertificate
+title: enterpriseCodeSigningCertificate-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75e02555f6e9af5283e0a727d34725458c1d99a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ac5f5a901e147523e1da8d14d0d782603b02cdd7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406724"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157169"
 ---
-# <a name="enterprisecodesigningcertificate-resource-type"></a>Ressourcentyp enterpriseCodeSigningCertificate
+# <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste enterpriseCodeSigningCertificates](../api/intune-apps-enterprisecodesigningcertificate-list.md)|[EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Auflistung|Listeneigenschaften und Beziehungen der [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekte.|
-|[Abrufen von enterpriseCodeSigningCertificate](../api/intune-apps-enterprisecodesigningcertificate-get.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Lesen Sie Eigenschaften und Beziehungen des [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
-|[Erstellen von enterpriseCodeSigningCertificate](../api/intune-apps-enterprisecodesigningcertificate-create.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Erstellen eines neuen [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
-|[EnterpriseCodeSigningCertificate löschen](../api/intune-apps-enterprisecodesigningcertificate-delete.md)|Keine|Löscht eine [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).|
-|[EnterpriseCodeSigningCertificate aktualisieren](../api/intune-apps-enterprisecodesigningcertificate-update.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Aktualisieren Sie die Eigenschaften eines [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
+|[EnterpriseCodeSigningCertificates aufListen](../api/intune-apps-enterprisecodesigningcertificate-list.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekte.|
+|[EnterpriseCodeSigningCertificate abrufen](../api/intune-apps-enterprisecodesigningcertificate-get.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Lesen von Eigenschaften und Beziehungen des [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
+|[EnterpriseCodeSigningCertificate erstellen](../api/intune-apps-enterprisecodesigningcertificate-create.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Erstellen eines neuen [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
+|[EnterpriseCodeSigningCertificate löschen](../api/intune-apps-enterprisecodesigningcertificate-delete.md)|Keine|Löscht eine [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).|
+|[EnterpriseCodeSigningCertificate aktualisieren](../api/intune-apps-enterprisecodesigningcertificate-update.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Aktualisieren der Eigenschaften eines [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|content|Binär|Die Enterprise-Code für Windows-Signaturzertifikat im Format Rohdaten.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Status der bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
-|subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|subject|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
-|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
+|content|Binär|Das Windows Enterprise-Code SignierungsZertifikat im RAW-Datenformat.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Zertifikat Status, der für die Einrichtung oder nicht-Einrichtung vorgesehen ist. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
+|subjectName|Zeichenfolge|Der AntragsTeller Name für das Zertifikat.|
+|subject|Zeichenfolge|Der Subject-Wert für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Aussteller Name für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Aussteller Wert für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
-|uploadDateTime|DateTimeOffset|Das Datum-Uhrzeit des Zertifikats CodeSigning, wenn diese hochgeladen wird.|
+|uploadDateTime|DateTimeOffset|Die Datum-Uhrzeit der mitGestaltung von CERT beim Hochladen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

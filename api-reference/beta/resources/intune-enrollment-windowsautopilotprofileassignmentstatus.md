@@ -1,34 +1,34 @@
 ---
-title: WindowsAutopilotProfileAssignmentStatus Enum-Typ
+title: windowsAutopilotProfileAssignmentStatus-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68612e2f4ccee46612c82237630efafda484b7e9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156378"
 ---
-# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>WindowsAutopilotProfileAssignmentStatus Enum-Typ
+# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannte Zuordnungsstatus|
-|assignedInSync|1|Zugewiesene erfolgreich in Intune und Synchronisierung mit Windows automatische Pilotprogramm|
-|assignedOutOfSync|2|Zugewiesene erfolgreich in Intune und nicht synchron mit Windows automatische Pilotprogramm|
-|assignedUnkownSyncState|3|Zugeordnete erfolgreich in Intune und entweder synchron oder synchron mit Windows automatische Pilotprogramm|
-|nicht zugewiesen|4|Nicht zugewiesen|
-|Ausstehende|5|Ausstehende Zuordnung|
-|failed|6| Fehler bei Zuweisung|
+|unknown|0|UnBekannter Zuordnungsstatus|
+|assignedInSync|1|Erfolgreich zugewiesen in InTune und synchron mit Windows Auto Pilot Program|
+|assignedOutOfSync|2|Erfolgreich zugewiesen in InTune und nicht synchron mit Windows Auto Pilot Program|
+|assignedUnkownSyncState|3|Erfolgreich in InTune zugewiesen und entweder synchron oder nicht mit Windows Auto Pilot Program|
+|notAssigned|4|Nicht zugewiesen|
+|ausstehenden|5|AusStehende Zuweisung|
+|failed|6| Zuweisung fehlgeschlagen|
 
 
 

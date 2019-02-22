@@ -1,30 +1,30 @@
 ---
-title: MobileAppPublishingState Enum-Typ
-description: Gibt den Status Veröffentlichen einer app.
-localization_priority: Normal
+title: mobileAppPublishingState-Enumerationstyp
+description: Gibt den Veröffentlichungsstatus einer APP an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db10e62e714e50ccdf9bac933b2746cb52ea25eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6ae8cdb97afb0b44acf268381c3cb128aaff9b7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423881"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160165"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a>MobileAppPublishingState Enum-Typ
+# <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt den Status Veröffentlichen einer app.
+Gibt den Veröffentlichungsstatus einer APP an.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notPublished|0|Die app ist noch nicht veröffentlicht.|
-|Verarbeitung|1|Die app steht dienstseitige Verarbeitung an.|
-|Veröffentlicht|2|Die app wird veröffentlicht.|
+|notPublished|0|Die APP ist noch nicht veröffentlicht.|
+|Verarbeitung|1|Die APP wartet auf die dienstseitige Verarbeitung.|
+|Veröffentlicht|2|Die APP wird veröffentlicht.|
 
 
 

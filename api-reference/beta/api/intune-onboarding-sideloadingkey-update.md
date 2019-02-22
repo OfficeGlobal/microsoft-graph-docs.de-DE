@@ -1,23 +1,23 @@
 ---
 title: SideLoadingKey aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines SideLoadingKey-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines sideLoadingKey-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fd498404543353c45714f739a68b0195ae3d3dd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156819"
 ---
 # <a name="update-sideloadingkey"></a>SideLoadingKey aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.
+Aktualisieren der Eigenschaften eines [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,29 +38,29 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Seite laden wichtige eindeutigen Bezeichner ab.|
-|Wert|Zeichenfolge|Seite Laden von Schlüssel-Wert ist es 5 x 5-Wert durch Hiphens getrennt.|
-|displayName|Zeichenfolge|Seite laden Schlüsselname der ITPro Admins angezeigt.|
-|description|Zeichenfolge|Seite laden Schlüssel Beschreibung der ITPro Admins angezeigt.|
-|totalActivation|Int32|Seite laden Key insgesamt Aktivierung der ITPro Admins angezeigt.|
-|lastUpdatedDateTime|Zeichenfolge|Seite laden Schlüssel aktualisiert Datum der letzten die ITPro Admins angezeigt.|
+|id|string|Eindeutige ID des seitlichen Lade Schlüssels.|
+|Wert|Zeichenfolge|Seiten Ladeschlüssel Wert, es ist 5x5-Wert, getrennt durch hiphens.|
+|displayName|Zeichenfolge|Der Name des Seiten Lade Schlüssels wird den ITPro-Administratoren angezeigt.|
+|description|String|Seiten Ladeschlüssel Beschreibung, die den ITPro-Administratoren angezeigt wird..|
+|totalActivation|Int32|Die Gesamt Aktivierung des Seiten Lade Schlüssels wird den ITPro-Administratoren angezeigt.|
+|lastUpdatedDateTime|Zeichenfolge|Das Datum der letzten Aktualisierung, die den ITPro-Administratoren angezeigt werden.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

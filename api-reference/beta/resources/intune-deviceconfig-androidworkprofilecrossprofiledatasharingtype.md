@@ -1,31 +1,31 @@
 ---
-title: AndroidWorkProfileCrossProfileDataSharingType Enum-Typ
-description: Android Arbeit Profil schneidet Profildaten Typ Freigabe.
-localization_priority: Normal
+title: androidWorkProfileCrossProfileDataSharingType-Enumerationstyp
+description: Profil übergreifendes datenfreigabetyp für Android-Profile.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97001dcab56ef23506bee3d29c53757e3705fe04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 73315d5ace052cf49a372c5563bf7d5af35662e5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159115"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>AndroidWorkProfileCrossProfileDataSharingType Enum-Typ
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Arbeit Profil schneidet Profildaten Typ Freigabe.
+Profil übergreifendes datenfreigabetyp für Android-Profile.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|preventAny|1|Verhindern, dass alle Freigabe.|
-|allowPersonalToWork|2|Daten Freigabeanfrage von persönlichen Profil Profil zu ermöglichen.|
-|noRestrictions|3|Keine Einschränkung für die Freigabe.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|Konditionen|1|Verhindern der Freigabe.|
+|allowPersonalToWork|2|Zulassen der Datenfreigabe Anforderung aus dem persönlichen Profil an das Arbeitsprofil.|
+|noRestrictions|3|Keine Einschränkungen für die Freigabe.|
 
 
 

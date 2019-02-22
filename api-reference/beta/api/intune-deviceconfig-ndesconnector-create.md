@@ -1,23 +1,23 @@
 ---
-title: Erstellen von ndesConnector
-description: Erstellen eines neuen NdesConnector-Objekts.
-localization_priority: Normal
+title: NdesConnector erstellen
+description: Erstellen eines neuen ndesConnector-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2764e461b0cfce3e620c5e5300539297b9cb5b1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 09988408e3b49490e66ed49c47e2696c8b0ad66c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419933"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158086"
 ---
-# <a name="create-ndesconnector"></a>Erstellen von ndesConnector
+# <a name="create-ndesconnector"></a>NdesConnector erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [NdesConnector](../resources/intune-deviceconfig-ndesconnector.md) -Objekts.
+Erstellen eines neuen [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,27 +38,27 @@ POST /deviceManagement/ndesConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt NdesConnector eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das ndesConnector-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die NdesConnector erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der ndesConnector erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der Schlüssel des NDES Connectors.|
-|lastConnectionDateTime|DateTimeOffset|Letzte Verbindungszeit für den Ndes Connector|
-|Zustand|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|NDES Connector Status. Mögliche Werte sind: `none`, `active` und `inactive`.|
-|displayName|Zeichenfolge|Der Anzeigename der Verbindung Ndes.|
+|id|Zeichenfolge|Der Schlüssel des NDES-Konnektors.|
+|lastConnectionDateTime|DateTimeOffset|Letzter Verbindungszeitpunkt für den NDES-Connector|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|NDES-Connectorstatus. Mögliche Werte sind: `none`, `active` und `inactive`.|
+|displayName|Zeichenfolge|Der Anzeigename des NDES-Konnektors.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [NdesConnector](../resources/intune-deviceconfig-ndesconnector.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

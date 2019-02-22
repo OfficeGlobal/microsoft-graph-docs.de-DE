@@ -1,30 +1,30 @@
 ---
-title: windows10VpnProfileTarget Enum-Typ
-description: Windows-10-VPN-Profil Zieltypen.
-localization_priority: Normal
+title: windows10VpnProfileTarget-Enumerationstyp
+description: Windows 10-VPN-Profil Ziel Typen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c5f5a1f288ad1af3d682e5bbdee9325ac17053
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc2d6e19a50002c8985d1b29be040c4fa2339bf6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161810"
 ---
-# <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget Enum-Typ
+# <a name="windows10vpnprofiletarget-enum-type"></a>windows10VpnProfileTarget-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-10-VPN-Profil Zieltypen.
+Windows 10-VPN-Profil Ziel Typen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|user|0|Benutzer geplant, VPN-Profil.|
-|Gerät|1|Gerät geplant, VPN-Profil.|
-|autoPilotDevice|2|AutoPilot Gerät geplant, VPN-Profil.|
+|user|0|VPN-Profil des Benutzers.|
+|Gerät|1|VPN-Profil des Geräts.|
+|autoPilotDevice|2|AutoPilot Device Targeted VPN-Profil.|
 
 
 

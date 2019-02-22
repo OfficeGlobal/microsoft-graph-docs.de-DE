@@ -1,50 +1,50 @@
 ---
-title: Ressourcentyp groupPolicyPresentationTextBox
-description: Stellt ein ADMX TextBox-Element als auch ein ADMX-Textelement.
-localization_priority: Normal
+title: groupPolicyPresentationTextBox-Ressourcentyp
+description: Stellt ein ADMX-textBox-Element und ein ADMX-Textelement dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5e5e034ce2cc0cd18aac27abf59730873e7998a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c90355aa9c355b586b060e0e37ddeab8467e5964
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430056"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155580"
 ---
-# <a name="grouppolicypresentationtextbox-resource-type"></a>Ressourcentyp groupPolicyPresentationTextBox
+# <a name="grouppolicypresentationtextbox-resource-type"></a>groupPolicyPresentationTextBox-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt ein ADMX TextBox-Element als auch ein ADMX-Textelement.
+Stellt ein ADMX-textBox-Element und ein ADMX-Textelement dar.
 
 
-Erbt vom [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
+Erbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste groupPolicyPresentationTextBoxes](../api/intune-grouppolicy-grouppolicypresentationtextbox-list.md)|[GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Auflistung|Listeneigenschaften und Beziehungen der [GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekte.|
-|[Abrufen von groupPolicyPresentationTextBox](../api/intune-grouppolicy-grouppolicypresentationtextbox-get.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Lesen Sie Eigenschaften und Beziehungen des [GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
-|[Erstellen von groupPolicyPresentationTextBox](../api/intune-grouppolicy-grouppolicypresentationtextbox-create.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Erstellen eines neuen [GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
-|[GroupPolicyPresentationTextBox löschen](../api/intune-grouppolicy-grouppolicypresentationtextbox-delete.md)|Keine|Löscht eine [GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md).|
-|[GroupPolicyPresentationTextBox aktualisieren](../api/intune-grouppolicy-grouppolicypresentationtextbox-update.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Aktualisieren Sie die Eigenschaften eines [GroupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
+|[GroupPolicyPresentationTextBoxes aufListen](../api/intune-grouppolicy-grouppolicypresentationtextbox-list.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekte.|
+|[GroupPolicyPresentationTextBox abrufen](../api/intune-grouppolicy-grouppolicypresentationtextbox-get.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Lesen von Eigenschaften und Beziehungen des [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
+|[GroupPolicyPresentationTextBox erstellen](../api/intune-grouppolicy-grouppolicypresentationtextbox-create.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Erstellen eines neuen [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
+|[GroupPolicyPresentationTextBox löschen](../api/intune-grouppolicy-grouppolicypresentationtextbox-delete.md)|Keine|Löscht eine [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md).|
+|[GroupPolicyPresentationTextBox aktualisieren](../api/intune-grouppolicy-grouppolicypresentationtextbox-update.md)|[groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md)|Aktualisieren der Eigenschaften eines [groupPolicyPresentationTextBox](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|label|String|Lokalisierte Beschriftung für jede Entität Präsentation. Der Standardwert ist leer. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Lokalisierte Textbezeichnung für eine beliebige Präsentations Entität. Der Standardwert ist Empty. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Zeichenfolge|Schlüssel der Entität Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung die Entität. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Zeichenfolge|Lokalisierte Standardzeichenfolge im Textfeld angezeigt. Der Standardwert ist leer.|
-|erforderlich|Boolean|Erforderlich, um einen Wert in das Textfeld eingeben. Der Standardwert ist "false".|
-|maxLength|Int64|Eine ganze Zahl ohne Vorzeichen, die die maximale Anzahl von Textzeichen angibt. Standardwert ist 1023.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|defaultValue|Zeichenfolge|Lokalisierte Standardzeichenfolge, die im Textfeld angezeigt wird. Der Standardwert ist Empty.|
+|erforderlich|Boolescher Wert|Anforderung zur Eingabe eines Werts in das Textfeld. Der Standardwert ist "false".|
+|maxLength|Int64|Eine ganze Zahl ohne Vorzeichen, die die maximale Anzahl von Textzeichen angibt. Der Standardwert ist 1023.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Die Gruppe Richtliniendefinition mit der Präsentation verknüpft ist. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Die der Präsentation zugeordnete Gruppenrichtlinien Definition. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

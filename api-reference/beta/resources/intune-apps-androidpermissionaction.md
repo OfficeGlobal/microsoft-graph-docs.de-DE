@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp androidPermissionAction
-description: Zuordnung zwischen einer Android-app-Berechtigung und die Aktion Android sollte verwenden, wenn diese Berechtigung angefordert wird.
-localization_priority: Normal
+title: androidPermissionAction-Ressourcentyp
+description: Zuordnung zwischen einer Android-App-Berechtigung und der Aktion, die Android ausführen sollte, wenn diese Berechtigung angefordert wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62355c3427083df09963e316f3b6b3c104a8662f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161572"
 ---
-# <a name="androidpermissionaction-resource-type"></a>Ressourcentyp androidPermissionAction
+# <a name="androidpermissionaction-resource-type"></a>androidPermissionAction-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zuordnung zwischen einer Android-app-Berechtigung und die Aktion Android sollte verwenden, wenn diese Berechtigung angefordert wird.
+Zuordnung zwischen einer Android-App-Berechtigung und der Aktion, die Android ausführen sollte, wenn diese Berechtigung angefordert wird.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Berechtigung|Zeichenfolge|In der Dokumentation zu offiziellen Android definierte Zeichenfolge Android Berechtigung.  Beispiel für 'android.permission.READ_CONTACTS'.|
-|Aktion|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Typ der Berechtigung Android-Aktion. Mögliche Werte sind: `prompt`, `autoGrant` und `autoDeny`.|
+|Berechtigung|Zeichenfolge|Android-Berechtigungszeichenfolge, definiert in der offiziellen Android-Dokumentation.  Beispiel "Android. Permission. READ_CONTACTS".|
+|Aktion|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Typ der Android-Berechtigungs Aktion. Mögliche Werte sind: `prompt`, `autoGrant` und `autoDeny`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

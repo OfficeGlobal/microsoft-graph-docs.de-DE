@@ -1,23 +1,23 @@
 ---
 title: UserPFXCertificate aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines UserPFXCertificate-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines userPFXCertificate-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a3880a5747f33916bb6bd2f6bfc4ee5b8058a6c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 139d7f3523510728195e5e6f7b725c5fdb05f94a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422915"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158408"
 ---
 # <a name="update-userpfxcertificate"></a>UserPFXCertificate aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.
+Aktualisieren der Eigenschaften eines [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,36 +38,36 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das PFX-Zertifikat.|
-|Fingerabdruck|Zeichenfolge|SHA-1-Fingerabdruck des Zertifikats PFX.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Des Zertifikats beabsichtigten Zweck aus der Punkt der Ansicht der Bereitstellung. Mögliche Werte sind: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn` und `wifi`.|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des PFX-Zertifikats.|
-|startDateTime|DateTimeOffset|Gültigkeitsdauer der starten Datum/Uhrzeit.|
-|expirationDateTime|DateTimeOffset|Des Zertifikats Gültigkeit Ablauf Datum/Uhrzeit.|
-|providerName|Zeichenfolge|Kryptografieanbieter zum Verschlüsseln von diesem Blob verwendet.|
-|Schlüsselname|Zeichenfolge|Name des Schlüssels (innerhalb der Anbieter) verwendet, um den Blob zu verschlüsseln.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Abstand bei der Verschlüsselung/Entschlüsselung der vom Anbieter verwendete Schema. Mögliche Werte sind: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384` und `oaepSha512`.|
-|encryptedPfxBlob|Binär|Blob für verschlüsselte PFX.|
-|encryptedPfxPassword|Zeichenfolge|Verschlüsselte PFX-Kennwort ein.|
-|createdDateTime|DateTimeOffset|Datum/Uhrzeit, wenn dieses PFX-Zertifikat importiert wurde.|
-|lastModifiedDateTime|DateTimeOffset|Datum/Uhrzeit der letzten dieses PFX-Zertifikat Änderung.|
+|id|string|Eindeutiger Bezeichner für das PFX-Zertifikat.|
+|Fingerabdruck|Zeichenfolge|SHA-1 Fingerabdruck des PFX-Zertifikats.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Zweck des Zertifikats aus der Sicht der Bereitstellung. Mögliche Werte: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|userPrincipalName|Zeichenfolge|Benutzerprinzipal Name des PFX-Zertifikats.|
+|startDateTime|DateTimeOffset|Gültigkeitsdatum/-Uhrzeit des Zertifikats.|
+|expirationDateTime|DateTimeOffset|Gültigkeitsablauf Datum/-Uhrzeit des Zertifikats.|
+|providerName|Zeichenfolge|Crypto-Anbieter, der zum Verschlüsseln dieses BLOBs verwendet wird.|
+|keyName|Zeichenfolge|Der Name des Schlüssels (innerhalb des Anbieters), der zum Verschlüsseln des BLOBs verwendet wird.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Vom Anbieter während der Verschlüsselung/Entschlüsselung verwendetes Padding-Schema. Mögliche Werte sind: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384` und `oaepSha512`.|
+|encryptedPfxBlob|Binär|Verschlüsselter PFX-BLOB.|
+|encryptedPfxPassword|Zeichenfolge|Kennwort für verSchlüsselte PFX.|
+|createdDateTime|DateTimeOffset|Datum/Uhrzeit des Imports dieses PFX-Zertifikats.|
+|lastModifiedDateTime|DateTimeOffset|Datum/Uhrzeit der letzten Änderung dieses PFX-Zertifikats.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

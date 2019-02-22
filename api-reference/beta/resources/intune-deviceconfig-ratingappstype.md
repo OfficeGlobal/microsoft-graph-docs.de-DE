@@ -1,33 +1,33 @@
 ---
-title: RatingAppsType Enum-Typ
-description: Bewertung wie Media-Inhalten in Apps
-localization_priority: Normal
+title: ratingAppsType-Enumerationstyp
+description: Apps-Bewertung wie im Medieninhalt
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b8abf9bd3c1c8e0a0fdf9fb4aaada295c22f5cb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 301d8dc3c41865e86c8d997e329cfa5f57a7cbc9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406563"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155321"
 ---
-# <a name="ratingappstype-enum-type"></a>RatingAppsType Enum-Typ
+# <a name="ratingappstype-enum-type"></a>ratingAppsType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Bewertung wie Media-Inhalten in Apps
+Apps-Bewertung wie im Medieninhalt
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle apps Inhalte zulassen|
-|allBlocked|1|Alle Inhalte apps nicht zulassen|
-|agesAbove4|2|4 + age 4 und höher|
-|agesAbove9|3|9 + age 9 und höher|
-|agesAbove12|4|12 + 12 überfällig und höher |
-|agesAbove17|5|17 + age 17 und höher|
+|allAllowed|0|Standardwert, alle apps-Inhalte zulassen|
+|allBlocked|1|Keinen apps-Inhalt zulassen|
+|agesAbove4|2|4 +, ab 4 Jahren|
+|agesAbove9|3|9 +, Alter 9 und höher|
+|agesAbove12|4|12 +, ab 12 Jahren |
+|agesAbove17|5|17 +, 17 Jahre und höher|
 
 
 

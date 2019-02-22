@@ -1,21 +1,21 @@
 ---
 title: softwareUpdateStatusSummary-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 382f771650c5c55f6ff38ae089a532a7603cf8e5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17314b5e37af0677c5e78dba9349695346b43d6a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161082"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert.
 
@@ -29,7 +29,7 @@ Noch nicht dokumentiert.
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|displayName|String|Der Name der Richtlinie|
+|displayName|Zeichenfolge|Der Name der Richtlinie|
 |compliantDeviceCount|Int32|Anzahl der konformen Geräte|
 |nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
 |remediatedDeviceCount|Int32|Anzahl korrigierter Geräte|

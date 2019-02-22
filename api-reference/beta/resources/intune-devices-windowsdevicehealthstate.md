@@ -1,33 +1,33 @@
 ---
-title: WindowsDeviceHealthState Enum-Typ
-description: Endpoint Protection-Computerstatus
-localization_priority: Normal
+title: windowsDeviceHealthState-Enumerationstyp
+description: Schutzstatus des Computer Endpunkts
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d971de9b20780bb51a19c3417384a0ca0563452
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bb335cd39e6cbcd00f754faae8f7784001c424b4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156168"
 ---
-# <a name="windowsdevicehealthstate-enum-type"></a>WindowsDeviceHealthState Enum-Typ
+# <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Endpoint Protection-Computerstatus
+Schutzstatus des Computer Endpunkts
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|clean|0|Computer fehlerfrei ist und keine Aktion erforderlich ist|
-|fullScanPending|1|Computer befindet sich in ausstehen und vollständigen scan|
-|rebootPending|2|Computer befindet sich in Ausstehender Neustart Zustand|
-|manualStepsPending|4|Computer befindet sich in ausstehen und manuelle Schritte|
-|offlineScanPending|8|Computer befindet sich in offline Scan ausstehen|
-|critical|16|Computer befindet sich im kritischen Fehlerzustand|
+|clean|0|Der Computer ist sauber, und es ist keine Aktion erforderlich.|
+|fullScanPending|1|Der Computer ist in ausstehender vollständiger Scanstatus|
+|rebootPending|2|Der Computer befindet sich im ausstehenden Neustartstatus|
+|manualStepsPending|4|Der Computer befindet sich in ausstehenden manuellen Schritten Status|
+|offlineScanPending|8|Der Computer befindet sich im ausstehenden Offline Scanstatus|
+|critical|16|Der Computer befindet sich im Status "kritisch"|
 
 
 

@@ -1,36 +1,36 @@
 ---
-title: SubjectNameFormat Enum-Typ
-description: Optionen für Antragstellernamen Format.
-localization_priority: Normal
+title: subjectNameFormat-Enumerationstyp
+description: Format Optionen für den AntragsTellernamen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22bbc03da6fd3e48925634704e78ffb22abef3bc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6f12068576ff78d74f2e1b6119a2030ff7835a7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158555"
 ---
-# <a name="subjectnameformat-enum-type"></a>SubjectNameFormat Enum-Typ
+# <a name="subjectnameformat-enum-type"></a>subjectNameFormat-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Optionen für Antragstellernamen Format.
+Format Optionen für den AntragsTellernamen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |commonName|0|Allgemeiner Name.|
 |commonNameIncludingEmail|1|Allgemeiner Name, einschließlich E-Mail.|
-|commonNameAsEmail|2|Allgemeiner Name als e-Mail-Nachricht.|
-|custom|3|Format des benutzerdefinierten Antragstellernamen.|
+|commonNameAsEmail|2|Allgemeiner Name als E-Mail.|
+|custom|3|Format für benutzerdefinierte Antragstellernamen.|
 |commonNameAsIMEI|5|Allgemeiner Name als IMEI.|
-|commonNameAsSerialNumber|6|Allgemeiner Name als fortlaufende Zahl.|
-|commonNameAsAadDeviceId|7|Allgemeiner Name als fortlaufende Zahl.|
-|commonNameAsIntuneDeviceId|8|Allgemeiner Name als fortlaufende Zahl.|
-|commonNameAsDurableDeviceId|9|Allgemeiner Name als fortlaufende Zahl.|
+|commonNameAsSerialNumber|6|Allgemeiner Name als Seriennummer.|
+|commonNameAsAadDeviceId|7|Allgemeiner Name als Seriennummer.|
+|commonNameAsIntuneDeviceId|8|Allgemeiner Name als Seriennummer.|
+|commonNameAsDurableDeviceId|9|Allgemeiner Name als Seriennummer.|
 
 
 

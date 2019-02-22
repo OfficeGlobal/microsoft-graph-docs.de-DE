@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp macOsVppAppAssignedLicense
-description: Mac OS Volume Purchase Program Lizenz Zuordnung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
-localization_priority: Normal
+title: macOsVppAppAssignedLicense-Ressourcentyp
+description: Mac OS-Lizenzzuweisung für das Volume Purchase-Programm. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c3a029d0f0aca7ab295f34d108b8bf61bdc17dc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c8c7d8eea98c92ae1a041b8220c171d62fceb385
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430005"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158891"
 ---
-# <a name="macosvppappassignedlicense-resource-type"></a>Ressourcentyp macOsVppAppAssignedLicense
+# <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mac OS Volume Purchase Program Lizenz Zuordnung. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
+Mac OS-Lizenzzuweisung für das Volume Purchase-Programm. Diese Klasse unterstützt keine Methoden zum Erstellen, Aktualisieren oder Löschen.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste macOsVppAppAssignedLicenses](../api/intune-apps-macosvppappassignedlicense-list.md)|[MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Auflistung|Listeneigenschaften und Beziehungen der [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekte.|
-|[Abrufen von macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-get.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Lesen Sie Eigenschaften und Beziehungen des [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
-|[Erstellen von macOsVppAppAssignedLicense](../api/intune-apps-macosvppappassignedlicense-create.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Erstellen eines neuen [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
-|[MacOsVppAppAssignedLicense löschen](../api/intune-apps-macosvppappassignedlicense-delete.md)|Keine|Löscht eine [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).|
-|[MacOsVppAppAssignedLicense aktualisieren](../api/intune-apps-macosvppappassignedlicense-update.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Aktualisieren Sie die Eigenschaften eines [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
+|[MacOsVppAppAssignedLicenses aufListen](../api/intune-apps-macosvppappassignedlicense-list.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekte.|
+|[MacOsVppAppAssignedLicense abrufen](../api/intune-apps-macosvppappassignedlicense-get.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Lesen von Eigenschaften und Beziehungen des [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
+|[MacOsVppAppAssignedLicense erstellen](../api/intune-apps-macosvppappassignedlicense-create.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Erstellen eines neuen [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
+|[MacOsVppAppAssignedLicense löschen](../api/intune-apps-macosvppappassignedlicense-delete.md)|Keine|Löscht eine [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md).|
+|[MacOsVppAppAssignedLicense aktualisieren](../api/intune-apps-macosvppappassignedlicense-update.md)|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)|Aktualisieren der Eigenschaften eines [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|userEmailAddress|Zeichenfolge|Die e-Mail-Adresse des Benutzers.|
+|userEmailAddress|Zeichenfolge|Die Benutzer-e-Mail-Adresse.|
 |userId|Zeichenfolge|Die Benutzer-ID.|
 |userName|Zeichenfolge|Der Benutzername.|
 |userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname.|

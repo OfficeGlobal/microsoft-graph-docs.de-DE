@@ -1,21 +1,21 @@
 ---
 title: resourceOperation aktualisieren
 description: Aktualisiert die Eigenschaften von Objekten des Typs resourceOperation.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 266d45150c5633a66c5996b5cb9285f97ecaf6bb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4e7ab1f3edd0de4e36eb8c051b4cc02306f707
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411141"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156749"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisiert die Eigenschaften von Objekten des Typs [resourceOperation](../resources/intune-rbac-resourceoperation.md).
 
@@ -38,9 +38,9 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,12 +50,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
-|resource|Zeichenfolge|Resource-Kategorie, zu dem dieser Vorgang gehört.|
+|id|string|Schlüssel der Ressourcenoperation. Er ist schreibgeschützt und wird automatisch generiert.|
+|resource|Zeichenfolge|Ressourcenkategorie, zu der dieser Vorgang gehört.|
 |resourceName|Zeichenfolge|Name der Ressource, auf die die Operation angewendet wird|
 |actionName|Zeichenfolge|Typ von Aktion, den die Operation ausführen wird. Der Wert für „actionName“ sollte prägnant sein und aus möglichst wenigen Wörtern bestehen.|
 |description|Zeichenfolge|Beschreibung der Ressourcenoperation. Diese Beschreibung wird angezeigt, wenn der Benutzer im Azure-Portal den Mauszeiger auf der Operation platziert.|
-|enabledForScopeValidation|Boolean|Bestimmt, ob die Berechtigung für pro Rollenzuweisung definierten Bereiche nicht überprüft wird.|
+|enabledForScopeValidation|Boolescher Wert|Bestimmt, ob die Berechtigung für Bereiche validiert wird, die pro Rollenzuweisung definiert sind.|
 
 
 

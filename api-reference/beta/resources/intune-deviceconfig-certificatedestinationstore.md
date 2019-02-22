@@ -1,30 +1,30 @@
 ---
-title: CertificateDestinationStore Enum-Typ
-description: Mögliche Werte für die Ziel-Zertifikatspeicher.
-localization_priority: Normal
+title: certificateDestinationStore-Enumerationstyp
+description: Mögliche Werte für den Zertifikat Zielspeicher.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be59a4fb105c7bfc3662cf3f06fedba6903b635
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4a3e625ab3a1c2feaa2766ba120d59a9982b365a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403336"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156707"
 ---
-# <a name="certificatedestinationstore-enum-type"></a>CertificateDestinationStore Enum-Typ
+# <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Ziel-Zertifikatspeicher.
+Mögliche Werte für den Zertifikat Zielspeicher.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|computerCertStoreRoot|0|Zertifikatspeicher - Stamm.|
-|computerCertStoreIntermediate|1|Zertifikatspeicher - fortgeschrittene.|
-|userCertStoreIntermediate|2|Benutzer Zertifikatspeicher - fortgeschrittene.|
+|computerCertStoreRoot|0|Computer Zertifikatspeicher – Stamm.|
+|computerCertStoreIntermediate|1|Computer Zertifikatspeicher – Intermediate.|
+|userCertStoreIntermediate|2|Benutzerzertifikatspeicher – Intermediate.|
 
 
 

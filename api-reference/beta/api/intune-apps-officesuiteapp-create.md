@@ -1,23 +1,23 @@
 ---
-title: Erstellen von officeSuiteApp
-description: Erstellen eines neuen OfficeSuiteApp-Objekts.
-localization_priority: Normal
+title: OfficeSuiteApp erstellen
+description: Erstellen eines neuen officeSuiteApp-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1821c88f974bf61fe23de6bb34cfeb06d9250f6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f58d25a38de891647b450a61b2dea03404e68bab
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405842"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157127"
 ---
-# <a name="create-officesuiteapp"></a>Erstellen von officeSuiteApp
+# <a name="create-officesuiteapp"></a>OfficeSuiteApp erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts.
+Erstellen eines neuen [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,52 +38,52 @@ POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt OfficeSuiteApp eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das officeSuiteApp-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die OfficeSuiteApp erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der officeSuiteApp erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|string|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Der Upload-Zustand. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [MobileApp](../resources/intune-apps-mobileapp.md). Mögliche Werte sind: `notPublished`, `processing` und `published`.|
-|isAssigned|Boolean|Der Wert, der angibt, ob die app mindestens eine Gruppe zugeordnet ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-Ids für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|autoAcceptEula|Boolean|Der Wert, der automatisch auf den des Endbenutzers Gerät den Lizenzvertrag zu akzeptieren.|
-|productIds|[OfficeProductId](../resources/intune-apps-officeproductid.md) -Auflistung|Die Produkt-Ids, die die Office365 Suite SKU darstellen. Mögliche Werte: sind `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail` und `projectProRetail`.|
-|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|Die Eigenschaft, um die apps darstellen, die von der ausgewählten Office365 Produkt-ID ausgeschlossen werden|
-|useSharedComputerActivation|Boolean|Die Eigenschaft an, die darstellen, ob die Aktivierung gemeinsam genutzter Computer nicht für die app-Suite Office365 verwendet wird.|
-|updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Die Eigenschaft, die Update-Kanal Office365 darstellen. Mögliche Werte sind: `none`, `current`, `deferred`, `firstReleaseCurrent` und `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Eigenschaft, die Office365 app Suite Version darstellen. Mögliche Werte sind: `none`, `x86`, `x64`, `arm`, `neutral` und `arm64`.|
-|localesToInstall|Zeichenfolgenauflistung|Die Eigenschaft, um die Gebietsschemas darstellen, die installiert werden Wenn apps aus Office365 installiert wird. Standard RFC 6033 verwendet. REF:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Sie können die Anzeigeebene für die Installation des Fortschritts Setup-Benutzeroberfläche auf dem Gerät angeben. Mögliche Werte sind: `none` und `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolean|Die Eigenschaft zum bestimmen, ob das vorhandene Office MSI deinstallieren, wenn eine Office365 app-Suite auf dem Gerät bereitgestellt wird.|
-|targetVersion|Zeichenfolge|Die Eigenschaft, die bestimmte Zielversion für die app-Suite Office365 darstellen, die auf den Geräten bereitgestellten blieb werden sollte.|
-|updateVersion|Zeichenfolge|Die Eigenschaft, die Version darstellen, die bestimmten Zielversion für die app-Suite Office365 verfügbar ist.|
-|officeConfigurationXml|Binär|Die Eigenschaft zur Darstellung der XML-Konfigurationsdatei, die für Office ProPlus Apps angegeben werden können. Hat Vorrang vor allen anderen Eigenschaften. Wenn dieser Parameter angegeben wurde, wird die XML-Konfigurationsdatei zum Erstellen der app verwendet werden.|
+|uploadState|Int32|Der Uploadstatus. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Von [MobileApp](../resources/intune-apps-mobileapp.md)geerbt. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
+|isAssigned|Boolean|Der Wert, der angibt, ob die APP mindestens einer Gruppe zugewiesen ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Rolescopetagids zur|String collection|Liste der bereichstag-IDs für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|autoAcceptEula|Boolescher Wert|Der Wert, der EULA automatisch auf dem Gerät des endBENUTZERs akzeptiert.|
+|productIds|[officeProductId](../resources/intune-apps-officeproductid.md) -Sammlung|Die Produkt-IDs, die die SKU der Office365-Suite darstellen. Mögliche Werte: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
+|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|Die Eigenschaft zur Darstellung der apps, die von der ausgewählten Office365-Produkt-ID ausgeschlossen werden.|
+|Eigenschaften usesharedcomputeractivation|Boolescher Wert|Die Eigenschaft, die angibt, ob die Aktivierung gemeinsam genutzter Computer nicht für die Office365-App-Suite verwendet wird.|
+|updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Die Eigenschaft, die den Office365-Aktualisierungs Kanal darstellt. Mögliche Werte: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Eigenschaft, die die Version der Office365-App-Suite darstellt. Mögliche Werte sind: `none`, `x86`, `x64`, `arm`, `neutral` und `arm64`.|
+|Localestoinstall wurden|String collection|Die Eigenschaft, die die Gebietsschemas darstellt, die bei der Installation der apps von Office365 installiert werden. Es verwendet Standard RFC 6033. Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|So geben Sie die Anzeigeebene für die Setup-Benutzeroberfläche des InstallationsfortSchritts auf dem Gerät an. Mögliche Werte sind: `none` und `full`.|
+|shouldUninstallOlderVersionsOfOffice|Boolescher Wert|Die Eigenschaft, um zu bestimmen, ob eine vorhandene Office-MSI-Installation installiert werden soll, wenn eine Office365-App-Suite auf dem Gerät bereitgestellt wird.|
+|targetVersion|Zeichenfolge|Die Eigenschaft, die die spezifische Zielversion für die Office365-App-Suite darstellt, die auf den Geräten bereitgestellt bleiben soll.|
+|updateVersion|Zeichenfolge|Die Eigenschaft, die die Update Version darstellt, in der die spezifische Zielversion für die Office365-App-Suite verfügbar ist.|
+|officeConfigurationXml|Binär|Die Eigenschaft, die die XML-Konfigurationsdatei darstellt, die für Office proPlus-apps angegeben werden kann. Vorrang vor allen anderen Eigenschaften. Wenn dieser Parameter vorhanden ist, wird die XML-Konfigurationsdatei zum Erstellen der APP verwendet.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

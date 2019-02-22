@@ -1,33 +1,33 @@
 ---
-title: AppleSubjectNameFormat Enum-Typ
-description: Subject Name Formatierungsoptionen für Apple-Geräte.
-localization_priority: Normal
+title: appleSubjectNameFormat-Enumerationstyp
+description: Optionen für den AntragsTellernamen für Apple-Geräte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b90588b9b1317ba08d5c14f3921d6310e35a8b31
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4f58d1005e2b558e36572afffec1995c6b671e24
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415075"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155594"
 ---
-# <a name="applesubjectnameformat-enum-type"></a>AppleSubjectNameFormat Enum-Typ
+# <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Subject Name Formatierungsoptionen für Apple-Geräte.
+Optionen für den AntragsTellernamen für Apple-Geräte.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |commonName|0|Allgemeiner Name.|
-|commonNameAsEmail|1|Allgemeiner Name als e-Mail-Nachricht.|
-|custom|2|Format des benutzerdefinierten Antragstellernamen.|
+|commonNameAsEmail|1|Allgemeiner Name als e-Mail.|
+|custom|2|Format für benutzerdefinierte Antragstellernamen.|
 |commonNameIncludingEmail|3|Allgemeiner Name, einschließlich E-Mail.|
 |commonNameAsIMEI|5|Allgemeiner Name als IMEI.|
-|commonNameAsSerialNumber|6|Allgemeiner Name als fortlaufende Zahl.|
+|commonNameAsSerialNumber|6|Allgemeiner Name als Seriennummer.|
 
 
 

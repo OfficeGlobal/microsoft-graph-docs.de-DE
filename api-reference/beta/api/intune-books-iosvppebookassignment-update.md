@@ -1,21 +1,21 @@
 ---
 title: Aktualisieren von „iosVppEBookAssignment“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosVppEBookAssignment.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ad070245ee687d08e4b636d7ef6301c42f1a586
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0c04bd5a2a6e57d64a1baed1a80cb6e6c2761a00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405814"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158478"
 ---
 # <a name="update-iosvppebookassignment"></a>Aktualisieren von „iosVppEBookAssignment“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).
 
@@ -38,9 +38,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book. Geerbt von [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Geerbt von [ManagedEBookAssignment](../resources/intune-books-managedebookassignment.md). Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Von [ManagedEBookAssignment](../resources/intune-books-managedebookassignment.md)geerbt. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 
 
 

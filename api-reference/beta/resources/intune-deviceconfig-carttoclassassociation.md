@@ -1,44 +1,44 @@
 ---
-title: Ressourcentyp cartToClassAssociation
-description: CartToClassAssociation Schulungsräume Gerät Toilettengebäude zuzuordnen.
-localization_priority: Normal
+title: cartToClassAssociation-Ressourcentyp
+description: CartToClassAssociation zum Zuordnen von Geräte Körben zu Schulungsräumen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b832e4597b15f062289a086d068ea3da71d9f66a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 228a3bfc873fdaf1fbd77e51a79ca184c2416d7c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395692"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156595"
 ---
-# <a name="carttoclassassociation-resource-type"></a>Ressourcentyp cartToClassAssociation
+# <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-CartToClassAssociation Schulungsräume Gerät Toilettengebäude zuzuordnen.
+CartToClassAssociation zum Zuordnen von Geräte Körben zu Schulungsräumen.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Auflistung|Listeneigenschaften und Beziehungen der [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekte.|
-|[Abrufen von cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Lesen Sie Eigenschaften und Beziehungen des [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
-|[Erstellen von cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Erstellen eines neuen [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
-|[CartToClassAssociation löschen](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Keine|Löscht eine [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
-|[CartToClassAssociation aktualisieren](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Aktualisieren Sie die Eigenschaften eines [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
+|[CartToClassAssociations aufListen](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekte.|
+|[CartToClassAssociation abrufen](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Lesen von Eigenschaften und Beziehungen des [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
+|[CartToClassAssociation erstellen](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Erstellen eines neuen [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
+|[CartToClassAssociation löschen](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Keine|Löscht eine [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
+|[CartToClassAssociation aktualisieren](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Aktualisieren der Eigenschaften eines [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität.|
+|id|string|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|Version|Int32|Version der CartToClassAssociation.|
+|Version|Int32|Version von CartToClassAssociation.|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt).|
-|description|Zeichenfolge|Admin bereitgestellte Beschreibung für die CartToClassAssociation.|
-|deviceCartIds|Zeichenfolgenauflistung|Bezeichner des Geräts Toilettengebäude Klassen zugeordnet werden soll.|
-|classroomIds|Zeichenfolgenauflistung|Die IDs der Schulungsräume Gerät Toilettengebäude zugeordnet werden soll.|
+|description|Zeichenfolge|Der Administrator hat die Beschreibung des CartToClassAssociation bereitgestellt.|
+|deviceCartIds|String collection|Bezeichner von Gerätewagen, die Klassen zugeordnet werden sollen.|
+|classroomIds|String collection|Bezeichner der Unterrichtsräume, die mit Geräte Körben verknüpft werden sollen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

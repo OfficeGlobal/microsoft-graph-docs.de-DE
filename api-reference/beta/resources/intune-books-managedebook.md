@@ -1,21 +1,21 @@
 ---
 title: managedEBook-Ressourcentyp
 description: Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08bd5cc6f5630aca0ff5b35c5590875d259ad294
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 24a8619d92eee6c666b7126a84895b14e0404755
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156035"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
 
@@ -29,10 +29,10 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|string|Schlüssel der Entität|
 |displayName|Zeichenfolge|Name des E-Books|
-|description|Zeichenfolge|Beschreibung|
-|publisher|Zeichenfolge|Herausgeber|
+|description|String|Beschreibung|
+|publisher|String|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|
@@ -43,7 +43,7 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|categories|[ManagedEBookCategory](../resources/intune-books-managedebookcategory.md) -Auflistung|Die Liste der Kategorien für e-Book.|
+|categories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) -Sammlung|Die Liste der Kategorien für dieses eBook.|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)-Sammlung|Die Liste der Zuweisungen für dieses E-Book.|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Die Installationszusammenfassung für die mobile App.|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)-Sammlung|Die Liste der Installationsstatus für das E-Book.|

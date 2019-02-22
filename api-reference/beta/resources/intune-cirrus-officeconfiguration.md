@@ -1,41 +1,41 @@
 ---
-title: Ressourcentyp officeConfiguration
+title: officeConfiguration-Ressourcentyp
 description: Singleton-Entität, die als Container für alle Geräteverwaltungsfunktionen dient.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: cc76295b21602328689ee48f8aed8be74bd82093
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7e5c36a23be0ab32a14a08eaff297b832ba5274c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406549"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156049"
 ---
-# <a name="officeconfiguration-resource-type"></a>Ressourcentyp officeConfiguration
+# <a name="officeconfiguration-resource-type"></a>officeConfiguration-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Singleton-Entität, die als Container für alle Geräteverwaltungsfunktionen dient.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|Abrufen von officeConfiguration|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md) -Objekts.|
-|OfficeConfiguration aktualisieren|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md) -Objekts.|
+|OfficeConfiguration abrufen|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) -Objekts.|
+|OfficeConfiguration aktualisieren|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Aktualisieren der Eigenschaften eines [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|ID des Office-Konfiguration.|
-|tenantCheckinStatuses|[OfficeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Auflistung|Liste der Office-Client Einchecken Status.|
-|tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entität, die Mandanten Einchecken Statuen beschreibt.|
+|id|Zeichenfolge|ID der Office-Konfiguration.|
+|tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) -Sammlung|Liste der Office-Client Eincheckstatus.|
+|tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entität, die das Einchecken von Mandanten beschreibt|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|clientConfigurations|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) -Auflistung|Liste der Office-Client-Konfiguration.|
+|clientConfigurations|[für](../resources/intune-cirrus-officeclientconfiguration.md) -Sammlung|Liste der Office-Client Konfiguration.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

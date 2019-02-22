@@ -1,49 +1,49 @@
 ---
-title: Ressourcentyp importedDeviceIdentityResult
-description: Die Ressource ImportedDeviceIdentityResult stellt das Ergebnis der Versuch, eine Identität Gerät zu importieren.
-localization_priority: Normal
+title: importedDeviceIdentityResult-Ressourcentyp
+description: Die importedDeviceIdentityResult-Ressource stellt das Ergebnis der Versuch, eine Geräte Identität zu importieren.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4a1720fee543b4814430476ebd6c84a0fc33d73
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b1a5fbaac297a85595827f23cafd93035188bc4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395804"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156280"
 ---
-# <a name="importeddeviceidentityresult-resource-type"></a>Ressourcentyp importedDeviceIdentityResult
+# <a name="importeddeviceidentityresult-resource-type"></a>importedDeviceIdentityResult-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Ressource ImportedDeviceIdentityResult stellt das Ergebnis der Versuch, eine Identität Gerät zu importieren.
+Die importedDeviceIdentityResult-Ressource stellt das Ergebnis der Versuch, eine Geräte Identität zu importieren.
 
 
-Erbt vom [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)
+Erbt von [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste importedDeviceIdentityResults](../api/intune-enrollment-importeddeviceidentityresult-list.md)|[ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Auflistung|Listeneigenschaften und Beziehungen der [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekte.|
-|[Abrufen von importedDeviceIdentityResult](../api/intune-enrollment-importeddeviceidentityresult-get.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Lesen Sie Eigenschaften und Beziehungen des [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
-|[Erstellen von importedDeviceIdentityResult](../api/intune-enrollment-importeddeviceidentityresult-create.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Erstellen eines neuen [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
-|[ImportedDeviceIdentityResult löschen](../api/intune-enrollment-importeddeviceidentityresult-delete.md)|Keine|Löscht eine [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).|
-|[ImportedDeviceIdentityResult aktualisieren](../api/intune-enrollment-importeddeviceidentityresult-update.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Aktualisieren Sie die Eigenschaften eines [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
+|[ImportedDeviceIdentityResults aufListen](../api/intune-enrollment-importeddeviceidentityresult-list.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekte.|
+|[ImportedDeviceIdentityResult abrufen](../api/intune-enrollment-importeddeviceidentityresult-get.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Lesen von Eigenschaften und Beziehungen des [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
+|[ImportedDeviceIdentityResult erstellen](../api/intune-enrollment-importeddeviceidentityresult-create.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Erstellen eines neuen [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
+|[ImportedDeviceIdentityResult löschen](../api/intune-enrollment-importeddeviceidentityresult-delete.md)|Keine|Löscht eine [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).|
+|[ImportedDeviceIdentityResult aktualisieren](../api/intune-enrollment-importeddeviceidentityresult-update.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|Aktualisieren der Eigenschaften eines [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|ID der importierten Gerät Identität Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|importedDeviceIdentifier|Zeichenfolge|Importierte Geräte-ID geerbt von [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Typ des importiert Gerät Identität geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `imei` und `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Letzte Änderung DateTime der Beschreibung Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|createdDateTime|DateTimeOffset|Datum-Uhrzeit des Geräts Inherited aus [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) erstellt|
-|lastContactedDateTime|DateTimeOffset|Letzte kontaktiert Datum-Uhrzeit des Geräts Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|description|Zeichenfolge|Die Beschreibung des Geräts Inherited aus [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Zustand des Geräts in Intune geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
-|Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Geerbt von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
-|status|Boolean|Status der importierten Gerät Identität|
+|id|string|ID der von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbten importierten Geräte Identität|
+|importedDeviceIdentifier|Zeichenfolge|Von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbte importierte Gerätebezeichner|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Typ der importierten Geräte Identität, die von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)geerbt wurde. Mögliche Werte sind: `unknown`, `imei` und `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Datum der letzten Änderung der von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbten Beschreibung|
+|createdDateTime|DateTimeOffset|ErstellungsDatum des von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbten Geräts|
+|lastContactedDateTime|DateTimeOffset|Datum der letzten Kontaktaufnahme des von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbten Geräts|
+|description|Zeichenfolge|Die Beschreibung des von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) geerbten Geräts|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Status des Geräts in InTune, das von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)geerbt wurde. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
+|Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Von [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)geerbt. Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
+|status|Boolescher Wert|Status der importierten Geräte Identität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

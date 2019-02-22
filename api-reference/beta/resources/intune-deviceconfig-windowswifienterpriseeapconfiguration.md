@@ -1,86 +1,86 @@
 ---
-title: Ressourcentyp windowsWifiEnterpriseEAPConfiguration
-description: Diese Entität enthält Beschreibungen der deklarierte Methoden, Eigenschaften und Beziehungen von Wifi CSP verfügbar gemacht werden.
-localization_priority: Normal
+title: windowsWifiEnterpriseEAPConfiguration-Ressourcentyp
+description: Diese Entität enthält Beschreibungen der deklarierten Methoden, Eigenschaften und Beziehungen, die vom WiFi-CSP verfügbar gemacht werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c5e7f92c8b84512ae71144d379a38eac24eb08c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4394a927f413ce311c6b371140ab69a7f14109f3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407095"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159773"
 ---
-# <a name="windowswifienterpriseeapconfiguration-resource-type"></a>Ressourcentyp windowsWifiEnterpriseEAPConfiguration
+# <a name="windowswifienterpriseeapconfiguration-resource-type"></a>windowsWifiEnterpriseEAPConfiguration-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Entität enthält Beschreibungen der deklarierte Methoden, Eigenschaften und Beziehungen von Wifi CSP verfügbar gemacht werden.
+Diese Entität enthält Beschreibungen der deklarierten Methoden, Eigenschaften und Beziehungen, die vom WiFi-CSP verfügbar gemacht werden.
 
 
-Erbt vom [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)
+Erbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windowsWifiEnterpriseEAPConfigurations](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md)|[WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekte.|
-|[Abrufen von windowsWifiEnterpriseEAPConfiguration](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
-|[Erstellen von windowsWifiEnterpriseEAPConfiguration](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Erstellen eines neuen [WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
-|[WindowsWifiEnterpriseEAPConfiguration löschen](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md)|Keine|Löscht eine [WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md).|
-|[WindowsWifiEnterpriseEAPConfiguration aktualisieren](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [WindowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
+|[WindowsWifiEnterpriseEAPConfigurations aufListen](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekte.|
+|[WindowsWifiEnterpriseEAPConfiguration abrufen](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
+|[WindowsWifiEnterpriseEAPConfiguration erstellen](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Erstellen eines neuen [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
+|[WindowsWifiEnterpriseEAPConfiguration löschen](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md)|Keine|Löscht eine [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md).|
+|[WindowsWifiEnterpriseEAPConfiguration aktualisieren](../api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md)|[windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md)|Aktualisieren der Eigenschaften eines [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|preSharedKey|Zeichenfolge|Dies ist die vorinstallierten Schlüssel für WPA persönliche Wi-Fi-Netzwerk. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Den Sicherheitstyp Wifi angeben. Geerbt von [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Mögliche Werte sind: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal` und `wpa2Enterprise`.|
-|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Geben Sie den gemessenen Verbindungstyp des Grenzwert für die WLAN-Verbindung. Geerbt von [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Mögliche Werte sind: `unrestricted`, `fixed` und `variable`.|
-|SSID|Zeichenfolge|Geben Sie die SSID des WLAN-Verbindung. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|Netzwerkname|Zeichenfolge|Geben Sie den Namen der Netzwerk-Konfiguration. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectAutomatically|Boolean|Geben Sie an, ob die WLAN-Verbindung automatisch im Bereich eine Verbindung herstellen soll. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectToPreferredNetwork|Boolean|Geben Sie an, ob die WLAN-Verbindung zu bevorzugten Netzwerken, wenn bereits mit diesem verbunden eine Verbindung herstellen soll.  Erfordert ConnectAutomatically auf true festgelegt ist. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|Geben Sie an, ob die WLAN-Verbindung automatisch verbinden sollte, auch wenn die SSID nicht übertragen wird. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Geben Sie die Proxyeinstellung für Wi-Fi-Konfiguration Inherited aus [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Mögliche Werte sind: `none`, `manual` und `automatic`.|
-|proxyManualAddress|Zeichenfolge|Geben Sie die IP-Adresse des Proxyservers ein. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxyManualPort|Int32|Geben Sie den Port für den Proxyserver ein. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|Zeichenfolge|Geben Sie die URL für das Skript Server Proxykonfiguration. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|forceFIPSCompliance|Boolean|Gibt an, ob FIPS-Konformität zu erzwingen. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Geben Sie die einmalige Anmeldung Netzwerk auf Typ. Mögliche Werte sind: `disabled`, `prelogon` und `postlogon`.|
-|maximumAuthenticationTimeoutInSeconds|Int32|Geben Sie Authentifizierung maximale Timeout (in Sekunden).  Gültige Werte: 1-120|
-|promptForAdditionalAuthenticationCredentials|Boolean|Geben Sie an, ob die WLAN-Verbindung für zusätzliche Authentifizierung von Anmeldeinformationen auffordern soll.|
-|enablePairwiseMasterKeyCaching|Boolean|Geben Sie an, ob die WLAN-Verbindung paarweiser Hauptschlüssel Zwischenspeichern aktivieren sollten.|
-|maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Maximale paarweiser Hauptschlüssel Cachezeit (in Minuten) angeben.  Gültige Werte: 5 und 1440|
-|maximumNumberOfPairwiseMasterKeysInCache|Int32|Maximale Anzahl paarweiser Hauptschlüssel im Cache angeben.  Gültige Werte: 1 bis 255|
-|enablePreAuthentication|Boolean|Geben Sie an, ob die Vorauthentifizierung aktiviert werden soll.|
-|maximumPreAuthenticationAttempts|Int32|Geben Sie die maximale Vorauthentifizierung Versuche.  Gültige Werte: 1 bis 16|
-|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication-Protokoll (EAP). Gibt den Typ des EAP-Protokolls festlegen für den die Wi-Fi-Endpunkt (Router). Mögliche Werte sind: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap` und `eapFast`.|
-|trustedServerCertificateNames|Zeichenfolgenauflistung|Angeben von vertrauenswürdigen Zertifikat Servernamen.|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Angeben der Authentifizierungsmethode. Mögliche Werte sind: `certificate` und `usernameAndPassword`.|
-|innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Geben Sie innere Authentifizierungsprotokoll für EAP TTLS. Mögliche Werte: sind `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap` und `microsoftChapVersionTwo`.|
-|outerIdentityPrivacyTemporaryValue|Zeichenfolge|Geben Sie die Zeichenfolge, um den Benutzernamen für den Datenschutz ersetzen, wenn EAP TTLS oder PEAP verwenden.|
+|PresharedKey wurde|Zeichenfolge|Dies ist der vorinstallierte Schlüssel für ein persönliches WPA-Wi-Fi-Netzwerk. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Geben Sie den WiFi-Sicherheitstyp an. Von [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)geerbt. Mögliche Werte sind: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal` und `wpa2Enterprise`.|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Geben Sie den Grenzwert für die gemessene Verbindung für die WLAN-Verbindung an. Von [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)geerbt. Mögliche Werte sind: `unrestricted`, `fixed` und `variable`.|
+|SSID|Zeichenfolge|Geben Sie die SSID der WiFi-Verbindung an. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|networkName|Zeichenfolge|Geben Sie den Namen der Netzwerkkonfiguration an. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectAutomatically|Boolescher Wert|Geben Sie an, ob die WiFi-Verbindung automatisch eine Verbindung herstellen soll, wenn in Reichweite. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectToPreferredNetwork|Boolescher Wert|Geben Sie an, ob die WLAN-Verbindung mit den bevorzugten Netzwerken verbunden werden soll, wenn Sie bereits mit diesem verknüpft ist.  Erfordert, dass ConnectAutomatically auf true festgelegt ist. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolescher Wert|Geben Sie an, ob die WLAN-Verbindung automatisch eine Verbindung herstellen soll, selbst wenn die SSID nicht übertragen wird. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Geben Sie die Proxyeinstellung für die von [WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)geerbte WLAN-Konfiguration an. Mögliche Werte sind: `none`, `manual` und `automatic`.|
+|proxyManualAddress|Zeichenfolge|Geben Sie die IP-Adresse für den Proxy Server an. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyManualPort|Int32|Geben Sie den Anschluß für den Proxy Server an. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|Zeichenfolge|Geben Sie die URL für das Proxy Server-Konfigurationsskript an. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|forceFIPSCompliance|Boolescher Wert|Geben Sie an, ob die FIPS-Konformität erzwungen werden soll. Geerbt von [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Geben Sie den Typ des SSO-Netzwerks an. Mögliche Werte sind: `disabled`, `prelogon` und `postlogon`.|
+|maximumAuthenticationTimeoutInSeconds|Int32|Angeben des maximalen Authentifizierungstimeouts (in Sekunden).  Gültiger Range: 1-120|
+|promptForAdditionalAuthenticationCredentials|Boolescher Wert|Geben Sie an, ob die WLAN-Verbindung weitere Authentifizierungsanmeldeinformationen anfordern soll.|
+|enablePairwiseMasterKeyCaching|Boolescher Wert|Geben Sie an, ob die WLAN-Verbindung eine paarweise Zwischenspeicherung aktivieren soll.|
+|maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Geben Sie die maximale Anzahl von paarweise-Hauptschlüssel Cache Zeit (in Minuten) an.  Gültiger Range: 5-1440|
+|maximumNumberOfPairwiseMasterKeysInCache|Int32|Geben Sie die maximale Anzahl von paarweise-Hauptschlüsseln im Cache an.  Gültiger Range: 1-255|
+|enablePreAuthentication|Boolescher Wert|Geben Sie an, ob die Vorauthentifizierung aktiviert werden soll.|
+|maximumPreAuthenticationAttempts|Int32|Geben Sie maximale vorauthentifizierungs Versuche an.  Gültiger Range: 1-16|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|EAP (Extensible Authentication Protocol). Gibt den Typ des EAP-Protokolls an, das auf dem WLAN-Endpunkt (Router) festgelegt ist. Mögliche Werte sind: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap` und `eapFast`.|
+|trustedServerCertificateNames|String collection|Geben Sie vertrauenswürdige Serverzertifikat Namen an.|
+|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Geben Sie die Authentifizierungsmethode an. Mögliche Werte sind: `certificate` und `usernameAndPassword`.|
+|innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Angeben des inneren Authentifizierungsprotokolls für EAP-TTLS. Mögliche Werte: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
+|Outeridentityprivacytemporaryvalue wurden|Zeichenfolge|Geben Sie die Zeichenfolge an, die Benutzernamen für Datenschutz bei Verwendung von EAP-TTLS oder PEAP ersetzen soll.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|groupAssignments|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Auflistung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Gerät Konfiguration Installationsstatus durch Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries| [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|rootCertificatesForServerValidation|[windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) -Auflistung|Stammzertifikat für die gültigkeitsprüfung des Servers angeben.|
-|identityCertificateForClientAuthentication|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|Zertifikat für die Clientauthentifizierung Identität angeben.|
+|rootCertificatesForServerValidation|[windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) -Sammlung|Angeben des Stammzertifikats für die Serverüberprüfung.|
+|identityCertificateForClientAuthentication|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|Geben Sie Identitätszertifikat für die Clientauthentifizierung an.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

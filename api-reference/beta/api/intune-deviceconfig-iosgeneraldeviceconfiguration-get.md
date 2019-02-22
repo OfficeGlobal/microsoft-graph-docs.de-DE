@@ -1,21 +1,21 @@
 ---
 title: Abrufen von „iosGeneralDeviceConfiguration“
 description: Liest die Eigenschaften und Beziehungen des macOSGeneralDeviceConfiguration-Objekts.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268e62dca95f09fd530c9c0550053b3b5ec40967
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e308e14a9a7001e7647e6e40e66694d57c11cf8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405016"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158275"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Abrufen von „iosGeneralDeviceConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
@@ -43,9 +43,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9437
+Content-Length: 9800
 
 {
   "value": {
@@ -114,16 +114,20 @@ Content-Length: 9437
     "appStoreBlockInAppPurchases": true,
     "appStoreBlockUIAppInstallation": true,
     "appStoreRequirePassword": true,
+    "autoFillForceAuthentication": true,
     "bluetoothBlockModification": true,
     "cameraBlocked": true,
     "cellularBlockDataRoaming": true,
     "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
     "cellularBlockPerAppDataModification": true,
     "cellularBlockPersonalHotspot": true,
+    "cellularBlockPlanModification": true,
     "cellularBlockVoiceRoaming": true,
     "certificatesBlockUntrustedTlsCertificates": true,
     "classroomAppBlockRemoteScreenObservation": true,
     "classroomAppForceUnpromptedScreenObservation": true,
+    "classroomForceAutomaticallyJoinClasses": true,
+    "classroomForceUnpromptedAppAndDeviceLock": true,
     "compliantAppsList": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -148,6 +152,7 @@ Content-Length: 9437
     ],
     "enterpriseAppBlockTrust": true,
     "enterpriseAppBlockTrustModification": true,
+    "esimBlockModification": true,
     "faceTimeBlocked": true,
     "findMyFriendsBlocked": true,
     "gamingBlockGameCenterFriends": true,
@@ -274,6 +279,7 @@ Content-Length: 9437
     "passcodeRequiredType": "alphanumeric",
     "passcodeRequired": true,
     "podcastsBlocked": true,
+    "proximityBlockSetupToNewDevice": true,
     "safariBlockAutofill": true,
     "safariBlockJavaScript": true,
     "safariBlockPopups": true,
@@ -291,6 +297,8 @@ Content-Length: 9437
     "siriBlockedWhenLocked": true,
     "siriBlockUserGeneratedContent": true,
     "siriRequireProfanityFilter": true,
+    "softwareUpdatesEnforcedDelayInDays": 2,
+    "softwareUpdatesForceDelayed": true,
     "spotlightBlockInternetResults": true,
     "voiceDialingBlocked": true,
     "wallpaperBlockModification": true,

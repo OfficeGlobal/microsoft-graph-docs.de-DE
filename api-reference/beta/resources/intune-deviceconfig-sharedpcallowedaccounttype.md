@@ -1,30 +1,30 @@
 ---
-title: SharedPCAllowedAccountType Enum-Typ
-description: Typ der Konten, die an den PC freigeben dürfen.
-localization_priority: Normal
+title: sharedPCAllowedAccountType-Enumerationstyp
+description: Typ der Konten, die den PC freigeben dürfen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f3948cd149e8779cc06d2d24bfaa6119fcb08ae
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2816ad396a8f4598921433e15bd32b50d33e0272
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399304"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158198"
 ---
-# <a name="sharedpcallowedaccounttype-enum-type"></a>SharedPCAllowedAccountType Enum-Typ
+# <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Typ der Konten, die an den PC freigeben dürfen.
+Typ der Konten, die den PC freigeben dürfen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert. Standardwert.|
-|Gast|1|Nur Gastkonten.|
-|domain|2|Nur Domäne Konten.|
+|notConfigured|0|Nicht konfiguriert. Standardwert.|
+|Gäste|1|Nur Gastkonten.|
+|domain|2|Nur Domänen verbundene Konten.|
 
 
 

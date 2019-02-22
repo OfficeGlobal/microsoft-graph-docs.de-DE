@@ -1,32 +1,34 @@
 ---
-title: Ressourcentyp win32LobAppMsiInformation
-description: Enthält die MSI-app-Eigenschaften für eine Win32-App.
-localization_priority: Normal
+title: win32LobAppMsiInformation-Ressourcentyp
+description: Enthält Eigenschaften der MSI-App für eine Win32-app.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba91c572286020a3e349527f325d22bf0be5d67
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f330111a3e924e54cf23c30cd98d20e85cb38022
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399248"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158646"
 ---
-# <a name="win32lobappmsiinformation-resource-type"></a>Ressourcentyp win32LobAppMsiInformation
+# <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält die MSI-app-Eigenschaften für eine Win32-App.
+Enthält Eigenschaften der MSI-App für eine Win32-app.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |productCode|Zeichenfolge|Der MSI-Produktcode.|
-|productVersion|Zeichenfolge|Der MSI-Version des Produkts.|
-|upgradeCode|Zeichenfolge|Die MSI-Datei aktualisieren von Code.|
-|requiresReboot|Boolean|Gibt an, ob erfordert die MSI-app für den Computer neu starten, um die Installation abzuschließen.|
-|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Der Typ des MSI-Paket. Mögliche Werte sind: `perMachine`, `perUser` und `dualPurpose`.|
+|productVersion|Zeichenfolge|Die MSI-Produktversion.|
+|upgradeCode|Zeichenfolge|Der MSI-UpgradeCode.|
+|requiresReboot|Boolescher Wert|Gibt an, ob für die MSI-App der Computer neu gestartet werden muss, um die Installation abzuschließen.|
+|PackageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Der MSI-Pakettyp. Mögliche Werte sind: `perMachine`, `perUser` und `dualPurpose`.|
+|productName|String|Der MSI-Produktname.|
+|publisher|Zeichenfolge|Der MSI-Herausgeber.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -45,7 +47,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "productVersion": "String",
   "upgradeCode": "String",
   "requiresReboot": true,
-  "packageType": "String"
+  "packageType": "String",
+  "productName": "String",
+  "publisher": "String"
 }
 ```
 

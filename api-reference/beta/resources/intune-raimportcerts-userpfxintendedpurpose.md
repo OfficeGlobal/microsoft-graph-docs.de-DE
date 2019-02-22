@@ -1,28 +1,28 @@
 ---
-title: UserPfxIntendedPurpose Enum-Typ
-description: Werte für den beabsichtigten Zweck des eine PFX-Benutzerzertifikat unterstützt.
-localization_priority: Normal
+title: userPfxIntendedPurpose-Enumerationstyp
+description: Unterstützte Werte für den beabsichtigten Zweck eines PFX-Benutzerzertifikats.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c67d831e3ebc1e96b7056eb8e42cbd485e1b081c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 858cd2ad98185c677236200c43ed09933e0300b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392934"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160711"
 ---
-# <a name="userpfxintendedpurpose-enum-type"></a>UserPfxIntendedPurpose Enum-Typ
+# <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Werte für den beabsichtigten Zweck des eine PFX-Benutzerzertifikat unterstützt.
+Unterstützte Werte für den beabsichtigten Zweck eines PFX-Benutzerzertifikats.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht zugewiesene|0|Noch nicht dokumentiert|
+|zugewiesen|0|Noch nicht dokumentiert|
 |smimeEncryption|1|Noch nicht dokumentiert|
 |smimeSigning|2|Noch nicht dokumentiert|
 |VPN|4|Noch nicht dokumentiert|

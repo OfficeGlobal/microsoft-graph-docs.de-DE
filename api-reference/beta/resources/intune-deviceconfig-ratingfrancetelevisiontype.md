@@ -1,33 +1,33 @@
 ---
-title: RatingFranceTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Frankreich
-localization_priority: Normal
+title: ratingFranceTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Frankreich
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45e55109a9f749c869ede07132be5b9264f890a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9806d79e03576cedb23701f45e09b7766c4f6339
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403651"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155244"
 ---
-# <a name="ratingfrancetelevisiontype-enum-type"></a>RatingFranceTelevisionType Enum-Typ
+# <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Frankreich
+TV-Inhalts Klassifikations Bezeichnungen in Frankreich
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|agesAbove10|2|Die Klassifizierung-10 wird für die untergeordneten Elemente unter 10 nicht empfohlen.|
-|agesAbove12|3|Die Klassifizierung-12 wird für die untergeordneten Elemente unter 12 nicht empfohlen.|
-|agesAbove16|4|Die Klassifizierung – 16 wird für die untergeordneten Elemente unter 16 nicht empfohlen.|
-|agesAbove18|5|Die Klassifizierung-18 wird für Personen unter 18 nicht empfohlen.|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|agesAbove10|2|Die Klassifizierung-10 wird für Kinder unter 10 nicht empfohlen|
+|agesAbove12|3|Die Klassifizierung-12 wird nicht für Kinder unter 12 Jahren empfohlen.|
+|agesAbove16|4|Die Klassifizierung-16 wird nicht für Kinder unter 16 Jahren empfohlen.|
+|agesAbove18|5|Die-18-Klassifikation wird für Personen unter 18 Jahren nicht empfohlen.|
 
 
 

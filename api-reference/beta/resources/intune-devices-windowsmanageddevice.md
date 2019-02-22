@@ -1,58 +1,58 @@
 ---
-title: Ressourcentyp windowsManagedDevice
-description: Windows-Geräte, die verwaltet werden, oder über Intune Einschreibung
-localization_priority: Normal
+title: windowsManagedDevice-Ressourcentyp
+description: Windows-Geräte, die über InTune verwaltet oder vorab registriert werden
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4428819f7e82d6db7db435dec453cb53d4eb5b29
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f0e5811df6bfcdb360b5f8f3b03822a38bdbaab4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398457"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161229"
 ---
-# <a name="windowsmanageddevice-resource-type"></a>Ressourcentyp windowsManagedDevice
+# <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-Geräte, die verwaltet werden, oder über Intune Einschreibung
+Windows-Geräte, die über InTune verwaltet oder vorab registriert werden
 
 
-Erbt vom [managedDevice](../resources/intune-devices-manageddevice.md)
+Erbt von [managedDevice](../resources/intune-devices-manageddevice.md)
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windowsManagedDevices](../api/intune-devices-windowsmanageddevice-list.md)|[WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekte.|
-|[Abrufen von windowsManagedDevice](../api/intune-devices-windowsmanageddevice-get.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
-|[Erstellen von windowsManagedDevice](../api/intune-devices-windowsmanageddevice-create.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Erstellen eines neuen [WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
-|[WindowsManagedDevice löschen](../api/intune-devices-windowsmanageddevice-delete.md)|Keine|Löscht eine [WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md).|
-|[WindowsManagedDevice aktualisieren](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Aktualisieren Sie die Eigenschaften eines [WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
+|[WindowsManagedDevices aufListen](../api/intune-devices-windowsmanageddevice-list.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekte.|
+|[WindowsManagedDevice abrufen](../api/intune-devices-windowsmanageddevice-get.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Lesen von Eigenschaften und Beziehungen des [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
+|[WindowsManagedDevice erstellen](../api/intune-devices-windowsmanageddevice-create.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Erstellen eines neuen [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
+|[WindowsManagedDevice löschen](../api/intune-devices-windowsmanageddevice-delete.md)|Keine|Löscht eine [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md).|
+|[WindowsManagedDevice aktualisieren](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|Aktualisieren der Eigenschaften eines [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userId|Zeichenfolge|Eindeutiger Bezeichner für den Benutzer mit dem Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceName|Zeichenfolge|Name des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Die Hardward Details für das Gerät.  Enthält Informationen, wie Speicherplatz, Hersteller, Seriennummer. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|Besitzertyp|[Besitzertyp](../resources/intune-devices-ownertype.md)|Besitz des Geräts. "Unternehmen" oder "personal" Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md)möglich. Mögliche Werte sind: `unknown`, `company` und `personal`.|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Besitz des Geräts. "Unternehmen" oder "personal" Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md)möglich. Mögliche Werte sind: `unknown`, `company` und `personal`.|
+|id|string|Eindeutiger Bezeichner für das von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbte Gerät|
+|userId|String|Eindeutiger Bezeichner für den Benutzer, der mit dem von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Gerät verknüpft ist|
+|deviceName|Zeichenfolge|Name des von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Geräts|
+|Dem|[Dem](../resources/intune-devices-hardwareinformation.md)|Die hardward-Details für das Gerät.  Enthält Informationen wie Speicherplatz, Hersteller, Seriennummer usw. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Der Besitzer des Geräts. Kann "Company" oder "Personal" von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt werden. Mögliche Werte sind: `unknown`, `company` und `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Der Besitzer des Geräts. Kann "Company" oder "Personal" von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt werden. Mögliche Werte sind: `unknown`, `company` und `personal`.|
 |deviceActionResults|Collection von Objekten des Typs [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Liste von Objekten des Typs „ComplexType deviceActionResult“.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|Verwaltungsstatus des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled` und `discovered`.|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|Verwaltungsstatus des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled` und `discovered`.|
 |enrolledDateTime|DateTimeOffset|Datum und Uhrzeit der Geräteregistrierung.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten erfolgreichen Synchronisierung des Geräts mit Intune.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassistyp des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
-|operatingSystem|Zeichenfolge|Betriebssystem des Geräts. Windows iOS usw.. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plattform des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Konformitätsstatus des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` und `configManager`.|
-|jailBroken|Zeichenfolge|Gibt an, ob es sich um ein Gerät mit Jailbreak oder Rootzugriff handelt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController` und `microsoft365ManagedMdm`.|
+|chassitype|[chassitype](../resources/intune-devices-chassistype.md)|Gehäusetyp des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
+|operatingSystem|Zeichenfolge|Betriebssystem des Geräts. Windows, iOS, etc. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plattform des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6` `nokia` `windowsPhone` `mac` `winCE` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM`,,,,,,,, `holoLens`,, `androidEnterprise` ,,,,,, `surfaceHub` `androidForWork` `winEmbedded` , `blackberry`, `palm`, `unknown`.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Konformitätsstatus des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` und `configManager`.|
+|jailBroken|String|Gibt an, ob es sich um ein Gerät mit Jailbreak oder Rootzugriff handelt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. InTune, EAS usw. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController` und `microsoft365ManagedMdm`.|
 |osVersion|Zeichenfolge|Auf dem Gerät installierte Betriebssystemversion.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -60,63 +60,63 @@ Erbt vom [managedDevice](../resources/intune-devices-manageddevice.md)
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|aadRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Gibt an, ob verloren Modus aktiviert ist oder Inherited aus [ManagedDevice deaktiviert](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `disabled` und `enabled`.|
+|aadRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Gibt an, ob der Modus verloren aktiviert oder deaktiviert von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt wurde. Mögliche Werte sind: `disabled` und `enabled`.|
 |activationLockBypassCode|Zeichenfolge|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|emailAddress|Zeichenfolge|Email(s) für den Benutzer mit dem Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureActiveDirectoryDeviceId|Zeichenfolge|Eindeutiger Bezeichner des Azure Active Directory-Geräts. Schreibgeschützt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|emailAddress|Zeichenfolge|E-Mail (e) für den Benutzer, der mit dem von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Gerät verknüpft ist|
+|Eigenschaften azureactivedirectorydeviceid|Zeichenfolge|Eindeutiger Bezeichner des Azure Active Directory-Geräts. Schreibgeschützt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |azureADDeviceId|Zeichenfolge|Eindeutiger Bezeichner des Azure Active Directory-Geräts. Schreibgeschützt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|Zeichenfolge|Gerät Kategorie Anzeigenamen Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isSupervised|Boolean|Überwacht Gerätestatus Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
+|deviceCategoryDisplayName|Zeichenfolge|Anzeigename der Gerätekategorie, geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isSupervised|Boolean|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Geräte überwachter Status|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Verbindung des Geräts mit Exchange Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `none`, `unknown`, `allowed`, `blocked` und `quarantined`.|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Grund für den Zugriffsstatus des Geräts in Exchange. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte sind: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` und `deviceNotKnownWithManagedApp`.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Grund für den Zugriffsstatus des Geräts in Exchange. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte sind: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` und `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|Zeichenfolge|URL zur Einrichtung einer Remoteunterstützungssitzung mit dem Gerät.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|Zeichenfolge|Fehlerzeichenfolge zur Beschreibung von Fehlern beim Erstellen von Objekten für Remoteunterstützungssitzungen.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isEncrypted|Boolean|Verschlüsselung Gerätestatus Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userPrincipalName|Zeichenfolge|Gerät Benutzerprinzipalnamen Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|model|Zeichenfolge|Modell des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|manufacturer|Zeichenfolge|Hersteller des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|imei|Zeichenfolge|IMEI von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|Die DateTime beim Gerät Compliance Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md) Aktivierungszeitraums|
-|serialNumber|Zeichenfolge|SerialNumber von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt|
-|PhoneNumber|Zeichenfolge|Rufnummer des Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|androidSecurityPatchLevel|Zeichenfolge|Android Patch Sicherheitsstufe Inherited von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userDisplayName|Zeichenfolge|Anzeigename des Benutzers Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr-Client aktiviert Inherited-Funktionen, [managedDevice](../resources/intune-devices-manageddevice.md)|
-|wiFiMacAddress|Zeichenfolge|Wi-Fi MAC von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt.|
+|isEncrypted|Boolescher Wert|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Geräte Verschlüsselungsstatus|
+|userPrincipalName|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Geräte Benutzerprinzipalname|
+|model|Zeichenfolge|Modell des von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Geräts|
+|manufacturer|Zeichenfolge|Hersteller des von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Geräts|
+|imei|String|IMEI geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|Das Datum, an dem die Zeitdauer für die Geräte Konformität von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt wurde|
+|serialNumber|String|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbte Seriennummer|
+|PhoneNumber|Zeichenfolge|Telefonnummer des von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Geräts|
+|androidSecurityPatchLevel|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbte Sicherheitspatch-Stufe von Android|
+|userDisplayName|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Benutzeranzeigename|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbte aktivierte-Client aktivierte Features|
+|wiFiMacAddress|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Wi-Fi-Mac|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|Status des Integritätsnachweises für Geräte.
  Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|subscriberCarrier|Zeichenfolge|Abonnenten des Netzbetreibers von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt.|
-|meid|Zeichenfolge|MEID von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt|
-|totalStorageSpaceInBytes|Int64|Gesamtspeicher in Bytes von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt|
-|freeStorageSpaceInBytes|Int64|Freien Speicher in Bytes von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt|
-|managedDeviceName|Zeichenfolge|Automatisch generierter Name zur Identifizierung des Geräts. Kann mit einem benutzerfreundlichen Namen überschrieben werden. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Gibt den Bedrohungsstatus eines Geräts an, wenn das Konto und das Gerät einen Mobile Threat Defense-Partner nutzen. Schreibgeschützt. Geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md). Mögliche Werte: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
-|usersLoggedOn|[LoggedOnUser](../resources/intune-devices-loggedonuser.md) -Auflistung|Gibt das letzte angemeldete Benutzer eines Geräts Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Meldet den DateTime-Wert die Einstellung PreferMdmOverGroupPolicy festgelegt wurde.  Wenn festgelegt ist, werden die Intune MDM Einstellungen Group Policy Settings außer Kraft setzen, wenn ein Konflikt vorliegt. Schreibgeschützt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|Gibt an, ob das verwaltete Geräte über den Auto-Pilot registriert ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|Gibt an, ob das Gerät verwalteten iOS Benutzer Genehmigung Registrierung wird. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementCertificateExpirationDate|DateTimeOffset|Gerät Management Ablaufdatum des Zertifikats Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md) -Berichte|
-|iccid|Zeichenfolge|Chip Karte Bezeichner, ist es eine SIM-Karte eindeutige ID-Nummer. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|UDID|Zeichenfolge|Eindeutige Geräte-ID für iOS und Mac OS-Geräte. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-IDs für diese Instanz des Geräts. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsActiveMalwareCount|Int32|Anzahl von aktiven Malware für dieses Windows-Gerät Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsRemediatedMalwareCount|Int32|Anzahl der für das Windows-Gerät Inherited aus [ManagedDevice](../resources/intune-devices-manageddevice.md) für gewartete Schadsoftware|
-|notes|Zeichenfolge|Notes auf dem Gerät von IT Admin geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md) erstellt|
-|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Konfigurations-Manager-Client Integritätsstatus, gilt nur für Geräte, die von MDM/Configuration Manager-Agent geerbt von [ManagedDevice](../resources/intune-devices-manageddevice.md) verwaltet|
+|subscriberCarrier|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbter Abonnent|
+|meid|Zeichenfolge|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) GEERBTe MEID|
+|totalStorageSpaceInBytes|Int64|Gesamtspeicher in Byte, geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|freeStorageSpaceInBytes|Int64|Freier Speicher in von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten bytes|
+|managedDeviceName|String|Automatisch generierter Name zur Identifizierung des Geräts. Kann mit einem benutzerfreundlichen Namen überschrieben werden. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Gibt den Bedrohungsstatus eines Geräts an, wenn das Konto und das Gerät einen Mobile Threat Defense-Partner nutzen. Schreibgeschützt. Von [ManagedDevice](../resources/intune-devices-manageddevice.md)geerbt. Mögliche Werte: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) -Sammlung|Gibt die zuletzt angemeldeten Benutzer eines von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten Geräts an.|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Meldet den DateTime-Wert für die Einstellung preferMdmOverGroupPolicy.  Ist diese Einstellung festgelegt, überschreiben die Intune-MDM-Einstellungen Gruppenrichtlinieneinstellungen bei einem Konflikt. Schreibgeschützt. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolescher Wert|Meldet, ob das verwaltete Gerät über Auto-Pilot registriert wird. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolescher Wert|Meldet, ob das verwaltete iOS-Gerät Benutzer Genehmigungs Registrierung ist. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementCertificateExpirationDate|DateTimeOffset|Meldet Ablaufdatum für das Geräte Verwaltungszertifikat, das von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt wurde|
+|ICCID|Zeichenfolge|Integrated Circuit Card Identifier, es ist die eindeutige Identifikationsnummer einer SIM-Karte. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|UDID|Zeichenfolge|Eindeutige Gerätekennung für iOS-und macOS-Geräte. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|Rolescopetagids zur|String collection|Liste der Bereichstag-IDs für diese Geräteinstanz. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|windowsActiveMalwareCount|Int32|Anzahl der aktiven Schadsoftware für dieses Windows-Gerät, geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|windowsRemediatedMalwareCount|Int32|Anzahl der korrigierten Schadsoftware für dieses Windows-Gerät, geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|notes|Zeichenfolge|Hinweise auf dem vom IT-Administrator erstellten Gerät werden von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt.|
+|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration Manager-Clientintegritätsstatus, nur gültig für Geräte, die von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbten MDM/ConfigMgr-Agent verwaltet werden|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md)-Sammlung|Alle Programme, die derzeit auf dem Gerät installiert Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Gerätekategorie Inherited aus [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Das Gerät Sicherheitsstatus. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
+|detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md)-Sammlung|Alle derzeit auf dem Gerät installierten Anwendungen, die von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbt wurden|
+|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Von [ManagedDevice](../resources/intune-devices-manageddevice.md) geerbte Gerätekategorie|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Der Status des Geräteschutzes. Geerbt von [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -222,7 +222,9 @@ Es folgt eine JSON-Darstellung der Ressource.
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "String",
   "deviceHealthAttestationState": {

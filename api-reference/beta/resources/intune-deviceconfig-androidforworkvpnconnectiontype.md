@@ -1,32 +1,32 @@
 ---
-title: AndroidForWorkVpnConnectionType Enum-Typ
-description: Android für Arbeit VPN-Verbindungstyp.
-localization_priority: Normal
+title: androidForWorkVpnConnectionType-Enumerationstyp
+description: VPN-Verbindungstyp für Android for work.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 953d35e6484a59db1768d04056f87c4aeefb05c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: db2804111bd63e886a24ff043e2f3d39c768a93e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409300"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156266"
 ---
-# <a name="androidforworkvpnconnectiontype-enum-type"></a>AndroidForWorkVpnConnectionType Enum-Typ
+# <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android für Arbeit VPN-Verbindungstyp.
+VPN-Verbindungstyp für Android for work.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1|Pulse sichern.|
+|pulseSecure|1|Impuls sicher.|
 |f5EdgeClient|2|F5-Edge-Client.|
-|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Verbindung.|
-|checkPointCapsuleVpn|4|Überprüfen Sie Punkt "Kapseln" VPN.|
+|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile-Verbindung.|
+|checkPointCapsuleVpn|4|Überprüfen Sie Point Kapsel VPN.|
 |Citrix|5|Citrix|
 
 

@@ -1,23 +1,23 @@
 ---
-title: Erstellen von officeClientConfigurationAssignment
-description: Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie.
+title: OfficeClientConfigurationAssignment erstellen
+description: Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c1f09ba2dfabf85501120cb2099373e5664deb08
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155265"
 ---
-# <a name="create-officeclientconfigurationassignment"></a>Erstellen von officeClientConfigurationAssignment
+# <a name="create-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie.
+Hinzufügen einer Zielgruppe zu einer vorhandenen Richtlinie
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -38,25 +38,25 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt OfficeClientConfigurationAssignment eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das officeClientConfigurationAssignment-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die OfficeClientConfigurationAssignment erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der officeClientConfigurationAssignment erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|ID des der OfficeConfigurationAssignment.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Die Ziel-Zuordnung, die durch den Administrator definiert|
+|id|Zeichenfolge|ID des OfficeConfigurationAssignment.|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Die vom Administrator definierte Zielzuweisung.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 Created` Antwortcode und eines [OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 Created` Antwortcode und ein [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

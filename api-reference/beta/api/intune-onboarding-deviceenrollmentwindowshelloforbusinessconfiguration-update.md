@@ -1,21 +1,21 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceEnrollmentWindowsHelloForBusinessConfiguration-Objekts.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83b475f1fe467ad73d0bdc63a3c25e3a95761e83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 819083ad2081515555900d8dd44b9e039bab6711
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155951"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisieren der Eigenschaften eines [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)-Objekts.
 
@@ -38,9 +38,9 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,25 +50,25 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|id|string|ID der von [DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) geerbten Konfiguration der Registrierungs Status Seite|
 |displayName|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |description|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Priorität|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|pinMinimumLength|Int32|Noch nicht dokumentiert.|
-|pinMaximumLength|Int32|Noch nicht dokumentiert.|
+|pinMinimumLength|Int32|Noch nicht dokumentiert|
+|pinMaximumLength|Int32|Noch nicht dokumentiert|
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
-|Zustand|[Aktivierung von Steuerelementen](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
-|securityDeviceRequired|Boolean|Noch nicht dokumentiert.|
-|unlockWithBiometricsEnabled|Boolean|Noch nicht dokumentiert.|
-|remotePassportEnabled|Boolean|Noch nicht dokumentiert.|
-|pinPreviousBlockCount|Int32|Noch nicht dokumentiert.|
+|state|[Aktivierung](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
+|securityDeviceRequired|Boolescher Wert|Noch nicht dokumentiert|
+|unlockWithBiometricsEnabled|Boolescher Wert|Noch nicht dokumentiert|
+|remotePassportEnabled|Boolescher Wert|Noch nicht dokumentiert|
+|pinPreviousBlockCount|Int32|Noch nicht dokumentiert|
 |pinExpirationInDays|Int32|Noch nicht dokumentiert.|
-|enhancedBiometricsState|[Aktivierung von Steuerelementen](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
+|enhancedBiometricsState|[Aktivierung](../resources/intune-shared-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
 
 
 

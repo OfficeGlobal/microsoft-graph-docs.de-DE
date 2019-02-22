@@ -1,39 +1,39 @@
 ---
-title: Ressourcentyp roleScopeTag
-description: Rolle Bereich Tag
-localization_priority: Normal
+title: roleScopeTag-Ressourcentyp
+description: Rollenbereich-Tag
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a63ac05ea6161843aa1ad664a99003b7f69d38e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8c7bfb12172f6ae99f14a65647a7a6ab8955fef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159423"
 ---
-# <a name="rolescopetag-resource-type"></a>Ressourcentyp roleScopeTag
+# <a name="rolescopetag-resource-type"></a>roleScopeTag-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Rolle Bereich Tag
+Rollenbereich-Tag
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Auflistung|Listeneigenschaften und Beziehungen der [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekte.|
-|[Abrufen von roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Lesen Sie Eigenschaften und Beziehungen des [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
-|[Erstellen von roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Erstellen eines neuen [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
-|[RoleScopeTag löschen](../api/intune-rbac-rolescopetag-delete.md)|Keine|Löscht eine [RoleScopeTag](../resources/intune-rbac-rolescopetag.md).|
-|[RoleScopeTag aktualisieren](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Aktualisieren Sie die Eigenschaften eines [RoleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
+|[RoleScopeTags aufListen](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekte.|
+|[RoleScopeTag abrufen](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Lesen von Eigenschaften und Beziehungen des [roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
+|[RoleScopeTag erstellen](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Erstellen eines neuen [roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
+|[RoleScopeTag löschen](../api/intune-rbac-rolescopetag-delete.md)|Keine|Löscht eine [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
+|[RoleScopeTag aktualisieren](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Aktualisieren der Eigenschaften eines [roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|Zeichenfolge|Das Display oder den Anzeigenamen des Tags Bereich Rolle.|
-|description|Zeichenfolge|Beschreibung des Tags Bereich Rolle.|
+|displayName|Zeichenfolge|Die Anzeige oder der angezeigte Name des Rollenbereichs Tags.|
+|description|Zeichenfolge|Beschreibung des Rollenbereichs Tags.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,23 +1,23 @@
 ---
-title: Erstellen von depEnrollmentProfile
-description: Erstellen eines neuen DepEnrollmentProfile-Objekts.
-localization_priority: Normal
+title: DepEnrollmentProfile erstellen
+description: Erstellen eines neuen depEnrollmentProfile-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc6b11a8367ff28b4e4b9957879e251cb939c7e0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0f5fa833a93006e36400a176ed7fcd40b5a74251
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416314"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155944"
 ---
-# <a name="create-depenrollmentprofile"></a>Erstellen von depEnrollmentProfile
+# <a name="create-depenrollmentprofile"></a>DepEnrollmentProfile erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) -Objekts.
+Erstellen eines neuen [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,54 +38,54 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt DepEnrollmentProfile eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das depEnrollmentProfile-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die DepEnrollmentProfile erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der depEnrollmentProfile erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Die GUID für das Objekt Inherited aus [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Zeichenfolge|Name des Profils Inherited aus [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|Zeichenfolge|Beschreibung des Profils Inherited aus [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Boolean|Gibt an, ob das Profil Benutzerauthentifizierung Inherited aus [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) erfordert|
-|configurationEndpointUrl|Zeichenfolge|Endpunkt-Url für die Registrierung geerbt von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) zu verwendende Konfiguration|
-|enableAuthenticationViaCompanyPortal|Boolean|Gibt an, dass die Authentifizierung mit Apple Setup-Assistenten anstelle von Unternehmensportal. Geerbt von [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Gibt an, dass Unternehmensportal auf Setup-Assistent registriert Geräten Inherited aus [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) erforderlich ist|
-|isDefault|Boolean|Gibt an, ob dies das Standardprofil ist|
-|supervisedModeEnabled|Boolean|Überwachten Modus aktivieren, False andernfalls True. Finden Sie unter https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune Weitere Informationen.|
-|supportDepartment|Zeichenfolge|Abteilung Supportinformationen|
-|passCodeDisabled|Boolean|Gibt an, ob Kennung Setup Bereich deaktiviert ist|
-|isMandatory|Boolean|Gibt an, ob das Profil zwingend erforderlich ist.|
-|locationDisabled|Boolean|Gibt an, ob im Bereich Speicherort Service-Setup deaktiviert ist|
+|id|string|Die GUID für das von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Objekt.|
+|displayName|Zeichenfolge|Name des von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbten Profils|
+|description|Zeichenfolge|Beschreibung des von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbten Profils|
+|requiresUserAuthentication|Boolescher Wert|Gibt an, ob für das Profil eine von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Benutzerauthentifizierung erforderlich ist.|
+|configurationEndpointUrl|Zeichenfolge|Konfigurations Endpunkt-URL für die von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Registrierung|
+|enableAuthenticationViaCompanyPortal|Boolescher Wert|Gibt an, dass der Apple-Setup-Assistent anstelle des Unternehmensportals authentifiziert werden soll. Geerbt von [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolescher Wert|Gibt an, dass das Unternehmens Portal auf dem Setup-Assistenten erforderlich ist, der von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbt wurde.|
+|isDefault|Boolescher Wert|Gibt an, ob dies das Standardprofil ist.|
+|supervisedModeEnabled|Boolescher Wert|Überwachter Modus, true, um zu aktivieren, andernfalls false. Weitere https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune Informationen finden Sie unter.|
+|supportDepartment|Zeichenfolge|Informationen zur Support Abteilung|
+|passCodeDisabled|Boolescher Wert|Gibt an, ob der Bereich "Passcode" deaktiviert ist.|
+|isMandatory|Boolescher Wert|Gibt an, ob das Profil obligatorisch ist.|
+|locationDisabled|Boolescher Wert|Gibt an, ob der Standortdienst-Setup Bereich deaktiviert ist.|
 |supportPhoneNumber|Zeichenfolge|Support-Telefonnummer|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Gibt den Modus Paarung iTunes an. Mögliche Werte sind: `disallow`, `allow` und `requiresCertificate`.|
-|profileRemovalDisabled|Boolean|Gibt an, ob die Option Profil entfernen deaktiviert ist|
-|managementCertificates|[ManagementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) -Auflistung|Verwaltung von Zertifikaten für Apple-Konfiguration|
-|restoreBlocked|Boolean|Gibt an, ob die Wiederherstellung Setup Bereich gesperrt ist|
-|restoreFromAndroidDisabled|Boolean|Gibt an, ob die Wiederherstellung von Android deaktiviert ist|
-|appleIdDisabled|Boolean|Gibt an, ob Apple Id Setup Bereich deaktiviert ist|
-|termsAndConditionsDisabled|Boolean|Gibt an, ob im Bereich 'Geschäftsbedingungen'-Setup deaktiviert ist|
-|touchIdDisabled|Boolean|Gibt an, ob im Bereich Touch-Id-Setup deaktiviert ist|
-|applePayDisabled|Boolean|Gibt an, ob Apple Lohn Setup Bereich deaktiviert ist|
-|zoomDisabled|Boolean|Gibt an, ob der Bereich der Zoom-Setup deaktiviert ist|
-|siriDisabled|Boolean|Gibt an, ob Siri Setup Bereich deaktiviert ist|
-|diagnosticsDisabled|Boolean|Gibt an, ob der Bereich der Diagnose-Setup deaktiviert ist|
-|macOSRegistrationDisabled|Boolean|Gibt an, ob Mac OS-Registrierung deaktiviert ist|
-|macOSFileVaultDisabled|Boolean|Gibt an, ob die Datei Vault Mac OS deaktiviert ist|
-|awaitDeviceConfiguredConfirmation|Boolean|Gibt an, ob das Gerät konfigurierten Bestätigung warten müssen|
-|sharedIPadMaximumUserCount|Int32|Dies gibt die maximale Anzahl von Benutzern, die eine freigegebene iPad verwenden können. Gilt nur im freigegebenen iPad-Modus.|
-|enableSharedIPad|Boolean|Dies gibt an, ob das Gerät in einen Modus registriert werden, wodurch Multi-Benutzerszenarien. Nur im freigegebenen iPads anwendbar.|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Gibt den iTunes-paarungsmodus an. Mögliche Werte sind: `disallow`, `allow` und `requiresCertificate`.|
+|profileRemovalDisabled|Boolescher Wert|Gibt an, ob die Profil Entfernungs Option deaktiviert ist.|
+|managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) -Sammlung|Verwaltungszertifikate für Apple Configurator|
+|restoreBlocked|Boolescher Wert|Gibt an, ob der wiederHerstellungs-Setup Bereich blockiert ist|
+|restoreFromAndroidDisabled|Boolescher Wert|Gibt an, ob die Wiederherstellung von Android deaktiviert ist.|
+|appleIdDisabled|Boolescher Wert|Gibt an, ob der Apple ID-Setup Bereich deaktiviert ist.|
+|termsAndConditionsDisabled|Boolescher Wert|Gibt an, ob der Setup Bereich "Bedingungen" deaktiviert ist.|
+|touchIdDisabled|Boolescher Wert|Gibt an, ob der Bereich "Touch ID-Setup" deaktiviert ist.|
+|applePayDisabled|Boolescher Wert|Gibt an, ob der Apple Pay-Setup Bereich deaktiviert ist.|
+|zoomDisabled|Boolescher Wert|Gibt an, ob der Zoom-Setup Bereich deaktiviert ist.|
+|siriDisabled|Boolescher Wert|Gibt an, ob der Siri-Setup Bereich deaktiviert ist.|
+|diagnosticsDisabled|Boolescher Wert|Gibt an, ob der Diagnose-Setup Bereich deaktiviert ist.|
+|macOSRegistrationDisabled|Boolescher Wert|Gibt an, ob die Mac OS-Registrierung deaktiviert ist.|
+|macOSFileVaultDisabled|Boolescher Wert|Gibt an, ob das Mac OS-Dateidepot deaktiviert ist.|
+|awaitDeviceConfiguredConfirmation|Boolescher Wert|Gibt an, ob das Gerät auf die konfigurierte Bestätigung warten muss.|
+|sharedIPadMaximumUserCount|Int32|Dies gibt die maximale Anzahl von Benutzern an, die ein freigegebenes iPad verwenden können. Gilt nur für den freigegebenen iPad-Modus.|
+|Enablesharedipad wurden|Boolescher Wert|Dieser Wert gibt an, ob das Gerät in einen Modus eingeschrieben werden soll, der mehrere Benutzerszenarien ermöglicht. Gilt nur für freigegebene iPads.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

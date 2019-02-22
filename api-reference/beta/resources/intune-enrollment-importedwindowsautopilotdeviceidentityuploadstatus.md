@@ -1,30 +1,30 @@
 ---
-title: ImportedWindowsAutopilotDeviceIdentityUploadStatus Enum-Typ
+title: importedWindowsAutopilotDeviceIdentityUploadStatus-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 821efe12444a94b1e650275bf2d18653a66f505d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c2b91bb90b4f56bb90a63c26a5b91bcb17636f20
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161236"
 ---
-# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>ImportedWindowsAutopilotDeviceIdentityUploadStatus Enum-Typ
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|noUpload|0|Kein Status hochladen.|
-|Ausstehende|1|Ausstehend.|
-|complete|2|Abgeschlossen Sie Status "".|
+|noUpload|0|Kein Uploadstatus.|
+|ausstehenden|1|Status ausStehend.|
+|complete|2|Vollständiger Status.|
 |error|3|Fehlerstatus.|
 
 

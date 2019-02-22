@@ -1,31 +1,32 @@
 ---
 title: iPv4Range-Ressourcentyp
-description: Beschreibt die iPv4Range Ressource die Microsoft Graph-API für Intune, die mehrere Workflows unterstützt.
+description: Definition des IPv4-Umfangs.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9ac2656b7c79cceba70879fe478aec65a5bd7250
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 521c27396c483ba07cc39aec583dd3e610da267d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160515"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-IP-V4-Bereich
+Definition des IPv4-Umfangs.
+
 
 Erbt von [ipRange](../resources/intune-shared-iprange.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|lowerAddress|Zeichenfolge|Untere IP-Adresse|
-|upperAddress|Zeichenfolge|Obere IP-Adresse|
+|lowerAddress|Zeichenfolge|Niedrigere Adresse.|
+|upperAddress|Zeichenfolge|Obere Adresse.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -34,7 +35,6 @@ Keine
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->
@@ -45,6 +45,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "upperAddress": "String"
 }
 ```
+
 
 
 

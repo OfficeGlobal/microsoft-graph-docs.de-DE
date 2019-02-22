@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp windows10EnrollmentCompletionPageConfiguration
-description: Noch nicht dokumentiert
-localization_priority: Normal
+title: windows10EnrollmentCompletionPageConfiguration-Ressourcentyp
+description: Konfiguration der Windows 10-Registrierungs Status Seite
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2eb7b463fdda2a2354082892b88cc6781bcb0e58
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f3245bdc6e2036d1fe53076a639c4697460e0b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158730"
 ---
-# <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>Ressourcentyp windows10EnrollmentCompletionPageConfiguration
+# <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Noch nicht dokumentiert.
+Konfiguration der Windows 10-Registrierungs Status Seite
 
 
 Erbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
@@ -25,30 +25,30 @@ Erbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windows10EnrollmentCompletionPageConfigurations](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekte.|
-|[Abrufen von windows10EnrollmentCompletionPageConfiguration](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
-|[Erstellen von windows10EnrollmentCompletionPageConfiguration](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-create.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Erstellen eines neuen [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
+|[Windows10EnrollmentCompletionPageConfigurations aufListen](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekte.|
+|[Windows10EnrollmentCompletionPageConfiguration abrufen](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
+|[Windows10EnrollmentCompletionPageConfiguration erstellen](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-create.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Erstellen eines neuen [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
 |[Windows10EnrollmentCompletionPageConfiguration löschen](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-delete.md)|Keine|Löscht eine [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).|
-|[Windows10EnrollmentCompletionPageConfiguration aktualisieren](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
+|[Windows10EnrollmentCompletionPageConfiguration aktualisieren](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|Aktualisieren der Eigenschaften eines [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|id|string|ID der von [DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) geerbten Konfiguration der Registrierungs Status Seite|
 |displayName|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |description|Zeichenfolge|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Priorität|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Zeigen Sie an oder blenden Sie des installationsfortschritts für Benutzer aus|
-|blockDeviceSetupRetryByUser|Boolean|Ermöglicht es dem Benutzer, das von Setup auf Installationsfehler wiederholen|
-|allowDeviceResetOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Gerät zurücksetzen auf Installationsfehler|
-|allowLogCollectionOnInstallFailure|Boolean|Zulassen Sie oder blockieren Sie Log-Auflistung auf Installationsfehler|
-|customErrorMessage|Zeichenfolge|Legen Sie benutzerdefinierte Fehlermeldung nach einem Installationsfehler anzeigen|
-|installProgressTimeoutInMinutes|Int32|Legen Sie die Installation des Fortschritts Timeout in Minuten|
-|allowDeviceUseOnInstallFailure|Boolean|Ermöglicht es dem Benutzer weiterhin verwenden das Gerät auf Installationsfehler|
-|selectedMobileAppIds|Zeichenfolgenauflistung|Ausgewählte Anwendungen zum Nachverfolgen des Installationsstatus|
+|showInstallationProgress|Boolescher Wert|Anzeigen oder Ausblenden des Installationsfortschritts für den Benutzer|
+|blockDeviceSetupRetryByUser|Boolescher Wert|Wiederholen des Setups bei Installationsfehlers für den Benutzer|
+|allowDeviceResetOnInstallFailure|Boolescher Wert|Gerätezurücksetzung bei Installationsfehlers zulassen oder blockieren|
+|allowLogCollectionOnInstallFailure|Boolescher Wert|Zulassen oder Blockieren der Protokollsammlung bei Installations Ausfällen|
+|customErrorMessage|Zeichenfolge|Festlegen der benutzerdefinierten Fehlermeldung beim Installationsfehler|
+|installProgressTimeoutInMinutes|Int32|Festlegen des Installationsfortschritts-Timeouts in Minuten|
+|allowDeviceUseOnInstallFailure|Boolescher Wert|Zulassen, dass der Benutzer das Gerät bei der Installation weiterhin verwendet|
+|selectedMobileAppIds|String collection|Ausgewählte Anwendungen zum Nachverfolgen des Installationsstatus|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

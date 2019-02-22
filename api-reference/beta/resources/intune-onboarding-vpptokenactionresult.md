@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp vppTokenActionResult
-description: Der Status der Aktion, die mit einem Apple Volume Purchase Program Token ausgeführt werden.
-localization_priority: Normal
+title: vppTokenActionResult-Ressourcentyp
+description: Der Status der Aktion, die mit einem Apple Volume Purchase Program-Token ausgeführt wurde.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fb78ea991ed43bd100a424ea7ddd7e23b22412d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 853c5c12ca0a85fe0f5a16efa86321e46a28ec5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414291"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159388"
 ---
-# <a name="vpptokenactionresult-resource-type"></a>Ressourcentyp vppTokenActionResult
+# <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Status der Aktion, die mit einem Apple Volume Purchase Program Token ausgeführt werden.
+Der Status der Aktion, die mit einem Apple Volume Purchase Program-Token ausgeführt wurde.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

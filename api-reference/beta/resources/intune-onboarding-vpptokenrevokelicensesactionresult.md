@@ -1,37 +1,37 @@
 ---
-title: Ressourcentyp vppTokenRevokeLicensesActionResult
-description: Der Status der Aktion Revoke-Lizenzen für das Token Apple Volume Purchase Program ausgeführt.
-localization_priority: Normal
+title: vppTokenRevokeLicensesActionResult-Ressourcentyp
+description: Der Status der Aktion REVOKE Licenses, die für das Apple Volume Purchase Program-Token ausgeführt wurde.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75c75c6b8bcdc06ede0f71b19956155becc4d478
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ec3ccf2bfd72ae9f6aeb85e3a7228faac09a8b2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158170"
 ---
-# <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Ressourcentyp vppTokenRevokeLicensesActionResult
+# <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Status der Aktion Revoke-Lizenzen für das Token Apple Volume Purchase Program ausgeführt.
+Der Status der Aktion REVOKE Licenses, die für das Apple Volume Purchase Program-Token ausgeführt wurde.
 
 
-Erbt vom [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
+Erbt von [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|actionName|Zeichenfolge|Aktionsname Inherited aus [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion Inherited aus [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
-|startDateTime|DateTimeOffset|Zeit, die die Aktion initiiert wurde, von [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md) geerbt|
-|lastUpdatedDateTime|DateTimeOffset|Aktualisiert der Status der Aktion letzten Inherited [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|totalLicensesCount|Int32|Anzahl der Anzahl der Lizenzen, die widerrufen versucht.|
-|failedLicensesCount|Int32|Anzahl der die Anzahl der Lizenzen, die nicht widerrufen werden sollen.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Der Grund für das Revoke Lizenzen-Aktion fehlschlagen. Mögliche Werte sind: `none`, `appleFailure`, `internalError`, `expiredVppToken` und `expiredApplePushNotificationCertificate`.|
+|actionName|Zeichenfolge|Von [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md) geerbter Aktionsname|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der von [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)geerbten Aktion. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
+|startDateTime|DateTimeOffset|Zeitpunkt, zu dem die Aktion initiiert wurde, geerbt von [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|Zeitpunkt, zu dem der Aktionsstatus zuletzt aktualisiert wurde, geerbt von [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|totalLicensesCount|Int32|Die Anzahl der zu wider rufenden Lizenzen.|
+|failedLicensesCount|Int32|Die Anzahl der Lizenzen, die nicht widerrufen werden konnten.|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Der Grund für den Fehlschlagen der Lizenz Widerruf. Mögliche Werte: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

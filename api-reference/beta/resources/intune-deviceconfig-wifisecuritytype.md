@@ -1,33 +1,33 @@
 ---
-title: WiFiSecurityType Enum-Typ
-description: Wi-Fi-Sicherheitstypen.
-localization_priority: Normal
+title: wiFiSecurityType-Enumerationstyp
+description: WLAN-Sicherheitstypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73724041c223d50d0030bf27b780d6b694792a16
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c16265ecf9b4fa56536838dde1f4f1f757d8b1f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422131"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159045"
 ---
-# <a name="wifisecuritytype-enum-type"></a>WiFiSecurityType Enum-Typ
+# <a name="wifisecuritytype-enum-type"></a>wiFiSecurityType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Wi-Fi-Sicherheitstypen.
+WLAN-Sicherheitstypen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Öffnen Sie|0|Öffnen Sie (keine Authentifizierung).|
-|wpaPersonal|1|WPA-Persönlich.|
-|wpaEnterprise|2|WPA-Unternehmen. Muss einen IOSEnterpriseWifiConfiguration-Typ verwenden, um Enterprise-Optionen zu konfigurieren.|
+|Öffnen|0|Open (keine Authentifizierung).|
+|wpaPersonal|1|WPA-persönlich.|
+|wpaEnterprise|2|WPA-Enterprise. Verwenden Sie zum Konfigurieren von Enterprise-Optionen IOSEnterpriseWifiConfiguration.|
 |WEP|3|WEP-Verschlüsselung.|
 |wpa2Personal|4|WPA2-Persönlich.|
-|wpa2Enterprise|5|WPA2-Unternehmen. Muss einen WindowsWifiEnterpriseEAPConfiguration-Typ verwenden, um Enterprise-Optionen zu konfigurieren.|
+|wpa2Enterprise|5|WPA2-Enterprise. Verwenden Sie zum Konfigurieren von Enterprise-Optionen WindowsWifiEnterpriseEAPConfiguration.|
 
 
 

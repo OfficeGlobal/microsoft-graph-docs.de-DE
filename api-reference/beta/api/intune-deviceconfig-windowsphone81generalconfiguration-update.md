@@ -1,21 +1,21 @@
 ---
 title: Aktualisieren von „windowsPhone81GeneralConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsPhone81GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ec91614ffc8b404c51ba62a78188eca5e25e9fd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3fdec86f5989c5ab215d651c65106c1d7f891a26
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159339"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Aktualisieren von „windowsPhone81GeneralConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md).
 
@@ -40,9 +40,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,27 +52,27 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|Boolean|Wert, der angibt, ob die Richtlinie nur für Windows Phone 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
-|appsBlockCopyPaste|Boolean|Gibt an, ob Kopieren/Einfügen blockiert werden soll.|
-|bluetoothBlocked|Boolean|Gibt an, ob Bluetooth blockiert werden soll.|
-|cameraBlocked|Boolean|Gibt an, ob die Kamera blockiert werden soll.|
-|cellularBlockWifiTethering|Boolean|Gibt an, ob WLAN-Tethering blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|applyOnlyToWindowsPhone81|Boolescher Wert|Wert, der angibt, ob die Richtlinie nur für Windows Phone 8.1 gilt. Diese Eigenschaft ist schreibgeschützt.|
+|appsBlockCopyPaste|Boolescher Wert|Gibt an, ob Kopieren/Einfügen blockiert werden soll.|
+|bluetoothBlocked|Boolescher Wert|Gibt an, ob Bluetooth blockiert werden soll.|
+|cameraBlocked|Boolescher Wert|Gibt an, ob die Kamera blockiert werden soll.|
+|cellularBlockWifiTethering|Boolescher Wert|Gibt an, ob WLAN-Tethering blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
 |compliantAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste aller Apps, für die die Konformitätsrichtlinie gilt (Zulassungsliste oder Sperrliste, gesteuert über „compliantAppListType“). Diese Collection darf maximal 10.000 Elemente enthalten.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Typ der in „compliantAppsList“ definierten Liste. Mögliche Werte sind: `none`, `appsInListCompliant` und `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
-|emailBlockAddingAccounts|Boolean|Gibt an, ob benutzerdefinierte E-Mail-Konten blockiert werden sollen.|
+|diagnosticDataBlockSubmission|Boolescher Wert|Gibt an, ob die Übermittlung von Diagnosedaten blockiert werden soll.|
+|emailBlockAddingAccounts|Boolescher Wert|Gibt an, ob benutzerdefinierte E-Mail-Konten blockiert werden sollen.|
 |locationServicesBlocked|Boolean|Gibt an, ob die Ortungsdienste blockiert werden sollen.|
 |microsoftAccountBlocked|Boolean|Gibt an, ob die Verwendung eines Microsoft-Kontos erlaubt ist.|
-|nfcBlocked|Boolean|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
-|passwordBlockSimple|Boolean|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
+|nfcBlocked|Boolescher Wert|Gibt an, ob NFC (Near Field Communication) blockiert werden soll.|
+|passwordBlockSimple|Boolescher Wert|Gibt an, ob die Kalendersynchronisierung blockiert werden soll.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Zeitraum von Inaktivität in Minuten, nach dem es zu einem Bildschirmtimeout kommt|
@@ -80,14 +80,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 0 bis 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Legt fest, nach wie vielen fehlgeschlagenen Anmeldeversuchen eine Zurücksetzung auf die Werkseinstellungen durchgeführt wird.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|passwordRequired|Boolean|Gibt an, ob ein Kennwort erforderlich ist.|
-|screenCaptureBlocked|Boolean|Gibt an, ob Screenshots blockiert werden sollen.|
-|storageBlockRemovableStorage|Boolean|Gibt an, ob Wechselmedien blockiert werden sollen.|
-|storageRequireEncryption|Boolean|Gibt an, ob Verschlüsselung erforderlich ist.|
-|webBrowserBlocked|Boolean|Gibt an, ob der Webbrowser blockiert werden soll.|
-|wifiBlocked|Boolean|Gibt an, ob die WLAN-Funktion blockiert werden soll.|
-|wifiBlockAutomaticConnectHotspots|Boolean|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
-|wifiBlockHotspotReporting|Boolean|Gibt an, ob die Erstellung von Berichten zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|passwordRequired|Boolescher Wert|Gibt an, ob ein Kennwort erforderlich ist.|
+|screenCaptureBlocked|Boolescher Wert|Gibt an, ob Screenshots blockiert werden sollen.|
+|storageBlockRemovableStorage|Boolescher Wert|Gibt an, ob Wechselmedien blockiert werden sollen.|
+|storageRequireEncryption|Boolescher Wert|Gibt an, ob Verschlüsselung erforderlich ist.|
+|webBrowserBlocked|Boolescher Wert|Gibt an, ob der Webbrowser blockiert werden soll.|
+|wifiBlocked|Boolescher Wert|Gibt an, ob die WLAN-Funktion blockiert werden soll.|
+|wifiBlockAutomaticConnectHotspots|Boolescher Wert|Gibt an, ob die automatische Herstellung einer Verbindung zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
+|wifiBlockHotspotReporting|Boolescher Wert|Gibt an, ob die Erstellung von Berichten zu WLAN-Hotspots blockiert werden soll. Hat keine Auswirkungen, wenn die WLAN-Funktion blockiert ist.|
 |windowsStoreBlocked|Boolean|Gibt an, ob der Windows Store blockiert werden soll.|
 
 

@@ -1,32 +1,32 @@
 ---
-title: DeviceManagementExchangeAccessState Enum-Typ
-description: Exchange Access Gerätestatus.
-localization_priority: Normal
+title: deviceManagementExchangeAccessState-Enumerationstyp
+description: Geräte-Exchange-Zugriffsstatus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f66f8372b5bd087ad620fa86d8e0beff8b3eb3a0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 15b0dd7b99d8395b7c66171969bad1cb79bce0b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401068"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159584"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>DeviceManagementExchangeAccessState Enum-Typ
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Exchange Access Gerätestatus.
+Geräte-Exchange-Zugriffsstatus.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Kein Zugriff Zustand ermittelt aus Exchange|
-|unknown|1|Access-Gerätestatus zu Exchange ist unbekannt|
-|zulässig|2|Das Gerät hat Zugriff auf Exchange|
-|gesperrt|3|Gerät wird im Exchange blockiert.|
-|unter Quarantäne gestellte e-Mails|4|Gerät ist im Exchange unter Quarantäne gestellte e-Mails|
+|Keine|0|Kein Zugriffsstatus aus Exchange ermittelt|
+|unknown|1|Gerätezugriffsstatus zu Exchange ist unbekannt|
+|zulässig|2|Gerät hat Zugriff auf Exchange|
+|gesperrt|3|Gerät ist in Exchange blockiert|
+|Quarantäne|4|Das Gerät wird in Exchange unter Quarantäne gestellt.|
 
 
 

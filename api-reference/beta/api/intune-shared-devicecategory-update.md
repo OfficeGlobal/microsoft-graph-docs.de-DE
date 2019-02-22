@@ -4,30 +4,30 @@ description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 221b4700d91766040d899ef0c1048950d4e1d9cf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395013"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161915"
 ---
 # <a name="update-devicecategory"></a>Aktualisieren von „deviceCategory“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** APIs unter der/Beta-Version in Microsoft Graph können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)||
 | &nbsp; &nbsp; **Geräteverwaltung** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp;&nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -43,7 +43,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-**Klicken Sie auf mittels Fingereingabe**
+**On-Boarding**
 
 <!-- {
   "blockType": "ignored"
@@ -55,9 +55,9 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 ## <a name="request-headers"></a>Anforderungsheader
 
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -71,7 +71,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
 |description|String|Optionale Beschreibung für die Gerätekategorie.|
-|displayName|String|Der Anzeigename für die Gerätekategorie.|
+|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
 
 ## <a name="response"></a>Antwort
 
@@ -81,7 +81,7 @@ Bei erfolgreicher Ausführung, gibt die Methode den Antwortcode `200 OK` und ein
 
 ### <a name="request"></a>Anforderung
 
-Es folgen Beispiele für die Anforderung.
+Hier sind Beispiele für die Anforderung.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
@@ -98,7 +98,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 ### <a name="response"></a>Antwort
 
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Response-Eigenschaften variiert entsprechend Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Antworteigenschaften können je nach Kontext variieren.
 
 ``` http
 HTTP/1.1 200 OK

@@ -1,31 +1,31 @@
 ---
-title: MdmAuthority Enum-Typ
+title: mdmAuthority-Enumerationstyp
 description: Autorität für die Verwaltung mobiler Geräte.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2464e446b157c64e23dbf44783a50a4c491f0764
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 57d4b9de9dc5d77482e13d4d09686edf37a363e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411064"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159430"
 ---
-# <a name="mdmauthority-enum-type"></a>MdmAuthority Enum-Typ
+# <a name="mdmauthority-enum-type"></a>mdmAuthority-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Autorität für die Verwaltung mobiler Geräte.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt|
-|Intune|1|Intune|
+|InTune|1|Intune|
 |SCCM|2|SCCM|
-|Office365|3|Office365|
+|office365|3|Office365|
 
 
 

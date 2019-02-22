@@ -1,30 +1,30 @@
 ---
-title: FirewallPreSharedKeyEncodingMethodType Enum-Typ
+title: firewallPreSharedKeyEncodingMethodType-Enumerationstyp
 description: Mögliche Werte für firewallPreSharedKeyEncodingMethod
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 577925f141c6dd94b493664d3617df939d19c5c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e3a74122f0b0a9fe1a6dfab40593123ec8709c5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160816"
 ---
-# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>FirewallPreSharedKeyEncodingMethodType Enum-Typ
+# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für firewallPreSharedKeyEncodingMethod
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|Keine|1|Vorinstallierter Schlüssel ist nicht codiert. Stattdessen wird es in seinem Breitzeichen-Format gespeichert|
-|utF8|2|Vorinstallierten Schlüssel mit UTF-8-Codierung|
+|deviceDefault|0|Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts|
+|Keine|1|Der vorinstallierte Schlüssel ist nicht codiert. Stattdessen wird es im Breitzeichen Format beibehalten.|
+|utF8|2|Codieren des vorinstallierten Schlüssels mithilfe von UTF-8|
 
 
 

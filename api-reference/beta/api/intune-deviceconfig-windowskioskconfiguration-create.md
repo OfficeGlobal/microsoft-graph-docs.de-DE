@@ -1,23 +1,23 @@
 ---
-title: Erstellen von windowsKioskConfiguration
-description: Erstellen eines neuen WindowsKioskConfiguration-Objekts.
-localization_priority: Normal
+title: WindowsKioskConfiguration erstellen
+description: Erstellen eines neuen windowsKioskConfiguration-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8447dfc0c605b6553eeb1ad08ba8b102a88ad567
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd32b23626c027cfc4a9cdac60b5a5a4a6c37973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412492"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160746"
 ---
-# <a name="create-windowskioskconfiguration"></a>Erstellen von windowsKioskConfiguration
+# <a name="create-windowskioskconfiguration"></a>WindowsKioskConfiguration erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [WindowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekts.
+Erstellen eines neuen [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -39,41 +39,41 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt WindowsKioskConfiguration eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das windowsKioskConfiguration-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die WindowsKioskConfiguration erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der windowsKioskConfiguration erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|kioskProfiles|[WindowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) -Auflistung|Diese Richtlinie ermöglicht zum Definieren einer Liste von Kiosk-Profilen für eine Kiosk-Konfiguration. Diese Sammlung kann maximal 3 Elemente enthalten.|
-|kioskBrowserDefaultUrl|Zeichenfolge|Geben Sie den Standard-URL der Browser navigieren soll auf starten.|
-|kioskBrowserEnableHomeButton|Boolean|Aktivieren des Kiosk-Browsers home-Schaltfläche. Die home-Schaltfläche ist standardmäßig deaktiviert.|
-|kioskBrowserEnableNavigationButtons|Boolean|Aktivieren des Kiosk-Browsers Navigation buttons(forward/back). Die Navigationsschaltflächen werden standardmäßig deaktiviert.|
-|kioskBrowserEnableEndSessionButton|Boolean|Aktivieren des Kiosk-Browsers End Sitzung Schaltfläche. Die Schaltfläche Beenden Sitzung ist standardmäßig deaktiviert.|
-|kioskBrowserRestartOnIdleTimeInMinutes|Int32|Geben Sie die Anzahl der Minuten, die Sitzung im Leerlauf befindet, bis der Kiosk-Browser in einen neuen Status neu gestartet wird.  Gültige Werte sind 1 und 1440. Gültige Werte 1 bis 1440|
-|kioskBrowserBlockedURLs|Zeichenfolgenauflistung|Geben Sie die URLs, die nicht die Kiosk-Browser navigieren soll|
-|kioskBrowserBlockedUrlExceptions|Zeichenfolgenauflistung|Geben Sie die URLs, die im Browser Kiosk zulässig ist, zu dem navigiert|
-|edgeKioskEnablePublicBrowsing|Boolean|Aktivieren Sie öffentliche browsing Kioskmodus für den Microsoft-Edge-Browser. Der Standardwert ist false.|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|Gibt die Zeitspanne in Minuten aus der letzten Benutzeraktivität, bevor Microsoft Edge Kiosk zurückgesetzt.  Gültige Werte sind 0 und 1440. Der Standardwert ist 5. 0 gibt keine zurücksetzen. Gültige Werte von 0 bis 1440|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) -Sammlung|Mit dieser Richtlinieneinstellung können Sie eine Liste der Kiosk Profile für eine Kiosk Konfiguration definieren. Diese Auflistung kann maximal drei Elemente enthalten.|
+|kioskBrowserDefaultUrl|Zeichenfolge|Geben Sie die Standard-URL an, zu der der Browser beim Start navigieren soll.|
+|kioskBrowserEnableHomeButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Home des Kiosk Browsers. Standardmäßig ist die Schaltfläche Start deaktiviert.|
+|kioskBrowserEnableNavigationButtons|Boolescher Wert|Aktivieren Sie die Navigationsschaltflächen des Kiosk Browsers (Forward/Back). Standardmäßig sind die Navigationsschaltflächen deaktiviert.|
+|kioskBrowserEnableEndSessionButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Endsitzung des Kiosk Browsers. Standardmäßig ist die Schaltfläche Sitzung beenden deaktiviert.|
+|kioskBrowserRestartOnIdleTimeInMinutes|Int32|Geben Sie die Anzahl der Minuten an, die die Sitzung inaktiv ist, bis der Kiosk-Browser neu gestartet wird.  Gültige Werte sind 1-1440. Gültige Werte 1 bis 1440|
+|kioskBrowserBlockedURLs|String collection|Angeben von URLs, zu denen die Kiosk-Browser nicht navigieren sollen|
+|kioskBrowserBlockedUrlExceptions|String collection|Angeben von URLs, zu denen der Kiosk Browser navigieren darf|
+|edgeKioskEnablePublicBrowsing|Boolescher Wert|Aktivieren Sie das öffentliche Browsen im Kioskmodus für den Microsoft Edge-Browser. Der Standardwert ist false.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Gibt die Zeit in Minuten der letzten Benutzeraktivität an, bevor Microsoft Edge Kiosk zurückgesetzt wird.  Gültige Werte sind 0-1440. Der Standardwert ist 5. 0 gibt keine Zurücksetzung an. Gültige Werte 0 bis 1440|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [WindowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

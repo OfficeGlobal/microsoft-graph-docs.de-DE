@@ -1,21 +1,21 @@
 ---
 title: deviceManagementExchangeConnector-Ressourcentyp
 description: Entität, die eine Verbindung mit einer Exchange-Umgebung darstellt.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d37fa88cf84b5e709175c91386b64a867eba41a3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7ff8b8cb35db099c0b011aef83d57bdc65d98613
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422362"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160914"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Entität, die eine Verbindung mit einer Exchange-Umgebung darstellt.
 
@@ -27,20 +27,20 @@ Entität, die eine Verbindung mit einer Exchange-Umgebung darstellt.
 |[DeviceManagementExchangeConnector erstellen](../api/intune-onboarding-devicemanagementexchangeconnector-create.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|Erstellen eines neuen [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)-Objekts.|
 |[DeviceManagementExchangeConnector löschen](../api/intune-onboarding-devicemanagementexchangeconnector-delete.md)|Keine|Löscht ein [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)-Objekt.|
 |[DeviceManagementExchangeConnector aktualisieren](../api/intune-onboarding-devicemanagementexchangeconnector-update.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|Aktualisieren der Eigenschaften eines [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)-Objekts.|
-|[sync-Aktion](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|Keine|Noch nicht dokumentiert|
+|[sync-Aktion](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|Keine|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Noch nicht dokumentiert|
 |lastSyncDateTime|DateTimeOffset|Zeit der letzten Synchronisierung für Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connectorstatus. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
-|primarySmtpAddress|String|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
-|serverName|String|Der Name des Exchange-Servers.|
-|connectorServerName|String|Der Name des Servers, der Exchange Connector hostet.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector-Status. Mögliche Werte: `none`, `connectionPending`, `connected`, `disconnected`.|
+|primarySmtpAddress|Zeichenfolge|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
+|serverName|Zeichenfolge|Der Name des Exchange-Servers.|
+|connectorServerName|Zeichenfolge|Der Name des Servers, der Exchange Connector hostet.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Der konfigurierte Typ von Exchange Connector. Mögliche Werte: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|Version|String|Die Version des ExchangeConnectorAgent|
-|exchangeAlias|String|Ein dem Exchange-Server zugewiesener Alias|
+|Version|Zeichenfolge|Die Version des ExchangeConnectorAgent|
+|exchangeAlias|Zeichenfolge|Ein dem Exchange-Server zugewiesener Alias|
 |exchangeOrganization|String|Exchange-Organisation für den Exchange-Server|
 
 ## <a name="relationships"></a>Beziehungen

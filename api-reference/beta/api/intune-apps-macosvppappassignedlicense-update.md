@@ -1,23 +1,23 @@
 ---
 title: MacOsVppAppAssignedLicense aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines MacOsVppAppAssignedLicense-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines macOsVppAppAssignedLicense-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0e3a8a2c54035a29225be547c9971d70fb70f92
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f0f0ccb27bb9bedcbd9d83333c60c864dc99e5b4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431552"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160424"
 ---
 # <a name="update-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.
+Aktualisieren der Eigenschaften eines [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,20 +38,20 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|userEmailAddress|Zeichenfolge|Die e-Mail-Adresse des Benutzers.|
+|userEmailAddress|Zeichenfolge|Die Benutzer-e-Mail-Adresse.|
 |userId|Zeichenfolge|Die Benutzer-ID.|
 |userName|Zeichenfolge|Der Benutzername.|
 |userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname.|
@@ -59,7 +59,7 @@ In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [MacOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

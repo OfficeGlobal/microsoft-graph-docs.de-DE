@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp runSchedule
-description: Zeitplan eines sich wiederholenden Gerät Management Skripts ausführen.
-localization_priority: Normal
+title: runSchedule-Ressourcentyp
+description: Führen Sie den Zeitplan für ein wiederkehrendes Geräte Verwaltungsskript aus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec2ab832625916cd3113fbd784c4c54f9dec7246
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 65df0c70e28b9c33237022941156344ee4d28446
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156406"
 ---
-# <a name="runschedule-resource-type"></a>Ressourcentyp runSchedule
+# <a name="runschedule-resource-type"></a>runSchedule-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zeitplan eines sich wiederholenden Gerät Management Skripts ausführen.
+Führen Sie den Zeitplan für ein wiederkehrendes Geräte Verwaltungsskript aus.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

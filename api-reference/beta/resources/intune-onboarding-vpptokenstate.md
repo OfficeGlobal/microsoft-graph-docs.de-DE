@@ -1,29 +1,29 @@
 ---
-title: VppTokenState Enum-Typ
-description: Möglichen Zuständen ein Token Apple Volume Purchase Program zugeordnet.
-localization_priority: Normal
+title: vppTokenState-Enumerationstyp
+description: Mögliche Status, die einem Apple Volume Purchase Program-Token zugeordnet sind.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d0c4ee7ae0b8e35f97a18d0958a2456cab40a10
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cdb356d5103fc1c1dc07245d8552cb77b9383c8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416160"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159864"
 ---
-# <a name="vpptokenstate-enum-type"></a>VppTokenState Enum-Typ
+# <a name="vpptokenstate-enum-type"></a>vppTokenState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Möglichen Zuständen ein Token Apple Volume Purchase Program zugeordnet.
+Mögliche Status, die einem Apple Volume Purchase Program-Token zugeordnet sind.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Standardzustand.|
-|gültige|1|Das Token ist ungültig.|
+|gültige|1|Token ist gültig.|
 |abgelaufen|2|Token ist abgelaufen.|
 |Ungültig|3|Token ist ungültig.|
 |assignedToExternalMDM|4|Token wird von einem anderen MDM-Dienst verwaltet.|

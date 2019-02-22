@@ -1,32 +1,32 @@
 ---
-title: ApplicationGuardBlockClipboardSharingType Enum-Typ
+title: applicationGuardBlockClipboardSharingType-Enumerationstyp
 description: Mögliche Werte für applicationGuardBlockClipboardSharingType
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f9621db53e16231f710cccb12d79f65d22d4017
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dba5ba1a2d27862c9adaaa1430631b8cb4cf94d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415061"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160662"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>ApplicationGuardBlockClipboardSharingType Enum-Typ
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für applicationGuardBlockClipboardSharingType
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert|
-|blockBoth|1|Zwischenablage zum Freigeben von Daten aus Host Container und aus dem Container zum Hosten von blockieren|
-|blockHostToContainer|2|Blockieren der Zwischenablage zum Freigeben von Daten vom Host Container|
-|blockContainerToHost|3|Zwischenablage zum Freigeben von Daten aus dem Container zum Hosten von blockieren|
-|blockNone|4|Zwischenablage zum Freigeben von Daten vom Host Container weder aus Container zum Hosten von blockieren|
+|notConfigured|0|Nicht konfiguriert|
+|blockBoth|1|Zwischenablage blockieren, um Daten von Host zu Container und von Container zu Host freizugeben|
+|blockHostToContainer|2|Zwischenablage blockieren, um Daten von Host zu Container freizugeben|
+|blockContainerToHost|3|Zwischenablage blockieren, um Daten von Container zu Host freizugeben|
+|blockNone|4|Zwischenablage blockieren, um Daten weder vom Host-Container noch vom Container zum Host zu teilen|
 
 
 

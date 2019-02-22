@@ -1,21 +1,21 @@
 ---
 title: Organisation aktualisieren
 description: Aktualisieren der Eigenschaften eines organization-Objekts.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0aa91f64aca9bb82d44a22dce6b6e0b36d84199
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a1f1a2e48e882cf6e314f3aa58a2c7bab99b2832
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411274"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157757"
 ---
 # <a name="update-organization"></a>Organisation aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisieren der Eigenschaften eines [organization](../resources/intune-onboarding-organization.md)-Objekts.
 
@@ -38,9 +38,9 @@ PATCH /organization/{organizationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |id|Zeichenfolge|Die GUID für das Objekt.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Autorität für die Verwaltung mobiler Geräte. Mögliche Werte: `unknown`, `intune`, `sccm`, `office365`.|
-|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Connector-Einstellung Zertifikat.|
+|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Zertifikat-Connector-Einstellung.|
 
 
 

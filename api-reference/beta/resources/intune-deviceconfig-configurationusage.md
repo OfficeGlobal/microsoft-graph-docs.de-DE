@@ -1,28 +1,28 @@
 ---
-title: ConfigurationUsage Enum-Typ
-description: Mögliche Werte der Liste ConfigurationUsage.
-localization_priority: Normal
+title: configurationUsage-Enumerationstyp
+description: Mögliche Werte der ConfigurationUsage-Liste.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b025b5bfa2a9e5f1ae9532b61804979572cd8459
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dfe34d8e0a6aa9b9f816cf19304af3a521fc654c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156966"
 ---
-# <a name="configurationusage-enum-type"></a>ConfigurationUsage Enum-Typ
+# <a name="configurationusage-enum-type"></a>configurationUsage-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte der Liste ConfigurationUsage.
+Mögliche Werte der ConfigurationUsage-Liste.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|gesperrt|0|Nicht zulässig.|
+|gesperrt|0|Zugelassen.|
 |erforderlich|1|Erforderlich.|
 |zulässig|2|Optional.|
 

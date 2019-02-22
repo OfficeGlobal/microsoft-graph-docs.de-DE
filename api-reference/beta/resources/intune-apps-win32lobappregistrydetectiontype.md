@@ -1,33 +1,33 @@
 ---
-title: win32LobAppRegistryDetectionType Enum-Typ
-description: Enthält alle Erkennung Datentyp unterstützt.
-localization_priority: Normal
+title: win32LobAppRegistryDetectionType-Enumerationstyp
+description: Enthält alle unterstützten Registrierungsdaten-Erkennungstypen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 188f206e42b55e0c2cc2f8b6ed831f19a4b2052a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 62028eefbfa85bceb669cbe8cc4bee8261d5837e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411085"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158457"
 ---
-# <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType Enum-Typ
+# <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält alle Erkennung Datentyp unterstützt.
+Enthält alle unterstützten Registrierungsdaten-Erkennungstypen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert.|
-|vorhanden ist|1|Der angegebene Registrierungsschlüssel oder Wert vorhanden ist.|
+|notConfigured|0|Nicht konfiguriert.|
+|existiert|1|Der angegebene Registrierungsschlüssel oder Wert ist vorhanden.|
 |doesNotExist|2|Der angegebene Registrierungsschlüssel oder Wert ist nicht vorhanden.|
-|string|3|String-Werttyp.|
-|integer|4|Typ der Integer-Wert.|
-|Version|5|Version-Werttyp.|
+|Zeichenfolge|3|Zeichenfolgen Werttyp.|
+|integer|4|Ganzzahliger Werttyp.|
+|Version|5|Versions Werttyp.|
 
 
 

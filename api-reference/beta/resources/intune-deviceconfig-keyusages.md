@@ -1,29 +1,29 @@
 ---
-title: KeyUsages Enum-Typ
-description: Enhanced Key Usage-Optionen.
-localization_priority: Normal
+title: keyUsages-Enumerationstyp
+description: Wichtige Verwendungsoptionen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0650ea9cef1f66aa6b822830d61abc74b8b5d24f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 990ecb8487c907d49109c7714139c979997857fa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400984"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161481"
 ---
-# <a name="keyusages-enum-type"></a>KeyUsages Enum-Typ
+# <a name="keyusages-enum-type"></a>keyUsages-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enhanced Key Usage-Optionen.
+Wichtige Verwendungsoptionen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|keyEncipherment|1|Wichtige Chiffrierung Verwendung.|
-|digitalSignature|2|Verwendung der digitalen Signatur.|
+|keyEncipherment|1|Schlüssel Verschlüsselungs Verwendung.|
+|digitalSignature|2|Verwendung digitaler Signaturen.|
 
 
 

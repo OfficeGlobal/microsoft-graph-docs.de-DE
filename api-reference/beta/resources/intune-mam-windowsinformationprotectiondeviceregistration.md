@@ -1,44 +1,44 @@
 ---
-title: Ressourcentyp windowsInformationProtectionDeviceRegistration
-description: Stellt Gerät Registrierung Einträge für Bring-Your-Own-Device(BYOD) Windows-Geräte.
-localization_priority: Normal
+title: windowsInformationProtectionDeviceRegistration-Ressourcentyp
+description: Stellt Geräte Registrierungsdatensätze für BYOD-Windows-Geräte (Bring-your-own-Device) dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ae81d973db8c47d9fa613db0eb1b661bb8fa0f9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4d4403ae2e4629a330fadd5136530d66c8a7d7f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430044"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161677"
 ---
-# <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>Ressourcentyp windowsInformationProtectionDeviceRegistration
+# <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>windowsInformationProtectionDeviceRegistration-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt Gerät Registrierung Einträge für Bring-Your-Own-Device(BYOD) Windows-Geräte.
+Stellt Geräte Registrierungsdatensätze für BYOD-Windows-Geräte (Bring-your-own-Device) dar.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windowsInformationProtectionDeviceRegistrations](../api/intune-mam-windowsinformationprotectiondeviceregistration-list.md)|[WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Auflistung|Listeneigenschaften und Beziehungen der [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekte.|
-|[Abrufen von windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-get.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
-|[Erstellen von windowsInformationProtectionDeviceRegistration](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Erstellen eines neuen [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
-|[WindowsInformationProtectionDeviceRegistration löschen](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|Keine|Löscht eine [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).|
-|[WindowsInformationProtectionDeviceRegistration aktualisieren](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Aktualisieren Sie die Eigenschaften eines [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
+|[WindowsInformationProtectionDeviceRegistrations aufListen](../api/intune-mam-windowsinformationprotectiondeviceregistration-list.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekte.|
+|[WindowsInformationProtectionDeviceRegistration abrufen](../api/intune-mam-windowsinformationprotectiondeviceregistration-get.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Lesen von Eigenschaften und Beziehungen des [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
+|[WindowsInformationProtectionDeviceRegistration erstellen](../api/intune-mam-windowsinformationprotectiondeviceregistration-create.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Erstellen eines neuen [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
+|[WindowsInformationProtectionDeviceRegistration löschen](../api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md)|Keine|Löscht eine [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).|
+|[WindowsInformationProtectionDeviceRegistration aktualisieren](../api/intune-mam-windowsinformationprotectiondeviceregistration-update.md)|[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)|Aktualisieren der Eigenschaften eines [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.|
 |[wipe-Aktion](../api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|userId|Zeichenfolge|Benutzer-ID dieses Gerät registrierungsdatensatzes zugeordnet.|
-|deviceRegistrationId|String|Geräte-ID für dieses Gerät registrierungsdatensatzes.|
-|deviceName|String|Name des Geräts|
-|deviceType|Zeichenfolge|Gerätetyp, beispielsweise Windows Laptop VS Windows Phone.|
+|userId|Zeichenfolge|ID, die diesem Geräte Registrierungseintrag zugeordnet ist.|
+|deviceRegistrationId|String|Gerätebezeichner für diesen Geräte Registrierungseintrag.|
+|deviceName|Zeichenfolge|Name des Geräts|
+|deviceType|Zeichenfolge|Gerätetyp, beispielsweise Windows Laptop und Windows phone.|
 |deviceMacAddress|Zeichenfolge|Mac-Adresse des Geräts.|
-|lastCheckInDateTime|DateTimeOffset|Zeitpunkt der letzten Einchecken des Geräts.|
+|lastCheckInDateTime|DateTimeOffset|Zeitpunkt des letzten Eincheckens des Geräts.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

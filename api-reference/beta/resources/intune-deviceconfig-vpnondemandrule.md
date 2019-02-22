@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp vpnOnDemandRule
-description: VPN-On-Demand Regeldefinition.
-localization_priority: Normal
+title: vpnOnDemandRule-Ressourcentyp
+description: Definition der VPN-on-Demand-Regel.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8164d1c12aeb172120bb9803d7f3dd98366ec948
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b1bccd015e45291b344e7c77df4ac5c0a0af07d0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161586"
 ---
-# <a name="vpnondemandrule-resource-type"></a>Ressourcentyp vpnOnDemandRule
+# <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN-On-Demand Regeldefinition.
+Definition der VPN-on-Demand-Regel.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|SSIDs|Zeichenfolgenauflistung|Netzwerkdienst festgelegt (SSIDs Identifiers).|
-|dnsSearchDomains|Zeichenfolgenauflistung|DNS-Suche Domänen.|
-|probeUrl|Zeichenfolge|Eine URL zu belegen. Wenn diese URL erfolgreich ist ohne Umleitung abgerufen (einen 200 HTTP-Statuscode zurückgibt), die dieser Regel entspricht.|
-|Aktion|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Aktion. Mögliche Werte: sind `connect`, `evaluateConnection`, `ignore` und `disconnect`.|
-|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domäne-Aktion (gilt nur bei der Aktion Verbindung bewerten ist). Mögliche Werte sind: `connectIfNeeded` und `neverConnect`.|
-|Domänen|Zeichenfolgenauflistung|Domänen (gilt nur bei der Aktion Verbindung bewerten ist).|
-|probeRequiredUrl|Zeichenfolge|Prüfpunkt erforderliche Url (gilt nur bei der Aktion wird Verbindung bewerten und DomainAction ist eine Verbindung herstellen, falls erforderlich).|
+|SSIDs|String collection|Netzwerkdienst Satz-IDs (SSIDs).|
+|dnsSearchDomains|String collection|DNS-Such Domänen.|
+|probeUrl|Zeichenfolge|Eine zu über URL. Wenn diese URL erfolgreich abgerufen wird (zurückgeben eines 200 HTTP-Statuscodes) ohne Umleitung, stimmt diese Regel überein.|
+|Aktion|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Aktion. Mögliche Werte: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
+|Domäne|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domänen Aktion (gilt nur, wenn die Aktion die Verbindung auswertet). Mögliche Werte sind: `connectIfNeeded` und `neverConnect`.|
+|Domänen|String collection|Domänen (gilt nur, wenn die Aktion die Verbindung auswertet).|
+|probeRequiredUrl|Zeichenfolge|Überprüfen Sie die erforderliche URL (gilt nur, wenn die Aktion die Verbindung auswertet und wenn erforderlich die Domäne "Connect" ist).|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

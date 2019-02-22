@@ -1,21 +1,21 @@
 ---
 title: managedIOSLobApp-Ressourcentyp
 description: Enthält Eigenschaften und geerbte Eigenschaften für verwaltete branchenspezifische iOS-Apps.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20e116518d7f23101596da746cf4c8a5b62893e0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b2f364963b4f754839cd1f9945d20dc6a29cbe82
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407445"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158317"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält Eigenschaften und geerbte Eigenschaften für verwaltete branchenspezifische iOS-Apps.
 
@@ -34,25 +34,25 @@ Sie erbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|string|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Der Upload-Zustand. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [MobileApp](../resources/intune-apps-mobileapp.md). Mögliche Werte sind: `notPublished`, `processing` und `published`.|
-|isAssigned|Boolean|Der Wert, der angibt, ob die app mindestens eine Gruppe zugeordnet ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-Ids für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Die Verfügbarkeit der Anwendung. Geerbt von [ManagedApp](../resources/intune-apps-managedapp.md). Mögliche Werte: `global`, `lineOfBusiness`.|
-|version|Zeichenfolge|Die Version der Anwendung. Geerbt von [managedApp](../resources/intune-apps-managedapp.md)|
+|uploadState|Int32|Der Uploadstatus. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Von [MobileApp](../resources/intune-apps-mobileapp.md)geerbt. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
+|isAssigned|Boolean|Der Wert, der angibt, ob die APP mindestens einer Gruppe zugewiesen ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Rolescopetagids zur|String collection|Liste der bereichstag-IDs für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Die Verfügbarkeit der Anwendung. Von [ManagedApp](../resources/intune-apps-managedapp.md)geerbt. Mögliche Werte: `global`, `lineOfBusiness`.|
+|version|String|Die Version der Anwendung. Geerbt von [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|Zeichenfolge|Die interne zugesicherte Inhaltsversion. Geerbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |fileName|Zeichenfolge|Name der Hauptdatei der Branchenanwendung. Geerbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |size|Int64|Gesamtgröße einschließlich aller hochgeladenen Dateien. Geerbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
@@ -61,7 +61,7 @@ Sie erbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem.md)|Der Wert für die Mindestversion des verwendbaren Betriebssystems.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum.|
 |versionNumber|Zeichenfolge|Die Versionsnummer der verwalteten branchenspezifischen iOS-App.|
-|buildNumber|Zeichenfolge|Die Buildnummer der verwalteten branchenspezifischen iOS-App.|
+|buildNumber|String|Die Buildnummer der verwalteten branchenspezifischen iOS-App.|
 |identityVersion|Zeichenfolge|Die Version der Identität|
 
 ## <a name="relationships"></a>Beziehungen
@@ -70,8 +70,8 @@ Sie erbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.
 |categories|Sammlung von Objekten des Typs [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Die Liste der Kategorien für diese App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)-Sammlung|Die Liste von Gruppenzuweisungen für diese mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Die Installationszusammenfassung für die mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Auflistung|Die Liste der Installationsstatus für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Auflistung|Die Liste der Installationsstatus für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Sammlung|Die Liste der Installationsstatus für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Sammlung|Die Liste der Installationsstatus für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |contentVersions|Sammlung von Objekten des Typs [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|Liste der Versionen der App-Inhalte. Geerbt von [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 
 ## <a name="json-representation"></a>JSON-Darstellung

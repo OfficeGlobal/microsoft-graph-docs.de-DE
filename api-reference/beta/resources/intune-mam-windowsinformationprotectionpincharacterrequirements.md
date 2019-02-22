@@ -1,30 +1,30 @@
 ---
-title: WindowsInformationProtectionPinCharacterRequirements Enum-Typ
-description: Anforderungen an die PIN-Zeichen
-localization_priority: Normal
+title: windowsInformationProtectionPinCharacterRequirements-Enumerationstyp
+description: PIN-Zeichen Anforderungen
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 203f5c7d52fb72346d099949ea5880fa9b82726c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1147f597a1c2bcaf18a29d783b42722195c79407
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392780"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160809"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>WindowsInformationProtectionPinCharacterRequirements Enum-Typ
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Anforderungen an die PIN-Zeichen
+PIN-Zeichen Anforderungen
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notAllow|0|Nicht zulassen|
-|requireAtLeastOne|1|Benötigen Sie mindestens eine|
-|zulassen|2|Können Sie beliebig viele|
+|noTalg|0|Nicht zulässig|
+|requireAtLeastOne|1|Mindestens eins erforderlich|
+|zulassen|2|Beliebige Anzahl zulassen|
 
 
 

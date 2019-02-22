@@ -1,23 +1,23 @@
 ---
-title: Erstellen von windowsInformationProtectionDeviceRegistration
-description: Erstellen eines neuen WindowsInformationProtectionDeviceRegistration-Objekts.
-localization_priority: Normal
+title: WindowsInformationProtectionDeviceRegistration erstellen
+description: Erstellen eines neuen windowsInformationProtectionDeviceRegistration-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea5e3bac32e0511b54e08cb37063084f359e554a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4b2e6131a1d4393026ebf88a7ed089ebba2390b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428890"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158842"
 ---
-# <a name="create-windowsinformationprotectiondeviceregistration"></a>Erstellen von windowsInformationProtectionDeviceRegistration
+# <a name="create-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.
+Erstellen eines neuen [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,30 +38,30 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt WindowsInformationProtectionDeviceRegistration eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das windowsInformationProtectionDeviceRegistration-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die WindowsInformationProtectionDeviceRegistration erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der windowsInformationProtectionDeviceRegistration erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|userId|Zeichenfolge|Benutzer-ID dieses Gerät registrierungsdatensatzes zugeordnet.|
-|deviceRegistrationId|String|Geräte-ID für dieses Gerät registrierungsdatensatzes.|
-|deviceName|String|Name des Geräts|
-|deviceType|Zeichenfolge|Gerätetyp, beispielsweise Windows Laptop VS Windows Phone.|
+|userId|Zeichenfolge|ID, die diesem Geräte Registrierungseintrag zugeordnet ist.|
+|deviceRegistrationId|String|Gerätebezeichner für diesen Geräte Registrierungseintrag.|
+|deviceName|Zeichenfolge|Name des Geräts|
+|deviceType|Zeichenfolge|Gerätetyp, beispielsweise Windows Laptop und Windows phone.|
 |deviceMacAddress|Zeichenfolge|Mac-Adresse des Geräts.|
-|lastCheckInDateTime|DateTimeOffset|Zeitpunkt der letzten Einchecken des Geräts.|
+|lastCheckInDateTime|DateTimeOffset|Zeitpunkt des letzten Eincheckens des Geräts.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [WindowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
