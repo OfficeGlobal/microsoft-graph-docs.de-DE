@@ -1,28 +1,28 @@
 ---
-title: InternetSiteSecurityLevel Enum-Typ
-description: Mögliche Werte für Internet-Website Sicherheitsstufe.
-localization_priority: Normal
+title: internetSiteSecurityLevel-Enumerationstyp
+description: Mögliche Werte für die Sicherheitsstufe der Internet Website.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a394dc6912f4358b3ead118a545604cb5b55c55
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3526e8719e607ac3e4b2c41b126f1fa8517540f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399080"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172625"
 ---
-# <a name="internetsitesecuritylevel-enum-type"></a>InternetSiteSecurityLevel Enum-Typ
+# <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Internet-Website Sicherheitsstufe.
+Mögliche Werte für die Sicherheitsstufe der Internet Website.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
 |medium|1|Mittel.|
 |mediumHigh|2|Mittel-hoch.|
 |hohe|3|Hoch|

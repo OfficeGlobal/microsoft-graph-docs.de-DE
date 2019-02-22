@@ -1,32 +1,32 @@
 ---
-title: DerivedCredentialProviderType Enum-Typ
-description: Providertyp für Anmeldeinformationen abgeleitet.
-localization_priority: Normal
+title: derivedCredentialProviderType-Enumerationstyp
+description: Anbietertyp für abgeleitete Anmeldeinformationen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175311"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a>DerivedCredentialProviderType Enum-Typ
+# <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Providertyp für Anmeldeinformationen abgeleitet.
+Anbietertyp für abgeleitete Anmeldeinformationen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Keine abgeleiteten Anmeldeinformationsanbieter konfiguriert.|
-|entrustDataCard|1|Entrust DataCard.|
-|purebred|2|Purebred - Defense Informationen Systeme Agency.|
-|xTec|3|Xtec - AuthentX.|
-|Eingreifen|4|Eingreifen.|
+|notConfigured|0|Kein abgeleiteter Anmeldeinformationsanbieter konfiguriert.|
+|entrustDataCard|1|Entrust dataCard.|
+|Rassehund|2|Agentur für reinrassige Verteidigungs informationsSysteme.|
+|xTec|3|Xtec-AuthentX.|
+|Fürsprache|4|Fürsprache.|
 
 
 

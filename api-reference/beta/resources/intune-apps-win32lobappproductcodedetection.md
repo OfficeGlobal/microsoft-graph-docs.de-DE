@@ -1,33 +1,33 @@
 ---
-title: Ressourcentyp win32LobAppProductCodeDetection
-description: Enthält die Eigenschaften Code und Version Produkt, um zu ermitteln, eine Win32-App
-localization_priority: Normal
+title: win32LobAppProductCodeDetection-Ressourcentyp
+description: Enthält Produktcode-und Versionseigenschaften zum Auffinden einer Win32-App
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f5af1cfc5fffe5241ef3b7883c3ebe6a2100278
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 854d54b034b0e2e0dc0e7ce8e7f73466f37dd263
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411204"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173234"
 ---
-# <a name="win32lobappproductcodedetection-resource-type"></a>Ressourcentyp win32LobAppProductCodeDetection
+# <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält die Eigenschaften Code und Version Produkt, um zu ermitteln, eine Win32-App
+Enthält Produktcode-und Versionseigenschaften zum Auffinden einer Win32-App
 
 
-Erbt vom [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Erbt von [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|productCode|Zeichenfolge|Den Produktcode Win32 Line of Business (LoB) App.|
-|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator zum Erkennen von Version des Produkts. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
-|productVersion|Zeichenfolge|Die Produktversion von Win32 Line of Business (LoB) app.|
+|productCode|Zeichenfolge|Der Produktcode der Win32-Branchen-app.|
+|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Der Operator, der die Produktversion ermittelt. Mögliche Werte sind: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` und `lessThanOrEqual`.|
+|productVersion|Zeichenfolge|Die Produktversion der Win32-Branchen-app.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

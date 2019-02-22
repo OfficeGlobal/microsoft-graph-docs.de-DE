@@ -1,32 +1,32 @@
 ---
-title: WindowsAppStartLayoutTileSize Enum-Typ
-description: Die Kachelgröße des Windows-app in der Start-Layout.
-localization_priority: Normal
+title: windowsAppStartLayoutTileSize-Enumerationstyp
+description: Die Kachelgröße der Windows-App im Start Layout.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5347108df2d6a1716729011b30927fce5c68327
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416216"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173941"
 ---
-# <a name="windowsappstartlayouttilesize-enum-type"></a>WindowsAppStartLayoutTileSize Enum-Typ
+# <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Kachelgröße des Windows-app in der Start-Layout.
+Die Kachelgröße der Windows-App im Start Layout.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |hidden|0|Ausgeblendet.|
-|small|1|Kleine 1 x 1.|
-|medium|2|2 x 2 Mittel.|
-|Breite|3|4 x 2 breit.|
-|large|4|Große 4 x 4.|
+|small|1|Kleines 1x1.|
+|medium|2|Mittel 2x2.|
+|Breite|3|Breites 4x2.|
+|large|4|4X4.|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: RevokeDeviceLicense Aktion
-description: REVOKE zugewiesen iOS VPP Gerätenlizenz für app zu reparieren.
-localization_priority: Normal
+title: revokeDeviceLicense-Aktion
+description: Widerrufen der zugewiesenen iOS VPP-Gerätelizenz für eine bestimmte app.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b58fe7440b1b77e5dc651a4a7c802dae8e5139c4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b0d00dfb436945583baaf276c8c5425fe3223df7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174804"
 ---
-# <a name="revokedevicelicense-action"></a>RevokeDeviceLicense Aktion
+# <a name="revokedevicelicense-action"></a>revokeDeviceLicense-Aktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-REVOKE zugewiesen iOS VPP Gerätenlizenz für app zu reparieren.
+Widerrufen der zugewiesenen iOS VPP-Gerätelizenz für eine bestimmte app.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -40,9 +40,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,8 +52,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|managedDeviceId|Zeichenfolge|Geräte-ID für die zugewiesenen app-Lizenz ist gesperrt werden|
-|notifyManagedDevices|Boolean|Boolescher Wert, der angibt, ob Revoke-Benachrichtigung an Gerät gesendet werden sollen|
+|managedDeviceId|Zeichenfolge|Geräte-Nr, für die die zugewiesene App-Lizenz widerrufen werden soll|
+|notifyManagedDevices|Boolescher Wert|Boolescher Wert, der angibt, ob REVOKE-Benachrichtigung an Gerät gesendet werden soll|
 
 
 

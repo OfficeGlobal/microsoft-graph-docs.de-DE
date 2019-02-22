@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp extendedKeyUsage
-description: Benutzerdefinierte erweiterte Schlüsselverwendung definition
-localization_priority: Normal
+title: extendedKeyUsage-Ressourcentyp
+description: Definition der benutzerdefinierten erweiterten Schlüsselverwendung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ed825f44923d3fe86cc410397747b50a1f2c681
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1487d217693135e26df99d4d72491abac4123ba7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425967"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173290"
 ---
-# <a name="extendedkeyusage-resource-type"></a>Ressourcentyp extendedKeyUsage
+# <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Benutzerdefinierte erweiterte Schlüsselverwendung definition
+Definition der benutzerdefinierten erweiterten Schlüsselverwendung
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|Zeichenfolge|Erweiterte Schlüsselverwendung Name|
-|objectIdentifier|Zeichenfolge|Erweiterte Schlüsselverwendung Objektbezeichner|
+|name|Zeichenfolge|Name der erweiterten Schlüsselverwendung|
+|objectIdentifier|Zeichenfolge|Bezeichner des erweiterten Schlüssel Verwendungs Objekts|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

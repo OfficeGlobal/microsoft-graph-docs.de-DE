@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp deviceManagementUserRightsSetting
-description: Stellt eine Benutzerrechte festlegen.
-localization_priority: Normal
+title: deviceManagementUserRightsSetting-Ressourcentyp
+description: Stellt eine Einstellung für Benutzerrechte dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35e6ec1a5faa5556a0e113df145d718c488b1669
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f8fd9d2217fd39c4d2dc8e9db28cb5b5dcd0a1e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415054"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172184"
 ---
-# <a name="devicemanagementuserrightssetting-resource-type"></a>Ressourcentyp deviceManagementUserRightsSetting
+# <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt eine Benutzerrechte festlegen.
+Stellt eine Einstellung für Benutzerrechte dar.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Einstellung für Benutzerrechterichtlinien, die den aktuellen Status dieses Benutzers darstellt. Mögliche Werte sind: `notConfigured`, `blocked` und `allowed`.|
-|localUsersOrGroups|[DeviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md) -Auflistung|Eine Auflistung von lokalen Benutzern oder Gruppen, die auf Gerät festgelegt werden, wenn der Status dieser Einstellung zulässig ist, der darstellt. Diese Sammlung darf maximal 500 Elemente enthalten.|
+|state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Darstellen des aktuellen Status dieser Benutzerrechte Einstellung. Mögliche Werte sind: `notConfigured`, `blocked` und `allowed`.|
+|localUsersOrGroups|[deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md) -Sammlung|Darstellen einer Auflistung von lokalen Benutzern oder Gruppen, die auf dem Gerät festgelegt werden, wenn der Status dieser Einstellung zulässig ist. Diese Sammlung darf maximal 500 Elemente enthalten.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

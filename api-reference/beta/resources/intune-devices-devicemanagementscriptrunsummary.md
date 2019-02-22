@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp deviceManagementScriptRunSummary
-description: Enthält Eigenschaften für die Laufzeit Zusammenfassung für ein Gerät Management-Skript.
-localization_priority: Normal
+title: deviceManagementScriptRunSummary-Ressourcentyp
+description: Enthält Eigenschaften für die Ausführungs Zusammenfassung eines Geräteverwaltungsskripts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f49e08c0f6351133b953e566ba8e89afe945e990
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3fe26fc121d0d1d9339de999101975d2c4c225a5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174270"
 ---
-# <a name="devicemanagementscriptrunsummary-resource-type"></a>Ressourcentyp deviceManagementScriptRunSummary
+# <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für die Laufzeit Zusammenfassung für ein Gerät Management-Skript.
+Enthält Eigenschaften für die Ausführungs Zusammenfassung eines Geräteverwaltungsskripts.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) -Objekts.|
-|[DeviceManagementScriptRunSummary aktualisieren](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Aktualisieren Sie die Eigenschaften eines [DeviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) -Objekts.|
+|[DeviceManagementScriptRunSummary abrufen](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Lesen von Eigenschaften und Beziehungen des [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) -Objekts.|
+|[DeviceManagementScriptRunSummary aktualisieren](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Aktualisieren der Eigenschaften eines [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Das Gerät Management-Skript ausführen Zusammenfassung Entität-Taste.|
-|successDeviceCount|Int32|Anzahl der Geräte Erfolg.|
-|errorDeviceCount|Int32|Anzahl der Fehler Geräte.|
-|successUserCount|Int32|Benutzeranzahl Erfolg.|
-|errorUserCount|Int32|Anzahl der Fehler Benutzer.|
+|id|Zeichenfolge|Der Schlüssel der Device Management-Skript Ausführungs Zusammenfassungs Entität.|
+|successDeviceCount|Int32|Anzahl der erfolgreichen Geräte.|
+|errorDeviceCount|Int32|Fehlergeräte Anzahl.|
+|successUserCount|Int32|Anzahl der erfolgreichen Benutzer.|
+|errorUserCount|Int32|Fehler Benutzeranzahl.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

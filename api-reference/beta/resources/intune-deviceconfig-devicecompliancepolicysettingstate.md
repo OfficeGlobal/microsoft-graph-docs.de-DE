@@ -1,21 +1,21 @@
 ---
 title: deviceCompliancePolicySettingState-Ressourcentyp
 description: Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Gerät.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b17930161f66ca83d59e3f2f62777a79f82b79f0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e0b98cc4809fb72bb7caf5fe55fe6e912fd00f9b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425736"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171498"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Gerät.
 
@@ -25,7 +25,7 @@ Zustand der Gerätekonformitätsrichtlinien-Einstellung für ein bestimmtes Ger�
 |setting|Zeichenfolge|Die gemeldete Einstellung|
 |settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
 |instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|state|[Wurde](../resources/intune-shared-compliancestatus.md)|Der Kompatibilitätsstatus der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
 |errorDescription|Zeichenfolge|Fehlerbeschreibung|
 |userId|Zeichenfolge|UserId|

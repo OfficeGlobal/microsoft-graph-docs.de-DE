@@ -1,34 +1,34 @@
 ---
-title: EmailSyncSchedule Enum-Typ
-description: Mögliche Werte für e-Mail-Synchronisierungszeitplan.
-localization_priority: Normal
+title: emailSyncSchedule-Enumerationstyp
+description: Mögliche Werte für den Zeitplan für die e-Mail-Synchronisierung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8285b9a34e208b86b7c53c38e6aa015fd8c37560
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425183"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174846"
 ---
-# <a name="emailsyncschedule-enum-type"></a>EmailSyncSchedule Enum-Typ
+# <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für e-Mail-Synchronisierungszeitplan.
+Mögliche Werte für den Zeitplan für die e-Mail-Synchronisierung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|asMessagesArrive|1|Synchronisieren Sie wie Nachrichten eingehen.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|asMessagesArrive|1|Als Nachrichten eingehen.|
 |Manuell|2|Manuell synchronisieren.|
-|fifteenMinutes|3|Synchronisieren Sie alle 15 Minuten.|
-|thirtyMinutes|4|Sync alle 30 Minuten.|
-|sixtyMinutes|5|Sync alle 60 Minuten.|
-|basedOnMyUsage|6|Die Synchronisierung basierend auf meine Verwendung.|
+|fifteenMinutes|3|Alle fünfzehn Minuten synchronisieren.|
+|thirtyMinutes|4|Alle dreißig Minuten synchronisieren.|
+|sixtyMinutes|5|Alle 60 Minuten synchronisieren.|
+|basedOnMyUsage|6|Synchronisierung basierend auf meiner Verwendung.|
 
 
 

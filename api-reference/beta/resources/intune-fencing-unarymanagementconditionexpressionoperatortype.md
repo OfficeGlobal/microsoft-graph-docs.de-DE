@@ -1,28 +1,28 @@
 ---
-title: UnaryManagementConditionExpressionOperatorType Enum-Typ
-description: Unterstützte Operatoren für unärer Operator Management Bedingungsausdrücke
-localization_priority: Normal
+title: unaryManagementConditionExpressionOperatorType-Enumerationstyp
+description: Unterstützte Operatoren für unäre Ausdrücke der Verwaltungsbedingung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93f610e8ebea48402e32b6b88a944e5fe493821c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a7cbf2e04fd7247cc061ef5ade114571d5e92dad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399948"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173318"
 ---
-# <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>UnaryManagementConditionExpressionOperatorType Enum-Typ
+# <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>unaryManagementConditionExpressionOperatorType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Unterstützte Operatoren für unärer Operator Management Bedingungsausdrücke
+Unterstützte Operatoren für unäre Ausdrücke der Verwaltungsbedingung
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|not|0|Die Auswertung des Operanden negiert.|
+|not|0|Negiert die Auswertung des Operanden.|
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: AndroidDeviceOwnerRequiredPasswordType Enum-Typ
-description: Android-Gerät Besitzer Richtlinie erforderliche Kennworttyp.
-localization_priority: Normal
+title: androidDeviceOwnerRequiredPasswordType-Enumerationstyp
+description: Android-Gerätebesitzer Richtlinie erforderlicher Kennworttyp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c405cf3a69597994d5539427698baa92cabd3904
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 79d71fbabc4597c87c9cee782904334e2f12d7e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172590"
 ---
-# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>AndroidDeviceOwnerRequiredPasswordType Enum-Typ
+# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android-Gerät Besitzer Richtlinie erforderliche Kennworttyp.
+Android-Gerätebesitzer Richtlinie erforderlicher Kennworttyp.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|erforderlich|1|Es muss ein Kennwort festlegen, jedoch ohne Einschränkungen auf Typ.|
-|numerische|2|AT mindestens numerische.|
-|numericComplex|3|AT mindestens numerische mit keine wiederholten oder eine geordneten Sequenzen.|
-|Alphabetische|4|Mindestens alphabetische Kennwort.|
-|Alphanumerisch|5|Mindestens Alphanumerisches Kennwort|
-|alphanumericWithSymbols|6|Mindestens alphanumerische durch Geviertstrich.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|erforderlich|1|Es muss ein Kennwort festgelegt sein, es gibt jedoch keine Einschränkungen für den Typ.|
+|numerischen|2|Mindestens numerisch.|
+|numericComplex|3|Mindestens eine numerische ohne Wiederhol-oder geordnete Sequenzen.|
+|alphabetischer|4|Mindestens ein alphabetisches Kennwort.|
+|Alphanumerisch|5|Mindestens alphanumerisches Kennwort|
+|alphanumericWithSymbols|6|Mindestens alphanumerisch mit Symbolen.|
 
 
 

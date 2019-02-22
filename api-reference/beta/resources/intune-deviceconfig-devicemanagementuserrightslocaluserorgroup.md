@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp deviceManagementUserRightsLocalUserOrGroup
-description: Stellt Informationen für einen lokalen Benutzer oder eine Gruppe, die zum Festlegen von Benutzerrechten an.
-localization_priority: Normal
+title: deviceManagementUserRightsLocalUserOrGroup-Ressourcentyp
+description: Stellt Informationen für einen lokalen Benutzer oder eine Gruppe dar, die für die Benutzerrechte Einstellung verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a2cc0ff5b9e054398e7878b7d99619b59d109a4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 68c514635540bcf12db27e8a9ca816573293d3ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422061"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174860"
 ---
-# <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Ressourcentyp deviceManagementUserRightsLocalUserOrGroup
+# <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt Informationen für einen lokalen Benutzer oder eine Gruppe, die zum Festlegen von Benutzerrechten an.
+Stellt Informationen für einen lokalen Benutzer oder eine Gruppe dar, die für die Benutzerrechte Einstellung verwendet wird.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|name|Zeichenfolge|Der Name des lokalen Benutzers oder der Gruppe.|
-|description|Zeichenfolge|Der Admin-Beschreibung des lokalen Benutzers oder der Gruppe.|
-|securityIdentifier|Zeichenfolge|Die Sicherheits-ID der lokalen Benutzer oder Gruppen (z. B. * S-1-5-32-544).|
+|name|Zeichenfolge|Der Name dieses lokalen Benutzers oder dieser Gruppe.|
+|description|Zeichenfolge|Die Beschreibung des Administrators dieses lokalen Benutzers oder dieser Gruppe.|
+|securityIdentifier|Zeichenfolge|Die Sicherheits-ID dieses lokalen Benutzers oder einer Gruppe (z. b. * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

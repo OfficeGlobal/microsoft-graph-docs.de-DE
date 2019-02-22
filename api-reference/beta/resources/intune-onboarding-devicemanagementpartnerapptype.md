@@ -1,30 +1,30 @@
 ---
-title: DeviceManagementPartnerAppType Enum-Typ
+title: deviceManagementPartnerAppType-Enumerationstyp
 description: Partner-App-Typ.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54dc77d063272a7ac5fca33a68b0436c0437d3ab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5942517f489d4ede4bb078b316d70145e1d66d6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419009"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171057"
 ---
-# <a name="devicemanagementpartnerapptype-enum-type"></a>DeviceManagementPartnerAppType Enum-Typ
+# <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Partner-App-Typ.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Partner-App-Typ ist unbekannt.|
-|singleTenantApp|1|Partner App ist mit einem einzelnen Mandanten in AAD.|
-|multiTenantApp|2|Partner App ist mit mehreren Mandanten in AAD.|
+|unknown|0|Der Partner-App-Typ ist unbekannt.|
+|singleTenantApp|1|Die Partner-APP ist ein einzelner Mandant in AAD.|
+|multiTenantApp|2|Die Partner-APP ist Multi-Mandant in AAD.|
 
 
 

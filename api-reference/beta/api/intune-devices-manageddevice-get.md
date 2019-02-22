@@ -1,21 +1,21 @@
 ---
 title: Abrufen von „managedDevice“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedDevice.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b8974a5b778e39a3295f80f93bd53a9cbb24cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8b5796686161c0ad532132670ef47bf9487ee6ed
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393760"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172982"
 ---
 # <a name="get-manageddevice"></a>Abrufen von „managedDevice“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [managedDevice](../resources/intune-devices-manageddevice.md).
 
@@ -44,9 +44,9 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -68,7 +68,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7560
+Content-Length: 7622
 
 {
   "value": {
@@ -166,7 +166,9 @@ Content-Length: 7560
       "resourceAccess": true,
       "deviceConfiguration": true,
       "compliancePolicy": true,
-      "windowsUpdateForBusiness": true
+      "windowsUpdateForBusiness": true,
+      "endpointProtection": true,
+      "officeApps": true
     },
     "wiFiMacAddress": "Wi Fi Mac Address value",
     "deviceHealthAttestationState": {

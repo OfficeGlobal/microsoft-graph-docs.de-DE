@@ -1,32 +1,32 @@
 ---
-title: FirewallPacketQueueingMethodType Enum-Typ
+title: firewallPacketQueueingMethodType-Enumerationstyp
 description: Mögliche Werte für firewallPacketQueueingMethod
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc40b93eebc17b1d1abcd9c317da1ffa538512a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e1b8543df5fa2a50cfdfa56c7cb2d96199ba44e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172205"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>FirewallPacketQueueingMethodType Enum-Typ
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für firewallPacketQueueingMethod
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|deaktiviert|1|Paket Warteschlangen deaktivieren|
-|queueInbound|2|Eingehende, verschlüsselte Pakete Warteschlange|
-|queueOutbound|3|Warteschlange entschlüsselt ausgehenden Pakete für die Weiterleitung|
-|queueBoth|4|Die Warteschlange eingehenden und ausgehenden Pakete|
+|deviceDefault|0|Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts|
+|deaktiviert|1|Deaktivieren von Paketwarteschlangen|
+|queueInbound|2|Eingehende verschlüsselte Pakete in der Warteschlange|
+|queueOutbound|3|Entschlüsselte ausgehende Pakete für die Weiterleitung in der Warteschlange|
+|queueBoth|4|Warteschlange für ein-und ausgehende Pakete|
 
 
 

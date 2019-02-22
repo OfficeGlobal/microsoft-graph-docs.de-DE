@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp win32LobAppAssignmentSettings
-description: Enthält Eigenschaften, die zum Zuweisen einer mobilen Win32 LOB-app zu einer Gruppe.
-localization_priority: Normal
+title: win32LobAppAssignmentSettings-Ressourcentyp
+description: Enthält Eigenschaften zum Zuweisen einer mobilen Win32-LOB-APP zu einer Gruppe.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215b5c7086c2336f80bc0b812a108fbe2e2c1740
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e98688a10c126ee6597f8d244e4a605a2addeaee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430051"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172177"
 ---
-# <a name="win32lobappassignmentsettings-resource-type"></a>Ressourcentyp win32LobAppAssignmentSettings
+# <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften, die zum Zuweisen einer mobilen Win32 LOB-app zu einer Gruppe.
+Enthält Eigenschaften zum Zuweisen einer mobilen Win32-LOB-APP zu einer Gruppe.
 
 
 Erbt von [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -25,7 +25,7 @@ Erbt von [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Benachrichtigungen|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|Der Status der Benachrichtigung diese app-Zuordnung. Mögliche Werte sind: `showAll`, `showReboot` und `hideAll`.|
+|Benachrichtigungen|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|Der Benachrichtigungsstatus dieser APP-Zuweisung. Mögliche Werte sind: `showAll`, `showReboot` und `hideAll`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

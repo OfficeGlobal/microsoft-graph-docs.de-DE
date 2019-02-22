@@ -1,21 +1,21 @@
 ---
 title: deviceConfigurationDeviceOverview-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b581b94e7933e39c012d47c499b0119b61fd41ce
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0cdbbcfde7bc0f1ecc2cf3bab00207adcb70bf40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395762"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175297"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>deviceConfigurationDeviceOverview-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert.
 
@@ -31,11 +31,11 @@ Noch nicht dokumentiert.
 |id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Geräte|
 |notApplicableCount|Int32|Anzahl der ausgenommenen Geräte|
-|notApplicablePlatformCount|Int32|Anzahl der Geräte, die aufgrund von Konflikt Plattform und Richtlinie nicht zutreffend|
+|notApplicablePlatformCount|Int32|Anzahl der nicht anwendbaren Geräte aufgrund fehlender Platt Form und Richtlinie|
 |successCount|Int32|Anzahl der erfolgreichen Geräte|
 |errorCount|Int32|Anzahl der fehlerhaften Geräte|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Geräte|
-|conflictCount|Int32|Anzahl der Geräte in Konflikt|
+|Conflictcount zur|Int32|Anzahl der in Konflikt stehenden Geräte|
 |lastUpdateDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Aktualisierung|
 |configurationVersion|Int32|Version der Richtlinie für diese Übersicht|
 

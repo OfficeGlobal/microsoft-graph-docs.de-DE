@@ -1,30 +1,30 @@
 ---
-title: DefenderPotentiallyUnwantedAppAction Enum-Typ
-description: Defender Aktion, die auf erkannt potenziell unerwünschte Anwendung (PUA).
-localization_priority: Normal
+title: defenderPotentiallyUnwantedAppAction-Enumerationstyp
+description: Die Aktion des Verteidigers zur Übernahme erkannter potenziell unerwünschter Anwendungen (PUA).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ace0cc29ad284cde63b7e4934fb8cb395f27bbe
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 02ac5da63c2787c2b87479a23899c9d2980c54c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173353"
 ---
-# <a name="defenderpotentiallyunwantedappaction-enum-type"></a>DefenderPotentiallyUnwantedAppAction Enum-Typ
+# <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Defender Aktion, die auf erkannt potenziell unerwünschte Anwendung (PUA).
+Die Aktion des Verteidigers zur Übernahme erkannter potenziell unerwünschter Anwendungen (PUA).
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|PUA Schutz ist deaktiviert. Defender bietet keinen Schutz vor unerwünschten Applications.|
-|Blockieren|1|PUA Schutz ist auf. Erkannte Elemente werden blockiert. Sie werden im Verlauf zusammen mit anderen Bedrohungen angezeigt.|
-|Audit|2|Überwachungsmodus aktiviert. Defender unerwünschte Applications erkennen, aber keine Aktionen. Sie können Informationen zu Anwendungen, dass Defender gegen benutzt haben würde durch Suchen des Ereignisse, die in den Ereignisdetails Viewer von Defender erstellt ansehen.|
+|deviceDefault|0|PUA-Schutz ist deaktiviert. Defender schützt nicht vor potenziell unerwünschten Anwendungen.|
+|Block|1|PUA-Schutz ist eingeschaltet. Erkannte Elemente werden blockiert. Sie werden im Verlauf zusammen mit anderen Bedrohungen angezeigt.|
+|Audit|2|Überwachungsmodus. Defender ermittelt potenziell unerwünschte Anwendungen, aber keine Aktionen. Sie können Informationen zu Anwendungen, die Defender ergriffen haben, durchsuchen nach von Defender erstellten Ereignissen in der Ereignisanzeige lesen.|
 
 
 
