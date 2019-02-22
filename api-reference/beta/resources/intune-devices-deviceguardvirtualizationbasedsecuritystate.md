@@ -1,34 +1,34 @@
 ---
-title: DeviceGuardVirtualizationBasedSecurityState Enum-Typ
+title: deviceGuardVirtualizationBasedSecurityState-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39588aff1385bb14e1bf52f5d41b4848c1384138
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2e05ff7e9354f8b8a5fbead8fb62369cb2e5d761
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399766"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153046"
 ---
-# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a><span data-ttu-id="d7a61-103">DeviceGuardVirtualizationBasedSecurityState Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="d7a61-103">deviceGuardVirtualizationBasedSecurityState enum type</span></span>
+# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a><span data-ttu-id="35d89-103">deviceGuardVirtualizationBasedSecurityState-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="35d89-103">deviceGuardVirtualizationBasedSecurityState enum type</span></span>
 
-> <span data-ttu-id="d7a61-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="d7a61-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d7a61-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d7a61-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="35d89-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="35d89-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d7a61-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d7a61-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="35d89-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="35d89-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d7a61-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="d7a61-107">Not yet documented</span></span>
+<span data-ttu-id="35d89-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="35d89-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="d7a61-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="d7a61-108">Members</span></span>
-|<span data-ttu-id="d7a61-109">Member</span><span class="sxs-lookup"><span data-stu-id="d7a61-109">Member</span></span>|<span data-ttu-id="d7a61-110">Wert</span><span class="sxs-lookup"><span data-stu-id="d7a61-110">Value</span></span>|<span data-ttu-id="d7a61-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d7a61-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="35d89-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="35d89-107">Members</span></span>
+|<span data-ttu-id="35d89-108">Element</span><span class="sxs-lookup"><span data-stu-id="35d89-108">Member</span></span>|<span data-ttu-id="35d89-109">Wert</span><span class="sxs-lookup"><span data-stu-id="35d89-109">Value</span></span>|<span data-ttu-id="35d89-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="35d89-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d7a61-112">Ausführen</span><span class="sxs-lookup"><span data-stu-id="d7a61-112">running</span></span>|<span data-ttu-id="d7a61-113">0</span><span class="sxs-lookup"><span data-stu-id="d7a61-113">0</span></span>|<span data-ttu-id="d7a61-114">Wird ausgeführt</span><span class="sxs-lookup"><span data-stu-id="d7a61-114">Running</span></span>|
-|<span data-ttu-id="d7a61-115">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="d7a61-115">rebootRequired</span></span>|<span data-ttu-id="d7a61-116">1</span><span class="sxs-lookup"><span data-stu-id="d7a61-116">1</span></span>|<span data-ttu-id="d7a61-117">Stamm erforderlich</span><span class="sxs-lookup"><span data-stu-id="d7a61-117">Root required</span></span>|
-|<span data-ttu-id="d7a61-118">require64BitArchitecture</span><span class="sxs-lookup"><span data-stu-id="d7a61-118">require64BitArchitecture</span></span>|<span data-ttu-id="d7a61-119">2</span><span class="sxs-lookup"><span data-stu-id="d7a61-119">2</span></span>|<span data-ttu-id="d7a61-120">64-Bit-Architektur erforderlich</span><span class="sxs-lookup"><span data-stu-id="d7a61-120">64 bit architecture required</span></span>|
-|<span data-ttu-id="d7a61-121">notLicensed</span><span class="sxs-lookup"><span data-stu-id="d7a61-121">notLicensed</span></span>|<span data-ttu-id="d7a61-122">3</span><span class="sxs-lookup"><span data-stu-id="d7a61-122">3</span></span>|<span data-ttu-id="d7a61-123">Nicht lizenziert</span><span class="sxs-lookup"><span data-stu-id="d7a61-123">Not licensed</span></span>|
-|<span data-ttu-id="d7a61-124">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="d7a61-124">notConfigured</span></span>|<span data-ttu-id="d7a61-125">4</span><span class="sxs-lookup"><span data-stu-id="d7a61-125">4</span></span>|<span data-ttu-id="d7a61-126">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="d7a61-126">Not configured</span></span>|
-|<span data-ttu-id="d7a61-127">doesNotMeetHardwareRequirements</span><span class="sxs-lookup"><span data-stu-id="d7a61-127">doesNotMeetHardwareRequirements</span></span>|<span data-ttu-id="d7a61-128">5</span><span class="sxs-lookup"><span data-stu-id="d7a61-128">5</span></span>|<span data-ttu-id="d7a61-129">System erfüllt nicht an die Hardware.</span><span class="sxs-lookup"><span data-stu-id="d7a61-129">System does not meet hardware requirements</span></span>|
-|<span data-ttu-id="d7a61-130">andere</span><span class="sxs-lookup"><span data-stu-id="d7a61-130">other</span></span>|<span data-ttu-id="d7a61-131">42</span><span class="sxs-lookup"><span data-stu-id="d7a61-131">42</span></span>|<span data-ttu-id="d7a61-132">Andere.</span><span class="sxs-lookup"><span data-stu-id="d7a61-132">Other.</span></span> <span data-ttu-id="d7a61-133">Ereignisprotokolle in Microsoft-Windows-DeviceGuard enthalten weitere Details.</span><span class="sxs-lookup"><span data-stu-id="d7a61-133">Event logs in microsoft-Windows-DeviceGuard have more details.</span></span>|
+|<span data-ttu-id="35d89-111">ausgeführt</span><span class="sxs-lookup"><span data-stu-id="35d89-111">running</span></span>|<span data-ttu-id="35d89-112">0</span><span class="sxs-lookup"><span data-stu-id="35d89-112">0</span></span>|<span data-ttu-id="35d89-113">Wird ausgeführt</span><span class="sxs-lookup"><span data-stu-id="35d89-113">Running</span></span>|
+|<span data-ttu-id="35d89-114">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="35d89-114">rebootRequired</span></span>|<span data-ttu-id="35d89-115">1</span><span class="sxs-lookup"><span data-stu-id="35d89-115">1</span></span>|<span data-ttu-id="35d89-116">Stamm erforderlich</span><span class="sxs-lookup"><span data-stu-id="35d89-116">Root required</span></span>|
+|<span data-ttu-id="35d89-117">require64BitArchitecture</span><span class="sxs-lookup"><span data-stu-id="35d89-117">require64BitArchitecture</span></span>|<span data-ttu-id="35d89-118">2</span><span class="sxs-lookup"><span data-stu-id="35d89-118">2</span></span>|<span data-ttu-id="35d89-119">64-Bit-Architektur erforderlich</span><span class="sxs-lookup"><span data-stu-id="35d89-119">64 bit architecture required</span></span>|
+|<span data-ttu-id="35d89-120">notLicensed</span><span class="sxs-lookup"><span data-stu-id="35d89-120">notLicensed</span></span>|<span data-ttu-id="35d89-121">3</span><span class="sxs-lookup"><span data-stu-id="35d89-121">3</span></span>|<span data-ttu-id="35d89-122">Nicht lizenziert</span><span class="sxs-lookup"><span data-stu-id="35d89-122">Not licensed</span></span>|
+|<span data-ttu-id="35d89-123">notConfigured</span><span class="sxs-lookup"><span data-stu-id="35d89-123">notConfigured</span></span>|<span data-ttu-id="35d89-124">4</span><span class="sxs-lookup"><span data-stu-id="35d89-124">4</span></span>|<span data-ttu-id="35d89-125">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="35d89-125">Not configured</span></span>|
+|<span data-ttu-id="35d89-126">doesNotMeetHardwareRequirements</span><span class="sxs-lookup"><span data-stu-id="35d89-126">doesNotMeetHardwareRequirements</span></span>|<span data-ttu-id="35d89-127">5</span><span class="sxs-lookup"><span data-stu-id="35d89-127">5</span></span>|<span data-ttu-id="35d89-128">System erfüllt nicht die Hardwareanforderungen</span><span class="sxs-lookup"><span data-stu-id="35d89-128">System does not meet hardware requirements</span></span>|
+|<span data-ttu-id="35d89-129">anderen</span><span class="sxs-lookup"><span data-stu-id="35d89-129">other</span></span>|<span data-ttu-id="35d89-130">42</span><span class="sxs-lookup"><span data-stu-id="35d89-130">42</span></span>|<span data-ttu-id="35d89-131">Anderen.</span><span class="sxs-lookup"><span data-stu-id="35d89-131">Other.</span></span> <span data-ttu-id="35d89-132">Ereignisprotokolle in Microsoft-Windows-DeviceGuard haben weitere Details.</span><span class="sxs-lookup"><span data-stu-id="35d89-132">Event logs in microsoft-Windows-DeviceGuard have more details.</span></span>|
 
 
 

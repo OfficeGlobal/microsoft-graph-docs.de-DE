@@ -1,35 +1,35 @@
 ---
-title: Ressourcentyp unsupportedDeviceConfigurationDetail
-description: Eine Beschreibung des warum ein Entity-Objekt nicht unterstützt wird.
-localization_priority: Normal
+title: unsupportedDeviceConfigurationDetail-Ressourcentyp
+description: Eine Beschreibung, warum eine Entität nicht unterstützt wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c03bdb20fc4c48fa7820e09b9212bf73250599aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6ebdb6eb91dd64c1605288cc0cb1260f8fe7440a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400389"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148468"
 ---
-# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="b54bf-103">Ressourcentyp unsupportedDeviceConfigurationDetail</span><span class="sxs-lookup"><span data-stu-id="b54bf-103">unsupportedDeviceConfigurationDetail resource type</span></span>
+# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="d828e-103">unsupportedDeviceConfigurationDetail-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d828e-103">unsupportedDeviceConfigurationDetail resource type</span></span>
 
-> <span data-ttu-id="b54bf-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="b54bf-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b54bf-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b54bf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d828e-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d828e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b54bf-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b54bf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d828e-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="d828e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b54bf-107">Eine Beschreibung des warum ein Entity-Objekt nicht unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="b54bf-107">A description of why an entity is unsupported.</span></span>
+<span data-ttu-id="d828e-106">Eine Beschreibung, warum eine Entität nicht unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="d828e-106">A description of why an entity is unsupported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b54bf-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b54bf-108">Properties</span></span>
-|<span data-ttu-id="b54bf-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b54bf-109">Property</span></span>|<span data-ttu-id="b54bf-110">Typ</span><span class="sxs-lookup"><span data-stu-id="b54bf-110">Type</span></span>|<span data-ttu-id="b54bf-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b54bf-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d828e-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d828e-107">Properties</span></span>
+|<span data-ttu-id="d828e-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d828e-108">Property</span></span>|<span data-ttu-id="d828e-109">Typ</span><span class="sxs-lookup"><span data-stu-id="d828e-109">Type</span></span>|<span data-ttu-id="d828e-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d828e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b54bf-112">message</span><span class="sxs-lookup"><span data-stu-id="b54bf-112">message</span></span>|<span data-ttu-id="b54bf-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b54bf-113">String</span></span>|<span data-ttu-id="b54bf-114">Eine Nachricht erläutert, warum ein Entity-Objekt nicht unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="b54bf-114">A message explaining why an entity is unsupported.</span></span>|
-|<span data-ttu-id="b54bf-115">propertyName</span><span class="sxs-lookup"><span data-stu-id="b54bf-115">propertyName</span></span>|<span data-ttu-id="b54bf-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b54bf-116">String</span></span>|<span data-ttu-id="b54bf-117">Wenn die Nachricht an eine bestimmte Eigenschaft in der ursprünglichen Entität, und klicken Sie dann auf den Namen dieser Eigenschaft verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="b54bf-117">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
+|<span data-ttu-id="d828e-111">message</span><span class="sxs-lookup"><span data-stu-id="d828e-111">message</span></span>|<span data-ttu-id="d828e-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d828e-112">String</span></span>|<span data-ttu-id="d828e-113">Eine Meldung, die erklärt, warum eine Entität nicht unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="d828e-113">A message explaining why an entity is unsupported.</span></span>|
+|<span data-ttu-id="d828e-114">propertyName</span><span class="sxs-lookup"><span data-stu-id="d828e-114">propertyName</span></span>|<span data-ttu-id="d828e-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d828e-115">String</span></span>|<span data-ttu-id="d828e-116">Wenn die Nachricht mit einer bestimmten Eigenschaft in der ursprünglichen Entität verknüpft ist, dann der Name dieser Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="d828e-116">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b54bf-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b54bf-118">Relationships</span></span>
-<span data-ttu-id="b54bf-119">Keine</span><span class="sxs-lookup"><span data-stu-id="b54bf-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d828e-117">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="d828e-117">Relationships</span></span>
+<span data-ttu-id="d828e-118">Keine</span><span class="sxs-lookup"><span data-stu-id="d828e-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b54bf-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b54bf-120">JSON Representation</span></span>
-<span data-ttu-id="b54bf-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b54bf-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d828e-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d828e-119">JSON Representation</span></span>
+<span data-ttu-id="d828e-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d828e-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unsupportedDeviceConfigurationDetail"

@@ -1,35 +1,35 @@
 ---
 title: mediaContentRatingGermany-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a5a1b61069aa3568c8cb017c6c28bb3e992c38b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a43f919bb24d25d0e22dab0ecc192b2b6757f9e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394516"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147096"
 ---
-# <a name="mediacontentratinggermany-resource-type"></a><span data-ttu-id="fdf35-103">mediaContentRatingGermany-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="fdf35-103">mediaContentRatingGermany resource type</span></span>
+# <a name="mediacontentratinggermany-resource-type"></a><span data-ttu-id="b3063-103">mediaContentRatingGermany-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b3063-103">mediaContentRatingGermany resource type</span></span>
 
-> <span data-ttu-id="fdf35-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="fdf35-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="fdf35-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="fdf35-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b3063-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b3063-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fdf35-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fdf35-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b3063-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="b3063-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fdf35-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="fdf35-107">Not yet documented</span></span>
+<span data-ttu-id="b3063-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="b3063-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fdf35-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="fdf35-108">Properties</span></span>
-|<span data-ttu-id="fdf35-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="fdf35-109">Property</span></span>|<span data-ttu-id="fdf35-110">Typ</span><span class="sxs-lookup"><span data-stu-id="fdf35-110">Type</span></span>|<span data-ttu-id="fdf35-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="fdf35-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b3063-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b3063-107">Properties</span></span>
+|<span data-ttu-id="b3063-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b3063-108">Property</span></span>|<span data-ttu-id="b3063-109">Typ</span><span class="sxs-lookup"><span data-stu-id="b3063-109">Type</span></span>|<span data-ttu-id="b3063-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b3063-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fdf35-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="fdf35-112">movieRating</span></span>|[<span data-ttu-id="fdf35-113">ratingGermanyMoviesType</span><span class="sxs-lookup"><span data-stu-id="fdf35-113">ratingGermanyMoviesType</span></span>](../resources/intune-deviceconfig-ratinggermanymoviestype.md)|<span data-ttu-id="fdf35-114">Bewertung für Deutschland ausgewählten Filme.</span><span class="sxs-lookup"><span data-stu-id="fdf35-114">Movies rating selected for Germany.</span></span> <span data-ttu-id="fdf35-115">Mögliche Werte sind: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16` und `adults`.</span><span class="sxs-lookup"><span data-stu-id="fdf35-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span></span>|
-|<span data-ttu-id="fdf35-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="fdf35-116">tvRating</span></span>|[<span data-ttu-id="fdf35-117">ratingGermanyTelevisionType</span><span class="sxs-lookup"><span data-stu-id="fdf35-117">ratingGermanyTelevisionType</span></span>](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md)|<span data-ttu-id="fdf35-118">TV-Bewertung für Deutschland ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="fdf35-118">TV rating selected for Germany.</span></span> <span data-ttu-id="fdf35-119">Mögliche Werte: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="fdf35-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span></span>|
+|<span data-ttu-id="b3063-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="b3063-111">movieRating</span></span>|[<span data-ttu-id="b3063-112">ratingGermanyMoviesType</span><span class="sxs-lookup"><span data-stu-id="b3063-112">ratingGermanyMoviesType</span></span>](../resources/intune-deviceconfig-ratinggermanymoviestype.md)|<span data-ttu-id="b3063-113">Film Bewertung für Deutschland ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="b3063-113">Movies rating selected for Germany.</span></span> <span data-ttu-id="b3063-114">Mögliche Werte sind: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16` und `adults`.</span><span class="sxs-lookup"><span data-stu-id="b3063-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span></span>|
+|<span data-ttu-id="b3063-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="b3063-115">tvRating</span></span>|[<span data-ttu-id="b3063-116">ratingGermanyTelevisionType</span><span class="sxs-lookup"><span data-stu-id="b3063-116">ratingGermanyTelevisionType</span></span>](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md)|<span data-ttu-id="b3063-117">TV-Bewertung für Deutschland ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="b3063-117">TV rating selected for Germany.</span></span> <span data-ttu-id="b3063-118">Mögliche Werte: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="b3063-118">Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fdf35-120">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="fdf35-120">Relationships</span></span>
-<span data-ttu-id="fdf35-121">Keine</span><span class="sxs-lookup"><span data-stu-id="fdf35-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b3063-119">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b3063-119">Relationships</span></span>
+<span data-ttu-id="b3063-120">Keine</span><span class="sxs-lookup"><span data-stu-id="b3063-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fdf35-122">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="fdf35-122">JSON Representation</span></span>
-<span data-ttu-id="fdf35-123">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="fdf35-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b3063-121">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b3063-121">JSON Representation</span></span>
+<span data-ttu-id="b3063-122">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b3063-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingGermany"

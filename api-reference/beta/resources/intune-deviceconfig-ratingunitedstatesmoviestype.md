@@ -1,34 +1,34 @@
 ---
-title: RatingUnitedStatesMoviesType Enum-Typ
-description: Filme Bewertung Beschriftungen in US-Rufnummern
-localization_priority: Normal
+title: ratingUnitedStatesMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in den USA
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c14fcc87c949e3f16403ca4654ec987423f8b647
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412226"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152738"
 ---
-# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="f8008-103">RatingUnitedStatesMoviesType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="f8008-103">ratingUnitedStatesMoviesType enum type</span></span>
+# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="06c63-103">ratingUnitedStatesMoviesType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="06c63-103">ratingUnitedStatesMoviesType enum type</span></span>
 
-> <span data-ttu-id="f8008-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="f8008-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f8008-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f8008-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="06c63-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="06c63-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f8008-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f8008-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="06c63-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="06c63-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f8008-107">Filme Bewertung Beschriftungen in US-Rufnummern</span><span class="sxs-lookup"><span data-stu-id="f8008-107">Movies rating labels in United States</span></span>
+<span data-ttu-id="06c63-106">Movies-Bewertungs Bezeichnungen in den USA</span><span class="sxs-lookup"><span data-stu-id="06c63-106">Movies rating labels in United States</span></span>
 
-## <a name="members"></a><span data-ttu-id="f8008-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="f8008-108">Members</span></span>
-|<span data-ttu-id="f8008-109">Member</span><span class="sxs-lookup"><span data-stu-id="f8008-109">Member</span></span>|<span data-ttu-id="f8008-110">Wert</span><span class="sxs-lookup"><span data-stu-id="f8008-110">Value</span></span>|<span data-ttu-id="f8008-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f8008-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="06c63-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="06c63-107">Members</span></span>
+|<span data-ttu-id="06c63-108">Element</span><span class="sxs-lookup"><span data-stu-id="06c63-108">Member</span></span>|<span data-ttu-id="06c63-109">Wert</span><span class="sxs-lookup"><span data-stu-id="06c63-109">Value</span></span>|<span data-ttu-id="06c63-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="06c63-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f8008-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="f8008-112">allAllowed</span></span>|<span data-ttu-id="f8008-113">0</span><span class="sxs-lookup"><span data-stu-id="f8008-113">0</span></span>|<span data-ttu-id="f8008-114">Standardwert, alle Filme Inhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="f8008-114">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="f8008-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="f8008-115">allBlocked</span></span>|<span data-ttu-id="f8008-116">1</span><span class="sxs-lookup"><span data-stu-id="f8008-116">1</span></span>|<span data-ttu-id="f8008-117">Alle Inhalte Filme nicht zulassen</span><span class="sxs-lookup"><span data-stu-id="f8008-117">Do not allow any movies content</span></span>|
-|<span data-ttu-id="f8008-118">Allgemeine</span><span class="sxs-lookup"><span data-stu-id="f8008-118">general</span></span>|<span data-ttu-id="f8008-119">2</span><span class="sxs-lookup"><span data-stu-id="f8008-119">2</span></span>|<span data-ttu-id="f8008-120">G, alle Jahren zugelassen</span><span class="sxs-lookup"><span data-stu-id="f8008-120">G, all ages admitted</span></span>|
-|<span data-ttu-id="f8008-121">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="f8008-121">parentalGuidance</span></span>|<span data-ttu-id="f8008-122">3</span><span class="sxs-lookup"><span data-stu-id="f8008-122">3</span></span>|<span data-ttu-id="f8008-123">Bild, einige Material geeignet für untergeordnete Elemente möglicherweise nicht</span><span class="sxs-lookup"><span data-stu-id="f8008-123">PG, some material may not be suitable for children</span></span>|
-|<span data-ttu-id="f8008-124">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="f8008-124">parentalGuidance13</span></span>|<span data-ttu-id="f8008-125">4</span><span class="sxs-lookup"><span data-stu-id="f8008-125">4</span></span>|<span data-ttu-id="f8008-126">PG13, kann einige Materialien für untergeordnete Elemente unter 13 eventuell</span><span class="sxs-lookup"><span data-stu-id="f8008-126">PG13, some material may be inappropriate for children under 13</span></span>|
-|<span data-ttu-id="f8008-127">eingeschränkt</span><span class="sxs-lookup"><span data-stu-id="f8008-127">restricted</span></span>|<span data-ttu-id="f8008-128">5</span><span class="sxs-lookup"><span data-stu-id="f8008-128">5</span></span>|<span data-ttu-id="f8008-129">R, erfordern Viewer unter 17 begleitenden Erziehungsberechtigte Versender nicht jugendfreier</span><span class="sxs-lookup"><span data-stu-id="f8008-129">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
-|<span data-ttu-id="f8008-130">Erwachsene</span><span class="sxs-lookup"><span data-stu-id="f8008-130">adults</span></span>|<span data-ttu-id="f8008-131">6</span><span class="sxs-lookup"><span data-stu-id="f8008-131">6</span></span>|<span data-ttu-id="f8008-132">NC17, nur Erwachsene</span><span class="sxs-lookup"><span data-stu-id="f8008-132">NC17, adults only</span></span>|
+|<span data-ttu-id="06c63-111">allAllowed</span><span class="sxs-lookup"><span data-stu-id="06c63-111">allAllowed</span></span>|<span data-ttu-id="06c63-112">0</span><span class="sxs-lookup"><span data-stu-id="06c63-112">0</span></span>|<span data-ttu-id="06c63-113">Standardwert, alle Filme zulassen</span><span class="sxs-lookup"><span data-stu-id="06c63-113">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="06c63-114">allBlocked</span><span class="sxs-lookup"><span data-stu-id="06c63-114">allBlocked</span></span>|<span data-ttu-id="06c63-115">1</span><span class="sxs-lookup"><span data-stu-id="06c63-115">1</span></span>|<span data-ttu-id="06c63-116">Keine Filme Inhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="06c63-116">Do not allow any movies content</span></span>|
+|<span data-ttu-id="06c63-117">allgemeine</span><span class="sxs-lookup"><span data-stu-id="06c63-117">general</span></span>|<span data-ttu-id="06c63-118">2</span><span class="sxs-lookup"><span data-stu-id="06c63-118">2</span></span>|<span data-ttu-id="06c63-119">G, alle Altersgruppen zugelassen</span><span class="sxs-lookup"><span data-stu-id="06c63-119">G, all ages admitted</span></span>|
+|<span data-ttu-id="06c63-120">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="06c63-120">parentalGuidance</span></span>|<span data-ttu-id="06c63-121">3</span><span class="sxs-lookup"><span data-stu-id="06c63-121">3</span></span>|<span data-ttu-id="06c63-122">PG, einige Materialien sind möglicherweise nicht für Kinder geeignet</span><span class="sxs-lookup"><span data-stu-id="06c63-122">PG, some material may not be suitable for children</span></span>|
+|<span data-ttu-id="06c63-123">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="06c63-123">parentalGuidance13</span></span>|<span data-ttu-id="06c63-124">4</span><span class="sxs-lookup"><span data-stu-id="06c63-124">4</span></span>|<span data-ttu-id="06c63-125">PG13, manches Material ist möglicherweise für Kinder unter 13 Jahren unangemessen.</span><span class="sxs-lookup"><span data-stu-id="06c63-125">PG13, some material may be inappropriate for children under 13</span></span>|
+|<span data-ttu-id="06c63-126">eingeschränkt</span><span class="sxs-lookup"><span data-stu-id="06c63-126">restricted</span></span>|<span data-ttu-id="06c63-127">5</span><span class="sxs-lookup"><span data-stu-id="06c63-127">5</span></span>|<span data-ttu-id="06c63-128">R, Betrachter unter 17 erfordern begleitendes oder Erwachsenen Erziehungsberechtigten</span><span class="sxs-lookup"><span data-stu-id="06c63-128">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
+|<span data-ttu-id="06c63-129">Erwachsene</span><span class="sxs-lookup"><span data-stu-id="06c63-129">adults</span></span>|<span data-ttu-id="06c63-130">6</span><span class="sxs-lookup"><span data-stu-id="06c63-130">6</span></span>|<span data-ttu-id="06c63-131">NC17, nur für Erwachsene</span><span class="sxs-lookup"><span data-stu-id="06c63-131">NC17, adults only</span></span>|
 
 
 

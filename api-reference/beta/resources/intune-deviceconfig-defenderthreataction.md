@@ -1,34 +1,34 @@
 ---
-title: DefenderThreatAction Enum-Typ
-description: Defender Standardaktion durchführen erkannt Schadsoftware.
-localization_priority: Normal
+title: defenderThreatAction-Enumerationstyp
+description: Die Standardaktion des Verteidigers für erkannte Schadsoftware.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d092d5a23fc006a9accdf9062a27cd79f323d208
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4849f369aa5dd04a68599050aa097b2ac63f5ef1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154782"
 ---
-# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="ee273-103">DefenderThreatAction Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="ee273-103">defenderThreatAction enum type</span></span>
+# <a name="defenderthreataction-enum-type"></a><span data-ttu-id="7043f-103">defenderThreatAction-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="7043f-103">defenderThreatAction enum type</span></span>
 
-> <span data-ttu-id="ee273-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="ee273-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ee273-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ee273-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7043f-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7043f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ee273-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ee273-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7043f-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="7043f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ee273-107">Defender Standardaktion durchführen erkannt Schadsoftware.</span><span class="sxs-lookup"><span data-stu-id="ee273-107">Defender’s default action to take on detected Malware threats.</span></span>
+<span data-ttu-id="7043f-106">Die Standardaktion des Verteidigers für erkannte Schadsoftware.</span><span class="sxs-lookup"><span data-stu-id="7043f-106">Defender’s default action to take on detected Malware threats.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ee273-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="ee273-108">Members</span></span>
-|<span data-ttu-id="ee273-109">Member</span><span class="sxs-lookup"><span data-stu-id="ee273-109">Member</span></span>|<span data-ttu-id="ee273-110">Wert</span><span class="sxs-lookup"><span data-stu-id="ee273-110">Value</span></span>|<span data-ttu-id="ee273-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ee273-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="7043f-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="7043f-107">Members</span></span>
+|<span data-ttu-id="7043f-108">Element</span><span class="sxs-lookup"><span data-stu-id="7043f-108">Member</span></span>|<span data-ttu-id="7043f-109">Wert</span><span class="sxs-lookup"><span data-stu-id="7043f-109">Value</span></span>|<span data-ttu-id="7043f-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7043f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ee273-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="ee273-112">deviceDefault</span></span>|<span data-ttu-id="ee273-113">0</span><span class="sxs-lookup"><span data-stu-id="ee273-113">0</span></span>|<span data-ttu-id="ee273-114">Wenden Sie Aktion basierend auf der Definition Update an.</span><span class="sxs-lookup"><span data-stu-id="ee273-114">Apply action based on the update definition.</span></span>|
-|<span data-ttu-id="ee273-115">clean</span><span class="sxs-lookup"><span data-stu-id="ee273-115">clean</span></span>|<span data-ttu-id="ee273-116">1</span><span class="sxs-lookup"><span data-stu-id="ee273-116">1</span></span>|<span data-ttu-id="ee273-117">Bereinigen der erkannten Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="ee273-117">Clean the detected threat.</span></span>|
-|<span data-ttu-id="ee273-118">Quarantäne</span><span class="sxs-lookup"><span data-stu-id="ee273-118">quarantine</span></span>|<span data-ttu-id="ee273-119">2</span><span class="sxs-lookup"><span data-stu-id="ee273-119">2</span></span>|<span data-ttu-id="ee273-120">Isolieren Sie erkannte Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="ee273-120">Quarantine the detected threat.</span></span>|
-|<span data-ttu-id="ee273-121">remove</span><span class="sxs-lookup"><span data-stu-id="ee273-121">remove</span></span>|<span data-ttu-id="ee273-122">3</span><span class="sxs-lookup"><span data-stu-id="ee273-122">3</span></span>|<span data-ttu-id="ee273-123">Erkannte Bedrohung zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="ee273-123">Remove the detected threat.</span></span>|
-|<span data-ttu-id="ee273-124">zulassen</span><span class="sxs-lookup"><span data-stu-id="ee273-124">allow</span></span>|<span data-ttu-id="ee273-125">4</span><span class="sxs-lookup"><span data-stu-id="ee273-125">4</span></span>|<span data-ttu-id="ee273-126">Zulassen der erkannten Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="ee273-126">Allow the detected threat.</span></span>|
-|<span data-ttu-id="ee273-127">vom Typ userDefined</span><span class="sxs-lookup"><span data-stu-id="ee273-127">userDefined</span></span>|<span data-ttu-id="ee273-128">5</span><span class="sxs-lookup"><span data-stu-id="ee273-128">5</span></span>|<span data-ttu-id="ee273-129">Ermöglicht es dem Benutzer die erkannten Bedrohung auszuführende Aktion zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="ee273-129">Allow the user to determine the action to take with the detected threat.</span></span>|
-|<span data-ttu-id="ee273-130">Blockieren</span><span class="sxs-lookup"><span data-stu-id="ee273-130">block</span></span>|<span data-ttu-id="ee273-131">6</span><span class="sxs-lookup"><span data-stu-id="ee273-131">6</span></span>|<span data-ttu-id="ee273-132">Blockieren der erkannten Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="ee273-132">Block the detected threat.</span></span>|
+|<span data-ttu-id="7043f-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="7043f-111">deviceDefault</span></span>|<span data-ttu-id="7043f-112">0</span><span class="sxs-lookup"><span data-stu-id="7043f-112">0</span></span>|<span data-ttu-id="7043f-113">Anwenden einer Aktion basierend auf der Updatedefinition.</span><span class="sxs-lookup"><span data-stu-id="7043f-113">Apply action based on the update definition.</span></span>|
+|<span data-ttu-id="7043f-114">clean</span><span class="sxs-lookup"><span data-stu-id="7043f-114">clean</span></span>|<span data-ttu-id="7043f-115">1</span><span class="sxs-lookup"><span data-stu-id="7043f-115">1</span></span>|<span data-ttu-id="7043f-116">BeReinigen Sie die erkannte Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="7043f-116">Clean the detected threat.</span></span>|
+|<span data-ttu-id="7043f-117">Quarantäne</span><span class="sxs-lookup"><span data-stu-id="7043f-117">quarantine</span></span>|<span data-ttu-id="7043f-118">2</span><span class="sxs-lookup"><span data-stu-id="7043f-118">2</span></span>|<span data-ttu-id="7043f-119">Isolieren Sie die erkannte Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="7043f-119">Quarantine the detected threat.</span></span>|
+|<span data-ttu-id="7043f-120">remove</span><span class="sxs-lookup"><span data-stu-id="7043f-120">remove</span></span>|<span data-ttu-id="7043f-121">3</span><span class="sxs-lookup"><span data-stu-id="7043f-121">3</span></span>|<span data-ttu-id="7043f-122">Entfernen Sie die erkannte Bedrohung.</span><span class="sxs-lookup"><span data-stu-id="7043f-122">Remove the detected threat.</span></span>|
+|<span data-ttu-id="7043f-123">zulassen</span><span class="sxs-lookup"><span data-stu-id="7043f-123">allow</span></span>|<span data-ttu-id="7043f-124">4</span><span class="sxs-lookup"><span data-stu-id="7043f-124">4</span></span>|<span data-ttu-id="7043f-125">Die erkannte Bedrohung zulassen.</span><span class="sxs-lookup"><span data-stu-id="7043f-125">Allow the detected threat.</span></span>|
+|<span data-ttu-id="7043f-126">userDefined</span><span class="sxs-lookup"><span data-stu-id="7043f-126">userDefined</span></span>|<span data-ttu-id="7043f-127">5</span><span class="sxs-lookup"><span data-stu-id="7043f-127">5</span></span>|<span data-ttu-id="7043f-128">Der Benutzer kann die Aktion bestimmen, die mit der erkannten Bedrohung ausgeführt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7043f-128">Allow the user to determine the action to take with the detected threat.</span></span>|
+|<span data-ttu-id="7043f-129">Block</span><span class="sxs-lookup"><span data-stu-id="7043f-129">block</span></span>|<span data-ttu-id="7043f-130">6</span><span class="sxs-lookup"><span data-stu-id="7043f-130">6</span></span>|<span data-ttu-id="7043f-131">Die erkannte Bedrohung blockieren.</span><span class="sxs-lookup"><span data-stu-id="7043f-131">Block the detected threat.</span></span>|
 
 
 

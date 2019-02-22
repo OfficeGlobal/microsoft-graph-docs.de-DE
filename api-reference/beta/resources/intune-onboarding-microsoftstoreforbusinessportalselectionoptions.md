@@ -1,30 +1,30 @@
 ---
-title: MicrosoftStoreForBusinessPortalSelectionOptions Enum-Typ
-description: Dem Webportal synchronisiert Admin verfügbaren Microsoft Store für Business apps. Dies ist in der Verwaltungskonsole Intune verfügbar.
-localization_priority: Normal
+title: microsoftStoreForBusinessPortalSelectionOptions-Enumerationstyp
+description: Portal, in dem der Administrator die verfügbaren Microsoft Store for Business-Apps synchronisiert. Dies ist in der InTune-Verwaltungskonsole verfügbar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 589a6058a7ff2c30a967192b90c700f30068ab3c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419331"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147943"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a><span data-ttu-id="37bb0-104">MicrosoftStoreForBusinessPortalSelectionOptions Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="37bb0-104">microsoftStoreForBusinessPortalSelectionOptions enum type</span></span>
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a><span data-ttu-id="c467a-104">microsoftStoreForBusinessPortalSelectionOptions-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="c467a-104">microsoftStoreForBusinessPortalSelectionOptions enum type</span></span>
 
-> <span data-ttu-id="37bb0-105">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="37bb0-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="37bb0-106">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="37bb0-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c467a-105">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c467a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="37bb0-107">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="37bb0-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c467a-106">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="c467a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="37bb0-108">Dem Webportal synchronisiert Admin verfügbaren Microsoft Store für Business apps.</span><span class="sxs-lookup"><span data-stu-id="37bb0-108">Portal to which admin syncs available Microsoft Store for Business apps.</span></span> <span data-ttu-id="37bb0-109">Dies ist in der Verwaltungskonsole Intune verfügbar.</span><span class="sxs-lookup"><span data-stu-id="37bb0-109">This is available in the Intune Admin Console.</span></span>
+<span data-ttu-id="c467a-107">Portal, in dem der Administrator die verfügbaren Microsoft Store for Business-Apps synchronisiert.</span><span class="sxs-lookup"><span data-stu-id="c467a-107">Portal to which admin syncs available Microsoft Store for Business apps.</span></span> <span data-ttu-id="c467a-108">Dies ist in der InTune-Verwaltungskonsole verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c467a-108">This is available in the Intune Admin Console.</span></span>
 
-## <a name="members"></a><span data-ttu-id="37bb0-110">Elemente</span><span class="sxs-lookup"><span data-stu-id="37bb0-110">Members</span></span>
-|<span data-ttu-id="37bb0-111">Member</span><span class="sxs-lookup"><span data-stu-id="37bb0-111">Member</span></span>|<span data-ttu-id="37bb0-112">Wert</span><span class="sxs-lookup"><span data-stu-id="37bb0-112">Value</span></span>|<span data-ttu-id="37bb0-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="37bb0-113">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c467a-109">Elemente</span><span class="sxs-lookup"><span data-stu-id="c467a-109">Members</span></span>
+|<span data-ttu-id="c467a-110">Element</span><span class="sxs-lookup"><span data-stu-id="c467a-110">Member</span></span>|<span data-ttu-id="c467a-111">Wert</span><span class="sxs-lookup"><span data-stu-id="c467a-111">Value</span></span>|<span data-ttu-id="c467a-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c467a-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="37bb0-114">Keine</span><span class="sxs-lookup"><span data-stu-id="37bb0-114">none</span></span>|<span data-ttu-id="37bb0-115">0</span><span class="sxs-lookup"><span data-stu-id="37bb0-115">0</span></span>|<span data-ttu-id="37bb0-116">Diese Option ist nicht verfügbar für das Konto</span><span class="sxs-lookup"><span data-stu-id="37bb0-116">This option is not available for the account</span></span>|
-|<span data-ttu-id="37bb0-117">companyPortal</span><span class="sxs-lookup"><span data-stu-id="37bb0-117">companyPortal</span></span>|<span data-ttu-id="37bb0-118">1</span><span class="sxs-lookup"><span data-stu-id="37bb0-118">1</span></span>|<span data-ttu-id="37bb0-119">Nur Intune Unternehmen Portal.</span><span class="sxs-lookup"><span data-stu-id="37bb0-119">Intune Company Portal only.</span></span>|
-|<span data-ttu-id="37bb0-120">privateStore</span><span class="sxs-lookup"><span data-stu-id="37bb0-120">privateStore</span></span>|<span data-ttu-id="37bb0-121">2</span><span class="sxs-lookup"><span data-stu-id="37bb0-121">2</span></span>|<span data-ttu-id="37bb0-122">Nur MSFB Private Store.</span><span class="sxs-lookup"><span data-stu-id="37bb0-122">MSFB Private store only.</span></span>|
+|<span data-ttu-id="c467a-113">Keine</span><span class="sxs-lookup"><span data-stu-id="c467a-113">none</span></span>|<span data-ttu-id="c467a-114">0</span><span class="sxs-lookup"><span data-stu-id="c467a-114">0</span></span>|<span data-ttu-id="c467a-115">Diese Option ist für das Konto nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c467a-115">This option is not available for the account</span></span>|
+|<span data-ttu-id="c467a-116">companyPortal</span><span class="sxs-lookup"><span data-stu-id="c467a-116">companyPortal</span></span>|<span data-ttu-id="c467a-117">1</span><span class="sxs-lookup"><span data-stu-id="c467a-117">1</span></span>|<span data-ttu-id="c467a-118">Nur InTune-Unternehmens Portal.</span><span class="sxs-lookup"><span data-stu-id="c467a-118">Intune Company Portal only.</span></span>|
+|<span data-ttu-id="c467a-119">privateStore</span><span class="sxs-lookup"><span data-stu-id="c467a-119">privateStore</span></span>|<span data-ttu-id="c467a-120">2</span><span class="sxs-lookup"><span data-stu-id="c467a-120">2</span></span>|<span data-ttu-id="c467a-121">Nur MSFB-privater Speicher.</span><span class="sxs-lookup"><span data-stu-id="c467a-121">MSFB Private store only.</span></span>|
 
 
 

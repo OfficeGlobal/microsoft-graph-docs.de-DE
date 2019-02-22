@@ -1,31 +1,31 @@
 ---
-title: IosWallpaperDisplayLocation Enum-Typ
-description: Ein Enum-Typ für Hintergrundbild anzeigebezeichners Speicherort.
-localization_priority: Normal
+title: iosWallpaperDisplayLocation-Enumerationstyp
+description: Ein Enum-Typ für die Anzeige des Standort Bezeichners für Wallpaper.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdf6a0a837d420d37641221bf39b5b64f1046591
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429999"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146627"
 ---
-# <a name="ioswallpaperdisplaylocation-enum-type"></a><span data-ttu-id="ae794-103">IosWallpaperDisplayLocation Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="ae794-103">iosWallpaperDisplayLocation enum type</span></span>
+# <a name="ioswallpaperdisplaylocation-enum-type"></a><span data-ttu-id="3e24a-103">iosWallpaperDisplayLocation-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="3e24a-103">iosWallpaperDisplayLocation enum type</span></span>
 
-> <span data-ttu-id="ae794-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="ae794-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ae794-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ae794-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3e24a-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3e24a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ae794-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="ae794-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3e24a-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="3e24a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ae794-107">Ein Enum-Typ für Hintergrundbild anzeigebezeichners Speicherort.</span><span class="sxs-lookup"><span data-stu-id="ae794-107">An enum type for wallpaper display location specifier.</span></span>
+<span data-ttu-id="3e24a-106">Ein Enum-Typ für die Anzeige des Standort Bezeichners für Wallpaper.</span><span class="sxs-lookup"><span data-stu-id="3e24a-106">An enum type for wallpaper display location specifier.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ae794-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="ae794-108">Members</span></span>
-|<span data-ttu-id="ae794-109">Member</span><span class="sxs-lookup"><span data-stu-id="ae794-109">Member</span></span>|<span data-ttu-id="ae794-110">Wert</span><span class="sxs-lookup"><span data-stu-id="ae794-110">Value</span></span>|<span data-ttu-id="ae794-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ae794-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3e24a-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="3e24a-107">Members</span></span>
+|<span data-ttu-id="3e24a-108">Element</span><span class="sxs-lookup"><span data-stu-id="3e24a-108">Member</span></span>|<span data-ttu-id="3e24a-109">Wert</span><span class="sxs-lookup"><span data-stu-id="3e24a-109">Value</span></span>|<span data-ttu-id="3e24a-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3e24a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ae794-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="ae794-112">notConfigured</span></span>|<span data-ttu-id="ae794-113">0</span><span class="sxs-lookup"><span data-stu-id="ae794-113">0</span></span>|<span data-ttu-id="ae794-114">Kein Standort für Hintergrundbild angegeben.</span><span class="sxs-lookup"><span data-stu-id="ae794-114">No location specified for wallpaper display.</span></span>|
-|<span data-ttu-id="ae794-115">lockScreen</span><span class="sxs-lookup"><span data-stu-id="ae794-115">lockScreen</span></span>|<span data-ttu-id="ae794-116">1</span><span class="sxs-lookup"><span data-stu-id="ae794-116">1</span></span>|<span data-ttu-id="ae794-117">Ein konfigurierten Hintergrundbild wird auf Sperren des Bildschirms angezeigt.</span><span class="sxs-lookup"><span data-stu-id="ae794-117">A configured wallpaper image is displayed on Lock screen.</span></span>|
-|<span data-ttu-id="ae794-118">Startseite</span><span class="sxs-lookup"><span data-stu-id="ae794-118">homeScreen</span></span>|<span data-ttu-id="ae794-119">2</span><span class="sxs-lookup"><span data-stu-id="ae794-119">2</span></span>|<span data-ttu-id="ae794-120">Ein konfigurierten Hintergrundbild wird auf Startseite (Symbol List) angezeigt.</span><span class="sxs-lookup"><span data-stu-id="ae794-120">A configured wallpaper image is displayed on Home (icon list) screen.</span></span>|
-|<span data-ttu-id="ae794-121">lockAndHomeScreens</span><span class="sxs-lookup"><span data-stu-id="ae794-121">lockAndHomeScreens</span></span>|<span data-ttu-id="ae794-122">3</span><span class="sxs-lookup"><span data-stu-id="ae794-122">3</span></span>|<span data-ttu-id="ae794-123">Ein konfigurierten Hintergrundbild wird auf dem Bildschirm sperren und Startbildschirm angezeigt.</span><span class="sxs-lookup"><span data-stu-id="ae794-123">A configured wallpaper image is displayed on Lock screen and Home screen.</span></span>|
+|<span data-ttu-id="3e24a-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3e24a-111">notConfigured</span></span>|<span data-ttu-id="3e24a-112">0</span><span class="sxs-lookup"><span data-stu-id="3e24a-112">0</span></span>|<span data-ttu-id="3e24a-113">Kein Speicherort für die Bildschirmhintergrund Anzeige angegeben.</span><span class="sxs-lookup"><span data-stu-id="3e24a-113">No location specified for wallpaper display.</span></span>|
+|<span data-ttu-id="3e24a-114">Irgendein lockscreen</span><span class="sxs-lookup"><span data-stu-id="3e24a-114">lockScreen</span></span>|<span data-ttu-id="3e24a-115">1</span><span class="sxs-lookup"><span data-stu-id="3e24a-115">1</span></span>|<span data-ttu-id="3e24a-116">Ein konfiguriertes Hintergrundbild wird auf dem Sperrbildschirm angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3e24a-116">A configured wallpaper image is displayed on Lock screen.</span></span>|
+|<span data-ttu-id="3e24a-117">homeScreen</span><span class="sxs-lookup"><span data-stu-id="3e24a-117">homeScreen</span></span>|<span data-ttu-id="3e24a-118">2</span><span class="sxs-lookup"><span data-stu-id="3e24a-118">2</span></span>|<span data-ttu-id="3e24a-119">Ein konfiguriertes Hintergrundbild wird auf der Startseite (Symbolliste) angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3e24a-119">A configured wallpaper image is displayed on Home (icon list) screen.</span></span>|
+|<span data-ttu-id="3e24a-120">lockAndHomeScreens</span><span class="sxs-lookup"><span data-stu-id="3e24a-120">lockAndHomeScreens</span></span>|<span data-ttu-id="3e24a-121">3</span><span class="sxs-lookup"><span data-stu-id="3e24a-121">3</span></span>|<span data-ttu-id="3e24a-122">Ein konfiguriertes Hintergrundbild wird auf dem Sperrbildschirm und der Startseite angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3e24a-122">A configured wallpaper image is displayed on Lock screen and Home screen.</span></span>|
 
 
 
