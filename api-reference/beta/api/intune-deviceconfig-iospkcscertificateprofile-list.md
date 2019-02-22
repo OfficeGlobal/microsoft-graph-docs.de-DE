@@ -1,23 +1,23 @@
 ---
-title: Liste iosPkcsCertificateProfiles
-description: Listeneigenschaften und Beziehungen der IosPkcsCertificateProfile-Objekte.
-localization_priority: Normal
+title: IosPkcsCertificateProfiles aufListen
+description: AufListen von Eigenschaften und Beziehungen der Iospkcscertificateprofile hinzugefügt-Objekte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e16a40556b83cbf0b90ae5819fdc19c061ee4a6e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 820fff69109234b70787488fcbf3c2cadee6f667
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401656"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164603"
 ---
-# <a name="list-iospkcscertificateprofiles"></a>Liste iosPkcsCertificateProfiles
+# <a name="list-iospkcscertificateprofiles"></a>IosPkcsCertificateProfiles aufListen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Listeneigenschaften und Beziehungen der [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekte.
+AufListen von Eigenschaften und Beziehungen der [iospkcscertificateprofile hinzugefügt](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -39,16 +39,16 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [iospkcscertificateprofile hinzugefügt](../resources/intune-deviceconfig-iospkcscertificateprofile.md) -Objekten im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

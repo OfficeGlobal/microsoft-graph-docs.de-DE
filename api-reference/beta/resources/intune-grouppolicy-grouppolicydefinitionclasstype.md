@@ -1,30 +1,30 @@
 ---
-title: GroupPolicyDefinitionClassType Enum-Typ
-description: Gruppe Definition Klasse Richtlinientyp.
-localization_priority: Normal
+title: groupPolicyDefinitionClassType-Enumerationstyp
+description: Klassentyp der Gruppenrichtlinien Definition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afd1e6a8ebead5b0e81fe9d13351061ff20a96b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: df93a8e1687008738b3b2bafb3a11d9c969f3191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430198"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164932"
 ---
-# <a name="grouppolicydefinitionclasstype-enum-type"></a>GroupPolicyDefinitionClassType Enum-Typ
+# <a name="grouppolicydefinitionclasstype-enum-type"></a>groupPolicyDefinitionClassType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gruppe Definition Klasse Richtlinientyp.
+Klassentyp der Gruppenrichtlinien Definition.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|user|0|Platzierung der Einstellung der unter dem Knoten Benutzerkonfiguration identifiziert.|
-|Computer|1|Platzierung von der Einstellung unter den Knoten des Computers identifiziert.|
-|beide|2|Platzierung von der Einstellung unter der Computer- und Konfiguration Knoten identifiziert.|
+|user|0|Identifiziert die Platzierung der Richtlinieneinstellung unter dem Knoten Benutzerkonfiguration.|
+|Computer|1|Identifiziert die Platzierung der Richtlinieneinstellung unter dem Knoten Computerkonfiguration.|
+|sowohl|2|Identifiziert die Platzierung der Richtlinieneinstellung unter dem Knoten Computer und Benutzerkonfiguration.|
 
 
 

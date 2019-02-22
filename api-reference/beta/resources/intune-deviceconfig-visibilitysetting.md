@@ -1,30 +1,30 @@
 ---
-title: VisibilitySetting Enum-Typ
-description: Generische Sichtbarkeitszustand.
-localization_priority: Normal
+title: visibilitySetting-Enumerationstyp
+description: Allgemeiner Sichtbarkeitsstatus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc01cf2120f58a1364346b515e1b84ca64c1f2a6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8b89256c1e483e8ef0e8c3da9762c46449f09056
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407396"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163357"
 ---
-# <a name="visibilitysetting-enum-type"></a>VisibilitySetting Enum-Typ
+# <a name="visibilitysetting-enum-type"></a>visibilitySetting-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Generische Sichtbarkeitszustand.
+Allgemeiner Sichtbarkeitsstatus.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert.|
-|Ausblenden|1|Ausblenden|
-|Anzeigen|2|Anzeigen|
+|notConfigured|0|Nicht konfiguriert.|
+|ausblenden|1|Ausblenden|
+|zeigen|2|Anzeigen|
 
 
 

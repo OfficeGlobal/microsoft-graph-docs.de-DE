@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp bitLockerFixedDrivePolicy
-description: BitLocker feste Laufwerk Richtlinien.
-localization_priority: Normal
+title: bitLockerFixedDrivePolicy-Ressourcentyp
+description: BitLocker-Richtlinien für feste Laufwerke.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f233e4c1779a860cc40dc97007aa0216795928f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e09130a2426f6a7196d472a29f7667b9c044d313
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424665"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164295"
 ---
-# <a name="bitlockerfixeddrivepolicy-resource-type"></a>Ressourcentyp bitLockerFixedDrivePolicy
+# <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-BitLocker feste Laufwerk Richtlinien.
+BitLocker-Richtlinien für feste Laufwerke.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Wählen Sie die Verschlüsselungsmethode für Festplatten. Mögliche Werte: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
-|requireEncryptionForWriteAccess|Boolean|Diese Einstellung bestimmt, ob der BitLocker-Schutz für feste Datenlaufwerke, die auf einem Computer geschrieben werden erforderlich ist.|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Mit dieser richtlinieneinstellung können Sie wie BitLocker-geschützten feste Daten steuern Laufwerke fehlen die erforderlichen Anmeldeinformationen wiederhergestellt werden. Diese Einstellung wird angewendet, wenn Sie BitLocker aktivieren.|
+|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Wählen Sie die Verschlüsselungsmethode für feste Laufwerke aus. Mögliche Werte: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
+|requireEncryptionForWriteAccess|Boolean|Diese Richtlinieneinstellung bestimmt, ob BitLocker-Schutz erforderlich ist, damit feste Datenlaufwerke auf einem Computer schreibbar sind.|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Mit dieser Richtlinieneinstellung können Sie steuern, wie mit BitLocker geschützte feste Datenlaufwerke in Abwesenheit der erforderlichen Anmeldeinformationen wiederhergestellt werden. Diese Richtlinieneinstellung wird angewendet, wenn Sie BitLocker aktivieren.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,21 +1,21 @@
 ---
 title: deviceManagementSettings-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f676eed1acbf6711f526e612bd6c073b749607d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8238ec075189a138552cb524a22facd99f4d5401
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417665"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164267"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
@@ -23,12 +23,12 @@ Noch nicht dokumentiert
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|Die Anzahl von Tagen, die ein Gerät ohne Einchecken konform bleiben kann. Gültige Werte: 0 bis 120|
-|isScheduledActionEnabled|Boolean|Gibt an, ob das Feature für eine geplante Aktion für die Regel aktiviert ist.|
+|isScheduledActionEnabled|Boolescher Wert|Gibt an, ob das Feature für eine geplante Aktion für die Regel aktiviert ist.|
 |secureByDefault|Boolean|Ist dies auf „true“ gesetzt, sollte das Gerät als nicht konform gelten, wenn keine Konformitätsrichtlinie verfolgt wird.|
-|enhancedJailBreak|Boolean|Ist Feature aktiviert ist oder nicht erweiterten Jailbreak Erkennung.|
-|deviceInactivityBeforeRetirementInDay|Int32|Wenn das Gerät nicht prüft für die angegebene Anzahl von Tagen, möglicherweise die Mandantendaten entfernt, und das Gerät werden nicht in die Verwaltung. Gültige Werte 30 bis 270|
-|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Der abgeleitete Anmeldeinformationsanbieter für dieses Konto verwenden. Mögliche Werte sind: `notConfigured`, `entrustDataCard`, `purebred`, `xTec` und `intercede`.|
-|derivedCredentialUrl|Zeichenfolge|Der Anmeldeinformationsanbieter abgeleitete Self-service-URI.|
+|enhancedJailBreak|Boolescher Wert|Ist Funktion aktiviert oder nicht für eine verbesserte Jailbreak-Erkennung.|
+|deviceInactivityBeforeRetirementInDay|Int32|Wenn das Gerät für die angegebene Anzahl von Tagen nicht eincheckt, werden die Unternehmensdaten möglicherweise entfernt, und das Gerät wird nicht verwaltet. Gültige Werte 30 bis 270|
+|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Der abgeleitete Anmeldeinformationsanbieter, der für dieses Konto verwendet werden soll. Mögliche Werte: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
+|derivedCredentialUrl|Zeichenfolge|Der Self-Service-URI des abgeleiteten Anmeldeinformationen Anbieters.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

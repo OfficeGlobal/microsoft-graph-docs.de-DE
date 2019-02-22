@@ -1,29 +1,29 @@
 ---
-title: GroupPolicyConfigurationType Enum-Typ
-description: Gruppe Richtlinientyp Konfiguration
-localization_priority: Normal
+title: groupPolicyConfigurationType-Enumerationstyp
+description: Gruppenrichtlinien-Konfigurationstyp
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 372a5bd5656510c43b388bac128cba4bc46c0988
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c0d3a0daa73fef30e5425e188958bdc54e61778d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430058"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164687"
 ---
-# <a name="grouppolicyconfigurationtype-enum-type"></a>GroupPolicyConfigurationType Enum-Typ
+# <a name="grouppolicyconfigurationtype-enum-type"></a>groupPolicyConfigurationType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gruppe Richtlinientyp Konfiguration
+Gruppenrichtlinien-Konfigurationstyp
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Richtlinie|0|Der Richtlinientyp ist nicht den Wert verunreinigen mit diesen Werten bedeutet, dass der Wert entfernt wird den Originalwert der Konfiguration verwendet werden. Der Richtlinientyp ersetzt Einstellung für die Konfiguration, damit die Anwendung immer den Wert bekannt sind. Der Richtlinientyp verhindert, dass den Benutzer den Wert den über die Benutzeroberfläche der Anwendung ändern.|
-|preference|1|Der Typ der Einstellung den Wert verunreinigen mit diesen Werten bedeutet, dass der Wert nicht aus der Registrierung entfernt wird. Der Typ der Einstellung überschreibt den Benutzer konfiguriert-Wert und den vorherigen Wert nicht beibehalten. Welche Option Sie bevorzugen es wird nicht verhindert, dass den Benutzer den Wert den über die Benutzeroberfläche der Anwendung ändern.|
+|Richtlinie|0|Der Richtlinientyp tätowiert den Wert nicht, was bedeutet, dass der Wert entfernt wird, sodass der ursprüngliche Konfigurationswert verwendet werden kann. Der Richtlinientyp überschreitet die Anwendungs Konfigurationseinstellung, sodass die Anwendung den Wert immer erkennt. Der Richtlinientyp verhindert, dass der Benutzer den Wert über die Benutzeroberfläche der Anwendung ändert.|
+|preference|1|Der Einstellungstyp verwendet Tattoo als Wert, was bedeutet, dass der Wert nicht aus der Registrierung entfernt wird. Der Einstellungstyp überschreibt den Benutzer konfiguriert-Wert und behält nicht den vorherigen Wert bei. Der Einstellungstyp verhindert nicht, dass der Benutzer den Wert über die Benutzeroberfläche der Anwendung ändert.|
 
 
 

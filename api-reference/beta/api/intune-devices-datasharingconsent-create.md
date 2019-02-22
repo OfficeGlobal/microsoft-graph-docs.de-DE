@@ -1,23 +1,23 @@
 ---
-title: Erstellen von dataSharingConsent
-description: Erstellen eines neuen DataSharingConsent-Objekts.
-localization_priority: Normal
+title: DataSharingConsent erstellen
+description: Erstellen eines neuen dataSharingConsent-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 686f8e5ddb56c53224d467bc6ac31cfdb5b6858c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406948"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167109"
 ---
-# <a name="create-datasharingconsent"></a>Erstellen von dataSharingConsent
+# <a name="create-datasharingconsent"></a>DataSharingConsent erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.
+Erstellen eines neuen [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,30 +38,30 @@ POST /deviceManagement/dataSharingConsents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt DataSharingConsent eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das dataSharingConsent-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die DataSharingConsent erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der dataSharingConsent erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Die Daten sharing Zustimmung Id|
-|von Ihnen eingegebene Dienstanzeigename|Zeichenfolge|Der Anzeigename der Dienst Workflow|
-|termsUrl|Zeichenfolge|Die TermsUrl für die Datenfreigabe Zustimmung|
-|erteilt|Boolean|Den gewährten Status für die Datenfreigabe Zustimmung|
-|grantDateTime|DateTimeOffset|Die Zeit Zustimmung wurde für dieses Konto erteilt.|
-|grantedByUpn|Zeichenfolge|Den Upn des Benutzers, der für dieses Konto Zustimmung eingeholt|
-|grantedByUserId|Zeichenfolge|Die Benutzer-ID des Benutzers, der für dieses Konto Zustimmung eingeholt|
+|id|Zeichenfolge|Die Einwilligungs-ID für die Datenfreigabe|
+|serviceDisplayName|Zeichenfolge|Der Anzeigename des Dienst-Arbeitsflusses|
+|termsUrl|Zeichenfolge|Die TermsUrl für die Einwilligung zur Datenfreigabe|
+|granted|Boolescher Wert|Der erteilte Status für die Einwilligung zur Datenfreigabe|
+|grantDateTime|DateTimeOffset|Die Zeit Genehmigung für dieses Konto wurde erteilt.|
+|grantedByUpn|Zeichenfolge|Der UPN des Benutzers, der die Einwilligung für dieses Konto erteilt hat.|
+|grantedByUserId|Zeichenfolge|Die UserId des Benutzers, der die Einwilligung für dieses Konto erteilt hat|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [DataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

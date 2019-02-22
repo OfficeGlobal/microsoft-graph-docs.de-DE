@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp managementConditionExpression
-description: Ein Bedingungsausdruck Management ist ein Ausdruck, der erzeugt einen boolean-Wert, wenn ausgewertet, d. h. eines True oder False, was bedeutet, dass eine bedingungsanweisung Management aktiviert/deaktiviert ist. Ein Bedingungsausdruck Management kann aus einer Kombination der Ausdrucksvariablen und booleschen Ausdrucksoperatoren bestehen.
-localization_priority: Normal
+title: managementConditionExpression-Ressourcentyp
+description: Ein Ausdruck der Verwaltungsbedingung ist ein Ausdruck, der einen booleschen Wert ergibt, wenn er ausgewertet wird, d. h. true oder false, der angibt, dass eine Anweisung für die Verwaltungsbedingung aktiviert/deaktiviert ist. Ein Ausdruck der Verwaltungsbedingung kann aus einer Kombination der Ausdrucks Variablen und der booleschen Ausdrucksoperatoren bestehen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e572cdae0104cf5bbb929286b4c3452dfd38eeea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0329504c86beedbc8b04ec35c25f764ff2b3114c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164652"
 ---
-# <a name="managementconditionexpression-resource-type"></a>Ressourcentyp managementConditionExpression
+# <a name="managementconditionexpression-resource-type"></a>managementConditionExpression-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ein Bedingungsausdruck Management ist ein Ausdruck, der erzeugt einen boolean-Wert, wenn ausgewertet, d. h. eines True oder False, was bedeutet, dass eine bedingungsanweisung Management aktiviert/deaktiviert ist. Ein Bedingungsausdruck Management kann aus einer Kombination der Ausdrucksvariablen und booleschen Ausdrucksoperatoren bestehen.
+Ein Ausdruck der Verwaltungsbedingung ist ein Ausdruck, der einen booleschen Wert ergibt, wenn er ausgewertet wird, d. h. true oder false, der angibt, dass eine Anweisung für die Verwaltungsbedingung aktiviert/deaktiviert ist. Ein Ausdruck der Verwaltungsbedingung kann aus einer Kombination der Ausdrucks Variablen und der booleschen Ausdrucksoperatoren bestehen.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

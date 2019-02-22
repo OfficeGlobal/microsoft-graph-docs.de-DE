@@ -1,31 +1,31 @@
 ---
-title: LocalSecurityOptionsInformationDisplayedOnLockScreenType Enum-Typ
+title: localSecurityOptionsInformationDisplayedOnLockScreenType-Enumerationstyp
 description: Mögliche Werte für LocalSecurityOptionsInformationDisplayedOnLockScreen
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac9c00098a881a30abb4348de6bc88b2346adb0f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5b44d24e5235251b5232ecb1bd5b2ab21059e32a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166717"
 ---
-# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>LocalSecurityOptionsInformationDisplayedOnLockScreenType Enum-Typ
+# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>localSecurityOptionsInformationDisplayedOnLockScreenType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für LocalSecurityOptionsInformationDisplayedOnLockScreen
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert|
-|Administratoren|1|Anzeigename des Benutzers, Domänen-und Benutzernamen|
+|notConfigured|0|Nicht konfiguriert|
+|Administratoren|1|Benutzeranzeigename, Domänen-und Benutzernamen|
 |administratorsAndPowerUsers|2|Nur Anzeigename des Benutzers|
-|administratorsAndInteractiveUsers|3|Benutzerinformationen nicht anzeigen|
+|administratorsAndInteractiveUsers|3|Benutzerinformationen werden nicht angezeigt|
 
 
 

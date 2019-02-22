@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp numberRange
-description: Nummern Definition.
-localization_priority: Normal
+title: numberRange-Ressourcentyp
+description: Nummernkreis Definition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27393bdac6519078c2021e3484ae58ddf43216d9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 711206a256e17d6e10c7c54cf8a3dda4868db031
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166787"
 ---
-# <a name="numberrange-resource-type"></a>Ressourcentyp numberRange
+# <a name="numberrange-resource-type"></a>numberRange-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Nummern Definition.
+Nummernkreis Definition.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |lowerNumber|Int32|Niedrigere Zahl.|
-|upperNumber|Int32|Obergrenze.|
+|upperNumber|Int32|Obere Zahl.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
