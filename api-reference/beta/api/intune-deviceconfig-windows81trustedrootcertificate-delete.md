@@ -1,34 +1,34 @@
 ---
 title: Windows81TrustedRootCertificate löschen
 description: Löscht eine windows81TrustedRootCertificate.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7dbd76f6a652eaa6636f30ac6307a46326912917
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6db54db1b0d835b6044e143313cfea6f67d0ed58
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416398"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172121"
 ---
-# <a name="delete-windows81trustedrootcertificate"></a><span data-ttu-id="9b1a9-103">Windows81TrustedRootCertificate löschen</span><span class="sxs-lookup"><span data-stu-id="9b1a9-103">Delete windows81TrustedRootCertificate</span></span>
+# <a name="delete-windows81trustedrootcertificate"></a><span data-ttu-id="66980-103">Windows81TrustedRootCertificate löschen</span><span class="sxs-lookup"><span data-stu-id="66980-103">Delete windows81TrustedRootCertificate</span></span>
 
-> <span data-ttu-id="9b1a9-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9b1a9-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="66980-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="66980-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9b1a9-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="66980-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="66980-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9b1a9-107">Löscht eine [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="9b1a9-107">Deletes a [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md).</span></span>
+<span data-ttu-id="66980-106">Löscht eine [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="66980-106">Deletes a [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9b1a9-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="9b1a9-108">Prerequisites</span></span>
-<span data-ttu-id="9b1a9-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="9b1a9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="66980-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="66980-107">Prerequisites</span></span>
+<span data-ttu-id="66980-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="66980-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="9b1a9-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9b1a9-111">Permission type</span></span>|<span data-ttu-id="9b1a9-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9b1a9-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="66980-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="66980-110">Permission type</span></span>|<span data-ttu-id="66980-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="66980-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9b1a9-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9b1a9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9b1a9-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b1a9-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9b1a9-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9b1a9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9b1a9-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9b1a9-116">Not supported.</span></span>|
-|<span data-ttu-id="9b1a9-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9b1a9-117">Application</span></span>|<span data-ttu-id="9b1a9-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9b1a9-118">Not supported.</span></span>|
+|<span data-ttu-id="66980-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="66980-112">Delegated (work or school account)</span></span>|<span data-ttu-id="66980-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="66980-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="66980-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="66980-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="66980-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="66980-115">Not supported.</span></span>|
+|<span data-ttu-id="66980-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="66980-116">Application</span></span>|<span data-ttu-id="66980-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="66980-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9b1a9-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9b1a9-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="66980-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="66980-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows81SCEPCertificateProfile/rootCertificate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9b1a9-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9b1a9-120">Request headers</span></span>
-|<span data-ttu-id="9b1a9-121">Header</span><span class="sxs-lookup"><span data-stu-id="9b1a9-121">Header</span></span>|<span data-ttu-id="9b1a9-122">Wert</span><span class="sxs-lookup"><span data-stu-id="9b1a9-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="66980-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="66980-119">Request headers</span></span>
+|<span data-ttu-id="66980-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="66980-120">Header</span></span>|<span data-ttu-id="66980-121">Wert</span><span class="sxs-lookup"><span data-stu-id="66980-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9b1a9-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="9b1a9-123">Authorization</span></span>|<span data-ttu-id="9b1a9-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="9b1a9-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9b1a9-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="9b1a9-125">Accept</span></span>|<span data-ttu-id="9b1a9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9b1a9-126">application/json</span></span>|
+|<span data-ttu-id="66980-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="66980-122">Authorization</span></span>|<span data-ttu-id="66980-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="66980-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="66980-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="66980-124">Accept</span></span>|<span data-ttu-id="66980-125">application/json</span><span class="sxs-lookup"><span data-stu-id="66980-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9b1a9-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9b1a9-127">Request body</span></span>
-<span data-ttu-id="9b1a9-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="66980-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="66980-126">Request body</span></span>
+<span data-ttu-id="66980-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="66980-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9b1a9-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="9b1a9-129">Response</span></span>
-<span data-ttu-id="9b1a9-130">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="66980-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="66980-128">Response</span></span>
+<span data-ttu-id="66980-129">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="66980-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9b1a9-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9b1a9-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="66980-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="66980-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9b1a9-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="9b1a9-132">Request</span></span>
-<span data-ttu-id="9b1a9-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="66980-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="66980-131">Request</span></span>
+<span data-ttu-id="66980-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="66980-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="9b1a9-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="9b1a9-134">Response</span></span>
-<span data-ttu-id="9b1a9-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="9b1a9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="66980-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="66980-133">Response</span></span>
+<span data-ttu-id="66980-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="66980-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

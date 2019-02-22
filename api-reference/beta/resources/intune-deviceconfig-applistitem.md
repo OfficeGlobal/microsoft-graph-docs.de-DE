@@ -1,37 +1,37 @@
 ---
 title: appListItem-Ressourcentyp
 description: Stellt eine App in der Liste der verwalteten Anwendungen dar.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9571b622fc098f384f7c3a6c62b1d1e10d89f663
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a7e005681917f0edffe00b33947d2bd2bd5b2ff5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405415"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172247"
 ---
-# <a name="applistitem-resource-type"></a><span data-ttu-id="b4d9b-103">appListItem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b4d9b-103">appListItem resource type</span></span>
+# <a name="applistitem-resource-type"></a><span data-ttu-id="7ffd3-103">appListItem-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="7ffd3-103">appListItem resource type</span></span>
 
-> <span data-ttu-id="b4d9b-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="b4d9b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b4d9b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b4d9b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7ffd3-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7ffd3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b4d9b-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b4d9b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7ffd3-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="7ffd3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b4d9b-107">Stellt eine App in der Liste der verwalteten Anwendungen dar.</span><span class="sxs-lookup"><span data-stu-id="b4d9b-107">Represents an app in the list of managed applications</span></span>
+<span data-ttu-id="7ffd3-106">Stellt eine App in der Liste der verwalteten Anwendungen dar.</span><span class="sxs-lookup"><span data-stu-id="7ffd3-106">Represents an app in the list of managed applications</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b4d9b-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b4d9b-108">Properties</span></span>
-|<span data-ttu-id="b4d9b-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b4d9b-109">Property</span></span>|<span data-ttu-id="b4d9b-110">Typ</span><span class="sxs-lookup"><span data-stu-id="b4d9b-110">Type</span></span>|<span data-ttu-id="b4d9b-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b4d9b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7ffd3-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7ffd3-107">Properties</span></span>
+|<span data-ttu-id="7ffd3-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7ffd3-108">Property</span></span>|<span data-ttu-id="7ffd3-109">Typ</span><span class="sxs-lookup"><span data-stu-id="7ffd3-109">Type</span></span>|<span data-ttu-id="7ffd3-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7ffd3-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b4d9b-112">name</span><span class="sxs-lookup"><span data-stu-id="b4d9b-112">name</span></span>|<span data-ttu-id="b4d9b-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b4d9b-113">String</span></span>|<span data-ttu-id="b4d9b-114">Anwendungsname</span><span class="sxs-lookup"><span data-stu-id="b4d9b-114">The application name</span></span>|
-|<span data-ttu-id="b4d9b-115">publisher</span><span class="sxs-lookup"><span data-stu-id="b4d9b-115">publisher</span></span>|<span data-ttu-id="b4d9b-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b4d9b-116">String</span></span>|<span data-ttu-id="b4d9b-117">Herausgeber der App</span><span class="sxs-lookup"><span data-stu-id="b4d9b-117">The publisher of the application</span></span>|
-|<span data-ttu-id="b4d9b-118">appStoreUrl</span><span class="sxs-lookup"><span data-stu-id="b4d9b-118">appStoreUrl</span></span>|<span data-ttu-id="b4d9b-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b4d9b-119">String</span></span>|<span data-ttu-id="b4d9b-120">Store-URL der Anwendung</span><span class="sxs-lookup"><span data-stu-id="b4d9b-120">The Store URL of the application</span></span>|
-|<span data-ttu-id="b4d9b-121">appId</span><span class="sxs-lookup"><span data-stu-id="b4d9b-121">appId</span></span>|<span data-ttu-id="b4d9b-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b4d9b-122">String</span></span>|<span data-ttu-id="b4d9b-123">Anwendungs- oder Paket-ID der Anwendung</span><span class="sxs-lookup"><span data-stu-id="b4d9b-123">The application or bundle identifier of the application</span></span>|
+|<span data-ttu-id="7ffd3-111">name</span><span class="sxs-lookup"><span data-stu-id="7ffd3-111">name</span></span>|<span data-ttu-id="7ffd3-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="7ffd3-112">String</span></span>|<span data-ttu-id="7ffd3-113">Anwendungsname</span><span class="sxs-lookup"><span data-stu-id="7ffd3-113">The application name</span></span>|
+|<span data-ttu-id="7ffd3-114">publisher</span><span class="sxs-lookup"><span data-stu-id="7ffd3-114">publisher</span></span>|<span data-ttu-id="7ffd3-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="7ffd3-115">String</span></span>|<span data-ttu-id="7ffd3-116">Herausgeber der App</span><span class="sxs-lookup"><span data-stu-id="7ffd3-116">The publisher of the application</span></span>|
+|<span data-ttu-id="7ffd3-117">appStoreUrl</span><span class="sxs-lookup"><span data-stu-id="7ffd3-117">appStoreUrl</span></span>|<span data-ttu-id="7ffd3-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="7ffd3-118">String</span></span>|<span data-ttu-id="7ffd3-119">Store-URL der Anwendung</span><span class="sxs-lookup"><span data-stu-id="7ffd3-119">The Store URL of the application</span></span>|
+|<span data-ttu-id="7ffd3-120">appId</span><span class="sxs-lookup"><span data-stu-id="7ffd3-120">appId</span></span>|<span data-ttu-id="7ffd3-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="7ffd3-121">String</span></span>|<span data-ttu-id="7ffd3-122">Anwendungs- oder Paket-ID der Anwendung</span><span class="sxs-lookup"><span data-stu-id="7ffd3-122">The application or bundle identifier of the application</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b4d9b-124">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="b4d9b-124">Relationships</span></span>
-<span data-ttu-id="b4d9b-125">Keine</span><span class="sxs-lookup"><span data-stu-id="b4d9b-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7ffd3-123">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="7ffd3-123">Relationships</span></span>
+<span data-ttu-id="7ffd3-124">Keine</span><span class="sxs-lookup"><span data-stu-id="7ffd3-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b4d9b-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b4d9b-126">JSON Representation</span></span>
-<span data-ttu-id="b4d9b-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="b4d9b-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ffd3-125">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="7ffd3-125">JSON Representation</span></span>
+<span data-ttu-id="7ffd3-126">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7ffd3-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"

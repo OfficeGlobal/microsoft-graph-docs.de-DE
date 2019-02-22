@@ -1,32 +1,32 @@
 ---
-title: WindowsAppStartLayoutTileSize Enum-Typ
-description: Die Kachelgröße des Windows-app in der Start-Layout.
-localization_priority: Normal
+title: windowsAppStartLayoutTileSize-Enumerationstyp
+description: Die Kachelgröße der Windows-App im Start Layout.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5347108df2d6a1716729011b30927fce5c68327
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416216"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173941"
 ---
-# <a name="windowsappstartlayouttilesize-enum-type"></a><span data-ttu-id="c8db7-103">WindowsAppStartLayoutTileSize Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="c8db7-103">windowsAppStartLayoutTileSize enum type</span></span>
+# <a name="windowsappstartlayouttilesize-enum-type"></a><span data-ttu-id="aa5c8-103">windowsAppStartLayoutTileSize-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="aa5c8-103">windowsAppStartLayoutTileSize enum type</span></span>
 
-> <span data-ttu-id="c8db7-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="c8db7-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c8db7-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c8db7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="aa5c8-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c8db7-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c8db7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aa5c8-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c8db7-107">Die Kachelgröße des Windows-app in der Start-Layout.</span><span class="sxs-lookup"><span data-stu-id="c8db7-107">The tile size of Windows app in the start layout.</span></span>
+<span data-ttu-id="aa5c8-106">Die Kachelgröße der Windows-App im Start Layout.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-106">The tile size of Windows app in the start layout.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c8db7-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="c8db7-108">Members</span></span>
-|<span data-ttu-id="c8db7-109">Member</span><span class="sxs-lookup"><span data-stu-id="c8db7-109">Member</span></span>|<span data-ttu-id="c8db7-110">Wert</span><span class="sxs-lookup"><span data-stu-id="c8db7-110">Value</span></span>|<span data-ttu-id="c8db7-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c8db7-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="aa5c8-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="aa5c8-107">Members</span></span>
+|<span data-ttu-id="aa5c8-108">Element</span><span class="sxs-lookup"><span data-stu-id="aa5c8-108">Member</span></span>|<span data-ttu-id="aa5c8-109">Wert</span><span class="sxs-lookup"><span data-stu-id="aa5c8-109">Value</span></span>|<span data-ttu-id="aa5c8-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="aa5c8-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c8db7-112">hidden</span><span class="sxs-lookup"><span data-stu-id="c8db7-112">hidden</span></span>|<span data-ttu-id="c8db7-113">0</span><span class="sxs-lookup"><span data-stu-id="c8db7-113">0</span></span>|<span data-ttu-id="c8db7-114">Ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="c8db7-114">Hidden.</span></span>|
-|<span data-ttu-id="c8db7-115">small</span><span class="sxs-lookup"><span data-stu-id="c8db7-115">small</span></span>|<span data-ttu-id="c8db7-116">1</span><span class="sxs-lookup"><span data-stu-id="c8db7-116">1</span></span>|<span data-ttu-id="c8db7-117">Kleine 1 x 1.</span><span class="sxs-lookup"><span data-stu-id="c8db7-117">Small 1x1.</span></span>|
-|<span data-ttu-id="c8db7-118">medium</span><span class="sxs-lookup"><span data-stu-id="c8db7-118">medium</span></span>|<span data-ttu-id="c8db7-119">2</span><span class="sxs-lookup"><span data-stu-id="c8db7-119">2</span></span>|<span data-ttu-id="c8db7-120">2 x 2 Mittel.</span><span class="sxs-lookup"><span data-stu-id="c8db7-120">Medium 2x2.</span></span>|
-|<span data-ttu-id="c8db7-121">Breite</span><span class="sxs-lookup"><span data-stu-id="c8db7-121">wide</span></span>|<span data-ttu-id="c8db7-122">3</span><span class="sxs-lookup"><span data-stu-id="c8db7-122">3</span></span>|<span data-ttu-id="c8db7-123">4 x 2 breit.</span><span class="sxs-lookup"><span data-stu-id="c8db7-123">Wide 4x2.</span></span>|
-|<span data-ttu-id="c8db7-124">large</span><span class="sxs-lookup"><span data-stu-id="c8db7-124">large</span></span>|<span data-ttu-id="c8db7-125">4</span><span class="sxs-lookup"><span data-stu-id="c8db7-125">4</span></span>|<span data-ttu-id="c8db7-126">Große 4 x 4.</span><span class="sxs-lookup"><span data-stu-id="c8db7-126">Large 4x4.</span></span>|
+|<span data-ttu-id="aa5c8-111">hidden</span><span class="sxs-lookup"><span data-stu-id="aa5c8-111">hidden</span></span>|<span data-ttu-id="aa5c8-112">0</span><span class="sxs-lookup"><span data-stu-id="aa5c8-112">0</span></span>|<span data-ttu-id="aa5c8-113">Ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-113">Hidden.</span></span>|
+|<span data-ttu-id="aa5c8-114">small</span><span class="sxs-lookup"><span data-stu-id="aa5c8-114">small</span></span>|<span data-ttu-id="aa5c8-115">1</span><span class="sxs-lookup"><span data-stu-id="aa5c8-115">1</span></span>|<span data-ttu-id="aa5c8-116">Kleines 1x1.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-116">Small 1x1.</span></span>|
+|<span data-ttu-id="aa5c8-117">medium</span><span class="sxs-lookup"><span data-stu-id="aa5c8-117">medium</span></span>|<span data-ttu-id="aa5c8-118">2</span><span class="sxs-lookup"><span data-stu-id="aa5c8-118">2</span></span>|<span data-ttu-id="aa5c8-119">Mittel 2x2.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-119">Medium 2x2.</span></span>|
+|<span data-ttu-id="aa5c8-120">Breite</span><span class="sxs-lookup"><span data-stu-id="aa5c8-120">wide</span></span>|<span data-ttu-id="aa5c8-121">3</span><span class="sxs-lookup"><span data-stu-id="aa5c8-121">3</span></span>|<span data-ttu-id="aa5c8-122">Breites 4x2.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-122">Wide 4x2.</span></span>|
+|<span data-ttu-id="aa5c8-123">large</span><span class="sxs-lookup"><span data-stu-id="aa5c8-123">large</span></span>|<span data-ttu-id="aa5c8-124">4</span><span class="sxs-lookup"><span data-stu-id="aa5c8-124">4</span></span>|<span data-ttu-id="aa5c8-125">4X4.</span><span class="sxs-lookup"><span data-stu-id="aa5c8-125">Large 4x4.</span></span>|
 
 
 

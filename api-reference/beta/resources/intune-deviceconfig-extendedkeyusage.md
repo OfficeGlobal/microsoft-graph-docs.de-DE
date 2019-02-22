@@ -1,35 +1,35 @@
 ---
-title: Ressourcentyp extendedKeyUsage
-description: Benutzerdefinierte erweiterte Schlüsselverwendung definition
-localization_priority: Normal
+title: extendedKeyUsage-Ressourcentyp
+description: Definition der benutzerdefinierten erweiterten Schlüsselverwendung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ed825f44923d3fe86cc410397747b50a1f2c681
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1487d217693135e26df99d4d72491abac4123ba7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425967"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173290"
 ---
-# <a name="extendedkeyusage-resource-type"></a><span data-ttu-id="2ec8f-103">Ressourcentyp extendedKeyUsage</span><span class="sxs-lookup"><span data-stu-id="2ec8f-103">extendedKeyUsage resource type</span></span>
+# <a name="extendedkeyusage-resource-type"></a><span data-ttu-id="642a3-103">extendedKeyUsage-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="642a3-103">extendedKeyUsage resource type</span></span>
 
-> <span data-ttu-id="2ec8f-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="2ec8f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2ec8f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="2ec8f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="642a3-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="642a3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2ec8f-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2ec8f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="642a3-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="642a3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2ec8f-107">Benutzerdefinierte erweiterte Schlüsselverwendung definition</span><span class="sxs-lookup"><span data-stu-id="2ec8f-107">Custom Extended Key Usage definition</span></span>
+<span data-ttu-id="642a3-106">Definition der benutzerdefinierten erweiterten Schlüsselverwendung</span><span class="sxs-lookup"><span data-stu-id="642a3-106">Custom Extended Key Usage definition</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2ec8f-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="2ec8f-108">Properties</span></span>
-|<span data-ttu-id="2ec8f-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="2ec8f-109">Property</span></span>|<span data-ttu-id="2ec8f-110">Typ</span><span class="sxs-lookup"><span data-stu-id="2ec8f-110">Type</span></span>|<span data-ttu-id="2ec8f-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2ec8f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="642a3-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="642a3-107">Properties</span></span>
+|<span data-ttu-id="642a3-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="642a3-108">Property</span></span>|<span data-ttu-id="642a3-109">Typ</span><span class="sxs-lookup"><span data-stu-id="642a3-109">Type</span></span>|<span data-ttu-id="642a3-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="642a3-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2ec8f-112">name</span><span class="sxs-lookup"><span data-stu-id="2ec8f-112">name</span></span>|<span data-ttu-id="2ec8f-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2ec8f-113">String</span></span>|<span data-ttu-id="2ec8f-114">Erweiterte Schlüsselverwendung Name</span><span class="sxs-lookup"><span data-stu-id="2ec8f-114">Extended Key Usage Name</span></span>|
-|<span data-ttu-id="2ec8f-115">objectIdentifier</span><span class="sxs-lookup"><span data-stu-id="2ec8f-115">objectIdentifier</span></span>|<span data-ttu-id="2ec8f-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="2ec8f-116">String</span></span>|<span data-ttu-id="2ec8f-117">Erweiterte Schlüsselverwendung Objektbezeichner</span><span class="sxs-lookup"><span data-stu-id="2ec8f-117">Extended Key Usage Object Identifier</span></span>|
+|<span data-ttu-id="642a3-111">name</span><span class="sxs-lookup"><span data-stu-id="642a3-111">name</span></span>|<span data-ttu-id="642a3-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="642a3-112">String</span></span>|<span data-ttu-id="642a3-113">Name der erweiterten Schlüsselverwendung</span><span class="sxs-lookup"><span data-stu-id="642a3-113">Extended Key Usage Name</span></span>|
+|<span data-ttu-id="642a3-114">objectIdentifier</span><span class="sxs-lookup"><span data-stu-id="642a3-114">objectIdentifier</span></span>|<span data-ttu-id="642a3-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="642a3-115">String</span></span>|<span data-ttu-id="642a3-116">Bezeichner des erweiterten Schlüssel Verwendungs Objekts</span><span class="sxs-lookup"><span data-stu-id="642a3-116">Extended Key Usage Object Identifier</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2ec8f-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="2ec8f-118">Relationships</span></span>
-<span data-ttu-id="2ec8f-119">Keine</span><span class="sxs-lookup"><span data-stu-id="2ec8f-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="642a3-117">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="642a3-117">Relationships</span></span>
+<span data-ttu-id="642a3-118">Keine</span><span class="sxs-lookup"><span data-stu-id="642a3-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2ec8f-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="2ec8f-120">JSON Representation</span></span>
-<span data-ttu-id="2ec8f-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="2ec8f-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="642a3-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="642a3-119">JSON Representation</span></span>
+<span data-ttu-id="642a3-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="642a3-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.extendedKeyUsage"

@@ -1,32 +1,32 @@
 ---
-title: FirewallPacketQueueingMethodType Enum-Typ
+title: firewallPacketQueueingMethodType-Enumerationstyp
 description: Mögliche Werte für firewallPacketQueueingMethod
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc40b93eebc17b1d1abcd9c317da1ffa538512a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e1b8543df5fa2a50cfdfa56c7cb2d96199ba44e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172205"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="77276-103">FirewallPacketQueueingMethodType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="77276-103">firewallPacketQueueingMethodType enum type</span></span>
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="62899-103">firewallPacketQueueingMethodType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="62899-103">firewallPacketQueueingMethodType enum type</span></span>
 
-> <span data-ttu-id="77276-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="77276-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="77276-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="77276-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="62899-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="62899-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="77276-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="77276-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="62899-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="62899-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="77276-107">Mögliche Werte für firewallPacketQueueingMethod</span><span class="sxs-lookup"><span data-stu-id="77276-107">Possible values for firewallPacketQueueingMethod</span></span>
+<span data-ttu-id="62899-106">Mögliche Werte für firewallPacketQueueingMethod</span><span class="sxs-lookup"><span data-stu-id="62899-106">Possible values for firewallPacketQueueingMethod</span></span>
 
-## <a name="members"></a><span data-ttu-id="77276-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="77276-108">Members</span></span>
-|<span data-ttu-id="77276-109">Member</span><span class="sxs-lookup"><span data-stu-id="77276-109">Member</span></span>|<span data-ttu-id="77276-110">Wert</span><span class="sxs-lookup"><span data-stu-id="77276-110">Value</span></span>|<span data-ttu-id="77276-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="77276-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="62899-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="62899-107">Members</span></span>
+|<span data-ttu-id="62899-108">Element</span><span class="sxs-lookup"><span data-stu-id="62899-108">Member</span></span>|<span data-ttu-id="62899-109">Wert</span><span class="sxs-lookup"><span data-stu-id="62899-109">Value</span></span>|<span data-ttu-id="62899-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="62899-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="77276-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="77276-112">deviceDefault</span></span>|<span data-ttu-id="77276-113">0</span><span class="sxs-lookup"><span data-stu-id="77276-113">0</span></span>|<span data-ttu-id="77276-114">Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät</span><span class="sxs-lookup"><span data-stu-id="77276-114">No value configured by Intune, do not override the user-configured device default value</span></span>|
-|<span data-ttu-id="77276-115">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="77276-115">disabled</span></span>|<span data-ttu-id="77276-116">1</span><span class="sxs-lookup"><span data-stu-id="77276-116">1</span></span>|<span data-ttu-id="77276-117">Paket Warteschlangen deaktivieren</span><span class="sxs-lookup"><span data-stu-id="77276-117">Disable packet queuing</span></span>|
-|<span data-ttu-id="77276-118">queueInbound</span><span class="sxs-lookup"><span data-stu-id="77276-118">queueInbound</span></span>|<span data-ttu-id="77276-119">2</span><span class="sxs-lookup"><span data-stu-id="77276-119">2</span></span>|<span data-ttu-id="77276-120">Eingehende, verschlüsselte Pakete Warteschlange</span><span class="sxs-lookup"><span data-stu-id="77276-120">Queue inbound encrypted packets</span></span>|
-|<span data-ttu-id="77276-121">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="77276-121">queueOutbound</span></span>|<span data-ttu-id="77276-122">3</span><span class="sxs-lookup"><span data-stu-id="77276-122">3</span></span>|<span data-ttu-id="77276-123">Warteschlange entschlüsselt ausgehenden Pakete für die Weiterleitung</span><span class="sxs-lookup"><span data-stu-id="77276-123">Queue decrypted outbound packets for forwarding</span></span>|
-|<span data-ttu-id="77276-124">queueBoth</span><span class="sxs-lookup"><span data-stu-id="77276-124">queueBoth</span></span>|<span data-ttu-id="77276-125">4</span><span class="sxs-lookup"><span data-stu-id="77276-125">4</span></span>|<span data-ttu-id="77276-126">Die Warteschlange eingehenden und ausgehenden Pakete</span><span class="sxs-lookup"><span data-stu-id="77276-126">Queue both inbound and outbound packets</span></span>|
+|<span data-ttu-id="62899-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="62899-111">deviceDefault</span></span>|<span data-ttu-id="62899-112">0</span><span class="sxs-lookup"><span data-stu-id="62899-112">0</span></span>|<span data-ttu-id="62899-113">Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts</span><span class="sxs-lookup"><span data-stu-id="62899-113">No value configured by Intune, do not override the user-configured device default value</span></span>|
+|<span data-ttu-id="62899-114">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="62899-114">disabled</span></span>|<span data-ttu-id="62899-115">1</span><span class="sxs-lookup"><span data-stu-id="62899-115">1</span></span>|<span data-ttu-id="62899-116">Deaktivieren von Paketwarteschlangen</span><span class="sxs-lookup"><span data-stu-id="62899-116">Disable packet queuing</span></span>|
+|<span data-ttu-id="62899-117">queueInbound</span><span class="sxs-lookup"><span data-stu-id="62899-117">queueInbound</span></span>|<span data-ttu-id="62899-118">2</span><span class="sxs-lookup"><span data-stu-id="62899-118">2</span></span>|<span data-ttu-id="62899-119">Eingehende verschlüsselte Pakete in der Warteschlange</span><span class="sxs-lookup"><span data-stu-id="62899-119">Queue inbound encrypted packets</span></span>|
+|<span data-ttu-id="62899-120">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="62899-120">queueOutbound</span></span>|<span data-ttu-id="62899-121">3</span><span class="sxs-lookup"><span data-stu-id="62899-121">3</span></span>|<span data-ttu-id="62899-122">Entschlüsselte ausgehende Pakete für die Weiterleitung in der Warteschlange</span><span class="sxs-lookup"><span data-stu-id="62899-122">Queue decrypted outbound packets for forwarding</span></span>|
+|<span data-ttu-id="62899-123">queueBoth</span><span class="sxs-lookup"><span data-stu-id="62899-123">queueBoth</span></span>|<span data-ttu-id="62899-124">4</span><span class="sxs-lookup"><span data-stu-id="62899-124">4</span></span>|<span data-ttu-id="62899-125">Warteschlange für ein-und ausgehende Pakete</span><span class="sxs-lookup"><span data-stu-id="62899-125">Queue both inbound and outbound packets</span></span>|
 
 
 
