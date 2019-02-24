@@ -1,15 +1,15 @@
 ---
 title: Directory-Objekte aus einer Liste von IDs abrufen
-description: Wählen Sie ' Abfrageoption ist nicht verfügbar für diesen Vorgang.
+description: Die select`-Abfrageoption ist für diesen Vorgang nicht verfügbar.
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fab85844d810627ca4e44395477716eb0828ffa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a209d391c72edd453bbfe9232b7d02121ca98128
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986817"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212389"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Directory-Objekte aus einer Liste von IDs abrufen
 
@@ -53,9 +53,9 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter   | Typ |Beschreibung|
 |:---------------|:--------|:----------|
 |ids|String collection| Eine Sammlung von IDs, für die Objekte zurückgegeben werden sollen. Sie können bis zu 1000 IDs angeben. |
-|types|String collection| Eine Auflistung von Ressourcentypen, die die Ressource zu durchsuchenden Sammlungen festlegt. Wenn nicht angegeben, ist die Standardeinstellung [DirectoryObject](../resources/directoryobject.md), die alle im Verzeichnis definierten Ressourcentypen enthält. Alle von abgeleitetes Objekt `directoryObject` können angegeben werden, in der Auflistung. Beispiel: [Benutzer](../resources/user.md), [Gruppe](../resources/group.md), [Gerät](../resources/device.md), und So weiter. Die Werte sind nicht Groß-/Kleinschreibung beachtet.|
+|types|String-Sammlung| Eine Sammlung von Ressourcentypen, die den Satz von zu durchsuchenden Ressourcensammlungen angibt. Wenn keine Angabe erfolgt, wird [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) als Standardwert verwendet; dieser enthält alle im Verzeichnis definierten Ressourcentypen. Jedes Objekt, das von [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) abgeleitet wird, kann in der Sammlung angegeben werden; Beispiel: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0) usw. Um nach Referenzen für ein [Cloud Solution Provider](https://partner.microsoft.com/de-DE/cloud-solution-provider)-Partnerunternehmen zu suchen, geben Sie [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) an. Wenn keine Angabe erfolgt, wird [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) als Standardwert verwendet; dieser enthält alle im Verzeichnis definierten Ressourcentypen, außer bei Referenzen für ein [Cloud Solution Provider](https://partner.microsoft.com/de-DE/cloud-solution-provider)-Partnerunternehmen. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden.|
 
-## <a name="response"></a>Antwort
+## <a name="response"></a>Reaktion
 
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das String-Sammlungsobjekt im Antworttext zurückgegeben.
 
