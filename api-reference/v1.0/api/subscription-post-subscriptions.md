@@ -1,36 +1,47 @@
 ---
 title: Abonnement erstellen
-description: Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden
+description: Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 7b23968620abcb8f9a20e4a7b3598c21dec72980
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6d06e230dd85aadaa4d2b3a4f851b339b34793eb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913886"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157694"
 ---
 # <a name="create-subscription"></a>Abonnement erstellen
 
-Diese API abonniert eine Listeneranwendung, über die sie Benachrichtigungen erhält, sobald Daten in Microsoft Graph geändert werden
+Abonniert eine Listener-Anwendung, um Benachrichtigungen zu erhalten, wenn die angeforderte Art von Änderungen an der angegebenen Ressource in Microsoft Graph auftritt.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zur Abonnementerstellung ist Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungsnachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+ Zur Abonnementerstellung ist Lesezugriff auf die Ressource erforderlich. Beispiel: um Benachrichtigungen zu Nachrichten zu erhalten, benötigt Ihre App die `Mail.Read`-Berechtigung. 
+ 
+ Abhängig von der Ressource und dem angeforderten Berechtigungstyp (delegiert oder Anwendung) ist die in der folgenden Tabelle angegebene Berechtigung die niedrigste Berechtigung, die zum Aufrufen dieser API erforderlich ist. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).
 
-| Ressourcentyp/Element        | Berechtigung          |
-|-----------------------------|---------------------|
-| Kontakte                    | Contacts.Read       |
-| Unterhaltungen               | Group.Read.All      |
-| Ereignisse                      | Calendars.Read      |
-| Nachrichten                    | Mail.Read           |
-| Gruppen                      | Group.Read.All      |
-| Benutzer                       | User.Read.All       |
-| Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
-|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+|:-----|:-----|:-----|:-----|
+|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (persönliche OneDrive-Umgebung eines Benutzers) | Nicht unterstützt | Files.ReadWrite | Nicht unterstützt |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Nicht unterstützt | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+|[group conversation](../resources/conversation.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Nicht unterstützt | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
- > **Hinweis:** Der Endpunkt /v1.0 kann Berechtigungen für die meisten Ressourcen. Unterhaltungen in einer Gruppe und OneDrive Laufwerk Stammelemente werden mit den Anwendungsberechtigungen nicht unterstützt.
+> **Hinweis:** Es gibt zusätzliche Einschränkungen für Abonnements für OneDrive- und Outlook-Elemente. Die Einschränkungen gelten sowohl für die Erstellung als auch für die Verwaltung von Abonnements (Abrufen, Aktualisieren und Löschen von Abonnements).
+
+- Auf dem persönlichen OneDrive können Sie den Stammordner oder einen beliebigen Unterordner auf diesem Laufwerk abonnieren. Bei OneDrive for Business können Sie nur den Stammordner abonnieren. Benachrichtigungen werden für die angeforderten Arten von Änderungen am abonnierten Ordner bzw. an einer Datei, einem Ordner oder anderen **driveItem**-Instanzen in seiner Hierarchie gesendet. Sie können keine **drive**- oder **driveItem**-Instanzen abonnieren, die keine Ordner sind, wie beispielsweise einzelne Dateien.
+
+- In Outlook unterstützt die delegierte Berechtigung das Abonnieren von Elementen ausschließlich in Ordnern, die sich im Postfach des angemeldeten Benutzers befinden. Das bedeutet, dass Sie beispielsweise nicht die delegierte Berechtigung "Calendars.Read" verwenden können, um Ereignisse im Postfach eines anderen Benutzers zu abonnieren.
+- So abonnieren Sie Änderungsbenachrichtigungen über Outlook-Kontakte, -Ereignisse oder -Nachrichten in _freigegebenen oder delegierten Ordnern_:
+
+  - Verwenden Sie die entsprechende Anwendungsberechtigung, um Änderungen von Elementen in einem Ordner oder Postfach eines _beliebigen_ Benutzers im Mandanten zu abonnieren.
+  - Verwenden Sie nicht die Outlook-Freigabeberechtigungen (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared und ihre read/write-Entsprechungen), da sie **nicht** das Abonnieren von Änderungsbenachrichtigungen für Elemente in freigegebenen oder delegierten Ordnern unterstützen. 
+
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -73,8 +84,8 @@ Content-type: application/json
 }
 ```
 
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Abonnement](../resources/subscription.md) -Objekts.
-Die `clientState` Feld ist optional.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [subscription](../resources/subscription.md)-Objekts an.
+Das `clientState`-Feld ist optional.
 
 ##### <a name="resources-examples"></a>Beispiele für Ressourcen
 
@@ -86,12 +97,12 @@ Im Folgenden sind gültige Werte für die Ressourceneigenschaft des Abonnements 
 |Kontakte|me/contacts|
 |Kalender|me/events|
 |Benutzer|users|
-|Gruppen|Gruppen|
+|Gruppen|groups|
 |Unterhaltungen|groups('*{id}*')/conversations|
 |Laufwerke|me/drive/root|
-|Sicherheitshinweis|Sicherheitshinweise /? $filter = Status Eq 'Neu'|
+|Sicherheitswarnung|security/alerts?$filter=status eq ‘New’|
 
-##### <a name="response"></a>Antwort
+##### <a name="response"></a>Reaktion
 
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
@@ -120,7 +131,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Endpunktprüfung für Benachrichtigungen
 
-Das Abonnement Benachrichtigung Endpunkt (im angegebenen der `notificationUrl` -Eigenschaft) müssen Daten aneinander zur Reaktion auf eine Anforderung zur Überprüfung, wie unter [Einrichten von Benachrichtigungen, damit die Änderungen in Benutzerdaten](/graph/webhooks#notification-endpoint-validation). Wenn die Überprüfung fehlschlägt, gibt die Anforderung an das Abonnement zu erstellen einer 400-Bad Request-Fehler zurück.
+Der Endpunkt der Abonnementbenachrichtigung (angegeben in der Eigenschaft `notificationUrl`) muss in der Lage sein, auf eine Validierungsanforderung zu reagieren, wie unter [Einrichten von Benachrichtigungen für Änderungen an Benutzerdaten](/graph/webhooks#notification-endpoint-validation) beschrieben. Wenn die Validierung fehlschlägt, gibt die Anforderung zur Erstellung des Abonnements einen "400 Bad Request"-Fehler zurück.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,12 +3,12 @@ title: Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 description: Die Microsoft Graph-API verwendet einen Webhook-Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der eine eigene URL zum Empfangen von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um bei Änderungen ihren Status zu aktualisieren.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818508"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168495"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 
@@ -20,28 +20,28 @@ Nachdem Microsoft Graph die Abonnementsanfrage akzeptiert hat, werden Pushbenach
 
 Mit der Microsoft Graph-API kann eine App Änderungen an den folgenden Ressourcen abonnieren:
 
-- Nachrichten
-- Ereignisse
-- Kontakte
-- Benutzer
-- Gruppen
-- Gruppenunterhaltungen
-- Inhalten, die in OneDrive freigegeben werden, einschließlich der diesen SharePoint-Websites zugeordneten Laufwerke
-- Persönlichen OneDrive-Ordnern des Benutzers
-- Sicherheitswarnungen
+- Outlook-[Nachricht][]
+- Outlook-[Ereignis][]
+- Persönlicher Outlook-[Kontakt][]
+- [Benutzer][]
+- [Gruppe][]
+- Office 365-[Gruppenunterhaltung][]
+- Inhalt in der Hierarchie des [driveItem][]-Objekts eines _beliebigen Ordners_ auf dem persönlichen OneDrive eines Benutzers
+- Inhalt in der Hierarchie des [driveItem][]-Objekts eines _Stammordners_ auf OneDrive for Business
+- [Sicherheitswarnung][]
 
-Sie können zum Beispiel ein Abonnement für einen bestimmten Mailordner erstellen: `me/mailFolders('inbox')/messages`
+Sie können ein Abonnement für einen bestimmten Outlook-Ordner erstellen, z.B. den Posteingang: `me/mailFolders('inbox')/messages`
 
 Oder für eine Ressource der obersten Ebene: `me/messages`, `me/contacts`, `me/events`, `users`, oder `groups`
 
 Oder für eine bestimmte Ressourceninstanz: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
-Oder für ein Sharepoint Online/OneDrive for Business-Laufwerk: `/drive/root`
-
-Oder für die persönliche OneDrive-Umgebung eines Benutzers: `/drives/{id}/root`
+Oder für einen beliebigen Ordner in der persönlichen OneDrive-Umgebung eines Benutzers: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Oder für eine neue [Sicherheits-API-Benachrichtigung](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+Oder für den Stammorder eines Sharepoint-/OneDrive for Business-Laufwerks: `/drive/root`
+
+Oder für eine neue [Sicherheits-API-Warnung](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD-Ressourceneinschränkungen
 
@@ -242,6 +242,9 @@ Es folgen einige Codebeispiele in GitHub.
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0
