@@ -3,12 +3,12 @@ title: Abonnement abrufen
 description: Mit dieser API können Sie die Eigenschaften und Beziehungen eines Abonnements abrufen.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 4c55c81fdb26bb706ad270e5d53ded712ea69b22
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956976"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156469"
 ---
 # <a name="get-subscription"></a>Abonnement abrufen
 
@@ -16,19 +16,30 @@ Mit dieser API können Sie die Eigenschaften und Beziehungen eines Abonnements a
 
 ## <a name="permissions"></a>Berechtigungen
 
-In der folgenden Tabelle ist für jede Ressource die entsprechende vorgeschlagene erforderliche Berechtigung aufgeführt. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Abhängig von der Ressource und dem angeforderten Berechtigungstyp (delegiert oder Anwendung) ist die in der folgenden Tabelle angegebene Berechtigung die niedrigste Berechtigung, die zum Aufrufen dieser API erforderlich ist. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).
 
-| Ressourcentyp/Element        | Berechtigung          |
-|-----------------------------|---------------------|
-| Kontakte                    | Contacts.Read       |
-| Unterhaltungen               | Group.Read.All      |
-| Ereignisse                      | Calendars.Read      |
-| Nachrichten                    | Mail.Read           |
-| Gruppen                      | Group.Read.All      |
-| Benutzer                       | User.Read.All       |
-| Laufwerk (OneDrive eines Benutzers)    | Files.ReadWrite     |
-| Laufwerke (gemeinsame SharePoint-Inhalte und Laufwerke) | Files.ReadWrite.All |
-|Sicherheitshinweis| SecurityEvents.ReadWrite.All |
+| Unterstützte Ressource | Delegiert (Geschäfts-, Schul- oder Unikonto) | Delegiert (persönliches Microsoft-Konto) | Anwendung |
+|:-----|:-----|:-----|:-----|
+|[Kontakt](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (persönliche OneDrive-Umgebung eines Benutzers) | Nicht unterstützt | Files.ReadWrite | Nicht unterstützt |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Nicht unterstützt | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | Nicht unterstützt | Group.Read.All |
+|[Gruppenunterhaltung](../resources/conversation.md) | Group.Read.All | Nicht unterstützt | Nicht unterstützt |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Nicht unterstützt | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+> **Hinweis:** Es gibt zusätzliche Einschränkungen für Abonnements für OneDrive- und Outlook-Elemente. Die Einschränkungen gelten sowohl für die Erstellung als auch für die Verwaltung von Abonnements (Abrufen, Aktualisieren und Löschen von Abonnements).
+
+- Auf dem persönlichen OneDrive können Sie den Stammordner oder einen beliebigen Unterordner auf diesem Laufwerk abonnieren. Bei OneDrive for Business können Sie nur den Stammordner abonnieren. Benachrichtigungen werden für die angeforderten Arten von Änderungen am abonnierten Ordner bzw. an einer Datei, einem Ordner oder anderen "driveItem"-Objekten in seiner Hierarchie gesendet. Sie können keine **drive**- oder **driveItem**-Instanzen abonnieren, die keine Ordner sind, wie beispielsweise einzelne Dateien.
+
+- In Outlook unterstützt die delegierte Berechtigung das Abonnieren von Elementen ausschließlich in Ordnern, die sich im Postfach des angemeldeten Benutzers befinden. Das bedeutet, dass Sie beispielsweise nicht die delegierte Berechtigung "Calendars.Read" verwenden können, um Ereignisse im Postfach eines anderen Benutzers zu abonnieren.
+- So abonnieren Sie Änderungsbenachrichtigungen über Outlook-Kontakte, -Ereignisse oder -Nachrichten in _freigegebenen oder delegierten Ordnern_:
+
+  - Verwenden Sie die entsprechende Anwendungsberechtigung, um Änderungen von Elementen in einem Ordner oder Postfach eines _beliebigen_ Benutzers im Mandanten zu abonnieren.
+  - Verwenden Sie nicht die Outlook-Freigabeberechtigungen (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared und ihre read/write-Entsprechungen), da sie das Abonnieren von Änderungsbenachrichtigungen für Elemente in freigegebenen oder delegierten Ordnern **nicht** unterstützen.
+ 
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139676"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212396"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -28,6 +28,8 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Ergänzungen |Beta und Version 1.0| Die Eigenschaft **createdDateTime** wurde zu [organization](/graph/api/resources/organization?view=graph-rest-v1.0) hinzugefügt.|
+|Ergänzungen | v1.0 | Der neue Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) wurde hinzugefügt.|
 |Änderung |Beta und Version 1.0| Die Eigenschaft **companyName** der Ressource [user](/graph/api/resources/user?view=graph-rest-v1.0) wurde aktualisiert, um beschreibbar zu sein.|
 
 ### <a name="education-apis"></a>Bildungs-APIs
