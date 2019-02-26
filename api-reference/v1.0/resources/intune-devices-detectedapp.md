@@ -3,19 +3,20 @@ title: detectedApp-Ressourcentyp
 description: Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät installiert ist. Nicht verwaltete Apps werden nur für als unternehmenseigen gekennzeichnete Geräte angezeigt.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 01e942790136deb967d1efc22928ed9144b5012b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 8a9a31245676dfba465de61aca6527d112ce0b6d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951397"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252602"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät installiert ist. Nicht verwaltete Apps werden nur für als unternehmenseigen gekennzeichnete Geräte angezeigt.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,10 +29,10 @@ Eine verwaltete oder nicht verwaltete App, die auf einem verwalteten Gerät inst
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
-|displayName|String|Name der ermittelten Anwendung. Schreibgeschützt.|
-|version|String|Version der ermittelten Anwendung. Schreibgeschützt.|
-|sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt.|
+|id|string|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
+|displayName|Zeichenfolge|Name der ermittelten Anwendung. Schreibgeschützt|
+|version|String|Version der ermittelten Anwendung. Schreibgeschützt|
+|sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt|
 |deviceCount|Int32|Die Anzahl von Geräten, auf denen diese Anwendung installiert ist.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,27 +1,28 @@
 ---
-title: RemoteAssistanceOnboardingStatus Enum-Typ
+title: remoteAssistanceOnboardingStatus-Enumerationstyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8b4d5525fac00dfd7ebf1c68718ad8b47b0a2d56
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e0b26daab72e7910f0796cee226f8c722cee6822
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951782"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258569"
 ---
-# <a name="remoteassistanceonboardingstatus-enum-type"></a>RemoteAssistanceOnboardingStatus Enum-Typ
+# <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |notOnboarded|0|Noch nicht dokumentiert|
 |Onboarding|1|Noch nicht dokumentiert|
-|onboarded|2|Noch nicht dokumentiert|
+|Onboarding|2|Noch nicht dokumentiert|
 
 
 

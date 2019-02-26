@@ -1,27 +1,28 @@
 ---
-title: WindowsInformationProtectionPinCharacterRequirements Enum-Typ
-description: Anforderungen an die PIN-Zeichen
+title: windowsInformationProtectionPinCharacterRequirements-Enumerationstyp
+description: PIN-Zeichen Anforderungen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c1c903fecb4d1cf8c114dc843055cdbbd5590fca
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9aff799e611a15442537d9bd408232582e2ba857
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976513"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256021"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>WindowsInformationProtectionPinCharacterRequirements Enum-Typ
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Anforderungen an die PIN-Zeichen
+PIN-Zeichen Anforderungen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notAllow|0|Nicht zulassen|
-|requireAtLeastOne|1|Benötigen Sie mindestens eine|
-|zulassen|2|Können Sie beliebig viele|
+|noTalg|0|Nicht zulässig|
+|requireAtLeastOne|1|Mindestens eins erforderlich|
+|zulassen|2|Beliebige Anzahl zulassen|
 
 
 

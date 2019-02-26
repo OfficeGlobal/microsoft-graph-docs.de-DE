@@ -1,21 +1,21 @@
 ---
 title: Ressourcentyp „iosVppEBook“
 description: Diese Klasse enthält die Eigenschaften eines iOS-VPP-E-Books.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35a3f6cc1744b869b4dd2dc9e0baf703144ea73b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ca890a6b15ac232d8fb685913379ba8bf69f35cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416776"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149441"
 ---
 # <a name="iosvppebook-resource-type"></a>Ressourcentyp „iosVppEBook“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Klasse enthält die Eigenschaften eines iOS-VPP-E-Books.
 
@@ -34,16 +34,16 @@ Sie erbt von [managedEBook](../resources/intune-books-managedebook.md).
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|id|string|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|Zeichenfolge|Name des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|description|Zeichenfolge|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|Zeichenfolge|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
 |appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
 |vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
@@ -52,14 +52,14 @@ Sie erbt von [managedEBook](../resources/intune-books-managedebook.md).
 |seller|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität.|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|categories|[ManagedEBookCategory](../resources/intune-books-managedebookcategory.md) -Auflistung|Die Liste der Kategorien für e-Book. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)-Sammlung|Die Liste der Zuweisungen des E-Books. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Die Installationszusammenfassung für die mobile App. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|categories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) -Sammlung|Die Liste der Kategorien für dieses eBook. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)-Sammlung|Die Liste der Zuweisungen des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Die Installationszusammenfassung für die mobile App. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)-Sammlung|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |userStateSummary|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)-Sammlung|Die Liste der Installationsstatus für das E-Book. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 

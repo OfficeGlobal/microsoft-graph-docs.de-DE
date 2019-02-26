@@ -1,21 +1,21 @@
 ---
 title: managedDeviceOverview-Ressourcentyp
 description: Zusammenfassungsdaten für verwaltete Geräte
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db5cebe36850971c871f673d07f18b8d5121cb1b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e6c7187bc5cb984e4ca7e607068e6010f747f868
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422236"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175003"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Zusammenfassungsdaten für verwaltete Geräte
 
@@ -34,8 +34,8 @@ Zusammenfassungsdaten für verwaltete Geräte
 |dualEnrolledDeviceCount|Int32|Anzahl von Geräten, die in MDM und EAS registriert sind|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Betriebssystemzusammenfassung für das Gerät|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Verteilung des Exchange-Zugriffsstatus in Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modelle und Hersteller Meatadata für verwaltete Geräte im Konto|
-|lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten Änderungsdatum des Geräts (Übersicht)|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modelliert und fertigt meatadata für verwaltete Geräte im Konto|
+|lastModifiedDateTime|DateTimeOffset|Datum der letzten Änderung der Geräteübersicht|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

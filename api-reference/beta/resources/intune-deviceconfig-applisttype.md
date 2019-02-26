@@ -1,30 +1,30 @@
 ---
-title: AppListType Enum-Typ
-description: Mögliche Werte der Liste app Compliance.
-localization_priority: Normal
+title: appListType-Enumerationstyp
+description: Mögliche Werte der Kompatibilitäts-App-Liste.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf8930136b00b7b5579ec5e7266b6a77a9a11968
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3b7d11107ca3ea2b698e28cd288f163ec190b0a6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415222"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172674"
 ---
-# <a name="applisttype-enum-type"></a>AppListType Enum-Typ
+# <a name="applisttype-enum-type"></a>appListType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte der Liste app Compliance.
+Mögliche Werte der Kompatibilitäts-App-Liste.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Standardwert, keine beabsichtigt.|
-|appsInListCompliant|1|Die Liste darstellt, die apps, die kompatible berücksichtigt werden (nur in der Liste apps kompatibel sind).|
-|appsNotInListCompliant|2|Die Liste darstellt, die apps, die nicht kompatible berücksichtigt werden (alle apps sind kompatibel mit Ausnahme von apps in der Liste).|
+|Keine|0|Standardwert, keine Absicht.|
+|appsInListCompliant|1|Die Liste stellt die apps dar, die als kompatibel betrachtet werden (nur apps in der Liste sind kompatibel).|
+|appsNotInListCompliant|2|Die Liste stellt die apps dar, die als nicht kompatibel gelten (alle apps sind mit Ausnahme von apps in der Liste kompatibel).|
 
 
 

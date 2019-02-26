@@ -3,19 +3,20 @@ title: managedDevice-Ressourcentyp
 description: Über Intune verwaltete oder vorab registrierte Geräte
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3643ec5020ea088b2da423ed44d0a1596e53e6a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3672e9a03c3259c56744a9c786cf6b1b8eacc7f4
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955730"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255563"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Über Intune verwaltete oder vorab registrierte Geräte
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -38,21 +39,21 @@ ms.locfileid: "27955730"
 |[cleanWindowsDevice-Aktion](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|Keine|Windows-Gerät bereinigen|
 |[logoutSharedAppleDeviceActiveUser-Aktion](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|Keine|Aktiven Benutzer von freigegebenem Apple-Gerät abmelden|
 |[deleteUserFromSharedAppleDevice-Aktion](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|Keine|Benutzer von freigegebenem Apple-Gerät löschen|
-|[syncDevice-Aktion](../api/intune-devices-manageddevice-syncdevice.md)|Keine|Noch nicht dokumentiert.|
-|[windowsDefenderScan-Aktion](../api/intune-devices-manageddevice-windowsdefenderscan.md)|Keine|Noch nicht dokumentiert.|
-|[windowsDefenderUpdateSignatures-Aktion](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Keine|Noch nicht dokumentiert.|
+|[syncDevice-Aktion](../api/intune-devices-manageddevice-syncdevice.md)|Keiner|Noch nicht dokumentiert|
+|[windowsDefenderScan-Aktion](../api/intune-devices-manageddevice-windowsdefenderscan.md)|Keiner|Noch nicht dokumentiert|
+|[windowsDefenderUpdateSignatures-Aktion](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Keiner|Noch nicht dokumentiert.|
 |[updateWindowsDeviceAccount-Aktion](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.
+|id|string|Eindeutiger Bezeichner für das Gerät.
 |
 |userId|Zeichenfolge|Eindeutiger Bezeichner des Benutzers, der dem Gerät zugeordnet ist.
 |
 |deviceName|Zeichenfolge|Name des Geräts.
 |
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Besitz des Geräts. 'Company' oder 'Privat' kann sein. Mögliche Werte sind: `unknown`, `company` und `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Der Besitzer des Geräts. Kann "Company" oder "Personal" sein. Mögliche Werte sind: `unknown`, `company` und `personal`.|
 |deviceActionResults|Collection von Objekten des Typs [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Liste von Objekten des Typs „ComplexType deviceActionResult“.
 |
 |enrolledDateTime|DateTimeOffset|Datum und Uhrzeit der Geräteregistrierung.
@@ -65,13 +66,13 @@ ms.locfileid: "27955730"
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. Intune, EAS usw. Mögliche Werte sind: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` und `googleCloudDevicePolicyController`.|
 |osVersion|Zeichenfolge|Auf dem Gerät installierte Betriebssystemversion.
 |
-|easActivated|Boolescher Wert|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
+|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
 |easDeviceId|Zeichenfolge|Exchange ActiveSync-ID des Geräts.
 |
 |easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
 |
-|azureADRegistered|Boolescher Wert|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|Zeichenfolge|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht|
 |emailAddress|Zeichenfolge|E-Mail-Adressen des Benutzers, der dem Gerät zugeordnet ist.
 |
@@ -79,18 +80,18 @@ ms.locfileid: "27955730"
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|Zeichenfolge|Anzeigename der Gerätekategorie.
 |
-|isSupervised|Boolescher Wert|Überwachungsstatus des Geräts.
+|isSupervised|Boolean|Überwachungsstatus des Geräts.
 |
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Verbindung des Geräts mit Exchange|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `allowed`, `blocked` und `quarantined`.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Mögliche Werte: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Grund für den Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` und `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|Zeichenfolge|URL zur Einrichtung einer Remoteunterstützungssitzung mit dem Gerät.
 |
 |remoteAssistanceSessionErrorDetails|Zeichenfolge|Fehlerzeichenfolge zur Beschreibung von Fehlern beim Erstellen von Objekten für Remoteunterstützungssitzungen.
 |
-|isEncrypted|Boolescher Wert|Verschlüsselungsstatus des Geräts.
+|isEncrypted|Boolean|Verschlüsselungsstatus des Geräts.
 |
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname für das Gerät.
+|userPrincipalName|String|Benutzerprinzipalname für das Gerät.
 |
 |model|Zeichenfolge|Modell des Geräts.
 |
@@ -101,7 +102,7 @@ ms.locfileid: "27955730"
 |
 |serialNumber|Zeichenfolge|Seriennummer.
 |
-|PhoneNumber|Zeichenfolge|Telefonnummer des Geräts.
+|PhoneNumber|String|Telefonnummer des Geräts.
 |
 |androidSecurityPatchLevel|Zeichenfolge|Android-Sicherheitspatchlevel.
 |

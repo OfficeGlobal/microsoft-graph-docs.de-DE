@@ -1,26 +1,27 @@
 ---
-title: DeviceManagementExchangeConnectorSyncType Enum-Typ
-description: Der Typ des Exchange-Connectors Synchronisierung angefordert.
+title: deviceManagementExchangeConnectorSyncType-Enumerationstyp
+description: Der Typ der angeforderten Exchange-Connector-Synchronisierung.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af14006bd6f3cc8733faecc8e0219cc02e7fcd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cfdd1da2ecec6fb7848787386991ee09741d0b67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983282"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257582"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>DeviceManagementExchangeConnectorSyncType Enum-Typ
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Typ des Exchange-Connectors Synchronisierung angefordert.
+Der Typ der angeforderten Exchange-Connector-Synchronisierung.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|fullSync|0|Entdecken Sie das Gerät im Exchange.|
-|deltaSync|1|Entdecken Sie nur das Gerät in Exchange die während des Delta Sync-Fensters aktualisiert haben.|
+|fullSync|0|Entdecken Sie das gesamte Gerät in Exchange.|
+|deltaSync|1|Entdecken Sie nur das Gerät in Exchange, das während des Delta Sync-Fensters aktualisiert wurde.|
 
 
 

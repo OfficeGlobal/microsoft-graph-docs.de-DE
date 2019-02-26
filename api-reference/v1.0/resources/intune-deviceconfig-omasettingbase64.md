@@ -3,19 +3,20 @@ title: omaSettingBase64-Ressourcentyp
 description: Base64-Definition der OMA-Einstellungen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2acf41d36b4a664166dc2b5ceeb17dc0b6db4495
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 678c6e78070a7aae185a041962083b7908ef1cc1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949843"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258590"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Base64-Definition der OMA-Einstellungen
+
 
 Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
@@ -23,13 +24,14 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.cer | .CRT | p7b | * .bin).|
+|fileName|Zeichenfolge|Die dem Dateinamen zugeordnete Werteigenschaft (*.cer | *. CRT | *. p7b | *. bin).|
 |Wert|Zeichenfolge|Wert (Base64-codierte Zeichenfolge)|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

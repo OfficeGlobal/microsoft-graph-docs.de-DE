@@ -1,33 +1,33 @@
 ---
-title: WindowsArchitecture Enum-Typ
-description: Enthält Eigenschaften für Windows-Architektur.
-localization_priority: Normal
+title: windowsArchitecture-Enumerationstyp
+description: Enthält Eigenschaften für die Windows-Architektur.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cb46618b4a2ac56f336384148b5812b63cf6d60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 64a3175d020e045361e13035f4cb101a26f2e8f6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393634"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152122"
 ---
-# <a name="windowsarchitecture-enum-type"></a>WindowsArchitecture Enum-Typ
+# <a name="windowsarchitecture-enum-type"></a>windowsArchitecture-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für Windows-Architektur.
+Enthält Eigenschaften für die Windows-Architektur.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Keine|0|Keine Flags festgelegt.|
-|x86|1|Unabhängig davon, ob die X86 Windows Architekturtyp wird unterstützt.|
-|x64|2|Unabhängig davon, ob die X64 Windows Architekturtyp wird unterstützt.|
-|ARM|4|Unabhängig davon, ob der Arm-Windows-Architektur-Typ unterstützt wird.|
-|neutral|8|Unabhängig davon, ob der Neutral Windows Architekturtyp unterstützt wird.|
-|arm64|16|Unabhängig davon, ob der Arm64 Windows-Architektur-Typ unterstützt wird.|
+|x86|1|Gibt an, ob der x86-Windows-Architekturtyp unterstützt wird.|
+|x64|2|Gibt an, ob der x64-Windows-Architekturtyp unterstützt wird.|
+|Arm|4|Gibt an, ob der Arm-Windows-Architekturtyp unterstützt wird.|
+|neutral|8|Gibt an, ob der neutrale Windows-Architekturtyp unterstützt wird.|
+|arm64|16|Gibt an, ob der Arm64-Windows-Architekturtyp unterstützt wird.|
 
 
 

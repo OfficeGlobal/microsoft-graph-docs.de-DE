@@ -1,25 +1,26 @@
 ---
-title: Aktivierung von Steuerelementen Enum-Typ
+title: Enablement-Enumerationstyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25ee1a9e3121dee96830a03e1f6cef18dca684ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2bb862dd45b49e67bb1e02b7a34a7945845fd1e7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933533"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256105"
 ---
-# <a name="enablement-enum-type"></a>Aktivierung von Steuerelementen Enum-Typ
+# <a name="enablement-enum-type"></a>Enablement-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Noch nicht dokumentiert|
+|notConfigured|0|Noch nicht dokumentiert|
 |enabled|1|Noch nicht dokumentiert|
 |deaktiviert|2|Noch nicht dokumentiert|
 

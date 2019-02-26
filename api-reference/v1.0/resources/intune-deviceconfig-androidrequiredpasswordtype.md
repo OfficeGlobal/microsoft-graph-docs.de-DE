@@ -1,32 +1,33 @@
 ---
-title: AndroidRequiredPasswordType Enum-Typ
-description: Typ der Android erforderliche Kennwort.
+title: androidRequiredPasswordType-Enumerationstyp
+description: Android erforderlicher Kennworttyp.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c85466cf722848efa684fc7b5643293d49de2459
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 59a95c74f19fa6e14440eaedd06d385b05d81e5d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964088"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255402"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>AndroidRequiredPasswordType Enum-Typ
+# <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Typ der Android erforderliche Kennwort.
+Android erforderlicher Kennworttyp.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|Alphabetische|1|Alphabetische erforderliche Kennwort.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|alphabetischer|1|Alphabetisches Kennwort erforderlich.|
 |Alphanumerisch|2|Alphanumerisches Kennwort erforderlich.|
-|alphanumericWithSymbols|3|Alphanumerisch mit Symbole erforderliche Kennwort.|
-|lowSecurityBiometric|4|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|
-|numerische|5|Numerische erforderliche Kennwort.|
-|numericComplex|6|Numerische komplexe Kennwort erforderlich.|
-|Beliebiger Wert|7|Ein Kennwort oder ein Muster ist erforderlich, und alle akzeptabel ist.|
+|alphanumericWithSymbols|3|Alphanumerisch mit Symbol Kennwort erforderlich.|
+|lowSecurityBiometric|4|Niedriges Biometrie-basiertes Kennwort erforderlich.|
+|numerischen|5|Numerisches Kennwort erforderlich.|
+|numericComplex|6|Numerisches komplexes Kennwort erforderlich.|
+|Beliebiger Wert|7|Ein Kennwort oder Muster ist erforderlich, und alle sind akzeptabel.|
 
 
 

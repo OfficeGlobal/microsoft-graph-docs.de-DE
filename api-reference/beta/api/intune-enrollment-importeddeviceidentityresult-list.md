@@ -1,23 +1,23 @@
 ---
-title: Liste importedDeviceIdentityResults
-description: Listeneigenschaften und Beziehungen der ImportedDeviceIdentityResult-Objekte.
-localization_priority: Normal
+title: ImportedDeviceIdentityResults aufListen
+description: AufListen von Eigenschaften und Beziehungen der importedDeviceIdentityResult-Objekte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08d44ea48a206bb7bf31942b2829f5c46dbe31df
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0c0448594e138b12ea29c61fcb7605d4d6aa2780
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151751"
 ---
-# <a name="list-importeddeviceidentityresults"></a>Liste importedDeviceIdentityResults
+# <a name="list-importeddeviceidentityresults"></a>ImportedDeviceIdentityResults aufListen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Listeneigenschaften und Beziehungen der [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekte.
+AufListen von Eigenschaften und Beziehungen der [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,16 +38,16 @@ GET /deviceManagement/importedDeviceIdentities
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekten im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

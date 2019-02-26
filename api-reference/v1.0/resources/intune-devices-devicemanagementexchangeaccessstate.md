@@ -1,29 +1,30 @@
 ---
-title: DeviceManagementExchangeAccessState Enum-Typ
-description: Exchange Access Gerätestatus.
+title: deviceManagementExchangeAccessState-Enumerationstyp
+description: Geräte-Exchange-Zugriffsstatus.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dbfa7b9396a1100f2e3c7e4e78cf697233d840cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fedbd157c4668397256971c57a4cb5fa355f78c1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947015"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257603"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>DeviceManagementExchangeAccessState Enum-Typ
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Exchange Access Gerätestatus.
+Geräte-Exchange-Zugriffsstatus.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Kein Zugriff Zustand ermittelt aus Exchange|
-|unknown|1|Access-Gerätestatus zu Exchange ist unbekannt|
-|zulässig|2|Das Gerät hat Zugriff auf Exchange|
-|gesperrt|3|Gerät wird im Exchange blockiert.|
-|unter Quarantäne gestellte e-Mails|4|Gerät ist im Exchange unter Quarantäne gestellte e-Mails|
+|Keine|0|Kein Zugriffsstatus aus Exchange ermittelt|
+|unknown|1|Gerätezugriffsstatus zu Exchange ist unbekannt|
+|zulässig|2|Gerät hat Zugriff auf Exchange|
+|gesperrt|3|Gerät ist in Exchange blockiert|
+|Quarantäne|4|Das Gerät wird in Exchange unter Quarantäne gestellt.|
 
 
 

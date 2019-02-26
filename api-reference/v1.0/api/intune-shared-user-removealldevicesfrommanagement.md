@@ -4,16 +4,16 @@ description: Die Verwaltung aller Geräte für diesen Benutzer einstellen.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 62e0243fef90190fd1ca39c02bc2a7e568b475d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 40baa470968c10bbe26af1d8397306f5b9e3f736
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934289"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252798"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement-Aktion
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Die Verwaltung aller Geräte für diesen Benutzer einstellen.
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)| _variiert je nach Kontext_ |
-| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.PriviligedOperation.All |
+| &nbsp;&nbsp; Geräteverwaltung | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -37,7 +37,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|

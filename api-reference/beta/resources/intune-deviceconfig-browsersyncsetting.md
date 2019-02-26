@@ -1,30 +1,30 @@
 ---
-title: BrowserSyncSetting Enum-Typ
-description: Allow(Not Configured) oder prevent(Block) der Synchronisierung von Microsoft Edge Browsereinstellungen. Option, um zu verhindern, dass die Synchronisierung für Geräte, Benutzer außer Kraft setzen, aber zulassen.
-localization_priority: Normal
+title: browserSyncSetting-Enumerationstyp
+description: Die Synchronisierung der Einstellungen des Microsoft-Edge-Browsers zulassen (nicht konfiguriert) oder verhindern (blockieren). Option zum Verhindern der Synchronisierung über Geräte hinweg, aber Benutzer außer Kraft setzen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dce2b82b1eea5e4b06ed0f6949ba6a403b073a8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 71b5fd7addebdb24fce07644da9b33a2bb41f936
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431500"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152170"
 ---
-# <a name="browsersyncsetting-enum-type"></a>BrowserSyncSetting Enum-Typ
+# <a name="browsersyncsetting-enum-type"></a>browserSyncSetting-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Allow(Not Configured) oder prevent(Block) der Synchronisierung von Microsoft Edge Browsereinstellungen. Option, um zu verhindern, dass die Synchronisierung für Geräte, Benutzer außer Kraft setzen, aber zulassen.
+Die Synchronisierung der Einstellungen des Microsoft-Edge-Browsers zulassen (nicht konfiguriert) oder verhindern (blockieren). Option zum Verhindern der Synchronisierung über Geräte hinweg, aber Benutzer außer Kraft setzen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Standard – Synchronisierung von Browsereinstellungen für Geräte zulassen.|
-|blockedWithUserOverride|1|Synchronisieren von Browsereinstellungen für Benutzer Geräte zu verhindern, Überschreiben der Einstellung Benutzer zulassen.|
-|gesperrt|2|Absolut zu verhindern, dass die Synchronisierung von Browsereinstellungen für Benutzer Geräte.|
+|notConfigured|0|Standard – ermöglicht die Synchronisierung von Browsereinstellungen auf Geräten.|
+|blockedWithUserOverride|1|Verhindern der Synchronisierung von Browsereinstellungen über Benutzer Geräte hinweg, die Einstellung der Benutzer außer Kraft setzen.|
+|gesperrt|2|Verhindern Sie die Synchronisierung von Browsereinstellungen auf Benutzergeräten.|
 
 
 

@@ -1,29 +1,30 @@
 ---
-title: DefenderMonitorFileActivity Enum-Typ
-description: Mögliche Werte für die Überwachung von Dateiaktivität.
+title: defenderMonitorFileActivity-Enumerationstyp
+description: Mögliche Werte für die Überwachung der Dateiaktivität.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d818264470543d077384f055cf2ef4004e019b26
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 39c53847d270639d11b5014291e62dde2668a4d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937117"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256000"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>DefenderMonitorFileActivity Enum-Typ
+# <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Überwachung von Dateiaktivität.
+Mögliche Werte für die Überwachung der Dateiaktivität.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|disable|1|Überwachen der Dateiaktivität zu deaktivieren.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|disable|1|Deaktiviert die Überwachung der Dateiaktivität.|
 |monitorAllFiles|2|Überwachen Sie alle Dateien.|
-|monitorIncomingFilesOnly|3| Nur eingehende Dateien zu überwachen.|
-|monitorOutgoingFilesOnly|4|Nur ausgehende Dateien zu überwachen.|
+|monitorIncomingFilesOnly|3| Nur eingehende Dateien überwachen.|
+|monitorOutgoingFilesOnly|4|Nur ausgehende Dateien überwachen.|
 
 
 

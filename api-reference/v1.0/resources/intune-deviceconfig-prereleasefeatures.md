@@ -1,28 +1,29 @@
 ---
-title: PrereleaseFeatures Enum-Typ
-description: Mögliche Werte für Vorabversion Features.
+title: prereleaseFeatures-Enumerationstyp
+description: Mögliche Werte für Vorabversionen.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7e7d7a3aa6a54c063d3355f062f728462cf7031b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ed1db87b34e4a66c3800a7c10076486f547675da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922846"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255913"
 ---
-# <a name="prereleasefeatures-enum-type"></a>PrereleaseFeatures Enum-Typ
+# <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Vorabversion Features.
+Mögliche Werte für Vorabversionen.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|settingsOnly|1|Einstellungen nur Vorabversion Features.|
-|settingsAndExperimentations|2|Einstellungen und Experimentations Vorabversion-Features.|
-|notAllowed|3|Vorabversion Features nicht zulässig.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|settingsOnly|1|Nur Einstellungen vor der Veröffentlichung.|
+|settingsAndExperimentations|2|Einstellungen und Experimente Vorabversionen.|
+|notAllowed|3|Vorabversionen sind nicht zulässig.|
 
 
 

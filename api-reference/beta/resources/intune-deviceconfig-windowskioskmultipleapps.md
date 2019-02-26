@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp windowsKioskMultipleApps
-description: Die Klasse verwendet, um die Konfiguration der Multi-Mode app für die Kiosk-Konfiguration identifizieren
-localization_priority: Normal
+title: windowsKioskMultipleApps-Ressourcentyp
+description: Die Klasse, die zum Identifizieren der multiMode-App-Konfiguration für die Kiosk Konfiguration verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71b8a57151b08d0297a89dfd815f72d66c2d12a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b2d2ff38e3b07920f474d9e3894bbd1f8855e277
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162020"
 ---
-# <a name="windowskioskmultipleapps-resource-type"></a>Ressourcentyp windowsKioskMultipleApps
+# <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Klasse verwendet, um die Konfiguration der Multi-Mode app für die Kiosk-Konfiguration identifizieren
+Die Klasse, die zum Identifizieren der multiMode-App-Konfiguration für die Kiosk Konfiguration verwendet wird.
 
 
-Erbt vom [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
+Erbt von [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Apps|[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) -Auflistung|Dies sind die einzige Windows Store-Apps, die über das Startmenü gestartet werden. Diese Sammlung kann bis zu 128 Elemente enthalten.|
-|showTaskBar|Boolean|Mit dieser Einstellung kann den Administrator an, ob der Taskleiste oder nicht angezeigt wird.|
-|disallowDesktopApps|Boolean|Diese Einstellung gibt an, dass desktop-apps zulässig sind. Standardmäßig auf "true".|
-|startMenuLayoutXml|Binär|Ermöglicht Administratoren das Standardlayout Start außer Kraft gesetzt, und verhindert, dass den Benutzer geändert wird.Das Layout wird durch Angabe einer XML-Datei geändert, die auf einem Layoutänderungsschema basiert. XML muss im Binärformat sein.|
+|apps|[zum](../resources/intune-deviceconfig-windowskioskappbase.md) -Sammlung|Dies sind die einzigen Windows Store-Apps, die über das Startmenü zur Verfügung stehen. Diese Auflistung kann maximal 128 Elemente enthalten.|
+|showTaskBar|Boolean|Mit dieser Einstellung kann der Administrator angeben, ob die Vorgangsleiste angezeigt wird.|
+|disallowDesktopApps|Boolean|Diese Einstellung gibt an, dass Desktop-Apps zulässig sind. Standardwert true.|
+|startMenuLayoutXml|Binär|Ermöglicht Administratoren das außer Kraft setzen des Standard Start Layouts und hindert den Benutzer daran, es zu ändern.Das Layout wird durch Angabe einer XML-Datei geändert, die auf einem Layoutänderungsschema basiert. XML muss im Binärformat vorliegen.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

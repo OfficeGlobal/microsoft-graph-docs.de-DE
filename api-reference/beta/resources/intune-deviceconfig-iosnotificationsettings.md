@@ -1,21 +1,21 @@
 ---
 title: iosNotificationSettings-Ressourcentyp
 description: Ein Element zur Beschreibung der Benachrichtigungseinstellungen.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7db0b6ba438522db0795f6897daba8b5c43258c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2876146e7e20ad94a7356f623a5b2e17443a18f8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420500"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172702"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Ein Element zur Beschreibung der Benachrichtigungseinstellungen.
 
@@ -25,11 +25,11 @@ Ein Element zur Beschreibung der Benachrichtigungseinstellungen.
 |Paket-ID|Zeichenfolge|Paket-ID der App, auf die diese Benachrichtigungseinstellungen angewandt werden.|
 |Anwendungsname|Zeichenfolge|Anwendungsname, der der Paket-ID zugeordnet werden muss.|
 |Herausgeber|Zeichenfolge|Herausgeber, der der Paket-ID zugeordnet werden muss.|
-|enabled|Boolescher Wert|Gibt an, ob Benachrichtigungen für diese App zulässig sind.|
-|showInNotificationCenter|Boolescher Wert|Gibt an, ob Benachrichtigungen im Nachrichtencenter angezeigt werden können.|
-|showOnLockScreen|Boolescher Wert|Gibt an, ob Benachrichtigungen auf dem Sperrbildschirm angezeigt werden können.|
+|enabled|Boolean|Gibt an, ob Benachrichtigungen für diese App zulässig sind.|
+|showInNotificationCenter|Boolean|Gibt an, ob Benachrichtigungen im Nachrichtencenter angezeigt werden können.|
+|showOnLockScreen|Boolean|Gibt an, ob Benachrichtigungen auf dem Sperrbildschirm angezeigt werden können.|
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Gibt die Art der Warnung für Benachrichtigungen für diese App an. Mögliche Werte: `deviceDefault`, `banner`, `modal`, `none`.|
-|badgesEnabled|Boolescher Wert|Gibt an, ob Badges für diese App zulässig sind.|
+|badgesEnabled|Boolean|Gibt an, ob Badges für diese App zulässig sind.|
 |soundsEnabled|Boolescher Wert|Gibt an, ob Ton für diese App zulässig ist.|
 
 ## <a name="relationships"></a>Beziehungen

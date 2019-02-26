@@ -1,29 +1,29 @@
 ---
-title: NonEapAuthenticationMethodForPeap Enum-Typ
-description: Nicht-EAP-Methoden für die Authentifizierung bei PEAP den ausgewählten EAP-Typ ist.
-localization_priority: Normal
+title: nonEapAuthenticationMethodForPeap-Enumerationstyp
+description: Nicht-EAP-Methoden für die Authentifizierung, wenn PEAP der ausgewählte EAP-Typ ist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 954e6efa56a2258c5907465f1359312c211a11a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4cdc16835777acbd937a4afdeb9739eedba92632
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423461"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142217"
 ---
-# <a name="noneapauthenticationmethodforpeap-enum-type"></a>NonEapAuthenticationMethodForPeap Enum-Typ
+# <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Nicht-EAP-Methoden für die Authentifizierung bei PEAP den ausgewählten EAP-Typ ist.
+Nicht-EAP-Methoden für die Authentifizierung, wenn PEAP der ausgewählte EAP-Typ ist.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Keine|0|Keine.|
-|microsoftChapVersionTwo|1|Microsoft CHAP Version 2 (v2-SICHERUNGSSERVERS).|
+|microsoftChapVersionTwo|1|Microsoft CHAP, Version 2 (MS-CHAP v2).|
 
 
 

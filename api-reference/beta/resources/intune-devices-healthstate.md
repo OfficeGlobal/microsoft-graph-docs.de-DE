@@ -1,30 +1,30 @@
 ---
-title: HealthState Enum-Typ
-description: Gibt Integritätsstatus der Windows Management-app an.
-localization_priority: Normal
+title: healthState-Enumerationstyp
+description: Gibt den Integritätsstatus der Windows-Verwaltungs-APP an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9104c0e39e086f7cf8f417f11054221b6f30e8d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0cf4be1f307d855cf2189bca700d6102e446a80e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422726"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151674"
 ---
-# <a name="healthstate-enum-type"></a>HealthState Enum-Typ
+# <a name="healthstate-enum-type"></a>healthState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt Integritätsstatus der Windows Management-app an.
+Gibt den Integritätsstatus der Windows-Verwaltungs-APP an.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Status ist unbekannt.|
-|fehlerfrei|1|Einem fehlerfreien Zustand.|
-|fehlerhaft|2|Fehlerhaften Zustand.|
+|unknown|0|UnBekannter Zustand.|
+|gesunde|1|Gesunder Zustand.|
+|fehlerhaft|2|Fehlerhaft.|
 
 
 

@@ -1,35 +1,36 @@
 ---
-title: RatingNewZealandMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Neuseeland
+title: ratingNewZealandMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Neuseeland
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 19a49c19241446b0a3d5b53074b54dafd152ac8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 29f492c48a5cf6c946f3d1b2c3a6ee8105a26326
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986369"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255332"
 ---
-# <a name="ratingnewzealandmoviestype-enum-type"></a>RatingNewZealandMoviesType Enum-Typ
+# <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Bezeichnungen in Neuseeland
+Movies-Bewertungs Bezeichnungen in Neuseeland
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Geeignet für allgemeine Zielgruppen|
-|parentalGuidance|3|Die Bild-Klassifizierung empfiehlt Eltern Anleitungen|
-|Erfahrungswerte|4|Die M-Klassifizierung eignet sich für über Erfahrungswerte zur Benutzergruppe|
-|agesAbove13|5|Die R13 Klassifikation ist auf Personen 13 Jahre und über beschränkt|
-|agesAbove15|6|Die R15 Klassifikation ist auf Personen 15 Jahre und über beschränkt|
-|agesAbove16|7|Die R16 Klassifikation ist auf Personen 16 Jahre und über beschränkt|
-|agesAbove18|8|Die R18 Klassifikation ist auf Personen 18 Jahre und über beschränkt|
-|eingeschränkt|9|Die R-Klassifikation ist auf eine bestimmte Benutzergruppe beschränkt|
-|agesAbove16Restricted|10|Die Klassifizierung RP16 erfordert Viewer unter 16 begleitet durch ein übergeordnetes oder oben|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Geeignet für allgemeine Zielgruppe|
+|parentalGuidance|3|Die PG-Klassifikation empfiehlt die elterliche Unterstützung|
+|Reifen|4|Die M-Klassifikation eignet sich für ältere Benutzer|
+|agesAbove13|5|Die R13-Klassifikation ist auf Personen ab 13 Jahren beschränkt.|
+|agesAbove15|6|Die R15-Klassifizierung ist auf Personen ab 15 Jahren beschränkt.|
+|agesAbove16|7|Die R16-Klassifizierung ist auf Personen ab 16 Jahren beschränkt.|
+|agesAbove18|8|Die R18-Klassifizierung ist auf Personen ab 18 Jahren beschränkt.|
+|eingeschränkt|9|Die R-Klassifizierung ist auf eine bestimmte Zielgruppe beschränkt.|
+|agesAbove16Restricted|10|Die RP16-Klassifikation erfordert Zuschauer unter 16 Jahren, die von einem Elternteil oder einem Erwachsenen begleitet werden.|
 
 
 

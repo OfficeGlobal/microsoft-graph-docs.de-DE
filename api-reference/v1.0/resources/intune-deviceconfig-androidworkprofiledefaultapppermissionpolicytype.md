@@ -1,28 +1,29 @@
 ---
-title: AndroidWorkProfileDefaultAppPermissionPolicyType Enum-Typ
-description: Android Arbeit Profil app Berechtigung Richtlinie Standardtyp.
+title: androidWorkProfileDefaultAppPermissionPolicyType-Enumerationstyp
+description: Richtlinientyp für die standardmäßige App-Berechtigungsrichtlinie für Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5f4e3b7a01d92981b79311049fd2da46c058c0aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947512"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255941"
 ---
-# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>AndroidWorkProfileDefaultAppPermissionPolicyType Enum-Typ
+# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Arbeit Profil app Berechtigung Richtlinie Standardtyp.
+Richtlinientyp für die standardmäßige App-Berechtigungsrichtlinie für Android.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|Aufforderung|1|Auffordern.|
-|autoGrant|2|Automatische erteilen.|
-|autoDeny|3|Automatische verweigern.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|prompt|1|Aufforderung.|
+|autoGrant|2|Automatische Gewährung.|
+|autoDeny|3|Auto verweigern.|
 
 
 

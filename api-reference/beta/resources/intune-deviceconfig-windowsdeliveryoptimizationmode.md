@@ -1,34 +1,34 @@
 ---
-title: WindowsDeliveryOptimizationMode Enum-Typ
-description: Übermittlung Optimierung Modus für Peer-Verteilung
-localization_priority: Normal
+title: windowsDeliveryOptimizationMode-Enumerationstyp
+description: Bereitstellungs Optimierungsmodus für die Peer Verteilung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5565965f9ba9395d7cd07b2935e6772478e0bb50
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2a4b0860e05d20ea480f9c91264033f7a9eb41a0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406885"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149168"
 ---
-# <a name="windowsdeliveryoptimizationmode-enum-type"></a>WindowsDeliveryOptimizationMode Enum-Typ
+# <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Übermittlung Optimierung Modus für Peer-Verteilung
+Bereitstellungs Optimierungsmodus für die Peer Verteilung
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
-|httpOnly|1|Nur HTTP keine peering|
-|httpWithPeeringNat|2|OS Standard – gemischt Http mit hinter den gleichen Network Address Translation peering|
-|httpWithPeeringPrivateGroup|3|HTTP mit über eine private Gruppe peering gemischt|
-|httpWithInternetPeering|4|HTTP mit Internet peering gemischt|
-|simpleDownload|99|Einfacher Downloadmodus mit keine peering|
-|bypassMode|100|Umgehen Sie Modus. Keine verwenden Sie Übermittlung Optimierung und verwenden Sie stattdessen BITS|
+|userDefined|0|Zulassen, dass der Benutzer festgelegt wird.|
+|"HttpOnly"|1|Nur HTTP, kein Peering|
+|httpWithPeeringNat|2|Betriebssystemstandard – http-Überblendung mit Peering hinter demselben Netzwerkadressübersetzer|
+|httpWithPeeringPrivateGroup|3|HTTP-Überblendung mit Peering über eine private Gruppe hinweg|
+|httpWithInternetPeering|4|HTTP-Blended mit Internet-Peering|
+|simpleDownload|99|Einfacher Downloadmodus ohne Peering|
+|bypassMode|100|Umgehungsmodus. Verwenden Sie keine BereitstellungsOptimierung und verwenden Sie stattdessen BITS.|
 
 
 

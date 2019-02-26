@@ -1,23 +1,23 @@
 ---
 title: MobileAppInstallSummary aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines MobileAppInstallSummary-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines mobileAppInstallSummary-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1975e8dae02876f6d083279e814f5199530aa1ab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6065083d5ceb5892a95a6b12bc99657eca7d3eeb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413297"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152955"
 ---
 # <a name="update-mobileappinstallsummary"></a>MobileAppInstallSummary aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.
+Aktualisieren der Eigenschaften eines [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,34 +38,34 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|installedDeviceCount|Int32|Anzahl der Geräte, die diese app erfolgreich installiert haben.|
-|failedDeviceCount|Int32|Anzahl der Geräte, die fehlgeschlagen sind, um diese app zu installieren.|
-|notApplicableDeviceCount|Int32|Anzahl der Geräte, die für diese app nicht zutreffen.|
-|notInstalledDeviceCount|Int32|Anzahl der Geräte, die diese app installiert nicht vorhanden ist.|
-|pendingInstallDeviceCount|Int32|Anzahl der Geräte, die diese app installieren benachrichtigt wurden.|
-|installedUserCount|Int32|Anzahl der Benutzer, deren Geräte alle erfolgreich ausgeführt wurden, um diese app zu installieren.|
-|failedUserCount|Int32|Anzahl der Benutzer, die 1 haben oder weitere Gerät, deren Installation diese app fehlschlug.|
-|notApplicableUserCount|Int32|Anzahl der Benutzer, deren Geräte alle nicht zutreffend für diese app waren.|
-|notInstalledUserCount|Int32|Anzahl der Benutzer mit 1 oder mehrere Geräte, die diese app nicht installiert haben.|
-|pendingInstallUserCount|Int32|Anzahl der Benutzer, die 1 haben oder weitere Geräte, die diese app installieren und 0 Geräte mit Fehlern benachrichtigt wurden.|
+|installedDeviceCount|Int32|Die Anzahl der Geräte, die diese APP erfolgreich installiert haben.|
+|failedDeviceCount|Int32|Anzahl der Geräte, die diese APP nicht installiert haben.|
+|notApplicableDeviceCount|Int32|Die Anzahl der Geräte, die für diese APP nicht anwendbar sind.|
+|notInstalledDeviceCount|Int32|Anzahl der Geräte, auf denen diese APP nicht installiert ist.|
+|pendingInstallDeviceCount|Int32|Anzahl der Geräte, die zur Installation dieser APP benachrichtigt wurden.|
+|installedUserCount|Int32|Die Anzahl der Benutzer, deren Geräte alle für die Installation dieser APP erfolgreich waren.|
+|failedUserCount|Int32|Die Anzahl der Benutzer, die über ein Gerät verfügen, für das diese APP nicht installiert werden konnte.|
+|notApplicableUserCount|Int32|Die Anzahl der Benutzer, deren Geräte für diese APP nicht anwendbar waren.|
+|notInstalledUserCount|Int32|Die Anzahl von Benutzern, die über 1 oder mehr Geräte verfügen, die diese APP nicht installiert haben.|
+|pendingInstallUserCount|Int32|Die Anzahl der Benutzer mit mindestens 1 Gerät, die zur Installation dieser APP benachrichtigt wurden und über 0 Geräte mit Fehlern verfügen.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

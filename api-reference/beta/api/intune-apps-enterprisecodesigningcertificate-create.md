@@ -1,23 +1,23 @@
 ---
-title: Erstellen von enterpriseCodeSigningCertificate
-description: Erstellen eines neuen EnterpriseCodeSigningCertificate-Objekts.
-localization_priority: Normal
+title: EnterpriseCodeSigningCertificate erstellen
+description: Erstellen eines neuen enterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5ba50739903fce6e462f5c1a2602a4a61221eb3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 20b65d8b1eda5eab4bdd3e497eb6d505753f04de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402552"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173101"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a>Erstellen von enterpriseCodeSigningCertificate
+# <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.
+Erstellen eines neuen [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,32 +38,32 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt EnterpriseCodeSigningCertificate eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das enterpriseCodeSigningCertificate-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die EnterpriseCodeSigningCertificate erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der enterpriseCodeSigningCertificate erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|content|Binär|Die Enterprise-Code für Windows-Signaturzertifikat im Format Rohdaten.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Status der bereitgestellt oder nicht bereitgestellt. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
-|subjectName|Zeichenfolge|Der Antragstellername für das Zertifikat.|
-|subject|Zeichenfolge|Der Wert der Betreff für das Zertifikat.|
-|issuerName|Zeichenfolge|Der Name der Aussteller für das Zertifikat.|
-|Aussteller|Zeichenfolge|Der Wert der Aussteller für das Zertifikat.|
+|content|Binär|Das Windows Enterprise-Code SignierungsZertifikat im RAW-Datenformat.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Zertifikat Status, der für die Einrichtung oder nicht-Einrichtung vorgesehen ist. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
+|subjectName|Zeichenfolge|Der AntragsTeller Name für das Zertifikat.|
+|Betreff|Zeichenfolge|Der Subject-Wert für das Zertifikat.|
+|issuerName|Zeichenfolge|Der Aussteller Name für das Zertifikat.|
+|Aussteller|Zeichenfolge|Der Aussteller Wert für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
-|uploadDateTime|DateTimeOffset|Das Datum-Uhrzeit des Zertifikats CodeSigning, wenn diese hochgeladen wird.|
+|uploadDateTime|DateTimeOffset|Die Datum-Uhrzeit der mitGestaltung von CERT beim Hochladen.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

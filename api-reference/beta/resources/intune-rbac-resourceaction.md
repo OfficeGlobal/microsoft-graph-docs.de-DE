@@ -1,28 +1,28 @@
 ---
 title: resourceAction-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5442ed8ee55005b1261da09d999e9c27053276d2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d229a6d4d8b514cbf092efb224ff09dfb0c78ad4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415264"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157624"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|allowedResourceActions|Zeichenfolgenauflistung|Zulässige Aktionen|
+|allowedResourceActions|String collection|Zulässige Aktionen|
 |notAllowedResourceActions|Zeichenfolgenauflistung|Nicht zulässige Aktionen|
 
 ## <a name="relationships"></a>Beziehungen

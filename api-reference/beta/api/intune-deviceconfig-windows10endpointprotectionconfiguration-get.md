@@ -1,21 +1,21 @@
 ---
 title: Abrufen von „windows10EndpointProtectionConfiguration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs windows10EndpointProtectionConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02154edb6b16e76e9908d8a31ffe94fc96fd581d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e32791ee6f131c772d25c75c15f746b39bf07249
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172751"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Abrufen von „windows10EndpointProtectionConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
 
@@ -43,9 +43,9 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 27910
+Content-Length: 28223
 
 {
   "value": {
@@ -490,10 +490,13 @@ Content-Length: 27910
     "defenderSecurityCenterDisableNetworkUI": true,
     "defenderSecurityCenterDisableVirusUI": true,
     "defenderSecurityCenterDisableAccountUI": true,
+    "defenderSecurityCenterDisableClearTpmUI": true,
     "defenderSecurityCenterDisableHardwareUI": true,
+    "defenderSecurityCenterDisableNotificationAreaUI": true,
     "defenderSecurityCenterDisableRansomwareUI": true,
     "defenderSecurityCenterDisableSecureBootUI": true,
     "defenderSecurityCenterDisableTroubleshootingUI": true,
+    "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
     "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
     "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
     "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -588,11 +591,13 @@ Content-Length: 27910
       "policyRulesFromGroupPolicyMerged": true,
       "policyRulesFromGroupPolicyNotMerged": true
     },
+    "defenderAdobeReaderLaunchChildProcess": "enable",
     "defenderAttackSurfaceReductionExcludedPaths": [
       "Defender Attack Surface Reduction Excluded Paths value"
     ],
     "defenderOfficeAppsOtherProcessInjectionType": "block",
     "defenderOfficeAppsOtherProcessInjection": "enable",
+    "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
     "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
     "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
     "defenderOfficeAppsLaunchChildProcessType": "block",

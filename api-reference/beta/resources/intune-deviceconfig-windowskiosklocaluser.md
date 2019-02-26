@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp windowsKioskLocalUser
-description: Die Klasse verwendet, um ein lokales Konto für die Konfiguration Kiosk identifizieren
-localization_priority: Normal
+title: windowsKioskLocalUser-Ressourcentyp
+description: Die Klasse, die zum Identifizieren eines lokalen Kontos für die Kiosk Konfiguration verwendet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b808cdb6cb8bb8540a553104d2c00108341a3e14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 94b2397a8bb1a3825af97c5d22f273f622500359
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392668"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173199"
 ---
-# <a name="windowskiosklocaluser-resource-type"></a>Ressourcentyp windowsKioskLocalUser
+# <a name="windowskiosklocaluser-resource-type"></a>windowsKioskLocalUser-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Klasse verwendet, um ein lokales Konto für die Konfiguration Kiosk identifizieren
+Die Klasse, die zum Identifizieren eines lokalen Kontos für die Kiosk Konfiguration verwendet wird.
 
 
-Erbt vom [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+Erbt von [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userName|Zeichenfolge|Der lokale Benutzer, der mit dieser Konfiguration Kiosk gesperrt wird|
+|userName|Zeichenfolge|Der lokale Benutzer, der für diese Kiosk Konfiguration gesperrt wird|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,31 +1,32 @@
 ---
-title: RatingIrelandTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Irland
+title: ratingIrelandTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Irland
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb03562a32fa9a8d41ea0d68cf7cd5cf5416ac0e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5730f3be21aa18465ab7829b49dc098c122329b9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967308"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252623"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a>RatingIrelandTelevisionType Enum-Typ
+# <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Irland
+TV-Inhalts Klassifikations Bezeichnungen in Irland
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|Allgemeine|2|Die Klassifizierung GA eignet sich für alle Benutzergruppen|
-|Untergeordnetes Element|3|Die Kapitel Klassifizierung eignet sich für untergeordnete Elemente|
-|youngAdults|4|Die Klassifizierung YA eignet sich für Teenager|
-|parentalSupervision|5|PS-Klassifizierung invites Eltern und Aufsichtspersonen, Einschränkung untergeordnete Elemente Access berücksichtigt werden sollten|
-|Erfahrungswerte|6|Die Klassifizierung MA eignet sich für Erwachsene|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|allgemeine|2|Die GA-Klassifikation eignet sich für alle Zielgruppen|
+|Untergeordnetes Element|3|Die CH-Klassifikation eignet sich für Kinder|
+|youngAdults|4|Die YA-Klassifizierung eignet sich für Teenager-Zielgruppen|
+|parentalSupervision|5|Die PS-Klassifikation lädt Eltern und Erziehungsberechtigte ein, den Zugriff von Kindern mit Einschränkungen zu prüfen.|
+|Reifen|6|Die MA-Klassifikation eignet sich für Erwachsene|
 
 
 
