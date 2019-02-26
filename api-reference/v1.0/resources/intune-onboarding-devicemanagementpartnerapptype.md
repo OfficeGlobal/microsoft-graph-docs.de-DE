@@ -1,27 +1,28 @@
 ---
-title: DeviceManagementPartnerAppType Enum-Typ
+title: deviceManagementPartnerAppType-Enumerationstyp
 description: Partner-App-Typ.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 683846129f63a2185772bb3b400fc4abd3d7b1cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d3ff9fe66a987b0ae460724f36485839b97ff933
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990173"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259948"
 ---
-# <a name="devicemanagementpartnerapptype-enum-type"></a><span data-ttu-id="b4392-103">DeviceManagementPartnerAppType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="b4392-103">deviceManagementPartnerAppType enum type</span></span>
+# <a name="devicemanagementpartnerapptype-enum-type"></a><span data-ttu-id="1955d-103">deviceManagementPartnerAppType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="1955d-103">deviceManagementPartnerAppType enum type</span></span>
 
-> <span data-ttu-id="b4392-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="b4392-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1955d-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="1955d-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b4392-105">Partner-App-Typ.</span><span class="sxs-lookup"><span data-stu-id="b4392-105">Partner App Type.</span></span>
-## <a name="members"></a><span data-ttu-id="b4392-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="b4392-106">Members</span></span>
-|<span data-ttu-id="b4392-107">Element</span><span class="sxs-lookup"><span data-stu-id="b4392-107">Member</span></span>|<span data-ttu-id="b4392-108">Wert</span><span class="sxs-lookup"><span data-stu-id="b4392-108">Value</span></span>|<span data-ttu-id="b4392-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b4392-109">Description</span></span>|
+<span data-ttu-id="1955d-105">Partner-App-Typ.</span><span class="sxs-lookup"><span data-stu-id="1955d-105">Partner App Type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="1955d-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="1955d-106">Members</span></span>
+|<span data-ttu-id="1955d-107">Element</span><span class="sxs-lookup"><span data-stu-id="1955d-107">Member</span></span>|<span data-ttu-id="1955d-108">Wert</span><span class="sxs-lookup"><span data-stu-id="1955d-108">Value</span></span>|<span data-ttu-id="1955d-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1955d-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b4392-110">unknown</span><span class="sxs-lookup"><span data-stu-id="b4392-110">unknown</span></span>|<span data-ttu-id="b4392-111">0</span><span class="sxs-lookup"><span data-stu-id="b4392-111">0</span></span>|<span data-ttu-id="b4392-112">Partner-App-Typ ist unbekannt.</span><span class="sxs-lookup"><span data-stu-id="b4392-112">Partner App type is unknown.</span></span>|
-|<span data-ttu-id="b4392-113">singleTenantApp</span><span class="sxs-lookup"><span data-stu-id="b4392-113">singleTenantApp</span></span>|<span data-ttu-id="b4392-114">1</span><span class="sxs-lookup"><span data-stu-id="b4392-114">1</span></span>|<span data-ttu-id="b4392-115">Partner App ist mit einem einzelnen Mandanten in AAD.</span><span class="sxs-lookup"><span data-stu-id="b4392-115">Partner App is Single tenant in AAD.</span></span>|
-|<span data-ttu-id="b4392-116">multiTenantApp</span><span class="sxs-lookup"><span data-stu-id="b4392-116">multiTenantApp</span></span>|<span data-ttu-id="b4392-117">2</span><span class="sxs-lookup"><span data-stu-id="b4392-117">2</span></span>|<span data-ttu-id="b4392-118">Partner App ist mit mehreren Mandanten in AAD.</span><span class="sxs-lookup"><span data-stu-id="b4392-118">Partner App is Multi tenant in AAD.</span></span>|
+|<span data-ttu-id="1955d-110">unknown</span><span class="sxs-lookup"><span data-stu-id="1955d-110">unknown</span></span>|<span data-ttu-id="1955d-111">0</span><span class="sxs-lookup"><span data-stu-id="1955d-111">0</span></span>|<span data-ttu-id="1955d-112">Der Partner-App-Typ ist unbekannt.</span><span class="sxs-lookup"><span data-stu-id="1955d-112">Partner App type is unknown.</span></span>|
+|<span data-ttu-id="1955d-113">singleTenantApp</span><span class="sxs-lookup"><span data-stu-id="1955d-113">singleTenantApp</span></span>|<span data-ttu-id="1955d-114">1</span><span class="sxs-lookup"><span data-stu-id="1955d-114">1</span></span>|<span data-ttu-id="1955d-115">Die Partner-APP ist ein einzelner Mandant in AAD.</span><span class="sxs-lookup"><span data-stu-id="1955d-115">Partner App is Single tenant in AAD.</span></span>|
+|<span data-ttu-id="1955d-116">multiTenantApp</span><span class="sxs-lookup"><span data-stu-id="1955d-116">multiTenantApp</span></span>|<span data-ttu-id="1955d-117">2</span><span class="sxs-lookup"><span data-stu-id="1955d-117">2</span></span>|<span data-ttu-id="1955d-118">Die Partner-APP ist Multi-Mandant in AAD.</span><span class="sxs-lookup"><span data-stu-id="1955d-118">Partner App is Multi tenant in AAD.</span></span>|
 
 
 

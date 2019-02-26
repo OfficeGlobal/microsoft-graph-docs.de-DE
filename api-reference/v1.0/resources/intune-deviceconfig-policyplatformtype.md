@@ -1,32 +1,33 @@
 ---
-title: PolicyPlatformType Enum-Typ
-description: Suppoorted Plattformtypen für Richtlinien.
+title: policyPlatformType-Enumerationstyp
+description: Suppoorted-Plattformtypen für Richtlinien.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6287fb458f0650e70f7767a646e36e8a3a64337e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 757cc2aa3b5e5b27a0b36d2d077da1c7a66f35ce
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917370"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260599"
 ---
-# <a name="policyplatformtype-enum-type"></a><span data-ttu-id="52877-103">PolicyPlatformType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="52877-103">policyPlatformType enum type</span></span>
+# <a name="policyplatformtype-enum-type"></a><span data-ttu-id="f55ef-103">policyPlatformType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="f55ef-103">policyPlatformType enum type</span></span>
 
-> <span data-ttu-id="52877-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="52877-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f55ef-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="f55ef-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="52877-105">Suppoorted Plattformtypen für Richtlinien.</span><span class="sxs-lookup"><span data-stu-id="52877-105">Suppoorted platform types for policies.</span></span>
-## <a name="members"></a><span data-ttu-id="52877-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="52877-106">Members</span></span>
-|<span data-ttu-id="52877-107">Element</span><span class="sxs-lookup"><span data-stu-id="52877-107">Member</span></span>|<span data-ttu-id="52877-108">Wert</span><span class="sxs-lookup"><span data-stu-id="52877-108">Value</span></span>|<span data-ttu-id="52877-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="52877-109">Description</span></span>|
+<span data-ttu-id="f55ef-105">Suppoorted-Plattformtypen für Richtlinien.</span><span class="sxs-lookup"><span data-stu-id="f55ef-105">Suppoorted platform types for policies.</span></span>
+
+## <a name="members"></a><span data-ttu-id="f55ef-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="f55ef-106">Members</span></span>
+|<span data-ttu-id="f55ef-107">Element</span><span class="sxs-lookup"><span data-stu-id="f55ef-107">Member</span></span>|<span data-ttu-id="f55ef-108">Wert</span><span class="sxs-lookup"><span data-stu-id="f55ef-108">Value</span></span>|<span data-ttu-id="f55ef-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f55ef-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="52877-110">Android (engl.)</span><span class="sxs-lookup"><span data-stu-id="52877-110">android</span></span>|<span data-ttu-id="52877-111">0</span><span class="sxs-lookup"><span data-stu-id="52877-111">0</span></span>|<span data-ttu-id="52877-112">Android.</span><span class="sxs-lookup"><span data-stu-id="52877-112">Android.</span></span>|
-|<span data-ttu-id="52877-113">iOS</span><span class="sxs-lookup"><span data-stu-id="52877-113">iOS</span></span>|<span data-ttu-id="52877-114">2</span><span class="sxs-lookup"><span data-stu-id="52877-114">2</span></span>|<span data-ttu-id="52877-115">iOS.</span><span class="sxs-lookup"><span data-stu-id="52877-115">iOS.</span></span>|
-|<span data-ttu-id="52877-116">Mac OS</span><span class="sxs-lookup"><span data-stu-id="52877-116">macOS</span></span>|<span data-ttu-id="52877-117">3</span><span class="sxs-lookup"><span data-stu-id="52877-117">3</span></span>|<span data-ttu-id="52877-118">Mac OS.</span><span class="sxs-lookup"><span data-stu-id="52877-118">MacOS.</span></span>|
-|<span data-ttu-id="52877-119">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="52877-119">windowsPhone81</span></span>|<span data-ttu-id="52877-120">4</span><span class="sxs-lookup"><span data-stu-id="52877-120">4</span></span>|<span data-ttu-id="52877-121">WindowsPhone 8.1.</span><span class="sxs-lookup"><span data-stu-id="52877-121">WindowsPhone 8.1.</span></span>|
-|<span data-ttu-id="52877-122">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="52877-122">windows81AndLater</span></span>|<span data-ttu-id="52877-123">5</span><span class="sxs-lookup"><span data-stu-id="52877-123">5</span></span>|<span data-ttu-id="52877-124">Windows 8.1 und höher</span><span class="sxs-lookup"><span data-stu-id="52877-124">Windows 8.1 and later</span></span>|
-|<span data-ttu-id="52877-125">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="52877-125">windows10AndLater</span></span>|<span data-ttu-id="52877-126">6</span><span class="sxs-lookup"><span data-stu-id="52877-126">6</span></span>|<span data-ttu-id="52877-127">Windows 10 und höher.</span><span class="sxs-lookup"><span data-stu-id="52877-127">Windows 10 and later.</span></span>|
-|<span data-ttu-id="52877-128">androidWorkProfile</span><span class="sxs-lookup"><span data-stu-id="52877-128">androidWorkProfile</span></span>|<span data-ttu-id="52877-129">7</span><span class="sxs-lookup"><span data-stu-id="52877-129">7</span></span>|<span data-ttu-id="52877-130">AndroidWorkProfile.</span><span class="sxs-lookup"><span data-stu-id="52877-130">AndroidWorkProfile.</span></span>|
-|<span data-ttu-id="52877-131">all</span><span class="sxs-lookup"><span data-stu-id="52877-131">all</span></span>|<span data-ttu-id="52877-132">100</span><span class="sxs-lookup"><span data-stu-id="52877-132">100</span></span>|<span data-ttu-id="52877-133">Alle Plattformen.</span><span class="sxs-lookup"><span data-stu-id="52877-133">All platforms.</span></span>|
+|<span data-ttu-id="f55ef-110">Android</span><span class="sxs-lookup"><span data-stu-id="f55ef-110">android</span></span>|<span data-ttu-id="f55ef-111">0</span><span class="sxs-lookup"><span data-stu-id="f55ef-111">0</span></span>|<span data-ttu-id="f55ef-112">Android.</span><span class="sxs-lookup"><span data-stu-id="f55ef-112">Android.</span></span>|
+|<span data-ttu-id="f55ef-113">iOS</span><span class="sxs-lookup"><span data-stu-id="f55ef-113">iOS</span></span>|<span data-ttu-id="f55ef-114">2</span><span class="sxs-lookup"><span data-stu-id="f55ef-114">2</span></span>|<span data-ttu-id="f55ef-115">IOS.</span><span class="sxs-lookup"><span data-stu-id="f55ef-115">iOS.</span></span>|
+|<span data-ttu-id="f55ef-116">macOS</span><span class="sxs-lookup"><span data-stu-id="f55ef-116">macOS</span></span>|<span data-ttu-id="f55ef-117">3</span><span class="sxs-lookup"><span data-stu-id="f55ef-117">3</span></span>|<span data-ttu-id="f55ef-118">MacOS.</span><span class="sxs-lookup"><span data-stu-id="f55ef-118">MacOS.</span></span>|
+|<span data-ttu-id="f55ef-119">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="f55ef-119">windowsPhone81</span></span>|<span data-ttu-id="f55ef-120">4</span><span class="sxs-lookup"><span data-stu-id="f55ef-120">4</span></span>|<span data-ttu-id="f55ef-121">WindowsPhone 8,1.</span><span class="sxs-lookup"><span data-stu-id="f55ef-121">WindowsPhone 8.1.</span></span>|
+|<span data-ttu-id="f55ef-122">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="f55ef-122">windows81AndLater</span></span>|<span data-ttu-id="f55ef-123">5</span><span class="sxs-lookup"><span data-stu-id="f55ef-123">5</span></span>|<span data-ttu-id="f55ef-124">Windows 8,1 und höher</span><span class="sxs-lookup"><span data-stu-id="f55ef-124">Windows 8.1 and later</span></span>|
+|<span data-ttu-id="f55ef-125">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="f55ef-125">windows10AndLater</span></span>|<span data-ttu-id="f55ef-126">6</span><span class="sxs-lookup"><span data-stu-id="f55ef-126">6</span></span>|<span data-ttu-id="f55ef-127">Windows 10 und höher.</span><span class="sxs-lookup"><span data-stu-id="f55ef-127">Windows 10 and later.</span></span>|
+|<span data-ttu-id="f55ef-128">androidWorkProfile</span><span class="sxs-lookup"><span data-stu-id="f55ef-128">androidWorkProfile</span></span>|<span data-ttu-id="f55ef-129">7</span><span class="sxs-lookup"><span data-stu-id="f55ef-129">7</span></span>|<span data-ttu-id="f55ef-130">AndroidWorkProfile.</span><span class="sxs-lookup"><span data-stu-id="f55ef-130">AndroidWorkProfile.</span></span>|
+|<span data-ttu-id="f55ef-131">all</span><span class="sxs-lookup"><span data-stu-id="f55ef-131">all</span></span>|<span data-ttu-id="f55ef-132">100</span><span class="sxs-lookup"><span data-stu-id="f55ef-132">100</span></span>|<span data-ttu-id="f55ef-133">Alle Plattformen.</span><span class="sxs-lookup"><span data-stu-id="f55ef-133">All platforms.</span></span>|
 
 
 

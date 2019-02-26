@@ -1,30 +1,30 @@
 ---
-title: UsernameSource Enum-Typ
-description: UserName-Quelle.
-localization_priority: Normal
+title: usernameSource-Enumerationstyp
+description: Username-Quelle.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98a1d9860a1c4e6610f0ad750a573c656fe6219e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 001fb659c86b3403e6a206daa72f9d12d8bdb383
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399514"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166234"
 ---
-# <a name="usernamesource-enum-type"></a><span data-ttu-id="46f63-103">UsernameSource Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="46f63-103">usernameSource enum type</span></span>
+# <a name="usernamesource-enum-type"></a><span data-ttu-id="79225-103">usernameSource-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="79225-103">usernameSource enum type</span></span>
 
-> <span data-ttu-id="46f63-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="46f63-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="46f63-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="46f63-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="79225-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="79225-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="46f63-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="46f63-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="79225-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="79225-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="46f63-107">UserName-Quelle.</span><span class="sxs-lookup"><span data-stu-id="46f63-107">Username source.</span></span>
+<span data-ttu-id="79225-106">Username-Quelle.</span><span class="sxs-lookup"><span data-stu-id="79225-106">Username source.</span></span>
 
-## <a name="members"></a><span data-ttu-id="46f63-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="46f63-108">Members</span></span>
-|<span data-ttu-id="46f63-109">Member</span><span class="sxs-lookup"><span data-stu-id="46f63-109">Member</span></span>|<span data-ttu-id="46f63-110">Wert</span><span class="sxs-lookup"><span data-stu-id="46f63-110">Value</span></span>|<span data-ttu-id="46f63-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="46f63-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="79225-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="79225-107">Members</span></span>
+|<span data-ttu-id="79225-108">Element</span><span class="sxs-lookup"><span data-stu-id="79225-108">Member</span></span>|<span data-ttu-id="79225-109">Wert</span><span class="sxs-lookup"><span data-stu-id="79225-109">Value</span></span>|<span data-ttu-id="79225-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="79225-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="46f63-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="46f63-112">userPrincipalName</span></span>|<span data-ttu-id="46f63-113">0</span><span class="sxs-lookup"><span data-stu-id="46f63-113">0</span></span>|<span data-ttu-id="46f63-114">Prinzipalnamen des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="46f63-114">User principal name.</span></span>|
-|<span data-ttu-id="46f63-115">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="46f63-115">primarySmtpAddress</span></span>|<span data-ttu-id="46f63-116">1</span><span class="sxs-lookup"><span data-stu-id="46f63-116">1</span></span>|<span data-ttu-id="46f63-117">Primäre SMTP-Adresse.</span><span class="sxs-lookup"><span data-stu-id="46f63-117">Primary SMTP address.</span></span>|
-|<span data-ttu-id="46f63-118">samAccountName</span><span class="sxs-lookup"><span data-stu-id="46f63-118">samAccountName</span></span>|<span data-ttu-id="46f63-119">2</span><span class="sxs-lookup"><span data-stu-id="46f63-119">2</span></span>|<span data-ttu-id="46f63-120">Der Benutzer Sam-Kontoname.</span><span class="sxs-lookup"><span data-stu-id="46f63-120">The user sam account name.</span></span>|
+|<span data-ttu-id="79225-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="79225-111">userPrincipalName</span></span>|<span data-ttu-id="79225-112">0</span><span class="sxs-lookup"><span data-stu-id="79225-112">0</span></span>|<span data-ttu-id="79225-113">Benutzerprinzipalname.</span><span class="sxs-lookup"><span data-stu-id="79225-113">User principal name.</span></span>|
+|<span data-ttu-id="79225-114">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="79225-114">primarySmtpAddress</span></span>|<span data-ttu-id="79225-115">1</span><span class="sxs-lookup"><span data-stu-id="79225-115">1</span></span>|<span data-ttu-id="79225-116">Primäre SMTP-Adresse.</span><span class="sxs-lookup"><span data-stu-id="79225-116">Primary SMTP address.</span></span>|
+|<span data-ttu-id="79225-117">samAccountName</span><span class="sxs-lookup"><span data-stu-id="79225-117">samAccountName</span></span>|<span data-ttu-id="79225-118">2</span><span class="sxs-lookup"><span data-stu-id="79225-118">2</span></span>|<span data-ttu-id="79225-119">Der Benutzername des SAM-Kontos.</span><span class="sxs-lookup"><span data-stu-id="79225-119">The user sam account name.</span></span>|
 
 
 

@@ -1,31 +1,31 @@
 ---
-title: ApplicationGuardEnabledOptions Enum-Typ
+title: applicationGuardEnabledOptions-Enumerationstyp
 description: Mögliche Werte für ApplicationGuardEnabledOptions
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cee8edec888f8a604f3346cc727aa541a284f3ec
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0954121ca183cf6f189206820770bea57fcb88af
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402132"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142637"
 ---
-# <a name="applicationguardenabledoptions-enum-type"></a><span data-ttu-id="cb8a6-103">ApplicationGuardEnabledOptions Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="cb8a6-103">applicationGuardEnabledOptions enum type</span></span>
+# <a name="applicationguardenabledoptions-enum-type"></a><span data-ttu-id="af3af-103">applicationGuardEnabledOptions-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="af3af-103">applicationGuardEnabledOptions enum type</span></span>
 
-> <span data-ttu-id="cb8a6-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="cb8a6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cb8a6-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="cb8a6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="af3af-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="af3af-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cb8a6-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cb8a6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="af3af-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="af3af-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cb8a6-107">Mögliche Werte für ApplicationGuardEnabledOptions</span><span class="sxs-lookup"><span data-stu-id="cb8a6-107">Possible values for ApplicationGuardEnabledOptions</span></span>
+<span data-ttu-id="af3af-106">Mögliche Werte für ApplicationGuardEnabledOptions</span><span class="sxs-lookup"><span data-stu-id="af3af-106">Possible values for ApplicationGuardEnabledOptions</span></span>
 
-## <a name="members"></a><span data-ttu-id="cb8a6-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="cb8a6-108">Members</span></span>
-|<span data-ttu-id="cb8a6-109">Member</span><span class="sxs-lookup"><span data-stu-id="cb8a6-109">Member</span></span>|<span data-ttu-id="cb8a6-110">Wert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-110">Value</span></span>|<span data-ttu-id="cb8a6-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cb8a6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="af3af-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="af3af-107">Members</span></span>
+|<span data-ttu-id="af3af-108">Element</span><span class="sxs-lookup"><span data-stu-id="af3af-108">Member</span></span>|<span data-ttu-id="af3af-109">Wert</span><span class="sxs-lookup"><span data-stu-id="af3af-109">Value</span></span>|<span data-ttu-id="af3af-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="af3af-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cb8a6-112">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-112">notConfigured</span></span>|<span data-ttu-id="cb8a6-113">0</span><span class="sxs-lookup"><span data-stu-id="cb8a6-113">0</span></span>|<span data-ttu-id="cb8a6-114">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-114">Not Configured</span></span>|
-|<span data-ttu-id="cb8a6-115">enabledForEdge</span><span class="sxs-lookup"><span data-stu-id="cb8a6-115">enabledForEdge</span></span>|<span data-ttu-id="cb8a6-116">1</span><span class="sxs-lookup"><span data-stu-id="cb8a6-116">1</span></span>|<span data-ttu-id="cb8a6-117">Für einen Edgeserver aktiviert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-117">Enabled For Edge</span></span>|
-|<span data-ttu-id="cb8a6-118">enabledForOffice</span><span class="sxs-lookup"><span data-stu-id="cb8a6-118">enabledForOffice</span></span>|<span data-ttu-id="cb8a6-119">2</span><span class="sxs-lookup"><span data-stu-id="cb8a6-119">2</span></span>|<span data-ttu-id="cb8a6-120">Für Office aktiviert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-120">Enabled For Office</span></span>|
-|<span data-ttu-id="cb8a6-121">enabledForEdgeAndOffice</span><span class="sxs-lookup"><span data-stu-id="cb8a6-121">enabledForEdgeAndOffice</span></span>|<span data-ttu-id="cb8a6-122">3</span><span class="sxs-lookup"><span data-stu-id="cb8a6-122">3</span></span>|<span data-ttu-id="cb8a6-123">Für die Edge- und Office aktiviert</span><span class="sxs-lookup"><span data-stu-id="cb8a6-123">Enabled For Edge And Office</span></span>|
+|<span data-ttu-id="af3af-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="af3af-111">notConfigured</span></span>|<span data-ttu-id="af3af-112">0</span><span class="sxs-lookup"><span data-stu-id="af3af-112">0</span></span>|<span data-ttu-id="af3af-113">Nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="af3af-113">Not Configured</span></span>|
+|<span data-ttu-id="af3af-114">enabledForEdge</span><span class="sxs-lookup"><span data-stu-id="af3af-114">enabledForEdge</span></span>|<span data-ttu-id="af3af-115">1</span><span class="sxs-lookup"><span data-stu-id="af3af-115">1</span></span>|<span data-ttu-id="af3af-116">Aktiviert für Edgeserver</span><span class="sxs-lookup"><span data-stu-id="af3af-116">Enabled For Edge</span></span>|
+|<span data-ttu-id="af3af-117">enabledForOffice</span><span class="sxs-lookup"><span data-stu-id="af3af-117">enabledForOffice</span></span>|<span data-ttu-id="af3af-118">2</span><span class="sxs-lookup"><span data-stu-id="af3af-118">2</span></span>|<span data-ttu-id="af3af-119">Aktiviert für Office</span><span class="sxs-lookup"><span data-stu-id="af3af-119">Enabled For Office</span></span>|
+|<span data-ttu-id="af3af-120">enabledForEdgeAndOffice</span><span class="sxs-lookup"><span data-stu-id="af3af-120">enabledForEdgeAndOffice</span></span>|<span data-ttu-id="af3af-121">3</span><span class="sxs-lookup"><span data-stu-id="af3af-121">3</span></span>|<span data-ttu-id="af3af-122">Aktiviert für Edge und Office</span><span class="sxs-lookup"><span data-stu-id="af3af-122">Enabled For Edge And Office</span></span>|
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: AndroidEapType Enum-Typ
-description: Erweiterbare-Protokoll (EAP) Konfiguration Authentifizierungstypen.
-localization_priority: Normal
+title: androidEapType-Enumerationstyp
+description: EAP-Konfigurationstypen (Extensible Authentication Protocol).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 911ab8d69a40b7c12750c0164795c059f3d92475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 688c0003d1ec1da93eac01323ad4c622d5628745
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400165"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173696"
 ---
-# <a name="androideaptype-enum-type"></a><span data-ttu-id="f317f-103">AndroidEapType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="f317f-103">androidEapType enum type</span></span>
+# <a name="androideaptype-enum-type"></a><span data-ttu-id="4ab01-103">androidEapType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="4ab01-103">androidEapType enum type</span></span>
 
-> <span data-ttu-id="f317f-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="f317f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f317f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f317f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4ab01-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4ab01-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f317f-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="f317f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4ab01-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="4ab01-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f317f-107">Erweiterbare-Protokoll (EAP) Konfiguration Authentifizierungstypen.</span><span class="sxs-lookup"><span data-stu-id="f317f-107">Extensible Authentication Protocol (EAP) Configuration Types.</span></span>
+<span data-ttu-id="4ab01-106">EAP-Konfigurationstypen (Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="4ab01-106">Extensible Authentication Protocol (EAP) Configuration Types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="f317f-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="f317f-108">Members</span></span>
-|<span data-ttu-id="f317f-109">Member</span><span class="sxs-lookup"><span data-stu-id="f317f-109">Member</span></span>|<span data-ttu-id="f317f-110">Wert</span><span class="sxs-lookup"><span data-stu-id="f317f-110">Value</span></span>|<span data-ttu-id="f317f-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f317f-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="4ab01-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="4ab01-107">Members</span></span>
+|<span data-ttu-id="4ab01-108">Element</span><span class="sxs-lookup"><span data-stu-id="4ab01-108">Member</span></span>|<span data-ttu-id="4ab01-109">Wert</span><span class="sxs-lookup"><span data-stu-id="4ab01-109">Value</span></span>|<span data-ttu-id="4ab01-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4ab01-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f317f-112">eapTls</span><span class="sxs-lookup"><span data-stu-id="f317f-112">eapTls</span></span>|<span data-ttu-id="f317f-113">13</span><span class="sxs-lookup"><span data-stu-id="f317f-113">13</span></span>|<span data-ttu-id="f317f-114">Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="f317f-114">Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).</span></span>|
-|<span data-ttu-id="f317f-115">eapTtls</span><span class="sxs-lookup"><span data-stu-id="f317f-115">eapTtls</span></span>|<span data-ttu-id="f317f-116">21</span><span class="sxs-lookup"><span data-stu-id="f317f-116">21</span></span>|<span data-ttu-id="f317f-117">Extensible Authentication Protocol getunnelt Transport Layer Security (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="f317f-117">Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
-|<span data-ttu-id="f317f-118">PEAP</span><span class="sxs-lookup"><span data-stu-id="f317f-118">peap</span></span>|<span data-ttu-id="f317f-119">25</span><span class="sxs-lookup"><span data-stu-id="f317f-119">25</span></span>|<span data-ttu-id="f317f-120">Extensible Authentication-Protokoll (PEAP) geschützt.</span><span class="sxs-lookup"><span data-stu-id="f317f-120">Protected Extensible Authentication Protocol (PEAP).</span></span>|
+|<span data-ttu-id="4ab01-111">eapTls</span><span class="sxs-lookup"><span data-stu-id="4ab01-111">eapTls</span></span>|<span data-ttu-id="4ab01-112">13</span><span class="sxs-lookup"><span data-stu-id="4ab01-112">13</span></span>|<span data-ttu-id="4ab01-113">Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="4ab01-113">Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).</span></span>|
+|<span data-ttu-id="4ab01-114">eapTtls</span><span class="sxs-lookup"><span data-stu-id="4ab01-114">eapTtls</span></span>|<span data-ttu-id="4ab01-115">21</span><span class="sxs-lookup"><span data-stu-id="4ab01-115">21</span></span>|<span data-ttu-id="4ab01-116">Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="4ab01-116">Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
+|<span data-ttu-id="4ab01-117">PEAP</span><span class="sxs-lookup"><span data-stu-id="4ab01-117">peap</span></span>|<span data-ttu-id="4ab01-118">25</span><span class="sxs-lookup"><span data-stu-id="4ab01-118">25</span></span>|<span data-ttu-id="4ab01-119">PEAP (Protected Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="4ab01-119">Protected Extensible Authentication Protocol (PEAP).</span></span>|
 
 
 

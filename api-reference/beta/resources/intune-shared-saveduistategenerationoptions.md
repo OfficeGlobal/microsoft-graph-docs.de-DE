@@ -1,29 +1,29 @@
 ---
-title: SavedUIStateGenerationOptions Enum-Typ
+title: savedUIStateGenerationOptions-Enumerationstyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16c0211d5c2adeb23ec3f035d4ffd628eb917bb2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: be1407f6ff10a1f8bc5d4e91f5a76bf8324e14b5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142336"
 ---
-# <a name="saveduistategenerationoptions-enum-type"></a><span data-ttu-id="8ca0a-103">SavedUIStateGenerationOptions Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="8ca0a-103">savedUIStateGenerationOptions enum type</span></span>
+# <a name="saveduistategenerationoptions-enum-type"></a><span data-ttu-id="21cac-103">savedUIStateGenerationOptions-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="21cac-103">savedUIStateGenerationOptions enum type</span></span>
 
-> <span data-ttu-id="8ca0a-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="8ca0a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8ca0a-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8ca0a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="21cac-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="21cac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8ca0a-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8ca0a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="21cac-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="21cac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8ca0a-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="8ca0a-107">Not yet documented</span></span>
+<span data-ttu-id="21cac-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="21cac-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="8ca0a-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="8ca0a-108">Members</span></span>
-|<span data-ttu-id="8ca0a-109">Member</span><span class="sxs-lookup"><span data-stu-id="8ca0a-109">Member</span></span>|<span data-ttu-id="8ca0a-110">Wert</span><span class="sxs-lookup"><span data-stu-id="8ca0a-110">Value</span></span>|<span data-ttu-id="8ca0a-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8ca0a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="21cac-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="21cac-107">Members</span></span>
+|<span data-ttu-id="21cac-108">Element</span><span class="sxs-lookup"><span data-stu-id="21cac-108">Member</span></span>|<span data-ttu-id="21cac-109">Wert</span><span class="sxs-lookup"><span data-stu-id="21cac-109">Value</span></span>|<span data-ttu-id="21cac-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="21cac-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8ca0a-112">Keine</span><span class="sxs-lookup"><span data-stu-id="8ca0a-112">none</span></span>|<span data-ttu-id="8ca0a-113">0</span><span class="sxs-lookup"><span data-stu-id="8ca0a-113">0</span></span>|<span data-ttu-id="8ca0a-114">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="8ca0a-114">Not yet documented</span></span>|
-|<span data-ttu-id="8ca0a-115">omitSilverlightPolicyReferences</span><span class="sxs-lookup"><span data-stu-id="8ca0a-115">omitSilverlightPolicyReferences</span></span>|<span data-ttu-id="8ca0a-116">1</span><span class="sxs-lookup"><span data-stu-id="8ca0a-116">1</span></span>|<span data-ttu-id="8ca0a-117">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="8ca0a-117">Not yet documented</span></span>|
+|<span data-ttu-id="21cac-111">Keine</span><span class="sxs-lookup"><span data-stu-id="21cac-111">none</span></span>|<span data-ttu-id="21cac-112">0</span><span class="sxs-lookup"><span data-stu-id="21cac-112">0</span></span>|<span data-ttu-id="21cac-113">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="21cac-113">Not yet documented</span></span>|
+|<span data-ttu-id="21cac-114">omitSilverlightPolicyReferences</span><span class="sxs-lookup"><span data-stu-id="21cac-114">omitSilverlightPolicyReferences</span></span>|<span data-ttu-id="21cac-115">1</span><span class="sxs-lookup"><span data-stu-id="21cac-115">1</span></span>|<span data-ttu-id="21cac-116">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="21cac-116">Not yet documented</span></span>|
 
 
 

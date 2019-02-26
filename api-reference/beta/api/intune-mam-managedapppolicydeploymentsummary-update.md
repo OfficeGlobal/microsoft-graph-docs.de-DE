@@ -1,34 +1,34 @@
 ---
 title: Aktualisieren von „managedAppPolicyDeploymentSummary“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedAppPolicyDeploymentSummary.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f940bac34deca1aa938784eee514b765a78ce64a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a46793ace5d6574740633fdd204bd4d11865ca9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165541"
 ---
-# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="6aba0-103">Aktualisieren von „managedAppPolicyDeploymentSummary“</span><span class="sxs-lookup"><span data-stu-id="6aba0-103">Update managedAppPolicyDeploymentSummary</span></span>
+# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="efcec-103">Aktualisieren von „managedAppPolicyDeploymentSummary“</span><span class="sxs-lookup"><span data-stu-id="efcec-103">Update managedAppPolicyDeploymentSummary</span></span>
 
-> <span data-ttu-id="6aba0-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="6aba0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6aba0-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6aba0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="efcec-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="efcec-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6aba0-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6aba0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="efcec-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="efcec-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6aba0-107">Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="6aba0-107">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+<span data-ttu-id="efcec-106">Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="efcec-106">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6aba0-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="6aba0-108">Prerequisites</span></span>
-<span data-ttu-id="6aba0-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="6aba0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="efcec-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="efcec-107">Prerequisites</span></span>
+<span data-ttu-id="efcec-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="efcec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="6aba0-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6aba0-111">Permission type</span></span>|<span data-ttu-id="6aba0-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6aba0-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="efcec-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="efcec-110">Permission type</span></span>|<span data-ttu-id="efcec-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="efcec-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6aba0-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6aba0-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6aba0-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6aba0-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="6aba0-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6aba0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6aba0-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6aba0-116">Not supported.</span></span>|
-|<span data-ttu-id="6aba0-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6aba0-117">Application</span></span>|<span data-ttu-id="6aba0-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6aba0-118">Not supported.</span></span>|
+|<span data-ttu-id="efcec-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="efcec-112">Delegated (work or school account)</span></span>|<span data-ttu-id="efcec-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efcec-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="efcec-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="efcec-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="efcec-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="efcec-115">Not supported.</span></span>|
+|<span data-ttu-id="efcec-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="efcec-116">Application</span></span>|<span data-ttu-id="efcec-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="efcec-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6aba0-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6aba0-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efcec-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="efcec-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6aba0-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6aba0-120">Request headers</span></span>
-|<span data-ttu-id="6aba0-121">Header</span><span class="sxs-lookup"><span data-stu-id="6aba0-121">Header</span></span>|<span data-ttu-id="6aba0-122">Wert</span><span class="sxs-lookup"><span data-stu-id="6aba0-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="efcec-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="efcec-119">Request headers</span></span>
+|<span data-ttu-id="efcec-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="efcec-120">Header</span></span>|<span data-ttu-id="efcec-121">Wert</span><span class="sxs-lookup"><span data-stu-id="efcec-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6aba0-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="6aba0-123">Authorization</span></span>|<span data-ttu-id="6aba0-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="6aba0-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6aba0-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="6aba0-125">Accept</span></span>|<span data-ttu-id="6aba0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6aba0-126">application/json</span></span>|
+|<span data-ttu-id="efcec-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="efcec-122">Authorization</span></span>|<span data-ttu-id="efcec-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="efcec-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="efcec-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="efcec-124">Accept</span></span>|<span data-ttu-id="efcec-125">application/json</span><span class="sxs-lookup"><span data-stu-id="efcec-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6aba0-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6aba0-127">Request body</span></span>
-<span data-ttu-id="6aba0-128">Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) an.</span><span class="sxs-lookup"><span data-stu-id="6aba0-128">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efcec-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="efcec-126">Request body</span></span>
+<span data-ttu-id="efcec-127">Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) an.</span><span class="sxs-lookup"><span data-stu-id="efcec-127">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
 
-<span data-ttu-id="6aba0-129">In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) erstellen.</span><span class="sxs-lookup"><span data-stu-id="6aba0-129">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
+<span data-ttu-id="efcec-128">In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) erstellen.</span><span class="sxs-lookup"><span data-stu-id="efcec-128">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
 
-|<span data-ttu-id="6aba0-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6aba0-130">Property</span></span>|<span data-ttu-id="6aba0-131">Typ</span><span class="sxs-lookup"><span data-stu-id="6aba0-131">Type</span></span>|<span data-ttu-id="6aba0-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6aba0-132">Description</span></span>|
+|<span data-ttu-id="efcec-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="efcec-129">Property</span></span>|<span data-ttu-id="efcec-130">Typ</span><span class="sxs-lookup"><span data-stu-id="efcec-130">Type</span></span>|<span data-ttu-id="efcec-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="efcec-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6aba0-133">displayName</span><span class="sxs-lookup"><span data-stu-id="6aba0-133">displayName</span></span>|<span data-ttu-id="6aba0-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6aba0-134">String</span></span>|<span data-ttu-id="6aba0-135">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="6aba0-135">Not yet documented</span></span>|
-|<span data-ttu-id="6aba0-136">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="6aba0-136">configurationDeployedUserCount</span></span>|<span data-ttu-id="6aba0-137">Int32</span><span class="sxs-lookup"><span data-stu-id="6aba0-137">Int32</span></span>|<span data-ttu-id="6aba0-138">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="6aba0-138">Not yet documented</span></span>|
-|<span data-ttu-id="6aba0-139">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="6aba0-139">lastRefreshTime</span></span>|<span data-ttu-id="6aba0-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6aba0-140">DateTimeOffset</span></span>|<span data-ttu-id="6aba0-141">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="6aba0-141">Not yet documented</span></span>|
-|<span data-ttu-id="6aba0-142">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="6aba0-142">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="6aba0-143">Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)</span><span class="sxs-lookup"><span data-stu-id="6aba0-143">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="6aba0-144">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="6aba0-144">Not yet documented</span></span>|
-|<span data-ttu-id="6aba0-145">id</span><span class="sxs-lookup"><span data-stu-id="6aba0-145">id</span></span>|<span data-ttu-id="6aba0-146">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6aba0-146">String</span></span>|<span data-ttu-id="6aba0-147">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="6aba0-147">Key of the entity.</span></span>|
-|<span data-ttu-id="6aba0-148">Version</span><span class="sxs-lookup"><span data-stu-id="6aba0-148">version</span></span>|<span data-ttu-id="6aba0-149">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6aba0-149">String</span></span>|<span data-ttu-id="6aba0-150">Version der Entität</span><span class="sxs-lookup"><span data-stu-id="6aba0-150">Version of the entity.</span></span>|
+|<span data-ttu-id="efcec-132">displayName</span><span class="sxs-lookup"><span data-stu-id="efcec-132">displayName</span></span>|<span data-ttu-id="efcec-133">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="efcec-133">String</span></span>|<span data-ttu-id="efcec-134">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="efcec-134">Not yet documented</span></span>|
+|<span data-ttu-id="efcec-135">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="efcec-135">configurationDeployedUserCount</span></span>|<span data-ttu-id="efcec-136">Int32</span><span class="sxs-lookup"><span data-stu-id="efcec-136">Int32</span></span>|<span data-ttu-id="efcec-137">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="efcec-137">Not yet documented</span></span>|
+|<span data-ttu-id="efcec-138">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="efcec-138">lastRefreshTime</span></span>|<span data-ttu-id="efcec-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="efcec-139">DateTimeOffset</span></span>|<span data-ttu-id="efcec-140">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="efcec-140">Not yet documented</span></span>|
+|<span data-ttu-id="efcec-141">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="efcec-141">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="efcec-142">Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)</span><span class="sxs-lookup"><span data-stu-id="efcec-142">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="efcec-143">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="efcec-143">Not yet documented</span></span>|
+|<span data-ttu-id="efcec-144">id</span><span class="sxs-lookup"><span data-stu-id="efcec-144">id</span></span>|<span data-ttu-id="efcec-145">string</span><span class="sxs-lookup"><span data-stu-id="efcec-145">String</span></span>|<span data-ttu-id="efcec-146">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="efcec-146">Key of the entity.</span></span>|
+|<span data-ttu-id="efcec-147">Version</span><span class="sxs-lookup"><span data-stu-id="efcec-147">version</span></span>|<span data-ttu-id="efcec-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="efcec-148">String</span></span>|<span data-ttu-id="efcec-149">Version der Entität</span><span class="sxs-lookup"><span data-stu-id="efcec-149">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6aba0-151">Antwort</span><span class="sxs-lookup"><span data-stu-id="6aba0-151">Response</span></span>
-<span data-ttu-id="6aba0-152">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="6aba0-152">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="efcec-150">Antwort</span><span class="sxs-lookup"><span data-stu-id="efcec-150">Response</span></span>
+<span data-ttu-id="efcec-151">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="efcec-151">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6aba0-153">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6aba0-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="efcec-152">Beispiel</span><span class="sxs-lookup"><span data-stu-id="efcec-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6aba0-154">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6aba0-154">Request</span></span>
-<span data-ttu-id="6aba0-155">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6aba0-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="efcec-153">Anforderung</span><span class="sxs-lookup"><span data-stu-id="efcec-153">Request</span></span>
+<span data-ttu-id="efcec-154">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="efcec-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
@@ -93,8 +93,8 @@ Content-length: 588
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6aba0-156">Antwort</span><span class="sxs-lookup"><span data-stu-id="6aba0-156">Response</span></span>
-<span data-ttu-id="6aba0-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6aba0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="efcec-155">Antwort</span><span class="sxs-lookup"><span data-stu-id="efcec-155">Response</span></span>
+<span data-ttu-id="efcec-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="efcec-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

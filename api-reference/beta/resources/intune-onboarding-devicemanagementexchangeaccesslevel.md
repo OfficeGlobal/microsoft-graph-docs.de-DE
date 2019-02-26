@@ -1,31 +1,31 @@
 ---
-title: DeviceManagementExchangeAccessLevel Enum-Typ
+title: deviceManagementExchangeAccessLevel-Enumerationstyp
 description: Zugriffsebene in Exchange.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d24aedcd5c09de6e56b3870f8c5b111fbb39513
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dc84149f9ca6b178807e4bd70984fe1abfff6a09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414333"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174235"
 ---
-# <a name="devicemanagementexchangeaccesslevel-enum-type"></a><span data-ttu-id="d89ca-103">DeviceManagementExchangeAccessLevel Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="d89ca-103">deviceManagementExchangeAccessLevel enum type</span></span>
+# <a name="devicemanagementexchangeaccesslevel-enum-type"></a><span data-ttu-id="730fb-103">deviceManagementExchangeAccessLevel-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="730fb-103">deviceManagementExchangeAccessLevel enum type</span></span>
 
-> <span data-ttu-id="d89ca-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="d89ca-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d89ca-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d89ca-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="730fb-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="730fb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d89ca-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d89ca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="730fb-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="730fb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d89ca-107">Zugriffsebene in Exchange.</span><span class="sxs-lookup"><span data-stu-id="d89ca-107">Access Level in Exchange.</span></span>
+<span data-ttu-id="730fb-106">Zugriffsebene in Exchange.</span><span class="sxs-lookup"><span data-stu-id="730fb-106">Access Level in Exchange.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d89ca-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="d89ca-108">Members</span></span>
-|<span data-ttu-id="d89ca-109">Member</span><span class="sxs-lookup"><span data-stu-id="d89ca-109">Member</span></span>|<span data-ttu-id="d89ca-110">Wert</span><span class="sxs-lookup"><span data-stu-id="d89ca-110">Value</span></span>|<span data-ttu-id="d89ca-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d89ca-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="730fb-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="730fb-107">Members</span></span>
+|<span data-ttu-id="730fb-108">Element</span><span class="sxs-lookup"><span data-stu-id="730fb-108">Member</span></span>|<span data-ttu-id="730fb-109">Wert</span><span class="sxs-lookup"><span data-stu-id="730fb-109">Value</span></span>|<span data-ttu-id="730fb-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="730fb-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d89ca-112">Keine</span><span class="sxs-lookup"><span data-stu-id="d89ca-112">none</span></span>|<span data-ttu-id="d89ca-113">0</span><span class="sxs-lookup"><span data-stu-id="d89ca-113">0</span></span>|<span data-ttu-id="d89ca-114">Keine gerätezugriffsregel wurde in Exchange konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="d89ca-114">No device access rule has been configured in Exchange.</span></span>|
-|<span data-ttu-id="d89ca-115">zulassen</span><span class="sxs-lookup"><span data-stu-id="d89ca-115">allow</span></span>|<span data-ttu-id="d89ca-116">1</span><span class="sxs-lookup"><span data-stu-id="d89ca-116">1</span></span>|<span data-ttu-id="d89ca-117">Ermöglichen des Gerätezugriffs auf Exchange das an.</span><span class="sxs-lookup"><span data-stu-id="d89ca-117">Allow the device access to Exchange.</span></span>|
-|<span data-ttu-id="d89ca-118">Blockieren</span><span class="sxs-lookup"><span data-stu-id="d89ca-118">block</span></span>|<span data-ttu-id="d89ca-119">2</span><span class="sxs-lookup"><span data-stu-id="d89ca-119">2</span></span>|<span data-ttu-id="d89ca-120">Blockieren Sie das Gerät den Zugriff auf Exchange.</span><span class="sxs-lookup"><span data-stu-id="d89ca-120">Block the device from accessing Exchange.</span></span>|
-|<span data-ttu-id="d89ca-121">Quarantäne</span><span class="sxs-lookup"><span data-stu-id="d89ca-121">quarantine</span></span>|<span data-ttu-id="d89ca-122">3</span><span class="sxs-lookup"><span data-stu-id="d89ca-122">3</span></span>|<span data-ttu-id="d89ca-123">Isolieren Sie das Gerät im Exchange.</span><span class="sxs-lookup"><span data-stu-id="d89ca-123">Quarantine the device in Exchange.</span></span>|
+|<span data-ttu-id="730fb-111">Keine</span><span class="sxs-lookup"><span data-stu-id="730fb-111">none</span></span>|<span data-ttu-id="730fb-112">0</span><span class="sxs-lookup"><span data-stu-id="730fb-112">0</span></span>|<span data-ttu-id="730fb-113">In Exchange wurde keine Gerätezugriffsregel konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="730fb-113">No device access rule has been configured in Exchange.</span></span>|
+|<span data-ttu-id="730fb-114">zulassen</span><span class="sxs-lookup"><span data-stu-id="730fb-114">allow</span></span>|<span data-ttu-id="730fb-115">1</span><span class="sxs-lookup"><span data-stu-id="730fb-115">1</span></span>|<span data-ttu-id="730fb-116">Geräte Zugriff auf Exchange zulassen</span><span class="sxs-lookup"><span data-stu-id="730fb-116">Allow the device access to Exchange.</span></span>|
+|<span data-ttu-id="730fb-117">Block</span><span class="sxs-lookup"><span data-stu-id="730fb-117">block</span></span>|<span data-ttu-id="730fb-118">2</span><span class="sxs-lookup"><span data-stu-id="730fb-118">2</span></span>|<span data-ttu-id="730fb-119">Blockieren des Zugriffs auf Exchange durch das Gerät</span><span class="sxs-lookup"><span data-stu-id="730fb-119">Block the device from accessing Exchange.</span></span>|
+|<span data-ttu-id="730fb-120">Quarantäne</span><span class="sxs-lookup"><span data-stu-id="730fb-120">quarantine</span></span>|<span data-ttu-id="730fb-121">3</span><span class="sxs-lookup"><span data-stu-id="730fb-121">3</span></span>|<span data-ttu-id="730fb-122">Isolieren Sie das Gerät in Exchange.</span><span class="sxs-lookup"><span data-stu-id="730fb-122">Quarantine the device in Exchange.</span></span>|
 
 
 

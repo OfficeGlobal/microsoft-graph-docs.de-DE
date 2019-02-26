@@ -1,32 +1,32 @@
 ---
-title: WindowsDeviceType Enum-Typ
-description: Enthält Eigenschaften für Windows-Gerätetyp.
-localization_priority: Normal
+title: windowsDeviceType-Enumerationstyp
+description: Enthält Eigenschaften für den Windows-Gerätetyp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64bd296224c747e3042e6077bfc54aa5732fef02
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 554cfe0bbcc635ff2713a812a361de7d4922b3b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406325"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171428"
 ---
-# <a name="windowsdevicetype-enum-type"></a><span data-ttu-id="4cc76-103">WindowsDeviceType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="4cc76-103">windowsDeviceType enum type</span></span>
+# <a name="windowsdevicetype-enum-type"></a><span data-ttu-id="01a24-103">windowsDeviceType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="01a24-103">windowsDeviceType enum type</span></span>
 
-> <span data-ttu-id="4cc76-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="4cc76-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4cc76-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4cc76-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="01a24-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="01a24-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4cc76-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="4cc76-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="01a24-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="01a24-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4cc76-107">Enthält Eigenschaften für Windows-Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="4cc76-107">Contains properties for Windows device type.</span></span>
+<span data-ttu-id="01a24-106">Enthält Eigenschaften für den Windows-Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="01a24-106">Contains properties for Windows device type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="4cc76-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="4cc76-108">Members</span></span>
-|<span data-ttu-id="4cc76-109">Member</span><span class="sxs-lookup"><span data-stu-id="4cc76-109">Member</span></span>|<span data-ttu-id="4cc76-110">Wert</span><span class="sxs-lookup"><span data-stu-id="4cc76-110">Value</span></span>|<span data-ttu-id="4cc76-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4cc76-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="01a24-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="01a24-107">Members</span></span>
+|<span data-ttu-id="01a24-108">Element</span><span class="sxs-lookup"><span data-stu-id="01a24-108">Member</span></span>|<span data-ttu-id="01a24-109">Wert</span><span class="sxs-lookup"><span data-stu-id="01a24-109">Value</span></span>|<span data-ttu-id="01a24-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="01a24-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4cc76-112">Keine</span><span class="sxs-lookup"><span data-stu-id="4cc76-112">none</span></span>|<span data-ttu-id="4cc76-113">0</span><span class="sxs-lookup"><span data-stu-id="4cc76-113">0</span></span>|<span data-ttu-id="4cc76-114">Keine Flags festgelegt.</span><span class="sxs-lookup"><span data-stu-id="4cc76-114">No flags set.</span></span>|
-|<span data-ttu-id="4cc76-115">Desktop</span><span class="sxs-lookup"><span data-stu-id="4cc76-115">desktop</span></span>|<span data-ttu-id="4cc76-116">1</span><span class="sxs-lookup"><span data-stu-id="4cc76-116">1</span></span>|<span data-ttu-id="4cc76-117">Unabhängig davon, ob der Gerätetyp Desktop Windows unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="4cc76-117">Whether or not the Desktop Windows device type is supported.</span></span>|
-|<span data-ttu-id="4cc76-118">mobile</span><span class="sxs-lookup"><span data-stu-id="4cc76-118">mobile</span></span>|<span data-ttu-id="4cc76-119">2</span><span class="sxs-lookup"><span data-stu-id="4cc76-119">2</span></span>|<span data-ttu-id="4cc76-120">Geben Sie unabhängig davon, ob das Windows Mobile-Gerät werden unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4cc76-120">Whether or not the Mobile Windows device type is supported.</span></span>|
-|<span data-ttu-id="4cc76-121">Hologramm</span><span class="sxs-lookup"><span data-stu-id="4cc76-121">holographic</span></span>|<span data-ttu-id="4cc76-122">4</span><span class="sxs-lookup"><span data-stu-id="4cc76-122">4</span></span>|<span data-ttu-id="4cc76-123">Unabhängig davon, ob der Gerätetyp Hologramm Windows unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="4cc76-123">Whether or not the Holographic Windows device type is supported.</span></span>|
-|<span data-ttu-id="4cc76-124">Team</span><span class="sxs-lookup"><span data-stu-id="4cc76-124">team</span></span>|<span data-ttu-id="4cc76-125">8</span><span class="sxs-lookup"><span data-stu-id="4cc76-125">8</span></span>|<span data-ttu-id="4cc76-126">Unabhängig davon, ob der Gerätetyp Team Windows unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="4cc76-126">Whether or not the Team Windows device type is supported.</span></span>|
+|<span data-ttu-id="01a24-111">Keine</span><span class="sxs-lookup"><span data-stu-id="01a24-111">none</span></span>|<span data-ttu-id="01a24-112">0</span><span class="sxs-lookup"><span data-stu-id="01a24-112">0</span></span>|<span data-ttu-id="01a24-113">Keine Flags festgelegt.</span><span class="sxs-lookup"><span data-stu-id="01a24-113">No flags set.</span></span>|
+|<span data-ttu-id="01a24-114">Desktop</span><span class="sxs-lookup"><span data-stu-id="01a24-114">desktop</span></span>|<span data-ttu-id="01a24-115">1</span><span class="sxs-lookup"><span data-stu-id="01a24-115">1</span></span>|<span data-ttu-id="01a24-116">Gibt an, ob der Desktop-Windows-Gerätetyp unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="01a24-116">Whether or not the Desktop Windows device type is supported.</span></span>|
+|<span data-ttu-id="01a24-117">Mobile</span><span class="sxs-lookup"><span data-stu-id="01a24-117">mobile</span></span>|<span data-ttu-id="01a24-118">2</span><span class="sxs-lookup"><span data-stu-id="01a24-118">2</span></span>|<span data-ttu-id="01a24-119">Gibt an, ob der Mobile Windows-Gerätetyp unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="01a24-119">Whether or not the Mobile Windows device type is supported.</span></span>|
+|<span data-ttu-id="01a24-120">holographische</span><span class="sxs-lookup"><span data-stu-id="01a24-120">holographic</span></span>|<span data-ttu-id="01a24-121">4</span><span class="sxs-lookup"><span data-stu-id="01a24-121">4</span></span>|<span data-ttu-id="01a24-122">Gibt an, ob der holographische Windows-Gerätetyp unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="01a24-122">Whether or not the Holographic Windows device type is supported.</span></span>|
+|<span data-ttu-id="01a24-123">Team</span><span class="sxs-lookup"><span data-stu-id="01a24-123">team</span></span>|<span data-ttu-id="01a24-124">8</span><span class="sxs-lookup"><span data-stu-id="01a24-124">8</span></span>|<span data-ttu-id="01a24-125">Gibt an, ob der Windows-Gerätetyp "Team" unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="01a24-125">Whether or not the Team Windows device type is supported.</span></span>|
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: MobileAppIntent Enum-Typ
-description: Gibt den Status der mobilen app auf dem Gerät.
-localization_priority: Normal
+title: mobileAppIntent-Enumerationstyp
+description: Gibt den Status der mobilen App auf dem Gerät an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a807e89ec949c2c48f04af46b26f43b393cc4b0a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1df0b41636668e0ebcc38dfb6b399a73551658d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171043"
 ---
-# <a name="mobileappintent-enum-type"></a><span data-ttu-id="6f94a-103">MobileAppIntent Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="6f94a-103">mobileAppIntent enum type</span></span>
+# <a name="mobileappintent-enum-type"></a><span data-ttu-id="1a1c5-103">mobileAppIntent-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="1a1c5-103">mobileAppIntent enum type</span></span>
 
-> <span data-ttu-id="6f94a-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="6f94a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6f94a-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6f94a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1a1c5-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1a1c5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6f94a-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6f94a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1a1c5-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="1a1c5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6f94a-107">Gibt den Status der mobilen app auf dem Gerät.</span><span class="sxs-lookup"><span data-stu-id="6f94a-107">Indicates the status of the mobile app on the device.</span></span>
+<span data-ttu-id="1a1c5-106">Gibt den Status der mobilen App auf dem Gerät an.</span><span class="sxs-lookup"><span data-stu-id="1a1c5-106">Indicates the status of the mobile app on the device.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6f94a-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="6f94a-108">Members</span></span>
-|<span data-ttu-id="6f94a-109">Member</span><span class="sxs-lookup"><span data-stu-id="6f94a-109">Member</span></span>|<span data-ttu-id="6f94a-110">Wert</span><span class="sxs-lookup"><span data-stu-id="6f94a-110">Value</span></span>|<span data-ttu-id="6f94a-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6f94a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="1a1c5-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="1a1c5-107">Members</span></span>
+|<span data-ttu-id="1a1c5-108">Element</span><span class="sxs-lookup"><span data-stu-id="1a1c5-108">Member</span></span>|<span data-ttu-id="1a1c5-109">Wert</span><span class="sxs-lookup"><span data-stu-id="1a1c5-109">Value</span></span>|<span data-ttu-id="1a1c5-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1a1c5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6f94a-112">Verfügbar</span><span class="sxs-lookup"><span data-stu-id="6f94a-112">available</span></span>|<span data-ttu-id="6f94a-113">0</span><span class="sxs-lookup"><span data-stu-id="6f94a-113">0</span></span>|<span data-ttu-id="6f94a-114">Available</span><span class="sxs-lookup"><span data-stu-id="6f94a-114">Available</span></span>|
-|<span data-ttu-id="6f94a-115">nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="6f94a-115">notAvailable</span></span>|<span data-ttu-id="6f94a-116">1</span><span class="sxs-lookup"><span data-stu-id="6f94a-116">1</span></span>|<span data-ttu-id="6f94a-117">Nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="6f94a-117">Not Available</span></span>|
-|<span data-ttu-id="6f94a-118">requiredInstall</span><span class="sxs-lookup"><span data-stu-id="6f94a-118">requiredInstall</span></span>|<span data-ttu-id="6f94a-119">2</span><span class="sxs-lookup"><span data-stu-id="6f94a-119">2</span></span>|<span data-ttu-id="6f94a-120">Installation erforderlich</span><span class="sxs-lookup"><span data-stu-id="6f94a-120">Required Install</span></span>|
-|<span data-ttu-id="6f94a-121">requiredUninstall</span><span class="sxs-lookup"><span data-stu-id="6f94a-121">requiredUninstall</span></span>|<span data-ttu-id="6f94a-122">3</span><span class="sxs-lookup"><span data-stu-id="6f94a-122">3</span></span>|<span data-ttu-id="6f94a-123">Erforderliche Deinstallation</span><span class="sxs-lookup"><span data-stu-id="6f94a-123">Required Uninstall</span></span>|
-|<span data-ttu-id="6f94a-124">requiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="6f94a-124">requiredAndAvailableInstall</span></span>|<span data-ttu-id="6f94a-125">4</span><span class="sxs-lookup"><span data-stu-id="6f94a-125">4</span></span>|<span data-ttu-id="6f94a-126">RequiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="6f94a-126">RequiredAndAvailableInstall</span></span>|
-|<span data-ttu-id="6f94a-127">availableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="6f94a-127">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="6f94a-128">5</span><span class="sxs-lookup"><span data-stu-id="6f94a-128">5</span></span>|<span data-ttu-id="6f94a-129">AvailableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="6f94a-129">AvailableInstallWithoutEnrollment</span></span>|
-|<span data-ttu-id="6f94a-130">Ausschließen</span><span class="sxs-lookup"><span data-stu-id="6f94a-130">exclude</span></span>|<span data-ttu-id="6f94a-131">6</span><span class="sxs-lookup"><span data-stu-id="6f94a-131">6</span></span>|<span data-ttu-id="6f94a-132">Ausschließen</span><span class="sxs-lookup"><span data-stu-id="6f94a-132">Exclude</span></span>|
+|<span data-ttu-id="1a1c5-111">Verfügbar</span><span class="sxs-lookup"><span data-stu-id="1a1c5-111">available</span></span>|<span data-ttu-id="1a1c5-112">0</span><span class="sxs-lookup"><span data-stu-id="1a1c5-112">0</span></span>|<span data-ttu-id="1a1c5-113">Available</span><span class="sxs-lookup"><span data-stu-id="1a1c5-113">Available</span></span>|
+|<span data-ttu-id="1a1c5-114">Nichtin</span><span class="sxs-lookup"><span data-stu-id="1a1c5-114">notAvailable</span></span>|<span data-ttu-id="1a1c5-115">1</span><span class="sxs-lookup"><span data-stu-id="1a1c5-115">1</span></span>|<span data-ttu-id="1a1c5-116">Nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="1a1c5-116">Not Available</span></span>|
+|<span data-ttu-id="1a1c5-117">requiredInstall</span><span class="sxs-lookup"><span data-stu-id="1a1c5-117">requiredInstall</span></span>|<span data-ttu-id="1a1c5-118">2</span><span class="sxs-lookup"><span data-stu-id="1a1c5-118">2</span></span>|<span data-ttu-id="1a1c5-119">Erforderliche Installation</span><span class="sxs-lookup"><span data-stu-id="1a1c5-119">Required Install</span></span>|
+|<span data-ttu-id="1a1c5-120">requiredUninstall</span><span class="sxs-lookup"><span data-stu-id="1a1c5-120">requiredUninstall</span></span>|<span data-ttu-id="1a1c5-121">3</span><span class="sxs-lookup"><span data-stu-id="1a1c5-121">3</span></span>|<span data-ttu-id="1a1c5-122">Erforderliche deInstallation</span><span class="sxs-lookup"><span data-stu-id="1a1c5-122">Required Uninstall</span></span>|
+|<span data-ttu-id="1a1c5-123">requiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="1a1c5-123">requiredAndAvailableInstall</span></span>|<span data-ttu-id="1a1c5-124">4</span><span class="sxs-lookup"><span data-stu-id="1a1c5-124">4</span></span>|<span data-ttu-id="1a1c5-125">RequiredAndAvailableInstall</span><span class="sxs-lookup"><span data-stu-id="1a1c5-125">RequiredAndAvailableInstall</span></span>|
+|<span data-ttu-id="1a1c5-126">availableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="1a1c5-126">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="1a1c5-127">5</span><span class="sxs-lookup"><span data-stu-id="1a1c5-127">5</span></span>|<span data-ttu-id="1a1c5-128">AvailableInstallWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="1a1c5-128">AvailableInstallWithoutEnrollment</span></span>|
+|<span data-ttu-id="1a1c5-129">ausschließen</span><span class="sxs-lookup"><span data-stu-id="1a1c5-129">exclude</span></span>|<span data-ttu-id="1a1c5-130">6</span><span class="sxs-lookup"><span data-stu-id="1a1c5-130">6</span></span>|<span data-ttu-id="1a1c5-131">Ausschließen</span><span class="sxs-lookup"><span data-stu-id="1a1c5-131">Exclude</span></span>|
 
 
 

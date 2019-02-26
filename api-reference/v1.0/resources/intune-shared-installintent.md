@@ -1,28 +1,29 @@
 ---
-title: InstallIntent Enum-Typ
-description: Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt
+title: installIntent-Enumerationstyp
+description: Mögliche Werte für die vom Administrator ausgewählte Installations Absicht.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaea49b0c808b0591a059f46ed0eb06fa17b6177
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40c36022e08917ac8fbad0ff2647e28da18270bc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972054"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260417"
 ---
-# <a name="installintent-enum-type"></a><span data-ttu-id="847eb-103">InstallIntent Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="847eb-103">installIntent enum type</span></span>
+# <a name="installintent-enum-type"></a><span data-ttu-id="6028b-103">installIntent-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="6028b-103">installIntent enum type</span></span>
 
-> <span data-ttu-id="847eb-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="847eb-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6028b-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="6028b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="847eb-105">Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt</span><span class="sxs-lookup"><span data-stu-id="847eb-105">Possible values for the install intent chosen by the admin.</span></span>
-## <a name="members"></a><span data-ttu-id="847eb-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="847eb-106">Members</span></span>
-|<span data-ttu-id="847eb-107">Element</span><span class="sxs-lookup"><span data-stu-id="847eb-107">Member</span></span>|<span data-ttu-id="847eb-108">Wert</span><span class="sxs-lookup"><span data-stu-id="847eb-108">Value</span></span>|<span data-ttu-id="847eb-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="847eb-109">Description</span></span>|
+<span data-ttu-id="6028b-105">Mögliche Werte für die vom Administrator ausgewählte Installations Absicht.</span><span class="sxs-lookup"><span data-stu-id="6028b-105">Possible values for the install intent chosen by the admin.</span></span>
+
+## <a name="members"></a><span data-ttu-id="6028b-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="6028b-106">Members</span></span>
+|<span data-ttu-id="6028b-107">Element</span><span class="sxs-lookup"><span data-stu-id="6028b-107">Member</span></span>|<span data-ttu-id="6028b-108">Wert</span><span class="sxs-lookup"><span data-stu-id="6028b-108">Value</span></span>|<span data-ttu-id="6028b-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6028b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="847eb-110">Verfügbar</span><span class="sxs-lookup"><span data-stu-id="847eb-110">available</span></span>|<span data-ttu-id="847eb-111">0</span><span class="sxs-lookup"><span data-stu-id="847eb-111">0</span></span>|<span data-ttu-id="847eb-112">Verfügbare Install beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="847eb-112">Available install intent.</span></span>|
-|<span data-ttu-id="847eb-113">erforderlich</span><span class="sxs-lookup"><span data-stu-id="847eb-113">required</span></span>|<span data-ttu-id="847eb-114">1</span><span class="sxs-lookup"><span data-stu-id="847eb-114">1</span></span>|<span data-ttu-id="847eb-115">Installieren der erforderlichen beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="847eb-115">Required install intent.</span></span>|
-|<span data-ttu-id="847eb-116">Deinstallieren</span><span class="sxs-lookup"><span data-stu-id="847eb-116">uninstall</span></span>|<span data-ttu-id="847eb-117">2</span><span class="sxs-lookup"><span data-stu-id="847eb-117">2</span></span>|<span data-ttu-id="847eb-118">Deinstallieren Sie Install beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="847eb-118">Uninstall install intent.</span></span>|
-|<span data-ttu-id="847eb-119">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="847eb-119">availableWithoutEnrollment</span></span>|<span data-ttu-id="847eb-120">3</span><span class="sxs-lookup"><span data-stu-id="847eb-120">3</span></span>|<span data-ttu-id="847eb-121">Ohne Registrierung Install beabsichtigt verfügbar.</span><span class="sxs-lookup"><span data-stu-id="847eb-121">Available without enrollment install intent.</span></span>|
+|<span data-ttu-id="6028b-110">Verfügbar</span><span class="sxs-lookup"><span data-stu-id="6028b-110">available</span></span>|<span data-ttu-id="6028b-111">0</span><span class="sxs-lookup"><span data-stu-id="6028b-111">0</span></span>|<span data-ttu-id="6028b-112">Verfügbare Installations Absicht.</span><span class="sxs-lookup"><span data-stu-id="6028b-112">Available install intent.</span></span>|
+|<span data-ttu-id="6028b-113">erforderlich</span><span class="sxs-lookup"><span data-stu-id="6028b-113">required</span></span>|<span data-ttu-id="6028b-114">1</span><span class="sxs-lookup"><span data-stu-id="6028b-114">1</span></span>|<span data-ttu-id="6028b-115">Erforderliche Installations Absicht.</span><span class="sxs-lookup"><span data-stu-id="6028b-115">Required install intent.</span></span>|
+|<span data-ttu-id="6028b-116">Deinstallieren</span><span class="sxs-lookup"><span data-stu-id="6028b-116">uninstall</span></span>|<span data-ttu-id="6028b-117">2</span><span class="sxs-lookup"><span data-stu-id="6028b-117">2</span></span>|<span data-ttu-id="6028b-118">Deinstallieren Sie die Installations Absicht.</span><span class="sxs-lookup"><span data-stu-id="6028b-118">Uninstall install intent.</span></span>|
+|<span data-ttu-id="6028b-119">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="6028b-119">availableWithoutEnrollment</span></span>|<span data-ttu-id="6028b-120">3</span><span class="sxs-lookup"><span data-stu-id="6028b-120">3</span></span>|<span data-ttu-id="6028b-121">Nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="6028b-121">Available without enrollment install intent.</span></span>|
 
 
 
