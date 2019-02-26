@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp windows10VpnProxyServer
-description: VPN-Proxy-Server.
-localization_priority: Normal
+title: windows10VpnProxyServer-Ressourcentyp
+description: VPN-Proxy Server.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4f8975a08e60105c37e0959ac72e24a1dd639cd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4686049e2f3525409e81ec1492dcb052ab9f3657
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407123"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140691"
 ---
-# <a name="windows10vpnproxyserver-resource-type"></a>Ressourcentyp windows10VpnProxyServer
+# <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN-Proxy-Server.
+VPN-Proxy Server.
 
 
-Erbt vom [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
+Erbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|Zeichenfolge|Automatische Konfiguration Skript-Url des Proxys. Geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|Zeichenfolge|URL des automatischen Konfigurationsskripts des Proxys. Geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Zeichenfolge|Adresse. Geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|port|Int32|Port. Gültige Werte zwischen 0 und 65535 Inherited aus [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|Boolean|Proxyserver für lokale Adressen umgehen.|
+|port|Int32|Port. Gültige Werte 0 bis 65535 geerbt von [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|bypassProxyServerForLocalAddress|Boolean|Umgehen des Proxyservers für die lokale Adresse.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
