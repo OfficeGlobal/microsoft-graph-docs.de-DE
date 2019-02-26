@@ -3,12 +3,12 @@ title: Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 description: Die Microsoft Graph-API verwendet einen Webhook-Mechanismus zum Übermitteln von Benachrichtigungen an Clients. Ein Client ist ein Webdienst, der eine eigene URL zum Empfangen von Benachrichtigungen konfiguriert. Client-Apps verwenden Benachrichtigungen, um bei Änderungen ihren Status zu aktualisieren.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168495"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263377"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Einrichten von Benachrichtigungen für Änderungen der Benutzerdaten
 
@@ -50,8 +50,8 @@ Bestimmte Einschränkungen gelten für Azure AD-basierte Ressourcen (Benutzer, G
 - Maximale Abonnementkontingente:
 
   - Pro App: 50 000 Abonnements insgesamt
-  - Pro Mandant: 35 Abonnements insgesamt in allen Apps
-  - Pro App und Mandanten kombiniert: 7 Abonnements insgesamt
+  - Pro Mandant: 1000 Abonnements insgesamt in allen Apps
+  - Pro App und Mandanten kombiniert: 100 Abonnements insgesamt
 
 - Azure AD B2C-Mandanten werden nicht unterstützt.
 

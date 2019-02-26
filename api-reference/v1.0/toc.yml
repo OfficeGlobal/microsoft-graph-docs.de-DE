@@ -1093,6 +1093,7 @@ items:
                     href: api/intune-apps-windowsuniversalappx-update.md
           - name: Geschäftsbedingungen des Unternehmens
             href: resources/intune-company-conceptual.md
+            displayName: Intune
             items:
               - name: Geschäftsbedingungen
                 href: resources/intune-companyterms-termsandconditions.md
@@ -1135,6 +1136,7 @@ items:
                     href: api/intune-companyterms-termsandconditionsassignment-update.md
           - name: Unternehmensregistrierung
             href: resources/intune-enrollment-conceptual.md
+            displayName: Intune
             items:
               - name: Importierte Windows Autopilot-Geräteidentität
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
@@ -1170,6 +1172,7 @@ items:
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
           - name: Gerätekonfiguration
             href: resources/intune-device-cfg-conceptual.md
+            displayName: Intune
             items:
               - name: Android-Kompatibilitätsrichtlinie
                 href: resources/intune-deviceconfig-androidcompliancepolicy.md
@@ -2042,6 +2045,7 @@ items:
                 href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
           - name: Geräteverwaltung
             href: resources/intune-device-mgt-conceptual.md
+            displayName: Intune
             items:
               - name: Aktionszustand
                 href: resources/intune-devices-actionstate.md
@@ -2094,8 +2098,6 @@ items:
                 href: resources/intune-devices-deviceactionresult.md
               - name: Grund des Geräteregistrierungsfehlers
                 href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-              - name: Geräteregistrierungstyp
-                href: resources/intune-devices-deviceenrollmenttype.md
               - name: Exchange-Zugriffsstatus für Geräte – Zusammenfassung
                 href: resources/intune-devices-deviceexchangeaccessstatesummary.md
               - name: Geräte-Geolocation
@@ -2168,7 +2170,7 @@ items:
                     href: api/intune-devices-manageddevice-update.md
                   - name: retire-Aktion
                     href: api/intune-devices-manageddevice-retire.md
-                  - name: wipe-Aktion
+                  - name: Zurücksetzung
                     href: api/intune-devices-manageddevice-wipe.md
                   - name: resetPasscode-Aktion
                     href: api/intune-devices-manageddevice-resetpasscode.md
@@ -2265,8 +2267,9 @@ items:
                 href: resources/intune-devices-windowsdeviceadaccount.md
               - name: Windows-Gerät – Azure AD-Konto
                 href: resources/intune-devices-windowsdeviceazureadaccount.md
-          - name: Verwaltung mobiler Apps
+          - name: Verwaltung mobiler Apps (MAM)
             href: resources/intune-mam-conceptual.md
+            displayName: Intune
             items:
               - name: Schutz verwalteter Android-Apps
                 href: resources/intune-mam-androidmanagedappprotection.md
@@ -2569,6 +2572,7 @@ items:
                 href: resources/intune-mam-windowsinformationprotectionstoreapp.md
           - name: Onboarding
             href: resources/intune-onboarding-conceptual.md
+            displayName: Intune
             items:
               - name: Konfiguration der Geräteregistrierung
                 href: resources/intune-onboarding-deviceenrollmentconfiguration.md
@@ -2737,8 +2741,9 @@ items:
                 href: resources/intune-onboarding-vpptokensyncstatus.md
               - name: 'PIN-Verwendung für Windows Hello for Business '
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-          - name: Rollenbasierte Zugriffssteuerung
-            href: resources/intune-rbac-conceptual.md
+          - name: Rollenbasierte Zugriffssteuerung (RBAC)
+            href: /resources/intune-rbac-conceptual.md
+            displayName: Intune
             items:
               - name: Geräte- und App-Verwaltung – Rollenzuweisung
                 href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2811,6 +2816,7 @@ items:
                 href: resources/intune-rbac-rolepermission.md
           - name: Gemeinsam genutzte Ressourcen
             href: resources/intune-shared-conceptual.md
+            displayName: Intune
             items:
               - name: Alle Geräte – Zuweisungsziel
                 href: resources/intune-shared-alldevicesassignmenttarget.md
@@ -2842,6 +2848,8 @@ items:
                     href: api/intune-shared-devicecategory-delete.md
                   - name: Aktualisieren
                     href: api/intune-shared-devicecategory-update.md
+              - name: Geräteregistrierungstyp
+                href: resources/intune-shared-deviceenrollmenttype.md
               - name: Geräteverwaltung
                 href: resources/intune-shared-devicemanagement.md
                 items:
@@ -2891,6 +2899,7 @@ items:
                 href: resources/intune-shared-vpptokenaccounttype.md
           - name: Telekommunikationsausgaben
             href: resources/intune-tem-conceptual.md
+            displayName: Intune
             items:
               - name: Telecom Expense Management-Partner
                 href: resources/intune-tem-telecomexpensemanagementpartner.md
