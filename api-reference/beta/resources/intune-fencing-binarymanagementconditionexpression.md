@@ -1,32 +1,32 @@
 ---
-title: Ressourcentyp binaryManagementConditionExpression
-description: Ein Management Bedingungsausdruck, die mit einer binären Operation ausgewertet wird.
-localization_priority: Normal
+title: binaryManagementConditionExpression-Ressourcentyp
+description: Ein Ausdruck der Verwaltungsbedingung, der mit einem binären Vorgang ausgewertet wird.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 722387492e6167c3bd74d306fa03e4835bc12dbe
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8d70306923b86f6d42942c5ce6b78ff31819d47d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402727"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150484"
 ---
-# <a name="binarymanagementconditionexpression-resource-type"></a>Ressourcentyp binaryManagementConditionExpression
+# <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ein Management Bedingungsausdruck, die mit einer binären Operation ausgewertet wird.
+Ein Ausdruck der Verwaltungsbedingung, der mit einem binären Vorgang ausgewertet wird.
 
 
-Erbt vom [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Erbt von [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Die Auswertung der binären Operation verwendete Operator. Mögliche Werte sind: `or` und `and`.|
-|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Dem ersten Operanden der binären Operation.|
+|operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Der Operator, der bei der Auswertung des Binär Vorgangs verwendet wird. Mögliche Werte sind: `or` und `and`.|
+|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Der erste Operand des binären Vorgangs.|
 |secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Der zweite Operand des binären Vorgangs.|
 
 ## <a name="relationships"></a>Beziehungen

@@ -1,31 +1,31 @@
 ---
-title: DeviceManagementExchangeConnectorType Enum-Typ
+title: deviceManagementExchangeConnectorType-Enumerationstyp
 description: Der Typ des Exchange-Connectors.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20eb1053d3dbf6cb657313f0c68f6c6c84804848
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8742a146f1183376424678f070b902eb052df5ac
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398982"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150435"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a>DeviceManagementExchangeConnectorType Enum-Typ
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Der Typ des Exchange-Connectors.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|"lokal"|0|Stellt eine Verbindung zum lokalen Exchange-Umgebung.|
-|gehostet|1|Stellt eine Verbindung mit Office 365 mit mehreren Mandanten Exchange-Umgebung|
-|serviceToService|2|Intune Service verbindet direkt mit Office 365 mit mehreren Mandanten Exchange-Umgebung|
-|dedizierte|3|Stellt eine Verbindung zu Office 365 dedizierte Exchange-Umgebung.|
+|onPremises|0|Stellt eine Verbindung mit der lokalen Exchange-Umgebung her.|
+|gehostet|1|Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten|
+|serviceToService|2|InTune-Dienst stellt eine direkte Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten her|
+|dedizierten|3|Stellt eine Verbindung zu einer dedizierten Exchange-Umgebung von O365 her.|
 
 
 
