@@ -1,21 +1,21 @@
 ---
-title: ImportAppleDeviceIdentityList Aktion
+title: importAppleDeviceIdentityList-Aktion
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d19eec23d8f78fa3b007c59f43c0e320f9161e93
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 714459b7ee5ab1dd65bb274ad2315e832ce56436
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423909"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141482"
 ---
-# <a name="importappledeviceidentitylist-action"></a>ImportAppleDeviceIdentityList Aktion
+# <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList-Aktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
@@ -38,9 +38,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,13 +50,13 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|importedAppleDeviceIdentities|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Auflistung|Noch nicht dokumentiert|
-|overwriteImportedDeviceIdentities|Boolean|Noch nicht dokumentiert|
+|importedAppleDeviceIdentities|[importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Sammlung|Noch nicht dokumentiert|
+|overwriteImportedDeviceIdentities|Boolean|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich ist, diese Aktion gibt eine `200 OK` Antwortcode und eine [ImportedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) -Auflistung im Antworttext.
+Bei erfolgreicher Ausführung gibt die Aktion den `200 OK` Antwortcode und eine [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) -Auflistung im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

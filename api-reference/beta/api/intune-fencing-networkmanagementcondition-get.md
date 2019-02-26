@@ -1,23 +1,23 @@
 ---
-title: Abrufen von networkManagementCondition
-description: Lesen Sie Eigenschaften und Beziehungen des NetworkManagementCondition-Objekts.
-localization_priority: Normal
+title: NetworkManagementCondition abrufen
+description: Lesen von Eigenschaften und Beziehungen des networkManagementCondition-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b2e7069d3fdaf6942d74c08f88d42adad0e9d28
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 571cfc4e489ed84f5f2c4fec10cf7c2d0481148e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409251"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141559"
 ---
-# <a name="get-networkmanagementcondition"></a>Abrufen von networkManagementCondition
+# <a name="get-networkmanagementcondition"></a>NetworkManagementCondition abrufen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Lesen Sie Eigenschaften und Beziehungen des [NetworkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md) -Objekts.
+Lesen von Eigenschaften und Beziehungen des [networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -42,16 +42,16 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [NetworkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und das [networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

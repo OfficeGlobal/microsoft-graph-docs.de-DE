@@ -1,23 +1,23 @@
 ---
 title: GroupPolicyDefinition aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines GroupPolicyDefinition-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines groupPolicyDefinition-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eeb3e32f1870eac8491989426081df2ae41e4d42
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3439c14463118f616847dd5e7f71970fa3d6a8c7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429991"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157253"
 ---
 # <a name="update-grouppolicydefinition"></a>GroupPolicyDefinition aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekts.
+Aktualisieren der Eigenschaften eines [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -41,31 +41,31 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifiziert den Typ von Gruppen, denen auf die Richtlinie angewendet werden kann. Mögliche Werte sind: `user`, `machine` und `both`.|
-|displayName|Zeichenfolge|Die lokalisierten Richtliniennamen.|
-|explainText|Zeichenfolge|Die lokalisierten Erläuterung oder Hilfe Text mit der Richtlinie verknüpft ist. Der Standardwert ist leer.|
-|categoryPath|Zeichenfolge|Der Pfad der lokalisierte vollständige Kategorie für die Richtlinie ein.|
-|supportedOn|Zeichenfolge|Lokalisierte Zeichenfolge verwendet, um anzugeben, welche Version der Anwendung oder das Betriebssystem durch die Richtlinie betroffen ist.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ von Gruppenrichtlinien. Mögliche Werte sind: `admxBacked` und `admxIngested`.|
+|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Gibt den Typ der Gruppen an, auf die die Richtlinie angewendet werden kann. Mögliche Werte sind: `user`, `machine` und `both`.|
+|displayName|Zeichenfolge|Der Name der lokalisierten Richtlinie.|
+|explainText|Zeichenfolge|Die lokalisierte Erläuterung oder der Hilfe Text, der der Richtlinie zugeordnet ist. Der Standardwert ist Empty.|
+|categoryPath|Zeichenfolge|Der lokalisierte vollständige Kategorie-Pfad für die Richtlinie.|
+|supportedOn|Zeichenfolge|Lokalisierte Zeichenfolge, die verwendet wird, um anzugeben, welche Betriebssystem-oder Anwendungsversion von der Richtlinie betroffen ist.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte sind: `admxBacked` und `admxIngested`.|
 |id|Zeichenfolge|Schlüssel der Entität|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung die Entität.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [GroupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

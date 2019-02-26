@@ -1,42 +1,44 @@
 ---
-title: DeviceEnrollmentFailureReason Enum-Typ
-description: Oberste Ebene Fehler Kategorien für die Registrierung.
+title: deviceEnrollmentFailureReason-Enumerationstyp
+description: Kategorien für die Registrierung auf höchster Ebene
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: efee4e4655d36e7575df9e0ddda508dbbcc473c5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 623030bccfac9e023a0d1df2dff7ea317b503485
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962072"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258331"
 ---
-# <a name="deviceenrollmentfailurereason-enum-type"></a>DeviceEnrollmentFailureReason Enum-Typ
+# <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Oberste Ebene Fehler Kategorien für die Registrierung.
+Kategorien für die Registrierung auf höchster Ebene
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Der Standardwert, Fehlerursache ist unbekannt.|
-|Authentifizierung|1|Fehler bei der Authentifizierung|
-|Autorisierung|2|Anruf wurde authentifiziert, jedoch nicht autorisiert, registrieren.|
-|accountValidation|3|Fehler beim Überprüfen von des Kontos für die Registrierung. (Konto blockiert, Registrierung nicht aktiviert)|
-|userValidation|4|Benutzer konnte nicht überprüft werden. (Benutzer ist nicht vorhanden, fehlende Lizenz)|
-|deviceNotSupported|5|Gerät ist nicht für die Verwaltung von mobilen Geräten unterstützt.|
-|inMaintenance|6|Konto ist in der Wartung.|
-|badRequest|7|Client gesendet eine Anforderung, die nicht vom Dienst verstanden/unterstützt wird.|
-|featureNotSupported|8|Features, die durch diese Registrierung verwendet werden für dieses Konto nicht unterstützt.|
-|enrollmentRestrictionsEnforced|9|Registrierung Einschränkungen durch den Administrator konfiguriert blockiert diese Registrierung.|
-|clientDisconnected|10|Client ein Timeout aufgetreten, oder die Registrierung mithilfe des Endbenutzers abgebrochen wurde.|
-|userAbandonment|11|Registrierung wurde abgebrochen, mithilfe des Endbenutzers. (Des Endbenutzers Onboarding gestartet, aber nicht in kurzer Zeit abgeschlossen)|
+|unknown|0|Standardwert: der Ausfallgrund ist unbekannt.|
+|Authentifizierung|1|Authentifizierung fehlgeschlagen|
+|Autorisierung|2|Der Anruf wurde authentifiziert, aber nicht zur Registrierung autorisiert.|
+|accountValidation|3|Fehler beim Überprüfen des Kontos für die Registrierung. (Konto gesperrt, Registrierung nicht aktiviert)|
+|userValidation|4|Der Benutzer konnte nicht validiert werden. (Benutzer ist nicht vorhanden, fehlende Lizenz)|
+|deviceNotSupported|5|Das Gerät wird für die Verwaltung mobiler Geräte nicht unterstützt.|
+|inMaintenance|6|Das Konto ist in Wartung.|
+|badRequest|7|Der Client hat eine Anforderung gesendet, die vom Dienst nicht verstanden/unterstützt wird.|
+|featureNotSupported|8|Von dieser Registrierung verwendete Features werden für dieses Konto nicht unterstützt.|
+|enrollmentRestrictionsEnforced|9|Durch den Administrator konfigurierte Registrierungs Einschränkungen haben diese Registrierung blockiert.|
+|clientDisconnected|10|Timeout des Clients, oder die Registrierung wurde vom Endverbraucher abgebrochen.|
+|userAbandonment|11|Die Registrierung wurde vom Endverbraucher abgebrochen. (Der Endanwender hat das Onboarding gestartet, konnte es jedoch nicht rechtzeitig abschließen)|
 
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
   ],
 }
 -->
+

@@ -1,25 +1,26 @@
 ---
-title: SavedUIStateGenerationOptions Enum-Typ
+title: savedUIStateGenerationOptions-Enumerationstyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c987f91b3bcb686cb853b81514a487b8c9aa0625
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4939061dc18ef7fbea6f8945f74226b363a3bc3c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932161"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259283"
 ---
-# <a name="saveduistategenerationoptions-enum-type"></a>SavedUIStateGenerationOptions Enum-Typ
+# <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Noch nicht dokumentiert|
+|Keine|0|Noch nicht dokumentiert|
 |omitSilverlightPolicyReferences|1|Noch nicht dokumentiert|
 
 

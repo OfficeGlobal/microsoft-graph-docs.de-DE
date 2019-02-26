@@ -1,31 +1,31 @@
 ---
-title: AndroidForWorkDefaultAppPermissionPolicyType Enum-Typ
-description: Android Arbeit für app-Berechtigung Richtlinie Standardtyp.
-localization_priority: Normal
+title: androidForWorkDefaultAppPermissionPolicyType-Enumerationstyp
+description: Standardtyp der APP-Berechtigungsrichtlinie für Android for work.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb815b18bb6f12d6e9a27c66993aa59193495d6c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08285d504b5d022a5154c58082530b94b1cf9ee0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157211"
 ---
-# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>AndroidForWorkDefaultAppPermissionPolicyType Enum-Typ
+# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>androidForWorkDefaultAppPermissionPolicyType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Arbeit für app-Berechtigung Richtlinie Standardtyp.
+Standardtyp der APP-Berechtigungsrichtlinie für Android for work.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|prompt|1|Auffordern.|
-|autoGrant|2|Automatische erteilen.|
-|autoDeny|3|Automatische verweigern.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|prompt|1|Aufforderung.|
+|autoGrant|2|Automatische Gewährung.|
+|autoDeny|3|Auto verweigern.|
 
 
 

@@ -1,32 +1,32 @@
 ---
-title: DefenderMonitorFileActivity Enum-Typ
-description: Mögliche Werte für die Überwachung von Dateiaktivität.
-localization_priority: Normal
+title: defenderMonitorFileActivity-Enumerationstyp
+description: Mögliche Werte für die Überwachung der Dateiaktivität.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9b0f91d0a2d802fd573d7825da016dc8850e941
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d04d7a34de9c08c12d17c994381683c160bef1c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414956"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152591"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>DefenderMonitorFileActivity Enum-Typ
+# <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Überwachung von Dateiaktivität.
+Mögliche Werte für die Überwachung der Dateiaktivität.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|disable|1|Überwachen der Dateiaktivität zu deaktivieren.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|disable|1|Deaktiviert die Überwachung der Dateiaktivität.|
 |monitorAllFiles|2|Überwachen Sie alle Dateien.|
-|monitorIncomingFilesOnly|3| Nur eingehende Dateien zu überwachen.|
-|monitorOutgoingFilesOnly|4|Nur ausgehende Dateien zu überwachen.|
+|monitorIncomingFilesOnly|3| Nur eingehende Dateien überwachen.|
+|monitorOutgoingFilesOnly|4|Nur ausgehende Dateien überwachen.|
 
 
 

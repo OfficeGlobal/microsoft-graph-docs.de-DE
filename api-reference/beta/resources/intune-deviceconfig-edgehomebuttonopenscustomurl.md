@@ -1,31 +1,31 @@
 ---
-title: Ressourcentyp edgeHomeButtonOpensCustomURL
-description: Zeigen Sie die Schaltfläche Startseite. durch Klicken auf die Schaltfläche Startseite lädt eine bestimmte URL.
-localization_priority: Normal
+title: edgeHomeButtonOpensCustomURL-Ressourcentyp
+description: Schaltfläche "Start" anzeigen; beim Klicken auf die Schaltfläche "Startseite" wird eine bestimmte URL geladen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06f73375772f53b546e7e9b758a7513366949326
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143239"
 ---
-# <a name="edgehomebuttonopenscustomurl-resource-type"></a>Ressourcentyp edgeHomeButtonOpensCustomURL
+# <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zeigen Sie die Schaltfläche Startseite. durch Klicken auf die Schaltfläche Startseite lädt eine bestimmte URL.
+Schaltfläche "Start" anzeigen; beim Klicken auf die Schaltfläche "Startseite" wird eine bestimmte URL geladen.
 
 
-Erbt vom [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Erbt von [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|homeButtonCustomURL|Zeichenfolge|Die spezifischen URL zu laden.|
+|homeButtonCustomURL|Zeichenfolge|Die zu ladende URL.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,27 +1,28 @@
 ---
-title: RatingUnitedKingdomTelevisionType Enum-Typ
-description: TV zum Bewerten Beschriftungen in Großbritannien
+title: ratingUnitedKingdomTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Vereinigtes Königreich
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 259dfa943b594994ec19ee34eb42e6f406a7103f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4b65561cd54a347e03bbe895d70fec7edfc1b602
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954974"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257127"
 ---
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>RatingUnitedKingdomTelevisionType Enum-Typ
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Beschriftungen in Großbritannien
+TV-Inhalts Klassifikations Bezeichnungen in Vereinigtes Königreich
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|caution|2|Zulassen der TV Inhalt mit eine Warnmeldung angezeigt|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|caution|2|Zulassen von TV-Inhalten mit einer Warnmeldung|
 
 
 

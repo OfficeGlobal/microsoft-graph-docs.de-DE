@@ -1,23 +1,23 @@
 ---
-title: Liste depOnboardingSettings
-description: Listeneigenschaften und Beziehungen der DepOnboardingSetting-Objekte.
-localization_priority: Normal
+title: DepOnboardingSettings aufListen
+description: AufListen von Eigenschaften und Beziehungen der depOnboardingSetting-Objekte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64b15a19943ee5d03861ffc39b2e74a006b12936
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9c8ffd4ac7b76a692978c73362ec94400facf139
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394152"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141461"
 ---
-# <a name="list-deponboardingsettings"></a>Liste depOnboardingSettings
+# <a name="list-deponboardingsettings"></a>DepOnboardingSettings aufListen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Listeneigenschaften und Beziehungen der [DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekte.
+AufListen von Eigenschaften und Beziehungen der [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,16 +38,16 @@ GET /deviceManagement/depOnboardingSettings
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine Auflistung von Objekten im Antworttext [DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekten im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 712
+Content-Length: 786
 
 {
   "value": [
@@ -79,7 +79,10 @@ Content-Length: 712
       "tokenType": "dep",
       "tokenName": "Token Name value",
       "syncedDeviceCount": 1,
-      "dataSharingConsentGranted": true
+      "dataSharingConsentGranted": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

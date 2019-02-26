@@ -1,30 +1,30 @@
 ---
-title: VpnTrafficRuleRoutingPolicyType Enum-Typ
-description: Gibt die routing-Richtlinie für eine VPN-Datenverkehr Regel an.
-localization_priority: Normal
+title: vpnTrafficRuleRoutingPolicyType-Enumerationstyp
+description: Gibt die Routing Richtlinie für eine VPN-Datenverkehrs Regel an.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 028e49085e4a1fa5f01ac59ff00fbafd8846dfb9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a7c6121b9adc47d116a7b3321ca150a8d42449a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415005"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157344"
 ---
-# <a name="vpntrafficruleroutingpolicytype-enum-type"></a>VpnTrafficRuleRoutingPolicyType Enum-Typ
+# <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt die routing-Richtlinie für eine VPN-Datenverkehr Regel an.
+Gibt die Routing Richtlinie für eine VPN-Datenverkehrs Regel an.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Kein routing-Richtlinie angegeben.|
-|splitTunnel|1|Netzwerkverkehr für das angegebene app werden über VPN weitergeleitet.|
-|forceTunnel|2|Durch das VPN werden alle Netzwerkdatenverkehr weitergeleitet.|
+|Keine|0|Es wurde keine Routing Richtlinie angegeben.|
+|splitTunnel|1|Der Netzwerkdatenverkehr für die angegebene APP wird über das VPN weitergeleitet.|
+|forceTunnel|2|Der gesamte Netzwerkdatenverkehr wird über das VPN weitergeleitet.|
 
 
 

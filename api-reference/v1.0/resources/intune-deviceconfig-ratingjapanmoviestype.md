@@ -1,30 +1,31 @@
 ---
-title: RatingJapanMoviesType Enum-Typ
-description: Filme Bewertung Beschriftungen in Japan
+title: ratingJapanMoviesType-Enumerationstyp
+description: Movies Rating Labels in Japan
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 407c725b958c45fc395ba9adbe9634e78a288f53
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957298"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259276"
 ---
-# <a name="ratingjapanmoviestype-enum-type"></a>RatingJapanMoviesType Enum-Typ
+# <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Beschriftungen in Japan
+Movies Rating Labels in Japan
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Geeignet für alle Jahren|
-|parentalGuidance|3|Die Bild-12-Klassifizierung fordert Eltern Anleitungen für young Personen unter 12|
-|agesAbove15|4|Die Klassifizierung R15 + ist geeignet für Leser von Berichten 15 oder älter|
-|agesAbove18|5|Die Klassifizierung R18 + ist geeignet für Leser von Berichten von 18 oder älter|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Geeignet für alle Altersgruppen|
+|parentalGuidance|3|Die PG-12-Klassifikation fordert die elterliche Betreuung für Jugendliche unter 12 Jahren an.|
+|agesAbove15|4|Die R15 +-Klassifikation eignet sich für Zuschauer ab 15 Jahren.|
+|agesAbove18|5|Die R18 +-Klassifikation eignet sich für Zuschauer ab 18 Jahren.|
 
 
 

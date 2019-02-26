@@ -1,28 +1,29 @@
 ---
-title: ManagedAppDataEncryptionType Enum-Typ
-description: Stellt die Ebene an die app-Daten für verwaltete apps verschlüsselt werden
+title: managedAppDataEncryptionType-Enumerationstyp
+description: Stellt die Ebene dar, auf die APP-Daten für verwaltete apps verschlüsselt werden.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 08ac7a36e142a1d19dbaaeb0263ef095072a9e01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 774312d5f19b223fd33e2c156610f516ae7f48a3
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956815"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256770"
 ---
-# <a name="managedappdataencryptiontype-enum-type"></a>ManagedAppDataEncryptionType Enum-Typ
+# <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt die Ebene an die app-Daten für verwaltete apps verschlüsselt werden
+Stellt die Ebene dar, auf die APP-Daten für verwaltete apps verschlüsselt werden.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|useDeviceSettings|0|App-Daten werden verschlüsselt basierend auf die Standardeinstellungen auf dem Gerät.|
-|afterDeviceRestart|1|App-Daten werden verschlüsselt, wenn das Gerät neu gestartet wird.|
-|whenDeviceLockedExceptOpenFiles|2|App-Daten, die diese Richtlinie zugeordnet werden verschlüsselt, wenn das Gerät, mit Ausnahme von Daten in Dateien gesperrt ist, die geöffnet sind|
-|whenDeviceLocked|3|App-Daten, die diese Richtlinie zugeordnet werden verschlüsselt, wenn das Gerät gesperrt ist|
+|useDeviceSettings|0|App-Daten werden basierend auf den Standardeinstellungen auf dem Gerät verschlüsselt.|
+|afterDeviceRestart|1|App-Daten werden beim Neustart des Geräts verschlüsselt.|
+|whenDeviceLockedExceptOpenFiles|2|App-Daten, die dieser Richtlinie zugeordnet sind, werden verschlüsselt, wenn das Gerät gesperrt ist, mit Ausnahme von Daten in geöffneten Dateien|
+|whenDeviceLocked|3|App-Daten, die dieser Richtlinie zugeordnet sind, werden verschlüsselt, wenn das Gerät gesperrt ist.|
 
 
 
