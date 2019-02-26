@@ -1,34 +1,34 @@
 ---
-title: EmailSyncDuration Enum-Typ
-description: Mögliche Werte für die Dauer der e-Mail-Synchronisierung.
-localization_priority: Normal
+title: emailSyncDuration-Enumerationstyp
+description: Mögliche Werte für die e-Mail-Synchronisierungsdauer.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bf62aea1904c0fd25867aef308ca5a269e3ea20
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f2408150ea590a5d154b71521ca46df7c0fcff9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142266"
 ---
-# <a name="emailsyncduration-enum-type"></a><span data-ttu-id="c26d1-103">EmailSyncDuration Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="c26d1-103">emailSyncDuration enum type</span></span>
+# <a name="emailsyncduration-enum-type"></a><span data-ttu-id="a22d1-103">emailSyncDuration-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="a22d1-103">emailSyncDuration enum type</span></span>
 
-> <span data-ttu-id="c26d1-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="c26d1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c26d1-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c26d1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a22d1-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a22d1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c26d1-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c26d1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a22d1-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="a22d1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c26d1-107">Mögliche Werte für die Dauer der e-Mail-Synchronisierung.</span><span class="sxs-lookup"><span data-stu-id="c26d1-107">Possible values for email sync duration.</span></span>
+<span data-ttu-id="a22d1-106">Mögliche Werte für die e-Mail-Synchronisierungsdauer.</span><span class="sxs-lookup"><span data-stu-id="a22d1-106">Possible values for email sync duration.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c26d1-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="c26d1-108">Members</span></span>
-|<span data-ttu-id="c26d1-109">Member</span><span class="sxs-lookup"><span data-stu-id="c26d1-109">Member</span></span>|<span data-ttu-id="c26d1-110">Wert</span><span class="sxs-lookup"><span data-stu-id="c26d1-110">Value</span></span>|<span data-ttu-id="c26d1-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c26d1-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="a22d1-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="a22d1-107">Members</span></span>
+|<span data-ttu-id="a22d1-108">Element</span><span class="sxs-lookup"><span data-stu-id="a22d1-108">Member</span></span>|<span data-ttu-id="a22d1-109">Wert</span><span class="sxs-lookup"><span data-stu-id="a22d1-109">Value</span></span>|<span data-ttu-id="a22d1-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a22d1-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c26d1-112">vom Typ userDefined</span><span class="sxs-lookup"><span data-stu-id="c26d1-112">userDefined</span></span>|<span data-ttu-id="c26d1-113">0</span><span class="sxs-lookup"><span data-stu-id="c26d1-113">0</span></span>|<span data-ttu-id="c26d1-114">User-Defined, Standardwert, keine beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="c26d1-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="c26d1-115">oneDay</span><span class="sxs-lookup"><span data-stu-id="c26d1-115">oneDay</span></span>|<span data-ttu-id="c26d1-116">1</span><span class="sxs-lookup"><span data-stu-id="c26d1-116">1</span></span>|<span data-ttu-id="c26d1-117">Synchronisieren von e-Mail für einen Tag.</span><span class="sxs-lookup"><span data-stu-id="c26d1-117">Sync one day of email.</span></span>|
-|<span data-ttu-id="c26d1-118">threeDays</span><span class="sxs-lookup"><span data-stu-id="c26d1-118">threeDays</span></span>|<span data-ttu-id="c26d1-119">2</span><span class="sxs-lookup"><span data-stu-id="c26d1-119">2</span></span>|<span data-ttu-id="c26d1-120">Synchronisieren Sie drei Tage von e-Mails.</span><span class="sxs-lookup"><span data-stu-id="c26d1-120">Sync three days of email.</span></span>|
-|<span data-ttu-id="c26d1-121">oneWeek</span><span class="sxs-lookup"><span data-stu-id="c26d1-121">oneWeek</span></span>|<span data-ttu-id="c26d1-122">3</span><span class="sxs-lookup"><span data-stu-id="c26d1-122">3</span></span>|<span data-ttu-id="c26d1-123">Synchronisieren Sie eine Woche vor e-Mail.</span><span class="sxs-lookup"><span data-stu-id="c26d1-123">Sync one week of email.</span></span>|
-|<span data-ttu-id="c26d1-124">twoWeeks</span><span class="sxs-lookup"><span data-stu-id="c26d1-124">twoWeeks</span></span>|<span data-ttu-id="c26d1-125">4</span><span class="sxs-lookup"><span data-stu-id="c26d1-125">4</span></span>|<span data-ttu-id="c26d1-126">Synchronisieren von zwei Wochen von e-Mails.</span><span class="sxs-lookup"><span data-stu-id="c26d1-126">Sync two weeks of email.</span></span>|
-|<span data-ttu-id="c26d1-127">oneMonth</span><span class="sxs-lookup"><span data-stu-id="c26d1-127">oneMonth</span></span>|<span data-ttu-id="c26d1-128">5</span><span class="sxs-lookup"><span data-stu-id="c26d1-128">5</span></span>|<span data-ttu-id="c26d1-129">Synchronisieren eines Monats e-Mail.</span><span class="sxs-lookup"><span data-stu-id="c26d1-129">Sync one month of email.</span></span>|
-|<span data-ttu-id="c26d1-130">unbegrenzt</span><span class="sxs-lookup"><span data-stu-id="c26d1-130">unlimited</span></span>|<span data-ttu-id="c26d1-131">6</span><span class="sxs-lookup"><span data-stu-id="c26d1-131">6</span></span>|<span data-ttu-id="c26d1-132">Synchronisieren Sie eine unbegrenzte Dauer von e-Mail.</span><span class="sxs-lookup"><span data-stu-id="c26d1-132">Sync an unlimited duration of email.</span></span>|
+|<span data-ttu-id="a22d1-111">userDefined</span><span class="sxs-lookup"><span data-stu-id="a22d1-111">userDefined</span></span>|<span data-ttu-id="a22d1-112">0</span><span class="sxs-lookup"><span data-stu-id="a22d1-112">0</span></span>|<span data-ttu-id="a22d1-113">Benutzerdefiniert, Standardwert, keine Absicht.</span><span class="sxs-lookup"><span data-stu-id="a22d1-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="a22d1-114">oneDay</span><span class="sxs-lookup"><span data-stu-id="a22d1-114">oneDay</span></span>|<span data-ttu-id="a22d1-115">1</span><span class="sxs-lookup"><span data-stu-id="a22d1-115">1</span></span>|<span data-ttu-id="a22d1-116">Synchronisieren eines Tages der e-Mail.</span><span class="sxs-lookup"><span data-stu-id="a22d1-116">Sync one day of email.</span></span>|
+|<span data-ttu-id="a22d1-117">threeDays</span><span class="sxs-lookup"><span data-stu-id="a22d1-117">threeDays</span></span>|<span data-ttu-id="a22d1-118">2</span><span class="sxs-lookup"><span data-stu-id="a22d1-118">2</span></span>|<span data-ttu-id="a22d1-119">Synchronisieren Sie drei Tage e-Mail.</span><span class="sxs-lookup"><span data-stu-id="a22d1-119">Sync three days of email.</span></span>|
+|<span data-ttu-id="a22d1-120">oneWeek</span><span class="sxs-lookup"><span data-stu-id="a22d1-120">oneWeek</span></span>|<span data-ttu-id="a22d1-121">3</span><span class="sxs-lookup"><span data-stu-id="a22d1-121">3</span></span>|<span data-ttu-id="a22d1-122">Eine Woche e-Mails synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="a22d1-122">Sync one week of email.</span></span>|
+|<span data-ttu-id="a22d1-123">twoweeks starten</span><span class="sxs-lookup"><span data-stu-id="a22d1-123">twoWeeks</span></span>|<span data-ttu-id="a22d1-124">4</span><span class="sxs-lookup"><span data-stu-id="a22d1-124">4</span></span>|<span data-ttu-id="a22d1-125">Zwei Wochen e-Mails synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="a22d1-125">Sync two weeks of email.</span></span>|
+|<span data-ttu-id="a22d1-126">Maßgebend Frist</span><span class="sxs-lookup"><span data-stu-id="a22d1-126">oneMonth</span></span>|<span data-ttu-id="a22d1-127">5</span><span class="sxs-lookup"><span data-stu-id="a22d1-127">5</span></span>|<span data-ttu-id="a22d1-128">Einen Monat e-Mails synchronisieren.</span><span class="sxs-lookup"><span data-stu-id="a22d1-128">Sync one month of email.</span></span>|
+|<span data-ttu-id="a22d1-129">Unlimited</span><span class="sxs-lookup"><span data-stu-id="a22d1-129">unlimited</span></span>|<span data-ttu-id="a22d1-130">6</span><span class="sxs-lookup"><span data-stu-id="a22d1-130">6</span></span>|<span data-ttu-id="a22d1-131">Synchronisieren einer unbegrenzten Dauer von e-Mails.</span><span class="sxs-lookup"><span data-stu-id="a22d1-131">Sync an unlimited duration of email.</span></span>|
 
 
 

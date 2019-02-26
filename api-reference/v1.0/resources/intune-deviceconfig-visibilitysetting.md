@@ -1,27 +1,28 @@
 ---
-title: VisibilitySetting Enum-Typ
-description: Generische Sichtbarkeitszustand.
+title: visibilitySetting-Enumerationstyp
+description: Allgemeiner Sichtbarkeitsstatus.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d09b3237e7c7b1a41fd7fdc681fc828ebcc24a02
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7e28426681f832cefb3394d53aa9747a58531e81
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934695"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256287"
 ---
-# <a name="visibilitysetting-enum-type"></a><span data-ttu-id="2459b-103">VisibilitySetting Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="2459b-103">visibilitySetting enum type</span></span>
+# <a name="visibilitysetting-enum-type"></a><span data-ttu-id="434f7-103">visibilitySetting-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="434f7-103">visibilitySetting enum type</span></span>
 
-> <span data-ttu-id="2459b-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="2459b-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="434f7-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="434f7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2459b-105">Generische Sichtbarkeitszustand.</span><span class="sxs-lookup"><span data-stu-id="2459b-105">Generic visibility state.</span></span>
-## <a name="members"></a><span data-ttu-id="2459b-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="2459b-106">Members</span></span>
-|<span data-ttu-id="2459b-107">Element</span><span class="sxs-lookup"><span data-stu-id="2459b-107">Member</span></span>|<span data-ttu-id="2459b-108">Wert</span><span class="sxs-lookup"><span data-stu-id="2459b-108">Value</span></span>|<span data-ttu-id="2459b-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2459b-109">Description</span></span>|
+<span data-ttu-id="434f7-105">Allgemeiner Sichtbarkeitsstatus.</span><span class="sxs-lookup"><span data-stu-id="434f7-105">Generic visibility state.</span></span>
+
+## <a name="members"></a><span data-ttu-id="434f7-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="434f7-106">Members</span></span>
+|<span data-ttu-id="434f7-107">Element</span><span class="sxs-lookup"><span data-stu-id="434f7-107">Member</span></span>|<span data-ttu-id="434f7-108">Wert</span><span class="sxs-lookup"><span data-stu-id="434f7-108">Value</span></span>|<span data-ttu-id="434f7-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="434f7-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2459b-110">nicht konfiguriert</span><span class="sxs-lookup"><span data-stu-id="2459b-110">notConfigured</span></span>|<span data-ttu-id="2459b-111">0</span><span class="sxs-lookup"><span data-stu-id="2459b-111">0</span></span>|<span data-ttu-id="2459b-112">Nicht konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="2459b-112">Not configured.</span></span>|
-|<span data-ttu-id="2459b-113">Ausblenden</span><span class="sxs-lookup"><span data-stu-id="2459b-113">hide</span></span>|<span data-ttu-id="2459b-114">1</span><span class="sxs-lookup"><span data-stu-id="2459b-114">1</span></span>|<span data-ttu-id="2459b-115">Ausblenden</span><span class="sxs-lookup"><span data-stu-id="2459b-115">Hide.</span></span>|
-|<span data-ttu-id="2459b-116">Anzeigen</span><span class="sxs-lookup"><span data-stu-id="2459b-116">show</span></span>|<span data-ttu-id="2459b-117">2</span><span class="sxs-lookup"><span data-stu-id="2459b-117">2</span></span>|<span data-ttu-id="2459b-118">Anzeigen</span><span class="sxs-lookup"><span data-stu-id="2459b-118">Show.</span></span>|
+|<span data-ttu-id="434f7-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="434f7-110">notConfigured</span></span>|<span data-ttu-id="434f7-111">0</span><span class="sxs-lookup"><span data-stu-id="434f7-111">0</span></span>|<span data-ttu-id="434f7-112">Nicht konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="434f7-112">Not configured.</span></span>|
+|<span data-ttu-id="434f7-113">ausblenden</span><span class="sxs-lookup"><span data-stu-id="434f7-113">hide</span></span>|<span data-ttu-id="434f7-114">1</span><span class="sxs-lookup"><span data-stu-id="434f7-114">1</span></span>|<span data-ttu-id="434f7-115">Ausblenden</span><span class="sxs-lookup"><span data-stu-id="434f7-115">Hide.</span></span>|
+|<span data-ttu-id="434f7-116">zeigen</span><span class="sxs-lookup"><span data-stu-id="434f7-116">show</span></span>|<span data-ttu-id="434f7-117">2</span><span class="sxs-lookup"><span data-stu-id="434f7-117">2</span></span>|<span data-ttu-id="434f7-118">Anzeigen</span><span class="sxs-lookup"><span data-stu-id="434f7-118">Show.</span></span>|
 
 
 

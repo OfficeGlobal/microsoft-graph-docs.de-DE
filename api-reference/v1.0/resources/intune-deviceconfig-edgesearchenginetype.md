@@ -1,26 +1,27 @@
 ---
-title: EdgeSearchEngineType Enum-Typ
-description: Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
+title: edgeSearchEngineType-Enumerationstyp
+description: Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253918"
 ---
-# <a name="edgesearchenginetype-enum-type"></a><span data-ttu-id="8a0e8-103">EdgeSearchEngineType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="8a0e8-103">edgeSearchEngineType enum type</span></span>
+# <a name="edgesearchenginetype-enum-type"></a><span data-ttu-id="0b739-103">edgeSearchEngineType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="0b739-103">edgeSearchEngineType enum type</span></span>
 
-> <span data-ttu-id="8a0e8-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="8a0e8-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0b739-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="0b739-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8a0e8-105">Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen</span><span class="sxs-lookup"><span data-stu-id="8a0e8-105">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
-## <a name="members"></a><span data-ttu-id="8a0e8-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="8a0e8-106">Members</span></span>
-|<span data-ttu-id="8a0e8-107">Element</span><span class="sxs-lookup"><span data-stu-id="8a0e8-107">Member</span></span>|<span data-ttu-id="8a0e8-108">Wert</span><span class="sxs-lookup"><span data-stu-id="8a0e8-108">Value</span></span>|<span data-ttu-id="8a0e8-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8a0e8-109">Description</span></span>|
+<span data-ttu-id="0b739-105">Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen</span><span class="sxs-lookup"><span data-stu-id="0b739-105">Allows IT admind to set a predefined default search engine for MDM-Controlled devices</span></span>
+
+## <a name="members"></a><span data-ttu-id="0b739-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="0b739-106">Members</span></span>
+|<span data-ttu-id="0b739-107">Element</span><span class="sxs-lookup"><span data-stu-id="0b739-107">Member</span></span>|<span data-ttu-id="0b739-108">Wert</span><span class="sxs-lookup"><span data-stu-id="0b739-108">Value</span></span>|<span data-ttu-id="0b739-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0b739-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8a0e8-110">default</span><span class="sxs-lookup"><span data-stu-id="8a0e8-110">default</span></span>|<span data-ttu-id="8a0e8-111">0</span><span class="sxs-lookup"><span data-stu-id="8a0e8-111">0</span></span>|<span data-ttu-id="8a0e8-112">Standardeinstellung des Rands verwendet zum Zuweisen von Standard-Suchmaschine gemäß den Anweisungen in dem Benutzer Markt</span><span class="sxs-lookup"><span data-stu-id="8a0e8-112">Uses factory settings of Edge to assign the default search engine as per the user market</span></span>|
-|<span data-ttu-id="8a0e8-113">Bing</span><span class="sxs-lookup"><span data-stu-id="8a0e8-113">bing</span></span>|<span data-ttu-id="8a0e8-114">1</span><span class="sxs-lookup"><span data-stu-id="8a0e8-114">1</span></span>|<span data-ttu-id="8a0e8-115">Versetzt Bing als Standard-Suchmaschine</span><span class="sxs-lookup"><span data-stu-id="8a0e8-115">Sets Bing as the default search engine</span></span>|
+|<span data-ttu-id="0b739-110">default</span><span class="sxs-lookup"><span data-stu-id="0b739-110">default</span></span>|<span data-ttu-id="0b739-111">0</span><span class="sxs-lookup"><span data-stu-id="0b739-111">0</span></span>|<span data-ttu-id="0b739-112">Verwendet die werkseitigen Einstellungen von Edge, um die Standardsuchmaschine gemäß dem Benutzer Markt zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="0b739-112">Uses factory settings of Edge to assign the default search engine as per the user market</span></span>|
+|<span data-ttu-id="0b739-113">Bing</span><span class="sxs-lookup"><span data-stu-id="0b739-113">bing</span></span>|<span data-ttu-id="0b739-114">1</span><span class="sxs-lookup"><span data-stu-id="0b739-114">1</span></span>|<span data-ttu-id="0b739-115">Legt Bing als Standardsuchmaschine fest</span><span class="sxs-lookup"><span data-stu-id="0b739-115">Sets Bing as the default search engine</span></span>|
 
 
 

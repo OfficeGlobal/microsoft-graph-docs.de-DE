@@ -1,29 +1,30 @@
 ---
-title: RatingNewZealandTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Neuseeland
+title: ratingNewZealandTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Neuseeland
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a6ceda3ffc70500fd273ce2a7356448faa2bd4b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 92160bdd00253d44f7119c7da8ba20240ccecc31
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919932"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251769"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a><span data-ttu-id="a1f7a-103">RatingNewZealandTelevisionType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="a1f7a-103">ratingNewZealandTelevisionType enum type</span></span>
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a><span data-ttu-id="96ac3-103">ratingNewZealandTelevisionType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="96ac3-103">ratingNewZealandTelevisionType enum type</span></span>
 
-> <span data-ttu-id="a1f7a-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="a1f7a-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="96ac3-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="96ac3-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a1f7a-105">TV zum Bewerten Bezeichnungen in Neuseeland</span><span class="sxs-lookup"><span data-stu-id="a1f7a-105">TV content rating labels in New Zealand</span></span>
-## <a name="members"></a><span data-ttu-id="a1f7a-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="a1f7a-106">Members</span></span>
-|<span data-ttu-id="a1f7a-107">Element</span><span class="sxs-lookup"><span data-stu-id="a1f7a-107">Member</span></span>|<span data-ttu-id="a1f7a-108">Wert</span><span class="sxs-lookup"><span data-stu-id="a1f7a-108">Value</span></span>|<span data-ttu-id="a1f7a-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a1f7a-109">Description</span></span>|
+<span data-ttu-id="96ac3-105">TV-Inhalts Klassifikations Bezeichnungen in Neuseeland</span><span class="sxs-lookup"><span data-stu-id="96ac3-105">TV content rating labels in New Zealand</span></span>
+
+## <a name="members"></a><span data-ttu-id="96ac3-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="96ac3-106">Members</span></span>
+|<span data-ttu-id="96ac3-107">Element</span><span class="sxs-lookup"><span data-stu-id="96ac3-107">Member</span></span>|<span data-ttu-id="96ac3-108">Wert</span><span class="sxs-lookup"><span data-stu-id="96ac3-108">Value</span></span>|<span data-ttu-id="96ac3-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="96ac3-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a1f7a-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="a1f7a-110">allAllowed</span></span>|<span data-ttu-id="a1f7a-111">0</span><span class="sxs-lookup"><span data-stu-id="a1f7a-111">0</span></span>|<span data-ttu-id="a1f7a-112">Standardwert, zulassen, dass alle TV Inhalt anzeigt.</span><span class="sxs-lookup"><span data-stu-id="a1f7a-112">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="a1f7a-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="a1f7a-113">allBlocked</span></span>|<span data-ttu-id="a1f7a-114">1</span><span class="sxs-lookup"><span data-stu-id="a1f7a-114">1</span></span>|<span data-ttu-id="a1f7a-115">Lassen Sie nicht, dass alle TV Inhalt anzeigt.</span><span class="sxs-lookup"><span data-stu-id="a1f7a-115">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="a1f7a-116">Allgemeine</span><span class="sxs-lookup"><span data-stu-id="a1f7a-116">general</span></span>|<span data-ttu-id="a1f7a-117">2</span><span class="sxs-lookup"><span data-stu-id="a1f7a-117">2</span></span>|<span data-ttu-id="a1f7a-118">Die Klassifizierung G schließt untergeordnete Elemente unter 14 Schaden Materialien</span><span class="sxs-lookup"><span data-stu-id="a1f7a-118">The G classification excludes materials likely to harm children under 14</span></span>|
-|<span data-ttu-id="a1f7a-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="a1f7a-119">parentalGuidance</span></span>|<span data-ttu-id="a1f7a-120">3</span><span class="sxs-lookup"><span data-stu-id="a1f7a-120">3</span></span>|<span data-ttu-id="a1f7a-121">Die Klassifizierung PGR fördert Eltern und Aufsichtspersonen jüngere Leser von Berichten über innehaben.</span><span class="sxs-lookup"><span data-stu-id="a1f7a-121">The PGR classification encourages parents and guardians to supervise younger viewers</span></span>|
-|<span data-ttu-id="a1f7a-122">Erwachsene</span><span class="sxs-lookup"><span data-stu-id="a1f7a-122">adults</span></span>|<span data-ttu-id="a1f7a-123">4</span><span class="sxs-lookup"><span data-stu-id="a1f7a-123">4</span></span>|<span data-ttu-id="a1f7a-124">Die Klassifizierung AO eignet sich nicht für untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a1f7a-124">The AO classification is not suitable for children</span></span>|
+|<span data-ttu-id="96ac3-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="96ac3-110">allAllowed</span></span>|<span data-ttu-id="96ac3-111">0</span><span class="sxs-lookup"><span data-stu-id="96ac3-111">0</span></span>|<span data-ttu-id="96ac3-112">Standardwert, alle TV-Sendungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="96ac3-112">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="96ac3-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="96ac3-113">allBlocked</span></span>|<span data-ttu-id="96ac3-114">1</span><span class="sxs-lookup"><span data-stu-id="96ac3-114">1</span></span>|<span data-ttu-id="96ac3-115">Keine TV-Sendungen zulassen</span><span class="sxs-lookup"><span data-stu-id="96ac3-115">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="96ac3-116">allgemeine</span><span class="sxs-lookup"><span data-stu-id="96ac3-116">general</span></span>|<span data-ttu-id="96ac3-117">2</span><span class="sxs-lookup"><span data-stu-id="96ac3-117">2</span></span>|<span data-ttu-id="96ac3-118">Die G-Klassifikation schließt Materialien aus, die Kinder unter 14 Jahren schädigen können.</span><span class="sxs-lookup"><span data-stu-id="96ac3-118">The G classification excludes materials likely to harm children under 14</span></span>|
+|<span data-ttu-id="96ac3-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="96ac3-119">parentalGuidance</span></span>|<span data-ttu-id="96ac3-120">3</span><span class="sxs-lookup"><span data-stu-id="96ac3-120">3</span></span>|<span data-ttu-id="96ac3-121">Die PGR-Klassifizierung ermutigt Eltern und Erziehungsberechtigte, jüngere Betrachter zu überwachen</span><span class="sxs-lookup"><span data-stu-id="96ac3-121">The PGR classification encourages parents and guardians to supervise younger viewers</span></span>|
+|<span data-ttu-id="96ac3-122">Erwachsene</span><span class="sxs-lookup"><span data-stu-id="96ac3-122">adults</span></span>|<span data-ttu-id="96ac3-123">4</span><span class="sxs-lookup"><span data-stu-id="96ac3-123">4</span></span>|<span data-ttu-id="96ac3-124">Die AO-Klassifikation eignet sich nicht für Kinder</span><span class="sxs-lookup"><span data-stu-id="96ac3-124">The AO classification is not suitable for children</span></span>|
 
 
 
