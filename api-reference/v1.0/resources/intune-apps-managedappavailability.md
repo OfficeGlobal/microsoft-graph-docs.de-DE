@@ -1,26 +1,27 @@
 ---
-title: ManagedAppAvailability Enum-Typ
-description: Verfügbarkeit einer verwalteten (MAM)-Anwendung.
-localization_priority: Normal
+title: managedAppAvailability-Enumerationstyp
+description: Die Verfügbarkeit einer verwalteten (MAM) Anwendung.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: b79504fac79773dec5c58c894033a9ae9750442c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 9f4ec62590a5b91866c4a0d28fffd1596e161ffc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936123"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264001"
 ---
-# <a name="managedappavailability-enum-type"></a><span data-ttu-id="c6447-103">ManagedAppAvailability Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="c6447-103">managedAppAvailability enum type</span></span>
+# <a name="managedappavailability-enum-type"></a><span data-ttu-id="51587-103">managedAppAvailability-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="51587-103">managedAppAvailability enum type</span></span>
 
-> <span data-ttu-id="c6447-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="c6447-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="51587-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="51587-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c6447-105">Verfügbarkeit einer verwalteten (MAM)-Anwendung.</span><span class="sxs-lookup"><span data-stu-id="c6447-105">A managed (MAM) application's availability.</span></span>
-## <a name="members"></a><span data-ttu-id="c6447-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="c6447-106">Members</span></span>
-|<span data-ttu-id="c6447-107">Element</span><span class="sxs-lookup"><span data-stu-id="c6447-107">Member</span></span>|<span data-ttu-id="c6447-108">Wert</span><span class="sxs-lookup"><span data-stu-id="c6447-108">Value</span></span>|<span data-ttu-id="c6447-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c6447-109">Description</span></span>|
+<span data-ttu-id="51587-105">Die Verfügbarkeit einer verwalteten (MAM) Anwendung.</span><span class="sxs-lookup"><span data-stu-id="51587-105">A managed (MAM) application's availability.</span></span>
+
+## <a name="members"></a><span data-ttu-id="51587-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="51587-106">Members</span></span>
+|<span data-ttu-id="51587-107">Element</span><span class="sxs-lookup"><span data-stu-id="51587-107">Member</span></span>|<span data-ttu-id="51587-108">Wert</span><span class="sxs-lookup"><span data-stu-id="51587-108">Value</span></span>|<span data-ttu-id="51587-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="51587-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c6447-110">globale</span><span class="sxs-lookup"><span data-stu-id="c6447-110">global</span></span>|<span data-ttu-id="c6447-111">0</span><span class="sxs-lookup"><span data-stu-id="c6447-111">0</span></span>|<span data-ttu-id="c6447-112">Eine app für alle Mandanten werden global zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="c6447-112">A globally available app to all tenants.</span></span>|
-|<span data-ttu-id="c6447-113">lineOfBusiness</span><span class="sxs-lookup"><span data-stu-id="c6447-113">lineOfBusiness</span></span>|<span data-ttu-id="c6447-114">1</span><span class="sxs-lookup"><span data-stu-id="c6447-114">1</span></span>|<span data-ttu-id="c6447-115">Eine Zeile des Geschäfts-apps für eine Organisation privat.</span><span class="sxs-lookup"><span data-stu-id="c6447-115">A line of business apps private to an organization.</span></span>|
+|<span data-ttu-id="51587-110">globalen</span><span class="sxs-lookup"><span data-stu-id="51587-110">global</span></span>|<span data-ttu-id="51587-111">0</span><span class="sxs-lookup"><span data-stu-id="51587-111">0</span></span>|<span data-ttu-id="51587-112">Eine global verfügbare App für alle Mandanten.</span><span class="sxs-lookup"><span data-stu-id="51587-112">A globally available app to all tenants.</span></span>|
+|<span data-ttu-id="51587-113">Business restrictions auferlegt</span><span class="sxs-lookup"><span data-stu-id="51587-113">lineOfBusiness</span></span>|<span data-ttu-id="51587-114">1</span><span class="sxs-lookup"><span data-stu-id="51587-114">1</span></span>|<span data-ttu-id="51587-115">Eine Branche, die privat für eine Organisation ist.</span><span class="sxs-lookup"><span data-stu-id="51587-115">A line of business apps private to an organization.</span></span>|
 
 
 

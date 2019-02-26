@@ -1,34 +1,34 @@
 ---
 title: Abrufen von „auditEvent“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs auditEvent.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0d3e0450a80bc2b0932fda3143d14d46e30fb89
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 41ab66014be232c790b76337448c8e1515309089
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421032"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158037"
 ---
-# <a name="get-auditevent"></a><span data-ttu-id="7930e-103">Abrufen von „auditEvent“</span><span class="sxs-lookup"><span data-stu-id="7930e-103">Get auditEvent</span></span>
+# <a name="get-auditevent"></a><span data-ttu-id="45176-103">Abrufen von „auditEvent“</span><span class="sxs-lookup"><span data-stu-id="45176-103">Get auditEvent</span></span>
 
-> <span data-ttu-id="7930e-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="7930e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7930e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7930e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="45176-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="45176-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7930e-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7930e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="45176-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="45176-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7930e-107">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="7930e-107">Read properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+<span data-ttu-id="45176-106">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="45176-106">Read properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7930e-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="7930e-108">Prerequisites</span></span>
-<span data-ttu-id="7930e-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="7930e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="45176-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="45176-107">Prerequisites</span></span>
+<span data-ttu-id="45176-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="45176-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="7930e-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="7930e-111">Permission type</span></span>|<span data-ttu-id="7930e-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="7930e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="45176-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="45176-110">Permission type</span></span>|<span data-ttu-id="45176-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="45176-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7930e-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="7930e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7930e-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="7930e-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="7930e-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="7930e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7930e-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7930e-116">Not supported.</span></span>|
-|<span data-ttu-id="7930e-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="7930e-117">Application</span></span>|<span data-ttu-id="7930e-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="7930e-118">Not supported.</span></span>|
+|<span data-ttu-id="45176-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="45176-112">Delegated (work or school account)</span></span>|<span data-ttu-id="45176-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="45176-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="45176-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="45176-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="45176-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="45176-115">Not supported.</span></span>|
+|<span data-ttu-id="45176-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="45176-116">Application</span></span>|<span data-ttu-id="45176-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="45176-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7930e-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="7930e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45176-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="45176-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "29421032"
 GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7930e-120">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="7930e-120">Optional query parameters</span></span>
-<span data-ttu-id="7930e-121">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="7930e-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="45176-119">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="45176-119">Optional query parameters</span></span>
+<span data-ttu-id="45176-120">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="45176-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7930e-122">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="7930e-122">Request headers</span></span>
-|<span data-ttu-id="7930e-123">Header</span><span class="sxs-lookup"><span data-stu-id="7930e-123">Header</span></span>|<span data-ttu-id="7930e-124">Wert</span><span class="sxs-lookup"><span data-stu-id="7930e-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="45176-121">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="45176-121">Request headers</span></span>
+|<span data-ttu-id="45176-122">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="45176-122">Header</span></span>|<span data-ttu-id="45176-123">Wert</span><span class="sxs-lookup"><span data-stu-id="45176-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7930e-125">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="7930e-125">Authorization</span></span>|<span data-ttu-id="7930e-126">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="7930e-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7930e-127">Annehmen</span><span class="sxs-lookup"><span data-stu-id="7930e-127">Accept</span></span>|<span data-ttu-id="7930e-128">application/json</span><span class="sxs-lookup"><span data-stu-id="7930e-128">application/json</span></span>|
+|<span data-ttu-id="45176-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="45176-124">Authorization</span></span>|<span data-ttu-id="45176-125">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="45176-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="45176-126">Annehmen</span><span class="sxs-lookup"><span data-stu-id="45176-126">Accept</span></span>|<span data-ttu-id="45176-127">application/json</span><span class="sxs-lookup"><span data-stu-id="45176-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7930e-129">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="7930e-129">Request body</span></span>
-<span data-ttu-id="7930e-130">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="7930e-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="45176-128">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="45176-128">Request body</span></span>
+<span data-ttu-id="45176-129">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="45176-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7930e-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="7930e-131">Response</span></span>
-<span data-ttu-id="7930e-132">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [auditEvent](../resources/intune-auditing-auditevent.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="7930e-132">If successful, this method returns a `200 OK` response code and [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="45176-130">Antwort</span><span class="sxs-lookup"><span data-stu-id="45176-130">Response</span></span>
+<span data-ttu-id="45176-131">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [auditEvent](../resources/intune-auditing-auditevent.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="45176-131">If successful, this method returns a `200 OK` response code and [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7930e-133">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7930e-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="45176-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="45176-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7930e-134">Anforderung</span><span class="sxs-lookup"><span data-stu-id="7930e-134">Request</span></span>
-<span data-ttu-id="7930e-135">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="7930e-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="45176-133">Anforderung</span><span class="sxs-lookup"><span data-stu-id="45176-133">Request</span></span>
+<span data-ttu-id="45176-134">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="45176-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 ```
 
-### <a name="response"></a><span data-ttu-id="7930e-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="7930e-136">Response</span></span>
-<span data-ttu-id="7930e-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="7930e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="45176-135">Antwort</span><span class="sxs-lookup"><span data-stu-id="45176-135">Response</span></span>
+<span data-ttu-id="45176-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="45176-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

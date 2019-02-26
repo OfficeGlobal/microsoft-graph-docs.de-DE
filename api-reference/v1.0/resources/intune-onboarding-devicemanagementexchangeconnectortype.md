@@ -1,28 +1,29 @@
 ---
-title: DeviceManagementExchangeConnectorType Enum-Typ
+title: deviceManagementExchangeConnectorType-Enumerationstyp
 description: Der Typ des Exchange-Connectors.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8e9e50a4475ca2d57b3f38567703046588d4fb3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c358832db83e5f5b3e1fb0f5457f480d21ded996
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986432"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263560"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="f1205-103">DeviceManagementExchangeConnectorType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="f1205-103">deviceManagementExchangeConnectorType enum type</span></span>
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="debf7-103">deviceManagementExchangeConnectorType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="debf7-103">deviceManagementExchangeConnectorType enum type</span></span>
 
-> <span data-ttu-id="f1205-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="f1205-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="debf7-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="debf7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f1205-105">Der Typ des Exchange-Connectors.</span><span class="sxs-lookup"><span data-stu-id="f1205-105">The type of Exchange Connector.</span></span>
-## <a name="members"></a><span data-ttu-id="f1205-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="f1205-106">Members</span></span>
-|<span data-ttu-id="f1205-107">Element</span><span class="sxs-lookup"><span data-stu-id="f1205-107">Member</span></span>|<span data-ttu-id="f1205-108">Wert</span><span class="sxs-lookup"><span data-stu-id="f1205-108">Value</span></span>|<span data-ttu-id="f1205-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f1205-109">Description</span></span>|
+<span data-ttu-id="debf7-105">Der Typ des Exchange-Connectors.</span><span class="sxs-lookup"><span data-stu-id="debf7-105">The type of Exchange Connector.</span></span>
+
+## <a name="members"></a><span data-ttu-id="debf7-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="debf7-106">Members</span></span>
+|<span data-ttu-id="debf7-107">Element</span><span class="sxs-lookup"><span data-stu-id="debf7-107">Member</span></span>|<span data-ttu-id="debf7-108">Wert</span><span class="sxs-lookup"><span data-stu-id="debf7-108">Value</span></span>|<span data-ttu-id="debf7-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="debf7-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f1205-110">"lokal"</span><span class="sxs-lookup"><span data-stu-id="f1205-110">onPremises</span></span>|<span data-ttu-id="f1205-111">0</span><span class="sxs-lookup"><span data-stu-id="f1205-111">0</span></span>|<span data-ttu-id="f1205-112">Stellt eine Verbindung zum lokalen Exchange-Umgebung.</span><span class="sxs-lookup"><span data-stu-id="f1205-112">Connects to on-premises Exchange Environment.</span></span>|
-|<span data-ttu-id="f1205-113">gehostet</span><span class="sxs-lookup"><span data-stu-id="f1205-113">hosted</span></span>|<span data-ttu-id="f1205-114">1</span><span class="sxs-lookup"><span data-stu-id="f1205-114">1</span></span>|<span data-ttu-id="f1205-115">Stellt eine Verbindung mit Office 365 mit mehreren Mandanten Exchange-Umgebung</span><span class="sxs-lookup"><span data-stu-id="f1205-115">Connects to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="f1205-116">serviceToService</span><span class="sxs-lookup"><span data-stu-id="f1205-116">serviceToService</span></span>|<span data-ttu-id="f1205-117">2</span><span class="sxs-lookup"><span data-stu-id="f1205-117">2</span></span>|<span data-ttu-id="f1205-118">Intune Service verbindet direkt mit Office 365 mit mehreren Mandanten Exchange-Umgebung</span><span class="sxs-lookup"><span data-stu-id="f1205-118">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="f1205-119">dedizierte</span><span class="sxs-lookup"><span data-stu-id="f1205-119">dedicated</span></span>|<span data-ttu-id="f1205-120">3</span><span class="sxs-lookup"><span data-stu-id="f1205-120">3</span></span>|<span data-ttu-id="f1205-121">Stellt eine Verbindung zu Office 365 dedizierte Exchange-Umgebung.</span><span class="sxs-lookup"><span data-stu-id="f1205-121">Connects to O365 Dedicated Exchange environment.</span></span>|
+|<span data-ttu-id="debf7-110">onPremises</span><span class="sxs-lookup"><span data-stu-id="debf7-110">onPremises</span></span>|<span data-ttu-id="debf7-111">0</span><span class="sxs-lookup"><span data-stu-id="debf7-111">0</span></span>|<span data-ttu-id="debf7-112">Stellt eine Verbindung mit der lokalen Exchange-Umgebung her.</span><span class="sxs-lookup"><span data-stu-id="debf7-112">Connects to on-premises Exchange Environment.</span></span>|
+|<span data-ttu-id="debf7-113">gehostet</span><span class="sxs-lookup"><span data-stu-id="debf7-113">hosted</span></span>|<span data-ttu-id="debf7-114">1</span><span class="sxs-lookup"><span data-stu-id="debf7-114">1</span></span>|<span data-ttu-id="debf7-115">Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten</span><span class="sxs-lookup"><span data-stu-id="debf7-115">Connects to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="debf7-116">serviceToService</span><span class="sxs-lookup"><span data-stu-id="debf7-116">serviceToService</span></span>|<span data-ttu-id="debf7-117">2</span><span class="sxs-lookup"><span data-stu-id="debf7-117">2</span></span>|<span data-ttu-id="debf7-118">InTune-Dienst stellt eine direkte Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten her</span><span class="sxs-lookup"><span data-stu-id="debf7-118">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="debf7-119">dedizierten</span><span class="sxs-lookup"><span data-stu-id="debf7-119">dedicated</span></span>|<span data-ttu-id="debf7-120">3</span><span class="sxs-lookup"><span data-stu-id="debf7-120">3</span></span>|<span data-ttu-id="debf7-121">Stellt eine Verbindung zu einer dedizierten Exchange-Umgebung von O365 her.</span><span class="sxs-lookup"><span data-stu-id="debf7-121">Connects to O365 Dedicated Exchange environment.</span></span>|
 
 
 

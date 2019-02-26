@@ -1,28 +1,29 @@
 ---
-title: NotificationTemplateBrandingOptions Enum-Typ
-description: Optionen für die Nachrichtenvorlage Branding. Das Branding wird in der Intune-Verwaltungskonsole definiert.
+title: notificationTemplateBrandingOptions-Enumerationstyp
+description: Branding-Optionen für die Nachrichtenvorlage. Das Branding wird in der Intune-Verwaltungskonsole definiert.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1223e94396cc706ea79715f1d04b4ccad8984896
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985683"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261894"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a><span data-ttu-id="cebb2-104">NotificationTemplateBrandingOptions Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="cebb2-104">notificationTemplateBrandingOptions enum type</span></span>
+# <a name="notificationtemplatebrandingoptions-enum-type"></a><span data-ttu-id="f9a62-104">notificationTemplateBrandingOptions-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="f9a62-104">notificationTemplateBrandingOptions enum type</span></span>
 
-> <span data-ttu-id="cebb2-105">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="cebb2-105">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f9a62-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="f9a62-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cebb2-106">Optionen für die Nachrichtenvorlage Branding.</span><span class="sxs-lookup"><span data-stu-id="cebb2-106">Branding Options for the Message Template.</span></span> <span data-ttu-id="cebb2-107">Das Branding wird in der Intune-Verwaltungskonsole definiert.</span><span class="sxs-lookup"><span data-stu-id="cebb2-107">Branding is defined in the Intune Admin Console.</span></span>
-## <a name="members"></a><span data-ttu-id="cebb2-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="cebb2-108">Members</span></span>
-|<span data-ttu-id="cebb2-109">Element</span><span class="sxs-lookup"><span data-stu-id="cebb2-109">Member</span></span>|<span data-ttu-id="cebb2-110">Wert</span><span class="sxs-lookup"><span data-stu-id="cebb2-110">Value</span></span>|<span data-ttu-id="cebb2-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cebb2-111">Description</span></span>|
+<span data-ttu-id="f9a62-106">Branding-Optionen für die Nachrichtenvorlage.</span><span class="sxs-lookup"><span data-stu-id="f9a62-106">Branding Options for the Message Template.</span></span> <span data-ttu-id="f9a62-107">Das Branding wird in der Intune-Verwaltungskonsole definiert.</span><span class="sxs-lookup"><span data-stu-id="f9a62-107">Branding is defined in the Intune Admin Console.</span></span>
+
+## <a name="members"></a><span data-ttu-id="f9a62-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="f9a62-108">Members</span></span>
+|<span data-ttu-id="f9a62-109">Element</span><span class="sxs-lookup"><span data-stu-id="f9a62-109">Member</span></span>|<span data-ttu-id="f9a62-110">Wert</span><span class="sxs-lookup"><span data-stu-id="f9a62-110">Value</span></span>|<span data-ttu-id="f9a62-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f9a62-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cebb2-112">n/v</span><span class="sxs-lookup"><span data-stu-id="cebb2-112">none</span></span>|<span data-ttu-id="cebb2-113">0</span><span class="sxs-lookup"><span data-stu-id="cebb2-113">0</span></span>|<span data-ttu-id="cebb2-114">Keine Branding.</span><span class="sxs-lookup"><span data-stu-id="cebb2-114">No Branding.</span></span>|
-|<span data-ttu-id="cebb2-115">includeCompanyLogo</span><span class="sxs-lookup"><span data-stu-id="cebb2-115">includeCompanyLogo</span></span>|<span data-ttu-id="cebb2-116">1</span><span class="sxs-lookup"><span data-stu-id="cebb2-116">1</span></span>|<span data-ttu-id="cebb2-117">Enthalten Sie Firmenlogo.</span><span class="sxs-lookup"><span data-stu-id="cebb2-117">Include Company Logo.</span></span>|
-|<span data-ttu-id="cebb2-118">includeCompanyName</span><span class="sxs-lookup"><span data-stu-id="cebb2-118">includeCompanyName</span></span>|<span data-ttu-id="cebb2-119">2</span><span class="sxs-lookup"><span data-stu-id="cebb2-119">2</span></span>|<span data-ttu-id="cebb2-120">Einschließen von Firmennamen.</span><span class="sxs-lookup"><span data-stu-id="cebb2-120">Include Company Name.</span></span>|
-|<span data-ttu-id="cebb2-121">includeContactInformation</span><span class="sxs-lookup"><span data-stu-id="cebb2-121">includeContactInformation</span></span>|<span data-ttu-id="cebb2-122">4</span><span class="sxs-lookup"><span data-stu-id="cebb2-122">4</span></span>|<span data-ttu-id="cebb2-123">Enthalten Sie Kontaktinformationen.</span><span class="sxs-lookup"><span data-stu-id="cebb2-123">Include Contact Info.</span></span>|
+|<span data-ttu-id="f9a62-112">Keine</span><span class="sxs-lookup"><span data-stu-id="f9a62-112">none</span></span>|<span data-ttu-id="f9a62-113">0</span><span class="sxs-lookup"><span data-stu-id="f9a62-113">0</span></span>|<span data-ttu-id="f9a62-114">Kein Branding.</span><span class="sxs-lookup"><span data-stu-id="f9a62-114">No Branding.</span></span>|
+|<span data-ttu-id="f9a62-115">includeCompanyLogo</span><span class="sxs-lookup"><span data-stu-id="f9a62-115">includeCompanyLogo</span></span>|<span data-ttu-id="f9a62-116">1</span><span class="sxs-lookup"><span data-stu-id="f9a62-116">1</span></span>|<span data-ttu-id="f9a62-117">Firmen Logo hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="f9a62-117">Include Company Logo.</span></span>|
+|<span data-ttu-id="f9a62-118">includeCompanyName</span><span class="sxs-lookup"><span data-stu-id="f9a62-118">includeCompanyName</span></span>|<span data-ttu-id="f9a62-119">2</span><span class="sxs-lookup"><span data-stu-id="f9a62-119">2</span></span>|<span data-ttu-id="f9a62-120">Firmennamen einbeziehen.</span><span class="sxs-lookup"><span data-stu-id="f9a62-120">Include Company Name.</span></span>|
+|<span data-ttu-id="f9a62-121">includeContactInformation</span><span class="sxs-lookup"><span data-stu-id="f9a62-121">includeContactInformation</span></span>|<span data-ttu-id="f9a62-122">4</span><span class="sxs-lookup"><span data-stu-id="f9a62-122">4</span></span>|<span data-ttu-id="f9a62-123">Kontaktinformationen einbeziehen.</span><span class="sxs-lookup"><span data-stu-id="f9a62-123">Include Contact Info.</span></span>|
 
 
 

@@ -1,37 +1,37 @@
 ---
-title: windows10VpnConnectionType Enum-Typ
+title: windows10VpnConnectionType-Enumerationstyp
 description: VPN-Verbindungstypen.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b3114c5d608cfed786fab8d2734d723682670ba
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e5e0e3248315fc598d95ea3eb2bb46a6445a5968
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395937"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166710"
 ---
-# <a name="windows10vpnconnectiontype-enum-type"></a><span data-ttu-id="97f70-103">windows10VpnConnectionType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="97f70-103">windows10VpnConnectionType enum type</span></span>
+# <a name="windows10vpnconnectiontype-enum-type"></a><span data-ttu-id="bf327-103">windows10VpnConnectionType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="bf327-103">windows10VpnConnectionType enum type</span></span>
 
-> <span data-ttu-id="97f70-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="97f70-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="97f70-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="97f70-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bf327-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bf327-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="97f70-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="97f70-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bf327-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="bf327-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="97f70-107">VPN-Verbindungstypen.</span><span class="sxs-lookup"><span data-stu-id="97f70-107">VPN connection types.</span></span>
+<span data-ttu-id="bf327-106">VPN-Verbindungstypen.</span><span class="sxs-lookup"><span data-stu-id="bf327-106">VPN connection types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="97f70-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="97f70-108">Members</span></span>
-|<span data-ttu-id="97f70-109">Member</span><span class="sxs-lookup"><span data-stu-id="97f70-109">Member</span></span>|<span data-ttu-id="97f70-110">Wert</span><span class="sxs-lookup"><span data-stu-id="97f70-110">Value</span></span>|<span data-ttu-id="97f70-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="97f70-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="bf327-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="bf327-107">Members</span></span>
+|<span data-ttu-id="bf327-108">Element</span><span class="sxs-lookup"><span data-stu-id="bf327-108">Member</span></span>|<span data-ttu-id="bf327-109">Wert</span><span class="sxs-lookup"><span data-stu-id="bf327-109">Value</span></span>|<span data-ttu-id="bf327-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bf327-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="97f70-112">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="97f70-112">pulseSecure</span></span>|<span data-ttu-id="97f70-113">0</span><span class="sxs-lookup"><span data-stu-id="97f70-113">0</span></span>|<span data-ttu-id="97f70-114">Pulse sichern.</span><span class="sxs-lookup"><span data-stu-id="97f70-114">Pulse Secure.</span></span>|
-|<span data-ttu-id="97f70-115">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="97f70-115">f5EdgeClient</span></span>|<span data-ttu-id="97f70-116">1</span><span class="sxs-lookup"><span data-stu-id="97f70-116">1</span></span>|<span data-ttu-id="97f70-117">F5-Edge-Client.</span><span class="sxs-lookup"><span data-stu-id="97f70-117">F5 Edge Client.</span></span>|
-|<span data-ttu-id="97f70-118">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="97f70-118">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="97f70-119">2</span><span class="sxs-lookup"><span data-stu-id="97f70-119">2</span></span>|<span data-ttu-id="97f70-120">Dell SonicWALL Mobile Verbindung.</span><span class="sxs-lookup"><span data-stu-id="97f70-120">Dell SonicWALL Mobile Connection.</span></span>|
-|<span data-ttu-id="97f70-121">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="97f70-121">checkPointCapsuleVpn</span></span>|<span data-ttu-id="97f70-122">3</span><span class="sxs-lookup"><span data-stu-id="97f70-122">3</span></span>|<span data-ttu-id="97f70-123">Überprüfen Sie Punkt "Kapseln" VPN.</span><span class="sxs-lookup"><span data-stu-id="97f70-123">Check Point Capsule VPN.</span></span>|
-|<span data-ttu-id="97f70-124">Automatisch</span><span class="sxs-lookup"><span data-stu-id="97f70-124">automatic</span></span>|<span data-ttu-id="97f70-125">4</span><span class="sxs-lookup"><span data-stu-id="97f70-125">4</span></span>|<span data-ttu-id="97f70-126">Automatisch.</span><span class="sxs-lookup"><span data-stu-id="97f70-126">Automatic.</span></span>|
-|<span data-ttu-id="97f70-127">ikEv2</span><span class="sxs-lookup"><span data-stu-id="97f70-127">ikEv2</span></span>|<span data-ttu-id="97f70-128">5</span><span class="sxs-lookup"><span data-stu-id="97f70-128">5</span></span>|<span data-ttu-id="97f70-129">IKEv2.</span><span class="sxs-lookup"><span data-stu-id="97f70-129">IKEv2.</span></span>|
-|<span data-ttu-id="97f70-130">L2TP</span><span class="sxs-lookup"><span data-stu-id="97f70-130">l2tp</span></span>|<span data-ttu-id="97f70-131">6</span><span class="sxs-lookup"><span data-stu-id="97f70-131">6</span></span>|<span data-ttu-id="97f70-132">L2TP.</span><span class="sxs-lookup"><span data-stu-id="97f70-132">L2TP.</span></span>|
-|<span data-ttu-id="97f70-133">PPTP</span><span class="sxs-lookup"><span data-stu-id="97f70-133">pptp</span></span>|<span data-ttu-id="97f70-134">7</span><span class="sxs-lookup"><span data-stu-id="97f70-134">7</span></span>|<span data-ttu-id="97f70-135">PPTP.</span><span class="sxs-lookup"><span data-stu-id="97f70-135">PPTP.</span></span>|
-|<span data-ttu-id="97f70-136">Citrix</span><span class="sxs-lookup"><span data-stu-id="97f70-136">citrix</span></span>|<span data-ttu-id="97f70-137">8</span><span class="sxs-lookup"><span data-stu-id="97f70-137">8</span></span>|<span data-ttu-id="97f70-138">Citrix.</span><span class="sxs-lookup"><span data-stu-id="97f70-138">Citrix.</span></span>|
-|<span data-ttu-id="97f70-139">paloAltoGlobalProtect</span><span class="sxs-lookup"><span data-stu-id="97f70-139">paloAltoGlobalProtect</span></span>|<span data-ttu-id="97f70-140">9</span><span class="sxs-lookup"><span data-stu-id="97f70-140">9</span></span>|<span data-ttu-id="97f70-141">Palo Alto Netzwerke GlobalProtect.</span><span class="sxs-lookup"><span data-stu-id="97f70-141">Palo Alto Networks GlobalProtect.</span></span>|
+|<span data-ttu-id="bf327-111">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="bf327-111">pulseSecure</span></span>|<span data-ttu-id="bf327-112">0</span><span class="sxs-lookup"><span data-stu-id="bf327-112">0</span></span>|<span data-ttu-id="bf327-113">Impuls sicher.</span><span class="sxs-lookup"><span data-stu-id="bf327-113">Pulse Secure.</span></span>|
+|<span data-ttu-id="bf327-114">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="bf327-114">f5EdgeClient</span></span>|<span data-ttu-id="bf327-115">1</span><span class="sxs-lookup"><span data-stu-id="bf327-115">1</span></span>|<span data-ttu-id="bf327-116">F5-Edge-Client.</span><span class="sxs-lookup"><span data-stu-id="bf327-116">F5 Edge Client.</span></span>|
+|<span data-ttu-id="bf327-117">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="bf327-117">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="bf327-118">2</span><span class="sxs-lookup"><span data-stu-id="bf327-118">2</span></span>|<span data-ttu-id="bf327-119">Dell SonicWALL Mobile-Verbindung.</span><span class="sxs-lookup"><span data-stu-id="bf327-119">Dell SonicWALL Mobile Connection.</span></span>|
+|<span data-ttu-id="bf327-120">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="bf327-120">checkPointCapsuleVpn</span></span>|<span data-ttu-id="bf327-121">3</span><span class="sxs-lookup"><span data-stu-id="bf327-121">3</span></span>|<span data-ttu-id="bf327-122">Überprüfen Sie Point Kapsel VPN.</span><span class="sxs-lookup"><span data-stu-id="bf327-122">Check Point Capsule VPN.</span></span>|
+|<span data-ttu-id="bf327-123">Automatisch</span><span class="sxs-lookup"><span data-stu-id="bf327-123">automatic</span></span>|<span data-ttu-id="bf327-124">4</span><span class="sxs-lookup"><span data-stu-id="bf327-124">4</span></span>|<span data-ttu-id="bf327-125">Automatisch.</span><span class="sxs-lookup"><span data-stu-id="bf327-125">Automatic.</span></span>|
+|<span data-ttu-id="bf327-126">ikEv2</span><span class="sxs-lookup"><span data-stu-id="bf327-126">ikEv2</span></span>|<span data-ttu-id="bf327-127">5</span><span class="sxs-lookup"><span data-stu-id="bf327-127">5</span></span>|<span data-ttu-id="bf327-128">IKEv2.</span><span class="sxs-lookup"><span data-stu-id="bf327-128">IKEv2.</span></span>|
+|<span data-ttu-id="bf327-129">L2TP</span><span class="sxs-lookup"><span data-stu-id="bf327-129">l2tp</span></span>|<span data-ttu-id="bf327-130">6</span><span class="sxs-lookup"><span data-stu-id="bf327-130">6</span></span>|<span data-ttu-id="bf327-131">L2TP.</span><span class="sxs-lookup"><span data-stu-id="bf327-131">L2TP.</span></span>|
+|<span data-ttu-id="bf327-132">PPTP</span><span class="sxs-lookup"><span data-stu-id="bf327-132">pptp</span></span>|<span data-ttu-id="bf327-133">7</span><span class="sxs-lookup"><span data-stu-id="bf327-133">7</span></span>|<span data-ttu-id="bf327-134">PPTP.</span><span class="sxs-lookup"><span data-stu-id="bf327-134">PPTP.</span></span>|
+|<span data-ttu-id="bf327-135">Citrix</span><span class="sxs-lookup"><span data-stu-id="bf327-135">citrix</span></span>|<span data-ttu-id="bf327-136">8</span><span class="sxs-lookup"><span data-stu-id="bf327-136">8</span></span>|<span data-ttu-id="bf327-137">Citrix.</span><span class="sxs-lookup"><span data-stu-id="bf327-137">Citrix.</span></span>|
+|<span data-ttu-id="bf327-138">Member paloaltoglobalprotect</span><span class="sxs-lookup"><span data-stu-id="bf327-138">paloAltoGlobalProtect</span></span>|<span data-ttu-id="bf327-139">9</span><span class="sxs-lookup"><span data-stu-id="bf327-139">9</span></span>|<span data-ttu-id="bf327-140">Palo Alto Networks GlobalProtect.</span><span class="sxs-lookup"><span data-stu-id="bf327-140">Palo Alto Networks GlobalProtect.</span></span>|
 
 
 

@@ -1,30 +1,31 @@
 ---
-title: SiteSecurityLevel Enum-Typ
-description: Mögliche Werte für die Website Sicherheitsstufe.
+title: siteSecurityLevel-Enumerationstyp
+description: Mögliche Werte für die Website Sicherheitsebene.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 00eb46dd4644d212d638e826d4437afb48202e86
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: dd414911da78a0a3c2576fe1f53d47250cdd3d78
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991384"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263882"
 ---
-# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="bedf0-103">SiteSecurityLevel Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="bedf0-103">siteSecurityLevel enum type</span></span>
+# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="5ad08-103">siteSecurityLevel-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="5ad08-103">siteSecurityLevel enum type</span></span>
 
-> <span data-ttu-id="bedf0-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="bedf0-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5ad08-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="5ad08-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bedf0-105">Mögliche Werte für die Website Sicherheitsstufe.</span><span class="sxs-lookup"><span data-stu-id="bedf0-105">Possible values for site security level.</span></span>
-## <a name="members"></a><span data-ttu-id="bedf0-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="bedf0-106">Members</span></span>
-|<span data-ttu-id="bedf0-107">Element</span><span class="sxs-lookup"><span data-stu-id="bedf0-107">Member</span></span>|<span data-ttu-id="bedf0-108">Wert</span><span class="sxs-lookup"><span data-stu-id="bedf0-108">Value</span></span>|<span data-ttu-id="bedf0-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="bedf0-109">Description</span></span>|
+<span data-ttu-id="5ad08-105">Mögliche Werte für die Website Sicherheitsebene.</span><span class="sxs-lookup"><span data-stu-id="5ad08-105">Possible values for site security level.</span></span>
+
+## <a name="members"></a><span data-ttu-id="5ad08-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="5ad08-106">Members</span></span>
+|<span data-ttu-id="5ad08-107">Element</span><span class="sxs-lookup"><span data-stu-id="5ad08-107">Member</span></span>|<span data-ttu-id="5ad08-108">Wert</span><span class="sxs-lookup"><span data-stu-id="5ad08-108">Value</span></span>|<span data-ttu-id="5ad08-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5ad08-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bedf0-110">vom Typ userDefined</span><span class="sxs-lookup"><span data-stu-id="bedf0-110">userDefined</span></span>|<span data-ttu-id="bedf0-111">0</span><span class="sxs-lookup"><span data-stu-id="bedf0-111">0</span></span>|<span data-ttu-id="bedf0-112">User-Defined, Standardwert, keine beabsichtigt.</span><span class="sxs-lookup"><span data-stu-id="bedf0-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="bedf0-113">Niedrig</span><span class="sxs-lookup"><span data-stu-id="bedf0-113">low</span></span>|<span data-ttu-id="bedf0-114">1</span><span class="sxs-lookup"><span data-stu-id="bedf0-114">1</span></span>|<span data-ttu-id="bedf0-115">Niedrig</span><span class="sxs-lookup"><span data-stu-id="bedf0-115">Low.</span></span>|
-|<span data-ttu-id="bedf0-116">mediumLow</span><span class="sxs-lookup"><span data-stu-id="bedf0-116">mediumLow</span></span>|<span data-ttu-id="bedf0-117">2</span><span class="sxs-lookup"><span data-stu-id="bedf0-117">2</span></span>|<span data-ttu-id="bedf0-118">Niedrig.</span><span class="sxs-lookup"><span data-stu-id="bedf0-118">Medium-low.</span></span>|
-|<span data-ttu-id="bedf0-119">medium</span><span class="sxs-lookup"><span data-stu-id="bedf0-119">medium</span></span>|<span data-ttu-id="bedf0-120">3</span><span class="sxs-lookup"><span data-stu-id="bedf0-120">3</span></span>|<span data-ttu-id="bedf0-121">Mittel.</span><span class="sxs-lookup"><span data-stu-id="bedf0-121">Medium.</span></span>|
-|<span data-ttu-id="bedf0-122">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="bedf0-122">mediumHigh</span></span>|<span data-ttu-id="bedf0-123">4</span><span class="sxs-lookup"><span data-stu-id="bedf0-123">4</span></span>|<span data-ttu-id="bedf0-124">Mittel-hoch.</span><span class="sxs-lookup"><span data-stu-id="bedf0-124">Medium-high.</span></span>|
-|<span data-ttu-id="bedf0-125">hohe</span><span class="sxs-lookup"><span data-stu-id="bedf0-125">high</span></span>|<span data-ttu-id="bedf0-126">5</span><span class="sxs-lookup"><span data-stu-id="bedf0-126">5</span></span>|<span data-ttu-id="bedf0-127">Hoch</span><span class="sxs-lookup"><span data-stu-id="bedf0-127">High.</span></span>|
+|<span data-ttu-id="5ad08-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="5ad08-110">userDefined</span></span>|<span data-ttu-id="5ad08-111">0</span><span class="sxs-lookup"><span data-stu-id="5ad08-111">0</span></span>|<span data-ttu-id="5ad08-112">Benutzerdefiniert, Standardwert, keine Absicht.</span><span class="sxs-lookup"><span data-stu-id="5ad08-112">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="5ad08-113">mit niedriger</span><span class="sxs-lookup"><span data-stu-id="5ad08-113">low</span></span>|<span data-ttu-id="5ad08-114">1</span><span class="sxs-lookup"><span data-stu-id="5ad08-114">1</span></span>|<span data-ttu-id="5ad08-115">Niedrig</span><span class="sxs-lookup"><span data-stu-id="5ad08-115">Low.</span></span>|
+|<span data-ttu-id="5ad08-116">mediumLow</span><span class="sxs-lookup"><span data-stu-id="5ad08-116">mediumLow</span></span>|<span data-ttu-id="5ad08-117">2</span><span class="sxs-lookup"><span data-stu-id="5ad08-117">2</span></span>|<span data-ttu-id="5ad08-118">Mittel-niedrig.</span><span class="sxs-lookup"><span data-stu-id="5ad08-118">Medium-low.</span></span>|
+|<span data-ttu-id="5ad08-119">medium</span><span class="sxs-lookup"><span data-stu-id="5ad08-119">medium</span></span>|<span data-ttu-id="5ad08-120">3</span><span class="sxs-lookup"><span data-stu-id="5ad08-120">3</span></span>|<span data-ttu-id="5ad08-121">Mittel.</span><span class="sxs-lookup"><span data-stu-id="5ad08-121">Medium.</span></span>|
+|<span data-ttu-id="5ad08-122">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="5ad08-122">mediumHigh</span></span>|<span data-ttu-id="5ad08-123">4</span><span class="sxs-lookup"><span data-stu-id="5ad08-123">4</span></span>|<span data-ttu-id="5ad08-124">Mittel-hoch.</span><span class="sxs-lookup"><span data-stu-id="5ad08-124">Medium-high.</span></span>|
+|<span data-ttu-id="5ad08-125">hohe</span><span class="sxs-lookup"><span data-stu-id="5ad08-125">high</span></span>|<span data-ttu-id="5ad08-126">5</span><span class="sxs-lookup"><span data-stu-id="5ad08-126">5</span></span>|<span data-ttu-id="5ad08-127">Hoch</span><span class="sxs-lookup"><span data-stu-id="5ad08-127">High.</span></span>|
 
 
 
