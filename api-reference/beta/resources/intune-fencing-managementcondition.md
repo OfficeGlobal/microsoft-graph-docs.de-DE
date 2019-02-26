@@ -1,47 +1,47 @@
 ---
-title: Ressourcentyp managementCondition
-description: Management Bedingungen sind Ereignisse, die dynamisch wie Geo-Klammern, ausgelöst werden, können Zeit Klammern und Netzwerk Klammern.
-localization_priority: Normal
+title: managementCondition-Ressourcentyp
+description: Verwaltungsbedingungen sind Ereignisse, die dynamisch ausgelöst werden können, beispielsweise Geofences, Zeit Zäune und Netzwerk Zäune.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c41b4cb3143349ba0fdd97633a70ec7b38e266ec
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 594716867cec1dcef9e0fee87af21fb63af99df0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405856"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163105"
 ---
-# <a name="managementcondition-resource-type"></a>Ressourcentyp managementCondition
+# <a name="managementcondition-resource-type"></a>managementCondition-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Management Bedingungen sind Ereignisse, die dynamisch wie Geo-Klammern, ausgelöst werden, können Zeit Klammern und Netzwerk Klammern.
+Verwaltungsbedingungen sind Ereignisse, die dynamisch ausgelöst werden können, beispielsweise Geofences, Zeit Zäune und Netzwerk Zäune.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste managementConditions](../api/intune-fencing-managementcondition-list.md)|[ManagementCondition](../resources/intune-fencing-managementcondition.md) -Auflistung|Listeneigenschaften und Beziehungen der [ManagementCondition](../resources/intune-fencing-managementcondition.md) -Objekte.|
-|[Abrufen von managementCondition](../api/intune-fencing-managementcondition-get.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)|Lesen Sie Eigenschaften und Beziehungen des [ManagementCondition](../resources/intune-fencing-managementcondition.md) -Objekts.|
-|[GetManagementConditionsForPlatform-Funktion](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[ManagementCondition](../resources/intune-fencing-managementcondition.md) -Auflistung|Noch nicht dokumentiert|
+|[ManagementConditions aufListen](../api/intune-fencing-managementcondition-list.md)|[managementCondition](../resources/intune-fencing-managementcondition.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [managementCondition](../resources/intune-fencing-managementcondition.md) -Objekte.|
+|[ManagementCondition abrufen](../api/intune-fencing-managementcondition-get.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)|Lesen von Eigenschaften und Beziehungen des [managementCondition](../resources/intune-fencing-managementcondition.md) -Objekts.|
+|[getManagementConditionsForPlatform-Funktion](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[managementCondition](../resources/intune-fencing-managementcondition.md) -Sammlung|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Bedingung Management. System generierten Wert, die beim Erstellen zugewiesen.|
-|uniqueName|Zeichenfolge|Eindeutiger Name für die Bedingung Management. In Management Bedingung Ausdrücken verwendet.|
-|displayName|Zeichenfolge|Der Administrator definierter Name der Bedingung Management.|
-|description|Zeichenfolge|Der Administrator definiert die Beschreibung der Bedingung Management.|
-|createdDateTime|DateTimeOffset|Der Zeitpunkt, an die Bedingung Management erstellt wurde. Generierte Service-Seite.|
-|modifiedDateTime|DateTimeOffset|Die Zeit, die die Bedingung Management zuletzt geändert wurde. Aktualisierte Service-Seite.|
-|eTag|Zeichenfolge|ETag der Bedingung Management. Aktualisierte Service-Seite.|
-|applicablePlatforms|[DevicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Auflistung|Die entsprechenden Plattformen für diese Bedingung Management.|
+|id|string|Eindeutiger Bezeichner für die Verwaltungsbedingung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
+|uniqueName|Zeichenfolge|Eindeutiger Name für die Verwaltungsbedingung. Wird in Verwaltungs Bedingungsausdrücken verwendet.|
+|displayName|Zeichenfolge|Der Administrator definierte Name der Verwaltungsbedingung.|
+|description|Zeichenfolge|Die vom Administrator definierte Beschreibung der Verwaltungsbedingung.|
+|createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Verwaltungsbedingung erstellt wurde. Generierte Dienstseite.|
+|modifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Verwaltungsbedingung zuletzt geändert wurde. Aktualisierte Dienstseite.|
+|eTag|Zeichenfolge|ETag der Verwaltungsbedingung. Aktualisierte Dienstseite.|
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Sammlung|Die entsprechenden Plattformen für diese Verwaltungsbedingung.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|managementConditionStatements|[ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Auflistung|Die Bedingung Management Anweisungen, die Bedingung Management zugeordnet ist.|
+|managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Sammlung|Die der Verwaltungsbedingung zugeordneten Verwaltungs Bedingungsanweisungen.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

@@ -1,21 +1,22 @@
 ---
-title: ManagedDeviceEnrollmentFailureDetails-Funktion
+title: managedDeviceEnrollmentFailureDetails-Funktion
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980377"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262993"
 ---
-# <a name="manageddeviceenrollmentfailuredetails-function"></a>ManagedDeviceEnrollmentFailureDetails-Funktion
+# <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails-Funktion
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -36,7 +37,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,7 +51,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 |skip|Int32|Noch nicht dokumentiert|
 |top|Int32|Noch nicht dokumentiert|
 |filter|Zeichenfolge|Noch nicht dokumentiert|
-|skipToken|Zeichenfolge|Noch nicht dokumentiert|
+|skipToken|Zeichenfolge|Noch nicht dokumentiert.|
 
 
 
@@ -65,7 +66,7 @@ GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ### <a name="response"></a>Antwort
-Der Kürze halber werden möglicherweise im Response-Objekt dargestellten abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
+Das hier gezeigte Antwortobjekt kann zur Kürze abgeschnitten werden. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 
 ``` http
 HTTP/1.1 200 OK

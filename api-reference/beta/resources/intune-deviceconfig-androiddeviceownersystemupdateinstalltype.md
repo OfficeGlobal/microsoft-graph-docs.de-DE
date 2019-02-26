@@ -1,31 +1,31 @@
 ---
-title: AndroidDeviceOwnerSystemUpdateInstallType Enum-Typ
-description: Update-Systemtypen für Android-Gerät Besitzer.
-localization_priority: Normal
+title: androidDeviceOwnerSystemUpdateInstallType-Enumerationstyp
+description: System Update Typen für Android-Gerätebesitzer.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7caaa3c79062bba6b8aa06ea11389e1370fba5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6f99ba32a5461913579a23e7fe8f29a3c0b6950
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419177"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163658"
 ---
-# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>AndroidDeviceOwnerSystemUpdateInstallType Enum-Typ
+# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Update-Systemtypen für Android-Gerät Besitzer.
+System Update Typen für Android-Gerätebesitzer.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardverhalten in der Regel der Benutzer Systemupdates akzeptieren kann.|
-|Verschieben|1|Automatische Installation von Updates auf 30 Tage oben zu verschieben.|
-|Fenstermodus|2|Innerhalb eines tägliche Wartungsfensters automatisch installiert.|
-|Automatisch|3|Installieren Sie die Updates automatisch so bald wie möglich.|
+|deviceDefault|0|Standardverhalten des Geräts, das den Benutzer in der Regel auffordert, System Updates zu akzeptieren.|
+|Verschieben|1|Verschieben Sie die automatische Installation von Updates auf bis zu 30 Tage.|
+|Fenster|2|Automatisches Installieren in einem täglichen Wartungsfenster.|
+|Automatisch|3|Installieren Sie Updates so bald wie möglich automatisch.|
 
 
 

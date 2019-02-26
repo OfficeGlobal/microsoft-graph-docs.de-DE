@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp deviceManagementScriptAssignment
-description: Enthält Eigenschaften, die zum Zuweisen eines Verwaltungsskripts Gerät zu einer Gruppe.
-localization_priority: Normal
+title: deviceManagementScriptAssignment-Ressourcentyp
+description: Enthält Eigenschaften zum Zuweisen eines Geräteverwaltungsskripts zu einer Gruppe.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6e153842e0b820a845260bc125154df7cef0cb8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f7b3e777da3d50b7b044d0ebc406e95c65bdc892
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413850"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165380"
 ---
-# <a name="devicemanagementscriptassignment-resource-type"></a>Ressourcentyp deviceManagementScriptAssignment
+# <a name="devicemanagementscriptassignment-resource-type"></a>deviceManagementScriptAssignment-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften, die zum Zuweisen eines Verwaltungsskripts Gerät zu einer Gruppe.
+Enthält Eigenschaften zum Zuweisen eines Geräteverwaltungsskripts zu einer Gruppe.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste deviceManagementScriptAssignments](../api/intune-devices-devicemanagementscriptassignment-list.md)|[DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekte.|
-|[Abrufen von deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-get.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
-|[Erstellen von deviceManagementScriptAssignment](../api/intune-devices-devicemanagementscriptassignment-create.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Erstellen eines neuen [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
-|[DeviceManagementScriptAssignment löschen](../api/intune-devices-devicemanagementscriptassignment-delete.md)|Keine|Löscht eine [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md).|
-|[DeviceManagementScriptAssignment aktualisieren](../api/intune-devices-devicemanagementscriptassignment-update.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Aktualisieren Sie die Eigenschaften eines [DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
+|[DeviceManagementScriptAssignments aufListen](../api/intune-devices-devicemanagementscriptassignment-list.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekte.|
+|[DeviceManagementScriptAssignment abrufen](../api/intune-devices-devicemanagementscriptassignment-get.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Lesen von Eigenschaften und Beziehungen des [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
+|[DeviceManagementScriptAssignment erstellen](../api/intune-devices-devicemanagementscriptassignment-create.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Erstellen eines neuen [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
+|[DeviceManagementScriptAssignment löschen](../api/intune-devices-devicemanagementscriptassignment-delete.md)|Keine|Löscht eine [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md).|
+|[DeviceManagementScriptAssignment aktualisieren](../api/intune-devices-devicemanagementscriptassignment-update.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Aktualisieren der Eigenschaften eines [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Taste der Gerät Management Skript Gruppe Zuordnung Entität.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Die Id des Azure Active Directory-Gruppe verwenden wir das Skript Inhaltsadressierung für.|
+|id|Zeichenfolge|Schlüssel der Zuordnungs Entität "Device Management Script Group".|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Die ID der Azure Active Directory-Gruppe, auf die wir das Skript ausrichten.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

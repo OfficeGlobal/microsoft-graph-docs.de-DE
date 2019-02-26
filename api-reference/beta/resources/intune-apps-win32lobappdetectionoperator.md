@@ -1,34 +1,34 @@
 ---
-title: win32LobAppDetectionOperator Enum-Typ
-description: Enthält Eigenschaften für die Erkennung Operator.
-localization_priority: Normal
+title: win32LobAppDetectionOperator-Enumerationstyp
+description: Enthält Eigenschaften für den Erkennungs Operator.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f600d545691741c37d8a315f8af3f5e12ec435c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 477306e8f4ed5029d9f504ca80ed7126ee1093f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393046"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165940"
 ---
-# <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator Enum-Typ
+# <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für die Erkennung Operator.
+Enthält Eigenschaften für den Erkennungs Operator.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert.|
-|gleich|1|Operator gleich.|
-|notEqual|2|Nicht gleich-operator|
-|größer als|4|Größer als-Operator.|
+|notConfigured|0|Nicht konfiguriert.|
+|gleich|1|Gleichheitsoperator.|
+|notEqual|2|Ungleich-Operator.|
+|greaterThan|4|Größer als-Operator.|
 |greaterThanOrEqual|5|Größer als oder gleich-Operator.|
 |lessThan|8|Kleiner als-Operator.|
-|lessThanOrEqual|9|Kleiner als oder gleich-Operator.|
+|lessThanOrEqual|9|Kleiner oder gleich-Operator.|
 
 
 

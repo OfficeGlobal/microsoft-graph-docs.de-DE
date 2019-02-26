@@ -3,21 +3,22 @@ title: Aktualisieren von „windows10EndpointProtectionConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windows10EndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 26b32d1dc1222a6fcffcfb923d67d708d634e504
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a8070bbce1849aa2797a45989baf550bd581b558
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944012"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260529"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Aktualisieren von „windows10EndpointProtectionConfiguration“
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -47,57 +48,57 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|firewallBlockStatefulFTP|Boolescher Wert|Blockiert statusbehaftete FTP-Verbindungen mit dem Gerät.|
+|firewallBlockStatefulFTP|Boolean|Blockiert statusbehaftete FTP-Verbindungen mit dem Gerät.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Konfiguriert das Leerlauftimeout für Sicherheitszuordnungen in Sekunden, von 300 bis einschließlich 3600. Dies ist der Zeitraum, nach dem Sicherheitszuordnungen ablaufen und gelöscht werden. Gültige Werte: 300 bis 3600.|
-|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Wählen Sie den vorinstallierten Schlüssel um zu verwendende Codierung. Mögliche Werte sind: `deviceDefault`, `none` und `utF8`.|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Boolescher Wert|Konfiguriert IPSec-Ausnahmen, sodass IPv6-ICMP-Codes für die Nachbarsuche zulässig sind.|
-|firewallIPSecExemptionsAllowICMP|Boolescher Wert|Konfiguriert IPSec-Ausnahmen, sodass ICMP zulässig ist.|
-|firewallIPSecExemptionsAllowRouterDiscovery|Boolescher Wert|Konfiguriert IPSec-Ausnahmen, sodass IPv6-ICMP-Codes für die Routersuche zulässig sind.|
-|firewallIPSecExemptionsAllowDHCP|Boolescher Wert|Konfiguriert IPSec-Ausnahmen, sodass sowohl IPv4-basierter als auch IPv6-basierter DHC-Datenverkehr zulässig ist.|
-|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Geben Sie an, wie die Certificate Revocation List erzwungen werden. Mögliche Werte: sind `deviceDefault`, `none`, `attempt` und `require`.|
-|firewallMergeKeyingModuleSettings|Boolescher Wert|Wenn ein Authentifizierungssatz nicht vollständig von einem Schlüsselerstellungsmodul unterstützt wird, weist diese Einstellung das Modul an, nur nicht unterstützte Authentifizierungssuites zu ignorieren und nicht den gesamten Satz.|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Konfiguriert, wie vom Warteschlangensystem Paket im Szenario mit Tunnel Gateway angewendet werden soll. Mögliche Werte sind: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound` und `queueBoth`.|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Wählen Sie die zu verwendende vorinstallierte Tasten Codierung aus. Mögliche Werte sind: `deviceDefault`, `none` und `utF8`.|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Konfiguriert IPSec-Ausnahmen, sodass IPv6-ICMP-Codes für die Nachbarsuche zulässig sind.|
+|firewallIPSecExemptionsAllowICMP|Boolean|Konfiguriert IPSec-Ausnahmen, sodass ICMP zulässig ist.|
+|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Konfiguriert IPSec-Ausnahmen, sodass IPv6-ICMP-Codes für die Routersuche zulässig sind.|
+|firewallIPSecExemptionsAllowDHCP|Boolean|Konfiguriert IPSec-Ausnahmen, sodass sowohl IPv4-basierter als auch IPv6-basierter DHC-Datenverkehr zulässig ist.|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Geben Sie an, wie die Zertifikatssperrliste erzwungen werden soll. Mögliche Werte: `deviceDefault`, `none`, `attempt`, `require`.|
+|firewallMergeKeyingModuleSettings|Boolean|Wenn ein Authentifizierungssatz nicht vollständig von einem Schlüsselerstellungsmodul unterstützt wird, weist diese Einstellung das Modul an, nur nicht unterstützte Authentifizierungssuites zu ignorieren und nicht den gesamten Satz.|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Konfiguriert, wie Paketwarteschlangen im Tunnel Gateway-Szenario angewendet werden sollen. Mögliche Werte: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für Domänennetzwerke.|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für öffentliche Netzwerke.|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Konfiguriert die Firewallprofileinstellungen für private Netzwerke.|
-|defenderAttackSurfaceReductionExcludedPaths|Collection von Objekten des Typs „String“|Liste von EXE-Dateien und Ordnern, die von Regeln zur Verringerung der Angriffsfläche ausgenommen werden sollen.
+|defenderAttackSurfaceReductionExcludedPaths|Zeichenfolgenauflistung|Liste von EXE-Dateien und Ordnern, die von Regeln zur Verringerung der Angriffsfläche ausgenommen werden sollen.
 |
-|defenderGuardedFoldersAllowedAppPaths|Collection von Objekten des Typs „String“|Liste von Pfaden zu EXE-Dateien, die auf geschützte Ordner zugreifen dürfen.
+|defenderGuardedFoldersAllowedAppPaths|String collection|Liste von Pfaden zu EXE-Dateien, die auf geschützte Ordner zugreifen dürfen.
 |
-|defenderAdditionalGuardedFolders|Collection von Objekten des Typs „String“|Liste von Ordnerpfaden, die der Liste geschützter Ordner hinzugefügt werden sollen.
+|defenderAdditionalGuardedFolders|Zeichenfolgenauflistung|Liste von Ordnerpfaden, die der Liste geschützter Ordner hinzugefügt werden sollen.
 |
 |defenderExploitProtectionXml|Binär|XML-Inhalte mit Details zum Exploit-Schutz.
 |
 |defenderExploitProtectionXmlFileName|Zeichenfolge|Name der Datei, aus der „DefenderExploitProtectionXml“ abgerufen wurde.
 |
-|defenderSecurityCenterBlockExploitProtectionOverride|Boolescher Wert|Gibt an, ob verhindert werden soll, dass Benutzer die Einstellungen für den Exploit-Schutz überschreiben.|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Ermöglicht dem Administrator die Festlegung der auf Geräten zulässigen Typen von Apps. Mögliche Werte sind: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` und `auditComponentsStoreAppsAndSmartlocker`.|
-|smartScreenEnableInShell|Boolescher Wert|Ermöglicht IT-Administratoren die Konfiguration von SmartScreen für Windows.|
-|smartScreenBlockOverrideForFiles|Boolescher Wert|Ermöglicht es IT-Administratoren, zu steuern, ob Benutzer SmartScreen-Warnungen ignorieren und Schaddateien ausführen dürfen.|
-|applicationGuardEnabled|Boolescher Wert|Aktiviert Windows Defender Application Guard.|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block Zwischenablage Übertragung Bilddatei, Textdatei oder dürfen. Mögliche Werte sind: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone` und `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Boolescher Wert|Unterbindet, dass Unternehmenswebsites unternehmensfremde Inhalte laden, z. B. Plug-Ins von Drittanbietern.|
-|applicationGuardAllowPersistence|Boolescher Wert|Erlaubt die dauerhafte Speicherung benutzergenerierter Daten im App Guard Container (Favoriten, Cookies, Webkennwörter usw.).|
-|applicationGuardForceAuditing|Boolescher Wert|Erzwingt die dauerhafte Speicherung von Windows-Protokollen und -Ereignissen durch die Überwachung zwecks Erfüllung von Sicherheits- und Compliancevorgaben (Beispielereignisse sind Benutzeranmeldungen und -abmeldungen, die Verwendung von Berechtigungen, die Installation von Software und Änderungen am System).|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Gibt an, ob verhindert werden soll, dass Benutzer die Einstellungen für den Exploit-Schutz überschreiben.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Ermöglicht dem Administrator die Festlegung der auf Geräten zulässigen Typen von Apps. Mögliche Werte: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|smartScreenEnableInShell|Boolean|Ermöglicht IT-Administratoren die Konfiguration von SmartScreen für Windows.|
+|smartScreenBlockOverrideForFiles|Boolean|Ermöglicht es IT-Administratoren, zu steuern, ob Benutzer SmartScreen-Warnungen ignorieren und Schaddateien ausführen dürfen.|
+|applicationGuardEnabled|Boolean|Aktiviert Windows Defender Application Guard.|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Zwischenablage zum Übertragen der Bilddatei, Textdatei oder keiner dieser Dateien blockieren. Mögliche Werte: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Boolean|Unterbindet, dass Unternehmenswebsites unternehmensfremde Inhalte laden, z. B. Plug-Ins von Drittanbietern.|
+|applicationGuardAllowPersistence|Boolean|Erlaubt die dauerhafte Speicherung benutzergenerierter Daten im App Guard Container (Favoriten, Cookies, Webkennwörter usw.).|
+|applicationGuardForceAuditing|Boolean|Erzwingt die dauerhafte Speicherung von Windows-Protokollen und -Ereignissen durch die Überwachung zwecks Erfüllung von Sicherheits- und Compliancevorgaben (Beispielereignisse sind Benutzeranmeldungen und -abmeldungen, die Verwendung von Berechtigungen, die Installation von Software und Änderungen am System).|
 |applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Blockiert die Freigabe von Zwischenablagedaten zwischen Host und Container, zwischen Container und Host, in beide Richtungen oder in keine Richtung. Mögliche Werte sind: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` und `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolescher Wert|Erlaubt das Drucken im PDF-Format aus dem Container.
+|applicationGuardAllowPrintToPDF|Boolean|Erlaubt das Drucken im PDF-Format aus dem Container.
 |
-|applicationGuardAllowPrintToXPS|Boolescher Wert|Erlaubt das Drucken im XPS-Format aus dem Container.
+|applicationGuardAllowPrintToXPS|Boolean|Erlaubt das Drucken im XPS-Format aus dem Container.
 |
-|applicationGuardAllowPrintToLocalPrinters|Boolescher Wert|Erlaubt das Drucken auf lokalen Druckern aus dem Container.
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Erlaubt das Drucken auf lokalen Druckern aus dem Container.
 |
-|applicationGuardAllowPrintToNetworkPrinters|Boolescher Wert|Erlaubt das Drucken auf Netzwerkdruckern aus dem Container.
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Erlaubt das Drucken auf Netzwerkdruckern aus dem Container.
 |
-|bitLockerDisableWarningForOtherDiskEncryption|Boolescher Wert|Ermöglicht es dem Administrator, den Warnhinweis bezüglich anderer Festplattenverschlüsselungslösungen auf Benutzer-PCs zu deaktivieren.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Boolescher Wert|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Ermöglicht es dem Administrator, den Warnhinweis bezüglich anderer Festplattenverschlüsselungslösungen auf Benutzer-PCs zu deaktivieren.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
  Diese Richtlinie gilt nur für Mobilgeräte-SKUs.|
-|bitLockerEncryptDevice|Boolescher Wert|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
+|bitLockerEncryptDevice|Boolean|Ermöglicht es dem Administrator, eine Aktivierung der Verschlüsselung mittels BitLocker anzufordern.
 |
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker-Richtlinie für Wechseldatenträger|
 
@@ -107,6 +108,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http

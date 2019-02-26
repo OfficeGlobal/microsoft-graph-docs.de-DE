@@ -1,21 +1,21 @@
 ---
 title: Aktualisieren von „windowsDefenderAdvancedThreatProtectionConfiguration“
 description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs windowsDefenderAdvancedThreatProtectionConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fea7f12f3ea6e90aaeea38d828dbe072b2995430
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32103b959562e2e1089962a7f899744897aaeaf1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396371"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165415"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Aktualisieren von „windowsDefenderAdvancedThreatProtectionConfiguration“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md).
 
@@ -40,9 +40,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -52,21 +52,21 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|advancedThreatProtectionOnboardingBlob|Zeichenfolge|Windows Defender AdvancedThreatProtection Onboarding Blob.|
-|advancedThreatProtectionOnboardingFilename|Zeichenfolge|Der Name der Datei aus der AdvancedThreatProtectionOnboardingBlob abgerufen wurde.|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|Füllen Sie automatisch auf Onboarding Blob programmgesteuert aus erweiterte Threat Protection-Diensts|
+|advancedThreatProtectionOnboardingBlob|Zeichenfolge|Windows Defender Advanced Threat Protection Onboarding-BLOB.|
+|advancedThreatProtectionOnboardingFilename|Zeichenfolge|Name der Datei, aus der AdvancedThreatProtectionOnboardingBlob abgerufen wurde.|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|Automatisches Auffüllen des Onboarding-BLOBs programmgesteuert von Advanced Threat Protection Service|
 |allowSampleSharing|Boolean|Regel „Beispielfreigabe zulassen“ in Windows Defender Advanced Threat Protection|
 |enableExpeditedTelemetryReporting|Boolean|Verkürzt das Meldungsintervall für Windows Defender Advanced Threat Protection-Telemetriedaten.|
-|advancedThreatProtectionOffboardingBlob|Zeichenfolge|Windows Defender AdvancedThreatProtection Offboarding Blob.|
-|advancedThreatProtectionOffboardingFilename|Zeichenfolge|Der Name der Datei aus der AdvancedThreatProtectionOffboardingBlob abgerufen wurde.|
+|advancedThreatProtectionOffboardingBlob|Zeichenfolge|Windows Defender Advanced Threat Protection Offboarding-BLOB.|
+|advancedThreatProtectionOffboardingFilename|Zeichenfolge|Name der Datei, aus der AdvancedThreatProtectionOffboardingBlob abgerufen wurde.|
 
 
 

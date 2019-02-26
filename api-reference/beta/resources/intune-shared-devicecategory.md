@@ -4,20 +4,20 @@ description: Diese Kategorien können dann in der Intune Azure-Konsole auf ein G
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b7470f6cf0193474bfaff4f7444ed3df1d9453a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 75fb11ef3b734e6d5d0490be1abc3c5399433a70
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174552"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gerätekategorien bieten eine Möglichkeit, Ihre Geräte zu organisieren. Verwenden von Gerätekategorien, können Administratoren im Unternehmen eindeutige Kategorien definieren, die das Unternehmen sinnvoll.Diese Kategorien können dann in der Intune Azure-Konsole auf ein Gerät angewendet oder bei der Geräteregistrierung von einem Benutzer ausgewählt werden. Sie können basierend auf Gerätekategorien Berichte filtern und dynamische Azure Active Directory-Gerätegruppen erstellen.
+Gerätekategorien bieten eine Möglichkeit zum Organisieren Ihrer Geräte. Unter Verwendung von Gerätekategorien können Unternehmensadministratoren eindeutige Kategorien definieren, die für Ihr Unternehmen sinnvoll sind.Diese Kategorien können dann in der Intune Azure-Konsole auf ein Gerät angewendet oder bei der Geräteregistrierung von einem Benutzer ausgewählt werden. Sie können basierend auf Gerätekategorien Berichte filtern und dynamische Azure Active Directory-Gerätegruppen erstellen.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
@@ -33,7 +33,7 @@ Gerätekategorien bieten eine Möglichkeit, Ihre Geräte zu organisieren. Verwen
 |:---|:---|:---|
 |id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
-|displayName|String|Der Anzeigename für die Gerätekategorie.|
+|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
 |description|String|Optionale Beschreibung für die Gerätekategorie.|
 
 ## <a name="relationships"></a>Beziehungen

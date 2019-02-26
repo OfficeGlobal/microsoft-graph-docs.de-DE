@@ -1,29 +1,29 @@
 ---
-title: DeviceManagementExchangeConnectorSyncType Enum-Typ
-description: Der Typ des Exchange-Connectors Synchronisierung angefordert.
-localization_priority: Normal
+title: deviceManagementExchangeConnectorSyncType-Enumerationstyp
+description: Der Typ der angeforderten Exchange-Connector-Synchronisierung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a78bf79990eb16ae6dbc62d4c324b905a79a7f2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47021a0a071995261f218cd4080026ababa33e0f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405625"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166598"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>DeviceManagementExchangeConnectorSyncType Enum-Typ
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Typ des Exchange-Connectors Synchronisierung angefordert.
+Der Typ der angeforderten Exchange-Connector-Synchronisierung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|fullSync|0|Entdecken Sie das Gerät im Exchange.|
-|deltaSync|1|Entdecken Sie nur das Gerät in Exchange die während des Delta Sync-Fensters aktualisiert haben.|
+|fullSync|0|Entdecken Sie das gesamte Gerät in Exchange.|
+|deltaSync|1|Entdecken Sie nur das Gerät in Exchange, das während des Delta Sync-Fensters aktualisiert wurde.|
 
 
 

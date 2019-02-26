@@ -1,31 +1,31 @@
 ---
-title: MacOSGatekeeperAppSources Enum-Typ
-description: App-Optionen für Mac OS Gatekeeper Quelle.
-localization_priority: Normal
+title: macOSGatekeeperAppSources-Enumerationstyp
+description: App-Quelloptionen für macOS Gatekeeper.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18ab6884d211faccb81e93a40ee91f742d03475f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e43505a745e87e52f2f1c12a5cc5ff08825c09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394390"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166206"
 ---
-# <a name="macosgatekeeperappsources-enum-type"></a>MacOSGatekeeperAppSources Enum-Typ
+# <a name="macosgatekeeperappsources-enum-type"></a>macOSGatekeeperAppSources-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-App-Optionen für Mac OS Gatekeeper Quelle.
+App-Quelloptionen für macOS Gatekeeper.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Gerät Standardwert, keine beabsichtigt.|
-|macAppStore|1|Nur apps aus der Mac-AppStore können ausgeführt werden.|
-|macAppStoreAndIdentifiedDevelopers|2|Nur apps aus dem Mac AppStore und identifizierten Entwickler können ausgeführt werden.|
-|an einer beliebigen Stelle|3|Apps unabhängig vom Standort können ausgeführt werden.|
+|notConfigured|0|Geräte-Standardwert, keine Absicht.|
+|macAppStore|1|Nur apps aus dem Mac AppStore können ausgeführt werden.|
+|macAppStoreAndIdentifiedDevelopers|2|Nur apps aus dem Mac AppStore und die identifizierten Entwickler können ausgeführt werden.|
+|überall|3|Apps von überall aus können ausgeführt werden.|
 
 
 

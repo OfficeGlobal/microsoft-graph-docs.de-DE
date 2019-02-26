@@ -1,23 +1,23 @@
 ---
-title: SetDeviceName Aktion
-description: Festlegen Sie Name des Aufnahmegeräts des Geräts.
-localization_priority: Normal
+title: setDeviceName-Aktion
+description: Legen Sie den Gerätenamen des Geräts fest.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a73ec88c96b80fd6d8a2cd6843cacf0ff81807bd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ebfb37ecd2996cb7ae0fb104dd2291aa4e05fd95
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411855"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173514"
 ---
-# <a name="setdevicename-action"></a>SetDeviceName Aktion
+# <a name="setdevicename-action"></a>setDeviceName-Aktion
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Festlegen Sie Name des Aufnahmegeräts des Geräts.
+Legen Sie den Gerätenamen des Geräts fest.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -41,9 +41,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -75,7 +75,7 @@ Content-length: 41
 }
 ```
 
-### <a name="response"></a>Antwort
+### <a name="response"></a>Reaktion
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
 HTTP/1.1 204 No Content

@@ -1,35 +1,35 @@
 ---
-title: DeviceComplianceActionType Enum-Typ
-description: Geplante Aktion Typ Enum
-localization_priority: Normal
+title: deviceComplianceActionType-Enumerationstyp
+description: Enum für geplante Aktionstypen
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd0db68a21fff79ddbab924e8a1d9bd2ff2e542d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d824f579787bf24cc56704a1c8a9df280d969809
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425743"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173507"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a>DeviceComplianceActionType Enum-Typ
+# <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Geplante Aktion Typ Enum
+Enum für geplante Aktionstypen
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noAction|0|Keine Aktion|
 |Benachrichtigung|1|Benachrichtigung senden|
-|Blockieren|2|Das Gerät im AAD blockieren|
-|Zurückziehen|3|Deaktivieren Sie das Gerät|
-|Wischen|4|Bereinigen des Geräts|
-|removeResourceAccessProfiles|5|Ressource Access Profile vom Gerät zu entfernen|
+|Block|2|Blockieren des Geräts in AAD|
+|zurückziehen|3|Zurückziehen des Geräts|
+|Zurücksetzung|4|Wischen Sie das Gerät ab.|
+|removeResourceAccessProfiles|5|Entfernen von Ressourcenzugriffs Profilen vom Gerät|
 |pushNotification|9|Push-Benachrichtigung an Gerät senden|
-|remoteLock|10|Das Gerät Remote Sperren|
+|Remote Lock|10|Remote Sperre des Geräts|
 
 
 

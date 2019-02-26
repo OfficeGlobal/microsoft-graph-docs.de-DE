@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp deviceManagementExchangeAccessRule
+title: deviceManagementExchangeAccessRule-Ressourcentyp
 description: Gerätezugriffsregeln in Exchange.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c46bff30bf5f88723a789bb13160bf5aedb1ef2a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 38b021bc2f0a4ffa19ca551c2621b08f21e8a35e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409440"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165779"
 ---
-# <a name="devicemanagementexchangeaccessrule-resource-type"></a>Ressourcentyp deviceManagementExchangeAccessRule
+# <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Gerätezugriffsregeln in Exchange.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Geräteklasse, die von dieser Regel betroffen sind.|
-|accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Die Zugriffsebene für Exchange durch diese Regel erteilt. Mögliche Werte: `none`, `allow`, `block`, `quarantine`.|
+|deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Geräteklasse, die von dieser Regel betroffen ist.|
+|Access Level|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Zugriffsebene für Exchange, die von dieser Regel erteilt wird. Mögliche Werte: `none`, `allow`, `block`, `quarantine`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,33 +1,33 @@
 ---
-title: RatingFranceMoviesType Enum-Typ
-description: Filme Bezeichnungen in Frankreich Bewertung
-localization_priority: Normal
+title: ratingFranceMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Frankreich
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b1948b2eca2075925ba2597dfda6c5e52b7817c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 123a1e4c63891ad39cb0a238fd61393b555734f8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408152"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172408"
 ---
-# <a name="ratingfrancemoviestype-enum-type"></a>RatingFranceMoviesType Enum-Typ
+# <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bezeichnungen in Frankreich Bewertung
+Movies-Bewertungs Bezeichnungen in Frankreich
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|agesAbove10|2|Die 10 Klassifizierung verbietet die Prüfung des Films jugendgefährdend unter 10|
-|agesAbove12|3|Die 12 Klassifizierung verbietet die Prüfung des Films jugendgefährdend unter 12|
-|agesAbove16|4|Die 16 Klassifizierung verbietet die Prüfung des Films jugendgefährdend unter 16|
-|agesAbove18|5|Die 18 Klassifizierung verbietet die Prüfung jugendgefährdend unter 18|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|agesAbove10|2|Die 10-Klassifikation verbietet die Überprüfung des Films auf Minderjährige unter 10|
+|agesAbove12|3|Die 12-Klassifikation verbietet die Überprüfung des Films auf Minderjährige unter 12|
+|agesAbove16|4|Die 16-Klassifikation verbietet die Überprüfung des Films auf Minderjährige unter 16|
+|agesAbove18|5|Die 18-Klassifikation verbietet die Überprüfung auf Minderjährige unter 18 Jahren.|
 
 
 

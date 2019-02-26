@@ -1,47 +1,47 @@
 ---
-title: Ressourcentyp groupPolicyDefinitionValue
-description: Die Definition Wert Entität speichert den Wert für eine einzelne Richtlinie Gruppendefinition.
-localization_priority: Normal
+title: groupPolicyDefinitionValue-Ressourcentyp
+description: Die Definitionswert Entität speichert den Wert für eine einzelne Gruppenrichtlinien Definition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7e98a41409efba60ee1431fac82a49be2029039
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e822cb4ce46a0fa9492f7624904588fd1b10a7c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142616"
 ---
-# <a name="grouppolicydefinitionvalue-resource-type"></a>Ressourcentyp groupPolicyDefinitionValue
+# <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Definition Wert Entität speichert den Wert für eine einzelne Richtlinie Gruppendefinition.
+Die Definitionswert Entität speichert den Wert für eine einzelne Gruppenrichtlinien Definition.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste groupPolicyDefinitionValues](../api/intune-grouppolicy-grouppolicydefinitionvalue-list.md)|[GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Auflistung|Listeneigenschaften und Beziehungen der [GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekte.|
-|[Abrufen von groupPolicyDefinitionValue](../api/intune-grouppolicy-grouppolicydefinitionvalue-get.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Lesen Sie Eigenschaften und Beziehungen des [GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
-|[Erstellen von groupPolicyDefinitionValue](../api/intune-grouppolicy-grouppolicydefinitionvalue-create.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Erstellen eines neuen [GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
-|[GroupPolicyDefinitionValue löschen](../api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md)|Keine|Löscht eine [GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md).|
-|[GroupPolicyDefinitionValue aktualisieren](../api/intune-grouppolicy-grouppolicydefinitionvalue-update.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Aktualisieren Sie die Eigenschaften eines [GroupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
+|[GroupPolicyDefinitionValues aufListen](../api/intune-grouppolicy-grouppolicydefinitionvalue-list.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekte.|
+|[GroupPolicyDefinitionValue abrufen](../api/intune-grouppolicy-grouppolicydefinitionvalue-get.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Lesen von Eigenschaften und Beziehungen des [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
+|[GroupPolicyDefinitionValue erstellen](../api/intune-grouppolicy-grouppolicydefinitionvalue-create.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Erstellen eines neuen [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
+|[GroupPolicyDefinitionValue löschen](../api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md)|Keine|Löscht eine [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md).|
+|[GroupPolicyDefinitionValue aktualisieren](../api/intune-grouppolicy-grouppolicydefinitionvalue-update.md)|[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Aktualisieren der Eigenschaften eines [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Das Datum und die Zeit, die das Objekt erstellt wurde.|
-|enabled|Boolean|Aktiviert oder deaktiviert die Richtliniendefinition zugeordneten Gruppe.|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Gibt an, wie der Wert konfiguriert werden soll. Dies kann als Richtlinie oder als Einstellung sein. Mögliche Werte sind: `policy` und `preference`.|
+|createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Objekts.|
+|enabled|Boolean|Aktiviert oder deaktiviert die zugeordnete Gruppenrichtlinien Definition.|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Gibt an, wie der Wert konfiguriert werden soll. Dabei kann es sich entweder um eine Richtlinie oder eine Präferenz handeln. Mögliche Werte sind: `policy` und `preference`.|
 |id|Zeichenfolge|Schlüssel der Entität|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung die Entität.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|presentationValues|[GroupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) -Auflistung|Die zugeordneten Gruppenrichtlinie Präsentation Werte mit dem Definitionswert.|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Die zugeordneten Gruppe Richtliniendefinition mit dem Wert.|
+|presentationValues|[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) -Sammlung|Die zugeordneten Gruppenrichtlinien-Präsentations Werte mit dem Definitionswert.|
+|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Die zugeordnete Gruppenrichtlinien Definition mit dem Wert.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

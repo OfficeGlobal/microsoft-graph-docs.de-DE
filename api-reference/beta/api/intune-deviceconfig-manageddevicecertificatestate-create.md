@@ -1,23 +1,23 @@
 ---
-title: Erstellen von managedDeviceCertificateState
-description: Erstellen eines neuen ManagedDeviceCertificateState-Objekts.
-localization_priority: Normal
+title: ManagedDeviceCertificateState erstellen
+description: Erstellen eines neuen managedDeviceCertificateState-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8efc74f2f8abad4b659f41ac53d270af5dab2a3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 65d4f145fd70787004b915caeaab9d042ff661ca
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396315"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174053"
 ---
-# <a name="create-manageddevicecertificatestate"></a>Erstellen von managedDeviceCertificateState
+# <a name="create-manageddevicecertificatestate"></a>ManagedDeviceCertificateState erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.
+Erstellen eines neuen [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -54,49 +54,49 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt ManagedDeviceCertificateState eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das managedDeviceCertificateState-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die ManagedDeviceCertificateState erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der managedDeviceCertificateState erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
-|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Enhanced Key Usage. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Gültigkeit Period Einheiten. Mögliche Werte sind: `days`, `months` und `years`.|
-|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Veröffentlichungslizenzen Zustand. Mögliche Werte sind: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed` , `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Wichtige Speicheranbieter. Mögliche Werte: sind `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail` und `useSoftwareKsp`.|
-|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Format des Antragstellernamen. Mögliche Werte: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Subject alternative Name-Format. Mögliche Werte sind: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` und `domainNameService`.|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|REVOKE-Status. Mögliche Werte sind: `none`, `pending`, `issued`, `failed` und `revoked`.|
-|certificateProfileDisplayName|Zeichenfolge|Profil der Anzeigename des Zertifikats|
+|Deviceplatform wurde|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
+|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Schlüsselverwendung. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
+|certificateValidityPeriodUnits|[Certificatevalidityperiodscale wurden](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Gültigkeitszeitraum Einheiten. Mögliche Werte sind: `days`, `months` und `years`.|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|VeröffentlichungsStatus. Mögliche Werte sind: `unknown`, `challengeIssued`, `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked`,,,,,,,, `removedFromCollection`,, `installed` ,,,,,, `renewVerified` `installFailed` `issueFailed` , `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Schlüsselspeicheranbieter. Mögliche Werte: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Format des Antragstellernamens. Mögliche Werte: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Format für alternative Antragstellernamen. Mögliche Werte: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Widerrufen des Status. Mögliche Werte: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|certificateProfileDisplayName|Zeichenfolge|Anzeigename des Zertifikat Profils|
 |deviceDisplayName|Zeichenfolge|Anzeigename des Geräts|
 |userDisplayName|Zeichenfolge|Anzeigename des Benutzers.
 |
-|certificateExpirationDateTime|DateTimeOffset|Ablaufdatum des Zertifikats|
-|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
-|lastCertificateStateChangeDateTime|DateTimeOffset|Änderung des letzten Zertifikat Veröffentlichungslizenzen|
+|certificateExpirationDateTime|DateTimeOffset|Zertifikatablaufdatum|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Letzte Änderung des Zertifikat Ausstellungs Status|
+|lastCertificateStateChangeDateTime|DateTimeOffset|Letzte Änderung des Zertifikat Ausstellungs Status|
 |certificateIssuer|Zeichenfolge|Aussteller|
 |certificateThumbprint|Zeichenfolge|Fingerabdruck|
-|Zertifikatsseriennummer|Zeichenfolge|Seriennummer|
+|certificateSerialNumber|Zeichenfolge|Seriennummer|
 |certificateKeyLength|Int32|Schlüssellänge|
 |certificateEnhancedKeyUsage|Zeichenfolge|Erweiterte Schlüsselverwendung|
-|certificateValidityPeriod|Int32|Gültigkeitsdauer|
-|certificateSubjectNameFormatString|Zeichenfolge|Subject Name Formatzeichenfolge für benutzerdefinierte Subject Namensformate|
-|certificateSubjectAlternativeNameFormatString|Zeichenfolge|Subject alternative Name Formatzeichenfolge für benutzerdefinierte Formate|
-|certificateIssuanceDateTime|DateTimeOffset|Veröffentlichungslizenzen Datum|
+|certificateValidityPeriod|Int32|Gültigkeitszeitraum|
+|certificateSubjectNameFormatString|Zeichenfolge|Formatzeichenfolge für den Antragstellernamen für benutzerdefinierte Antragstellernamen Formate|
+|certificateSubjectAlternativeNameFormatString|Zeichenfolge|Formatzeichenfolge für alternative Antragstellernamen für benutzerdefinierte Formate|
+|certificateIssuanceDateTime|DateTimeOffset|Veröffentlichungsdatum|
 |certificateErrorCode|Int32|Fehlercode|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

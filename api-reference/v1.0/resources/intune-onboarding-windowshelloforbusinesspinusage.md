@@ -1,27 +1,28 @@
 ---
-title: WindowsHelloForBusinessPinUsage Enum-Typ
-description: Windows Hello für Business Pin Verwendungsoptionen
+title: windowsHelloForBusinessPinUsage-Enumerationstyp
+description: Verwendungsoptionen für Windows Hello for Business-PIN
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ec9a4a1dcaad0ecf844dda9298727bb87c279e04
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9f3d7ebb6e44224d637a59220acc9d17c449871
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937390"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262797"
 ---
-# <a name="windowshelloforbusinesspinusage-enum-type"></a>WindowsHelloForBusinessPinUsage Enum-Typ
+# <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows Hello für Business Pin Verwendungsoptionen
+Verwendungsoptionen für Windows Hello for Business-PIN
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |zulässig|0|Noch nicht dokumentiert|
 |erforderlich|1|Noch nicht dokumentiert|
-|nicht zulässig|2|Noch nicht dokumentiert|
+|zugelassen|2|Noch nicht dokumentiert|
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: AndroidDeviceOwnerWiFiSecurityType Enum-Typ
-description: Wi-Fi-Sicherheitstypen für Android-Gerät Besitzer.
-localization_priority: Normal
+title: androidDeviceOwnerWiFiSecurityType-Enumerationstyp
+description: Wi-Fi-Sicherheitstypen für Android-Gerätebesitzer.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49835ca419afef82369ee5b339782bc1dd3b96b8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b4cc9e90c4b28069f7731c4f24ae8e5dd6ae7043
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396119"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165597"
 ---
-# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>AndroidDeviceOwnerWiFiSecurityType Enum-Typ
+# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Wi-Fi-Sicherheitstypen für Android-Gerät Besitzer.
+Wi-Fi-Sicherheitstypen für Android-Gerätebesitzer.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Öffnen Sie|0|Öffnen Sie (keine Authentifizierung).|
+|Öffnen|0|Open (keine Authentifizierung).|
 |WEP|1|WEP-Verschlüsselung.|
 |wpaPersonal|2|WPA-Persönlich/WPA2-Persönlich.|
 

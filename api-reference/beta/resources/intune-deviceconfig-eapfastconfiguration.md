@@ -1,31 +1,31 @@
 ---
-title: EapFastConfiguration Enum-Typ
-description: Verfügbaren Einstellungen für EAP-FAST-Konfiguration.
-localization_priority: Normal
+title: eapFastConfiguration-Enumerationstyp
+description: Verfügbare Einstellungen für die EAP-FAST-Konfiguration.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa2c3c3a4cf0bc245ea7c9fbc4294d69215deee
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173570"
 ---
-# <a name="eapfastconfiguration-enum-type"></a>EapFastConfiguration Enum-Typ
+# <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Verfügbaren Einstellungen für EAP-FAST-Konfiguration.
+Verfügbare Einstellungen für die EAP-FAST-Konfiguration.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|noProtectedAccessCredential|0|EAP-FAST ohne geschützte Zugriffsberechtigung (PAC) verwenden.|
-|useProtectedAccessCredential|1|Verwenden Sie geschützte Zugriffsinformationen (PAC).|
-|useProtectedAccessCredentialAndProvision|2|Verwendung geschützt Access Anmeldeinformationen (PAC) und Provision PAC|
-|useProtectedAccessCredentialAndProvisionAnonymously|3|Verwenden Sie geschützte Zugriffsberechtigung (PAC), PAC bereitgestellt werden soll, und dazu anonym.|
+|noProtectedAccessCredential|0|Verwenden Sie EAP-FAST ohne Protected Access Credential (PAC).|
+|useProtectedAccessCredential|1|Verwenden Sie eine PAC (Protected Access Credential).|
+|useProtectedAccessCredentialAndProvision|2|Verwenden Sie eine PAC (Protected Access Credential) und eine PAC.|
+|useProtectedAccessCredentialAndProvisionAnonymously|3|Verwenden Sie Protected Access Credential (PAC), Provision PAC, und tun Sie dies anonym.|
 
 
 

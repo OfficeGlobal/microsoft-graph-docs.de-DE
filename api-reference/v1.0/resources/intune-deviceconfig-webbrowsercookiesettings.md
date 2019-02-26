@@ -1,28 +1,29 @@
 ---
-title: WebBrowserCookieSettings Enum-Typ
-description: Web-Browser-Cookie-Einstellungen.
+title: webBrowserCookieSettings-Enumerationstyp
+description: Webbrowser-Cookieeinstellungen.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d565f26511bbf0567139cfa467e0609f36d4a74a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2933889c15f8bd849922bc5268a0e2beeec78357
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914909"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261460"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>WebBrowserCookieSettings Enum-Typ
+# <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Web-Browser-Cookie-Einstellungen.
+Webbrowser-Cookieeinstellungen.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|browserDefault|0|Standardwert Browser, keine beabsichtigt.|
-|blockAlways|1|Sperren Sie Cookies immer.|
-|allowCurrentWebSite|2|Zulassen von Cookies aus der aktuellen Website.|
-|allowFromWebsitesVisited|3|Zulassen von Cookies von besuchten Websites.|
+|browserDefault|0|Browser-Standardwert, keine Absicht.|
+|blockAlways|1|Cookies immer blockieren.|
+|allowCurrentWebSite|2|Cookies von der aktuellen Website zulassen.|
+|allowFromWebsitesVisited|3|Cookies von besuchten Websites zulassen.|
 |allowAlways|4|Cookies immer zulassen.|
 
 

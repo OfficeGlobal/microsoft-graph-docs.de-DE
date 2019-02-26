@@ -3,21 +3,22 @@ title: windowsInformationProtectionAppLockerFile aktualisieren
 description: Aktualisieren der Eigenschaften eines windowsInformationProtectionAppLockerFile-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6e6d81b953288e1c8c9435a9502616f3f9fbc1d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d42d85d1ca2151239dd9e96b8337d0dab6538ce0
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263182"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile aktualisieren
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisieren der Eigenschaften eines [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)-Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -53,8 +54,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |displayName|Zeichenfolge|Der Anzeigename|
 |fileHash|Zeichenfolge|SHA256-Hash der Datei|
 |file|Binär|Datei als Bytearray|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|id|string|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 
 
@@ -62,6 +63,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und das aktualisierte [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http

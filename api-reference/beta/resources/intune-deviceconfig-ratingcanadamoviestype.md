@@ -1,34 +1,34 @@
 ---
-title: RatingCanadaMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Kanada
-localization_priority: Normal
+title: ratingCanadaMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Kanada
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5f35289348dbe94b5be3aa5a1d96709de8e8869
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0a1ebcc17e324cc617235761be499f56a1a17ffe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398408"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142588"
 ---
-# <a name="ratingcanadamoviestype-enum-type"></a>RatingCanadaMoviesType Enum-Typ
+# <a name="ratingcanadamoviestype-enum-type"></a>ratingCanadaMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Bezeichnungen in Kanada
+Movies-Bewertungs Bezeichnungen in Kanada
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Die Klassifizierung G eignet sich für alle Jahren|
-|parentalGuidance|3|Die Bild-Klassifizierung werden sofort advises Eltern Anleitungen|
-|agesAbove14|4|Die Klassifizierung 14A eignet sich für Leser von Berichten über 14 oder älter|
-|agesAbove18|5|Die Klassifizierung 18A eignet sich für Leser von Berichten über 18 oder älter|
-|eingeschränkt|6|Die R-Klassifikation ist auf 18 Jahren beschränkt und ältere|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Die G-Klassifikation eignet sich für alle Altersgruppen|
+|parentalGuidance|3|Die PG-Klassifikation berät die elterliche Beratung|
+|agesAbove14|4|Die 14A-Klassifikation eignet sich für Betrachter ab 14 Jahren.|
+|agesAbove18|5|Die 18A-Klassifikation eignet sich für Betrachter ab 18 Jahren.|
+|eingeschränkt|6|Die R-Klassifizierung ist auf 18 Jahre und älter beschränkt|
 
 
 

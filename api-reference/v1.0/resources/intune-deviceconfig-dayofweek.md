@@ -1,21 +1,22 @@
 ---
-title: DayOfWeek Enum-Typ
+title: dayOfWeek-Enumerationstyp
 description: Mögliche Werte für einen Wochentag
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d3dc02e065b22bdff1786ea5ff71eab874ac43dd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6f3f773909b2110a944cfcbc4f632ab7e80e5496
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985634"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258695"
 ---
-# <a name="dayofweek-enum-type"></a>DayOfWeek Enum-Typ
+# <a name="dayofweek-enum-type"></a>dayOfWeek-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für einen Wochentag
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|

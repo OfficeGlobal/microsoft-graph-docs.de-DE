@@ -1,40 +1,40 @@
 ---
-title: windows10EditionType Enum-Typ
-description: Windows-10-Edition-Typ.
-localization_priority: Normal
+title: windows10EditionType-Enumerationstyp
+description: Windows 10 Edition-Typ.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cc19a0e4fcd5f291b143e48393a992d03ce7f75
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 18fba8f5fc663ff00b07a6338badf87e4ab5d875
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422341"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173381"
 ---
-# <a name="windows10editiontype-enum-type"></a>windows10EditionType Enum-Typ
+# <a name="windows10editiontype-enum-type"></a>windows10EditionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-10-Edition-Typ.
+Windows 10 Edition-Typ.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Enterprise|
-|windows10EnterpriseN|1|Windows 10 EnterpriseN|
-|windows10Education|2|Windows 10 Bildungseinrichtungen|
-|windows10EducationN|3|Windows 10 EducationN|
-|windows10MobileEnterprise|4|10 Windows Mobile Enterprise|
-|windows10HolographicEnterprise|5|Windows 10 Hologramm Enterprise|
-|windows10Professional|6|10 Windows Professional|
-|windows10ProfessionalN|7|Windows 10 ProfessionalN|
-|windows10ProfessionalEducation|8|Windows 10 Fortbildung|
-|windows10ProfessionalEducationN|9|Professional EducationN Windows 10|
-|windows10ProfessionalWorkstation|10|Windows 10 Professional für Arbeitsstationen|
-|windows10ProfessionalWorkstationN|11|Windows 10 Professional für Arbeitsstationen N|
-|nicht konfiguriert|12|Nicht konfiguriert|
+|windows10EnterpriseN|1|Windows 10 Enter Prisen|
+|windows10Education|2|Windows 10 Education|
+|windows10EducationN|3|Windows 10 Educationn|
+|windows10MobileEnterprise|4|Windows 10 Mobile Enterprise|
+|windows10HolographicEnterprise|5|Windows 10 holographische Enterprise|
+|windows10Professional|6|Windows 10 Professional|
+|windows10ProfessionalN|7|Windows 10 Professionals|
+|windows10ProfessionalEducation|8|Windows 10 Professional Education|
+|windows10ProfessionalEducationN|9|Windows 10 Professional Educationn|
+|windows10ProfessionalWorkstation|10|Windows 10 Professional für Workstations|
+|windows10ProfessionalWorkstationN|11|Windows 10 Professional für Workstations N|
+|notConfigured|12|NotConfigured|
 
 
 

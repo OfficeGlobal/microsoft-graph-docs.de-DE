@@ -1,39 +1,39 @@
 ---
-title: ManagementState Enum-Typ
-description: Verwaltungsstatus des Geräts in Microsoft Intune.
-localization_priority: Normal
+title: managementState-Enumerationstyp
+description: Verwaltungsstatus des Geräts in Microsoft InTune
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8d0801949125f3b0cceb865ac1f8546195112e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420017"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174144"
 ---
-# <a name="managementstate-enum-type"></a>ManagementState Enum-Typ
+# <a name="managementstate-enum-type"></a>managementState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Verwaltungsstatus des Geräts in Microsoft Intune.
+Verwaltungsstatus des Geräts in Microsoft InTune
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|verwaltete|0|Das Gerät ist, klicken Sie unter Verwaltung|
-|retirePending|1|Ein Außerkraftsetzungsrichtlinie Befehl ist nicht mehr auftritt, auf dem Gerät und gerade unenrolling aus der Verwaltung|
-|retireFailed|2|Stilllegung der Befehl auf dem Gerät fehlgeschlagen|
-|wipePending|3|Ein Remotegerätzurücksetzung Befehl ist nicht mehr auftritt, auf dem Gerät und gerade unenrolling aus der Verwaltung|
-|wipeFailed|4|Wischen Sie Fehler auf dem Gerät|
+|verwaltete|0|Das Gerät ist unter Verwaltung|
+|retirePending|1|Ein Ruhestands Befehl tritt auf dem Gerät auf und wird während der Registrierung von der Verwaltung abgemeldet.|
+|retireFailed|2|Fehler beim Ausführen des Befehls auf dem Gerät|
+|wipePending|3|Ein Löschbefehl ist auf dem Gerät und während der Registrierung von der Verwaltung|
+|wipeFailed|4|Löschbefehl auf dem Gerät fehlgeschlagen|
 |fehlerhaft|5|Das Gerät ist fehlerhaft.|
-|deletePending|6|Ein Löschbefehl ist nicht mehr auftritt, auf dem Gerät |
-|retireIssued|7|Ein Befehl Außerkraftsetzungsrichtlinie wurde für das Gerät ausgestellt.|
-|wipeIssued|8|Ein Befehl Remotegerätzurücksetzung wurde für das Gerät ausgestellt.|
-|wipeCanceled|9|Ein Befehl Remotegerätzurücksetzung für dieses Gerät wurde abgebrochen|
-|retireCanceled|10|Ein Befehl Außerkraftsetzungsrichtlinie für dieses Gerät wurde abgebrochen|
-|ermittelt|11|Das Gerät wird erkannt, aber nicht vollständig registriert.|
+|deletePending|6|Auf dem Gerät tritt ein Löschbefehl auf. |
+|retireIssued|7|Für das Gerät wurde ein Ruhestands Befehl ausgegeben.|
+|wipeIssued|8|Für das Gerät wurde ein Löschbefehl ausgegeben.|
+|wipeCanceled|9|Ein Löschbefehl für dieses Gerät wurde abgebrochen|
+|retireCanceled|10|Ein Ruhestands Befehl für dieses Gerät wurde abgebrochen|
+|ermittelt|11|Das Gerät wurde ermittelt, aber nicht vollständig registriert.|
 
 
 

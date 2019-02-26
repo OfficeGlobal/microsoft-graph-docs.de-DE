@@ -1,28 +1,29 @@
 ---
-title: InstallIntent Enum-Typ
-description: Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt
+title: installIntent-Enumerationstyp
+description: Mögliche Werte für die vom Administrator ausgewählte Installations Absicht.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaea49b0c808b0591a059f46ed0eb06fa17b6177
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40c36022e08917ac8fbad0ff2647e28da18270bc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972054"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260417"
 ---
-# <a name="installintent-enum-type"></a>InstallIntent Enum-Typ
+# <a name="installintent-enum-type"></a>installIntent-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Installation Absicht durch den Administrator ausgewählt
+Mögliche Werte für die vom Administrator ausgewählte Installations Absicht.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Verfügbar|0|Verfügbare Install beabsichtigt.|
-|erforderlich|1|Installieren der erforderlichen beabsichtigt.|
-|Deinstallieren|2|Deinstallieren Sie Install beabsichtigt.|
-|availableWithoutEnrollment|3|Ohne Registrierung Install beabsichtigt verfügbar.|
+|Verfügbar|0|Verfügbare Installations Absicht.|
+|erforderlich|1|Erforderliche Installations Absicht.|
+|Deinstallieren|2|Deinstallieren Sie die Installations Absicht.|
+|availableWithoutEnrollment|3|Nicht verfügbar.|
 
 
 

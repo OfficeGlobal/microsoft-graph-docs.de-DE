@@ -1,23 +1,23 @@
 ---
-title: Erstellen von enrollmentProfile
-description: Erstellen eines neuen EnrollmentProfile-Objekts.
-localization_priority: Normal
+title: EnrollmentProfile erstellen
+description: Erstellen eines neuen enrollmentProfile-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a7bb3fb49b57f38ad938f7d43f28f4ece3fda92
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b38fe9bd6d418823cb2e94aa3fc8ac161ce471c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414767"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175115"
 ---
-# <a name="create-enrollmentprofile"></a>Erstellen von enrollmentProfile
+# <a name="create-enrollmentprofile"></a>EnrollmentProfile erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Erstellen eines neuen [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.
+Erstellen eines neuen [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,30 +38,30 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt EnrollmentProfile eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das enrollmentProfile-Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die EnrollmentProfile erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der enrollmentProfile erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|GUID des Objekts|
 |displayName|Zeichenfolge|Name des Profils|
 |description|Zeichenfolge|Beschreibung des Profils|
-|requiresUserAuthentication|Boolean|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert|
-|configurationEndpointUrl|Zeichenfolge|Endpunkt-Url für die Registrierung zu verwendende Konfiguration|
-|enableAuthenticationViaCompanyPortal|Boolean|Gibt an, dass die Authentifizierung mit Apple Setup-Assistenten anstelle von Unternehmensportal.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Gibt an, dass Unternehmensportal auf Setup-Assistent registriert Geräten erforderlich ist|
+|requiresUserAuthentication|Boolean|Gibt an, ob das Profil eine Benutzerauthentifizierung erfordert.|
+|configurationEndpointUrl|Zeichenfolge|Konfigurations Endpunkt-URL für die Registrierung|
+|enableAuthenticationViaCompanyPortal|Boolean|Gibt an, dass der Apple-Setup-Assistent anstelle des Unternehmensportals authentifiziert werden soll.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Gibt an, dass das Unternehmens Portal auf dem Setup-Assistenten für registrierte Geräte erforderlich ist.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

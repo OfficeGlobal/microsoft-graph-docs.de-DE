@@ -1,35 +1,35 @@
 ---
-title: Ressourcentyp iosEduCertificateSettings
-description: Vertrauenswürdige Stamm und PFX-Zertifikate für iOS EDU.
-localization_priority: Normal
+title: iosEduCertificateSettings-Ressourcentyp
+description: Vertrauenswürdige Stamm-und PFX-Zertifikate für iOS EDU.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d23b379dea7a75e4ae79029845cd6e9f956503c0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4c94b7bc75022f8338a41da3b3b9d135dff47ac3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423552"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142651"
 ---
-# <a name="ioseducertificatesettings-resource-type"></a>Ressourcentyp iosEduCertificateSettings
+# <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Vertrauenswürdige Stamm und PFX-Zertifikate für iOS EDU.
+Vertrauenswürdige Stamm-und PFX-Zertifikate für iOS EDU.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|trustedRootCertificate|Binär|Zertifikat der vertrauenswürdigen Stammzertifizierungsstellen.|
-|Aus|Zeichenfolge|Der Dateiname in der Benutzeroberfläche angezeigt.|
-|certificationAuthority|Zeichenfolge|PKCS Zertifizierungsstelle.|
-|certificationAuthorityName|Zeichenfolge|Name der Zertifizierungsstelle PKCS.|
-|certificateTemplateName|Zeichenfolge|Name der PKCS Zertifikatsvorlage.|
-|renewalThresholdPercentage|Int32|Zertifikat Erneuerung Schwellenwertprozentsatz. Gültige Werte 1 bis 99|
-|certificateValidityPeriodValue|Int32|Wert für die Gültigkeitsdauer des Zertifikats.|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für die Gültigkeitsdauer des Zertifikats. Mögliche Werte sind: `days`, `months` und `years`.|
+|trustedRootCertificate|Binär|Vertrauenswürdiges Stammzertifikat.|
+|certFileName|Zeichenfolge|Dateiname, der in der Benutzeroberfläche angezeigt werden soll.|
+|certificationAuthority|Zeichenfolge|PKCS-ZertifizierungsStelle.|
+|certificationAuthorityName|Zeichenfolge|Name der PKCS-ZertifizierungsStelle.|
+|certificateTemplateName|Zeichenfolge|Name der PKCS-Zertifikatvorlage.|
+|Eigenschaften renewalthresholdpercentage|Int32|Schwellenwert für die Zertifikaterneuerung. Gültige Werte 1 bis 99|
+|certificateValidityPeriodValue|Int32|Wert für den Gültigkeitszeitraum des Zertifikats.|
+|Certificatevalidityperiodscale wurden|[Certificatevalidityperiodscale wurden](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Skalierung für den Gültigkeitszeitraum des Zertifikats. Mögliche Werte sind: `days`, `months` und `years`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

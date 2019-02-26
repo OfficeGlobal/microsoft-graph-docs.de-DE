@@ -1,30 +1,30 @@
 ---
-title: AndroidUsernameSource Enum-Typ
-description: Android Username-Quelle.
-localization_priority: Normal
+title: androidUsernameSource-Enumerationstyp
+description: Android-Benutzernamen Quelle.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3a6e50820938386bfecb647d4ab9f8b756e51cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 658891e8958fd8e38b66ddc64db2bba4479566be
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404246"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151135"
 ---
-# <a name="androidusernamesource-enum-type"></a>AndroidUsernameSource Enum-Typ
+# <a name="androidusernamesource-enum-type"></a>androidUsernameSource-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Username-Quelle.
+Android-Benutzernamen Quelle.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Benutzername|0|Der Benutzername.|
 |userPrincipalName|1|Der Benutzerprinzipalname.|
-|samAccountName|2|Der Benutzer Sam-Kontoname.|
+|samAccountName|2|Der Benutzername des SAM-Kontos.|
 |primarySmtpAddress|3|Primäre SMTP-Adresse.|
 
 

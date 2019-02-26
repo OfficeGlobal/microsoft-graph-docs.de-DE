@@ -1,23 +1,23 @@
 ---
 title: MobileAppInstallStatus aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines MobileAppInstallStatus-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines mobileAppInstallStatus-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e28404181248cef1deae4bec2752de51f553373b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1efc73e81894cb6fdd7d352cb067cf164f8bb33c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394544"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165744"
 ---
 # <a name="update-mobileappinstallstatus"></a>MobileAppInstallStatus aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekts.
+Aktualisieren der Eigenschaften eines [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -39,36 +39,36 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |deviceName|Zeichenfolge|Gerätename|
 |deviceId|Zeichenfolge|Geräte-ID|
-|lastSyncDateTime|DateTimeOffset|Letzte Synchronisierung Datum-Zeit|
+|lastSyncDateTime|DateTimeOffset|Datum der letzten Synchronisierung|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Der Installationsstatus der app. Mögliche Werte sind: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` und `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Die Details der Installation Zustand der app. Mögliche Werte: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
-|errorCode|Int32|Der Fehler im code für die Installation oder Deinstallieren von Fehlern.|
-|osVersion|Zeichenfolge|Version des Betriebssystems|
-|osDescription|String|OS Beschreibung|
-|userName|Zeichenfolge|Name des Aufnahmegeräts Benutzer|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname|
-|displayVersion|Zeichenfolge|Menschen lesbare Version der Anwendung|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Die Installationsstatus Details der app. Mögliche Werte: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|errorCode|Int32|Der Fehlercode für Installations-oder Deinstallationsfehler.|
+|osVersion|Zeichenfolge|Betriebssystem Version|
+|osDescription|String|Betriebssystem Beschreibung|
+|userName|Zeichenfolge|Geräte Benutzer Name|
+|userPrincipalName|String|Benutzerprinzipalname|
+|Display Version|Zeichenfolge|Lesbare Version der Anwendung|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp win32LobAppReturnCode
-description: Enthält Eigenschaften Rückgabecode für eine Win32-App
-localization_priority: Normal
+title: win32LobAppReturnCode-Ressourcentyp
+description: Enthält Rückgabecode Eigenschaften für eine Win32-App
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6357d0ac6aab87e236e02d60454d1b45aa98fe1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4402464bd4618f1e33b9b766be529cbe592165c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404358"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174587"
 ---
-# <a name="win32lobappreturncode-resource-type"></a>Ressourcentyp win32LobAppReturnCode
+# <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften Rückgabecode für eine Win32-App
+Enthält Rückgabecode Eigenschaften für eine Win32-App
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Rückgabecode|Int32|Rückgabecode.|
-|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Der Typ der Rückgabecode. Mögliche Werte sind: `failed`, `success`, `softReboot`, `hardReboot` und `retry`.|
+|returnCode|Int32|Rückgabecode.|
+|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Der Typ des Rückgabecodes. Mögliche Werte: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

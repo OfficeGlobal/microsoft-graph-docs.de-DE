@@ -1,47 +1,47 @@
 ---
-title: Ressourcentyp importedAppleDeviceIdentity
-description: Die Ressource ImportedAppleDeviceIdentity stellt die Identität des importierten Geräts von einem Apple-Gerät.
-localization_priority: Normal
+title: Importappledeviceidentitylist-Ressourcentyp
+description: Die Importappledeviceidentitylist-Ressource stellt die importierte Geräte Identität eines Apple-Geräts dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae0f940614ae8b872891579957e8f86c92342da8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5db17bc6a87ab74102126cab3061da5ffbab6fe5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151149"
 ---
-# <a name="importedappledeviceidentity-resource-type"></a>Ressourcentyp importedAppleDeviceIdentity
+# <a name="importedappledeviceidentity-resource-type"></a>Importappledeviceidentitylist-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Ressource ImportedAppleDeviceIdentity stellt die Identität des importierten Geräts von einem Apple-Gerät.
+Die Importappledeviceidentitylist-Ressource stellt die importierte Geräte Identität eines Apple-Geräts dar.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Auflistung|Listeneigenschaften und Beziehungen der [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekte.|
-|[Abrufen von importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Lesen Sie Eigenschaften und Beziehungen des [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
-|[Erstellen von importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Erstellen eines neuen [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
-|[ImportedAppleDeviceIdentity löschen](../api/intune-enrollment-importedappledeviceidentity-delete.md)|Keine|Löscht eine [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md).|
-|[ImportedAppleDeviceIdentity aktualisieren](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Aktualisieren Sie die Eigenschaften eines [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
-|[ImportAppleDeviceIdentityList Aktion](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[ImportedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) -Auflistung|Noch nicht dokumentiert|
+|[ImportedAppleDeviceIdentities aufListen](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekte.|
+|[Importappledeviceidentitylist abrufen](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Lesen von Eigenschaften und Beziehungen des [importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
+|[Importappledeviceidentitylist erstellen](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Erstellen eines neuen [importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
+|[Importappledeviceidentitylist löschen](../api/intune-enrollment-importedappledeviceidentity-delete.md)|Keine|Löscht eine [importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md).|
+|[Importappledeviceidentitylist aktualisieren](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Aktualisieren der Eigenschaften eines [importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Objekts.|
+|[importAppleDeviceIdentityList-Aktion](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) -Sammlung|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |serialNumber|Zeichenfolge|Seriennummer des Geräts|
-|requestedEnrollmentProfileId|Zeichenfolge|Registrierung Profil Id Admin beabsichtigt, auf dem Gerät während der nächsten Registrierung anwenden|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Das Zeit Registrierung Profil zugewiesen wurde das Gerät|
-|isSupervised|Boolean|Gibt an, ob das Gerät Apple überwacht wird. Weitere Informationen finden Sie unter:https://support.apple.com/en-us/HT202837|
-|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple Gerät Discovery-Quelle. Mögliche Werte sind: `unknown`, `adminImport` und `deviceEnrollmentProgram`.|
-|createdDateTime|DateTimeOffset|Erstellte Datum-Uhrzeit des Geräts|
-|lastContactedDateTime|DateTimeOffset|Letzte kontaktiert Datum-Uhrzeit des Geräts|
+|requestedEnrollmentProfileId|Zeichenfolge|Registrierungsprofil-ID, die der Administrator während der nächsten Registrierung auf das Gerät anwenden soll|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Das Zeit Registrierungsprofil wurde dem Gerät zugewiesen|
+|isSupervised|Boolean|Gibt an, ob das Apple-Gerät überwacht wird. Weitere Informationen finden Sie unter:https://support.apple.com/en-us/HT202837|
+|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple-Geräte Ermittlungs Quelle. Mögliche Werte sind: `unknown`, `adminImport` und `deviceEnrollmentProgram`.|
+|createdDateTime|DateTimeOffset|ErstellungsDatum des Geräts|
+|lastContactedDateTime|DateTimeOffset|Datum der letzten Kontaktaufnahme des Geräts|
 |description|Zeichenfolge|Die Beschreibung des Geräts|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Zustand des Geräts in Intune. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Der Status des Geräts in InTune. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |Plattform|[Plattform](../resources/intune-enrollment-platform.md)|Die Plattform des Geräts. Mögliche Werte sind: `unknown`, `ios`, `android`, `windows`, `windowsMobile` und `macOS`.|
 
 ## <a name="relationships"></a>Beziehungen

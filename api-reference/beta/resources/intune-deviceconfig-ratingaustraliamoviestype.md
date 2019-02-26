@@ -1,34 +1,34 @@
 ---
-title: RatingAustraliaMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Australien
-localization_priority: Normal
+title: ratingAustraliaMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Australien
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee94e37275d0a97729ea3de12264067ecf1e2d3d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408411"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162664"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>RatingAustraliaMoviesType Enum-Typ
+# <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Bezeichnungen in Australien
+Movies-Bewertungs Bezeichnungen in Australien
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Die Klassifizierung G eignet sich für alle Benutzer|
-|parentalGuidance|3|Der SCHUTZGRUPPE empfiehlt Viewer unter 15 mit Eltern oder Aufsichtspersonen-Leitfaden|
-|Erfahrungswerte|4|Die M-Klassifizierung wird für Leser von Berichten unter 15 nicht empfohlen.|
-|agesAbove15|5|Die Klassifizierung MA15 + eignet sich nicht für Leser von Berichten unter 15|
-|agesAbove18|6|Die Klassifizierung R18 + eignet sich nicht für Leser von Berichten unter 18|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Die G-Klassifikation ist für jeden geeignet|
+|parentalGuidance|3|Der PG empfiehlt den Zuschauern unter 15 mit Anweisungen von Eltern oder Erziehungsberechtigten.|
+|Reifen|4|Die M-Klassifikation wird für Zuschauer unter 15 nicht empfohlen|
+|agesAbove15|5|Die MA15 +-Klassifikation eignet sich nicht für Zuschauer unter 15|
+|agesAbove18|6|Die R18 +-Klassifikation eignet sich nicht für Zuschauer unter 18 Jahren.|
 
 
 

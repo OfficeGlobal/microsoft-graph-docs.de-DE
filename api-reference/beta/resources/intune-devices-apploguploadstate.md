@@ -1,30 +1,30 @@
 ---
-title: AppLogUploadState Enum-Typ
+title: appLogUploadState-Enumerationstyp
 description: AppLogUploadStatus
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58dcc0d4a15370d6449772d917e8994f0eb9e7bd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f8243436fa9ec5a56f442626cea31819ca1eaef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431576"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174389"
 ---
-# <a name="apploguploadstate-enum-type"></a>AppLogUploadState Enum-Typ
+# <a name="apploguploadstate-enum-type"></a>appLogUploadState-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 AppLogUploadStatus
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Ausstehende|0|Anforderung wird wartet auf Verarbeitung oder unter verarbeitet|
-|abgeschlossen|1|Anforderung wird mit der Datei hochgeladen in Azure Blob für den Download abgeschlossen.|
-|failed|2|Anforderung beendet Verarbeitung und Fehlerzustand.|
+|ausstehenden|0|Anforderung wartet auf Verarbeitung oder Bearbeitung|
+|abgeschlossen|1|Die Anforderung wurde mit einer Datei in Azure BLOB zum Herunterladen hochgeladen.|
+|failed|2|Anforderungs fertige Verarbeitung und Fehlerstatus.|
 
 
 

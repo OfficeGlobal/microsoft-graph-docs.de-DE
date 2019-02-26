@@ -1,41 +1,41 @@
 ---
 title: Ressourcentyp „intuneBrand“
 description: „intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst wird.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4e1e4a4a4042b9a4dd9382f1310d737ac1c9678
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167382"
 ---
 # <a name="intunebrand-resource-type"></a>Ressourcentyp „intuneBrand“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 „intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst wird.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
-|contactITName|String|Name der für den IT-Support zuständigen Person/Organisation|
-|contactITPhoneNumber|String|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
-|contactITEmailAddress|String|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
-|contactITNotes|String|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
-|privacyUrl|String|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
-|onlineSupportSiteUrl|String|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
+|displayName|Zeichenfolge|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
+|contactITName|Zeichenfolge|Name der für den IT-Support zuständigen Person/Organisation|
+|contactITPhoneNumber|Zeichenfolge|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
+|contactITEmailAddress|Zeichenfolge|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
+|contactITNotes|Zeichenfolge|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
+|privacyUrl|Zeichenfolge|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
+|onlineSupportSiteUrl|Zeichenfolge|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
 |onlineSupportSiteName|String|Anzeigename der IT-Helpdesk-Website des Unternehmens/der Organisation|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primäres Farbdesign für die Unternehmensportal-Anwendungen und das Webportal|
 |showLogo|Boolean|Boolescher Wert, der angibt, ob die vom Administrator bereitgestellten Logobilder angezeigt werden sollen|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmensportal-Apps mit hellem Hintergrund hinter dem Logo angezeigt werden soll|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmensportal-Apps mit dunklem Hintergrund hinter dem Logo angezeigt werden soll|
 |showNameNextToLogo|Boolean|Boolescher Wert, der angibt, ob der vom Administrator angegebene Anzeigename neben dem Logobild angezeigt werden soll|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Angepasste Bild im Unternehmen Portal-Angebotsseite|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Angepasstes Bild, das auf der Zielseite der compnay-Portal App angezeigt wird|
 |showDisplayNameNextToLogo|Boolean|Boolescher Wert, der angibt, ob der vom Administrator angegebene Anzeigename neben dem Logobild angezeigt werden soll|
 
 ## <a name="relationships"></a>Beziehungen

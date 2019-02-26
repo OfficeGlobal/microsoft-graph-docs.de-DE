@@ -1,32 +1,32 @@
 ---
-title: ApplicationGuardBlockFileTransferType Enum-Typ
+title: applicationGuardBlockFileTransferType-Enumerationstyp
 description: Mögliche Werte für applicationGuardBlockFileTransfer
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9997956d192686a5287e181b25bd5f98184299c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32b2d4ef3aabf8082074215825c8e3e08a44ba63
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396273"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142316"
 ---
-# <a name="applicationguardblockfiletransfertype-enum-type"></a>ApplicationGuardBlockFileTransferType Enum-Typ
+# <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für applicationGuardBlockFileTransfer
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert|
-|blockImageAndTextFile|1|Blockieren der Zwischenablage zum Übertragen von Text und Bild-Datei|
-|blockImageFile|2|Blockieren der Zwischenablage zum Übertragen Bilddatei|
-|blockNone|3|Keines der Textdatei oder Bilddatei wird übertragen blockiert|
-|blockTextFile|4|Blockieren der Zwischenablage zum Übertragen von Textdatei|
+|notConfigured|0|Nicht konfiguriert|
+|blockImageAndTextFile|1|Zwischenablage blockieren, um Bild und Textdatei zu übertragen|
+|blockImageFile|2|Zwischenablage zum Übertragen der Bilddatei blockieren|
+|blockNone|3|Keine Textdatei oder Bilddatei wird von der Übertragung blockiert|
+|blockTextFile|4|Zwischenablage blockieren, um Textdatei zu übertragen|
 
 
 

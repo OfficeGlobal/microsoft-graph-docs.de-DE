@@ -1,48 +1,48 @@
 ---
-title: DeviceType Enum-Typ
+title: DeviceType-Enumerationstyp
 description: Gerätetyp.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31342399cad690b3f95dcbc8494998de455cdaa7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2e29fb236bbfeca914878e92d8b565502e5658f5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400620"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142728"
 ---
-# <a name="devicetype-enum-type"></a>DeviceType Enum-Typ
+# <a name="devicetype-enum-type"></a>DeviceType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Gerätetyp.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Desktop|0|Desktop.|
 |windowsRT|1|WindowsRT.|
 |winMO6|2|WinMO6.|
 |Nokia|3|Nokia.|
-|windowsPhone|4|Windows Phone.|
+|windowsPhone|4|Windows phone.|
 |mac|5|Mac.|
 |winCE|6|WinCE.|
 |winEmbedded|7|WinEmbedded.|
 |iPhone|8|iPhone.|
 |iPad|9|iPad.|
 |iPod|10|iPodTouch.|
-|Android (engl.)|11|Android.|
+|Android|11|Android.|
 |iSocConsumer|12|iSocConsumer.|
 |UNIX|13|UNIX.|
-|macMDM|14|Mac OS X-Client mit integriert MDM Agent.|
-|holoLens|15|Die raffinierter darstellt Schutzbrille beim Windows 10.|
-|surfaceHub|16|Fläche HUB-Gerät.|
-|androidForWork|17|Android für Arbeit Gerät.|
-|androidEnterprise|18|Enterprise Android-Gerät.|
+|macMDM|14|Mac OS X-Client mit integriertem MDM-Agent.|
+|holoLens|15|Darstellung der Fancy Windows 10 Goggles.|
+|surfaceHub|16|Surface-HUB-Gerät.|
+|androidForWork|17|Android für Arbeitsgerät.|
+|androidEnterprise|18|Android Enterprise-Gerät.|
 |BlackBerry|100|BlackBerry.|
-|Palm|101|Gleich zur Hand.|
+|Palm|101|Palm.|
 |unknown|255|Stellt dar, dass der Gerätetyp unbekannt ist.|
 
 

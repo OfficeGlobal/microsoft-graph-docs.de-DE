@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp officeConfigurationAssignmentTarget
-description: Office Client-Konfiguration Assignment-Ziel.
+title: officeConfigurationAssignmentTarget-Ressourcentyp
+description: Zuordnungsziel für die Office-Client Konfiguration.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 61dbb87006935c8b39b0eab6f87a2255c465a446
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e20f9c6e0503d3d2870096ca11f2f634f1610f90
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396868"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172366"
 ---
-# <a name="officeconfigurationassignmenttarget-resource-type"></a>Ressourcentyp officeConfigurationAssignmentTarget
+# <a name="officeconfigurationassignmenttarget-resource-type"></a>officeConfigurationAssignmentTarget-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Office Client-Konfiguration Assignment-Ziel.
+Zuordnungsziel für die Office-Client Konfiguration.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

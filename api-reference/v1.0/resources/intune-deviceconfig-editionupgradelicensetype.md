@@ -1,26 +1,27 @@
 ---
-title: EditionUpgradeLicenseType Enum-Typ
-description: Edition Upgrade Lizenztyp
+title: editionUpgradeLicenseType-Enumerationstyp
+description: Lizenztyp für Editions Upgrade
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8d9b5c5e75bed3b0fca80ab4a3133acc52085a7a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b37074a8f7d1a233d742f4deda81ce73c1b82707
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960504"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260858"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a>EditionUpgradeLicenseType Enum-Typ
+# <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Edition Upgrade Lizenztyp
+Lizenztyp für Editions Upgrade
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |productKey|0|Product Key-Typ|
-|licenseFile|1|Lizenz-Dateityp|
+|licenseFile|1|Lizenz Dateityp|
 
 
 

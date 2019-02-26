@@ -1,45 +1,45 @@
 ---
-title: Ressourcentyp remoteActionAudit
-description: Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten gehören initiiert wurden.
-localization_priority: Normal
+title: Remote Action Audit-Ressourcentyp
+description: Bericht über die Remote Aktionen, die auf den Geräten eingeleitet wurden, die zu einem bestimmten Mandanten gehören.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebe93b2f2e70011fb75a08b91938f26d723d1d5c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c06f7472addff7c475eeeb8ac3f1a26cc7ea78bc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404911"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165877"
 ---
-# <a name="remoteactionaudit-resource-type"></a>Ressourcentyp remoteActionAudit
+# <a name="remoteactionaudit-resource-type"></a>Remote Action Audit-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Bericht zu remote Aktionen auf den Geräten, die auf einen bestimmten Mandanten gehören initiiert wurden.
+Bericht über die Remote Aktionen, die auf den Geräten eingeleitet wurden, die zu einem bestimmten Mandanten gehören.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste remoteActionAudits](../api/intune-devices-remoteactionaudit-list.md)|[RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Auflistung|Listeneigenschaften und Beziehungen der [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekte.|
-|[Abrufen von remoteActionAudit](../api/intune-devices-remoteactionaudit-get.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Lesen Sie Eigenschaften und Beziehungen des [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
-|[Erstellen von remoteActionAudit](../api/intune-devices-remoteactionaudit-create.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Erstellen eines neuen [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
-|[RemoteActionAudit löschen](../api/intune-devices-remoteactionaudit-delete.md)|Keine|Löscht eine [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md).|
-|[RemoteActionAudit aktualisieren](../api/intune-devices-remoteactionaudit-update.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Aktualisieren Sie die Eigenschaften eines [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
+|[RemoteActionAudits aufListen](../api/intune-devices-remoteactionaudit-list.md)|[Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekte.|
+|[Remote Action Audit abrufen](../api/intune-devices-remoteactionaudit-get.md)|[Remote Action Audit](../resources/intune-devices-remoteactionaudit.md)|Lesen von Eigenschaften und Beziehungen des [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
+|[Remote Action Audit erstellen](../api/intune-devices-remoteactionaudit-create.md)|[Remote Action Audit](../resources/intune-devices-remoteactionaudit.md)|Erstellen eines neuen [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
+|[Remote Action Audit löschen](../api/intune-devices-remoteactionaudit-delete.md)|Keine|Löscht eine [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md).|
+|[Remote Action Audit aktualisieren](../api/intune-devices-remoteactionaudit-update.md)|[Remote Action Audit](../resources/intune-devices-remoteactionaudit.md)|Aktualisieren der Eigenschaften eines [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Berichts-ID|
-|deviceDisplayName|Zeichenfolge|Name des Aufnahmegeräts Intune.|
-|userName|Zeichenfolge|\[veraltete\] verwenden Sie stattdessen InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|Zeichenfolge|Benutzer, der die Aktion Gerät gestartet UPN-Format vorliegt.|
-|Aktion|[remoteAction](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
-|requestDateTime|DateTimeOffset|Zeit, wenn die Aktion ausgestellt wurde, in UTC angegeben.|
-|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Besitzers Gerät.|
+|id|String|Berichts-ID.|
+|deviceDisplayName|Zeichenfolge|InTune-Gerätename.|
+|userName|Zeichenfolge|\[veraltet verwenden\] Sie stattdessen Eigenschaften initiatedbyuserprincipalname.|
+|Eigenschaften initiatedbyuserprincipalname|Zeichenfolge|Benutzer, der die Geräte Aktion initiiert hat, Format ist UPN.|
+|Aktion|[Remote-Steuerung](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures`,,,,,,,, `factoryResetKeepEnrollmentData`,, `shutDown` ,,,,,, `updateDeviceAccount` `automaticRedeployment` `locateDevice` .|
+|requestDateTime|DateTimeOffset|Zeitpunkt der Ausgabe der Aktion in UTC.|
+|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Geräte Besitzers.|
 |deviceIMEI|Zeichenfolge|IMEI des Geräts.|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion. Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Aktionsstatus. Mögliche Werte: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

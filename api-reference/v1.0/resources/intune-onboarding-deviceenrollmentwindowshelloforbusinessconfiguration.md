@@ -3,19 +3,20 @@ title: deviceEnrollmentWindowsHelloForBusinessConfiguration-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 26eb1eb09ea4a32739794be9fea582ad3f790d44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929144"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260991"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Noch nicht dokumentiert.
+Noch nicht dokumentiert
+
 
 Erbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
 
@@ -38,18 +39,18 @@ Erbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 |createdDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |Version|Int32|Noch nicht dokumentiert. Geerbt von [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|pinMinimumLength|Int32|Noch nicht dokumentiert.|
-|pinMaximumLength|Int32|Noch nicht dokumentiert.|
+|pinMinimumLength|Int32|Noch nicht dokumentiert|
+|pinMaximumLength|Int32|Noch nicht dokumentiert|
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Noch nicht dokumentiert. Mögliche Werte sind: `allowed`, `required` und `disallowed`.|
-|Zustand|[Aktivierung von Steuerelementen](../resources/intune-onboarding-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
-|securityDeviceRequired|Boolescher Wert|Noch nicht dokumentiert.|
-|unlockWithBiometricsEnabled|Boolescher Wert|Noch nicht dokumentiert.|
-|remotePassportEnabled|Boolescher Wert|Noch nicht dokumentiert.|
-|pinPreviousBlockCount|Int32|Noch nicht dokumentiert.|
+|state|[Aktivierung](../resources/intune-onboarding-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
+|securityDeviceRequired|Boolean|Noch nicht dokumentiert|
+|unlockWithBiometricsEnabled|Boolean|Noch nicht dokumentiert|
+|remotePassportEnabled|Boolean|Noch nicht dokumentiert|
+|pinPreviousBlockCount|Int32|Noch nicht dokumentiert|
 |pinExpirationInDays|Int32|Noch nicht dokumentiert.|
-|enhancedBiometricsState|[Aktivierung von Steuerelementen](../resources/intune-onboarding-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
+|enhancedBiometricsState|[Aktivierung](../resources/intune-onboarding-enablement.md)|Noch nicht dokumentiert. Mögliche Werte sind: `notConfigured`, `enabled` und `disabled`.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|

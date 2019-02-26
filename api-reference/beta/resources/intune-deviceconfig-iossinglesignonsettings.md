@@ -1,32 +1,32 @@
 ---
-title: Ressourcentyp iosSingleSignOnSettings
-description: iOS Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
-localization_priority: Normal
+title: iosSingleSignOnSettings-Ressourcentyp
+description: iOS-Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 189fb79be741bdf6b731b1e3c2b336934db8c86b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b438ea8fadc30a0bf5fa3786e9b4cec3344093c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421319"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142623"
 ---
-# <a name="iossinglesignonsettings-resource-type"></a>Ressourcentyp iosSingleSignOnSettings
+# <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-iOS Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
+iOS-Kerberos-Authentifizierungseinstellungen für einmaliges Anmelden
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|allowedAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste der app-Bezeichner, die dieser Anmeldung verwenden dürfen. Wenn dieses Feld nicht angegeben wird, gilt die Anmeldung auf alle Programme, auf dem Gerät. Diese Collection darf maximal 500 Elemente enthalten.|
-|allowedUrls|Zeichenfolgenauflistung|Liste der HTTP-URLs, die übereinstimmen muss, um diesen Benutzernamen verwenden. IOS 9.0 oder höher können ein Platzhalterzeichen verwendet werden.|
-|displayName|Zeichenfolge|Der Anzeigename der Einstellungen für die Anmeldung auf dem empfangenden Gerät angezeigt.|
-|kerberosPrincipalName|Zeichenfolge|Ein Kerberos principal Name. Wenn nicht angegeben, wird der Benutzer während der Profilinstallation dazu aufgefordert.|
-|kerberosRealm|Zeichenfolge|Ein Kerberos-Realm-Name. Groß-/Kleinschreibung beachtet.|
+|allowedAppsList|Collection von Objekten des Typs [appListItem](../resources/intune-deviceconfig-applistitem.md)|Liste der APP-IDs, die diese Anmeldung verwenden dürfen. Wenn dieses Feld nicht angegeben wird, gilt die Anmeldung für alle Anwendungen auf dem Gerät. Diese Collection darf maximal 500 Elemente enthalten.|
+|allowedUrls|String collection|Liste der HTTP-URLs, die abgeglichen werden müssen, um diese Anmeldung zu verwenden. Mit iOS 9,0 oder höher können Platzhalterzeichen verwendet werden.|
+|displayName|Zeichenfolge|Der Anzeigename der Anmeldeeinstellungen, die auf dem empfangenden Gerät angezeigt werden.|
+|kerberosPrincipalName|Zeichenfolge|Ein Kerberos-Prinzipalname. Wenn nicht angegeben, wird der Benutzer während der Profilinstallation zur Eingabe eines Eintrags aufgefordert.|
+|kerberosRealm|Zeichenfolge|Ein Kerberos-Bereichsname. Groß-/Kleinschreibung beachtet.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

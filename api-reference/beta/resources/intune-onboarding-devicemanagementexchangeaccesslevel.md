@@ -1,31 +1,31 @@
 ---
-title: DeviceManagementExchangeAccessLevel Enum-Typ
+title: deviceManagementExchangeAccessLevel-Enumerationstyp
 description: Zugriffsebene in Exchange.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d24aedcd5c09de6e56b3870f8c5b111fbb39513
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dc84149f9ca6b178807e4bd70984fe1abfff6a09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414333"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174235"
 ---
-# <a name="devicemanagementexchangeaccesslevel-enum-type"></a>DeviceManagementExchangeAccessLevel Enum-Typ
+# <a name="devicemanagementexchangeaccesslevel-enum-type"></a>deviceManagementExchangeAccessLevel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Zugriffsebene in Exchange.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Keine gerätezugriffsregel wurde in Exchange konfiguriert.|
-|zulassen|1|Ermöglichen des Gerätezugriffs auf Exchange das an.|
-|Blockieren|2|Blockieren Sie das Gerät den Zugriff auf Exchange.|
-|Quarantäne|3|Isolieren Sie das Gerät im Exchange.|
+|Keine|0|In Exchange wurde keine Gerätezugriffsregel konfiguriert.|
+|zulassen|1|Geräte Zugriff auf Exchange zulassen|
+|Block|2|Blockieren des Zugriffs auf Exchange durch das Gerät|
+|Quarantäne|3|Isolieren Sie das Gerät in Exchange.|
 
 
 

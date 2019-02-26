@@ -1,58 +1,58 @@
 ---
-title: Ressourcentyp deviceManagementScript
-description: Intune bietet Kunden die Möglichkeit, ihre Powershell-Skripts auf der registrierten Windows 10 Azure Active Directory verbunden Geräten ausführen. Das Skript kann einmal oder in regelmäßigen Abständen ausgeführt werden.
-localization_priority: Normal
+title: Devicemanagementscript hinzugefügt-Ressourcentyp
+description: InTune bietet Kunden die Möglichkeit, ihre PowerShell-Skripts auf den angemeldeten Windows 10 Azure Active Directory-Geräten auszuführen. Das Skript kann einmal oder periodisch ausgeführt werden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3fffd6bec8866066824725f1477e6de0e71ebf9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164064"
 ---
-# <a name="devicemanagementscript-resource-type"></a>Ressourcentyp deviceManagementScript
+# <a name="devicemanagementscript-resource-type"></a>Devicemanagementscript hinzugefügt-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Intune bietet Kunden die Möglichkeit, ihre Powershell-Skripts auf der registrierten Windows 10 Azure Active Directory verbunden Geräten ausführen. Das Skript kann einmal oder in regelmäßigen Abständen ausgeführt werden.
+InTune bietet Kunden die Möglichkeit, ihre PowerShell-Skripts auf den angemeldeten Windows 10 Azure Active Directory-Geräten auszuführen. Das Skript kann einmal oder periodisch ausgeführt werden.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekte.|
-|[Abrufen von deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
-|[Erstellen von deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Erstellen eines neuen [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
-|[DeviceManagementScript löschen](../api/intune-devices-devicemanagementscript-delete.md)|Keine|Löscht eine [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
-|[DeviceManagementScript aktualisieren](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Aktualisieren Sie die Eigenschaften eines [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
+|[DeviceManagementScripts aufListen](../api/intune-devices-devicemanagementscript-list.md)|[devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekte.|
+|[Devicemanagementscript hinzugefügt abrufen](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Lesen von Eigenschaften und Beziehungen des [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
+|[Devicemanagementscript hinzugefügt erstellen](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Erstellen eines neuen [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
+|[Devicemanagementscript hinzugefügt löschen](../api/intune-devices-devicemanagementscript-delete.md)|Keine|Löscht eine [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md).|
+|[Devicemanagementscript hinzugefügt aktualisieren](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Aktualisieren der Eigenschaften eines [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekts.|
 |[assign-Aktion](../api/intune-devices-devicemanagementscript-assign.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät Management-Skript.|
-|displayName|Zeichenfolge|Name des Skripts Management Gerät.|
-|description|Zeichenfolge|Optionale Beschreibung für das Gerät Management-Skript.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Das Intervall für das Skript ausgeführt wird. Wenn nicht definiert das Skript einmal ausgeführt wird|
+|id|string|Eindeutiger Bezeichner für das Geräte Verwaltungsskript.|
+|displayName|Zeichenfolge|Name des Geräteverwaltungs-Skripts.|
+|description|String|Optionale Beschreibung des Device Management-Skripts.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Das Intervall für die Ausführung des Skripts. Wenn nicht definiert, wird das Skript einmal ausgeführt|
 |scriptContent|Binär|Der Skriptinhalt.|
-|createdDateTime|DateTimeOffset|Datum und Zeit für das Gerät Management-Skript erstellt wurde.|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräts Management-Skripts.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts, den das Gerät Management-Skript in ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolean|Geben Sie an, ob die Signatur Skript muss aktiviert sein.|
-|fileName|Zeichenfolge|Dateiname des Skripts.|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-IDs für diese Instanz des PowerShellScript.|
+|createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der das Geräte Verwaltungsskript erstellt wurde.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräteverwaltungsskripts.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts an, in dem das Geräte Verwaltungsskript ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
+|enforceSignatureCheck|Boolean|Geben Sie an, ob die skriptsignatur überprüft werden muss.|
+|fileName|Zeichenfolge|Skriptdateiname.|
+|Rolescopetagids zur|String collection|Liste der Bereichstag-IDs für diese PowerShellScript-Instanz.|
 |runAs32Bit|Boolean|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|groupAssignments|[DeviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) -Auflistung|Die Liste der Gruppe Zuordnungen für das Gerät Management-Skript.|
-|assignments|[DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Auflistung|Die Liste der Gruppe Zuordnungen für das Gerät Management-Skript.|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Zusammenfassung für Device-Management-Skript ausführen.|
-|deviceRunStates|[DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Auflistung|Liste der für dieses Skript auf allen Geräten ausführen Zustände.|
-|userRunStates|[DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Auflistung|Liste der Laufzeit Zustände für dieses Skript für alle Benutzer.|
+|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) -Sammlung|Die Liste der Gruppenzuweisungen für das Geräte Verwaltungsskript.|
+|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) -Sammlung|Die Liste der Gruppenzuweisungen für das Geräte Verwaltungsskript.|
+|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Führen Sie eine Zusammenfassung für Device Management-Skripts aus.|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Sammlung|Liste der Ausführungsstatus für dieses Skript auf allen Geräten.|
+|Userrunstates wurden|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Sammlung|Liste der Ausführungsstatus für dieses Skript für alle Benutzer.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

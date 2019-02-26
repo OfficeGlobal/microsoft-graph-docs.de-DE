@@ -1,23 +1,23 @@
 ---
-title: DeviceManagementScript löschen
-description: Löscht eine DeviceManagementScript.
-localization_priority: Normal
+title: Devicemanagementscript hinzugefügt löschen
+description: Löscht eine Devicemanagementscript hinzugefügt.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7c3efa782f765ae046f582f450de973099d9110
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0e67f923456dea902b24aec040877edef6eaec9b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411869"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173472"
 ---
-# <a name="delete-devicemanagementscript"></a>DeviceManagementScript löschen
+# <a name="delete-devicemanagementscript"></a>Devicemanagementscript hinzugefügt löschen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Löscht eine [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
+Löscht eine [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -38,9 +38,9 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext

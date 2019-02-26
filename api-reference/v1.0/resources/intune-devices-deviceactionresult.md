@@ -1,21 +1,22 @@
 ---
 title: deviceActionResult-Ressourcentyp
-description: Ergebnis von Gerätevorgang
+description: Ergebnis von Geräteaktion
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: be8519adc44f7bb63379b0bfa821a067f3eee947
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d08b4285f81c7b6f7e4962c4738279f84ba37b7d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985885"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261047"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Ergebnis von Gerätevorgang
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ Ergebnis von Gerätevorgang
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

@@ -1,21 +1,21 @@
 ---
 title: deviceConfigurationSettingState-Ressourcentyp
 description: Status der Konfigurationseinstellungen für ein bestimmtes Gerät
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9355cdf0aab60208246fdae699cda78be65d62ff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0acfcd697815ee9403e6144c5da34dd824022de3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415187"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165884"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Status der Konfigurationseinstellungen für ein bestimmtes Gerät
 
@@ -25,7 +25,7 @@ Status der Konfigurationseinstellungen für ein bestimmtes Gerät
 |setting|Zeichenfolge|Die gemeldete Einstellung|
 |settingName|Zeichenfolge|Lokalisierter/benutzerfreundlicher Name der Einstellung, die gemeldet wird|
 |instanceDisplayName|Zeichenfolge|Name der Einstellungsinstanz, die gemeldet wird.|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|state|[Wurde](../resources/intune-shared-compliancestatus.md)|Der Kompatibilitätsstatus der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |errorCode|Int64|Fehlercode für die Einstellung|
 |errorDescription|Zeichenfolge|Fehlerbeschreibung|
 |userId|Zeichenfolge|UserId|

@@ -1,44 +1,44 @@
 ---
-title: Ressourcentyp deviceConfigurationGroupAssignment
-description: Gerät Konfiguration Gruppe zuweisen.
-localization_priority: Normal
+title: deviceConfigurationGroupAssignment-Ressourcentyp
+description: Zuordnung der Geräte Konfigurationsgruppe.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed94f08fb33fe4a999e71b85808f58853d40cad4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2daa30edbfecc73fcc8daee766b1aae723110e59
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406822"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172380"
 ---
-# <a name="deviceconfigurationgroupassignment-resource-type"></a>Ressourcentyp deviceConfigurationGroupAssignment
+# <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gerät Konfiguration Gruppe zuweisen.
+Zuordnung der Geräte Konfigurationsgruppe.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste deviceConfigurationGroupAssignments](../api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md)|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Auflistung|Listeneigenschaften und Beziehungen der [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekte.|
-|[Abrufen von deviceConfigurationGroupAssignment](../api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Lesen Sie Eigenschaften und Beziehungen des [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
-|[Erstellen von deviceConfigurationGroupAssignment](../api/intune-deviceconfig-deviceconfigurationgroupassignment-create.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Erstellen eines neuen [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
-|[DeviceConfigurationGroupAssignment löschen](../api/intune-deviceconfig-deviceconfigurationgroupassignment-delete.md)|Keine|Löscht eine [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md).|
-|[DeviceConfigurationGroupAssignment aktualisieren](../api/intune-deviceconfig-deviceconfigurationgroupassignment-update.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Aktualisieren Sie die Eigenschaften eines [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
+|[DeviceConfigurationGroupAssignments aufListen](../api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekte.|
+|[DeviceConfigurationGroupAssignment abrufen](../api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Lesen von Eigenschaften und Beziehungen des [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
+|[DeviceConfigurationGroupAssignment erstellen](../api/intune-deviceconfig-deviceconfigurationgroupassignment-create.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Erstellen eines neuen [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
+|[DeviceConfigurationGroupAssignment löschen](../api/intune-deviceconfig-deviceconfigurationgroupassignment-delete.md)|Keine|Löscht eine [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md).|
+|[DeviceConfigurationGroupAssignment aktualisieren](../api/intune-deviceconfig-deviceconfigurationgroupassignment-update.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Aktualisieren der Eigenschaften eines [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|targetGroupId|Zeichenfolge|Die Id der Gruppe AAD sind wir Gerätekonfiguration zu adressieren.|
-|excludeGroup|Boolean|Gibt an, ob diese Gruppe ist ausgeschlossen werden soll. Die Standardeinstellungen, dass die Gruppe eingeschlossen werden sollen|
+|targetGroupId|Zeichenfolge|Die ID der AAD-Gruppe, auf die die Gerätekonfiguration zielt.|
+|excludeGroup|Boolean|Gibt an, ob diese Gruppe ausgeschlossen werden soll. Standardwerte, die die Gruppe enthalten soll|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Der Navigationslink zur Gerätekonfiguration geplant wird.|
+|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Der Navigationslink zu der Gerätekonfiguration, die gezielt wird.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

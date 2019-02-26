@@ -1,26 +1,27 @@
 ---
-title: WeeklySchedule Enum-Typ
-description: Mögliche Werte für einem wöchentlichen Plan.
+title: weeklySchedule-Enumerationstyp
+description: Mögliche Werte für einen wöchentlichen Zeitplan.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934660"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263021"
 ---
-# <a name="weeklyschedule-enum-type"></a>WeeklySchedule Enum-Typ
+# <a name="weeklyschedule-enum-type"></a>weeklySchedule-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für einem wöchentlichen Plan.
+Mögliche Werte für einen wöchentlichen Zeitplan.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|alltägliche|1|Täglich.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|alltäglichen|1|Alltäglichen.|
 |Sonntag|2|Sonntag.|
 |Montag|3|Montag.|
 |Dienstag|4|Dienstag.|

@@ -3,19 +3,20 @@ title: androidMobileAppIdentifier-Ressourcentyp
 description: Der Bezeichner für eine Android-App.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6a940acc726467634df3a64dc686824350abf98f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: aa3a0f90626ea01290ccd1d0eee3873374efb546
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915067"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261173"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Der Bezeichner für eine Android-App.
+
 
 Erbt von [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
@@ -26,6 +27,7 @@ Erbt von [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
