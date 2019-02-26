@@ -1,37 +1,37 @@
 ---
-title: Ressourcentyp windowsKioskProfile
+title: windowsKioskProfile-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d8c23d3bfae2baf9d632c33390b8aafb5e7ef8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420248"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164750"
 ---
-# <a name="windowskioskprofile-resource-type"></a><span data-ttu-id="4011e-103">Ressourcentyp windowsKioskProfile</span><span class="sxs-lookup"><span data-stu-id="4011e-103">windowsKioskProfile resource type</span></span>
+# <a name="windowskioskprofile-resource-type"></a><span data-ttu-id="83791-103">windowsKioskProfile-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="83791-103">windowsKioskProfile resource type</span></span>
 
-> <span data-ttu-id="4011e-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="4011e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4011e-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4011e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="83791-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="83791-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4011e-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="4011e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="83791-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="83791-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4011e-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="4011e-107">Not yet documented</span></span>
+<span data-ttu-id="83791-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="83791-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4011e-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4011e-108">Properties</span></span>
-|<span data-ttu-id="4011e-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4011e-109">Property</span></span>|<span data-ttu-id="4011e-110">Typ</span><span class="sxs-lookup"><span data-stu-id="4011e-110">Type</span></span>|<span data-ttu-id="4011e-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4011e-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="83791-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="83791-107">Properties</span></span>
+|<span data-ttu-id="83791-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="83791-108">Property</span></span>|<span data-ttu-id="83791-109">Typ</span><span class="sxs-lookup"><span data-stu-id="83791-109">Type</span></span>|<span data-ttu-id="83791-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="83791-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4011e-112">ID</span><span class="sxs-lookup"><span data-stu-id="4011e-112">profileId</span></span>|<span data-ttu-id="4011e-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="4011e-113">String</span></span>|<span data-ttu-id="4011e-114">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="4011e-114">Key of the entity.</span></span>|
-|<span data-ttu-id="4011e-115">Profilname</span><span class="sxs-lookup"><span data-stu-id="4011e-115">profileName</span></span>|<span data-ttu-id="4011e-116">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="4011e-116">String</span></span>|<span data-ttu-id="4011e-117">Dies ist ein Anzeigename zur Identifizierung einer Gruppe von Anwendungen, das Layout von diese apps auf das Startmenü und die Benutzer, die diese Konfiguration Kiosk zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="4011e-117">This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.</span></span>|
-|<span data-ttu-id="4011e-118">appConfiguration</span><span class="sxs-lookup"><span data-stu-id="4011e-118">appConfiguration</span></span>|[<span data-ttu-id="4011e-119">windowsKioskAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="4011e-119">windowsKioskAppConfiguration</span></span>](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|<span data-ttu-id="4011e-120">Die App-Konfiguration, die für diese Konfiguration Kiosk verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="4011e-120">The App configuration that will be used for this kiosk configuration.</span></span>|
-|<span data-ttu-id="4011e-121">userAccountsConfiguration</span><span class="sxs-lookup"><span data-stu-id="4011e-121">userAccountsConfiguration</span></span>|<span data-ttu-id="4011e-122">[WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) -Auflistung</span><span class="sxs-lookup"><span data-stu-id="4011e-122">[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) collection</span></span>|<span data-ttu-id="4011e-123">Die Benutzerkonten, die mit dieser Konfiguration Kiosk gesperrt werden.</span><span class="sxs-lookup"><span data-stu-id="4011e-123">The user accounts that will be locked to this kiosk configuration.</span></span> <span data-ttu-id="4011e-124">Diese Sammlung kann maximal 100 Elemente enthalten.</span><span class="sxs-lookup"><span data-stu-id="4011e-124">This collection can contain a maximum of 100 elements.</span></span>|
+|<span data-ttu-id="83791-111">profileId</span><span class="sxs-lookup"><span data-stu-id="83791-111">profileId</span></span>|<span data-ttu-id="83791-112">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="83791-112">String</span></span>|<span data-ttu-id="83791-113">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="83791-113">Key of the entity.</span></span>|
+|<span data-ttu-id="83791-114">Profilname</span><span class="sxs-lookup"><span data-stu-id="83791-114">profileName</span></span>|<span data-ttu-id="83791-115">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="83791-115">String</span></span>|<span data-ttu-id="83791-116">Dies ist ein Anzeigename, der verwendet wird, um eine Gruppe von Anwendungen, das Layout dieser apps im Startmenü und die Benutzer zu identifizieren, denen diese Kiosk Konfiguration zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="83791-116">This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.</span></span>|
+|<span data-ttu-id="83791-117">appConfiguration</span><span class="sxs-lookup"><span data-stu-id="83791-117">appConfiguration</span></span>|[<span data-ttu-id="83791-118">windowsKioskAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="83791-118">windowsKioskAppConfiguration</span></span>](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|<span data-ttu-id="83791-119">Die APP-Konfiguration, die für diese Kiosk Konfiguration verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="83791-119">The App configuration that will be used for this kiosk configuration.</span></span>|
+|<span data-ttu-id="83791-120">userAccountsConfiguration</span><span class="sxs-lookup"><span data-stu-id="83791-120">userAccountsConfiguration</span></span>|<span data-ttu-id="83791-121">[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) -Sammlung</span><span class="sxs-lookup"><span data-stu-id="83791-121">[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) collection</span></span>|<span data-ttu-id="83791-122">Die Benutzerkonten, die für diese Kiosk Konfiguration gesperrt werden.</span><span class="sxs-lookup"><span data-stu-id="83791-122">The user accounts that will be locked to this kiosk configuration.</span></span> <span data-ttu-id="83791-123">Diese Auflistung kann maximal 100 Elemente enthalten.</span><span class="sxs-lookup"><span data-stu-id="83791-123">This collection can contain a maximum of 100 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4011e-125">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="4011e-125">Relationships</span></span>
-<span data-ttu-id="4011e-126">Keine</span><span class="sxs-lookup"><span data-stu-id="4011e-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="83791-124">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="83791-124">Relationships</span></span>
+<span data-ttu-id="83791-125">Keine</span><span class="sxs-lookup"><span data-stu-id="83791-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4011e-127">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="4011e-127">JSON Representation</span></span>
-<span data-ttu-id="4011e-128">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="4011e-128">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="83791-126">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="83791-126">JSON Representation</span></span>
+<span data-ttu-id="83791-127">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="83791-127">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskProfile"

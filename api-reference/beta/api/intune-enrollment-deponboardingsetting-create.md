@@ -1,34 +1,34 @@
 ---
-title: Erstellen von depOnboardingSetting
-description: Erstellen eines neuen DepOnboardingSetting-Objekts.
-localization_priority: Normal
+title: DepOnboardingSetting erstellen
+description: Erstellen eines neuen depOnboardingSetting-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aa17e5741df007d7ee449a4ab305be37807051d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409818"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164386"
 ---
-# <a name="create-deponboardingsetting"></a><span data-ttu-id="5a174-103">Erstellen von depOnboardingSetting</span><span class="sxs-lookup"><span data-stu-id="5a174-103">Create depOnboardingSetting</span></span>
+# <a name="create-deponboardingsetting"></a><span data-ttu-id="3184a-103">DepOnboardingSetting erstellen</span><span class="sxs-lookup"><span data-stu-id="3184a-103">Create depOnboardingSetting</span></span>
 
-> <span data-ttu-id="5a174-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="5a174-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5a174-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5a174-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3184a-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3184a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5a174-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5a174-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3184a-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="3184a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5a174-107">Erstellen eines neuen [DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="5a174-107">Create a new [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
+<span data-ttu-id="3184a-106">Erstellen eines neuen [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="3184a-106">Create a new [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5a174-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="5a174-108">Prerequisites</span></span>
-<span data-ttu-id="5a174-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="5a174-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3184a-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="3184a-107">Prerequisites</span></span>
+<span data-ttu-id="3184a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="3184a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="5a174-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="5a174-111">Permission type</span></span>|<span data-ttu-id="5a174-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="5a174-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3184a-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3184a-110">Permission type</span></span>|<span data-ttu-id="3184a-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3184a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5a174-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="5a174-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5a174-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5a174-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="5a174-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="5a174-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5a174-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5a174-116">Not supported.</span></span>|
-|<span data-ttu-id="5a174-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="5a174-117">Application</span></span>|<span data-ttu-id="5a174-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="5a174-118">Not supported.</span></span>|
+|<span data-ttu-id="3184a-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3184a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3184a-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3184a-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="3184a-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3184a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3184a-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3184a-115">Not supported.</span></span>|
+|<span data-ttu-id="3184a-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3184a-116">Application</span></span>|<span data-ttu-id="3184a-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3184a-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5a174-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="5a174-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3184a-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3184a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,45 +37,46 @@ ms.locfileid: "29409818"
 POST /deviceManagement/depOnboardingSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5a174-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="5a174-120">Request headers</span></span>
-|<span data-ttu-id="5a174-121">Header</span><span class="sxs-lookup"><span data-stu-id="5a174-121">Header</span></span>|<span data-ttu-id="5a174-122">Wert</span><span class="sxs-lookup"><span data-stu-id="5a174-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3184a-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3184a-119">Request headers</span></span>
+|<span data-ttu-id="3184a-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="3184a-120">Header</span></span>|<span data-ttu-id="3184a-121">Wert</span><span class="sxs-lookup"><span data-stu-id="3184a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5a174-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="5a174-123">Authorization</span></span>|<span data-ttu-id="5a174-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="5a174-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5a174-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="5a174-125">Accept</span></span>|<span data-ttu-id="5a174-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5a174-126">application/json</span></span>|
+|<span data-ttu-id="3184a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3184a-122">Authorization</span></span>|<span data-ttu-id="3184a-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="3184a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3184a-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="3184a-124">Accept</span></span>|<span data-ttu-id="3184a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3184a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5a174-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="5a174-127">Request body</span></span>
-<span data-ttu-id="5a174-128">Geben Sie im Textkörper Anforderung für das Objekt DepOnboardingSetting eine JSON-Darstellung.</span><span class="sxs-lookup"><span data-stu-id="5a174-128">In the request body, supply a JSON representation for the depOnboardingSetting object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3184a-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3184a-126">Request body</span></span>
+<span data-ttu-id="3184a-127">Geben Sie im Anforderungstext eine JSON-Darstellung für das depOnboardingSetting-Objekt an.</span><span class="sxs-lookup"><span data-stu-id="3184a-127">In the request body, supply a JSON representation for the depOnboardingSetting object.</span></span>
 
-<span data-ttu-id="5a174-129">In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die DepOnboardingSetting erstellen.</span><span class="sxs-lookup"><span data-stu-id="5a174-129">The following table shows the properties that are required when you create the depOnboardingSetting.</span></span>
+<span data-ttu-id="3184a-128">In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der depOnboardingSetting erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="3184a-128">The following table shows the properties that are required when you create the depOnboardingSetting.</span></span>
 
-|<span data-ttu-id="5a174-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="5a174-130">Property</span></span>|<span data-ttu-id="5a174-131">Typ</span><span class="sxs-lookup"><span data-stu-id="5a174-131">Type</span></span>|<span data-ttu-id="5a174-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5a174-132">Description</span></span>|
+|<span data-ttu-id="3184a-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3184a-129">Property</span></span>|<span data-ttu-id="3184a-130">Typ</span><span class="sxs-lookup"><span data-stu-id="3184a-130">Type</span></span>|<span data-ttu-id="3184a-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3184a-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5a174-133">id</span><span class="sxs-lookup"><span data-stu-id="5a174-133">id</span></span>|<span data-ttu-id="5a174-134">String</span><span class="sxs-lookup"><span data-stu-id="5a174-134">String</span></span>|<span data-ttu-id="5a174-135">UUID für das Objekt</span><span class="sxs-lookup"><span data-stu-id="5a174-135">UUID for the object</span></span>|
-|<span data-ttu-id="5a174-136">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="5a174-136">appleIdentifier</span></span>|<span data-ttu-id="5a174-137">String</span><span class="sxs-lookup"><span data-stu-id="5a174-137">String</span></span>|<span data-ttu-id="5a174-138">Die Apple-ID verwendet, um das aktuelle Token abzurufen.</span><span class="sxs-lookup"><span data-stu-id="5a174-138">The Apple ID used to obtain the current token.</span></span>|
-|<span data-ttu-id="5a174-139">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="5a174-139">tokenExpirationDateTime</span></span>|<span data-ttu-id="5a174-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a174-140">DateTimeOffset</span></span>|<span data-ttu-id="5a174-141">Wenn das Token abläuft.</span><span class="sxs-lookup"><span data-stu-id="5a174-141">When the token will expire.</span></span>|
-|<span data-ttu-id="5a174-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5a174-142">lastModifiedDateTime</span></span>|<span data-ttu-id="5a174-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a174-143">DateTimeOffset</span></span>|<span data-ttu-id="5a174-144">Wenn der Dienst Onboarded wurde.</span><span class="sxs-lookup"><span data-stu-id="5a174-144">When the service was onboarded.</span></span>|
-|<span data-ttu-id="5a174-145">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="5a174-145">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="5a174-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a174-146">DateTimeOffset</span></span>|<span data-ttu-id="5a174-147">Wenn der Dienst letzten Syned mit Intune</span><span class="sxs-lookup"><span data-stu-id="5a174-147">When the service last syned with Intune</span></span>|
-|<span data-ttu-id="5a174-148">lastSyncTriggeredDateTime</span><span class="sxs-lookup"><span data-stu-id="5a174-148">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="5a174-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5a174-149">DateTimeOffset</span></span>|<span data-ttu-id="5a174-150">Wenn Intune zuletzt eine Synchronisierung angefordert wird.</span><span class="sxs-lookup"><span data-stu-id="5a174-150">When Intune last requested a sync.</span></span>|
-|<span data-ttu-id="5a174-151">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="5a174-151">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="5a174-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="5a174-152">Boolean</span></span>|<span data-ttu-id="5a174-153">Unabhängig davon, ob die Datenausführungsverhinderung token Freigabe mit dem Schule Daten Sync-Dienst aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="5a174-153">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
-|<span data-ttu-id="5a174-154">lastSyncErrorCode</span><span class="sxs-lookup"><span data-stu-id="5a174-154">lastSyncErrorCode</span></span>|<span data-ttu-id="5a174-155">Int32</span><span class="sxs-lookup"><span data-stu-id="5a174-155">Int32</span></span>|<span data-ttu-id="5a174-156">Fehlercode von Apple während der letzten Synchronisierung der Datenausführungsverhinderung gemeldet.</span><span class="sxs-lookup"><span data-stu-id="5a174-156">Error code reported by Apple during last dep sync.</span></span>|
-|<span data-ttu-id="5a174-157">"TokenType"</span><span class="sxs-lookup"><span data-stu-id="5a174-157">tokenType</span></span>|[<span data-ttu-id="5a174-158">depTokenType</span><span class="sxs-lookup"><span data-stu-id="5a174-158">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="5a174-159">Ruft ab oder legt ihn fest die Datenausführungsverhinderung Token.</span><span class="sxs-lookup"><span data-stu-id="5a174-159">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="5a174-160">Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.</span><span class="sxs-lookup"><span data-stu-id="5a174-160">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
-|<span data-ttu-id="5a174-161">tokenName</span><span class="sxs-lookup"><span data-stu-id="5a174-161">tokenName</span></span>|<span data-ttu-id="5a174-162">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="5a174-162">String</span></span>|<span data-ttu-id="5a174-163">Anzeigename für die Datenausführungsverhinderung Token</span><span class="sxs-lookup"><span data-stu-id="5a174-163">Friendly Name for Dep Token</span></span>|
-|<span data-ttu-id="5a174-164">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="5a174-164">syncedDeviceCount</span></span>|<span data-ttu-id="5a174-165">Int32</span><span class="sxs-lookup"><span data-stu-id="5a174-165">Int32</span></span>|<span data-ttu-id="5a174-166">Ruft synchronisierter Anzahl der Geräte</span><span class="sxs-lookup"><span data-stu-id="5a174-166">Gets synced device count</span></span>|
-|<span data-ttu-id="5a174-167">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="5a174-167">dataSharingConsentGranted</span></span>|<span data-ttu-id="5a174-168">Boolean</span><span class="sxs-lookup"><span data-stu-id="5a174-168">Boolean</span></span>|<span data-ttu-id="5a174-169">Stimmen Sie gewährte Zugriffsberechtigungen für die Datenfreigabe mit Apple Dep-Dienst</span><span class="sxs-lookup"><span data-stu-id="5a174-169">Consent granted for data sharing with Apple Dep Service</span></span>|
+|<span data-ttu-id="3184a-132">id</span><span class="sxs-lookup"><span data-stu-id="3184a-132">id</span></span>|<span data-ttu-id="3184a-133">String</span><span class="sxs-lookup"><span data-stu-id="3184a-133">String</span></span>|<span data-ttu-id="3184a-134">UUID für das Objekt</span><span class="sxs-lookup"><span data-stu-id="3184a-134">UUID for the object</span></span>|
+|<span data-ttu-id="3184a-135">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="3184a-135">appleIdentifier</span></span>|<span data-ttu-id="3184a-136">String</span><span class="sxs-lookup"><span data-stu-id="3184a-136">String</span></span>|<span data-ttu-id="3184a-137">Die Apple-ID, die zum Abrufen des aktuellen Tokens verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="3184a-137">The Apple ID used to obtain the current token.</span></span>|
+|<span data-ttu-id="3184a-138">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="3184a-138">tokenExpirationDateTime</span></span>|<span data-ttu-id="3184a-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3184a-139">DateTimeOffset</span></span>|<span data-ttu-id="3184a-140">Wenn das Token abläuft.</span><span class="sxs-lookup"><span data-stu-id="3184a-140">When the token will expire.</span></span>|
+|<span data-ttu-id="3184a-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="3184a-141">lastModifiedDateTime</span></span>|<span data-ttu-id="3184a-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3184a-142">DateTimeOffset</span></span>|<span data-ttu-id="3184a-143">Wenn der Dienst an Bord war.</span><span class="sxs-lookup"><span data-stu-id="3184a-143">When the service was onboarded.</span></span>|
+|<span data-ttu-id="3184a-144">lastSuccessfulSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="3184a-144">lastSuccessfulSyncDateTime</span></span>|<span data-ttu-id="3184a-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3184a-145">DateTimeOffset</span></span>|<span data-ttu-id="3184a-146">Wenn der Dienst zuletzt mit InTune syned</span><span class="sxs-lookup"><span data-stu-id="3184a-146">When the service last syned with Intune</span></span>|
+|<span data-ttu-id="3184a-147">lastSyncTriggeredDateTime</span><span class="sxs-lookup"><span data-stu-id="3184a-147">lastSyncTriggeredDateTime</span></span>|<span data-ttu-id="3184a-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3184a-148">DateTimeOffset</span></span>|<span data-ttu-id="3184a-149">Wenn InTune eine Synchronisierung zuletzt angefordert hat.</span><span class="sxs-lookup"><span data-stu-id="3184a-149">When Intune last requested a sync.</span></span>|
+|<span data-ttu-id="3184a-150">shareTokenWithSchoolDataSyncService</span><span class="sxs-lookup"><span data-stu-id="3184a-150">shareTokenWithSchoolDataSyncService</span></span>|<span data-ttu-id="3184a-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="3184a-151">Boolean</span></span>|<span data-ttu-id="3184a-152">Gibt an, ob die DEP-Token-Freigabe mit dem School Data Sync-Dienst aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="3184a-152">Whether or not the Dep token sharing is enabled with the School Data Sync service.</span></span>|
+|<span data-ttu-id="3184a-153">Lastsyncerrorcode wurden</span><span class="sxs-lookup"><span data-stu-id="3184a-153">lastSyncErrorCode</span></span>|<span data-ttu-id="3184a-154">Int32</span><span class="sxs-lookup"><span data-stu-id="3184a-154">Int32</span></span>|<span data-ttu-id="3184a-155">Fehlercode, der von Apple während der letzten DEP-Synchronisierung gemeldet wurde.</span><span class="sxs-lookup"><span data-stu-id="3184a-155">Error code reported by Apple during last dep sync.</span></span>|
+|<span data-ttu-id="3184a-156">tokenType</span><span class="sxs-lookup"><span data-stu-id="3184a-156">tokenType</span></span>|[<span data-ttu-id="3184a-157">depTokenType</span><span class="sxs-lookup"><span data-stu-id="3184a-157">depTokenType</span></span>](../resources/intune-enrollment-deptokentype.md)|<span data-ttu-id="3184a-158">Ruft den Typ der DEP-Token ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="3184a-158">Gets or sets the Dep Token Type.</span></span> <span data-ttu-id="3184a-159">Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.</span><span class="sxs-lookup"><span data-stu-id="3184a-159">Possible values are: `none`, `dep`, `appleSchoolManager`.</span></span>|
+|<span data-ttu-id="3184a-160">Tokenname</span><span class="sxs-lookup"><span data-stu-id="3184a-160">tokenName</span></span>|<span data-ttu-id="3184a-161">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="3184a-161">String</span></span>|<span data-ttu-id="3184a-162">Anzeige Name für DEP-Token</span><span class="sxs-lookup"><span data-stu-id="3184a-162">Friendly Name for Dep Token</span></span>|
+|<span data-ttu-id="3184a-163">syncedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="3184a-163">syncedDeviceCount</span></span>|<span data-ttu-id="3184a-164">Int32</span><span class="sxs-lookup"><span data-stu-id="3184a-164">Int32</span></span>|<span data-ttu-id="3184a-165">Ruft die Anzahl synchronisierter Geräte ab.</span><span class="sxs-lookup"><span data-stu-id="3184a-165">Gets synced device count</span></span>|
+|<span data-ttu-id="3184a-166">dataSharingConsentGranted</span><span class="sxs-lookup"><span data-stu-id="3184a-166">dataSharingConsentGranted</span></span>|<span data-ttu-id="3184a-167">Boolean</span><span class="sxs-lookup"><span data-stu-id="3184a-167">Boolean</span></span>|<span data-ttu-id="3184a-168">Einwilligung zur Datenfreigabe mit Apple DEP Service</span><span class="sxs-lookup"><span data-stu-id="3184a-168">Consent granted for data sharing with Apple Dep Service</span></span>|
+|<span data-ttu-id="3184a-169">Rolescopetagids zur</span><span class="sxs-lookup"><span data-stu-id="3184a-169">roleScopeTagIds</span></span>|<span data-ttu-id="3184a-170">String collection</span><span class="sxs-lookup"><span data-stu-id="3184a-170">String collection</span></span>|<span data-ttu-id="3184a-171">Liste der Bereichs Tags für diese Entitätsinstanz.</span><span class="sxs-lookup"><span data-stu-id="3184a-171">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5a174-170">Antwort</span><span class="sxs-lookup"><span data-stu-id="5a174-170">Response</span></span>
-<span data-ttu-id="5a174-171">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="5a174-171">If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3184a-172">Antwort</span><span class="sxs-lookup"><span data-stu-id="3184a-172">Response</span></span>
+<span data-ttu-id="3184a-173">Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="3184a-173">If successful, this method returns a `201 Created` response code and a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5a174-172">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5a174-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3184a-174">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3184a-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5a174-173">Anforderung</span><span class="sxs-lookup"><span data-stu-id="5a174-173">Request</span></span>
-<span data-ttu-id="5a174-174">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="5a174-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3184a-175">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3184a-175">Request</span></span>
+<span data-ttu-id="3184a-176">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3184a-176">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
-Content-length: 514
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -88,16 +89,19 @@ Content-length: 514
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5a174-175">Antwort</span><span class="sxs-lookup"><span data-stu-id="5a174-175">Response</span></span>
-<span data-ttu-id="5a174-p104">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5a174-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3184a-177">Antwort</span><span class="sxs-lookup"><span data-stu-id="3184a-177">Response</span></span>
+<span data-ttu-id="3184a-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3184a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 689
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -112,7 +116,10 @@ Content-Length: 627
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

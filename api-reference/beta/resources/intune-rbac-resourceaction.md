@@ -1,35 +1,35 @@
 ---
 title: resourceAction-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5442ed8ee55005b1261da09d999e9c27053276d2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d229a6d4d8b514cbf092efb224ff09dfb0c78ad4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415264"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157624"
 ---
-# <a name="resourceaction-resource-type"></a><span data-ttu-id="0a16f-103">resourceAction-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="0a16f-103">resourceAction resource type</span></span>
+# <a name="resourceaction-resource-type"></a><span data-ttu-id="a3e04-103">resourceAction-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="a3e04-103">resourceAction resource type</span></span>
 
-> <span data-ttu-id="0a16f-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="0a16f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0a16f-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0a16f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a3e04-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a3e04-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0a16f-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0a16f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a3e04-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="a3e04-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0a16f-107">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="0a16f-107">Not yet documented</span></span>
+<span data-ttu-id="a3e04-106">Noch nicht dokumentiert</span><span class="sxs-lookup"><span data-stu-id="a3e04-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0a16f-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="0a16f-108">Properties</span></span>
-|<span data-ttu-id="0a16f-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="0a16f-109">Property</span></span>|<span data-ttu-id="0a16f-110">Typ</span><span class="sxs-lookup"><span data-stu-id="0a16f-110">Type</span></span>|<span data-ttu-id="0a16f-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="0a16f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a3e04-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a3e04-107">Properties</span></span>
+|<span data-ttu-id="a3e04-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="a3e04-108">Property</span></span>|<span data-ttu-id="a3e04-109">Typ</span><span class="sxs-lookup"><span data-stu-id="a3e04-109">Type</span></span>|<span data-ttu-id="a3e04-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a3e04-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0a16f-112">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="0a16f-112">allowedResourceActions</span></span>|<span data-ttu-id="0a16f-113">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="0a16f-113">String collection</span></span>|<span data-ttu-id="0a16f-114">Zulässige Aktionen</span><span class="sxs-lookup"><span data-stu-id="0a16f-114">Allowed Actions</span></span>|
-|<span data-ttu-id="0a16f-115">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="0a16f-115">notAllowedResourceActions</span></span>|<span data-ttu-id="0a16f-116">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="0a16f-116">String collection</span></span>|<span data-ttu-id="0a16f-117">Nicht zulässige Aktionen</span><span class="sxs-lookup"><span data-stu-id="0a16f-117">Not Allowed Actions</span></span>|
+|<span data-ttu-id="a3e04-111">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="a3e04-111">allowedResourceActions</span></span>|<span data-ttu-id="a3e04-112">String collection</span><span class="sxs-lookup"><span data-stu-id="a3e04-112">String collection</span></span>|<span data-ttu-id="a3e04-113">Zulässige Aktionen</span><span class="sxs-lookup"><span data-stu-id="a3e04-113">Allowed Actions</span></span>|
+|<span data-ttu-id="a3e04-114">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="a3e04-114">notAllowedResourceActions</span></span>|<span data-ttu-id="a3e04-115">Zeichenfolgenauflistung</span><span class="sxs-lookup"><span data-stu-id="a3e04-115">String collection</span></span>|<span data-ttu-id="a3e04-116">Nicht zulässige Aktionen</span><span class="sxs-lookup"><span data-stu-id="a3e04-116">Not Allowed Actions</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0a16f-118">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="0a16f-118">Relationships</span></span>
-<span data-ttu-id="0a16f-119">Keine</span><span class="sxs-lookup"><span data-stu-id="0a16f-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a3e04-117">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="a3e04-117">Relationships</span></span>
+<span data-ttu-id="a3e04-118">Keine</span><span class="sxs-lookup"><span data-stu-id="a3e04-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0a16f-120">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="0a16f-120">JSON Representation</span></span>
-<span data-ttu-id="0a16f-121">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="0a16f-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a3e04-119">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="a3e04-119">JSON Representation</span></span>
+<span data-ttu-id="a3e04-120">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="a3e04-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.resourceAction"

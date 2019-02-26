@@ -1,36 +1,36 @@
 ---
 title: bitLockerRemovableDrivePolicy-Ressourcentyp
 description: BitLocker-Richtlinien für Wechseldatenträger.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57a3ad19e988327e126b6da757c2dc5b90c280de
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3e7e343fc32af61b38c1cd14cf1fba29de549e99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149427"
 ---
-# <a name="bitlockerremovabledrivepolicy-resource-type"></a><span data-ttu-id="d0c32-103">bitLockerRemovableDrivePolicy-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d0c32-103">bitLockerRemovableDrivePolicy resource type</span></span>
+# <a name="bitlockerremovabledrivepolicy-resource-type"></a><span data-ttu-id="85e44-103">bitLockerRemovableDrivePolicy-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="85e44-103">bitLockerRemovableDrivePolicy resource type</span></span>
 
-> <span data-ttu-id="d0c32-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="d0c32-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d0c32-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d0c32-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85e44-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="85e44-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d0c32-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d0c32-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="85e44-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="85e44-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d0c32-107">BitLocker-Richtlinien für Wechseldatenträger.</span><span class="sxs-lookup"><span data-stu-id="d0c32-107">BitLocker Removable Drive Policies.</span></span>
+<span data-ttu-id="85e44-106">BitLocker-Richtlinien für Wechseldatenträger.</span><span class="sxs-lookup"><span data-stu-id="85e44-106">BitLocker Removable Drive Policies.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d0c32-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d0c32-108">Properties</span></span>
-|<span data-ttu-id="d0c32-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d0c32-109">Property</span></span>|<span data-ttu-id="d0c32-110">Typ</span><span class="sxs-lookup"><span data-stu-id="d0c32-110">Type</span></span>|<span data-ttu-id="d0c32-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d0c32-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="85e44-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="85e44-107">Properties</span></span>
+|<span data-ttu-id="85e44-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="85e44-108">Property</span></span>|<span data-ttu-id="85e44-109">Typ</span><span class="sxs-lookup"><span data-stu-id="85e44-109">Type</span></span>|<span data-ttu-id="85e44-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85e44-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d0c32-112">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="d0c32-112">encryptionMethod</span></span>|[<span data-ttu-id="d0c32-113">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="d0c32-113">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="d0c32-114">Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger aus.</span><span class="sxs-lookup"><span data-stu-id="d0c32-114">Select the encryption method for removable  drives.</span></span> <span data-ttu-id="d0c32-115">Mögliche Werte: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span><span class="sxs-lookup"><span data-stu-id="d0c32-115">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
-|<span data-ttu-id="d0c32-116">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="d0c32-116">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="d0c32-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="d0c32-117">Boolean</span></span>|<span data-ttu-id="d0c32-118">Gibt an, ob der Schreibzugriff auf in einer anderen Organisation konfigurierte Geräte blockiert wird.</span><span class="sxs-lookup"><span data-stu-id="d0c32-118">Indicates whether to block write access to devices configured in another organization.</span></span>  <span data-ttu-id="d0c32-119">Wenn „requireEncryptionForWriteAccess“ auf „false“ gesetzt ist, wirkt sich dieser Wert nicht aus.</span><span class="sxs-lookup"><span data-stu-id="d0c32-119">If requireEncryptionForWriteAccess is false, this value does not affect.</span></span>|
-|<span data-ttu-id="d0c32-120">blockCrossOrganizationWriteAccess</span><span class="sxs-lookup"><span data-stu-id="d0c32-120">blockCrossOrganizationWriteAccess</span></span>|<span data-ttu-id="d0c32-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="d0c32-121">Boolean</span></span>|<span data-ttu-id="d0c32-122">Diese Richtlinieneinstellung bestimmt, ob der BitLocker-Schutz erforderlich ist, damit Wechseldatenträger auf einem Computer beschreibbar sind.</span><span class="sxs-lookup"><span data-stu-id="d0c32-122">This policy setting determines whether BitLocker protection is required for removable data drives to be writable on a computer.</span></span>|
+|<span data-ttu-id="85e44-111">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="85e44-111">encryptionMethod</span></span>|[<span data-ttu-id="85e44-112">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="85e44-112">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="85e44-113">Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger aus.</span><span class="sxs-lookup"><span data-stu-id="85e44-113">Select the encryption method for removable  drives.</span></span> <span data-ttu-id="85e44-114">Mögliche Werte: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span><span class="sxs-lookup"><span data-stu-id="85e44-114">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
+|<span data-ttu-id="85e44-115">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="85e44-115">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="85e44-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="85e44-116">Boolean</span></span>|<span data-ttu-id="85e44-117">Gibt an, ob der Schreibzugriff auf in einer anderen Organisation konfigurierte Geräte blockiert wird.</span><span class="sxs-lookup"><span data-stu-id="85e44-117">Indicates whether to block write access to devices configured in another organization.</span></span>  <span data-ttu-id="85e44-118">Wenn „requireEncryptionForWriteAccess“ auf „false“ gesetzt ist, wirkt sich dieser Wert nicht aus.</span><span class="sxs-lookup"><span data-stu-id="85e44-118">If requireEncryptionForWriteAccess is false, this value does not affect.</span></span>|
+|<span data-ttu-id="85e44-119">blockCrossOrganizationWriteAccess</span><span class="sxs-lookup"><span data-stu-id="85e44-119">blockCrossOrganizationWriteAccess</span></span>|<span data-ttu-id="85e44-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="85e44-120">Boolean</span></span>|<span data-ttu-id="85e44-121">Diese Richtlinieneinstellung bestimmt, ob der BitLocker-Schutz erforderlich ist, damit Wechseldatenträger auf einem Computer beschreibbar sind.</span><span class="sxs-lookup"><span data-stu-id="85e44-121">This policy setting determines whether BitLocker protection is required for removable data drives to be writable on a computer.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d0c32-123">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="d0c32-123">Relationships</span></span>
-<span data-ttu-id="d0c32-124">Keine</span><span class="sxs-lookup"><span data-stu-id="d0c32-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="85e44-122">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="85e44-122">Relationships</span></span>
+<span data-ttu-id="85e44-123">Keine</span><span class="sxs-lookup"><span data-stu-id="85e44-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d0c32-125">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d0c32-125">JSON Representation</span></span>
-<span data-ttu-id="d0c32-126">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d0c32-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="85e44-124">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="85e44-124">JSON Representation</span></span>
+<span data-ttu-id="85e44-125">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="85e44-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy"

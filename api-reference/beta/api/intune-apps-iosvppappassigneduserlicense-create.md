@@ -1,34 +1,34 @@
 ---
-title: Erstellen von iosVppAppAssignedUserLicense
-description: Erstellen eines neuen IosVppAppAssignedUserLicense-Objekts.
-localization_priority: Normal
+title: IosVppAppAssignedUserLicense erstellen
+description: Erstellen eines neuen iosVppAppAssignedUserLicense-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1da8eebaa02564b4407face3fd866438d29304d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7f1efba3659190080c507ca3418bacd9bc7d6461
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417896"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157526"
 ---
-# <a name="create-iosvppappassigneduserlicense"></a><span data-ttu-id="87c15-103">Erstellen von iosVppAppAssignedUserLicense</span><span class="sxs-lookup"><span data-stu-id="87c15-103">Create iosVppAppAssignedUserLicense</span></span>
+# <a name="create-iosvppappassigneduserlicense"></a><span data-ttu-id="6c86c-103">IosVppAppAssignedUserLicense erstellen</span><span class="sxs-lookup"><span data-stu-id="6c86c-103">Create iosVppAppAssignedUserLicense</span></span>
 
-> <span data-ttu-id="87c15-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="87c15-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="87c15-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="87c15-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6c86c-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="6c86c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="87c15-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="87c15-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6c86c-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="6c86c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="87c15-107">Erstellen eines neuen [IosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="87c15-107">Create a new [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object.</span></span>
+<span data-ttu-id="6c86c-106">Erstellen eines neuen [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) -Objekts.</span><span class="sxs-lookup"><span data-stu-id="6c86c-106">Create a new [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="87c15-108">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="87c15-108">Prerequisites</span></span>
-<span data-ttu-id="87c15-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="87c15-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6c86c-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="6c86c-107">Prerequisites</span></span>
+<span data-ttu-id="6c86c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="6c86c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="87c15-111">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="87c15-111">Permission type</span></span>|<span data-ttu-id="87c15-112">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="87c15-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6c86c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6c86c-110">Permission type</span></span>|<span data-ttu-id="6c86c-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="6c86c-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="87c15-113">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="87c15-113">Delegated (work or school account)</span></span>|<span data-ttu-id="87c15-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87c15-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="87c15-115">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="87c15-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="87c15-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="87c15-116">Not supported.</span></span>|
-|<span data-ttu-id="87c15-117">Anwendung</span><span class="sxs-lookup"><span data-stu-id="87c15-117">Application</span></span>|<span data-ttu-id="87c15-118">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="87c15-118">Not supported.</span></span>|
+|<span data-ttu-id="6c86c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6c86c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="6c86c-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6c86c-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="6c86c-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="6c86c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6c86c-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6c86c-115">Not supported.</span></span>|
+|<span data-ttu-id="6c86c-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6c86c-116">Application</span></span>|<span data-ttu-id="6c86c-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="6c86c-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="87c15-119">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="87c15-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c86c-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6c86c-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "29417896"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="87c15-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="87c15-120">Request headers</span></span>
-|<span data-ttu-id="87c15-121">Header</span><span class="sxs-lookup"><span data-stu-id="87c15-121">Header</span></span>|<span data-ttu-id="87c15-122">Wert</span><span class="sxs-lookup"><span data-stu-id="87c15-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6c86c-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6c86c-119">Request headers</span></span>
+|<span data-ttu-id="6c86c-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6c86c-120">Header</span></span>|<span data-ttu-id="6c86c-121">Wert</span><span class="sxs-lookup"><span data-stu-id="6c86c-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="87c15-123">Autorisierung</span><span class="sxs-lookup"><span data-stu-id="87c15-123">Authorization</span></span>|<span data-ttu-id="87c15-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="87c15-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="87c15-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="87c15-125">Accept</span></span>|<span data-ttu-id="87c15-126">application/json</span><span class="sxs-lookup"><span data-stu-id="87c15-126">application/json</span></span>|
+|<span data-ttu-id="6c86c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c86c-122">Authorization</span></span>|<span data-ttu-id="6c86c-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="6c86c-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6c86c-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="6c86c-124">Accept</span></span>|<span data-ttu-id="6c86c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6c86c-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="87c15-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="87c15-127">Request body</span></span>
-<span data-ttu-id="87c15-128">Geben Sie im Textkörper Anforderung für das Objekt IosVppAppAssignedUserLicense eine JSON-Darstellung.</span><span class="sxs-lookup"><span data-stu-id="87c15-128">In the request body, supply a JSON representation for the iosVppAppAssignedUserLicense object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c86c-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6c86c-126">Request body</span></span>
+<span data-ttu-id="6c86c-127">Geben Sie im Anforderungstext eine JSON-Darstellung für das iosVppAppAssignedUserLicense-Objekt an.</span><span class="sxs-lookup"><span data-stu-id="6c86c-127">In the request body, supply a JSON representation for the iosVppAppAssignedUserLicense object.</span></span>
 
-<span data-ttu-id="87c15-129">In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die IosVppAppAssignedUserLicense erstellen.</span><span class="sxs-lookup"><span data-stu-id="87c15-129">The following table shows the properties that are required when you create the iosVppAppAssignedUserLicense.</span></span>
+<span data-ttu-id="6c86c-128">In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der iosVppAppAssignedUserLicense erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="6c86c-128">The following table shows the properties that are required when you create the iosVppAppAssignedUserLicense.</span></span>
 
-|<span data-ttu-id="87c15-130">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="87c15-130">Property</span></span>|<span data-ttu-id="87c15-131">Typ</span><span class="sxs-lookup"><span data-stu-id="87c15-131">Type</span></span>|<span data-ttu-id="87c15-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="87c15-132">Description</span></span>|
+|<span data-ttu-id="6c86c-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6c86c-129">Property</span></span>|<span data-ttu-id="6c86c-130">Typ</span><span class="sxs-lookup"><span data-stu-id="6c86c-130">Type</span></span>|<span data-ttu-id="6c86c-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6c86c-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="87c15-133">id</span><span class="sxs-lookup"><span data-stu-id="87c15-133">id</span></span>|<span data-ttu-id="87c15-134">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="87c15-134">String</span></span>|<span data-ttu-id="87c15-135">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="87c15-135">Key of the entity.</span></span> <span data-ttu-id="87c15-136">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="87c15-136">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="87c15-137">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="87c15-137">userEmailAddress</span></span>|<span data-ttu-id="87c15-138">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="87c15-138">String</span></span>|<span data-ttu-id="87c15-139">Die e-Mail-Adresse des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="87c15-139">The user email address.</span></span> <span data-ttu-id="87c15-140">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="87c15-140">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="87c15-141">userId</span><span class="sxs-lookup"><span data-stu-id="87c15-141">userId</span></span>|<span data-ttu-id="87c15-142">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="87c15-142">String</span></span>|<span data-ttu-id="87c15-143">Die Benutzer-ID.</span><span class="sxs-lookup"><span data-stu-id="87c15-143">The user ID.</span></span> <span data-ttu-id="87c15-144">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="87c15-144">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="87c15-145">userName</span><span class="sxs-lookup"><span data-stu-id="87c15-145">userName</span></span>|<span data-ttu-id="87c15-146">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="87c15-146">String</span></span>|<span data-ttu-id="87c15-147">Der Benutzername.</span><span class="sxs-lookup"><span data-stu-id="87c15-147">The user name.</span></span> <span data-ttu-id="87c15-148">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="87c15-148">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
-|<span data-ttu-id="87c15-149">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="87c15-149">userPrincipalName</span></span>|<span data-ttu-id="87c15-150">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="87c15-150">String</span></span>|<span data-ttu-id="87c15-151">Der Benutzerprinzipalname.</span><span class="sxs-lookup"><span data-stu-id="87c15-151">The user principal name.</span></span> <span data-ttu-id="87c15-152">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="87c15-152">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="6c86c-132">id</span><span class="sxs-lookup"><span data-stu-id="6c86c-132">id</span></span>|<span data-ttu-id="6c86c-133">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6c86c-133">String</span></span>|<span data-ttu-id="6c86c-134">Schlüssel der Entität</span><span class="sxs-lookup"><span data-stu-id="6c86c-134">Key of the entity.</span></span> <span data-ttu-id="6c86c-135">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="6c86c-135">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="6c86c-136">userEmailAddress</span><span class="sxs-lookup"><span data-stu-id="6c86c-136">userEmailAddress</span></span>|<span data-ttu-id="6c86c-137">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6c86c-137">String</span></span>|<span data-ttu-id="6c86c-138">Die Benutzer-e-Mail-Adresse.</span><span class="sxs-lookup"><span data-stu-id="6c86c-138">The user email address.</span></span> <span data-ttu-id="6c86c-139">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="6c86c-139">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="6c86c-140">userId</span><span class="sxs-lookup"><span data-stu-id="6c86c-140">userId</span></span>|<span data-ttu-id="6c86c-141">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6c86c-141">String</span></span>|<span data-ttu-id="6c86c-142">Die Benutzer-ID.</span><span class="sxs-lookup"><span data-stu-id="6c86c-142">The user ID.</span></span> <span data-ttu-id="6c86c-143">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="6c86c-143">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="6c86c-144">userName</span><span class="sxs-lookup"><span data-stu-id="6c86c-144">userName</span></span>|<span data-ttu-id="6c86c-145">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6c86c-145">String</span></span>|<span data-ttu-id="6c86c-146">Der Benutzername.</span><span class="sxs-lookup"><span data-stu-id="6c86c-146">The user name.</span></span> <span data-ttu-id="6c86c-147">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="6c86c-147">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
+|<span data-ttu-id="6c86c-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="6c86c-148">userPrincipalName</span></span>|<span data-ttu-id="6c86c-149">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6c86c-149">String</span></span>|<span data-ttu-id="6c86c-150">Der Benutzerprinzipalname.</span><span class="sxs-lookup"><span data-stu-id="6c86c-150">The user principal name.</span></span> <span data-ttu-id="6c86c-151">Geerbt von [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span><span class="sxs-lookup"><span data-stu-id="6c86c-151">Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="87c15-153">Antwort</span><span class="sxs-lookup"><span data-stu-id="87c15-153">Response</span></span>
-<span data-ttu-id="87c15-154">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `201 Created` Antwortcode und eines [IosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="87c15-154">If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6c86c-152">Antwort</span><span class="sxs-lookup"><span data-stu-id="6c86c-152">Response</span></span>
+<span data-ttu-id="6c86c-153">Bei erfolgreicher Ausführung gibt diese Methode den `201 Created` Antwortcode und ein [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) -Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="6c86c-153">If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="87c15-155">Beispiel</span><span class="sxs-lookup"><span data-stu-id="87c15-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6c86c-154">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6c86c-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="87c15-156">Anforderung</span><span class="sxs-lookup"><span data-stu-id="87c15-156">Request</span></span>
-<span data-ttu-id="87c15-157">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="87c15-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6c86c-155">Anforderung</span><span class="sxs-lookup"><span data-stu-id="6c86c-155">Request</span></span>
+<span data-ttu-id="6c86c-156">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="6c86c-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
 Content-type: application/json
@@ -79,8 +79,8 @@ Content-length: 238
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="87c15-158">Antwort</span><span class="sxs-lookup"><span data-stu-id="87c15-158">Response</span></span>
-<span data-ttu-id="87c15-p108">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="87c15-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6c86c-157">Antwort</span><span class="sxs-lookup"><span data-stu-id="6c86c-157">Response</span></span>
+<span data-ttu-id="6c86c-p107">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6c86c-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

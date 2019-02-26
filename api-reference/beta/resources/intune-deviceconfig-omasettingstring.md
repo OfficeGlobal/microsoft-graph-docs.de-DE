@@ -1,40 +1,40 @@
 ---
 title: omaSettingString-Ressourcentyp
 description: Zeichenfolgendefinition der OMA-Einstellungen.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17ff50b6069c5b7ed524197f08aac32095e6d644
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5ba2da95a8a60ef0cf6d2ba03b024c5200e0c5a8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401026"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162048"
 ---
-# <a name="omasettingstring-resource-type"></a><span data-ttu-id="d627c-103">omaSettingString-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="d627c-103">omaSettingString resource type</span></span>
+# <a name="omasettingstring-resource-type"></a><span data-ttu-id="85b90-103">omaSettingString-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="85b90-103">omaSettingString resource type</span></span>
 
-> <span data-ttu-id="d627c-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="d627c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d627c-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="d627c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85b90-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="85b90-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d627c-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d627c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="85b90-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="85b90-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d627c-107">Zeichenfolgendefinition der OMA-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="d627c-107">OMA Settings String definition.</span></span>
+<span data-ttu-id="85b90-106">Zeichenfolgendefinition der OMA-Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="85b90-106">OMA Settings String definition.</span></span>
 
 
-<span data-ttu-id="d627c-108">Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).</span><span class="sxs-lookup"><span data-stu-id="d627c-108">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
+<span data-ttu-id="85b90-107">Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).</span><span class="sxs-lookup"><span data-stu-id="85b90-107">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d627c-109">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d627c-109">Properties</span></span>
-|<span data-ttu-id="d627c-110">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="d627c-110">Property</span></span>|<span data-ttu-id="d627c-111">Typ</span><span class="sxs-lookup"><span data-stu-id="d627c-111">Type</span></span>|<span data-ttu-id="d627c-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d627c-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="85b90-108">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="85b90-108">Properties</span></span>
+|<span data-ttu-id="85b90-109">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="85b90-109">Property</span></span>|<span data-ttu-id="85b90-110">Typ</span><span class="sxs-lookup"><span data-stu-id="85b90-110">Type</span></span>|<span data-ttu-id="85b90-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85b90-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d627c-113">displayName</span><span class="sxs-lookup"><span data-stu-id="d627c-113">displayName</span></span>|<span data-ttu-id="d627c-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d627c-114">String</span></span>|<span data-ttu-id="d627c-115">Anzeigename</span><span class="sxs-lookup"><span data-stu-id="d627c-115">Display Name.</span></span> <span data-ttu-id="d627c-116">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d627c-116">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="d627c-117">description</span><span class="sxs-lookup"><span data-stu-id="d627c-117">description</span></span>|<span data-ttu-id="d627c-118">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d627c-118">String</span></span>|<span data-ttu-id="d627c-119">Beschreibung.</span><span class="sxs-lookup"><span data-stu-id="d627c-119">Description.</span></span> <span data-ttu-id="d627c-120">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d627c-120">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="d627c-121">omaUri</span><span class="sxs-lookup"><span data-stu-id="d627c-121">omaUri</span></span>|<span data-ttu-id="d627c-122">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d627c-122">String</span></span>|<span data-ttu-id="d627c-123">OMA</span><span class="sxs-lookup"><span data-stu-id="d627c-123">OMA.</span></span> <span data-ttu-id="d627c-124">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d627c-124">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="d627c-125">Wert</span><span class="sxs-lookup"><span data-stu-id="d627c-125">value</span></span>|<span data-ttu-id="d627c-126">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d627c-126">String</span></span>|<span data-ttu-id="d627c-127">Wert.</span><span class="sxs-lookup"><span data-stu-id="d627c-127">Value.</span></span>|
+|<span data-ttu-id="85b90-112">displayName</span><span class="sxs-lookup"><span data-stu-id="85b90-112">displayName</span></span>|<span data-ttu-id="85b90-113">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="85b90-113">String</span></span>|<span data-ttu-id="85b90-114">Anzeigename</span><span class="sxs-lookup"><span data-stu-id="85b90-114">Display Name.</span></span> <span data-ttu-id="85b90-115">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="85b90-115">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="85b90-116">description</span><span class="sxs-lookup"><span data-stu-id="85b90-116">description</span></span>|<span data-ttu-id="85b90-117">String</span><span class="sxs-lookup"><span data-stu-id="85b90-117">String</span></span>|<span data-ttu-id="85b90-118">Beschreibung.</span><span class="sxs-lookup"><span data-stu-id="85b90-118">Description.</span></span> <span data-ttu-id="85b90-119">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="85b90-119">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="85b90-120">omaUri</span><span class="sxs-lookup"><span data-stu-id="85b90-120">omaUri</span></span>|<span data-ttu-id="85b90-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="85b90-121">String</span></span>|<span data-ttu-id="85b90-122">OMA</span><span class="sxs-lookup"><span data-stu-id="85b90-122">OMA.</span></span> <span data-ttu-id="85b90-123">Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="85b90-123">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="85b90-124">Wert</span><span class="sxs-lookup"><span data-stu-id="85b90-124">value</span></span>|<span data-ttu-id="85b90-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="85b90-125">String</span></span>|<span data-ttu-id="85b90-126">Wert.</span><span class="sxs-lookup"><span data-stu-id="85b90-126">Value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d627c-128">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="d627c-128">Relationships</span></span>
-<span data-ttu-id="d627c-129">Keine</span><span class="sxs-lookup"><span data-stu-id="d627c-129">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="85b90-127">Beziehungen</span><span class="sxs-lookup"><span data-stu-id="85b90-127">Relationships</span></span>
+<span data-ttu-id="85b90-128">Keine</span><span class="sxs-lookup"><span data-stu-id="85b90-128">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d627c-130">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="d627c-130">JSON Representation</span></span>
-<span data-ttu-id="d627c-131">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="d627c-131">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="85b90-129">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="85b90-129">JSON Representation</span></span>
+<span data-ttu-id="85b90-130">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="85b90-130">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingString"

@@ -1,27 +1,28 @@
 ---
-title: ManagedDeviceOwnerType Enum-Typ
+title: managedDeviceOwnerType-Enumerationstyp
 description: Besitzertyp des Geräts.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 811b705ef181b4d905c735c8672bcf96059c8126
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ad4a0df5e0fc79aec75245d908f505e824ce788d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934933"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258653"
 ---
-# <a name="manageddeviceownertype-enum-type"></a><span data-ttu-id="1e27c-103">ManagedDeviceOwnerType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="1e27c-103">managedDeviceOwnerType enum type</span></span>
+# <a name="manageddeviceownertype-enum-type"></a><span data-ttu-id="df4d7-103">managedDeviceOwnerType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="df4d7-103">managedDeviceOwnerType enum type</span></span>
 
-> <span data-ttu-id="1e27c-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="1e27c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="df4d7-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="df4d7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1e27c-105">Besitzertyp des Geräts.</span><span class="sxs-lookup"><span data-stu-id="1e27c-105">Owner type of device.</span></span>
-## <a name="members"></a><span data-ttu-id="1e27c-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="1e27c-106">Members</span></span>
-|<span data-ttu-id="1e27c-107">Element</span><span class="sxs-lookup"><span data-stu-id="1e27c-107">Member</span></span>|<span data-ttu-id="1e27c-108">Wert</span><span class="sxs-lookup"><span data-stu-id="1e27c-108">Value</span></span>|<span data-ttu-id="1e27c-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1e27c-109">Description</span></span>|
+<span data-ttu-id="df4d7-105">Besitzertyp des Geräts.</span><span class="sxs-lookup"><span data-stu-id="df4d7-105">Owner type of device.</span></span>
+
+## <a name="members"></a><span data-ttu-id="df4d7-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="df4d7-106">Members</span></span>
+|<span data-ttu-id="df4d7-107">Element</span><span class="sxs-lookup"><span data-stu-id="df4d7-107">Member</span></span>|<span data-ttu-id="df4d7-108">Wert</span><span class="sxs-lookup"><span data-stu-id="df4d7-108">Value</span></span>|<span data-ttu-id="df4d7-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="df4d7-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1e27c-110">unknown</span><span class="sxs-lookup"><span data-stu-id="1e27c-110">unknown</span></span>|<span data-ttu-id="1e27c-111">0</span><span class="sxs-lookup"><span data-stu-id="1e27c-111">0</span></span>|<span data-ttu-id="1e27c-112">Unbekannt.</span><span class="sxs-lookup"><span data-stu-id="1e27c-112">Unknown.</span></span>|
-|<span data-ttu-id="1e27c-113">company</span><span class="sxs-lookup"><span data-stu-id="1e27c-113">company</span></span>|<span data-ttu-id="1e27c-114">1</span><span class="sxs-lookup"><span data-stu-id="1e27c-114">1</span></span>|<span data-ttu-id="1e27c-115">Unternehmen gehören.</span><span class="sxs-lookup"><span data-stu-id="1e27c-115">Owned by company.</span></span>|
-|<span data-ttu-id="1e27c-116">personal</span><span class="sxs-lookup"><span data-stu-id="1e27c-116">personal</span></span>|<span data-ttu-id="1e27c-117">2</span><span class="sxs-lookup"><span data-stu-id="1e27c-117">2</span></span>|<span data-ttu-id="1e27c-118">Person gehören.</span><span class="sxs-lookup"><span data-stu-id="1e27c-118">Owned by person.</span></span>|
+|<span data-ttu-id="df4d7-110">unknown</span><span class="sxs-lookup"><span data-stu-id="df4d7-110">unknown</span></span>|<span data-ttu-id="df4d7-111">0</span><span class="sxs-lookup"><span data-stu-id="df4d7-111">0</span></span>|<span data-ttu-id="df4d7-112">Unbekannt.</span><span class="sxs-lookup"><span data-stu-id="df4d7-112">Unknown.</span></span>|
+|<span data-ttu-id="df4d7-113">company</span><span class="sxs-lookup"><span data-stu-id="df4d7-113">company</span></span>|<span data-ttu-id="df4d7-114">1</span><span class="sxs-lookup"><span data-stu-id="df4d7-114">1</span></span>|<span data-ttu-id="df4d7-115">Im Besitz des Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="df4d7-115">Owned by company.</span></span>|
+|<span data-ttu-id="df4d7-116">personal</span><span class="sxs-lookup"><span data-stu-id="df4d7-116">personal</span></span>|<span data-ttu-id="df4d7-117">2</span><span class="sxs-lookup"><span data-stu-id="df4d7-117">2</span></span>|<span data-ttu-id="df4d7-118">Im Besitz von Person.</span><span class="sxs-lookup"><span data-stu-id="df4d7-118">Owned by person.</span></span>|
 
 
 
