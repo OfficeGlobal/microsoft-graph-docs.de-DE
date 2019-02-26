@@ -1,27 +1,28 @@
 ---
-title: MobileAppPublishingState Enum-Typ
-description: Gibt den Status Veröffentlichen einer app.
+title: mobileAppPublishingState-Enumerationstyp
+description: Gibt den Veröffentlichungsstatus einer APP an.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937761"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263392"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a>MobileAppPublishingState Enum-Typ
+# <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt den Status Veröffentlichen einer app.
+Gibt den Veröffentlichungsstatus einer APP an.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|notPublished|0|Die app ist noch nicht veröffentlicht.|
-|Verarbeitung|1|Die app steht dienstseitige Verarbeitung an.|
-|Veröffentlicht|2|Die app wird veröffentlicht.|
+|notPublished|0|Die APP ist noch nicht veröffentlicht.|
+|Verarbeitung|1|Die APP wartet auf die dienstseitige Verarbeitung.|
+|Veröffentlicht|2|Die APP wird veröffentlicht.|
 
 
 

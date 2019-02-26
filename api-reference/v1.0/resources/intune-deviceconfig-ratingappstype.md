@@ -1,30 +1,31 @@
 ---
-title: RatingAppsType Enum-Typ
-description: Bewertung wie Media-Inhalten in Apps
+title: ratingAppsType-Enumerationstyp
+description: Apps-Bewertung wie im Medieninhalt
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0d497efb475cde1e43ee5adfa14aab0d4a3cedc5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7117955c3c28c1cf58ac11d0eceeca090afd9fcb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951572"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259724"
 ---
-# <a name="ratingappstype-enum-type"></a>RatingAppsType Enum-Typ
+# <a name="ratingappstype-enum-type"></a>ratingAppsType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Bewertung wie Media-Inhalten in Apps
+Apps-Bewertung wie im Medieninhalt
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle apps Inhalte zulassen|
-|allBlocked|1|Alle Inhalte apps nicht zulassen|
-|agesAbove4|2|4 + age 4 und höher|
-|agesAbove9|3|9 + age 9 und höher|
-|agesAbove12|4|12 + 12 überfällig und höher |
-|agesAbove17|5|17 + age 17 und höher|
+|allAllowed|0|Standardwert, alle apps-Inhalte zulassen|
+|allBlocked|1|Keinen apps-Inhalt zulassen|
+|agesAbove4|2|4 +, ab 4 Jahren|
+|agesAbove9|3|9 +, Alter 9 und höher|
+|agesAbove12|4|12 +, ab 12 Jahren |
+|agesAbove17|5|17 +, 17 Jahre und höher|
 
 
 

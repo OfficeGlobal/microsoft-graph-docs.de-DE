@@ -1,25 +1,26 @@
 ---
-title: StateManagementSetting Enum-Typ
-description: State Management-Einstellung.
+title: stateManagementSetting-Enumerationstyp
+description: Status Verwaltungseinstellung.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2fa80090a7434dc0683d69cecb99211abb37214d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5af70df2d1a873a670d36f02e4da9005a4b6b866
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937614"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261663"
 ---
-# <a name="statemanagementsetting-enum-type"></a>StateManagementSetting Enum-Typ
+# <a name="statemanagementsetting-enum-type"></a>stateManagementSetting-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-State Management-Einstellung.
+Status Verwaltungseinstellung.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert.|
+|notConfigured|0|Nicht konfiguriert.|
 |gesperrt|1|Blockiert.|
 |zulässig|2|Zulässig.|
 

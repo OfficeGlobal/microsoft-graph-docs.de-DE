@@ -1,26 +1,26 @@
 ---
-title: Ressourcentyp edgeHomeButtonHidden
-description: Die home-Schaltfläche auszublenden.
-localization_priority: Normal
+title: edgeHomeButtonHidden-Ressourcentyp
+description: Ausblenden der Schaltfläche "Start".
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53faa4504186d8a904b0b70ef47f1d1820498da3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cec92faba5f152dd438e4eda5055d98042915942
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431578"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164792"
 ---
-# <a name="edgehomebuttonhidden-resource-type"></a>Ressourcentyp edgeHomeButtonHidden
+# <a name="edgehomebuttonhidden-resource-type"></a>edgeHomeButtonHidden-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die home-Schaltfläche auszublenden.
+Ausblenden der Schaltfläche "Start".
 
 
-Erbt vom [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Erbt von [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

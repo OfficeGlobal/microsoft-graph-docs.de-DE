@@ -3,19 +3,20 @@ title: deviceComplianceSettingState-Ressourcentyp
 description: Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8960352e88466177b99bc9cc9724da2da5d9b71d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 63285c5b0d0c7d1b342d13478777ddd6e87ae17f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990915"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254072"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,21 +29,22 @@ Zustand der Gerätekompatibilitätseinstellung für ein bestimmtes Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
+|id|string|Schlüssel der Entität|
 |setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|String|Gemeldeter Einstellungsname|
-|deviceId|String|Gemeldete Geräte-ID|
-|deviceName|String|Gemeldeter Gerätename|
-|userId|String|Gemeldete Benutzer-ID|
+|settingName|Zeichenfolge|Gemeldeter Einstellungsname|
+|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
+|deviceName|Zeichenfolge|Gemeldeter Gerätename|
+|userId|Zeichenfolge|Gemeldete Benutzer-ID|
 |userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
 |userName|Zeichenfolge|Gemeldeter Benutzername|
 |userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
 |deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Der Compliance-Zustand der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|state|[Wurde](../resources/intune-shared-compliancestatus.md)|Der Kompatibilitätsstatus der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

@@ -1,58 +1,58 @@
 ---
 title: Ressourcentyp „deviceHealthAttestationState“
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eea2d2d03a5f0241485e75448d477c5766a4589
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ca4e5f1da8dc03c98c3d5e72fc03177cdcbf38b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422530"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157463"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Ressourcentyp „deviceHealthAttestationState“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|lastUpdateDateTime|String|Zeitstempel der letzten Aktualisierung|
-|contentNamespaceUrl|String|Version des DHA-Berichts (Version des Namespace)|
-|deviceHealthAttestationStatus|String|Version des DHA-Berichts (Version des Namespace)|
-|contentVersion|String|Version des Integritätsnachweisstatus-Schemas|
+|lastUpdateDateTime|Zeichenfolge|Zeitstempel der letzten Aktualisierung|
+|contentNamespaceUrl|Zeichenfolge|Version des DHA-Berichts (Version des Namespace)|
+|deviceHealthAttestationStatus|Zeichenfolge|Version des DHA-Berichts (Version des Namespace)|
+|contentVersion|Zeichenfolge|Version des Integritätsnachweisstatus-Schemas|
 |issuedDateTime|DateTimeOffset|Datum und Uhrzeit der Evaluierung des Geräts durch eine MDM-Lösung bzw. der Registrierung des Geräts in einer MDM-Lösung|
-|attestationIdentityKey|String|Ist auf einem Gerät ein AIK (Attestation Identity Key) vorhanden, bedeutet das, dass das Gerät über ein EK-Zertifikat (Endorsement Key-Zertifikat) verfügt.|
+|attestationIdentityKey|Zeichenfolge|Ist auf einem Gerät ein AIK (Attestation Identity Key) vorhanden, bedeutet das, dass das Gerät über ein EK-Zertifikat (Endorsement Key-Zertifikat) verfügt.|
 |resetCount|Int64|Häufigkeit, mit der ein PC-Gerät in den Ruhezustand gewechselt bzw. den Betrieb fortgesetzt hat|
 |restartCount|Int64|Häufigkeit, mit der ein PC-Gerät neu gestartet wurde|
-|dataExcutionPolicy|String|Eine DEP-Richtlinie definiert eine Reihe von Hardware- und Softwaretechnologien, die zusätzliche Arbeitsspeicherprüfungen durchführen. |
-|bitLockerStatus|String|Aktiviert oder deaktiviert die BitLocker-Laufwerkverschlüsselung.|
-|bootManagerVersion|String|Version des Start-Managers|
-|codeIntegrityCheckVersion|String|Version des Start-Managers|
-|secureBoot|String|Ist „secureBoot“ aktiviert, müssen die Hauptkomponenten über die korrekten Kryptografiesignaturen verfügen.|
-|bootDebugging|String|Ist „bootDebugging“ aktiviert, wird das Gerät zu Entwicklungs- und Testzwecken verwendet.|
-|operatingSystemKernelDebugging|String|Ist „operatingSystemKernelDebugging“ aktiviert, wird das Gerät zu Entwicklungs- und Testzwecken verwendet.|
-|codeIntegrity|String| Ist „codeIntegrity“ aktiviert, wird ausschließlich Code ausgeführt, dessen Integrität verifiziert wurde.|
-|testSigning|String|Ist „testSigning“ aktiviert, wird vom Gerät während des Starts keine Signaturprüfung erzwungen.|
-|safeMode|String|Der abgesicherte Modus ist eine Option zur Problembehandlung unter Windows. Sie startet den Computer in einen eingeschränkten Zustand.|
-|windowsPE|String|Betriebssystem mit eingeschränkten Diensten, das den Computer für Windows vorbereitet|
-|earlyLaunchAntiMalwareDriverProtection|String|ELAM schützt die Computer in Ihrem Netzwerk, während sie starten.|
-|virtualSecureMode|String|VSM ist ein Container, der bei Kernelkompromittierung wichtige Komponenten schützt.|
-|pcrHashAlgorithm|String|Informationsattribut, das den Hashalgorithmus angibt, der vom TPM verwendet wurde|
-|bootAppSecurityVersion|String|Sicherheitsversionsnummer der Startanwendung|
-|bootManagerSecurityVersion|String|Sicherheitsversionsnummer der Startanwendung|
-|tpmVersion|String|Sicherheitsversionsnummer der Startanwendung|
-|pcr0|String|Kennzahl, die in PCR\[0\] erfasst ist|
-|secureBootConfigurationPolicyFingerPrint|String|Fingerabdruck der benutzerdefinierten Richtlinie für die Konfiguration der Option „Sicherer Start“|
-|codeIntegrityPolicy|String|Die Codeintegritätsrichtlinie, die die Sicherheit der Startumgebung steuert|
+|dataExcutionPolicy|Zeichenfolge|Eine DEP-Richtlinie definiert eine Reihe von Hardware- und Softwaretechnologien, die zusätzliche Arbeitsspeicherprüfungen durchführen. |
+|bitLockerStatus|Zeichenfolge|Aktiviert oder deaktiviert die BitLocker-Laufwerkverschlüsselung.|
+|bootManagerVersion|Zeichenfolge|Version des Start-Managers|
+|codeIntegrityCheckVersion|Zeichenfolge|Version des Start-Managers|
+|secureBoot|Zeichenfolge|Ist „secureBoot“ aktiviert, müssen die Hauptkomponenten über die korrekten Kryptografiesignaturen verfügen.|
+|bootDebugging|Zeichenfolge|Ist „bootDebugging“ aktiviert, wird das Gerät zu Entwicklungs- und Testzwecken verwendet.|
+|operatingSystemKernelDebugging|Zeichenfolge|Ist „operatingSystemKernelDebugging“ aktiviert, wird das Gerät zu Entwicklungs- und Testzwecken verwendet.|
+|codeIntegrity|Zeichenfolge| Ist „codeIntegrity“ aktiviert, wird ausschließlich Code ausgeführt, dessen Integrität verifiziert wurde.|
+|testSigning|Zeichenfolge|Ist „testSigning“ aktiviert, wird vom Gerät während des Starts keine Signaturprüfung erzwungen.|
+|safeMode|Zeichenfolge|Der abgesicherte Modus ist eine Option zur Problembehandlung unter Windows. Sie startet den Computer in einen eingeschränkten Zustand.|
+|windowsPE|Zeichenfolge|Betriebssystem mit eingeschränkten Diensten, das den Computer für Windows vorbereitet|
+|earlyLaunchAntiMalwareDriverProtection|Zeichenfolge|ELAM schützt die Computer in Ihrem Netzwerk, während sie starten.|
+|virtualSecureMode|Zeichenfolge|VSM ist ein Container, der bei Kernelkompromittierung wichtige Komponenten schützt.|
+|pcrHashAlgorithm|Zeichenfolge|Informationsattribut, das den Hashalgorithmus angibt, der vom TPM verwendet wurde|
+|bootAppSecurityVersion|Zeichenfolge|Sicherheitsversionsnummer der Startanwendung|
+|bootManagerSecurityVersion|Zeichenfolge|Sicherheitsversionsnummer der Startanwendung|
+|tpmVersion|Zeichenfolge|Sicherheitsversionsnummer der Startanwendung|
+|pcr0|Zeichenfolge|Kennzahl, die in PCR\[0\] erfasst ist|
+|secureBootConfigurationPolicyFingerPrint|Zeichenfolge|Fingerabdruck der benutzerdefinierten Richtlinie für die Konfiguration der Option „Sicherer Start“|
+|codeIntegrityPolicy|Zeichenfolge|Die Codeintegritätsrichtlinie, die die Sicherheit der Startumgebung steuert|
 |bootRevisionListInfo|String|Die Startüberarbeitungsliste, die während des ersten Starts auf einem Gerät mit Integritätsnachweis geladen wurde|
-|operatingSystemRevListInfo|String|Die Betriebssystem-Überarbeitungsliste, die während des ersten Starts auf einem Gerät mit Integritätsnachweis geladen wurde|
-|healthStatusMismatchInfo|String|Dieses Attribut wird angezeigt, wenn der DHA-Dienst ein Integritätsproblem erkennt.|
+|operatingSystemRevListInfo|Zeichenfolge|Die Betriebssystem-Überarbeitungsliste, die während des ersten Starts auf einem Gerät mit Integritätsnachweis geladen wurde|
+|healthStatusMismatchInfo|Zeichenfolge|Dieses Attribut wird angezeigt, wenn der DHA-Dienst ein Integritätsproblem erkennt.|
 |healthAttestationSupportedStatus|String|Dieses Attribut gibt an, ob das Gerät DHA unterstützt.|
 
 ## <a name="relationships"></a>Beziehungen

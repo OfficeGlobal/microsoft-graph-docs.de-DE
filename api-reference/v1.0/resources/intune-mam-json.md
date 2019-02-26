@@ -3,25 +3,27 @@ title: Json-Ressourcentyp
 description: Stellt die im JSON-Format zurückgegebenen Daten dar.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 16981aa04993d67fd4bdbb6c4b3d302448a6c4cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d96089b136ced25173c9adf2804a31760b793d6b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956801"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262762"
 ---
 # <a name="json-resource-type"></a>Json-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Stellt die im JSON-Format zurückgegebenen Daten dar.
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
@@ -39,10 +41,11 @@ Es folgt eine JSON-Darstellung der Ressource.
   "type": "#page.annotation",
   "suppressions": [
 
-"Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune-mam-json.md, /api-reference/v1.0/resources/json.md"
+  "Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune-mam-json.md, /api-reference/v1.0/resources/json.md"
 
   ],
 
 }
 -->
+
 

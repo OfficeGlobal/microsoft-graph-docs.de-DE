@@ -1,28 +1,29 @@
 ---
-title: NotificationTemplateBrandingOptions Enum-Typ
-description: Optionen für die Nachrichtenvorlage Branding. Das Branding wird in der Intune-Verwaltungskonsole definiert.
+title: notificationTemplateBrandingOptions-Enumerationstyp
+description: Branding-Optionen für die Nachrichtenvorlage. Das Branding wird in der Intune-Verwaltungskonsole definiert.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1223e94396cc706ea79715f1d04b4ccad8984896
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985683"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261894"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a>NotificationTemplateBrandingOptions Enum-Typ
+# <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Optionen für die Nachrichtenvorlage Branding. Das Branding wird in der Intune-Verwaltungskonsole definiert.
+Branding-Optionen für die Nachrichtenvorlage. Das Branding wird in der Intune-Verwaltungskonsole definiert.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Keine Branding.|
-|includeCompanyLogo|1|Enthalten Sie Firmenlogo.|
-|includeCompanyName|2|Einschließen von Firmennamen.|
-|includeContactInformation|4|Enthalten Sie Kontaktinformationen.|
+|Keine|0|Kein Branding.|
+|includeCompanyLogo|1|Firmen Logo hinzufügen.|
+|includeCompanyName|2|Firmennamen einbeziehen.|
+|includeContactInformation|4|Kontaktinformationen einbeziehen.|
 
 
 

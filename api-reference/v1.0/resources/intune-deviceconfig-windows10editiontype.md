@@ -1,36 +1,37 @@
 ---
-title: windows10EditionType Enum-Typ
-description: Windows-10-Edition-Typ.
+title: windows10EditionType-Enumerationstyp
+description: Windows 10 Edition-Typ.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7a36c2a8e12d7a9a48932e8a3aa75810c43c90ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f2840d0de59c154073c0116a6188980f83d585b7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919901"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259689"
 ---
-# <a name="windows10editiontype-enum-type"></a>windows10EditionType Enum-Typ
+# <a name="windows10editiontype-enum-type"></a>windows10EditionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Windows-10-Edition-Typ.
+Windows 10 Edition-Typ.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Enterprise|
-|windows10EnterpriseN|1|Windows 10 EnterpriseN|
-|windows10Education|2|Windows 10 Bildungseinrichtungen|
-|windows10EducationN|3|Windows 10 EducationN|
-|windows10MobileEnterprise|4|10 Windows Mobile Enterprise|
-|windows10HolographicEnterprise|5|Windows 10 Hologramm Enterprise|
-|windows10Professional|6|10 Windows Professional|
-|windows10ProfessionalN|7|Windows 10 ProfessionalN|
-|windows10ProfessionalEducation|8|Windows 10 Fortbildung|
-|windows10ProfessionalEducationN|9|Professional EducationN Windows 10|
-|windows10ProfessionalWorkstation|10|Windows 10 Professional für Arbeitsstationen|
-|windows10ProfessionalWorkstationN|11|Windows 10 Professional für Arbeitsstationen N|
+|windows10EnterpriseN|1|Windows 10 Enter Prisen|
+|windows10Education|2|Windows 10 Education|
+|windows10EducationN|3|Windows 10 Educationn|
+|windows10MobileEnterprise|4|Windows 10 Mobile Enterprise|
+|windows10HolographicEnterprise|5|Windows 10 holographische Enterprise|
+|windows10Professional|6|Windows 10 Professional|
+|windows10ProfessionalN|7|Windows 10 Professionals|
+|windows10ProfessionalEducation|8|Windows 10 Professional Education|
+|windows10ProfessionalEducationN|9|Windows 10 Professional Educationn|
+|windows10ProfessionalWorkstation|10|Windows 10 Professional für Workstations|
+|windows10ProfessionalWorkstationN|11|Windows 10 Professional für Workstations N|
 
 
 

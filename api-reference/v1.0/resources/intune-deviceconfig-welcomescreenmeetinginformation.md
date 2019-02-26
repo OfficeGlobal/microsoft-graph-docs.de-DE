@@ -1,27 +1,28 @@
 ---
-title: WelcomeScreenMeetingInformation Enum-Typ
-description: Mögliche Werte für die Willkommensseite Besprechungsinformationen.
+title: welcomeScreenMeetingInformation-Enumerationstyp
+description: Mögliche Werte für die Begrüßungsbildschirm-Besprechungsinformationen.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1bdec076eae34adddf9846df5d29436dd20100d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5eb28fba08ce30d32cb37fe35efaf7471db558e2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937656"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264071"
 ---
-# <a name="welcomescreenmeetinginformation-enum-type"></a>WelcomeScreenMeetingInformation Enum-Typ
+# <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Willkommensseite Besprechungsinformationen.
+Mögliche Werte für die Begrüßungsbildschirm-Besprechungsinformationen.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|showOrganizerAndTimeOnly|1|Organisator und Uhrzeit nur anzeigen.|
-|showOrganizerAndTimeAndSubject|2|Organizer, Zeit und Betreff anzeigen (Subject ist für private Konferenzen ausgeblendet).|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|showOrganizerAndTimeOnly|1|Organizer und nur Zeit anzeigen.|
+|showOrganizerAndTimeAndSubject|2|Organisator, Uhrzeit und Betreff anzeigen (Betreff wird für private Besprechungen ausgeblendet).|
 
 
 

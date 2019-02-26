@@ -1,32 +1,32 @@
 ---
-title: DiagnosticDataSubmissionMode Enum-Typ
-description: Zulassen Sie das Gerät zum Senden von Diagnose- und Verwendungsanalyse Telemetriedaten wie Watson.
-localization_priority: Normal
+title: diagnosticDataSubmissionMode-Enumerationstyp
+description: Das Gerät kann Diagnose-und Verwendungs Telemetrie-Daten wie Watson senden.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b587d6872bcd3610c3b878ae7a672c3e776ea01
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e749d2fc7a1eb191c62fbc9db389887cdd901c27
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422257"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175220"
 ---
-# <a name="diagnosticdatasubmissionmode-enum-type"></a>DiagnosticDataSubmissionMode Enum-Typ
+# <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zulassen Sie das Gerät zum Senden von Diagnose- und Verwendungsanalyse Telemetriedaten wie Watson.
+Das Gerät kann Diagnose-und Verwendungs Telemetrie-Daten wie Watson senden.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
-|Keine|1|Keine Telemetriedaten werden von Betriebssystemkomponenten gesendet. Hinweis: Dieser Wert gilt nur für Enterprise und Server-Geräte. Mit dieser Einstellung auf anderen Geräten entspricht dem Festlegen des Werts von 1.|
-|grundlegende|2|Grundlegende Telemetriedaten sendet.|
-|Erweiterte|3|Sendet erweiterten Telemetriedaten, einschließlich der Verwendung und Einblicke in die Daten.|
-|vollständige|4|Sendet vollständige Telemetriedaten einschließlich Diagnosedaten wie Systemstatus.|
+|userDefined|0|Zulassen, dass der Benutzer festgelegt wird.|
+|Keine|1|Von Betriebssystemkomponenten werden keine Telemetrie-Daten gesendet. Hinweis: dieser Wert gilt nur für Enterprise-und Server-Geräte. Die Verwendung dieser Einstellung auf anderen Geräten entspricht dem Festlegen des Werts 1.|
+|Basic|2|Sendet grundlegende Telemetrie-Daten.|
+|Erweiterte|3|Sendet erweiterte Telemetrie-Daten, einschließlich Verwendungs-und einblickdaten.|
+|vollständige|4|Sendet vollständige Telemetrie-Daten einschließlich Diagnosedaten wie Systemstatus.|
 
 
 

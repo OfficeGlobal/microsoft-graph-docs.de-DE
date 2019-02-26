@@ -1,33 +1,33 @@
 ---
-title: DeviceThreatProtectionLevel Enum-Typ
-description: Gerät Bedrohung Schutzebenen für das Gerät Threat Protection-API.
-localization_priority: Normal
+title: deviceThreatProtectionLevel-Enumerationstyp
+description: Geräte Bedrohungsschutz-Ebenen für die Geräte BedrohungsSchutz-API.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4c9bbc599d424b91d07339a7a7cdad90b84c262
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8ecdf54051b1545b842cbc3c49359b9a77f12e2e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140243"
 ---
-# <a name="devicethreatprotectionlevel-enum-type"></a>DeviceThreatProtectionLevel Enum-Typ
+# <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gerät Bedrohung Schutzebenen für das Gerät Threat Protection-API.
+Geräte Bedrohungsschutz-Ebenen für die Geräte BedrohungsSchutz-API.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht verfügbar|0|Standardwert. Nicht verwenden.|
-|gesichert|1|Gerät veränderte Anforderung: gesichert. Dies ist die sicherste Ebene und steht, die auf dem Gerät keine Viren gefunden wurden.|
-|Niedrig|2|Gerät Threat Protection geforderte: niedrig. Niedrig stellt einen Schweregrad der Bedrohung, die an das Gerät oder Gerätedaten minimalem Risiko darstellt.|
-|medium|3|Gerät Threat Protection geforderte: Mittel. Mittel stellt einen Schweregrad der Bedrohung, dass Posen Risiko an das Gerät oder Gerätedaten mäßig dar.|
-|hohe|4|Gerät Threat Protection geforderte: hoch. Besonders stellt einen Schweregrad der Bedrohung, die an das Gerät oder Gerätedaten erheblich Risiko darstellt.|
-|notSet|10|Gerät Threat Protection geforderte: nicht festgelegt. Set darstellt, keine Notwendigkeit für das Gerät besteht zu eine Bedrohung Schutzebene erfüllen.|
+|verfügbar|0|Standardwert. Nicht verwenden.|
+|gesichert|1|Anforderung der Geräte BedrohungsStufe: gesichert. Dies ist die sicherste Stufe und stellt dar, dass auf dem Gerät keine Bedrohungen gefunden wurden.|
+|mit niedriger|2|Anforderung an die Geräte Bedrohungsstufe: niedrig. Low stellt einen Schweregrad der Bedrohung dar, der ein minimales Risiko für die Geräte-oder Gerätedaten darstellt.|
+|medium|3|Anforderung der Geräte BedrohungsSchutz Stufe: Mittel. Medium stellt einen Schweregrad der Bedrohung dar, der für die Geräte-oder Gerätedaten ein moderates Risiko darstellt.|
+|hohe|4|Anforderung an Geräte BedrohungsSchutz: hoch. High stellt einen Schweregrad der Bedrohung dar, der für die Geräte-oder Gerätedaten ein hohes Risiko birgt.|
+|notSet|10|Anforderung der Geräte BedrohungsSchutz Ebene: nicht festgelegt. Nicht festgelegt stellt dar, dass das Gerät keine BedrohungsSchutz Ebene erfüllen muss.|
 
 
 

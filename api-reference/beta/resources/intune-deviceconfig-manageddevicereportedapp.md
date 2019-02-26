@@ -1,23 +1,23 @@
 ---
-title: Ressourcentyp managedDeviceReportedApp
-description: Anwendungsdaten für die berichterstellung
-localization_priority: Normal
+title: managedDeviceReportedApp-Ressourcentyp
+description: Anwendungsdaten für die Berichterstellung
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 104503083f5f599bc366de2ca8082fd9fdf3102e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e1cd99974259835859cf8a2fc6a9f197c09d4d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422607"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166269"
 ---
-# <a name="manageddevicereportedapp-resource-type"></a>Ressourcentyp managedDeviceReportedApp
+# <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Anwendungsdaten für die berichterstellung
+Anwendungsdaten für die Berichterstellung
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|

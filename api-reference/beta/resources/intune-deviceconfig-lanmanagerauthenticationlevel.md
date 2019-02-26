@@ -1,33 +1,33 @@
 ---
-title: LanManagerAuthenticationLevel Enum-Typ
+title: lanManagerAuthenticationLevel-Enumerationstyp
 description: Mögliche Werte für LanManagerAuthenticationLevel
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e8c7b3df6f515d3dad0d7619b6c0b755ad799d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 63f04f1ef2fc12fa0352aeec803c46fb4ebab3d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397456"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166570"
 ---
-# <a name="lanmanagerauthenticationlevel-enum-type"></a>LanManagerAuthenticationLevel Enum-Typ
+# <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für LanManagerAuthenticationLevel
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|lmAndNltm|0|LM & NTLM-Antworten senden|
-|lmNtlmAndNtlmV2|1|Senden Sie LM & NTLM-Verwendung NTLMv2 sitzungssicherheit, wenn ausgehandelt|
-|lmAndNtlmOnly|2|LM & nur NTLM-Antworten senden|
-|lmAndNtlmV2|3|LM & nur NTLMv2-Antworten senden|
-|lmNtlmV2AndNotLm|4|Senden Sie LM & nur die NTLMv2-Antworten. LM verweigern|
-|lmNtlmV2AndNotLmOrNtm|5|Senden Sie LM & nur die NTLMv2-Antworten. LM & NTLM verweigern|
+|lmAndNltm|0|Senden von LM-& NTLM-Antworten|
+|lmNtlmAndNtlmV2|1|Senden von LM-& NTLM-Verwendung der NTLMv2-Sitzungssicherheit bei aushandeln|
+|lmAndNtlmOnly|2|Nur nur NTLM-Antworten für LM-& senden|
+|lmAndNtlmV2|3|Nur LM-&-NTLMv2-Antworten senden|
+|lmNtlmV2AndNotLm|4|Senden Sie nur LINEARe &-NTLMv2-Antworten. LM ablehnen|
+|lmNtlmV2AndNotLmOrNtm|5|Senden Sie nur LINEARe &-NTLMv2-Antworten. Ablehnen von LM & NTLM|
 
 
 

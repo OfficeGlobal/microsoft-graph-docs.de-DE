@@ -1,29 +1,30 @@
 ---
-title: WindowsDeviceType Enum-Typ
-description: Enthält Eigenschaften für Windows-Gerätetyp.
+title: windowsDeviceType-Enumerationstyp
+description: Enthält Eigenschaften für den Windows-Gerätetyp.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: af17ebee38a2f597f5dae7032106ef5faab7fa96
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 075fad8389b00702612575c4df0f9891d2a5cc24
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981973"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264099"
 ---
-# <a name="windowsdevicetype-enum-type"></a>WindowsDeviceType Enum-Typ
+# <a name="windowsdevicetype-enum-type"></a>windowsDeviceType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für Windows-Gerätetyp.
+Enthält Eigenschaften für den Windows-Gerätetyp.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Keine Flags festgelegt.|
-|Desktop|1|Unabhängig davon, ob der Gerätetyp Desktop Windows unterstützt wird.|
-|Mobile|2|Geben Sie unabhängig davon, ob das Windows Mobile-Gerät werden unterstützt.|
-|Hologramm|4|Unabhängig davon, ob der Gerätetyp Hologramm Windows unterstützt wird.|
-|Team|8|Unabhängig davon, ob der Gerätetyp Team Windows unterstützt wird.|
+|Keine|0|Keine Flags festgelegt.|
+|Desktop|1|Gibt an, ob der Desktop-Windows-Gerätetyp unterstützt wird.|
+|Mobile|2|Gibt an, ob der Mobile Windows-Gerätetyp unterstützt wird.|
+|holographische|4|Gibt an, ob der holographische Windows-Gerätetyp unterstützt wird.|
+|Team|8|Gibt an, ob der Windows-Gerätetyp "Team" unterstützt wird.|
 
 
 

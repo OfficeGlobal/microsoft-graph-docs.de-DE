@@ -3,19 +3,20 @@ title: importedWindowsAutopilotDeviceIdentity-Ressourcentyp
 description: Importierte Windows Autopilot-Geräte
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9fef97ac8e39a6f816c685673cc27ec1f9d59a71
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3e8c94b32193b6ef443b4a27333cd9525e236dab
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986133"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264015"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Importierte Windows Autopilot-Geräte
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,15 +29,16 @@ Importierte Windows Autopilot-Geräte
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|GUID des Objekts|
+|id|string|GUID des Objekts|
 |orderIdentifier|String|Auftrags-ID des Windows AutoPilot-Geräts|
 |serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|String|Product Key des Windows AutoPilot-Geräts|
+|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
 |hardwareIdentifier|Binary|Hardware-Blob des Windows AutoPilot-Geräts|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

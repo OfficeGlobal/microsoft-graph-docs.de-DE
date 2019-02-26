@@ -3,19 +3,20 @@ title: auditResource-Ressourcentyp
 description: Eine Klasse, die die Eigenschaften für die Audit-Ressource enthält.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4778e01076e2af1c18edb16a2587f65396cc6466
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9e2a6b2309e831a872c4cde04a951819cac292ec
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977250"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262083"
 ---
 # <a name="auditresource-resource-type"></a>auditResource-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine Klasse, die die Eigenschaften für die Audit-Ressource enthält.
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ Eine Klasse, die die Eigenschaften für die Audit-Ressource enthält.
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

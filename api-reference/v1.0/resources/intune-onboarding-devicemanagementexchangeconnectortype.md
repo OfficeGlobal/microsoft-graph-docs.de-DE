@@ -1,28 +1,29 @@
 ---
-title: DeviceManagementExchangeConnectorType Enum-Typ
+title: deviceManagementExchangeConnectorType-Enumerationstyp
 description: Der Typ des Exchange-Connectors.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8e9e50a4475ca2d57b3f38567703046588d4fb3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c358832db83e5f5b3e1fb0f5457f480d21ded996
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986432"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263560"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a>DeviceManagementExchangeConnectorType Enum-Typ
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Der Typ des Exchange-Connectors.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|"lokal"|0|Stellt eine Verbindung zum lokalen Exchange-Umgebung.|
-|gehostet|1|Stellt eine Verbindung mit Office 365 mit mehreren Mandanten Exchange-Umgebung|
-|serviceToService|2|Intune Service verbindet direkt mit Office 365 mit mehreren Mandanten Exchange-Umgebung|
-|dedizierte|3|Stellt eine Verbindung zu Office 365 dedizierte Exchange-Umgebung.|
+|onPremises|0|Stellt eine Verbindung mit der lokalen Exchange-Umgebung her.|
+|gehostet|1|Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten|
+|serviceToService|2|InTune-Dienst stellt eine direkte Verbindung zu O365-Exchange-Umgebung mit mehreren Mandanten her|
+|dedizierten|3|Stellt eine Verbindung zu einer dedizierten Exchange-Umgebung von O365 her.|
 
 
 

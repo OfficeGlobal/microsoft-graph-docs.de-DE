@@ -3,19 +3,20 @@ title: deviceConfigurationUserOverview-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9c20471630b2ab888af96a33b1e24eced26d3015
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3c3595687f21b5121272255857dc5daeae0e01c2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926302"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259696"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -27,7 +28,7 @@ Noch nicht dokumentiert.
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
 |pendingCount|Int32|Anzahl der ausstehenden Benutzer|
-|notApplicableCount|Int32|Anzahl der Benutzer nicht zutreffend|
+|notApplicableCount|Int32|Anzahl der nicht anwendbaren Benutzer|
 |successCount|Int32|Anzahl der erfolgreichen Benutzer|
 |errorCount|Int32|Anzahl der Benutzer mit Fehlern|
 |failedCount|Int32|Anzahl der fehlgeschlagenen Benutzer|
@@ -36,6 +37,7 @@ Noch nicht dokumentiert.
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

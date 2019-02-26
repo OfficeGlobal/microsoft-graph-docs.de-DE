@@ -1,39 +1,39 @@
 ---
-title: Ressourcentyp bitLockerSystemDrivePolicy
-description: BitLocker-Verschlüsselung Basis Richtlinien.
-localization_priority: Normal
+title: bitLockerSystemDrivePolicy-Ressourcentyp
+description: BitLocker-Verschlüsselungs Basisrichtlinien.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b63d075538508941d012df1e44f7cb563fed20d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 27b4492dd6df2821cfdeb885d3412536c0d3991c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164890"
 ---
-# <a name="bitlockersystemdrivepolicy-resource-type"></a>Ressourcentyp bitLockerSystemDrivePolicy
+# <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-BitLocker-Verschlüsselung Basis Richtlinien.
+BitLocker-Verschlüsselungs Basisrichtlinien.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerke. Mögliche Werte: sind `aesCbc128`, `aesCbc256`, `xtsAes128` und `xtsAes256`.|
-|startupAuthenticationRequired|Boolean|Erfordert zusätzliche Authentifizierung beim Start.|
-|startupAuthenticationBlockWithoutTpmChip|Boolean|Gibt an, ob BitLocker ohne kompatibles TPM zulassen (erfordert ein Kennwort oder einen Startschlüssel auf einem USB flash-Laufwerk).|
-|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob TPM Start zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
-|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob TPM Startup Pin zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
-|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob TPM zum Starten des Schlüssel zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
-|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob TPM Start anheften und Schlüssel sind zulässig/erforderlich/nicht zulässig. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
-|minimumPinLength|Int32|Gibt die minimale Länge des Startup Pin an. Gültige Werte 4 bis 20|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|BitLocker verschlüsselt Betriebssystemlaufwerke in Abwesenheit der erforderlichen Startup Schlüsselinformationen wiederherstellen können. Diese Einstellung wird angewendet, wenn Sie BitLocker aktivieren.|
-|prebootRecoveryEnableMessageAndUrl|Boolean|Aktivieren Sie vor dem Start Recovery Nachrichten- und Url. Wenn RequireStartupAuthentication auf false festgelegt ist, wirkt sich dieser Wert nicht.|
-|prebootRecoveryMessage|Zeichenfolge|Definiert eine benutzerdefinierte Wiederherstellung Nachricht.|
-|prebootRecoveryUrl|Zeichenfolge|Definiert eine benutzerdefinierte Wiederherstellung-URL.|
+|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerke aus. Mögliche Werte: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
+|startupAuthenticationRequired|Boolean|Zusätzliche Authentifizierung beim Start erforderlich.|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|Gibt an, ob BitLocker ohne kompatibles TPM zugelassen werden soll (erfordert ein Kennwort oder einen Systemstartschlüssel auf einem USB-Flashlaufwerk).|
+|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob der TPM-Start zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
+|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob die TPM-Start Pin zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
+|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob der TPM-Startschlüssel zulässig/erforderlich/nicht zulässig ist. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
+|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Gibt an, ob die TPM-Start-PIN und der Schlüssel zulässig/erforderlich/nicht zulässig sind. Mögliche Werte sind: `blocked`, `required` und `allowed`.|
+|minimumPinLength|Int32|Gibt die minimale Länge der Start-PIN an. Gültige Werte 4 bis 20|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Ermöglicht die Wiederherstellung von BitLocker-verschlüsselten Betriebssystemlaufwerken, wenn die erforderlichen Startschlüssel Informationen fehlen. Diese Richtlinieneinstellung wird angewendet, wenn Sie BitLocker aktivieren.|
+|Prebootrecoveryenablemessageandurl wurden|Boolean|Aktivieren Sie die Vorabstart-Wiederherstellungs Nachricht und-URL. Wenn requireStartupAuthentication auf false festgelegt ist, wirkt sich dieser Wert nicht aus.|
+|prebootRecoveryMessage|Zeichenfolge|Definiert eine benutzerdefinierte Wiederherstellungs Nachricht.|
+|prebootRecoveryUrl|Zeichenfolge|Definiert eine benutzerdefinierte Wiederherstellungs-URL.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

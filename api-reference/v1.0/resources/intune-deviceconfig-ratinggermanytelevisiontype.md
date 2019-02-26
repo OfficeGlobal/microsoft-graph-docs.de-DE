@@ -1,31 +1,32 @@
 ---
-title: RatingGermanyTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Deutschland
+title: ratingGermanyTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Deutschland
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dafa3b5b3bfec5c67b87dc10d3162f2c9e24b4bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a1cdc5fdc8b52f52c62da1a4cd66f3322089edeb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911616"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264456"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a>RatingGermanyTelevisionType Enum-Typ
+# <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Deutschland
+TV-Inhalts Klassifikations Bezeichnungen in Deutschland
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|Allgemeine|2|Ab 0 Jahren, ohne Einschränkungen ALTER|
-|agesAbove6|3|Ab 6 Jahren, im Alter zwischen 6 und ältere|
-|agesAbove12|4|Ab 12 Jahren, Alter 12 und ältere|
-|agesAbove16|5|Ab 16 Jahren, im Alter zwischen 16 und ältere|
-|Erwachsene|6|Ab 18 Jahren, nur Erwachsene|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|allgemeine|2|Ab 0 Jahre, keine Altersbeschränkungen|
+|agesAbove6|3|Ab 6 Jahre, ab 6 Jahren|
+|agesAbove12|4|Ab 12 Jahren, älter als 12 Jahre|
+|agesAbove16|5|Ab 16 Jahre, ab 16 Jahren|
+|Erwachsene|6|Ab 18 Jahre, nur Erwachsene|
 
 
 

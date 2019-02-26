@@ -1,26 +1,26 @@
 ---
-title: UserPfxPaddingScheme Enum-Typ
-description: Unterstützte Werte für das Padding-Schema von Verschlüsselungsanbieters verwendet.
-localization_priority: Normal
+title: userPfxPaddingScheme-Enumerationstyp
+description: Unterstützte Werte für das vom Verschlüsselungsanbieter verwendete Padding-Schema.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ffdbdf8d0d3444069ce0b114a0a1c749434f587
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b90edec7aa6d6051fbe2e4e9cb53c38752750239
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175381"
 ---
-# <a name="userpfxpaddingscheme-enum-type"></a>UserPfxPaddingScheme Enum-Typ
+# <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Unterstützte Werte für das Padding-Schema von Verschlüsselungsanbieters verwendet.
+Unterstützte Werte für das vom Verschlüsselungsanbieter verwendete Padding-Schema.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |Keine|0|Noch nicht dokumentiert|
 |PKCS1|1|Noch nicht dokumentiert|

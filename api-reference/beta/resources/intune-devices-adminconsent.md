@@ -1,28 +1,28 @@
 ---
-title: Ressourcentyp adminConsent
-description: Informationen zum Unternehmensadministrator Zustimmung.
-localization_priority: Normal
+title: Intunebrand-Ressourcentyp
+description: Informationen zur Administrator Einwilligung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c76ac169bb15792afec908f62b9740e81a4d7e5b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f46e379a47bd7b08be1427115c785452543dfbf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415880"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157939"
 ---
-# <a name="adminconsent-resource-type"></a>Ressourcentyp adminConsent
+# <a name="adminconsent-resource-type"></a>Intunebrand-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Informationen zum Unternehmensadministrator Zustimmung.
+Informationen zur Administrator Einwilligung.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|Der Administrator Zustimmung Zustand der Freigabe von Benutzer- und Gerätedaten zu Apple. Mögliche Werte sind: `notConfigured`, `granted` und `notGranted`.|
+|shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|Der Administrator Einwilligungs Status der Freigabe von Benutzer-und Gerätedaten an Apple. Mögliche Werte sind: `notConfigured`, `granted` und `notGranted`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

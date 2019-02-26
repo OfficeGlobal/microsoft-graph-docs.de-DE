@@ -1,37 +1,37 @@
 ---
-title: windows10VpnConnectionType Enum-Typ
+title: windows10VpnConnectionType-Enumerationstyp
 description: VPN-Verbindungstypen.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b3114c5d608cfed786fab8d2734d723682670ba
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e5e0e3248315fc598d95ea3eb2bb46a6445a5968
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395937"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166710"
 ---
-# <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType Enum-Typ
+# <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 VPN-Verbindungstypen.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|pulseSecure|0|Pulse sichern.|
+|pulseSecure|0|Impuls sicher.|
 |f5EdgeClient|1|F5-Edge-Client.|
-|dellSonicWallMobileConnect|2|Dell SonicWALL Mobile Verbindung.|
-|checkPointCapsuleVpn|3|Überprüfen Sie Punkt "Kapseln" VPN.|
+|dellSonicWallMobileConnect|2|Dell SonicWALL Mobile-Verbindung.|
+|checkPointCapsuleVpn|3|Überprüfen Sie Point Kapsel VPN.|
 |Automatisch|4|Automatisch.|
 |ikEv2|5|IKEv2.|
 |L2TP|6|L2TP.|
 |PPTP|7|PPTP.|
 |Citrix|8|Citrix.|
-|paloAltoGlobalProtect|9|Palo Alto Netzwerke GlobalProtect.|
+|Member paloaltoglobalprotect|9|Palo Alto Networks GlobalProtect.|
 
 
 

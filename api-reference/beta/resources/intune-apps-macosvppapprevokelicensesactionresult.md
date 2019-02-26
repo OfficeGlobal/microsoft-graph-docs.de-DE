@@ -1,32 +1,32 @@
 ---
-title: Ressourcentyp macOsVppAppRevokeLicensesActionResult
-description: Ergebnisse für Aktionen auf Mac OS Vpp Apps definiert, geerbte Eigenschaften für ActionResult enthält.
-localization_priority: Normal
+title: macOsVppAppRevokeLicensesActionResult-Ressourcentyp
+description: Definiert Ergebnisse für Aktionen auf MacOS VSS-apps, enthält geerbte Eigenschaften für ActionResult.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f90bd55476bbbb48ab3a4904886a67b217ab67b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7cf8390dc2c1541525e288b81defd073144f4132
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429958"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166507"
 ---
-# <a name="macosvppapprevokelicensesactionresult-resource-type"></a>Ressourcentyp macOsVppAppRevokeLicensesActionResult
+# <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ergebnisse für Aktionen auf Mac OS Vpp Apps definiert, geerbte Eigenschaften für ActionResult enthält.
+Definiert Ergebnisse für Aktionen auf MacOS VSS-apps, enthält geerbte Eigenschaften für ActionResult.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|userId|Zeichenfolge|Benutzer-ID der Aktion zugeordnet.|
-|managedDeviceId|Zeichenfolge|Geräte-ID der Aktion zugeordnet.|
-|totalLicensesCount|Int32|Anzahl der Anzahl der Lizenzen, die für die Revoke versucht wurde.|
-|failedLicensesCount|Int32|Anzahl der Anzahl von Lizenzen für welche Revoke ist fehlgeschlagen.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Der Grund für das Revoke Lizenzen-Aktion fehlschlagen. Mögliche Werte sind: `none`, `appleFailure`, `internalError`, `expiredVppToken` und `expiredApplePushNotificationCertificate`.|
+|userId|Zeichenfolge|Der Aktion zugeordnete UserId.|
+|managedDeviceId|Zeichenfolge|Mit der Aktion verknüpfte Geräte-Nr.|
+|totalLicensesCount|Int32|Die Anzahl der Lizenzen, für die widerrufen versucht wurde.|
+|failedLicensesCount|Int32|Die Anzahl der Lizenzen, für die REVOKE fehlgeschlagen ist.|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Der Grund für den Fehlschlagen der Lizenz Widerruf. Mögliche Werte: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 |actionName|Zeichenfolge|Name der Aktion|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Status der Aktion. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 |startDateTime|DateTimeOffset|Zeitpunkt der Einleitung der Aktion|

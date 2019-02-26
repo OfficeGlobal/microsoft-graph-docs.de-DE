@@ -1,38 +1,38 @@
 ---
-title: ResultantAppStateDetail Enum-Typ
-description: Enum angibt, Weitere Einzelheiten zu warum eine Anwendung für einen bestimmten hat Installationsstatus.
-localization_priority: Normal
+title: resultantAppStateDetail-Enumerationstyp
+description: Enum, der zusätzliche Details dazu angibt, warum eine Anwendung einen bestimmten Installationsstatus aufweist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b4d885f9ed2a23669bc2e30c91de40af8d915b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8d6b7e6a665229d02033cd1c0c25469a83dfc37d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410238"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167214"
 ---
-# <a name="resultantappstatedetail-enum-type"></a>ResultantAppStateDetail Enum-Typ
+# <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enum angibt, Weitere Einzelheiten zu warum eine Anwendung für einen bestimmten hat Installationsstatus.
+Enum, der zusätzliche Details dazu angibt, warum eine Anwendung einen bestimmten Installationsstatus aufweist.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noAdditionalDetails|0|Es sind keine weiteren Details verfügbar.|
-|seeInstallErrorCode|2000|Anwendung konnte nicht installiert werden. Finden Sie unter Error Code-Eigenschaft für weitere Details.|
-|seeUninstallErrorCode|4000|Anwendung konnte nicht deinstalliert werden. Finden Sie unter Error Code-Eigenschaft für weitere Details.|
-|pendingReboot|5000|Gerät muss neu gestartet werden, um die Installation der Anwendung abzuschließen.|
-|platformNotApplicable|-1006|Anwendung gilt nicht für diese Plattform. (z. B. Android-app Ziel IOS)|
-|minimumCpuSpeedNotMet|-1005|CPU-Geschwindigkeit auf das Zielgerät ist kleiner als die minimal konfigurierten.|
-|minimumLogicalProcessorCountNotMet|-1004|Anzahl der logischen Prozessoren auf dem Zielgerät ist kleiner als die minimal konfigurierten.|
-|minimumPhysicalMemoryNotMet|-1003|Größe des Arbeitsspeichers auf das Zielgerät ist kleiner als die minimal konfigurierten.|
-|minimumOsVersionNotMet|-1002|Version des Betriebssystems auf das Zielgerät ist kleiner als die minimal konfigurierten.|
-|minimumDiskSpaceNotMet|-1001|Verfügbarer Speicherplatz auf dem Zielgerät ist kleiner als die minimal konfigurierten.|
-|processorArchitectureNotApplicable|-1000|Gerätearchitektur (z. B. X86/amd64) gilt nicht für die Anwendung.|
+|seeInstallErrorCode|2000|Die Anwendung konnte nicht installiert werden. Weitere Informationen finden Sie unter Fehlercode-Eigenschaft.|
+|seeUninstallErrorCode|4000|Anwendung konnte nicht deinstalliert werden. Weitere Informationen finden Sie unter Fehlercode-Eigenschaft.|
+|pendingReboot|5000|Das Gerät muss neu gestartet werden, um die Installation der Anwendung abzuschließen.|
+|platformNotApplicable|-1006|Anwendung gilt nicht für diese Plattform. (beispielsweise Android-App für IOS)|
+|minimumCpuSpeedNotMet|-1005|Die CPU-Geschwindigkeit auf dem Zielgerät ist kleiner als das konfigurierte Minimum.|
+|minimumLogicalProcessorCountNotMet|-1004|Die Anzahl der logischen Prozessoren auf dem Zielgerät ist kleiner als das konfigurierte Minimum.|
+|minimumPhysicalMemoryNotMet|-1003|Der RAM-Speicher auf dem Zielgerät ist kleiner als der konfigurierte Mindestwert.|
+|minimumOsVersionNotMet|-1002|Die Betriebssystemversion auf dem Zielgerät ist kleiner als das konfigurierte Minimum.|
+|minimumDiskSpaceNotMet|-1001|Der verfügbare Speicherplatz auf dem Zielgerät ist kleiner als der konfigurierte Minimalwert.|
+|processorArchitectureNotApplicable|-1000|Gerätearchitekturen (beispielsweise x86/amd64) gelten nicht für die Anwendung.|
 
 
 

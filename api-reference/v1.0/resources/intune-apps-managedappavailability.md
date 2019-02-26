@@ -1,26 +1,27 @@
 ---
-title: ManagedAppAvailability Enum-Typ
-description: Verfügbarkeit einer verwalteten (MAM)-Anwendung.
-localization_priority: Normal
+title: managedAppAvailability-Enumerationstyp
+description: Die Verfügbarkeit einer verwalteten (MAM) Anwendung.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: b79504fac79773dec5c58c894033a9ae9750442c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 9f4ec62590a5b91866c4a0d28fffd1596e161ffc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936123"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264001"
 ---
-# <a name="managedappavailability-enum-type"></a>ManagedAppAvailability Enum-Typ
+# <a name="managedappavailability-enum-type"></a>managedAppAvailability-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Verfügbarkeit einer verwalteten (MAM)-Anwendung.
+Die Verfügbarkeit einer verwalteten (MAM) Anwendung.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|globale|0|Eine app für alle Mandanten werden global zur Verfügung.|
-|lineOfBusiness|1|Eine Zeile des Geschäfts-apps für eine Organisation privat.|
+|globalen|0|Eine global verfügbare App für alle Mandanten.|
+|Business restrictions auferlegt|1|Eine Branche, die privat für eine Organisation ist.|
 
 
 

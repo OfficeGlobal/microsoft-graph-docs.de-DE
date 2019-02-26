@@ -1,21 +1,21 @@
 ---
 title: iosVppEBook erstellen
 description: Erstellt neue Objekte des Typs iosVppEBook.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf780e1bc3bcb15392a6f2a1b164ef3c94ab1cc2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165219"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook erstellen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Erstellt neue Objekte des Typs [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
@@ -38,9 +38,9 @@ POST /deviceAppManagement/managedEBooks
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -50,16 +50,16 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|id|string|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|Zeichenfolge|Name des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|description|Zeichenfolge|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|Zeichenfolge|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
 |appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
 |vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
@@ -68,7 +68,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |seller|Zeichenfolge|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität.|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz.|
 
 
 
