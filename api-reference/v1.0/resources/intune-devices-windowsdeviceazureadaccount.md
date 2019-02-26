@@ -3,19 +3,20 @@ title: windowsDeviceAzureADAccount-Ressourcentyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4ef458769d68e27cb455937041aa06b72ddd29a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 272b4d091cd728f095e0002dee7e06c68884d6a8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932126"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251118"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert.
+
 
 Erbt von [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
@@ -23,10 +24,11 @@ Erbt von [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |password|Zeichenfolge|Noch nicht dokumentiert. Vererbt von [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|Zeichenfolge|Noch nicht dokumentiert.|
+|userPrincipalName|Zeichenfolge|Noch nicht dokumentiert|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

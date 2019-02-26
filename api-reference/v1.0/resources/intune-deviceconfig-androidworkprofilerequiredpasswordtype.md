@@ -1,32 +1,33 @@
 ---
-title: AndroidWorkProfileRequiredPasswordType Enum-Typ
-description: Android Arbeit Profil erforderliche Kennworttyp.
+title: androidWorkProfileRequiredPasswordType-Enumerationstyp
+description: Android-Arbeitsprofil erforderlicher Kennworttyp.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cbe1eb1482e979d236c1f8bf92f687077fb189f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b1dbb0b7e523ea6ca3ac1be3328cf58e30d9a892
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986278"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252938"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>AndroidWorkProfileRequiredPasswordType Enum-Typ
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Arbeit Profil erforderliche Kennworttyp.
+Android-Arbeitsprofil erforderlicher Kennworttyp.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Gerät Standardwert, keine beabsichtigt.|
-|lowSecurityBiometric|1|Niedrige Sicherheit Biometrik basierend erforderliche Kennwort.|
-|erforderlich|2|Erforderlich. |
-|atLeastNumeric|3|Mindestens numerische erforderliche Kennwort.|
-|numericComplex|4|Numerische komplexe Kennwort erforderlich.|
-|atLeastAlphabetic|5|Mindestens alphabetische erforderliche Kennwort.|
-|atLeastAlphanumeric|6|Mindestens Alphanumerisches Kennwort erforderlich.|
-|alphanumericWithSymbols|7|Mindestens alphanumerisch Symbole erforderliche Kennwort.|
+|deviceDefault|0|Geräte-Standardwert, keine Absicht.|
+|lowSecurityBiometric|1|Niedriges Biometrie-basiertes Kennwort erforderlich.|
+|erforderlich|2|Erforderlich.|
+|atLeastNumeric|3|Mindestens ein numerisches Kennwort ist erforderlich.|
+|numericComplex|4|Numerisches komplexes Kennwort erforderlich.|
+|atLeastAlphabetic|5|Mindestens ein alphabetisches Kennwort erforderlich.|
+|atLeastAlphanumeric|6|Mindestens alphanumerisches Kennwort erforderlich.|
+|alphanumericWithSymbols|7|Mindestens alphanumerisch mit Symbol Kennwort erforderlich.|
 
 
 

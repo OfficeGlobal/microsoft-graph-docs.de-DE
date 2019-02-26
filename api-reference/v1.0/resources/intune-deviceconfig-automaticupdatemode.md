@@ -1,30 +1,31 @@
 ---
-title: AutomaticUpdateMode Enum-Typ
-description: Mögliche Werte für den Modus für automatische Updates.
+title: Eigenschaften automaticupdatemode-Enumerationstyp
+description: Mögliche Werte für den automatischen Aktualisierungsmodus.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a31c50b5d16f4b9be8db4f95f2bbd9bd0ca123e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987860"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251377"
 ---
-# <a name="automaticupdatemode-enum-type"></a>AutomaticUpdateMode Enum-Typ
+# <a name="automaticupdatemode-enum-type"></a>Eigenschaften automaticupdatemode-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für den Modus für automatische Updates.
+Mögliche Werte für den automatischen Aktualisierungsmodus.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|notifyDownload|1|Benachrichtigen Sie auf Download.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|notifyDownload|1|Benachrichtigung beim Download.|
 |autoInstallAtMaintenanceTime|2|Automatische Installation zur Wartungszeit.|
-|autoInstallAndRebootAtMaintenanceTime|3|Automatische Installation und Wartung jederzeit neu starten.|
-|autoInstallAndRebootAtScheduledTime|4|Automatische Installation und zum geplanten Zeitpunkt neu starten.|
-|autoInstallAndRebootWithoutEndUserControl|5|Automatische Installation und neu starten Sie, ohne Kontrolle durch den Endbenutzer|
+|autoInstallAndRebootAtMaintenanceTime|3|Automatisches Installieren und Neustarten zum Zeitpunkt der Wartung.|
+|autoInstallAndRebootAtScheduledTime|4|Automatisches Installieren und Neustarten zum geplanten Zeitpunkt.|
+|autoInstallAndRebootWithoutEndUserControl|5|Automatisches Installieren und Neustarten ohne Endbenutzer Steuerelement|
 
 
 

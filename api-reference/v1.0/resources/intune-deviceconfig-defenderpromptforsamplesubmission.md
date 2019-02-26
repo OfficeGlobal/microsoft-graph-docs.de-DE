@@ -1,29 +1,30 @@
 ---
-title: DefenderPromptForSampleSubmission Enum-Typ
-description: Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
+title: defenderPromptForSampleSubmission-Enumerationstyp
+description: Mögliche Werte für die Bestätigung des Benutzers für die Proben Übermittlung.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e103916bd55e6c2d505a85c379b80962ab9a0cac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c1df39da4989417a8e21e5d0dad61667354e28ed
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251041"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a>DefenderPromptForSampleSubmission Enum-Typ
+# <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
+Mögliche Werte für die Bestätigung des Benutzers für die Proben Übermittlung.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|alwaysPrompt|1|Immer auffordern.|
-|promptBeforeSendingPersonalData|2|Auffordern Sie, vor dem Senden von persönlicher Daten.|
-|neverSendData|3|Nie senden Daten an.|
-|sendAllDataWithoutPrompting|4|Alle Daten ohne entsprechende Benachrichtigung gesendet.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|alwaysPrompt|1|Immer eine Ansage aus.|
+|promptBeforeSendingPersonalData|2|Vor dem Senden personenbezogener Daten.|
+|neverSendData|3|Nie Daten senden.|
+|sendAllDataWithoutPrompting|4|Alle Daten ohne Bestätigung senden.|
 
 
 

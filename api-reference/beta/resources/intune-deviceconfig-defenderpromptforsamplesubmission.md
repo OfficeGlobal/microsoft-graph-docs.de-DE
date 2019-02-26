@@ -1,32 +1,32 @@
 ---
-title: DefenderPromptForSampleSubmission Enum-Typ
-description: Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
-localization_priority: Normal
+title: defenderPromptForSampleSubmission-Enumerationstyp
+description: Mögliche Werte für die Bestätigung des Benutzers für die Proben Übermittlung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b706c0086791543a5cbb13d26ae1d86a2e3b1760
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4eb469516dd4ae960ae351843df31f07ead90edf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403315"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146340"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a>DefenderPromptForSampleSubmission Enum-Typ
+# <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für den Benutzer für die Übermittlung Beispiele.
+Mögliche Werte für die Bestätigung des Benutzers für die Proben Übermittlung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|alwaysPrompt|1|Immer auffordern.|
-|promptBeforeSendingPersonalData|2|Auffordern Sie, vor dem Senden von persönlicher Daten.|
-|neverSendData|3|Nie senden Daten an.|
-|sendAllDataWithoutPrompting|4|Alle Daten ohne entsprechende Benachrichtigung gesendet.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|alwaysPrompt|1|Immer eine Ansage aus.|
+|promptBeforeSendingPersonalData|2|Vor dem Senden personenbezogener Daten.|
+|neverSendData|3|Nie Daten senden.|
+|sendAllDataWithoutPrompting|4|Alle Daten ohne Bestätigung senden.|
 
 
 

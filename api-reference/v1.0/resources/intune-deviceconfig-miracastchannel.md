@@ -1,25 +1,26 @@
 ---
-title: MiracastChannel Enum-Typ
-description: Mögliche Werte für Miracast DDE-Kanal.
+title: miracastChannel-Enumerationstyp
+description: Mögliche Werte für Miracast-Kanal.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 468ee857968951171eef24087aec710657a413b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922690"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253911"
 ---
-# <a name="miracastchannel-enum-type"></a>MiracastChannel Enum-Typ
+# <a name="miracastchannel-enum-type"></a>miracastChannel-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für Miracast DDE-Kanal.
+Mögliche Werte für Miracast-Kanal.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
 |one|1|Eine.|
 |two|2|Zwei.|
 |three|3|Drei.|
@@ -31,15 +32,15 @@ Mögliche Werte für Miracast DDE-Kanal.
 |Neun|9|Neun.|
 |Zehn|10|Zehn.|
 |elf|11|Elf.|
-|thirtySix|36|30-sechs.|
+|thirtySix|36|36.|
 |40|40|40.|
-|fortyFour|44|Vierundvierzig.|
-|fortyEight|48|Achtundvierzig.|
-|oneHundredFortyNine|149|OneHundredForty-neun.|
-|oneHundredFiftyThree|153|3-OneHundredFifty.|
+|fortyFour|44|44.|
+|fortyEight|48|48.|
+|oneHundredFortyNine|149|OneHundredForty-Nine.|
+|oneHundredFiftyThree|153|OneHundredFifty-drei.|
 |oneHundredFiftySeven|157|OneHundredFifty-sieben.|
-|oneHundredSixtyOne|161|OneHundredSixty: 1.|
-|oneHundredSixtyFive|165|OneHundredSixty-5.|
+|oneHundredSixtyOne|161|OneHundredSixty-One.|
+|oneHundredSixtyFive|165|OneHundredSixty-fünf.|
 
 
 

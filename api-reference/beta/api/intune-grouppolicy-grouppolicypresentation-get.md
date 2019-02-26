@@ -1,23 +1,23 @@
 ---
-title: Abrufen von groupPolicyPresentation
-description: Lesen Sie Eigenschaften und Beziehungen des GroupPolicyPresentation-Objekts.
-localization_priority: Normal
+title: GroupPolicyPresentation abrufen
+description: Lesen von Eigenschaften und Beziehungen des groupPolicyPresentation-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1f7711700b79dabd28a9abccfab39c9ade7a572
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d2ee1cdf3a693ea24a798a34063c6969ad02ab9d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428889"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149686"
 ---
-# <a name="get-grouppolicypresentation"></a>Abrufen von groupPolicyPresentation
+# <a name="get-grouppolicypresentation"></a>GroupPolicyPresentation abrufen
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Lesen Sie Eigenschaften und Beziehungen des [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) -Objekts.
+Lesen von Eigenschaften und Beziehungen des [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -42,16 +42,16 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [GroupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und das [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

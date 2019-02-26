@@ -1,29 +1,30 @@
 ---
-title: RatingNewZealandTelevisionType Enum-Typ
-description: TV zum Bewerten Bezeichnungen in Neuseeland
+title: ratingNewZealandTelevisionType-Enumerationstyp
+description: TV-Inhalts Klassifikations Bezeichnungen in Neuseeland
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a6ceda3ffc70500fd273ce2a7356448faa2bd4b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 92160bdd00253d44f7119c7da8ba20240ccecc31
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919932"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251769"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a>RatingNewZealandTelevisionType Enum-Typ
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-TV zum Bewerten Bezeichnungen in Neuseeland
+TV-Inhalts Klassifikations Bezeichnungen in Neuseeland
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, zulassen, dass alle TV Inhalt anzeigt.|
-|allBlocked|1|Lassen Sie nicht, dass alle TV Inhalt anzeigt.|
-|Allgemeine|2|Die Klassifizierung G schließt untergeordnete Elemente unter 14 Schaden Materialien|
-|parentalGuidance|3|Die Klassifizierung PGR fördert Eltern und Aufsichtspersonen jüngere Leser von Berichten über innehaben.|
-|Erwachsene|4|Die Klassifizierung AO eignet sich nicht für untergeordnete Elemente|
+|allAllowed|0|Standardwert, alle TV-Sendungen anzeigen|
+|allBlocked|1|Keine TV-Sendungen zulassen|
+|allgemeine|2|Die G-Klassifikation schließt Materialien aus, die Kinder unter 14 Jahren schädigen können.|
+|parentalGuidance|3|Die PGR-Klassifizierung ermutigt Eltern und Erziehungsberechtigte, jüngere Betrachter zu überwachen|
+|Erwachsene|4|Die AO-Klassifikation eignet sich nicht für Kinder|
 
 
 

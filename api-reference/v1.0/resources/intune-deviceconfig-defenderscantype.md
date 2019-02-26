@@ -1,28 +1,29 @@
 ---
-title: DefenderScanType Enum-Typ
-description: Mögliche Werte für System überprüft den Typ.
+title: defenderScanType-Enumerationstyp
+description: Mögliche Werte für den System Scantyp.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f34dde568482bae643dc3ad13f926429a6e210c4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 52d1002c7a242f0aca203d84c4d7d16763e5debd
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975421"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254303"
 ---
-# <a name="defenderscantype-enum-type"></a>DefenderScanType Enum-Typ
+# <a name="defenderscantype-enum-type"></a>defenderScanType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für System überprüft den Typ.
+Mögliche Werte für den System Scantyp.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|deaktiviert|1|System-Überprüfung deaktiviert.|
-|Schnelles|2|Schnelles Systemscan.|
-|vollständige|3|Vollständige Überprüfung.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|deaktiviert|1|System Überprüfung deaktiviert.|
+|schnell|2|Schnelle Systemüberprüfung.|
+|vollständige|3|Vollständige Systemüberprüfung.|
 
 
 

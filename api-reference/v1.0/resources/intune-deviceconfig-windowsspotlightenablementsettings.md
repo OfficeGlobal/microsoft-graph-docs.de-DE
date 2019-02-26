@@ -1,27 +1,28 @@
 ---
-title: WindowsSpotlightEnablementSettings Enum-Typ
-description: Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
+title: windowsSpotlightEnablementSettings-Enumerationstyp
+description: Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 569c5df6a62326a4183bc773c48350751f7f8000
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 779db41264e2c0d499b6757fac0c1fee199c1a52
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951390"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253134"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>WindowsSpotlightEnablementSettings Enum-Typ
+# <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
+Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Spotlight auf Lock-Bildschirm ist nicht konfiguriert.|
-|deaktiviert|1|Deaktivieren des Windows-Spotlight für Sperren des Bildschirms|
-|enabled|2|Aktivieren Sie Windows Spotlight auf Sperren des Bildschirms|
+|notConfigured|0|Der Bildschirm "Spotlight on Lock" ist nicht konfiguriert|
+|deaktiviert|1|Deaktivieren von Windows Spotlight auf dem Sperrbildschirm|
+|enabled|2|Aktivieren von Windows Spotlight auf dem Sperrbildschirm|
 
 
 

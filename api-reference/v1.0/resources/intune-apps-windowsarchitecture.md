@@ -1,29 +1,30 @@
 ---
-title: WindowsArchitecture Enum-Typ
-description: Enthält Eigenschaften für Windows-Architektur.
+title: windowsArchitecture-Enumerationstyp
+description: Enthält Eigenschaften für die Windows-Architektur.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6e675a670ca0e4cf01f43e3338bf35e7e342b673
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e88fcfbb0b3c1ee71d66301e849439bda96ed5d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937110"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251559"
 ---
-# <a name="windowsarchitecture-enum-type"></a>WindowsArchitecture Enum-Typ
+# <a name="windowsarchitecture-enum-type"></a>windowsArchitecture-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für Windows-Architektur.
+Enthält Eigenschaften für die Windows-Architektur.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Keine Flags festgelegt.|
-|x86|1|Unabhängig davon, ob die X86 Windows Architekturtyp wird unterstützt.|
-|x64|2|Unabhängig davon, ob die X64 Windows Architekturtyp wird unterstützt.|
-|ARM|4|Unabhängig davon, ob der Arm-Windows-Architektur-Typ unterstützt wird.|
-|neutral|8|Unabhängig davon, ob der Neutral Windows Architekturtyp unterstützt wird.|
+|Keine|0|Keine Flags festgelegt.|
+|x86|1|Gibt an, ob der x86-Windows-Architekturtyp unterstützt wird.|
+|x64|2|Gibt an, ob der x64-Windows-Architekturtyp unterstützt wird.|
+|Arm|4|Gibt an, ob der Arm-Windows-Architekturtyp unterstützt wird.|
+|neutral|8|Gibt an, ob der neutrale Windows-Architekturtyp unterstützt wird.|
 
 
 

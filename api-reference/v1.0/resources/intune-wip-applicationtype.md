@@ -1,26 +1,27 @@
 ---
-title: ApplicationType Enum-Typ
-description: Möglichen Typen der Anwendung
+title: applicationtype-Enumerationstyp
+description: Mögliche Anwendungstypen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fa191eaddfe89b99d7945a7f4b18b584beaf7f6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 179b9fbfc7ce1a7ebc880ceade39028ec9e42421
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981259"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253946"
 ---
-# <a name="applicationtype-enum-type"></a>ApplicationType Enum-Typ
+# <a name="applicationtype-enum-type"></a>applicationtype-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Möglichen Typen der Anwendung
+Mögliche Anwendungstypen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|universelle|1|Die universellen Windows-Anwendung|
-|Desktop|2|Die Windows-desktop-Anwendung|
+|universelle|1|Die universelle Windows-Anwendung|
+|Desktop|2|Die Windows-Desktopanwendung|
 
 
 

@@ -3,19 +3,20 @@ title: managedAppOperation-Ressourcentyp
 description: Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 52e511ca24f67a485ab289f48c25fa1ceb309910
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fe7416c5357b83bd9dc7eb82d94aae6a6d740667
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920478"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253470"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,14 +29,15 @@ Steht für einen Vorgang, der auf eine App-Registrierung angewendet wird.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|String|Name des Vorgangs|
+|displayName|Zeichenfolge|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
-|state|String|Aktueller Status des Vorgangs|
-|id|Zeichenfolge|Schlüssel der Entität|
+|state|Zeichenfolge|Aktueller Status des Vorgangs|
+|id|string|Schlüssel der Entität|
 |Version|Zeichenfolge|Version der Entität|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

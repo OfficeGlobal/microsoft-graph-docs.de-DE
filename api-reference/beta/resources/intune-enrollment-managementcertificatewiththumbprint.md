@@ -1,29 +1,29 @@
 ---
-title: Ressourcentyp managementCertificateWithThumbprint
+title: managementCertificateWithThumbprint-Ressourcentyp
 description: Noch nicht dokumentiert
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 765d3b9370e4b0f5eda481883956c72bf261e65a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 36adab8de1cebe884f6932e2a99b3aba9174d518
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418855"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151261"
 ---
-# <a name="managementcertificatewiththumbprint-resource-type"></a>Ressourcentyp managementCertificateWithThumbprint
+# <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|Fingerabdruck|Zeichenfolge|Den Fingerabdruck des Zertifikats management|
-|certificate|String|Das Zertifikat der Base64-codierten management|
+|Fingerabdruck|Zeichenfolge|Der Fingerabdruck des Verwaltungszertifikats|
+|certificate|String|Das Basis 64-codierte Verwaltungszertifikat|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

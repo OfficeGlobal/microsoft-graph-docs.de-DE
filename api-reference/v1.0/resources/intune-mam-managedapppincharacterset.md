@@ -1,26 +1,27 @@
 ---
-title: ManagedAppPinCharacterSet Enum-Typ
-description: Zeichensatz, der für die PIN eines Benutzers-app verwendet werden
-localization_priority: Normal
+title: managedAppPinCharacterSet-Enumerationstyp
+description: Zeichensatz, der für die APP-PIN eines Benutzers verwendet werden soll
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: d2d46e030224d21c8d0876a9f940d85e94a88591
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: cfc198a6f1db877ecee7b43eb4b07989c9967291
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978368"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250250"
 ---
-# <a name="managedapppincharacterset-enum-type"></a>ManagedAppPinCharacterSet Enum-Typ
+# <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Zeichensatz, der für die PIN eines Benutzers-app verwendet werden
+Zeichensatz, der für die APP-PIN eines Benutzers verwendet werden soll
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|numerische|0|Numerische Zeichen|
-|alphanumericAndSymbol|1|Alphanumerische und Sonderzeichen|
+|numerischen|0|Numerische Zeichen|
+|alphanumericAndSymbol|1|Alphanumerische und symbolische Zeichen|
 
 
 

@@ -1,25 +1,26 @@
 ---
-title: Gruppe löschen
-description: Löscht eine Gruppe.
+title: Gruppe löschen – Microsoft Graph-API
+description: Beschreibt die Delete-Methode der Group-Ressource (Entity) der Microsoft Graph-API (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 349900cffa4b0df1763e1ed8b8213ce81ec27351
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 836f2c647fd9894a7d39bba80e5f15f3f11ef81f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529964"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255864"
 ---
 # <a name="delete-group"></a>Gruppe löschen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Löscht eine Gruppe.
+Löscht eine Gruppe.  
 
-Wenn eine Gruppe gelöscht wird, wird das Element [Gelöschte Elemente](../resources/directory.md)hinzugefügt. Die Gruppe bleibt in gelöschte Elemente für bis zu 30 Tage. Eine Gruppe kann von gelöschten Objekten innerhalb der letzten 30 Tage vollständig wiederhergestellt werden. Nach 30 Tagen werden gelöschte Elemente dauerhaft gelöscht.
+Nach dem Löschen werden Office 365-Gruppen in einen temporären Container verschoben und können innerhalb von 30 Tagen wiederhergestellt werden.  Nach diesem Zeitpunkt werden Sie dauerhaft gelöscht.  Weitere Informationen finden Sie unter [deletedItems](../resources/directory.md).  Dies gilt nur für Office 365-Gruppen.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -29,24 +30,30 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-#### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -56,7 +63,8 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 DELETE https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",

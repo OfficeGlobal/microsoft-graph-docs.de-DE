@@ -1,32 +1,32 @@
 ---
-title: Ressourcentyp iosWebContentFilterSpecificWebsitesAccess
-description: Stellt eine iOS Web Content Filter Einstellungstyp, mit dem URL Textmarken in integrierten iOS-Browser installiert werden. Ein Beispielszenario ist im Kursraum, in dem Lehrer die Teilnehmer auf Websites durch Browser Lesezeichen in ihrer iOS-Geräte und keinen Zugriff auf andere Websites konfiguriert navigieren soll.
-localization_priority: Normal
+title: iosWebContentFilterSpecificWebsitesAccess-Ressourcentyp
+description: Stellt einen iOS Web Content Filter-Einstellungstyp dar, der URL-Lesezeichen in den integrierten iOS-Browser installiert. Ein Beispielszenario befindet sich in der Unterrichtsumgebung, in der Lehrer möchten, dass die Schüler Websites über auf Ihren iOS-Geräten konfigurierte Browser-Lesezeichen navigieren und keinen Zugriff auf andere Websites haben.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964ade2d2b46755fbba2903c6e9607340f60aedf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5ddd834ccd24d60e2696d49b64685d432f47196
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424763"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150309"
 ---
-# <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>Ressourcentyp iosWebContentFilterSpecificWebsitesAccess
+# <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>iosWebContentFilterSpecificWebsitesAccess-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt eine iOS Web Content Filter Einstellungstyp, mit dem URL Textmarken in integrierten iOS-Browser installiert werden. Ein Beispielszenario ist im Kursraum, in dem Lehrer die Teilnehmer auf Websites durch Browser Lesezeichen in ihrer iOS-Geräte und keinen Zugriff auf andere Websites konfiguriert navigieren soll.
+Stellt einen iOS Web Content Filter-Einstellungstyp dar, der URL-Lesezeichen in den integrierten iOS-Browser installiert. Ein Beispielszenario befindet sich in der Unterrichtsumgebung, in der Lehrer möchten, dass die Schüler Websites über auf Ihren iOS-Geräten konfigurierte Browser-Lesezeichen navigieren und keinen Zugriff auf andere Websites haben.
 
 
-Erbt vom [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
+Erbt von [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|specificWebsitesOnly|[IosBookmark](../resources/intune-deviceconfig-iosbookmark.md) -Auflistung|URL Textmarken, die in integrierten Browser und Benutzer installiert werden darf nur durch Lesezeichen Websites zugreifen. Diese Collection darf maximal 500 Elemente enthalten.|
-|websiteList|[IosBookmark](../resources/intune-deviceconfig-iosbookmark.md) -Auflistung|URL Textmarken, die in integrierten Browser und Benutzer installiert werden darf nur durch Lesezeichen Websites zugreifen. Diese Sammlung darf maximal 500 Elemente enthalten.|
+|specificWebsitesOnly|[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) -Sammlung|URL-Lesezeichen, die in integrierten Browser und Benutzer installiert werden, dürfen nur über Lesezeichen auf Websites zugreifen. Diese Collection darf maximal 500 Elemente enthalten.|
+|Website|[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) -Sammlung|URL-Lesezeichen, die in integrierten Browser und Benutzer installiert werden, dürfen nur über Lesezeichen auf Websites zugreifen. Diese Sammlung darf maximal 500 Elemente enthalten.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

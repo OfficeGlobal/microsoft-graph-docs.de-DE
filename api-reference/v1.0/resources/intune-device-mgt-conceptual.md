@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3d665b70f812a18f840ce43a029fe0729d454745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250068"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Geräteverwaltung in Microsoft Intune
 
@@ -26,28 +26,27 @@ ms.locfileid: "27980643"
 - [Benutzer von freigegebenem Apple-Gerät löschen – Aktionsergebnis](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Erkannte App](intune-devices-detectedapp.md)
 - [Ergebnis von Geräteaktion](intune-devices-deviceactionresult.md)
-- [Gerät Registrierung Fehlerursache](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [Registrierung Gerätetyp](intune-devices-deviceenrollmenttype.md)
+- [Grund des Geräteregistrierungsfehlers](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Exchange-Zugriffsstatus für Geräte – Zusammenfassung](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geräte-Geolocation](intune-devices-devicegeolocation.md)
 - [Integritätsnachweis für Geräte – Status](intune-devices-devicehealthattestationstate.md)
-- [Verwaltung von Exchange Zugriff Gerätestatus](intune-devices-devicemanagementexchangeaccessstate.md)
-- [Gerät Management Exchange Access Zustand Grund](intune-devices-devicemanagementexchangeaccessstatereason.md)
-- [Management Abonnement-Gerätestatus](intune-devices-devicemanagementsubscriptionstate.md)
+- [Exchange-Zugriffsstatus für Geräteverwaltung](intune-devices-devicemanagementexchangeaccessstate.md)
+- [Exchange-Zugriffsstatusgrund für Geräteverwaltung](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [Status des Abonnements der Geräteverwaltung](intune-devices-devicemanagementsubscriptionstate.md)
 - [Problembehandlung bei Geräteverwaltung](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Betriebssystem des Geräts – Zusammenfassung](intune-devices-deviceoperatingsystemsummary.md)
-- [Die Registrierung des Geräts](intune-devices-deviceregistrationstate.md)
+- [Status der Geräteregistrierung](intune-devices-deviceregistrationstate.md)
 - [Problembehandlung bei Registrierung](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Lokalisierte Benachrichtigung](intune-notification-localizednotificationmessage.md)
 - [Gerät suchen – Aktionsergebnis](intune-devices-locatedeviceactionresult.md)
 - [Verwaltetes Gerät](intune-devices-manageddevice.md)
 - [Verwaltete Geräte – Übersicht](intune-devices-manageddeviceoverview.md)
-- [Verwaltete Eigentümer Gerätetyp](intune-devices-manageddeviceownertype.md)
-- [Verwaltete Gerät Partner gemeldet Integritätsstatus](intune-devices-manageddevicepartnerreportedhealthstate.md)
-- [Management Agent-Typ](intune-devices-managementagenttype.md)
+- [Besitzertyp für verwaltetes Gerät](intune-devices-manageddeviceownertype.md)
+- [Vom Partner gemeldeter Integritätsstatus für verwaltetes Gerät](intune-devices-manageddevicepartnerreportedhealthstate.md)
+- [Verwaltungs-Agenttyp](intune-devices-managementagenttype.md)
 - [Benachrichtigungsvorlage](intune-notification-notificationmessagetemplate.md)
-- [Benachrichtigungsvorlage branding-Optionen](intune-notification-notificationtemplatebrandingoptions.md)
-- [Remoteunterstützung auf mittels Fingereingabe status](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [Brandingoptionen der Nachrichtenvorlage](intune-notification-notificationtemplatebrandingoptions.md)
+- [Onboardingstatus für Remoteunterstützung](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [Partner für Remoteunterstützung](intune-remoteassistance-remoteassistancepartner.md)
 - [Remotesperren – Aktionsergebnis](intune-devices-remotelockactionresult.md)
 - [Kennung zurücksetzen – Aktionsergebnis](intune-devices-resetpasscodeactionresult.md)

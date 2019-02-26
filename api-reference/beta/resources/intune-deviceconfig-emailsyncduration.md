@@ -1,34 +1,34 @@
 ---
-title: EmailSyncDuration Enum-Typ
-description: Mögliche Werte für die Dauer der e-Mail-Synchronisierung.
-localization_priority: Normal
+title: emailSyncDuration-Enumerationstyp
+description: Mögliche Werte für die e-Mail-Synchronisierungsdauer.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bf62aea1904c0fd25867aef308ca5a269e3ea20
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f2408150ea590a5d154b71521ca46df7c0fcff9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142266"
 ---
-# <a name="emailsyncduration-enum-type"></a>EmailSyncDuration Enum-Typ
+# <a name="emailsyncduration-enum-type"></a>emailSyncDuration-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Dauer der e-Mail-Synchronisierung.
+Mögliche Werte für die e-Mail-Synchronisierungsdauer.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|oneDay|1|Synchronisieren von e-Mail für einen Tag.|
-|threeDays|2|Synchronisieren Sie drei Tage von e-Mails.|
-|oneWeek|3|Synchronisieren Sie eine Woche vor e-Mail.|
-|twoWeeks|4|Synchronisieren von zwei Wochen von e-Mails.|
-|oneMonth|5|Synchronisieren eines Monats e-Mail.|
-|unbegrenzt|6|Synchronisieren Sie eine unbegrenzte Dauer von e-Mail.|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|oneDay|1|Synchronisieren eines Tages der e-Mail.|
+|threeDays|2|Synchronisieren Sie drei Tage e-Mail.|
+|oneWeek|3|Eine Woche e-Mails synchronisieren.|
+|twoweeks starten|4|Zwei Wochen e-Mails synchronisieren.|
+|Maßgebend Frist|5|Einen Monat e-Mails synchronisieren.|
+|Unlimited|6|Synchronisieren einer unbegrenzten Dauer von e-Mails.|
 
 
 

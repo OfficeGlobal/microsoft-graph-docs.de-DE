@@ -3,27 +3,29 @@ title: windowsInformationProtectionIPRangeCollection-Ressourcentyp
 description: Windows Information Protection – IP-Bereichssammlung
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e9d23f8a6d771b116b35058c249866c70c7460d8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a6a2f52613eae9d8e06751672c95230dfc3b00c4
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952657"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253897"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Windows Information Protection – IP-Bereichssammlung
+
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename|
-|ranges|[ipRange](../resources/intune-mam-iprange.md)-Sammlung|Sammlung der IP-Bereiche|
+|ranges|[ipRange](../resources/intune-mam-iprange.md)-Sammlung|Sammlung von Internet Protokoll-Adressbereichen|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

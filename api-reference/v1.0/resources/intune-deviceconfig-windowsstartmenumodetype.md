@@ -1,27 +1,28 @@
 ---
-title: WindowsStartMenuModeType Enum-Typ
+title: windowsStartMenuModeType-Enumerationstyp
 description: Typ der Anzeigemodi für das Startmenü.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d1339cfbd18f4df99c8f2f431d34ed68069ce0e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 43e077fe726a5d44558860140c0ac7098d59afa5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986103"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250502"
 ---
-# <a name="windowsstartmenumodetype-enum-type"></a>WindowsStartMenuModeType Enum-Typ
+# <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Typ der Anzeigemodi für das Startmenü.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Benutzer definiert. Standardwert.|
-|Vollbild|1|Gesamter Bildschirm|
-|nonFullScreen|2|Nicht-Vollbild.|
+|userDefined|0|Benutzerdefiniert. Standardwert.|
+|fullScreen|1|Gesamter Bildschirm|
+|nicht Vollbild|2|Nicht Vollbild.|
 
 
 

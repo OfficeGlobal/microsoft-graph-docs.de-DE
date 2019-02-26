@@ -1,31 +1,31 @@
 ---
-title: WindowsInformationProtectionEnforcementLevel Enum-Typ
-description: Mögliche Werte für WIP Erzwingung Schutzebenen
-localization_priority: Normal
+title: windowsInformationProtectionEnforcementLevel-Enumerationstyp
+description: Mögliche Werte für Aktivierungs Ebenen für den WIP-Schutz
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37ec9c781ea4a804260f7dff7b6586c042dcad48
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 184f5b6d296a37f9356c2cfeefe7c3ecdbdb6973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150148"
 ---
-# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>WindowsInformationProtectionEnforcementLevel Enum-Typ
+# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für WIP Erzwingung Schutzebenen
+Mögliche Werte für Aktivierungs Ebenen für den WIP-Schutz
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|noProtection|0|Kein Schutz Erzwingung|
-|encryptAndAuditOnly|1|Verschlüsseln und überwachen nur|
-|encryptAuditAndPrompt|2|Verschlüsseln, überwachen und auffordern|
-|encryptAuditAndBlock|3|Verschlüsseln, überwachen und blockieren|
+|noProtection|0|Keine Schutz Erzwingung|
+|encryptAndAuditOnly|1|Nur verSchlüsseln und überWachen|
+|encryptAuditAndPrompt|2|VerSchlüsseln, überWachen und anfordern|
+|encryptAuditAndBlock|3|VerSchlüsseln, überWachen und blockieren|
 
 
 

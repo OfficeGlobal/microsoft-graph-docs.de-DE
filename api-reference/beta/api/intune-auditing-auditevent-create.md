@@ -1,21 +1,21 @@
 ---
 title: Erstellen von „auditEvent“
 description: Diese Methode erstellt ein neues Objekt des Typs auditEvent.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f7a8bac0030b65d61e1da7fbdadfe6920b44788
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b45ba33b93ba56c3f07e1946ef8a7ae2e0df11ef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422152"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149875"
 ---
 # <a name="create-auditevent"></a>Erstellen von „auditEvent“
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Diese Methode erstellt ein neues Objekt des Typs [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -38,9 +38,9 @@ POST /deviceManagement/auditEvents
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
@@ -51,14 +51,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|displayName|String|Anzeigename des Ereignisses|
-|componentName|String|Name der Komponente|
+|displayName|Zeichenfolge|Anzeigename des Ereignisses|
+|componentName|Zeichenfolge|Name der Komponente|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|String|Anzeigename der Aktivität|
+|activity|Zeichenfolge|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|String|Typ der durchgeführten Aktivität|
-|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
-|activityResult|String|Ergebnis der Aktivität|
+|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
+|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
+|activityResult|Zeichenfolge|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
 |resources|Collection von Objekten des Typs [auditResource](../resources/intune-auditing-auditresource.md)|Ressourcen, die geändert werden|
 |category|String|Überwachungskategorie|

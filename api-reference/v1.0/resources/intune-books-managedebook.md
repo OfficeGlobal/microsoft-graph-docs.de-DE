@@ -3,19 +3,20 @@ title: managedEBook-Ressourcentyp
 description: Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a2da2254b5d86a16d3a0e60fae0c0ea4215d54a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917860"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253463"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBooks enthält
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -26,10 +27,10 @@ Eine abstrakte Klasse, die die grundlegenden Eigenschaften des verwalteten eBook
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|string|Schlüssel der Entität|
 |displayName|Zeichenfolge|Name des E-Books|
-|description|Zeichenfolge|Beschreibung|
-|publisher|Zeichenfolge|Herausgeber|
+|description|String|Beschreibung|
+|publisher|String|Herausgeber|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei.|

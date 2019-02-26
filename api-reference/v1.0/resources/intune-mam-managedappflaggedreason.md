@@ -1,26 +1,27 @@
 ---
-title: ManagedAppFlaggedReason Enum-Typ
-description: Der Grund für den ein Benutzer markiert wurde
+title: managedAppFlaggedReason-Enumerationstyp
+description: Der Grund für die Kennzeichnung eines Benutzers
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b29851772aac211ee6a2f09c40edf124296322a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b6beac5a9e96c2a51905f0306cc4d288b76c530
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945692"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254191"
 ---
-# <a name="managedappflaggedreason-enum-type"></a>ManagedAppFlaggedReason Enum-Typ
+# <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Der Grund für den ein Benutzer markiert wurde
+Der Grund für die Kennzeichnung eines Benutzers
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Kein Problem.|
-|rootedDevice|1|Die app-Registrierung wird auf einem Gerät Stamm/entsperrt ausgeführt.|
+|Keine|0|Kein Problem.|
+|rootedDevice|1|Die APP-Registrierung läuft auf einem Rooted/Unlocked-Gerät.|
 
 
 

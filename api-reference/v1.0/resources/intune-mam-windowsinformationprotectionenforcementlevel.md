@@ -1,28 +1,29 @@
 ---
-title: WindowsInformationProtectionEnforcementLevel Enum-Typ
-description: Mögliche Werte für WIP Erzwingung Schutzebenen
+title: windowsInformationProtectionEnforcementLevel-Enumerationstyp
+description: Mögliche Werte für Aktivierungs Ebenen für den WIP-Schutz
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4661c80655defe85f27ac8259a961955552f7021
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b1901059ef45141b0dc40d91dcbf4d9237cd6fc5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964172"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254814"
 ---
-# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>WindowsInformationProtectionEnforcementLevel Enum-Typ
+# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für WIP Erzwingung Schutzebenen
+Mögliche Werte für Aktivierungs Ebenen für den WIP-Schutz
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|noProtection|0|Kein Schutz Erzwingung|
-|encryptAndAuditOnly|1|Verschlüsseln und überwachen nur|
-|encryptAuditAndPrompt|2|Verschlüsseln, überwachen und auffordern|
-|encryptAuditAndBlock|3|Verschlüsseln, überwachen und blockieren|
+|noProtection|0|Keine Schutz Erzwingung|
+|encryptAndAuditOnly|1|Nur verSchlüsseln und überWachen|
+|encryptAuditAndPrompt|2|VerSchlüsseln, überWachen und anfordern|
+|encryptAuditAndBlock|3|VerSchlüsseln, überWachen und blockieren|
 
 
 

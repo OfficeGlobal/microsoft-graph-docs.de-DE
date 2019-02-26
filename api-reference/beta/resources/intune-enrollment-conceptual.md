@@ -1,15 +1,15 @@
 ---
-title: Unternehmenseigene Geräte mit Intune registrieren
-description: " Szenario (BYOD)."
+title: Registrieren von Unternehmensgeräten mithilfe von InTune – Microsoft Graph-API
+description: Listet die Microsoft Graph-API für InTune-Endpunkte (REST) auf, die Geräte für eine mandantenorganisation registrieren.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9671eb7f66be78075209906a4f6f923256afef36
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928024"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149833"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Unternehmenseigene Geräte mit Intune registrieren
 
@@ -21,38 +21,38 @@ Sie können organisations- oder unternehmenseigene Geräte für die Verwaltung i
 
 Zur Verwaltung der unternehmenseigenen Geräte in Intune stehen die folgenden Graph-Ressourcen zur Verfügung:
 
-- [Active Directory Windows Autopilot Bereitstellung Benutzerprofil](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
-- [Azure AD Windows Autopilot Bereitstellung Benutzerprofil](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
-- [Datenausführungsverhinderung Registrierung Profil](intune-enrollment-depenrollmentbaseprofile.md)
-- [Datenausführungsverhinderung Registrierung Profil](intune-enrollment-depenrollmentprofile.md)
-- [Datenausführungsverhinderung iOS Registrierung Profil](intune-enrollment-depiosenrollmentprofile.md)
-- [Datenausführungsverhinderung Mac OS Registrierung Profil](intune-enrollment-depmacosenrollmentprofile.md)
-- [DEP auf mittels Fingereingabe-Einstellung](intune-enrollment-deponboardingsetting.md)
-- [Datenausführungsverhinderung token-Typ](intune-enrollment-deptokentype.md)
-- [Discovery-Quelle](intune-enrollment-discoverysource.md)
-- [Registrierung Profil](intune-enrollment-enrollmentprofile.md)
-- [Status der Registrierung](intune-enrollment-enrollmentstate.md)
-- [Importierte Apple Gerät Identität](intune-enrollment-importedappledeviceidentity.md)
-- [Apple Gerät Identität Ergebnis importiert](intune-enrollment-importedappledeviceidentityresult.md)
-- [Importierte Gerät Identität](intune-enrollment-importeddeviceidentity.md)
-- [Importiert Gerät Identität Ergebnis](intune-enrollment-importeddeviceidentityresult.md)
-- [Gerätetyp Identität importiert](intune-enrollment-importeddeviceidentitytype.md)
-- [Importierte Windows Autopilot Gerät Identität](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
-- [Importierte Windows Autopilot Identität Import Gerätestatus](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
-- [Importierte Windows Identity Autopilot Gerätestatus](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [Importierte Windows Autopilot Gerät Identität hochladen](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
-- [Importierte Windows Autopilot Identität Upload Gerätestatus](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
-- [iTunes paarungs-Modus](intune-enrollment-itunespairingmode.md)
-- [Management-Zertifikat mit dem Fingerabdruck](intune-enrollment-managementcertificatewiththumbprint.md)
-- [Erleben Sie die Einstellungen im Lieferzustand](intune-enrollment-outofboxexperiencesettings.md)
+- [Profil für Active Directory Windows Autopilot Deployment](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
+- [Profil für Azure AD Windows Autopilot Deployment](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
+- [DEP-Registrierung – Basisprofil](intune-enrollment-depenrollmentbaseprofile.md)
+- [DEP-Registrierungsprofil](intune-enrollment-depenrollmentprofile.md)
+- [DEP iOS-Registrierungsprofil](intune-enrollment-depiosenrollmentprofile.md)
+- [DEP macOS-Registrierungsprofil](intune-enrollment-depmacosenrollmentprofile.md)
+- [DEP-Onboarding-Einstellung](intune-enrollment-deponboardingsetting.md)
+- [DEP-Tokentyp](intune-enrollment-deptokentype.md)
+- [Ermittlungsquelle](intune-enrollment-discoverysource.md)
+- [Registrierungsprofil](intune-enrollment-enrollmentprofile.md)
+- [Registrierungsstatus](intune-enrollment-enrollmentstate.md)
+- [Importierte Apple-Geräteidentität](intune-enrollment-importedappledeviceidentity.md)
+- [Ergebnis der importierten Apple-Geräteidentität](intune-enrollment-importedappledeviceidentityresult.md)
+- [Importierte Geräteidentität](intune-enrollment-importeddeviceidentity.md)
+- [Ergebnis der importierten Geräteidentität](intune-enrollment-importeddeviceidentityresult.md)
+- [Typ der importierten Geräteidentität](intune-enrollment-importeddeviceidentitytype.md)
+- [Importierte Windows Autopilot-Geräteidentität](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [Importstatus der importierten Windows Autopilot-Geräteidentität](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
+- [Status der importierten Windows Autopilot-Geräteidentität](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
+- [Upload der importierten Windows Autopilot-Geräteidentität](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
+- [Uploadstatus der importierten Windows Autopilot-Geräteidentität](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+- [iTunes-Kopplungsmodus](intune-enrollment-itunespairingmode.md)
+- [Verwaltungszertifikat mit Fingerabdruck](intune-enrollment-managementcertificatewiththumbprint.md)
+- [Einstellungen für Windows-Willkommensseite](intune-enrollment-outofboxexperiencesettings.md)
 - [Plattform](intune-enrollment-platform.md)
-- [Windows Autopilot Bereitstellung Benutzerprofil](intune-enrollment-windowsautopilotdeploymentprofile.md)
-- [Windows Autopilot Bereitstellung Profil Zuordnung](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
-- [Windows Autopilot Gerät Identität](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows Autopilot Profil Zuordnung detaillierter status](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
-- [Zuordnung des Status von Windows Autopilot Profil](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
+- [Profil für Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofile.md)
+- [Profilzuweisung für Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
+- [Windows Autopilot-Geräteidentität](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Profil für Windows Autopilot – Detaillierter Zuweisungsstatus](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
+- [Profil für Windows Autopilot – Zuweisungsstatus](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot-Einstellungen](intune-enrollment-windowsautopilotsettings.md)
-- [Windows Autopilot Synchronisierungsstatus](intune-enrollment-windowsautopilotsyncstatus.md)
-- [Windows-Gerät Verwendungstyp](intune-enrollment-windowsdeviceusagetype.md)
-- [Windows-Registrierung Status Bildschirm-Einstellungen](intune-enrollment-windowsenrollmentstatusscreensettings.md)
+- [Windows Autopilot-Synchronisierungsstatus](intune-enrollment-windowsautopilotsyncstatus.md)
+- [Windows-Gerätenutzungstyp](intune-enrollment-windowsdeviceusagetype.md)
+- [Bildschirmeinstellungen für Windows-Registrierungsstatus](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows-Benutzertyp](intune-enrollment-windowsusertype.md)

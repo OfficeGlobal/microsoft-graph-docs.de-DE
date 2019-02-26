@@ -3,19 +3,20 @@ title: Ressourcentyp „mobileApp“
 description: Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps enthält
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 69992ad07c5a0d97168db44cca8474c021d9a230
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947477"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254065"
 ---
 # <a name="mobileapp-resource-type"></a>Ressourcentyp „mobileApp“
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps enthält
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -26,15 +27,15 @@ Eine abstrakte Klasse, die grundlegende Eigenschaften von mobilen Intune-Apps en
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|string|Schlüssel der Entität|
 |displayName|Zeichenfolge|Titel der App (vom Administrator bereitgestellt oder importiert)|
-|description|Zeichenfolge|Beschreibung der App|
+|description|String|Beschreibung der App|
 |publisher|Zeichenfolge|Herausgeber der App|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App|
 |isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen|
 |owner|Zeichenfolge|Besitzer der App|
 |developer|Zeichenfolge|Entwickler der App|

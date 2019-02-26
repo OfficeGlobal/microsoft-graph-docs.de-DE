@@ -1,28 +1,29 @@
 ---
-title: ManagedAppClipboardSharingLevel Enum-Typ
-description: Stellt die Ebene, zu der das Gerät Zwischenablage von apps gemeinsam verwendet wird
-localization_priority: Normal
+title: managedAppClipboardSharingLevel-Enumerationstyp
+description: Stellt die Ebene dar, in der die Zwischenablage des Geräts zwischen apps freigegeben werden kann.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 349f0ee08b8e3bff4e627c58318e2c21fa00847c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: dcbee5e0b7aa6343e31d57d14557bc0f0586fb80
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946784"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250026"
 ---
-# <a name="managedappclipboardsharinglevel-enum-type"></a>ManagedAppClipboardSharingLevel Enum-Typ
+# <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Stellt die Ebene, zu der das Gerät Zwischenablage von apps gemeinsam verwendet wird
+Stellt die Ebene dar, in der die Zwischenablage des Geräts zwischen apps freigegeben werden kann.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allApps|0|Freigabe zwischen alle apps, verwaltete oder nicht zulässig|
-|managedAppsWithPasteIn|1|Freigabe ist zulässig zwischen alle verwalteten apps mit Einfügen in aktiviert|
-|managedApps|2|Freigabe ist zwischen alle verwalteten apps zulässig.|
-|gesperrt|3|Freigabe von zwischen apps ist deaktiviert.|
+|allApps|0|Freigabe ist zwischen allen apps zulässig, verwaltet oder nicht|
+|managedAppsWithPasteIn|1|Freigabe ist zwischen allen verwalteten apps zulässig, wobei Paste aktiviert ist.|
+|managedApps|2|Freigabe ist zwischen allen verwalteten apps zulässig|
+|gesperrt|3|Die Freigabe zwischen Apps ist deaktiviert|
 
 
 

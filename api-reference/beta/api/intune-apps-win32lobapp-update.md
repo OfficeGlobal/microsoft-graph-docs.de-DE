@@ -1,23 +1,23 @@
 ---
 title: Win32LobApp aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines win32LobApp-Objekts.
-localization_priority: Normal
+description: Aktualisieren der Eigenschaften eines win32LobApp-Objekts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 962059965abb2691ba1777518ad8aabc64adafe7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d4b0a8b44b42cdcc53118d6be7463050ea910d63
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150120"
 ---
 # <a name="update-win32lobapp"></a>Win32LobApp aktualisieren
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Aktualisieren Sie die Eigenschaften eines [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts.
+Aktualisieren der Eigenschaften eines [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
@@ -40,56 +40,56 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
-|Autorisierung|Bearer&lt;token&gt; erforderlich|
+|Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung für das Objekt [win32LobApp](../resources/intune-apps-win32lobapp.md) eine JSON-Darstellung.
+Geben Sie im Anforderungstext eine JSON-Darstellung für das [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekt an.
 
-In der folgenden Tabelle werden die Eigenschaften gezeigt, die erforderlich sind, wenn Sie die [win32LobApp](../resources/intune-apps-win32lobapp.md)erstellen.
+In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen der [win32LobApp](../resources/intune-apps-win32lobapp.md)erforderlich sind.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|string|Schlüssel der Entität Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Zeichenfolge|Der vom Administrator bereitgestellte oder importierte Titel der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Zeichenfolge|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Beschreibung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|Zeichenfolge|Der Herausgeber der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Das große Symbol, das in den App-Details angezeigt und für den Upload des Symbols verwendet werden soll. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolean|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolescher Wert|Wert, der angibt, ob die App vom Administrator als empfohlen markiert wurde. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|Zeichenfolge|Der Besitzer der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|Zeichenfolge|Der Entwickler der App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|Zeichenfolge|Hinweise zur App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Der Upload-Zustand. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Geerbt von [MobileApp](../resources/intune-apps-mobileapp.md). Mögliche Werte sind: `notPublished`, `processing` und `published`.|
-|isAssigned|Boolean|Der Wert, der angibt, ob die app mindestens eine Gruppe zugeordnet ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereichs-Tag-Ids für diese mobile app. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Der Uploadstatus. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus der App. Eine App kann erst zugewiesen werden, wenn sie veröffentlicht wurde. Von [MobileApp](../resources/intune-apps-mobileapp.md)geerbt. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
+|isAssigned|Boolean|Der Wert, der angibt, ob die APP mindestens einer Gruppe zugewiesen ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Rolescopetagids zur|String collection|Liste der bereichstag-IDs für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|Zeichenfolge|Die interne zugesicherte Inhaltsversion. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|Zeichenfolge|Name der Hauptdatei der Branchenanwendung. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Gesamtgröße einschließlich aller hochgeladenen Dateien. Geerbt von [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|Zeichenfolge|So installieren Sie diese app die Befehlszeile|
-|uninstallCommandLine|Zeichenfolge|So deinstallieren Sie diese app die Befehlszeile|
+|InstallCommandLine:|Zeichenfolge|Die Befehlszeile zum Installieren dieser APP|
+|uninstallCommandLine|Zeichenfolge|Die Befehlszeile zum Deinstallieren dieser APP|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Windows-Architekturen, für die diese App ausgeführt werden kann. Mögliche Werte sind: `none`, `x86`, `x64`, `arm`, `neutral` und `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Der Wert für die Mindestversion des verwendbaren Betriebssystems.|
-|minimumFreeDiskSpaceInMB|Int32|Der Wert für den minimalen freien Speicherplatz der erforderlich ist, um diese app zu installieren.|
-|minimumMemoryInMB|Int32|Der Wert für das minimale des Arbeitsspeichers erforderlich für diese app installieren.|
-|minimumNumberOfProcessors|Int32|Der Wert für die minimale Anzahl der Prozessoren erforderlich ist, um diese app zu installieren.|
-|minimumCpuSpeedInMHz|Int32|Der Wert für die minimale CPU-Geschwindigkeit der erforderlich ist, um diese app zu installieren.|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) -Auflistung|Die Erkennung von Regeln zum Erkennen von Win32 Line of Business (LoB) app.|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Die Installation für diese app.|
-|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) -Auflistung|Die Rückgabecodes für buchen Verhalten bei der Installation.|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Die MSI-Details, wenn diese Win32-app eine MSI-app ist.|
-|setupFilePath|Zeichenfolge|Der relative Pfad der Datei in das verschlüsselte Win32LobApp-Paket.|
+|minimumFreeDiskSpaceInMB|Int32|Der Wert für den minimalen freien Speicherplatz, der erforderlich ist, um diese APP zu installieren.|
+|minimumMemoryInMB|Int32|Der Wert für den minimalen physischen Arbeitsspeicher, der für die Installation dieser APP erforderlich ist.|
+|minimumNumberOfProcessors|Int32|Der Wert für die Mindestanzahl von Prozessoren, die zum Installieren dieser APP erforderlich ist.|
+|minimumCpuSpeedInMHz|Int32|Der Wert für die minimale CPU-Geschwindigkeit, die erforderlich ist, um diese APP zu installieren.|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) -Sammlung|Die Erkennungsregeln zum Erkennen der Win32-Branchen-app.|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Die Installationsumgebung für diese APP.|
+|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) -Sammlung|Die Rückgabecodes für das Verhalten nach der Installation.|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Die MSI-Details, wenn diese Win32-App eine MSI-APP ist.|
+|setupFilePath|Zeichenfolge|Der relative Pfad der Setupdatei im verschlüsselten Win32LobApp-Paket.|
 
 
 
 ## <a name="response"></a>Antwort
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine aktualisierte [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein aktualisiertes [win32LobApp](../resources/intune-apps-win32lobapp.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
@@ -98,7 +98,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 2285
+Content-length: 2364
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -170,7 +170,9 @@ Content-length: 2285
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }
@@ -181,7 +183,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2457
+Content-Length: 2536
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -256,7 +258,9 @@ Content-Length: 2457
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }

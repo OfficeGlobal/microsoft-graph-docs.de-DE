@@ -1,22 +1,21 @@
 ---
 title: report-Ressourcentyp
-description: Ein Bericht, der gemäß den Workflow gewähren, entweder Gerät Konfiguration Profil Auftragsverlaufs oder Registrierung Fehler variiert.
+description: Ein Bericht, der vom Workflow abhängig ist, entweder der Verlauf des Geräte Konfigurationsprofils oder Registrierungsfehler.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 5945343684aa20dc8af403eb094bb29648ff4f8f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ad95fa9ef21a6fbf80ddd8265b5bac2e72c1825b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970234"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253561"
 ---
 # <a name="report-resource-type"></a>report-Ressourcentyp
 
 > **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
 
-
-Ein Bericht, der gemäß den Workflow gewähren, entweder Gerät Konfiguration Profil Auftragsverlaufs oder Registrierung Fehler variiert.
+Ein Bericht, der vom Workflow abhängig ist, entweder der Verlauf des Geräte Konfigurationsprofils oder Registrierungsfehler.
 
 ## <a name="properties"></a>Eigenschaften
 

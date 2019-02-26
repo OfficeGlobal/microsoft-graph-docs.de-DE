@@ -1,26 +1,27 @@
 ---
-title: EdgeSearchEngineType Enum-Typ
-description: Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
+title: edgeSearchEngineType-Enumerationstyp
+description: Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253918"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>EdgeSearchEngineType Enum-Typ
+# <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Ermöglicht es IT-Admind eine vordefinierten Standard-Suchmaschine für MDM gesteuerte Geräte festlegen
+Ermöglicht es, eine vordefinierte Standardsuchmaschine für MDM-gesteuerte Geräte festzulegen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|default|0|Standardeinstellung des Rands verwendet zum Zuweisen von Standard-Suchmaschine gemäß den Anweisungen in dem Benutzer Markt|
-|Bing|1|Versetzt Bing als Standard-Suchmaschine|
+|default|0|Verwendet die werkseitigen Einstellungen von Edge, um die Standardsuchmaschine gemäß dem Benutzer Markt zuzuweisen.|
+|Bing|1|Legt Bing als Standardsuchmaschine fest|
 
 
 
