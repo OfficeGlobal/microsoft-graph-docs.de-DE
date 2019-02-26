@@ -3,29 +3,30 @@ title: managedEBookAssignment löschen
 description: Löscht ein managedEBookAssignment-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bc8debd53c3c2bcdb8200c7bd2de39a701961400
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7dfaad67f43cec6bc751840dbce25b2cf86dcedf
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926750"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257932"
 ---
-# <a name="delete-managedebookassignment"></a><span data-ttu-id="41a50-103">managedEBookAssignment löschen</span><span class="sxs-lookup"><span data-stu-id="41a50-103">Delete managedEBookAssignment</span></span>
+# <a name="delete-managedebookassignment"></a><span data-ttu-id="55a63-103">managedEBookAssignment löschen</span><span class="sxs-lookup"><span data-stu-id="55a63-103">Delete managedEBookAssignment</span></span>
 
-> <span data-ttu-id="41a50-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="41a50-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="55a63-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="55a63-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="41a50-105">Löscht ein [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="41a50-105">Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="41a50-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="41a50-106">Prerequisites</span></span>
-<span data-ttu-id="41a50-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="41a50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="55a63-105">Löscht ein [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="55a63-105">Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span>
 
-|<span data-ttu-id="41a50-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="41a50-109">Permission type</span></span>|<span data-ttu-id="41a50-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="41a50-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="55a63-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="55a63-106">Prerequisites</span></span>
+<span data-ttu-id="55a63-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="55a63-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="55a63-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="55a63-109">Permission type</span></span>|<span data-ttu-id="55a63-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="55a63-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="41a50-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="41a50-111">Delegated (work or school account)</span></span>|<span data-ttu-id="41a50-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41a50-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="41a50-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="41a50-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="41a50-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="41a50-114">Not supported.</span></span>|
-|<span data-ttu-id="41a50-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="41a50-115">Application</span></span>|<span data-ttu-id="41a50-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="41a50-116">Not supported.</span></span>|
+|<span data-ttu-id="55a63-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="55a63-111">Delegated (work or school account)</span></span>|<span data-ttu-id="55a63-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="55a63-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="55a63-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="55a63-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="55a63-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="55a63-114">Not supported.</span></span>|
+|<span data-ttu-id="55a63-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="55a63-115">Application</span></span>|<span data-ttu-id="55a63-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="55a63-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="41a50-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="41a50-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55a63-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="55a63-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,28 @@ ms.locfileid: "27926750"
 DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="41a50-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="41a50-118">Request headers</span></span>
-|<span data-ttu-id="41a50-119">Header</span><span class="sxs-lookup"><span data-stu-id="41a50-119">Header</span></span>|<span data-ttu-id="41a50-120">Wert</span><span class="sxs-lookup"><span data-stu-id="41a50-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="55a63-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="55a63-118">Request headers</span></span>
+|<span data-ttu-id="55a63-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="55a63-119">Header</span></span>|<span data-ttu-id="55a63-120">Wert</span><span class="sxs-lookup"><span data-stu-id="55a63-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="41a50-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="41a50-121">Authorization</span></span>|<span data-ttu-id="41a50-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="41a50-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="41a50-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="41a50-123">Accept</span></span>|<span data-ttu-id="41a50-124">application/json</span><span class="sxs-lookup"><span data-stu-id="41a50-124">application/json</span></span>|
+|<span data-ttu-id="55a63-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="55a63-121">Authorization</span></span>|<span data-ttu-id="55a63-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="55a63-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="55a63-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="55a63-123">Accept</span></span>|<span data-ttu-id="55a63-124">application/json</span><span class="sxs-lookup"><span data-stu-id="55a63-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="41a50-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="41a50-125">Request body</span></span>
-<span data-ttu-id="41a50-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="41a50-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="55a63-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="55a63-125">Request body</span></span>
+<span data-ttu-id="55a63-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="55a63-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="41a50-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="41a50-127">Response</span></span>
-<span data-ttu-id="41a50-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="41a50-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="55a63-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="55a63-127">Response</span></span>
+<span data-ttu-id="55a63-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="55a63-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41a50-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="41a50-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="41a50-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="41a50-130">Request</span></span>
-<span data-ttu-id="41a50-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="41a50-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="55a63-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="55a63-129">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="55a63-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="55a63-130">Request</span></span>
+<span data-ttu-id="55a63-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="55a63-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="41a50-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="41a50-132">Response</span></span>
-<span data-ttu-id="41a50-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="41a50-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="55a63-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="55a63-132">Response</span></span>
+<span data-ttu-id="55a63-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="55a63-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
