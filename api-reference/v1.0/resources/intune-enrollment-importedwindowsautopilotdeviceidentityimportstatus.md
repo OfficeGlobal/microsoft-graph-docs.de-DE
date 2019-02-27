@@ -1,28 +1,29 @@
 ---
-title: ImportedWindowsAutopilotDeviceIdentityImportStatus Enum-Typ
+title: importedWindowsAutopilotDeviceIdentityImportStatus-Enumerationstyp
 description: Noch nicht dokumentiert
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 30e63d4291a5f9f2d04c84b139dbb10d5e91e436
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0dae6cb2d8962c10091ecf78a076fe3a371f821b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947531"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258184"
 ---
-# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>ImportedWindowsAutopilotDeviceIdentityImportStatus Enum-Typ
+# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Noch nicht dokumentiert
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannte Status.|
-|Ausstehende|1|Ausstehend.|
-|teilweise|2|Teilweise Status.|
-|complete|3|Abgeschlossen Sie Status "".|
+|unknown|0|UnBekannter Status.|
+|ausstehenden|1|Status ausStehend.|
+|Teil|2|Teilstatus.|
+|complete|3|Vollständiger Status.|
 |error|4|Fehlerstatus.|
 
 

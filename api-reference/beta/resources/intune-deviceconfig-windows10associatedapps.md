@@ -1,28 +1,28 @@
 ---
-title: Ressourcentyp windows10AssociatedApps
-description: Definition der Windows-10-Anwendung verknüpft ist.
-localization_priority: Normal
+title: windows10AssociatedApps-Ressourcentyp
+description: Windows 10-zugeordnete Anwendungsdefinition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dd5b664bde2970caa4b09c027592684b9ecd5e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 95f0114bbd39e85c137da2a71b7640ba8051b6dc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425918"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146683"
 ---
-# <a name="windows10associatedapps-resource-type"></a>Ressourcentyp windows10AssociatedApps
+# <a name="windows10associatedapps-resource-type"></a>windows10AssociatedApps-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Definition der Windows-10-Anwendung verknüpft ist.
+Windows 10-zugeordnete Anwendungsdefinition.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|der appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Anwendungstyp. Mögliche Werte sind: `desktop` und `universal`.|
+|appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Anwendungstyp. Mögliche Werte sind: `desktop` und `universal`.|
 |Bezeichner|Zeichenfolge|Bezeichner.|
 
 ## <a name="relationships"></a>Beziehungen

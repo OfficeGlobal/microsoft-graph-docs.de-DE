@@ -1,20 +1,24 @@
 ---
-title: Gruppe löschen
-description: Mit dieser API können Sie Gruppen löschen.
+title: Gruppe löschen – Microsoft Graph-API
+description: Beschreibt die Delete-Methode der Group-Ressource (Entity) der Microsoft Graph-API (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65fd34fe01a2543389356e86334e986332210b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968610"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251195"
 ---
 # <a name="delete-group"></a>Gruppe löschen
-Mit dieser API können Sie Gruppen löschen.
+
+Mit dieser API können Sie Gruppen löschen.  
+
+Nach dem Löschen werden Office 365-Gruppen in einen temporären Container verschoben und können innerhalb von 30 Tagen wiederhergestellt werden.  Nach diesem Zeitpunkt werden Sie dauerhaft gelöscht.  Weitere Informationen finden Sie unter [deletedItems](../resources/directory.md).  Dies gilt nur für Office 365-Gruppen.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -24,24 +28,30 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
+
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-#### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -51,7 +61,8 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-#### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",

@@ -1,28 +1,29 @@
 ---
-title: WindowsStartMenuAppListVisibilityType Enum-Typ
-description: Typ der Start Menü app Liste Sichtbarkeit.
+title: windowsStartMenuAppListVisibilityType-Enumerationstyp
+description: Typ der Start Menü-App-Listen Sichtbarkeit.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaec41f28e14b4f14019bf62ef15db82baa5dbd5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5df3350a0d1cda4d4b6d160025675a9485b1b882
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940190"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252091"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>WindowsStartMenuAppListVisibilityType Enum-Typ
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Typ der Start Menü app Liste Sichtbarkeit.
+Typ der Start Menü-App-Listen Sichtbarkeit.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Benutzer definiert. Standardwert.|
-|Reduzieren|1|Reduzieren Sie die app-Liste im Menü Start.|
-|remove|2|Entfernt die app-Liste vollständig über das Startmenü.|
-|disableSettingsApp|4|Deaktiviert die entsprechenden umschalten (reduzieren oder entfernen) in der app Settings.|
+|userDefined|0|Benutzerdefiniert. Standardwert.|
+|reduzieren|1|Reduzieren Sie die APP-Liste im Startmenü.|
+|remove|2|Entfernt die APP-Liste vollständig aus dem Startmenü.|
+|disableSettingsApp|4|Deaktiviert die entsprechende Umschaltfläche (reduzieren oder entfernen) in der App "Einstellungen".|
 
 
 

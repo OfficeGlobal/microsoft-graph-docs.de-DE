@@ -1,31 +1,32 @@
 ---
-title: DefenderThreatAction Enum-Typ
-description: Defender Standardaktion durchführen erkannt Schadsoftware.
-localization_priority: Normal
+title: defenderThreatAction-Enumerationstyp
+description: Die Standardaktion des Verteidigers für erkannte Schadsoftware.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 51aa26483ac6b79d48567f7e5950733def31f01e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 8d3d48415e55ad246f75ca9b32bd169ee102fc67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976646"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252315"
 ---
-# <a name="defenderthreataction-enum-type"></a>DefenderThreatAction Enum-Typ
+# <a name="defenderthreataction-enum-type"></a>defenderThreatAction-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Defender Standardaktion durchführen erkannt Schadsoftware.
+Die Standardaktion des Verteidigers für erkannte Schadsoftware.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Wenden Sie Aktion basierend auf der Definition Update an.|
-|clean|1|Bereinigen der erkannten Bedrohung.|
-|Quarantäne|2|Isolieren Sie erkannte Bedrohung.|
-|remove|3|Erkannte Bedrohung zu entfernen.|
-|zulassen|4|Zulassen der erkannten Bedrohung.|
-|vom Typ userDefined|5|Ermöglicht es dem Benutzer die erkannten Bedrohung auszuführende Aktion zu bestimmen.|
-|Blockieren|6|Blockieren der erkannten Bedrohung.|
+|deviceDefault|0|Anwenden einer Aktion basierend auf der Updatedefinition.|
+|clean|1|BeReinigen Sie die erkannte Bedrohung.|
+|Quarantäne|2|Isolieren Sie die erkannte Bedrohung.|
+|remove|3|Entfernen Sie die erkannte Bedrohung.|
+|zulassen|4|Die erkannte Bedrohung zulassen.|
+|userDefined|5|Der Benutzer kann die Aktion bestimmen, die mit der erkannten Bedrohung ausgeführt werden soll.|
+|Block|6|Die erkannte Bedrohung blockieren.|
 
 
 
