@@ -1,28 +1,29 @@
 ---
-title: WindowsStartMenuAppListVisibilityType Enum-Typ
-description: Typ der Start Menü app Liste Sichtbarkeit.
+title: windowsStartMenuAppListVisibilityType-Enumerationstyp
+description: Typ der Start Menü-App-Listen Sichtbarkeit.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaec41f28e14b4f14019bf62ef15db82baa5dbd5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5df3350a0d1cda4d4b6d160025675a9485b1b882
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940190"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252091"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a><span data-ttu-id="db97c-103">WindowsStartMenuAppListVisibilityType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="db97c-103">windowsStartMenuAppListVisibilityType enum type</span></span>
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a><span data-ttu-id="4787b-103">windowsStartMenuAppListVisibilityType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="4787b-103">windowsStartMenuAppListVisibilityType enum type</span></span>
 
-> <span data-ttu-id="db97c-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="db97c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="4787b-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="4787b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="db97c-105">Typ der Start Menü app Liste Sichtbarkeit.</span><span class="sxs-lookup"><span data-stu-id="db97c-105">Type of start menu app list visibility.</span></span>
-## <a name="members"></a><span data-ttu-id="db97c-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="db97c-106">Members</span></span>
-|<span data-ttu-id="db97c-107">Element</span><span class="sxs-lookup"><span data-stu-id="db97c-107">Member</span></span>|<span data-ttu-id="db97c-108">Wert</span><span class="sxs-lookup"><span data-stu-id="db97c-108">Value</span></span>|<span data-ttu-id="db97c-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="db97c-109">Description</span></span>|
+<span data-ttu-id="4787b-105">Typ der Start Menü-App-Listen Sichtbarkeit.</span><span class="sxs-lookup"><span data-stu-id="4787b-105">Type of start menu app list visibility.</span></span>
+
+## <a name="members"></a><span data-ttu-id="4787b-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="4787b-106">Members</span></span>
+|<span data-ttu-id="4787b-107">Element</span><span class="sxs-lookup"><span data-stu-id="4787b-107">Member</span></span>|<span data-ttu-id="4787b-108">Wert</span><span class="sxs-lookup"><span data-stu-id="4787b-108">Value</span></span>|<span data-ttu-id="4787b-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4787b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="db97c-110">vom Typ userDefined</span><span class="sxs-lookup"><span data-stu-id="db97c-110">userDefined</span></span>|<span data-ttu-id="db97c-111">0</span><span class="sxs-lookup"><span data-stu-id="db97c-111">0</span></span>|<span data-ttu-id="db97c-112">Benutzer definiert.</span><span class="sxs-lookup"><span data-stu-id="db97c-112">User defined.</span></span> <span data-ttu-id="db97c-113">Standardwert.</span><span class="sxs-lookup"><span data-stu-id="db97c-113">Default value.</span></span>|
-|<span data-ttu-id="db97c-114">Reduzieren</span><span class="sxs-lookup"><span data-stu-id="db97c-114">collapse</span></span>|<span data-ttu-id="db97c-115">1</span><span class="sxs-lookup"><span data-stu-id="db97c-115">1</span></span>|<span data-ttu-id="db97c-116">Reduzieren Sie die app-Liste im Menü Start.</span><span class="sxs-lookup"><span data-stu-id="db97c-116">Collapse the app list on the start menu.</span></span>|
-|<span data-ttu-id="db97c-117">remove</span><span class="sxs-lookup"><span data-stu-id="db97c-117">remove</span></span>|<span data-ttu-id="db97c-118">2</span><span class="sxs-lookup"><span data-stu-id="db97c-118">2</span></span>|<span data-ttu-id="db97c-119">Entfernt die app-Liste vollständig über das Startmenü.</span><span class="sxs-lookup"><span data-stu-id="db97c-119">Removes the app list entirely from the start menu.</span></span>|
-|<span data-ttu-id="db97c-120">disableSettingsApp</span><span class="sxs-lookup"><span data-stu-id="db97c-120">disableSettingsApp</span></span>|<span data-ttu-id="db97c-121">4</span><span class="sxs-lookup"><span data-stu-id="db97c-121">4</span></span>|<span data-ttu-id="db97c-122">Deaktiviert die entsprechenden umschalten (reduzieren oder entfernen) in der app Settings.</span><span class="sxs-lookup"><span data-stu-id="db97c-122">Disables the corresponding toggle (Collapse or Remove) in the Settings app.</span></span>|
+|<span data-ttu-id="4787b-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="4787b-110">userDefined</span></span>|<span data-ttu-id="4787b-111">0</span><span class="sxs-lookup"><span data-stu-id="4787b-111">0</span></span>|<span data-ttu-id="4787b-112">Benutzerdefiniert.</span><span class="sxs-lookup"><span data-stu-id="4787b-112">User defined.</span></span> <span data-ttu-id="4787b-113">Standardwert.</span><span class="sxs-lookup"><span data-stu-id="4787b-113">Default value.</span></span>|
+|<span data-ttu-id="4787b-114">reduzieren</span><span class="sxs-lookup"><span data-stu-id="4787b-114">collapse</span></span>|<span data-ttu-id="4787b-115">1</span><span class="sxs-lookup"><span data-stu-id="4787b-115">1</span></span>|<span data-ttu-id="4787b-116">Reduzieren Sie die APP-Liste im Startmenü.</span><span class="sxs-lookup"><span data-stu-id="4787b-116">Collapse the app list on the start menu.</span></span>|
+|<span data-ttu-id="4787b-117">remove</span><span class="sxs-lookup"><span data-stu-id="4787b-117">remove</span></span>|<span data-ttu-id="4787b-118">2</span><span class="sxs-lookup"><span data-stu-id="4787b-118">2</span></span>|<span data-ttu-id="4787b-119">Entfernt die APP-Liste vollständig aus dem Startmenü.</span><span class="sxs-lookup"><span data-stu-id="4787b-119">Removes the app list entirely from the start menu.</span></span>|
+|<span data-ttu-id="4787b-120">disableSettingsApp</span><span class="sxs-lookup"><span data-stu-id="4787b-120">disableSettingsApp</span></span>|<span data-ttu-id="4787b-121">4</span><span class="sxs-lookup"><span data-stu-id="4787b-121">4</span></span>|<span data-ttu-id="4787b-122">Deaktiviert die entsprechende Umschaltfläche (reduzieren oder entfernen) in der App "Einstellungen".</span><span class="sxs-lookup"><span data-stu-id="4787b-122">Disables the corresponding toggle (Collapse or Remove) in the Settings app.</span></span>|
 
 
 
