@@ -4,12 +4,12 @@ description: So erstellen oder konfigurieren Sie eine Microsoft Teams-Registerka
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967193"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342282"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Konfigurieren der integrierten Registerkartentypen in Microsoft Teams
 
@@ -119,12 +119,12 @@ Für Registerkarten der Dokumentbibliothek ist die `teamsAppId` `com.microsoft.t
 
 | Eigenschaft   | Typ        | Beschreibung                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | Zeichenfolge      | Eine leere Zeichenfolge ("")                                        |
-| contentUrl | Zeichenfolge      | Die URL des im Stammordner der Dokumentbibliothek. Sie finden diese URL, indem Sie den SharePoint-Ordner in Ihrem Browser öffnen, kopieren die URL und Löschen von "/ Forms/AllItems.aspx" und alle Daten nach. |
-| removeUrl  | Zeichenfolge      | Null                                                     |
+| entityId   | string      | Leere Zeichenfolge ("")                                        |
+| contentUrl | Zeichenfolge      | Die URL des Stammordners der Dokumentbibliothek. Sie finden diese URL, indem Sie den SharePoint-Ordner in Ihrem Browser öffnen, die URL kopieren und "/Forms/AllItems.aspx" und dann alles löschen. |
+| removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Beispiel: Erstellen einer konfigurierten Dokumentregisterkarte Bibliothek
+### <a name="example-create-a-configured-document-library-tab"></a>Beispiel: Erstellen einer konfigurierten Dokument Bibliotheks Registerkarte
 
 Im folgenden Beispiel wird eine konfigurierte Word-Registerkarte erstellt.
 
@@ -135,7 +135,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
     "configuration": {
         "entityId": "",
-        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
         "removeUrl": null,
         "websiteUrl": null
     }
@@ -148,9 +148,9 @@ Für OneNote-Registerkarten ist die `teamsAppId` `0d820ecd-def2-4297-adad-78056c
 
 | Eigenschaft   | Typ        | Beschreibung                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | Zeichenfolge      | `{randomGuid}_{notebookId}`, wobei {randomGuid} eine von Ihnen generierte GUID ist.                                      |
+| entityId   | string      | `{randomGuid}_{notebookId}`, wobei {randomGuid} eine von Ihnen generierte GUID ist.                                      |
 | contentUrl | Zeichenfolge      | Eine URL der Form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
-| removeUrl  | Zeichenfolge      | Eine URL der Form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
+| removeUrl  | string      | Eine URL der Form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, wobei `{sectionsUrl}`, `{notebookId}` und `{oneNoteWebUrl}` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden sind. Schrägstrichen müssen Escapezeichen vorangestellt werden. {locale} und {tid} sind Literale. |
 | websiteUrl | string      | Eine URL der Form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, wobei `oneNoteWebUrl` in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) zu finden ist. |
 
 ## <a name="power-bi-tabs"></a>Power BI-Registerkarten
