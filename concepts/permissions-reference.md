@@ -3,12 +3,12 @@ title: 'Microsoft Graph-Berechtigungsreferenz '
 description: Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6f29ce28546410f18d22fe22d353465c370a3296
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: cf5639e09977b052d0c5a9b56c535fdaf66789fa
+ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760937"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30314623"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph-Berechtigungsreferenz 
 Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). 
@@ -952,10 +952,10 @@ Websiteberechtigungen gelten nur für Geschäfts-, Schul- oder Unikonten.
 
 |   Berechtigung    |  Anzeigezeichenfolge   |  Beschreibung | Administratorzustimmung erforderlich | Microsoft-Konto wird unterstützt |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Benutzeraufgaben lesen | Ermöglicht der App, Benutzeraufgaben zu lesen. | Nein | Ja |
-| _Tasks.Read.Shared_ | Benutzeraufgaben und freigegebene Aufgaben lesen | Ermöglicht der App, Aufgaben zu lesen, für die ein Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Aufgaben des Benutzers und freigegebener Aufgaben. | Nein | Nein |
-| _Tasks.ReadWrite_ |    Benutzeraufgaben und -container erstellen, lesen, aktualisieren und löschen | Ermöglicht der App, Aufgaben und Container (und darin enthaltene Aufgaben), die dem angemeldeten Benutzer zugewiesen oder für diesen freigegeben sind, zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Nein | Ja |
-| _Tasks.ReadWrite.Shared_ | Benutzeraufgaben und freigegebene Aufgaben lesen und schreiben | Ermöglicht der App, Aufgaben zu erstellen, zu lesen, zu aktualisieren und zu löschen, für die ein Benutzer über Berechtigungen verfügt, einschließlich der eigenen Aufgaben des Benutzers und freigegebener Aufgaben. | Nein | Nein |
+| _Tasks.Read_ | Benutzeraufgaben lesen (Vorschau) | Ermöglicht der App, Benutzeraufgaben zu lesen. | Nein | Ja |
+| _Tasks.Read.Shared_ | Benutzeraufgaben und freigegebene Aufgaben lesen (Vorschau) | Ermöglicht der App, Aufgaben zu lesen, für die ein Benutzer über Zugriffsberechtigungen verfügt, einschließlich der eigenen Aufgaben des Benutzers und freigegebener Aufgaben. | Nein | Nein |
+| _Tasks.ReadWrite_ | Benutzeraufgaben und -container erstellen, lesen, aktualisieren und löschen (Vorschau) | Ermöglicht der App, Aufgaben und Container (und darin enthaltene Aufgaben), die dem angemeldeten Benutzer zugewiesen oder für diesen freigegeben sind, zu erstellen, zu lesen, zu aktualisieren und zu löschen.| Nein | Ja |
+| _Tasks.ReadWrite.Shared_ | Benutzeraufgaben und freigegebene Aufgaben lesen und schreiben (Vorschau) | Ermöglicht der App, Aufgaben zu erstellen, zu lesen, zu aktualisieren und zu löschen, für die ein Benutzer über Berechtigungen verfügt, einschließlich der eigenen Aufgaben des Benutzers und freigegebener Aufgaben. | Nein | Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
