@@ -4,12 +4,12 @@ description: Stellt eine Domäne dar, die einem Mandanten zugewiesen ist.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d19909679447e050ea639ee0fcb4cd31288efc0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6b349920f0849ec18b0d5e70fda0bcb16c41e63c
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518639"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342331"
 ---
 # <a name="domain-resource-type"></a>domain-Ressourcentyp
 
@@ -37,26 +37,28 @@ So ordnen Sie eine Domäne einem Mandanten zu:
 |:---------------|:--------|:----------|
 |[Domäne abrufen](../api/domain-get.md) | [domain](domain.md) | Dient zum Lesen der Eigenschaften und der Beziehungen eines Domänenobjekts.|
 |[Domäne erstellen](../api/domain-post-domains.md) | [domain](domain.md) | Fügt eine Domäne zum Mandanten hinzu. |
-|[domainNameReference auflisten](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen einer Liste von Verzeichnisobjekten mit einem Verweis auf die Domäne.|
+|[domainNameReference auflisten](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Dient zum Abrufen einer Liste von Verzeichnisobjekten mit einem Verweis auf die Domäne.|
 |[serviceConfigurationRecords auflisten](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenkonfiguration.|
 |[verificationDnsRecords auflisten](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md)-Sammlung|  Dient zum Abrufen einer von Domänen-DNS-Einträgen für die Domänenüberprüfung.|
 |[Domäne aktualisieren](../api/domain-update.md) | [domain](domain.md) |Dient zum Aktualisieren einer Domäne.|
 |[Domäne löschen](../api/domain-delete.md) | Keine |Dient zum Löschen einer Domäne.|
-|[ForceDelete Domäne](../api/domain-forcedelete.md)|Keine|Löscht eine Domäne mithilfe eines asynchronen Vorgangs.|
+|[ForceDelete-Domäne](../api/domain-forcedelete.md)|Keine|Löscht eine Domäne mithilfe eines asynchronen Vorgangs.|
 |[Domäne überprüfen](../api/domain-verify.md)|[Domäne](domain.md)|Überprüft den Besitz der Domäne.|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ | Beschreibung |
 |:---------------|:--------|:----------|
-|authenticationType|String| Gibt den konfigurierten Authentifizierungstyp für die Domäne an. Der Wert ist entweder *Verwaltet* oder *Verbund*.<br> *Verwaltet* gibt eine cloudverwaltete Domäne an, bei der Azure AD die Benutzerauthentifizierung ausführt.<br>*Verbund* gibt an, dass die Authentifizierung im Verbund mit einem Identitätsanbieter steht, z. B. das lokale Active Directory des Mandanten über Active Directory-Verbunddienste. Lässt keine Nullwerte zu. |
+|authenticationType|Zeichenfolge| Gibt den konfigurierten Authentifizierungstyp für die Domäne an. Der Wert ist entweder *Verwaltet* oder *Verbund*.<br> *Verwaltet* gibt eine cloudverwaltete Domäne an, bei der Azure AD die Benutzerauthentifizierung ausführt.<br>*Verbund* gibt an, dass die Authentifizierung im Verbund mit einem Identitätsanbieter steht, z. B. das lokale Active Directory des Mandanten über Active Directory-Verbunddienste. Lässt keine Nullwerte zu. |
 |availabilityStatus|String| Diese Eigenschaft ist immer null, außer wenn die Aktion [verify](../api/domain-verify.md) verwendet wird. Wenn die Aktion [verify](../api/domain-verify.md) verwendet wird, wird in der Antwort eine **Domänen**entität zurückgegeben. Die Eigenschaft **availabilityStatus** der **Domänen**entität in der Antwort ist entweder *AvailableImmediately* oder *EmailVerifiedDomainTakeoverScheduled*.|
 |id|Zeichenfolge| Der vollqualifizierte Name der Domäne. Schlüssel, unveränderlich, lässt keine Nullwerte zu, eindeutig |
-|isAdminManaged|Boolescher Wert| Der Wert der Eigenschaft ist „false“, wenn die DNS-Datensatzverwaltung der Domäne an Office 365 delegiert wurde. Andernfalls ist der Wert „true“. Lässt keine Nullwerte zu. |
-|isDefault|Boolescher Wert| „True“, wenn dies die Standarddomäne ist, die für die Benutzererstellung verwendet wird. Es gibt nur eine Standarddomäne pro Unternehmen. Lässt keine Nullwerte zu. |
-|isInitial|Boolescher Wert| „True“, wenn dies die erste Domäne ist, die von Microsoft Online Services (companyname.onmicrosoft.com) erstellt wird. Es gibt nur eine anfängliche Domäne pro Unternehmen. Lässt keine Nullwerte zu. |
-|isRoot|Boolescher Wert| „True“, wenn die Domäne eine überprüfte Stammdomäne ist. Andernfalls „false“, wenn die Domäne eine Unterdomäne oder ungeprüft ist. Lässt keine Nullwerte zu. |
-|isVerified|Boolescher Wert| „True“, wenn die Domänenbesitzüberprüfung für die Domäne abgeschlossen ist. Lässt keine Nullwerte zu. |
+|isAdminManaged|Boolean| Der Wert der Eigenschaft ist „false“, wenn die DNS-Datensatzverwaltung der Domäne an Office 365 delegiert wurde. Andernfalls ist der Wert „true“. Lässt keine Nullwerte zu. |
+|isDefault|Boolean| „True“, wenn dies die Standarddomäne ist, die für die Benutzererstellung verwendet wird. Es gibt nur eine Standarddomäne pro Unternehmen. Lässt keine Nullwerte zu. |
+|isInitial|Boolean| „True“, wenn dies die erste Domäne ist, die von Microsoft Online Services (companyname.onmicrosoft.com) erstellt wird. Es gibt nur eine anfängliche Domäne pro Unternehmen. Lässt keine Nullwerte zu. |
+|isRoot|Boolean| „True“, wenn die Domäne eine überprüfte Stammdomäne ist. Andernfalls „false“, wenn die Domäne eine Unterdomäne oder ungeprüft ist. Lässt keine Nullwerte zu. |
+|isVerified|Boolean| „True“, wenn die Domänenbesitzüberprüfung für die Domäne abgeschlossen ist. Lässt keine Nullwerte zu. |
+|passwordNotificationWindowInDays|Int32|Gibt die Anzahl von Tagen an, bis ein Benutzer eine Benachrichtigung erhält, dass das Kennwort abläuft. Wenn die Eigenschaft nicht festgelegt ist, wird ein Standardwert von 14 Tagen verwendet.|
+|passwordValidityPeriodInDays|Int32| Gibt an, wie lange ein Kennwort gültig ist, bevor es geändert werden muss. Wenn die Eigenschaft nicht festgelegt ist, wird ein Standardwert von 90 Tage verwendet. |
 |supportedServices|String-Sammlung| Die der Domäne zugewiesenen Funktionen.<br><br>Kann 0, 1 oder mehrere der folgenden Werte umfassen: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Zu den Werten, die Sie mithilfe der Graph-API hinzufügen/entfernen können, gehören: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Lässt keine Nullwerte zu.|
 |Status|[domainState](domainstate.md)| Status von asynchronen Vorgängen, die für die Domäne geplant sind. |
 
@@ -91,6 +93,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }
