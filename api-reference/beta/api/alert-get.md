@@ -1,33 +1,33 @@
 ---
 title: Warnung erhalten
-description: Abrufen der Eigenschaften und die Beziehungen eines alert-Objekts
+description: Abrufen der Eigenschaften und Beziehungen eines Alert-Objekts
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 47564a15d7218d439b8d89a442f08bd363b6daa2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517183"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364598"
 ---
-# <a name="get-alert"></a><span data-ttu-id="12401-103">Warnung erhalten</span><span class="sxs-lookup"><span data-stu-id="12401-103">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="8803a-103">Warnung erhalten</span><span class="sxs-lookup"><span data-stu-id="8803a-103">Get alert</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="12401-104">Rufen Sie die Eigenschaften und die Beziehungen eines [Benachrichtigung](../resources/alert.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="12401-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="8803a-104">Ruft die Eigenschaften und Beziehungen eines [Alert](../resources/alert.md) -Objekts ab.</span><span class="sxs-lookup"><span data-stu-id="8803a-104">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="12401-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="12401-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8803a-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8803a-105">Permissions</span></span>
 
-<span data-ttu-id="12401-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12401-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8803a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8803a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="12401-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="12401-108">Permission type</span></span>      | <span data-ttu-id="12401-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="12401-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8803a-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8803a-108">Permission type</span></span>      | <span data-ttu-id="8803a-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8803a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="12401-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="12401-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="12401-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12401-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="12401-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="12401-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="12401-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="12401-113">Not supported.</span></span>  |
-|<span data-ttu-id="12401-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="12401-114">Application</span></span> | <span data-ttu-id="12401-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12401-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="8803a-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8803a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="8803a-111">Bereich securityevents. Read. all, Bereich securityevents. ReadWrite. all</span><span class="sxs-lookup"><span data-stu-id="8803a-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="8803a-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8803a-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="8803a-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8803a-113">Not supported.</span></span>  |
+|<span data-ttu-id="8803a-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8803a-114">Application</span></span> | <span data-ttu-id="8803a-115">Bereich securityevents. Read. all, Bereich securityevents. ReadWrite. all</span><span class="sxs-lookup"><span data-stu-id="8803a-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="12401-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="12401-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8803a-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8803a-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "29517183"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="12401-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="12401-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8803a-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8803a-117">Request headers</span></span>
 
-| <span data-ttu-id="12401-118">Name</span><span class="sxs-lookup"><span data-stu-id="12401-118">Name</span></span>      |<span data-ttu-id="12401-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="12401-119">Description</span></span>|
+| <span data-ttu-id="8803a-118">Name</span><span class="sxs-lookup"><span data-stu-id="8803a-118">Name</span></span>      |<span data-ttu-id="8803a-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8803a-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="12401-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="12401-120">Authorization</span></span>  | <span data-ttu-id="12401-p102">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="12401-p102">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="8803a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8803a-120">Authorization</span></span>  | <span data-ttu-id="8803a-p102">Bearer {code}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8803a-p102">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="12401-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="12401-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8803a-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8803a-123">Request body</span></span>
 
-<span data-ttu-id="12401-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="12401-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="8803a-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="8803a-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="12401-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="12401-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8803a-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="8803a-125">Response</span></span>
 
-<span data-ttu-id="12401-126">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext.</span><span class="sxs-lookup"><span data-stu-id="12401-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="12401-127">Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Anbieter Antwort in der Kopfzeile einer Warnung.</span><span class="sxs-lookup"><span data-stu-id="12401-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="12401-128">Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="12401-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="8803a-126">Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein **Alert** -Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="8803a-126">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="8803a-127">Wenn ein anderer Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird oder ein Timeout für einen Anbieter vorliegt, ist die `206 Partial Content` Antwort ein Statuscode mit der Antwort des Anbieters in einem Warnungs Header.</span><span class="sxs-lookup"><span data-stu-id="8803a-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="8803a-128">Weitere Informationen finden Sie unter [Microsoft Graph Security API Error Response](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="8803a-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="12401-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="12401-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8803a-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8803a-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="12401-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="12401-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8803a-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8803a-130">Request</span></span>
 
-<span data-ttu-id="12401-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="12401-131">The following is an example of the request.</span></span>
+<span data-ttu-id="8803a-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8803a-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -63,9 +63,9 @@ GET /security/alerts/{id}
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="12401-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="12401-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8803a-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="8803a-132">Response</span></span>
 
-<span data-ttu-id="12401-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="12401-133">The following is an example of the response.</span></span>
+<span data-ttu-id="8803a-133">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8803a-133">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -106,6 +106,19 @@ Content-type: application/json
       "name": "String",
       "path": "String",
       "riskScore": "String"
+    }
+  ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
     }
   ],
   "hostStates": [
