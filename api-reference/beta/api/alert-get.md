@@ -1,21 +1,21 @@
 ---
 title: Warnung erhalten
-description: Abrufen der Eigenschaften und die Beziehungen eines alert-Objekts
+description: Abrufen der Eigenschaften und Beziehungen eines Alert-Objekts
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 47564a15d7218d439b8d89a442f08bd363b6daa2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517183"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364598"
 ---
 # <a name="get-alert"></a>Warnung erhalten
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Eigenschaften und die Beziehungen eines [Benachrichtigung](../resources/alert.md) -Objekts ab.
+Ruft die Eigenschaften und Beziehungen eines [Alert](../resources/alert.md) -Objekts ab.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -23,9 +23,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) |  Bereich securityevents. Read. all, Bereich securityevents. ReadWrite. all   |
 |Delegiert (persönliches Microsoft-Konto) |  Nicht unterstützt  |
-|Anwendung | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|Anwendung | Bereich securityevents. Read. all, Bereich securityevents. ReadWrite. all |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -47,7 +47,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und eine **Warnung** -Objekts in der Antworttext. Wenn ein Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird, oder wenn von ein Anbieter Zeitlimit überschritten, die Antwort werden eine `206 Partial Content` Statuscode mit der Anbieter Antwort in der Kopfzeile einer Warnung. Weitere Informationen finden Sie unter [Microsoft Graph Security-API-Fehlerantworten](../resources/security-error-codes.md).
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein **Alert** -Objekt im Antworttext zurück. Wenn ein anderer Statuscode als 2xx oder 404 von einem Anbieter zurückgegeben wird oder ein Timeout für einen Anbieter vorliegt, ist die `206 Partial Content` Antwort ein Statuscode mit der Antwort des Anbieters in einem Warnungs Header. Weitere Informationen finden Sie unter [Microsoft Graph Security API Error Response](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Beispiel
 
@@ -106,6 +106,19 @@ Content-type: application/json
       "name": "String",
       "path": "String",
       "riskScore": "String"
+    }
+  ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
     }
   ],
   "hostStates": [

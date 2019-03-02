@@ -1,68 +1,70 @@
 ---
-title: Warnung Ressourcentyp
-description: Stellt die potenzielle Sicherheitsrisiken in Mandant des Kunden, die von Microsoft oder Partner sicherheitslösungen angegeben haben. Verwenden Sie Warnungen zu vereinheitlichen und Problem sicherheitsverwaltung über alle integrierten Lösungen zu optimieren. Finden Sie weitere Informationen finden Sie unter der Beispielabfragen im Graph-Explorer.
+title: Warnungs Ressourcentyp
+description: Stellt potenzielle Sicherheitsprobleme innerhalb eines Kundenmandanten dar, die von Microsoft oder Partner-Sicherheitslösungen identifiziert wurden. Verwenden Sie Warnungen, um das Sicherheitsproblem Management für alle integrierten Lösungen zu vereinheitlichen und zu rationalisieren. Weitere Informationen finden Sie in den Beispielabfragen im Graph-Explorer.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7973522b8593d38724ee40374f40d58d3408ff6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642401"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364577"
 ---
-# <a name="alert-resource-type"></a>Warnung Ressourcentyp
+# <a name="alert-resource-type"></a>Warnungs Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt die potenzielle Sicherheitsrisiken in Mandant des Kunden, die von Microsoft oder Partner sicherheitslösungen angegeben haben. Verwenden Sie Warnungen zu vereinheitlichen und Problem sicherheitsverwaltung über alle integrierten Lösungen zu optimieren. Finden Sie weitere Informationen finden Sie unter der Beispielabfragen im [Graph-Explorer](https://developer.microsoft.com/graph/graph-explorer).
+Stellt potenzielle Sicherheitsprobleme innerhalb eines Kundenmandanten dar, die von Microsoft oder Partner-Sicherheitslösungen identifiziert wurden. Verwenden Sie Warnungen, um das Sicherheitsproblem Management für alle integrierten Lösungen zu vereinheitlichen und zu rationalisieren. Weitere Informationen finden Sie in den Beispielabfragen im [Graph-Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-Warnungen können von anderen Anbietern aufgeführt, die in der [Microsoft Graph-Sicherheit (Übersicht)](security-api-overview.md)abgerufen werden.
+Benachrichtigungen können von verschiedenen Sicherheitsanbietern abgerufen werden, die in der [Microsoft Graph-Sicherheitsübersicht](security-api-overview.md)aufgeführt sind.
 
 ## <a name="methods"></a>Methoden
 
 | Methode   | Rückgabetyp|Beschreibung|
 |:---------------|:--------|:----------|
-|[Warnung erhalten](../api/alert-get.md) | [Benachrichtigung](alert.md) |Lesen Sie Eigenschaften und die Beziehungen eines alert-Objekts.|
-|[Warnung aktualisieren](../api/alert-update.md) | [Benachrichtigung](alert.md) |Ein alert-Objekt zu aktualisieren. |
-|[Warnungen auflisten](../api/alert-list.md) | [Warnung](alert.md) -Auflistung |Rufen Sie eine Auflistung der alert-Objekts.|
+|[Warnung erhalten](../api/alert-get.md) | [alert](alert.md) |Liest die Eigenschaften und Beziehungen eines Alert-Objekts.|
+|[Warnung aktualisieren](../api/alert-update.md) | [alert](alert.md) |Aktualisieren eines Alert-Objekts. |
+|[Warnungen auflisten](../api/alert-list.md) | [Warnungs](alert.md) Sammlung |Rufen Sie eine Alert-Objektsammlung ab.|
+|[Warnungen aktualisieren](../api/alert-updatealerts.md)|[Warnungs](alert.md) Sammlung|Aktualisieren Sie mehrere Warnungs Objekte.|
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|activityGroupName|String|Name oder Alias der Aktivitätsgruppe (Angreifer) wird diese Warnung zugeordnet.|
-|assignedTo|Zeichenfolge|Name des der Analyst die Benachrichtigung wird für die Ursachenanalyse, Untersuchung oder Remediation (unterstützt [Aktualisieren](../api/alert-update.md)) zugewiesen.|
-|azureSubscriptionId|String|Azure-Abonnement-ID vorhanden, wenn diese Warnung zu einer Azure Ressource verknüpft ist.|
-|azureTenantId |String|Azure Active Directory-Mandanten-ID Erforderlich.  |
-|category|String|Die Kategorie der Warnung (z. B. CredentialTheft, Ransomware usw.).|
-|closedDateTime|DateTimeOffset|Zeitpunkt, an dem die Benachrichtigung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise könnte Uhr UTC auf 1 Jan 2014 wie folgt aussehen: `'2014-01-01T00:00:00Z'` (unterstützt [Aktualisieren](../api/alert-update.md)).|
-|cloudAppStates|[CloudAppSecurityState](cloudappsecuritystate.md) -Auflistung|Sicherheitsbezogene Statusinformationen vom Anbieter über die Cloud Anwendung/s mit dieser Warnung generiert ist.|
-|comments|String-Sammlung|Kunden bereitgestellten Kommentare auf Benachrichtigung (für Kunden alert Management) (unterstützt [Aktualisieren](../api/alert-update.md)).|
-|confidence|Int32|Vertrauen die Erkennungslogik (zwischen 1 und 100 Prozent).|
-|createdDateTime |DateTimeOffset|Zeitpunkt, in dem die Benachrichtigung durch den Anbieter alert erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Erforderlich. |
-|description|String|Beschreibung der Warnung.|
-|detectionIds|String-Sammlung|Festlegen von Warnungen im Zusammenhang mit dieser Warnung Entität (jede Warnung wird in der SIEM als separater Datensatz verschoben).|
-|eventDateTime |DateTimeOffset|Zeitpunkt, an dem die Ereignisse, die als den Triggern die Benachrichtigung generiert bedient stattgefunden hat. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Erforderlich. |
-|Feedback|alertFeedback|Analyst Feedback auf die Benachrichtigung. Mögliche Werte: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. ( [Aktualisieren](../api/alert-update.md)unterstützt)|
-|fileStates|[FileSecurityState](filesecuritystate.md) -Auflistung|Sicherheitsbezogene Statusinformationen vom Anbieter über die Dateien im Zusammenhang mit dieser Benachrichtigung generiert ist.|
-|hostStates|[HostSecurityState](hostsecuritystate.md) -Auflistung|Sicherheitsbezogene Statusinformationen vom Anbieter über die Hosts im Zusammenhang mit dieser Benachrichtigung generiert ist.|
-|id |String|Anbieter generierte GUID/Eindeutiger Bezeichner. Schreibgeschützt. Erforderlich. |
-|lastModifiedDateTime|DateTimeOffset|Zeitpunkt, an dem die Warnung Entität zuletzt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
-|malwareStates|[MalwareState](malwarestate.md) -Auflistung|Malware im Zusammenhang mit dieser Benachrichtigung zur Bedrohungsanalyse.|
-|networkConnections|[NetworkConnection](networkconnection.md) -Auflistung|Sicherheitsbezogene Statusinformationen vom Anbieter über die Netzwerkschnittstelle(n) im Zusammenhang mit dieser Benachrichtigung generiert ist.|
-|Prozesse|[Prozess](process.md) -Auflistung|Sicherheitsbezogene Statusinformationen vom Anbieter zu Prozesse im Zusammenhang mit dieser Benachrichtigung generiert ist.|
-|recommendedActions|String-Sammlung|Hersteller-Anbieter empfohlen unternommen werden aufgrund der Warnung (beispielsweise isolieren Machine, enforce2FA, neu abbilden Host).|
-|registryKeyStates|[RegistryKeyState](registrykeystate.md) -Auflistung|Sicherheitsbezogene Statusinformationen mit vom Anbieter zu den Registrierungsschlüsseln generiert in Bezug auf diese Warnung.|
-|Schweregrad |alertSeverity|Warnung Schweregrad - vom Hersteller-Anbieter festgelegt. Mögliche Werte: `unknown`, `informational`, `low`, `medium`, `high`. Erforderlich. |
-|sourceMaterials|String-Sammlung|Hyperlinks (URIs) zu Quellmaterials in Bezug auf die Benachrichtigung beispielsweise des Anbieters-Benutzeroberfläche für Warnungen oder Protokoll Suche usw..|
-|status |alertStatus|Warnung Lebenszyklusstatus (Phase). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`. (unterstützt [Aktualisieren](../api/alert-update.md)). Erforderlich. |
-|tags|String-Sammlung|Benutzer definierbare Beschriftungen, die angewendet werden soll, auf eine Warnung und dienen als Filter Bedingung (zum Beispiel "HVA", "MAUERN" usw.) (unterstützt [Aktualisieren](../api/alert-update.md)).|
-|title |String|Titel der Warnung. Erforderlich. |
-|Trigger|[AlertTrigger](alerttrigger.md) -Auflistung|Sicherheitsrelevante Informationen zu den spezifischen Eigenschaften, die die Benachrichtigung (Eigenschaften, die in der Benachrichtigung angezeigt wird) ausgelöst. Warnungen können Informationen zu mehreren Benutzern, Hosts, Dateien, Ip-Adressen enthalten. Dieses Feld zeigt an, welche Eigenschaften die Auslösung einer Warnung ausgelöst.|
-|userStates|[UserSecurityState](usersecuritystate.md) -Auflistung|Sicherheitsbezogene Statusinformationen mit generiert vom Anbieter über die Benutzerkonten in Bezug auf diese Warnung.|
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Komplexer Typ, das Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider enthält (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker). Erforderlich. |
-|vulnerabilityStates|[VulnerabilityState](vulnerabilitystate.md) -Auflistung|Eine oder mehrere Sicherheitslücken im Zusammenhang mit dieser Benachrichtigung zur Bedrohungsanalyse.|
+|activityGroupName|Zeichenfolge|Name oder Alias der Aktivitätsgruppe (Angreifer), auf die diese Warnung zurückzuführen ist.|
+|assignedTo|Zeichenfolge|Name des Analysten, dem die Warnung für Triage, Untersuchung oder Korrektur zugewiesen ist (unterstützt [Update](../api/alert-update.md)).|
+|azureSubscriptionId|Zeichenfolge|Azure-Abonnement-ID, vorhanden, wenn diese Warnung mit einer Azure-Ressource verknüpft ist.|
+|azureTenantId |Zeichenfolge|Azure Active Directory-Mandanten-ID. Erforderlich. |
+|category|String|Kategorie der Warnung (beispielsweise credentialTheft, Ransomware usw.).|
+|closedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Warnung geschlossen wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise würde Mitternacht UTC am 1. Januar 2014 wie folgt aussehen: `'2014-01-01T00:00:00Z'` (unterstützt [Update](../api/alert-update.md)).|
+|cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md) -Sammlung|Sicherheitsbezogene Stateful-Informationen, die vom Anbieter über die Cloud-Anwendung/s mit dieser Warnung generiert wurden.|
+|comments|String collection|Vom Kunden bereitgestellte Kommentare zu Alert (für die Kunden Benachrichtigungsverwaltung) (unterstützt [Update](../api/alert-update.md)).|
+|confidence|Int32|Zuverlässigkeit der Erkennungslogik (Prozentsatz zwischen 1-100).|
+|createdDateTime |DateTimeOffset|Zeitpunkt, zu dem die Warnung vom Warnungs Anbieter erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Erforderlich.|
+|description|String|Warnungsbeschreibung.|
+|detectionIds|String collection|Eine Gruppe von Warnungen im Zusammenhang mit dieser Benachrichtigungs Entität (jede Warnung wird als separater Datensatz in SIEM gedrückt).|
+|eventDateTime |DateTimeOffset|Zeitpunkt, zu dem die Ereignisse, die als Auslöser dienten, um die Warnung zu generieren, aufgetreten sind. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Erforderlich.|
+|Feedback|alertFeedback|Analysten Feedback zu der Warnung. Mögliche Werte: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (unterstützt [Update](../api/alert-update.md))|
+|dateiStates|[fileSecurityState](filesecuritystate.md) -Sammlung|Vom Anbieter generierte sicherheitsbezogene Statusinformationen zu den Dateien, die mit dieser Warnung verbunden sind.|
+|historyStates|[alertHistoryState](alerthistorystate.md) -Sammlung| Eine Auflistung von **alertHistoryStates** , die ein Überwachungsprotokoll aller an einer Warnung vorgenommenen Aktualisierungen umfasst. |
+|hostStates|[hostSecurityState](hostsecuritystate.md) -Sammlung|Sicherheitsrelevante Statusinformationen, die vom Anbieter über die mit dieser Warnung verknüpften Hosts generiert wurden.|
+|id |string|Vom Anbieter generierte GUID/Unique Identifier. Schreibgeschützt. Erforderlich.|
+|lastModifiedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Benachrichtigungs Entität zuletzt geändert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`.|
+|malwareStates|[malwareState](malwarestate.md) -Sammlung|Threat Intelligence im Zusammenhang mit Schadsoftware zu dieser Warnung.|
+|networkConnections|[Network Connection](networkconnection.md) -Sammlung|Vom Anbieter generierte sicherheitsbezogene Statusinformationen zu den Netzwerkverbindungen, die mit dieser Warnung verbunden sind.|
+|Prozesse|[Prozess](process.md) Sammlung|Vom Anbieter generierte sicherheitsbezogene Statusinformationen zu dem Prozess oder den Prozessen im Zusammenhang mit dieser Warnung.|
+|recommendedActions|String collection|Empfohlene Aktion des Anbieters/Anbieters als Ergebnis der Warnung (beispielsweise isolieren von Computer, enforce2FA, reimage Host).|
+|registryKeyStates|[registryKeyState](registrykeystate.md) -Sammlung|Vom Anbieter generierte sicherheitsbezogene Statusinformationen zu den Registrierungsschlüsseln, die mit dieser Warnung verbunden sind.|
+|Schweregrad |alertSeverity|Warnungsschweregrad – festgelegt nach Anbieter/Anbieter. Mögliche Werte: `unknown`, `informational`, `low`, `medium`, `high`. Erforderlich.|
+|sourceMaterials|String collection|Hyperlinks (URIs) zum Quellmaterial im Zusammenhang mit der Warnung, beispielsweise die Benutzeroberfläche des Anbieters für Warnungen oder die Protokollsuche usw.|
+|status |alertStatus|Status des Warnungs Lebenszyklus (Stufe). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`. (unterstützt [Update](../api/alert-update.md)). Erforderlich.|
+|tags|String-Sammlung|Benutzerdefinierbare Bezeichnungen, die auf eine Warnung angewendet werden können und als Filterbedingungen dienen können (beispielsweise "HVA", "SAW" usw.) (unterstützt [Update](../api/alert-update.md)).|
+|title |Zeichenfolge|Warnungs Titel. Erforderlich.|
+|löst|[alertTrigger](alerttrigger.md) -Sammlung|Sicherheitsbezogene Informationen zu den spezifischen Eigenschaften, die die Warnung ausgelöst haben (Eigenschaften, die in der Warnung angezeigt werden). Warnungen enthalten möglicherweise Informationen zu mehreren Benutzern, Hosts, Dateien und IP-Adressen. Dieses Feld gibt an, welche Eigenschaften die Warnungsgenerierung ausgelöst haben.|
+|userStates|[userSecurityState](usersecuritystate.md) -Sammlung|Vom Anbieter generierte sicherheitsbezogene Statusinformationen zu den Benutzerkonten, die mit dieser Warnung verbunden sind.|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Komplexer Typ, der Details zum Sicherheitsprodukt/-Dienstanbieter,-Anbieter und-subprovider enthält (beispielsweise Vendor = Microsoft; Provider = Windows Defender ATP; subProvider = AppLocker). Erforderlich.|
+|vulnerabilityStates|[vulnerabilityState](vulnerabilitystate.md) -Sammlung|Threat Intelligence in Bezug auf eine oder mehrere Sicherheitsanfälligkeiten im Zusammenhang mit dieser Warnung.|
 
 ## <a name="relationships"></a>Beziehungen
 
@@ -97,6 +99,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "eventDateTime": "String (timestamp)",
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "fileStates": [{"@odata.type": "microsoft.graph.fileSecurityState"}],
+  "historyStates": [{"@odata.type": "microsoft.graph.alertHistoryState"}],
   "hostStates": [{"@odata.type": "microsoft.graph.hostSecurityState"}],
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",

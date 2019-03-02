@@ -1,34 +1,34 @@
 ---
-title: Ressourcentyp securityVendorInformation
+title: securityVendorInformation-Ressourcentyp
 description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e67a5306b1dd08933877dbe3e64cab766ccd6a96
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512178"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364584"
 ---
-# <a name="securityvendorinformation-resource-type"></a>Ressourcentyp securityVendorInformation
+# <a name="securityvendorinformation-resource-type"></a>securityVendorInformation-Ressourcentyp
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enthält Details über die Produkt-Dienst Sicherheitsanbieter, Anbieter und Subprovider (beispielsweise Hersteller = Microsoft; Provider = Windows Defender ATP; SubProvider = AppLocker).
+Enthält Details zum Sicherheitsprodukt/-Dienstanbieter,-Anbieter und-subprovider (beispielsweise Vendor = Microsoft; Provider = Windows Defender-ATP; subProvider = AppLocker).
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft   | Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|Provider |String|Bestimmte Anbieter (Product/Service - nicht Hersteller Unternehmen); beispielsweise WindowsDefenderATP.|
-|providerVersion|String|Version des Anbieters oder Subprovider, falls vorhanden, die Warnung ausgelöst wurde. *Erforderlich*|
-|subProvider|String|Bestimmte Subprovider (unter aggregieren Anbieter); beispielsweise WindowsDefenderATP.SmartScreen.|
-|Hersteller |String|Name des Herstellers alert (beispielsweise Microsoft, Dell, FireEye). *Erforderlich*|
+|Anbieter |Zeichenfolge|Bestimmter Anbieter (Product/Service-not Vendor Company); Beispiel: WindowsDefenderATP.|
+|Provider Version|Zeichenfolge|Die Version des Anbieters oder subproviders, sofern vorhanden, die die Warnung generiert hat. **Erforderlich**|
+|Sekundären Anbieter|Zeichenfolge|Bestimmter subprovider (unter Aggregations Anbieter); Beispiel: WindowsDefenderATP. SmartScreen.|
+|Hersteller |Zeichenfolge|Name des Warnungs Anbieters (beispielsweise Microsoft, Dell, FireEye arbeitete). **Erforderlich**|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
-Die folgenden ist eine JSON-Darstellung der Ressource.
+Folllowing ist eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
