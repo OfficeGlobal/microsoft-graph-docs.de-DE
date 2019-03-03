@@ -3,12 +3,12 @@ title: Änderungsprotokoll für Microsoft Graph
 description: Dieses Änderungsprotokoll deckt alle Änderungen in Microsoft Graph ab, einschließlich der Version 1.0 und des Beta-Endpunkts von Microsoft Graph-APIs.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 155059b2d16d072009dcbf8af4d24f1b2768fd67
-ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
+ms.openlocfilehash: 62d603036aa388bdcde9787ae2e83eea6126b471
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30314637"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342345"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Änderungsprotokoll für Microsoft Graph
 
@@ -28,9 +28,12 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version**   | **Beschreibung**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Ergänzungen |Beta und Version 1.0| Die Eigenschaft **createdDateTime** wurde zu [organization](/graph/api/resources/organization?view=graph-rest-v1.0) hinzugefügt.|
-|Ergänzungen | v1.0 | Der neue Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) wurde hinzugefügt.|
-|Änderung |Beta und Version 1.0| Die Eigenschaft **companyName** der Ressource [user](/graph/api/resources/user?view=graph-rest-v1.0) wurde aktualisiert, um beschreibbar zu sein.|
+| Ergänzungen | v1.0 | Neuer Ressourcentyp [DirectoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) hinzugefügt. |
+| Ergänzungen | Beta und Version 1.0 | Die Eigenschaft **createdDateTime** wurde zu [organization](/graph/api/resources/organization?view=graph-rest-v1.0) hinzugefügt. |
+| Änderung | Beta und Version 1.0 | Die Eigenschaft **companyName** der Ressource [user](/graph/api/resources/user?view=graph-rest-v1.0) wurde aktualisiert, um beschreibbar zu sein. |
+| Änderung | Beta | Der Typ [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) enthält nun Eigenschaften, die zuvor für abgeleitete Typen verfügbar waren, die nicht mehr unterstützt werden. |
+| Löschung | Beta | Die folgenden abgeleiteten Typen werden nicht mehr unterstützt und wurden entfernt: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser** und **targetResourceOther**. |
+|Ergänzung |Beta | Hinzufügen der Eigenschaften **passwordNotificationWindowInDays** und **passwordValidityPeriodInDays** der Ressource [domain](/graph/api/resources/domain?view=graph-rest-beta).|
 
 ### <a name="education-apis"></a>Bildungs-APIs
 
@@ -423,7 +426,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 |Löschung|Beta|Eigenschaft **restrictedApps** aus der Entität [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta) entfernt|
 |Löschung|Beta|Eigenschaft **restrictedApps** aus der Entität [androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta) entfernt|
 |Änderung|Beta|Die folgenden Eigenschaften der Entität [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta) wurden geändert:<br/>**enablePerApp** von „erforderlich“ zu „optional“<br/>|
-|Ergänzungen|Beta|Eigenschaften **disableProtectionOfManagedOutboundOpenInData** und **protectInboundDataFromUnknownSources** zur Entität [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) hinzugefügt|
+|Ergänzung|Beta|Eigenschaften **disableProtectionOfManagedOutboundOpenInData** und **protectInboundDataFromUnknownSources** zur Entität [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) hinzugefügt|
 |Ergänzungen|Beta|Eigenschaft **microsoftStoreForBusinessPortalSelection** zur Entität [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-beta) hinzugefügt|
 |Ergänzungen|Beta|Eigenschaft **passcodeMinutesOfInactivityBeforeScreenTimeout** zur Entität [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta) hinzugefügt|
 |Ergänzungen|Beta|Eigenschaft **useOAuth** zur Entität [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) hinzugefügt|
@@ -1878,7 +1881,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 | :-------------- | :---------- | :--------------------------------------- |
 | Ergänzungen        | Beta        | [groupLifecyclePolicy](/graph/api/resources/grouplifecyclepolicy?view=graph-rest-beta)-Entität hinzugefügt. |
 | Ergänzungen        | Beta        | Folgende APIs wurden für Gruppenlebenszyklusrichtlinie hinzugefügt: [create](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-beta), [list](/graph/api/grouplifecyclepolicy-list?view=graph-rest-beta), [get](/graph/api/grouplifecyclepolicy-get?view=graph-rest-beta), [update](/graph/api/grouplifecyclepolicy-update?view=graph-rest-beta), [delete](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-beta), [add group](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-beta), [remove group](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-beta) und [renew a group](/graph/api/grouplifecyclepolicy-renewgroup?view=graph-rest-beta). |
-| Ergänzungen        | Beta        | [List groupLifecylePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta)-Funktion zur [group](/graph/api/resources/group?view=graph-rest-beta)-Entität hinzugefügt. |
+| Ergänzung        | Beta        | [List groupLifecylePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-beta)-Funktion zur [group](/graph/api/resources/group?view=graph-rest-beta)-Entität hinzugefügt. |
 
 ### <a name="intune-apis"></a>Intune APIs
 | Änderungstyp | Version | Beschreibung                              |
@@ -2466,7 +2469,7 @@ Ausführliche Informationen zu bekannten Problemen mit Microsoft Graph-APIs find
 
 | **Änderungstyp** | **Version** | **Beschreibung**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Ergänzungen        | Beta        | Erweitern von Microsoft Graph mit Anwendungsdaten unter Verwendung von [Schemaerweiterungen](extensibility-overview.md#schema-extensions).  Dies wird in den folgenden Ressourcen unterstützt:<br/>Administrative Einheit<br/>Kalenderereignis<br/>Gerät<br/>Gruppe<br/>Nachricht<br/>Organisation<br/>Privater Kontakt<br/>Beitrag<br/>user<br/>Sehen Sie sich das folgende Beispiel an:<br/>[Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Preview)](extensibility-schema-groups.md) |
+| Ergänzung        | Beta        | Erweitern von Microsoft Graph mit Anwendungsdaten unter Verwendung von [Schemaerweiterungen](extensibility-overview.md#schema-extensions).  Dies wird in den folgenden Ressourcen unterstützt:<br/>Administrative Einheit<br/>Kalenderereignis<br/>Gerät<br/>Gruppe<br/>Nachricht<br/>Organisation<br/>Privater Kontakt<br/>Beitrag<br/>user<br/>Sehen Sie sich das folgende Beispiel an:<br/>[Hinzufügen von benutzerdefinierten Daten zu Gruppen mithilfe von Schemaerweiterungen (Preview)](extensibility-schema-groups.md) |
 | Ergänzungen        | Beta        | Es wurde eine alternative Möglichkeit zum Erstellen einer Schemaerweiterungsdefinition bereitgestellt, ohne dass eine überprüfte Vanity-.com-Domäne erforderlich ist. Weitere Informationen finden Sie unter [Schemaerweiterungen](extensibility-overview.md#schema-extensions). |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Hinzufügen von benutzerdefinierten Daten zu Microsoft Graph unter Verwendung von offenen Erweiterungen
