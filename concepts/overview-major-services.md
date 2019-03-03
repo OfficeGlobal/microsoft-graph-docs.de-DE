@@ -3,12 +3,12 @@ title: Wesentliche Dienste und Features in Microsoft Graph
 description: 'Mit Microsoft Graph können Sie mithilfe von REST-APIs und Clientbibliotheken die besten Funktionen aus Office 365, Windows 10 und Enterprise Mobility and Security Services in Microsoft 365 integrieren. Darüber hinaus bietet es Sicherheitsinformationen und Informationen aus sozialen Netzwerken, mit denen Sie die Produktivität der Benutzer, die Kreativität und die Zusammenarbeit im Team steigern und Unternehmensressourcen sowie Benutzerdaten schützen können. '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
+ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820685"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30361891"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Wesentliche Dienste und Features in Microsoft Graph
 
@@ -117,6 +117,7 @@ Einige Dienste werden in Microsoft Graph erstmals zur Verfügung gestellt, ander
 |Feature     |Unterstützende Dienste  |Beschreibung |Weitere Informationen |
 |:-----------|:--------------------|:-----------|:----------------|
 | Kundenterminvereinbarung (Vorschau) | Microsoft Bookings | Richtet sich an kleine Unternehmen, um ihren Kunden zu ermöglichen, Dienstleistungen direkt im Web oder über Facebook zu vereinbaren. Ermöglicht Betreibern von Unternehmen die Verwaltung von Kundenwünschen, Dienstleistungen und Preisen, Mitarbeiterlisten und Terminplänen sowie anderen allgemeinen Geschäftsinformationen. | [Übersicht über die Microsoft Bookings-API](booking-concept-overview.md) |
+| Finanzen (Vorschau) | Dynamics 365 Business Central | Ermöglicht die Verwaltung von Finanzdaten, die Automatisierung und Sicherung der Lieferkette, das Vertriebsmanagement und einen verbesserten Kundenservice, das Projektmanagement und die Optimierung des Betriebs mit der All-in-One-Business-Management-Lösung.| [Business Central-API: Übersicht](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>Nächste Schritte
