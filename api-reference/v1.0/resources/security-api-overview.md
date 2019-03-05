@@ -1,75 +1,99 @@
 ---
 title: Verwenden der Sicherheits-API von Microsoft Graph
-description: 'Die Microsoft Graph-Security-API bietet eine einheitliche Schnittstelle und Schema für die Integration der Sicherheitsfunktionen von Microsoft und Ökosystems Partnern. Dies ermöglicht Kunden Sicherheit Geschäftsabläufe zu optimieren und besser Schutz gegen Bedrohungen im Internet zu erhöhen. Sicherheit-API von Microsoft Graph kann zum Senden von Abfragen an alle Onboarded Sicherheitsanbieter abzurufenden aggregierte Antworten als ein Verbundbenutzer Aggregation Sicherheitsdienst verwendet werden. Verwenden von Microsoft Graph Sicherheit API Anwendungen erstellen, die:'
+description: 'Die Sicherheits-API von Microsoft Graph bietet eine einheitliche Oberfläche und ein Schema zur Integration in Sicherheitslösungen von Microsoft- und Ökosystem-Partnern. Auf diese Weise können Kunden Sicherheitsvorgänge optimieren und sich besser vor zunehmenden Cyberbedrohungen schützen. Die Sicherheits-API von Microsoft Graph kann als Dienst zur Aggregation von Verbundsicherheit verwendet werden, um Abfragen an alle integrierten Sicherheitsanbieter zu übermitteln und zusammengefasste Antworten zu erhalten. Verwenden Sie die Microsoft Graph-Sicherheits-API, um Anwendungen zu erstellen, die:'
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7e693bdfb71f41597d77f40ce8c4ac5490d4ef06
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b3f1d041d6b1a525ba9eff63aca19baf287376ae
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977878"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364591"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Sicherheits-API von Microsoft Graph
+# <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Microsoft Graph-Sicherheits-API
 
-Die Microsoft Graph-Security-API bietet eine einheitliche Schnittstelle und Schema für die Integration der Sicherheitsfunktionen von Microsoft und Ökosystems Partnern. Dies ermöglicht Kunden Sicherheit Geschäftsabläufe zu optimieren und besser Schutz gegen Bedrohungen im Internet zu erhöhen. Sicherheit-API von Microsoft Graph kann zum Senden von Abfragen an alle Onboarded Sicherheitsanbieter abzurufenden aggregierte Antworten als ein Verbundbenutzer Aggregation Sicherheitsdienst verwendet werden. Verwenden von Microsoft Graph Sicherheit API Anwendungen erstellen, die:
+Die Sicherheits-API von Microsoft Graph bietet eine einheitliche Oberfläche und ein Schema zur Integration in Sicherheitslösungen von Microsoft- und Ökosystem-Partnern. Auf diese Weise können Kunden Sicherheitsvorgänge optimieren und sich besser vor zunehmenden Cyberbedrohungen schützen. Die Microsoft Graph-Sicherheits-API fasst Abfragen an alle integrierten Sicherheitsanbieter zusammen und aggregiert die Antworten. Verwenden Sie die Microsoft Graph-Sicherheits-API, um Anwendungen zu erstellen, die:
 
-- Konsolidieren Sie und korrelieren Sie Sicherheitshinweise aus mehreren Quellen
-- Entsperren von Kontextdaten um Untersuchungen zu informieren.
-- Automatisieren von Sicherheitsoperationen für größere Effizienz
-- Transparenz für Sicherheitsdaten zur Ermöglichung von proaktiven Risikomanagement
+- Sicherheitswarnungen aus mehreren Quellen konsolidieren und korrelieren
+- Die Sperrung kontextbezogener Daten aufheben, um Untersuchungen zu ermöglichen
+- Sicherheitsaufgaben, Geschäftsprozesse, Workflows und Berichte automatisieren
+- Bedrohungsindikatoren an Microsoft-Produkte zur individuellen Erkennung senden
+- Aktionen als Reaktion auf neue Bedrohungen aufrufen
+- Einblicke in Sicherheitsdaten liefern, um ein proaktives Risikomanagement zu ermöglichen
 
-Die Microsoft Graph-Security-API enthält die folgenden wichtigen Elemente.
+Die Sicherheits-API von Microsoft Graph umfasst die folgenden wichtigen Entitäten.
 
 ## <a name="alerts"></a>Warnungen
 
-Bei Benachrichtigungen handelt es sich um potenzielle Sicherheitsrisiken innerhalb eines Kunden Mandanten, die von Microsoft oder Partner sicherheitslösungen haben erkannt und für eine Aktion oder Benachrichtigung gekennzeichnet sind. Mit dieser Entität Microsoft Graph Security [Benachrichtigungen](alert.md) können Sie vereinheitlichen und Optimieren von Sicherheitsprobleme in alle integrierten Lösungen. Auf diese Weise können auch Applikationen zum Korrelieren von Warnungen und Kontext zum Schutz und die Antwortzeit zu verbessern. Diese entsperren Betriebseffizienz Sicherheit durch die Reduzierung von Untersuchung Zeit und Auflösung für Vorfälle. Mit der Funktion warnmeldungsaktualisierungs können Sie den Status von bestimmten Warnungen synchronisieren, über verschiedene Security-Produkte und Dienste, die mit der Microsoft Graph Security-API integriert sind, durch Aktualisieren der Entität [Benachrichtigungen](alert.md) .
+Warnungen sind potenzielle Sicherheitsprobleme im Mandanten des Kunden, die von Sicherheitslösungen von Microsoft oder Partnern identifiziert und entsprechend gekennzeichnet wurden, sodass Maßnahmen ergriffen oder Benachrichtigungen gesendet werden. Mit der Microsoft Graph-Sicherheitsentität [alerts](alert.md) können Sie die Verwaltung von Sicherheitsproblemen über alle integrierten Lösungen hinweg vereinheitlichen und optimieren. Auf diese Weise können Warnungen und Kontext in Anwendungen korreliert werden, wodurch der Bedrohungsschutz und die Reaktionszeit verbessert werden. Mit der Funktion zum Aktualisieren der Warnung können Sie den Status bestimmter Warnungen über unterschiedliche Sicherheitsprodukte und -dienste hinweg, die in die Sicherheits-API von Microsoft Graph integriert sind, synchronisieren, indem Sie die [alerts](alert.md)-Entität aktualisieren.
 
-Microsoft Graph Sicherheit Language-integrated Lösungen werden von die folgenden Sicherheitsanbieter Benachrichtigungen erhalten:
+Warnungen der folgenden Anbieter sind über die Microsoft Graph-Sicherheits-API verfügbar. Die Unterstützung für GET-Warnungen, PATCH-Warnungen (Updates sind über die Microsoft Graph-Sicherheits-API verfügbar, werden aber möglicherweise in der Verwaltungsumgebung des Anbieters nicht angezeigt) und das Abonnieren von Warnungen ("Subscribe" über Webhooks) wird in der folgenden Tabelle aufgeführt.
 
-- [Azure-Sicherheitscenter](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Azure Active Directory-Schutz](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [Microsoft-Cloud-Anwendungssicherheit](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Windows-Defender erweiterte Schutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Vorschau)**
-- Microsoft Intune **(private Preview)**
-- Office 365 **(bald verfügbar)**
-- Azure erweiterte Threat Protection **(bald verfügbar)**
-- Partnerlösungen wie Palo auch Netzwerke App-Framework
-
-> **Hinweis:** Neue Anbieter sind kontinuierlich Onboarding auf das Microsoft Graph Security-Ökosystem.
+| Sicherheitsanbieter | GET-Warnung| PATCH-Warnung| Warnung abonnieren|
+|:------------------|:---------|:-----------|:------------------|
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
+| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
+|[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|Office 365 </br> <li> [Standard](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud-App-Sicherheit](https://docs.microsoft.com/de-DE/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Vorschau)**| &#x2713; | &#x2713; | &#x2713; |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(Vorschau)**| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+> **Hinweis:** In das Microsoft Graph-Sicherheitsökosystem werden ständige neue Anbieter eingegliedert. Um neue Anbieter anzufordern oder erweiterte Unterstützung von bestehenden Anbietern zu erhalten, [melden Sie ein Problem im GitHub-Repository der Microsoft Graph-Sicherheits-API](https://github.com/microsoftgraph/security-api-solutions/issues/new) an.
 
 ## <a name="common-use-cases"></a>Allgemeine Anwendungsfälle
 
-Im folgenden sind einige der am häufigsten verwendeten Anforderungen für die Arbeit mit Microsoft Graph Security-API:
+Im Folgenden werden einige der am häufigsten verwendeten Anfragen das Arbeiten mit der Microsoft Graph-Sicherheits-API vorgestellt:
 
-| **Anwendungsfälle**   | **REST-Ressourcen** | **Versuchen Sie es im Graph-Explorer** |
+| **Anwendungsfälle**   | **REST-Ressourcen** | **Ausprobieren im Graph-Tester** |
 |:---------------|:--------|:----------|
 | Warnungen auflisten | [Warnungen auflisten](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| Aktualisieren von Benachrichtigungen | [Warnung aktualisieren](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| Warnungen aktualisieren | [Warnung aktualisieren](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 
-Sie können Microsoft Graph [Webhooks](/graph/webhooks) abonnieren und Benachrichtigungen zu Updates für Microsoft Graph Security Entitäten verwenden.
+Sie können Microsoft Graph-[Webhooks](/graph/webhooks) verwenden, um Benachrichtigungen über Sicherheitsentitäten von Microsoft Graph zu abonnieren und zu erhalten.
 
 ## <a name="resources"></a>Ressourcen
 
-Code und beitragen zu dieser Microsoft Graph Sicherheit API-Beispiele:
+Code und Beiträge zu den folgenden Beispielen für die Microsoft Graph-Sicherheits-API:
 
-- [Beispiel für ASP.NET (c#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [ASP.NET (C#)-Beispiel](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Python-Beispiel](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Beispiel Node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
+- [Node.js (JavaScript)-Beispiel](https://github.com/microsoftgraph/nodejs-security-sample)
 
-Bitten Sie die Community:
+Interaktion mit der Community:
 
-- [Teilnehmen an der Technikcommunity](https://aka.ms/graphsecuritycommunity)
-- [Besprechen Sie StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+- [Treten Sie der technische Access-Community bei](https://aka.ms/graphsecuritycommunity)
+- [Diskutieren auf StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sicherheit-API von Microsoft Graph können neue Methoden, die Sie mit anderen Sicherheits-Lösungen von Microsoft und Partnern ausschließlich zu öffnen. Führen Sie diese Schritte, um die ersten Schritte beim:
+Die Sicherheits-API von Microsoft Graph kann neue Möglichkeiten zum Arbeiten mit anderen Sicherheitslösungen von Microsoft und Partnern eröffnen. Gehen Sie folgendermaßen vor, um loszulegen:
 
-- Ausführen eines Drilldowns in [Benachrichtigungen](alert.md).
-- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus. Wählen Sie unter **Beispielabfragen** **Weitere Beispiele anzeigen** , und legen Sie die Kategorie Sicherheit auf **aktiviert**.
-- Versuchen Sie es [abonnieren und Empfangen von Benachrichtigungen](/graph/webhooks) Entität ändert.
+- Führen Sie einen Drilldown zu [Warnungen](alert.md) aus.
+- Probieren Sie die API im [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer) aus. Klicken Sie unter **Beispielabfragen** auf **Mehr Beispiele anzeigen**, und legen Sie die Kategorie „Sicherheit“ auf **ein** fest.
+- Versuchen Sie, [Benachrichtigungen zu Entitätsänderungen zu abonnieren und zu erhalten](/graph/webhooks).
 
 Benötigen Sie weitere Ideen? Dann sehen Sie sich an, [wie unsere Partner Microsoft Graph verwenden](https://developer.microsoft.com/graph/graph/examples#partners).
+
+## <a name="see-also"></a>Weitere Artikel
+
+[Code und Beiträge](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) zu den folgenden Beispielen für die Microsoft Graph-Sicherheits-API:
+
+- [ASP.NET (C#)-Beispiel](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python-Beispiel](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript)-Beispiel](https://github.com/microsoftgraph/nodejs-security-sample)
+- [PowerShell-Beispiel](https://aka.ms/graphsecuritypowershellsample)
+- [Andere Beispiele oder Einbringen einer neuen Stichprobe](https://aka.ms/graphsecurityapicode)
+
+Weitere Optionen zur Verbindung mit der Microsoft Graph-Sicherheits-API finden Sie hier:
+
+- [Microsoft Graph-Sicherheitsconnectors für Logic Apps, Flow Apps und PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Microsoft Graph-Sicherheitsconnectors für Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Beispiele für ein Jupyter-Notizbuch](https://aka.ms/graphsecurityjupyternotebooks)
+
+Interaktion mit der Community:
+
+- [Treten Sie der technische Access-Community bei](https://aka.ms/graphsecuritycommunity)
+- [Diskutieren auf StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)

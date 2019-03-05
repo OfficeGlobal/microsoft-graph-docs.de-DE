@@ -4,12 +4,12 @@ description: 'Ein Kanal ist eine Auflistung von Nachrichten innerhalb eines Team
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 052c6d8fc298e929dfd1c69e1b64debb7e14eb4a
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 2bebf78e4ad31047289bff77e681c34d92a94abf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994454"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163714"
 ---
 # <a name="channel-resource-type"></a>channel-Ressourcentyp
 
@@ -55,7 +55,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```
