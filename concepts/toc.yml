@@ -96,8 +96,10 @@ items:
           - name: Dateien
             href: onedrive-concept-overview.md
             displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
-          - name: |
-              Identität und Zugriff 
+          - name: Finanzen
+            href: dynamics-business-central-concept-overview.md
+            displayname: 'Dynamics, Dynamics 365 Business Central'
+          - name: Identität und Zugriff
             href: azuread-identity-access-management-concept-overview.md
             displaName: 'Azure AD, Microsoft identity platform'
           - name: E-Mail
@@ -167,6 +169,8 @@ items:
                     href: security-splunk-siemintegration.md
                   - name: QRadar
                     href: security-qradar-siemintegration.md
+              - name: Partner mit der Sicherheit-API
+                href: security-partner-overview.md
           - name: Websites und Listen
             href: sharepoint-concept-overview.md
             displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
