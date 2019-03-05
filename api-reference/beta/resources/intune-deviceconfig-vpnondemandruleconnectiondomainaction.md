@@ -1,28 +1,28 @@
 ---
-title: VpnOnDemandRuleConnectionDomainAction Enum-Typ
-description: VPN auf Abruf Verbindung Domäne Regelaktion.
-localization_priority: Normal
+title: vpnOnDemandRuleConnectionDomainAction-Enumerationstyp
+description: Verbindungs Domänen Aktion für VPN-Regel Verbindung.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb04d29c1fd9c48a5bbcdb02d1af662f3dbb862b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9063b38df7c4c94d1cdef737e458b001f5afe20b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146767"
 ---
-# <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>VpnOnDemandRuleConnectionDomainAction Enum-Typ
+# <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-VPN auf Abruf Verbindung Domäne Regelaktion.
+Verbindungs Domänen Aktion für VPN-Regel Verbindung.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|connectIfNeeded|0|Verbinden Sie bei Bedarf.|
+|connectIfNeeded|0|Bei Bedarf eine Verbindung herstellen.|
 |neverConnect|1|Nie eine Verbindung herstellen.|
 
 

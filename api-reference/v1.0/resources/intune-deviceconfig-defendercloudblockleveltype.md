@@ -1,28 +1,29 @@
 ---
-title: DefenderCloudBlockLevelType Enum-Typ
-description: Mögliche Werte für die Cloud Blockebene
+title: defenderCloudBlockLevelType-Enumerationstyp
+description: Mögliche Werte der Cloud-Blockebene
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e27ec7042522d7d4c83463b062cdc0c4c109daeb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: de81e42827f7c153fc81e7fc19d85e54cb780bfa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951411"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258835"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>DefenderCloudBlockLevelType Enum-Typ
+# <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte für die Cloud Blockebene
+Mögliche Werte der Cloud-Blockebene
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Der Standardwert, verwendet die standardmäßigen Windows Defender Antivirus Blockierung Ebene und bietet starken Erkennung ohne das Risiko von erkennen erhöhen legitime Dateien|
-|hohe|1|Besonders weist eine starke Sicherheitsstufe Erkennung.|
-|highPlus|2|Hoch + wird die hohe Stufe und Maßnahmen zum Schutz der Addition|
-|zeroTolerance|3|0 (null) Toleranz blockiert alle unbekannte ausführbaren Dateien|
+|notConfigured|0|Standardwert, verwendet die standardmäßige Windows Defender-Antivirus-Blockierungs Ebene und bietet eine starke Erkennung, ohne das Risiko der Erkennung legitimer Dateien zu erhöhen|
+|hohe|1|High gilt als starke Erkennungsstufe.|
+|highPlus|2|High + verwendet den hohen Level und wendet zusätzliche Schutzmaßnahmen an.|
+|zeroTolerance|3|Null Toleranz blockiert alle unbekannten ausführbaren Dateien|
 
 
 

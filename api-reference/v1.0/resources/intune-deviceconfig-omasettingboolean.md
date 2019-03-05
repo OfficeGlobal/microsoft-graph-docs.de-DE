@@ -3,19 +3,20 @@ title: omaSettingBoolean-Ressourcentyp
 description: Boolesche Definition der OMA-Einstellungen.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f0b3f2d04c9476cc10a67c1e68ba9a29288e8875
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1d202997cdf0c1325e887337842513cc30dd2941
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986635"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256392"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Boolesche Definition der OMA-Einstellungen.
+
 
 Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).
 
@@ -23,12 +24,13 @@ Erbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md).
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Anzeigename Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|Zeichenfolge|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Beschreibung. Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Zeichenfolge|OMA Vererbt von [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |Wert|Boolescher|Wert.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

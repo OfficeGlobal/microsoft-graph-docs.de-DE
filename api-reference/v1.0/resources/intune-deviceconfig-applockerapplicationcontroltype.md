@@ -1,29 +1,30 @@
 ---
-title: AppLockerApplicationControlType Enum-Typ
-description: Mögliche Werte Anwendungstypen AppLocker-Steuerelement
+title: appLockerApplicationControlType-Enumerationstyp
+description: Mögliche Werte von AppLocker-Anwendungs Steuerelementtypen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 258a98b9ec4945c807a6aae2b34a178628952ac4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5b1e463959cf4b5b39076fcf200b1c61ea0e73c0
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937957"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257078"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a>AppLockerApplicationControlType Enum-Typ
+# <a name="applockerapplicationcontroltype-enum-type"></a>appLockerApplicationControlType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Mögliche Werte Anwendungstypen AppLocker-Steuerelement
+Mögliche Werte von AppLocker-Anwendungs Steuerelementtypen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Gerät Standardwert, keine Anwendung Steuerelementtyp ausgewählt.|
-|enforceComponentsAndStoreApps|1|Windows-Komponente und Store-apps zu erzwingen.|
-|auditComponentsAndStoreApps|2|Überwachen Sie Windows-Komponente und Store-apps.|
-|enforceComponentsStoreAppsAndSmartlocker|3|Erzwingen Sie Windows-Komponenten zu, apps und intelligente Locker.|
-|auditComponentsStoreAppsAndSmartlocker|4|Überwachen von Windows-Komponenten, apps und intelligente Locker.|
+|notConfigured|0|Geräte-Standardwert, kein Anwendungs Steuerelementtyp ausgewählt.|
+|enforceComponentsAndStoreApps|1|Erzwingen Sie Windows Component-und Store-Apps.|
+|auditComponentsAndStoreApps|2|ÜberWachen von Windows Component-und Store-Apps.|
+|enforceComponentsStoreAppsAndSmartlocker|3|Erzwingen Sie Windows-Komponenten, Store-Apps und Smart locker.|
+|auditComponentsStoreAppsAndSmartlocker|4|ÜberWachen Sie Windows-Komponenten, Store-Apps und Smart locker.|
 
 
 

@@ -3,19 +3,20 @@ title: deviceInstallState-Ressourcentyp
 description: Enthält Eigenschaften für den Installationsstatus für ein Gerät.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 39f7331f8bc83840b8b5865cb71414382b3d5a50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6e737a58fc9547d54feeeeef47136286285c1e99
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963689"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255059"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält Eigenschaften für den Installationsstatus für ein Gerät.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,18 +29,19 @@ Enthält Eigenschaften für den Installationsstatus für ein Gerät.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|deviceName|String|Name des Geräts|
-|deviceId|String|ID des Geräts|
+|id|String|Schlüssel der Entität|
+|deviceName|Zeichenfolge|Name des Geräts|
+|deviceId|Zeichenfolge|ID des Geräts|
 |lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Synchronisierung|
 |installState|[installState](../resources/intune-books-installstate.md)|Installationsstatus des E-Books. Mögliche Werte sind: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` und `unknown`.|
-|errorCode|String|Fehlercode von Installationsfehlern|
+|errorCode|Zeichenfolge|Fehlercode von Installationsfehlern|
 |osVersion|Zeichenfolge|Betriebssystemversion|
 |osDescription|String|Beschreibung des Betriebssystems|
 |userName|String|Benutzername des Geräts|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

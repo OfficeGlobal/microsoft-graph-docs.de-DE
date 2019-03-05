@@ -3,25 +3,26 @@ title: Aktion „wipe“
 description: Mit dieser Aktion lässt sich ein Gerät zurücksetzen.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 20ebe11dce6847066148f06a77bffa970e3a1b1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 23d4d9536c57d4a9f2af863473b85d2062a06b3a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919820"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259157"
 ---
-# <a name="wipe-action"></a>Aktion „wipe“
+# <a name="wipe-action"></a>Zurücksetzung
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mit dieser Aktion lässt sich ein Gerät zurücksetzen.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
-|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegiert (Geschäfts-, Schul- oder Unikonto)|DeviceManagementManagedDevices. PriviligedOperation. all, DeviceManagementManagedDevices. ReadWrite. all|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -37,7 +38,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -50,7 +51,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |keepEnrollmentData|Boolean|Noch nicht dokumentiert|
-|keepUserData|Boolescher Wert|Noch nicht dokumentiert|
+|keepUserData|Boolean|Noch nicht dokumentiert|
 |macOsUnlockCode|String|Noch nicht dokumentiert|
 
 
@@ -59,6 +60,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
@@ -74,7 +76,7 @@ Content-length: 109
 }
 ```
 
-### <a name="response"></a>Antwort
+### <a name="response"></a>Reaktion
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
 HTTP/1.1 204 No Content

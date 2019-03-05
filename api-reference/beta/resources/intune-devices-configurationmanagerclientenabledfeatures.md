@@ -1,21 +1,21 @@
 ---
 title: configurationManagerClientEnabledFeatures-Ressourcentyp
 description: Im Konfigurations-Manager-Client aktivierte Features
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7975130bb047e097ea0d52a4ce770fb35e4efa32
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed376bc616c26f1ad6e8a3ea06d3898c051e8d0b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425904"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148776"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Im Konfigurations-Manager-Client aktivierte Features
 
@@ -28,6 +28,8 @@ Im Konfigurations-Manager-Client aktivierte Features
 |deviceConfiguration|Boolean|Gibt an, ob die Gerätekonfiguration von Intune verwaltet wird|
 |compliancePolicy|Boolean|Gibt an, ob Compliance-Richtlinie von Intune verwaltet wird|
 |windowsUpdateForBusiness|Boolean|Gibt an, ob Windows Update for Business von Intune verwaltet wird|
+|endpointProtection|Boolean|Ob der Endpunktschutz von InTune verwaltet wird|
+|officeApps|Boolean|Ob die Office-Anwendung von InTune verwaltet wird|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -47,7 +49,9 @@ Es folgt eine JSON-Darstellung der Ressource.
   "resourceAccess": true,
   "deviceConfiguration": true,
   "compliancePolicy": true,
-  "windowsUpdateForBusiness": true
+  "windowsUpdateForBusiness": true,
+  "endpointProtection": true,
+  "officeApps": true
 }
 ```
 

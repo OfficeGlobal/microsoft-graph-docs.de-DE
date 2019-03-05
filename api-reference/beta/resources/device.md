@@ -1,21 +1,21 @@
 ---
 title: Geräteressourcentyp
-description: Stellt ein Gerät im Verzeichnis registriert. Geräte werden mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von directoryObject.
+description: Stellt ein Gerät dar, das im Verzeichnis registriert ist. Geräte werden mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von directoryObject.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8f8b689840220267fe1f048b0108193ba1cdb308
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641372"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379500"
 ---
 # <a name="device-resource-type"></a>Geräteressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stellt ein Gerät im Verzeichnis registriert. Geräte werden mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von [directoryObject](directoryobject.md).
+Stellt ein Gerät dar, das im Verzeichnis registriert ist. Geräte werden mithilfe des Geräteregistrierungsdiensts oder von Intune in der Cloud erstellt. Sie werden von Richtlinien für bedingten Zugriff für mehrstufige Authentifizierung verwendet. Diese Geräte können Desktopcomputer, Laptops sowie Mobiltelefone und Tablets umfassen. Erbt von [directoryObject](directoryobject.md).
 
 Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe von [Erweiterungen](/graph/extensibility-overview) eigene Daten hinzuzufügen.
 
@@ -23,13 +23,13 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 
 | Methode       | Rückgabetyp  |Beschreibung|
 |:---------------|:--------|:----------|
-|[Get device](../api/device-get.md) | [Gerät](device.md) |Lesen Sie Eigenschaften und Beziehungen des Geräts-Objekts.|
+|[Get device](../api/device-get.md) | [device](device.md) |Lesen von Eigenschaften und Beziehungen des Device-Objekts.|
 |[List devices](../api/device-list.md) | [Geräte](device.md)sammlung| Dient zum Abrufen einer Liste von Geräten, die in dem Verzeichnis registriert sind. |
-|[Update device](../api/device-update.md) | [Gerät](device.md)  |Aktualisieren Sie die Eigenschaften des Geräts-Objekts. |
-|[Delete device](../api/device-delete.md) | Keine |Das Objekt zu löschen. |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen das Gerät ein direktes Mitglied ist. |
-|[Transitive memberOf auflisten](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Auflisten der Gruppen, denen das Gerät ein Mitglied ist. Dieser Vorgang ist transitiv. |
-|[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen der Benutzer, die registrierte Besitzer des Geräts in der registeredOwners-Navigationseigenschaft sind.|
+|[Update device](../api/device-update.md) | [Gerät](device.md)  |Aktualisieren Sie die Eigenschaften des Device-Objekts. |
+|[Delete device](../api/device-delete.md) | Keine |Löschen Sie das Device-Objekt. |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| Listet die Gruppen auf, von denen das Gerät direkt Mitglied ist. |
+|[Transitive memberOf auflisten](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md)-Sammlung| Listet die Gruppen auf, in denen das Gerät Mitglied ist. Dieser Vorgang ist transitiv. |
+|[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Dient zum Abrufen der Benutzer, die registrierte Besitzer des Geräts in der registeredOwners-Navigationseigenschaft sind.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md)-Sammlung| Dient zum Abrufen registrierter Benutzer des Geräts aus der registeredUsers-Navigationseigenschaft.|
 |**Offene Erweiterungen**| | |
 |[Offene Erweiterung erstellen](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Erstellt eine offene Erweiterung und fügt benutzerdefinierte Eigenschaften zu einer neuen oder vorhandenen Ressource hinzu.|
@@ -40,40 +40,43 @@ Diese Ressource ermöglicht es Ihnen, benutzerdefinierten Eigenschaften mithilfe
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. Der Standardwert ist true.|
+|accountEnabled|Boolean| **true**, wenn das Konto aktiviert ist; andernfalls **false**. der Standardwert ist true.|
 |alternativeSecurityIds|alternativeSecurityId-Sammlung| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
-|approximateLastSignInDateTime|DateTimeOffset| Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
+|approximateLastSignInDateTime|DateTimeOffset| Der timestamp-Typ stellt Datums-und Uhrzeitinformationen unter Verwendung des ISO 8601-Formats dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
+|complianceExpirationDateTime|DateTimeOffset| Der Zeitstempel, wenn das Gerät nicht mehr als kompatibel angesehen wird. Der timestamp-Typ stellt Datums-und Uhrzeitinformationen unter Verwendung des ISO 8601-Formats dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. Schreibgeschützt. |
 |deviceId|Guid| Der eindeutige Bezeichner, der vom Azure-Geräteregistrierungsdienst bei der Registrierung festgelegt wird. |
-|deviceMetadata|String| Nur für internen Gebrauch. Auf Null festgelegt. |
+|deviceMetadata|Zeichenfolge| Nur für internen Gebrauch. Auf Null festgelegt. |
 |deviceVersion|Int32| Nur für internen Gebrauch. |
-|displayName|String| Der Anzeigename für das Gerät. Erforderlich. |
-|id|String|Die eindeutige ID für das Gerät. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
-|isCompliant|Boolean|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Schreibgeschützt. Dies kann nur durch Intune für einen beliebigen Gerätetyp Betriebssystem oder durch eine [genehmigt MDM-app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden.|
-|isManaged|Boolean|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur durch Intune für einen beliebigen Gerätetyp Betriebssystem oder durch eine [genehmigt MDM-app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden. |
+|displayName|Zeichenfolge| Der Anzeigename für das Gerät. Erforderlich. |
+|id|string|Die eindeutige ID für das Gerät. Geerbt von [directoryObject](directoryobject.md). Schlüssel, lässt keine Nullwerte zu. Schreibgeschützt.|
+|isCompliant|Boolean|**true**, wenn das Gerät den Richtlinien für mobile Geräteverwaltung ( Mobile Device Management, MDM) entspricht; andernfalls **false**. Schreibgeschützt. Dies kann nur von InTune für beliebige Gerätebetriebssystem-Typen oder von einer [genehmigtEN MDM-App](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden.|
+|isManaged|Boolean|**true**, wenn das Gerät durch die mobile Geräteverwaltungs-App verwaltet wird; andernfalls **false**. Dies kann nur von InTune für beliebige Gerätebetriebssystem-Typen oder von einer [genehmigtEN MDM-App](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) für Windows-Betriebssystem Geräte aktualisiert werden. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Der Zeitpunkt der letzten Synchronisierung des Objekts mit dem lokalen Verzeichnis. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'` Schreibgeschützt. |
 |onPremisesSyncEnabled|Boolean|**true**, wenn das Objekt aus einem lokalen Verzeichnis synchronisiert wird; **false**, wenn das Objekt ursprünglich aus einem lokalen Verzeichnis synchronisiert wurde, aber nicht mehr synchronisiert wird; **NULL**, wenn dieses Objekt nie aus einem lokalen Verzeichnis synchronisiert wurde (Standard). Schreibgeschützt.|
-|operatingSystem|String| Der Typ des Betriebssystems auf dem Gerät. Erforderlich. |
-|operatingSystemVersion|String| Auf dem Gerät installierte Betriebssystemversion.
- Erforderlich.  |
+|operatingSystem|Zeichenfolge| Der Typ des Betriebssystems auf dem Gerät. Erforderlich. |
+|operatingSystemVersion|Zeichenfolge| Auf dem Gerät installierte Betriebssystemversion.
+ Erforderlich. |
 |physicalIds|String collection| Nur für internen Gebrauch. Lässt keine Nullwerte zu. |
-|trustType|String| Typ von Vertrauensstellung für das beigetretene Gerät. Schreibgeschützt. Mögliche Werte: <br />**Arbeitsplatz** - Gibt an *, dass eigene persönliche Geräte mitgebracht werden sollen*<br />**AzureAd** - Nur Geräte, die mit der Cloud verknüpft sind<br />**ServerAd** - Lokale Geräte, die der Domäne beigetreten sind, die mit Azure AD verknüpft sind. Weitere Informationen hierzu finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
-|Name| String | Der Anzeigename eines Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Status | String| Gerät ist online oder offline. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Plattform |String|Plattform des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet.|
-|Art| String| Formfaktor des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Model| String| Modell des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
-|Hersteller| String| Hersteller des Geräts. Nur zurückgegeben, wenn sich Benutzer mit einem Microsoft-Konto als Teil des Project-ROM anmeldet. |
+|Profile Type|Zeichenfolge|Der Profiltyp des Geräts. Mögliche Werte:<br />**RegisteredDevice** Standard<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
+|systemLabels|String collection| Liste der Bezeichnungen, die vom System auf das Gerät angewendet werden. |
+|trustType|Zeichenfolge| Typ von Vertrauensstellung für das beigetretene Gerät. Schreibgeschützt. Mögliche Werte: <br />**Arbeitsplatz** - Gibt an *, dass eigene persönliche Geräte mitgebracht werden sollen*<br />**AzureAd** - Nur Geräte, die mit der Cloud verknüpft sind<br />**ServerAd** - Lokale Geräte, die der Domäne beigetreten sind, die mit Azure AD verknüpft sind. Weitere Informationen hierzu finden Sie unter [Einführung in die Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|Name| Zeichenfolge | Anzeigename eines Geräts. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. |
+|Status | Zeichenfolge| Das Gerät ist online oder offline. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. |
+|Plattform |Zeichenfolge|Geräteplattform. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet.|
+|Art| Zeichenfolge| Form Faktor des Geräts. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. |
+|Model| Zeichenfolge| Modell des Geräts. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. |
+|Hersteller| Zeichenfolge| Hersteller des Geräts. Wird nur zurückgegeben, wenn sich der Benutzer mit einem Microsoft-Konto als Teil des Projekts Rom anmeldet. |
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |Erweiterungen|[extension](extension.md)-Sammlung|Die Sammlung der für das Gerät definierten offenen Erweiterungen. Schreibgeschützt. Lässt Nullwerte zu.|
-|registeredOwners|[directoryObject](directoryobject.md)-Sammlung| Der Benutzer, dessen Gerät mit der Cloud verknüpft ist oder der sein persönliches Gerät registriert hat. Der registrierte Besitzer wird zum Zeitpunkt der Registrierung festgelegt. Derzeit kann jeweils nur ein Besitzer vorhanden sein. Schreibgeschützt. Lässt Nullwerte zu.|
-|registeredUsers|[directoryObject](directoryobject.md)-Sammlung| Auflistung von Benutzern, die registrierte Benutzer des Geräts sind. Für mit der Cloud verknüpfte Geräte und registrierte persönliche Geräte werden registrierte Benutzer bei der Registrierung auf den gleichen Wert wie registrierte Besitzer festgelegt. Schreibgeschützt. Lässt Nullwerte zu.|
-|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der open-Erweiterungen für das Gerät definiert. Lässt Nullwerte zu.|
-|registeredOwners|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Besitzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
+|registeredOwners|[directoryObject](directoryobject.md) collection| Der Benutzer, dessen Gerät mit der Cloud verknüpft ist oder der sein persönliches Gerät registriert hat. Der registrierte Besitzer wird zum Zeitpunkt der Registrierung festgelegt. Derzeit kann jeweils nur ein Besitzer vorhanden sein. Schreibgeschützt. Lässt Nullwerte zu.|
+|registeredUsers|[directoryObject](directoryobject.md)-Sammlung| Auflistung von Benutzern, die registrierte Benutzer des Geräts sind. Für mit der Cloud verknüpfte Geräte und registrierte persönliche Geräte werden registrierte Benutzer bei der Registrierung auf den gleichen Wert wie registrierte Besitzer festgelegt. Schreibgeschützt. Nullwerte zulassend.|
+|Erweiterungen|[extension](extension.md)-Sammlung|Die Auflistung der für das Gerät definierten geöffneten Erweiterungen. Nullwerte zulassend.|
+|registeredOwners|[directoryObject](directoryobject.md) collection|Benutzer, die registrierte Besitzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
 |registeredUsers|[directoryObject](directoryobject.md)-Sammlung|Benutzer, die registrierte Benutzer des Geräts sind. Schreibgeschützt. Lässt Nullwerte zu.|
-|Befehle | Collection(Microsoft.Graph.Command) | Befehle, die an dieses Gerät gesendet|
+|Befehle | Collection (Microsoft. Graph. Command) | An dieses Gerät gesendete Befehlsgruppe|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -94,6 +97,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 {
   "accountEnabled": true,
   "approximateLastSignInDateTime": "String (timestamp)",
+  "complianceExpirationDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
   "deviceVersion": 1024,
@@ -106,6 +110,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
+  "profileType": "string",
+  "systemLabels": ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

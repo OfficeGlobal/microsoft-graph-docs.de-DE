@@ -4,35 +4,36 @@ description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e7351eb15a194c68c4bd3b7abc59d866b5f4f237
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c96877d25476ede3cee6ce407c1df84f08448a9a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985970"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253057"
 ---
 # <a name="update-devicemanagement"></a>Aktualisieren von „deviceManagement“
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisieren der Eigenschaften eines [deviceManagement](../resources/intune-shared-devicemanagement.md)-Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
-| Berechtigung&nbsp;Typ&nbsp;(durch&nbsp;Workflow) | Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten) |
+| &nbsp;Berechtigungstyp&nbsp;(nach&nbsp;Workflow) | Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten) |
 |:---|:---|
 | Delegiert (Geschäfts-, Schul- oder Unikonto) |
 | &nbsp;&nbsp; Überwachung | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Begriffe des Unternehmens | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Corporate Registrierung | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Unternehmensbedingungen | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Unternehmensregistrierung | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp; Gerätekonfiguration | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; Gerätemanagement | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Endpoint Protection. | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Geräteverwaltung | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Endpunktschutz | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; Benachrichtigung | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Rollenbasierte Zugriffssteuerung | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; Remoteunterstützung | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Telekommunikation Ausgaben Management | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Remote Unterstützung | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Telekom-Spesenverwaltung | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Problembehandlung | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt|
@@ -48,7 +49,7 @@ PATCH /deviceManagement
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -65,11 +66,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |**deviceConfiguration**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Die möglichen Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Mögliche Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|„intuneBrand“ enthält Daten, mit denen das Aussehen der Unternehmensportal-Anwendungen und des Endbenutzer-Webportals angepasst wird.|
 
-Anforderung Body-Eigenschaft Unterstützung variiert je nach Workflow.
+Die Unterstützung von Request Body-Eigenschaften variiert je nach Workflow.
 
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [deviceManagement](../resources/intune-shared-devicemanagement.md) im Antworttext zurück.
@@ -109,7 +110,7 @@ Content-length: 751
 
 ### <a name="response"></a>Antwort
 
-Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Zurückgegebene Eigenschaften variieren je nach Workflow und Kontext.
+Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. ZurückgeGebene Eigenschaften unterscheiden sich je nach Workflow und Kontext.
 
 ``` http
 HTTP/1.1 200 OK

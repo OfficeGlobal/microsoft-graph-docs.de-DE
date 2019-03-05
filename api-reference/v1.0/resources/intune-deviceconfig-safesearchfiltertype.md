@@ -1,27 +1,28 @@
 ---
-title: SafeSearchFilterType Enum-Typ
-description: Gibt an, welche sicheres Suchen (Filterung Versender nicht jugendfreier Inhalte) erforderlich ist
+title: safeSearchFilterType-Enumerationstyp
+description: Gibt an, welche Ebene der sicheren Suche (Filterung von Erwachseneninhalten) erforderlich ist.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 788a266cdd0161ce1cfef426a7fcf4d9726e3324
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964613"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250586"
 ---
-# <a name="safesearchfiltertype-enum-type"></a>SafeSearchFilterType Enum-Typ
+# <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt an, welche sicheres Suchen (Filterung Versender nicht jugendfreier Inhalte) erforderlich ist
+Gibt an, welche Ebene der sicheren Suche (Filterung von Erwachseneninhalten) erforderlich ist.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|User-Defined, Standardwert, keine beabsichtigt.|
-|Strict|1|Strict, höchsten Filtern anhand der Versender nicht jugendfreier Inhalte.|
-|Moderater|2|Moderater Filtern anhand der Versender nicht jugendfreier Inhalte (gültige Suchergebnisse werden nicht gefiltert).|
+|userDefined|0|Benutzerdefiniert, Standardwert, keine Absicht.|
+|Strict|1|Strenge, höchste Filterung bei Erwachseneninhalten.|
+|Moderate|2|Moderate Filterung mit Adult-Inhalten (gültige Suchergebnisse werden nicht gefiltert).|
 
 
 

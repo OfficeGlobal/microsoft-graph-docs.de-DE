@@ -3,19 +3,20 @@ title: managedDeviceOverview-Ressourcentyp
 description: Zusammenfassungsdaten für verwaltete Geräte
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7a5abdd3b5455272de7d1cf73044a1356d728dd0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: accc6d976db80421cd06fd8071417bf07684a71a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981196"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250614"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Zusammenfassungsdaten für verwaltete Geräte
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -34,6 +35,7 @@ Zusammenfassungsdaten für verwaltete Geräte
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

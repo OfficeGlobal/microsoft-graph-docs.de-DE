@@ -1,33 +1,33 @@
 ---
-title: WindowsUpdateForBusinessUpdateWeeks Enum-Typ
-description: Die Installation des Updates auf den Wochen des Monats geplant
-localization_priority: Normal
+title: windowsUpdateForBusinessUpdateWeeks-Enumerationstyp
+description: Updateinstallation für die Wochen des Monats geplant
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 861fcf1a227f57a3d6f5353b64689d02e8ab5996
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2f06f63672a704d1d69ae62b353b025b8b78e063
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395867"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147026"
 ---
-# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>WindowsUpdateForBusinessUpdateWeeks Enum-Typ
+# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Installation des Updates auf den Wochen des Monats geplant
+Updateinstallation für die Wochen des Monats geplant
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|vom Typ userDefined|0|Ermöglicht es dem Benutzer festgelegt.|
-|ErsteWoche|1|Die Installation des Updates in der ersten Woche des Monats geplant|
-|secondWeek|2|Die Installation des Updates auf die zweite Woche des Monats geplant|
-|thirdWeek|4|Die Installation des Updates in der dritten Woche des Monats geplant|
-|fourthWeek|8|Die Installation des Updates auf der vierte Woche des Monats geplant|
-|everyWeek|15|Die Installation des Updates auf jede Woche des Monats geplant|
+|userDefined|0|Zulassen, dass der Benutzer festgelegt wird.|
+|firstWeek|1|Updateinstallation für die erste Woche des Monats geplant|
+|secondWeek|2|Updateinstallation für die zweite Woche des Monats geplant|
+|thirdWeek|4|Updateinstallation für die dritte Woche des Monats geplant|
+|fourthWeek|8|Geplante Installation des Updates in der vierten Woche des Monats|
+|everyWeek|15|Updateinstallation für jede Woche des Monats geplant|
 
 
 

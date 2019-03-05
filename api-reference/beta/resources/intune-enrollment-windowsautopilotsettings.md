@@ -1,38 +1,38 @@
 ---
-title: Ressourcentyp windowsAutopilotSettings
-description: Die Ressource WindowsAutopilotSettings stellt ein Windows-Konto Autopilot Synchronisationsdaten mit Windows-Gerät synchronisieren Datendienst dar.
-localization_priority: Normal
+title: windowsAutopilotSettings-Ressourcentyp
+description: Die windowsAutopilotSettings-Ressource stellt ein Windows Autopilot-Konto zum Synchronisieren von Daten mit dem Windows-Gerätedaten-Synchronisierungsdienst dar.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd4641258dbc02829d4b06817467a652de2cb583
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b34d6edbed5bc98989ea70186b081d5c88a1c1b6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140516"
 ---
-# <a name="windowsautopilotsettings-resource-type"></a>Ressourcentyp windowsAutopilotSettings
+# <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Die Ressource WindowsAutopilotSettings stellt ein Windows-Konto Autopilot Synchronisationsdaten mit Windows-Gerät synchronisieren Datendienst dar.
+Die windowsAutopilotSettings-Ressource stellt ein Windows Autopilot-Konto zum Synchronisieren von Daten mit dem Windows-Gerätedaten-Synchronisierungsdienst dar.
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Abrufen von windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Lesen Sie Eigenschaften und Beziehungen des [WindowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) -Objekts.|
-|[WindowsAutopilotSettings aktualisieren](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Aktualisieren Sie die Eigenschaften eines [WindowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) -Objekts.|
+|[WindowsAutopilotSettings abrufen](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Lesen von Eigenschaften und Beziehungen des [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) -Objekts.|
+|[WindowsAutopilotSettings aktualisieren](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Aktualisieren der Eigenschaften eines [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) -Objekts.|
 |[sync-Aktion](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Keine|Noch nicht dokumentiert|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|GUID des Objekts|
-|lastSyncDateTime|DateTimeOffset|Zuletzt Daten synchronisieren Datum-Uhrzeit mit DDS-Dienst.|
-|lastManualSyncTriggerDateTime|DateTimeOffset|Zuletzt Daten synchronisieren Datum-Uhrzeit mit DDS-Dienst.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Gibt den Status der Synchronisierung mit Gerät Daten Synchronisierungsdiensts (DDS). Mögliche Werte: `unknown`, `inProgress`, `completed`, `failed`.|
+|lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Datensynchronisierung mit dem DDS-Dienst.|
+|lastManualSyncTriggerDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Datensynchronisierung mit dem DDS-Dienst.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Gibt den Status der Synchronisierung mit Device Data Sync (DDS)-Dienst an. Mögliche Werte: `unknown`, `inProgress`, `completed`, `failed`.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

@@ -1,84 +1,84 @@
 ---
-title: Ressourcentyp windows10VpnConfiguration
-description: Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Windows-10-Gerät (desktop oder mobilen) zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
-localization_priority: Normal
+title: windows10VpnConfiguration-Ressourcentyp
+description: Durch die Bereitstellung der Konfigurationen in diesem Profil können Sie das Windows 10-Gerät (Desktop oder Mobil) anweisen, eine Verbindung mit dem gewünschten VPN-Endpunkt herzustellen. Durch Angeben der Authentifizierungsmethode und der vom VPN-Endpunkt erwarteten Sicherheitstypen können Sie die VPN-Verbindung für Endbenutzer nahtlos ausführen.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75710eb8d969f4bfc751405ecf6eca50ced6cfe1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c4b1b906fc4a98895acc6e23a4b3e9a4d78ff28a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406969"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148713"
 ---
-# <a name="windows10vpnconfiguration-resource-type"></a>Ressourcentyp windows10VpnConfiguration
+# <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Durch die Konfigurationen in dieses Profil bereitstellen können Sie das Windows-10-Gerät (desktop oder mobilen) zur gewünschten Endpunkt für VPN-Verbindung anweisen. Durch Angeben von erwartet die Authentifizierungstypen-Methode und der Sicherheit durch VPN-Endpunkt, dass Sie die VPN-Verbindung nahtlos für Endbenutzer vornehmen können.
+Durch die Bereitstellung der Konfigurationen in diesem Profil können Sie das Windows 10-Gerät (Desktop oder Mobil) anweisen, eine Verbindung mit dem gewünschten VPN-Endpunkt herzustellen. Durch Angeben der Authentifizierungsmethode und der vom VPN-Endpunkt erwarteten Sicherheitstypen können Sie die VPN-Verbindung für Endbenutzer nahtlos ausführen.
 
 
-Erbt vom [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)
+Erbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)
 
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
-|[Liste windows10VpnConfigurations](../api/intune-deviceconfig-windows10vpnconfiguration-list.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Auflistung|Listeneigenschaften und Beziehungen der [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekte.|
-|[Abrufen von windows10VpnConfiguration](../api/intune-deviceconfig-windows10vpnconfiguration-get.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Lesen Sie Eigenschaften und Beziehungen des [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
-|[Erstellen von windows10VpnConfiguration](../api/intune-deviceconfig-windows10vpnconfiguration-create.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Erstellen eines neuen [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
+|[Windows10VpnConfigurations aufListen](../api/intune-deviceconfig-windows10vpnconfiguration-list.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekte.|
+|[Windows10VpnConfiguration abrufen](../api/intune-deviceconfig-windows10vpnconfiguration-get.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
+|[Windows10VpnConfiguration erstellen](../api/intune-deviceconfig-windows10vpnconfiguration-create.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Erstellen eines neuen [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
 |[Windows10VpnConfiguration löschen](../api/intune-deviceconfig-windows10vpnconfiguration-delete.md)|Keine|Löscht eine [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md).|
-|[Windows10VpnConfiguration aktualisieren](../api/intune-deviceconfig-windows10vpnconfiguration-update.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Aktualisieren Sie die Eigenschaften eines [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
+|[Windows10VpnConfiguration aktualisieren](../api/intune-deviceconfig-windows10vpnconfiguration-update.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|Aktualisieren der Eigenschaften eines [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Zeichenfolgenauflistung|Liste der Bereich Tags für diese Instanz der Entität. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereich Kategorien unterstützt. Zuweisen der ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert false ist und Entitäten nicht bereichsbezogenen Benutzern angezeigt werden. Dies tritt für Legacy-Richtlinien in Silverlight erstellt und kann durch Löschen und Neuerstellen der Richtlinie in der Azure-Verwaltungsportal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|connectionName|Zeichenfolge|Name der Verbindung für den Benutzer angezeigt. Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|Server|[VpnServer](../resources/intune-deviceconfig-vpnserver.md) -Auflistung|Liste der VPN-Server im Netzwerk. Stellen Sie sicher, dass Endbenutzer diese Netzwerkadressen zugreifen können. Diese Collection darf maximal 500 Elemente enthalten. Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|customXml|Binär|Benutzerdefinierte XML-Befehle, die die VPN-Verbindung konfiguriert. (UTF8 codiert Bytearray) Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|connectionName|Zeichenfolge|Dem Benutzer angezeigter Verbindungsname. Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|Server|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) -Sammlung|Liste der VPN-Server im Netzwerk. Stellen Sie sicher, dass Endbenutzer auf diese Netzwerkspeicherorte zugreifen können. Diese Collection darf maximal 500 Elemente enthalten. Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|customXml|Binär|Benutzerdefinierte XML-Befehle, mit denen die VPN-Verbindung konfiguriert wird. (UTF8-codiertes Bytearray) Geerbt von [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Profil Zieltyp. Mögliche Werte sind: `user`, `device` und `autoPilotDevice`.|
 |connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Verbindungstyp. Mögliche Werte: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
-|enableSplitTunneling|Boolean|Split-tunneling zu aktivieren.|
-|enableAlwaysOn|Boolean|Aktivieren Sie Always On-Modus.|
-|enableDeviceTunnel|Boolean|Aktivieren Sie Gerät Tunnel.|
-|enableDnsRegistration|Boolean|Aktivieren Sie die IP-Adressregistrierung mit internen DNS.|
-|dnsSuffixes|Zeichenfolgenauflistung|Geben Sie die DNS-Suffixe hinzufügen zu DNS-Suchliste Kurznamen ordnungsgemäß weitergeleitet.|
+|enableSplitTunneling|Boolean|Aktivieren Sie geteilten Tunneln.|
+|enableAlwaysOn|Boolean|Aktivieren Sie Always on Mode.|
+|enableDeviceTunnel|Boolean|Aktivieren Sie den Gerätetunnel.|
+|enableDnsRegistration|Boolean|Aktivieren Sie die IP-Adressregistrierung mit internem DNS.|
+|dnsSuffixes|String collection|Geben Sie DNS-Suffixe an, die der DNS-Suchliste hinzugefügt werden sollen, um kurze Namen ordnungsgemäß weiterzuleiten|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentifizierungsmethode. Mögliche Werte sind: `certificate`, `usernameAndPassword` und `customEapXml`.|
-|rememberUserCredentials|Boolean|Beachten Sie die Anmeldeinformationen des Benutzers.|
-|enableConditionalAccess|Boolean|Aktivieren Sie bedingte Zugriff.|
-|enableSingleSignOnWithAlternateCertificate|Boolean|Aktivieren Sie einmaliges Anmelden (SSO) mit anderen Zertifikats.|
-|singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Einmaliges Anmelden erweiterte Schlüsselverwendung (EKU).|
-|singleSignOnIssuerHash|Zeichenfolge|Einmaliges Anmelden Aussteller Hash.|
-|eapXml|Binär|Extensible Authentication-Protokoll (EAP) XML. (UTF8-codiertes Bytearray)|
-|proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Proxy-Server.|
-|associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md) -Auflistung|Zugehörige Apps. Diese Collection darf maximal 10.000 Elemente enthalten.|
-|onlyAssociatedAppsCanUseConnection|Boolean|Nur zugeordnete Apps können Verbindung (pro app VPN) verwenden.|
-|windowsInformationProtectionDomain|Zeichenfolge|Windows Informationen Schutz (WIP) Domäne, die diese Verbindung zugeordnet.|
-|trafficRules|[VpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) -Auflistung|Datenverkehr Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
-|Routen|[VpnRoute](../resources/intune-deviceconfig-vpnroute.md) -Auflistung|Routen (optional für Drittanbieter-Anbieter). Diese Sammlung kann bis zu 1000 Elemente enthalten.|
-|dnsRules|[VpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) -Auflistung|DNS-Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
-|trustedNetworkDomains|Zeichenfolgenauflistung|Vertrauenswürdige Netzwerkdomänen|
+|rememberUserCredentials|Boolean|Denken Sie an Benutzeranmeldeinformationen.|
+|enableConditionalAccess|Boolean|Aktivieren Sie den bedingten Zugriff.|
+|enableSingleSignOnWithAlternateCertificate|Boolean|Aktivieren Sie einmaliges Anmelden (Single Sign-on, SSO) mit alternativem Zertifikat.|
+|singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Erweiterte Schlüsselverwendung mit einmaligem Anmelden (EKU).|
+|singleSignOnIssuerHash|Zeichenfolge|Single Sign-on-Aussteller-Hash.|
+|eapXml|Binär|EAP-XML (Extensible Authentication Protocol). (UTF8-codiertes Bytearray)|
+|Sie|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Proxy Server.|
+|associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md) -Sammlung|Zugehörige apps. Diese Collection darf maximal 10.000 Elemente enthalten.|
+|onlyAssociatedAppsCanUseConnection|Boolean|Nur zugehörige Apps können eine Verbindung (pro-App-VPN) verwenden.|
+|windowsInformationProtectionDomain|Zeichenfolge|Windows Information Protection (WIP)-Domäne, die dieser Verbindung zugeordnet werden soll.|
+|trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) -Sammlung|Datenverkehrs Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
+|Routen|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) -Sammlung|Routen (optional für Drittanbieter). Diese Sammlung kann bis zu 1000 Elemente enthalten.|
+|dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) -Sammlung|DNS-Regeln. Diese Sammlung kann bis zu 1000 Elemente enthalten.|
+|trustedNetworkDomains|String collection|Vertrauenswürdige Netzwerkdomänen|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
 |:---|:---|:---|
-|groupAssignments|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Auflistung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Sammlung|Die Liste derGruppenzuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)-Sammlung|Liste der Zuweisungen für das Gerätekonfigurationsprofil. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Gerät Konfiguration Installationsstatus durch Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries| [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|identityCertificate|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|Identity-Zertifikat für die Clientauthentifizierung beim Authentifizierungsmethode Zertifikat ist.|
+|identityCertificate|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|Identitätszertifikat für die Clientauthentifizierung, wenn die Authentifizierungsmethode das Zertifikat ist.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.

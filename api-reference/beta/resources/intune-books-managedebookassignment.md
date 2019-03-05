@@ -1,21 +1,21 @@
 ---
 title: managedEBookAssignment-Ressourcentyp
 description: Enthält Eigenschaften zum Zuweisen eines E-Books zu einer Gruppe.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6d6cdc1cbe5b2eb7b734219dbb7c67152afe3a2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7954dbb1208a59842dd0a743e18e4f81466e09f6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146879"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält Eigenschaften zum Zuweisen eines E-Books zu einer Gruppe.
 

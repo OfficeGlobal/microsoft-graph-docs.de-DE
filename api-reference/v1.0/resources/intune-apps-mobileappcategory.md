@@ -3,19 +3,20 @@ title: mobileAppCategory-Ressourcentyp
 description: Enthält Eigenschaften für eine einzelne Intune-App-Kategorie.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b87ef1bbfff84a19c939fa1eb5d9371b2732ac46
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 82d5f81afca53b01027547b42db4582586a4819f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982022"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253806"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Enthält Eigenschaften für eine einzelne Intune-App-Kategorie.
+
 ## <a name="methods"></a>Methoden
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
@@ -28,12 +29,13 @@ Enthält Eigenschaften für eine einzelne Intune-App-Kategorie.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|String|Schlüssel der Entität|
-|displayName|String|Name der App-Kategorie|
+|id|Zeichenfolge|Schlüssel der Entität|
+|displayName|Zeichenfolge|Name der App-Kategorie|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der mobileAppCategory.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

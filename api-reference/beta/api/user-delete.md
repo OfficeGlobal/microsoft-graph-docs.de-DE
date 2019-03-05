@@ -1,22 +1,26 @@
 ---
-title: Benutzer löschen
-description: Mit dieser API können Sie Benutzer löschen.
+title: Löschen eines Benutzers – Microsoft Graph-API
+description: Beschreibt die Delete-Methode der Benutzerressource (Entity) der Microsoft Graph-API (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2cb2036a2c9b165be0e7981b1be9b700d6b8af93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f7f8ed5b11930865d88ed7f01530c052c3e63738
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525514"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253792"
 ---
 # <a name="delete-a-user"></a>Benutzer löschen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mit dieser API können Sie Benutzer löschen.
+Mit dieser API können Sie Benutzer löschen.  
+
+Nach dem Löschen werden Benutzer Ressourcen in einen temporären Container verschoben und können innerhalb von 30 Tagen wiederhergestellt werden.  Nach diesem Zeitpunkt werden Sie dauerhaft gelöscht.  Weitere Informationen finden Sie unter [deletedItems](../resources/directory.md).
+
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
@@ -26,17 +30,20 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
+
 | Kopfzeile       | Wert|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
@@ -44,7 +51,9 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.
 
 ## <a name="example"></a>Beispiel
-##### <a name="request"></a>Anforderung
+
+### <a name="request"></a>Anforderung
+
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
@@ -53,7 +62,8 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ```http
 DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
-##### <a name="response"></a>Antwort
+### <a name="response"></a>Antwort
+
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 <!-- {
   "blockType": "response",

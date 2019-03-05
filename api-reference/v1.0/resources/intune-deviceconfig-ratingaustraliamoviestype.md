@@ -1,31 +1,32 @@
 ---
-title: RatingAustraliaMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Australien
+title: ratingAustraliaMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Australien
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f7df26bc12a92c2571967c68fcd82619a69cb64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3106197ce0efd3c0355461df58c5d22c314a08a6
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911714"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256539"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>RatingAustraliaMoviesType Enum-Typ
+# <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Filme Bewertung Bezeichnungen in Australien
+Movies-Bewertungs Bezeichnungen in Australien
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|allAllowed|0|Standardwert, alle Filme Inhalte zulassen|
-|allBlocked|1|Alle Inhalte Filme nicht zulassen|
-|Allgemeine|2|Die Klassifizierung G eignet sich für alle Benutzer|
-|parentalGuidance|3|Der SCHUTZGRUPPE empfiehlt Viewer unter 15 mit Eltern oder Aufsichtspersonen-Leitfaden|
-|Erfahrungswerte|4|Die M-Klassifizierung wird für Leser von Berichten unter 15 nicht empfohlen.|
-|agesAbove15|5|Die Klassifizierung MA15 + eignet sich nicht für Leser von Berichten unter 15|
-|agesAbove18|6|Die Klassifizierung R18 + eignet sich nicht für Leser von Berichten unter 18|
+|allAllowed|0|Standardwert, alle Filme zulassen|
+|allBlocked|1|Keine Filme Inhalte zulassen|
+|allgemeine|2|Die G-Klassifikation ist für jeden geeignet|
+|parentalGuidance|3|Der PG empfiehlt den Zuschauern unter 15 mit Anweisungen von Eltern oder Erziehungsberechtigten.|
+|Reifen|4|Die M-Klassifikation wird für Zuschauer unter 15 nicht empfohlen|
+|agesAbove15|5|Die MA15 +-Klassifikation eignet sich nicht für Zuschauer unter 15|
+|agesAbove18|6|Die R18 +-Klassifikation eignet sich nicht für Zuschauer unter 18 Jahren.|
 
 
 

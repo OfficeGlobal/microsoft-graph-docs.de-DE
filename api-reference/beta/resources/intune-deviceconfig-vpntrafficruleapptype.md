@@ -1,30 +1,30 @@
 ---
-title: VpnTrafficRuleAppType Enum-Typ
-description: Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
-localization_priority: Normal
+title: vpnTrafficRuleAppType-Enumerationstyp
+description: Gibt den Typ der APP an, der eine VPN-Datenverkehrs Regel zugeordnet ist.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396021"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140530"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a>VpnTrafficRuleAppType Enum-Typ
+# <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Gibt den Typ der app, die eine VPN-Datenverkehr Regel zugeordnet ist.
+Gibt den Typ der APP an, der eine VPN-Datenverkehrs Regel zugeordnet ist.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|Keine|0|Die Regel Datenverkehr ist nicht mit einer app verknüpft.|
-|Desktop|1|Die Regel Datenverkehr ist desktop-app zugeordnet.|
-|universelle|2|Die Regel Datenverkehr ist eine universelle app zugeordnet.|
+|Keine|0|Die Datenverkehrs Regel ist keiner App zugeordnet.|
+|Desktop|1|Die Datenverkehrs Regel ist einer Desktop-App zugeordnet.|
+|universelle|2|Die Datenverkehrs Regel ist einer universellen App zugeordnet.|
 
 
 

@@ -1,29 +1,30 @@
 ---
-title: FirewallPacketQueueingMethodType Enum-Typ
+title: firewallPacketQueueingMethodType-Enumerationstyp
 description: Mögliche Werte für firewallPacketQueueingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cdd9dc0279abc332bbf7b686f7f429fbd8db8883
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940099"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258926"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>FirewallPacketQueueingMethodType Enum-Typ
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Mögliche Werte für firewallPacketQueueingMethod
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|deviceDefault|0|Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät|
-|deaktiviert|1|Paket Warteschlangen deaktivieren|
-|queueInbound|2|Eingehende, verschlüsselte Pakete Warteschlange|
-|queueOutbound|3|Warteschlange entschlüsselt ausgehenden Pakete für die Weiterleitung|
-|queueBoth|4|Die Warteschlange eingehenden und ausgehenden Pakete|
+|deviceDefault|0|Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts|
+|deaktiviert|1|Deaktivieren von Paketwarteschlangen|
+|queueInbound|2|Eingehende verschlüsselte Pakete in der Warteschlange|
+|queueOutbound|3|Entschlüsselte ausgehende Pakete für die Weiterleitung in der Warteschlange|
+|queueBoth|4|Warteschlange für ein-und ausgehende Pakete|
 
 
 

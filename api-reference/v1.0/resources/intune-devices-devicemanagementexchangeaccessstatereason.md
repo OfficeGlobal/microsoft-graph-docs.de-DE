@@ -1,40 +1,41 @@
 ---
-title: DeviceManagementExchangeAccessStateReason Enum-Typ
-description: Grund der Gerätestatus Exchange-Zugriff.
+title: deviceManagementExchangeAccessStateReason-Enumerationstyp
+description: Grund für den Zugriffsstatus des Geräteaustauschs.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 956eca76c4ccabe0d3d5c003d38e35ced172febf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2c014afbf22c58f89f8b8926058e28a5ca2d1a1d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917412"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252035"
 ---
-# <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>DeviceManagementExchangeAccessStateReason Enum-Typ
+# <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Grund der Gerätestatus Exchange-Zugriff.
+Grund für den Zugriffsstatus des Geräteaustauschs.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|n/v|0|Kein Zugriff Zustand Grund ermittelt aus Exchange|
-|unknown|1|Unbekannte Access Zustand Grund|
-|exchangeGlobalRule|2|Access-Zustand durch Exchange globale Regel bestimmt|
-|exchangeIndividualRule|3|Access-Zustand durch Exchange einzelne Regel bestimmt|
-|exchangeDeviceRule|4|Access-Zustand von Exchange-Regel bestimmt|
-|exchangeUpgrade|5|Access-Zustand aufgrund von Exchange-upgrade|
-|exchangeMailboxPolicy|6|Access-Zustand von Exchange-Postfachrichtlinie bestimmt|
-|andere|7|Access-Zustand durch Exchange bestimmt|
-|kompatible|8|Greifen Sie Zustand gewährt zu, indem Sie Compliance-Herausforderung|
-|notCompliant|9|Access-Status von Compliance-Herausforderung gesperrt|
-|notEnrolled|10|Access-Status von Herausforderung Management gesperrt|
-|unknownLocation|12|Access-Zustand aufgrund von unbekannten Speicherort|
-|mfaRequired|13|Access-Zustand aufgrund mehrstufiger Authentifizierung das Herausforderung|
-|azureADBlockDueToAccessPolicy|14|Access-Status von AAD Zugriffsrichtlinie gesperrt|
-|compromisedPassword|15|Access-Zustand durch Kennwort offengelegt gesperrt|
-|deviceNotKnownWithManagedApp|16|Access-Status von verwalteten Anwendung Herausforderung gesperrt|
+|Keine|0|Kein aus Exchange ermittelter Zugriffsstatus Grund|
+|unknown|1|UnBekannter Zugriffsstatus Grund|
+|exchangeGlobalRule|2|Von der globalen Exchange-Regel festgelegter Zugriffsstatus|
+|exchangeIndividualRule|3|Von Exchange Individual Rule festgelegter Zugriffsstatus|
+|exchangeDeviceRule|4|Von der Exchange-Geräteregel festgelegter Zugriffsstatus|
+|exchangeUpgrade|5|Zugriffsstatus aufgrund des Exchange-Upgrades|
+|exchangeMailboxPolicy|6|Von Exchange-Postfachrichtlinien festgelegter Zugriffsstatus|
+|anderen|7|Von Exchange festgelegter Zugriffsstatus|
+|kompatibel|8|Von Compliance Challenge erteilte Zugriffsstatus|
+|notCompliant|9|Von Compliance-Herausforderungen gesperrter Zugriffsstatus|
+|notEnrolled|10|Von der Verwaltungs Herausforderung gesperrter Zugriffsstatus|
+|unknownLocation|12|Zugriffsstatus aufgrund eines unbekannten Standorts|
+|mfaRequired|13|Zugriffsstatus aufgrund der MFA-Herausforderung|
+|azureADBlockDueToAccessPolicy|14|Von der AAD-Zugriffsrichtlinie gesperrter Zugriffsstatus|
+|compromisedPassword|15|Zugriffsstatus, der durch ein kompromittiertes Kennwort widerrufen wurde|
+|deviceNotKnownWithManagedApp|16|Von der Herausforderung der verwalteten Anwendung gesperrter Zugriffsstatus|
 
 
 

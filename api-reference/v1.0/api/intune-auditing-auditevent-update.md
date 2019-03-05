@@ -3,21 +3,22 @@ title: auditEvent aktualisieren
 description: Aktualisieren der Eigenschaften eines auditEvent-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f50bf7d2d67bf8d4fdfa78eed446c16dc82aa2b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2b1c4f094075d7f84fd4b8eec0929f4f3ed168bb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991034"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252105"
 ---
 # <a name="update-auditevent"></a>auditEvent aktualisieren
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Aktualisieren der Eigenschaften eines [auditEvent](../resources/intune-auditing-auditevent.md)-Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -35,7 +36,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -48,14 +49,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|Zeichenfolge|Schlüssel der Entität|
-|displayName|String|Anzeigename des Ereignisses|
-|componentName|String|Name der Komponente|
+|displayName|Zeichenfolge|Anzeigename des Ereignisses|
+|componentName|Zeichenfolge|Name der Komponente|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|String|Anzeigename der Aktivität|
+|activity|Zeichenfolge|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|String|Typ der durchgeführten Aktivität|
-|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
-|activityResult|String|Ergebnis der Aktivität|
+|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
+|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
+|activityResult|Zeichenfolge|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
 |resources|Collection von Objekten des Typs [auditResource](../resources/intune-auditing-auditresource.md)|Ressourcen, die geändert werden|
 |category|String|Überwachungskategorie|
@@ -66,6 +67,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [auditEvent](../resources/intune-auditing-auditevent.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http

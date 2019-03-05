@@ -1,28 +1,28 @@
 ---
-title: Enum-Werte
+title: Enumerationswerte
 description: Microsoft Graph-Enumerationswerte.
 localization_priority: Normal
-ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: 86dcbb1fbbdc61a0855f45a6675efc80f4855010
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690945"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379514"
 ---
-### <a name="contactrelationship-values"></a>ContactRelationship Werte
+### <a name="contactrelationship-values"></a>contactRelationship-Werte
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|das übergeordnete|0|Übergeordnete des Benutzers.|
-|relative|1| Relative des Benutzers.|
-|aIDE|2| Aide des Benutzers.|
-|Arzt|3| Arzt des Benutzers.|
-|Guardian|4| Guardian des Benutzers.|
-|untergeordnetes Element|5| Untergeordnete des Benutzers.|
-|andere|6| Eine nicht spezifizierte Beziehung an den Benutzer.|
-|unknownFutureValue|7| Wert der Markierung für die zukünftige Kompatibilität.|
+|Eltern|0|Das übergeordnete Element des Benutzers.|
+|relativ|1| Der relative des Benutzers.|
+|aide|2| Die aide des Benutzers.|
+|Arzt|3| Der Arzt des Benutzers.|
+|Guardian|4| Der Vormund des Benutzers.|
+|untergeordneten|5| Das untergeordnete Element des Benutzers.|
+|anderen|6| Eine nicht angegebene Beziehung zum Benutzer.|
+|Enumerationsmember unknownfuturevalue "|7| Markerwert für zukünftige Kompatibilität.|
 
-### <a name="timezonestandard-values"></a>TimeZoneStandard Werte
+### <a name="timezonestandard-values"></a>timeZoneStandard-Werte
 
 | Wert
 |:-----------------
@@ -30,19 +30,19 @@ ms.locfileid: "29690945"
 | IANA
 
 
-### <a name="freebusystatus-values"></a>FreeBusyStatus Werte
+### <a name="freebusystatus-values"></a>freeBusyStatus-Werte
 
 | Element            |Wert
 |:------------------|:-------
 | frei              | 0
 | mit Vorbehalt         | 1
-| ausgelastet              | 2
-| Abwesend               | 3
+| beschäftigt              | 2
+| OOF               | 3
 | workingElsewhere  | 4
 | unknown           | -1
 
 
-### <a name="attendeetype-values"></a>AttendeeType Werte
+### <a name="attendeetype-values"></a>attendeeType-Werte
 
 | Wert
 |:-------------------------
@@ -51,7 +51,7 @@ ms.locfileid: "29690945"
 | resource
 
 
-### <a name="externalaudiencescope-values"></a>ExternalAudienceScope Werte
+### <a name="externalaudiencescope-values"></a>externalAudienceScope-Werte
 
 | Wert
 |:-------------------------
@@ -60,7 +60,7 @@ ms.locfileid: "29690945"
 | all
 
 
-### <a name="automaticrepliesstatus-values"></a>AutomaticRepliesStatus Werte
+### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus-Werte
 
 | Wert
 |:-------------------------
@@ -69,40 +69,40 @@ ms.locfileid: "29690945"
 | Geplant
 
 
-### <a name="calendarcolor-values"></a>CalendarColor Werte
+### <a name="calendarcolor-values"></a>calendarColor-Werte
 
 | Element     | Wert
 |:-----------|:----------
 | Auto       | -1
 | Hellblau  | 0
-| lightGreen | 1
+| Hellgrün | 1
 | lightOrange| 2
 | lightGray  | 3
 | lightYellow| 4
 | lightTeal  | 5
 | lightPink  | 6
-| lightBrown | 7
+| Hellbraun | 7
 | lightRed   | 8
 | maxColor   | 9
 
 
-### <a name="educationexternalsource-values"></a>EducationExternalSource Werte
+### <a name="educationexternalsource-values"></a>educationExternalSource-Werte
 
 | Wert
 |:-------------------------
 | SIS
 | Manuell
-| unknownFutureValue
+| Enumerationsmember unknownfuturevalue "
 
 
-### <a name="educationgender-values"></a>EducationGender Werte
+### <a name="educationgender-values"></a>educationGender-Werte
 
 | Wert
 |:-------------------------
-| Weiblich
-| Männlich
-| andere
-| unknownFutureValue
+| weiblich
+| männlich
+| anderen
+| Enumerationsmember unknownfuturevalue "
 
 
 ### <a name="eventtype-values"></a>EventType-Werte
@@ -110,12 +110,12 @@ ms.locfileid: "29690945"
 | Wert
 |:-------------------------
 | singleInstance
-| Vorkommen
+| vorkommen
 | Ausnahme
 | seriesMaster
 
 
-### <a name="sensitivity-values"></a>Sensitivity-Werte
+### <a name="sensitivity-values"></a>Vertraulichkeits Werte
 
 | Wert
 |:-------------------------
@@ -125,25 +125,25 @@ ms.locfileid: "29690945"
 | vertraulich
 
 
-### <a name="importance-values"></a>Wichtigkeit Werte
+### <a name="importance-values"></a>Wichtigkeits Werte
 
 | Wert
 |:-------------------------
-| Niedrig
+| mit niedriger
 | normal
 | hohe
 
 
-### <a name="educationuserrole-values"></a>EducationUserRole Werte
+### <a name="educationuserrole-values"></a>educationUserRole-Werte
 | Wert
 |:---------------------
 | student
 | teacher
 | Keine
-| unknownFutureValue
+| Enumerationsmember unknownfuturevalue "
 
 
-### <a name="meetingmessagetype-values"></a>MeetingMessageType Werte
+### <a name="meetingmessagetype-values"></a>meetingMessageType-Werte
 
 | Wert
 |:-----------------
@@ -151,11 +151,11 @@ ms.locfileid: "29690945"
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
-| meetingTentativelyAccepted
+| meetingTenativelyAccepted
 | meetingDeclined
 
 
-### <a name="followupflagstatus-values"></a>FollowupFlagStatus Werte
+### <a name="followupflagstatus-values"></a>followupFlagStatus-Werte
 
 | Wert
 |:-------------------------
@@ -164,15 +164,15 @@ ms.locfileid: "29690945"
 | gekennzeichnet
 
 
-### <a name="inferenceclassificationtype-values"></a>InferenceClassificationType Werte
+### <a name="inferenceclassificationtype-values"></a>inferenceClassificationType-Werte
 
 | Wert
 |:-----------------
-| Experten
-| andere
+| konzentriert
+| anderen
 
 
-### <a name="iosnotificationalerttype-values"></a>IosNotificationAlertType Werte
+### <a name="iosnotificationalerttype-values"></a>iosNotificationAlertType-Werte
 
 | Wert
 |:-------------------------
@@ -181,7 +181,7 @@ ms.locfileid: "29690945"
 | modal
 | Keine
 
-### <a name="deviceenrollmentfailurereason-values"></a>DeviceEnrollmentFailureReason Werte
+### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason-Werte
 
 | Wert
 |:-------------
@@ -198,7 +198,7 @@ ms.locfileid: "29690945"
 | clientDisconnected
 
 
-### <a name="bodytype-values"></a>BodyType Werte
+### <a name="bodytype-values"></a>BodyType-Werte
 | Wert
 |:---------
 | text
@@ -210,45 +210,45 @@ ms.locfileid: "29690945"
 | Wert
 |:-------------------------
 | default
-| conferenceRoom
+| Konferenzraum
 | homeAddress
 | businessAddress
 | geoCoordinates
 | streetAddress
-| im Hotel
+| Hotel
 | Restaurant
-| Innerhalb
+| localBusiness
 | postalAddress
 
-### <a name="locationuniqueidtype-values"></a>LocationUniqueIdType Werte
+### <a name="locationuniqueidtype-values"></a>locationUniqueIdType-Werte
 
 | Wert
 |:-------------------------
 | unknown
 | locationStore
-| Verzeichnis
+| Directory
 | Private
 | Bing
 
 
-### <a name="messageactionflag-values"></a>MessageActionFlag Werte
+### <a name="messageactionflag-values"></a>messageActionFlag-Werte
 
 | Wert
 |:-------------------------
 | Beliebiger Wert
 | Aufruf
 | doNotForward
-| Nachverfolgung
+| followUp
 | FYI
 | Weiterleiten
 | noResponseNecessary
 | Lesen
 | Antworten
 | replyToAll
-| Überprüfung
+| Bewertung
 
 
-### <a name="onenoteuserrole-values"></a>OnenoteUserRole Werte
+### <a name="onenoteuserrole-values"></a>onenoteUserRole-Werte
 
 | Element      | Wert
 |:------------|:------------
@@ -258,7 +258,7 @@ ms.locfileid: "29690945"
 | Keine        | -1
 
 
-### <a name="operationstatus-values"></a>OperationStatus Werte
+### <a name="operationstatus-values"></a>operationStatus-Werte
 
 | Wert
 |:-----------------
@@ -268,7 +268,7 @@ ms.locfileid: "29690945"
 | Failed
 
 
-### <a name="onenotepatchactiontype-values"></a>OnenotePatchActionType Werte
+### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType-Werte
 
 | Wert
 |:-------------------------
@@ -278,31 +278,31 @@ ms.locfileid: "29690945"
 | Einfügen
 | Voranstellen
 
-### <a name="onenotepatchinsertposition-values"></a>OnenotePatchInsertPosition Werte
+### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition-Werte
 
 | Wert
 |:-------------------------
 | After
-| Vor dem
+| Bevor
 
 
-### <a name="phonetype-values"></a>PhoneType Werte
+### <a name="phonetype-values"></a>phoneType-Werte
 
 | Wert
 |:-------------------------
-| privat
+| Home
 | Business
-| mobile
-| andere
+| Mobile
+| anderen
 | Assistent
-| Fax (privat)
-| geschäftlich Fax
+| homeFax
+| businessFax
 | otherFax
 | Pager
 | Radio
 
 
-### <a name="plannerpreviewtype-values"></a>PlannerPreviewType Werte
+### <a name="plannerpreviewtype-values"></a>plannerPreviewType-Werte
 
 | Wert
 |:-------------------------
@@ -317,25 +317,25 @@ ms.locfileid: "29690945"
 
 | Wert
 |:-----------------
-| aktive
-| aktualisiert
-| gelöscht
+| Active
+| updated
+| deleted
 | ignoriert
-| unknownFutureValue
+| Enumerationsmember unknownfuturevalue "
 
 
-### <a name="weekindex-values"></a>WeekIndex Werte
+### <a name="weekindex-values"></a>weekIndex-Werte
 
 | Wert
 |:-------------------------
-| erste
-| Sekunde
-| Dritte
-| vierte
-| letzte
+| ersten
+| zweiten
+| Dritt
+| vierten
+| Last
 
 
-### <a name="dayofweek-values"></a>DayOfWeek-Werte
+### <a name="dayofweek-values"></a>dayOfWeek-Werte
 
 | Wert
 |:-------------------------
@@ -347,28 +347,28 @@ ms.locfileid: "29690945"
 | Freitag
 | Samstag
 
-### <a name="recurrencepatterntype-values"></a>RecurrencePatternType Werte
+### <a name="recurrencepatterntype-values"></a>recurrencePatternType-Werte
 
 | Wert
 |:-------------------------
 | täglich
-| Wöchentlich
+| Downloads
 | absoluteMonthly
 | relativeMonthly
 | absoluteYearly
 | relativeYearly
 
 
-### <a name="recurrencerangetype-values"></a>RecurrenceRangeType Werte
+### <a name="recurrencerangetype-values"></a>recurrenceRangeType-Werte
 
 | Wert
 |:-------------------------
 | endDate
 | noEnd
-| Nummerierung
+| nummeriert
 
 
-### <a name="onenotesourceservice-values"></a>OnenoteSourceService Werte
+### <a name="onenotesourceservice-values"></a>onenoteSourceService-Werte
 | Wert
 |:---------------------
 | Unbekannt
@@ -384,12 +384,12 @@ ms.locfileid: "29690945"
 | Keine
 | organizer
 | tentativelyAccepted
-| akzeptiert
+| akzeptierte
 | abgelehnt
 | notResponded
 
 
-### <a name="activitydomain-values"></a>ActivityDomain Werte
+### <a name="activitydomain-values"></a>activityDomain-Werte
 
 | Wert
 |:-------------------------
@@ -399,18 +399,18 @@ ms.locfileid: "29690945"
 | unrestricted
 
 
-### <a name="websitetype-values"></a>WebsiteType Werte
+### <a name="websitetype-values"></a>WebSiteType-Werte
 
 | Wert
 |:-------------------------
-| andere
-| privat
+| anderen
+| Home
 | work
 | Blog
 | profile
 
 
-### <a name="categorycolor-values"></a>CategoryColor Werte
+### <a name="categorycolor-values"></a>categoryColor-Werte
 
 | Element   |Wert    
 |:---------|:--------
@@ -424,7 +424,7 @@ ms.locfileid: "29690945"
 | preset6  | 6       
 | preset7  | 7       
 | preset8  | 8       
-| preset9  | 9       
+| PRESET9  | 9       
 | preset10 | 10      
 | preset11 | 11      
 | preset12 | 12      
@@ -441,164 +441,164 @@ ms.locfileid: "29690945"
 | preset23 | 23      
 | preset24 | 24      
 
-### <a name="alertfeedback-values"></a>AlertFeedback Werte
+### <a name="alertfeedback-values"></a>alertFeedback-Werte
 
-Feedback möglichen Werte auf die Benachrichtigung von Analysten bereitgestellt.
+Mögliche Feedback Werte für die Warnung, die von einem Analysten bereitgestellt wird.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
-|truePositive|1|Benachrichtigung ist True Positive.|
-|falsePositive|2| Benachrichtigung ist falsch Positive.|
-|benignPositive|3| Benachrichtigung ist duldet positiv.|
+|truePositive|1|Alert ist true-positive.|
+|falsePositive|2| Alert ist falsch-positiv.|
+|benignPositive|3| Alert ist positiv.|
 
-### <a name="filehashtype-values"></a>FileHashType Werte
+### <a name="filehashtype-values"></a>fileHashtype-Werte
 
-Enum für Hash Dateitypen.
+Enum für Datei Hash Typen.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannten Typs.|
-|SHA1|1|SHA1 Hash-Typ.|
-|SHA256|2| SHA256-Hash-Typ.|
-|MD5|3| MD5 Hash-Typ.|
-|authenticodeHash256|4| AuthenticodeHash256 Hash-Typ.|
-|lsHash|5| LsHash Hash-Typ.|
-|ctph|6| CTPH Hash-Typ.|
-|peSha1|7| PESHA1 Hash-Typ.|
-|peSha256|8| PESHA256 Hash-Typ.|
+|unknown|0|UnBekannter Typ.|
+|SHA1|1|SHA1-Hashtyp.|
+|SHA256|2| SHA256-Hashtyp.|
+|MD5|3| MD5-Hashtyp.|
+|authenticodeHash256|4| AuthenticodeHash256-Hashtyp.|
+|lsHash|5| LsHash-Hashtyp.|
+|CTPH|6| CTPH-Hashtyp.|
+|peSha1|7| PESHA1-Hashtyp.|
+|peSha256|8| PESHA256-Hashtyp.|
 
-### <a name="connectiondirection-values"></a>ConnectionDirection Werte
+### <a name="connectiondirection-values"></a>connectionDirection-Werte
 
-Option für die Richtung der Verbindung (eingehend/ausgehend).
+Enum für die Richtung der Netzwerkverbindung (eingehend/ausgehend).
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Verbindung.|
-|eingehend|1|Eingehende Verbindung.|
-|ausgehende|2| Ausgehende Verbindung.|
+|Inbound|1|Eingehende Verbindung.|
+|Outbound|2| Ausgehende Verbindung.|
 
-### <a name="connectionstatus-values"></a>ConnectionStatus Werte
+### <a name="connectionstatus-values"></a>connectionStatus-Werte
 
-Enumeration für den Status der Verbindung.
+Enum für den Status von Verbindungen.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannte Verbindungsstatus.|
-|Es wurde versucht|1|Verbindungsversuch.|
-|succeeded|2| Verbindung erfolgreich hergestellt.|
+|unknown|0|UnBekannter Verbindungsstatus.|
+|versucht|1|Verbindung wurde versucht.|
+|succeeded|2| Verbindung erfolgreich.|
 |gesperrt|3| Verbindung blockiert.|
-|failed|4| Verbindung ist fehlgeschlagen.|
+|failed|4| Fehler bei Verbindung.|
 
-### <a name="processintegritylevel-values"></a>ProcessIntegrityLevel Werte
+### <a name="processintegritylevel-values"></a>processIntegrityLevel-Werte
 
-Integrität der möglichen Werte des Prozesses.
+Mögliche Integritätsstufen Werte des Prozesses.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannt.|
-|nicht vertrauenswürdige|10|Integritätsebene ist nicht vertrauenswürdig.|
-|Niedrig|20| Integrität ist niedrig.|
-|medium|30| Integrität ist Medium.|
-|hohe|40| Integrität ist hoch.|
-|System|50| Integrität ist System.|
+|nicht vertrauenswürdigen|10|Integritätsebene ist nicht vertrauenswürdig.|
+|mit niedriger|20| Integritätsstufe ist niedrig.|
+|medium|30| Integritätsstufe ist Mittel.|
+|hohe|40| Integritätsebene ist hoch.|
+|System|50| Integritätsstufe ist System.|
 
-### <a name="registryhive-values"></a>RegistryHive Werte
+### <a name="registryhive-values"></a>registryHive-Werte
 
-Enum für Registrierung Strukturen gemäß [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+Enum für Registrierungsstrukturen gemäß der Definition von [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Struktur.|
 |currentConfig|1|HKEY_CURRENT_CONFIG-Hive.|
-|currentUser|2| Struktur HKEY_CURRENT_USER.|
+|currentUser|2| HKEY_CURRENT_USER-Struktur.|
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM-Hive.|
-|localMachineSamSoftware|4| Struktur HKEY_LOCAL_MACHINE\Software.|
-|localMachineSystem|5| HKEY_LOCAL_MACHINE\SYSTEM-Hive.|
-|usersDefault|6| HKEY_USERS\\. Standard-Hive.|
+|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software-Hive.|
+|localMachineSystem|5| HKEY_LOCAL_MACHINE\System-Hive.|
+|usersDefault|6| HKEY_USERS\\. Standardstruktur.|
 
-### <a name="registryoperation-values"></a>RegistryOperation Werte
+### <a name="registryoperation-values"></a>registryOperation-Werte
 
-Der Vorgang, der der Name des Registrierungsschlüssels und/oder Wert geändert.
+Vorgang, der den Namen und/oder Wert des Registrierungsschlüssels geändert hat.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannter Typ.|
+|unknown|0|UnBekannter Registrierungs Werttyp.|
 |create|1|Erstellen Sie die Registrierung.|
 |Ändern|2|Ändern Sie die Registrierung.|
-|Löschen|3|Registrierung zu löschen.|
+|Löschen|3|Registrierung löschen.|
 
-### <a name="registryvaluetype-values"></a>RegistryValueType Werte
+### <a name="registryvaluetype-values"></a>registryValueType-Werte
 
-Enumeration für den Registrierungswert eingibt, durch die definierten [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+Enum für Registrierungswert Typen gemäß der Definition [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)von.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannter Typ.|
-|Binär|1|Werttyp REG_BINARY-Registrierung.|
-|ein DWORD-Wert|2| Werttyp REG_DWORD-Registrierung.|
-|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN Registrierung Werttyp.|
-|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN Registrierung Werttyp.|
-|expandSz|5| Werttyp REG_EXPAND_SZ-Registrierung.|
-|Link|6| Werttyp REG_LINK-Registrierung.|
-|multiSz|7| Werttyp REG_MULTI_SZ-Registrierung.|
-|Keine|8| Werttyp REG_NONE-Registrierung.|
-|QWORD|9| Werttyp REG_QWORD-Registrierung.|
-|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN Registrierung Werttyp.|
-|su|11| Werttyp REG_SZ-Registrierung.|
+|unknown|0|UnBekannter Registrierungs Werttyp.|
+|Binär|1|REG_BINARY-Registrierungs Werttyp.|
+|DWORD|2| REG_DWORD-Registrierungs Werttyp.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN-Registrierungs Werttyp.|
+|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN-Registrierungs Werttyp.|
+|expandSz|5| REG_EXPAND_SZ-Registrierungs Werttyp.|
+|Link|6| REG_LINK-Registrierungs Werttyp.|
+|multiSz|7| REG_MULTI_SZ-Registrierungs Werttyp.|
+|Keine|8| REG_NONE-Registrierungs Werttyp.|
+|QWord|9| REG_QWORD-Registrierungs Werttyp.|
+|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN-Registrierungs Werttyp.|
+|SZ|11| REG_SZ-Registrierungs Werttyp.|
 
-### <a name="alertseverity-values"></a>AlertSeverity Werte
+### <a name="alertseverity-values"></a>alertSeverity-Werte
 
-Enum für Schweregrad von Warnungen.
+Enum für den Schweregrad der Warnungen.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Schweregrad ist unbekannt.|
-|informative|1|Schweregrad dient nur zu Informationszwecken.|
-|Niedrig|2| Schweregrad ist niedrig.|
-|medium|3| Schweregrad ist Medium.|
+|Informations|1|Der Schweregrad dient nur zur Information.|
+|mit niedriger|2| Schweregrad ist niedrig.|
+|medium|3| Schweregrad ist Mittel.|
 |hohe|4| Schweregrad ist hoch.|
 
-### <a name="alertstatus-values"></a>AlertStatus Werte
+### <a name="alertstatus-values"></a>alertStatus-Werte
 
-Mögliche Werte von einer Warnung Lebenszyklusstatus (Phase).
+Mögliche Werte eines Warnungs Lebenszyklusstatus (Stufe).
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Unbekannte Status.|
-|newAlert|10| Benachrichtigung ist neu.|
-|in Bearbeitung|20|Warnung wird gerade durchgeführt.|
-|aufgelöst|30|Warnung wird aufgelöst.|
+|unknown|0|UnBekannter Status.|
+|neuWarnung|10| Alert ist neu.|
+|inProgress|20|Warnung wird ausgeführt.|
+|aufgelöst|30|Warnung ist aufgelöst.|
 
-### <a name="emailrole-values"></a>EmailRole Werte
+### <a name="emailrole-values"></a>emailRole-Werte
 Mögliche Werte für e-Mail-Rollen.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|0|Unbekannte Rolle.|
-|sender|1|Der Absender der e-Mail.|
-|Empfänger|2|Der Empfänger der e-Mail.|
+|sender|1|Absender der e-Mail.|
+|Empfänger|2|Empfänger der e-Mail.|
 
-### <a name="logontype-values"></a>LogonType Werte
+### <a name="logontype-values"></a>LoginType-Werte
 
-Mögliche Werte für die-Methode des Benutzers anmelden.
+Mögliche Werte für die Methode der Benutzeranmeldung.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|-1|Unbekannt.|
-|Interaktive|0|Anmeldung ist interaktiv.|
-|remoteInteractive|1| Anmeldung wird remote interaktive.|
-|Netzwerk|2| Anmeldung ist Netzwerk.|
-|batch|3| Anmeldung ist Batch.|
+|interaktive|0|Die Anmeldung ist interaktiv.|
+|remoteInteractive|1| Die Anmeldung ist Remote interaktiv.|
+|Netzwerk|2| Die Anmeldung ist Network.|
+|batch|3| Die Anmeldung ist Batch.|
 |service|4| Anmeldung ist Dienst.|
 
-### <a name="useraccountsecuritytype-values"></a>UserAccountSecurityType Werte
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType-Werte
 
-Mögliche Werte für Benutzerkontotypen (Gruppenmitgliedschaft) pro Windows-Definition.
+Mögliche Werte für Benutzerkonto Typen (Gruppenmitgliedschaft), pro Windows-Definition.
 
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |unknown|-1|Unbekannt.|
-|Standard|0|Mitglied der Gruppe der Standard-Benutzer.|
-|Power|1| Mitglied der Gruppe Hauptbenutzer.|
+|Standard|0|Mitglied der Standard Benutzergruppe.|
+|macht|1| Mitglied der Gruppe der Hauptbenutzer.|
 |Administrator|2| Mitglied der Gruppe Administratoren.|

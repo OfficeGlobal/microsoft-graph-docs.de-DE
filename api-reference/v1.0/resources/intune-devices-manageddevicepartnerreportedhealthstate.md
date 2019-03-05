@@ -1,34 +1,35 @@
 ---
-title: ManagedDevicePartnerReportedHealthState Enum-Typ
-description: Verfügbare Zustände für das Gerät Health-API
+title: managedDevicePartnerReportedHealthState-Enumerationstyp
+description: Verfügbare Integritätsstatus für die Geräte Integritäts-API
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 85d6731fc34bb3133fa7aed631d3d687a45a7dce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4e6ef870687f0ee48eebd3d0f8d45eb4c88906ef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919050"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252056"
 ---
-# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>ManagedDevicePartnerReportedHealthState Enum-Typ
+# <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Verfügbare Zustände für das Gerät Health-API
+Verfügbare Integritätsstatus für die Geräte Integritäts-API
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|unknown|0|Gerät Integritätsstatus ist noch nicht gemeldet.|
-|aktiviert|1|Gerät von einem mobilen Threat Defense Partner aktiviert wurde, aber noch nicht Health gemeldet.|
-|deaktiviert|2|Gerät wurde von einem mobilen Threat Defense Partner deaktiviert. Die Integrität Gerät ist nicht bekannt.|
-|gesichert|3|Gerät gilt als vom mobilen Threat Defense Partner gesichert.|
-|lowSeverity|4|Gerät wird vom mobilen Threat Defense Partner geringe Bedrohung angesehen.|
-|mediumSeverity|5|Gerät wird vom mobilen Threat Defense Partner mittlere Bedrohung angesehen.|
-|highSeverity|6|Gerät wird vom mobilen Threat Defense Partner hohe Bedrohung angesehen.|
-|nicht reagiert|7|Gerät gilt vom mobilen Threat Defense Partner nicht reagiert. Die Integrität Gerät ist nicht bekannt.|
-|gefährdet|8|Gerät wird durch die Abwehr von Partner gefährdet betrachtet. Dies bedeutet, dass das Gerät verfügt über ein aktives Bedrohung oder Risiko, das vom Endbenutzer auf einfache Weise behoben werden, ist nicht möglich, und der Benutzer sollte ihre IT-Administrator wenden|
-|falsch konfiguriert|9|Gerät ist falsch konfiguriert, mit dem Partner Abwehr von berücksichtigt. Dies bedeutet, dass das Gerät fehlt eine erforderliche Profil oder Konfiguration für den Threat Defense Partner ordnungsgemäß funktioniert und ist somit Bedrohung oder Analyse kann nicht für die Durchführung.|
+|unknown|0|Der Geräte Integritätsstatus wurde noch nicht gemeldet.|
+|aktiviert|1|Das Gerät wurde von einem mobilen Bedrohungsabwehr Partner aktiviert, hat aber noch keinen Status gemeldet.|
+|deaktiviert|2|Das Gerät wurde von einem mobilen Bedrohungsabwehr Partner deaktiviert. Der Gerätestatus ist unbekannt.|
+|gesichert|3|Gerät gilt als durch den mobilen Threat Defense-Partner gesichert.|
+|lowSeverity|4|Gerät gilt als geringe Bedrohung durch den mobilen Threat Defense-Partner.|
+|mediumSeverity|5|Gerät gilt als mittlere Bedrohung durch den mobilen Threat Defense-Partner.|
+|highSeverity|6|Gerät gilt als hohe Bedrohung durch den mobilen Threat Defense-Partner.|
+|reagiert|7|Gerät gilt nicht für den mobilen Threat Defense-Partner. Der Gerätestatus ist unbekannt.|
+|gefährdet|8|Das Gerät wird vom BedrohungsAbwehr Partner als kompromittiert betrachtet. Dies hat zur Folge, dass das Gerät eine aktive Bedrohung oder ein Risiko hat, das vom Endbenutzer nicht einfach wiederhergestellt werden kann und der Benutzer sich an seinen IT-Administrator wenden sollte.|
+|falsch konfigurierter|9|Gerät wird als falsch konfiguriert mit dem Threat Defense Partner betrachtet. Das bedeutet, dass dem Gerät ein erforderliches Profil oder eine Konfiguration fehlt, damit der Threat Defense-Partner ordnungsgemäß funktioniert und daher eine Bedrohungs-oder Risikoanalyse nicht abgeschlossen werden kann.|
 
 
 

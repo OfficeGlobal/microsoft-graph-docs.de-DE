@@ -4,12 +4,12 @@ description: 'Eine Nachricht, die für eine Besprechungsanfrage, -absage oder -a
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342317"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379521"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage-Ressourcentyp
 
@@ -75,7 +75,7 @@ Neben einer Besprechungsanfrage befindet sich eine **Event Message** -Instanz im
 |isRead|Boolean|Gibt an, ob die Nachricht gelesen wurde.|
 |isReadReceiptRequested|Boolean|Zeigt an, ob für die Nachricht eine Lesebestätigung angefordert wird.|
 |lastModifiedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht zuletzt geändert wurde.|
-|meetingMessageType|meetingMessageType| Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| Der Typ der Ereignisnachricht: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Der eindeutige Bezeichner für das übergeordnete mailFolder-Element der Nachricht.|
 |receivedDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der die Nachricht erhalten wurde.|
 |replyTo|[recipient](recipient.md) collection|Die E-Mail-Adressen, die beim Antworten verwendet werden sollen.|

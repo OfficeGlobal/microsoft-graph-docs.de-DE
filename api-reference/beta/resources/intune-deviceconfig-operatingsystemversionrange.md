@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp operatingSystemVersionRange
-description: Betriebssystem Versionsbereich.
-localization_priority: Normal
+title: operatingSystemVersionRange-Ressourcentyp
+description: Version des Betriebssystems.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aaac008b013a8bf2cfd1a88d1fab06a523abb949
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 521f7d0b0ec4ddab728ed3b95c27acf21695b0d3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148608"
 ---
-# <a name="operatingsystemversionrange-resource-type"></a>Ressourcentyp operatingSystemVersionRange
+# <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Betriebssystem Versionsbereich.
+Version des Betriebssystems.
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|description|Zeichenfolge|Die Beschreibung dieses Bereichs (z. B. gültig 1702 Builds)|
-|lowestVersion|Zeichenfolge|Die niedrigste inklusive Version, die dieser Bereich enthält.|
-|highestVersion|Zeichenfolge|Die höchste inklusive Version, die dieser Bereich enthält.|
+|description|Zeichenfolge|Die Beschreibung dieses Range-Beispiels (z. b. gültige 1702-Builds)|
+|lowestVersion|Zeichenfolge|Die niedrigste inklusive Version, die in diesem Range enthalten ist.|
+|highestVersion|Zeichenfolge|Die höchste inklusive Version, die in diesem Range enthalten ist.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

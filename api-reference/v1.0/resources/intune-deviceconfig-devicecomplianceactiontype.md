@@ -1,30 +1,31 @@
 ---
-title: DeviceComplianceActionType Enum-Typ
-description: Geplante Aktion Typ Enum
+title: deviceComplianceActionType-Enumerationstyp
+description: Enum für geplante Aktionstypen
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8d725213790260ece51c02bb81f2394fc8602095
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: bd370f9e706955d76de519a518b4659ba46c6d25
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917342"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250915"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a>DeviceComplianceActionType Enum-Typ
+# <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Geplante Aktion Typ Enum
+Enum für geplante Aktionstypen
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
 |noAction|0|Keine Aktion|
 |Benachrichtigung|1|Benachrichtigung senden|
-|Blockieren|2|Das Gerät im AAD blockieren|
-|Zurückziehen|3|Deaktivieren Sie das Gerät|
-|Wischen|4|Bereinigen des Geräts|
-|removeResourceAccessProfiles|5|Ressource Access Profile vom Gerät zu entfernen|
+|Block|2|Blockieren des Geräts in AAD|
+|zurückziehen|3|Zurückziehen des Geräts|
+|Zurücksetzung|4|Wischen Sie das Gerät ab.|
+|removeResourceAccessProfiles|5|Entfernen von Ressourcenzugriffs Profilen vom Gerät|
 |pushNotification|9|Push-Benachrichtigung an Gerät senden|
 
 

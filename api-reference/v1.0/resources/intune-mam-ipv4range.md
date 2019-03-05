@@ -1,32 +1,34 @@
 ---
 title: iPv4Range-Ressourcentyp
-description: IP-V4-Bereich
+description: Definition des IPv4-Umfangs.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2c260796259ce6084add7eadb48192ea50c209c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 14cb0d88013b13f57b186f5388d5ac89f60db043
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931930"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256840"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range-Ressourcentyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-IP-V4-Bereich
+Definition des IPv4-Umfangs.
+
 
 Erbt von [ipRange](../resources/intune-mam-iprange.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|lowerAddress|Zeichenfolge|Untere IP-Adresse|
-|upperAddress|Zeichenfolge|Obere IP-Adresse|
+|lowerAddress|Zeichenfolge|Niedrigere Adresse.|
+|upperAddress|Zeichenfolge|Obere Adresse.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {

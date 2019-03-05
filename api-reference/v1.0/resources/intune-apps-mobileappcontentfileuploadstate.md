@@ -1,21 +1,22 @@
 ---
-title: MobileAppContentFileUploadState Enum-Typ
-description: Enthält Eigenschaften für die Anforderung Zustände hochladen.
+title: mobileAppContentFileUploadState-Enumerationstyp
+description: Enthält Eigenschaften für Upload-Anforderungsstatus.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 801708a519f71ee04dbca2cdc66173d727f47299
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 50e17bbd002d42b439c8b4377a38532e13ed9f4b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973048"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255521"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>MobileAppContentFileUploadState Enum-Typ
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Enthält Eigenschaften für die Anforderung Zustände hochladen.
+Enthält Eigenschaften für Upload-Anforderungsstatus.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|

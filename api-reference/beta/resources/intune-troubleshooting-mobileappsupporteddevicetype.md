@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp mobileAppSupportedDeviceType
-description: Eigenschaften des Geräts
-localization_priority: Normal
+title: mobileAppSupportedDeviceType-Ressourcentyp
+description: Geräteeigenschaften
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c01691b3f6fcb2ed5838c1c9103c99ad6fbe792f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76b3ca431bc68f93144a33dd8c5e8e5f036764a0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399752"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140579"
 ---
-# <a name="mobileappsupporteddevicetype-resource-type"></a>Ressourcentyp mobileAppSupportedDeviceType
+# <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType-Ressourcentyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Eigenschaften des Geräts
+Geräteeigenschaften
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|type|[deviceType](../resources/intune-shared-devicetype.md)|Gerätetyp. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|Zeichenfolge|Minimale Version des Betriebssystems|
-|maximumOperatingSystemVersion|Zeichenfolge|Maximale Version des Betriebssystems|
+|type|[deviceType](../resources/intune-shared-devicetype.md)|Gerätetyp. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6` `nokia` `windowsPhone` `mac` `winCE` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM`,,,,,,,, `holoLens`,, `androidEnterprise` ,,,,,, `surfaceHub` `androidForWork` `winEmbedded` , `blackberry`, `palm`, `unknown`.|
+|minimumOperatingSystemVersion|Zeichenfolge|Minimale Betriebssystemversion|
+|maximumOperatingSystemVersion|Zeichenfolge|Maximale Betriebssystemversion|
 
 ## <a name="relationships"></a>Beziehungen
 Keine

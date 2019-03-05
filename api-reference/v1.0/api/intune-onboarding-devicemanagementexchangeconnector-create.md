@@ -3,21 +3,22 @@ title: deviceManagementExchangeConnector erstellen
 description: Erstellen eines neuen deviceManagementExchangeConnector-Objekts.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e9c3e25ea7a48bc957840b43bb6be0d256f308a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 292562a2a7083e63f083d0ccad5e11071a27ce96
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956024"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256441"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector erstellen
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
 Erstellen eines neuen [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)-Objekts.
+
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -35,7 +36,7 @@ POST /deviceManagement/exchangeConnectors
 ```
 
 ## <a name="request-headers"></a>Anforderungsheader
-|Header|Wert|
+|Kopfzeile|Wert|
 |:---|:---|
 |Authorization|Bearer&lt;token&gt; erforderlich|
 |Annehmen|application/json|
@@ -49,13 +50,13 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |id|Zeichenfolge|Noch nicht dokumentiert|
 |lastSyncDateTime|DateTimeOffset|Zeit der letzten Synchronisierung für Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connectorstatus. Mögliche Werte: sind `none`, `connectionPending`, `connected` und `disconnected`.|
-|primarySmtpAddress|String|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
-|serverName|String|Der Name des Exchange-Servers.|
-|connectorServerName|String|Der Name des Servers, der Exchange Connector hostet.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector-Status. Mögliche Werte: `none`, `connectionPending`, `connected`, `disconnected`.|
+|primarySmtpAddress|Zeichenfolge|E-Mail-Adresse, die zum Konfigurieren von Exchange Connector zwischen Diensten verwendet wird.|
+|serverName|Zeichenfolge|Der Name des Exchange-Servers.|
+|connectorServerName|Zeichenfolge|Der Name des Servers, der Exchange Connector hostet.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Der konfigurierte Typ von Exchange Connector. Mögliche Werte: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|Version|String|Die Version des ExchangeConnectorAgent|
-|exchangeAlias|String|Ein dem Exchange-Server zugewiesener Alias|
+|Version|Zeichenfolge|Die Version des ExchangeConnectorAgent|
+|exchangeAlias|Zeichenfolge|Ein dem Exchange-Server zugewiesener Alias|
 |exchangeOrganization|String|Exchange-Organisation für den Exchange-Server|
 
 
@@ -64,6 +65,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `201 Created` und ein Objekt des Typs [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http

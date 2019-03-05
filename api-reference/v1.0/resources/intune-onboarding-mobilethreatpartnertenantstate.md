@@ -1,28 +1,29 @@
 ---
-title: MobileThreatPartnerTenantState Enum-Typ
-description: Partner-Status, der diesen Mandanten.
+title: mobileThreatPartnerTenantState-Enumerationstyp
+description: Partner Status dieses Mandanten.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937453"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258093"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a>MobileThreatPartnerTenantState Enum-Typ
+# <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState-Enumerationstyp
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Partner-Status, der diesen Mandanten.
+Partner Status dieses Mandanten.
+
 ## <a name="members"></a>Elemente
 |Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht verfügbar|0|Partner ist nicht verfügbar.|
+|verfügbar|0|Partner ist nicht verfügbar.|
 |Verfügbar|1|Partner ist verfügbar.|
 |enabled|2|Partner ist aktiviert.|
-|nicht reagiert|3|Partner reagiert nicht.|
+|reagiert|3|Der Partner reagiert nicht mehr.|
 
 
 

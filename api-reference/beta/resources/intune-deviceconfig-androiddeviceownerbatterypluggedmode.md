@@ -1,31 +1,31 @@
 ---
-title: AndroidDeviceOwnerBatteryPluggedMode Enum-Typ
-description: Android Gerät Besitzer mögliche Werte für das Gerät angeschlossen in Power Modi Zustände.
-localization_priority: Normal
+title: androidDeviceOwnerBatteryPluggedMode-Enumerationstyp
+description: Android-Gerätebesitzer mögliche Werte für Zustände der eingesteckten Energiemodi des Geräts.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7291a687d5d179a1af2d7ba2dfdcd04b598b465f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 529359a0227c208f0904e8bd84408208329f52a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392990"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141132"
 ---
-# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>AndroidDeviceOwnerBatteryPluggedMode Enum-Typ
+# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>androidDeviceOwnerBatteryPluggedMode-Enumerationstyp
 
-> **Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Android Gerät Besitzer mögliche Werte für das Gerät angeschlossen in Power Modi Zustände.
+Android-Gerätebesitzer mögliche Werte für Zustände der eingesteckten Energiemodi des Geräts.
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Nicht konfiguriert. Dieser Wert wird ignoriert.|
-|AC|1|Stromquelle ist ein Ladegeräts.|
-|USB|2|Stromquelle ist ein USB-Anschluss an.|
-|drahtlose|3|Stromquelle ist kabellos.|
+|notConfigured|0|Nicht konfiguriert; Dieser Wert wird ignoriert.|
+|AC|1|Stromquelle ist ein Netzteil.|
+|USB|2|Die Stromquelle ist ein USB-Anschluss.|
+|drahtlos|3|Die Stromquelle ist drahtlos.|
 
 
 
