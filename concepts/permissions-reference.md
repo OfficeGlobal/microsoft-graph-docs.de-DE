@@ -3,12 +3,12 @@ title: 'Microsoft Graph-Berechtigungsreferenz '
 description: Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: cf5639e09977b052d0c5a9b56c535fdaf66789fa
-ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
+ms.openlocfilehash: 7bdd5b9ca02a05676a2b745b6087acfb39cf3304
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30314623"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364563"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph-Berechtigungsreferenz 
 Microsoft Graph macht differenzierte Berechtigungen verfügbar, die den Zugriff von Apps auf Ressourcen wie Benutzer, Gruppen und E-Mails steuern. Als Entwickler entscheiden Sie, welche Berechtigungen für Microsoft Graph Ihre App anfordert. Wenn ein Benutzer sich bei Ihrer App anmeldet, erhält er oder in einigen Fällen ein Administrator die Möglichkeit, diesen Berechtigungen zuzustimmen. Falls der Benutzer zustimmt, erhält Ihre App Zugriff auf die angeforderten Ressourcen und APIs. Für Apps, die ohne angemeldeten Benutzer ausgeführt werden, kann den Berechtigungen während der Installation oder Registrierung der App von einem Administrator vorab zugestimmt werden (vorab genehmigte Apps). 
@@ -889,6 +889,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _SecurityEvents.Read.All_        |  Lesen von Sicherheitsereignissen der Organisation | Ermöglicht der App, die Sicherheitsereignisse Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja  | Nein |
 | _SecurityEvents.ReadWrite.All_   | Lesen und Aktualisieren von Sicherheitsereignissen der Organisation | Ermöglicht der App, die Sicherheitsereignisse Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. Ermöglicht der App zudem, die bearbeitbaren Eigenschaften in Sicherheitsereignissen im Namen des angemeldeten Benutzers zu aktualisieren. | Ja  | Nein |
+| _SecurityActions.Read.All_        |  Lesen von Sicherheitsaktionen der Organisation | Ermöglicht der App, die Sicherheitsaktionen Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen. | Ja  | Nein |
+| _SecurityActions.ReadWrite.All_   | Lesen und Aktualisieren von Sicherheitsaktionen der Organisation | Ermöglicht der App, die Sicherheitsaktionen Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen.  | Ja  | Nein |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | Verwalten von Bedrohungsindikatoren, die diese App erstellt oder besitzt | Ermöglicht der App, die Sicherheitsaktionen Ihrer Organisation im Namen des angemeldeten Benutzers zu lesen.  | Ja  | Nein |
 
 #### <a name="application-permissions"></a>Anwendungsberechtigungen
 
@@ -896,6 +899,9 @@ Komplexere Szenarios, die mehrere Berechtigungen erfordern, finden Sie unter [Be
 |:----------------|:------------------|:-------------|:-----------------------|
 | _SecurityEvents.Read.All_        |  Lesen von Sicherheitsereignissen der Organisation | Ermöglicht der App das Lesen von Sicherheitsereignissen der Organisation. | Ja  |
 | _SecurityEvents.ReadWrite.All_   | Lesen und Aktualisieren von Sicherheitsereignissen der Organisation | Ermöglicht der App das Lesen von Sicherheitsereignissen der Organisation. Ermöglicht es der App zudem, die bearbeitbaren Eigenschaften in Sicherheitsereignissen zu aktualisieren. | Ja  |
+| _SecurityActions.Read.All_        |  Lesen von Sicherheitsereignissen der Organisation | Ermöglicht der App das Lesen von Sicherheitsaktionen der Organisation. | Ja  |
+| _SecurityActions.ReadWrite.All_   | Erstellen und lesen von Sicherheitsaktionen der Organisation | Ermöglicht der App das Lesen oder Erstellen von Sicherheitsaktionen ohne einen angemeldeten Benutzer. | Ja  |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | Verwalten von Bedrohungsindikatoren, die diese App erstellt oder besitzt | Ermöglicht der App das Erstellen und vollständige Verwalten von Bedrohungsindikatoren (Lesen, Aktualisieren und Löschen) ohne einen angemeldeten Benutzer.  Die App kann keine Bedrohungsindikatoren aktualisieren, die sie nicht besitzt. | Ja  |
 
 ### <a name="remarks"></a>Bemerkungen
 
