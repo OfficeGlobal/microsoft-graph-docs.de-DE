@@ -1,31 +1,32 @@
 ---
-title: RatingCanadaMoviesType Enum-Typ
-description: Filme Bewertung Bezeichnungen in Kanada
+title: ratingCanadaMoviesType-Enumerationstyp
+description: Movies-Bewertungs Bezeichnungen in Kanada
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d44edb2d96430a7d929867620bce7cb6808d50c9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 99a26da44779152c6d758494930fe225dea91f1e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957266"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253631"
 ---
-# <a name="ratingcanadamoviestype-enum-type"></a><span data-ttu-id="60de7-103">RatingCanadaMoviesType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="60de7-103">ratingCanadaMoviesType enum type</span></span>
+# <a name="ratingcanadamoviestype-enum-type"></a><span data-ttu-id="dae8b-103">ratingCanadaMoviesType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="dae8b-103">ratingCanadaMoviesType enum type</span></span>
 
-> <span data-ttu-id="60de7-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="60de7-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="dae8b-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="dae8b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="60de7-105">Filme Bewertung Bezeichnungen in Kanada</span><span class="sxs-lookup"><span data-stu-id="60de7-105">Movies rating labels in Canada</span></span>
-## <a name="members"></a><span data-ttu-id="60de7-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="60de7-106">Members</span></span>
-|<span data-ttu-id="60de7-107">Element</span><span class="sxs-lookup"><span data-stu-id="60de7-107">Member</span></span>|<span data-ttu-id="60de7-108">Wert</span><span class="sxs-lookup"><span data-stu-id="60de7-108">Value</span></span>|<span data-ttu-id="60de7-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="60de7-109">Description</span></span>|
+<span data-ttu-id="dae8b-105">Movies-Bewertungs Bezeichnungen in Kanada</span><span class="sxs-lookup"><span data-stu-id="dae8b-105">Movies rating labels in Canada</span></span>
+
+## <a name="members"></a><span data-ttu-id="dae8b-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="dae8b-106">Members</span></span>
+|<span data-ttu-id="dae8b-107">Element</span><span class="sxs-lookup"><span data-stu-id="dae8b-107">Member</span></span>|<span data-ttu-id="dae8b-108">Wert</span><span class="sxs-lookup"><span data-stu-id="dae8b-108">Value</span></span>|<span data-ttu-id="dae8b-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dae8b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="60de7-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="60de7-110">allAllowed</span></span>|<span data-ttu-id="60de7-111">0</span><span class="sxs-lookup"><span data-stu-id="60de7-111">0</span></span>|<span data-ttu-id="60de7-112">Standardwert, alle Filme Inhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="60de7-112">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="60de7-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="60de7-113">allBlocked</span></span>|<span data-ttu-id="60de7-114">1</span><span class="sxs-lookup"><span data-stu-id="60de7-114">1</span></span>|<span data-ttu-id="60de7-115">Alle Inhalte Filme nicht zulassen</span><span class="sxs-lookup"><span data-stu-id="60de7-115">Do not allow any movies content</span></span>|
-|<span data-ttu-id="60de7-116">Allgemeine</span><span class="sxs-lookup"><span data-stu-id="60de7-116">general</span></span>|<span data-ttu-id="60de7-117">2</span><span class="sxs-lookup"><span data-stu-id="60de7-117">2</span></span>|<span data-ttu-id="60de7-118">Die Klassifizierung G eignet sich für alle Jahren</span><span class="sxs-lookup"><span data-stu-id="60de7-118">The G classification is suitable for all ages</span></span>|
-|<span data-ttu-id="60de7-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="60de7-119">parentalGuidance</span></span>|<span data-ttu-id="60de7-120">3</span><span class="sxs-lookup"><span data-stu-id="60de7-120">3</span></span>|<span data-ttu-id="60de7-121">Die Bild-Klassifizierung werden sofort advises Eltern Anleitungen</span><span class="sxs-lookup"><span data-stu-id="60de7-121">The PG classification advises parental guidance</span></span>|
-|<span data-ttu-id="60de7-122">agesAbove14</span><span class="sxs-lookup"><span data-stu-id="60de7-122">agesAbove14</span></span>|<span data-ttu-id="60de7-123">4</span><span class="sxs-lookup"><span data-stu-id="60de7-123">4</span></span>|<span data-ttu-id="60de7-124">Die Klassifizierung 14A eignet sich für Leser von Berichten über 14 oder älter</span><span class="sxs-lookup"><span data-stu-id="60de7-124">The 14A classification is suitable for viewers above 14 or older</span></span>|
-|<span data-ttu-id="60de7-125">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="60de7-125">agesAbove18</span></span>|<span data-ttu-id="60de7-126">5</span><span class="sxs-lookup"><span data-stu-id="60de7-126">5</span></span>|<span data-ttu-id="60de7-127">Die Klassifizierung 18A eignet sich für Leser von Berichten über 18 oder älter</span><span class="sxs-lookup"><span data-stu-id="60de7-127">The 18A classification is suitable for viewers above 18 or older</span></span>|
-|<span data-ttu-id="60de7-128">eingeschränkt</span><span class="sxs-lookup"><span data-stu-id="60de7-128">restricted</span></span>|<span data-ttu-id="60de7-129">6</span><span class="sxs-lookup"><span data-stu-id="60de7-129">6</span></span>|<span data-ttu-id="60de7-130">Die R-Klassifikation ist auf 18 Jahren beschränkt und ältere</span><span class="sxs-lookup"><span data-stu-id="60de7-130">The R classification is restricted to 18 years and older</span></span>|
+|<span data-ttu-id="dae8b-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="dae8b-110">allAllowed</span></span>|<span data-ttu-id="dae8b-111">0</span><span class="sxs-lookup"><span data-stu-id="dae8b-111">0</span></span>|<span data-ttu-id="dae8b-112">Standardwert, alle Filme zulassen</span><span class="sxs-lookup"><span data-stu-id="dae8b-112">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="dae8b-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="dae8b-113">allBlocked</span></span>|<span data-ttu-id="dae8b-114">1</span><span class="sxs-lookup"><span data-stu-id="dae8b-114">1</span></span>|<span data-ttu-id="dae8b-115">Keine Filme Inhalte zulassen</span><span class="sxs-lookup"><span data-stu-id="dae8b-115">Do not allow any movies content</span></span>|
+|<span data-ttu-id="dae8b-116">allgemeine</span><span class="sxs-lookup"><span data-stu-id="dae8b-116">general</span></span>|<span data-ttu-id="dae8b-117">2</span><span class="sxs-lookup"><span data-stu-id="dae8b-117">2</span></span>|<span data-ttu-id="dae8b-118">Die G-Klassifikation eignet sich für alle Altersgruppen</span><span class="sxs-lookup"><span data-stu-id="dae8b-118">The G classification is suitable for all ages</span></span>|
+|<span data-ttu-id="dae8b-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="dae8b-119">parentalGuidance</span></span>|<span data-ttu-id="dae8b-120">3</span><span class="sxs-lookup"><span data-stu-id="dae8b-120">3</span></span>|<span data-ttu-id="dae8b-121">Die PG-Klassifikation berät die elterliche Beratung</span><span class="sxs-lookup"><span data-stu-id="dae8b-121">The PG classification advises parental guidance</span></span>|
+|<span data-ttu-id="dae8b-122">agesAbove14</span><span class="sxs-lookup"><span data-stu-id="dae8b-122">agesAbove14</span></span>|<span data-ttu-id="dae8b-123">4</span><span class="sxs-lookup"><span data-stu-id="dae8b-123">4</span></span>|<span data-ttu-id="dae8b-124">Die 14A-Klassifikation eignet sich für Betrachter ab 14 Jahren.</span><span class="sxs-lookup"><span data-stu-id="dae8b-124">The 14A classification is suitable for viewers above 14 or older</span></span>|
+|<span data-ttu-id="dae8b-125">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="dae8b-125">agesAbove18</span></span>|<span data-ttu-id="dae8b-126">5</span><span class="sxs-lookup"><span data-stu-id="dae8b-126">5</span></span>|<span data-ttu-id="dae8b-127">Die 18A-Klassifikation eignet sich für Betrachter ab 18 Jahren.</span><span class="sxs-lookup"><span data-stu-id="dae8b-127">The 18A classification is suitable for viewers above 18 or older</span></span>|
+|<span data-ttu-id="dae8b-128">eingeschränkt</span><span class="sxs-lookup"><span data-stu-id="dae8b-128">restricted</span></span>|<span data-ttu-id="dae8b-129">6</span><span class="sxs-lookup"><span data-stu-id="dae8b-129">6</span></span>|<span data-ttu-id="dae8b-130">Die R-Klassifizierung ist auf 18 Jahre und älter beschränkt</span><span class="sxs-lookup"><span data-stu-id="dae8b-130">The R classification is restricted to 18 years and older</span></span>|
 
 
 

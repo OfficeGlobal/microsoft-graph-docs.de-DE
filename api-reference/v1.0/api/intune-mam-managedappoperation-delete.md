@@ -3,29 +3,30 @@ title: managedAppOperation löschen
 description: Löscht ein managedAppOperation-Objekt.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 148c4e796087f6d1cb94a3f23dcb3a59e7ae8ea3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 98cdc4b3b1ad3d3a4e2f4dfd376684d63d706371
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965341"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258163"
 ---
-# <a name="delete-managedappoperation"></a><span data-ttu-id="30bbe-103">managedAppOperation löschen</span><span class="sxs-lookup"><span data-stu-id="30bbe-103">Delete managedAppOperation</span></span>
+# <a name="delete-managedappoperation"></a><span data-ttu-id="54ccd-103">managedAppOperation löschen</span><span class="sxs-lookup"><span data-stu-id="54ccd-103">Delete managedAppOperation</span></span>
 
-> <span data-ttu-id="30bbe-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="30bbe-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="54ccd-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="54ccd-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="30bbe-105">Löscht ein [managedAppOperation](../resources/intune-mam-managedappoperation.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="30bbe-105">Deletes a [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="30bbe-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="30bbe-106">Prerequisites</span></span>
-<span data-ttu-id="30bbe-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30bbe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="54ccd-105">Löscht ein [managedAppOperation](../resources/intune-mam-managedappoperation.md)-Objekt.</span><span class="sxs-lookup"><span data-stu-id="54ccd-105">Deletes a [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
 
-|<span data-ttu-id="30bbe-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="30bbe-109">Permission type</span></span>|<span data-ttu-id="30bbe-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="30bbe-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="54ccd-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="54ccd-106">Prerequisites</span></span>
+<span data-ttu-id="54ccd-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="54ccd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="54ccd-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="54ccd-109">Permission type</span></span>|<span data-ttu-id="54ccd-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="54ccd-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="30bbe-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="30bbe-111">Delegated (work or school account)</span></span>|<span data-ttu-id="30bbe-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="30bbe-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="30bbe-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="30bbe-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="30bbe-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="30bbe-114">Not supported.</span></span>|
-|<span data-ttu-id="30bbe-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="30bbe-115">Application</span></span>|<span data-ttu-id="30bbe-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="30bbe-116">Not supported.</span></span>|
+|<span data-ttu-id="54ccd-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="54ccd-111">Delegated (work or school account)</span></span>|<span data-ttu-id="54ccd-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54ccd-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="54ccd-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="54ccd-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="54ccd-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54ccd-114">Not supported.</span></span>|
+|<span data-ttu-id="54ccd-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="54ccd-115">Application</span></span>|<span data-ttu-id="54ccd-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="54ccd-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="30bbe-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="30bbe-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="54ccd-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="54ccd-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,28 @@ ms.locfileid: "27965341"
 DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="30bbe-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="30bbe-118">Request headers</span></span>
-|<span data-ttu-id="30bbe-119">Header</span><span class="sxs-lookup"><span data-stu-id="30bbe-119">Header</span></span>|<span data-ttu-id="30bbe-120">Wert</span><span class="sxs-lookup"><span data-stu-id="30bbe-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="54ccd-118">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="54ccd-118">Request headers</span></span>
+|<span data-ttu-id="54ccd-119">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="54ccd-119">Header</span></span>|<span data-ttu-id="54ccd-120">Wert</span><span class="sxs-lookup"><span data-stu-id="54ccd-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="30bbe-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="30bbe-121">Authorization</span></span>|<span data-ttu-id="30bbe-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="30bbe-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="30bbe-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="30bbe-123">Accept</span></span>|<span data-ttu-id="30bbe-124">application/json</span><span class="sxs-lookup"><span data-stu-id="30bbe-124">application/json</span></span>|
+|<span data-ttu-id="54ccd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="54ccd-121">Authorization</span></span>|<span data-ttu-id="54ccd-122">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="54ccd-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="54ccd-123">Annehmen</span><span class="sxs-lookup"><span data-stu-id="54ccd-123">Accept</span></span>|<span data-ttu-id="54ccd-124">application/json</span><span class="sxs-lookup"><span data-stu-id="54ccd-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="30bbe-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="30bbe-125">Request body</span></span>
-<span data-ttu-id="30bbe-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="30bbe-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="54ccd-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="54ccd-125">Request body</span></span>
+<span data-ttu-id="54ccd-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="54ccd-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="30bbe-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="30bbe-127">Response</span></span>
-<span data-ttu-id="30bbe-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="30bbe-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="54ccd-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="54ccd-127">Response</span></span>
+<span data-ttu-id="54ccd-128">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="54ccd-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30bbe-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="30bbe-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="30bbe-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="30bbe-130">Request</span></span>
-<span data-ttu-id="30bbe-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="30bbe-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="54ccd-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="54ccd-129">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="54ccd-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="54ccd-130">Request</span></span>
+<span data-ttu-id="54ccd-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="54ccd-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="30bbe-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="30bbe-132">Response</span></span>
-<span data-ttu-id="30bbe-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="30bbe-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="54ccd-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="54ccd-132">Response</span></span>
+<span data-ttu-id="54ccd-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="54ccd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

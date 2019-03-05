@@ -3,29 +3,30 @@ title: Abrufen von „androidManagedAppRegistration“
 description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1b41b4e0b5975be857f81b2282928aee3ca60336
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 76343c3e07289ad670b2d553852f7cb5b870952d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959020"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253785"
 ---
-# <a name="get-androidmanagedappregistration"></a><span data-ttu-id="ac0f2-103">Abrufen von „androidManagedAppRegistration“</span><span class="sxs-lookup"><span data-stu-id="ac0f2-103">Get androidManagedAppRegistration</span></span>
+# <a name="get-androidmanagedappregistration"></a><span data-ttu-id="8eca1-103">Abrufen von „androidManagedAppRegistration“</span><span class="sxs-lookup"><span data-stu-id="8eca1-103">Get androidManagedAppRegistration</span></span>
 
-> <span data-ttu-id="ac0f2-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="8eca1-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="8eca1-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ac0f2-105">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).</span><span class="sxs-lookup"><span data-stu-id="ac0f2-105">Read properties and relationships of the [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ac0f2-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="ac0f2-106">Prerequisites</span></span>
-<span data-ttu-id="ac0f2-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ac0f2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8eca1-105">Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).</span><span class="sxs-lookup"><span data-stu-id="8eca1-105">Read properties and relationships of the [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object.</span></span>
 
-|<span data-ttu-id="ac0f2-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ac0f2-109">Permission type</span></span>|<span data-ttu-id="ac0f2-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ac0f2-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="8eca1-106">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="8eca1-106">Prerequisites</span></span>
+<span data-ttu-id="8eca1-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="8eca1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="8eca1-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8eca1-109">Permission type</span></span>|<span data-ttu-id="8eca1-110">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="8eca1-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ac0f2-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ac0f2-111">Delegated (work or school account)</span></span>|<span data-ttu-id="ac0f2-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ac0f2-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="ac0f2-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ac0f2-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ac0f2-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ac0f2-114">Not supported.</span></span>|
-|<span data-ttu-id="ac0f2-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ac0f2-115">Application</span></span>|<span data-ttu-id="ac0f2-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="ac0f2-116">Not supported.</span></span>|
+|<span data-ttu-id="8eca1-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8eca1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="8eca1-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="8eca1-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="8eca1-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="8eca1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8eca1-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8eca1-114">Not supported.</span></span>|
+|<span data-ttu-id="8eca1-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8eca1-115">Application</span></span>|<span data-ttu-id="8eca1-116">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="8eca1-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ac0f2-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ac0f2-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8eca1-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="8eca1-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,29 +35,31 @@ ms.locfileid: "27959020"
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ac0f2-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="ac0f2-118">Optional query parameters</span></span>
-<span data-ttu-id="ac0f2-119">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ac0f2-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="ac0f2-120">Request headers</span></span>
-|<span data-ttu-id="ac0f2-121">Header</span><span class="sxs-lookup"><span data-stu-id="ac0f2-121">Header</span></span>|<span data-ttu-id="ac0f2-122">Wert</span><span class="sxs-lookup"><span data-stu-id="ac0f2-122">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8eca1-118">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="8eca1-118">Optional query parameters</span></span>
+<span data-ttu-id="8eca1-119">Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.com/en-us/graph/query-parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="8eca1-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="8eca1-120">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="8eca1-120">Request headers</span></span>
+|<span data-ttu-id="8eca1-121">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="8eca1-121">Header</span></span>|<span data-ttu-id="8eca1-122">Wert</span><span class="sxs-lookup"><span data-stu-id="8eca1-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ac0f2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac0f2-123">Authorization</span></span>|<span data-ttu-id="ac0f2-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="ac0f2-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ac0f2-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="ac0f2-125">Accept</span></span>|<span data-ttu-id="ac0f2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ac0f2-126">application/json</span></span>|
+|<span data-ttu-id="8eca1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8eca1-123">Authorization</span></span>|<span data-ttu-id="8eca1-124">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="8eca1-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8eca1-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="8eca1-125">Accept</span></span>|<span data-ttu-id="8eca1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="8eca1-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ac0f2-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="ac0f2-127">Request body</span></span>
-<span data-ttu-id="ac0f2-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8eca1-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="8eca1-127">Request body</span></span>
+<span data-ttu-id="8eca1-128">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="8eca1-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ac0f2-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="ac0f2-129">Response</span></span>
-<span data-ttu-id="ac0f2-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-130">If successful, this method returns a `200 OK` response code and [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8eca1-129">Antwort</span><span class="sxs-lookup"><span data-stu-id="8eca1-129">Response</span></span>
+<span data-ttu-id="8eca1-130">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="8eca1-130">If successful, this method returns a `200 OK` response code and [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ac0f2-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ac0f2-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ac0f2-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ac0f2-132">Request</span></span>
-<span data-ttu-id="ac0f2-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8eca1-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8eca1-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="8eca1-132">Anforderung</span><span class="sxs-lookup"><span data-stu-id="8eca1-132">Request</span></span>
+<span data-ttu-id="8eca1-133">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="8eca1-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="ac0f2-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="ac0f2-134">Response</span></span>
-<span data-ttu-id="ac0f2-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="ac0f2-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8eca1-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="8eca1-134">Response</span></span>
+<span data-ttu-id="8eca1-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8eca1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

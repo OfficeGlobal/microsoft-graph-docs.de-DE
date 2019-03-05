@@ -1,29 +1,30 @@
 ---
-title: FirewallPacketQueueingMethodType Enum-Typ
+title: firewallPacketQueueingMethodType-Enumerationstyp
 description: Mögliche Werte für firewallPacketQueueingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cdd9dc0279abc332bbf7b686f7f429fbd8db8883
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940099"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258926"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="e5e35-103">FirewallPacketQueueingMethodType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="e5e35-103">firewallPacketQueueingMethodType enum type</span></span>
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="59473-103">firewallPacketQueueingMethodType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="59473-103">firewallPacketQueueingMethodType enum type</span></span>
 
-> <span data-ttu-id="e5e35-104">**Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.</span><span class="sxs-lookup"><span data-stu-id="e5e35-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="59473-104">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="59473-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5e35-105">Mögliche Werte für firewallPacketQueueingMethod</span><span class="sxs-lookup"><span data-stu-id="e5e35-105">Possible values for firewallPacketQueueingMethod</span></span>
-## <a name="members"></a><span data-ttu-id="e5e35-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="e5e35-106">Members</span></span>
-|<span data-ttu-id="e5e35-107">Element</span><span class="sxs-lookup"><span data-stu-id="e5e35-107">Member</span></span>|<span data-ttu-id="e5e35-108">Wert</span><span class="sxs-lookup"><span data-stu-id="e5e35-108">Value</span></span>|<span data-ttu-id="e5e35-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e5e35-109">Description</span></span>|
+<span data-ttu-id="59473-105">Mögliche Werte für firewallPacketQueueingMethod</span><span class="sxs-lookup"><span data-stu-id="59473-105">Possible values for firewallPacketQueueingMethod</span></span>
+
+## <a name="members"></a><span data-ttu-id="59473-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="59473-106">Members</span></span>
+|<span data-ttu-id="59473-107">Element</span><span class="sxs-lookup"><span data-stu-id="59473-107">Member</span></span>|<span data-ttu-id="59473-108">Wert</span><span class="sxs-lookup"><span data-stu-id="59473-108">Value</span></span>|<span data-ttu-id="59473-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="59473-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e5e35-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="e5e35-110">deviceDefault</span></span>|<span data-ttu-id="e5e35-111">0</span><span class="sxs-lookup"><span data-stu-id="e5e35-111">0</span></span>|<span data-ttu-id="e5e35-112">Überschreiben Sie keinen Wert von Intune, konfiguriert nicht den Standardwert für den Benutzer konfigurierten Gerät</span><span class="sxs-lookup"><span data-stu-id="e5e35-112">No value configured by Intune, do not override the user-configured device default value</span></span>|
-|<span data-ttu-id="e5e35-113">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="e5e35-113">disabled</span></span>|<span data-ttu-id="e5e35-114">1</span><span class="sxs-lookup"><span data-stu-id="e5e35-114">1</span></span>|<span data-ttu-id="e5e35-115">Paket Warteschlangen deaktivieren</span><span class="sxs-lookup"><span data-stu-id="e5e35-115">Disable packet queuing</span></span>|
-|<span data-ttu-id="e5e35-116">queueInbound</span><span class="sxs-lookup"><span data-stu-id="e5e35-116">queueInbound</span></span>|<span data-ttu-id="e5e35-117">2</span><span class="sxs-lookup"><span data-stu-id="e5e35-117">2</span></span>|<span data-ttu-id="e5e35-118">Eingehende, verschlüsselte Pakete Warteschlange</span><span class="sxs-lookup"><span data-stu-id="e5e35-118">Queue inbound encrypted packets</span></span>|
-|<span data-ttu-id="e5e35-119">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="e5e35-119">queueOutbound</span></span>|<span data-ttu-id="e5e35-120">3</span><span class="sxs-lookup"><span data-stu-id="e5e35-120">3</span></span>|<span data-ttu-id="e5e35-121">Warteschlange entschlüsselt ausgehenden Pakete für die Weiterleitung</span><span class="sxs-lookup"><span data-stu-id="e5e35-121">Queue decrypted outbound packets for forwarding</span></span>|
-|<span data-ttu-id="e5e35-122">queueBoth</span><span class="sxs-lookup"><span data-stu-id="e5e35-122">queueBoth</span></span>|<span data-ttu-id="e5e35-123">4</span><span class="sxs-lookup"><span data-stu-id="e5e35-123">4</span></span>|<span data-ttu-id="e5e35-124">Die Warteschlange eingehenden und ausgehenden Pakete</span><span class="sxs-lookup"><span data-stu-id="e5e35-124">Queue both inbound and outbound packets</span></span>|
+|<span data-ttu-id="59473-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="59473-110">deviceDefault</span></span>|<span data-ttu-id="59473-111">0</span><span class="sxs-lookup"><span data-stu-id="59473-111">0</span></span>|<span data-ttu-id="59473-112">Kein von InTune konfigurierter Wert, außer Kraft setzen des Standardwerts des Benutzer konfigurierten Geräts</span><span class="sxs-lookup"><span data-stu-id="59473-112">No value configured by Intune, do not override the user-configured device default value</span></span>|
+|<span data-ttu-id="59473-113">deaktiviert</span><span class="sxs-lookup"><span data-stu-id="59473-113">disabled</span></span>|<span data-ttu-id="59473-114">1</span><span class="sxs-lookup"><span data-stu-id="59473-114">1</span></span>|<span data-ttu-id="59473-115">Deaktivieren von Paketwarteschlangen</span><span class="sxs-lookup"><span data-stu-id="59473-115">Disable packet queuing</span></span>|
+|<span data-ttu-id="59473-116">queueInbound</span><span class="sxs-lookup"><span data-stu-id="59473-116">queueInbound</span></span>|<span data-ttu-id="59473-117">2</span><span class="sxs-lookup"><span data-stu-id="59473-117">2</span></span>|<span data-ttu-id="59473-118">Eingehende verschlüsselte Pakete in der Warteschlange</span><span class="sxs-lookup"><span data-stu-id="59473-118">Queue inbound encrypted packets</span></span>|
+|<span data-ttu-id="59473-119">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="59473-119">queueOutbound</span></span>|<span data-ttu-id="59473-120">3</span><span class="sxs-lookup"><span data-stu-id="59473-120">3</span></span>|<span data-ttu-id="59473-121">Entschlüsselte ausgehende Pakete für die Weiterleitung in der Warteschlange</span><span class="sxs-lookup"><span data-stu-id="59473-121">Queue decrypted outbound packets for forwarding</span></span>|
+|<span data-ttu-id="59473-122">queueBoth</span><span class="sxs-lookup"><span data-stu-id="59473-122">queueBoth</span></span>|<span data-ttu-id="59473-123">4</span><span class="sxs-lookup"><span data-stu-id="59473-123">4</span></span>|<span data-ttu-id="59473-124">Warteschlange für ein-und ausgehende Pakete</span><span class="sxs-lookup"><span data-stu-id="59473-124">Queue both inbound and outbound packets</span></span>|
 
 
 

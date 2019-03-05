@@ -1,33 +1,33 @@
 ---
-title: WindowsUpdateForBusinessUpdateWeeks Enum-Typ
-description: Die Installation des Updates auf den Wochen des Monats geplant
-localization_priority: Normal
+title: windowsUpdateForBusinessUpdateWeeks-Enumerationstyp
+description: Updateinstallation für die Wochen des Monats geplant
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 861fcf1a227f57a3d6f5353b64689d02e8ab5996
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2f06f63672a704d1d69ae62b353b025b8b78e063
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395867"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147026"
 ---
-# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a><span data-ttu-id="9e7ed-103">WindowsUpdateForBusinessUpdateWeeks Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="9e7ed-103">windowsUpdateForBusinessUpdateWeeks enum type</span></span>
+# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a><span data-ttu-id="ce624-103">windowsUpdateForBusinessUpdateWeeks-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="ce624-103">windowsUpdateForBusinessUpdateWeeks enum type</span></span>
 
-> <span data-ttu-id="9e7ed-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="9e7ed-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9e7ed-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="9e7ed-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ce624-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ce624-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9e7ed-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9e7ed-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ce624-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="ce624-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9e7ed-107">Die Installation des Updates auf den Wochen des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-107">Scheduled the update installation on the weeks of the month</span></span>
+<span data-ttu-id="ce624-106">Updateinstallation für die Wochen des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="ce624-106">Scheduled the update installation on the weeks of the month</span></span>
 
-## <a name="members"></a><span data-ttu-id="9e7ed-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="9e7ed-108">Members</span></span>
-|<span data-ttu-id="9e7ed-109">Member</span><span class="sxs-lookup"><span data-stu-id="9e7ed-109">Member</span></span>|<span data-ttu-id="9e7ed-110">Wert</span><span class="sxs-lookup"><span data-stu-id="9e7ed-110">Value</span></span>|<span data-ttu-id="9e7ed-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9e7ed-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ce624-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="ce624-107">Members</span></span>
+|<span data-ttu-id="ce624-108">Element</span><span class="sxs-lookup"><span data-stu-id="ce624-108">Member</span></span>|<span data-ttu-id="ce624-109">Wert</span><span class="sxs-lookup"><span data-stu-id="ce624-109">Value</span></span>|<span data-ttu-id="ce624-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="ce624-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9e7ed-112">vom Typ userDefined</span><span class="sxs-lookup"><span data-stu-id="9e7ed-112">userDefined</span></span>|<span data-ttu-id="9e7ed-113">0</span><span class="sxs-lookup"><span data-stu-id="9e7ed-113">0</span></span>|<span data-ttu-id="9e7ed-114">Ermöglicht es dem Benutzer festgelegt.</span><span class="sxs-lookup"><span data-stu-id="9e7ed-114">Allow the user to set.</span></span>|
-|<span data-ttu-id="9e7ed-115">ErsteWoche</span><span class="sxs-lookup"><span data-stu-id="9e7ed-115">firstWeek</span></span>|<span data-ttu-id="9e7ed-116">1</span><span class="sxs-lookup"><span data-stu-id="9e7ed-116">1</span></span>|<span data-ttu-id="9e7ed-117">Die Installation des Updates in der ersten Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-117">Scheduled the update installation on the first week of the month</span></span>|
-|<span data-ttu-id="9e7ed-118">secondWeek</span><span class="sxs-lookup"><span data-stu-id="9e7ed-118">secondWeek</span></span>|<span data-ttu-id="9e7ed-119">2</span><span class="sxs-lookup"><span data-stu-id="9e7ed-119">2</span></span>|<span data-ttu-id="9e7ed-120">Die Installation des Updates auf die zweite Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-120">Scheduled the update installation on the second week of the month</span></span>|
-|<span data-ttu-id="9e7ed-121">thirdWeek</span><span class="sxs-lookup"><span data-stu-id="9e7ed-121">thirdWeek</span></span>|<span data-ttu-id="9e7ed-122">4</span><span class="sxs-lookup"><span data-stu-id="9e7ed-122">4</span></span>|<span data-ttu-id="9e7ed-123">Die Installation des Updates in der dritten Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-123">Scheduled the update installation on the third week of the month</span></span>|
-|<span data-ttu-id="9e7ed-124">fourthWeek</span><span class="sxs-lookup"><span data-stu-id="9e7ed-124">fourthWeek</span></span>|<span data-ttu-id="9e7ed-125">8</span><span class="sxs-lookup"><span data-stu-id="9e7ed-125">8</span></span>|<span data-ttu-id="9e7ed-126">Die Installation des Updates auf der vierte Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-126">Scheduled the update installation on the fourth week of the month</span></span>|
-|<span data-ttu-id="9e7ed-127">everyWeek</span><span class="sxs-lookup"><span data-stu-id="9e7ed-127">everyWeek</span></span>|<span data-ttu-id="9e7ed-128">15</span><span class="sxs-lookup"><span data-stu-id="9e7ed-128">15</span></span>|<span data-ttu-id="9e7ed-129">Die Installation des Updates auf jede Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="9e7ed-129">Scheduled the update installation on every week of the month</span></span>|
+|<span data-ttu-id="ce624-111">userDefined</span><span class="sxs-lookup"><span data-stu-id="ce624-111">userDefined</span></span>|<span data-ttu-id="ce624-112">0</span><span class="sxs-lookup"><span data-stu-id="ce624-112">0</span></span>|<span data-ttu-id="ce624-113">Zulassen, dass der Benutzer festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="ce624-113">Allow the user to set.</span></span>|
+|<span data-ttu-id="ce624-114">firstWeek</span><span class="sxs-lookup"><span data-stu-id="ce624-114">firstWeek</span></span>|<span data-ttu-id="ce624-115">1</span><span class="sxs-lookup"><span data-stu-id="ce624-115">1</span></span>|<span data-ttu-id="ce624-116">Updateinstallation für die erste Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="ce624-116">Scheduled the update installation on the first week of the month</span></span>|
+|<span data-ttu-id="ce624-117">secondWeek</span><span class="sxs-lookup"><span data-stu-id="ce624-117">secondWeek</span></span>|<span data-ttu-id="ce624-118">2</span><span class="sxs-lookup"><span data-stu-id="ce624-118">2</span></span>|<span data-ttu-id="ce624-119">Updateinstallation für die zweite Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="ce624-119">Scheduled the update installation on the second week of the month</span></span>|
+|<span data-ttu-id="ce624-120">thirdWeek</span><span class="sxs-lookup"><span data-stu-id="ce624-120">thirdWeek</span></span>|<span data-ttu-id="ce624-121">4</span><span class="sxs-lookup"><span data-stu-id="ce624-121">4</span></span>|<span data-ttu-id="ce624-122">Updateinstallation für die dritte Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="ce624-122">Scheduled the update installation on the third week of the month</span></span>|
+|<span data-ttu-id="ce624-123">fourthWeek</span><span class="sxs-lookup"><span data-stu-id="ce624-123">fourthWeek</span></span>|<span data-ttu-id="ce624-124">8</span><span class="sxs-lookup"><span data-stu-id="ce624-124">8</span></span>|<span data-ttu-id="ce624-125">Geplante Installation des Updates in der vierten Woche des Monats</span><span class="sxs-lookup"><span data-stu-id="ce624-125">Scheduled the update installation on the fourth week of the month</span></span>|
+|<span data-ttu-id="ce624-126">everyWeek</span><span class="sxs-lookup"><span data-stu-id="ce624-126">everyWeek</span></span>|<span data-ttu-id="ce624-127">15</span><span class="sxs-lookup"><span data-stu-id="ce624-127">15</span></span>|<span data-ttu-id="ce624-128">Updateinstallation für jede Woche des Monats geplant</span><span class="sxs-lookup"><span data-stu-id="ce624-128">Scheduled the update installation on every week of the month</span></span>|
 
 
 

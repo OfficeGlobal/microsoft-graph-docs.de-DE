@@ -1,33 +1,33 @@
 ---
-title: EapType Enum-Typ
-description: Extensible Authentication-Protokoll (EAP) Konfigurationstypen.
-localization_priority: Normal
+title: eapType-Enumerationstyp
+description: EAP-Konfigurationstypen (Extensible Authentication Protocol).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268a3190b06834d24c63d7ca5117a00fe7dc70d8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6aac4a2bf9c72d8d682ed444355ce2e410ff8f1c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405828"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146851"
 ---
-# <a name="eaptype-enum-type"></a><span data-ttu-id="1470b-103">EapType Enum-Typ</span><span class="sxs-lookup"><span data-stu-id="1470b-103">eapType enum type</span></span>
+# <a name="eaptype-enum-type"></a><span data-ttu-id="4bbb8-103">eapType-Enumerationstyp</span><span class="sxs-lookup"><span data-stu-id="4bbb8-103">eapType enum type</span></span>
 
-> <span data-ttu-id="1470b-104">**Wichtig:** APIs unter der /beta Version von Microsoft Graph werden können geändert.</span><span class="sxs-lookup"><span data-stu-id="1470b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1470b-105">Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="1470b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4bbb8-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4bbb8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1470b-106">**Hinweis:** Die Microsoft Graph-API für Intune ist eine [aktive Intune-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten erforderlich.</span><span class="sxs-lookup"><span data-stu-id="1470b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4bbb8-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="4bbb8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1470b-107">Extensible Authentication-Protokoll (EAP) Konfigurationstypen.</span><span class="sxs-lookup"><span data-stu-id="1470b-107">Extensible Authentication Protocol (EAP) configuration types.</span></span>
+<span data-ttu-id="4bbb8-106">EAP-Konfigurationstypen (Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-106">Extensible Authentication Protocol (EAP) configuration types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="1470b-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="1470b-108">Members</span></span>
-|<span data-ttu-id="1470b-109">Member</span><span class="sxs-lookup"><span data-stu-id="1470b-109">Member</span></span>|<span data-ttu-id="1470b-110">Wert</span><span class="sxs-lookup"><span data-stu-id="1470b-110">Value</span></span>|<span data-ttu-id="1470b-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1470b-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="4bbb8-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="4bbb8-107">Members</span></span>
+|<span data-ttu-id="4bbb8-108">Element</span><span class="sxs-lookup"><span data-stu-id="4bbb8-108">Member</span></span>|<span data-ttu-id="4bbb8-109">Wert</span><span class="sxs-lookup"><span data-stu-id="4bbb8-109">Value</span></span>|<span data-ttu-id="4bbb8-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4bbb8-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1470b-112">eapTls</span><span class="sxs-lookup"><span data-stu-id="1470b-112">eapTls</span></span>|<span data-ttu-id="1470b-113">13</span><span class="sxs-lookup"><span data-stu-id="1470b-113">13</span></span>|<span data-ttu-id="1470b-114">EAP-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="1470b-114">EAP-Transport Layer Security (EAP-TLS).</span></span>|
-|<span data-ttu-id="1470b-115">Sprung</span><span class="sxs-lookup"><span data-stu-id="1470b-115">leap</span></span>|<span data-ttu-id="1470b-116">17</span><span class="sxs-lookup"><span data-stu-id="1470b-116">17</span></span>|<span data-ttu-id="1470b-117">Einfache Extensible Authentication-Protokoll (SPRUNG).</span><span class="sxs-lookup"><span data-stu-id="1470b-117">Lightweight Extensible Authentication Protocol (LEAP).</span></span>|
-|<span data-ttu-id="1470b-118">eapSim</span><span class="sxs-lookup"><span data-stu-id="1470b-118">eapSim</span></span>|<span data-ttu-id="1470b-119">18</span><span class="sxs-lookup"><span data-stu-id="1470b-119">18</span></span>|<span data-ttu-id="1470b-120">EAP für Zugriffszeichenfolge g/m2 (EAP-SIM).</span><span class="sxs-lookup"><span data-stu-id="1470b-120">EAP for GSM Subscriber Identity Module (EAP-SIM).</span></span>|
-|<span data-ttu-id="1470b-121">eapTtls</span><span class="sxs-lookup"><span data-stu-id="1470b-121">eapTtls</span></span>|<span data-ttu-id="1470b-122">21</span><span class="sxs-lookup"><span data-stu-id="1470b-122">21</span></span>|<span data-ttu-id="1470b-123">EAP-getunnelt Transport Layer Security (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="1470b-123">EAP-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
-|<span data-ttu-id="1470b-124">PEAP</span><span class="sxs-lookup"><span data-stu-id="1470b-124">peap</span></span>|<span data-ttu-id="1470b-125">25</span><span class="sxs-lookup"><span data-stu-id="1470b-125">25</span></span>|<span data-ttu-id="1470b-126">Extensible Authentication-Protokoll (PEAP) geschützt.</span><span class="sxs-lookup"><span data-stu-id="1470b-126">Protected Extensible Authentication Protocol (PEAP).</span></span>|
-|<span data-ttu-id="1470b-127">eapFast</span><span class="sxs-lookup"><span data-stu-id="1470b-127">eapFast</span></span>|<span data-ttu-id="1470b-128">43</span><span class="sxs-lookup"><span data-stu-id="1470b-128">43</span></span>|<span data-ttu-id="1470b-129">EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).</span><span class="sxs-lookup"><span data-stu-id="1470b-129">EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).</span></span>|
+|<span data-ttu-id="4bbb8-111">eapTls</span><span class="sxs-lookup"><span data-stu-id="4bbb8-111">eapTls</span></span>|<span data-ttu-id="4bbb8-112">13</span><span class="sxs-lookup"><span data-stu-id="4bbb8-112">13</span></span>|<span data-ttu-id="4bbb8-113">EAP-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-113">EAP-Transport Layer Security (EAP-TLS).</span></span>|
+|<span data-ttu-id="4bbb8-114">Schalt</span><span class="sxs-lookup"><span data-stu-id="4bbb8-114">leap</span></span>|<span data-ttu-id="4bbb8-115">17</span><span class="sxs-lookup"><span data-stu-id="4bbb8-115">17</span></span>|<span data-ttu-id="4bbb8-116">Einfaches erweiterbares AuthentifizierungsProtokoll (LEAP).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-116">Lightweight Extensible Authentication Protocol (LEAP).</span></span>|
+|<span data-ttu-id="4bbb8-117">eapSim</span><span class="sxs-lookup"><span data-stu-id="4bbb8-117">eapSim</span></span>|<span data-ttu-id="4bbb8-118">18</span><span class="sxs-lookup"><span data-stu-id="4bbb8-118">18</span></span>|<span data-ttu-id="4bbb8-119">EAP für GSM-Teilnehmer Identitätsmodul (EAP-SIM).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-119">EAP for GSM Subscriber Identity Module (EAP-SIM).</span></span>|
+|<span data-ttu-id="4bbb8-120">eapTtls</span><span class="sxs-lookup"><span data-stu-id="4bbb8-120">eapTtls</span></span>|<span data-ttu-id="4bbb8-121">21</span><span class="sxs-lookup"><span data-stu-id="4bbb8-121">21</span></span>|<span data-ttu-id="4bbb8-122">EAP-Tunneled Transport Layer Security (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-122">EAP-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
+|<span data-ttu-id="4bbb8-123">PEAP</span><span class="sxs-lookup"><span data-stu-id="4bbb8-123">peap</span></span>|<span data-ttu-id="4bbb8-124">25</span><span class="sxs-lookup"><span data-stu-id="4bbb8-124">25</span></span>|<span data-ttu-id="4bbb8-125">PEAP (Protected Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-125">Protected Extensible Authentication Protocol (PEAP).</span></span>|
+|<span data-ttu-id="4bbb8-126">eapFast</span><span class="sxs-lookup"><span data-stu-id="4bbb8-126">eapFast</span></span>|<span data-ttu-id="4bbb8-127">43</span><span class="sxs-lookup"><span data-stu-id="4bbb8-127">43</span></span>|<span data-ttu-id="4bbb8-128">EAP-flexible Authentifizierung über sicheres Tunneling (EAP-FAST).</span><span class="sxs-lookup"><span data-stu-id="4bbb8-128">EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).</span></span>|
 
 
 
