@@ -4,12 +4,12 @@ description: Mit dieser API können Sie die Eigenschaften eines Nachrichtenobjek
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: c3564d5f48cb3b3e12e18a07d605fcd3eba01291
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 53d7f6425088eb6ed7bbaac17d3dbe7a08c955e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922543"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149084"
 ---
 # <a name="update-message"></a>Nachricht aktualisieren
 
@@ -45,7 +45,8 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |body|ItemBody|Der Text der Nachricht. Kann nur aktualisiert werden, wenn isDraft = True.|
 |categories|String collection|Die Kategorien, die mit der Nachricht verknüpft sind.|
 |ccRecipients|Empfänger-Sammlung|Die Cc:-Empfänger der Nachricht. |
-|from|Empfänger|Der Postfachbesitzer und Absender der Nachricht. Muss dem tatsächlich verwendeten Postfach entsprechen.|
+|Flag|[followupFlag](../resources/followupflag.md)|Der Wert des Flags, der den Status, das Startdatum, das Fälligkeitsdatum oder das Enddatum für die Nachricht angibt.|
+|Von|Empfänger|Der Postfachbesitzer und Absender der Nachricht. Muss dem tatsächlich verwendeten Postfach entsprechen.|
 |importance|Zeichenfolge|Die Wichtigkeit der Nachricht. Die möglichen Werte sind: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Die Klassifizierung der Nachricht für den Benutzer, basierend auf der abgeleiteten Relevanz oder Wichtigkeit oder auf einer expliziten Außerkraftsetzung. Die möglichen Werte sind: `focused` oder `other`. |
 |internetMessageId |String |Die Nachrichten-ID im von [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) angegebenen Format. Kann nur aktualisiert werden, wenn isDraft = True.|

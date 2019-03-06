@@ -4,12 +4,12 @@ description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b9d3def25d4039b1c5c7efd520671333c69ae55
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057078"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379556"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -105,6 +105,7 @@ Diese Ressource unterstützt Folgendes:
 |hireDate|DateTimeOffset|Das Einstellungsdatum des Benutzers. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |interests|String collection|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
+|isResourceAccount|Boolean| **true**, wenn es sich bei dem Benutzer um ein Ressourcenkonto handelt, andernfalls **false**. Ein NULL-Wert sollte als **false** angesehen werden.|
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |legalAgeGroupClassification|String| Verwendet von Enterprise-Anwendungen, um die gesetzliche Altersgruppe des Benutzers zu bestimmen. Diese Eigenschaft ist schreibgeschützt und wird basierend auf den Eigenschaften `ageGroup` und `consentProvidedForMinor` berechnet. Zulässige Werte: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` und `adult`. Weitere Informationen finden Sie in den [gesetzlichen Eigenschaftsdefinitionen für Altersgruppen](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)-Sammlung|Status der Lizenzzuweisungen für diesen Benutzer. Schreibgeschützt.|
@@ -283,6 +284,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

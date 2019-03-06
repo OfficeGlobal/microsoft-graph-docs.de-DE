@@ -4,12 +4,12 @@ description: Stellt ein Azure AD-Benutzerkonto dar. Erbt von directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 735ed7688dec1ef8cd79d9590981d0c3793ea996
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 3d102e28bc04b6a2c2f8635e28f94e591c003bf5
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745566"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379535"
 ---
 # <a name="user-resource-type"></a>user-Ressourcentyp
 
@@ -92,6 +92,7 @@ Diese Ressource unterstützt Folgendes:
 |id|String|Der eindeutige Bezeichner des Benutzers. Geerbt von [directoryObject](directoryobject.md). Key. Lässt keine Nullwerte zu. Schreibgeschützt.|
 |imAddresses|String-Sammlung|Die VOIP-SIP-Adressen (Voice oder IP; Session Initiation Protocol) der Chatnachricht für den Benutzer. Schreibgeschützt.|
 |interests|String collection|Eine Liste für den Benutzer, um dessen Interessen zu beschreiben.|
+|isResourceAccount|Boolean| **true**, wenn es sich bei dem Benutzer um ein Ressourcenkonto handelt, andernfalls **false**. Ein NULL-Wert sollte als **false** angesehen werden.|
 |jobTitle|String|Die Position des Benutzers. Unterstützt $filter.|
 |legalAgeGroupClassification|String| Verwendet von Enterprise-Anwendungen, um die gesetzliche Altersgruppe des Benutzers zu bestimmen. Diese Eigenschaft ist schreibgeschützt und wird basierend auf den Eigenschaften `ageGroup` und `consentProvidedForMinor` berechnet. Zulässige Werte: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` und `adult`. Weitere Informationen finden Sie in den [gesetzlichen Eigenschaftsdefinitionen für Altersgruppen](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)-Sammlung|Status der Lizenzzuweisungen für diesen Benutzer. Schreibgeschützt.|
@@ -388,6 +389,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "id": "string (identifier)",
   "imAddresses": ["string"],
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
