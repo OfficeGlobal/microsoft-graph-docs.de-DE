@@ -2,12 +2,12 @@
 title: chatMessage-Ressourcentyp
 description: Stellt eine einzelne Chatnachricht innerhalb eines Kanals oder einer Chatentität dar. Die Nachricht kann eine Stammnachricht oder Teil eines Threads sein, die bzw. der von der **replyToId**-Eigenschaft in der Nachricht definiert wird.
 localization_priority: Priority
-ms.openlocfilehash: 0d0b713b2ad35e9af06f7a8b32e66bfbf7aff8af
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994447"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458659"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage-Ressourcentyp
 
@@ -23,7 +23,7 @@ Stellt eine einzelne Chatnachricht innerhalb eines [Kanals](channel.md) oder ein
 |[Kanalnachricht abrufen](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Abrufen einer einzelnen Stammnachricht aus einem Kanal.|
 |[Antworten in einer Nachricht auflisten](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md)-Sammlung| Abrufen der Liste aller Antworten auf eine Nachricht im Kanal.|
 |[Antwort auf eine Nachricht abrufen](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Abrufen einer einzelnen Antwort auf eine Nachricht in einem Kanal.|
-|[Erstellen einer Nachricht in einem Kanal](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Erstellen Sie eine neue Nachricht in einem Kanal.|
+|[Senden einer Nachricht in einem Kanal](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Erstellen Sie eine neue Nachricht auf oberster Ebene in einem Kanal.|
 |[Antworten auf eine Nachricht in einem Kanal](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Antworten Sie auf eine Nachricht in einem Kanal.|
 
 

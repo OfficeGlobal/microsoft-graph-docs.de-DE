@@ -4,12 +4,12 @@ description: 'Ein Team in Microsoft Teams ist eine Sammlung von Kanälen. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bcf6602dcb9673ffd7b1fb81a0d9349392fd6d3f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994461"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458680"
 ---
 # <a name="team-resource-type"></a>team-Ressourcentyp
 
@@ -65,7 +65,7 @@ Weitere Informationen zum Arbeiten mit Gruppen und Mitgliedern in Teams finden S
 |apps|[teamsApp](teamsapp.md)-Sammlung| (Veraltet) Die in diesem Team installierten Apps.|
 |channels|[channel](channel.md)-Sammlung|Die Sammlung von Kanälen und Nachrichten, die mit dem Team verknüpft ist.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md)-Sammlung|Die in diesem Team installierten Apps.|
-|owners|[user](user.md)| Die Liste der Besitzer des Teams. |
+|owners|[user](user.md)| Die Liste der Besitzer des Teams. Derzeit muss beim Erstellen eines Teams mit Anwendungsberechtigungen genau ein Besitzer angegeben werden. Bei Verwendung von benutzerdelegierten Berechtigungen kann kein Besitzer angegeben werden (der aktuelle Benutzer ist der Besitzer). Der Besitzer muss als Objekt-ID (GUID) und nicht als UPN angegeben werden. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md)-Auflistung| Die asynchronen Vorgänge, die ausgeführt wurden oder in diesem Team ausgeführt werden. | 
 |template|[teamsTemplate](teamstemplate.md)| Die Vorlage, von der dieses Team erstellt wurde. Siehe [Verfügbare Vorlagen](https://docs.microsoft.com/de-DE/MicrosoftTeams/get-started-with-teams-templates). |
 

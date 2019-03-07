@@ -2175,7 +2175,7 @@ items:
               - name: Importierte Windows Autopilot-Geräteidentität
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Liste
+                  - name: Auflisten
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Abrufen
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -5290,7 +5290,7 @@ items:
                     href: api/intune-devices-manageddevice-setdevicename.md
                   - name: retire-Aktion
                     href: api/intune-devices-manageddevice-retire.md
-                  - name: wipe-Aktion
+                  - name: Zurücksetzung
                     href: api/intune-devices-manageddevice-wipe.md
                   - name: resetPasscode-Aktion
                     href: api/intune-devices-manageddevice-resetpasscode.md
@@ -6675,6 +6675,240 @@ items:
                 href: api/permission-update.md
               - name: Berechtigung löschen
                 href: api/permission-delete.md
+      - name: Finanzen
+        href: resources/dynamics-graph-reference.md
+        displayname: 'Dynamics, Dynamics 365 Business Central'
+        items:
+          - name: Konto
+            href: resources/dynamics-account.md
+            items:
+              - name: Konto abrufen
+                href: api/dynamics-account-get.md
+          - name: Kreditor-Saldenrückblick
+            href: resources/dynamics-agedaccountspayable.md
+            items:
+              - name: Kreditor-Saldenrückblick abrufen
+                href: api/dynamics-agedaccountspayable-get.md
+          - name: Debitor-Saldenrückblick
+            href: resources/dynamics-agedaccountsreceivable.md
+            items:
+              - name: Kreditor-Saldenrückblick abrufen
+                href: api/dynamics-agedaccountsreceivable-get.md
+          - name: Unternehmen
+            href: resources/dynamics-companies.md
+            items:
+              - name: Unternehmen abrufen
+                href: api/dynamics-companies-get.md
+          - name: Unternehmensinformationen
+            href: resources/dynamics-companyinformation.md
+            items:
+              - name: Unternehmensinformationen abrufen
+                href: api/dynamics-companyinformation-get.md
+              - name: Unternehmensinformationen aktualisieren
+                href: api/dynamics-companyinformation-update.md
+          - name: Länder/Regionen
+            href: resources/dynamics-countriesregions.md
+            items:
+              - name: Länder/Regionen abrufen
+                href: api/dynamics-countriesregions-get.md
+              - name: Länder/Regionen erstellen
+                href: api/dynamics-create-countriesregions.md
+              - name: Länder/Regionen löschen
+                href: api/dynamics-countriesregions-delete.md
+          - name: Währungen
+            href: resources/dynamics-currencies.md
+            items:
+              - name: Währungen abrufen
+                href: api/dynamics-currencies-get.md
+              - name: Währungen erstellen
+                href: api/dynamics-create-currencies.md
+              - name: Währungen löschen
+                href: api/dynamics-currencies-delete.md
+          - name: Kunde
+            href: resources/dynamics-customer.md
+            items:
+              - name: Kunde abrufen
+                href: api/dynamics-customer-get.md
+              - name: Kunde erstellen
+                href: api/dynamics-create-customer.md
+              - name: Kunde aktualisieren
+                href: api/dynamics-customer-update.md
+              - name: Kunde löschen
+                href: api/dynamics-customer-delete.md
+          - name: Debitorenzahlung
+            href: resources/dynamics-customerpayment.md
+            items:
+              - name: Debitorenzahlung abrufen
+                href: api/dynamics-customerpayment-get.md
+              - name: Debitorenzahlung erstellen
+                href: api/dynamics-create-customerpayment.md
+              - name: Debitorenzahlung aktualisieren
+                href: api/dynamics-customerpayment-update.md
+              - name: Debitorenzahlung löschen
+                href: api/dynamics-customerpayment-delete.md
+          - name: Debitorzahlungserfassung
+            href: resources/dynamics-customerpaymentsjournal.md
+            items:
+              - name: Debitorzahlungserfassung abrufen
+                href: api/dynamics-customerpaymentsjournal-get.md
+              - name: Debitorzahlungserfassung erstellen
+                href: api/dynamics-create-customerpaymentsjournal.md
+              - name: Debitorzahlungserfassung aktualisieren
+                href: api/dynamics-customerpaymentsjournal-update.md
+              - name: Debitorzahlungserfassung löschen
+                href: api/dynamics-customerpaymentsjournal-delete.md
+          - name: Dimension
+            href: resources/dynamics-dimension.md
+            items:
+              - name: Dimension abrufen
+                href: api/dynamics-dimension-get.md
+          - name: Dimensionswert
+            href: resources/dynamics-dimensionvalue.md
+            items:
+              - name: Dimension abrufen
+                href: api/dynamics-dimensionvalue-get.md
+          - name: Mitarbeiter
+            href: resources/dynamics-employee.md
+            items:
+              - name: Mitarbeiter abrufen
+                href: api/dynamics-employee-get.md
+              - name: Mitarbeiter erstellen
+                href: api/dynamics-create-employee.md
+              - name: Mitarbeiter aktualisieren
+                href: api/dynamics-employee-update.md
+              - name: Mitarbeiter löschen
+                href: api/dynamics-employee-delete.md
+          - name: Hauptbucheinträge
+            href: resources/dynamics-generalledgerentries.md
+            items:
+              - name: Hauptbucheinträge abrufen
+                href: api/dynamics-generalledgerentries-get.md
+          - name: Artikel
+            href: resources/dynamics-item.md
+            items:
+              - name: Artikel abrufen
+                href: api/dynamics-item-get.md
+              - name: Element erstellen
+                href: api/dynamics-create-item.md
+              - name: Element aktualisieren
+                href: api/dynamics-item-update.md
+              - name: Artikel löschen
+                href: api/dynamics-item-delete.md
+          - name: Artikelkategorien
+            href: resources/dynamics-itemcategories.md
+            items:
+              - name: Artikelkategorien abrufen
+                href: api/dynamics-itemcategories-get.md
+              - name: Artikelkategorien erstellen
+                href: api/dynamics-create-itemcategories.md
+              - name: Artikelkategorien aktualisieren
+                href: api/dynamics-itemcategories-update.md
+              - name: Artikelkategorien löschen
+                href: api/dynamics-itemcategories-delete.md
+          - name: Journal
+            href: resources/dynamics-journal.md
+            items:
+              - name: Journal abrufen
+                href: api/dynamics-journal-get.md
+              - name: Journal erstellen
+                href: api/dynamics-create-journal.md
+              - name: Journal aktualisieren
+                href: api/dynamics-journal-update.md
+              - name: Journal löschen
+                href: api/dynamics-journal-delete.md
+          - name: Erfassungsposition
+            href: resources/dynamics-journalline.md
+            items:
+              - name: Erfassungsposition abrufen
+                href: api/dynamics-journalline-get.md
+              - name: Erfassungsposition erstellen
+                href: api/dynamics-create-journalline.md
+              - name: Erfassungsposition aktualisieren
+                href: api/dynamics-journalline-update.md
+              - name: Erfassungsposition löschen
+                href: api/dynamics-journalline-delete.md
+          - name: Zahlungsmethoden
+            href: resources/dynamics-paymentmethods.md
+            items:
+              - name: Zahlungsmethoden abrufen
+                href: api/dynamics-paymentmethods-get.md
+              - name: Zahlungsmethoden erstellen
+                href: api/dynamics-create-paymentmethods.md
+              - name: Zahlungsmethoden aktualisieren
+                href: api/dynamics-paymentmethods-update.md
+              - name: Zahlungsmethoden löschen
+                href: api/dynamics-paymentmethods-delete.md
+          - name: Zahlungsbedingungen
+            href: resources/dynamics-paymentterms.md
+            items:
+              - name: Zahlungsbedingungen abrufen
+                href: api/dynamics-paymentterms-get.md
+              - name: Zahlungsbedingungen erstellen
+                href: api/dynamics-create-paymentterms.md
+              - name: Zahlungsbedingungen aktualisieren
+                href: api/dynamics-paymentterms-update.md
+              - name: Zahlungsbedingungen löschen
+                href: api/dynamics-paymentterms-delete.md
+          - name: Lieferbedingungen
+            href: resources/dynamics-shipmentmethods.md
+            items:
+              - name: Lieferbedingungen abrufen
+                href: api/dynamics-shipmentmethods-get.md
+              - name: Lieferbedingungen erstellen
+                href: api/dynamics-create-shipmentmethods.md
+              - name: Lieferbedingungen aktualisieren
+                href: api/dynamics-shipmentmethods-update.md
+              - name: Lieferbedingungen löschen
+                href: api/dynamics-shipmentmethods-delete.md
+          - name: Steuergebiet
+            href: resources/dynamics-taxarea.md
+            items:
+              - name: Steuergebiet abrufen
+                href: api/dynamics-taxarea-get.md
+              - name: Steuergebiet erstellen
+                href: api/dynamics-create-taxarea.md
+              - name: Steuergebiet aktualisieren
+                href: api/dynamics-taxarea-update.md
+              - name: Steuergebiet löschen
+                href: api/dynamics-taxarea-delete.md
+          - name: Steuergruppen
+            href: resources/dynamics-taxgroups.md
+            items:
+              - name: Steuergruppen abrufen
+                href: api/dynamics-taxgroups-get.md
+              - name: Steuergruppen erstellen
+                href: api/dynamics-create-taxgroups.md
+              - name: Steuergruppen aktualisieren
+                href: api/dynamics-taxgroups-update.md
+              - name: Steuergruppen löschen
+                href: api/dynamics-taxgroups-delete.md
+          - name: Zwischenbilanz
+            href: resources/dynamics-trialbalance.md
+            items:
+              - name: Zwischenbilanz abrufen
+                href: api/dynamics-trialbalance-get.md
+          - name: Maßeinheiten
+            href: resources/dynamics-unitsofmeasure.md
+            items:
+              - name: Maßeinheiten abrufen
+                href: api/dynamics-unitsofmeasure-get.md
+              - name: Maßeinheiten erstellen
+                href: api/dynamics-create-unitsofmeasure.md
+              - name: Maßeinheiten aktualisieren
+                href: api/dynamics-unitsofmeasure-update.md
+              - name: Maßeinheiten löschen
+                href: api/dynamics-unitsofmeasure-delete.md
+          - name: Anbieter
+            href: resources/dynamics-vendor.md
+            items:
+              - name: Anbieter abrufen
+                href: api/dynamics-vendor-get.md
+              - name: Anbieter erstellen
+                href: api/dynamics-create-vendor.md
+              - name: Anbieter aktualisieren
+                href: api/dynamics-vendor-update.md
+              - name: Anbieter löschen
+                href: api/dynamics-vendor-delete.md
       - name: Identität und Zugriff
         href: resources/azure-ad-overview.md
         displayName: 'Azure AD, Microsoft identity platform'
@@ -7785,8 +8019,19 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Sicherheit
         href: resources/security-api-overview.md
-        displayname: 'Security API, Microsoft Intelligent Security Graph'
+        displayname: 'Security API, Microsoft Graph Security API'
         items:
+          - name: Aktionen
+            href: resources/securityaction.md
+            items:
+              - name: Sicherheitsaktionen auflisten
+                href: api/securityactions-list.md
+              - name: Sicherheitsaktion erstellen
+                href: api/securityactions-post.md
+              - name: Sicherheitsaktion abrufen
+                href: api/securityaction-get.md
+              - name: Sicherheitsaktion abbrechen
+                href: api/securityaction-cancelsecurityaction.md
           - name: Warnungen
             href: resources/alert.md
             items:
@@ -7796,6 +8041,8 @@ items:
                 href: api/alert-get.md
               - name: Warnung aktualisieren
                 href: api/alert-update.md
+              - name: Mehrere Warnungen aktualisieren
+                href: api/alert-updatealerts.md
           - name: Sicherheitsbewertungen
             href: resources/securescores.md
             items:
@@ -7808,6 +8055,27 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: Profile für Steuerung der Sicherheitsbewertung aktualisieren
                 href: api/securescorecontrolprofiles-update.md
+          - name: Threat Intelligence-Indikatoren
+            href: resources/tiindicator.md
+            items:
+              - name: Auflisten
+                href: api/tiindicators-list.md
+              - name: Erstellen
+                href: api/tiindicators-post.md
+              - name: Mehrere übermitteln
+                href: api/tiindicator-submittiindicators.md
+              - name: Abrufen
+                href: api/tiindicator-get.md
+              - name: Aktualisieren
+                href: api/tiindicator-update.md
+              - name: Mehrere aktualisieren
+                href: api/tiindicator-updatetiindicators.md
+              - name: Löschen
+                href: api/tiindicator-delete.md
+              - name: Mehrere löschen
+                href: api/tiindicator-deletetiindicators.md
+              - name: Mehrere nach externer ID löschen
+                href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: Fehler
             href: resources/security-error-codes.md
       - name: Websites und Listen
@@ -8078,7 +8346,7 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: Antwort auf Nachricht abrufen
                 href: api/channel-get-messagereply.md
-              - name: Nachricht erstellen
+              - name: Nachricht senden
                 href: api/channel-post-chatmessage.md
               - name: Antworten auf eine Nachricht
                 href: api/channel-post-messagereply.md
