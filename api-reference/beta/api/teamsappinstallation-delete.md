@@ -4,51 +4,49 @@ description: Deinstalliert eine APP aus dem angegebenen Team.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070820"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458666"
 ---
-# <a name="delete-app-from-team"></a><span data-ttu-id="3f48b-103">Löschen der APP aus dem Team</span><span class="sxs-lookup"><span data-stu-id="3f48b-103">Delete app from team</span></span>
+# <a name="delete-app-from-team"></a><span data-ttu-id="c23dd-103">Löschen der APP aus dem Team</span><span class="sxs-lookup"><span data-stu-id="c23dd-103">Delete app from team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3f48b-104">Deinstalliert eine [App](../resources/teamsappinstallation.md) aus dem angegebenen [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="3f48b-104">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="c23dd-104">Deinstalliert eine [App](../resources/teamsappinstallation.md) aus dem angegebenen [Team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="c23dd-104">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
 
-><span data-ttu-id="3f48b-105">**Hinweis:** Wenn Sie Anwendungsberechtigungen verwenden, tritt ein bekanntes Problem auf.</span><span class="sxs-lookup"><span data-stu-id="3f48b-105">**Note:** If you're using application permissions, a known issue will occur.</span></span> <span data-ttu-id="3f48b-106">Einzelheiten hierzu finden Sie unter [bekannte Probleme](/graph/known-issues).</span><span class="sxs-lookup"><span data-stu-id="3f48b-106">For details, see [known issues](/graph/known-issues).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c23dd-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c23dd-105">Permissions</span></span>
+<span data-ttu-id="c23dd-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c23dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3f48b-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3f48b-107">Permissions</span></span>
-<span data-ttu-id="3f48b-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3f48b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="3f48b-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3f48b-110">Permission type</span></span>      | <span data-ttu-id="3f48b-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3f48b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c23dd-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c23dd-108">Permission type</span></span>      | <span data-ttu-id="c23dd-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c23dd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3f48b-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3f48b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3f48b-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3f48b-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3f48b-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3f48b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f48b-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3f48b-115">Not supported.</span></span>    |
-|<span data-ttu-id="3f48b-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3f48b-116">Application</span></span> | <span data-ttu-id="3f48b-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3f48b-117">Group.ReadWrite.All</span></span>  |
+|<span data-ttu-id="c23dd-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c23dd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c23dd-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c23dd-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c23dd-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="c23dd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c23dd-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="c23dd-113">Not supported.</span></span>    |
+|<span data-ttu-id="c23dd-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c23dd-114">Application</span></span> | <span data-ttu-id="c23dd-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c23dd-115">Group.ReadWrite.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="3f48b-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3f48b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c23dd-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c23dd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/installedApps/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3f48b-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3f48b-119">Request headers</span></span>
-| <span data-ttu-id="3f48b-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="3f48b-120">Header</span></span>       | <span data-ttu-id="3f48b-121">Wert</span><span class="sxs-lookup"><span data-stu-id="3f48b-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c23dd-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c23dd-117">Request headers</span></span>
+| <span data-ttu-id="c23dd-118">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="c23dd-118">Header</span></span>       | <span data-ttu-id="c23dd-119">Wert</span><span class="sxs-lookup"><span data-stu-id="c23dd-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3f48b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3f48b-122">Authorization</span></span>  | <span data-ttu-id="3f48b-p103">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3f48b-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c23dd-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c23dd-120">Authorization</span></span>  | <span data-ttu-id="c23dd-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c23dd-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3f48b-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3f48b-125">Request body</span></span>
-<span data-ttu-id="3f48b-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="3f48b-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c23dd-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c23dd-123">Request body</span></span>
+<span data-ttu-id="c23dd-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="c23dd-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3f48b-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="3f48b-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c23dd-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="c23dd-125">Response</span></span>
 
-<span data-ttu-id="3f48b-p104">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3f48b-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c23dd-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c23dd-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3f48b-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3f48b-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="3f48b-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3f48b-131">Request</span></span>
-<span data-ttu-id="3f48b-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3f48b-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c23dd-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c23dd-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="c23dd-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c23dd-129">Request</span></span>
+<span data-ttu-id="c23dd-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c23dd-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -56,8 +54,8 @@ DELETE /teams/{id}/installedApps/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="3f48b-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="3f48b-133">Response</span></span>
-<span data-ttu-id="3f48b-134">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3f48b-134">The following is an example of the response.</span></span> <span data-ttu-id="3f48b-135">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="3f48b-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="3f48b-136">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3f48b-136">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="c23dd-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="c23dd-131">Response</span></span>
+<span data-ttu-id="c23dd-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c23dd-132">The following is an example of the response.</span></span> <span data-ttu-id="c23dd-133">Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="c23dd-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c23dd-134">Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c23dd-134">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
