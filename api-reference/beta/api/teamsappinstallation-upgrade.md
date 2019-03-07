@@ -4,20 +4,18 @@ description: Aktualisieren einer App-Installation in einem Team
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0ab151203e3b2ec3ee863bae34a8feed0c6d1064
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 1000bcbb8aeaa26cd1b580bd4c11a4018a3a82f9
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070806"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458645"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Aktualisieren einer APP in einem Team
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aktualisiert eine [App-Installation](../resources/teamsappinstallation.md) in einem [Team](../resources/team.md) auf die neueste Version der app.
-
->**Hinweis:** Wenn Sie Anwendungsberechtigungen verwenden, tritt ein bekanntes Problem auf. Einzelheiten hierzu finden Sie unter [bekannte Probleme](/graph/known-issues).
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -62,7 +60,7 @@ POST /teams/{id}/installedApps/{id}/upgrade
 #### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. 
 
->**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
+>**Hinweis:** Das hier gezeigte Antwortobjekt kann zur besseren Lesbarkeit gekürzt werden. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

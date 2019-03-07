@@ -4,20 +4,18 @@ description: Installiert eine APP für das angegebene Team.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 1a77d3b01c70273d0d93ca1e3b1b66d1de53f8f0
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070827"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458673"
 ---
 # <a name="add-app-to-team"></a>App zu Team hinzufügen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Installiert eine [App](../resources/teamsapp.md) für das angegebene [Team](../resources/team.md).
-
->**Hinweis:** Wenn Sie Anwendungsberechtigungen verwenden, tritt ein bekanntes Problem auf. Einzelheiten hierzu finden Sie unter [bekannte Probleme](/graph/known-issues).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -93,5 +91,5 @@ Content-length: 401
 }
 -->
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 

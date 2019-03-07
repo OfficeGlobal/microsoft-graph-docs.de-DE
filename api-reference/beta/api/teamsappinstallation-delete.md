@@ -4,20 +4,18 @@ description: Deinstalliert eine APP aus dem angegebenen Team.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070820"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458666"
 ---
 # <a name="delete-app-from-team"></a>Löschen der APP aus dem Team
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deinstalliert eine [App](../resources/teamsappinstallation.md) aus dem angegebenen [Team](../resources/team.md).
-
->**Hinweis:** Wenn Sie Anwendungsberechtigungen verwenden, tritt ein bekanntes Problem auf. Einzelheiten hierzu finden Sie unter [bekannte Probleme](/graph/known-issues).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).

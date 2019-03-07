@@ -1,21 +1,21 @@
 ---
-title: Erstellen Sie eine Nachricht in einem Kanal
-description: Erstellen Sie eine neue Nachricht in den angegebenen DDE-Kanal an.
+title: Senden einer Nachricht in einem Kanal
+description: Senden Sie eine neue Nachricht im angegebenen Kanal.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 891181c8797563fac6afb7862a27bd8b49628b5f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039560"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458638"
 ---
-# <a name="create-a-message-in-a-channel"></a>Erstellen Sie eine Nachricht in einem Kanal
+# <a name="send-a-message-to-a-channel"></a>Senden einer Nachricht an einen Kanal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie eine neue [Nachricht](../resources/chatmessage.md) in den angegebenen [DDE-Kanal](../resources/channel.md)an.
+Erstellen Sie eine neue [Nachricht](../resources/chatmessage.md) im angegebenen [Kanal](../resources/channel.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -31,17 +31,20 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Typ | Beschreibung|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Message](../resources/chatmessage.md) -Objekts. Nur die Body-Eigenschaft ist obligatorisch, andere Eigenschaften optional sind.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [Message](../resources/chatmessage.md) -Objekts an. Nur die Body-Eigenschaft ist obligatorisch, andere Eigenschaften sind optional.
+
+> Hinweis: das Senden von Nachrichten mit Anlagen und Bildern wird nicht unterstützt.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortcode mit der [Meldung](../resources/chatmessage.md) , die erstellt wurde.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode mit der erstellten [Nachricht](../resources/chatmessage.md) zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -114,7 +117,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

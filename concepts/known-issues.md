@@ -3,12 +3,12 @@ title: Bekannte Probleme in Microsoft Graph
 description: Dieser Artikel beschreibt bekannte Probleme in Microsoft Graph. Informationen zu den neuesten Updates finden Sie im Microsoft Graph-Änderungsprotokoll.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056966"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458631"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Bekannte Probleme in Microsoft Graph
 
@@ -50,12 +50,6 @@ Einige Teams, die früher erstellt, in letzter Zeit aber nicht von einem Microso
 Neue Teams werden aufgelistet.
 Bestimmte alte Teams weisen keine Eigenschaft **resourceProvisioningOptions** auf, die "Team" enthält und bei neu erstellten Teams und in Microsoft Teams besuchten Teams festgelegt wird.
 Wir legen **resourceProvisioningOptions** zukünftig für vorhandene Teams fest, die nicht in Microsoft Teams geöffnet wurden.
-
-### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Installieren und Deinstallieren von Anwendungen mithilfe von Anwendungsberechtigungen
-
-Beim Deinstallieren einer App aus einem Team mithilfe von Anwendungsberechtigungen gibt die API den Fehlercode 500 zurück, auch wenn die App erfolgreich deinstalliert wurde.
-
-Beim Installieren, Aktualisieren und Deinstallieren von Apps in einem Team mithilfe von Anwendungsberechtigungen werden keine Überwachungsprotokollereignisse geschrieben.
 
 ## <a name="groups"></a>Gruppen
 
