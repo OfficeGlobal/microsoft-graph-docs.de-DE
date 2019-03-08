@@ -4,12 +4,12 @@ description: Erstellen Sie eine neue tiIndicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366980"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481440"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Bedrohungs Intelligenz-Indikator erstellen
 
@@ -23,9 +23,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | ThreatIndicators. ReadWrite. OwnedBy  |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-| Anwendung                            | ThreatIndicators. ReadWrite. OwnedBy |
+| Anwendung                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -43,7 +43,7 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie im Anforderungstext eine JSON-Darstellung eines [tiIndicator](../resources/tiindicator.md) -Objekts an, das mindestens einen beobachtbaren enthält.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [tiIndicator](../resources/tiindicator.md) -Objekts an, das mindestens eine zu beobachtbare [e-Mail](../resources/tiindicator.md#indicator-observables---email), [Datei](../resources/tiindicator.md#indicator-observables---file)oder ein [Netzwerk](../resources/tiindicator.md#indicator-observables---network) enthält.
 
 ## <a name="response"></a>Antwort
 

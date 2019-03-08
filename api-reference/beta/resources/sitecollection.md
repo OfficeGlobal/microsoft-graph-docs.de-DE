@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 865fc21691eb37811300caaf675b123d1a544ac0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9525882b08aaae5500ce23a4b54e95d0b0e0d65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528130"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481804"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection-Ressource
 
@@ -45,8 +45,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaftenname        | Typ     | Beschreibung
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | Der Hostname der Websitesammlung. Schreibgeschützt.
-| **dataLocationCode** | string   | Der Code geografische Region, in dem diese Websitesammlung befindet. Schreibgeschützt.
-| **root**             | [root][] | Falls vorhanden, gibt an, dass dies eine Stammwebsitesammlung in SharePoint ist. Schreibgeschützt.
+| **dataLocationCode** | Zeichenfolge   | Der geographische Regionscode für die Position dieser Websitesammlung. Schreibgeschützt.
+| **root**             | [root][] | Wenn vorhanden, gibt an, dass es sich um eine Stammwebsitesammlung in SharePoint handelt. Schreibgeschützt.
 
 [root]: root.md
 

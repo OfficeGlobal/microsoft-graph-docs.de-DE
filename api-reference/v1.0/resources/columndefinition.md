@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 598a781c25dd9271be84eb3dfc16b1e5ff439298
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862881"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481881"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition-Ressource
 
@@ -54,15 +54,15 @@ Es folgt eine JSON-Darstellung einer ColumnDefinition-Ressource.
 
 Die **ColumnDefinition**-Ressource weist folgende Eigenschaften auf.
 
-| Eigenschaftsname           | Typ    | Beschreibung
+| Eigenschaftenname           | Typ    | Beschreibung
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Für Websitespalten der Name der Gruppe, zu der dieser Spalte gehört. Dadurch können dazugehörige Spalten einfacher organisiert werden.
-| **description**         | string  | Für den Benutzer sichtbare Beschreibung der Spalte.
-| **displayName**         | string  | Für den Benutzer sichtbarer Name der Spalte.
-| **enforceUniqueValues** | boolean | Wenn der Wert true ist, dürfen keine der Elemente für diese Spalte den gleichen Wert aufweisen.
-| **hidden**              | boolean | Gibt an, ob die Spalte auf der Benutzeroberfläche angezeigt wird.
-| **id**                  | string  | Die eindeutige ID für die Spalte.
-| **indexed**             | boolean | Gibt an, ob die Spaltenwerte für das Sortieren und Suchen verwendet werden können.
+| **description**         | Zeichenfolge  | Für den Benutzer sichtbare Beschreibung der Spalte.
+| **displayName**         | Zeichenfolge  | Für den Benutzer sichtbarer Name der Spalte.
+| **enforceUniqueValues** | Boolesch | Wenn der Wert true ist, dürfen keine der Elemente für diese Spalte den gleichen Wert aufweisen.
+| **hidden**              | Boolesch | Gibt an, ob die Spalte auf der Benutzeroberfläche angezeigt wird.
+| **id**                  | Zeichenfolge  | Die eindeutige ID für die Spalte.
+| **indexed**             | Boolesch | Gibt an, ob die Spaltenwerte für das Sortieren und Suchen verwendet werden können.
 | **name**                | string  | Der in der API sichtbare Name der Spalte, wie er in den  [Feldern][] eines [ListItem][] angezeigt wird. Weitere Informationen zum für den Benutzer sichtbaren Namen finden Sie unter **displayName**.
 | **readOnly**            | bool    | Gibt an, ob die Werte in den Spalten geändert werden können.
 | **required**            | boolean | Gibt an, ob die Werte in den Spalten obligatorisch sind.
@@ -71,7 +71,7 @@ Spalten können verschiedene Datentypen enthalten.
 Die folgenden Eigenschaften geben an, welche Arten von Daten in einer Spalte gespeichert werden sowie weitere Einstellungen für die Daten.
 Diese Eigenschaften schließen sich gegenseitig aus – in einer Spalte kann nur eines der beiden angegeben werden.
 
-| Eigenschaftsname     | Typ                    | Beschreibung
+| Eigenschaftenname     | Typ                    | Beschreibung
 |:------------------|:------------------------|:-------------------------------
 | **boolean**       | [booleanColumn][]       | In dieser Spalte werden boolesche Werte gespeichert.
 | **calculated**    | [calculatedColumn][]    | Die Daten in dieser Spalte werden anhand von anderen Spalten berechnet.
@@ -85,7 +85,7 @@ Diese Eigenschaften schließen sich gegenseitig aus – in einer Spalte kann nur
 | **text**          | [textColumn][]          | In dieser Spalte werden Textwerte gespeichert.
 
 Hinweis: Diese Eigenschaften entsprechen der [SPFieldType][]-Enumeration von SharePoint.
-Während die am häufigsten verwendeten Feldtypen oben dargestellt werden, ist diese API immer noch einige nicht angezeigt.
+Während die am häufigsten verwendeten Feldtypen oben dargestellt werden, Fehlen dieser API noch einige.
 In diesen Fällen werden keine der Spaltentyp-Facets aufgefüllt und die Spalte weist nur die grundlegenden Eigenschaften auf.
 
 ## <a name="remarks"></a>Bemerkungen

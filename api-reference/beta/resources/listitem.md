@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517442"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480880"
 ---
 # <a name="listitem-resource"></a>ListItem-Ressource
 
@@ -28,8 +28,8 @@ Alle Beispiele unten beziehen sich auf eine **[Liste][]**, z. B.: `https://graph
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Abrufen von Spaltenwerten][Get]       | GET /items/{item-id}?expand=fields
-| [Analysen abrufen][]              | GET-/items/ {Element-Id} / Analytics
-| [Aktivitäten nach Intervall abrufen][] | GET-/items/ {Element-Id} / GetActivitiesByInterval
+| [Analysen abrufen][]              | /Items/{Item-ID}/Analytics abrufen
+| [Aktivitäten nach Intervall abrufen][] | /Items/{item-id}/getActivitiesByInterval abrufen
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
@@ -87,12 +87,12 @@ Die **listItem**-Ressource weist folgende Eigenschaften auf.
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | Der Inhaltstyp dieses Listenelements
 
-Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
+Die folgenden Eigenschaften werden von ** [baseItem][]** geerbt.
 
-| Eigenschaftsname        | Typ              | Beschreibung
+| Eigenschaftenname        | Typ              | Beschreibung
 |:---------------------|:------------------|:----------------------------------
-| id                   | string            | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
-| name                 | string            | Der Name/Titel des Elements.
+| id                   | Zeichenfolge            | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
+| name                 | Zeichenfolge            | Der Name/Titel des Elements.
 | createdBy            | [identitySet][]   | Die Identität des Erstellers dieses Elements. Schreibgeschützt.
 | createdDateTime      | DateTimeOffset    | Das Datum und die Uhrzeit der Erstellung des Elements. Schreibgeschützt.
 | description          | string            | Der beschreibende Text für das Element.
@@ -110,10 +110,10 @@ Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 | Beziehungsname | Typ                           | Beschreibung
 |:------------------|:-------------------------------|:-------------------------------
 | Aktivitäten        | [ItemActivity][]-Sammlung    | Die Liste der letzten Aktivitäten, die für dieses Element durchgeführt wurden.
-| analytics         | [itemAnalytics][]-Ressource     | Analytics über die Aktivitäten anzeigen, die für dieses Element ausgeführt wurden.
+| Analyse         | [itemAnalytics][]-Ressource     | Analysen zu den Ansichts Aktivitäten, die für dieses Element durchgeführt wurden.
 | driveItem         | [driveItem][]                  | Für Dokumentbibliotheken macht die **DriveItem** Beziehung das ListItem als ** [DriveItem][]** verfügbar
 | fields            | [fieldValueSet][]              | Die Werte der für dieses Listenelement festgelegten Spalte.
-| versions          | [ListItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Listenelements.
+| versions          | [listItemVersion][] -Sammlung | Die Liste der vorherigen Versionen des Listenelements.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

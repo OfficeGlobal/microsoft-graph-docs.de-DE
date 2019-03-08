@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Entfernen des Zugriffs auf ein Element
 localization_priority: Normal
-ms.openlocfilehash: 4f22082c8f9ce540d3c1c1188c8f9c5ff06ab525
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d29b6e274d8fe64e87c011e35745cf1907fd1b9f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810024"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481069"
 ---
-# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Löschen einer Freigabeberechtigung aus einer Datei oder einem Ordner
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Eine Freigabeberechtigung aus einer Datei oder einem Ordner löschen
 
 Löschen Sie den Zugriff auf ein [DriveItem](../resources/driveitem.md).
 
@@ -68,7 +68,7 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * [Laufwerke](../resources/drive.md) mit dem**driveType** `personal` (OneDrive Personal) können keine Berechtigungen am Stamm-DriveItem erstellen oder ändern. 
 

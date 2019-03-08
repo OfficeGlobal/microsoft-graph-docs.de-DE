@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 2efb199fafbf7c60af0e13720ea1b9efd93dc05c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517519"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480796"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn-Ressourcentyp
 
@@ -36,10 +36,10 @@ Es folgt eine JSON-Darstellung einer **lookupColumn**-Ressource.
 
 | Eigenschaftenname             | Typ    | Beschreibung
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | Gibt an, ob mehrere Werte aus der Quelle ausgewählt werden können.
+| **allowMultipleValues**   | Boolesch | Gibt an, ob mehrere Werte aus der Quelle ausgewählt werden können.
 | **allowUnlimitedLength**  | boolean | Gibt an, ob die Werte in der Spalte die standardmäßige Grenze von 255 Zeichen überschreiten dürfen.
-| **columnName**            | string  | Der Name der Nachschlagequellen-Spalte.
-| **listId**                | string  | Der eindeutige Bezeichner der Nachschlagequellen-Liste.
+| **columnName**            | Zeichenfolge  | Der Name der Nachschlagequellen-Spalte.
+| **listId**                | Zeichenfolge  | Der eindeutige Bezeichner der Nachschlagequellen-Liste.
 | **primaryLookupColumnId** | string  | Wenn angegeben, erfolgt in dieser Spalte ein *zweites Nachschlagen*. In der Liste wird ein weiteres Feld zu dem beim *ersten Nachschlagen* ermittelten Element hinzugefügt. Verwenden Sie das Listenelement des *ersten * Nachschlagens als Quelle für die hier genannte Spalte.
 
 <!--

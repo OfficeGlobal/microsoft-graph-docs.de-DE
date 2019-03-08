@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Freigeben einer Datei mit einem Link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526221"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480502"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Freigabelink für ein DriveItem erstellen
 
@@ -52,7 +52,7 @@ Bei der Anforderung sollte es sich um ein JSON-Objekt mit folgenden Eigenschafte
 |   Name    |  Typ  |                                 Beschreibung                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | Der Typ Freigabelink, der erstellt werden soll. Möglich sind `view`, `edit` oder `embed`.       |
-| **scope** | string | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
+| **scope** | Zeichenfolge | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
 
 
 ### <a name="link-types"></a>Linktypen
@@ -211,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * Mit dieser Aktion erstellte Links laufen nicht ab, es sei denn, für die Organisation wird eine Standardablaufrichtlinie erzwungen.
 * Links sind in den Freigabeberechtigungen für das Element sichtbar und können von einem Besitzer des Elements entfernt werden.

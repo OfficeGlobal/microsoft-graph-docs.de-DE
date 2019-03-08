@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Abrufen von Elementen aus einer SharePoint-Liste
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c96577782218a96952855147702fc6ecddab6652
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 26d2aa28566a666692e49bc0d07305bf793e21d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510400"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481692"
 ---
 # <a name="enumerate-items-in-a-list"></a>Elemente in einer Liste aufzählen
 
@@ -18,7 +18,7 @@ ms.locfileid: "29510400"
 
 Rufen Sie die Sammlung von [Elementen] [ item] in einer [Liste][] ab.
 
-[list]: ../resources/list.md
+[Liste]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>Berechtigungen

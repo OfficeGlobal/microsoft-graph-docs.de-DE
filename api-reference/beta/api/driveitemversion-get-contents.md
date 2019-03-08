@@ -1,24 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Herunterladen von einer vorherigen version
+title: Eine frühere Version herunterladen
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528018"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481482"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Inhalte einer DriveItemVersion-Ressource herunterladen (Vorschau)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Inhalte einer bestimmten [DriveItem](../resources/driveitem.md)-Version ab. 
+Ruft den Inhalt einer bestimmten Version eines [driveItem](../resources/driveitem.md)ab. 
 
->**Hinweis:** Abrufen des Inhalts der aktuellen Version wird nicht unterstützt. Verwenden Sie stattdessen den [DriveItem Webinhalt-Endpunkt](driveitem-get-content.md).
+>**Hinweis:** Das Aufrufen des Inhalts der aktuellen Version wird nicht unterstützt. Verwenden Sie stattdessen den [driveItem-Inhalts Endpunkt](driveitem-get-content.md).
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -79,7 +79,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive behält nicht die kompletten Metadaten für vorherige Versionen einer Datei bei.
 
-Wenn Ihre app die Liste der verfügbaren Versionen für eine Datei abruft, wird eine [DriveItemVersion](../resources/driveitemversion.md) Ressource, die die verfügbare Informationen über die spezielle Version enthält zurückgegeben.
+Wenn Ihre APP die Liste der verfügbaren Versionen für eine Datei abruft, wird eine [driveItemVersion](../resources/driveitemversion.md) -Ressource zurückgegeben, die die verfügbaren Informationen zu der jeweiligen Version bereitstellt.
 
 <!--
 {

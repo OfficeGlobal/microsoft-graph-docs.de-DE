@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: sharepointIds
+title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 22bf6b1101be9d60ff350e0b04f7627e2b8fb529
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c9f4c3dc54b9eee6cc1ab24058e3fe238fed89a3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524030"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480600"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds-Ressourcentyp
 
@@ -46,12 +46,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft         | Typ         | Beschreibung
 |:-----------------|:-------------|:-------------------------------------------
-| listId           | string       | Der eindeutige Bezeichner (GUID) für die Liste des Elements in SharePoint.
-| listItemId       | string       | Ein ganzzahliger Bezeichner für das Element innerhalb der Liste.
-| listItemUniqueId | string       | Der eindeutige Bezeichner (GUID) für das Element in OneDrive for Business oder auf einer SharePoint-Website.
-| siteId           | string       | Der eindeutige Bezeichner (GUID) für die Websitesammlung (SPSite) des Elements.
+| listId           | Zeichenfolge       | Der eindeutige Bezeichner (GUID) für die Liste des Elements in SharePoint.
+| listItemId       | Zeichenfolge       | Ein ganzzahliger Bezeichner für das Element innerhalb der Liste.
+| listItemUniqueId | Zeichenfolge       | Der eindeutige Bezeichner (GUID) für das Element in OneDrive for Business oder auf einer SharePoint-Website.
+| siteId           | Zeichenfolge       | Der eindeutige Bezeichner (GUID) für die Websitesammlung (SPSite) des Elements.
 | siteUrl          | string (URL) | Die SharePoint-URL für die Website, die das Element enthält.
-| tenantId         | string       | Der eindeutige Bezeichner (Guid) für die Instanz.
+| tenantId         | Zeichenfolge       | Der eindeutige Bezeichner (GUID) für den Mandanten.
 | webId            | string       | Der eindeutige Bezeichner (GUID) für die Website (SPWeb) des Elements.
 
 ## <a name="remarks"></a>Bemerkungen

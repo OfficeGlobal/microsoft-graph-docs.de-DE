@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Wiederherstellen einer früheren Version eines SharePoint-Listenelements
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ef3b5848b6a6f60bf0515f914e87383e0a6f66bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 20cf0460aa679fc40a4bb11d0887bc4946ddcd74
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511555"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482084"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Frühere Version eines SharePoint-Listenelements wiederherstellen
 

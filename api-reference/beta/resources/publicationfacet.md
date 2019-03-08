@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: publicationFacet
+title: PublicationFacet
 localization_priority: Normal
-ms.openlocfilehash: f0887e7ce17a357961c0ee2b19d86388425e82b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 66e12c3240d1cade57d377e43403b33102fe166e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513858"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482063"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet-Ressourcentyp
 
@@ -36,7 +36,7 @@ Die **PublicationFacet**-Ressource enthält Details zum veröffentlichten Status
 
 |   Eigenschaft    |  Typ  | Beschreibung |
 | :------------ | :----- | :---------- |
-| **level**     | string | Der Status der Veröffentlichung für dieses Dokument. Möglich ist `published` oder `checkout`. Schreibgeschützt.  |
+| **level**     | Zeichenfolge | Der Status der Veröffentlichung für dieses Dokument. Möglich ist `published` oder `checkout`. Schreibgeschützt.  |
 | **versionId** | string | Der eindeutige Bezeichner für die Version, die für den aktuellen Anrufer sichtbar ist. Schreibgeschützt.  |
 
 

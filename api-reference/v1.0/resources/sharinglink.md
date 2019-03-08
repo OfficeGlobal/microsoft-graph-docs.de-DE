@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 02a4c0251a5484edc7ba5e07095f44043c269ae5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863553"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481426"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink-Ressourcentyp
 
@@ -42,14 +42,14 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft    | Typ          | Beschreibung
 |:------------|:--------------|:-------------------------------------
 | application | [Identität][]  | Die App, der der Link zugeordnet ist.
-| type        | String        | Der Typ des erstellten Links.
-| scope       | String        | Der Bereich des Links, der durch diese Berechtigung dargestellt wird. Der Wert `anonymous` gibt an, dass der Link von jedem Benutzer verwendet werden kann. `organization` gibt an, dass der Link von Benutzern verwendet werden kann, die bei dem gleichen Mandanten angemeldet sind.
+| type        | Zeichenfolge        | Der Typ des erstellten Links.
+| scope       | Zeichenfolge        | Der Bereich des Links, der durch diese Berechtigung dargestellt wird. Der Wert `anonymous` gibt an, dass der Link von jedem Benutzer verwendet werden kann. `organization` gibt an, dass der Link von Benutzern verwendet werden kann, die bei dem gleichen Mandanten angemeldet sind.
 | webHtml     | Zeichenfolge        | Bei `embed` Links enthält diese Eigenschaft den HTML-Code für ein `<iframe>`-Element, das das Element in eine Webseite einbettet.
 | webUrl      | String        | Eine URL, mit der das Element im Browser auf der OneDrive-Website geöffnet wird.
 
 [Identität]: identity.md
 
-## <a name="type-options"></a>Typ-Optionen
+## <a name="type-options"></a>Typoptionen
 
 In dieser Tabelle werden zulässige Werte für die **type**-Eigenschaft aufgeführt:
 
@@ -63,8 +63,8 @@ In dieser Tabelle werden zulässige Werte für die **type**-Eigenschaft aufgefü
 
 | Wert          | Beschreibung
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Jeder Benutzer mit den Link hat Zugriff, ohne Anmeldung. Dies kann Personen außerhalb Ihrer Organisation enthalten.
-| `organization` | Den Link können alle Benutzer in Ihrer Organisation (Mandant) signiert um Zugriff zu erhalten. Nur in OneDrive für Unternehmen und SharePoint verfügbar.
+| `anonymous`    | Jeder, der über die Verknüpfung verfügt, hat Zugriff, ohne sich anmelden zu müssen. Dies kann Personen außerhalb Ihrer Organisation sein.
+| `organization` | Jeder, der bei Ihrer Organisation (Mandant) angemeldet ist, kann über den Link Zugriff erhalten. Nur in OneDrive for Business und SharePoint verfügbar.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

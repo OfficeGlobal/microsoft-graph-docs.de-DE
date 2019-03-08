@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: 2b254568ec97bb5bce49e1143dbb83a183fade11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 01b9860284f87ea31a969055fe2bfc7da624d3b6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824171"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482007"
 ---
 # <a name="folderview-resource-type"></a>FolderView-Ressourcentyp
 
@@ -33,13 +33,13 @@ Es ist verfügbar über die Eigenschaft [folder][folder-facet] von Ressourcen de
 
 | Eigenschaftenname         | Typ   | Beschreibung
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | Diese Eigenschaft legt die Methode fest, auf deren Basis der Ordner sortiert werden soll.
+| **sortBy**            | Zeichenfolge | Diese Eigenschaft legt die Methode fest, auf deren Basis der Ordner sortiert werden soll.
 | **sortOrder**         | string | Ist diese Eigenschaft auf „true“ gesetzt, sollen alle Elemente in absteigender Reihenfolge sortiert werden. Andernfalls sollen die Elemente in aufsteigender Reihenfolge sortiert werden.
 | **viewType**          | string | Diese Eigenschaft legt die Ansicht fest, die zur Darstellung des Ordners verwendet werden soll.
 
 Über die Eigenschaft _sortBy_ können Sie die Sortierreihenfolge von Elementen in allen Anwendungen steuern, die das Facet **viewType** berücksichtigen.
 
-### <a name="sortby-options"></a>SortBy-Optionen
+### <a name="sortby-options"></a>sortBy-Optionen
 
 Für die Eigenschaft **sortBy** sind die folgenden Werte definiert:
 
@@ -54,7 +54,7 @@ Für die Eigenschaft **sortBy** sind die folgenden Werte definiert:
 | `sequence`               | Die Elemente folgen einer vom Benutzer angegebenen benutzerdefinierten Sequenz.
 
 
-### <a name="sortorder-options"></a>SortOrder-Optionen
+### <a name="sortorder-options"></a>Sortieroptionen
 
 Für die Eigenschaft **sortOrder** sind die folgenden Werte definiert:
 

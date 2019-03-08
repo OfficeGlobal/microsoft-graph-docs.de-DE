@@ -1,17 +1,17 @@
 ---
-title: Sicherheitsaktion erstellen
-description: Erstellen eines neuen Sicherheits Aktionsobjekts. "
+title: Create securityAction
+description: Erstellen eines neuen SecurityAction-Objekts. "
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366889"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482014"
 ---
-# <a name="create-security-action"></a>Sicherheitsaktion erstellen
+# <a name="create-securityaction"></a>Create securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +23,9 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 | Berechtigungstyp                        | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegiert (Geschäfts-, Schul- oder Unikonto)     | SecurityActions. ReadWrite. all |
+| Delegiert (Geschäfts-, Schul- oder Unikonto)     | SecurityActions.ReadWrite.All |
 | Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt |
-| Anwendung                            | SecurityActions. ReadWrite. all |
+| Anwendung                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 

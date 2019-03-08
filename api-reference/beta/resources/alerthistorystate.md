@@ -1,31 +1,31 @@
 ---
 title: alertHistoryState-Ressourcentyp
-description: Jedes Mal, wenn eine Warnung gepatcht wird, wird die Änderung in einem neuen alertHistoryState-Objekt gespeichert und als Teil der geänderten Warnung zurückgegeben.
+description: Speichert an Warnungen vorgenommene Änderungen.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: a5dda54101264ee2ec4d01a283f96a93f1d6e5e3
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366966"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480831"
 ---
 # <a name="alerthistorystate-resource-type"></a>alertHistoryState-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Jedes Mal, wenn eine Warnung gepatcht wird, wird die Änderung in einem neuen alertHistoryState-Objekt gespeichert und als Teil der geänderten Warnung zurückgegeben.
+Speichert an Warnungen vorgenommene Änderungen.
 
 ## <a name="properties"></a>Eigenschaften
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|appId|String| Die Anwendungs-ID der aufrufenden Anwendung, die ein Update (PATCH) an die Warnung übermittelt hat. Die Anwendungs-ID sollte aus dem auth-Token extrahiert und nicht manuell von der aufrufenden Anwendung eingegeben werden. |
+|appId|Zeichenfolge| Die Anwendungs-ID der aufrufenden Anwendung, die ein Update (PATCH) an die Warnung übermittelt hat. Die Anwendungs-ID sollte aus dem auth-Token extrahiert und nicht manuell von der aufrufenden Anwendung eingegeben werden. |
 |assignedTo|Zeichenfolge| UPN des Benutzers, dem die Warnung zugewiesen wurde (Hinweis: Alert. ZugewiesenAn speichert nur den letzten Wert/UPN). |
-|comments|String collection|Vom angemeldeten Benutzer eingegebene Kommentar.|
-|Feedback|Zeichenfolge| Analysten Feedback zu der Warnung in diesem Update. Mögliche Werte: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|Zeichenfolge| Warnungsstatus Wert (falls aktualisiert). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
+|Kommentare|String collection|Vom angemeldeten Benutzer eingegebene Kommentar.|
+|Feedback|Zeichenfolge| Analysten Feedback zu der Warnung in diesem Update. Mögliche Werte sind: `unknown`, `truePositive`, `falsePositive` und `benignPositive`.|
+|status|String| Warnungsstatus Wert (falls aktualisiert). Mögliche Werte: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
 |updatedDateTime|DateTimeOffset| Datum und Uhrzeit des Warnungs Updates. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |user|Zeichenfolge| UPN des angemeldeten Benutzers, der die Warnung aktualisiert hat (entnommen vom Bearer-Token, falls im Benutzer/Delegierten Authentifizierungsmodus). |
 

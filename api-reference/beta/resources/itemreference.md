@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: eb97c2c638d6a8f1679fa1a1b604249108888e76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859465"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482280"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference-Ressourcentyp
 
@@ -41,12 +41,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft      | Typ              | Beschreibung
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | Eindeutiger Bezeichner der drive-Instanz, die das Element enthält. Schreibgeschützt.
+| driveId       | Zeichenfolge            | Eindeutiger Bezeichner der drive-Instanz, die das Element enthält. Schreibgeschützt.
 | driveType     | string            | Identifiziert den Laufwerkstyp. Werte finden Sie unter [drive][]-Ressource.
 | id            | String            | Eindeutiger Bezeichner des Elements im Laufwerk. Schreibgeschützt.
 | name          | Zeichenfolge            | Der Name des Elements, auf das verwiesen wird. Schreibgeschützt.
-| Pfad          | String            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.
-| shareId       | String            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über [Freigabe][]-API zugegriffen werden kann.
+| Pfad          | Zeichenfolge            | Pfad, der verwendet werden kann, um zu dem Element zu navigieren. Schreibgeschützt.
+| shareId       | String            | Ein eindeutiger Bezeichner für eine freigegebene Ressource, auf die über die [Freigabe][]-API zugegriffen werden kann.
 | sharepointIds | [sharepointIds][] | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.
 
 [drive]: ../resources/drive.md

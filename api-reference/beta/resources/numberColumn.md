@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: cf1f6c6cafd23a5503d645d13e597a8941019fee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: edd495b62f0ccbd163ec31a2efca70923d0bc8ad
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512878"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480768"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn-Ressourcentyp
 
@@ -35,7 +35,7 @@ Es folgt eine JSON-Darstellung einer **numberColumn**-Ressource.
 
 | Eigenschaftenname      | Typ   | Beschreibung
 |:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | Wie viele Dezimalstellen angezeigt werden sollen. Informationen zu den möglichen Werten finden Sie weiter unten.
+| **decimalPlaces**  | Zeichenfolge | Wie viele Dezimalstellen angezeigt werden sollen. Informationen zu den möglichen Werten finden Sie weiter unten.
 | **displayAs**      | string | Wie sollte der Wert in der UX dargestellt werden. Müssen `number` oder `percentage` sein. Wenn nicht angegeben, werden sie als `number` behandelt.
 | **maximum**        | double | Der maximal zulässige Wert.
 | **minimum**        | double | Der minimal zulässige Wert.

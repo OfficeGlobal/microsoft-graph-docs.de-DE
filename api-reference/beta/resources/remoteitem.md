@@ -1,21 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 13eb7ff286467a7acfef85f58ea59763a13d9801
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9c57c9909e223659a8d9af557522183e532e7678
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514334"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481321"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die RemoteItem-Ressource gibt an, dass ein driveItem-Element auf ein Element in einem anderen Laufwerk verweist. Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelements bereit.
+Die **RemoteItem**-Ressource gibt an, dass ein [**driveItem**](driveitem.md)-Element auf ein Element in einem anderen Laufwerk verweist.
+Diese Ressource stellt die eindeutigen IDs des Quelllaufwerks und des Zielelements bereit.
 
 [**DriveItems**](driveitem.md) mit einem **remoteItem**-Facet ungleich Null sind Ressourcen, die freigegeben, zu OneDrive-Umgebungen von Benutzern hinzugefügt oder für Elemente von heterogenen Elementsammlungen (wie z. B. Suchergebnisse) zurückgegeben wurden.
 
@@ -53,7 +54,7 @@ Die RemoteItem-Ressource gibt an, dass ein driveItem-Element auf ein Element in 
 | Eigenschaftenname        | Typ                                | Beschreibung                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.                                                                                  |
-| createdDateTime      | Timestamp                           | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                        |
+| createdDateTime      | Zeitstempel                           | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                                                                                                        |
 | file                 | [Datei](file.md)                     | Gibt an, dass das Remote-Element eine Datei ist. Schreibgeschützt.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informationen über das Remote-Element aus dem lokalen Dateisystem. Schreibgeschützt.                                                                                          |
 | folder               | [Ordner](folder.md)                 | Gibt an, dass das Remote-Element ein Ordner ist. Schreibgeschützt.                                                                                                            |

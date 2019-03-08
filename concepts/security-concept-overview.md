@@ -4,12 +4,12 @@ description: Sie können die Sicherheits-API von Microsoft Graph verwenden, um e
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: cde6b57d5b02ab25d6cd86b2db2ce1a7438558e5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364549"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376421"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Übersicht über die Sicherheits-API von Microsoft Graph
 
@@ -45,19 +45,19 @@ Kategorisieren Sie Benachrichtigungen mit zusätzlichem Kontext oder Information
 
 Gewinnen Sie Einblicke in den sicherheitsrelevanten Bestand (z. B. Benutzer, Hosts und Apps), und fügen Sie organisatorischen Kontext von anderen Microsoft Graph-Anbietern (Azure Active Directory, Microsoft Intune, Office 365) hinzu, um Business- und Sicherheitskontexte zusammenzubringen und die Reaktion auf Sicherheitsrisiken zu verbessern.
 
-## <a name="automate-security-workflows-and-reporting"></a>Automatisieren von Sicherheitsworkflows und -berichten
+### <a name="automate-security-workflows-and-reporting"></a>Automatisieren von Sicherheitsworkflows und -berichten
 
 Automatisieren Sie Sicherheitsverwaltung, -überwachung und -untersuchungen, um die betriebliche Effizienz und die Reaktionszeiten zu verbessern. Erhalten Sie tiefere Einblicke und erfahren Sie mehr über den Kontext, indem Sie die Microsoft Graph-Sicherheits-API in Ihre Berichte und Dashboards integrieren.
 
-## <a name="get-deep-insights-to-train-security-solutions"></a>Erhalten Sie tiefe Einblicke, um Ihre Sicherheitslösungen zu trainieren.
+### <a name="get-deep-insights-to-train-security-solutions"></a>Erhalten Sie tiefe Einblicke, um Ihre Sicherheitslösungen zu trainieren.
 
 Visualisieren Sie Ihre Daten über verschiedene in Ihrem Unternehmen ausgeführte Sicherheitsprodukte hinweg, um tiefere Einblicke in die Sicherheit zu erhalten. Entdecken Sie Möglichkeiten, wie Sie aus den Daten lernen und Ihre Sicherheitslösungen trainieren können. Das Schema bietet mehrere Eigenschaften, auf die Sie sich stützen können, um aus Ihren Sicherheitsdaten umfangreiche explorative Datasets zu erstellen.
 
-## <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>Nutzen von Informationen zu Bedrohungen (Threat Intelligence) in Microsoft-Sicherheitslösungen (Vorschau)
+### <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>Nutzen von Informationen zu Bedrohungen (Threat Intelligence) in Microsoft-Sicherheitslösungen (Vorschau)
 
 Senden Sie Ihre Bedrohungsindikatoren automatisch an Microsoft-Sicherheitslösungen, um `alert`-, `block`- oder `allow`-Aktionen zu aktivieren. Verwenden Sie die Microsoft Graph-Sicherheits-API direkt, oder nutzen Sie die Vorteile der Integration mit führenden Threat Intelligence-Plattformen.
 
-## <a name="act-quickly-in-response-to-new-threats-preview"></a>Schnelles Reagieren auf neue Bedrohungen (Vorschau)
+### <a name="act-quickly-in-response-to-new-threats-preview"></a>Schnelles Reagieren auf neue Bedrohungen (Vorschau)
 
 Ermöglichen Sie schnelles Handeln zum Schutz vor neuen Bedrohungen, z. B. durch Blockieren von Dateien, URLs, Domänen oder IP-Adressen aus Ihren Sicherheitswerkzeugen und Workflows heraus.
 

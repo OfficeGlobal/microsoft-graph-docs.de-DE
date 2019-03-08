@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Auflisten der Inhalte eines Ordners
+title: AufListen der Inhalte eines Ordners
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5d31d39b393725c325a75b6a8ba7e52516938b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513130"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482189"
 ---
-# <a name="list-children-of-a-driveitem"></a>Untergeordnete Elemente eines DriveItem auflisten
+# <a name="list-children-of-a-driveitem"></a>Untergeordnetes Element eines DriveItem auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -86,8 +86,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird die Liste der Elemente in der Auflistung der untergeordneten Elemente des Zielelements zurückgegeben.
-Die Auflistung untergeordneter Elemente besteht aus [driveItem][item-resource]-Ressourcen.
+Wenn die Methode erfolgreich verläuft, wird die Liste der Elemente in der Auflistung der untergeordneten Elemente des Zielelements zurückgegeben. Die Auflistung untergeordneter Elemente besteht aus [driveItem][item-resource]-Ressourcen.
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

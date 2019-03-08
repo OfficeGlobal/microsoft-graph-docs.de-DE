@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Laufwerk abrufen
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518170"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481286"
 ---
 # <a name="get-drive"></a>Laufwerk abrufen
 
@@ -62,7 +62,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | Parametername | Wert  | Beschreibung                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | Erforderlich. Der Bezeichner für das Benutzerobjekt, dem OneDrive angehört. |
+| _idOrUserPrincipalName_     | Zeichenfolge | Erforderlich. Der Bezeichner für das Benutzerobjekt, dem OneDrive angehört. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.
 
@@ -80,7 +80,7 @@ GET /groups/{groupId}/drive
 
 | Parametername | Wert  | Beschreibung                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | Erforderlich. Der Bezeichner für die Gruppe, die die Dokumentbibliothek besitzt. |
+| _groupId_      | Zeichenfolge | Erforderlich. Der Bezeichner für die Gruppe, die die Dokumentbibliothek besitzt. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Abrufen der Dokumentbibliothek für eine Website
 
@@ -96,7 +96,7 @@ GET /sites/{siteId}/drive
 
 | Parametername | Wert  | Beschreibung                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | string | Erforderlich. Der Bezeichner für die Website, die die Dokumentbibliothek enthält. |
+| _siteId_       | Zeichenfolge | Erforderlich. Der Bezeichner für die Website, die die Dokumentbibliothek enthält. |
 
 ## <a name="get-a-drive-by-id"></a>Abrufen eines Laufwerks nach ID
 

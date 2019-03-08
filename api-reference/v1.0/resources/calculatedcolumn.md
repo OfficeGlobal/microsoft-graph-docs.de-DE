@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
-ms.openlocfilehash: 402ec948344931a0506026e4ad6abfaaa0ee5539
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 66fbc59fa9fe4880c023086c9bd334e04650bc73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876930"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481713"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn-Ressourcentyp
 
@@ -32,8 +32,8 @@ Es folgt eine JSON-Darstellung einer **calculatedColumn**-Ressource.
 
 | Eigenschaftenname  | Typ    | Beschreibung
 |:---------------|:--------|:--------------------------------------------------
-| **format**     | string  | Für `dateTime`-Ausgabetypen das Format des Werts. Muss `dateOnly` oder `dateTime` sein.
-| **formula**    | string  | Die Formel, die verwendet wird, um den Wert für diese Spalte zu berechnen.
+| **format**     | Zeichenfolge  | Für `dateTime`-Ausgabetypen das Format des Werts. Muss `dateOnly` oder `dateTime` sein.
+| **formula**    | Zeichenfolge  | Die Formel, die verwendet wird, um den Wert für diese Spalte zu berechnen.
 | **outputType** | string  | Der Ausgabetyp, der verwendet wird, um Werte in dieser Spalte zu formatieren. Muss `boolean`, `currency`, `dateTime`, `number` oder `text` sein.
 
 In SharePoint-Formeln wird eine ähnliche Syntax wie in Excel-Formeln verwendet.

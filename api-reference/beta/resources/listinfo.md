@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1f94bf51169a6b056e010386f88d859aeaf41b9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5b3618610a803f86852a95ed1cb662f98cfb6e3f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512374"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482133"
 ---
 # <a name="listinfo-resource"></a>ListInfo-Ressource
 
@@ -43,7 +43,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaftenname           | Typ    | Beschreibung
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | `true` gibt an, dass die Inhaltstypen für diese Liste aktiviert sind.
+| **contentTypesEnabled** | Boolesch | `true` gibt an, dass die Inhaltstypen für diese Liste aktiviert sind.
 | **hidden**              | Boolean | `true` gibt an, dass die Liste normalerweise nicht in die SharePoint-Benutzeroberfläche angezeigt wird.
 | **template**            | string  | Ein Aufzählungswert, der die bei der Erstellung der Liste verwendete Basislistenvorlage verwendet. Beispielwerte: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` etc.
 

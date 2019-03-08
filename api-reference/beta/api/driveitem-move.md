@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Verschieben einer Datei oder eines Ordners
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b88e170a9211da3df200955a98f078624eacbe34
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526046"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482035"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Ein DriveItem in einen neuen Ordner verschieben
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Video
 localization_priority: Normal
-ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508545"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481594"
 ---
 # <a name="video-resource-type"></a>Video-Ressourcentyp
 
@@ -17,7 +17,7 @@ ms.locfileid: "29508545"
 
 Die **Video**-Ressource gruppiert videobezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn ein DriveItem ein video-Facet ungleich Null aufweist, stellt das Element eine Videodatei dar. Die Eigenschaften der Video-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt.
+Wenn ein [**DriveItem**](driveitem.md) ein **video**-Facet ungleich Null aufweist, stellt das Element eine Videodatei dar. Die Eigenschaften der **Video**-Ressource werden durch Extrahieren von Metadaten aus der Datei aufgefüllt.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -50,7 +50,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Anzahl von Audiobits pro Sample.
 | **audioChannels**         | Int32  | Anzahl der Audiokanäle.
-| **audioFormat**           | string | Name des Audioformats (AAC, MP3 usw.).
+| **audioFormat**           | Zeichenfolge | Name des Audioformats (AAC, MP3 usw.).
 | **audioSamplesPerSecond** | Int32  | Anzahl der Audiosamples pro Sekunde.
 | **bitrate**               | Int32  | Bitrate des Videos in Bits pro Sekunde.
 | **duration**              | Int64  | Dauer der Datei in Millisekunden.

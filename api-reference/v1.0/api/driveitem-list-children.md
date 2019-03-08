@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Auflisten der Inhalte eines Ordners
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972481"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481048"
 ---
 # <a name="list-children-of-a-driveitem"></a>Untergeordnete Elemente eines DriveItem auflisten
 
@@ -43,7 +43,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
 
 ### <a name="optional-request-headers"></a>Optionale Anforderungsheader
 
@@ -84,8 +84,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, wird die Liste der Elemente in der Auflistung der untergeordneten Elemente des Zielelements zurückgegeben.
-Die Auflistung untergeordneter Elemente besteht aus [driveItem][item-resource]-Ressourcen.
+Wenn die Methode erfolgreich verläuft, wird die Liste der Elemente in der Auflistung der untergeordneten Elemente des Zielelements zurückgegeben. Die Auflistung untergeordneter Elemente besteht aus [driveItem][item-resource]-Ressourcen.
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

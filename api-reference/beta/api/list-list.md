@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Auflisten der SharePoint-Listen einer Website
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f7adfeba7f46eb7ed8541405221a1257637c2157
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512444"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480712"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Listen einer Website auflisten
 
@@ -19,7 +19,7 @@ ms.locfileid: "29512444"
 Rufen Sie die Sammlung aller [Listen][] für eine [Website][] auf.
 
 [Listen]: ../resources/list.md
-[site]: ../resources/site.md
+[Website]: ../resources/site.md
 
 ## <a name="permissions"></a>Berechtigungen
 

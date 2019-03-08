@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Versenden einer Einladung für den Zugriff auf ein Element
+title: Senden einer Einladung für den Zugriff auf ein Element
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976961"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480740"
 ---
 # <a name="send-a-sharing-invitation"></a>Freigabeeinladung senden
 
-Sendet eine Einladung zur Freigabe für eine **DriveItem**.
-Eine Einladung zur Freigabe Berechtigungen an die Empfänger enthält, und sendet sie optional eine e-Mail mit einem [Link Freigabe][].
+Sendet eine Freigabeeinladung für ein **DriveItem**-Element.
+Eine Freigabeeinladung stellt den Empfängern Berechtigungen zur Verfügung und sendet optional eine e-Mail mit einem [Freigabe Link][].
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -61,14 +61,14 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 | Parameter        | Typ                           | Beschreibung
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | Eine Sammlung der Empfänger, die Zugriff und die Freigabeeinladung erhalten.
-| message          | Zeichenfolge                         | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen.
-| requireSignIn    | Boolean                        | Gibt an, ob der Empfänger der Einladung zur Anmeldung an das freigegebene Element anzeigen erforderlich ist.
-| sendInvitation   | Boolean                        | Bei true wird eine [Freigabe Link][] an den Empfänger gesendet. Andernfalls wird eine Berechtigung erteilt, direkt und ohne eine Benachrichtigung sendet.
-| roles            | Collection(String)             | Geben Sie die Rollen, die an die Empfänger, der die Einladung zur Freigabe erteilt werden.
+| message          | String                         | Eine formatierte Nur-Text-Nachricht, die in der Freigabeeinladung enthalten ist. Die maximale Länge beträgt 2000 Zeichen.
+| requireSignIn    | Boolesch                        | Gibt an, ob sich der Empfänger der Einladung anmelden muss, um das freigegebene Element anzuzeigen.
+| sendInvitation   | Boolean                        | Wenn true, wird ein [Freigabe Link][] an den Empfänger gesendet. Andernfalls wird eine Berechtigung direkt erteilt, ohne eine Benachrichtigung zu senden.
+| roles            | Collection(String)             | Geben Sie die Rollen an, die den Empfängern der Freigabeeinladung erteilt werden sollen.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel sendet eine freigabeeinladung für einen Benutzer mit e-Mail-Adresse "ryan@contoso.com" mit einer Meldung über eine Datei wird arbeiteten an.
+In diesem Beispiel wird eine Freigabeeinladung an einen Benutzer mit der e-Mail-Adresse "ryan@contoso.com" mit einer Nachricht zu einer Datei gesendet, an der zusammengearbeitet wird.
 Die Einladung gewährt Ryan Lese-/ Schreibzugriff auf die Datei.
 
 ### <a name="http-request"></a>HTTP-Anforderung
@@ -136,7 +136,7 @@ Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie im Them
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[Freigeben von link]: ../resources/permission.md#sharing-links
+[Freigabe Link]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

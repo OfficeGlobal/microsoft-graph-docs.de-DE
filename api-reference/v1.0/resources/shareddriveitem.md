@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 6e20df0cf50a7fc2648f5df97fcfe84e83992d99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826194"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481727"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem-Ressourcentyp
 
@@ -65,7 +65,7 @@ Für in persönlichen OneDrive-Konten freigegebene **driveItems** könnenSie alt
 | Beziehungsname | Typ                         | Beschreibung
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | [**driveItem**][driveItem]-Sammmlung | Alle im Freigabestamm enthaltenen driveItems. Diese Sammlung kann nicht aufgezählt werden.
-| **root**          | [**driveItem**][driveItem]   | Verwendet, um die zugrunde liegenden **DriveItem**zugreifen. Veraltet – verwenden Sie `driveItem` stattdessen.
+| **root**          | [**driveItem**][driveItem]   | Wird für den Zugriff auf die zugrunde liegenden **DriveItem**verwendet. Veraltet-verwenden Sie `driveItem` stattdessen.
 
 [driveItem]: driveitem.md
 [list]: list.md

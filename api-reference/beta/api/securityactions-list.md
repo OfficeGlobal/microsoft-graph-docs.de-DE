@@ -1,17 +1,17 @@
 ---
-title: AufListen von Sicherheitsaktionen
+title: SecurityActions aufListen
 description: Abrufen einer Liste von SecurityAction-Objekten.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 54330bcf2116d0a9c715649bcd19bc0553579c4e
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 1a161fd6113e6f29b061bd1dca9d2c4b16d7ee9c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366903"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482315"
 ---
-# <a name="list-security-actions"></a>AufListen von Sicherheitsaktionen
+# <a name="list-securityactions"></a>SecurityActions aufListen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,12 +4,12 @@ description: Indikatoren für Threat Intelligence (TI) stellen Daten dar, die zu
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8b8f3fe9b37021a9dd90dc03e861a8a1ed9d69de
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: f5374d42fb2601bfa5529de998778530a3b15d01
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367120"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482266"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator-Ressourcentyp
 
@@ -23,13 +23,13 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 
 | Methode       | Rückgabetyp | Beschreibung |
 |:-------------|:------------|:------------|
-| [TiIndicator abrufen](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Lesen von Eigenschaften und Beziehungen des tiIndicator-Objekts. |
-| [TiIndicator erstellen](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Erstellen Sie eine neue tiIndicator durch Veröffentlichung in der tiIndicators-Auflistung. |
-| [TiIndicators aufListen](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md) -Sammlung | Rufen Sie eine tiIndicator-Objektsammlung ab. |
+| [Get tiIndicator](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Lesen von Eigenschaften und Beziehungen des tiIndicator-Objekts. |
+| [Create tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Erstellen Sie eine neue tiIndicator durch Veröffentlichung in der tiIndicators-Auflistung. |
+| [List tiIndicators](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md) -Sammlung | Rufen Sie eine tiIndicator-Objektsammlung ab. |
 | [Update](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Aktualisieren des tiIndicator-Objekts. |
-| [Delete](../api/tiindicator-delete.md) | Keine | TiIndicator-Objekt löschen. |
-|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Keine| Löschen Sie mehrere tiIndicator-Objekte.|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Keine| Löschen Sie mehrere tiIndicator-Objekte `externalId` nach der-Eigenschaft.|
+| [Löschen](../api/tiindicator-delete.md) | Keine | TiIndicator-Objekt löschen. |
+|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|None| Löschen Sie mehrere tiIndicator-Objekte.|
+|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|None| Löschen Sie mehrere tiIndicator-Objekte `externalId` nach der-Eigenschaft.|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) -Sammlung|Erstellen Sie neue tiIndicators, indem Sie eine tiIndicators-Auflistung veröffentlichen.|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) -Sammlung| Aktualisieren Sie mehrere tiIndicator-Objekte.|
 
@@ -37,28 +37,28 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|Aktion|string| Die Aktion, die angewendet werden soll, wenn das Symbol im targetProduct-Sicherheitstool abgeglichen wird. Mögliche Werte: `unknown`, `allow`, `block`, `alert`. **Erforderlich**|
+|action|Zeichenfolge| Die Aktion, die angewendet werden soll, wenn das Symbol im targetProduct-Sicherheitstool abgeglichen wird. Mögliche Werte sind: `unknown`, `allow`, `block` und `alert`. **Erforderlich**|
 |activityGroupNames|String collection|Die Namen der Cyber Threat Intelligence für die Parteien, die für die bösartigen Aktivitäten verantwortlich sind, die vom Bedrohungs Indikator erfasst werden.|
 |Zusatzinformationen|Zeichenfolge|Ein CatchAll Bereich, in dem zusätzliche Daten aus dem Indikator, die nicht von anderen tiIndicator-Eigenschaften abgedeckt werden, möglicherweise eingefügt werden. Daten, die in Zusatzinformationen werden, werden in der Regel nicht vom targetProduct-Sicherheitstool verwendet.|
 |azureTenantId|Zeichenfolge| Wird vom System gestempelt, wenn das Symbol aufgenommen wird. Die Azure Active Directory-Mandanten-ID des übermittelnden Clients. **Erforderlich**|
 |confidence|Int32|Eine ganze Zahl, die die Vertrauenswürdigkeit der Daten innerhalb des Indikators kennzeichnet. Zulässige Werte sind 0 – 100, wobei 100 der höchste Wert ist.|
 |description|Zeichenfolge| Kurze Beschreibung (100 Zeichen oder kleiner) der Bedrohung, dargestellt durch den Indikator. **Erforderlich**|
-|diamondModel|string|Der Bereich des Diamant Modells, in dem dieser Indikator vorhanden ist. Mögliche Werte: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|diamondModel|[diamondModel](#diamondModel-values)|Der Bereich des Diamant Modells, in dem dieser Indikator vorhanden ist. Mögliche Werte: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime-Zeichenfolge, die angibt, wann das Symbol abläuft. Alle Indikatoren benötigen ein Ablaufdatum, um zu verhindern, dass veraltete Indikatoren im System beibehalten werden. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. **Erforderlich**|
 |externalId|String| Eine Identifikationsnummer, die den Indikator zurück an das System des Indikator Anbieters bindet (beispielsweise einen Fremdschlüssel). |
-|id|string|Wird vom System erstellt, wenn das Symbol aufgenommen wird. Generierte GUID/eindeutiger Bezeichner. Schreibgeschützt.|
+|id|String|Wird vom System erstellt, wenn das Symbol aufgenommen wird. Generierte GUID/eindeutiger Bezeichner. Schreibgeschützt.|
 |ingestedDateTime|DateTimeOffset| Wird vom System gestempelt, wenn das Symbol aufgenommen wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|isActive|Boolean| Wird verwendet, um Indikatoren innerhalb von System zu deaktivieren. Standardmäßig werden alle übermittelten Indikatoren als aktiv festgelegt. Anbieter können jedoch vorhandene Indikatoren mit dieser Einstellung auf "false" übermitteln, um Indikatoren im System zu deaktivieren.|
-|killChain|String collection|Ein JSON-Array von Zeichenfolgen, die beschreiben, welche Punkte auf der Killkette dieser Indikator erreicht. Genaue Werte finden Sie unten unter "killChain-Werte". |
+|isActive|Boolesch| Wird verwendet, um Indikatoren innerhalb von System zu deaktivieren. Standardmäßig werden alle übermittelten Indikatoren als aktiv festgelegt. Anbieter können jedoch vorhandene Indikatoren mit dieser Einstellung auf "false" übermitteln, um Indikatoren im System zu deaktivieren.|
+|killChain|[killChain](#killChain-values) -Sammlung|Ein JSON-Array von Zeichenfolgen, die beschreiben, welche Punkte auf der Killkette dieser Indikator erreicht. Genaue Werte finden Sie unten unter "killChain-Werte". |
 |knownFalsePositives|Zeichenfolge|Szenarien, in denen das Symbol zu falsch positiven Ergebnissen führen kann. Dies sollte ein lesbarer Text sein.|
 |lastReportedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Indikator zuletzt angezeigt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |malwareFamilyNames|String collection|Der Name der Schadsoftware-Familie, die mit einem Indikator verknüpft ist, falls vorhanden. Microsoft bevorzugt den Namen der Microsoft-Schadsoftware-Familie, falls möglich, der über die [Bedrohungs Enzyklopädie](https://www.microsoft.com/wdsi/threats)Windows Defender Security Intelligence gefunden werden kann.|
-|passiveOnly|Boolean |Bestimmt, ob das Symbol ein Ereignis auslösen soll, das für einen Endbenutzer sichtbar ist. Bei Festlegung auf "true" werden vom Endbenutzer keine Sicherheitstools benachrichtigt, dass ein "Hit" aufgetreten ist. Diese wird am häufigsten von Sicherheitsprodukten als Überwachungs-oder Unbeaufsichtigter Modus behandelt, in dem Sie einfach protokollieren, ob eine Übereinstimmung aufgetreten ist, die Aktion jedoch nicht ausgeführt wird. Der Standardwert ist "false". |
+|passiveOnly|Boolesch |Bestimmt, ob das Symbol ein Ereignis auslösen soll, das für einen Endbenutzer sichtbar ist. Bei Festlegung auf "true" werden vom Endbenutzer keine Sicherheitstools benachrichtigt, dass ein "Hit" aufgetreten ist. Diese wird am häufigsten von Sicherheitsprodukten als Überwachungs-oder Unbeaufsichtigter Modus behandelt, in dem Sie einfach protokollieren, ob eine Übereinstimmung aufgetreten ist, die Aktion jedoch nicht ausgeführt wird. Standardwert ist "false". |
 |Schweregrad|Int32| Eine ganze Zahl, die den Schweregrad des böswilligen Verhaltens darstellt, das durch die Daten innerhalb des Indikators identifiziert wird. Zulässige Werte sind 0 – 5, wobei 5 der schwerste ist und NULL nicht schwerwiegend ist. Der Standardwert ist 3. |
 |tags|String-Sammlung|Ein JSON-Array von Zeichenfolgen, in dem beliebige Tags/Schlüsselwörter gespeichert werden. |
-|targetProduct|Zeichenfolge|Ein String-Wert, der ein einzelnes Sicherheitsprodukt darstellt, auf das das Symbol angewendet werden soll. Zulässige Werte: `Azure Sentinel`. **Erforderlich**|
-|threattype|Zeichenfolge| Jeder Indikator muss einen gültigen Indikator Bedrohungs aufweisen. Mögliche Werte: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Erforderlich** |
-|tlpLevel|string| Ampel-Protokollwert für das Symbol. Mögliche Werte: `unknown`, `white`, `green`, `amber`, `red`. **Erforderlich**|
+|targetProduct|Zeichenfolge|Ein String-Wert, der ein einzelnes Sicherheitsprodukt darstellt, auf das das Symbol angewendet werden soll. Zulässige Werte: `Azure Sentinel`. **Required**|
+|threattype|[threattype](#threatType-values)| Jeder Indikator muss einen gültigen Indikator Bedrohungs aufweisen. Mögliche Werte: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Erforderlich** |
+|tlpLevel|[tlpLevel](#tlpLevel-values)| Ampel-Protokollwert für das Symbol. Mögliche Werte: `unknown`, `white`, `green`, `amber`, `red`. **Erforderlich**|
 
 ### <a name="indicator-observables---email"></a>Indikator beobachtbaren – E-Mail
 
@@ -80,7 +80,7 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|DateTime, als die Datei kompiliert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| DateTime, als die Datei erstellt wurde. Der timestamp-Typ stellt Datums-und Uhrzeitinformationen unter Verwendung des ISO 8601-Formats dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|fileHashType|string| Der in fileHashvalue gespeicherte Hashtyp. Mögliche Werte sind: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash` und `ctph`.|
+|fileHashType|Zeichenfolge| Der in fileHashvalue gespeicherte Hashtyp. Mögliche Werte: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
 |fileHashvalue|Zeichenfolge| Der Datei Hash Wert.|
 |fileMutexname|Zeichenfolge| Mutexname, der bei dateibasierten Ermittlungen verwendet wird.|
 |fileName|String|Name der Datei, wenn das Symboldatei basiert ist. Mehrere Dateinamen können durch Kommata getrennt werden. |
@@ -109,7 +109,7 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 |networkSourceIPv4|Zeichenfolge|IPv4-IP-Adressquelle.|
 |networkSourceIPv6|Zeichenfolge|IPv6-IP-Adressquelle.|
 |networkSourcePort|Int32|TCP-Anschluß Quelle.|
-|url|Zeichenfolge|Uniform Resource Locator. Diese URL muss RFC 1738 entsprechen.|
+|url|String|Uniform Resource Locator. Diese URL muss RFC 1738 entsprechen.|
 |userAgent|Zeichenfolge|Benutzer-Agent-Zeichenfolge aus einer Webanforderung, die auf eine Gefährdung hindeuten könnte.|
 
 ### <a name="diamondmodel-values"></a>diamondModel-Werte
@@ -129,7 +129,7 @@ Informationen zu diesem Modell finden Sie unter [Diamond Model](http://diamondmo
 |:-------|:------------|
 |Aktionen|Indcates, dass der Angreifer das kompromittierte System nutzt, um Aktionen wie einen verteilten Denial-of-Service-Angriff zu ergreifen.|
 |C2 befindet|Stellt den Steuerelement Kanal dar, durch den ein kompromittiertes System bearbeitet wird.|
-|Lieferung|Der Prozess der Verteilung des Exploit-Codes auf die Opfer (beispielsweise USB, e-Mail, Websites).|
+|Delivery|Der Prozess der Verteilung des Exploit-Codes auf die Opfer (beispielsweise USB, e-Mail, Websites).|
 |Ausbeutung|Der Exploitcode nutzt Sicherheitsrisiken aus (beispielsweise Codeausführung).|
 |Installation|Installieren von Schadsoftware, nachdem eine Sicherheitsanfälligkeit ausgenutzt wurde.|
 |Aufklärungs|Indikator ist ein Beweis für die Verwendung einer Aktivitätsgruppen-ernteinformationen, die bei zukünftigen Angriffen verwendet werden sollen.|
@@ -146,7 +146,7 @@ Informationen zu diesem Modell finden Sie unter [Diamond Model](http://diamondmo
 |DDoS|Indikatoren für eine aktive oder bevorstehende DDoS-Kampagne.|
 |MaliciousUrl|URL, die Schadsoftware dient.|
 |Schadsoftware|Indikator, der eine bösartige Datei oder Dateien beschreibt.|
-|Phishing|Indikatoren für eine Phishing-Kampagne.|
+|Phishing-E-Mail|Indikatoren für eine Phishing-Kampagne.|
 |Proxy|Indikator ist der eines Proxy Diensts.|
 |PUA|Potenziell unerwünschte Anwendung.|
 |WatchList|Dies ist der generische Bucket, in dem Indikatoren aufgestellt werden, wenn nicht genau ermittelt werden kann, was die Bedrohung ist oder die eine manuelle Interpretation erfordert. Dies sollte in der Regel nicht von Partnern verwendet werden, die Daten in das System übermitteln.|
@@ -158,9 +158,9 @@ Jeder Indikator muss bei der Übermittlung auch einen Wert für das Ampel Protok
 | Werte | Beschreibung |
 |:-------|:------------|
 |Weiß| Freigabebereich: unLimited. Indikatoren können frei freigegeben werden, ohne Einschränkungen.|
-|Green| Freigabebereich: Community. Indikatoren können für die Sicherheitscommunity freigegeben werden.|
+|Grün| Freigabebereich: Community. Indikatoren können für die Sicherheitscommunity freigegeben werden.|
 |Bernstein| Freigabebereich: Limited. Dies ist die Standardeinstellung für Indikatoren und schränkt die Freigabe nur für Personen ein, die über einen "need-to-Know"-Dienst verfügen, und Dienst Operatoren, die Threat Intelligence 2-Kunden implementieren, deren System (e) ein Verhalten im Einklang mit dem Indikator aufweisen.|
-|Red| Freigabebereich: persönlich. Diese Indikatoren sollen nur direkt und, vorzugsweise persönlich, freigegeben werden. In der Regel werden TLP-rote Indikatoren aufgrund der vordefinierten Einschränkungen nicht aufgenommen. Wenn TLP-rote Indikatoren übermittelt werden, sollte die "PassiveOnly"- `True` Eigenschaft auch auf festgelegt werden. |
+|Rot| Freigabebereich: persönlich. Diese Indikatoren sollen nur direkt und, vorzugsweise persönlich, freigegeben werden. In der Regel werden TLP-rote Indikatoren aufgrund der vordefinierten Einschränkungen nicht aufgenommen. Wenn TLP-rote Indikatoren übermittelt werden, sollte die "PassiveOnly"- `True` Eigenschaft auch auf festgelegt werden. |
 
 ## <a name="relationships"></a>Beziehungen
 

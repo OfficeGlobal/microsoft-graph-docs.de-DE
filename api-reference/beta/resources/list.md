@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Auflisten
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527661"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481517"
 ---
 # <a name="list-resource"></a>List-Ressource
 
@@ -84,20 +84,20 @@ Es folgt eine JSON-Darstellung einer **list**-Ressource.
 
 Die **list**-Ressource besitzt folgende Eigenschaften.
 
-| Eigenschaftsname    | Typ                             | Beschreibung
+| Eigenschaftenname    | Typ                             | Beschreibung
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Sammlung ([ColumnDefinition][]) | Die Sammlung von Felddefinitionen für diese Liste.
 | **contentTypes** | Sammlung ([contentType][])      | Die Sammlung von in dieser Liste enthaltenen content-Typen.
-| **displayName**  | string                           | Der anzeigbare Titel der Liste.
+| **displayName**  | Zeichenfolge                           | Der anzeigbare Titel der Liste.
 | **list**         | [listInfo][]                     | Weitere Details über die Liste.
 | **system**       | [systemFacet][]                  | Falls vorhanden, gibt an, dass es sich um eine vom System verwaltete Liste handelt. Schreibgeschützt.
 
 Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 
-| Eigenschaftsname            | Typ             | Beschreibung
+| Eigenschaftenname            | Typ             | Beschreibung
 |:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
-| **name**                 | string           | Der Name des Elements.
+| **id**                   | Zeichenfolge           | Der eindeutige Bezeichner des Elements. Schreibgeschützt.
+| **name**                 | Zeichenfolge           | Der Name des Elements.
 | **createdBy**            | [identitySet][]  | Die Identität des Erstellers dieses Elements. Schreibgeschützt.
 | **createdDateTime**      | DateTimeOffset   | Das Datum und die Uhrzeit der Erstellung des Elements. Schreibgeschützt.
 | **description**          | string           | Der beschreibende Text für das Element.

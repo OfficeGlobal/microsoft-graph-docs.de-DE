@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: daee18357e3f19f646a816070ca41a660f7b7ed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810948"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481132"
 ---
 # <a name="baseitem-resource-type"></a>baseItem-Ressourcentyp
 
@@ -52,10 +52,10 @@ Es folgt eine JSON-Darstellung einer **baseItem**-Ressource.
 
 | Eigenschaft             | Typ              | Beschreibung                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                         |
+| id                   | Zeichenfolge            | Der eindeutige Bezeichner des Laufwerks. Schreibgeschützt.                                         |
 | createdBy            | [identitySet][]   | Die Identität des Benutzers, des Geräts oder der Anwendung, von denen das Element erstellt wurde. Schreibgeschützt.        |
 | createdDateTime      | dateTimeOffset    | Datum und Uhrzeit der Elementerstellung. Schreibgeschützt.                                             |
-| description          | String            | Enthält eine Benutzer sichtbaren Beschreibung des Elements. Optional.                             |
+| description          | Zeichenfolge            | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Optional.                             |
 | eTag                 | string            | ETag für das Element. Schreibgeschützt.                                                          |
 | lastModifiedBy       | [identitySet][]   | Die Identität des Benutzers, des Geräts und der Anwendung, von denen das Element zuletzt geändert wurde. Schreibgeschützt. |
 | lastModifiedDateTime | dateTimeOffset    | Datum und Uhrzeit der letzten Änderung des Elements. Schreibgeschützt.                                   |
@@ -72,7 +72,7 @@ Es folgt eine JSON-Darstellung einer **baseItem**-Ressource.
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[Benutzer]: user.md
+[user]: user.md
 
 ## <a name="remarks"></a>Bemerkungen
 

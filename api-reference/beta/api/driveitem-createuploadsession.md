@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Wiederaufnehmbarer Dateien-Upload
+title: Fort Setz barer Dateiupload
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525339"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482392"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
@@ -35,10 +35,10 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="create-an-upload-session"></a>Erstellen einer Uploadsitzung
 
-Um eine große Dateien hochladen beginnen, muss Ihre app zunächst eine neue Sitzung Upload anfordern.
-Dadurch wird einen temporärer Speicherort, in dem die Bytes der Datei gespeichert wird, bis die vollständige Datei hochgeladen wurde, erstellt.
-Nachdem das letzte Byte der Datei hochgeladen wurde die Sitzung Upload abgeschlossen ist, und die endgültige Datei wird im Zielordner angezeigt.
-Alternativ können Sie letzten Erstellung der Datei im Ziel zurückstellen, bis Sie explizit stellen Sie eine Anforderung zum Abschließen der Hochladevorgang durch Festlegen der `deferCommit` -Eigenschaft in der Argumente der Anforderung.
+Um eine große Datei hochladen zu können, muss die App zuerst eine neue Uploadsitzung anfordern.
+Es wird dann ein temporärer Speicherort erstellt, an dem die Bytes der Datei gespeichert werden, bis sie vollständig hochgeladen ist.
+Sobald das letzte Byte der Datei hochgeladen wurde, ist die Uploadsitzung abgeschlossen, und die endgültige Datei wird im Zielordner angezeigt.
+Alternativ können Sie die endgültige Erstellung der Datei im Ziel verschieben, bis Sie explizit eine Anforderung zum Abschließen des Uploads vornehmen, indem Sie die `deferCommit` Eigenschaft in den Anforderungs Argumenten festlegen.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
@@ -55,9 +55,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Anforderungstext
 
 Es ist kein Anforderungstexts erforderlich.
-Sie können jedoch Eigenschaften im Textkörper Anforderung zusätzliche Daten über die hochgeladene Datei bereitstellen und Anpassen der Semantik des Vorgangs hochladen angeben.
+Sie können jedoch Eigenschaften im Anforderungstext angeben, die zusätzliche Daten über die hochzuladende Datei bereitstellen und die Semantik des Upload-Vorgangs anpassen.
 
-Beispielsweise die `item` -Eigenschaft können die folgenden Parameter festlegen:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+Die `item` -Eigenschaft kann beispielsweise die folgenden Parameter festlegen:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -66,7 +66,7 @@ Beispielsweise die `item` -Eigenschaft können die folgenden Parameter festlegen
 }
 ```
 
-Im folgende Beispiel steuert das Verhalten, wenn der Dateiname bereits vergeben ist und auch gibt an, dass die endgültige Datei nicht erstellt werden soll, bis eine explizite Abschluss angefordert wird:
+Das folgende Beispiel steuert das Verhalten, wenn der Dateiname bereits verwendet wird, und gibt außerdem an, dass die endgültige Datei erst erstellt werden soll, wenn eine explizite Vervollständigungs Anforderung ausgeführt wird:
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -82,20 +82,20 @@ Im folgende Beispiel steuert das Verhalten, wenn der Dateiname bereits vergeben 
 
 | Name       | Wert | Beschreibung                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird der Fehler `412 Precondition Failed` zurückgegeben. |
+| *if-match* | etag  | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) nicht mit dem aktuellen ETag des Elements übereinstimmt, `412 Precondition Failed` wird eine Fehlerantwort zurückgegeben. |
 
 ## <a name="parameters"></a>Parameter
 
 | Parameter            | Typ                          | Beschreibung
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Daten zu der hochzuladenden Datei
-| deferCommit          | Boolescher Wert                       | Wenn es sich bei Festlegung auf "true", endgültige Erstellen der Datei im Ziel eine explizite Anforderung erforderlich ist. Nur für OneDrive für Unternehmen.
+| deferCommit          | Boolesch                       | Bei Festlegung auf "true" erfordert die endgültige Erstellung der Datei im Ziel eine explizite Anforderung. Nur bei OneDrive for Business.
 
 ## <a name="item-properties"></a>Elementeigenschaften
 
 | Eigenschaft             | Typ               | Beschreibung
 |:---------------------|:-------------------|:---------------------------------
-| description          | String             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
+| description          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal.
 | name                 | String             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
 
 ### <a name="request"></a>Anforderung
@@ -141,7 +141,7 @@ Content-Type: application/json
 Zum Hochladen der Datei oder eines Teils der Datei sendet die App eine PUT-Anfrage an den Wert **uploadUrl**, der ihr in der **createUploadSession**-Antwort übermittelt wurde.
 Sie können die gesamte Datei hochladen oder die Datei in Fragmente aufteilen, vorausgesetzt, die maximale Bytezahl pro Anforderung bleibt unter 60 MiB.
 
-Die Fragmente der Datei müssen in Reihenfolge nacheinander hochgeladen werden.
+Die Fragmente der Datei müssen sequenziell in der richtigen Reihenfolge hochgeladen werden.
 Werden die Fragmente in der falschen Reihenfolge hochgeladen, tritt ein Fehler auf.
 
 **Hinweis:** Wenn die App eine Datei in mehrere Fragmente aufteilt, **MUSS** die Größe jedes Fragments ein Vielfaches von 320 KiB (327.680 Byte) sein. Bei Fragmentgrößen, die sich nicht ohne Rest durch 320 KiB teilen lassen, treten beim Übergeben einiger Dateien Fehler auf.
@@ -213,10 +213,10 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Vervollständigen einer Datei
 
-Wenn `deferCommit` ist, false oder nicht festgelegt ist, und klicken Sie dann automatisch der Hochladevorgang abgeschlossen ist, bei der letzten Bytebereich der Datei zum Hochladen URL ABGELEGT wird.
-Wenn `deferCommit` true ist, wird nach der letzten Bytebereich der Datei zum Hochladen URL aktiviert wird, der Hochladevorgang explizit durch eine endgültige POST-Anforderung an den Upload abgeschlossen sein muss, Url mit Nulllänge Inhalt.
+`deferCommit` Ist false oder nicht festgelegt, wird der Upload automatisch abgeschlossen, wenn der letzte Byte-Umfang der Datei der Upload-URL zugewiesen wird.
+Wenn `deferCommit` der Wert true ist, sollte der Upload nach dem letzten Byte-Umfang der Datei auf die Upload-URL übertragen werden, und das Hochladen sollte explizit durch eine abschließende Post-Anforderung an die Upload-URL mit dem Inhalt der leeren Länge abgeschlossen werden.
 
-Wenn der Hochladevorgang abgeschlossen ist, wird der Server mit der letzten Anforderung Antworten ein `HTTP 201 Created` oder `HTTP 200 OK`.
+Nach Abschluss des Uploads antwortet der Server auf die endgültige Anforderung mit einem `HTTP 201 Created` oder. `HTTP 200 OK`
 Der Antworttext enthält auch die Standardeigenschaft, die für das **DriveItem** festgelegt wurde, das die vervollständigte Datei repräsentiert.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->

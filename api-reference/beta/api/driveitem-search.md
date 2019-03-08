@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Nach Dateien suchen
+title: Suchen nach Dateien
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ce18912b0fd116f13e2bd32d999dd852d6cc5182
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528221"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481375"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Suchen nach DriveItems innerhalb eines Laufwerks
 

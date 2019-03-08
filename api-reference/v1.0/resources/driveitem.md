@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 65668c0d6c0f84ef08e4f7cf8c700ae3f1b33369
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986908"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482420"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem-Ressourcentyp
 

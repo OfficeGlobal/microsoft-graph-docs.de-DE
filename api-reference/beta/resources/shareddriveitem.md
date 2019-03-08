@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524121"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480628"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem-Ressourcentyp
 
@@ -61,7 +61,7 @@ Die **sharedDriveItem**-Ressource wird von [ **baseItem** ](baseitem.md) abgelei
 | **driveItem**     | [**driveItem**][driveItem] | Dient für den Zugriff auf das zugrunde liegende **driveItem**
 | **list**          | [**list**][list]           | Dient für den Zugriff auf das zugrunde liegende **list**
 | **listItem**      | [**listItem**][listItem]   | Dient für den Zugriff auf das zugrunde liegende **listItem**
-| **permission**    | Berechtigung | Verwendet, um die **Berechtigung** für den zugrunde liegenden sharing Hyperlink zugreifen
+| **permission**    | [**Berechtigung**][permission] | Wird zum Zugreifen auf die **Berechtigung** verwendet, die den zugrunde liegenden Freigabe Link darstellt
 | **site**          | [**site**][site]           | Dient für den Zugriff auf das zugrunde liegende **site**
 
 Für in persönlichen OneDrive-Konten freigegebene **driveItems** könnenSie alternativ ebenfalls folgende Beziehungen verwenden.

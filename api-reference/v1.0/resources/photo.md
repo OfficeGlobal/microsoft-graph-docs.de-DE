@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Foto
 localization_priority: Normal
-ms.openlocfilehash: 4d108e4849595fcb945b676426d3d9c05dfb5ba0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873003"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480978"
 ---
 # <a name="photo-resource-type"></a>Photo-Ressourcentyp
 
@@ -41,7 +41,7 @@ Die **photo**-Ressource stellt Foto- und Kameraeigenschaften auf einem [DriveIte
 | Eigenschaft                | Typ           | Beschreibung
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | Stellt das Datum und die Uhrzeit für die Aufnahme des Fotos dar. Schreibgeschützt.
-| **cameraMake**          | String         | Kamerahersteller Schreibgeschützt.
+| **cameraMake**          | Zeichenfolge         | Kamerahersteller Schreibgeschützt.
 | **cameraModel**         | String         | Kameramodell. Schreibgeschützt.
 | **fNumber**             | Gleitkommawert mit doppelter Genauigkeit         | Die Blendenzahl der Kamera. Schreibgeschützt.
 | **exposureDenominator** | Gleitkommawert mit doppelter Genauigkeit         | Der Nenner der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.

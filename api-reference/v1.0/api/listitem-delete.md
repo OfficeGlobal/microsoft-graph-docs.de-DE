@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Löschen eines Eintrags aus einer SharePoint-Liste
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f46a1ffe009966fb1a069cb76a7ddf79d0d725da
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e5f6fa9e893178e824c4c432d6669638779e5358
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972180"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480698"
 ---
 # <a name="delete-an-item-from-a-list"></a>Element aus einer Liste löschen
 
 Entfernt ein Element aus einer [Liste][].
 
-[list]: ../resources/list.md
+[Liste]: ../resources/list.md
 
 ## <a name="permissions"></a>Berechtigungen
 

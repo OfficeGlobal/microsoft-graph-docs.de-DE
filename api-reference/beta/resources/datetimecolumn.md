@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: e49b749adeaf7b04f9324fe00f9c73bf61f8b2dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: da8fe44e377a071ee3f20b82f7190b690dcfd6b2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518681"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482168"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn-Ressourcentyp
 
@@ -33,7 +33,7 @@ Es folgt eine JSON-Darstellung einer **dateTimeColumn**-Ressource.
 
 | Eigenschaftenname      | Typ               | Beschreibung
 |:-------------------|:-------------------|:----------------------------------------------
-| **displayAs**      | string             | Wie sollte der Wert in der UX dargestellt werden? Muss `default`, `friendly` oder `standard` sein. Weitere Einzelheiten finden Sie weiter unten. Wenn nicht angegeben, werden sie als `default` behandelt.
+| **displayAs**      | Zeichenfolge             | Wie sollte der Wert in der UX dargestellt werden? Muss `default`, `friendly` oder `standard` sein. Weitere Einzelheiten finden Sie weiter unten. Wenn nicht angegeben, werden sie als `default` behandelt.
 | **format**         | string             | Gibt an, ob der Wert nur als Datum oder als Datum und Uhrzeit angezeigt werden soll. Muss `dateOnly` oder `dateTime` sein.
 
 ## <a name="displayas-values"></a>DisplayAs-Werte

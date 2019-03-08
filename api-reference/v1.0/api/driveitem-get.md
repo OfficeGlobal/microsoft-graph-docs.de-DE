@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Eine Datei oder einen Ordner abrufen
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 094987d5898dcab02c704bdec8e6261811270341
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9cff51558f84556fc05c69164ba48809acc12fa8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987160"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481538"
 ---
 # <a name="get-a-driveitem-resource"></a>DriveItem-Ressource abrufen
 
@@ -53,7 +53,7 @@ Sie können den [`$expand`Parameter der Abfragezeichenfolge](/graph/query-parame
 
 | Name          | Wert  | Beschreibung                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | Zeichenfolge | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
+| if-none-match | String | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
 
 ## <a name="response"></a>Antwort
 
@@ -107,7 +107,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Weitere Informationen dazu, wie Fehler zurückgegeben werden, finden Sie unter [Fehlerantworten][error-response].
 

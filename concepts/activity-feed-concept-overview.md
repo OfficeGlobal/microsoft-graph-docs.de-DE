@@ -3,12 +3,12 @@ title: Verwenden der Aktivitätsfeed-API in Microsoft Graph zur Erstellung ger�
 description: Wenn Sie Aktivitäten verwenden, können diese Microsoft-Oberflächen zu einer größeren Akzeptanz Ihrer App führen. Die Anzeige von Aktivitäten in Apps kann Benutzern außerdem helfen, genau dort weiterzumachen, wo sie zuvor aufgehört haben – auf jedem Gerät und auf jeder Plattform, inklusive Windows, Android und iOS.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d264ca473dae66a945144c69cb64416d7c703611
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
+ms.sourcegitcommit: 889145f924d50e7fe6abf3f59261197826b532a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964942"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29760860"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Verwenden der Aktivitätsfeed-API in Microsoft Graph zur Erstellung geräteübergreifender Oberflächen
 
@@ -25,8 +25,6 @@ Gerenderte Aktivitäten in Microsoft-Oberflächen wie Windows Timeline werden m
 
 ### <a name="let-microsoft-help-drive-app-usage-with-features-that-reach-hundreds-of-millions-of-customers"></a>Fördern der App-Akzeptanz mit Microsoft und Features mit einer Zielgruppe von Hunderten Millionen Kunden
 Eine Integration von Benutzeraktivitäten ermöglicht es Benutzern nicht nur, Aktivitäten in Ihrer App nahtlos fortzusetzen, sondern macht auch den Zugriff auf einen wachsenden Satz an Microsoft-Oberflächen für Windows, iOS und Android möglich: Oberflächen, die speziell dafür optimiert sind, die Benutzerproduktivität zu steigern und den Benutzern die Verwendung Ihrer App auf sämtlichen Geräten zu erlauben. Mit Microsoft Graph genügt eine einmalige Integration von Benutzeraktivitäten und Sie erreichen Hunderte Millionen Heimanwender sowie Firmenkunden im zweistelligen Millionenbereich, die Windows sowie Microsoft-Produkte für iOS- und Android-Geräte verwenden.
-
-![Screenshot von Windows Timeline](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
 
 ## <a name="see-also"></a>Weitere Artikel
 

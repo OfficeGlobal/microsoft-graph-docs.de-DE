@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Website
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937012"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482091"
 ---
 # <a name="site-resource"></a>Site-Ressource
 
@@ -117,7 +117,7 @@ Die **site**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und erb
 [contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
-[list]: list.md
+[Liste]: list.md
 [site]: site.md
 [onenote]: onenote.md
 

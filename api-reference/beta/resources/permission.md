@@ -1,26 +1,26 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Berechtigung
 localization_priority: Normal
-ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518849"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482077"
 ---
-# <a name="permission-resource-type"></a>Permission-Ressourcentyp
+# <a name="permission-resource-type"></a>Berechtigungs Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die **Permission**-Ressource enthält Informationen über eine Berechtigung, die einer [DriveItem](driveitem.md)-Ressource erteilt wurde.
+Die **Permission** -Ressource enthält Informationen zu einer Freigabeberechtigung, die für eine [driveItem](driveitem.md) -Ressource erteilt wurde.
 
 Freigabeberechtigungen können verschiedene Formen aufweisen.
-Die **Permission**-Ressource stellt die verschiedenen Formen über Facets für die Ressource dar.
+Die **Permission** -Ressource stellt diese verschiedenen Formulare über Facets für die Ressource dar.
 
->**Hinweis:** OneDrive für Unternehmen und SharePoint-Dokumentbibliotheken keine die **InheritedFrom** -Eigenschaft zurückgegeben.
+>**Hinweis:** In OneDrive for Business-und SharePoint-Dokumentbibliotheken wird die **geben keine inheritedfrom** -Eigenschaft nicht zurückgegeben.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -64,16 +64,16 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | Die eindeutige ID der Berechtigung für alle Berechtigungen für das Element. Schreibgeschützt.
 | grantedTo           | [IdentitySet][]             | Bei Berechtigungen vom Typ „Benutzer“ detaillierte Informationen zu Benutzern und Anwendungen für diese Berechtigung. Schreibgeschützt.
-| grantedToIdentities | Auflistung ([IdentitySet][]) | Link-Typ-Berechtigungen die Details der Benutzer, denen Berechtigung erteilt wurde. Schreibgeschützt.
+| grantedToIdentities | Sammlung ([identityset][]) | Für Verknüpfungstyp-Berechtigungen die Details der Benutzer, denen die Berechtigung erteilt wurde. Schreibgeschützt.
 | invitation          | [SharingInvitation][]       | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.
 | inheritedFrom       | [ItemReference][]           | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.
 | Link                | [SharingLink][]             | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.
 | roles               | Collection(String)          | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
-| shareId             | String                      | Ein eindeutiges Token, das verwendet werden kann, um über die ** [Freigabe][]-API** auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
-| expirationDateTime  | DateTimeOffset              | Ein Format JJJJ-MM-TTThh von DateTimeOffset gibt den Ablaufzeitpunkt der Berechtigung. DateTime.MinValue gibt es für diese Berechtigung, kein Ablaufdatum festgelegt ist. Optional.
-| HasPassword         | Boolescher Wert                     | Dies gibt an, ob das Kennwort für diese Berechtigung festgelegt ist, diese nur als Antwort angezeigt wird. Optional und nur-Lese und für OneDrive Personal nur.
+| shareId             | String                      | Ein eindeutiges Token, das für den Zugriff auf dieses freigegebene Element über die **[Shares-API][]** verwendet werden kann. Schreibgeschützt.
+| expirationDateTime  | DateTimeOffset              | Ein Format von YYYY-MM-ddTHH: mm: ssZ von DateTimeOffset gibt die Ablaufzeit der Berechtigung an. DateTime. MinValue gibt an, dass für diese Berechtigung kein Ablauf Satz festgelegt ist. Optional.
+| hasPassword         | Boolesch                     | Dies gibt an, ob für diese Berechtigung ein Kennwort festgelegt ist, es wird nur als Antwort angezeigt. Optional und schreibgeschützt und nur für OneDrive Personal.
 
-### <a name="roles-enumeration-values"></a>Werte des Rollen-enumeration
+### <a name="roles-enumeration-values"></a>Roles-Enumerationswerte
 
 | Wert        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -84,24 +84,24 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 Die Permission-Ressource verwendet _Facets_ zum Bereitstellen von Informationen über die Art der Berechtigung, die von Ressource dargestellt wird.
 
-Anwendungsfreigabe Links enthalten ein eindeutiges Token erforderlich, um Zugriff auf das Element.
+Freigabelinks enthalten ein eindeutiges Token, das für den Zugriff auf das Element erforderlich ist.
 
 Berechtigungen mit einem [**invitation**][SharingInvitation]-Facet stellen Berechtigungen dar, die durch Einladung bestimmter Benutzer oder Gruppen zum Zugreifen auf die Datei hinzugefügt werden.
 
 ## <a name="sharing-links"></a>Freigabelinks
 
-Berechtigungen mit einem [**Link**][SharingLink] Facetten darstellen Freigabe von Links, die auf das Element erstellt.
-Dies sind die am häufigsten verwendeten Arten von Berechtigungen.
-Anwendungsfreigabe Links finden Sie eine eindeutige URL, die verwendet werden kann, um eine Datei oder einen Ordner zugreifen.
-Sie können Sie so gewähren Sie Zugriff auf verschiedene Arten festgelegt werden.
-Beispielsweise können [CreateLink][] API zum Erstellen einer Verknüpfung, die für alle Benutzer in Ihrer Organisation angemeldet funktioniert, oder Sie können eine Verknüpfung, die für jeden Benutzer funktioniert, ohne zur Anmeldung bei erstellen.
-Die [einladen][] API können Sie erstellen eine Verknüpfung, die nur für bestimmte Personen funktioniert, ob sie in Ihrem Unternehmen oder nicht sind.
+Berechtigungen mit einem [**link**][SharingLink]-Facet stellen Freigabelinks dar, die für das Element erstellt wurden.
+Dies sind die häufigsten Arten von Berechtigungen.
+Freigabelinks bieten eine eindeutige URL, die für den Zugriff auf eine Datei oder einen Ordner verwendet werden kann.
+Sie können so eingerichtet werden, dass Sie Zugriff auf verschiedene Arten gewähren.
+Sie können beispielsweise die createLink [][] -API verwenden, um einen Link zu erstellen, der für alle in Ihrer Organisation signierten Personen funktioniert, oder Sie können einen Link erstellen, der für alle Benutzer funktioniert, ohne sich anmelden zu müssen.
+Sie können die [invite][] -API verwenden, um einen Link zu erstellen, der nur für bestimmte Personen funktioniert, unabhängig davon, ob Sie sich in Ihrem Unternehmen befinden.
 
-Hier sind einige Beispiele für Links freigeben.
+Im folgenden finden Sie einige Beispiele für Freigabelinks.
 
-### <a name="view-link"></a>Anzeigelink
+### <a name="view-link"></a>Link anzeigen
 
-Diese Ansicht Verknüpfung bietet schreibgeschützten Zugriff für alle Benutzer mit den Link.
+Dieser Ansichts Link bietet schreibgeschützten Zugriff auf alle Benutzer, die über den Link verfügen.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -122,7 +122,7 @@ Diese Ansicht Verknüpfung bietet schreibgeschützten Zugriff für alle Benutzer
 
 ### <a name="edit-link"></a>Bearbeitungslink
 
-Dieser Bearbeitungslink bietet Lese- und Schreibzugriff für alle Benutzer in der Organisation mit den Link.
+Dieser Bearbeitungslink bietet Lese-und Schreibzugriff für alle Personen in der Organisation mit dem Link.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -141,9 +141,9 @@ Dieser Bearbeitungslink bietet Lese- und Schreibzugriff für alle Benutzer in de
 }
 ```
 
-### <a name="specific-people-link"></a>Verknüpfen bestimmte Personen
+### <a name="specific-people-link"></a>Link "spezifische Personen"
 
-Dieser Link enthält Lese- und Schreibzugriff auf bestimmte Personen in der `grantedToIdentities` Auflistung.
+Dieser Link bietet Lese-und Schreibzugriff auf die einzelnen Personen in `grantedToIdentities` der Auflistung.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -176,8 +176,8 @@ Dieser Link enthält Lese- und Schreibzugriff auf bestimmte Personen in der `gra
 
 ## <a name="sharing-invitations"></a>Freigeben von Einladungen
 
-Berechtigungen, die von der [einladen][] API gesendet möglicherweise zusätzliche Informationen in der [Einladung][SharingInvitation] Facetten.
-Wenn Sie eine Einladung an eine e-Mail-Adresse gesendet wurde, der ein bekanntes Konto übereinstimmt, kann die **GrantedTo** -Eigenschaft nicht festgelegt werden, bis die Einladung eingelöst, das beim ersten auftritt, der Benutzer klickt auf die Verknüpfung und sich anmeldet.
+Berechtigungen, die von der [invite][] -API gesendet werden, enthalten möglicherweise zusätzliche Informationen im Facet der [Einladungs][SharingInvitation] .
+Wenn eine Einladung an eine e-Mail-Adresse gesendet wurde, die nicht mit einem bekannten Konto übereinstimmt, wird die **erhält** -Eigenschaft möglicherweise erst festgelegt, wenn der Benutzer zum ersten Mal auf den Link klickt und sich anmeldet.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -222,19 +222,19 @@ Nachdem die Freigabeeinladung von einem Benutzer eingelöst wurde, enthält die 
 | Methode                                                   | REST-Pfad
 |:---------------------------------------------------------|:-----------------------
 | [Berechtigungen auflisten](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Link erstellen] [createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Einladen von Personen] [einladen]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Berechtigung abrufen](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [Link erstellen] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
+| [Personen einladen] [einladen]                                  | `POST /drive/items/{item-id}/invite`
+| [Aktualisieren](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
 [createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[Einladen]: ../api/driveitem-invite.md
+[einladen]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
-[Freigaben-API]: ../api/shares-get.md
+[Shares-API]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 

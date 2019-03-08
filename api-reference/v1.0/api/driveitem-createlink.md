@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Freigeben einer Datei mit einem Link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e80e27860216227e80780f637daedf0cc8b095b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923040"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480691"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Freigabelink für ein DriveItem erstellen
 
@@ -50,7 +50,7 @@ Bei der Anforderung sollte es sich um ein JSON-Objekt mit folgenden Eigenschafte
 |   Name    |  Typ  |                                 Beschreibung                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | Der Typ Freigabelink, der erstellt werden soll. Möglich sind `view`, `edit` oder `embed`.       |
-| **scope** | string | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
+| **scope** | Zeichenfolge | Optional. Der Bereich des zu erstellenden Links. Möglich sind `anonymous` oder `organization`. |
 
 
 ### <a name="link-types"></a>Linktypen
@@ -70,8 +70,8 @@ Wenn er **scope**-Parameter nicht angegeben ist, wird der Standardlinktyp für d
 
 | Wert          | Beschreibung
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Jeder Benutzer mit den Link hat Zugriff, ohne Anmeldung. Dies kann Personen außerhalb Ihrer Organisation enthalten. Unterstützung für anonyme Link kann von einem Administrator deaktiviert werden.
-| `organization` | Den Link können alle Benutzer in Ihrer Organisation (Mandant) signiert um Zugriff zu erhalten. Nur in OneDrive für Unternehmen und SharePoint verfügbar.
+| `anonymous`    | Jeder, der über die Verknüpfung verfügt, hat Zugriff, ohne sich anmelden zu müssen. Dies kann Personen außerhalb Ihrer Organisation sein. Die Unterstützung anonymer Links kann von einem Administrator deaktiviert werden.
+| `organization` | Jeder, der bei Ihrer Organisation (Mandant) angemeldet ist, kann über den Link Zugriff erhalten. Nur in OneDrive for Business und SharePoint verfügbar.
 
 
 ## <a name="response"></a>Antwort
@@ -210,7 +210,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 * Mit dieser Aktion erstellte Links laufen nicht ab, es sei denn, für die Organisation wird eine Standardablaufrichtlinie erzwungen.
 * Links sind in den Freigabeberechtigungen für das Element sichtbar und können von einem Besitzer des Elements entfernt werden.

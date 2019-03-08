@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Eine Datei oder einen Ordner aktualisieren
+title: Aktualisieren einer Datei oder eines Ordners
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a10caf65846418013712e89ade7a182726c80a8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514600"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480621"
 ---
 # <a name="update-driveitem-properties"></a>DriveItem-Eigenschaften aktualisieren
 

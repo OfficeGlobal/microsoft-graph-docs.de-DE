@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Zugriff auf freigegebene Elemente
 localization_priority: Normal
-ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522567"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480656"
 ---
 # <a name="accessing-shared-driveitems"></a>Zugriff auf freigegebene DriveItems
 
@@ -61,16 +61,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Name       | Typ   | Beschreibung                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Optional. Legen Sie auf eine der der `prefer` Werte unterhalb dokumentiert.  |
+| **Prefer** | string | Optional. Legen Sie einen der unten `prefer` aufgeführten Werte fest.  |
 
-### <a name="prefer-header-values"></a>Lieber-Headerwerte
+### <a name="prefer-header-values"></a>Headerwerte bevorzugen
 
 | Name                          | Beschreibung                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | Wenn die **ShareIdOrEncodedSharingUrl** eine Freigabe-Verknüpfung ist, erteilen den Aufrufer dauerhaften Zugriff auf das Element    |
-| redeemSharingLinkIfNecessary  | Identisch mit RedeemSharingLink, aber Zugriff ist nur für die Dauer dieser Anforderung erteilt werden garantiert |
+| redeemSharingLink             | Wenn es sich bei **shareIdOrEncodedSharingUrl** um einen Freigabe Link handelt, gewähren Sie dem Aufrufer dauerhaften Zugriff auf das Element.    |
+| redeemSharingLinkIfNecessary  | Identisch mit redeemSharingLink, aber der Zugriff wird nur für die Dauer dieser Anforderung gewährt. |
 
-RedeemSharingLink sollte als gleichwertig mit dem Anrufer zu navigieren, die Freigabe Link im Browser (und übernehmen Sie die Freigabe Bewegung), und RedeemSharingLinkIfNecessary für Szenarien ist, auf dem Zweck einfach vorgesehen ist auf des Links einsehen Metadaten.
+redeemSharingLink sollte als gleichwertig betrachtet werden, wenn der Anrufer zum Freigabe Link des Browsers navigiert (Accepting the Sharing Gesture), wohingegen redeemSharingLinkIfNecessary für Szenarien vorgesehen ist, in denen die Absicht einfach ist, auf den Link Metadaten.
 
 ## <a name="response"></a>Antwort
 

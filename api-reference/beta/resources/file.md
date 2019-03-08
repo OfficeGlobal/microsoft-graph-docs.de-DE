@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Datei
 localization_priority: Normal
-ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528417"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480408"
 ---
 # <a name="file-resource-type"></a>File-Ressourcentyp
 
@@ -17,7 +17,7 @@ ms.locfileid: "29528417"
 
 Die **File**-Ressource gruppiert dateibezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn ein DriveItem ein file-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine content-Beziehung auf, die den Bytedatenstrom der Datei enthält.
+Wenn ein [**DriveItem**](driveitem.md) ein **file**-Facet ungleich Null aufweist, stellt das Element eine Datei dar. Neben anderen Eigenschaften weisen Dateien eine **content**-Beziehung auf, die den Bytedatenstrom der Datei enthält.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

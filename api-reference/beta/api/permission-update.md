@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Freigabeberechtigungen ändern
+title: Ändern von Freigabeberechtigungen
 localization_priority: Normal
-ms.openlocfilehash: 0c12e42852d15dcd1cce7b18e8416ffc8d114299
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528879"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480726"
 ---
 # <a name="update-sharing-permission"></a>Freigabeberechtigung aktualisieren
 
@@ -56,7 +56,7 @@ Aus Gründen der Leistung sollten Sie vorhandene Werte, die nicht geändert wurd
 
 | Eigenschaft     | Typ   | Beschreibung                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | Ein Array von Berechtigungstypen. |
+| **roles**    | Zeichenfolge | Ein Array von Berechtigungstypen. |
 
 ## <a name="response"></a>Antwort
 
