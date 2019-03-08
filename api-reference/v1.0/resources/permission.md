@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Berechtigung
 localization_priority: Priority
-ms.openlocfilehash: 988a4d6dcd1b04b34c5d2d03aca404b0a570922f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834167"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482224"
 ---
-# <a name="permission-resource-type"></a>Persmission-Ressourcentypressourcentyp
+# <a name="permission-resource-type"></a>Permission-Ressourcentyp
 
 Die **Permission**-Ressource enthält Informationen über eine Berechtigung, die einer [DriveItem](driveitem.md)-Ressource erteilt wurde.
 
@@ -56,9 +56,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | invitation    | [SharingInvitation][]                     | Details zu verknüpften Einladungen zur Freigabe für diese Berechtigung. Schreibgeschützt.
 | inheritedFrom | [ItemReference](itemreference.md)         | Stellt einen Verweis auf das Vorgängerelement der aktuellen Berechtigung bereit, wenn es von einem Vorgängerelement geerbt wurde. Schreibgeschützt.
 | Link          | [SharingLink][]                           | Stellt Linkdetails der aktuellen Berechtigung bereit, wenn es sich um Berechtigungen vom Typ „Link“ handelt. Schreibgeschützt.
-| roles         | Collection of String
+| Rollen         | Collection of String
                       | Die Art der Berechtigung z, B. `read` Nachfolgend finden Sie die vollständige Liste von Rollen. Schreibgeschützt.
-| shareId       | String                                    | Ein eindeutiges Token, das verwendet werden kann, um über die [ **Freigabe**-API](../api/shares-get.md) auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
+| shareId       | String                                    | Ein eindeutiges Token, das verwendet werden kann, um über die [**Freigabe**-API](../api/shares-get.md) auf dieses freigegebene Element zuzugreifen. Schreibgeschützt.
 
 Die Permission-Ressource verwendet _Facets_ zum Bereitstellen von Informationen über die Art der Berechtigung, die von Ressource dargestellt wird.
 
@@ -79,8 +79,7 @@ Berechtigungen mit einem [**invitation**][SharingInvitation]-Facet stellen Berec
 | `sp.member` | Für SharePoint und OneDrive for Business stellt dies die Mitgliedsrolle dar.      |
 
 ## <a name="sharing-links"></a>Freigabelinks
-Der am häufigsten verwendete Berechtigungstyp sind Freigabelinks.
-Freigabelinks geben eine eindeutige URL an, die sowohl die freigegebene Ressource als auch ein Authentifizierungstoken enthält, das Zugriff auf die Ressource gewährt. Benutzer müssen sich nicht anmelden, um auf den Inhalt zuzugreifen, der mit einem Freigabelink freigegeben wird. Benutzer können einen Link freigeben, der schreibgeschützten Zugriff oder Schreibzugriff auf den Inhalt ermöglicht.
+Der am häufigsten verwendete Berechtigungstyp sind Freigabelinks. Freigabelinks geben eine eindeutige URL an, die sowohl die freigegebene Ressource als auch ein Authentifizierungstoken enthält, das Zugriff auf die Ressource gewährt. Benutzer müssen sich nicht anmelden, um auf den Inhalt zuzugreifen, der mit einem Freigabelink freigegeben wird. Benutzer können einen Link freigeben, der schreibgeschützten Zugriff oder Schreibzugriff auf den Inhalt ermöglicht.
 
 ### <a name="view-link"></a>Anzeigelink
 Ein Anzeigelink bietet schreibgeschützten Zugriff auf ein Element.
@@ -117,8 +116,7 @@ Ein Bearbeitungslink bietet Lese- und Schreibzugriff auf ein Element.
 ```
 
 ### <a name="sharing-invitation"></a>Freigabeeinladung
-Außer durch die Erstellung von Freigabelinks können Benutzer auch durch eine E-Mail-Adresse eingeladen werden.
-In diesem Szenario erstellt die Berechtigung eine Einladung, die an die E-Mail-Adresse des Benutzers gesendet wird.
+Außer durch die Erstellung von Freigabelinks können Benutzer auch durch eine E-Mail-Adresse eingeladen werden. In diesem Szenario erstellt die Berechtigung eine Einladung, die an die E-Mail-Adresse des Benutzers gesendet wird.
 
 #### <a name="invitation-to-an-email-address"></a>Einladung an eine E-Mail-Adresse
 Wenn die Berechtigung über eine E-Mail-Adresse an einen Empfänger gesendet wurde, der nicht über ein entsprechendes Konto verfügt, kann die Eigenschaft **grantedTo** erst dann festgelegt werden, nachdem die Einladung eingelöst wurde; dies geschieht, wenn ein Benutzer das erste Mal auf den Link klickt und sich anmeldet.

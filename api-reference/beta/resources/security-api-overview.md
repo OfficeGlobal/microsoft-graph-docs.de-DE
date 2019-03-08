@@ -4,12 +4,12 @@ description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befi
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: a50a7a29f377bbb76c6dee8d8e58a07d258156b0
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 86f911b787c68062ce2fad2e5e858bac2acc338a
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364570"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481433"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Verwenden der Sicherheits-API von Microsoft Graph
 
@@ -32,17 +32,17 @@ Warnungen sind potenzielle Sicherheitsprobleme im Mandanten des Kunden, die von 
 
 Warnungen der folgenden Anbieter sind über die Microsoft Graph-Sicherheits-API verfügbar. Die Unterstützung für GET-Warnungen, PATCH-Warnungen (Updates sind über die Microsoft Graph-Sicherheits-API verfügbar, werden aber möglicherweise in der Verwaltungsumgebung des Anbieters nicht angezeigt) und das Abonnieren von Warnungen ("Subscribe" über Webhooks) wird in der folgenden Tabelle aufgeführt.
 
-| Sicherheitsanbieter | GET-Warnung| PATCH-Warnung| Warnung abonnieren|
+| Sicherheitsanbieter | <p align="center">GET-Warnung</p>| <p align="center">PATCH-Warnung</p>| <p align="center">Warnung abonnieren</p>|
 |:------------------|:---------|:-----------|:------------------|
-|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
-| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
-|[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|Office 365 </br> <li> [Standard](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud-App-Sicherheit](https://docs.microsoft.com/de-DE/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Vorschau)**| &#x2713; | &#x2713; | &#x2713; |
-|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(Vorschau)**| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Office 365 <ul><li> [Standard](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud-App-Sicherheit](https://docs.microsoft.com/de-DE/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Vorschau)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(Vorschau)**| <p align="center">&#x2713;</p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Dateiproblem](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Hinweis:** In das Microsoft Graph-Sicherheitsökosystem werden ständige neue Anbieter eingegliedert. Um neue Anbieter anzufordern oder erweiterte Unterstützung von bestehenden Anbietern zu erhalten, [melden Sie ein Problem im GitHub-Repository der Microsoft Graph-Sicherheits-API](https://github.com/microsoftgraph/security-api-solutions/issues/new) an.
 
 ## <a name="threat-indicators-preview"></a>Bedrohungsindikatoren (Vorschau)

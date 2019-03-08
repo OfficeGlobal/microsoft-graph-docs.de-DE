@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Laufwerk
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3b9744d8b652f0374c71f5304c326ba862c288a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929130"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480607"
 ---
 # <a name="drive-resource-type"></a>Drive-Ressourcentyp
 
@@ -82,7 +82,7 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 | owner                | [identitySet](identityset.md) | Optional.  Das Benutzerkonto, das das Laufwerk besitzt. Schreibgeschützt.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional.  Informationen zum Speicherkontingent des Laufwerks. Schreibgeschützt.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Gibt Bezeichner zurück, die für SharePoint REST-Kompatibilität nützlich sind. Schreibgeschützt.                                                                                                                                                         |
-| System-               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
+| System               | [systemFacet][]               | Falls vorhanden, gibt an, dass es sich um ein vom System verwaltetes Laufwerk handelt. Schreibgeschützt.
 | webUrl               | String (URL)                  | URL, über die die Ressource im Browser angezeigt werden kann. Schreibgeschützt.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -93,10 +93,10 @@ Die **drive**-Ressource wird von [ **baseItem** ](baseitem.md) abgeleitet und er
 
 | Beziehung | Typ                                 | Beschreibung
 |:-------------|:-------------------------------------|:-----------------------
-| Elemente        | [DriveItem](driveitem.md) -Auflistung | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
+| items        | [DriveItem](driveitem.md)-Sammlung | Alle im Laufwerk enthaltenen Elemente. Schreibgeschützt. Lässt Nullwerte zu.
 | root         | [DriveItem](driveitem.md)            | Der Stammordner des Laufwerks. Schreibgeschützt.
-| Sonderfall      | [DriveItem](driveitem.md) -Auflistung | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Lässt Nullwerte zu.
-| Liste         | [List](list.md)                      | Für Laufwerke in SharePoint-Liste der zugrunde liegenden Dokumentbibliothek. Schreibgeschützt. Lässt Nullwerte zu.
+| Sonderfall      | [DriveItem](driveitem.md)-Sammlung | Sammlung gemeinsamer Ordner, die  in OneDrive zur Verfügung stehen. Schreibgeschützt. Nullwerte zulassend.
+| Liste         | [List](list.md)                      | Für Laufwerke in SharePoint die zugrunde liegende Dokumentbibliothek-Liste. Schreibgeschützt. Lässt Nullwerte zu.
 
 ## <a name="methods"></a>Methoden
 

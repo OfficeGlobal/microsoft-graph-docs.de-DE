@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Nach Dateien suchen
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976905"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481020"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Suchen nach DriveItems innerhalb eines Laufwerks
 
@@ -41,7 +41,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 
-Diese Methode unterstützt die `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` [OData-Abfrageparameter](/graph/query-parameters) zur Anpassung der Antwort.
+Diese Methode unterstützt die [OData-Abfrageparameter](/graph/query-parameters) von `$expand`, `$select`, `$skipToken`, `$top` und `$orderby` zur Anpassung der Antwort.
 
 ## <a name="function-parameters"></a>Funktionsparameter
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Laufwerk abrufen
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: aaa670111b61fe0ecd1c111e5fd3be650d115435
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 78d31fb584d345a401fddefac37399093c2d084b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978676"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480446"
 ---
 # <a name="get-drive"></a>Laufwerk abrufen
 
@@ -30,7 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 
 ## <a name="get-current-users-onedrive"></a>Abrufen des OneDrive des aktuellen Benutzers
 
-Das Über den `me`-Singleton kann auf das Laufwerk des angemeldeten Benutzers (bei der Verwendung einer delegierten Authentifizierung) zugegriffen werden.
+Über den `me`-Singleton kann auf das Laufwerk des angemeldeten Benutzers (bei der Verwendung einer delegierten Authentifizierung) zugegriffen werden.
 
 Wenn das OneDrive eines Benutzers nicht bereitgestellt ist, der Benutzer jedoch über eine Lizenz für OneDrive verfügt, wird über diese Anforderung das Laufwerk des Benutzers automatisch bereitgestellt, wenn eine delegierte Authentifizierung verwendet wird.
 
@@ -64,7 +64,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Dient zum Abrufen der Dokumentbibliothek, die einer Gruppe zugeordnet ist.
 
-Für den Zugriff auf die Standarddokumentbibliothek einer **Gruppe** fordert Ihre App die drive-Beziehung in der Gruppe an.
+Für den Zugriff auf die Standarddokumentbibliothek einer Gruppe fordert Ihre App die **drive**-Beziehung in der Gruppe an.
 
 ### <a name="http-request"></a>HTTP-Anforderung
 
@@ -120,7 +120,7 @@ Diese Methode unterstützt die [$select-Abfrageparameter] [ odata-query-paramete
 
 ## <a name="response"></a>Antwort
 
-Diese Methoden gebeneine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.
+Diese Methoden geben eine [Drive-Ressource][drive-resource] für das entsprechende Laufwerk im Antworttext zurück.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 

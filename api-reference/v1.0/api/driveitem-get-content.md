@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Eine Datei herunterladen
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 963d9cb2b80fa51f6b4b09d1316505672d876965
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927961"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481608"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Inhalte von DriveItem herunterladen
 
@@ -43,7 +43,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 | Name          | Wert  | Beschreibung                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | Zeichenfolge | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
+| if-none-match | String | Wenn dieser Anforderungsheader enthalten ist und das angegebene eTag (oder cTag) mit dem aktuellen Tag in der Datei übereinstimmt, wird die Antwort `HTTP 304 Not Modified` zurückgegeben. |
 
 ## <a name="example"></a>Beispiel
 
@@ -61,7 +61,7 @@ GET /me/drive/items/{item-id}/content
 Gibt eine `302 Found`-Antwort zurück, mit der zu einer zuvor authentifizierten Download-URL umgeleitet wird. Dies ist dieselbe URL, die `@microsoft.graph.downloadUrl`-Eigenschaft für DriveItem verfügbar ist.
 
 Zum Herunterladen des Dateiinhalts muss die Anwendung den `Location`-Header in der Antwort aufrufen.
-Viele HTTP-Client-Bibliotheken werden automatisch die 302-Umleitung und beginnt mit dem Herunterladen der Datei unmittelbar folgen.
+Viele HTTP-Clientbibliotheken folgen automatisch der 302-Umleitung und beginnen sofort mit dem Download der Datei.
 
 Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header für den Download.
 

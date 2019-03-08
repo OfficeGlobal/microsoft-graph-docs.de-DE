@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3823c53bffce783714a78dfc910299e9ea976d77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921395"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481615"
 ---
 # <a name="listitem-resource"></a>ListItem-Ressource
 
@@ -33,7 +33,7 @@ Alle Beispiele unten beziehen sich auf eine **[Liste][]**, z. B.: `https://graph
 
 [Get]: ../api/listitem-get.md
 [Create]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[Löschen]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -103,7 +103,7 @@ Die folgenden Eigenschaften werden von  **[baseItem][]** geerbt.
 |:------------------|:-------------------------------|:-------------------------------
 | driveItem         | [driveItem][]                  | Für Dokumentbibliotheken macht die **DriveItem** Beziehung das ListItem als ** [DriveItem][]** verfügbar
 | fields            | [fieldValueSet][]              | Die Werte der für dieses Listenelement festgelegten Spalte.
-| Versionen          | [ListItemVersion][] -Auflistung | Die Liste der vorherigen Versionen des Listenelements.
+| Versionen          | [listItemVersion][]-Sammlung | Die Liste der früheren Versionen des Listenelements.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Wiederaufnehmbarer Dateien-Upload
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 21a6ed64e22e6a8fa7460418de4461adf36e0c4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942479"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482238"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Hochladen großer Dateien mit einer Uploadsitzung
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Anforderungstext
 
 Es ist kein Anforderungstexts erforderlich.
-Sie können jedoch angeben einer `item` -Eigenschaft im Textkörper Anforderung zusätzliche Daten über die hochgeladene Datei bereitstellen.
+Allerdings können Sie eine `item`-Eigenschaft im Anforderungstext definieren, um zusätzliche Daten zu der hochzuladenden Datei anzugeben.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
@@ -77,7 +77,7 @@ Beispielsweise können Sie im Anforderungstext die Eigenschaft „conflictBehavi
 
 | Name       | Wert | Beschreibung                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Wenn dieser Anforderungsheader enthalten ist und das angegebene Etag (oder CTag) nicht mit dem aktuellen Etag des Elements übereinstimmt, wird der Fehler `412 Precondition Failed` zurückgegeben. |
+| *if-match* | etag  | Wenn dieser Anforderungsheader enthalten ist und das angegebene ETag (oder CTag) nicht mit dem aktuellen ETag des Elements übereinstimmt, wird der Fehler `412 Precondition Failed` zurückgegeben. |
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -85,7 +85,7 @@ Beispielsweise können Sie im Anforderungstext die Eigenschaft „conflictBehavi
 |:---------------------|:-------------------|:---------------------------------
 | description          | Zeichenfolge             | Stellt eine für den Benutzer sichtbare Beschreibung des Elements bereit. Lese-/Schreibzugriff. Nur auf OneDrive Personal
 | fileSystemInfo       | [fileSystemInfo][] | Informationen zum Dateisystem des Clients. Lese-/Schreibzugriff.
-| name                 | Zeichenfolge             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
+| name                 | String             | Der Name des Elements (Dateiname und Erweiterung). Lese-/Schreibzugriff.
 
 ### <a name="request"></a>Anforderung
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 Zum Hochladen der Datei oder eines Teils der Datei sendet die App eine PUT-Anfrage an den Wert **uploadUrl**, der ihr in der **createUploadSession**-Antwort übermittelt wurde.
 Sie können die gesamte Datei hochladen oder die Datei in Fragmente aufteilen, vorausgesetzt, die maximale Bytezahl pro Anforderung bleibt unter 60 MiB.
 
-Die Fragmente der Datei müssen in Reihenfolge nacheinander hochgeladen werden.
+Die Dateifragmente müssen sequenziell in der richtigen Reihenfolge hochgeladen werden.
 Werden die Fragmente in der falschen Reihenfolge hochgeladen, tritt ein Fehler auf.
 
 **Hinweis:** Wenn die App eine Datei in mehrere Fragmente aufteilt, **MUSS** die Größe jedes Fragments ein Vielfaches von 320 KiB (327.680 Byte) sein. Bei Fragmentgrößen, die sich nicht ohne Rest durch 320 KiB teilen lassen, treten beim Übergeben einiger Dateien Fehler auf.

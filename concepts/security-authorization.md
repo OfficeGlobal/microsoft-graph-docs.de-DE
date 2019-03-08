@@ -4,12 +4,12 @@ description: Sicherheitsdaten, auf die über die Sicherheits-API in Microsoft Gr
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947085"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480425"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorisierung und die Sicherheits-API in Microsoft Graph
 
@@ -78,7 +78,15 @@ So registrieren Sie Ihre Anwendung
 3. Wählen Sie auf der Registrierungsseite für die neue Anwendung **Plattform hinzufügen** > **Web**. Geben Sie im Feld **Umleitungs-URL** die Umleitungs-URL ein.
 4. Wählen Sie im Abschnitt **Microsoft Graph-Berechtigungen** unter **Delegierte Berechtigungen** **Hinzufügen** aus. Wählen Sie im Dialogfeld die erforderlichen Berechtigungen. Eine Liste von Berechtigungen finden Sie unter [Sicherheitsberechtigungen](permissions-reference.md#security-permissions).
 
-    >Die Sicherheits-API in Microsoft Graph erfordert den Bereich SecurityEvents.Read.All für GET-Abfragen und den Bereich SecurityEvents.ReadWrite.All für PATCH/POST-Abfragen.
+    >**Hinweis:** Die Microsoft Graph-Sicherheits-API erfordert den Bereich "*.Read.All" für GET-Abfragen und den Bereich "*.ReadWrite.All" für PATCH/POST/DELETE-Abfragen.
+
+    |Berechtigung | Entität | Unterstützte Anforderungen |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (Vorschau) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (Vorschau) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (Vorschau)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (Vorschau) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (Vorschau)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (Vorschau) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (Vorschau) | GET, POST, PATCH, DELETE|
 
 5. Wählen Sie **Speichern** aus.
 
