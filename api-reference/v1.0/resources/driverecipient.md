@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bd1b4466a361af031b9c8e11be63acb46044351a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983380"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480327"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient-Ressourcentyp
 
@@ -35,8 +35,8 @@ Die Empfängerressource besitzt die folgenden Eigenschaften.
 
 | Eigenschaftenname | Typ   | Beschreibung                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| E-Mail         | String | Die E-Mail-Adresse des Empfängers, wenn der Empfänger eine zugehörige E-Mail-Adresse aufweist.                  |
-| Alias         | String | Der Alias des Domänenobjekts, für Fälle, in denen keine E-Mail-Adresse verfügbar ist (z. B. bei Sicherheitsgruppen). |
+| E-Mail         | Zeichenfolge | Die E-Mail-Adresse des Empfängers, wenn der Empfänger eine zugehörige E-Mail-Adresse aufweist.                  |
+| Alias         | Zeichenfolge | Der Alias des Domänenobjekts, für Fälle, in denen keine E-Mail-Adresse verfügbar ist (z. B. bei Sicherheitsgruppen). |
 | objectId      | String | Der eindeutige Bezeichner für den Empfänger im Verzeichnis.                                               |
 
 ## <a name="remarks"></a>Bemerkungen

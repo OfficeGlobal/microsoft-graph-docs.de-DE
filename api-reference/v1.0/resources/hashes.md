@@ -1,14 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
-ms.openlocfilehash: 3ed0023e80457598bd80b068156b60a5ace4984b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: abe6fc277f94eb1f66f50f25b894bc41fd038a9b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830485"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480208"
 ---
 # <a name="hashes-resource-type"></a>Hash-Ressourcentyp
 
@@ -38,8 +38,8 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 | Eigenschaft         | Typ   | Beschreibung                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1-Hash für den Inhalt der Datei (sofern zutreffend). Schreibgeschützt. |
-| **crc32Hash**    | String | Der Wert der CRC32 der Datei in little-Endian (sofern verfügbar). Schreibgeschützt.            |
+| **sha1Hash**     | Zeichenfolge | SHA1-Hash für den Inhalt der Datei (sofern zutreffend). Schreibgeschützt. |
+| **crc32Hash**    | Zeichenfolge | Der CRC32-Wert der Datei in Little Endian (falls verfügbar). Schreibgeschützt.            |
 | **quickXorHash** | String | Ein proprietärer Hash der Datei, die verwendet werden kann, um festzustellen, ob sich der Inhalt der Datei (sofern zutreffend) geändert hat. Schreibgeschützt. |
 
 **Hinweis:** In einigen Fällen stehen möglicherweise keine Hash-Werte zur Verfügung. Wenn dies der Fall ist, werden die Hash-Werte für ein Element nach dem Download des Elements aktualisiert.

@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Kontingent
 localization_priority: Normal
-ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525486"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480306"
 ---
-# <a name="quota-resource-type"></a>Quota-Ressourcentyp
+# <a name="quota-resource-type"></a>Kontingent Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die **quota**-Ressource enthält Details zu Leerzeichenbeschränkungen auf einer[Laufwerk](drive.md)-Ressource.
+Die **Quota** -Ressource enthält Details zu platzeinschränkungen für eine [Drive](drive.md) -Ressource.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -49,9 +49,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 | verbleibende     | Int64  | Gesamter verbleibender Speicherplatz vor dem Erreichen des Speicherkontingents in Byte. Schreibgeschützt. |
 | gelöscht       | Int64  | Gesamte Dateien genutzter Speicherplatz im Papierkorb in Byte. Schreibgeschützt.      |
 | state         | string | Wert der Enumeration, die den Zustand des Speicherplatzes angibt. Schreibgeschützt. |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Informationen über das Laufwerk Speicherung Kontingent Pläne. Nur in der persönlichen OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Informationen zu den Speicherkontingent Plänen des Laufwerks. Nur in persönlichen OneDrive.|
 
-### <a name="state-enumeration-values"></a>State Enumerationswerte
+### <a name="state-enumeration-values"></a>Status-Enumerationswerte
 
 | Wert      | Beschreibung                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

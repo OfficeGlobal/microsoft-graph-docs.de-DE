@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Synchronisieren der Inhalte eines Laufwerks
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735586"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480488"
 ---
 # <a name="track-changes-for-a-drive"></a>Laufwerksänderungen nachverfolgen
 
@@ -66,7 +66,7 @@ Zusätzlich zu der Sammlung von DriveItems enthält die Antwort außerdem eine d
 
 | Name                 | Wert  | Beschreibung                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | Eine URL zum Abrufen der nächsten verfügbaren Seite von Änderungen, sofern weitere Änderungen im aktuellen Satz vorhanden sind                                        |
+| **@odata.nextLink**  | URL    | Eine URL zum Abrufen der nächsten verfügbaren Seite von Änderungen, sofern weitere Änderungen im aktuellen Satz vorhanden sind                                        |
 | **@odata.deltaLink** | url    | Eine URL, die anstelle eines **@odata.nextLink** zurückgegeben wird, sobald alle aktuellen Änderungen zurückgegeben wurden. Sie wird verwendet, um zu einem späteren Zeitpunkt den nächsten Satz von Änderungen zu lesen.  |
 
 ## <a name="example-initial-request"></a>Beispiel (ursprüngliche Anforderung)
@@ -208,22 +208,22 @@ Content-type: application/json
 * Die Eigenschaft `parentReference` von Elementen enthält keinen Wert für **path**. Der Grund: Wenn ein Ordner umbenannt wird, gibt **delta** keine Nachfolger dieses Ordners zurück. **Bei Verwendung von „delta“ sollten Sie Elemente immer anhand ihrer ID nachverfolgen.**
 * In OneDrive for Business und SharePoint wird `delta` nur für den Ordner `root` unterstützt, für andere Ordner auf einem Laufwerk jedoch nicht.
 
-* Delta werden nicht einige Eigenschaften DriveItem, je nach den Betrieb und das Diensttyp Suchanfrage wie in den folgenden Tabellen dargestellt.
+* Mit der Delta-Abfrage werden je nach Vorgangs- und Diensttyp einige DriveItem-Eigenschaften nicht zurückgegeben (siehe folgende Tabellen).
 
     **OneDrive for Business**
     
-    | Vorgangstyp | Eigenschaften von Delta Abfrage ausgelassen |
+    | Typ des Vorgangs | Eigenschaften, die von der Delta-Abfrage ausgelassen werden |
     |---------|----------|
-    | Erstellen/Ändern | `ctag`, `lastModifiedBy` |
+    | Create/Modify | `ctag`, `lastModifiedBy` |
     | Löschen | `ctag`, `lastModifiedBy`, `name` |
 
 
     **OneDrive (Consumer)**
     
-    | Vorgangstyp | Eigenschaften von Delta Abfrage ausgelassen |
+    | Typ des Vorgangs | Eigenschaften, die von der Delta-Abfrage ausgelassen werden |
     |---------|----------|
-    | Erstellen/Ändern | N/V |
-    | Löschen | `ctag`, `size` |
+    | Create/Modify | n/v |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>Fehlerantworten
 

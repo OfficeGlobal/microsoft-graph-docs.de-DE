@@ -1,19 +1,19 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: f51f08ad174c661df14b688dc111d9447708523c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846697"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480544"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation-Ressourcentyp
 
-Die Ressource **SharingInvitation** gruppiert Einladung-bezogene Datenelemente in eine einzelne Struktur.
+Die **SharingInvitation** -Ressource gruppiert Einladungs bezogene Datenelemente in einer einzelnen Struktur.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -41,7 +41,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:----------------|:------------------------------------------
 | E-Mail          | String          | Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.
 | invitedBy      | [identitySet][] | Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.
-| signInRequired | Boolescher Wert         | Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.
+| signInRequired | Boolean         | Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.
 
 ## <a name="remarks"></a>Bemerkungen
 

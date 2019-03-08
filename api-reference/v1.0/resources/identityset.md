@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: b0ee801945a4b1d202b55d997d8cfc87a8dadff5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 369068dd48b9173032542303e3fd9831d25e6e9e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829155"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480292"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet-Ressourcentyp
 

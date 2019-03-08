@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c21c891981106faa4b631bb2713913bfa8ed0713
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f0ecdbb498ee75133ec9499027f7cfdc6191327
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521453"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480418"
 ---
-# <a name="sharinglink-resource-type"></a>SharingLink-Ressourcentyp
+# <a name="sharinglink-resource-type"></a>sharingLink-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die **SharingLink**-Ressource gruppiert linkbezogene Datenelemente in einer einzelnen Struktur.
+Die **sharingLink** -Ressource gruppiert Link bezogene Datenelemente in einer einzelnen Struktur.
 
-Wenn eine [**Permission**](permission.md)-Ressource ein **sharingLink**-Facet ungleich Null aufweist, stellt die Berechtigung einen Freigabelink dar (im Gegensatz zu Berechtigungen, die einer Person oder Gruppe erteilten werden).
+Wenn eine [**Permission**](permission.md) -Ressource ein **sharingLink** -Facet ungleich NULL aufweist, stellt die Berechtigung einen Freigabe Link dar (im Gegensatz zu Berechtigungen, die einer Person oder Gruppe erteilt wurden).
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -45,17 +45,17 @@ Es folgt eine JSON-Darstellung der Ressource.
 | Eigenschaft       | Typ          | Beschreibung
 |:---------------|:--------------|:-------------------------------------
 | application    | [Identität][]  | Die App, der der Link zugeordnet ist.
-| type           | String        | Der Typ des erstellten Links.
-| scope          | String        | Der Bereich des Links, der durch diese Berechtigung dargestellt wird. Der Wert `anonymous` gibt an, dass der Link von jedem Benutzer verwendet werden kann. `organization` gibt an, dass der Link von Benutzern verwendet werden kann, die bei dem gleichen Mandanten angemeldet sind.
-| preventsDownload | Boolescher Wert       | Wenn True, klicken Sie dann der Benutzer kann nur dieser Link zum Anzeigen des Elements im Web verwenden, und nicht verwenden, um den Inhalt des Artikels herunterladen. Nur für OneDrive für Unternehmen und SharePoint.
+| type           | Zeichenfolge        | Der Typ des erstellten Links.
+| scope          | Zeichenfolge        | Der Bereich des Links, der durch diese Berechtigung dargestellt wird. Der Wert `anonymous` gibt an, dass der Link von jedem Benutzer verwendet werden kann. `organization` gibt an, dass der Link von Benutzern verwendet werden kann, die bei dem gleichen Mandanten angemeldet sind.
+| preventsDownload | Boolesch       | Wenn true, kann der Benutzer diesen Link nur verwenden, um das Element im Web anzuzeigen, und kann es nicht verwenden, um den Inhalt des Elements herunterzuladen. Nur für OneDrive for Business und SharePoint.
 | webHtml        | Zeichenfolge        | Bei `embed` Links enthält diese Eigenschaft den HTML-Code für ein `<iframe>`-Element, das das Element in eine Webseite einbettet.
 | webUrl         | String        | Eine URL, mit der das Element im Browser auf der OneDrive-Website geöffnet wird.
 
-[Identity]: identity.md
+[Identität]: identity.md
 
-### <a name="type-options"></a>Typ-Optionen
+### <a name="type-options"></a>Typoptionen
 
-Die folgende Tabelle zeigt die möglichen Werte für die **Type** -Eigenschaft.
+In der folgenden Tabelle sind die möglichen Werte für die **Type** -Eigenschaft definiert.
 
 | Wert    | Funktion     | Beschreibung
 |:---------|:---------|:---------------------------------------------------------
@@ -65,14 +65,14 @@ Die folgende Tabelle zeigt die möglichen Werte für die **Type** -Eigenschaft.
 
 ### <a name="scope-options"></a>Bereichsoptionen
 
-Die folgende Tabelle zeigt die möglichen Werte für die Eigenschaft **Bereich** .
+In der folgenden Tabelle sind die möglichen Werte für die **Scope** -Eigenschaft definiert.
 
 | Wert            | Beschreibung
 |:-----------------|:------------------------------------------------------------
-| `anonymous`      | Jeder Benutzer mit den Link hat Zugriff, ohne Anmeldung. Dies kann Personen außerhalb Ihrer Organisation enthalten.
-| `organization`   | Den Link können alle Benutzer in Ihrer Organisation (Mandant) signiert um Zugriff zu erhalten. Nur in OneDrive für Unternehmen und SharePoint verfügbar.
-| `existingAccess` | Nur Personen, die bereits Zugriff auf das Element mit anderen Mitteln gewährt wurde, können das Element mit diesem Link zugreifen. Nur in OneDrive für Unternehmen und SharePoint verfügbar.
-| `users`          | Der Link gewährt Zugriff nur für eine bestimmte Liste von Personen. Nur in OneDrive für Unternehmen und SharePoint verfügbar.
+| `anonymous`      | Jeder, der über die Verknüpfung verfügt, hat Zugriff, ohne sich anmelden zu müssen. Dies kann Personen außerhalb Ihrer Organisation sein.
+| `organization`   | Jeder, der bei Ihrer Organisation (Mandant) angemeldet ist, kann über den Link Zugriff erhalten. Nur in OneDrive for Business und SharePoint verfügbar.
+| `existingAccess` | Nur Personen, denen bereits auf andere Weise Zugriff auf das Element gewährt wurde, können über diesen Link auf das Element zugreifen. Nur in OneDrive for Business und SharePoint verfügbar.
+| `users`          | Der Link gewährt Zugriff nur auf eine bestimmte Personenliste. Nur in OneDrive for Business und SharePoint verfügbar.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
