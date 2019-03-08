@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Foto
 localization_priority: Normal
-ms.openlocfilehash: 91b893fe3d6c78e3c3e16cbc41c7d7543b08f8d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527626"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480915"
 ---
-# <a name="photo-resource-type"></a><span data-ttu-id="b24cc-102">Photo-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="b24cc-102">Photo resource type</span></span>
+# <a name="photo-resource-type"></a><span data-ttu-id="6b435-102">Photo-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6b435-102">Photo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b24cc-103">Die **photo**-Ressource stellt Foto- und Kameraeigenschaften auf einem [DriveItem](driveitem.md) bereit, z. B. EXIF-Metadaten.</span><span class="sxs-lookup"><span data-stu-id="b24cc-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+<span data-ttu-id="6b435-103">Die **photo**-Ressource stellt Foto- und Kameraeigenschaften auf einem [DriveItem](driveitem.md) bereit, z. B. EXIF-Metadaten.</span><span class="sxs-lookup"><span data-stu-id="6b435-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b24cc-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="b24cc-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6b435-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6b435-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,23 +37,23 @@ ms.locfileid: "29527626"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b24cc-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b24cc-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6b435-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6b435-105">Properties</span></span>
 
-| <span data-ttu-id="b24cc-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b24cc-106">Property</span></span>                | <span data-ttu-id="b24cc-107">Typ</span><span class="sxs-lookup"><span data-stu-id="b24cc-107">Type</span></span>           | <span data-ttu-id="b24cc-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b24cc-108">Description</span></span>
+| <span data-ttu-id="6b435-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6b435-106">Property</span></span>                | <span data-ttu-id="6b435-107">Typ</span><span class="sxs-lookup"><span data-stu-id="6b435-107">Type</span></span>           | <span data-ttu-id="6b435-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6b435-108">Description</span></span>
 |:------------------------|:---------------|:----------------------------------
-| <span data-ttu-id="b24cc-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="b24cc-109">**takenDateTime**</span></span>       | <span data-ttu-id="b24cc-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b24cc-110">DateTimeOffset</span></span> | <span data-ttu-id="b24cc-p101">Stellt das Datum und die Uhrzeit für die Aufnahme des Fotos dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p101">Represents the date and time the photo was taken. Read-only.</span></span>
-| <span data-ttu-id="b24cc-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="b24cc-113">**cameraMake**</span></span>          | <span data-ttu-id="b24cc-114">String</span><span class="sxs-lookup"><span data-stu-id="b24cc-114">String</span></span>         | <span data-ttu-id="b24cc-p102">Kamerahersteller Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p102">Camera manufacturer. Read-only.</span></span>
-| <span data-ttu-id="b24cc-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="b24cc-117">**cameraModel**</span></span>         | <span data-ttu-id="b24cc-118">String</span><span class="sxs-lookup"><span data-stu-id="b24cc-118">String</span></span>         | <span data-ttu-id="b24cc-p103">Kameramodell. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p103">Camera model. Read-only.</span></span>
-| <span data-ttu-id="b24cc-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="b24cc-121">**fNumber**</span></span>             | <span data-ttu-id="b24cc-122">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="b24cc-122">Double</span></span>         | <span data-ttu-id="b24cc-p104">Die Blendenzahl der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p104">The F-stop value from the camera. Read-only.</span></span>
-| <span data-ttu-id="b24cc-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="b24cc-125">**exposureDenominator**</span></span> | <span data-ttu-id="b24cc-126">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="b24cc-126">Double</span></span>         | <span data-ttu-id="b24cc-p105">Der Nenner der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b24cc-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="b24cc-129">**exposureNumerator**</span></span>   | <span data-ttu-id="b24cc-130">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="b24cc-130">Double</span></span>         | <span data-ttu-id="b24cc-p106">Der Zähler der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b24cc-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="b24cc-133">**focalLength**</span></span>         | <span data-ttu-id="b24cc-134">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="b24cc-134">Double</span></span>         | <span data-ttu-id="b24cc-p107">Die Brennweite der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p107">The focal length from the camera. Read-only.</span></span>
-| <span data-ttu-id="b24cc-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="b24cc-137">**iso**</span></span>                 | <span data-ttu-id="b24cc-138">Int64</span><span class="sxs-lookup"><span data-stu-id="b24cc-138">Int64</span></span>          | <span data-ttu-id="b24cc-p108">Der ISO-Wert der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b24cc-p108">The ISO value from the camera. Read-only.</span></span>
+| <span data-ttu-id="6b435-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="6b435-109">**takenDateTime**</span></span>       | <span data-ttu-id="6b435-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6b435-110">DateTimeOffset</span></span> | <span data-ttu-id="6b435-p101">Stellt das Datum und die Uhrzeit für die Aufnahme des Fotos dar. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p101">Represents the date and time the photo was taken. Read-only.</span></span>
+| <span data-ttu-id="6b435-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="6b435-113">**cameraMake**</span></span>          | <span data-ttu-id="6b435-114">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6b435-114">String</span></span>         | <span data-ttu-id="6b435-p102">Kamerahersteller Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p102">Camera manufacturer. Read-only.</span></span>
+| <span data-ttu-id="6b435-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="6b435-117">**cameraModel**</span></span>         | <span data-ttu-id="6b435-118">String</span><span class="sxs-lookup"><span data-stu-id="6b435-118">String</span></span>         | <span data-ttu-id="6b435-p103">Kameramodell. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p103">Camera model. Read-only.</span></span>
+| <span data-ttu-id="6b435-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="6b435-121">**fNumber**</span></span>             | <span data-ttu-id="6b435-122">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="6b435-122">Double</span></span>         | <span data-ttu-id="6b435-p104">Die Blendenzahl der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p104">The F-stop value from the camera. Read-only.</span></span>
+| <span data-ttu-id="6b435-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="6b435-125">**exposureDenominator**</span></span> | <span data-ttu-id="6b435-126">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="6b435-126">Double</span></span>         | <span data-ttu-id="6b435-p105">Der Nenner der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="6b435-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="6b435-129">**exposureNumerator**</span></span>   | <span data-ttu-id="6b435-130">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="6b435-130">Double</span></span>         | <span data-ttu-id="6b435-p106">Der Zähler der Bruchzahl für die Belichtungszeit der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="6b435-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="6b435-133">**focalLength**</span></span>         | <span data-ttu-id="6b435-134">Gleitkommawert mit doppelter Genauigkeit</span><span class="sxs-lookup"><span data-stu-id="6b435-134">Double</span></span>         | <span data-ttu-id="6b435-p107">Die Brennweite der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p107">The focal length from the camera. Read-only.</span></span>
+| <span data-ttu-id="6b435-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="6b435-137">**iso**</span></span>                 | <span data-ttu-id="6b435-138">Int64</span><span class="sxs-lookup"><span data-stu-id="6b435-138">Int64</span></span>          | <span data-ttu-id="6b435-p108">Der ISO-Wert der Kamera. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6b435-p108">The ISO value from the camera. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b24cc-141">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b24cc-141">Remarks</span></span>
-<span data-ttu-id="b24cc-142">Von OneDrive for Business und SharePoint wird nur die **TakenDateTime**-Eigenschaft zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b24cc-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
+## <a name="remarks"></a><span data-ttu-id="6b435-141">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6b435-141">Remarks</span></span>
+<span data-ttu-id="6b435-142">Von OneDrive for Business und SharePoint wird nur die **TakenDateTime**-Eigenschaft zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6b435-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
 
-<span data-ttu-id="b24cc-143">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="b24cc-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="6b435-143">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="6b435-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

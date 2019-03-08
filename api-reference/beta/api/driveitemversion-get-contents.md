@@ -1,37 +1,37 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Herunterladen von einer vorherigen version
+title: Eine frühere Version herunterladen
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528018"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481482"
 ---
-# <a name="download-contents-of-a-driveitemversion-resource-preview"></a><span data-ttu-id="aae5f-102">Inhalte einer DriveItemVersion-Ressource herunterladen (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="aae5f-102">Download contents of a DriveItemVersion resource (preview)</span></span>
+# <a name="download-contents-of-a-driveitemversion-resource-preview"></a><span data-ttu-id="ae9e7-102">Inhalte einer DriveItemVersion-Ressource herunterladen (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="ae9e7-102">Download contents of a DriveItemVersion resource (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aae5f-103">Rufen Sie die Inhalte einer bestimmten [DriveItem](../resources/driveitem.md)-Version ab.</span><span class="sxs-lookup"><span data-stu-id="aae5f-103">Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).</span></span> 
+<span data-ttu-id="ae9e7-103">Ruft den Inhalt einer bestimmten Version eines [driveItem](../resources/driveitem.md)ab.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-103">Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).</span></span> 
 
-><span data-ttu-id="aae5f-104">**Hinweis:** Abrufen des Inhalts der aktuellen Version wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="aae5f-104">**Note:** Getting the content of the current version is not supported.</span></span> <span data-ttu-id="aae5f-105">Verwenden Sie stattdessen den [DriveItem Webinhalt-Endpunkt](driveitem-get-content.md).</span><span class="sxs-lookup"><span data-stu-id="aae5f-105">Instead, use the [driveItem content endpoint](driveitem-get-content.md).</span></span>
+><span data-ttu-id="ae9e7-104">**Hinweis:** Das Aufrufen des Inhalts der aktuellen Version wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-104">**Note:** Getting the content of the current version is not supported.</span></span> <span data-ttu-id="ae9e7-105">Verwenden Sie stattdessen den [driveItem-Inhalts Endpunkt](driveitem-get-content.md).</span><span class="sxs-lookup"><span data-stu-id="ae9e7-105">Instead, use the [driveItem content endpoint](driveitem-get-content.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="aae5f-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="aae5f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ae9e7-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="ae9e7-106">Permissions</span></span>
 
-<span data-ttu-id="aae5f-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aae5f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ae9e7-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae9e7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="aae5f-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="aae5f-109">Permission type</span></span>      | <span data-ttu-id="aae5f-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="aae5f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ae9e7-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="ae9e7-109">Permission type</span></span>      | <span data-ttu-id="ae9e7-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="ae9e7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aae5f-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="aae5f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="aae5f-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae5f-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="aae5f-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="aae5f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aae5f-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae5f-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="aae5f-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="aae5f-115">Application</span></span> | <span data-ttu-id="aae5f-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae5f-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ae9e7-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="ae9e7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ae9e7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae9e7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ae9e7-113">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="ae9e7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae9e7-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae9e7-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ae9e7-115">Anwendung</span><span class="sxs-lookup"><span data-stu-id="ae9e7-115">Application</span></span> | <span data-ttu-id="ae9e7-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae9e7-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="aae5f-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="aae5f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ae9e7-117">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="ae9e7-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -43,19 +43,19 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-## <a name="response"></a><span data-ttu-id="aae5f-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="aae5f-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ae9e7-118">Antwort</span><span class="sxs-lookup"><span data-stu-id="ae9e7-118">Response</span></span>
 
-<span data-ttu-id="aae5f-119">Die Methode gibt eine Antwort `302 Found` zurück, die auf eine vorab authentifizierte URL zum Download der Bytes der Datei umleitet.</span><span class="sxs-lookup"><span data-stu-id="aae5f-119">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.</span></span>
+<span data-ttu-id="ae9e7-119">Die Methode gibt eine Antwort `302 Found` zurück, die auf eine vorab authentifizierte URL zum Download der Bytes der Datei umleitet.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-119">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.</span></span>
 
-<span data-ttu-id="aae5f-p103">Zum Herunterladen der Inhalte der Datei muss die Anwendung dem `Location`-Header in der Antwort folgen. Viele HTTP-Clientbibliotheken folgen automatisch der 302-Umleitung und beginnen sofort mit dem Download der Datei.</span><span class="sxs-lookup"><span data-stu-id="aae5f-p103">To download the contents of the file your application will need to follow the `Location` header in the response. Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.</span></span>
+<span data-ttu-id="ae9e7-p103">Zum Herunterladen der Inhalte der Datei muss die Anwendung dem `Location`-Header in der Antwort folgen. Viele HTTP-Clientbibliotheken folgen automatisch der 302-Umleitung und beginnen sofort mit dem Download der Datei.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-p103">To download the contents of the file your application will need to follow the `Location` header in the response. Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.</span></span>
 
-<span data-ttu-id="aae5f-122">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header für den Download.</span><span class="sxs-lookup"><span data-stu-id="aae5f-122">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
+<span data-ttu-id="ae9e7-122">Zuvor authentifizierte Download-URLs sind nur für einen kurzen Zeitraum (einige Minuten) gültig und erfordern keinen `Authorization`-Header für den Download.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-122">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aae5f-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="aae5f-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ae9e7-123">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ae9e7-123">Example</span></span>
 
-<span data-ttu-id="aae5f-124">In diesem Beispiel wird die Version einer Datei auf dem Laufwerk des aktuellen Benutzers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="aae5f-124">This example retrieves a version of a file in the current user's drive.</span></span>
+<span data-ttu-id="ae9e7-124">In diesem Beispiel wird die Version einer Datei auf dem Laufwerk des aktuellen Benutzers abgerufen.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-124">This example retrieves a version of a file in the current user's drive.</span></span>
 
-### <a name="request"></a><span data-ttu-id="aae5f-125">Anforderung</span><span class="sxs-lookup"><span data-stu-id="aae5f-125">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ae9e7-125">Anforderung</span><span class="sxs-lookup"><span data-stu-id="ae9e7-125">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -63,9 +63,9 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-### <a name="response"></a><span data-ttu-id="aae5f-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="aae5f-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ae9e7-126">Antwort</span><span class="sxs-lookup"><span data-stu-id="ae9e7-126">Response</span></span>
 
-<span data-ttu-id="aae5f-127">Diese Methode gibt eine Umleitung zurück, über die der Inhalt der Version heruntergeladen werden kann.</span><span class="sxs-lookup"><span data-stu-id="aae5f-127">This returns a redirect to where the contents of the version can be downloaded.</span></span>
+<span data-ttu-id="ae9e7-127">Diese Methode gibt eine Umleitung zurück, über die der Inhalt der Version heruntergeladen werden kann.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-127">This returns a redirect to where the contents of the version can be downloaded.</span></span>
 
 <!-- { "blockType": "response", "isEmpty": true  } -->
 
@@ -75,11 +75,11 @@ Location: https://onedrive.com/34FF49D6...
 ```
 
 
-## <a name="remarks"></a><span data-ttu-id="aae5f-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="aae5f-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ae9e7-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ae9e7-128">Remarks</span></span>
 
-<span data-ttu-id="aae5f-129">OneDrive behält nicht die kompletten Metadaten für vorherige Versionen einer Datei bei.</span><span class="sxs-lookup"><span data-stu-id="aae5f-129">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="ae9e7-129">OneDrive behält nicht die kompletten Metadaten für vorherige Versionen einer Datei bei.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-129">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="aae5f-130">Wenn Ihre app die Liste der verfügbaren Versionen für eine Datei abruft, wird eine [DriveItemVersion](../resources/driveitemversion.md) Ressource, die die verfügbare Informationen über die spezielle Version enthält zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="aae5f-130">When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="ae9e7-130">Wenn Ihre APP die Liste der verfügbaren Versionen für eine Datei abruft, wird eine [driveItemVersion](../resources/driveitemversion.md) -Ressource zurückgegeben, die die verfügbaren Informationen zu der jeweiligen Version bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="ae9e7-130">When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 <!--
 {

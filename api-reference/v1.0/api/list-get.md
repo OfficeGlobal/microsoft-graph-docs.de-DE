@@ -1,47 +1,48 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Abrufen einer SharePoint-Liste
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63b6fc4d2324c44c20e25fabe7ce0a89ce503ae3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9e667055b47568d712349c6725bd4ebc70aa63fd
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916117"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482350"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="a1354-102">Metadaten für eine Liste abrufen</span><span class="sxs-lookup"><span data-stu-id="a1354-102">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="3a101-102">Metadaten für eine Liste abrufen</span><span class="sxs-lookup"><span data-stu-id="3a101-102">Get metadata for a list</span></span>
 
-<span data-ttu-id="a1354-103">Gibt die Metadaten für ein eine [Liste][] zurück.</span><span class="sxs-lookup"><span data-stu-id="a1354-103">Returns the metadata for a [list][].</span></span>
+<span data-ttu-id="3a101-103">Gibt die Metadaten für ein eine [Liste][] zurück.</span><span class="sxs-lookup"><span data-stu-id="3a101-103">Returns the metadata for a [list][].</span></span>
 
+[Liste]: ../resources/list.md
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="a1354-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="a1354-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a101-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3a101-105">Permissions</span></span>
 
-<span data-ttu-id="a1354-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1354-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3a101-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a101-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a1354-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="a1354-108">Permission type</span></span>      | <span data-ttu-id="a1354-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="a1354-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3a101-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3a101-108">Permission type</span></span>      | <span data-ttu-id="3a101-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="3a101-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a1354-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="a1354-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a1354-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1354-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a1354-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="a1354-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1354-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="a1354-113">Not supported.</span></span>    |
-|<span data-ttu-id="a1354-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="a1354-114">Application</span></span> | <span data-ttu-id="a1354-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1354-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="3a101-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3a101-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3a101-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a101-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3a101-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="3a101-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a101-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="3a101-113">Not supported.</span></span>    |
+|<span data-ttu-id="3a101-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3a101-114">Application</span></span> | <span data-ttu-id="3a101-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a101-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a1354-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="a1354-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a101-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3a101-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="a1354-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="a1354-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a101-117">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3a101-117">Request body</span></span>
 
-<span data-ttu-id="a1354-118">Bei dieser Methode wird kein Anforderungstext angegeben.</span><span class="sxs-lookup"><span data-stu-id="a1354-118">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="3a101-118">Bei dieser Methode wird kein Anforderungstext angegeben.</span><span class="sxs-lookup"><span data-stu-id="3a101-118">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a1354-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a1354-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3a101-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3a101-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a1354-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a1354-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a101-120">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3a101-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
@@ -49,7 +50,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 GET /sites/{site-id}/lists/{list-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="a1354-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="a1354-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3a101-121">Antwort</span><span class="sxs-lookup"><span data-stu-id="3a101-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -69,9 +70,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="a1354-122">Mit `select`- und `expand`-Anweisungen können Sie Listen-Metadaten, Spaltendefinitionen und Listenelemente in einer einzigen Anforderung abrufen.</span><span class="sxs-lookup"><span data-stu-id="a1354-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="3a101-122">Mit `select`- und `expand`-Anweisungen können Sie Listen-Metadaten, Spaltendefinitionen und Listenelemente in einer einzigen Anforderung abrufen.</span><span class="sxs-lookup"><span data-stu-id="3a101-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a1354-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="a1354-123">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a101-123">Anforderung</span><span class="sxs-lookup"><span data-stu-id="3a101-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
@@ -79,7 +80,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a><span data-ttu-id="a1354-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="a1354-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3a101-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="3a101-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 

@@ -1,25 +1,25 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Image
 localization_priority: Normal
-ms.openlocfilehash: 588f5185cba3012ce3dce77a9707aa23be2bf0cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513928"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482399"
 ---
-# <a name="image-resource-type"></a><span data-ttu-id="6f724-102">Image-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="6f724-102">Image resource type</span></span>
+# <a name="image-resource-type"></a><span data-ttu-id="67b48-102">Image-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="67b48-102">Image resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f724-p101">Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen Struktur. Wenn ein [**DriveItem**](driveitem.md) ein **image**-Facet ungleich Null aufweist, stellt das Element eine Bitmapdatei dar.</span><span class="sxs-lookup"><span data-stu-id="6f724-p101">The **Image** resource groups image-related properties into a single structure. If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.</span></span>
+<span data-ttu-id="67b48-p101">Die **Image**-Ressourc gruppiert bildbezogene Eigenschaften in einer einzelnen Struktur. Wenn ein [**DriveItem**](driveitem.md) ein **image**-Facet ungleich Null aufweist, stellt das Element eine Bitmapdatei dar.</span><span class="sxs-lookup"><span data-stu-id="67b48-p101">The **Image** resource groups image-related properties into a single structure. If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.</span></span>
 
-<span data-ttu-id="6f724-105">**Hinweis:** Wenn der Dienst die Breite und Höhe des Bilds nicht bestimmen kann, ist die **Image**-Ressource möglicherweise leer.</span><span class="sxs-lookup"><span data-stu-id="6f724-105">**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.</span></span>
+<span data-ttu-id="67b48-105">**Hinweis:** Wenn der Dienst die Breite und Höhe des Bilds nicht bestimmen kann, ist die **Image**-Ressource möglicherweise leer.</span><span class="sxs-lookup"><span data-stu-id="67b48-105">**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6f724-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="6f724-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="67b48-106">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="67b48-106">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
@@ -29,18 +29,18 @@ ms.locfileid: "29513928"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="6f724-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6f724-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="67b48-107">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="67b48-107">Properties</span></span>
 
-| <span data-ttu-id="6f724-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6f724-108">Property</span></span>   | <span data-ttu-id="6f724-109">Typ</span><span class="sxs-lookup"><span data-stu-id="6f724-109">Type</span></span>  | <span data-ttu-id="6f724-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6f724-110">Description</span></span>                                |
+| <span data-ttu-id="67b48-108">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="67b48-108">Property</span></span>   | <span data-ttu-id="67b48-109">Typ</span><span class="sxs-lookup"><span data-stu-id="67b48-109">Type</span></span>  | <span data-ttu-id="67b48-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="67b48-110">Description</span></span>                                |
 |:-----------|:------|:-------------------------------------------|
-| <span data-ttu-id="6f724-111">**height**</span><span class="sxs-lookup"><span data-stu-id="6f724-111">**height**</span></span> | <span data-ttu-id="6f724-112">Int32</span><span class="sxs-lookup"><span data-stu-id="6f724-112">Int32</span></span> | <span data-ttu-id="6f724-p102">Optional. Die Höhe des Bilds in Pixel. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6f724-p102">Optional. Height of the image, in pixels. Read-only.</span></span> |
-| <span data-ttu-id="6f724-116">**width**</span><span class="sxs-lookup"><span data-stu-id="6f724-116">**width**</span></span>  | <span data-ttu-id="6f724-117">Int32</span><span class="sxs-lookup"><span data-stu-id="6f724-117">Int32</span></span> | <span data-ttu-id="6f724-p103">Optional. Die Breite des Bilds in Pixel. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="6f724-p103">Optional. Width of the image, in pixels. Read-only.</span></span>  |
+| <span data-ttu-id="67b48-111">**height**</span><span class="sxs-lookup"><span data-stu-id="67b48-111">**height**</span></span> | <span data-ttu-id="67b48-112">Int32</span><span class="sxs-lookup"><span data-stu-id="67b48-112">Int32</span></span> | <span data-ttu-id="67b48-p102">Optional. Die Höhe des Bilds in Pixel. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="67b48-p102">Optional. Height of the image, in pixels. Read-only.</span></span> |
+| <span data-ttu-id="67b48-116">**width**</span><span class="sxs-lookup"><span data-stu-id="67b48-116">**width**</span></span>  | <span data-ttu-id="67b48-117">Int32</span><span class="sxs-lookup"><span data-stu-id="67b48-117">Int32</span></span> | <span data-ttu-id="67b48-p103">Optional. Die Breite des Bilds in Pixel. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="67b48-p103">Optional. Width of the image, in pixels. Read-only.</span></span>  |
 
-## <a name="remarks"></a><span data-ttu-id="6f724-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6f724-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="67b48-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="67b48-121">Remarks</span></span>
 
-<span data-ttu-id="6f724-122">In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt.</span><span class="sxs-lookup"><span data-stu-id="6f724-122">In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.</span></span>
+<span data-ttu-id="67b48-122">In OneDrive for Business wird diese Ressource für Elemente zurückgegeben, von denen basierend auf der Dateierweiterung davon ausgegangen wird, dass es sich um Bilder handelt.</span><span class="sxs-lookup"><span data-stu-id="67b48-122">In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.</span></span>
 
-<span data-ttu-id="6f724-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="6f724-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="67b48-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="67b48-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!--

@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: publicationFacet
+title: PublicationFacet
 localization_priority: Normal
-ms.openlocfilehash: f0887e7ce17a357961c0ee2b19d86388425e82b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 66e12c3240d1cade57d377e43403b33102fe166e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513858"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482063"
 ---
-# <a name="publicationfacet-resource-type"></a><span data-ttu-id="e2574-102">PublicationFacet-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="e2574-102">PublicationFacet resource type</span></span>
+# <a name="publicationfacet-resource-type"></a><span data-ttu-id="9d4ad-102">PublicationFacet-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="9d4ad-102">PublicationFacet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e2574-103">Die **PublicationFacet**-Ressource enthält Details zum veröffentlichten Status einer [DriveItemVersion](driveitemversion.md)- oder [DriveItem](driveitem.md)-Ressource.</span><span class="sxs-lookup"><span data-stu-id="e2574-103">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="9d4ad-103">Die **PublicationFacet**-Ressource enthält Details zum veröffentlichten Status einer [DriveItemVersion](driveitemversion.md)- oder [DriveItem](driveitem.md)-Ressource.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-103">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e2574-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="e2574-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d4ad-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="9d4ad-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,12 +32,12 @@ ms.locfileid: "29513858"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="e2574-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e2574-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9d4ad-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9d4ad-105">Properties</span></span>
 
-|   <span data-ttu-id="e2574-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e2574-106">Property</span></span>    |  <span data-ttu-id="e2574-107">Typ</span><span class="sxs-lookup"><span data-stu-id="e2574-107">Type</span></span>  | <span data-ttu-id="e2574-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e2574-108">Description</span></span> |
+|   <span data-ttu-id="9d4ad-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9d4ad-106">Property</span></span>    |  <span data-ttu-id="9d4ad-107">Typ</span><span class="sxs-lookup"><span data-stu-id="9d4ad-107">Type</span></span>  | <span data-ttu-id="9d4ad-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9d4ad-108">Description</span></span> |
 | :------------ | :----- | :---------- |
-| <span data-ttu-id="e2574-109">**level**</span><span class="sxs-lookup"><span data-stu-id="e2574-109">**level**</span></span>     | <span data-ttu-id="e2574-110">string</span><span class="sxs-lookup"><span data-stu-id="e2574-110">String</span></span> | <span data-ttu-id="e2574-111">Der Status der Veröffentlichung für dieses Dokument.</span><span class="sxs-lookup"><span data-stu-id="e2574-111">The state of publication for this document.</span></span> <span data-ttu-id="e2574-112">Möglich ist `published` oder `checkout`.</span><span class="sxs-lookup"><span data-stu-id="e2574-112">Either `published` or `checkout`.</span></span> <span data-ttu-id="e2574-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e2574-113">Read-only.</span></span>  |
-| <span data-ttu-id="e2574-114">**versionId**</span><span class="sxs-lookup"><span data-stu-id="e2574-114">**versionId**</span></span> | <span data-ttu-id="e2574-115">string</span><span class="sxs-lookup"><span data-stu-id="e2574-115">String</span></span> | <span data-ttu-id="e2574-116">Der eindeutige Bezeichner für die Version, die für den aktuellen Anrufer sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="e2574-116">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="e2574-117">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e2574-117">Read-only.</span></span>  |
+| <span data-ttu-id="9d4ad-109">**level**</span><span class="sxs-lookup"><span data-stu-id="9d4ad-109">**level**</span></span>     | <span data-ttu-id="9d4ad-110">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="9d4ad-110">String</span></span> | <span data-ttu-id="9d4ad-111">Der Status der Veröffentlichung für dieses Dokument.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-111">The state of publication for this document.</span></span> <span data-ttu-id="9d4ad-112">Möglich ist `published` oder `checkout`.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-112">Either `published` or `checkout`.</span></span> <span data-ttu-id="9d4ad-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-113">Read-only.</span></span>  |
+| <span data-ttu-id="9d4ad-114">**versionId**</span><span class="sxs-lookup"><span data-stu-id="9d4ad-114">**versionId**</span></span> | <span data-ttu-id="9d4ad-115">string</span><span class="sxs-lookup"><span data-stu-id="9d4ad-115">String</span></span> | <span data-ttu-id="9d4ad-116">Der eindeutige Bezeichner für die Version, die für den aktuellen Anrufer sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-116">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="9d4ad-117">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9d4ad-117">Read-only.</span></span>  |
 
 
 <!--

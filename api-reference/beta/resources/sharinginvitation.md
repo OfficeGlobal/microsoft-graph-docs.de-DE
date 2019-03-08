@@ -1,25 +1,25 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 009dcf77492d8ec77230413dc628076ef0d557fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0f3acc102762cc1243d8be8362149df1d33717dc
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523393"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482042"
 ---
-# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="20f9f-102">SharingInvitation-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="20f9f-102">SharingInvitation resource type</span></span>
+# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="9f793-102">SharingInvitation-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="9f793-102">SharingInvitation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="20f9f-103">Die **SharingInvitation**-Ressource gruppiert Datenelemente im Zusammenhang mit einer Einladung in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="20f9f-103">The **SharingInvitation** resource groups invitation-related data items into a single strucutre.</span></span>
+<span data-ttu-id="9f793-103">Die **SharingInvitation**-Ressource gruppiert Datenelemente im Zusammenhang mit einer Einladung in einer einzelnen Struktur.</span><span class="sxs-lookup"><span data-stu-id="9f793-103">The **SharingInvitation** resource groups invitation-related data items into a single strucutre.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="20f9f-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="20f9f-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9f793-104">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="9f793-104">JSON representation</span></span>
 
-<span data-ttu-id="20f9f-105">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="20f9f-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="9f793-105">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="9f793-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,17 +38,17 @@ ms.locfileid: "29523393"
 
 ```
 
-## <a name="properties"></a><span data-ttu-id="20f9f-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="20f9f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9f793-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9f793-106">Properties</span></span>
 
-| <span data-ttu-id="20f9f-107">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="20f9f-107">Property Name</span></span>  | <span data-ttu-id="20f9f-108">Typ</span><span class="sxs-lookup"><span data-stu-id="20f9f-108">Type</span></span>                          | <span data-ttu-id="20f9f-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="20f9f-109">Description</span></span>                                                                                                                   |
+| <span data-ttu-id="9f793-107">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="9f793-107">Property Name</span></span>  | <span data-ttu-id="9f793-108">Typ</span><span class="sxs-lookup"><span data-stu-id="9f793-108">Type</span></span>                          | <span data-ttu-id="9f793-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9f793-109">Description</span></span>                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="20f9f-110">E-Mail</span><span class="sxs-lookup"><span data-stu-id="20f9f-110">email</span></span>          | <span data-ttu-id="20f9f-111">String</span><span class="sxs-lookup"><span data-stu-id="20f9f-111">String</span></span>                        | <span data-ttu-id="20f9f-p101">Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="20f9f-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
-| <span data-ttu-id="20f9f-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="20f9f-114">invitedBy</span></span>      | [<span data-ttu-id="20f9f-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="20f9f-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="20f9f-p102">Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="20f9f-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
-| <span data-ttu-id="20f9f-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="20f9f-118">signInRequired</span></span> | <span data-ttu-id="20f9f-119">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="20f9f-119">Boolean</span></span>                       | <span data-ttu-id="20f9f-p103">Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="20f9f-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
+| <span data-ttu-id="9f793-110">E-Mail</span><span class="sxs-lookup"><span data-stu-id="9f793-110">email</span></span>          | <span data-ttu-id="9f793-111">String</span><span class="sxs-lookup"><span data-stu-id="9f793-111">String</span></span>                        | <span data-ttu-id="9f793-p101">Die für den Empfänger der Freigabeeinladung angegebene E-Mail-Adresse. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9f793-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
+| <span data-ttu-id="9f793-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="9f793-114">invitedBy</span></span>      | [<span data-ttu-id="9f793-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="9f793-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="9f793-p102">Stellt Informationen zum Absender der Einladung bereit, der diese Berechtigung erstellt hat, wenn diese Informationen verfügbar sind. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9f793-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
+| <span data-ttu-id="9f793-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="9f793-118">signInRequired</span></span> | <span data-ttu-id="9f793-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="9f793-119">Boolean</span></span>                       | <span data-ttu-id="9f793-p103">Bei `true` muss sich der Empfänger der Einladung anmelden, um auf das freigegebene Element zugreifen zu können. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="9f793-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
 
-## <a name="remarks"></a><span data-ttu-id="20f9f-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="20f9f-122">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="9f793-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9f793-122">Remarks</span></span> 
 
-<span data-ttu-id="20f9f-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="20f9f-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="9f793-123">Weitere Informationen über die Facets eines DriveItem finden Sie unter [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="9f793-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

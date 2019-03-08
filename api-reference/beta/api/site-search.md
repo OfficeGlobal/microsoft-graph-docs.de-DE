@@ -1,36 +1,37 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Suchen von SharePoint-Websites nach Schlüsselwort
+title: Suchen von SharePoint-Websites nach Stichwort
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 16dae8ceab07c2902d1bdd17fa2b9dc045ffd021
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524184"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480754"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="cbe98-102">Nach Websites suchen</span><span class="sxs-lookup"><span data-stu-id="cbe98-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="0d146-102">Nach Websites suchen</span><span class="sxs-lookup"><span data-stu-id="0d146-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cbe98-103">Sie können in einem gesamten SharePoint-Mandanten nach [Websites][] suchen, die den angegebenen Schlüsselwörtern entsprechen.</span><span class="sxs-lookup"><span data-stu-id="cbe98-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="0d146-103">Sie können in einem gesamten SharePoint-Mandanten nach [Websites][] suchen, die den angegebenen Schlüsselwörtern entsprechen.</span><span class="sxs-lookup"><span data-stu-id="0d146-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
+[Websites]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="cbe98-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="cbe98-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0d146-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="0d146-105">Permissions</span></span>
 
-<span data-ttu-id="cbe98-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbe98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0d146-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0d146-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cbe98-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cbe98-108">Permission type</span></span>                        | <span data-ttu-id="cbe98-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cbe98-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="0d146-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0d146-108">Permission type</span></span>                        | <span data-ttu-id="0d146-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0d146-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="cbe98-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cbe98-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cbe98-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbe98-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="cbe98-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cbe98-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbe98-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cbe98-113">Not supported.</span></span>
-|<span data-ttu-id="cbe98-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cbe98-114">Application</span></span>                            | <span data-ttu-id="cbe98-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbe98-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="0d146-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0d146-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0d146-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d146-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="0d146-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0d146-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0d146-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0d146-113">Not supported.</span></span>
+|<span data-ttu-id="0d146-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0d146-114">Application</span></span>                            | <span data-ttu-id="0d146-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d146-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="cbe98-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cbe98-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0d146-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0d146-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -38,7 +39,7 @@ ms.locfileid: "29524184"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="cbe98-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="cbe98-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0d146-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="0d146-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

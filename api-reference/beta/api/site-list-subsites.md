@@ -1,36 +1,36 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Auflisten der Unterwebsites für eine SharePoint-Website
+title: AufListen der Unterwebsites für eine SharePoint-Website
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93cfbe89804425eb49f21e6c0d178004c28ef3ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513312"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480110"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="9742a-102">Unterwebsites aufzählen</span><span class="sxs-lookup"><span data-stu-id="9742a-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="53c62-102">Unterwebsites aufzählen</span><span class="sxs-lookup"><span data-stu-id="53c62-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9742a-103">Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="9742a-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="53c62-103">Dient zum Abrufen einer Sammlung von Unterwebsites, die für ein [site][]-Objekt definiert sind.</span><span class="sxs-lookup"><span data-stu-id="53c62-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9742a-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9742a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="53c62-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="53c62-105">Permissions</span></span>
 
-<span data-ttu-id="9742a-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9742a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="53c62-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53c62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9742a-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9742a-108">Permission type</span></span>      | <span data-ttu-id="9742a-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="9742a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53c62-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="53c62-108">Permission type</span></span>      | <span data-ttu-id="53c62-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="53c62-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9742a-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9742a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9742a-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9742a-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9742a-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="9742a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9742a-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="9742a-113">Not supported.</span></span>    |
-|<span data-ttu-id="9742a-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9742a-114">Application</span></span> | <span data-ttu-id="9742a-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9742a-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="53c62-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="53c62-110">Delegated (work or school account)</span></span> | <span data-ttu-id="53c62-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53c62-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="53c62-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="53c62-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53c62-113">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="53c62-113">Not supported.</span></span>    |
+|<span data-ttu-id="53c62-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="53c62-114">Application</span></span> | <span data-ttu-id="53c62-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="53c62-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9742a-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9742a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53c62-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="53c62-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "29513312"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="9742a-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="9742a-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="53c62-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="53c62-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

@@ -1,34 +1,34 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Auschecken von Dateien
+title: AusChecken von Dateien
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2d1ce5220b055020c42116c2e93b039a31d229aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518485"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481293"
 ---
-# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="d06d4-102">DriveItem-Ressource auschecken</span><span class="sxs-lookup"><span data-stu-id="d06d4-102">Check-out a DriveItem resource</span></span>
+# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="29b9e-102">DriveItem-Ressource auschecken</span><span class="sxs-lookup"><span data-stu-id="29b9e-102">Check-out a DriveItem resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d06d4-103">Checken Sie eine DriveItem-Ressource aus, damit andere Benutzer das Dokument nicht bearbeiten können und Ihre Änderungen erst sichtbar werden, wenn das Dokument [eingecheckt](driveitem-checkin.md) wird.</span><span class="sxs-lookup"><span data-stu-id="d06d4-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
+<span data-ttu-id="29b9e-103">Checken Sie eine DriveItem-Ressource aus, damit andere Benutzer das Dokument nicht bearbeiten können und Ihre Änderungen erst sichtbar werden, wenn das Dokument [eingecheckt](driveitem-checkin.md) wird.</span><span class="sxs-lookup"><span data-stu-id="29b9e-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d06d4-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d06d4-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="29b9e-104">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="29b9e-104">Permissions</span></span>
 
-<span data-ttu-id="d06d4-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d06d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="29b9e-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29b9e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d06d4-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d06d4-107">Permission type</span></span>      | <span data-ttu-id="d06d4-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d06d4-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="29b9e-107">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="29b9e-107">Permission type</span></span>      | <span data-ttu-id="29b9e-108">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="29b9e-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d06d4-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d06d4-109">Delegated (work or school account)</span></span> | <span data-ttu-id="d06d4-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d06d4-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d06d4-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d06d4-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d06d4-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d06d4-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d06d4-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d06d4-113">Application</span></span> | <span data-ttu-id="d06d4-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d06d4-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="29b9e-109">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="29b9e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="29b9e-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29b9e-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="29b9e-111">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="29b9e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29b9e-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29b9e-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="29b9e-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="29b9e-113">Application</span></span> | <span data-ttu-id="29b9e-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29b9e-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d06d4-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d06d4-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29b9e-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="29b9e-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,13 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/checkout
 POST /users/{userId}/drive/items/{itemId}/checkout
 ```
 
-### <a name="request-body"></a><span data-ttu-id="d06d4-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d06d4-116">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="29b9e-116">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="29b9e-116">Request body</span></span>
 
-<span data-ttu-id="d06d4-117">Es ist kein Anforderungstexts erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d06d4-117">No request body is required.</span></span>
+<span data-ttu-id="29b9e-117">Es ist kein Anforderungstexts erforderlich.</span><span class="sxs-lookup"><span data-stu-id="29b9e-117">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d06d4-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d06d4-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="29b9e-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="29b9e-118">Example</span></span>
 
-<span data-ttu-id="d06d4-119">In diesem Beispiel wird eine von `{item-id}` überprüfte Datei ausgecheckt.</span><span class="sxs-lookup"><span data-stu-id="d06d4-119">This example checks out a file identified by `{item-id}`.</span></span>
+<span data-ttu-id="29b9e-119">In diesem Beispiel wird eine von `{item-id}` überprüfte Datei ausgecheckt.</span><span class="sxs-lookup"><span data-stu-id="29b9e-119">This example checks out a file identified by `{item-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "checkout-item", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -54,9 +54,9 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 POST /drives/{drive-id}/items/{item-id}/checkout
 ```
 
-## <a name="response"></a><span data-ttu-id="d06d4-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="d06d4-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="29b9e-120">Antwort</span><span class="sxs-lookup"><span data-stu-id="29b9e-120">Response</span></span>
 
-<span data-ttu-id="d06d4-121">Wenn diese Methode erfolgreich verläuft, gibt der API-Anruf eine `204 No content` zurück.</span><span class="sxs-lookup"><span data-stu-id="d06d4-121">If successful, the API call returns a `204 No content`.</span></span>
+<span data-ttu-id="29b9e-121">Wenn diese Methode erfolgreich verläuft, gibt der API-Anruf eine `204 No content` zurück.</span><span class="sxs-lookup"><span data-stu-id="29b9e-121">If successful, the API call returns a `204 No content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -64,7 +64,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 HTTP/1.1 204 No content
 ```
 
-### <a name="remarks"></a><span data-ttu-id="d06d4-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d06d4-122">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="29b9e-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="29b9e-122">Remarks</span></span>
 
 
 [item-resource]: ../resources/driveitem.md

@@ -1,34 +1,34 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Zuletzt verwendete Dateien auflisten
+title: Aktuelle Dateien aufListen
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 600db7e3f654ebaf0f8168c9fe74b82c58abf087
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a32e9c3cf0e1d8265092e206b1083337dab9aa58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510939"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480586"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="bdd57-102">Zuletzt verwendete Dateien auflisten</span><span class="sxs-lookup"><span data-stu-id="bdd57-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="e6aa1-102">Zuletzt verwendete Dateien auflisten</span><span class="sxs-lookup"><span data-stu-id="e6aa1-102">List recent files</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bdd57-p101">Dient zum Auflisten eines Satzes von Elementen, die zuletzt von dem angemeldeten Benutzer verwendet wurden. Diese Sammlung enthält Elemente, die sich in dem Laufwerk des Benutzers befinden sowie Elemente in anderen Laufwerken, auf die dieser Zugriff hat.</span><span class="sxs-lookup"><span data-stu-id="bdd57-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="e6aa1-p101">Dient zum Auflisten eines Satzes von Elementen, die zuletzt von dem angemeldeten Benutzer verwendet wurden. Diese Sammlung enthält Elemente, die sich in dem Laufwerk des Benutzers befinden sowie Elemente in anderen Laufwerken, auf die dieser Zugriff hat.</span><span class="sxs-lookup"><span data-stu-id="e6aa1-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bdd57-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="bdd57-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e6aa1-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="e6aa1-105">Permissions</span></span>
 
-<span data-ttu-id="bdd57-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bdd57-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e6aa1-p102">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6aa1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bdd57-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="bdd57-108">Permission type</span></span>      | <span data-ttu-id="bdd57-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="bdd57-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e6aa1-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="e6aa1-108">Permission type</span></span>      | <span data-ttu-id="e6aa1-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="e6aa1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bdd57-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="bdd57-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bdd57-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd57-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bdd57-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="bdd57-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdd57-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd57-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="bdd57-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="bdd57-114">Application</span></span> | <span data-ttu-id="bdd57-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd57-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e6aa1-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="e6aa1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e6aa1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6aa1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e6aa1-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="e6aa1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6aa1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6aa1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e6aa1-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="e6aa1-114">Application</span></span> | <span data-ttu-id="e6aa1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6aa1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bdd57-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="bdd57-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e6aa1-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="e6aa1-116">HTTP request</span></span>
 
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
@@ -39,9 +39,9 @@ ms.locfileid: "29510939"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a><span data-ttu-id="bdd57-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="bdd57-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e6aa1-117">Antwort</span><span class="sxs-lookup"><span data-stu-id="e6aa1-117">Response</span></span>
 
-<span data-ttu-id="bdd57-118">Mit dieser Methode wird eine Sammlung von [DriveItem](../resources/driveitem.md)-Ressourcen für Elemente zurückgegeben, auf die der Besitzer des Laufwerks vor kurzem zugegriffen hat.</span><span class="sxs-lookup"><span data-stu-id="bdd57-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="e6aa1-118">Mit dieser Methode wird eine Sammlung von [DriveItem](../resources/driveitem.md)-Ressourcen für Elemente zurückgegeben, auf die der Besitzer des Laufwerks vor kurzem zugegriffen hat.</span><span class="sxs-lookup"><span data-stu-id="e6aa1-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -87,9 +87,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="bdd57-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bdd57-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e6aa1-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e6aa1-119">Remarks</span></span>
 
-<span data-ttu-id="bdd57-p103">Einige driveItems, die von der **recent**-Aktion zurückgegeben werden, enthalten immer das **remoteItem**-Facet, das angibt, dass es sich um Elemente von einem anderen Laufwerk handelt. Um auf das ursprüngliche DriveItem-Objekt zuzugreifen, müssen Sie eine Anforderung anhand der Angaben in **remoteItem** im folgenden Format stellen:</span><span class="sxs-lookup"><span data-stu-id="bdd57-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="e6aa1-p103">Einige driveItems, die von der **recent**-Aktion zurückgegeben werden, enthalten immer das **remoteItem**-Facet, das angibt, dass es sich um Elemente von einem anderen Laufwerk handelt. Um auf das ursprüngliche DriveItem-Objekt zuzugreifen, müssen Sie eine Anforderung anhand der Angaben in **remoteItem** im folgenden Format stellen:</span><span class="sxs-lookup"><span data-stu-id="e6aa1-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
