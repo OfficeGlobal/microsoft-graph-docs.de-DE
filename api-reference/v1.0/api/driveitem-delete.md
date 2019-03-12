@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Eine Datei oder einen Ordner löschen
+title: Löschen einer Datei oder eines Ordners
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 39c7706fab229e52c394c30c6daf478a1fefd581
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966867"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482147"
 ---
-# <a name="delete-a-driveitem"></a>Ein DriveItem-Element löschen
+# <a name="delete-a-driveitem"></a>DriveItem-Element löschen
 
 Löscht ein [DriveItem](../resources/driveitem.md)-Element mithilfe der ID oder des Pfad. Beachten Sie, dass durch Löschen von Elementen mithilfe dieser Methode die Elemente in den Papierkorb verschoben und nicht endgültig gelöscht werden.
 

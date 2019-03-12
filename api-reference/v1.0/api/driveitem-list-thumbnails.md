@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Abrufen von Miniaturansichten für eine Datei oder einen Ordner
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990593"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482175"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Miniaturansichten für ein DriveItem auflisten
 
@@ -70,8 +70,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 Diese gibt ein Array von verfügbaren **thumbnailSets** für das Element zurück. Ein beliebiges Element auf einem Laufwerk kann Null oder mehr Miniaturansichten aufweisen.
 
-**Hinweis:** Sie können den _select_-Abfragezeichenfolgenparameter verwenden, um zu steuern, welche Miniaturansichtgrößen im **ThumbnailSet** zurückgegeben werden.
-`/thumbnails?select=medium` ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.
+**Hinweis:** Sie können den _select_-Abfragezeichenfolgenparameter verwenden, um zu steuern, welche Miniaturansichtgrößen im **ThumbnailSet** zurückgegeben werden. `/thumbnails?select=medium` ruft beispielsweise nur die mittelgroßen Miniaturansichten ab.
 
 
 ### <a name="response"></a>Antwort
@@ -210,13 +209,11 @@ Content-type: application/json
 
 In dieser Tabelle sind die möglichen Miniaturansichtgrößen definiert. Zwar können Sie jede beliebige Miniaturansichtgröße anfordern; bei den definierten Werten ist es jedoch wahrscheinlich, dass sie existieren und dass schnell ein Wert zurückgegeben wird:
 
-| Name           | Auflösung  | Seitenverhältnis | Beschreibung                                                          |
+| Name           | Lösung  | Seitenverhältnis | Beschreibung                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest
-  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
+| `small`        | 96 longest  | Original     | Kleine, stark komprimierte Miniaturansicht, zugeschnitten auf ein quadratisches Seitenverhältnis |
 | `medium`       | 176 longest | Original     | Zugeschnitten auf die standardmäßige Elementgröße für die OneDrive-Webansicht         |
-| `large`        | 800 longest
- | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
+| `large`        | 800 longest | Original     | Miniaturansicht, bei der die längste Kante auf 800 Pixel skaliert wurde               |
 | `smallSquare`  | 96x96       | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `mediumSquare` | 176x176     | Quadratisches Zuschneiden  | Kleines Quadrat (Miniaturansicht)                                               |
 | `largeSquare`  | 800x800     | Quadratisches Zuschneiden  | Großes Quadrat (Miniaturansicht)                                               |

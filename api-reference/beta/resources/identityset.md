@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 63178fc9add3d097b7e8aaf0c5c2a697a91eaeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807021"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482196"
 ---
-# <a name="identityset-resource-type"></a>Ressourcentyp identitySet
+# <a name="identityset-resource-type"></a>identityset-Ressourcentyp
 
 Die **IdentitySet**-Ressource ist eine verschlüsselte Sammlung von [identity](identity.md)-Ressourcen. Sie wird verwendet, um eine Reihe von Identitäten darzustellen, die verschiedenen Ereignissen für ein Element zugewiesen sind, z. B. _erstellt von_ oder _zuletzt geändert von_.
 
@@ -51,12 +51,12 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:------------|:------------------------|:--------------------------------------------------------|
 | Anwendung | [Identity](identity.md) | Optional. Die mit dieser Aktion verknüpfte Anwendung.  |
 | Gerät      | [Identity](identity.md) | Optional. Das mit dieser Konfiguration verknüpfte Gerät.       |
-| phone       | [identity](identity.md) | Optional. Die Telefonnummer, die diese Aktion zugeordnet. |
+| phone       | [identity](identity.md) | Optional. Die Telefonnummer, die dieser Aktion zugeordnet ist. |
 | Benutzer        | [Identity](identity.md) | Optional. Der mit dieser Aktion verknüpfte Benutzer.         |
 
 ## <a name="remarks"></a>Bemerkungen 
 
-Verwendung der **IdentitySet** Ressourcen finden Sie unter [aufrufen](call.md) .
+Weitere Informationen finden Sie unter [Aufruf](call.md) zur Verwendung von **identityset** -Ressourcen.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

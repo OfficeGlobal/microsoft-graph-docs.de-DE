@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Paket
 localization_priority: Normal
-ms.openlocfilehash: 6f518058c6a68716f482bd9b6a870457de3d71a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c64dfce910456ef9b9415e3332c099d7814a71f2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866416"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482203"
 ---
 # <a name="package-resource-type"></a>Package-Ressourcentyp
 
@@ -32,7 +32,7 @@ DriveItems mit dem **package**-Facet enthalten keine **folder**- oder **file**-F
 
 | Eigenschaftenname | Typ   | Beschreibung                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type          | string | Eine Zeichenfolge, die den Typ des Pakets angibt. Während `oneNote` ist der einzige Wert derzeit definiert sind, sollten Sie erwarten, andere Pakettypen zurückgegeben werden, und sie entsprechend behandelt. |
+| type          | string | Eine Zeichenfolge, die den Typ des Pakets angibt. Obwohl `oneNote` der einzige derzeit definierte Wert ist, sollten Sie davon ausgehen, dass andere Paketarten zurückgegeben werden, die entsprechend behandelt werden müssen. |
 
 ## <a name="remarks"></a>Bemerkungen 
 
