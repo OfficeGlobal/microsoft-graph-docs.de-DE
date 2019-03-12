@@ -2,12 +2,12 @@
 title: Referenz zu Microsoft Graph-REST-API, Version 1.0
 description: Willkommen bei der Referenz zu Microsoft Graph-REST-API für den v1.0-Endpunkt.
 localization_priority: Priority
-ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
+ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829074"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30546009"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referenz zu Microsoft Graph-REST-API, Version 1.0
 
@@ -52,5 +52,3 @@ Weitere Informationen finden Sie unter [Versionsverwaltung und Support](/graph/v
 Gibt es weitere APIs oder Features, die Sie in Microsoft Graph sehen möchten? Posten Sie neue Feature-Anforderungen auf [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
 
 Haben Sie Feedback für vorhandene Microsoft Graph APIs? Setzen Sie sich mit uns auf [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues) in Verbindung.
-
-Bei Fragen oder mit Ihr Code mithilfe von Microsoft-Hilfe
