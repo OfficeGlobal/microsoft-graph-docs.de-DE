@@ -4,12 +4,12 @@ description: Ruft die Liste der Geräte mit fehlgeschlagenen apps ab.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 44296ba60db476bd7c407ea4fbbc727ffca465ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d2eb6d2aee7a3cada990b0e2782c27f8e6984d54
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172212"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571151"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>getManagedDevicesWithAppFailures-Funktion
 
@@ -19,7 +19,7 @@ ms.locfileid: "30172212"
 
 Ruft die Liste der Geräte mit fehlgeschlagenen apps ab.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -47,7 +47,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Funktion den Antwortcode `200 OK` und eine Collection von Objekten des Typs „String“ im Antworttext zurück.
+Wenn die Funktion erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Zeichenfolge-Sammlung im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung

@@ -1,29 +1,27 @@
 ---
-title: Aktivierung von Steuerelementen Enum-Typ
-description: Beschreibt die Aktivierung von Steuerelementen Enumeration die Microsoft Graph-API für Intune, die mehrere Workflows unterstützt.
+title: Enablement-Enumerationstyp
+description: Beschreibt die Enablement-Enumeration der Microsoft Graph-API für InTune, die mehrere Workflows unterstützt.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 538b52790cf7748453adfda2a6bea8334a36fb87
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399563"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571235"
 ---
-# <a name="enablement-enum-type"></a>Aktivierung von Steuerelementen Enum-Typ
+# <a name="enablement-enum-type"></a>Enablement-Enumerationstyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Werte verwendet, um den Status eines Geräts angeben. 
-
-Beachten Sie, dass es ein Unterschied zwischen deaktiviert und nicht konfiguriert.
+Mögliche Werte einer Eigenschaft
 
 ## <a name="members"></a>Elemente
-|Member|Wert|Beschreibung|
+|Element|Wert|Beschreibung|
 |:---|:---|:---|
-|nicht konfiguriert|0|Gerät Standardwert, keine beabsichtigt.|
-|enabled|1|Aktiviert die Einstellung auf dem Gerät.|
+|notConfigured|0|Geräte-Standardwert, keine Absicht.|
+|aktiviert|1|Aktiviert die Einstellung auf dem Gerät.|
 |deaktiviert|2|Deaktiviert die Einstellung auf dem Gerät.|

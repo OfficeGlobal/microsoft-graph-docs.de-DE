@@ -4,12 +4,12 @@ description: Metadaten für den Benutzeraktivitätsbericht zu einer Gerätekonfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 5c92de4aeb052d62333e0947f08f755a5e05f4d7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 65a0236bb284bb91f11b5420e53340a311dbff38
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166986"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571221"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Funktion „deviceConfigurationUserActivity“
 
@@ -19,7 +19,7 @@ ms.locfileid: "30166986"
 
 Metadaten für den Benutzeraktivitätsbericht zu einer Gerätekonfiguration
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

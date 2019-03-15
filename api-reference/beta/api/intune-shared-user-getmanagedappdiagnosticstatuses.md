@@ -4,12 +4,12 @@ description: Diese Funktion ruft den Diagnosevalidierungsstatus des jeweils ange
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 500c3ed0619e15822907d5d5c9b921c7a4ad384f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9fd3ab289e02c96f112a4abe6b698e8dd6134a2a
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160284"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571172"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Funktion „getManagedAppDiagnosticStatuses“
 
@@ -19,7 +19,7 @@ ms.locfileid: "30160284"
 
 Diese Funktion ruft den Diagnosevalidierungsstatus des jeweils angegebenen Benutzers ab.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

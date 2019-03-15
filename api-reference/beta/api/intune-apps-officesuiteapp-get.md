@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des officeSuiteApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7417c55fc05d808b9b071e96eb412a4f296d1c9a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6ba5785624b78ab614e63c12d9ac1cdae36b302f
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159605"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571452"
 ---
 # <a name="get-officesuiteapp"></a>OfficeSuiteApp abrufen
 
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1853
+Content-Length: 1875
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 1853
       "powerPoint": true,
       "publisher": true,
       "sharePointDesigner": true,
+      "teams": true,
       "visio": true,
       "word": true
     },

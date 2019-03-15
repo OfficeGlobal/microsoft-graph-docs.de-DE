@@ -1,15 +1,15 @@
 ---
 title: getLoggedOnManagedDevices-Funktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 673fbe18f5d94c1e797f323ee9c408f4d5de4777
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 853d3fe10a24d46ffe8226b9bfd90829aa6fa9ce
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144499"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570815"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices-Funktion
 
@@ -17,11 +17,11 @@ ms.locfileid: "30144499"
 
 > **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Noch nicht dokumentiert
+Noch nicht dokumentiert.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

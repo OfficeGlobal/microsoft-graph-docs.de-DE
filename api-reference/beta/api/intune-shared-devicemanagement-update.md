@@ -1,17 +1,17 @@
 ---
-title: Aktualisieren von „deviceManagement“
+title: deviceManagement aktualisieren
 description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a71212652d789b08a8cb496b6b98c18b12d3e9c7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141216"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571053"
 ---
-# <a name="update-devicemanagement"></a>Aktualisieren von „deviceManagement“
+# <a name="update-devicemanagement"></a>deviceManagement aktualisieren
 
 > **Wichtig:** APIs unter der/Beta-Version in Microsoft Graph können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
@@ -21,7 +21,7 @@ Aktualisieren der Eigenschaften eines [deviceManagement](../resources/intune-sha
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 Beachten Sie, dass die Berechtigung je nach Workflow variiert.
 
@@ -34,12 +34,12 @@ Beachten Sie, dass die Berechtigung je nach Workflow variiert.
 | &nbsp; &nbsp; **Gerätekonfiguration** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Geräteverwaltung** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Elektronische SIM-Karte** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Registrierung** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Registrierung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Fechten** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Benachrichtigung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Rollenbasierte Zugriffssteuerung (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **Remote Zugriff** | DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **Remotezugriff** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Remote Unterstützung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Telekom-Spesenverwaltung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
@@ -71,10 +71,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Gerät.|
+|id|String|Eindeutiger Bezeichner für das Gerät.|
 |**deviceConfiguration**|
 |intuneAccountId|GUID|InTune-Konto-ID für angegebenen Mandanten|
-|legacyPcManangementEnabled|Boolean|Die Eigenschaft zum Aktivieren der nicht-MDM-verwalteten Legacy-PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
+|legacyPcManangementEnabled|Boolesch|Die Eigenschaft zum Aktivieren der nicht-MDM-verwalteten Legacy-PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
 |maximumDepTokens|Int32|Maximale Anzahl der pro-Mandanten zulässigen DEP-Token.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|
@@ -82,7 +82,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informationen zur Administrator Einwilligung.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Übersicht über Geräteschutz.|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regel zur Gerätebereinigung|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Status des Abonnements bei der Lösung für Mobilgeräteverwaltung des Mandanten. Mögliche Werte sind: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked` und `lockedOut`.|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Abonnementstatus für Verwaltung mobiler Geräte des Mandanten. Mögliche Werte: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |Abonnements|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Abonnement des Mandanten. Mögliche Werte sind: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU` und `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Übersicht über Malware für Windows-Geräte.|
 |**Onboarding**|

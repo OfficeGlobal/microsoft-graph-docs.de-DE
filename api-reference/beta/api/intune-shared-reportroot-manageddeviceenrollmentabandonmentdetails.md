@@ -4,12 +4,12 @@ description: Metadaten für den Bericht über Registrierungs Verzichts Details
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5721e0cb5e466ba684fa1e73572a1ecf87a398b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 67cc5e74b70849df502ea5f00c39e37ed9c55c38
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141062"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571277"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails-Funktion
 
@@ -19,7 +19,7 @@ ms.locfileid: "30141062"
 
 Metadaten für den Bericht über Registrierungs Verzichts Details
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -44,15 +44,15 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
+Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|skip|Int32|Noch nicht dokumentiert|
-|top|Int32|Noch nicht dokumentiert|
-|filter|Zeichenfolge|Noch nicht dokumentiert|
-|skipToken|Zeichenfolge|Noch nicht dokumentiert|
+|skip|Int32|Noch nicht dokumentiert.|
+|top|Int32|Noch nicht dokumentiert.|
+|Filter|String|Noch nicht dokumentiert.|
+|skipToken|String|Noch nicht dokumentiert.|
 
 
 

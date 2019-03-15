@@ -4,12 +4,12 @@ description: Diese Aktion stößt einen Zurücksetzungsvorgang für eine App-Reg
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9fe4d53841d8b0b6b84f929e76db5b674ed786e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f53bdf15f5c1476d82067cc1082a1820ef28a0d6
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171904"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571039"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag-Aktion
 
@@ -21,7 +21,7 @@ Diese Aktion stößt einen Zurücksetzungsvorgang für eine App-Registrierung mi
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 ## <a name="response"></a>Antwort
 
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

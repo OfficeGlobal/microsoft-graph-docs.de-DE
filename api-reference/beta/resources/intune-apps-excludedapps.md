@@ -4,12 +4,12 @@ description: Enthält Eigenschaften für ausgeschlossene Office365-apps.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dee0d5328f1f69c95159116bf913bc2abb959d7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154026"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571690"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps-Ressourcentyp
 
@@ -22,19 +22,20 @@ Enthält Eigenschaften für ausgeschlossene Office365-apps.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|access|Boolescher Wert|Der Wert für, wenn MS Office Access ausgeschlossen werden soll oder nicht.|
-|Excel|Boolescher Wert|Der Wert für, wenn MS Office Excel ausgeschlossen werden soll oder nicht.|
-|Groove|Boolescher Wert|Der Wert für IF MS Office OneDrive for Business-Groove sollte ausgeschlossen werden oder nicht.|
-|infoPath|Boolescher Wert|Der Wert für, wenn MS Office InfoPath ausgeschlossen werden soll oder nicht.|
-|lync|Boolescher Wert|Der Wert für, wenn MS Office Skype for Business-lync ausgeschlossen werden soll oder nicht.|
-|oneDrive|Boolescher Wert|Der Wert für, wenn MS Office OneDrive ausgeschlossen werden soll oder nicht.|
-|oneNote|Boolescher Wert|Der Wert für, wenn MS Office OneNote ausgeschlossen werden soll oder nicht.|
-|outlook|Boolescher Wert|Der Wert für, wenn MS Office Outlook ausgeschlossen werden soll oder nicht.|
-|Kulissen|Boolescher Wert|Der Wert für IF MS Office PowerPoint sollte ausgeschlossen werden oder nicht.|
-|publisher|Boolescher Wert|Der Wert für, wenn MS Office Publisher ausgeschlossen werden soll oder nicht.|
-|sharePointDesigner|Boolescher Wert|Der Wert für, wenn MS Office SharePointDesigner ausgeschlossen werden soll oder nicht.|
-|Visio|Boolescher Wert|Der Wert für, wenn MS Office Visio ausgeschlossen werden soll oder nicht.|
-|Wort|Boolescher Wert|Der Wert für, wenn MS Office Word ausgeschlossen werden soll oder nicht.|
+|Access|Boolesch|Der Wert für, wenn MS Office Access ausgeschlossen werden soll oder nicht.|
+|Excel|Boolesch|Der Wert für, wenn MS Office Excel ausgeschlossen werden soll oder nicht.|
+|Groove|Boolesch|Der Wert für IF MS Office OneDrive for Business-Groove sollte ausgeschlossen werden oder nicht.|
+|infoPath|Boolesch|Der Wert für, wenn MS Office InfoPath ausgeschlossen werden soll oder nicht.|
+|lync|Boolesch|Der Wert für, wenn MS Office Skype for Business-lync ausgeschlossen werden soll oder nicht.|
+|oneDrive|Boolesch|Der Wert für, wenn MS Office OneDrive ausgeschlossen werden soll oder nicht.|
+|oneNote|Boolesch|Der Wert für, wenn MS Office OneNote ausgeschlossen werden soll oder nicht.|
+|outlook|Boolesch|Der Wert für, wenn MS Office Outlook ausgeschlossen werden soll oder nicht.|
+|Kulissen|Boolesch|Der Wert für IF MS Office PowerPoint sollte ausgeschlossen werden oder nicht.|
+|publisher|Boolesch|Der Wert für, wenn MS Office Publisher ausgeschlossen werden soll oder nicht.|
+|sharePointDesigner|Boolesch|Der Wert für, wenn MS Office SharePointDesigner ausgeschlossen werden soll oder nicht.|
+|Teams|Boolesch|Der Wert für IF-MS Office Teams sollte ausgeschlossen werden oder nicht.|
+|Visio|Boolesch|Der Wert für, wenn MS Office Visio ausgeschlossen werden soll oder nicht.|
+|Wort|Boolesch|Der Wert für, wenn MS Office Word ausgeschlossen werden soll oder nicht.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -60,6 +61,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }

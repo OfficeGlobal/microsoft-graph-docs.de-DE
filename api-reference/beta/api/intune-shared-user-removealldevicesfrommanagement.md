@@ -4,12 +4,12 @@ description: Die Verwaltung aller Geräte für diesen Benutzer einstellen.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 390a464110c5f6b18b385476862e3316e2be1ed7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 72a4ebafd857abef85231b90327f9f6d94e5f99b
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141223"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571081"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement-Aktion
 
@@ -19,7 +19,7 @@ ms.locfileid: "30141223"
 
 Die Verwaltung aller Geräte für diesen Benutzer einstellen.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -47,7 +47,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 ### <a name="request"></a>Anforderung

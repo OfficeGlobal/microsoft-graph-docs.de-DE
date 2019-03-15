@@ -4,12 +4,12 @@ description: Erstellt neue Objekte des Typs windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb83507aa28ec859939e846312539656d81b3f69
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7f335b531228fa8bc8b1f5865cacb57007acd41a
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165331"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572117"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy erstellen
 
@@ -51,42 +51,43 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|string|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|String|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Boolean|Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.|
-|passwordBlockSimple|Boolean|Gibt an, ob einfache Kennwörter erlaubt sind.|
-|passwordRequiredToUnlockFromIdle|Boolean|Legt fest, dass zum Entsperren eines im Leerlauf laufenden Geräts ein Kennwort erforderlich ist.|
+|passwordRequired|Boolesch|Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.|
+|passwordBlockSimple|Boolesch|Gibt an, ob einfache Kennwörter erlaubt sind.|
+|passwordRequiredToUnlockFromIdle|Boolesch|Legt fest, dass zum Entsperren eines im Leerlauf laufenden Geräts ein Kennwort erforderlich ist.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordExpirationDays|Int32|Zeitraum in Tagen bis zum Ablaufen des Kennworts|
 |passwordMinimumLength|Int32|Mindestlänge des Kennworts|
-|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
+|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Grenze für die Wiederverwendung von Kennwörtern. Der festgelegte Wert gibt an, von wie vielen der zuletzt genutzten Kennwörter sich das Kennwort unterscheiden muss.|
-|requireHealthyDeviceReport|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
-|osMinimumVersion|Zeichenfolge|Mindestversion von Windows 10|
-|osMaximumVersion|Zeichenfolge|Maximalversion von Windows 10|
-|mobileOsMinimumVersion|Zeichenfolge|Mindestversion von Windows Phone|
-|mobileOsMaximumVersion|Zeichenfolge|Maximalversion von Windows Phone|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
-|bitLockerEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
-|secureBootEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
-|codeIntegrityEnabled|Boolean|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
-|storageRequireEncryption|Boolean|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
-|activeFirewallRequired|Boolean|Aktive Firewall auf Windows-Geräten erforderlich.|
-|defenderEnabled|Boolean|Windows Defender-Antischadsoftware auf Windows-Geräten erforderlich.|
-|defenderVersion|Zeichenfolge|Mindestversion von Windows Defender Antischadsoftware auf Windows-Geräten|
-|signatureOutOfDate|Boolean|Windows Defender-Antischadsoftware-Signatur muss auf Windows-Geräten auf dem neuesten Stand sein.|
-|rtpEnabled|Boolean|Windows Defender-Antischadsoftware-Echtzeitschutz auf Windows-Geräten erforderlich.|
-|antivirusRequired|Boolean|Erfordern Sie eine Antivirus-Lösung, die mit Windows Decurity Center registriert ist, um ein-und zu überwachen (beispielsweise Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Fordern Sie eine beliebige antiSpywarelösung an, die mit Windows Decurity Center registriert ist, um eingeschaltet und überwacht zu werden (z. b. Symantec, Windows Defender).|
+|requireHealthyDeviceReport|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
+|osMinimumVersion|String|Mindestversion von Windows 10|
+|osMaximumVersion|String|Maximalversion von Windows 10|
+|mobileOsMinimumVersion|String|Mindestversion von Windows Phone|
+|mobileOsMaximumVersion|String|Maximalversion von Windows Phone|
+|earlyLaunchAntiMalwareDriverEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
+|bitLockerEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
+|secureBootEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
+|codeIntegrityEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
+|storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
+|activeFirewallRequired|Boolesch|Aktive Firewall auf Windows-Geräten erforderlich.|
+|defenderEnabled|Boolesch|Windows Defender-Antischadsoftware auf Windows-Geräten erforderlich.|
+|defenderVersion|String|Mindestversion von Windows Defender Antischadsoftware auf Windows-Geräten|
+|signatureOutOfDate|Boolesch|Windows Defender-Antischadsoftware-Signatur muss auf Windows-Geräten auf dem neuesten Stand sein.|
+|rtpEnabled|Boolesch|Windows Defender-Antischadsoftware-Echtzeitschutz auf Windows-Geräten erforderlich.|
+|antivirusRequired|Boolesch|Erfordern Sie eine Antivirus-Lösung, die mit Windows Decurity Center registriert ist, um ein-und zu überwachen (beispielsweise Symantec, Windows Defender).|
+|antiSpywareRequired|Boolesch|Fordern Sie eine beliebige antiSpywarelösung an, die mit Windows Decurity Center registriert ist, um eingeschaltet und überwacht zu werden (z. b. Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) -Sammlung|Die gültigen buildbereiche des Betriebssystems auf Windows-Geräten. Diese Collection darf maximal 10.000 Elemente enthalten.|
-|deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
+|deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mindestrisiko für Geräte Bedrohungsstufe zum Melden der Nichtkonformität. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
-|configurationManagerComplianceRequired|Boolean|Beachten Sie, dass der SCCM-Konformitätsstatus für den InTune-KonformitätsStatus berücksichtigt werden muss.|
+|configurationManagerComplianceRequired|Boolesch|Beachten Sie, dass der SCCM-Konformitätsstatus für den InTune-KonformitätsStatus berücksichtigt werden muss.|
+|tpmRequired|Boolesch|Es muss ein Trusted Platform Module (TPM) vorhanden sein.|
 
 
 
@@ -100,7 +101,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1666
+Content-length: 1690
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -146,7 +147,8 @@ Content-length: 1666
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
 
@@ -155,7 +157,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1838
+Content-Length: 1862
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -204,7 +206,8 @@ Content-Length: 1838
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
 

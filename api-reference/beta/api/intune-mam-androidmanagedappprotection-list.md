@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „androidManagedAppProtection“
-description: Listet die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection auf.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4855c3d0104fd8d054bd135eca2956da527df26
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fa59dd37e66fe148792df58d285f87ad4d0e6d70
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165674"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571165"
 ---
 # <a name="list-androidmanagedappprotections"></a>Auflisten von „androidManagedAppProtection“
 
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2909
+Content-Length: 3247
 
 {
   "value": [
@@ -110,6 +110,7 @@ Content-Length: 2909
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "screenCaptureBlocked": true,
@@ -127,7 +128,11 @@ Content-Length: 2909
       ],
       "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
-      "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
+      "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+      "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+      "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+      "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
     }
   ]
 }

@@ -1,15 +1,15 @@
 ---
 title: Benutzer löschen
-description: Löscht einen user.
+description: Löscht ein user-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6d0afb6c816241acf15319c3fb4082d3cc7935dd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acfdd4343f699f9db9aadee10d15be927f7bd105
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165492"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571123"
 ---
 # <a name="delete-user"></a>Benutzer löschen
 
@@ -19,7 +19,7 @@ ms.locfileid: "30165492"
 
 Löscht ein [user](../resources/intune-shared-user.md)-Objekt.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference).  Die erforderliche Berechtigung hängt vom Kontext ab.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference.md).  Die erforderliche Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

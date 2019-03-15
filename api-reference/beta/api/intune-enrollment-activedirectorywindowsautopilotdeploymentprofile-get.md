@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des activeDirectoryWindowsA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e64ca2eb0bcee1fe064bc9a80a58ddbb1631c1d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 01aec0eebc85fde7206b05be357010e96a41a5ea
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170868"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571977"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile abrufen
 
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1322
+Content-Length: 1356
 
 {
   "value": {
@@ -99,6 +99,7 @@ Content-Length: 1322
     },
     "extractHardwareHash": true,
     "deviceNameTemplate": "Device Name Template value",
+    "deviceType": "surfaceHub2",
     "enableWhiteGlove": true
   }
 }

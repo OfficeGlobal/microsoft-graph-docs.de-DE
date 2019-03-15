@@ -1,15 +1,15 @@
 ---
 title: getRoleScopeTagsByResource-Funktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 54cc2ba137a3c4a45fc3ca724fa47c1f3f3e0490
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea20330fadc4db5a3ed814450b34b660ba230789
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140663"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571291"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource-Funktion
 
@@ -19,12 +19,12 @@ ms.locfileid: "30140663"
 
 Noch nicht dokumentiert
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)||
-| &nbsp;&nbsp; **Rollenbasierte Zugriffssteuerung (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 
@@ -44,12 +44,12 @@ GET /deviceManagement/getRoleScopeTagsByResource
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
+Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|resource|Zeichenfolge|Noch nicht dokumentiert.|
+|resource|String|Noch nicht dokumentiert.|
 
 
 

@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der androidManagedStore
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03db4da4fe464eeb13d5b7800bf1af9b24b2ae36
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7df116f50c0b3f0c35e85af5e25b8b57eed223bd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147607"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570948"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>AndroidManagedStoreAppConfigurations aufListen
 
@@ -62,7 +62,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 889
 
 {
   "value": [
@@ -88,7 +88,8 @@ Content-Length: 852
           "permission": "Permission value",
           "action": "autoGrant"
         }
-      ]
+      ],
+      "appSupportsOemConfig": true
     }
   ]
 }

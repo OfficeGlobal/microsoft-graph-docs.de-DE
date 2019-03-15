@@ -4,12 +4,12 @@ description: Windows Autopilot-BereitstellungsProfil
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6634444f6d2355c60b7b625104b6f12f2f47c46f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 96c70f255c9647ae5e20d04c6ed62af0b51b79f5
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139417"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571774"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>activeDirectoryWindowsAutopilotDeploymentProfile-Ressourcentyp
 
@@ -28,23 +28,24 @@ Erbt von [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-en
 |[ActiveDirectoryWindowsAutopilotDeploymentProfiles aufListen](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Objekte.|
 |[ActiveDirectoryWindowsAutopilotDeploymentProfile abrufen](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Lesen von Eigenschaften und Beziehungen des [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Objekts.|
 |[ActiveDirectoryWindowsAutopilotDeploymentProfile erstellen](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-create.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Erstellen eines neuen [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Objekts.|
-|[ActiveDirectoryWindowsAutopilotDeploymentProfile löschen](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md)|Keine|Löscht eine [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md).|
+|[ActiveDirectoryWindowsAutopilotDeploymentProfile löschen](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md)|None|Löscht eine [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md).|
 |[ActiveDirectoryWindowsAutopilotDeploymentProfile aktualisieren](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-update.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Aktualisieren der Eigenschaften eines [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbter Profilschlüssel|
+|id|String|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbter Profilschlüssel|
 |displayName|Zeichenfolge|Name des von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbten Profils|
 |description|Zeichenfolge|Beschreibung des von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbten Profils|
-|language|Zeichenfolge|Sprache, die auf dem von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbten Gerät konfiguriert ist|
+|language|String|Sprache, die auf dem von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbten Gerät konfiguriert ist|
 |createdDateTime|DateTimeOffset|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Profil Erstellungszeit|
 |lastModifiedDateTime|DateTimeOffset|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Profile der letzten Änderung|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Einstellung für die Out-of-Box-Umgebung|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Einstellung für den Registrierungsstatus|
-|extractHardwareHash|Boolean|HardwareHash-Extraktion für das von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Profil|
-|deviceNameTemplate|Zeichenfolge|Die Vorlage, die zum Benennen des autoPilot-Geräts verwendet wird. Dabei kann es sich um einen benutzerdefinierten Text handeln, der entweder die Seriennummer des Geräts oder eine zufällig generierte Zahl enthalten kann. Die Gesamtlänge des von der Vorlage generierten Texts darf nicht mehr als 15 Zeichen betragen. Geerbt von [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
-|enableWhiteGlove|Boolean|Aktivieren Sie den weißen Handschuh Autopilot für das Profil. Geerbt von [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Boolesch|HardwareHash-Extraktion für das von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) geerbte Profil|
+|deviceNameTemplate|String|Die Vorlage, die zum Benennen des autoPilot-Geräts verwendet wird. Dabei kann es sich um einen benutzerdefinierten Text handeln, der entweder die Seriennummer des Geräts oder eine zufällig generierte Zahl enthalten kann. Die Gesamtlänge des von der Vorlage generierten Texts darf nicht mehr als 15 Zeichen betragen. Geerbt von [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Der autoPilot-Gerätetyp, auf den dieses Profil angewendet werden kann. Von [Windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)geerbt. Mögliche Werte sind: `windowsPc` und `surfaceHub2`.|
+|enableWhiteGlove|Boolesch|Aktivieren Sie den weißen Handschuh Autopilot für das Profil. Geerbt von [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -91,6 +92,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "String",
+  "deviceType": "String",
   "enableWhiteGlove": true
 }
 ```

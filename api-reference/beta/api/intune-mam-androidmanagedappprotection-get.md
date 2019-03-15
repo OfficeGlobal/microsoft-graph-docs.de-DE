@@ -1,15 +1,15 @@
 ---
 title: Abrufen von „androidManagedAppProtection“
-description: Liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection.
+description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e063ca66307b79f97cff2aa860a8f7a07df9d43
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf571deb9421d3362da2014ce2327eaaaef812b7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165023"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571025"
 ---
 # <a name="get-androidmanagedappprotection"></a>Abrufen von „androidManagedAppProtection“
 
@@ -65,7 +65,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2773
+Content-Length: 3101
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 2773
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+    "allowedOutboundClipboardSharingExceptionLength": 14,
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "screenCaptureBlocked": true,
@@ -129,7 +130,11 @@ Content-Length: 2773
     ],
     "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
     "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
-    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
+    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+    "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+    "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+    "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
   }
 }
 ```

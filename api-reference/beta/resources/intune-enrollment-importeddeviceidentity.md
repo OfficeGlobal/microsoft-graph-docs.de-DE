@@ -4,12 +4,12 @@ description: Die importedDeviceIdentity-Ressource stellt eine eindeutige Hardwar
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7ef77b550060d5544a6ee0eda4e6b11923d3571
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1f5dcc3d7ef6cb59bffe1d7b8cfda958e76c3e35
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151226"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572103"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity-Ressourcentyp
 
@@ -25,15 +25,16 @@ Die importedDeviceIdentity-Ressource stellt eine eindeutige Hardware Identität 
 |[ImportedDeviceIdentities aufListen](../api/intune-enrollment-importeddeviceidentity-list.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Objekte.|
 |[ImportedDeviceIdentity abrufen](../api/intune-enrollment-importeddeviceidentity-get.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Lesen von Eigenschaften und Beziehungen des [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Objekts.|
 |[ImportedDeviceIdentity erstellen](../api/intune-enrollment-importeddeviceidentity-create.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Erstellen eines neuen [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Objekts.|
-|[ImportedDeviceIdentity löschen](../api/intune-enrollment-importeddeviceidentity-delete.md)|Keine|Löscht eine [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).|
+|[ImportedDeviceIdentity löschen](../api/intune-enrollment-importeddeviceidentity-delete.md)|None|Löscht eine [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).|
 |[ImportedDeviceIdentity aktualisieren](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Aktualisieren der Eigenschaften eines [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Objekts.|
-|[importDeviceIdentityList-Aktion](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Sammlung|Noch nicht dokumentiert|
+|[importDeviceIdentityList-Aktion](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Sammlung|Noch nicht dokumentiert.|
+|[searchExistingIdentities-Aktion](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Sammlung|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|ID der importierten Geräte Identität|
-|importedDeviceIdentifier|Zeichenfolge|Importierter Gerätebezeichner|
+|id|String|ID der importierten Geräte Identität|
+|importedDeviceIdentifier|String|Importierter Gerätebezeichner|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Typ der importierten Geräte Identität. Mögliche Werte sind: `unknown`, `imei` und `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Datum der letzten Änderung der Beschreibung|
 |createdDateTime|DateTimeOffset|ErstellungsDatum des Geräts|

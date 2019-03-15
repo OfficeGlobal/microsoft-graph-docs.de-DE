@@ -4,12 +4,12 @@ description: Löscht ein deviceCategory-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3f02bcad5c43ef787ad53ea59bb88853074db452
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef1283329ac40356a4f81704b1969aebbb8b0dde
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161754"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571130"
 ---
 # <a name="delete-devicecategory"></a>deviceCategory löschen
 
@@ -19,7 +19,7 @@ ms.locfileid: "30161754"
 
 Löscht ein [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekt.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

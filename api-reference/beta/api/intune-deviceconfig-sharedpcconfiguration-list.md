@@ -4,12 +4,12 @@ description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd711a832f2706cd4daa3c66a98d49aedd9d31a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2713784c5df9c6a836ecfa06d27e5b28904ddcb
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159486"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571263"
 ---
 # <a name="list-sharedpcconfigurations"></a>Auflisten von „sharedPCConfiguration“
 
@@ -63,7 +63,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1455
+Content-Length: 1492
 
 {
   "value": [
@@ -101,7 +101,8 @@ Content-Length: 1455
       "idleTimeBeforeSleepInSeconds": 12,
       "kioskAppDisplayName": "Kiosk App Display Name value",
       "kioskAppUserModelId": "Kiosk App User Model Id value",
-      "maintenanceStartTime": "11:59:24.7240000"
+      "maintenanceStartTime": "11:59:24.7240000",
+      "fastFirstSignIn": "enabled"
     }
   ]
 }

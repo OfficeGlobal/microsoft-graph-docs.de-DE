@@ -1,39 +1,40 @@
 ---
 title: iPv6Range-Ressourcentyp
-description: Beschreibt die iPv6Range Ressource die Microsoft Graph-API für Intune, die mehrere Workflows unterstützt.
+description: IPv6-Range-Definition.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35b0401d3557a6afc84a27a2f47d35e17a3229a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 6b54782b1851ea800b548f02b34f60da3a3236a3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396350"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571536"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range-Ressourcentyp
 
-> **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
+> **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
-> **Hinweis:** Die Verwendung der Microsoft Graph-APIs zum Konfigurieren von Intune-Steuerelementen und -Richtlinien erfordert dennoch, dass der Intune-Dienst vom Kunden [ordnungsgemäß lizenziert](https://go.microsoft.com/fwlink/?linkid=839381) ist.
+> **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-IPV6-Bereich
+IPv6-Range-Definition.
+
 
 Erbt von [ipRange](../resources/intune-shared-iprange.md)
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|lowerAddress|Zeichenfolge|Untere IP-Adresse|
-|upperAddress|Zeichenfolge|Obere IP-Adresse|
+|lowerAddress|String|Niedrigere Adresse.|
+|upperAddress|Zeichenfolge|Obere Adresse.|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
+
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
@@ -44,6 +45,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "upperAddress": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Erstellen eines neuen androidManagedStoreAppConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f83097929793df891a17ceb1de5c08892fa32c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e97ef467a0e615d8da1995fce20fa4a2c00e986
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169461"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571956"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>AndroidManagedStoreAppConfiguration erstellen
 
@@ -50,17 +50,18 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|String|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String-Sammlung|Die zugeordnete App. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese APP-Konfigurationsentität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Version der Gerätekonfiguration. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|packageId|Zeichenfolge|Android Enterprise App-Konfigurationspaket-ID.|
-|payloadJson|Zeichenfolge|JSON-Nutzlast der Android Enterprise-App-Konfiguration.|
+|packageId|String|Android Enterprise App-Konfigurationspaket-ID.|
+|payloadJson|String|JSON-Nutzlast der Android Enterprise-App-Konfiguration.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) -Sammlung|Liste der Android-App-Berechtigungen und entsprechende Berechtigungs Aktionen.|
+|appSupportsOemConfig|Boolesch|Gibt an, ob diese AppConfig eine OEMConfig-Richtlinie ist.|
 
 
 
@@ -74,7 +75,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 559
+Content-length: 592
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -95,7 +96,8 @@ Content-length: 559
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 
@@ -104,7 +106,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 764
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -128,7 +130,8 @@ Content-Length: 731
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

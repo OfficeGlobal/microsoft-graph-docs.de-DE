@@ -4,12 +4,12 @@ description: Auflisten von Eigenschaften und Beziehungen der user-Objekte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0fe1ab86e78e4bff46a6c9105048519a20c894a1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6508f45a96a140fcf94902a7a5e009adf21103dc
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141237"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571781"
 ---
 # <a name="list-users"></a>Benutzer auflisten
 
@@ -21,7 +21,7 @@ Auflisten von Eigenschaften und Beziehungen der [user](../resources/intune-share
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference).  Die spezifische Berechtigung hängt vom Kontext ab.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference.md).  Die spezifische Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

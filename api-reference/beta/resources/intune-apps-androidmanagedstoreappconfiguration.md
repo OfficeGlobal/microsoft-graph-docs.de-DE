@@ -4,12 +4,12 @@ description: Enthält Eigenschaften, geerbte Eigenschaften und Aktionen für And
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55f864e79e621fb5cdabfce53c5421e7d21e60cb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e31c949c74a392f7593041f6168f36c9b717550d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155307"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572145"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>androidManagedStoreAppConfiguration-Ressourcentyp
 
@@ -28,23 +28,24 @@ Erbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-managedd
 |[AndroidManagedStoreAppConfigurations aufListen](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Sammlung|AufListen von Eigenschaften und Beziehungen der [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekte.|
 |[AndroidManagedStoreAppConfiguration abrufen](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Lesen von Eigenschaften und Beziehungen des [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
 |[AndroidManagedStoreAppConfiguration erstellen](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Erstellen eines neuen [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
-|[AndroidManagedStoreAppConfiguration löschen](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Keine|Löscht eine [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
+|[AndroidManagedStoreAppConfiguration löschen](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|None|Löscht eine [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
 |[AndroidManagedStoreAppConfiguration aktualisieren](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Aktualisieren der Eigenschaften eines [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) -Objekts.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|String|Schlüssel der Entität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String-Sammlung|Die zugeordnete App. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese APP-Konfigurationsentität. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|Version der Gerätekonfiguration. Geerbt von [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|packageId|Zeichenfolge|Android Enterprise App-Konfigurationspaket-ID.|
-|payloadJson|Zeichenfolge|JSON-Nutzlast der Android Enterprise-App-Konfiguration.|
+|packageId|String|Android Enterprise App-Konfigurationspaket-ID.|
+|payloadJson|String|JSON-Nutzlast der Android Enterprise-App-Konfiguration.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) -Sammlung|Liste der Android-App-Berechtigungen und entsprechende Berechtigungs Aktionen.|
+|appSupportsOemConfig|Boolesch|Gibt an, ob diese AppConfig eine OEMConfig-Richtlinie ist.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -86,7 +87,8 @@ Es folgt eine JSON-Darstellung der Ressource.
       "permission": "String",
       "action": "String"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

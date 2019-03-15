@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des windowsAutopilotDeviceI
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529a458e14acf6e5187ec47b039afde7de8a6254
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 44e13cbabf00aee00246bc3a3819888239f6bae0
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151576"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571844"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity abrufen
 
@@ -66,7 +66,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 1109
 
 {
   "value": {
@@ -84,7 +84,12 @@ Content-Length: 853
     "enrollmentState": "enrolled",
     "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
     "addressableUserName": "Addressable User Name value",
-    "userPrincipalName": "User Principal Name value"
+    "userPrincipalName": "User Principal Name value",
+    "resourceName": "Resource Name value",
+    "skuNumber": "Sku Number value",
+    "systemFamily": "System Family value",
+    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```

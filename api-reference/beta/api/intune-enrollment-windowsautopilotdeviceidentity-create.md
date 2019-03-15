@@ -4,12 +4,12 @@ description: Erstellen eines neuen windowsAutopilotDeviceIdentity-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d87a27c120f4866725e2f91828e8c267f655e69c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b29da1f5a9552aa14e51d9ef88c52b143144885c
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175304"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571508"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity erstellen
 
@@ -51,20 +51,25 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|GUID des Objekts|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profil Zuordnungsstatus des Windows Autopilot-Geräts. Mögliche Werte sind: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending` und `failed`.|
+|id|Zeichenfolge|GUID des Objekts|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profil Zuordnungsstatus des Windows Autopilot-Geräts. Mögliche Werte: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profilzuweisung detaillierter Status des Windows Autopilot-Geräts. Mögliche Werte sind: `none` und `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Festgelegte Zeit des Windows Autopilot-Geräts.|
 |orderIdentifier|String|Auftragsbezeichner des Windows Autopilot-Geräts.|
-|purchaseOrderIdentifier|Zeichenfolge|Bestellkennung des Windows Autopilot-Geräts.|
+|purchaseOrderIdentifier|String|Bestellkennung des Windows Autopilot-Geräts.|
 |serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
-|manufacturer|Zeichenfolge|OEM-Hersteller des Windows Autopilot-Geräts.|
-|model|Zeichenfolge|Modellname des Windows Autopilot-Geräts.|
+|productKey|String|Product Key des Windows AutoPilot-Geräts|
+|Hersteller|String|OEM-Hersteller des Windows Autopilot-Geräts.|
+|model|String|Modellname des Windows Autopilot-Geräts.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|InTune-Registrierungsstatus des Windows Autopilot-Geräts. Mögliche Werte sind: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted` und `blocked`.|
 |lastContactedDateTime|DateTimeOffset|InTune zuletzt kontaktierte Datum Uhrzeit des Windows Autopilot-Geräts.|
-|addressableUserName|Zeichenfolge|Adressierbarer Benutzername.|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipal Name.|
+|addressableUserName|String|Adressierbarer Benutzername.|
+|userPrincipalName|String|Benutzerprinzipal Name.|
+|resourceName|String|Ressourcen Name.|
+|skuNumber|String|SKU-Nummer|
+|systemFamily|String|System Familie|
+|Eigenschaften azureactivedirectorydeviceid|String|AAD-Geräte-ID|
+|managedDeviceId|String|Verwaltete Geräte-ID|
 
 
 
@@ -78,7 +83,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 755
+Content-length: 1001
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -94,7 +99,12 @@ Content-length: 755
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -103,7 +113,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 804
+Content-Length: 1050
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -120,7 +130,12 @@ Content-Length: 804
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 

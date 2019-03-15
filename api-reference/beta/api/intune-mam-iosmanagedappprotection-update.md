@@ -1,15 +1,15 @@
 ---
 title: Aktualisieren von „iosManagedAppProtection“
-description: Aktualisiert die Eigenschaften von Objekten des Typs iosManagedAppProtection.
+description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a528b5e7b2fb986ef65fbf1e15ff57386b96d44e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bccf984fa66eacf9dc96b507debb15425748a3d1
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174228"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571382"
 ---
 # <a name="update-iosmanagedappprotection"></a>Aktualisieren von „iosManagedAppProtection“
 
@@ -55,54 +55,54 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der Richtlinie Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Richtlinie Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|string|Schlüssel der Entität Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|Version|Zeichenfolge|Version der Entität Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Schlüssel der Entität Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|Version|String|Version der Entität Geerbt von [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät nicht mit dem Internet verbunden ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |periodOnlineBeforeAccessCheck|Dauer|Zeitraum, nach dem der Zugriff überprüft wird, wenn das Gerät mit dem Internet verbunden ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Quellen, von denen Daten übermittelt werden dürfen. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte sind: `allApps`, `managedApps` und `none`.|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Ziele, an die Daten übermittelt werden dürfen. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte: `allApps`, `managedApps`, `none`.|
-|organizationalCredentialsRequired|Boolean|Gibt an, ob von der Organisation bereitgestellte Anmeldeinformationen zur Nutzung der App erforderlich sind. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|organizationalCredentialsRequired|Boolesch|Gibt an, ob von der Organisation bereitgestellte Anmeldeinformationen zur Nutzung der App erforderlich sind. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|Regelt die Freigabe der Zwischenablage für Apps auf dem verwalteten Gerät. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
-|dataBackupBlocked|Boolean|Gibt an, ob die Sicherung der Daten der verwalteten App blockiert werden soll. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|deviceComplianceRequired|Boolean|Gibt an, ob Gerätekonformität erforderlich ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|managedBrowserToOpenLinksRequired|Boolean|Gibt an, ob Internetlinks in der Managed Browser-App geöffnet werden sollen. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|saveAsBlocked|Boolean|Gibt an, ob Benutzer das Menüelement „Speichern unter“ verwenden dürfen, um eine Kopie geschützter Dateien zu speichern. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|dataBackupBlocked|Boolesch|Gibt an, ob die Sicherung der Daten der verwalteten App blockiert werden soll. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|deviceComplianceRequired|Boolesch|Gibt an, ob Gerätekonformität erforderlich ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|managedBrowserToOpenLinksRequired|Boolesch|Gibt an, ob Internetlinks in der Managed Browser-App geöffnet werden sollen. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|saveAsBlocked|Boolesch|Gibt an, ob Benutzer das Menüelement „Speichern unter“ verwenden dürfen, um eine Kopie geschützter Dateien zu speichern. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |periodOfflineBeforeWipeIsEnforced|Dauer|Legt fest, wie lange eine App ohne Internetverbindung sein darf, bevor sämtliche verwalteten Daten gelöscht werden. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|pinRequired|Boolean|Gibt an, ob eine PIN auf App-Ebene erforderlich ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|pinRequired|Boolescher Wert|Gibt an, ob eine PIN auf App-Ebene erforderlich ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |maximumPinRetries|Int32|Maximale Anzahl fehlerhafter PIN-Wiederholungsversuche, bevor die verwaltete App blockiert oder gelöscht wird. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |simplePinBlocked|Boolean|Gibt an, ob einfache PINs blockiert werden sollen. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumPinLength|Int32|Erforderliche PIN-Mindestlänge für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|Zulässige Zeichensätze für PINs auf App-Ebene, wenn „pinRequired“ auf „true“ gesetzt ist. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Dauer|Zeitraum, nach dem die für alle Ebenen geltende PIN zurückgesetzt werden muss, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md) -Sammlung|Datenspeicherorte, an denen der Benutzer verwaltete Daten speichern darf. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte sind: `oneDriveForBusiness`, `sharePoint` und `localStorage`.|
-|contactSyncBlocked|Boolean|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|printBlocked|Boolean|Gibt an, ob aus verwalteten Apps gedruckt werden darf.
- Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|fingerprintBlocked|Boolean|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|disableAppPinIfDevicePinIsSet|Boolean|Gibt an, ob die Verwendung der App-PIN erforderlich ist, wenn die Geräte-PIN gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumRequiredOsVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWarningOsVersion|Zeichenfolge|Ist eine ältere Version als die angegebene Version installiert, wird in der verwalteten App die Warnmeldung angezeigt, dass kein Zugriff auf Unternehmensdaten erlaubt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumRequiredAppVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|contactSyncBlocked|Boolesch|Gibt an, ob eine Synchronisierung von Kontakten mit dem Gerät des Benutzers erlaubt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|printBlocked|Boolesch|Gibt an, ob über verwaltete Apps gedruckt werden darf. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|fingerprintBlocked|Boolescher Wert|Gibt an, ob statt einer PIN der Fingerabdruckleser verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|disableAppPinIfDevicePinIsSet|Boolescher Wert|Gibt an, ob die Verwendung der App-PIN erforderlich ist, wenn die Geräte-PIN gesetzt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumRequiredOsVersion|String|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWarningOsVersion|String|Ist eine ältere Version als die angegebene Version installiert, wird in der verwalteten App die Warnmeldung angezeigt, dass kein Zugriff auf Unternehmensdaten erlaubt ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumRequiredAppVersion|String|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version wird eine Warnmeldung in der verwalteten App angezeigt. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|Zeichenfolge|Versionen, die kleiner als oder gleich der angegebenen Version sind, wischen die verwaltete APP und die zugehörigen Unternehmensdaten ab. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|Zeichenfolge|Versionen, die kleiner als oder gleich der angegebenen Version sind, wischen die verwaltete APP und die zugehörigen Unternehmensdaten ab. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|String|Versionen, die kleiner als oder gleich der angegebenen Version sind, wischen die verwaltete APP und die zugehörigen Unternehmensdaten ab. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|String|Versionen, die kleiner als oder gleich der angegebenen Version sind, wischen die verwaltete APP und die zugehörigen Unternehmensdaten ab. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Definiert ein verwaltetes App-Verhalten, entweder Block oder Wipe, wenn das Gerät Rooted oder jailbroken ist, wenn DeviceComplianceRequired auf true festgelegt ist. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte sind: `block`, `wipe` und `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Definiert ein verwaltetes App-Verhalten, entweder Block oder Wipe, basierend auf der maximalen Anzahl fehlerhafter PIN-Wiederholungsversuche. Von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md)geerbt. Mögliche Werte sind: `block`, `wipe` und `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Dauer|Timeout in Minuten für eine APP-Pin anstelle von nicht-Biometrie-Kennungen, die von [ManagedAppProtection](../resources/intune-mam-managedappprotection.md) geerbt wurden|
-|isAssigned|Boolean|Gibt an, ob die Richtlinie für eine oder mehrere Einschlussgruppen bereitgestellt wurde. Geerbt von [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
-|targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Die beabsichtigten App-Verwaltungsebenen für diese Richtlinie wurden von [TargetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)geerbt. Mögliche Werte: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
+|allowedOutboundClipboardSharingExceptionLength|Int32|Geben Sie die Anzahl von Zeichen an, die aus org-Daten und-Konten in eine beliebige Anwendung Ausschneiden oder kopiert werden dürfen. Diese Einstellung überschreibt die AllowedOutboundClipboardSharingLevel-Einschränkung. Der Standardwert "0" bedeutet, dass keine Ausnahme zulässig ist. Geerbt von [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|isAssigned|Boolesch|Gibt an, ob die Richtlinie für eine oder mehrere Einschlussgruppen bereitgestellt wurde. Geerbt von [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Die beabsichtigten App-Verwaltungsebenen für diese Richtlinie wurden von [TargetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)geerbt. Mögliche Werte sind: `unspecified`, `unmanaged`, `mdm` und `androidEnterprise`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Typ der Verschlüsselung, die auf Daten in einer verwalteten App angewendet werden soll. Mögliche Werte: sind `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles` und `whenDeviceLocked`.|
-|minimumRequiredSdkVersion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
+|minimumRequiredSdkVersion|String|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
 |deployedAppCount|Int32|Anzahl der Apps, für die die aktuelle Richtlinie bereitgestellt wurde|
 |faceIdBlocked|Boolean|Gibt an, ob statt einer PIN die Face ID verwendet werden darf, wenn „pinRequired“ auf „true“ gesetzt ist.|
 |exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md)-Sammlung|Apps in dieser Liste sind von der Richtlinie ausgenommen und können Daten von verwalteten apps empfangen.|
-|Eigenschaften minimumwipesdkversion|Zeichenfolge|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
-|allowedIosDeviceModels|Zeichenfolge|Durch Semikolons getrennte Liste der Gerätemodelle, die als Zeichenfolge zulässig sind, damit die verwaltete APP funktioniert.|
+|Eigenschaften minimumwipesdkversion|String|Unter älteren Versionen als der angegebenen Version ist der Zugriff auf Unternehmensdaten für die verwaltete App blockiert.|
+|allowedIosDeviceModels|String|Durch Semikolons getrennte Liste der Gerätemodelle, die als Zeichenfolge zulässig sind, damit die verwaltete APP funktioniert.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Definiert ein verwaltetes App-Verhalten, entweder Block oder Wipe, wenn das angegebene Gerätemodell nicht zulässig ist. Mögliche Werte sind: `block`, `wipe` und `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Definiert, ob Drittanbieter-Tastaturen beim Zugriff auf eine verwaltete App zulässig sind.|
-|filterOpenInToOnlyManagedApps|Boolean|Definiert, ob der Open-in-Vorgang von der verwalteten APP zu den ausgewählten Filesharing-Speicherorten unterstützt wird. Diese Einstellung gilt nur, wenn AllowedOutboundDataTransferDestinations auf ManagedApps und DisableProtectionOfManagedOutboundOpenInData auf false festgelegt ist.|
-|disableProtectionOfManagedOutboundOpenInData|Boolean|Deaktivieren des Schutzes von Daten, die über die IOS openin-Option an andere apps übertragen werden. Diese Einstellung ist nur zulässig, wenn AllowedOutboundDataTransferDestinations auf ManagedApps festgelegt ist.|
-|Protectinbounddatafromunknownsources zur|Boolean|Schützen Sie eingehende Daten aus unbekannten Quellen. Diese Einstellung ist nur zulässig, wenn AllowedInboundDataTransferSources auf allApps festgelegt ist.|
+|thirdPartyKeyboardsBlocked|Boolesch|Definiert, ob Drittanbieter-Tastaturen beim Zugriff auf eine verwaltete App zulässig sind.|
+|filterOpenInToOnlyManagedApps|Boolesch|Definiert, ob der Open-in-Vorgang von der verwalteten APP zu den ausgewählten Filesharing-Speicherorten unterstützt wird. Diese Einstellung gilt nur, wenn AllowedOutboundDataTransferDestinations auf ManagedApps und DisableProtectionOfManagedOutboundOpenInData auf false festgelegt ist.|
+|disableProtectionOfManagedOutboundOpenInData|Boolesch|Deaktivieren des Schutzes von Daten, die über die IOS openin-Option an andere apps übertragen werden. Diese Einstellung ist nur zulässig, wenn AllowedOutboundDataTransferDestinations auf ManagedApps festgelegt ist.|
+|Protectinbounddatafromunknownsources zur|Boolesch|Schützen Sie eingehende Daten aus unbekannten Quellen. Diese Einstellung ist nur zulässig, wenn AllowedInboundDataTransferSources auf allApps festgelegt ist.|
 
 
 
@@ -116,7 +116,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2487
+Content-length: 2544
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -159,6 +159,7 @@ Content-length: 2487
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+  "allowedOutboundClipboardSharingExceptionLength": 14,
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -187,7 +188,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2659
+Content-Length: 2716
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -233,6 +234,7 @@ Content-Length: 2659
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+  "allowedOutboundClipboardSharingExceptionLength": 14,
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
