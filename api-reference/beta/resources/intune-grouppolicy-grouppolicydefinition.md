@@ -4,12 +4,12 @@ description: Die Entität beschreibt alle Informationen zu einer einzelnen Grupp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7649d249a034278741199e1f858f07ea34c7137
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c5062fda984dbe1dda518e77ff271750d30adb8
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164057"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644286"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition-Ressourcentyp
 
@@ -28,13 +28,13 @@ Die Entität beschreibt alle Informationen zu einer einzelnen Gruppenrichtlinie.
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Gibt den Typ der Gruppen an, auf die die Richtlinie angewendet werden kann. Mögliche Werte sind: `user`, `machine` und `both`.|
+|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Gibt den Typ der Gruppen an, auf die die Richtlinie angewendet werden kann. Mögliche Werte sind: `user` und `machine`.|
 |displayName|Zeichenfolge|Der Name der lokalisierten Richtlinie.|
-|explainText|Zeichenfolge|Die lokalisierte Erläuterung oder der Hilfe Text, der der Richtlinie zugeordnet ist. Der Standardwert ist Empty.|
+|explainText|Zeichenfolge|Die lokalisierte Erläuterung oder der Hilfe Text, der der Richtlinie zugeordnet ist. Der Standardwert ist leer.|
 |categoryPath|Zeichenfolge|Der lokalisierte vollständige Kategorie-Pfad für die Richtlinie.|
 |supportedOn|Zeichenfolge|Lokalisierte Zeichenfolge, die verwendet wird, um anzugeben, welche Betriebssystem-oder Anwendungsversion von der Richtlinie betroffen ist.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte sind: `admxBacked` und `admxIngested`.|
-|id|Zeichenfolge|Schlüssel der Entität|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte: `admxBacked`, `admxIngested`.|
+|id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 ## <a name="relationships"></a>Beziehungen
