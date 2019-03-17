@@ -1,0 +1,176 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: b893fc83f7ca7552b4decbac3dc37fd0441b7043
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657917"
+documentType: LandingData
+title: Microsoft Graph-Dokumentation
+metadata:
+  title: Microsoft Graph-Dokumentation
+  description: Erfahren Sie, wie Sie Microsoft Graph verwenden können, um Apps für Organisationen und Consumer zu erstellen, die mit den Daten von Millionen von Benutzern interagieren.
+  services: active-directory
+  author: CelesteDG
+  manager: mtillman
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 12/13/2018
+  ms.author: celested
+abstract:
+  description: Microsoft Graph bietet ein vereinheitlichtes Programmiermodell, mit dem Sie Apps für Organisationen und Consumer erstellen können, die mit den Daten von Millionen von Benutzern interagieren. Sie können die Microsoft Graph-REST-APIs verwenden, um auf Daten in Azure Active Directory, Office 365 Services, Enterprise Mobility and Security Services, Windows 10 Services, Dynamics 365 und mehr zuzugreifen. In unserer Dokumentation erfahren Sie mehr über die Verwendung von Microsoft Graph-APIs.
+  aside:
+    image:
+      alt: 
+      height: 110
+      src: ./images/index/whatsnew-video.png
+      width: 250
+    title: Neuerungen in Microsoft Graph (12:39)
+    href: https://www.youtube.com/watch?v=3X10r2VVLCg
+    width: 250
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/overview
+      html: <p>Erfahren Sie mehr über Microsoft Graph und seine Features und Funktionen.</p>
+      image:
+        src: ./images/index/i_get-started.svg
+      title: Übersicht über Microsoft Graph
+    - href: /graph/overview-major-services
+      html: <p>Lernen Sie die wichtigsten Dienste und Features kennen, die in Microsoft Graph zur Verfügung stehen.</p>
+      image:
+        src: ./images/index/i_overview.svg
+      title: Dienste und Features
+    - href: https://developer.microsoft.com/graph/graph-explorer/
+      html: <p>Stellen Sie Anforderungen und Antworten zu Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_queries.svg
+      title: Graph-Tester
+    - href: /graph/use-the-api
+      html: <p>Erfahren Sie, wie Sie mit der Verwendung der Microsoft Graph-API beginnen, um auf Microsoft Cloud-Dienst Ressourcen zuzugreifen.</p>
+      image:
+        src: ./images/index/i_code-edit.svg
+      title: Verwenden der API
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+      html: <p>Verwenden Sie die Microsoft Graph-REST-API v 1.0, um ihre praktischen Produktionsanforderungen zu erfüllen.</p>
+      image:
+        src: ./images/index/i_api-reference.svg
+      title: Microsoft Graph-REST-API v 1.0
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+      html: <p>Testen Sie den Microsoft Graph Beta-Endpunkt.</p>
+      image:
+        src: ./images/index/i_api.svg
+      title: Microsoft Graph-REST-API-Beta
+- title: Unterstützte Plattformen
+  items:
+  - type: paragraph
+    text: Hier finden Sie SDKs und folgen plattformspezifischen, schrittweisen Schulungsübungen, die Sie durch grundlegende Microsoft Graph-Konzepte führen, einschließlich der Erstellung einer einfachen APP, die Azure AD-Authentifizierung verwendet und auf Daten über Microsoft Graph zugreift.
+  - type: table
+    style: dataMatrix
+    columns:
+    - image:
+        src: ./images/index/logo_android.svg
+      title: Android
+    - image:
+        src: ./images/index/angular_solidBlack.svg
+      title: Angular
+    - image:
+        src: ./images/index/logo_NET.svg
+      title: ASP.NET
+    - image:
+        src: ./images/index/logo_ios.svg
+      title: iOS
+    - image:
+        src: ./images/index/logo_java.svg
+      title: Java
+    - image:
+        src: ./images/index/logo_js.svg
+      title: JavaScript
+    - image:
+        src: ./images/index/logo_nodejs.svg
+      title: Node.js
+    - image:
+        src: ./images/index/logo_php.svg
+      title: PHP
+    - image:
+        src: ./images/index/logo_python.svg
+      title: Python
+    - image:
+        src: ./images/index/logo_ruby.svg
+      title: Ruby
+    - image:
+        src: ./images/index/logo_windows.svg
+      title: UWP
+    - image:
+        src: ./images/index/logo_xamarin.svg
+      title: Xamarin
+    rows:
+    - title: Kurz
+      values:
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
+      - href: 
+      - href: 
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
+    - title: Lernprogramm
+      values:
+      - href: 
+      - href: /tutorials/angular
+      - href: /tutorials/aspnet
+      - href: 
+      - href: 
+      - href: 
+      - href: /tutorials/node
+      - href: /tutorials/php
+      - href: /tutorials/python
+      - href: /tutorials/ruby
+      - href: /tutorials/uwp
+      - href: 
+    - title: SDK
+      values:
+      - href: https://github.com/microsoftgraph/msgraph-sdk-android
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://github.com/microsoftgraph/msgraph-sdk-objc
+      - href: https://github.com/microsoftgraph/msgraph-sdk-java
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-php
+      - href: 
+      - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+- title: Ressourcen
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/changelog
+      html: <p>Erfahren Sie, was in Microsoft Graph geändert wurde, einschließlich der Microsoft Graph-APIs v 1.0 und Beta Endpoint.</p>
+      image:
+        src: ./images/index/i_backlog.svg
+      title: Änderungsprotokoll
+    - href: https://developer.microsoft.com/graph/blogs/
+      html: <p>Lesen Sie den Blog für die neuesten Nachrichten und Updates.</p>
+      image:
+        src: ./images/index/i_blog.svg
+      title: Microsoft Graph-Blog
+    - href: /graph/known-issues
+      html: <p>Informationen zu bekannten Problemen mit Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_investigate.svg
+      title: Bekannte Probleme
