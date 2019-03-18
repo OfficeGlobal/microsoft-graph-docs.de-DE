@@ -4,12 +4,12 @@ description: Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 18497a7178086fea25fb581fb2ba7c5c82fbe204
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981266"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657386"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
 
