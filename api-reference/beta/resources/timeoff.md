@@ -4,12 +4,12 @@ description: Eine nicht-Arbeitseinheit im Zeitplan.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 933c940e25c772cede7918dabf62b52ee58f18d2
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657798"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676989"
 ---
 # <a name="timeoff-resource-type"></a>timeOff-Ressourcentyp
 
@@ -25,15 +25,15 @@ Eine nicht-Arbeitseinheit im Zeitplan.
 |[AufListen von zeitOffs](../api/schedule-list-timesoff.md) | [timeOff](timeOff.md) -Sammlung | Rufen Sie die Liste `timeOff` der Objekte in diesem Zeitplan ab.|
 |[TimeOff abrufen](../api/timeoff-get.md) | [timeOff](timeOff.md) | Rufen Sie `timeOff` eine nach ID ab.|
 |[TimeOff ersetzen](../api/timeoff-put.md) | [timeOff](timeOff.md) | Ersetzen Sie `timeOff`a.|
-|[TimeOff löschen](../api/timeoff-delete.md) | None | Löschen Sie `timeOff` eine aus dem Zeitplan.|
+|[TimeOff löschen](../api/timeoff-delete.md) | Keine | Löschen Sie `timeOff` eine aus dem Zeitplan.|
 
 ## <a name="properties"></a>Eigenschaften
 |Name          |Typ           |Beschreibung                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |ID des `timeOff`.|
 | userId            |`string`      |Die ID des Benutzers, der dem `timeOff`zugewiesen ist. Erforderlich.|
-| sharedTimeOff     |`[timeOffItem](timeoffitem.md)`  |Die freigegebene `timeOff` Version dieses, die sowohl von Mitarbeitern als auch von Managern angezeigt werden kann. Erforderlich.|
-| draftTimeOff      |`[timeOffItem](timeoffitem.md)`        |Die Entwurfsversion dieses `timeOff` , die von Managern angezeigt werden kann. Erforderlich.|
+| sharedTimeOff     |[timeOffItem](timeoffitem.md)  |Die freigegebene `timeOff` Version dieses, die sowohl von Mitarbeitern als auch von Managern angezeigt werden kann. Erforderlich.|
+| draftTimeOff      |[timeOffItem](timeoffitem.md)        |Die Entwurfsversion dieses `timeOff` , die von Managern angezeigt werden kann. Erforderlich.|
 | createdDateTime       |`DateTimeOffset`        |Der Zeitstempel, an dem `timeOff` dieser zuerst erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise würde Mitternacht UTC am 1. Januar 2014 wie folgt aussehen: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedDateTime      |`DateTimeOffset`        |Der Zeitstempel, an dem `timeOff` dieser zuletzt aktualisiert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise würde Mitternacht UTC am 1. Januar 2014 wie folgt aussehen: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |Die Identität, die zuletzt aktualisiert `timeOff`hat. |

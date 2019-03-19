@@ -4,12 +4,12 @@ description: Eine Schicht ist eine Einheit der geplanten Arbeit im Zeitplan.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c392bfb4a1691ab99d852febdda27cdf1c3b8044
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657896"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676968"
 ---
 # <a name="shift-resource-type"></a>Schicht-Ressourcentyp
 
@@ -25,7 +25,7 @@ Eine Einheit der geplanten Arbeit in einem [Zeitplan](schedule.md).
 |[Listen Verschiebungen](../api/schedule-list-shifts.md) | [Shift](shift.md) -Auflistung | Rufen Sie die Liste `shifts` der in diesem Zeitplan ab.|
 |[Shift abrufen](../api/shift-get.md) | [UMSCHALT](shift.md) | Rufen Sie `shift` eine nach ID ab.|
 |[UMSCHALT ersetzen](../api/shift-put.md) | [UMSCHALT](shift.md) | Ersetzen Sie `shift`a.|
-|[Schicht löschen](../api/shift-delete.md) | None | Löschen Sie `shift` eine aus dem Zeitplan.|
+|[Schicht löschen](../api/shift-delete.md) | Keine | Löschen Sie `shift` eine aus dem Zeitplan.|
 
 ## <a name="properties"></a>Eigenschaften
 |Name          |Typ           |Beschreibung                                                                                                                                      |
@@ -33,8 +33,8 @@ Eine Einheit der geplanten Arbeit in einem [Zeitplan](schedule.md).
 | id            |`string`      |ID des `shift`.|
 | userId            |`string`      |Die ID des Benutzers, der dem `shift`zugewiesen ist. Erforderlich. |
 | schedulingGroupId         |`string`      |Die ID der Planungsgruppe, `shift` in der Sie enthalten ist. Erforderlich. |
-| sharedShift   |`[shiftItem](shiftitem.md)`  |Die freigegebene `shift` Version dieses, die sowohl von Mitarbeitern als auch von Managern angezeigt werden kann. Erforderlich. |
-| draftShift        |`[shiftItem](shiftitem.md)`        |Die Entwurfsversion dieses `shift` , die von Managern angezeigt werden kann. Erforderlich. |
+| sharedShift   |[shiftItem](shiftitem.md)  |Die freigegebene `shift` Version dieses, die sowohl von Mitarbeitern als auch von Managern angezeigt werden kann. Erforderlich. |
+| draftShift        |[shiftItem](shiftitem.md)        |Die Entwurfsversion dieses `shift` , die von Managern angezeigt werden kann. Erforderlich. |
 | createdDateTime       |`DateTimeOffset`        |Der Zeitstempel, für `shift` den dies zuerst erstellt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise würde Mitternacht UTC am 1. Januar 2014 wie folgt aussehen: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedDateTime      |`DateTimeOffset`        |Der Zeitstempel, an `shift` dem dieser zuletzt aktualisiert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Beispielsweise würde Mitternacht UTC am 1. Januar 2014 wie folgt aussehen: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |Die Identität, die zuletzt aktualisiert `shift`hat.|
