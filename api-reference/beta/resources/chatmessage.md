@@ -2,12 +2,12 @@
 title: chatMessage-Ressourcentyp
 description: Stellt eine einzelne Chatnachricht innerhalb eines Kanals oder einer Chatentität dar. Die Nachricht kann eine Stammnachricht oder Teil eines Threads sein, die bzw. der von der **replyToId**-Eigenschaft in der Nachricht definiert wird.
 localization_priority: Priority
-ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458659"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644321"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage-Ressourcentyp
 
@@ -31,22 +31,22 @@ Stellt eine einzelne Chatnachricht innerhalb eines [Kanals](channel.md) oder ein
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt. Eindeutige ID der Nachricht.|
-|replyToId| Zeichenfolge | ID der übergeordneten Nachricht/Stammnachricht des Threads |
-|von|[identitySet](identityset.md)| Einzelheiten über den Absender der Nachricht|
-|etag| Zeichenfolge | Versionsnummer der Nachricht |
-|messageType|Zeichenfolge|Der Typ der Nachricht; aktuell unterstützte Werte sind: message, chatEvent, Typing|
-|createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht erstellt wurde|
-|lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht bearbeitet/aktualisiert wurde|
+|replyToId| string | ID der übergeordneten Nachricht/Stammnachricht des Threads. |
+|von|[identitySet](identityset.md)| Schreibgeschützt. Einzelheiten über den Absender der Nachricht.|
+|etag| string | Versionsnummer der Nachricht. |
+|messageType|Zeichenfolge|Der Typ der Nachricht; aktuell unterstützte Werte sind: message, chatEvent, Typing.|
+|createdDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht erstellt wurde.|
+|lastModifiedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht bearbeitet/aktualisiert wurde.|
 |deleted|Boolesch|Gibt an, ob eine Nachricht vorläufig gelöscht wurde.|
-|deletedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht gelöscht wurde |
-|subject|Zeichenfolge|Nachrichtenbetreff Optional|
+|deletedDateTime|dateTimeOffset|Schreibgeschützt. Zeitstempel, wann die Nachricht gelöscht wurde. |
+|subject|Zeichenfolge|Nachrichtenbetreff Optional.|
 |Text|[itemBody](itembody.md)|Nur-Text-/HTML-Darstellung des Inhalts der Nachricht. Gibt standardmäßig Nur-Text wieder; Anwendung kann HTML wahlweise als Teil eines Abfrageparameters auswählen|
 |Zusammenfassung|Zeichenfolge|Zusammenfassungstext der Nachricht, die für Pushbenachrichtigungen und Zusammenfassungs- oder Fallbackansichten verwendet werden kann |
-|Erwähnungen|[chatMessageMention](chatmention.md)-Sammlung| Liste der Entitäten, die in der Nachricht angegeben werden. Derzeit unterstützt: user, bot, team, channel|
-|Wichtigkeit| Zeichenfolge | Legt die Wichtigkeit der Nachricht fest: Hoch, Niedrig|
+|Erwähnungen|[chatMessageMention](chatmention.md)-Sammlung| Liste der Entitäten, die in der Nachricht angegeben werden. Derzeit unterstützt: user, bot, team, channel.|
+|Wichtigkeit| string | Legt die Wichtigkeit der Nachricht fest: Hoch, Niedrig.|
 |Reaktionen| [chatMessageReaction](chatreaction.md)-Sammlung | Reaktionen auf diese Nachricht (z. B. Gefällt mir)|
 |Gebietsschema|Zeichenfolge|Vom Client festgelegtes Gebietsschema der Nachricht|
-|Anlagen|[chatMessageAttachment](chatattachment.md)-Sammlung |Angefügte Dateien|
+|Anlagen|[chatMessageAttachment](chatattachment.md)-Sammlung |Angefügte Dateien. Anlagen sind derzeit schreibgeschützt – das Senden von Anlagen wird nicht unterstützt. |
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
