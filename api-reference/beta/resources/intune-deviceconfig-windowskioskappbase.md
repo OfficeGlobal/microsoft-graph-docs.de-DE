@@ -4,12 +4,12 @@ description: Die Basisklasse für eine Art von apps
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0247febfbeebe7fc047df4bb14a9d421b79bf01
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b86921fcdaa11b37b985184dfbc645c2a193bfdb
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145297"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572306"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Zum-Ressourcentyp
 
@@ -23,8 +23,9 @@ Die Basisklasse für eine Art von apps
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Die Größe der APP-Kachel für das Start Layout. Mögliche Werte: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|Zeichenfolge|Stellt den Anzeigenamen einer APP dar.|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Der APP-Typ. Mögliche Werte: `unknown`, `store`, `desktop`, `aumId`.|
+|name|String|Stellt den Anzeigenamen einer APP dar.|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Der APP-Typ. Mögliche Werte sind: `unknown`, `store`, `desktop` und `aumId`.|
+|Autostart|Boolesch|Automatisches Starten der APP im Multi-App Kiosk-Modus|
 
 ## <a name="relationships"></a>Beziehungen
 Keine
@@ -41,7 +42,8 @@ Es folgt eine JSON-Darstellung der Ressource.
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
   "name": "String",
-  "appType": "String"
+  "appType": "String",
+  "autoLaunch": true
 }
 ```
 

@@ -1,15 +1,15 @@
 ---
 title: exportDeviceAndAppManagementData-Funktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7918c1967b31ad39335cd8094ca2945b5627822e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a2e776d885a2f4374251fbb57b10377c03fbb8ec
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157715"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572299"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData-Funktion
 
@@ -21,7 +21,7 @@ Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -53,7 +53,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|skip|Int32|Noch nicht dokumentiert|
+|skip|Int32|Noch nicht dokumentiert.|
 |top|Int32|Noch nicht dokumentiert.|
 
 ## <a name="response"></a>Antwort

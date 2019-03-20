@@ -4,12 +4,12 @@ description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e32791ee6f131c772d25c75c15f746b39bf07249
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc394939c6908e3dc5353f5100bb442661173b56
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172751"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572278"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Abrufen von „windows10EndpointProtectionConfiguration“
 
@@ -67,7 +67,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 28223
+Content-Length: 29142
 
 {
   "value": {
@@ -83,6 +83,34 @@ Content-Length: 28223
     "displayName": "Display Name value",
     "version": 7,
     "dmaGuardDeviceEnumerationPolicy": "blockAll",
+    "firewallRules": [
+      {
+        "@odata.type": "microsoft.graph.windowsFirewallRule",
+        "displayName": "Display Name value",
+        "description": "Description value",
+        "packageFamilyName": "Package Family Name value",
+        "filePath": "File Path value",
+        "serviceName": "Service Name value",
+        "protocol": 8,
+        "localPortRanges": [
+          "Local Port Ranges value"
+        ],
+        "remotePortRanges": [
+          "Remote Port Ranges value"
+        ],
+        "localAddressRanges": [
+          "Local Address Ranges value"
+        ],
+        "remoteAddressRanges": [
+          "Remote Address Ranges value"
+        ],
+        "profileTypes": "domain",
+        "action": "blocked",
+        "trafficDirection": "out",
+        "interfaceTypes": "remoteAccess",
+        "localUserAuthorizations": "Local User Authorizations value"
+      }
+    ],
     "userRightsAccessCredentialManagerAsTrustedCaller": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",

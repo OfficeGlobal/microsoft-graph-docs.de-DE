@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „deviceCategory“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceCategory auf.
+description: Auflisten von Eigenschaften und Beziehungen der deviceCategory-Objekte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40f138305b9f148bb48c4d4398024a8766a2bd5f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 857d9db112853fe85c51df342e66b6bcaff7cfd0
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169321"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572502"
 ---
 # <a name="list-devicecategories"></a>Auflisten von „deviceCategory“
 
@@ -19,7 +19,7 @@ ms.locfileid: "30169321"
 
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [deviceCategory](../resources/intune-shared-devicecategory.md) auf.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

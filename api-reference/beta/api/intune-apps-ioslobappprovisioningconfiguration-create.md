@@ -4,12 +4,12 @@ description: Erstellen eines neuen iosLobAppProvisioningConfiguration-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08a3cb70d7fc10274e44550d83da252710d9ec9d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ab8f4c807e07fec07d798ec64fdb5a52ab9e0211
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171526"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572271"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration erstellen
 
@@ -50,14 +50,15 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |expirationDateTime|DateTimeOffset|Optionales Profil Ablaufdatum und-Uhrzeit.|
-|payloadFileName|Zeichenfolge|Name der Nutzlastdatei (*. mobileprovision | *.xml)|
+|payloadFileName|String|Name der Nutzlastdatei (*. mobileprovision | *.xml)|
 |payload|Binär|Nutzlast (UTF8-codiertes Bytearray)|
-|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts|
-|description|String|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration|
+|Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese iOS-Konfigurationsentität für Branchen-App-Konfiguration.|
+|createdDateTime|DateTimeOffset|DateTime der Erstellung des Objekts.|
+|description|Zeichenfolge|Vom Administrator bereitgestellte Beschreibung der Gerätekonfiguration.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
-|displayName|Zeichenfolge|Vom Administrator bereitgestellter Name der Gerätekonfiguration|
+|displayName|String|Vom Administrator bereitgestellter Name der Gerätekonfiguration.|
 |version|Int32|Version der Gerätekonfiguration.|
 
 
@@ -72,13 +73,16 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
-Content-length: 313
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7
@@ -90,7 +94,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
@@ -98,6 +102,9 @@ Content-Length: 485
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

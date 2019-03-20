@@ -4,12 +4,12 @@ description: Erstellen eines neuen deviceCategory-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f40ec6beb11ed6a299c23b6da905466a47fc5e9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b324e952c91cf95c361ef277b428f0ed0ae5f26e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153711"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572425"
 ---
 # <a name="create-devicecategory"></a>deviceCategory erstellen
 
@@ -21,7 +21,7 @@ Erstellen eines neuen [deviceCategory](../resources/intune-shared-devicecategory
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -54,10 +54,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|id|String|Der eindeutige Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Obboarding**|
-|description|String|Optionale Beschreibung für die Gerätekategorie.|
-|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
+|description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|
+|displayName|String|Der Anzeigename für die Gerätekategorie.|
 
 ## <a name="response"></a>Antwort
 

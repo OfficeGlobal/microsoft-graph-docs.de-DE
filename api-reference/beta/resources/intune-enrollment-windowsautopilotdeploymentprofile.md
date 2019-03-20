@@ -4,12 +4,12 @@ description: Windows Autopilot-BereitstellungsProfil
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3b815e0184ab9969af348338c07c3fabf0b0597
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 69035ba93b04ac66ce9e8883c7b5f7b04dff429a
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168873"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572460"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Windowsautopilotdeploymentprofile hinzugefügt-Ressourcentyp
 
@@ -23,22 +23,23 @@ Windows Autopilot-BereitstellungsProfil
 |Methode|Rückgabetyp|Beschreibung|
 |:---|:---|:---|
 |[Windowsautopilotdeploymentprofile hinzugefügt abrufen](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Lesen von Eigenschaften und Beziehungen des [windowsautopilotdeploymentprofile hinzugefügt](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) -Objekts.|
-|[assign-Aktion](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Keine|Noch nicht dokumentiert|
+|[Aktion zuweisen](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Keine|Noch nicht dokumentiert.|
 
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Profilschlüssel|
+|id|String|Profilschlüssel|
 |displayName|Zeichenfolge|Name des Profils|
 |description|Zeichenfolge|Beschreibung des Profils|
-|language|Zeichenfolge|Auf dem Gerät konfigurierte Sprache|
+|language|String|Auf dem Gerät konfigurierte Sprache|
 |createdDateTime|DateTimeOffset|Erstellungszeit für profile|
 |lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten Änderung des Profils|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Einstellung für die Out-of-Box-Erfahrung|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Einstellung für den Registrierungsstatus|
-|extractHardwareHash|Boolescher Wert|HardwareHash-Extraktion für das Profil|
+|extractHardwareHash|Boolesch|HardwareHash-Extraktion für das Profil|
 |deviceNameTemplate|Zeichenfolge|Die Vorlage, die zum Benennen des autoPilot-Geräts verwendet wird. Dabei kann es sich um einen benutzerdefinierten Text handeln, der entweder die Seriennummer des Geräts oder eine zufällig generierte Zahl enthalten kann. Die Gesamtlänge des von der Vorlage generierten Texts darf nicht mehr als 15 Zeichen betragen.|
-|enableWhiteGlove|Boolescher Wert|Aktivieren Sie den weißen Handschuh Autopilot für das Profil.|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Der autoPilot-Gerätetyp, auf den dieses Profil angewendet werden kann. Mögliche Werte sind: `windowsPc` und `surfaceHub2`.|
+|enableWhiteGlove|Boolesch|Aktivieren Sie den weißen Handschuh Autopilot für das Profil.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -84,6 +85,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "String",
+  "deviceType": "String",
   "enableWhiteGlove": true
 }
 ```

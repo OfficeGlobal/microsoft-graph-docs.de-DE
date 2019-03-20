@@ -4,12 +4,12 @@ description: Listet die Microsoft Graph-API für InTune-Endpunkte (REST) auf, di
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40439a32cb9f078d483113cfee8949cd6f288d71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159269"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572439"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Konfigurieren von Geräten in Microsoft Intune
 
@@ -23,7 +23,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 
 - [Vom Administrator konfigurierter Gerätekompatibilitätsstatus](intune-deviceconfig-administratorconfigureddevicecompliancestate.md)
 - [Erweiterter BitLocker-Status](intune-deviceconfig-advancedbitlockerstate.md)
-- [Advanced Threat Protection – Onboarding-Geräteeinstellungsstatus](intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)
+- [Advanced Threat Protection – Onboarding – Geräteeinstellungszustand](intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)
 - [Advanced Threat Protection – Onboardingstatus – Zusammenfassung](intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)
 - [AirPrint-Ziel](intune-deviceconfig-airprintdestination.md)
 - [Android-Zertifikatprofilbasis](intune-deviceconfig-androidcertificateprofilebase.md)
@@ -61,7 +61,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [androidGeneralDeviceConfiguration](intune-deviceconfig-androidgeneraldeviceconfiguration.md)
 - [Android – importiertes PFX-Zertifikatprofil](intune-deviceconfig-androidimportedpfxcertificateprofile.md)
 - [Android-Keyguard-Feature](intune-deviceconfig-androidkeyguardfeature.md)
-- [Android-OMA-CP-Konfiguration](intune-deviceconfig-androidomacpconfiguration.md)
+- [Android-OMA cp-Konfiguration](intune-deviceconfig-androidomacpconfiguration.md)
 - [Android PKCS-Zertifikatprofil](intune-deviceconfig-androidpkcscertificateprofile.md)
 - [Geforderter Android-Kennworttyp](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Android SCEP-Zertifikatprofil](intune-deviceconfig-androidscepcertificateprofile.md)
@@ -125,24 +125,23 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Defender-Aufforderung für Beispielübermittlung](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Defender-Schutztyp](intune-deviceconfig-defenderprotectiontype.md)
 - [Defender-Überprüfungstyp](intune-deviceconfig-defenderscantype.md)
-- [Defender-Zeitplan – Überprüfungstag](intune-deviceconfig-defenderschedulescanday.md)
 - [Defender Security Center – IT-Kontakt-Anzeigetyp](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Defender Security Center-Benachrichtigungen nach App-Typ](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Defender-Zustimmungstyp beim Senden von Beispielen](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
 - [Defender-Bedrohungsaktion](intune-deviceconfig-defenderthreataction.md)
-- [Übertragungsbandbreite](intune-deviceconfig-deliveryoptimizationbandwidth.md)
-- [Bandbreite der zuzustellenden Optimierung](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
-- [Lieferoptimierung Bandbreite Geschäftszeiten Limit](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
-- [Übertragungsoptimierung Bandbreite Stunden mit Prozentsatz](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
-- [Bandbreitenprozentsatz für die zustellende Verteilung](intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md)
-- [Gruppen-ID für die zustellende Optimierung](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
-- [Gruppen-ID-Optionstyp für die zuLieferungs Optimierung](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
-- [Bereitstellungsoptimierung-Gruppen-ID-Quelle](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
-- [Gruppen-ID-Quelloptionen für die Bereitstellungsoptimierung](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
-- [Maximale Cachegröße der zugestellten Optimierung](intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
-- [Maximale Cachegröße für die zugestellte Optimierung](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
-- [Maximale Verteilung der Cachegröße](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
-- [Verteilungs Optimierung Einschränken der Peer Auswahl nach Optionen](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
+- [Übermittlungsoptimierungsbandbreite](intune-deviceconfig-deliveryoptimizationbandwidth.md)
+- [Übermittlungsoptimierungsbandbreite – absolut](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
+- [Übermittlungsoptimierungsbandbreite – Grenzwert für Geschäftszeiten](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
+- [Übermittlungsoptimierungsbandbreite – Stunden mit Prozentsatz](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
+- [Übermittlungsoptimierungsbandbreite – Prozentsatz](intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md)
+- [Übermittlungsoptimierung – benutzerdefinierte Gruppen-ID](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
+- [Übermittlungsoptimierung – Gruppen-ID – Optionstyp](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
+- [Übermittlungsoptimierung – Gruppen – ID-Quelle](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
+- [Übermittlungsoptimierung – Gruppen-ID – Quelloptionen](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
+- [Übermittlungsoptimierung – maximale Cachegröße](intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
+- [Übermittlungsoptimierung – maximale Cachegröße – absolut](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
+- [Übermittlungsoptimierung – maximale Cachegröße – Prozentsatz](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
+- [Übermittlungsoptimierung – Peerauswahl nach Optionen einschränken](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
 - [Abgeleiteter Anmeldeinformationsanbieter-Typ](intune-deviceconfig-derivedcredentialprovidertype.md)
 - [deviceComplianceActionItem](intune-deviceconfig-devicecomplianceactionitem.md)
 - [Gerätekompatibilität-Aktionstyp](intune-deviceconfig-devicecomplianceactiontype.md)
@@ -176,7 +175,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Schutzebene vor Gerätebedrohungen](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Gerätetypen](intune-deviceconfig-devicetypes.md)
 - [Übermittlungsmodus für Diagnosedaten](intune-deviceconfig-diagnosticdatasubmissionmode.md)
-- [Richtlinientyp des DMA-Guard-Geräts](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
+- [DMA-Guard – Geräteenumeration – Richtlinientyp](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [Quelle des Domänennamens](intune-deviceconfig-domainnamesource.md)
 - [Schnelle EAP-Konfiguration](intune-deviceconfig-eapfastconfiguration.md)
 - [EAP-Typ](intune-deviceconfig-eaptype.md)
@@ -188,7 +187,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Edge-Startschaltfläche lädt Startseite](intune-deviceconfig-edgehomebuttonloadsstartpage.md)
 - [Edge-Startschaltfläche öffnet benutzerdefinierte URL](intune-deviceconfig-edgehomebuttonopenscustomurl.md)
 - [Edge-Startschaltfläche öffnet neue Registerkarte](intune-deviceconfig-edgehomebuttonopensnewtab.md)
-- [Einschränkungs des Edge-Kioskmodus](intune-deviceconfig-edgekioskmoderestrictiontype.md)
+- [Einschränkungstyp für Edge-Kioskmodus ](intune-deviceconfig-edgekioskmoderestrictiontype.md)
 - [Edge-Optionen für Öffnen](intune-deviceconfig-edgeopenoptions.md)
 - [edgeSearchEngine](intune-deviceconfig-edgesearchengine.md)
 - [edgeSearchEngineBase](intune-deviceconfig-edgesearchenginebase.md)
@@ -199,9 +198,9 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Typ der Edition Upgrade-Lizenz](intune-deviceconfig-editionupgradelicensetype.md)
 - [Dauer der E-Mail-Synchronisierung](intune-deviceconfig-emailsyncduration.md)
 - [Zeitplan für die E-Mail-Synchronisierung](intune-deviceconfig-emailsyncschedule.md)
-- [Verschlüsselungs Bereitschaftsstatus](intune-deviceconfig-encryptionreadinessstate.md)
-- [Details zu Verschlüsselungs Berichtsrichtlinien](intune-deviceconfig-encryptionreportpolicydetails.md)
-- [Verschlüsselungsstatus](intune-deviceconfig-encryptionstate.md)
+- [Verschlüsselungsbereitschaftszustand](intune-deviceconfig-encryptionreadinessstate.md)
+- [Verschlüsselungsbericht – Richtliniendetails](intune-deviceconfig-encryptionreportpolicydetails.md)
+- [Verschlüsselungszustand](intune-deviceconfig-encryptionstate.md)
 - [Erweiterte Schlüsselverwendung](intune-deviceconfig-extendedkeyusage.md)
 - [Typ der Überprüfungsmethode für Firewall-Zertifikatsperrliste](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Methodentyp für Einreihung in die Warteschlange des Firewallpakets](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -299,7 +298,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [macOS VPN-Konfiguration](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS WLAN-Konfiguration](intune-deviceconfig-macoswificonfiguration.md)
 - [Zertifikatsstatus von verwaltetem Gerät](intune-deviceconfig-manageddevicecertificatestate.md)
-- [Verschlüsselungsstatus für verwaltete Geräte](intune-deviceconfig-manageddeviceencryptionstate.md)
+- [Verwaltete Geräte – Verschlüsselungszustand](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [App für gemeldete verwaltete Geräte](intune-deviceconfig-manageddevicereportedapp.md)
 - [mediaContentRatingAustralia](intune-deviceconfig-mediacontentratingaustralia.md)
 - [mediaContentRatingCanada](intune-deviceconfig-mediacontentratingcanada.md)
@@ -432,6 +431,12 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [Windows-Übermittlungsoptimierung – Konfiguration](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows-Übermittlungsoptimierungsmodus](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [windowsFirewallNetworkProfile](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Windows-Firewall-Regel](intune-deviceconfig-windowsfirewallrule.md)
+- [Windows-Firewall-Regel Schnittstellentypen](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Netzwerkprofil Typen der Windows-Firewall-Regel](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Typ der Windows-Firewallregel-Datenverkehr](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Konfiguration der Windows-Integritätsüberwachung](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Windows-Integritäts Überwachungsbereich](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Windows-Identitätsschutz – Konfiguration](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows-Kiosk – Active Directory-Gruppe](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows-Kiosk – App-Basis](intune-deviceconfig-windowskioskappbase.md)
@@ -471,6 +476,7 @@ Zur Verwaltung von Geräteeinstellungen und -funktionen in Intune stehen die fol
 - [windowsUpdateForBusinessConfiguration](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Updatewochen für Windows Update for Business](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [windowsUpdateInstallScheduleType](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Anzeigeoption für Windows Update-Benachrichtigungen](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [windowsUpdateScheduledInstall](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows-Updatestatus](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows-Aktualisierungstyp](intune-deviceconfig-windowsupdatetype.md)

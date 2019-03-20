@@ -1,15 +1,15 @@
 ---
 title: Abrufen von „iosManagedAppProtection“
-description: Liest die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection.
+description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 665ae82119feb245c79ec24337ff31169a629948
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 76cba3dbc56d2f3ac0b6da7e36a3a116b2d7ddc1
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172604"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572313"
 ---
 # <a name="get-iosmanagedappprotection"></a>Abrufen von „iosManagedAppProtection“
 
@@ -65,7 +65,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2804
+Content-Length: 2863
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 2804
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+    "allowedOutboundClipboardSharingExceptionLength": 14,
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "appDataEncryptionType": "afterDeviceRestart",

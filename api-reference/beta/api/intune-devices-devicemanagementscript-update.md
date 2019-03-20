@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines Devicemanagementscript hinzug
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fafb11f61f6e98eba90de9054550e673b6d6cbdd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 02c64f6ad5ba9fe81ef71c49197aedd204ffdce4
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141790"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572544"
 ---
 # <a name="update-devicemanagementscript"></a>Devicemanagementscript hinzugefügt aktualisieren
 
@@ -50,18 +50,18 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für das Geräte Verwaltungsskript.|
+|id|String|Eindeutiger Bezeichner für das Geräte Verwaltungsskript.|
 |displayName|Zeichenfolge|Name des Geräteverwaltungs-Skripts.|
-|description|String|Optionale Beschreibung des Device Management-Skripts.|
+|description|Zeichenfolge|Optionale Beschreibung des Device Management-Skripts.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Das Intervall für die Ausführung des Skripts. Wenn nicht definiert, wird das Skript einmal ausgeführt|
 |scriptContent|Binär|Der Skriptinhalt.|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der das Geräte Verwaltungsskript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräteverwaltungsskripts.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts an, in dem das Geräte Verwaltungsskript ausgeführt wird. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolean|Geben Sie an, ob die skriptsignatur überprüft werden muss.|
-|fileName|Zeichenfolge|Skriptdateiname.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts an. Mögliche Werte sind: `system` und `user`.|
+|enforceSignatureCheck|Boolesch|Geben Sie an, ob die skriptsignatur überprüft werden muss.|
+|fileName|String|Skriptdateiname.|
 |Rolescopetagids zur|String collection|Liste der Bereichstag-IDs für diese PowerShellScript-Instanz.|
-|runAs32Bit|Boolean|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
+|runAs32Bit|Boolesch|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
 
 
 

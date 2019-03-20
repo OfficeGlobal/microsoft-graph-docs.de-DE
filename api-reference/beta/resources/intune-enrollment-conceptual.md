@@ -4,12 +4,12 @@ description: Listet die Microsoft Graph-API für InTune-Endpunkte (REST) auf, di
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149833"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572390"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Unternehmenseigene Geräte mit Intune registrieren
 
@@ -49,6 +49,7 @@ Zur Verwaltung der unternehmenseigenen Geräte in Intune stehen die folgenden Gr
 - [Profil für Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Profilzuweisung für Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows Autopilot-Geräteidentität](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows Autopilot-Gerätetyp](intune-enrollment-windowsautopilotdevicetype.md)
 - [Profil für Windows Autopilot – Detaillierter Zuweisungsstatus](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Profil für Windows Autopilot – Zuweisungsstatus](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot-Einstellungen](intune-enrollment-windowsautopilotsettings.md)

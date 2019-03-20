@@ -1,27 +1,27 @@
 ---
-title: Aktualisieren von „deviceCategory“
-description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs deviceCategory.
+title: deviceCategory aktualisieren
+description: Aktualisieren der Eigenschaften eines deviceCategory-Objekts
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 221b4700d91766040d899ef0c1048950d4e1d9cf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: eb2d3bc4f081065f27de1c303f87f9e98700d7b9
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161915"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572348"
 ---
-# <a name="update-devicecategory"></a>Aktualisieren von „deviceCategory“
+# <a name="update-devicecategory"></a>deviceCategory aktualisieren
 
 > **Wichtig:** APIs unter der/Beta-Version in Microsoft Graph können geändert werden. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt.
 
 > **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceCategory](../resources/intune-shared-devicecategory.md).
+Aktualisieren der Eigenschaften eines [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekts
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -62,20 +62,20 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie als Anforderungstext eine JSON-Darstellung des Objekts des Typs [deviceCategory](../resources/intune-shared-devicecategory.md) an.
+Geben Sie im Anforderungstext eine JSON-Darstellung des Objekt des Typs [deviceCategory](../resources/intune-shared-devicecategory.md) an.
 
 In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werden müssen, wenn Sie ein Objekt des Typs [deviceCategory](../resources/intune-shared-devicecategory.md) erstellen.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die Gerätekategorie. Schreibgeschützt.|
+|id|String|Der eindeutige Bezeichner für die Gerätekategorie. Schreibgeschützt.|
 |**Onboarding**|
-|description|String|Optionale Beschreibung für die Gerätekategorie.|
-|displayName|Zeichenfolge|Der Anzeigename für die Gerätekategorie.|
+|description|Zeichenfolge|Optionale Beschreibung für die Gerätekategorie.|
+|displayName|String|Der Anzeigename für die Gerätekategorie.|
 
 ## <a name="response"></a>Antwort
 
-Bei erfolgreicher Ausführung, gibt die Methode den Antwortcode `200 OK` und ein aktualisiertes Objekt des Typs [deviceCategory](../resources/intune-shared-devicecategory.md) im Antworttext zurück.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein aktualisiertes [deviceCategory](../resources/intune-shared-devicecategory.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

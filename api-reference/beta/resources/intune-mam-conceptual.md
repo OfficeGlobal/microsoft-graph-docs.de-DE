@@ -4,12 +4,12 @@ description: Listet die Microsoft Graph-API für InTune-Endpunkte (REST) im Zusa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150400"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572327"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>So schützen Sie Daten in Unternehmens-Apps mit Microsoft Intune
 
@@ -25,6 +25,8 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 
 - [androidManagedAppProtection](intune-mam-androidmanagedappprotection.md)
 - [androidManagedAppRegistration](intune-mam-androidmanagedappregistration.md)
+- [Android Managed App Safety Net-Apps-Überprüfungs](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android Managed App Safety Net-Geräte Bescheinigungs](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [androidMobileAppIdentifier](intune-mam-androidmobileappidentifier.md)
 - [App-Verwaltungsebene](intune-mam-appmanagementlevel.md)
 - [Anwendungstyp](intune-wip-applicationtype.md)
@@ -56,7 +58,7 @@ Zur Verwaltung der App-Schutz-Richtlinien in Intune stehen die folgenden Graph-R
 - [mdmWindowsInformationProtectionPolicy](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [mobileAppIdentifier](intune-mam-mobileappidentifier.md)
 - [targetedManagedAppConfiguration](intune-mam-targetedmanagedappconfiguration.md)
-- [targetedManagedAppPolicyAssignment](intune-mam-targetedmanagedapppolicyassignment.md)
+- [Verwaltete Ziel-Apps – Richtlinienzuweisung](intune-mam-targetedmanagedapppolicyassignment.md)
 - [targetedManagedAppProtection](intune-mam-targetedmanagedappprotection.md)
 - [windowsInformationProtection](intune-mam-windowsinformationprotection.md)
 - [windowsInformationProtectionApp](intune-mam-windowsinformationprotectionapp.md)

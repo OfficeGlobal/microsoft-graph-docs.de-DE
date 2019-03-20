@@ -4,12 +4,12 @@ description: Diese Entität enthält Beschreibungen der deklarierten Methoden, E
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 344d02c3d17c868686be75a72101b836851f0690
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 63b9269086aa97b6be543abcc201288c00eba456
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143134"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572516"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration-Ressourcentyp
 
@@ -34,24 +34,23 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 ## <a name="properties"></a>Eigenschaften
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) -Sammlung|Mit dieser Richtlinieneinstellung können Sie eine Liste der Kiosk Profile für eine Kiosk Konfiguration definieren. Diese Auflistung kann maximal drei Elemente enthalten.|
 |kioskBrowserDefaultUrl|Zeichenfolge|Geben Sie die Standard-URL an, zu der der Browser beim Start navigieren soll.|
-|kioskBrowserEnableHomeButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Home des Kiosk Browsers. Standardmäßig ist die Schaltfläche Start deaktiviert.|
-|kioskBrowserEnableNavigationButtons|Boolescher Wert|Aktivieren Sie die Navigationsschaltflächen des Kiosk Browsers (Forward/Back). Standardmäßig sind die Navigationsschaltflächen deaktiviert.|
-|kioskBrowserEnableEndSessionButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Endsitzung des Kiosk Browsers. Standardmäßig ist die Schaltfläche Sitzung beenden deaktiviert.|
+|kioskBrowserEnableHomeButton|Boolesch|Aktivieren Sie die Schaltfläche Home des Kiosk Browsers. Standardmäßig ist die Schaltfläche Start deaktiviert.|
+|kioskBrowserEnableNavigationButtons|Boolesch|Aktivieren Sie die Navigationsschaltflächen des Kiosk Browsers (Forward/Back). Standardmäßig sind die Navigationsschaltflächen deaktiviert.|
+|kioskBrowserEnableEndSessionButton|Boolesch|Aktivieren Sie die Schaltfläche Endsitzung des Kiosk Browsers. Standardmäßig ist die Schaltfläche Sitzung beenden deaktiviert.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Geben Sie die Anzahl der Minuten an, die die Sitzung inaktiv ist, bis der Kiosk-Browser neu gestartet wird.  Gültige Werte sind 1-1440. Gültige Werte 1 bis 1440|
 |kioskBrowserBlockedURLs|String collection|Angeben von URLs, zu denen die Kiosk-Browser nicht navigieren sollen|
 |kioskBrowserBlockedUrlExceptions|String collection|Angeben von URLs, zu denen der Kiosk Browser navigieren darf|
-|edgeKioskEnablePublicBrowsing|Boolescher Wert|Aktivieren Sie das öffentliche Browsen im Kioskmodus für den Microsoft Edge-Browser. Der Standardwert ist false.|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|Gibt die Zeit in Minuten der letzten Benutzeraktivität an, bevor Microsoft Edge Kiosk zurückgesetzt wird.  Gültige Werte sind 0-1440. Der Standardwert ist 5. 0 gibt keine Zurücksetzung an. Gültige Werte 0 bis 1440|
+|edgeKioskEnablePublicBrowsing|Boolesch|Aktivieren Sie das öffentliche Browsen im Kioskmodus für den Microsoft Edge-Browser. Der Standardwert ist false.|
 
 ## <a name="relationships"></a>Beziehungen
 |Beziehung|Typ|Beschreibung|
@@ -62,7 +61,7 @@ Sie erbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfig
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)-Sammlung|Installationsstatus der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Übersicht über den Status der Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Übersicht über den Status der Gerätekonfiguration nach Benutzer. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceSettingStateSummaries| [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)-Sammlung|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceSettingStateSummaries|Sammlung von Objekten des Typs [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Übersicht über den Einstellungsstatus für die Gerätekonfiguration nach Gerät. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 Es folgt eine JSON-Darstellung der Ressource.
@@ -98,12 +97,14 @@ Es folgt eine JSON-Darstellung der Ressource.
             "startLayoutTileSize": "String",
             "name": "String",
             "appType": "String",
+            "autoLaunch": true,
             "appUserModelId": "String",
             "appId": "String",
             "containedAppId": "String"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "binary"
       },
@@ -125,8 +126,7 @@ Es folgt eine JSON-Darstellung der Ressource.
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true,
-  "edgeKioskResetAfterIdleTimeInMinutes": 1024
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 
