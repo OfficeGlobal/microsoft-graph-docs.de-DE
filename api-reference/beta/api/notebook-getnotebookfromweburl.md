@@ -1,32 +1,32 @@
 ---
-title: 'Notizbuch: GetNotebookFromWebUrl'
-description: Abrufen der Eigenschaften und die Beziehungen eines Notebook-Objekts verwenden den URL-Pfad.
+title: 'Notizbuch: getNotebookFromWebUrl'
+description: Rufen Sie die Eigenschaften und Beziehungen eines Notebook-Objekts mithilfe des URL-Pfads ab.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 226cbd70343feaf8fe5404aac6077f9b2438aba8
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b5067f50b1e03c124af8323709fc7b3f70af871b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29982069"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789648"
 ---
-# <a name="notebook-getnotebookfromweburl"></a><span data-ttu-id="c4d0c-103">Notizbuch: GetNotebookFromWebUrl</span><span class="sxs-lookup"><span data-stu-id="c4d0c-103">notebook: getNotebookFromWebUrl</span></span>
+# <a name="notebook-getnotebookfromweburl"></a><span data-ttu-id="cf126-103">Notizbuch: getNotebookFromWebUrl</span><span class="sxs-lookup"><span data-stu-id="cf126-103">notebook: getNotebookFromWebUrl</span></span>
 
-[! Beta-Haftungsausschluss INCLUDE]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c4d0c-105">Rufen Sie die Eigenschaften und die Beziehungen eines [Notebook](../resources/notebook.md) -Objekts mithilfe von den URL-Pfad ab.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-105">Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.</span></span>
+<span data-ttu-id="cf126-104">Rufen Sie die Eigenschaften und Beziehungen eines [Notebook](../resources/notebook.md) -Objekts mithilfe des URL-Pfads ab.</span><span class="sxs-lookup"><span data-stu-id="cf126-104">Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.</span></span>
 
-<span data-ttu-id="c4d0c-106">Der Speicherort kann Benutzer Notizbücher auf Office 365, Gruppe Notebooks oder SharePoint-Website gehosteten Team Notizbücher auf Office 365 sein.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-106">The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c4d0c-107">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="c4d0c-107">Permissions</span></span>
-<span data-ttu-id="c4d0c-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4d0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cf126-105">Der Speicherort kann Benutzer-Notebooks in Office 365, Gruppen-Notebooks oder von SharePoint-Websites gehostete Team-Notizbücher in Office 365 sein.</span><span class="sxs-lookup"><span data-stu-id="cf126-105">The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.</span></span>
+## <a name="permissions"></a><span data-ttu-id="cf126-106">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="cf126-106">Permissions</span></span>
+<span data-ttu-id="cf126-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cf126-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c4d0c-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="c4d0c-110">Permission type</span></span>      | <span data-ttu-id="c4d0c-111">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="c4d0c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cf126-109">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cf126-109">Permission type</span></span>      | <span data-ttu-id="cf126-110">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cf126-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c4d0c-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="c4d0c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c4d0c-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4d0c-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c4d0c-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="c4d0c-114">Application</span></span> | <span data-ttu-id="c4d0c-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4d0c-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="cf126-111">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cf126-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cf126-112">Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. all, Notes. ReadWrite. all</span><span class="sxs-lookup"><span data-stu-id="cf126-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cf126-113">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cf126-113">Application</span></span> | <span data-ttu-id="cf126-114">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf126-114">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c4d0c-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="c4d0c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cf126-115">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cf126-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks/GetNotebookFromWebUrl
@@ -34,25 +34,25 @@ POST /users/{id | userPrincipalName}/onenote/notebooks/GetNotebookFromWebUrl
 POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
 POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ```
-## <a name="request-headers"></a><span data-ttu-id="c4d0c-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="c4d0c-117">Request headers</span></span>
-| <span data-ttu-id="c4d0c-118">Name</span><span class="sxs-lookup"><span data-stu-id="c4d0c-118">Name</span></span>       | <span data-ttu-id="c4d0c-119">Typ</span><span class="sxs-lookup"><span data-stu-id="c4d0c-119">Type</span></span> | <span data-ttu-id="c4d0c-120">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c4d0c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cf126-116">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cf126-116">Request headers</span></span>
+| <span data-ttu-id="cf126-117">Name</span><span class="sxs-lookup"><span data-stu-id="cf126-117">Name</span></span>       | <span data-ttu-id="cf126-118">Typ</span><span class="sxs-lookup"><span data-stu-id="cf126-118">Type</span></span> | <span data-ttu-id="cf126-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cf126-119">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c4d0c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c4d0c-121">Authorization</span></span>  | <span data-ttu-id="c4d0c-122">string</span><span class="sxs-lookup"><span data-stu-id="c4d0c-122">string</span></span>  | <span data-ttu-id="c4d0c-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c4d0c-125">Annehmen</span><span class="sxs-lookup"><span data-stu-id="c4d0c-125">Accept</span></span> | <span data-ttu-id="c4d0c-126">string</span><span class="sxs-lookup"><span data-stu-id="c4d0c-126">string</span></span> | `application/json` |
+| <span data-ttu-id="cf126-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cf126-120">Authorization</span></span>  | <span data-ttu-id="cf126-121">string</span><span class="sxs-lookup"><span data-stu-id="cf126-121">string</span></span>  | <span data-ttu-id="cf126-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cf126-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cf126-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="cf126-124">Accept</span></span> | <span data-ttu-id="cf126-125">string</span><span class="sxs-lookup"><span data-stu-id="cf126-125">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="c4d0c-127">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="c4d0c-127">Request body</span></span>
-<span data-ttu-id="c4d0c-128">Geben Sie im Textkörper Anforderung eine JSON-Darstellung der vollständige URL-Pfad zum Notizbuch, den, das Sie abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-128">In the request body, supply a JSON representation of the full URL path to the notebook you want to retrieve.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cf126-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cf126-126">Request body</span></span>
+<span data-ttu-id="cf126-127">Geben Sie im Anforderungstext eine JSON-Darstellung des vollständigen URL-Pfads des abzurufenden Notebooks an.</span><span class="sxs-lookup"><span data-stu-id="cf126-127">In the request body, supply a JSON representation of the full URL path to the notebook you want to retrieve.</span></span>
 
-| <span data-ttu-id="c4d0c-129">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c4d0c-129">Property</span></span>     | <span data-ttu-id="c4d0c-130">Typ</span><span class="sxs-lookup"><span data-stu-id="c4d0c-130">Type</span></span>        | <span data-ttu-id="c4d0c-131">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c4d0c-131">Description</span></span> |
+| <span data-ttu-id="cf126-128">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="cf126-128">Property</span></span>     | <span data-ttu-id="cf126-129">Typ</span><span class="sxs-lookup"><span data-stu-id="cf126-129">Type</span></span>        | <span data-ttu-id="cf126-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cf126-130">Description</span></span> |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | <span data-ttu-id="c4d0c-132">Der URL-Pfad des Notizbuchs abgerufen.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-132">The URL path of the notebook to retrieve.</span></span> <span data-ttu-id="c4d0c-133">Es kann auch enthalten eine "Onenote:" Präfix.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-133">It can also contain a "onenote:" prefix.</span></span>|
+| `webUrl`     |`String`     | <span data-ttu-id="cf126-131">Der URL-Pfad des abzurufenden Notizbuchs.</span><span class="sxs-lookup"><span data-stu-id="cf126-131">The URL path of the notebook to retrieve.</span></span> <span data-ttu-id="cf126-132">Es kann auch ein "OneNote:"-Präfix enthalten.</span><span class="sxs-lookup"><span data-stu-id="cf126-132">It can also contain a "onenote:" prefix.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c4d0c-134">Antwort</span><span class="sxs-lookup"><span data-stu-id="c4d0c-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cf126-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="cf126-133">Response</span></span>
 
-<span data-ttu-id="c4d0c-135">Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [notebook](../resources/notebook.md)-Objekt im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-135">If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c4d0c-136">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c4d0c-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c4d0c-137">Anforderung</span><span class="sxs-lookup"><span data-stu-id="c4d0c-137">Request</span></span>
-<span data-ttu-id="c4d0c-138">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-138">Here is an example of the request.</span></span>
+<span data-ttu-id="cf126-134">Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein [Notebook](../resources/notebook.md) -Objekt im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="cf126-134">If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cf126-135">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cf126-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cf126-136">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cf126-136">Request</span></span>
+<span data-ttu-id="cf126-137">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cf126-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "notebook_fromweburl"
@@ -63,10 +63,10 @@ Content-type: application/json
 
 {"webUrl":"webUrl value"}
 ```
-##### <a name="response"></a><span data-ttu-id="c4d0c-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="c4d0c-139">Response</span></span>
-<span data-ttu-id="c4d0c-140">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-140">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="cf126-138">Antwort</span><span class="sxs-lookup"><span data-stu-id="cf126-138">Response</span></span>
+<span data-ttu-id="cf126-139">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="cf126-139">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="c4d0c-p104">**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="c4d0c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="cf126-p104">**Hinweis:** Das hier gezeigte Antwortobjekt wurde möglicherweise zur besseren Lesbarkeit gekürzt. Ein tatsächlicher Aufruf gibt alle Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="cf126-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
