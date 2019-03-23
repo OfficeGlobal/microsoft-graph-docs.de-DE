@@ -1,29 +1,29 @@
 ---
-title: 'Notizbuch: GetNotebookFromWebUrl'
-description: Abrufen der Eigenschaften und die Beziehungen eines Notebook-Objekts verwenden den URL-Pfad.
+title: 'Notizbuch: getNotebookFromWebUrl'
+description: Rufen Sie die Eigenschaften und Beziehungen eines Notebook-Objekts mithilfe des URL-Pfads ab.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 226cbd70343feaf8fe5404aac6077f9b2438aba8
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b5067f50b1e03c124af8323709fc7b3f70af871b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29982069"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789648"
 ---
-# <a name="notebook-getnotebookfromweburl"></a>Notizbuch: GetNotebookFromWebUrl
+# <a name="notebook-getnotebookfromweburl"></a>Notizbuch: getNotebookFromWebUrl
 
-[! Beta-Haftungsausschluss INCLUDE]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Eigenschaften und die Beziehungen eines [Notebook](../resources/notebook.md) -Objekts mithilfe von den URL-Pfad ab.
+Rufen Sie die Eigenschaften und Beziehungen eines [Notebook](../resources/notebook.md) -Objekts mithilfe des URL-Pfads ab.
 
-Der Speicherort kann Benutzer Notizbücher auf Office 365, Gruppe Notebooks oder SharePoint-Website gehosteten Team Notizbücher auf Office 365 sein.
+Der Speicherort kann Benutzer-Notebooks in Office 365, Gruppen-Notebooks oder von SharePoint-Websites gehostete Team-Notizbücher in Office 365 sein.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. all, Notes. ReadWrite. all    |
 |Anwendung | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -41,15 +41,15 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | Annehmen | string | `application/json` |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung der vollständige URL-Pfad zum Notizbuch, den, das Sie abrufen möchten.
+Geben Sie im Anforderungstext eine JSON-Darstellung des vollständigen URL-Pfads des abzurufenden Notebooks an.
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | Der URL-Pfad des Notizbuchs abgerufen. Es kann auch enthalten eine "Onenote:" Präfix.|
+| `webUrl`     |`String`     | Der URL-Pfad des abzurufenden Notizbuchs. Es kann auch ein "OneNote:"-Präfix enthalten.|
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [notebook](../resources/notebook.md)-Objekt im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein [Notebook](../resources/notebook.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

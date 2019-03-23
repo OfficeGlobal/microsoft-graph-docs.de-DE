@@ -1,21 +1,21 @@
 ---
-title: Antworten Sie auf eine Nachricht in einem Kanal
-description: Antworten Sie auf eine vorhandene Nachricht in einem Kanal.
+title: Antworten auf eine Nachricht in einem Kanal
+description: Antworten Sie auf eine Nachricht in einem Kanal.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 700180a6cfc328a62237f3dfffe663bb6c57a24e
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 15e1bfffe7d7634092937a0605debfd5294b142b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039562"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789676"
 ---
-# <a name="reply-to-a-message-in-a-channel"></a>Antworten Sie auf eine Nachricht in einem Kanal
+# <a name="reply-to-a-message-in-a-channel"></a>Antworten auf eine Nachricht in einem Kanal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie eine neue Antwort auf eine [Nachricht](../resources/chatmessage.md) in einem angegebenen [DDE-Kanal](../resources/channel.md)an.
+Erstellen Sie eine neue Antwort auf eine [Nachricht](../resources/chatmessage.md) in einem angegebenen [Kanal](../resources/channel.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -37,11 +37,11 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [Message](../resources/chatmessage.md) -Objekts. Nur die Body-Eigenschaft ist obligatorisch, andere Eigenschaften optional sind.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [Message](../resources/chatmessage.md) -Objekts an. Nur die Body-Eigenschaft ist obligatorisch, andere Eigenschaften sind optional.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortcode mit der [Meldung](../resources/chatmessage.md) , die erstellt wurde.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode mit der erstellten [Nachricht](../resources/chatmessage.md) zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -51,7 +51,7 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {

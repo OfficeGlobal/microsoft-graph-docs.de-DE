@@ -1,23 +1,23 @@
 ---
-title: Eine Einstellung für die Directory aktualisieren
-description: Aktualisieren Sie die Eigenschaften eines bestimmten Verzeichnis Einstellung-Objekts.
+title: Aktualisieren einer Verzeichnis Einstellung
+description: Aktualisieren der Eigenschaften eines bestimmten Verzeichnis Einstellungs Objekts.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baaf6994f7052155173dd58b2c6b021939dc7ba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529096"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789613"
 ---
-# <a name="update-a-directory-setting"></a>Eine Einstellung für die Directory aktualisieren
+# <a name="update-a-directory-setting"></a>Aktualisieren einer Verzeichnis Einstellung
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die Eigenschaften eines bestimmten Verzeichnis Einstellung-Objekts.
+Aktualisieren der Eigenschaften eines bestimmten Verzeichnis Einstellungs Objekts.
 
-> **Hinweis**: die Version /beta diese API ist nur auf Gruppen angewendet wird. So *Aktualisieren Sie GroupSettings*wurde die /v1.0 Version dieser API umbenannt.
+> **Hinweis**: die/Beta-Version dieser API gilt nur für Gruppen. Die/v1.0-Version dieser API wurde in *Update groupSettings*umbenannt.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -29,7 +29,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |Anwendung | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
-<!-- { "blockType": "ignored" } -->Aktualisieren Sie eine gesamte Mandanten oder eine Gruppe bestimmte Einstellung.
+<!-- { "blockType": "ignored" } -->
+Aktualisiert eine mandantenweite oder gruppenspezifische Einstellung.
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
@@ -44,7 +45,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-| values | settingValue | Der aktualisierten Satz von Werten.  HINWEIS: Sie müssen den gesamten Sammlungssatz angeben. Sie können keinen einzelnen Wertesatz aktualisieren. |
+| values | [](../resources/settingvalue.md) SettingValue-Auflistung | Der aktualisierte Satz von Werten.  Hinweis: Sie müssen den gesamten Sammlungssatz angeben. Sie können nicht einen einzelnen Satz von Werten aktualisieren. |
 
 ## <a name="response"></a>Antwort
 

@@ -1,21 +1,21 @@
 ---
-title: Orgcontact aktualisieren
-description: Aktualisieren Sie die Eigenschaften des Orgcontact-Objekts.
+title: Organisationskontakt aktualisieren
+description: Aktualisieren der Eigenschaften des Organisationskontakt-Objekts.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517883"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789634"
 ---
-# <a name="update-orgcontact"></a>Orgcontact aktualisieren
+# <a name="update-orgcontact"></a>Organisationskontakt aktualisieren
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die Eigenschaften des Orgcontact-Objekts.
+Aktualisieren der Eigenschaften des Organisationskontakt-Objekts.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -23,7 +23,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Nicht unterstützt    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | Nicht unterstützt. |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -43,13 +43,13 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |city|String||
 |Land|String||
 |department|String||
-|onPremisesSyncEnabled|Boolescher Wert||
-|displayName|String||
+|onPremisesSyncEnabled|Boolean||
+|displayName|Zeichenfolge||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |mail|String||
-|mailNickname|Zeichenfolge||
+|mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
 |postalCode|String||
@@ -57,11 +57,11 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 |state|String||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String||
+|businessPhones|String-Sammlung||
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OrgContact](../resources/orgcontact.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode einen `200 OK` Antwortcode und ein aktualisiertes [Organisationskontakt](../resources/orgcontact.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

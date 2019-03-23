@@ -1,30 +1,30 @@
 ---
 title: PrivilegedRoleSettings aktualisieren
-description: Aktualisieren Sie die rolleneinstellungen für die bestimmten Rolle-Einstellung. Ein PrivilegedRoleSettings-Objekt wird zurückgegeben.
+description: Aktualisieren Sie die Rolleneinstellungen für die angegebene Rollen Einstellung. Ein privilegedRoleSettings-Objekt wird zurückgegeben.
 localization_priority: Normal
-ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: f416656362c5be0ccdaa2b3aaa7812511e357875
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641120"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789606"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings aktualisieren
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die rolleneinstellungen für die bestimmten Rolle-Einstellung. Ein [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) -Objekt wird zurückgegeben.
+Aktualisieren Sie die Rolleneinstellungen für die angegebene Rollen Einstellung. Ein [privilegedRoleSettings](../resources/privilegedrolesettings.md) -Objekt wird zurückgegeben.
 ## <a name="permissions"></a>Berechtigungen
 
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
->**Hinweis:** Die anfordernde Person muss eines der folgenden Rollen haben: berechtigten Rolle Administrators, globaler Administrator, Sicherheitsadministrator oder Sicherheit Leser. 
+>**Hinweis:** Der anfordernde muss eine der folgenden Rollen besitzen: Administrator für privilegierte Rollen, globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser. 
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. all    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Application | Nicht unterstützt |
+|Anwendung | Nicht unterstützt |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -38,29 +38,29 @@ PUT /privilegedRoles/{id}/settings
 | Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung eines [PrivilegedRoleSettings](../resources/privilegedrolesettings.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung eines [privilegedRoleSettings](../resources/privilegedrolesettings.md) -Objekts an.
 
-Die folgende Tabelle enthält die Eigenschaften, die Sie angeben können, wenn Sie eine Einstellung für die Rolle aktualisieren.
+In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie beim Aktualisieren einer Rollen Einstellung angeben können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Die Dauer, wenn die Rolle aktiviert ist. Erforderlich. |
-|id|string|Der eindeutige Bezeichner für die rolleneinstellungen. Schreibgeschützt. Erforderlich. |
-|isMfaOnElevationConfigurable|Boolescher Wert|**true,** Wenn MfaOnElevation konfigurierbar ist. **false,** Wenn MfaOnElevation nicht konfigurierbar ist. Erforderlich. |
-|lastGlobalAdmin|Boolean|Nur für internen Gebrauch.|
-|maxElavationDuration|duration|Maximale Speicherdauer für die aktivierte Rolle. Erforderlich. |
-|mfaOnElevation|Boolean|**true,** Wenn mehrstufiger Authentifizierung das erforderlich ist, um die Rolle zu aktivieren. **false,** Wenn mehrstufiger Authentifizierung das nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich. |
-|minElevationDuration|duration|Minimale Dauer für die aktivierte Rolle. Erforderlich. |
-|notificationToUserOnElevation|Boolean|**true,** Wenn für den Endbenutzer Benachrichtigung senden, wenn die Rolle aktiviert ist. **false,** Wenn keine Benachrichtigung senden, wenn die Rolle aktiviert ist. Erforderlich. |
-|ticketingInfoOnElevation|Boolean|**true,** Wenn die Informationen zur erforderlichen wann ist die Rolle zu aktivieren. **false,** Wenn die Informationen zur nicht erforderlich bei ist die Rolle zu aktivieren. Erforderlich. |
-|approvalOnElevation|Boolean|**true,** Wenn die Genehmigung erforderlich wann ist die Rolle zu aktivieren. **false,** Wenn die Genehmigung ist nicht erforderlich bei die Rolle zu aktivieren. Erforderlich. |
-|approverIds|Array|Liste der Genehmigung-IDs, wenn die Genehmigung für die Aktivierung erforderlich ist.|
+|elevationDuration|duration|Die Dauer der Aktivierung der Rolle. Erforderlich.|
+|id|string|Der eindeutige Bezeichner für die Rolleneinstellungen. Schreibgeschützt. Erforderlich.|
+|isMfaOnElevationConfigurable|Boolesch|**true** , wenn mfaOnElevation ist konfigurierbar. **false** , wenn mfaOnElevation nicht konfigurierbar ist. Erforderlich.|
+|lastGlobalAdmin|Boolesch|Ausschließlich für interne Zwecke.|
+|maxElavationDuration|duration|Maximale Dauer der aktivierten Rolle. Erforderlich.|
+|mfaOnElevation|Boolesch|**true** , wenn MFA erforderlich ist, um die Rolle zu aktivieren. **false** , wenn MFA nicht erforderlich ist, um die Rolle zu aktivieren. Erforderlich.|
+|minElevationDuration|duration|Mindestdauer für die aktivierte Rolle. Erforderlich.|
+|notificationToUserOnElevation|Boolesch|**true** , wenn eine Benachrichtigung an den Endbenutzer gesendet wird, wenn die Rolle aktiviert wird. **false** , wenn keine Benachrichtigung gesendet wird, wenn die Rolle aktiviert wird. Erforderlich.|
+|ticketingInfoOnElevation|Boolesch|**true** , wenn die Ticketing-Informationen erforderlich sind, wenn die Rolle zu aktivieren. **false** , wenn die Ticket Informationen beim Aktivieren der Rolle nicht erforderlich sind. Erforderlich.|
+|approvalOnElevation|Boolesch|**true** , wenn die Genehmigung erforderlich ist, wenn die Rolle zu aktivieren. **false** , wenn die Genehmigung nicht erforderlich ist, wenn die Rolle zu aktivieren. Erforderlich.|
+|approverIds|String collection|Liste der Genehmigungs-IDs, falls für die Aktivierung Genehmigung erforderlich ist.|
 
 ## <a name="response"></a>Antwort
 
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
-Beachten Sie, dass der Mandant muss auf den PIM registriert werden. Andernfalls wird der Statuscode HTTP 403 Verboten zurückgegeben werden soll.
+Beachten Sie, dass der Mandant bei PIM registriert werden muss. Andernfalls wird der vom HTTP 403 Forbidden-Statuscode zurückgegeben.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

@@ -1,30 +1,30 @@
 ---
 title: GovernanceRoleSetting aktualisieren
-description: Aktualisieren Sie die Eigenschaften des GovernanceRoleSetting.
+description: Aktualisieren Sie die Eigenschaften von governanceRoleSetting.
 localization_priority: Normal
-ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509329"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789620"
 ---
 # <a name="update-governancerolesetting"></a>GovernanceRoleSetting aktualisieren
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die Eigenschaften des [GovernanceRoleSetting](../resources/governancerolesetting.md).
+Aktualisieren Sie die Eigenschaften von [governanceRoleSetting](../resources/governancerolesetting.md).
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
->**Hinweis:** Diese API erfordert auch, dass die anfordernde Person mindestens eine `Active` Administrator rollenzuweisung (`owner` oder `user access administrator`) für die Ressource.
+>**Hinweis:** Diese API erfordert außerdem, dass die anfordernden Person über `Active` mindestens eine Administratorrollen`owner` Zuweisung `user access administrator`(oder) für die Ressource verfügt.
 
 |Berechtigungstyp      | Berechtigungen              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | PrivilegedAccess.ReadWrite.AzureResources |
+|Anwendung | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -39,28 +39,28 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung die Werte für [GovernanceRuleSettings](../resources/governancerulesetting.md) , die aktualisiert werden müssen. 
+Geben Sie im Anforderungstext die Werte für [governanceRuleSettings](../resources/governancerulesetting.md) an, die aktualisiert werden müssen. 
 
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Die Einstellungen, die ausgewertet werden, wenn ein Administrator versucht, eine Aufgabe zu auswählbaren Rolle hinzufügen.|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Die Einstellungen, die ausgewertet werden, wenn ein Administrator versucht, eine direkte rollenzuweisung hinzufügen.|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Die Einstellungen, die ausgewertet werden, wenn ein Benutzer versucht, eine Aufgabe zu auswählbaren Rolle hinzufügen. Dies wird nicht unterstützt für `pimforazurerbac` Szenario vorläufig und kann in zukünftigen Szenarien zur Verfügung gestellt.|
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Die Einstellungen, die ausgewertet werden, wenn ein Benutzer versucht, seine rollenzuweisung aktivieren.|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) -Sammlung|Die Regeleinstellungen, die ausgewertet werden, wenn ein Administrator versucht, eine berechtigte Rollenzuweisung hinzuzufügen.|
+|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) -Sammlung|Die Regeleinstellungen, die ausgewertet werden, wenn ein Administrator versucht, eine direkte Mitglieds Rollenzuweisung hinzuzufügen.|
+|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) -Sammlung|Die Regeleinstellungen, die ausgewertet werden, wenn ein Benutzer versucht, eine berechtigte Rollenzuweisung hinzuzufügen. Dies wird für `pimforazurerbac` das Szenario für jetzt nicht unterstützt und ist möglicherweise in den zukünftigen Szenarien verfügbar.|
+|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) -Sammlung|Die Regeleinstellungen, die ausgewertet werden, wenn ein Benutzer versucht, seine Rollenzuweisung zu aktivieren.|
 
 ## <a name="response"></a>Antwort
 Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 NoContent` zurückgegeben. Im Antworttext wird nichts zurückgegeben. 
 
 ### <a name="error-codes"></a>Fehlercodes
-Diese API gibt die standard-HTTP-Fehlercodes zurück. Darüber hinaus gibt es die folgenden benutzerdefinierten Fehlercodes zurück.
+Diese API gibt die standardmäßigen HTTP-Fehlercodes zurück. Darüber hinaus werden die folgenden benutzerdefinierten Fehlercodes zurückgegeben.
 
 |Fehlercode     | Fehlermeldung         | Details             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | Die [GovernanceRoleSetting](../resources/governancerolesetting.md) ist im System nicht vorhanden.
-| 400 BadRequest| InvalidRoleSetting    | Die [GovernanceRuleSettings](../resources/governancerulesetting.md) Werte im Textkörper Anforderung ist ungültig.
+| 400 BadRequest| RoleSettingNotFound   | Die [governanceRoleSetting](../resources/governancerolesetting.md) ist nicht im System vorhanden.
+| 400 BadRequest| InvalidRoleSetting    | Die im Anforderungstext angegebenen [governanceRuleSettings](../resources/governancerulesetting.md) -Werte sind ungültig.
 
 ## <a name="example"></a>Beispiel 
-Dieses Beispiel aktualisiert die Rolle Einstellung für benutzerdefinierte Rolle 3 im Abonnement Wingtip Toys - "Bemerkungen".
+In diesem Beispiel wird die Rollen Einstellung für die benutzerdefinierte Rolle 3 im Abonnement "Flügelspitze Toys-Prod" aktualisiert.
 ##### <a name="request"></a>Anforderung
 <!-- {
   "blockType": "request",
