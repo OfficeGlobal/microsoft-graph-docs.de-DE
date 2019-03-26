@@ -1,27 +1,47 @@
 ---
-title: Ressourcentyp educationAssignmentIndividualRecipient
-description: 'Innerhalb der assignment.assignTo-Eigenschaft verwendet. Bei Festlegung auf einzelne Empfängerliste, werden in der Klasse markierte Studenten '
+title: educationAssignmentIndividualRecipient-Ressourcentyp
+description: 'Wird innerhalb der Assignment. assignTo-Eigenschaft verwendet. Wenn eine einzelne Empfängerliste festgelegt ist, werden ausgewählte Kursteilnehmer in der Klasse '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: de04344aae43160f5fe601c7ec4bf05337400f60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 736345901faeeb4d3fab4d417752b684f1e19307
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522490"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799991"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a>Ressourcentyp educationAssignmentIndividualRecipient
+# <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Innerhalb der [assignment.assignTo](educationassignment.md) -Eigenschaft verwendet. Bei Festlegung auf einzelne Empfängerliste, markierte Studenten in der Klasse ein Objekt zum Absenden empfangen werden, wenn die Zuordnung veröffentlicht wird.
+Wird innerhalb der [Assignment. assignTo](educationassignment.md) -Eigenschaft verwendet. Wenn eine einzelne Empfängerliste festgelegt ist, erhalten ausgewählte Kursteilnehmer in der Klasse ein Submission-Objekt, wenn die Zuordnung veröffentlicht wird.
 
-Diese Ressource wird eine Unterklasse der [EducationAssignmentRecipient](educationassignmentrecipient.md).
+Diese Ressource ist eine Unterklasse von [educationAssignmentRecipient](educationassignmentrecipient.md).
 
 ## <a name="properties"></a>Eigenschaften
+| Eigenschaft     | Typ   |Beschreibung|
+|:---------------|:--------|:----------|
+|recipients|String collection|Eine Auflistung von IDs der Empfänger.|
 
-Keine.
+## <a name="json-representation"></a>JSON-Darstellung
+
+Es folgt eine JSON-Darstellung der Ressource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationAssignmentIndividualRecipient"
+}-->
+
+```json
+{
+  "recipients": ["String"]
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

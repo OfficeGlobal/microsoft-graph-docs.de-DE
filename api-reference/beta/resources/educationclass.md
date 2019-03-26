@@ -4,12 +4,12 @@ description: 'Stellt eine Klasse in einer Schule dar. Die **educationClass**-Res
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526732"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800012"
 ---
 # <a name="educationclass-resource-type"></a>educationClass-Ressourcentyp
 
@@ -30,19 +30,21 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 |[Lehrer hinzufügen](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| Hinzufügen eines neuen **educationUser** für die Klasse durch Bereitstellen in der Navigationseigenschaft „teachers“.|
 |[Lehrer auflisten](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md)-Sammlung| Abrufen einer Liste der Lehrer für die Klasse|
 |[Lehrer entfernen](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Entfernen eines **educationUser** aus der Klasse über die Navigationseigenschaft „teachers“.|
-|[Erstellen von educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Erstellen Sie eine neue **EducationAssignment** , durch die Veröffentlichung auf der Assignments-Auflistung.|
-|[Liste Zuordnungen](../api/educationclass-list-assignments.md) |[EducationAssignment](../resources/educationassignment.md) -Auflistung| Rufen Sie eine Auflistung der **EducationAssignment** -Objekts.|
+|[EducationAssignment erstellen](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Erstellen Sie eine neue **educationAssignment** durch veröffentlichen in der Assignments-Auflistung.|
+|[Zuweisungen auflisten](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md) -Sammlung| Rufen Sie eine **educationAssignment** -Objektsammlung ab.|
 |[Gruppe abrufen](../api/educationclass-get-group.md) |[group](group.md)| Abrufen der Office 365-**Gruppe**, die dieser **educationClass** entspricht.|
+|[EducationCategory erstellen](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | Erstellen Sie eine neue **educationCategory** für diese Klasse.|
+|[Kategorien auflisten](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md) -Sammlung | Rufen Sie eine Liste der **educationCategory** -Objekte ab, die zu dieser Klasse gehören.|
 |[Aktualisieren](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Aktualisieren eines **educationClass**-Objekts. |
 |[Löschen](../api/educationclass-delete.md) | Keine |Löschen eines **educationClass**-Objekts. |
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|id| string| Eindeutiger Bezeichner für die Klasse|
-|description|String| Beschreibung der Klasse|
+|id| Zeichenfolge| Eindeutiger Bezeichner für die Klasse|
+|description|Zeichenfolge| Beschreibung der Klasse|
 |displayName|String| Der Name der Klasse|
-|mailNickname|Zeichenfolge| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
+|mailNickname|String| E-Mail-Name zum Senden von E-Mails an alle Mitglieder, wenn diese Option aktiviert ist. |
 |createdBy|[identitySet](identityset.md)| Entität, die die Klasse erstellt hat. |
 |classCode|String| Von der Schule verwendeter Klassencode zum Identifizieren der Klasse|
 |externalId|String| ID der Klasse aus dem Synchronisierungssystem |
@@ -54,10 +56,11 @@ Stellt eine Klasse in einer Schule dar. Die **educationClass**-Ressource entspri
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Nullwerte zulassend.|
+|members|[educationUser](../resources/educationuser.md)-Sammlung| Alle Benutzer in der Klasse. Lässt Nullwerte zu.|
 |schools|[educationSchool](../resources/educationschool.md)-Sammlung| Alle Schulen, denen dieser Klasse zugeordnet ist. Lässt Nullwerte zu.|
 |teachers|[educationUser](../resources/educationuser.md)-Sammlung|  Alle Lehrer in der Klasse. Lässt Nullwerte zu.|
-|assignments|[EducationAssignment](../resources/educationassignment.md) -Auflistung| Alle Aufgaben, die diese Klasse zugeordnet werden. Nullwerte zulassend.|
+|assignments|[educationAssignment](../resources/educationassignment.md) -Sammlung| Alle dieser Klasse zugeordneten Zuordnungen. Lässt Nullwerte zu.|
+|categories|[educationCategory](../resources/educationassignment.md) -Sammlung| Alle Kategorien, die dieser Klasse zugeordnet sind. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

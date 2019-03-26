@@ -1,64 +1,68 @@
 ---
-title: Ressourcentyp educationAssignment
-description: Die Ressource **EducationAssignment** stellt einen Vorgang oder eine Arbeitsschritt Mitglied Student oder ein Team in einer Klasse als Teil ihrer Studie zugewiesen. Nur Lehrer oder Team Besitzer können Zuordnungen erstellen. Zuordnungen enthalten, Handzettel und Aufgaben, die die Lehrer den Teilnehmern an arbeiten möchte. Jeder Student Zuordnung hat offenem zugeordnet, die keine Arbeit enthält, die ihre Lehrer aufgefordert werden, die deaktiviert werden. Lehrer kann Bewertungen und Feedback der Übermittlung von den Teilnehmern Unternehmensadministrator hinzufügen.
+title: educationAssignment-Ressourcentyp
+description: Die **educationAssignment** -Ressource stellt eine Aufgabe oder eine Arbeitseinheit dar, die einem Schüler oder Teammitglied in einer Klasse als Teil ihrer Studie zugeordnet ist. Nur Lehrer oder Teambesitzer können Zuordnungen erstellen. Zuordnungen enthalten Handzettel und Aufgaben, an denen der Kursteilnehmer arbeiten möchte. Jede Schüler Zuweisung hat eine zugeordnete Übermittlung, die alle arbeiten enthält, die Ihr Lehrer zum Einschalten beantragt hat. Ein Lehrer kann Partituren und Feedback zu der vom Schüler eingestellten Einsendung hinzufügen.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 68bb881800e1c63acb588e39bb64e1d02e005cc3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508958"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800005"
 ---
-# <a name="educationassignment-resource-type"></a>Ressourcentyp educationAssignment
+# <a name="educationassignment-resource-type"></a>educationAssignment-Ressourcentyp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Die Ressource **EducationAssignment** stellt einen Vorgang oder eine Arbeitsschritt Mitglied Student oder ein Team in einer Klasse als Teil ihrer Studie zugewiesen. Nur Lehrer oder Team Besitzer können Zuordnungen erstellen. Zuordnungen enthalten, Handzettel und Aufgaben, die die Lehrer den Teilnehmern an arbeiten möchte. Jeder Student Zuordnung hat eine zugeordnete [Übermittlung](educationsubmissionresource.md) , die keine Arbeit enthält, die ihre Lehrer aufgefordert werden, die deaktiviert werden. Lehrer kann Bewertungen und Feedback der Übermittlung von den Teilnehmern Unternehmensadministrator hinzufügen.
+Die **educationAssignment** -Ressource stellt eine Aufgabe oder eine Arbeitseinheit dar, die einem Schüler oder Teammitglied in einer Klasse als Teil ihrer Studie zugeordnet ist. Nur Lehrer oder Teambesitzer können Zuordnungen erstellen. Zuordnungen enthalten Handzettel und Aufgaben, an denen der Kursteilnehmer arbeiten möchte. Jede Schüler Zuweisung hat eine zugeordnete [Übermittlung](educationsubmissionresource.md) , die alle arbeiten enthält, die Ihr Lehrer zum Einschalten beantragt hat. Ein Lehrer kann Partituren und Feedback zu der vom Schüler eingestellten Einsendung hinzufügen.
 
-Wenn eine Zuordnung erstellt wird, ist es im Entwurfszustand. Studenten nicht die Zuordnung angezeigt und Übermittlungen nicht erstellt werden. Sie können den Status einer Zuordnung ändern, mit der Aktion [Veröffentlichen](../api/educationassignment-publish.md) . Sie können keine Anforderung PATCH verwenden, um den Status einer Aufgabe zu ändern.
+Wenn eine Zuordnung erstellt wird, befindet Sie sich im Entwurfszustand. Die Teilnehmer können die Zuordnung nicht sehen, und die Übermittlungen werden nicht erstellt. Sie können den Status einer Zuordnung mithilfe der Aktion [veröffentlichen](../api/educationassignment-publish.md) ändern. Sie können keine PATCH-Anforderung verwenden, um den Zuordnungsstatus zu ändern.
 
-Die Zuordnung APIs werden in den Klassennamespace verfügbar gemacht.
+Die Zuweisungs-APIs werden im Klassennamespace verfügbar gemacht.
 
 ## <a name="methods"></a>Methoden
 
 | Methode           | Rückgabetyp    |Beschreibung|
 |:---------------|:--------|:----------|
-|[Abrufen der Zuordnung](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Lesen Sie Eigenschaften und die Beziehungen eines **EducationAssignment** -Objekts.|
-|[Erstellen der Zuordnung Ressource](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Erstellen Sie eine neue **EducationAssignmentResource** , indem Sie das Veröffentlichen in der Resources-Auflistung.|
-|[List-Ressourcen](../api/educationassignment-list-resources.md) |[EducationAssignmentResource](educationassignmentresource.md) -Auflistung| Rufen Sie eine Auflistung der **EducationAssignmentResource** -Objekts.|
-|[Liste Übermittlungen](../api/educationassignment-list-submissions.md) |[EducationSubmission](educationsubmission.md) -Auflistung| Rufen Sie eine Auflistung der **EducationSubmission** -Objekts.|
-|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Aktualisieren eines **EducationAssignment** -Objekts. |
-|[Delete](../api/educationassignment-delete.md) | Keine |Löschen eines **EducationAssignment** -Objekts. |
-|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Ändern Sie den Status eines Objekts **EducationAssignment** von Entwurf, veröffentlicht.|
-|[Abrufen der Ressource Ordner-URL](../api/educationassignment-getresourcesfolderurl.md)| string| Der OneDrive-Ordner in den Ressourcen dateibasierten platziert werden soll, um eine Zuordnung Ressource angehören. In diesem Ordner als Ressource hinzugefügt werden müssen sich Dateien befinden.|
+|[Zuweisung abrufen](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Liest die Eigenschaften und Beziehungen eines **educationAssignment** -Objekts.|
+|[Zugeordnete Ressource erstellen](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Erstellen Sie eine neue **educationAssignmentResource** durch veröffentlichen in der Resources-Auflistung.|
+|[Ressourcen aufListen](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) -Sammlung| Rufen Sie eine **educationAssignmentResource** -Objektsammlung ab.|
+|[AufListen von Übermittlungen](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md) -Sammlung| Rufen Sie eine **educationSubmission** -Objektsammlung ab.|
+|[Kategorien auflisten](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md) -Sammlung| Rufen Sie eine **educationCategory** -Objektsammlung ab.|
+|[Kategorien hinzufügen](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Weisen Sie dieser Zuordnung ein **educationCategory** zu, das der Klasse angehört.|
+|[Kategorie entfernen](../api/educationassignment-remove-category.md) |Keines| Entfernen Sie aus dieser Zuordnung ein **educationCategory** , das zur Klasse gehört.|
+|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Aktualisieren eines **educationAssignment** -Objekts. |
+|[Löschen](../api/educationassignment-delete.md) | Keine |Löscht ein **educationAssignment** -Objekt. |
+|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Ändern Sie den Status eines **educationAssignment** -Objekts von Entwurf in veröffentlicht.|
+|[URL für Ressourcenordner abrufen](../api/educationassignment-getresourcesfolderurl.md)| Zeichenfolge| Der OneDrive-Ordner, in dem dateibasierte Ressourcen als Teil einer Zuordnungs Ressource gespeichert werden sollen. Dateien müssen sich in diesem Ordner befinden, damit Sie als Ressource hinzugefügt werden können.|
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |id|String| Schreibgeschützt.|
-|allowLateSubmissions|Boolescher Wert| Bestimmt, ob nach dem Fälligkeitsdatum Studenten übermitteln können. Wenn diese Eigenschaft nicht bei der Erstellung angegeben wird, wird standardmäßig auf "true". |
-|allowStudentsToAddResourcesToSubmission|Boolescher Wert| Gibt an, ob die eigene Ressourcen einer Übermittlung hinzugefügt werden können oder wenn sie nur Ressourcen hinzugefügt werden die Lehrer ändern können. |
-|assignDateTime|DateTimeOffset|Das Datum, wenn die Zuordnung aktiv werden sollen.  Wenn in der Zukunft wird die Zuordnung nicht zum Schüler bis zum aktuellen Datum angezeigt.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Welche Benutzer oder die gesamte Klasse sollte ein Objekt zum Absenden erhalten, nachdem die Zuordnung veröffentlicht wird. |
-|assignedDateTime|DateTimeOffset|Auf der Zeitachse Studenten wird der Zeitpunkt, den die Zuordnung in Studenten und die Zuordnung veröffentlicht wurde.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|classId|String| Klasse, die diese Zuordnung gehört. |
-|createdBy|[identitySet](identityset.md)| Die die Zuordnung erstellt. |
-|createdDateTime|DateTimeOffset|Zeitpunkt der Erstellung die Zuordnung.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|displayName|String|Name der Zuordnung.|
-|dueDateTime|DateTimeOffset|Datum die Studenten-Zuordnung fällig ist.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|Benotung|[educationAssignmentGradeType](educationassignmentgradetype.md)|Wie wird die Zuordnung eingestuft. |
-|Anweisungen|[itemBody](itembody.md)| Anleitung für die Zuordnung.  Dies zusammen mit dem Anzeigenamen lassen Sie den Kursteilnehmer Aktionen. |
-|lastModifiedBy|[identitySet](identityset.md)| Die die Zuordnung der letzten Änderung. |
-|lastModifiedDateTime|DateTimeOffset|Zeitpunkt der letzten die Zuordnung Änderung.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|status|string| Status der **Zuordnung**.  Sie können nicht PATCH dieser Wert.  Mögliche Werte sind: `draft`, `published` und `assigned`.|
+|allowLateSubmissions|Boolesch| Gibt an, ob Schüler nach dem Fälligkeitsdatum übermitteln können. Wenn diese Eigenschaft nicht während der Erstellung angegeben wird, wird standardmäßig true festgelegt. |
+|allowStudentsToAddResourcesToSubmission|Boolesch| Gibt an, ob Schüler eigene Ressourcen zu einer Übermittlung hinzufügen können oder ob Sie nur vom Lehrer hinzugefügte Ressourcen ändern können. |
+|assignDateTime|DateTimeOffset|Das Datum, an dem die Zuordnung aktiv werden soll.  Wenn in der Zukunft die Zuordnung bis zu diesem Datum nicht angezeigt wird.  Der **timestamp** -Typ stellt Datums-und Uhrzeitinformationen unter Verwendung des ISO 8601-Formats dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Die Benutzer oder die ganze Klasse sollten ein Submission-Objekt empfangen, nachdem die Zuordnung veröffentlicht wurde. |
+|assignedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Zuweisung für Schüler veröffentlicht wurde und die Zuordnung auf der Zeitachse der Kursteilnehmer angezeigt wird.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|classId|String| Klasse, zu der diese Zuordnung gehört. |
+|createdBy|[identitySet](identityset.md)| Wer hat die Zuordnung erstellt? |
+|createdDateTime|DateTimeOffset|Zeitpunkt, zu dem die Zuordnung erstellt wurde.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|displayName|Zeichenfolge|Der Name der Zuordnung.|
+|dueDateTime|DateTimeOffset|Das Datum, an dem die Zuweisung der Teilnehmer fällig ist.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|Benotung|[educationAssignmentGradeType](educationassignmentgradetype.md)|Wie die Zuweisung benotet wird. |
+|Anweisungen|[itemBody](itembody.md)| Anweisungen für die Zuordnung.  Dieser zusammen mit dem Anzeigenamen teilen Sie dem Kursteilnehmer mit, was zu tun ist. |
+|lastModifiedBy|[identitySet](identityset.md)| Die die Zuordnung zuletzt geändert hat. |
+|lastModifiedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Zuordnung zuletzt geändert wurde.  Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
+|status|string| Status der **Zuordnung**.  Sie können diesen Wert nicht PATCHen.  Mögliche Werte sind: `draft`, `published` und `assigned`.|
 
 ## <a name="relationships"></a>Beziehungen
 | Beziehung | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|resources|[EducationAssignmentResource](educationassignmentresource.md) -Auflistung| Learning-Objekte, die diese Zuordnung zugeordnet sind.  Nur Lehrer können diese Liste ändern. Nullwerte zulassend.|
-|Übermittlungen|[EducationSubmission](educationsubmission.md) -Auflistung| Nachdem veröffentlicht, ist es ein Übermittlung-Objekt für jeden Kursteilnehmer, ihre Arbeit und Note darstellt.  Schreibgeschützt. Lässt Nullwerte zu.|
+|Ressourcen|[educationAssignmentResource](educationassignmentresource.md) -Sammlung| Lernobjekte, die dieser Zuordnung zugeordnet sind.  Nur Lehrer können diese Liste ändern. Lässt Nullwerte zu.|
+|Einreichungen|[educationSubmission](educationsubmission.md) -Sammlung| Sobald veröffentlicht, gibt es ein Submission-Objekt für jeden Schüler, der Ihre Arbeit und Besoldungsgruppe darstellt.  Schreibgeschützt. Lässt Nullwerte zu.|
+|categories|[educationCategory](educationcategory.md) -Sammlung| Wenn diese Option festgelegt ist, können Benutzer problemlos Zuordnungen eines bestimmten Typs finden.  Schreibgeschützt. Lässt Nullwerte zu.|
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
