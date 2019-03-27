@@ -1,21 +1,21 @@
 ---
-title: Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
+title: Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen,
 description: Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht darin, anzuzeigen, wann ein Benutzer für eine Besprechung verfügbar ist, oder die Verfügbarkeit eines Teams, Raums oder Geräts für einen Zeitraum zu durchsuchen.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657386"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869197"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen (Vorschau)
+# <a name="get-freebusy-schedule-of-users-and-resources"></a>Abrufen des Frei/Gebucht-Zeitplans für Benutzer und Ressourcen,
 
 Ein häufiges Szenario in einer Arbeits- oder Schulumgebung besteht darin, anzuzeigen, wann ein Benutzer für eine Besprechung verfügbar ist, oder die Verfügbarkeit eines Teams, Raums oder Geräts für einen Zeitraum zu durchsuchen.
 
-Mit der [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta)-Aktion können Sie die Verfügbarkeitsinformationen einer oder mehrerer Entitäten (Benutzer, Verteilerlisten oder Ressourcen) für einen bestimmten Zeitraum abrufen. 
+Mit der [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0)-Aktion können Sie die Verfügbarkeitsinformationen einer oder mehrerer Entitäten (Benutzer, Verteilerlisten oder Ressourcen) für einen bestimmten Zeitraum abrufen. 
 
 ## <a name="example"></a>Beispiel
 
@@ -26,7 +26,7 @@ Ein einfach Beispiel ist das Suchen des Frei/Gebucht-Zeitplans eines Mitarbeiter
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -57,14 +57,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
             "scheduleId":"AlexW@contoso.OnMicrosoft.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -76,7 +75,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -135,7 +133,7 @@ Unabhängig vom Frei/Gebucht-Zeitplan und den Arbeitszeiten von Alex gibt **getS
 
 Standardmäßig beträgt die Länge der einzelnen Zeitfenster 30 Minuten. Dieses Beispiel verwendet die **availabilityViewInterval**-Eigenschaft, um das Zeitfenster auf 15 Minuten zu ändern.
 
-## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>Inwiefern unterscheidet sich getSchedule von FindMeetingTimes?
+## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>Worin unterscheiden sich getSchedule und findMeetingTimes?
 
 Die [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0)-Aktion ist dahingehend vergleichbar mit **getSchedule**, dass beide Aktionen den Frei/Gebucht-Status und die Arbeitszeiten der angegebenen Benutzer und Ressourcen lesen. Die beiden Aktionen unterscheiden sich in einigen anderen wichtigen Aspekten.
 
@@ -157,23 +155,29 @@ Dies eignet sich für Szenarien, die von [einer optimierten Terminbuchung](findm
 
 **getSchedule** unterstützt sowohl delegierte als auch Nur-App-Szenarien. Bei letzterem stimmt ein Administrator zu, dass die App auf alle Kalender ohne einen angemeldeten Benutzer zugreift.
 
+### <a name="permissions"></a>Berechtigungen
+"Calendars.Read.Shared" ist die niedrigste Berechtigung, die von **findmeetingtimes** benötigt wird.
+
+"Calendar.Read" ist die niedrigste Berechtigung, die von **getSchedule** benötigt wird. 
 
 ### <a name="version-support"></a>Versionsunterstützung
 
-**findmeetingtimes** ist allgemein für alle Apps verfügbar. 
-
-**getSchedule** ist derzeit im [Vorschaustatus](versioning-and-support.md#beta-version) verfügbar und ist daher nicht zur Verwendung in Produktions-Apps geeignet.
+**findmeetingtimes** und **getSchedule** sind sowohl allgemein verfügbar als auch für den Einsatz in Produktionsanwendungen geeignet.
 
 
-## <a name="permissions"></a>Berechtigungen
-Calendar.Read ist die niedrigste Berechtigung, die Sie zum Abrufen von Frei/Gebucht-Informationen benötigen. Je nach App-Szenario kann der angemeldete Benutzer oder der Administrator zustimmen.
-Neben dem Frei/Gebucht-Status und den Arbeitszeiten der angeforderten Entitäten kann **getSchedule** unter den folgenden Voraussetzungen auch den Betreff und den Ort eines Ereignisses zurückgeben:
+## <a name="event-data-returned"></a>Zurückgegebene Ereignisdaten
+"Calendar.Read" ist die niedrigste Berechtigung, die von **getSchedule** zum Abrufen von Frei/Gebucht-Informationen durch eine App benötigt wird. Je nach App-Szenario kann der angemeldete Benutzer oder der Administrator zustimmen.
 
-- Wenn das Ereignis mit geringer Vertraulichkeitsstufe markiert ist: `normal` oder `personal`, UND eine oder mehrere der folgenden Bedingungen treffen zu:
+Während die genehmigte Berechtigung es einer App erlaubt, **getSchedule** auf den Kalendern der angeforderten Benutzer über Outlook zu verwenden, steuert der angeforderte Benutzer, welche Ereignisdaten, falls vorhanden, von **getSchedule** zurückgegeben werden. 
 
-- Die Kalendereinstellungen des angeforderten Benutzers ermöglichen allen Benutzern in der Organisation, Titel und Orte anzuzeigen.
-- Der Kalender des angeforderten Benutzers ist für den angemeldeten Benutzer freigegeben.
-- Der angemeldete Benutzer ist ein Administrator derselben Organisation wie der angeforderte Benutzer.
+Beispielsweise kann **getSchedule** den Frei/Belegt-Status und die Arbeitszeiten der angeforderten Benutzer oder auch die Eigenschaften **subject**, **location** und **isPrivate** eines Ereignisses zurückgeben, vorausgesetzt, dass:
+
+- Das Ereignis mit geringer Vertraulichkeitsstufe markiert ist (`normal` oder `personal`) UND eine oder mehrere der folgenden Bedingungen zutreffen:
+
+   - Die Kalendereinstellungen des angeforderten Benutzers erlauben es dem angemeldeten Benutzer, Betreffzeilen und Orte anzuzeigen.
+   - Der Kalender des angeforderten Benutzers ist für den angemeldeten Benutzer freigegeben.
+
+Diese Bedingungen gelten unabhängig davon, ob der angemeldete Benutzer ein Administrator in der Organisation ist. Der angeforderte Benutzer hat die Kontrolle über die zurückgegebenen Ereignisdaten.
 
 ## <a name="time-zone-representation"></a>Zeitzonendarstellung
 Standardmäßig werden die Start- und Endzeiten der zurückgegebenen Zeitplanelemente in UTC dargestellt. Sie können eine `Prefer`-Kopfzeile verwenden, um eine für Ihre App geeignete Zeitzone anzugeben. Beispiel: 
@@ -187,6 +191,7 @@ Beachten Sie die folgenden Beschränkungen und Fehlerbedingungen:
 - **getSchedule** kann das Nachschlagen von Frei/Gebucht-Informationen für bis zu 20 Entitäten gleichzeitig unterstützen. Dieser Grenzwert gilt für die Anzahl von Benutzern, die einzeln oder als Mitglieder einer Verteilerliste identifiziert wurden, und auch für die Anzahl von Ressourcen.
 - Der Zeitraum zum Nachschlagen muss weniger als 42 Tage betragen.
 - Wenn **getSchedule** keinen angegebenen Benutzer oder keine angegebene Ressource identifizieren kann, wird ein einzelnes Zeitplanelement zurückgegeben und der Fehler angezeigt. 
+
 
 ## <a name="see-also"></a>Siehe auch
 - [Berechtigungsreferenz](permissions-reference.md#calendars-permissions)
