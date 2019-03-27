@@ -1,51 +1,51 @@
 ---
-title: OutlookTaskGroup löschen
-description: Löschen der angegebenen OutlookTaskGroup.
+title: Outlook Task Group löschen
+description: Löscht die angegebene Outlook Task Group.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b0ec96b876429a8a000da6754db7f39b7f84546f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cfe3c88adf821ca8a5643cdafd5719b5fbb4d40e
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528991"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869435"
 ---
-# <a name="delete-outlooktaskgroup"></a><span data-ttu-id="d7a98-103">OutlookTaskGroup löschen</span><span class="sxs-lookup"><span data-stu-id="d7a98-103">Delete outlookTaskGroup</span></span>
+# <a name="delete-outlooktaskgroup"></a><span data-ttu-id="2a115-103">Outlook Task Group löschen</span><span class="sxs-lookup"><span data-stu-id="2a115-103">Delete outlookTaskGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7a98-104">Löschen der angegebenen [OutlookTaskGroup](../resources/outlooktaskgroup.md).</span><span class="sxs-lookup"><span data-stu-id="d7a98-104">Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="d7a98-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d7a98-105">Permissions</span></span>
-<span data-ttu-id="d7a98-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7a98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a115-104">Löscht die angegebene [Outlook Task Group](../resources/outlooktaskgroup.md).</span><span class="sxs-lookup"><span data-stu-id="2a115-104">Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a115-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="2a115-105">Permissions</span></span>
+<span data-ttu-id="2a115-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a115-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7a98-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d7a98-108">Permission type</span></span>      | <span data-ttu-id="d7a98-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="d7a98-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2a115-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="2a115-108">Permission type</span></span>      | <span data-ttu-id="2a115-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="2a115-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d7a98-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d7a98-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d7a98-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d7a98-111">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="d7a98-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="d7a98-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7a98-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d7a98-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="d7a98-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d7a98-114">Application</span></span> | <span data-ttu-id="d7a98-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="d7a98-115">Not supported.</span></span> |
+|<span data-ttu-id="2a115-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="2a115-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2a115-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a115-111">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="2a115-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="2a115-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a115-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a115-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="2a115-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="2a115-114">Application</span></span> | <span data-ttu-id="2a115-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="2a115-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d7a98-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d7a98-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a115-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a115-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskGroups/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
-
 ```
-## <a name="request-headers"></a><span data-ttu-id="d7a98-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d7a98-117">Request headers</span></span>
-| <span data-ttu-id="d7a98-118">Name</span><span class="sxs-lookup"><span data-stu-id="d7a98-118">Name</span></span>       | <span data-ttu-id="d7a98-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d7a98-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2a115-117">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="2a115-117">Request headers</span></span>
+| <span data-ttu-id="2a115-118">Name</span><span class="sxs-lookup"><span data-stu-id="2a115-118">Name</span></span>       | <span data-ttu-id="2a115-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2a115-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d7a98-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7a98-120">Authorization</span></span>  | <span data-ttu-id="d7a98-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d7a98-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2a115-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a115-120">Authorization</span></span>  | <span data-ttu-id="2a115-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="2a115-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d7a98-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d7a98-123">Request body</span></span>
-<span data-ttu-id="d7a98-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="d7a98-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a115-123">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="2a115-123">Request body</span></span>
+<span data-ttu-id="2a115-124">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="2a115-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d7a98-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="d7a98-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2a115-125">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a115-125">Response</span></span>
 
-<span data-ttu-id="d7a98-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d7a98-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2a115-p103">Wenn die Methode erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben. Im Antworttext wird nichts zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2a115-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7a98-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d7a98-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d7a98-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="d7a98-129">Request</span></span>
-<span data-ttu-id="d7a98-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d7a98-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2a115-128">Beispiel</span><span class="sxs-lookup"><span data-stu-id="2a115-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2a115-129">Anforderung</span><span class="sxs-lookup"><span data-stu-id="2a115-129">Request</span></span>
+<span data-ttu-id="2a115-130">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="2a115-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktaskgroup"
@@ -53,8 +53,8 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups('AAMkADIyAAAhrbe-AAA=')
 ```
-##### <a name="response"></a><span data-ttu-id="d7a98-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="d7a98-131">Response</span></span>
-<span data-ttu-id="d7a98-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d7a98-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2a115-131">Antwort</span><span class="sxs-lookup"><span data-stu-id="2a115-131">Response</span></span>
+<span data-ttu-id="2a115-132">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="2a115-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

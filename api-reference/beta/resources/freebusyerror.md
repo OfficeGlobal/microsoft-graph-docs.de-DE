@@ -1,30 +1,30 @@
 ---
-title: Ressourcentyp freeBusyError
-description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
+title: freeBusyError-Ressourcentyp
+description: Stellt Fehlerinformationen aus dem Versuch, die Verfügbarkeit eines Benutzers, einer Verteilerliste oder einer Ressource zu erhalten.
 localization_priority: Normal
-ms.openlocfilehash: f1ff7717034798830a610b35dbbff5c987cf7371
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529845"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869337"
 ---
-# <a name="freebusyerror-resource-type"></a><span data-ttu-id="c408d-104">Ressourcentyp freeBusyError</span><span class="sxs-lookup"><span data-stu-id="c408d-104">freeBusyError resource type</span></span>
+# <a name="freebusyerror-resource-type"></a><span data-ttu-id="7225e-103">freeBusyError-Ressourcentyp</span><span class="sxs-lookup"><span data-stu-id="7225e-103">freeBusyError resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="c408d-105">Stellt Informationen zum Fehler versucht, die die Verfügbarkeit von einem Benutzer, eine Verteilerliste oder eine Ressource erhalten möchten.</span><span class="sxs-lookup"><span data-stu-id="c408d-105">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
+<span data-ttu-id="7225e-104">Stellt Fehlerinformationen aus dem Versuch, die Verfügbarkeit eines Benutzers, einer Verteilerliste oder einer Ressource zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="7225e-104">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c408d-106">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c408d-106">Properties</span></span>
-| <span data-ttu-id="c408d-107">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="c408d-107">Property</span></span>     | <span data-ttu-id="c408d-108">Typ</span><span class="sxs-lookup"><span data-stu-id="c408d-108">Type</span></span>   |<span data-ttu-id="c408d-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c408d-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7225e-105">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7225e-105">Properties</span></span>
+| <span data-ttu-id="7225e-106">Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="7225e-106">Property</span></span>     | <span data-ttu-id="7225e-107">Typ</span><span class="sxs-lookup"><span data-stu-id="7225e-107">Type</span></span>   |<span data-ttu-id="7225e-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7225e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c408d-110">message</span><span class="sxs-lookup"><span data-stu-id="c408d-110">message</span></span> |<span data-ttu-id="c408d-111">String</span><span class="sxs-lookup"><span data-stu-id="c408d-111">String</span></span> |<span data-ttu-id="c408d-112">Beschreibt den Fehler.</span><span class="sxs-lookup"><span data-stu-id="c408d-112">Describes the error.</span></span> |
-|<span data-ttu-id="c408d-113">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="c408d-113">responseCode</span></span> |<span data-ttu-id="c408d-114">String</span><span class="sxs-lookup"><span data-stu-id="c408d-114">String</span></span> |<span data-ttu-id="c408d-115">Der Antwortcode von Abfragen für die Verfügbarkeit des Benutzers, der Verteilerliste oder der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c408d-115">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
+|<span data-ttu-id="7225e-109">message</span><span class="sxs-lookup"><span data-stu-id="7225e-109">message</span></span> |<span data-ttu-id="7225e-110">String</span><span class="sxs-lookup"><span data-stu-id="7225e-110">String</span></span> |<span data-ttu-id="7225e-111">Beschreibt den Fehler.</span><span class="sxs-lookup"><span data-stu-id="7225e-111">Describes the error.</span></span> |
+|<span data-ttu-id="7225e-112">Response Code</span><span class="sxs-lookup"><span data-stu-id="7225e-112">responseCode</span></span> |<span data-ttu-id="7225e-113">String</span><span class="sxs-lookup"><span data-stu-id="7225e-113">String</span></span> |<span data-ttu-id="7225e-114">Der Antwortcode aus der Abfrage für die Verfügbarkeit des Benutzers, der Verteilerliste oder der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7225e-114">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="c408d-116">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="c408d-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7225e-115">JSON-Darstellung</span><span class="sxs-lookup"><span data-stu-id="7225e-115">JSON representation</span></span>
 
-<span data-ttu-id="c408d-117">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="c408d-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7225e-116">Es folgt eine JSON-Darstellung der Ressource.</span><span class="sxs-lookup"><span data-stu-id="7225e-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,52 +1,53 @@
 ---
-title: Liste taskFolders
-description: Rufen Sie alle Outlook Aufgabenordner im Postfach des Benutzers.
+title: TaskFolders aufListen
+description: Rufen Sie alle Outlook-Aufgabenordner im Postfach des Benutzers ab.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 438f70a41044ccc5d2b94a8099647a82ae08f945
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4037567a61ba6cd96759053035edef66455b94fa
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518856"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869239"
 ---
-# <a name="list-taskfolders"></a><span data-ttu-id="cca24-103">Liste taskFolders</span><span class="sxs-lookup"><span data-stu-id="cca24-103">List taskFolders</span></span>
+# <a name="list-taskfolders"></a><span data-ttu-id="97e72-103">TaskFolders aufListen</span><span class="sxs-lookup"><span data-stu-id="97e72-103">List taskFolders</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cca24-104">Rufen Sie alle Outlook Aufgabenordner im Postfach des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="cca24-104">Get all the Outlook task folders in the user's mailbox.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cca24-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="cca24-105">Permissions</span></span>
-<span data-ttu-id="cca24-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cca24-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97e72-104">Rufen Sie alle Outlook-Aufgabenordner im Postfach des Benutzers ab.</span><span class="sxs-lookup"><span data-stu-id="97e72-104">Get all the Outlook task folders in the user's mailbox.</span></span>
+## <a name="permissions"></a><span data-ttu-id="97e72-105">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="97e72-105">Permissions</span></span>
+<span data-ttu-id="97e72-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97e72-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cca24-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="cca24-108">Permission type</span></span>      | <span data-ttu-id="cca24-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="cca24-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97e72-108">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="97e72-108">Permission type</span></span>      | <span data-ttu-id="97e72-109">Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)</span><span class="sxs-lookup"><span data-stu-id="97e72-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cca24-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="cca24-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cca24-111">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="cca24-111">Tasks.Read</span></span>    |
-|<span data-ttu-id="cca24-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="cca24-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cca24-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="cca24-113">Tasks.Read</span></span>    |
-|<span data-ttu-id="cca24-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="cca24-114">Application</span></span> | <span data-ttu-id="cca24-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="cca24-115">Not supported.</span></span> |
+|<span data-ttu-id="97e72-110">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="97e72-110">Delegated (work or school account)</span></span> | <span data-ttu-id="97e72-111">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="97e72-111">Tasks.Read</span></span>    |
+|<span data-ttu-id="97e72-112">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="97e72-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97e72-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="97e72-113">Tasks.Read</span></span>    |
+|<span data-ttu-id="97e72-114">Anwendung</span><span class="sxs-lookup"><span data-stu-id="97e72-114">Application</span></span> | <span data-ttu-id="97e72-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="97e72-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cca24-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="cca24-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97e72-116">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="97e72-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cca24-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="cca24-117">Optional query parameters</span></span>
-<span data-ttu-id="cca24-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="cca24-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97e72-117">Optionale Abfrageparameter</span><span class="sxs-lookup"><span data-stu-id="97e72-117">Optional query parameters</span></span>
+<span data-ttu-id="97e72-118">Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.</span><span class="sxs-lookup"><span data-stu-id="97e72-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cca24-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="cca24-119">Request headers</span></span>
-| <span data-ttu-id="cca24-120">Name</span><span class="sxs-lookup"><span data-stu-id="cca24-120">Name</span></span>      |<span data-ttu-id="cca24-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="cca24-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97e72-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="97e72-119">Request headers</span></span>
+| <span data-ttu-id="97e72-120">Name</span><span class="sxs-lookup"><span data-stu-id="97e72-120">Name</span></span>      |<span data-ttu-id="97e72-121">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="97e72-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cca24-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cca24-122">Authorization</span></span>  | <span data-ttu-id="cca24-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="cca24-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97e72-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="97e72-122">Authorization</span></span>  | <span data-ttu-id="97e72-p102">Bearer {token}. Erforderlich.</span><span class="sxs-lookup"><span data-stu-id="97e72-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cca24-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="cca24-125">Request body</span></span>
-<span data-ttu-id="cca24-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="cca24-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97e72-125">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="97e72-125">Request body</span></span>
+<span data-ttu-id="97e72-126">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="97e72-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cca24-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="cca24-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97e72-127">Antwort</span><span class="sxs-lookup"><span data-stu-id="97e72-127">Response</span></span>
 
-<span data-ttu-id="cca24-128">Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [OutlookTaskFolder](../resources/outlooktaskfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="cca24-128">If successful, this method returns a `200 OK` response code and collection of [outlookTaskFolder](../resources/outlooktaskfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cca24-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cca24-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cca24-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="cca24-130">Request</span></span>
-<span data-ttu-id="cca24-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="cca24-131">Here is an example of the request.</span></span>
+<span data-ttu-id="97e72-128">Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="97e72-128">If successful, this method returns a `200 OK` response code and collection of [outlookTaskFolder](../resources/outlooktaskfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="97e72-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="97e72-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="97e72-130">Anforderung</span><span class="sxs-lookup"><span data-stu-id="97e72-130">Request</span></span>
+<span data-ttu-id="97e72-131">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="97e72-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_taskfolders"
@@ -54,8 +55,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ```
-##### <a name="response"></a><span data-ttu-id="cca24-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="cca24-132">Response</span></span>
-<span data-ttu-id="cca24-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cca24-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="97e72-132">Antwort</span><span class="sxs-lookup"><span data-stu-id="97e72-132">Response</span></span>
+<span data-ttu-id="97e72-p103">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="97e72-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
