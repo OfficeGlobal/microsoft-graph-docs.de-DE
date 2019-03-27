@@ -1,23 +1,23 @@
 ---
-title: Erstellen von outlookTask
-description: Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.
+title: Outlook Task erstellen
+description: Erstellen Sie eine Outlook-Aufgabe im angegebenen Aufgabenordner.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8ba293d83e2a202a45cfebf4c318ee73d808e1e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9d166a34d9cfa40c3a115a8e36e4f04a6732416c
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510596"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869393"
 ---
-# <a name="create-outlooktask"></a>Erstellen von outlookTask
+# <a name="create-outlooktask"></a>Outlook Task erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie eine Outlook-Aufgabe im angegebenen Ordner.
+Erstellen Sie eine Outlook-Aufgabe im angegebenen Aufgabenordner.
 
-Die POST-Methode immer den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung ignoriert, und dann wird die Zeit in der angegebenen Zeitzone Mitternacht, vorausgesetzt.
+Die POST-Methode ignoriert immer den Zeitanteil von **** StartDateTime und **dueDateTime** im Anforderungstext und nimmt die Zeit an, in der angegebenen Zeitzone immer Mitternacht zu sein.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -26,11 +26,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 |:--------------------|:---------------------------------------------------------|
 |Delegiert (Geschäfts-, Schul- oder Unikonto) | Nicht unterstützt    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Anwendung | Nicht unterstützt |
+|Anwendung | Nicht unterstützt. |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -38,14 +40,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-| Prefer: outlook.timezone | Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist. Optional.|
+| Prefer: outlook.timezone | Gibt die Zeitzone für Zeit Eigenschaften in der Antwort an, die in UTC wäre, wenn diese Kopfzeile nicht angegeben wird. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task](../resources/outlooktask.md) -Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTask](../resources/outlooktask.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode und das [Outlook Task](../resources/outlooktask.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -71,7 +73,7 @@ Content-length: 376
   }
 }
 ```
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task](../resources/outlooktask.md) -Objekts an.
 ##### <a name="response"></a>Antwort
 Die POST-Methode ignoriert den Zeitanteil im Anforderungstext und geht davon aus, dass die Zeit immer Mitternacht in der angegebenen Zeitzone (PST) ist. Die POST-Methode konvertiert dann standardmäßig alle datumsbezogenen Eigenschaften in der Antwort in UTC.
 

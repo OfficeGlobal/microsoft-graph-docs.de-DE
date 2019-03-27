@@ -1,19 +1,19 @@
 ---
-title: calendarGroups auflisten
+title: List calendarGroups
 description: Dient zum Abrufen der Kalendergruppen des Benutzers.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a09f07eb5f5dca4c14f4f684485b38d41177333
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938594"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869323"
 ---
-# <a name="list-calendargroups"></a>calendarGroups auflisten
+# <a name="list-calendargroups"></a>List calendarGroups
 
-Mit dieser API können Sie die Kalendergruppen eines Benutzers abrufen.
+Dient zum Abrufen der Kalendergruppen des Benutzers.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -26,12 +26,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

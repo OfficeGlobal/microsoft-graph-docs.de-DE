@@ -1,21 +1,21 @@
 ---
-title: Abrufen von outlookTaskGroup
-description: Rufen Sie die Eigenschaften und Beziehungen zwischen der angegebenen Gruppe der Outlook-Aufgabe.
+title: Outlook Task Group abrufen
+description: Abrufen der Eigenschaften und Beziehungen der angegebenen Outlook-Aufgabengruppe.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d113c913be669df4735c902f261b0ce3f77c67c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b4f260d1ae19cca26720a59f68125caac3b5a846
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513095"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869400"
 ---
-# <a name="get-outlooktaskgroup"></a>Abrufen von outlookTaskGroup
+# <a name="get-outlooktaskgroup"></a>Outlook Task Group abrufen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Eigenschaften und Beziehungen zwischen der angegebenen Gruppe der Outlook-Aufgabe.
+Abrufen der Eigenschaften und Beziehungen der angegebenen Outlook-Aufgabengruppe.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -28,6 +28,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
@@ -43,7 +44,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [OutlookTaskGroup](../resources/outlooktaskgroup.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und das [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

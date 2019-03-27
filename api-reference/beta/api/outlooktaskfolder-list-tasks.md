@@ -1,25 +1,25 @@
 ---
 title: Aufgaben auflisten
-description: Rufen Sie die Outlook-Aufgaben im angegebenen Ordner.
+description: Rufen Sie alle Outlook-Aufgaben im angegebenen Ordner ab.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dfcd1438d55a22654c5601bc55827d0dedbdc6b2
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: a1769c83dc84e70ed051f5d1d284d00de7c71ae4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967263"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869470"
 ---
 # <a name="list-tasks"></a>Aufgaben auflisten
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Outlook-Aufgaben im angegebenen Ordner.
+Rufen Sie alle Outlook-Aufgaben im angegebenen Ordner ab.
 
-Standardmäßig wird dieses Vorgangs (und die POST, PATCH und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben.  Sie können eine `Prefer: outlook.timezone` Anforderungsheader alle datumsspezifische Eigenschaften in der Antwort in einer anderen als UTC Zeitzone dargestellt werden. Finden Sie ein [Beispiel](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) für eine einzelne Aufgabe abrufen. Sie können die Kopfzeile auf ähnliche Weise, um mehrere Aufgaben erhalten anwenden.
+Standardmäßig gibt dieser Vorgang (und die Vorgänge POST, PATCH und [Vollständiger](../api/outlooktask-complete.md) Vorgang) datumsbezogene Eigenschaften in UTC zurück.  Sie können einen `Prefer: outlook.timezone` Anforderungsheader verwenden, um alle datumsbezogenen Eigenschaften in der Antwort zu haben, die in einer anderen Zeitzone als UTC dargestellt werden. Sehen Sie sich ein [Beispiel](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) für eine einzelne Aufgabe an. Sie können die Kopfzeile entsprechend anwenden, um mehrere Vorgänge abzurufen.
 
-Wenn mehr als ein "Task Group" vorhanden ist, und rufen alle Aufgaben in eine bestimmte Aufgabengruppe zuerst [Alle Aufgabenordner in dieser Aufgabengruppe erhalten möchten](outlooktaskgroup-list-taskfolders.md), und klicken Sie dann die Aufgaben in jeder dieser Aufgabenordner werden soll.
+Wenn es mehr als eine Aufgabengruppe gibt und Sie alle Vorgänge in einer bestimmten Aufgabengruppe abrufen möchten, rufen Sie zunächst [alle Aufgabenordner in dieser Aufgabengruppe](outlooktaskgroup-list-taskfolders.md)ab, und rufen Sie dann die Aufgaben in jedem dieser Aufgabenordner ab.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -33,6 +33,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -43,14 +45,14 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.micros
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-| Prefer: outlook.timezone | Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist. Optional.|
+| Prefer: outlook.timezone | Gibt die Zeitzone für Zeit Eigenschaften in der Antwort an, die in UTC wäre, wenn diese Kopfzeile nicht angegeben wird. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [OutlookTask](../resources/outlooktask.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [Outlook Task](../resources/outlooktask.md) -Objekten im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

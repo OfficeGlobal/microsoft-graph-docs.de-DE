@@ -1,19 +1,19 @@
 ---
-title: contactFolders auflisten
-description: Mit dieser API können Sie die Kontaktordnersammlung aus dem Standardkontaktordner des angemeldeten Benutzers abrufen.
+title: List contactFolders
+description: Ruft die Kontaktordnersammlung im Standardkontaktordner des angemeldeten Benutzers ab.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 827c56766325ef574d1a81c6997bbef1259ec692
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 61e30ea91e820235987efd2cff43595b179f6b95
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969373"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869281"
 ---
-# <a name="list-contactfolders"></a>contactFolders auflisten
+# <a name="list-contactfolders"></a>List contactFolders
 
-Mit dieser API können Sie die Kontaktordnersammlung aus dem Standardkontaktordner des angemeldeten Benutzers abrufen.
+Ruft die Kontaktordnersammlung im Standardkontaktordner des angemeldeten Benutzers ab.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -26,12 +26,13 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
 Diese Methode unterstützt die [OData-Abfrageparameter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) zur Anpassung der Antwort.
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type   | application/json  |

@@ -1,21 +1,21 @@
 ---
-title: Abrufen von outlookTaskFolder
-description: Rufen Sie die Eigenschaften und Beziehungen zwischen den angegebenen Outlook-Aufgabenordner.
+title: Outlook Task Folder abrufen
+description: Abrufen der Eigenschaften und Beziehungen des angegebenen Outlook-Aufgabenordners.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e68ed4fc6d1c418733827ca93c12335d8ee894a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 70ef38ce8b3d808bb66064f69353ef4f2ed0fb5b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511170"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869414"
 ---
-# <a name="get-outlooktaskfolder"></a>Abrufen von outlookTaskFolder
+# <a name="get-outlooktaskfolder"></a>Outlook Task Folder abrufen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Eigenschaften und Beziehungen zwischen den angegebenen Outlook-Aufgabenordner.
+Abrufen der Eigenschaften und Beziehungen des angegebenen Outlook-Aufgabenordners.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -28,6 +28,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -44,7 +46,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [OutlookTaskFolder](../resources/outlooktaskfolder.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und das [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

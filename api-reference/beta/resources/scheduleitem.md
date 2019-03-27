@@ -1,29 +1,29 @@
 ---
-title: von ScheduleItem Ressourcentyp
-description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
+title: scheduleItem-Ressourcentyp
+description: Ein Element, das die Verfügbarkeit eines Benutzers beschreibt, der einem tatsächlichen Ereignis im Standardkalender des Benutzers entspricht. Dieses Element gilt auch für eine Ressource.
 localization_priority: Normal
-ms.openlocfilehash: ed6b7441996cdf00b33be03f70afb888cc9bb251
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511352"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869309"
 ---
-# <a name="scheduleitem-resource-type"></a>von ScheduleItem Ressourcentyp
+# <a name="scheduleitem-resource-type"></a>scheduleItem-Ressourcentyp
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Ein Element, das beschreibt die Verfügbarkeit eines Benutzers auf ein Ereignis tatsächliche auf Standardkalender des Benutzers entspricht. Dieses Element gilt für als auch eine Ressource.
+Ein Element, das die Verfügbarkeit eines Benutzers beschreibt, der einem tatsächlichen Ereignis im Standardkalender des Benutzers entspricht. Dieses Element gilt auch für eine Ressource (Raum oder Gerät).
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|end |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, Uhrzeit und Zeitzone, die das zugehörige Ereignis endet. |
-|IsPrivate |Boolescher Wert |Die Vertraulichkeit des entsprechenden Ereignisses. True, wenn das Ereignis markiert wird `private`false andernfalls. |
-|location |String | Der Speicherort, an dem entsprechenden Ereigniscode gehalten oder teilnahmen aus. Optional.|
-|start |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, Uhrzeit und Zeitzone, die das zugehörige Ereignis beginnt. |
-|status |String | Der Verfügbarkeitsstatus des Benutzers oder der Ressource während des entsprechenden Ereignisses. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Die Betreffzeile das entsprechende Ereignis. Optional.|
+|end |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, die Uhrzeit und die Zeitzone, die das entsprechende Ereignis beendet. |
+|isPrivate |Boolesch |Die Vertraulichkeit des entsprechenden Ereignisses. True, wenn das Ereignis markiert `private`ist, andernfalls false. Optional. |
+|location |String | Der Ort, an dem das entsprechende Ereignis gehalten oder besucht wird. Optional.|
+|start |[dateTimeTimeZone](datetimetimezone.md) |Das Datum, die Uhrzeit und die Zeitzone, die das entsprechende Ereignis startet. |
+|status |freeBusyStatus | Der Verfügbarkeitsstatus des Benutzers oder der Ressource während des entsprechenden Ereignisses. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|subject |String | Die Betreffzeile des entsprechenden Ereignisses. Optional.|
 
 
 ## <a name="json-representation"></a>JSON-Darstellung
@@ -33,7 +33,9 @@ Es folgt eine JSON-Darstellung der Ressource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "isPrivate",
+    "location",
+    "subject"
   ],
   "@odata.type": "microsoft.graph.scheduleItem"
 }-->

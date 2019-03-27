@@ -4,12 +4,12 @@ description: Mit dieser API können Sie neue E-Mail-Ordner im Stammordner des Po
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a1d67351469b197781c98028052ad7d1cae3bc92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c2f845f2a332c7e9c7a637839727fe7b82e50a46
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974945"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869246"
 ---
 # <a name="create-mailfolder"></a>MailFolder erstellen
 
@@ -26,10 +26,11 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |
@@ -39,7 +40,7 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an. *
 
 | Parameter    | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|displayName|Zeichenfolge|Der Anzeigename für den neuen Ordner.|
+|displayName|String|Der Anzeigename für den neuen Ordner.|
 
 ## <a name="response"></a>Antwort
 

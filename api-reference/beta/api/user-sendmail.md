@@ -4,12 +4,12 @@ description: Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afa50b466bd7a90af4fedbdad4c5f7c5b4627b8c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517211"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869428"
 ---
 # <a name="send-mail"></a>Nachrichten senden
 
@@ -17,10 +17,10 @@ ms.locfileid: "29517211"
 
 Sendet die im Anforderungstext angegebene Nachricht. Die Nachricht wird dann automatisch im Ordner „Gesendete Elemente“ gespeichert.
 
-In den gleichen Anruf **SendMail** -Aktion können Sie folgende Aktionen ausführen:
+Im gleichen **sendmail** -Aktionsaufruf haben Sie folgende Möglichkeiten:
 
-- Fügen Sie eine [Anlage](../resources/attachment.md)
-- Rufen Sie einen anderen Benutzer in der neuen Nachricht mithilfe einer [erwähnen](../resources/mention.md)
+- Hinzufügen einer [Anlage](../resources/attachment.md)
+- Verwenden einer [Erwähnung](../resources/mention.md) zum Aufrufen eines anderen Benutzers in der neuen Nachricht
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -35,6 +35,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>Anforderungsheader
@@ -51,10 +52,10 @@ Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an.
 |Nachricht|[message](../resources/message.md)|Die zu sendende Nachricht. Erforderlich. |
 |SaveToSentItems|Boolescher Wert|,Gibt an, ob die Nachricht im Ordner „Gesendete Elemente“ gespeichert werden soll. Geben Sie es nur an, wenn der Parameter false ist; der Standardwert true ist.  Optional.|
 
-Wenn Sie **erwähnen** aufrufen, um einen anderen Benutzer in der neuen Nachricht verwenden möchten:
+Wenn Sie **erwähnen** möchten, um einen anderen Benutzer in der neuen Nachricht aufzurufen:
 
-- Enthalten Sie die erforderlichen **ToRecipients** -Eigenschaft, die **erwähnungen** -Eigenschaft und alle schreibbaren Eigenschaften im Textkörper Anforderung.
-- Für jede erwähnt werden in der Eigenschaft **erwähnt** müssen Sie die **erwähnten** -Eigenschaft angeben.
+- Schließen Sie die **** erforderliche torecipients-Eigenschaft, die **Mentions** -Eigenschaft und alle beschreibbaren Nachrichteneigenschaften im Anforderungstext ein.
+- Für jede Erwähnung in **** der Mentions-Eigenschaft müssen Sie die **genannte** Eigenschaft angeben.
 
 ## <a name="response"></a>Antwort
 
@@ -63,7 +64,7 @@ Wenn die Methode erfolgreich verläuft, wird der Antwortcode `202 Accepted` zur�
 ## <a name="example"></a>Beispiel
 Nachfolgend sehen Sie ein Beispiel dafür, wie diese API aufgerufen wird.
 ##### <a name="request-1"></a>Anforderung 1
-Es folgt ein Beispiel der Anforderung zum Erstellen und senden eine Nachricht im laufenden Betrieb.
+Hier ist ein Beispiel für die Anforderung zum Erstellen und Senden einer Nachricht im Handumdrehen.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -111,7 +112,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>Anforderung 2
-Das nächste Beispiel zeigt eine Meldung vom angemeldeten Benutzer auf Samantha Booth. Die Nachricht enthält außerdem eine Erwähnung eines anderen Benutzers, Dana Swope.
+Im nächsten Beispiel wird eine Meldung des angemeldeten Benutzers an Samantha Booth angezeigt. Die Nachricht enthält auch eine Erwähnung eines anderen Benutzers, Dana Swope.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -155,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>Anforderung 3
-Im nächsten Beispiel wird eine Meldung mit benutzerdefinierten Internetkopfzeilen Nachricht erstellt und sendet die Nachricht.
+Im nächsten Beispiel wird eine Nachricht mit benutzerdefinierten Internet Nachrichtenkopfzeilen erstellt und die Nachricht gesendet.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

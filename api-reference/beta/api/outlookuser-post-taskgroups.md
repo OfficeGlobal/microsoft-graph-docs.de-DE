@@ -1,21 +1,21 @@
 ---
-title: Erstellen von outlookTaskGroup
-description: Erstellen eines Outlook-"Task Group" im Postfach des Benutzers an.
+title: Outlook Task Group erstellen
+description: Erstellen Sie eine Outlook-Aufgabengruppe im Postfach des Benutzers.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516007"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869260"
 ---
-# <a name="create-outlooktaskgroup"></a>Erstellen von outlookTaskGroup
+# <a name="create-outlooktaskgroup"></a>Outlook Task Group erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen eines Outlook-"Task Group" im Postfach des Benutzers an.
+Erstellen Sie eine Outlook-Aufgabengruppe im Postfach des Benutzers.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -28,8 +28,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
@@ -37,11 +37,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTaskGroup](../resources/outlooktaskgroup.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTaskGroup](../resources/outlooktaskgroup.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode und das [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
@@ -59,7 +59,7 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTaskGroup](../resources/outlooktaskgroup.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {

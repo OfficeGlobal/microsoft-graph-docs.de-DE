@@ -1,25 +1,25 @@
 ---
-title: Erstellen von outlookTask
-description: Erstellen Sie eine Outlook-Aufgabe in der Standardgruppe Aufgabe (`My Tasks`) und Aufgabe Standardordner (`Tasks`) in das Postfach des Benutzers.
+title: Outlook Task erstellen
+description: Erstellen Sie eine Outlook-Aufgabe in der Standardaufgaben`My Tasks`Gruppe () und im Standard`Tasks`Aufgabenordner () im Postfach des Benutzers.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 935732e14f7e467e3094d4a5a2f82d2922020569
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4de57847638ef98347a7561291d12486468428ee
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520991"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869456"
 ---
-# <a name="create-outlooktask"></a>Erstellen von outlookTask
+# <a name="create-outlooktask"></a>Outlook Task erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie eine Outlook-Aufgabe in der Standardgruppe Aufgabe (`My Tasks`) und Aufgabe Standardordner (`Tasks`) in das Postfach des Benutzers.
+Erstellen Sie eine Outlook-Aufgabe in der Standardaufgaben`My Tasks`Gruppe () und im Standard`Tasks`Aufgabenordner () im Postfach des Benutzers.
 
-Die POST-Methode immer den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung ignoriert, und dann wird die Zeit in der angegebenen Zeitzone Mitternacht, vorausgesetzt.
+Die POST-Methode ignoriert immer den Zeitanteil von **** StartDateTime und **dueDateTime** im Anforderungstext und nimmt die Zeit an, in der angegebenen Zeitzone immer Mitternacht zu sein.
 
-Standardmäßig wird dieses Vorgangs (und die GET, PATCH und [Abschließen von](../api/outlooktask-complete.md) Aufgabe Vorgänge) datumsspezifische Eigenschaften in UTC zurückgegeben. Sie können mit dem `Prefer: outlook.timezone`-Header alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darstellen.
+Standardmäßig gibt dieser Vorgang (und die Vorgänge GET, PATCH und [Complete](../api/outlooktask-complete.md) Task) datumsbezogene Eigenschaften in UTC zurück. Sie können mit dem `Prefer: outlook.timezone`-Header alle datumsbezogenen Eigenschaften in der Antwort in einer anderen Zeitzone als UTC darstellen.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -33,24 +33,25 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/tasks
 POST /users/{id|userPrincipalName}/outlook/tasks
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-| Prefer: outlook.timezone | Gibt die Zeitzone für Zeiteigenschaften in der Antwort, die in UTC wäre, wenn diese Kopfzeile nicht angegeben ist. Optional.|
+| Prefer: outlook.timezone | Gibt die Zeitzone für Zeit Eigenschaften in der Antwort an, die in UTC wäre, wenn diese Kopfzeile nicht angegeben wird. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task](../resources/outlooktask.md) -Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTask](../resources/outlooktask.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode und das [Outlook Task](../resources/outlooktask.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Das folgende Beispiel zeigt die Verwendung von der `Prefer: outlook.timezone` Kopfzeile. Es wird eine Aufgabe erstellt, **StartDateTime** und **DueDateTime** in Standard EST (Eastern Time) ausdrückt und umfasst eine `Prefer` Kopfzeile der Pacific Standard Time (PST).
+Das folgende Beispiel zeigt die Verwendung der `Prefer: outlook.timezone` Kopfzeile. Sie erstellt eine Aufgabe, drückt StartDateTime **** und **DueDateTime** in Eastern Standard Time (EST) aus und enthält eine `Prefer` Kopfzeile der Pazifik-Standardzeit (PST).
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -74,11 +75,11 @@ Content-length: 276
   }
 }
 ```
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTask](../resources/outlooktask.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task](../resources/outlooktask.md) -Objekts an.
 ##### <a name="response"></a>Antwort
-Die POST-Methode ignoriert den Zeitbereich des **StartDateTime** und **DueDateTime** im Textkörper Anforderung und geht davon aus der Zeit Mitternacht in der angegebenen Zeitzone (EST) zu.
+Die POST-Methode ignoriert den Zeitanteil von **** StartDateTime und **dueDateTime** im Anforderungstext und nimmt die Zeit an, in der angegebenen Zeitzone (EST) immer Mitternacht zu sein.
 
-Da der `Prefer`-Header PST angibt, drückt die POST-Methode alle datumsbezogenen Eigenschaften in der Antwort in PST aus. Insbesondere für die Eigenschaften **StartDateTime** und **DueDateTime** konvertiert die POST-Methode Mitternacht in EST in PST und gibt sie in der Antwort in PST zurück.
+Da der `Prefer`-Header PST angibt, drückt die POST-Methode alle datumsbezogenen Eigenschaften in der Antwort in PST aus. Insbesondere für die Eigenschaften StartDateTime und **dueDateTime** konvertiert die Post-Methode Mitternacht in EST in PST und gibt Sie in der Antwort in PST zurück. ****
 
 Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {

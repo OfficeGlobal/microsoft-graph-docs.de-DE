@@ -1,25 +1,25 @@
 ---
-title: Ressourcentyp freeBusyError
-description: " > **Wichtig:** Die APIs der /Beta-Version in Microsoft Graph befinden sich in der Vorschau und können Änderungen unterliegen. Die Verwendung dieser APIs in Produktionsanwendungen wird nicht unterstützt."
+title: freeBusyError-Ressourcentyp
+description: Stellt Fehlerinformationen aus dem Versuch, die Verfügbarkeit eines Benutzers, einer Verteilerliste oder einer Ressource zu erhalten.
 localization_priority: Normal
-ms.openlocfilehash: f1ff7717034798830a610b35dbbff5c987cf7371
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529845"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869337"
 ---
-# <a name="freebusyerror-resource-type"></a>Ressourcentyp freeBusyError
+# <a name="freebusyerror-resource-type"></a>freeBusyError-Ressourcentyp
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Stellt Informationen zum Fehler versucht, die die Verfügbarkeit von einem Benutzer, eine Verteilerliste oder eine Ressource erhalten möchten.
+Stellt Fehlerinformationen aus dem Versuch, die Verfügbarkeit eines Benutzers, einer Verteilerliste oder einer Ressource zu erhalten.
 
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
 |message |String |Beschreibt den Fehler. |
-|ResponseCode |String |Der Antwortcode von Abfragen für die Verfügbarkeit des Benutzers, der Verteilerliste oder der Ressource. |
+|Response Code |String |Der Antwortcode aus der Abfrage für die Verfügbarkeit des Benutzers, der Verteilerliste oder der Ressource. |
 
 
 ## <a name="json-representation"></a>JSON-Darstellung

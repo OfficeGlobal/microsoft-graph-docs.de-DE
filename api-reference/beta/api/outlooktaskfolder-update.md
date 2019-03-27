@@ -1,23 +1,23 @@
 ---
-title: Outlooktaskfolder aktualisieren
-description: Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.
+title: Outlook Task Folder aktualisieren
+description: Aktualisieren Sie die beschreibbaren Eigenschaften eines Outlook-Aufgabenordners.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 83b75fb2588f58480e51e4e548bfd5d05b7f941b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530160"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869407"
 ---
-# <a name="update-outlooktaskfolder"></a>Outlooktaskfolder aktualisieren
+# <a name="update-outlooktaskfolder"></a>Outlook Task Folder aktualisieren
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die schreibbaren Eigenschaften des Ordners eine Outlook-Aufgabe.
+Aktualisieren Sie die beschreibbaren Eigenschaften eines Outlook-Aufgabenordners.
 
-Sie können den **Name** -Eigenschaftswert der Aufgabe Standardordner "Aufgaben" nicht ändern.
+Der **Name** -Eigenschaftswert des Standardvorgangs Ordners "Tasks" kann nicht geändert werden.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -30,6 +30,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -47,10 +49,10 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OutlookTaskFolder](../resources/outlooktaskfolder.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode einen `200 OK` Antwortcode und ein aktualisiertes [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Das folgende Beispiel ändert den Namen des angegebenen Ordner zu `Charity work`.
+Im folgenden Beispiel wird der Name des angegebenen Aufgabenordners in `Charity work`geändert.
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"

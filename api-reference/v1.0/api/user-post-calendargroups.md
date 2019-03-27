@@ -4,12 +4,12 @@ description: Mit dieser API können Sie eine neue Ressource des Typs „Calendar
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d4a65099101b3e32e92dc4ba1cad62ed265f161a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 775f499bc3fb5562f9936d7d64f20e5494f10bd0
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916124"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869442"
 ---
 # <a name="create-calendargroup"></a>CalendarGroup erstellen
 
@@ -26,10 +26,11 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendarGroups
 POST /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="request-headers"></a>Anforderungsheader
-| Header       | Wert |
+| Kopfzeile       | Wert |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Erforderlich.  |
 | Content-Type  | application/json  |

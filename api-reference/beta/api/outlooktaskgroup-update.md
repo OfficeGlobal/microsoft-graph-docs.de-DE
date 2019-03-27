@@ -1,23 +1,23 @@
 ---
-title: Outlooktaskgroup aktualisieren
-description: Aktualisieren Sie die schreibbaren Eigenschaften einer Outlook-Aufgabe-Gruppe.
+title: Outlook Task Group aktualisieren
+description: Aktualisieren Sie die beschreibbaren Eigenschaften einer Outlook-Aufgabengruppe.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516392"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869484"
 ---
-# <a name="update-outlooktaskgroup"></a>Outlooktaskgroup aktualisieren
+# <a name="update-outlooktaskgroup"></a>Outlook Task Group aktualisieren
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aktualisieren Sie die schreibbaren Eigenschaften einer Outlook-Aufgabe-Gruppe.
+Aktualisieren Sie die beschreibbaren Eigenschaften einer Outlook-Aufgabengruppe.
 
-Beachten Sie, dass Sie den Namen der Standardaufgabengruppe "Meine Aufgaben" nicht ändern können.
+Beachten Sie, dass der Name der standardmäßigen Aufgabengruppe "Meine Aufgaben" nicht geändert werden kann.
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
@@ -30,6 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Optionale Anforderungsheader
@@ -46,7 +47,7 @@ Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktua
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und aktualisierte [OutlookTaskGroup](../resources/outlooktaskgroup.md) -Objekts in der Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode einen `200 OK` Antwortcode und ein aktualisiertes [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekt im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Das folgende Beispiel ändert den Namen einer Aufgabengruppe zu "Persönliche Aufgaben". 

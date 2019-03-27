@@ -1,21 +1,21 @@
 ---
-title: Liste taskGroups
-description: Rufen Sie die Outlook-Vorgangsgruppen im Postfach des Benutzers.
+title: Task Groups aufListen
+description: Rufen Sie alle Outlook-Aufgabengruppen im Postfach des Benutzers ab.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba8e0982fabcc9a82ae3ba2ec3b9f34b1655932b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b3ebf2896ff8805280c23680915e54f9a094a7c8
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511093"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869358"
 ---
-# <a name="list-taskgroups"></a>Liste taskGroups
+# <a name="list-taskgroups"></a>Task Groups aufListen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Outlook-Vorgangsgruppen im Postfach des Benutzers.
+Rufen Sie alle Outlook-Aufgabengruppen im Postfach des Benutzers ab.
 
 Die Antwort enthält immer die Standardaufgabengruppe `My Tasks` und alle anderen Aufgabengruppen, die im Postfach erstellt wurden.
 ## <a name="permissions"></a>Berechtigungen
@@ -30,6 +30,7 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
@@ -45,7 +46,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortcode und Auflistung von Objekten im Antworttext [OutlookTaskGroup](../resources/outlooktaskgroup.md) .
+Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [Outlook Task Group](../resources/outlooktaskgroup.md) -Objekten im Antworttext zurück.
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
 Nachfolgend sehen Sie ein Beispiel der Anforderung.

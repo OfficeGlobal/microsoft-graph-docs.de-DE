@@ -1,21 +1,21 @@
 ---
-title: Erstellen von outlookTaskFolder
-description: Erstellen Sie einen Aufgabenordner in der Standardgruppe Aufgabe (`My Tasks`) für das Postfach des Benutzers.
+title: Outlook Task Folder erstellen
+description: Erstellen Sie einen Aufgabenordner in der Standardaufgaben Gruppe`My Tasks`() des Postfachs des Benutzers.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 81c77d96b4d7c66cfbc7dde3481a7bfaa8cd6c5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 16f54dffc1ff2fff71a22658a2418be99fde7353
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514446"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869372"
 ---
-# <a name="create-outlooktaskfolder"></a>Erstellen von outlookTaskFolder
+# <a name="create-outlooktaskfolder"></a>Outlook Task Folder erstellen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Erstellen Sie einen Aufgabenordner in der Standardgruppe Aufgabe (`My Tasks`) für das Postfach des Benutzers.
+Erstellen Sie einen Aufgabenordner in der Standardaufgaben Gruppe`My Tasks`() des Postfachs des Benutzers.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
@@ -29,8 +29,8 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskFolders
-
 ```
 ## <a name="request-headers"></a>Anforderungsheader
 | Name       | Beschreibung|
@@ -38,15 +38,15 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 | Authorization  | Bearer {token}. Erforderlich. |
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTaskFolder](../resources/outlooktaskfolder.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekts an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode `201 Created` Antwortobjekt Code und [OutlookTaskFolder](../resources/outlooktaskfolder.md) im Antworttext.
+Bei erfolgreicher Ausführung gibt diese Methode `201 Created` den Antwortcode und das [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekt im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 ##### <a name="request"></a>Anforderung
-Das folgende Beispiel erstellt einen Aufgabenordner freiwilliger in der Standardgruppe Task aufgerufen (`My Tasks`) für das Postfach des Benutzers.
+Im folgenden Beispiel wird ein Aufgabenordner namens Volunteer in der Standardaufgaben Gruppe (`My Tasks`) des Postfachs des Benutzers erstellt.
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlookuser"
@@ -60,7 +60,7 @@ Content-length: 60
   "name": "Volunteer"
 }
 ```
-Geben Sie im Textkörper Anforderung eine JSON-Darstellung des [OutlookTaskFolder](../resources/outlooktaskfolder.md) -Objekts.
+Geben Sie im Anforderungstext eine JSON-Darstellung des [Outlook Task Folder](../resources/outlooktaskfolder.md) -Objekts an.
 ##### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 <!-- {
