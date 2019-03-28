@@ -2,12 +2,14 @@
 title: Location-Ressourcentyp
 description: Stellt Standortinformationen eines Ereignisses dar.
 localization_priority: Normal
-ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879800"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936276"
 ---
 # <a name="location-resource-type"></a>Location-Ressourcentyp
 
@@ -30,7 +32,7 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts.              |
 | locationUri | String | Optionaler URI, der den Ort darstellt. |
-| locationType | locationType | Der Typ des Orts. Die möglichen Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| locationType | locationType | Der Typ des Speicherorts. Die möglichen Werte sind: `default`, `conferenceRoom`, `homeAddress` `businessAddress`,,`geoCoordinates`, `streetAddress`, `hotel` `restaurant` `localBusiness`,,, `postalAddress`,. Schreibgeschützt.|
 | uniqueId | String | Nur für internen Gebrauch.|
 | uniqueIdType | locationUniqueIdType | Nur für internen Gebrauch. |
 

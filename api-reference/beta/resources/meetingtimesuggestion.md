@@ -4,12 +4,12 @@ description: 'Ein Besprechungs Vorschlag, der Informationen wie Besprechungszeit
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: d0f6c36d0fb76c1bc115b9cd0490a79a3f94a77b
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057029"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936234"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Ressourcentyp „meetingTimeSuggestion“
 
@@ -31,10 +31,10 @@ Es folgt eine JSON-Darstellung der Ressource.
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
@@ -44,12 +44,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md) -Sammlung|Ein Array, das den Verfügbarkeitsstatus jedes Teilnehmers für den betreffenden Besprechungsvorschlag anzeigt|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|Ein Array, das den Verfügbarkeitsstatus jedes Teilnehmers für den betreffenden Besprechungsvorschlag anzeigt|
 |confidence|Double|Ein Prozentwert, der angibt, wie hoch die Wahrscheinlichkeit ist, dass alle Teilnehmer teilnehmen können|
-|locations|[locationDataModel](locationdatamodel.md) -Sammlung|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
-|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|Ein für die Besprechung vorgeschlagenes Zeitfenster|
+|locations|[location](location.md) collection|Ein Array, das den Namen und den geografischen Ort jedes Besprechungsorts für den betreffenden Besprechungsvorschlag angibt|
+|meetingTimeSlot|[timeSlot](timeslot.md)|Ein für die Besprechung vorgeschlagenes Zeitfenster|
+|um|Int32|Die Reihenfolge der Besprechungszeit Vorschläge nach dem berechneten Konfidenz Wert von hoch nach niedrig, dann nach der Chronologie, wenn es Vorschläge mit derselben Zuverlässigkeit gibt. |
 |organizerAvailability|availabilityStatus| Die Verfügbarkeit des Besprechungsorganisators für diesen Besprechungsvorschlag. Mögliche Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`und `unknown`.|
-|suggestionReason|String|Grund, aus dem der betreffende Besprechungstermin vorgeschlagen wurde|
+|Eigenschaft suggestionreason vermerkt|String|Grund, aus dem der betreffende Besprechungstermin vorgeschlagen wurde|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,17 +1,19 @@
 ---
 title: Ressourcentyp „attendeeAvailability“
-description: Typ und Verfügbarkeit eines Teilnehmers
+description: Die Verfügbarkeit eines Teilnehmers.
 localization_priority: Normal
-ms.openlocfilehash: a6dee994fc5eb3786fc1a432adcb9333bdb56ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834748"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936248"
 ---
 # <a name="attendeeavailability-resource-type"></a>Ressourcentyp „attendeeAvailability“
 
-Typ und Verfügbarkeit eines Teilnehmers
+Die Verfügbarkeit eines Teilnehmers.
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -35,7 +37,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|Der Typ des Teilnehmers. Unterschieden wird zwischen Personen und Ressourcen. Bei Personen wird zusätzlich differenziert zwischen erforderlichen und optionalen Teilnehmern.|
+|attendee|[attendeeBase](attendeebase.md)|Die e-Mail-Adresse und den Typ des Teilnehmers – unabhängig davon, ob es sich um eine Person oder eine Ressource handelt, und ob Sie erforderlich oder optional ist, wenn es sich um eine Person handelt|
 |availability|freeBusyStatus| Der Verfügbarkeitsstatus des Teilnehmers. Die möglichen Werte sind: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

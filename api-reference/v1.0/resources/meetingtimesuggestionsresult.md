@@ -2,14 +2,14 @@
 title: Ressourcentyp „meetingTimeSuggestionsResult“
 description: Dieser Ressourcentyp listet eine Sammlung von Besprechungsvorschlägen auf, sofern Vorschläge zurückgegeben werden, oder den Grund, aus dem keine Vorschläge zurückgegeben werden.
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: ed3af37ba48a48f3bc864dc8d9ad67e729999398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3f4aa23e582ead2fc51b9091159e158373be1cd1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914185"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936269"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Ressourcentyp „meetingTimeSuggestionsResult“
 
@@ -19,7 +19,7 @@ In der folgenden Tabelle finden Sie mögliche Gründe, aus denen [findMeetingTim
 
 |**Wert für „emptySuggestionsReason“**|**Gründe**|
 |:-----|:-----|
-| attendeesUnavailable | Die Verfügbarkeit aller Teilnehmer ist bekannt, die Zahl der verfügbaren Teilnehmer liegt jedoch für jedes Zeitfenster unter dem Schwellenwert für die [Besprechungskonfidenz](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion). Dieser ist standardmäßig auf 50 % festgelegt.|
+| attendeesUnavailable | Die Verfügbarkeit aller Teilnehmer ist bekannt, aber nicht genügend Teilnehmer stehen zur Verfügung, um den Vertrauens Schwellenwert für die [Besprechung](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) zu erreichen, der standardmäßig 50% für einen beliebigen Zeitraum beträgt.|
 | attendeesUnavailableOrUnknown | Die Verfügbarkeit einiger oder aller Teilnehmer ist unbekannt, sodass die Besprechungskonfidenz unter dem definierten Schwellenwert liegt. Dieser ist standardmäßig auf 50 % gesetzt. Die Verfügbarkeit eines Teilnehmers kann unbekannt sein, wenn der Teilnehmer nicht zur Organisation gehört oder ein Fehler beim Abruf der Frei-/Gebucht-Informationen auftritt.|
 | locationsUnavailable | Die Eigenschaft **isRequired** des Parameters [locationConstraint](locationconstraint.md) ist als obligatorisch festgelegt, aber es sind während der berechneten Zeitfenster keine Orte verfügbar. |
 | organizerUnavailable | Der Parameter **isOrganizerOptional** ist auf „false“ gesetzt, der Organisator ist aber während des angefragten Zeitfensters nicht verfügbar. |
@@ -47,7 +47,7 @@ Es folgt eine JSON-Darstellung der Ressource.
 ## <a name="properties"></a>Eigenschaften
 | Eigenschaft     | Typ   |Beschreibung|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|Zeichenfolge|Einen Grund für die Besprechungsvorschläge nicht zurückgeben. Die möglichen Werte sind: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, oder `unknown`. Diese Eigenschaft ist eine leere Zeichenfolge, wenn die **MeetingTimeSuggestions** -Eigenschaft Besprechungsvorschläge enthält.|
+|emptySuggestionsReason|String|Ein Grund, aus dem keine Besprechungsvorschläge zurückgegeben wurden. Die möglichen Werte sind: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`oder `unknown`. Diese Eigenschaft ist eine leere Zeichenfolge, wenn die **meetingTimeSuggestions** -Eigenschaft alle Besprechungsvorschläge enthält.|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) collection|Ein Array von Besprechungsvorschlägen|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -2,12 +2,14 @@
 title: Location-Ressourcentyp
 description: Stellt Standortinformationen eines Ereignisses dar.
 localization_priority: Normal
-ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6c3dd1bdb565ce32e464e38d7909988b4f4c7791
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508608"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936283"
 ---
 # <a name="location-resource-type"></a>Location-Ressourcentyp
 
@@ -34,8 +36,8 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
 | displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
 | locationEmailAddress | String | Optionale E-Mail-Adresse des Orts. |
-| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
-| locationType | Zeichenfolge | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| locationUri | String | Optionaler URI, der den Ort darstellt. |
+| locationType | locationType | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
 | uniqueId | String | Nur für internen Gebrauch.|
 | uniqueIdType | String | Nur für internen Gebrauch. |
 
@@ -55,8 +57,8 @@ Je nachdem, wie ein Ereignis erstellt wurde, wird die schreibgeschützte **locat
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string",
   "locationType": "string",
+  "locationUri": "string",
   "uniqueId": "string",
   "uniqueIdType": "string"
 }

@@ -4,12 +4,12 @@ description: Die vom Client definierten Bedingungen für den Ort einer Besprechu
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 7063eb0a7aa437b51a2bfecb482012771297f766
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057001"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936255"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Ressourcentyp „locationConstraintItem“
 
@@ -17,7 +17,7 @@ ms.locfileid: "30057001"
 
 Die vom Client definierten Bedingungen für den Ort einer Besprechung.
 
-Abgeleitet von [locationDataModel](locationdatamodel.md).
+Abgeleitet von [location](location.md).
 
 ## <a name="json-representation"></a>JSON-Darstellung
 
@@ -38,7 +38,10 @@ Es folgt eine JSON-Darstellung der Ressource.
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string"
+  "locationType": "string",
+  "locationUri": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
@@ -47,10 +50,13 @@ Es folgt eine JSON-Darstellung der Ressource.
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |Die Adresse des Orts. |
 | Koordinaten | [outlookGeoCoordinates](outlookgeocoordinates.md) | Die geografischen Koordinaten und die Erhebung des Orts. |
-| displayName  | Zeichenfolge | Der Name, der mit dem Ort verknüpft ist                       |
-| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts. |
-| locationUri | Zeichenfolge | Optionaler URI, der den Ort darstellt. |
-| resolveAvailability | Boolescher Wert | Wenn „true“ gesetzt ist und die angegebene Ressource gebucht ist, sucht [findMeetingTimes](../api/user-findmeetingtimes.md) nach einer anderen, freien Ressource. Wenn „false“ gesetzt ist und die angegebene Ressource gebucht ist, gibt **findMeetingTimes** die Ressource mit dem höchsten Wert aus dem Cache des Benutzers zurück, ohne zu prüfen, ob diese Ressource frei ist. Der Standardwert ist „true“. |
+| displayName  | String | Der Name, der mit dem Ort verknüpft ist                       |
+| locationEmailAddress | String | Optionale E-Mail-Adresse des Orts |
+| locationType | locationType | Der Typ des Orts. Mögliche Werte sind: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Schreibgeschützt.|
+| locationUri | String | Optionaler URI, der den Ort darstellt. |
+| resolveAvailability | Boolean | Wenn „true“ gesetzt ist und die angegebene Ressource gebucht ist, sucht [findMeetingTimes](../api/user-findmeetingtimes.md) nach einer anderen, freien Ressource. Wenn „false“ gesetzt ist und die angegebene Ressource gebucht ist, gibt **findMeetingTimes** die Ressource mit dem höchsten Wert aus dem Cache des Benutzers zurück, ohne zu prüfen, ob diese Ressource frei ist. Der Standardwert ist „true“. |
+| uniqueId | String | Nur für internen Gebrauch.|
+| uniqueIdType | String | Ausschließlich für interne Zwecke. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

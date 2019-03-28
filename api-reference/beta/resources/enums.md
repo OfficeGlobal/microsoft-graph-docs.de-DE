@@ -1,12 +1,12 @@
 ---
 title: Enumerationswerte
 description: Microsoft Graph-Enumerationswerte
-ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057050"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936325"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship-Werte
 
@@ -29,18 +29,6 @@ ms.locfileid: "30057050"
 | IANA
 
 
-### <a name="availabilitystatus-values"></a>availabilityStatus-Werte
-
-| Wert
-|:-------------------------
-| unknown
-| frei
-| mit Vorbehalt
-| beschäftigt
-| OOF  
-| workingElsewhere
-
-
 ### <a name="freebusystatus-values"></a>freeBusyStatus-Werte
 
 | Element            |Wert
@@ -51,16 +39,6 @@ ms.locfileid: "30057050"
 | OOF               | 3
 | workingElsewhere  | 4
 | unknown           | -1
-
-
-### <a name="addresstype-values"></a>AddressType-Werte
-
-| Wert
-|:-------------------------
-| unknown 
-| Home
-| Business 
-| anderen
 
 
 ### <a name="physicaladdresstype-values"></a>: Physicaladdresstype-Werte
@@ -88,7 +66,7 @@ ms.locfileid: "30057050"
 |:-------------------------
 | Keine
 | contactsOnly
-| all
+| Alle
 
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus-Werte
@@ -233,7 +211,7 @@ ms.locfileid: "30057050"
 |:-------------------------
 | deviceDefault
 | Banner
-| modal
+| Modal
 | Keine
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason-Werte
@@ -242,7 +220,7 @@ ms.locfileid: "30057050"
 |:-------------
 | unknown
 | Authentifizierung
-| Autorisierung
+| Autorisierungs
 | accountValidation
 | userValidation
 | deviceNotSupported
@@ -257,14 +235,14 @@ ms.locfileid: "30057050"
 | Wert
 |:---------
 | text
-| html
+| HTML
 
 
 ### <a name="locationtype-values"></a>LocationType-Werte
 
 | Wert
 |:-------------------------
-| default
+| Standard
 | Konferenzraum
 | homeAddress
 | businessAddress
@@ -295,10 +273,10 @@ ms.locfileid: "30057050"
 | doNotForward
 | followUp
 | FYI
-| Weiterleiten
+| weiterleiten
 | noResponseNecessary
 | Lesen
-| Antworten
+| Antwort
 | replyToAll
 | Bewertung
 
@@ -308,7 +286,7 @@ ms.locfileid: "30057050"
 | Element      | Wert
 |:------------|:------------
 | Besitzer       | 0
-| Mitwirkender | 1
+| Contributor | 1
 | Reader      | 2
 | Keine        | -1
 
@@ -328,9 +306,9 @@ ms.locfileid: "30057050"
 | Wert
 |:-------------------------
 | Ersetzen
-| Anfügeabfrage
+| Append
 | Löschen
-| Einfügen
+| Insert
 | Voranstellen
 
 ### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition-Werte
@@ -338,7 +316,7 @@ ms.locfileid: "30057050"
 | Wert
 |:-------------------------
 | After
-| Bevor
+| Before
 
 
 ### <a name="phonetype-values"></a>phoneType-Werte
@@ -353,7 +331,7 @@ ms.locfileid: "30057050"
 | homeFax
 | businessFax
 | otherFax
-| Pager
+| pager
 | Radio
 
 
@@ -363,9 +341,9 @@ ms.locfileid: "30057050"
 |:-------------------------
 | Automatisch
 | noPreview
-| checklist
+| Prüfliste
 | description
-| Referenz
+| reference
 
 
 ### <a name="status-values"></a>Statuswerte
@@ -374,7 +352,7 @@ ms.locfileid: "30057050"
 |:-----------------
 | Active
 | updated
-| deleted
+| gelöscht
 | ignoriert
 | Enumerationsmember unknownfuturevalue "
 
@@ -535,9 +513,9 @@ Mögliche Feedback Werte für die Warnung, die von einem Analysten bereitgestell
 |:---|:---|:---|
 |unknown|0|UnBekannter Verbindungsstatus.|
 |versucht|1|Verbindung wurde versucht.|
-|succeeded|2| Verbindung erfolgreich.|
-|gesperrt|3| Verbindung blockiert.|
-|failed|4| Fehler bei Verbindung.|
+|gelungen|2| Verbindung erfolgreich.|
+|blockiert|3| Verbindung blockiert.|
+|nicht|4| Fehler bei Verbindung.|
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel-Werte
 
@@ -625,7 +603,7 @@ Mögliche Werte für e-Mail-Rollen.
 |:---|:---|:---|
 |unknown|0|Unbekannte Rolle.|
 |sender|1|Absender der e-Mail.|
-|Empfänger|2|Empfänger der e-Mail.|
+|recipient|2|Empfänger der e-Mail.|
 
 ### <a name="logontype-values"></a>LoginType-Werte
 
