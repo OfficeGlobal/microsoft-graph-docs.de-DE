@@ -4,12 +4,12 @@ description: Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 97232646b2485d244373feb0be9d87365af38247
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: e74e97245189a6b4b2559466eea8c776e5ff4f03
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057036"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936304"
 ---
 # <a name="calendar-resource-type"></a>Ressourcentyp calendar
 
@@ -35,8 +35,8 @@ Ein Kalender, der ein Container für Ereignisse ist. Dies kann ein Kalender für
 |[calendarView auflisten](../api/calendar-list-calendarview.md) |[Ereignissammlung](event.md)| Dient zum Abrufen der Vorkommen, Ausnahmen und einzelnen Instanzen von Ereignissen in einer Kalenderansicht, die durch eine Zeitbereich definiert werden, aus dem primären Kalender `(../me/calendarview)` des Benutzers oder aus einem angegebenen Kalender.|
 |[Ereignisse auflisten](../api/calendar-list-events.md) |[Ereignissammlung](event.md)| Dient zum Abrufen einer Liste von Ereignissen in einem Kalender. Die Liste enthält einzelne Instanzen von Besprechungen und Serienmaster.|
 |[Ereignis erstellen](../api/calendar-post-events.md) |[event](event.md)| Dient zum Erstellen eines neuen Ereignisses im Standardkalender oder im angegebenen Kalender.|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[findMeetingTimesResponse](findmeetingtimesresponse.md) |Schlägt Besprechungszeiten und -orte basierend auf der Verfügbarkeit des Organisators und der Teilnehmer sowie auf spezifizierten Zeit- oder Ortseinschränkungen vor. |
-|[getSchedule (Vorschau)](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md)-Sammlung|Rufen Sie die Frei/Gebucht-Informationen zur Verfügbarkeit von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum ab. |
+|[getSchedule](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md)-Sammlung|Rufen Sie die Frei/Gebucht-Informationen zur Verfügbarkeit von Benutzern, Verteilerlisten oder Ressourcen für einen angegebenen Zeitraum ab. |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Schlägt Besprechungszeiten und -orte basierend auf der Verfügbarkeit des Organisators und der Teilnehmer sowie auf spezifizierten Zeit- oder Ortseinschränkungen vor. |
 |[Einwertige erweiterte Eigenschaft erstellen](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[Kalender](calendar.md)  |Dient zum Erstellen einer oder mehrerer erweiterter einwertiger Eigenschaften in einem neuen oder vorhandenen Kalender.   |
 |[Kalender mit einwertiger erweiterter Eigenschaft abrufen](../api/singlevaluelegacyextendedproperty-get.md)  | [Kalender](calendar.md) | Ruft mithilfe von `$expand` oder `$filter` Kalender mit einer einwertigen erweiterten Eigenschaft ab. |
 |[Mehrwertige erweiterte Eigenschaft erstellen](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [Kalender](calendar.md) | Dient zum Erstellen einer oder mehrerer erweiterter mehrwertiger Eigenschaften in einem neuen oder vorhandenen Kalender.  |
