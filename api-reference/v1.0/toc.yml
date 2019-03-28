@@ -49,16 +49,16 @@ items:
             href: /graph/extensibility-open-users?toc=./ref/toc.json
           - name: Schemaerweiterungen verwenden (Beispiel)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-      - name: Ressourcen
-        items:
-          - name: Bewährte Methoden
-            href: /graph/best-practices-concept?toc=./ref/toc.json
-          - name: Bekannte Probleme
-            href: /graph/known-issues?toc=./ref/toc.json
-          - name: Änderungsprotokoll
-            href: /graph/changelog?toc=./ref/toc.json
-          - name: Fehler
-            href: /graph/errors?toc=./ref/toc.json
+  - name: Ressourcen
+    items:
+      - name: Bewährte Methoden
+        href: /graph/best-practices-concept?toc=./ref/toc.json
+      - name: Bekannte Probleme
+        href: /graph/known-issues?toc=./ref/toc.json
+      - name: Änderungsprotokoll
+        href: /graph/changelog?toc=./ref/toc.json
+      - name: Fehler
+        href: /graph/errors?toc=./ref/toc.json
   - name: Referenz
     href: overview.md
     expanded: true
@@ -101,6 +101,8 @@ items:
                 href: api/user-list-calendarview.md
               - name: Erinnerungsansicht
                 href: api/user-reminderview.md
+              - name: Frei-/Gebucht-Zeitplan abrufen
+                href: api/calendar-getschedule.md
               - name: Besprechungszeiten suchen
                 href: api/user-findmeetingtimes.md
           - name: Kontakte
@@ -537,6 +539,8 @@ items:
                 href: api/calendar-post-events.md
               - name: Erinnerungsansicht
                 href: api/user-reminderview.md
+              - name: Frei-/Gebucht-Zeitplan abrufen
+                href: api/calendar-getschedule.md
               - name: Besprechungszeiten suchen
                 href: api/user-findmeetingtimes.md
           - name: Kalenderansicht
@@ -1141,7 +1145,7 @@ items:
               - name: Importierte Windows Autopilot-Geräteidentität
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Liste
+                  - name: Auflisten
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Abrufen
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
