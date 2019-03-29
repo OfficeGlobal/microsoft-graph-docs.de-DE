@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidWorkProfileCusto
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e355caf85022e655abed87d464fea316ed4d0353
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b5fece69c0d287c8f8bdc8aa4a5121153c4cf3b1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264533"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965837"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration abrufen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264533"
 Lesen von Eigenschaften und Beziehungen des [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

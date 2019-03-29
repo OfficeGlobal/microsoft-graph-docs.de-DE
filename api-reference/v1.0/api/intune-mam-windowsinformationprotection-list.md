@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „windowsInformationProtection“
-description: Listet die Eigenschaften und Beziehungen der windowsInformationProtection-Objekte auf.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windowsInformationProtection auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3e888737d93f8c598823267aa823867fdaaecaf
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4c6eceaeb0d7d74aa75c11152b6840523c61e975
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259129"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963086"
 ---
 # <a name="list-windowsinformationprotections"></a>Auflisten von „windowsInformationProtection“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30259129"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

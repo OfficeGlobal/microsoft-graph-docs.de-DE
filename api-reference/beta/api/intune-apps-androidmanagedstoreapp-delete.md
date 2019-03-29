@@ -4,12 +4,12 @@ description: Löscht eine androidManagedStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d771469a9a71c9159c29a4265177d1c32cdfc47
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc91fb25f9d2c9d4bc9da4d426d2783bf9c48459
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169755"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963779"
 ---
 # <a name="delete-androidmanagedstoreapp"></a>AndroidManagedStoreApp löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169755"
 Löscht eine [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines windowsManagementAppHealthSum
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 764549ee57bc3ab3a2a1e0c2db9c6ac16309b85d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b6749c6858f51295b1221afecf802fa088a952a7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155965"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965606"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155965"
 Aktualisieren der Eigenschaften eines [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Status Zusammenfassungs Entität der Windows-Verwaltungs app.|
+|id|String|Schlüssel der Status Zusammenfassungs Entität der Windows-Verwaltungs app.|
 |healthyDeviceCount|Int32|Anzahl der fehlerfreien Geräte.|
 |unhealthyDeviceCount|Int32|Fehlerhafte Geräteanzahl.|
 |unknownDeviceCount|Int32|Unbekannte Geräteanzahl.|

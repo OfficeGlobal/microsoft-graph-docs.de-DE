@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines cartToClassAssociation-Objekt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e616dd51136f93e62a5eb751863fd7b97218374c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 09e83b523145f79d610b1299d61fafc5d0a03b02
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144443"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964479"
 ---
 # <a name="update-carttoclassassociation"></a>CartToClassAssociation aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144443"
 Aktualisieren der Eigenschaften eines [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,11 +50,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität.|
+|id|String|Schlüssel der Entität.|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts.|
 |Version|Int32|Version von CartToClassAssociation.|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt).|
 |description|Zeichenfolge|Der Administrator hat die Beschreibung des CartToClassAssociation bereitgestellt.|
 |deviceCartIds|String collection|Bezeichner von Gerätewagen, die Klassen zugeordnet werden sollen.|
 |classroomIds|String collection|Bezeichner der Unterrichtsräume, die mit Geräte Körben verknüpft werden sollen.|

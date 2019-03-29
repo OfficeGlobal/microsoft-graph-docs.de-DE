@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des windowsHealthMonitoring
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 643f435008d4dc5d952c2bdbcb09c7d4629f4ac8
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: a07caea3ca1ff1e8c47af53411b903ad0e6b5c57
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631563"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965179"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>WindowsHealthMonitoringConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631563"
 Lesen von Eigenschaften und Beziehungen des [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
