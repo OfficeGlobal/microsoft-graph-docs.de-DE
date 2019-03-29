@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des iosTrustedRootCertifica
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13d672c6ebab0cac9947900a538b10c91f1ce14c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3c3952fccfd6cc93e40ea6354b5b58712f079601
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175101"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968168"
 ---
 # <a name="get-iostrustedrootcertificate"></a>IosTrustedRootCertificate abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175101"
 Lesen von Eigenschaften und Beziehungen des [iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

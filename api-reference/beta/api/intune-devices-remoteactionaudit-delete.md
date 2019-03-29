@@ -4,12 +4,12 @@ description: Löscht eine Remote Action Audit.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2d337914d1b99c30b20b894920c122c11d04d50
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1503b31970ce54501c5325fb8004343b88064492
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163476"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965228"
 ---
 # <a name="delete-remoteactionaudit"></a>Remote Action Audit löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163476"
 Löscht eine [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

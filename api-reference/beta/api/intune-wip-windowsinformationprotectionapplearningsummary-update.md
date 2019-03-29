@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines windowsInformationProtectionA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f63f199b700f6e079266870aad07fd3870d35e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c63efa995af1e0445c51f81611b5fd2bcab01600
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153998"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970646"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153998"
 Aktualisieren der Eigenschaften eines [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,9 +50,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
+|id|String|Eindeutiger Bezeichner für die WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Name der Anwendung|
-|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Anwendungstyp. Mögliche Werte sind: `universal` und `desktop`.|
+|applicationType|[applicationtype](../resources/intune-wip-applicationtype.md)|Anwendungstyp. Mögliche Werte sind: `universal` und `desktop`.|
 |deviceCount|Int32|Geräteanzahl|
 
 

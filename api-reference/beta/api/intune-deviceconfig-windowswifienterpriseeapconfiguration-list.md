@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsWifiEnterpri
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13da9a8db093dc66ce3ab046a12d60918cd393cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 42ce39ab3dc42b2fb775f1cad60af502890176fe
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149910"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966061"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>WindowsWifiEnterpriseEAPConfigurations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149910"
 AufListen von Eigenschaften und Beziehungen der [windowsWifiEnterpriseEAPConfiguration](../resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

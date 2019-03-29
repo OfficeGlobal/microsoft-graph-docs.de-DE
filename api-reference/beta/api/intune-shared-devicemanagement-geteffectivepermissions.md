@@ -4,12 +4,12 @@ description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 42dce7b62cf9949c34065ef325ba99c9dc8f1d6d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 04988c6ab4163021098da609782d7ac8e755af83
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572411"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967769"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions-Funktion
 
@@ -19,12 +19,12 @@ ms.locfileid: "30572411"
 
 Noch nicht dokumentiert
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
 |Delegiert (Geschäfts-, Schul- oder Unikonto)||
-| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegiert (persönliches Microsoft-Konto)|Nicht unterstützt|
 |Anwendung|Nicht unterstützt|
 

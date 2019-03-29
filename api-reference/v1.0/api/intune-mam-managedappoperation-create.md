@@ -4,12 +4,12 @@ description: Diese Methode erstellt ein neues Objekt des Typs managedAppOperatio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6088eda4bdc518a0a486014b023d2bf0934575a2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 354795b68992307d27189d0edaa9088509d710c8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262874"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965284"
 ---
 # <a name="create-managedappoperation"></a>Erstellen von „managedAppOperation“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262874"
 Diese Methode erstellt ein neues Objekt des Typs [managedAppOperation](../resources/intune-mam-managedappoperation.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,9 +50,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |:---|:---|:---|
 |displayName|Zeichenfolge|Name des Vorgangs|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des App-Vorgangs|
-|state|Zeichenfolge|Aktueller Status des Vorgangs|
-|id|string|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|state|String|Aktueller Status des Vorgangs|
+|id|Zeichenfolge|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 
 

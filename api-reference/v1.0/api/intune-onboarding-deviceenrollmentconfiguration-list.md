@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „deviceEnrollmentConfiguration“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs deviceEnrollmentConfiguration auf.
+description: Auflisten von Eigenschaften und Beziehungen der deviceEnrollmentConfiguration-Objekte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b2cb84f9529b1182958ee58c3709b50b9308687
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: ee88dd5674885944f89527bc028d6bb598fe298f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257085"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969687"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Auflisten von „deviceEnrollmentConfiguration“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257085"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

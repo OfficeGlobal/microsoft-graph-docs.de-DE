@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des windows81SCEPCertificat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ffcbd0860d0e5ef509d4528ea7f6044aecc8afd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3fcebb3cd3d6a01afb04f0eeb74669bd061cd3b5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143281"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966054"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143281"
 Lesen von Eigenschaften und Beziehungen des [windows81SCEPCertificateProfile](../resources/intune-deviceconfig-windows81scepcertificateprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

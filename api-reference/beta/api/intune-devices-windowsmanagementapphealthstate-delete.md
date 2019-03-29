@@ -4,12 +4,12 @@ description: Löscht eine windowsManagementAppHealthState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 253c1e6683ff578adf3d7ac433e6734f465bad84
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 93e5a426e390826a736ab392c12d624f8476a07d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166976"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969925"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166976"
 Löscht eine [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

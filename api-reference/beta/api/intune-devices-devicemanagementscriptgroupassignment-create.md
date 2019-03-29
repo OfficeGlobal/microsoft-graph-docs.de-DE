@@ -4,12 +4,12 @@ description: Erstellen eines neuen deviceManagementScriptGroupAssignment-Objekts
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39053b6b56e130f66f8911ca60e4ed95effce385
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acaf78afef1692280d2b2e8dce4499f754de117e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163412"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970121"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163412"
 Erstellen eines neuen [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,8 +50,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Zuordnungs Entität "Device Management Script Group".|
-|targetGroupId|Zeichenfolge|Die ID der Azure Active Directory-Gruppe, auf die wir das Skript ausrichten.|
+|id|String|Schlüssel der Zuordnungs Entität "Device Management Script Group".|
+|targetGroupId|String|Die ID der Azure Active Directory-Gruppe, auf die wir das Skript ausrichten.|
 
 
 

@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des unsupportedDeviceConfig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51ee16981e9a0eff07e93f2cb917a5ed174d5c2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03a0829e027d6722dfffa9bea54fb0d28cc6f8b7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162762"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967370"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>UnsupportedDeviceConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162762"
 Lesen von Eigenschaften und Beziehungen des [unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

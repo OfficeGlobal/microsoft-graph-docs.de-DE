@@ -4,12 +4,12 @@ description: Löscht eine iosWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f6b207237042c1abf7c394e3f06869918b2642f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1e7e52b786422c005ca656048d32c53ad05ad18d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155034"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963989"
 ---
 # <a name="delete-ioswificonfiguration"></a>IosWiFiConfiguration löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155034"
 Löscht eine [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

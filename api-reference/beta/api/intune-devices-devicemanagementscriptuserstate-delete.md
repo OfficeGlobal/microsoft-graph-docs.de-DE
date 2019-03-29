@@ -4,12 +4,12 @@ description: Löscht eine deviceManagementScriptUserState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0473aea2d4d2169a558844f58dcb238babdfc5f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3fb4ac81cdea62ad2bf110c0905c4fbf40d8edba
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165968"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969085"
 ---
 # <a name="delete-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165968"
 Löscht eine [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

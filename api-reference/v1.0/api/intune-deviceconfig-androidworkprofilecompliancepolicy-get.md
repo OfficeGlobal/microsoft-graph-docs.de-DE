@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidWorkProfileCompl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d80a0b4e2a38a9a2a2aa2b33ce8f48db470933a9
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: c5543915671f659e11884fc2983f1c58d0beddeb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257540"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970380"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy abrufen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257540"
 Lesen von Eigenschaften und Beziehungen des [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

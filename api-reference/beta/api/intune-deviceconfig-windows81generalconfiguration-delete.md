@@ -4,12 +4,12 @@ description: Löscht eine windows81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e5f3fe6c6141d37a571eca7146c2daaf604b805
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8175834babf7b7a31c99f5479bb1e32c32d880ff
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968665"
 ---
 # <a name="delete-windows81generalconfiguration"></a>windows81GeneralConfiguration löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168950"
 Löscht eine [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

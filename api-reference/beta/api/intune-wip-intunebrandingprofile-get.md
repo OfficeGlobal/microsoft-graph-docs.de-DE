@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des intuneBrandingProfile-O
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 554d7ad87f0c5c33e827fbf53b711d96871b434d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7b8fc2a999f1dbf0b112d6b74e970b8e3491fe3b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174580"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970373"
 ---
 # <a name="get-intunebrandingprofile"></a>IntuneBrandingProfile abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174580"
 Lesen von Eigenschaften und Beziehungen des [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

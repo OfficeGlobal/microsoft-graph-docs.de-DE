@@ -4,12 +4,12 @@ description: Aktualisiert die Eigenschaften von Objekten des Typs deviceAppManag
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3afda42d9ffc0989f98d0a9c36debb5ee54e597a
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 6067640d883e771d79e925fd0bcf87c2857c2c0c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572467"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967902"
 ---
 # <a name="update-deviceappmanagement"></a>Aktualisieren von „deviceAppManagement“
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572467"
 
 Aktualisiert die Eigenschaften von Objekten des Typs [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference.md).  Beachten Sie, dass die entsprechende Berechtigung je nach Workflow variiert.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).  Beachten Sie, dass die entsprechende Berechtigung je nach Workflow variiert.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

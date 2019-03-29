@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines telecomExpenseManagementPartn
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1694e1ec9d494e8e5b66b411051368c085372f4f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1ca6b2dd0d55c1dc00395bdab44becb238c13f67
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255822"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968098"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner aktualisieren
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255822"
 Aktualisieren der Eigenschaften eines [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,11 +48,11 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner des TEM-Partners|
+|id|String|Eindeutiger Bezeichner des TEM-Partners|
 |displayName|Zeichenfolge|Anzeigename des TEM-Partners|
-|url|Zeichenfolge|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
-|appAuthorized|Boolean|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
-|enabled|Boolean|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
+|url|String|Die URL für die Verwaltungssteuerung des TEM-Partners, mit der ein Administrator den TEM-Dienst konfigurieren kann.|
+|appAuthorized|Boolescher Wert|Gibt an, ob die AAD-App des Partners für den Zugriff auf Intune autorisiert wurde.|
+|aktiviert|Boolescher Wert|Gibt an, ob die Intune-Verbindung mit dem TEM-Dienst derzeit aktiviert oder deaktiviert ist.|
 |lastConnectionDateTime|DateTimeOffset|Zeitstempel der letzten vom TEM-Partner an Intune gesendeten Anforderung|
 
 

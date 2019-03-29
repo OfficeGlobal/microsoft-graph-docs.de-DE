@@ -1,24 +1,24 @@
 ---
-title: Funktion „downloadApplePushNotificationCertificateSigningRequest“
-description: Diese Funktion lädt die Signieranforderung für das Apple Push Notification-Zertifikat herunter.
+title: downloadApplePushNotificationCertificateSigningRequest-Funktion
+description: Signieranforderung für Apple Push Notification-Zertifikat herunterladen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21cfc3872f25f808904ca3a96635bf715b0fc920
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 09bbadd2e0874bdc461f965ff12544716e4de9d2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252378"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970198"
 ---
-# <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Funktion „downloadApplePushNotificationCertificateSigningRequest“
+# <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest-Funktion
 
 > **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Funktion lädt die Signieranforderung für das Apple Push Notification-Zertifikat herunter.
+Signieranforderung für Apple Push Notification-Zertifikat herunterladen
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -45,7 +45,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `200 OK` und ein Objekt des Typs „String“ im Antworttext zurück.
+Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine Zeichenfolge im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 

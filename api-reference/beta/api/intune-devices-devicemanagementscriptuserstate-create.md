@@ -4,12 +4,12 @@ description: Erstellen eines neuen deviceManagementScriptUserState-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e7e0a0f7f8c3f837d6125b6c91eee51f1bfed7e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aff7161ebd220924bd8c8c05bff4cd138b3ea59e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139347"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967657"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139347"
 Erstellen eines neuen [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,10 +50,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Benutzerstatus Entität des Device Management-Skripts.|
+|id|String|Schlüssel der Benutzerstatus Entität des Device Management-Skripts.|
 |successDeviceCount|Int32|Anzahl der erfolgreichen Geräte für einen bestimmten Benutzer.|
 |errorDeviceCount|Int32|Fehlergeräte Anzahl für einen bestimmten Benutzer.|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname des jeweiligen Benutzers.|
+|userPrincipalName|String|Benutzerprinzipalname des jeweiligen Benutzers.|
 
 
 

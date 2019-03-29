@@ -4,12 +4,12 @@ description: Diese Methode listet die Eigenschaften von Objekten des Typs mobile
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d0ce557104532275664cb9d9afec40da2a56784
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ed60a7c4945df6b37a7499b2b18ec7aee11fb4ac
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167599"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968224"
 ---
 # <a name="list-mobileappcontentfiles"></a>Auflisten von „mobileAppContentFile“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167599"
 Diese Methode listet die Eigenschaften von Objekten des Typs [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

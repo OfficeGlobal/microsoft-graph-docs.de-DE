@@ -4,12 +4,12 @@ description: Aktualisiert die Eigenschaften von Objekten des Typs windows10TeamG
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab049fecd546462123796aff2fd3ac975e71932f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: bf291aab92197a4d0ab54bbc578e01766bf35eb2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251020"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967958"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Aktualisieren von „windows10TeamGeneralConfiguration“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251020"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,25 +48,25 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|azureOperationalInsightsBlockTelemetry|Boolean|Gibt an, ob Azure Operational Insights blockiert werden soll.|
+|azureOperationalInsightsBlockTelemetry|Boolescher Wert|Gibt an, ob Azure Operational Insights blockiert werden soll.|
 |azureOperationalInsightsWorkspaceId|String|ID des Azure Operational Insights-Arbeitsbereichs|
 |azureOperationalInsightsWorkspaceKey|String|Schlüssel des Azure Operational Insights-Arbeitsbereichs|
-|connectAppBlockAutoLaunch|Boolean|Gibt an, ob die App „Verbinden“ automatisch gestartet werden soll, sobald eine Projektion initiiert wird.|
-|maintenanceWindowBlocked|Boolean|Gibt an, ob ein Wartungsfenster für Geräteupdates festgelegt werden darf.|
+|connectAppBlockAutoLaunch|Boolescher Wert|Gibt an, ob die App „Verbinden“ automatisch gestartet werden soll, sobald eine Projektion initiiert wird.|
+|maintenanceWindowBlocked|Boolescher Wert|Gibt an, ob ein Wartungsfenster für Geräteupdates festgelegt werden darf.|
 |maintenanceWindowDurationInHours|Int32|Dauer des Wartungsfensters für Geräteupdates. Gültige Werte: 0 bis 5.|
 |maintenanceWindowStartTime|TimeOfDay|Beginn des Wartungsfensters für Geräteupdates|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|Kanal. Mögliche Werte sind: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne` und `oneHundredSixtyFive`.|
-|miracastBlocked|Boolean|Gibt an, ob eine drahtlose Projektion erlaubt ist.|
-|miracastRequirePin|Boolean|Gibt an, ob für eine drahtlose Projektion die Eingabe einer PIN erforderlich ist.|
-|settingsBlockMyMeetingsAndFiles|Boolean|Gibt an, ob die Funktion „Meine Besprechungen und Dateien“ im Startmenü deaktiviert werden soll. In diesem Bereich werden die Office 365-Besprechungen und -Dateien des angemeldeten Benutzers angezeigt.|
-|settingsBlockSessionResume|Boolean|Gibt an, ob Sitzungen nach einem Sitzungstimeout fortgeführt werden dürfen.|
-|settingsBlockSigninSuggestions|Boolean|Gibt an, ob das Anmeldedialogfeld automatisch mit den Eingeladenen aus geplanten Besprechungen befüllt werden darf.|
+|miracastBlocked|Boolescher Wert|Gibt an, ob eine drahtlose Projektion erlaubt ist.|
+|miracastRequirePin|Boolescher Wert|Gibt an, ob für eine drahtlose Projektion die Eingabe einer PIN erforderlich ist.|
+|settingsBlockMyMeetingsAndFiles|Boolescher Wert|Gibt an, ob die Funktion „Meine Besprechungen und Dateien“ im Startmenü deaktiviert werden soll. In diesem Bereich werden die Office 365-Besprechungen und -Dateien des angemeldeten Benutzers angezeigt.|
+|settingsBlockSessionResume|Boolescher Wert|Gibt an, ob Sitzungen nach einem Sitzungstimeout fortgeführt werden dürfen.|
+|settingsBlockSigninSuggestions|Boolescher Wert|Gibt an, ob das Anmeldedialogfeld automatisch mit den Eingeladenen aus geplanten Besprechungen befüllt werden darf.|
 |settingsDefaultVolume|Int32|Legt die Standardlautstärke für neue Sitzungen fest. Zulässige Werte sind 0 bis 100. Der Standardwert lautet 45. Gültige Werte: 0 bis 100.|
 |settingsScreenTimeoutInMinutes|Int32|Gibt den Zeitraum in Minuten an, nach dem der Bildschirm des Hub-Systems abgeschaltet wird.|
 |settingsSessionTimeoutInMinutes|Int32|Gibt den Zeitraum in Minuten an, nach dem es zu einem Sitzungstimeout kommt.|

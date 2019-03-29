@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „iosManagedAppProtection“
-description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection auf.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppProtection auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bcb31258ad79cd575c73b8adde41821caac220b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: fb83134d3eaad7c5531602defe30d1a93d9bd96c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260487"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969561"
 ---
 # <a name="list-iosmanagedappprotections"></a>Auflisten von „iosManagedAppProtection“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260487"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

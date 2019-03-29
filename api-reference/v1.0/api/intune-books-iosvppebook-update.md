@@ -4,12 +4,12 @@ description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f4b307d54840549caf821defc736a68f90e7556
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 859428a352d3db6e7c5cbd0688878d3df672eaf5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253365"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966873"
 ---
 # <a name="update-iosvppebook"></a>Aktualisieren von „iosVppEBook“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253365"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,22 +48,22 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|id|String|Schlüssel der Entität. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|Zeichenfolge|Name des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|description|String|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|publisher|Zeichenfolge|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Zeichenfolge|Beschreibung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|publisher|String|Herausgeber. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Datum und Uhrzeit der Veröffentlichung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Umschlagbild des Buchs. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der E-Book-Datei. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des E-Books. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |informationUrl|Zeichenfolge|URL zur Seite mit weiteren Informationen. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
-|privacyInformationUrl|Zeichenfolge|URL zur Datenschutzerklärung. Der Wert wird geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
+|privacyInformationUrl|String|URL zur Datenschutzerklärung. Geerbt von [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|ID des VPP-Tokens|
-|appleId|Zeichenfolge|Apple-ID, die dem VPP-Token zugeordnet ist|
-|vppOrganizationName|Zeichenfolge|Zum VPP-Token gehörender Organisationsname|
-|genres|String collection|Genres|
-|language|Zeichenfolge|Sprache|
-|seller|Zeichenfolge|Verkäufer|
+|appleId|String|Apple-ID, die dem VPP-Token zugeordnet ist|
+|vppOrganizationName|String|Zum VPP-Token gehörender Organisationsname|
+|genres|Collection von Objekten des Typs „String“|Genres|
+|language|String|Sprache|
+|seller|String|Verkäufer|
 |totalLicenseCount|Int32|Gesamtanzahl von Lizenzen|
 |usedLicenseCount|Int32|Gesamtanzahl von genutzten Lizenzen|
 

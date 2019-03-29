@@ -4,12 +4,12 @@ description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97c6c3bc9d499891425928fe9dac64c3ab5f4f3a
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 86106a21f246f29f3d42fd16ea9752e3dc3969f1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572376"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968448"
 ---
 # <a name="list-windows10generalconfigurations"></a>Auflisten von „windows10GeneralConfiguration“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572376"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

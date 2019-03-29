@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines Remote Action Audit-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6105145c9e284c1f522c85f6a1237dcb2320fa28
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 429ad79b6163f3c755bae5a47503c9b90536f44e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170224"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969673"
 ---
 # <a name="update-remoteactionaudit"></a>Remote Action Audit aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170224"
 Aktualisieren der Eigenschaften eines [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,13 +51,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Berichts-ID.|
-|deviceDisplayName|Zeichenfolge|InTune-Gerätename.|
+|deviceDisplayName|String|InTune-Gerätename.|
 |userName|Zeichenfolge|\[veraltet verwenden\] Sie stattdessen Eigenschaften initiatedbyuserprincipalname.|
-|Eigenschaften initiatedbyuserprincipalname|Zeichenfolge|Benutzer, der die Geräte Aktion initiiert hat, Format ist UPN.|
-|Aktion|[Remote-Steuerung](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures`,,,,,,,, `factoryResetKeepEnrollmentData`,, `shutDown` ,,,,,, `updateDeviceAccount` `automaticRedeployment` `locateDevice` .|
+|Eigenschaften initiatedbyuserprincipalname|String|Benutzer, der die Geräte Aktion initiiert hat, Format ist UPN.|
+|action|[Remote-Steuerung](../resources/intune-devices-remoteaction.md)|Der Name der Aktion. Mögliche Werte sind: `unknown`, `factoryReset`, `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures`,,,,,,,, `factoryResetKeepEnrollmentData`,, `shutDown` ,,,,,, `updateDeviceAccount` `automaticRedeployment` `locateDevice` .|
 |requestDateTime|DateTimeOffset|Zeitpunkt der Ausgabe der Aktion in UTC.|
-|deviceOwnerUserPrincipalName|Zeichenfolge|UPN des Geräte Besitzers.|
-|deviceIMEI|Zeichenfolge|IMEI des Geräts.|
+|deviceOwnerUserPrincipalName|String|UPN des Geräte Besitzers.|
+|deviceIMEI|String|IMEI des Geräts.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Aktionsstatus. Mögliche Werte sind: `none`, `pending`, `canceled`, `active`, `done`, `failed` und `notSupported`.|
 
 

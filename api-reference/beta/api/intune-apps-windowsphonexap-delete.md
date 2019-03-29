@@ -4,12 +4,12 @@ description: Löscht eine windowsPhoneXAP.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7eb823dc8efa5475fa14f3165e1e10ab8c2dad27
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7d2dce3852a2f980c55f1a989f1f033ce0fafc4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159899"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969029"
 ---
 # <a name="delete-windowsphonexap"></a>WindowsPhoneXAP löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159899"
 Löscht eine [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

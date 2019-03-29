@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des importedDeviceIdentityR
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d46e2d24bbcec88768086f6f530f6a5d1352fe78
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b760a423669f109b55d7bd14a3f4bb7202cf36e3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141552"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968133"
 ---
 # <a name="get-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141552"
 Lesen von Eigenschaften und Beziehungen des [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

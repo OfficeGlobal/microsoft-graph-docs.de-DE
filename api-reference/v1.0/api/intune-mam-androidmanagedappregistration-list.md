@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „androidManagedAppRegistration“
-description: Auflisten von Eigenschaften und Beziehungen der androidManagedAppRegistration-Objekte.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppRegistration auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14169256c0aae4eea6d8190575c9519213dc3293
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4cc251ed1aa33902784e33c2c23bb948ad0385f7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968273"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Auflisten von „androidManagedAppRegistration“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30254926"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

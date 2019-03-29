@@ -1,15 +1,15 @@
 ---
 title: Aktualisieren von „managedDevice“
-description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedDevice.
+description: Aktualisieren der Eigenschaften eines managedDeviceOverview-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3711888ee2c5e6f3d3a5281ec6e14d521eb9695
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56c45659d3e644a80d97f92ff6fe6659c4038d58
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967937"
 ---
 # <a name="update-manageddevice"></a>Aktualisieren von „managedDevice“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162468"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [managedDevice](../resources/intune-devices-manageddevice.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -53,100 +53,72 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für das Gerät.
-|
-|userId|String|Eindeutiger Bezeichner des Benutzers, der dem Gerät zugeordnet ist.
-|
-|deviceName|Zeichenfolge|Name des Geräts.
-|
+|id|String|Eindeutiger Bezeichner für das Gerät|
+|userId|String|Eindeutiger Bezeichner des Benutzers, der dem Gerät zugeordnet ist|
+|deviceName|String|Der Name des Geräts.|
 |Dem|[Dem](../resources/intune-devices-hardwareinformation.md)|Die hardward-Details für das Gerät.  Enthält Informationen wie Speicherplatz, Hersteller, Seriennummer usw.|
 |ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Der Besitzer des Geräts. Kann "Company" oder "Personal" sein. Mögliche Werte sind: `unknown`, `company` und `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Der Besitzer des Geräts. Kann "Company" oder "Personal" sein. Mögliche Werte sind: `unknown`, `company` und `personal`.|
-|deviceActionResults|Collection von Objekten des Typs [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Liste von Objekten des Typs „ComplexType deviceActionResult“.
-|
+|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md)-Sammlung|Liste von ComplexType DeviceActionResult-Objekten.|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|Verwaltungsstatus des Geräts. Mögliche Werte sind: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled` und `discovered`.|
-|enrolledDateTime|DateTimeOffset|Datum und Uhrzeit der Geräteregistrierung.
-|
-|lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten erfolgreichen Synchronisierung des Geräts mit Intune.
-|
+|enrolledDateTime|DateTimeOffset|Registrierungszeit des Geräts.|
+|lastSyncDateTime|DateTimeOffset|Datum und Uhrzeit, zu dem bzw. der das Gerät zuletzt eine erfolgreiche Synchronisierung mit Intune durchgeführt hat.|
 |chassitype|[chassitype](../resources/intune-devices-chassistype.md)|Gehäusetyp des Geräts. Mögliche Werte: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
-|operatingSystem|Zeichenfolge|Betriebssystem des Geräts. Windows, iOS usw.|
+|operatingSystem|String|Betriebssystem des Geräts Windows, iOS, etc.|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plattform des Geräts. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6` `nokia` `windowsPhone` `mac` `winCE` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM`,,,,,,,, `holoLens`,, `androidEnterprise` ,,,,,, `surfaceHub` `androidForWork` `winEmbedded` , `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Konformitätsstatus des Geräts. Mögliche Werte sind: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` und `configManager`.|
-|jailBroken|Zeichenfolge|Gibt an, ob es sich um ein Gerät mit Jailbreak oder Rootzugriff handelt.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliancestatus des Geräts. Mögliche Werte: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
+|jailBroken|String|Gibt an, ob es sich um ein Gerät mit Jailbreak oder Rootzugriff handelt.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Verwaltungskanal des Geräts. InTune, EAS usw. Mögliche Werte sind: `eas`, `mdm`, `easMdm` `intuneClient`,, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm` `configurationManagerClientMdmEas`,, `unknown`, `jamf` `googleCloudDevicePolicyController`,, `microsoft365ManagedMdm`.|
-|osVersion|Zeichenfolge|Auf dem Gerät installierte Betriebssystemversion.
-|
-|easActivated|Boolean|Gibt an, ob für das Gerät Exchange ActiveSync aktiviert ist.|
-|easDeviceId|String|Exchange ActiveSync-ID des Geräts.
-|
-|easActivationDateTime|DateTimeOffset|Datum und Uhrzeit der Exchange ActiveSync-Aktivierung für das Gerät.
-|
-|aadRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
-|azureADRegistered|Boolean|Gibt an, ob das Gerät in Azure Active Directory registriert ist.|
+|osVersion|String|Betriebssystemversion auf dem Gerät.|
+|easActivated|Boolescher Wert|Gibt an, ob das Gerät über Exchange ActiveSync-aktiviert ist.|
+|easDeviceId|String|Exchange ActiveSync-ID des Geräts.|
+|easActivationDateTime|DateTimeOffset|Exchange ActivationSync-Aktivierungszeit des Geräts.|
+|aadRegistered|Boolean|Gibt an, ob das Gerät für Azure Active Directory registriert ist.|
+|azureADRegistered|Boolean|Gibt an, ob das Gerät für Azure Active Directory registriert ist.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Registrierungstyp des Geräts. Mögliche Werte: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Gibt an, ob der Modus verloren aktiviert oder deaktiviert ist. Mögliche Werte sind: `disabled` und `enabled`.|
-|activationLockBypassCode|Zeichenfolge|Code, der die Umgehung der Aktivierungssperre des Geräts ermöglicht|
-|emailAddress|Zeichenfolge|E-Mail-Adressen des Benutzers, der dem Gerät zugeordnet ist.
-|
-|Eigenschaften azureactivedirectorydeviceid|Zeichenfolge|Eindeutiger Bezeichner des Azure Active Directory-Geräts. Schreibgeschützt.|
-|azureADDeviceId|Zeichenfolge|Eindeutiger Bezeichner des Azure Active Directory-Geräts. Schreibgeschützt.|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Registrierungsstatus des Geräts. Mögliche Werte sind: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset` und `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|Zeichenfolge|Anzeigename der Gerätekategorie.
-|
-|isSupervised|Boolean|Überwachungsstatus des Geräts.
-|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Verbindung des Geräts mit Exchange|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Zugriffsstatus des Geräts in Exchange. Mögliche Werte: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Grund für den Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` und `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|Zeichenfolge|URL zur Einrichtung einer Remoteunterstützungssitzung mit dem Gerät.
-|
-|remoteAssistanceSessionErrorDetails|Zeichenfolge|Fehlerzeichenfolge zur Beschreibung von Fehlern beim Erstellen von Objekten für Remoteunterstützungssitzungen.
-|
-|isEncrypted|Boolean|Verschlüsselungsstatus des Geräts.
-|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipalname für das Gerät.
-|
-|model|Zeichenfolge|Modell des Geräts.
-|
-|manufacturer|Zeichenfolge|Hersteller des Geräts.
-|
-|imei|Zeichenfolge|IMEI|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität.
-|
-|serialNumber|Zeichenfolge|Seriennummer.
-|
-|PhoneNumber|Zeichenfolge|Telefonnummer des Geräts.
-|
-|androidSecurityPatchLevel|Zeichenfolge|Android-Sicherheitspatchlevel.
-|
-|userDisplayName|Zeichenfolge|Anzeigename des Benutzers.
-|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Aktivierte Funktionen des Konfigurations-Manager-Clients.
-|
-|wiFiMacAddress|Zeichenfolge|WLAN-MAC|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|Status des Integritätsnachweises für Geräte.
-|
-|subscriberCarrier|String|Netzbetreiber des Abonnenten.
-|
+|activationLockBypassCode|String|Code, der ermöglicht, dass die Aktivierungssperre auf einem Gerät umgangen wird.|
+|emailAddress|String|E-Mail(s) für den Benutzer, der dem Gerät zugeordnet ist|
+|Eigenschaften azureactivedirectorydeviceid|String|Die eindeutige ID für das Azure Active Directory-Gerät. Schreibgeschützt.|
+|azureADDeviceId|String|Die eindeutige ID für das Azure Active Directory-Gerät. Schreibgeschützt.|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Geräteregistrierungsstatus Mögliche Werte: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
+|deviceCategoryDisplayName|String|Anzeigename der Gerätekategorie|
+|isSupervised|Boolescher Wert|Überwachter Gerätestatus|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Letzter Zeitpunkt, zu dem das Gerät Exchange kontaktiert hat.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Der Zugriffsstatus des Geräts in Exchange. Mögliche Werte: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Grund für den Zugriffsstatus des Geräts in Exchange. Mögliche Werte sind: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
+|remoteAssistanceSessionUrl|String|Die URL, die ermöglicht, dass mit dem Gerät eine Remoteunterstützungssitzung eingerichtet wird.|
+|remoteAssistanceSessionErrorDetails|String|Eine Fehlerzeichenfolge, die Probleme beim Erstellen von Objekten für die Remoteunterstützungssitzung identifiziert.|
+|isEncrypted|Boolean|Geräteverschlüsselungsstatus|
+|userPrincipalName|String|Benutzerprinzipalname für das Gerät|
+|model|String|Das Modell des Geräts.|
+|Hersteller|String|Hersteller des Geräts|
+|imei|String|IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Karenzzeit für die Gerätekonformität|
+|serialNumber|String|SerialNumber|
+|PhoneNumber|String|Telefonnummer des Geräts|
+|androidSecurityPatchLevel|String|Sicherheitspatchlevel von Android|
+|userDisplayName|String|Anzeigename des Benutzers|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Für ConfigrMgr-Client aktivierte Features|
+|wiFiMacAddress|String|Wi-Fi-MAC|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|Integritätsnachweis für Geräte – Status|
+|subscriberCarrier|String|Netzbetreiber des Abonnenten|
 |meid|String|MEID|
-|totalStorageSpaceInBytes|Int64|Gesamtspeicher in Byte.
-|
-|freeStorageSpaceInBytes|Int64|Freier Speicher in Byte.
-|
-|managedDeviceName|String|Automatisch generierter Name zur Identifizierung des Geräts. Kann mit einem benutzerfreundlichen Namen überschrieben werden.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Gibt den Bedrohungsstatus eines Geräts an, wenn das Konto und das Gerät einen Mobile Threat Defense-Partner nutzen. Schreibgeschützt. Mögliche Werte: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|totalStorageSpaceInBytes|Int64|Gesamtspeicher in Byte|
+|freeStorageSpaceInBytes|Int64|Freier Speicher in Byte|
+|managedDeviceName|String|Automatisch generierter Name zum Identifizieren eines Geräts. Kann mit einem Anzeigenamen überschrieben werden.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Gibt den Bedrohungsstatus eines Geräts an, wenn ein vom Konto und Gerät ein Mobile Threat Defense-Partner verwendet wird. Schreibgeschützt. Mögliche Werte: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) -Sammlung|Gibt die zuletzt angemeldeten Benutzer eines Geräts an.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Meldet den DateTime-Wert für die Einstellung preferMdmOverGroupPolicy.  Ist diese Einstellung festgelegt, überschreiben die Intune-MDM-Einstellungen Gruppenrichtlinieneinstellungen bei einem Konflikt. Schreibgeschützt.|
-|autopilotEnrolled|Boolean|Meldet, ob das verwaltete Gerät über Auto-Pilot registriert wird.|
-|requireUserEnrollmentApproval|Boolean|Meldet, ob das verwaltete iOS-Gerät Benutzer Genehmigungs Registrierung ist.|
+|autopilotEnrolled|Boolescher Wert|Meldet, ob das verwaltete Gerät über Auto-Pilot registriert wird.|
+|requireUserEnrollmentApproval|Boolescher Wert|Meldet, ob das verwaltete iOS-Gerät Benutzer Genehmigungs Registrierung ist.|
 |managementCertificateExpirationDate|DateTimeOffset|Meldet Ablaufdatum für das Geräte Verwaltungszertifikat|
-|ICCID|Zeichenfolge|Integrated Circuit Card Identifier, es ist die eindeutige Identifikationsnummer einer SIM-Karte.|
-|UDID|Zeichenfolge|Eindeutige Gerätekennung für iOS-und macOS-Geräte.|
+|ICCID|String|Integrated Circuit Card Identifier, es ist die eindeutige Identifikationsnummer einer SIM-Karte.|
+|UDID|String|Eindeutige Gerätekennung für iOS-und macOS-Geräte.|
 |Rolescopetagids zur|String collection|Liste der Bereichstag-IDs für diese Geräteinstanz.|
 |windowsActiveMalwareCount|Int32|Anzahl der aktiven Schadsoftware für dieses Windows-Gerät|
 |windowsRemediatedMalwareCount|Int32|Anzahl der korrigierten Schadsoftware für dieses Windows-Gerät|
-|notes|Zeichenfolge|Hinweise zu dem von IT-Administrator erstellten Gerät|
+|notes|String|Hinweise zu dem von IT-Administrator erstellten Gerät|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration Manager-Clientintegritätsstatus, nur gültig für Geräte, die vom MDM/ConfigMgr-Agent verwaltet werden|
 
 

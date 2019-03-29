@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines depOnboardingSetting-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ddb018277ba6b91d6fe7a19c9165090397127e9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c882957b8fb44e1df539e98dec96e2c457fe854b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141489"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968238"
 ---
 # <a name="update-deponboardingsetting"></a>DepOnboardingSetting aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141489"
 Aktualisieren der Eigenschaften eines [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |shareTokenWithSchoolDataSyncService|Boolescher Wert|Gibt an, ob die DEP-Token-Freigabe mit dem School Data Sync-Dienst aktiviert ist.|
 |Lastsyncerrorcode wurden|Int32|Fehlercode, der von Apple während der letzten DEP-Synchronisierung gemeldet wurde.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Ruft den Typ der DEP-Token ab oder legt ihn fest. Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.|
-|Tokenname|Zeichenfolge|Anzeige Name für DEP-Token|
+|Tokenname|String|Anzeige Name für DEP-Token|
 |syncedDeviceCount|Int32|Ruft die Anzahl synchronisierter Geräte ab.|
 |dataSharingConsentGranted|Boolescher Wert|Einwilligung zur Datenfreigabe mit Apple DEP Service|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz.|

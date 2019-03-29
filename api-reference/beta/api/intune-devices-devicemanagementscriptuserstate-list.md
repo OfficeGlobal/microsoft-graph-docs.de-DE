@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der deviceManagementScr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45652887674b671bf2a42f08be9be524f6f2edf7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6c419401df73e5cee5749582a6cd7b1c60e839cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170238"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969134"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>DeviceManagementScriptUserStates aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170238"
 AufListen von Eigenschaften und Beziehungen der [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

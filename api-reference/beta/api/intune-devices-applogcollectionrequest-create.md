@@ -4,12 +4,12 @@ description: Erstellen eines neuen appLogCollectionRequest-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08a6c3943d669363b3667266d1b6e6013e501570
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144996"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968644"
 ---
 # <a name="create-applogcollectionrequest"></a>AppLogCollectionRequest erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144996"
 Erstellen eines neuen [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,9 +50,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der eindeutige Bezeichner. Dies ist userId_DeviceId_AppId-ID.|
+|id|String|Der eindeutige Bezeichner. Dies ist userId_DeviceId_AppId-ID.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Protokoll Uploadstatus. Mögliche Werte sind: `pending`, `completed` und `failed`.|
-|errorMessage|Zeichenfolge|Fehlermeldung, falls vorhanden, während des Uploads|
+|errorMessage|String|Fehlermeldung, falls vorhanden, während des Uploads|
 |customLogFolders|String collection|Liste der Protokollordner. |
 |completedDateTime|DateTimeOffset|Zeitpunkt, zu dem die Upload-Protokollanforderung einen Terminalstatus erreicht hat|
 

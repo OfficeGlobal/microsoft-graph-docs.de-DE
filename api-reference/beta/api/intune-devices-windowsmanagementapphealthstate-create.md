@@ -4,12 +4,12 @@ description: Erstellen eines neuen windowsManagementAppHealthState-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f8bead779385d8599bdd91932fbf310767b2e35
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e08722db6a15913739a1bf12275807c465a2aa96
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157729"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966460"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157729"
 Erstellen eines neuen [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -52,10 +52,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |id|String|Eindeutiger Bezeichner für den Integritätsstatus der Windows-Verwaltungsanwendung|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Integritätsstatus der Windows-Verwaltungsanwendung Mögliche Werte sind: `unknown`, `healthy` und `unhealthy`.|
-|installedVersion|Zeichenfolge|Installierte Version der Windows-Verwaltungs-app.|
+|installedVersion|String|Installierte Version der Windows-Verwaltungs-app.|
 |lastCheckInDateTime|DateTimeOffset|Windows Management APP – letzter Eincheck Zeitpunkt.|
-|deviceName|Zeichenfolge|Name des Geräts, auf dem die Windows-Verwaltungs-App installiert ist.|
-|deviceOSVersion|Zeichenfolge|Windows 10-Betriebssystemversion des Geräts, auf dem die Windows-Verwaltungs-App installiert ist.|
+|deviceName|String|Name des Geräts, auf dem die Windows-Verwaltungs-App installiert ist.|
+|deviceOSVersion|String|Windows 10-Betriebssystemversion des Geräts, auf dem die Windows-Verwaltungs-App installiert ist.|
 
 
 

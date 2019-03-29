@@ -1,15 +1,15 @@
 ---
 title: Aktion zuweisen
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 205a79d3a765019140943a0f53dcf3462aea7c5a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 36339bb07430eb1f688e7ae0c00761cabfd74323
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261824"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969974"
 ---
 # <a name="assign-action"></a>Aktion zuweisen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30261824"
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,12 +48,12 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|assignments|Collection von Objekten des Typs [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Noch nicht dokumentiert.|
+|assignments|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)-Sammlung|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -78,7 +78,7 @@ Content-length: 282
 }
 ```
 
-### <a name="response"></a>Reaktion
+### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
 HTTP/1.1 204 No Content

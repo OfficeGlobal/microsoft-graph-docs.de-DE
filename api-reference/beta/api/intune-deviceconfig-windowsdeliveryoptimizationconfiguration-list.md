@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsDeliveryOpti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8652ff72647740ebcaf8b62ccdd5c1fa91d86762
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 07cd6e87859d2d57982e4658e17a56c1fe07bf61
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168075"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962015"
 ---
 # <a name="list-windowsdeliveryoptimizationconfigurations"></a>WindowsDeliveryOptimizationConfigurations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168075"
 AufListen von Eigenschaften und Beziehungen der [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

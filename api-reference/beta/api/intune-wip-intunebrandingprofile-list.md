@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der intuneBrandingProfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b4a1cbe9492783618dc01ad71bb75749d196a06
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7f49bd126bbcb6d362d804007bacf6c7c7b4f265
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151310"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970709"
 ---
 # <a name="list-intunebrandingprofiles"></a>IntuneBrandingProfiles aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151310"
 AufListen von Eigenschaften und Beziehungen der [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

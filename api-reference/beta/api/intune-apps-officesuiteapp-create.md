@@ -4,12 +4,12 @@ description: Erstellen eines neuen officeSuiteApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e3fda805a19773351d791e4ae1f22b89ae0781a
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 94e2e19b91c309ec9ba92c8cd426f96deb7e93f8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571788"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968588"
 ---
 # <a name="create-officesuiteapp"></a>OfficeSuiteApp erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571788"
 Erstellen eines neuen [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -67,15 +67,15 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Der Veröffentlichungsstatus für die App. Die App kann nicht zugewiesen werden, solange sie nicht veröffentlicht wurde. Von [MobileApp](../resources/intune-apps-mobileapp.md)geerbt. Mögliche Werte sind: `notPublished`, `processing` und `published`.|
 |isAssigned|Boolean|Der Wert, der angibt, ob die APP mindestens einer Gruppe zugewiesen ist. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Rolescopetagids zur|String collection|Liste der bereichstag-IDs für diese Mobile App. Geerbt von [mobileApp](../resources/intune-apps-mobileapp.md).|
-|autoAcceptEula|Boolesch|Der Wert, der EULA automatisch auf dem Gerät des endBENUTZERs akzeptiert.|
+|autoAcceptEula|Boolescher Wert|Der Wert, der EULA automatisch auf dem Gerät des endBENUTZERs akzeptiert.|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) -Sammlung|Die Produkt-IDs, die die SKU der Office365-Suite darstellen. Mögliche Werte sind: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail` und `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|Die Eigenschaft zur Darstellung der apps, die von der ausgewählten Office365-Produkt-ID ausgeschlossen werden.|
-|Eigenschaften usesharedcomputeractivation|Boolesch|Die Eigenschaft, die angibt, ob die Aktivierung gemeinsam genutzter Computer nicht für die Office365-App-Suite verwendet wird.|
+|Eigenschaften usesharedcomputeractivation|Boolescher Wert|Die Eigenschaft, die angibt, ob die Aktivierung gemeinsam genutzter Computer nicht für die Office365-App-Suite verwendet wird.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Die Eigenschaft, die den Office365-Aktualisierungs Kanal darstellt. Mögliche Werte: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Die Eigenschaft, die die Version der Office365-App-Suite darstellt. Mögliche Werte sind: `none`, `x86`, `x64`, `arm`, `neutral` und `arm64`.|
 |Localestoinstall wurden|String collection|Die Eigenschaft, die die Gebietsschemas darstellt, die bei der Installation der apps von Office365 installiert werden. Es verwendet Standard RFC 6033. Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|So geben Sie die Anzeigeebene für die Setup-Benutzeroberfläche des InstallationsfortSchritts auf dem Gerät an. Mögliche Werte sind: `none` und `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolesch|Die Eigenschaft, um zu bestimmen, ob eine vorhandene Office-MSI-Installation installiert werden soll, wenn eine Office365-App-Suite auf dem Gerät bereitgestellt wird.|
+|shouldUninstallOlderVersionsOfOffice|Boolescher Wert|Die Eigenschaft, um zu bestimmen, ob eine vorhandene Office-MSI-Installation installiert werden soll, wenn eine Office365-App-Suite auf dem Gerät bereitgestellt wird.|
 |targetVersion|String|Die Eigenschaft, die die spezifische Zielversion für die Office365-App-Suite darstellt, die auf den Geräten bereitgestellt bleiben soll.|
 |updateVersion|String|Die Eigenschaft, die die Update Version darstellt, in der die spezifische Zielversion für die Office365-App-Suite verfügbar ist.|
 |officeConfigurationXml|Binär|Die Eigenschaft, die die XML-Konfigurationsdatei darstellt, die für Office proPlus-apps angegeben werden kann. Vorrang vor allen anderen Eigenschaften. Wenn dieser Parameter vorhanden ist, wird die XML-Konfigurationsdatei zum Erstellen der APP verwendet.|

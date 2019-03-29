@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines mobileAppProvisioningConfigGr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21c4c65dc6deec19cda232d4c5be377e38e92a9a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e3574b569dca591e1bebb70558ef06a1d43f52ca
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144401"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963982"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144401"
 Aktualisieren der Eigenschaften eines [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,8 +50,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|targetGroupId|Zeichenfolge|Die ID der AAD-Gruppe, in der die APP-Konfigurations Konfiguration gezielt wird.|
-|id|Zeichenfolge|Schlüssel der Entität|
+|targetGroupId|String|Die ID der AAD-Gruppe, in der die APP-Konfigurations Konfiguration gezielt wird.|
+|id|String|Schlüssel der Entität|
 
 
 

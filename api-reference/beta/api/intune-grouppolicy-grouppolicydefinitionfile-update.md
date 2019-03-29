@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines groupPolicyDefinitionFile-Obj
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e204382f9237428b30362f7464264f732e13541a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e82a9236f5d062a497eaa25a7fbcd31624d67082
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169412"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970555"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>GroupPolicyDefinitionFile aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169412"
 Aktualisieren der Eigenschaften eines [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,13 +51,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Der lokalisierte Anzeigename der ADMX-Datei.|
-|description|Zeichenfolge|Die lokalisierte Beschreibung der Richtlinieneinstellungen in der ADMX-Datei. Der Standardwert ist Empty.|
+|displayName|String|Der lokalisierte Anzeigename der ADMX-Datei.|
+|description|Zeichenfolge|Die lokalisierte Beschreibung der Richtlinieneinstellungen in der ADMX-Datei. Der Standardwert ist leer.|
 |languageCodes|String collection|Die unterstützten Sprachcodes für die ADMX-Datei.|
-|targetPrefix|Zeichenfolge|Gibt den logischen Namen an, der auf den Namespace innerhalb der ADMX-Datei verweist.|
-|targetNamespace|Zeichenfolge|Gibt den URI an, der zum Identifizieren des Namespaces innerhalb der ADMX-Datei verwendet wird.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte sind: `admxBacked` und `admxIngested`.|
-|id|Zeichenfolge|Schlüssel der Entität|
+|targetPrefix|String|Gibt den logischen Namen an, der auf den Namespace innerhalb der ADMX-Datei verweist.|
+|targetNamespace|String|Gibt den URI an, der zum Identifizieren des Namespaces innerhalb der ADMX-Datei verwendet wird.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte: `admxBacked`, `admxIngested`.|
+|id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 

@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des Windows10pkcscertificat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 014c88d59e2dd489e36044f0f9c28f33d7a793aa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c51664d3cc4b830147e9fcfe5ec3f141836f706
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152031"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965998"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Windows10pkcscertificateprofile hinzugefügt abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152031"
 Lesen von Eigenschaften und Beziehungen des [windows10pkcscertificateprofile hinzugefügt](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

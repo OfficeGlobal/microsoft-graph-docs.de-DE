@@ -1,15 +1,15 @@
 ---
 title: importAppleDeviceIdentityList-Aktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 714459b7ee5ab1dd65bb274ad2315e832ce56436
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aac9194ca888b8e46358748754856cdb072d8c12
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141482"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967146"
 ---
 # <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141482"
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|importedAppleDeviceIdentities|[importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Sammlung|Noch nicht dokumentiert|
+|importedAppleDeviceIdentities|[importappledeviceidentitylist](../resources/intune-enrollment-importedappledeviceidentity.md) -Sammlung|Noch nicht dokumentiert.|
 |overwriteImportedDeviceIdentities|Boolean|Noch nicht dokumentiert.|
 
 

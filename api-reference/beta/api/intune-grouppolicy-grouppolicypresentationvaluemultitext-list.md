@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der groupPolicyPresenta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5ca53d760e2ab052d13d89caa7ff5c57126ccaa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a30322eb1d95fb9696bfb2fc3e7cbc304227c473
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162608"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968322"
 ---
 # <a name="list-grouppolicypresentationvaluemultitexts"></a>GroupPolicyPresentationValueMultiTexts aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162608"
 AufListen von Eigenschaften und Beziehungen der [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

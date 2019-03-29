@@ -4,12 +4,12 @@ description: Löscht eine windowsPhone81AppX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72faba94c70eada69750a23446d3601e3bd81f52
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5c2f7d82f3ec43f7da4e6b4fc6d4de224af8d7b4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169629"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968693"
 ---
 # <a name="delete-windowsphone81appx"></a>WindowsPhone81AppX löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169629"
 Löscht eine [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

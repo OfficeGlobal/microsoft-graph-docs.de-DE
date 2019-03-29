@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines groupPolicyDefinition-Objekts
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f750e7f6a3bd631973fdeabc59011d0d07301cb4
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: f7b2052d587fc6b5a16ba86b534db9cfca89af3c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969666"
 ---
 # <a name="update-grouppolicydefinition"></a>GroupPolicyDefinition aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30644293"
 Aktualisieren der Eigenschaften eines [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -55,9 +55,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Gibt den Typ der Gruppen an, auf die die Richtlinie angewendet werden kann. Mögliche Werte sind: `user` und `machine`.|
 |displayName|Zeichenfolge|Der Name der lokalisierten Richtlinie.|
-|explainText|Zeichenfolge|Die lokalisierte Erläuterung oder der Hilfe Text, der der Richtlinie zugeordnet ist. Der Standardwert ist leer.|
-|categoryPath|Zeichenfolge|Der lokalisierte vollständige Kategorie-Pfad für die Richtlinie.|
-|supportedOn|Zeichenfolge|Lokalisierte Zeichenfolge, die verwendet wird, um anzugeben, welche Betriebssystem-oder Anwendungsversion von der Richtlinie betroffen ist.|
+|explainText|String|Die lokalisierte Erläuterung oder der Hilfe Text, der der Richtlinie zugeordnet ist. Der Standardwert ist leer.|
+|categoryPath|String|Der lokalisierte vollständige Kategorie-Pfad für die Richtlinie.|
+|supportedOn|String|Lokalisierte Zeichenfolge, die verwendet wird, um anzugeben, welche Betriebssystem-oder Anwendungsversion von der Richtlinie betroffen ist.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Gibt den Typ der Gruppenrichtlinie an. Mögliche Werte: `admxBacked`, `admxIngested`.|
 |id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
