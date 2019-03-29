@@ -4,12 +4,12 @@ description: Löscht eine deviceManagementScriptAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44370eac2c352094203cd9a0db3453ef5cce0c23
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8785f7d42efd3ad2d1d9636b3ccc2b25a8baae6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175402"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982035"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>DeviceManagementScriptAssignment löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175402"
 Löscht eine [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

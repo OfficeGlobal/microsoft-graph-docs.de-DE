@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsPhone81Certi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09a8212bfe05d6a9cb9793ded4125e6f79eb7db
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 33c17c0c6017d9a2eaf0e573e9ae3c880a60d40c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145465"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982539"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>WindowsPhone81CertificateProfileBases aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145465"
 AufListen von Eigenschaften und Beziehungen der [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

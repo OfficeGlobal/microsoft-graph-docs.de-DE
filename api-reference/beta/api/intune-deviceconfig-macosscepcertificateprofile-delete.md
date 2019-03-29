@@ -4,12 +4,12 @@ description: Löscht eine macOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0f98b522f557560f85c8b4de52f37568fbeae9b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d6b2a382f6f184a9b6c730748f8253e382b8068
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143127"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980838"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>MacOSScepCertificateProfile löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143127"
 Löscht eine [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Löscht ein managedMobileApp-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24c20766fd16beb3b0e0470ef282be301d5bce1f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4ef5554f48df98038173543f04e734e953369a19
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260235"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982532"
 ---
 # <a name="delete-managedmobileapp"></a>managedMobileApp löschen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260235"
 Löscht ein [managedMobileApp](../resources/intune-mam-managedmobileapp.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
