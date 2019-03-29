@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „windows81CompliancePolicy“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows81CompliancePolicy auf.
+description: Listet die Eigenschaften und Beziehungen von Objekten des Typs windows81CompliancePolicy auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd96322ac360840f1879e53e73bc5e42d8143366
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3362e09cecf1fef715bdd09066d78a12e4416a39
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165905"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962659"
 ---
 # <a name="list-windows81compliancepolicies"></a>Auflisten von „windows81CompliancePolicy“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165905"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

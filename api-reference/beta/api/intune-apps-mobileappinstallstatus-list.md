@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der mobileAppInstallSta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b89f954b3d34029f29bce8c972aa4cf09a096d03
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5153b022e6a15a4faa26fe70bb411cd2a17a4d62
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144681"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962260"
 ---
 # <a name="list-mobileappinstallstatuses"></a>MobileAppInstallStatuses aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144681"
 AufListen von Eigenschaften und Beziehungen der [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

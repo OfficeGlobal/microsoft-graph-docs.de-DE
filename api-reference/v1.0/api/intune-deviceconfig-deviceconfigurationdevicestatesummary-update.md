@@ -4,12 +4,12 @@ description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 456932e8561604acaaa596e9240d6ea034b71165
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 440d1a647b11bbda80e42f0daa4176457da437a5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254345"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961448"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Aktualisieren von „deviceConfigurationDeviceStateSummary“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30254345"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,14 +48,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
+|id|String|Schlüssel der Entität|
+|unknownDeviceCount|Int32|Anzahl der unbekannten Geräte|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
-|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
-|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
-|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
-|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
-|conflictDeviceCount|Int32|Anzahl von Geräten mit Konflikt|
+|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
+|remediatedDeviceCount|Int32|Anzahl der korrigierten Geräte|
+|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
+|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
+|conflictDeviceCount|Int32|Anzahl der Geräte mit Konflikten|
 
 
 

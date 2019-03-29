@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des appleVppTokenTroublesho
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef73f390a7b331a9c3c9b98f9c0c3d701b379182
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e1ecbbe5248f9893bb18473eb36a47987953b02b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174340"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962792"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>AppleVppTokenTroubleshootingEvent abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174340"
 Lesen von Eigenschaften und Beziehungen des [appleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

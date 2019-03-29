@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des windowsManagedDevice-Ob
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0a3852d0cd86c0b515fe481bdf8a48dbc98cbc3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9dc8055a859f448d1efcb341c1ec85706e392a0b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151436"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962610"
 ---
 # <a name="get-windowsmanageddevice"></a>WindowsManagedDevice abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151436"
 Lesen von Eigenschaften und Beziehungen des [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

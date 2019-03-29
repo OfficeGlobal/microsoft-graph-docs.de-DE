@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceConfigurationGroupAssig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04371d8797ff25c5bb403c67d5aa4bc4024cee89
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf396f4f919a332bf104305e7cc2e99f5a54d857
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162769"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961770"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162769"
 Aktualisieren der Eigenschaften eines [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -58,9 +58,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|targetGroupId|Zeichenfolge|Die ID der AAD-Gruppe, auf die die Gerätekonfiguration zielt.|
-|excludeGroup|Boolean|Gibt an, ob diese Gruppe ausgeschlossen werden soll. Standardwerte, die die Gruppe enthalten soll|
+|id|String|Schlüssel der Entität|
+|targetGroupId|String|Die ID der AAD-Gruppe, auf die die Gerätekonfiguration zielt.|
+|excludeGroup|Boolescher Wert|Gibt an, ob diese Gruppe ausgeschlossen werden soll. Standardwerte, die die Gruppe enthalten soll|
 
 
 

@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des userAppInstallStatus-Ob
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51ba560d74194ca20492a6f75a826834fa6d44cb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8400dd6ab8e2be4b464207065cd77fbe065f7e2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171246"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962386"
 ---
 # <a name="get-userappinstallstatus"></a>UserAppInstallStatus abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171246"
 Lesen von Eigenschaften und Beziehungen des [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
