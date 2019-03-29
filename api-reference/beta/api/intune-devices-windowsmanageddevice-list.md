@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsManagedDevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55043db2f0e5b935fecce60641b434003dd10f14
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 29c3e5199d97e19d92c9205daffb4ce9d45b7b27
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143967"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981902"
 ---
 # <a name="list-windowsmanageddevices"></a>WindowsManagedDevices aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143967"
 AufListen von Eigenschaften und Beziehungen der [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines embeddedSIMDeviceState-Objekt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8f938180e77f0d9c7434a789049efa06379aef2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8307ebc185a6543b706befc433b7e26b17702b38
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175052"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981979"
 ---
 # <a name="update-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175052"
 Aktualisieren der Eigenschaften eines [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -54,11 +54,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Status des eingebetteten SIM-Geräts erstellt wurde. Generierte Dienstseite.|
 |modifiedDateTime|DateTimeOffset|Zeitpunkt, zu dem der Status des eingebetteten SIM-Geräts zuletzt geändert wurde. Aktualisierte Dienstseite.|
 |lastSyncDateTime|DateTimeOffset|Zeitpunkt, zu dem das eingebettete SIM-Gerät zuletzt eingecheckt hat. Aktualisierte Dienstseite.|
-|universalIntegratedCircuitCardIdentifier|Zeichenfolge|Der universelle integrierte Leiterkarten Bezeichner (UICCID), der die Hardware identifiziert, auf der ein Profil bereitgestellt werden soll.|
-|deviceName|Zeichenfolge|Gerätename, für den das Abonnement vorgesehen wurde (z. b. DESKTOP-JOE)|
-|userName|Zeichenfolge|Benutzername, für den das Abonnement z. b. joe@contoso.com wurde|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Der Status des auf das Gerät angewendeten Profil Vorgangs. Mögliche Werte sind: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted` und `removedByUser`.|
-|stateDetails|Zeichenfolge|Beschreibung des Zustands der Einrichtung.|
+|universalIntegratedCircuitCardIdentifier|String|Der universelle integrierte Leiterkarten Bezeichner (UICCID), der die Hardware identifiziert, auf der ein Profil bereitgestellt werden soll.|
+|deviceName|String|Gerätename, für den das Abonnement vorgesehen wurde (z. b. DESKTOP-JOE)|
+|userName|String|Benutzername, für den das Abonnement z. b. joe@contoso.com wurde|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Der Status des auf das Gerät angewendeten Profil Vorgangs. Mögliche Werte: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|stateDetails|String|Beschreibung des Zustands der Einrichtung.|
 
 
 

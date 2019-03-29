@@ -4,12 +4,12 @@ description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee760b38c8f684c0ca7f0c8bcca0c98d8a87d931
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2c16718f06b3f321e3a63180a1ee5155cf39de5a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172044"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981258"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Aktualisieren von „applePushNotificationCertificate“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172044"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,14 +50,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für das Zertifikat|
-|appleIdentifier|Zeichenfolge|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
+|id|String|Eindeutiger Bezeichner für das Zertifikat|
+|appleIdentifier|String|Apple-ID des Kontos, mit dem das MDM-Push-Zertifikat erstellt wurde|
 |topicIdentifier|String|Thema-ID|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Apple Push Notification-Zertifikats|
 |expirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Apple Push Notification-Zertifikats|
-|certificateUploadStatus|Zeichenfolge|Der Zertifikat Uploadstatus.|
-|certificateUploadFailureReason|Zeichenfolge|Der Grund, warum der Zertifikat Upload fehlgeschlagen ist.|
-|certificate|Zeichenfolge|Noch nicht dokumentiert|
+|certificateUploadStatus|String|Der Zertifikat Uploadstatus.|
+|certificateUploadFailureReason|String|Der Grund, warum der Zertifikat Upload fehlgeschlagen ist.|
+|certificate|String|Noch nicht dokumentiert.|
 
 
 

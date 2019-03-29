@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidDeviceOwnerWiFiC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29fc073a3a64d1ecabb82331f8b07ea85d170929
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: de7ea9268f01c8ab60c860ddcdb0446c0dfd3781
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166346"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982700"
 ---
 # <a name="get-androiddeviceownerwificonfiguration"></a>AndroidDeviceOwnerWiFiConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166346"
 Lesen von Eigenschaften und Beziehungen des [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

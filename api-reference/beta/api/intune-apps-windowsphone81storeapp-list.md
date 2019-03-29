@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsPhone81Store
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22b5d0c7ba3b0a144218466d0a32157f8f5ed630
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 58b7fdffa08604cac29380a7aec3b1d0dff69f5e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160046"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981020"
 ---
 # <a name="list-windowsphone81storeapps"></a>WindowsPhone81StoreApps aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160046"
 AufListen von Eigenschaften und Beziehungen der [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

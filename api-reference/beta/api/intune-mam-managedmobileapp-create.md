@@ -4,12 +4,12 @@ description: Diese Methode erstellt ein neues Objekt des Typs managedMobileApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628d402ce5c3ab624e3832ca41e1aa008139ba2d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 188095ec57e46898cbbccd31668d2ce9b4fd75a6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139410"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984044"
 ---
 # <a name="create-managedmobileapp"></a>Erstellen von „managedMobileApp“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139410"
 Diese Methode erstellt ein neues Objekt des Typs [managedMobileApp](../resources/intune-mam-managedmobileapp.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -53,9 +53,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner der App mit dem zugehörigen Betriebssystemtyp|
-|id|string|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Bezeichner für eine App mit dem zugehörigen Betriebssystemtyp|
+|id|String|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 
 

@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines embeddedSIMActivationCodePool
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3cf828192443f4640932cdd8ec502c915770dd4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a3d8ee2180f9d687974327bb9d7d018ea8c21dbb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173192"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983701"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173192"
 Aktualisieren der Eigenschaften eines [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner für den eingebetteten SIM-Aktivierungscode Pool. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
+|id|String|Eindeutiger Bezeichner für den eingebetteten SIM-Aktivierungscode Pool. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
 |displayName|Zeichenfolge|Der vom Administrator definierte Name des eingebetteten SIM-Aktivierungscode Pools.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der eingebettete SIM-Aktivierungscode Pool erstellt wurde. Generierte Dienstseite.|
 |modifiedDateTime|DateTimeOffset|Zeitpunkt, zu dem der eingebettete SIM-Aktivierungscode Pool zuletzt geändert wurde. Aktualisierte Dienstseite.|

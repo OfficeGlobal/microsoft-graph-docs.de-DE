@@ -4,12 +4,12 @@ description: Löscht eine appLogCollectionRequest.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7dce5823e1d0deb60166875a38fe38e2307aa039
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83ed69b62329a848f82642ca4949b6fdd6f7d2f5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165212"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981811"
 ---
 # <a name="delete-applogcollectionrequest"></a>AppLogCollectionRequest löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165212"
 Löscht eine [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Generiert ein webtoken, das in einer einbettbaren Komponente verwen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50355af2e5f9e593501094c0bfd1638cb070df9d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b10259ef36897188102f0b553b6ed7df9b0fdbdd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141244"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981713"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141244"
 Generiert ein webtoken, das in einer einbettbaren Komponente verwendet wird.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|parentUri|Zeichenfolge|Der HTTPS-Pfad der Seite, die die Komponente hostet.|
+|parentUri|String|Der HTTPS-Pfad der Seite, die die Komponente hostet.|
 
 
 

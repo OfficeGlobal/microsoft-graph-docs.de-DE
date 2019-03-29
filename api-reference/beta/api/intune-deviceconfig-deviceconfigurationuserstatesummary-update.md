@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceConfigurationUserStateS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4be67e51768e82a9077fe52b718f7b747152e41e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: efc16035394ec16af3b4334df2160a176332b14a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159927"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983743"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>DeviceConfigurationUserStateSummary aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159927"
 Aktualisieren der Eigenschaften eines [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |unknownUserCount|Int32|Anzahl Unbekannter Benutzer|
 |notApplicableUserCount|Int32|Anzahl der nicht anwendbaren Benutzer|
 |compliantUserCount|Int32|Anzahl der kompatiblen Benutzer|

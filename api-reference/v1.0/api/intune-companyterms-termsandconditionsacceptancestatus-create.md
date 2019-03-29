@@ -1,15 +1,15 @@
 ---
 title: Erstellen von „termsAndConditionsAcceptanceStatus“
-description: Diese Methode erstellt ein neues Objekt des Typs termsAndConditionsAcceptanceStatus.
+description: Erstellen eines neuen termsAndConditionsAcceptanceStatus-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f35721b273b9fe84afb21ff6b10bbb38d89a125f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 69ea9a95599c225a80d1902fa3d0de720f9a9f82
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255010"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984828"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Erstellen von „termsAndConditionsAcceptanceStatus“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255010"
 Diese Methode erstellt ein neues Objekt des Typs [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,9 +48,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner der Entität|
+|id|String|Eindeutiger Bezeichner der Entität|
 |userDisplayName|String|Anzeigename des Benutzers, dessen Zustimmung die Entität darstellt|
-|acceptedVersion|Int32|Die Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
+|acceptedVersion|Int32|Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
 |acceptedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Zustimmung zu den Bedingungen durch den Benutzer|
 
 

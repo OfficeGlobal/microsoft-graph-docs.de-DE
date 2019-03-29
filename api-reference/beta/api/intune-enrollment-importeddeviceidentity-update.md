@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines importedDeviceIdentity-Objekt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4bf9585dca2df364d20a9bdbf26dd78a2e1e01d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 379074fa8739704b2ad916afa7f89ab8574c2703
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173710"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981832"
 ---
 # <a name="update-importeddeviceidentity"></a>ImportedDeviceIdentity aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173710"
 Aktualisieren der Eigenschaften eines [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,8 +50,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|ID der importierten Geräte Identität|
-|importedDeviceIdentifier|Zeichenfolge|Importierter Gerätebezeichner|
+|id|String|ID der importierten Geräte Identität|
+|importedDeviceIdentifier|String|Importierter Gerätebezeichner|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Typ der importierten Geräte Identität. Mögliche Werte sind: `unknown`, `imei` und `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Datum der letzten Änderung der Beschreibung|
 |createdDateTime|DateTimeOffset|ErstellungsDatum des Geräts|

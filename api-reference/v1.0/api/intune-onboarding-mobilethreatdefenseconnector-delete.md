@@ -1,15 +1,15 @@
 ---
 title: mobileThreatDefenseConnector löschen
-description: Löscht Objekte des Typs mobileThreatDefenseConnector.
+description: Löscht ein mobileThreatDefenseConnector-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75bdac45a3c8eb40f67c73392861be80d60092d8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d9d8a8acb40b1543e9acc6f3da412f5ea148c86a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255339"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985165"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector löschen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255339"
 Löscht ein [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

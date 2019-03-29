@@ -4,12 +4,12 @@ description: Erstellen eines neuen Androiddeviceownerenrollmentprofile hinzugef�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888c20a0e8b409137501695b9363019d61c732b1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2034ac39671f5e949c93bc9e2b6468aa7895959
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142399"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984842"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Androiddeviceownerenrollmentprofile hinzugefügt erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142399"
 Erstellen eines neuen [androiddeviceownerenrollmentprofile hinzugefügt](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,18 +50,18 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|accountId|Zeichenfolge|Mandanten-GUID, zu der das Registrierungsprofil gehört|
-|id|string|Eindeutige GUID des Registrierungsprofils|
-|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils|
-|description|String|Beschreibung des Registrierungsprofils|
-|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils|
-|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils|
-|tokenValue|Zeichenfolge|Wert des zuletzt für das Registrierungsprofil erstellten Tokens|
+|accountId|String|Mandanten-GUID, zu der das Registrierungsprofil gehört.|
+|id|String|Eindeutige GUID des Registrierungsprofils.|
+|displayName|Zeichenfolge|Anzeigename des Registrierungsprofils.|
+|description|Zeichenfolge|Beschreibung des Registrierungsprofils.|
+|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Registrierungsprofils.|
+|lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Registrierungsprofils.|
+|tokenValue|String|Wert des zuletzt für das Registrierungsprofil erstellten Tokens.|
 |tokenCreationDateTime|DateTimeOffset|Datum der Erstellung des zuletzt erstellten Tokens.|
-|tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens|
-|enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte|
-|qrCodeContent|Zeichenfolge|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird|
+|tokenExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des zuletzt erstellten Tokens.|
+|enrolledDeviceCount|Int32|Gesamtzahl der mit dem Registrierungsprofil registrierten Android-Geräte.|
+|qrCodeContent|String|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird.|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Zeichenfolge, die zur Generierung eines QR-Codes für das Token verwendet wird.|
 
 
 

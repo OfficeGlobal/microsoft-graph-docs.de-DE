@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines windowsKioskConfiguration-Obj
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b25f28e9ea87af0c6b6366fe43324c46114c0c5e
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: bca5676feaa31400e963f44284cf087bd9159548
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571578"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982196"
 ---
 # <a name="update-windowskioskconfiguration"></a>WindowsKioskConfiguration aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571578"
 Aktualisieren der Eigenschaften eines [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -55,20 +55,20 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |id|String|Schlüssel der Entität Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolesch|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolescher Wert|Gibt an, ob die zugrunde liegende Gerätekonfiguration die Zuweisung von Bereichs Tags unterstützt. Das Zuweisen zur ScopeTags-Eigenschaft ist nicht zulässig, wenn dieser Wert auf false festgelegt ist und Entitäten für bereichsbezogene Benutzer nicht sichtbar sind. Dies geschieht für in Silverlight erstellte Legacy Richtlinien und kann durch Löschen und erneutes Erstellen der Richtlinie im Azure-Portal aufgelöst werden. Diese Eigenschaft ist schreibgeschützt. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) -Sammlung|Mit dieser Richtlinieneinstellung können Sie eine Liste der Kiosk Profile für eine Kiosk Konfiguration definieren. Diese Auflistung kann maximal drei Elemente enthalten.|
 |kioskBrowserDefaultUrl|String|Geben Sie die Standard-URL an, zu der der Browser beim Start navigieren soll.|
-|kioskBrowserEnableHomeButton|Boolesch|Aktivieren Sie die Schaltfläche Home des Kiosk Browsers. Standardmäßig ist die Schaltfläche Start deaktiviert.|
-|kioskBrowserEnableNavigationButtons|Boolesch|Aktivieren Sie die Navigationsschaltflächen des Kiosk Browsers (Forward/Back). Standardmäßig sind die Navigationsschaltflächen deaktiviert.|
-|kioskBrowserEnableEndSessionButton|Boolesch|Aktivieren Sie die Schaltfläche Endsitzung des Kiosk Browsers. Standardmäßig ist die Schaltfläche Sitzung beenden deaktiviert.|
+|kioskBrowserEnableHomeButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Home des Kiosk Browsers. Standardmäßig ist die Schaltfläche Start deaktiviert.|
+|kioskBrowserEnableNavigationButtons|Boolescher Wert|Aktivieren Sie die Navigationsschaltflächen des Kiosk Browsers (Forward/Back). Standardmäßig sind die Navigationsschaltflächen deaktiviert.|
+|kioskBrowserEnableEndSessionButton|Boolescher Wert|Aktivieren Sie die Schaltfläche Endsitzung des Kiosk Browsers. Standardmäßig ist die Schaltfläche Sitzung beenden deaktiviert.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Geben Sie die Anzahl der Minuten an, die die Sitzung inaktiv ist, bis der Kiosk-Browser neu gestartet wird.  Gültige Werte sind 1-1440. Gültige Werte 1 bis 1440|
 |kioskBrowserBlockedURLs|String collection|Angeben von URLs, zu denen die Kiosk-Browser nicht navigieren sollen|
 |kioskBrowserBlockedUrlExceptions|String collection|Angeben von URLs, zu denen der Kiosk Browser navigieren darf|
-|edgeKioskEnablePublicBrowsing|Boolesch|Aktivieren Sie das öffentliche Browsen im Kioskmodus für den Microsoft Edge-Browser. Der Standardwert ist false.|
+|edgeKioskEnablePublicBrowsing|Boolescher Wert|Aktivieren Sie das öffentliche Browsen im Kioskmodus für den Microsoft Edge-Browser. Der Standardwert ist false.|
 
 
 

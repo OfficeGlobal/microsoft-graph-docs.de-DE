@@ -4,12 +4,12 @@ description: Erstellen eines neuen macOsVppAppAssignedLicense-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0de84c4e5cd7e4e9baefacbf4e1834fb01f736b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05424b5f8eaff6f3d055fd6f3babe77fb726b194
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172611"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983848"
 ---
 # <a name="create-macosvppappassignedlicense"></a>MacOsVppAppAssignedLicense erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172611"
 Erstellen eines neuen [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,11 +50,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|userEmailAddress|Zeichenfolge|Die Benutzer-e-Mail-Adresse.|
-|userId|Zeichenfolge|Die Benutzer-ID.|
-|userName|Zeichenfolge|Der Benutzername.|
-|userPrincipalName|Zeichenfolge|Der Benutzerprinzipalname.|
+|id|String|Schlüssel der Entität|
+|userEmailAddress|String|Die Benutzer-e-Mail-Adresse.|
+|userId|String|Die Benutzer-ID.|
+|userName|String|Der Benutzername.|
+|userPrincipalName|String|Der Benutzerprinzipalname.|
 
 
 
