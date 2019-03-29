@@ -4,12 +4,12 @@ description: Remoteunterstützung anfordern
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53ff1e9ab6917a1be5df9766d1aa0d0d4b9e1b86
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1ffac9091275408fa4d68310ac9be11167422bba
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147404"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974818"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147404"
 Remoteunterstützung anfordern
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

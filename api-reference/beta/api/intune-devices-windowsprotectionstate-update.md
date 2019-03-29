@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines Windowsprotectionstate wurde-
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143820"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973887"
 ---
 # <a name="update-windowsprotectionstate"></a>Windowsprotectionstate wurde aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143820"
 Aktualisieren der Eigenschaften eines [windowsprotectionstate wurde](../resources/intune-devices-windowsprotectionstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der eindeutige Bezeichner für das Statusobjekt des Geräteschutzes. Dies ist die Geräte-ID des Geräts.|
+|id|String|Der eindeutige Bezeichner für das Statusobjekt des Geräteschutzes. Dies ist die Geräte-ID des Geräts.|
 |malwareProtectionEnabled|Boolescher Wert|Antischadsoftware ist aktiviert oder nicht|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Status des Computers (wie Clean oder ausstehender vollständiger Scan oder ausstehender Neustart usw.). Mögliche Werte sind: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending` und `critical`.|
 |realTimeProtectionEnabled|Boolescher Wert|Echtzeitschutz ist aktiviert oder nicht?|
@@ -61,13 +61,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |signatureUpdateOverdue|Boolescher Wert|Signatur veraltet oder nicht?|
 |rebootRequired|Boolescher Wert|Neustart erforderlich oder nicht?|
 |fullScanRequired|Boolescher Wert|Vollständige Überprüfung erforderlich oder nicht?|
-|engineVersion|Zeichenfolge|Version des aktuellen Endpoint Protection-Moduls|
-|signatureVersion|Zeichenfolge|Aktuelle Version der Malware-Definitionen|
-|antiMalwareVersion|Zeichenfolge|Aktuelle Antischadsoftware-Version|
+|engineVersion|String|Version des aktuellen Endpoint Protection-Moduls|
+|signatureVersion|String|Aktuelle Version der Malware-Definitionen|
+|antiMalwareVersion|String|Aktuelle Antischadsoftware-Version|
 |lastQuickScanDateTime|DateTimeOffset|Datum der letzten Schnellüberprüfung|
 |lastFullScanDateTime|DateTimeOffset|Datum der letzten Schnellüberprüfung|
-|lastQuickScanSignatureVersion|Zeichenfolge|Letzte Schnellscan-Signaturversion|
-|lastFullScanSignatureVersion|Zeichenfolge|Letzte vollständige Scan-Signaturversion|
+|lastQuickScanSignatureVersion|String|Letzte Schnellscan-Signaturversion|
+|lastFullScanSignatureVersion|String|Letzte vollständige Scan-Signaturversion|
 |lastReportedDateTime|DateTimeOffset|Zeitpunkt des letzten Geräte Integritätsstatus|
 
 

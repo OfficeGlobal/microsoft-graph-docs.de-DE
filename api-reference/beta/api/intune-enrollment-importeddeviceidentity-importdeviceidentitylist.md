@@ -1,15 +1,15 @@
 ---
 title: importDeviceIdentityList-Aktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01c3afc4178cdce791312507becc9f1ee681e1f2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 644c5cb2d4c710b796015bf4d1fd005b6b78727d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146760"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973271"
 ---
 # <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146760"
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,8 +50,8 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Sammlung|Noch nicht dokumentiert|
-|overwriteImportedDeviceIdentities|Boolescher Wert|Noch nicht dokumentiert.|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) -Sammlung|Noch nicht dokumentiert.|
+|overwriteImportedDeviceIdentities|Boolean|Noch nicht dokumentiert.|
 
 
 

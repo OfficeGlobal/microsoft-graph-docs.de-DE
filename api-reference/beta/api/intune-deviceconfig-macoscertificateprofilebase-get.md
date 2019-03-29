@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des macOSCertificateProfile
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6973faf3690abca35ea5a0c3d1f7c4cb01e08dd7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1891e5022cd64364b53e75bfc179e461e116b379
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159171"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975490"
 ---
 # <a name="get-macoscertificateprofilebase"></a>MacOSCertificateProfileBase abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159171"
 Lesen von Eigenschaften und Beziehungen des [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Erstellen eines neuen embeddedSIMActivationCodePoolAssignment-Objek
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02b4c39b4ca999780a620510c38fc80036e02ee1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 67e124fafcd46519667373dc45b1fe38084d3128
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169622"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971913"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169622"
 Erstellen eines neuen [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutige ID für den eingebetteten SIM-Aktivierungscode-Pool-Zuweisung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
+|id|String|Eindeutige ID für den eingebetteten SIM-Aktivierungscode-Pool-Zuweisung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Der Typ der Gruppen, die vom eingebetteten SIM-Aktivierungscode Pool abzielen.|
 
 

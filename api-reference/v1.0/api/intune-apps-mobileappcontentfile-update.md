@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines MobileAppContentFile-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a5a88759c531c8350aafdb62de10c49afa83d37
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1193b50674caa3ecf4f5fc0522664c7868177569
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253827"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970086"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile aktualisieren
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253827"
 Aktualisieren der Eigenschaften eines [MobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,16 +48,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|azureStorageUri|String|Azure Storage-URI|
-|isCommitted|Boolean|Wert, der angibt, ob für die Datei ein Commit ausgeführt wurde|
-|id|Zeichenfolge|ID der Datei|
-|createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung der Datei|
-|name|Zeichenfolge|Name der Datei|
-|size|Int64|Größe der Datei vor der Verschlüsselung|
-|sizeEncrypted|Int64|Größe der Datei nach der Verschlüsselung|
-|azureStorageUriExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs des Azure Storage-URI|
-|manifest|Binär|Manifestinformationen|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
+|azureStorageUri|String|Der Azure Storage-URI.|
+|isCommitted|Boolean|Ein Wert, der angibt, ob für die Datei ein Commit ausgeführt wurde.|
+|id|String|Die Datei-ID|
+|createdDateTime|DateTimeOffset|Der Zeitpunkt der Erstellung der Datei|
+|name|String|Der Dateiname|
+|size|Int64|Die Größe der Datei vor der Verschlüsselung.|
+|sizeEncrypted|Int64|Die Größe der Datei nach der Verschlüsselung.|
+|azureStorageUriExpirationDateTime|DateTimeOffset|Die Zeit, zu der der Azure Storage-URI abläuft.|
+|manifest|Binär|Die Manifestinformationen|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Der Status der aktuellen Uploadanforderung. Mögliche Werte sind: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` und `commitFileTimedOut`.|
 
 
 

@@ -4,12 +4,12 @@ description: Erstellen eines neuen managementConditionStatement-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f19cef2899a11a57b06590c006de2181865a9d45
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e4531f8819be505587a27008f36fb9c06f2d92a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156861"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971640"
 ---
 # <a name="create-managementconditionstatement"></a>ManagementConditionStatement erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156861"
 Erstellen eines neuen [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,13 +51,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für die Verwaltungs Bedingungsanweisung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
-|displayName|Zeichenfolge|Der vom Administrator definierte Name der Verwaltungs Bedingungsanweisung.|
+|id|Zeichenfolge|Eindeutiger Bezeichner für die Verwaltungs Bedingungsanweisung. Vom System generierter Wert, der bei der Erstellung zugewiesen wird.|
+|displayName|String|Der vom Administrator definierte Name der Verwaltungs Bedingungsanweisung.|
 |description|Zeichenfolge|Die vom Administrator definierte Beschreibung der Verwaltungs Bedingungsanweisung.|
 |createdDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Verwaltungs Bedingungsanweisung erstellt wurde. Generierte Dienstseite.|
 |modifiedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem die Anweisung für die Verwaltungsbedingung zuletzt geändert wurde. Aktualisierte Dienstseite.|
 |Ausdruck|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Der Ausdruck der Verwaltungs Bedingungsanweisung, mit dem ausgewertet wird, ob eine Anweisung für die Verwaltungsbedingung aktiviert/deaktiviert wurde.|
-|eTag|Zeichenfolge|ETag der Verwaltungs Bedingungsanweisung. Aktualisierte Dienstseite.|
+|eTag|String|ETag der Verwaltungs Bedingungsanweisung. Aktualisierte Dienstseite.|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) -Sammlung|Die entsprechenden Plattformen für diese Verwaltungs Bedingungsanweisung.
 Dies wird berechnet anhand der Verwaltungsbedingungen, die mit der Verwaltungs Bedingungsanweisung verbunden sind, und dem Auffinden der Schnittstelle der entsprechenden Plattformen. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
 

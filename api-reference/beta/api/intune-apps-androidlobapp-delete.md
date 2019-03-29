@@ -4,12 +4,12 @@ description: Löscht ein androidLobApp-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de46c68aa4e678900b0d823cabb80d1be8ced6fb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2eecce8b085d0bf3dafd541be47553f99307ad06
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164155"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974069"
 ---
 # <a name="delete-androidlobapp"></a>androidLobApp löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164155"
 Löscht ein [androidLobApp](../resources/intune-apps-androidlobapp.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Erstellen eines neuen groupPolicyDefinitionValue-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 327228a370391a48d16a7315399af2c1aad4f318
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 20915d40828e5377502fbbb4f8c1c61a9c963f16
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143001"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973110"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>GroupPolicyDefinitionValue erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143001"
 Erstellen eines neuen [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,9 +51,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Objekts.|
-|enabled|Boolescher Wert|Aktiviert oder deaktiviert die zugeordnete Gruppenrichtlinien Definition.|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Gibt an, wie der Wert konfiguriert werden soll. Dabei kann es sich entweder um eine Richtlinie oder eine Präferenz handeln. Mögliche Werte sind: `policy` und `preference`.|
-|id|Zeichenfolge|Schlüssel der Entität|
+|aktiviert|Boolean|Aktiviert oder deaktiviert die zugeordnete Gruppenrichtlinien Definition.|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Gibt an, wie der Wert konfiguriert werden soll. Dabei kann es sich entweder um eine Richtlinie oder eine Präferenz handeln. Mögliche Werte: `policy`, `preference`.|
+|id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 

@@ -1,15 +1,15 @@
 ---
 title: Abrufen von „iosGeneralDeviceConfiguration“
-description: Liest die Eigenschaften und Beziehungen des macOSGeneralDeviceConfiguration-Objekts.
+description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs iosGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1818ddf2d50ddbd712f2e73f52a70f574f332c7e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: fb78cfaf40f0ab6b64715e87783346e843b4fc3a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262657"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971052"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Abrufen von „iosGeneralDeviceConfiguration“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262657"
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

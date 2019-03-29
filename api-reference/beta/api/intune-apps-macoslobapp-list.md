@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der macOSLobApp-Objekte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c3cb679b3ec0afc8de9f2b9ae2fa98e77784e84
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b355da91300bfda3bc3bee09c55fdc6cbb28a338
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140747"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972403"
 ---
 # <a name="list-macoslobapps"></a>MacOSLobApps aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140747"
 AufListen von Eigenschaften und Beziehungen der [macOSLobApp](../resources/intune-apps-macoslobapp.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

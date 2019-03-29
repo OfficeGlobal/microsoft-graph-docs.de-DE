@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidWorkProfileVpnCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbdf5fecbb8b77ffaab1a58e5dc081442e0e2f2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3ac2945b519d108044c4d6f74e1f587d077fdd1d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143064"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972725"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>AndroidWorkProfileVpnConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143064"
 Lesen von Eigenschaften und Beziehungen des [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

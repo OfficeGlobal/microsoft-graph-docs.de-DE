@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceManagementExchangeOnPre
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a94f22aa4d7dffcd448ad5e742198ddca809d781
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 80d05e29cb478071feef6152fda7af930b0b3652
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168026"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973397"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>DeviceManagementExchangeOnPremisesPolicy aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168026"
 Aktualisieren der Eigenschaften eines [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,9 +51,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Noch nicht dokumentiert|
+|id|String|Noch nicht dokumentiert.|
 |notificationContent|Binär|Benachrichtigungstext, der an Benutzer gesendet wird, die von dieser Richtlinie isoliert werden. Dies ist ein UTF8-codiertes Bytearray.|
-|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Standardzugriffsstatus in Exchange. Diese Regel gilt global für die gesamte Exchange-Organisation. Mögliche Werte: `none`, `allow`, `block`, `quarantine`.|
+|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Standardzugriffsstatus in Exchange. Diese Regel gilt global für die gesamte Exchange-Organisation. Mögliche Werte sind: `none`, `allow`, `block` und `quarantine`.|
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md) -Sammlung|Die Liste der Gerätezugriffsregeln in Exchange. Die Zugriffsregeln gelten global für die gesamte Exchange-Organisation.|
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md) -Sammlung|Die Liste der Geräteklassen, die Exchange bekannt ist|
 

@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des user-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 82d2505bb2bc776af6421b64e79bfbf8f7d46b72
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 7e6643fa2beccf83384c454451094473e7c80ac8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570962"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970961"
 ---
 # <a name="get-user"></a>Benutzer abrufen
 
@@ -21,7 +21,7 @@ Lesen von Eigenschaften und Beziehungen des [user](../resources/intune-shared-us
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference.md).  Die spezifische Berechtigung hängt vom Kontext ab.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).  Die spezifische Berechtigung hängt vom Kontext ab.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

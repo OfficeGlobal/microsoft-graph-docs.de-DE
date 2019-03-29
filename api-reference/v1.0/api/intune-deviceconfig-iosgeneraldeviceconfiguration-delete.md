@@ -1,15 +1,15 @@
 ---
 title: iosGeneralDeviceConfiguration löschen
-description: Löscht eine iosGeneralDeviceConfiguration
+description: Löscht ein iosGeneralDeviceConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d90e70448ea207f761cf4cf728c1ea9c166b931
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a3e69f0e5682112e82ebef43c803faa363c048d1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255766"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975126"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>iosGeneralDeviceConfiguration löschen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255766"
 Löscht ein [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

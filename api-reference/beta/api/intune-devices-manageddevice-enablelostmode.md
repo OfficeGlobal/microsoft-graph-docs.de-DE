@@ -4,12 +4,12 @@ description: Modus "verloren" aktivieren
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3e72cd3620407dc44f2dbd7d3516ded2b641633
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c288c0a506185927dfa00eb0da4606740c2a8892
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168621"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973684"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168621"
 Modus "verloren" aktivieren
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -53,14 +53,14 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|message|Zeichenfolge|Noch nicht dokumentiert|
-|PhoneNumber|Zeichenfolge|Noch nicht dokumentiert|
-|Fußzeile|Zeichenfolge|Noch nicht dokumentiert|
+|message|String|Noch nicht dokumentiert.|
+|PhoneNumber|String|Noch nicht dokumentiert.|
+|Fußzeile|String|Noch nicht dokumentiert.|
 
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

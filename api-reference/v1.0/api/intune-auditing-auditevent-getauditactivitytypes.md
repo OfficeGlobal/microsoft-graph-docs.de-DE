@@ -1,15 +1,15 @@
 ---
 title: Funktion „getAuditActivityTypes“
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e06f1fda065fc03fbe8ed009feb7bea77bca5f05
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3541b8ff61b0f48f4461a87559819f06d0e3cebe
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256252"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972249"
 ---
 # <a name="getauditactivitytypes-function"></a>Funktion „getAuditActivityTypes“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256252"
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -42,7 +42,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
+Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Funktion den Antwortcode `200 OK` und eine Collection von Objekten des Typs „String“ im Antworttext zurück.
+Wenn die Funktion erfolgreich verläuft, werden der Antwortcode `200 OK` und eine Zeichenfolge-Sammlung im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

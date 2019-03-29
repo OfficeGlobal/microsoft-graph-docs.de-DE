@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines windowsInformationProtectionA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe11c8cba9d2cb1eaba6a4225fa48d2b71adf23b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc465df11d9f0299f1074094f78058b48bc1df3a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144037"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971409"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144037"
 Aktualisieren der Eigenschaften eines [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -54,9 +54,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |displayName|Zeichenfolge|Der Anzeigename|
-|fileHash|Zeichenfolge|SHA256-Hash der Datei|
+|fileHash|String|SHA256-Hash der Datei|
 |file|Binär|Datei als Bytearray|
-|id|string|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |Version|String|Version der Entität|
 
 

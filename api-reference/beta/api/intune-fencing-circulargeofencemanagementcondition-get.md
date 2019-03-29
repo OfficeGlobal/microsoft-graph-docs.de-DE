@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des circularGeofenceManagem
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfdc2f6a4561732f20f50d54ec76c3728baac287
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 581df7a9ffd552d66c6d5568e3ca7abcea1e7b5b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175143"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971143"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>CircularGeofenceManagementCondition abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175143"
 Lesen von Eigenschaften und Beziehungen des [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

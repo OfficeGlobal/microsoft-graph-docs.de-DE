@@ -4,12 +4,12 @@ description: Löscht eine macOSWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ac21b3759f76c82c4e9c86be64d35eef2709cb2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6653e1b0dca1ab802191dda4f48dc5a59859e63d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147124"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972991"
 ---
 # <a name="delete-macoswificonfiguration"></a>MacOSWiFiConfiguration löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147124"
 Löscht eine [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

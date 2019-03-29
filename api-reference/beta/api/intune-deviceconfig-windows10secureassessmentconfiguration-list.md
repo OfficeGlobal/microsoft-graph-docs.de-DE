@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „windows10SecureAssessmentConfiguration“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs windows10SecureAssessmentConfiguration auf.
+description: Listet die Eigenschaften und Beziehungen von Objekten des Typs windows10SecureAssessmentConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c973fdccd1af1e7df4a9a6c5e5185260b46b75c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1df451261bf36c4eb34f08ef39440f4a2f00bb8a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140180"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975420"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Auflisten von „windows10SecureAssessmentConfiguration“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140180"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

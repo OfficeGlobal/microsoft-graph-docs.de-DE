@@ -4,12 +4,12 @@ description: Diese Methode erstellt ein neues Objekt des Typs detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d8d3dd82c5c45fbb1cf69fa9067e73e830f064c
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7135b3ee02e0bf6b4c8d7a8cd4fe62a658b5f961
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263539"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973404"
 ---
 # <a name="create-detectedapp"></a>Erstellen von „detectedApp“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263539"
 Diese Methode erstellt ein neues Objekt des Typs [detectedApp](../resources/intune-devices-detectedapp.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,10 +48,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
+|id|String|Eindeutiger Bezeichner für die erkannte Anwendung. Dieser wird automatisch von Intune generiert, wenn die Anwendung erstellt wird. Schreibgeschützt.|
 |displayName|Zeichenfolge|Name der ermittelten Anwendung. Schreibgeschützt|
 |version|String|Version der ermittelten Anwendung. Schreibgeschützt|
-|sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt|
+|sizeInByte|Int64|Größe der ermittelten Anwendung in Byte. Schreibgeschützt.|
 |deviceCount|Int32|Anzahl von Geräten, auf denen die Anwendung installiert ist|
 
 

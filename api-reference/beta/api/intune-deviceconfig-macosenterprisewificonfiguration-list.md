@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der macOSEnterpriseWiFi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6b0d2cbdb58dfb52e14f12c0df8cd0faede9dd3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5611087e8b4c2bcd552859140cf5ec422ec20a4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168362"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974972"
 ---
 # <a name="list-macosenterprisewificonfigurations"></a>MacOSEnterpriseWiFiConfigurations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168362"
 AufListen von Eigenschaften und Beziehungen der [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

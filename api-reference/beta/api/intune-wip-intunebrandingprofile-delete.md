@@ -4,12 +4,12 @@ description: Löscht eine intuneBrandingProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b68dbdaa34d3fc30f6a07c9486ef32bbd103ec38
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: db7d952620f1b7358a852a48f4fcd8d48beed21a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170735"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973285"
 ---
 # <a name="delete-intunebrandingprofile"></a>IntuneBrandingProfile löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170735"
 Löscht eine [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

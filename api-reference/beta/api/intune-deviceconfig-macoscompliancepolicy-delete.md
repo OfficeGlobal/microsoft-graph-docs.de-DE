@@ -4,12 +4,12 @@ description: Löscht ein macOSCompliancePolicy-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c825a7e9ea5b575e7620cc1beaf0b3646f7d4bb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 438e5fdcf9353a4e6c07092c1366a45a3eecba4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151443"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974650"
 ---
 # <a name="delete-macoscompliancepolicy"></a>macOSCompliancePolicy löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151443"
 Löscht ein [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

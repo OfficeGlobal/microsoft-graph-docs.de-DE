@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines groupPolicyConfiguration-Obje
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 867d70f3978db683cb154b9e5405df08b315b4b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0caaa312b5375fb16734cab90bf8380a6cb1c28d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160032"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971696"
 ---
 # <a name="update-grouppolicyconfiguration"></a>GroupPolicyConfiguration aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160032"
 Aktualisieren der Eigenschaften eines [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,9 +51,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit der Erstellung des Objekts.|
-|displayName|Zeichenfolge|Vom Benutzer bereitgestellter Name für das Resource-Objekt.|
+|displayName|String|Vom Benutzer bereitgestellter Name für das Resource-Objekt.|
 |description|Zeichenfolge|Vom Benutzer bereitgestellte Beschreibung für das Resource-Objekt.|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität.|
 
 
