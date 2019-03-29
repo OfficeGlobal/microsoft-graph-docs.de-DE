@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „termsAndConditionsAcceptanceStatus“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs termsAndConditionsAcceptanceStatus auf.
+description: Auflisten von Eigenschaften und Beziehungen der termsAndConditionsAcceptanceStatus-Objekte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccb8c78fe8abfcc98dfb1422036520db34e06b74
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a402096b49848ff02691f6c5135e449eac4676cc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158443"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976127"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Auflisten von „termsAndConditionsAcceptanceStatus“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158443"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

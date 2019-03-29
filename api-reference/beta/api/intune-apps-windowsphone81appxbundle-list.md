@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsPhone81AppXB
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e136662cb1e86540898b8292ff5e0d54f670909
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fbb689ed39f10d0a30fab52106f77b6ef404aa8e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173094"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976785"
 ---
 # <a name="list-windowsphone81appxbundles"></a>WindowsPhone81AppXBundles aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173094"
 AufListen von Eigenschaften und Beziehungen der [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Löscht ein editionUpgradeConfiguration-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 766b4c4339d57f23518bf23fac478a4c7b09d245
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b833cfbbc32cce8dbd98055b898b41a3d17dde5e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261201"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979991"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>editionUpgradeConfiguration löschen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30261201"
 Löscht ein [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

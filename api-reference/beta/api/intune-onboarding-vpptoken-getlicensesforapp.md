@@ -1,15 +1,15 @@
 ---
 title: getLicensesForApp-Funktion
-description: Noch nicht dokumentiert
+description: Noch nicht dokumentiert.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bc1fd7ef455ce28ffee570e9490d75588e95ff5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 679f44364dc5d534fa58e874502b5b51609a995f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144051"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975952"
 ---
 # <a name="getlicensesforapp-function"></a>getLicensesForApp-Funktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144051"
 Noch nicht dokumentiert
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -44,12 +44,12 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 |Annehmen|application/json|
 
 ## <a name="request-body"></a>Anforderungstext
-Geben Sie in der Anforderungs-URL die folgenden Abfrageparameter mit Werten an.
+Stellen Sie in der URL der Anforderung die folgenden Abfrageparameter mit Werten bereit.
 In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Funktion verwendet werden können.
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|bundleId|Zeichenfolge|Noch nicht dokumentiert.|
+|bundleId|String|Noch nicht dokumentiert.|
 
 
 

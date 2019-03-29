@@ -4,12 +4,12 @@ description: Erstellen eines neuen deviceCompliancePolicySettingStateSummary-Obj
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f027d182222f496bab1a6ec3e74bf3bbd72935d1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1bd0ab97129dda08db107e588c5c3103fbce2365
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256903"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975686"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary erstellen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256903"
 Erstellen eines neuen [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -49,16 +49,16 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |id|String|Schlüssel der Entität|
-|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|Zeichenfolge|Name der Einstellung|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Einstellungs Plattform. Mögliche Werte sind: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` und `all`.|
-|unknownDeviceCount|Int32|Anzahl von unbekannten Geräten|
+|Einstellung|String|Der Klassenname und der Eigenschaftenname der Einstellung.|
+|settingName|String|Name der Einstellung|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Einstellungs Plattform. Mögliche Werte: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|unknownDeviceCount|Int32|Anzahl der unbekannten Geräte|
 |notApplicableDeviceCount|Int32|Anzahl der ausgenommenen Geräte|
-|compliantDeviceCount|Int32|Anzahl von konformen Geräten|
-|remediatedDeviceCount|Int32|Anzahl von korrigierten Geräten|
-|nonCompliantDeviceCount|Int32|Anzahl von nicht konformen Geräten|
-|errorDeviceCount|Int32|Anzahl von Geräten mit Fehlern|
-|conflictDeviceCount|Int32|Anzahl von Geräten mit Konflikt|
+|compliantDeviceCount|Int32|Anzahl der konformen Geräte|
+|remediatedDeviceCount|Int32|Anzahl der korrigierten Geräte|
+|nonCompliantDeviceCount|Int32|Anzahl der nicht konformen Geräte|
+|errorDeviceCount|Int32|Anzahl der fehlerhaften Geräte|
+|conflictDeviceCount|Int32|Anzahl der Geräte mit Konflikten|
 
 
 

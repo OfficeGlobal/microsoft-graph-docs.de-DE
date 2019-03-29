@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „iosManagedAppRegistration“
-description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppRegistration auf.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosManagedAppRegistration auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d74a0d532a1645fd47d694974181b32fafd90ae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4861151aa140a63bd44d00b4a423ad917a3066dc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162405"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977751"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Auflisten von „iosManagedAppRegistration“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162405"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

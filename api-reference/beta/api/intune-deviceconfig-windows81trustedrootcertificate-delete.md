@@ -4,12 +4,12 @@ description: Löscht eine windows81TrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6db54db1b0d835b6044e143313cfea6f67d0ed58
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 328fa2de707ca5691a8dbec079ca83d0a6fc7838
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172121"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978969"
 ---
 # <a name="delete-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172121"
 Löscht eine [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

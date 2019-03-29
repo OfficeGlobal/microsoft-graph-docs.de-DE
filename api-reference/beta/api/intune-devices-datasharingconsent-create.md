@@ -4,12 +4,12 @@ description: Erstellen eines neuen dataSharingConsent-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167109"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978080"
 ---
 # <a name="create-datasharingconsent"></a>DataSharingConsent erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167109"
 Erstellen eines neuen [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,13 +50,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Die Einwilligungs-ID für die Datenfreigabe|
-|serviceDisplayName|Zeichenfolge|Der Anzeigename des Dienst-Arbeitsflusses|
-|termsUrl|Zeichenfolge|Die TermsUrl für die Einwilligung zur Datenfreigabe|
+|id|String|Die Einwilligungs-ID für die Datenfreigabe|
+|serviceDisplayName|String|Der Anzeigename des Dienst-Arbeitsflusses|
+|termsUrl|String|Die TermsUrl für die Einwilligung zur Datenfreigabe|
 |granted|Boolescher Wert|Der erteilte Status für die Einwilligung zur Datenfreigabe|
 |grantDateTime|DateTimeOffset|Die Zeit Genehmigung für dieses Konto wurde erteilt.|
-|grantedByUpn|Zeichenfolge|Der UPN des Benutzers, der die Einwilligung für dieses Konto erteilt hat.|
-|grantedByUserId|Zeichenfolge|Die UserId des Benutzers, der die Einwilligung für dieses Konto erteilt hat|
+|grantedByUpn|String|Der UPN des Benutzers, der die Einwilligung für dieses Konto erteilt hat.|
+|grantedByUserId|String|Die UserId des Benutzers, der die Einwilligung für dieses Konto erteilt hat|
 
 
 

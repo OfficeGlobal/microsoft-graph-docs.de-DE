@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines mobileAppIntentAndState-Objek
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6226237b1ebc8d080642b0cfe9bd6fd3f2b500
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4edea2daac0bae36f3fe91d50912ea60cf909466
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173332"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980264"
 ---
 # <a name="update-mobileappintentandstate"></a>MobileAppIntentAndState aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173332"
 Aktualisieren der Eigenschaften eines [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |:---|:---|:---|
 |id|String|UUID für das Objekt|
 |managedDeviceIdentifier|Zeichenfolge|Von Intune erstellter oder erfasster Gerätebezeichner|
-|userId|Zeichenfolge|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
+|userId|String|Bezeichner für den Benutzer, der versucht hat, das Gerät zu registrieren.|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) -Sammlung|Die Liste der Payload-und Statusinformationen für den Mandanten.|
 
 

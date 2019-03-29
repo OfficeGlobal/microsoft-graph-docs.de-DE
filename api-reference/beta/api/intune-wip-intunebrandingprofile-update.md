@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines intuneBrandingProfile-Objekts
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a66589e4be7d5cc175c792935e2f309c8f28e33
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f8a805e8878dbd41493c550647ed9e038c320b13
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162342"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976659"
 ---
 # <a name="update-intunebrandingprofile"></a>IntuneBrandingProfile aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162342"
 Aktualisieren der Eigenschaften eines [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,22 +50,22 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Profilschlüssel|
-|Profilname|Zeichenfolge|Name des Profils|
-|profileDescription|Zeichenfolge|Beschreibung des Profils|
-|isDefaultProfile|Boolean|Zeigt an, ob das Profil standardmäßig verwendet wird.|
+|id|String|Profilschlüssel|
+|Profilname|String|Name des Profils|
+|profileDescription|String|Beschreibung des Profils|
+|isDefaultProfile|Boolescher Wert|Zeigt an, ob das Profil standardmäßig verwendet wird.|
 |createdDateTime|DateTimeOffset|Bei der Erstellung des BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Wenn die BrandingProfile zuletzt geändert wurde.|
 |displayName|Zeichenfolge|Unternehmensname/Organisationsname, der Endbenutzern angezeigt wird|
-|contactITName|Zeichenfolge|Name der für den IT-Support zuständigen Person/Organisation|
-|contactITPhoneNumber|Zeichenfolge|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
-|contactITEmailAddress|Zeichenfolge|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
-|contactITNotes|Zeichenfolge|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
-|privacyUrl|Zeichenfolge|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
-|onlineSupportSiteUrl|Zeichenfolge|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
+|contactITName|String|Name der für den IT-Support zuständigen Person/Organisation|
+|contactITPhoneNumber|String|Telefonnummer der für den IT-Support zuständigen Person/Organisation|
+|contactITEmailAddress|String|E-Mail-Adresse der für den IT-Support zuständigen Person/Organisation|
+|contactITNotes|String|Textkommentare zu der für den IT-Support zuständigen Person/Organisation|
+|privacyUrl|String|URL zur Datenschutzrichtlinie des Unternehmens/der Organisation|
+|onlineSupportSiteUrl|String|URL zur IT-Helpdesk-Website des Unternehmens/der Organisation|
 |onlineSupportSiteName|String|Anzeigename der IT-Helpdesk-Website des Unternehmens/der Organisation|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primäres Farbdesign für die Unternehmensportal-Anwendungen und das Webportal|
-|showLogo|Boolean|Boolescher Wert, der angibt, ob die vom Administrator bereitgestellten Logobilder angezeigt werden sollen|
+|showLogo|Boolescher Wert|Boolescher Wert, der angibt, ob die vom Administrator bereitgestellten Logobilder angezeigt werden sollen|
 |showDisplayNameNextToLogo|Boolean|Boolescher Wert, der angibt, ob der vom Administrator angegebene Anzeigename neben dem Logobild angezeigt werden soll|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmens Portal-apps auf Design Farbhintergründen angezeigt wird.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logobild, das in Unternehmens Portal-apps auf hellen Hintergründen angezeigt wird.|

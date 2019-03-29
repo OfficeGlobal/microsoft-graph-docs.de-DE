@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidForWorkEnterpris
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ac228f89dd425cd2bc884e8957be55108f2da6c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 59ab105228fb5d4212d68400fe21e5f64d5d0f0c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161054"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976008"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>AndroidForWorkEnterpriseWiFiConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161054"
 Lesen von Eigenschaften und Beziehungen des [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

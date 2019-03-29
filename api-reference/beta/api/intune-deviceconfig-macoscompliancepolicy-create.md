@@ -4,12 +4,12 @@ description: Erstellen eines neuen macOSCompliancePolicy-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5b04e9f896135cd063786092d5a6f7009f6c079
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 92ac3c3b47b1d1fdc49f3d2d6ba0edb7f523d4f7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139872"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975756"
 ---
 # <a name="create-macoscompliancepolicy"></a>macOSCompliancePolicy erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139872"
 Erstellen eines neuen [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,32 +51,32 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|string|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|String|Schlüssel der Entität Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Datum und Uhrzeit der Erstellung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|description|String|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|description|Zeichenfolge|Beschreibung der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|String|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Boolean|Legt fest, ob ein Kennwort gefordert wird.|
-|passwordBlockSimple|Boolean|Gibt an, ob einfache Kennwörter erlaubt sind.|
+|passwordRequired|Boolescher Wert|Legt fest, ob ein Kennwort gefordert wird.|
+|passwordBlockSimple|Boolescher Wert|Gibt an, ob einfache Kennwörter erlaubt sind.|
 |passwordExpirationDays|Int32|Zeit in Tagen bis zum Ablaufen des Kennworts Gültige Werte: 1 bis 65535.|
 |passwordMinimumLength|Int32|Mindestlänge von Kennwörtern. Gültige Werte: 4 bis 14.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordPreviousPasswordBlockCount|Int32|Anzahl der zuletzt verwendeten Kennwörter, die nicht erneut verwendet werden dürfen. Gültige Werte: 1 bis 24.|
-|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen|
+|passwordMinimumCharacterSetCount|Int32|Anzahl der Zeichensätze, die im Kennwort enthalten sein müssen.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Geforderter Kennworttyp. Mögliche Werte sind: `deviceDefault`, `alphanumeric` und `numeric`.|
-|osMinimumVersion|Zeichenfolge|Mindestens MacOS-Version.|
-|osMaximumVersion|Zeichenfolge|Maximale MacOS-Version.|
-|osMinimumBuildVersion|Zeichenfolge|Mindestens Version der MacOS-Buildversion.|
-|osMaximumBuildVersion|Zeichenfolge|Maximale Version des MacOS-Builds.|
+|osMinimumVersion|String|Mindestens MacOS-Version.|
+|osMaximumVersion|String|Maximale MacOS-Version.|
+|osMinimumBuildVersion|String|Mindestens Version der MacOS-Buildversion.|
+|osMaximumBuildVersion|String|Maximale Version des MacOS-Builds.|
 |systemIntegrityProtectionEnabled|Boolean|Gibt an, ob auf Geräten der Systemintegritätsschutz aktiviert sein muss.|
 |deviceThreatProtectionEnabled|Boolescher Wert|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Legt die Mindestrisikostufe fest, ab der Mobile Threat Protection einen Konformitätsverstoß melden soll. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
 |storageRequireEncryption|Boolean|Gibt an, ob auf Mac OS-Geräten die Verschlüsselung erforderlich ist.|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System-und Datenschutzeinstellung, die bestimmt, welche Downloadspeicherorte apps auf einem macOS-Gerät ausgeführt werden können. Mögliche Werte: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Boolean|Ob die Firewall aktiviert werden soll oder nicht.|
-|firewallBlockAllIncoming|Boolean|Entspricht der Option "alle eingehenden Verbindungen blockieren".|
-|firewallEnableStealthMode|Boolean|Entspricht "Stealth-Modus aktivieren".|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System-und Datenschutzeinstellung, die bestimmt, welche Downloadspeicherorte apps auf einem macOS-Gerät ausgeführt werden können. Mögliche Werte sind: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers` und `anywhere`.|
+|firewallEnabled|Boolescher Wert|Ob die Firewall aktiviert werden soll oder nicht.|
+|firewallBlockAllIncoming|Boolescher Wert|Entspricht der Option "alle eingehenden Verbindungen blockieren".|
+|firewallEnableStealthMode|Boolescher Wert|Entspricht "Stealth-Modus aktivieren".|
 
 
 

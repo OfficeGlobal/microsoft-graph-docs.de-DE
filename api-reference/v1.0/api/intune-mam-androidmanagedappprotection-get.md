@@ -1,15 +1,15 @@
 ---
 title: Abrufen von „androidManagedAppProtection“
-description: Liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection.
+description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs androidManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef1800f018feee92fbf4ba7568dfce62d7084f94
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: e447ed9585dd01dfdf76a96a47170b8abb24b495
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263798"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974825"
 ---
 # <a name="get-androidmanagedappprotection"></a>Abrufen von „androidManagedAppProtection“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263798"
 Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

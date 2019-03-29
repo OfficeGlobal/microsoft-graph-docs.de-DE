@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines groupPolicyPresentationComboB
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 404bb813d37c01186e694765dfed3c7809e02058
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a9dbb758f82c31e271cba2d5e2182efe947f78f5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149392"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974132"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>GroupPolicyPresentationComboBox aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149392"
 Aktualisieren der Eigenschaften eines [groupPolicyPresentationComboBox](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,11 +51,11 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|label|String|Lokalisierte Textbezeichnung für eine beliebige Präsentations Entität. Der Standardwert ist Empty. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Zeichenfolge|Schlüssel der Entität Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Lokalisierte Textbezeichnung für eine beliebige Präsentations Entität. Der Standardwert ist leer. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Schlüssel der Entität Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung der Entität. Geerbt von [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Zeichenfolge|Im Kombinationsfeld angezeigte lokalisierte Standardzeichenfolge. Der Standardwert ist Empty.|
-|Vorschläge|String collection|Lokalisierte Zeichenfolgen, die in der Dropdownliste des Kombinationsfelds aufgeführt sind. Der Standardwert ist Empty.|
+|defaultValue|String|Im Kombinationsfeld angezeigte lokalisierte Standardzeichenfolge. Der Standardwert ist leer.|
+|Vorschläge|String collection|Lokalisierte Zeichenfolgen, die in der Dropdownliste des Kombinationsfelds aufgeführt sind. Der Standardwert ist leer.|
 |erforderlich|Boolescher Wert|Gibt an, ob ein Wert für den Parameter angegeben werden muss. Der Standardwert ist false.|
 |maxLength|Int64|Eine ganze Zahl ohne Vorzeichen, die die maximale Anzahl von Textzeichen für den Parameter angibt. Der Standardwert ist 1023.|
 

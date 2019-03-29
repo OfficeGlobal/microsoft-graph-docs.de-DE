@@ -4,12 +4,12 @@ description: Erstellen eines neuen importedWindowsAutopilotDeviceIdentity-Objekt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7aa20bae6db2d3e93178439836ea8abded8563b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 664b0d52eea5d61918e234c9fa582fa57f50d8b5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251706"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980096"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity erstellen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251706"
 Erstellen eines neuen [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -49,10 +49,10 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|GUID des Objekts|
+|id|String|GUID des Objekts|
 |orderIdentifier|String|Auftrags-ID des Windows AutoPilot-Geräts|
-|serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
+|serialNumber|Zeichenfolge|Seriennummer des Windows AutoPilot-Geräts|
+|productKey|String|Product Key des Windows AutoPilot-Geräts|
 |hardwareIdentifier|Binary|Hardware-Blob des Windows AutoPilot-Geräts|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
 
