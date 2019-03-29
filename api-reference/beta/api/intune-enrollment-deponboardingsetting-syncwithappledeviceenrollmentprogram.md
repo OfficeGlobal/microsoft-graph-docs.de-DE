@@ -4,31 +4,31 @@ description: Synchronisierung zwischen dem Apple-Geräte Registrierungsprogramm 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d18796ce3bec358be2d9af8be5f45f5b9e034f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3cbe487c6c4ca5d0abf70b690edd59fe34d5ef98
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173171"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961462"
 ---
-# <a name="syncwithappledeviceenrollmentprogram-action"></a><span data-ttu-id="826bb-103">syncWithAppleDeviceEnrollmentProgram-Aktion</span><span class="sxs-lookup"><span data-stu-id="826bb-103">syncWithAppleDeviceEnrollmentProgram action</span></span>
+# <a name="syncwithappledeviceenrollmentprogram-action"></a><span data-ttu-id="0a179-103">syncWithAppleDeviceEnrollmentProgram-Aktion</span><span class="sxs-lookup"><span data-stu-id="0a179-103">syncWithAppleDeviceEnrollmentProgram action</span></span>
 
-> <span data-ttu-id="826bb-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="826bb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0a179-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0a179-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="826bb-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="826bb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0a179-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="0a179-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="826bb-106">Synchronisierung zwischen dem Apple-Geräte Registrierungsprogramm und InTune</span><span class="sxs-lookup"><span data-stu-id="826bb-106">Synchronizes between Apple Device Enrollment Program and Intune</span></span>
+<span data-ttu-id="0a179-106">Synchronisierung zwischen dem Apple-Geräte Registrierungsprogramm und InTune</span><span class="sxs-lookup"><span data-stu-id="0a179-106">Synchronizes between Apple Device Enrollment Program and Intune</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="826bb-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="826bb-107">Prerequisites</span></span>
-<span data-ttu-id="826bb-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="826bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0a179-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="0a179-107">Prerequisites</span></span>
+<span data-ttu-id="0a179-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0a179-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="826bb-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="826bb-110">Permission type</span></span>|<span data-ttu-id="826bb-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="826bb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0a179-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="0a179-110">Permission type</span></span>|<span data-ttu-id="0a179-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="0a179-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="826bb-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="826bb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="826bb-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="826bb-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="826bb-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="826bb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="826bb-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="826bb-115">Not supported.</span></span>|
-|<span data-ttu-id="826bb-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="826bb-116">Application</span></span>|<span data-ttu-id="826bb-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="826bb-117">Not supported.</span></span>|
+|<span data-ttu-id="0a179-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="0a179-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0a179-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a179-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0a179-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="0a179-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0a179-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0a179-115">Not supported.</span></span>|
+|<span data-ttu-id="0a179-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="0a179-116">Application</span></span>|<span data-ttu-id="0a179-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="0a179-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="826bb-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="826bb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a179-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="0a179-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30173171"
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/syncWithAppleDeviceEnrollmentProgram
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="826bb-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="826bb-119">Request headers</span></span>
-|<span data-ttu-id="826bb-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="826bb-120">Header</span></span>|<span data-ttu-id="826bb-121">Wert</span><span class="sxs-lookup"><span data-stu-id="826bb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0a179-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="0a179-119">Request headers</span></span>
+|<span data-ttu-id="0a179-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="0a179-120">Header</span></span>|<span data-ttu-id="0a179-121">Wert</span><span class="sxs-lookup"><span data-stu-id="0a179-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="826bb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="826bb-122">Authorization</span></span>|<span data-ttu-id="826bb-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="826bb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="826bb-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="826bb-124">Accept</span></span>|<span data-ttu-id="826bb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="826bb-125">application/json</span></span>|
+|<span data-ttu-id="0a179-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a179-122">Authorization</span></span>|<span data-ttu-id="0a179-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="0a179-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0a179-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="0a179-124">Accept</span></span>|<span data-ttu-id="0a179-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0a179-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="826bb-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="826bb-126">Request body</span></span>
-<span data-ttu-id="826bb-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="826bb-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a179-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="0a179-126">Request body</span></span>
+<span data-ttu-id="0a179-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="0a179-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="826bb-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="826bb-128">Response</span></span>
-<span data-ttu-id="826bb-129">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="826bb-129">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="0a179-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="0a179-128">Response</span></span>
+<span data-ttu-id="0a179-129">Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0a179-129">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="826bb-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="826bb-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a179-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0a179-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="826bb-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="826bb-131">Request</span></span>
-<span data-ttu-id="826bb-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="826bb-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0a179-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="0a179-131">Request</span></span>
+<span data-ttu-id="0a179-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="0a179-132">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/syncWithAppleDeviceEnrollmentProgram
 ```
 
-### <a name="response"></a><span data-ttu-id="826bb-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="826bb-133">Response</span></span>
-<span data-ttu-id="826bb-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="826bb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0a179-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="0a179-133">Response</span></span>
+<span data-ttu-id="0a179-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0a179-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
