@@ -4,31 +4,31 @@ description: Abrufen eines öffentlichen Schlüssels zum Verschlüsseln des Appl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72149171a964d72be0ef35351638ffcdf27e0289
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cd34c3e6e88d432601aacf6bd8c8df851c90baef
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154264"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965627"
 ---
-# <a name="getencryptionpublickey-function"></a><span data-ttu-id="56444-103">getEncryptionPublicKey-Funktion</span><span class="sxs-lookup"><span data-stu-id="56444-103">getEncryptionPublicKey function</span></span>
+# <a name="getencryptionpublickey-function"></a><span data-ttu-id="46e08-103">getEncryptionPublicKey-Funktion</span><span class="sxs-lookup"><span data-stu-id="46e08-103">getEncryptionPublicKey function</span></span>
 
-> <span data-ttu-id="56444-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="56444-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="46e08-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="46e08-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="56444-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="56444-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="46e08-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="46e08-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="56444-106">Abrufen eines öffentlichen Schlüssels zum Verschlüsseln des Apple-Geräte Registrierungsprogramm-Tokens</span><span class="sxs-lookup"><span data-stu-id="56444-106">Get a public key to use to encrypt the Apple device enrollment program token</span></span>
+<span data-ttu-id="46e08-106">Abrufen eines öffentlichen Schlüssels zum Verschlüsseln des Apple-Geräte Registrierungsprogramm-Tokens</span><span class="sxs-lookup"><span data-stu-id="46e08-106">Get a public key to use to encrypt the Apple device enrollment program token</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="56444-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="56444-107">Prerequisites</span></span>
-<span data-ttu-id="56444-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="56444-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="46e08-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="46e08-107">Prerequisites</span></span>
+<span data-ttu-id="46e08-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46e08-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="56444-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="56444-110">Permission type</span></span>|<span data-ttu-id="56444-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="56444-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="46e08-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="46e08-110">Permission type</span></span>|<span data-ttu-id="46e08-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="46e08-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="56444-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="56444-112">Delegated (work or school account)</span></span>|<span data-ttu-id="56444-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="56444-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="56444-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="56444-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="56444-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="56444-115">Not supported.</span></span>|
-|<span data-ttu-id="56444-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="56444-116">Application</span></span>|<span data-ttu-id="56444-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="56444-117">Not supported.</span></span>|
+|<span data-ttu-id="46e08-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="46e08-112">Delegated (work or school account)</span></span>|<span data-ttu-id="46e08-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="46e08-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="46e08-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="46e08-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="46e08-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="46e08-115">Not supported.</span></span>|
+|<span data-ttu-id="46e08-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="46e08-116">Application</span></span>|<span data-ttu-id="46e08-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="46e08-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="56444-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="56444-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46e08-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="46e08-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30154264"
 GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncryptionPublicKey
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="56444-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="56444-119">Request headers</span></span>
-|<span data-ttu-id="56444-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="56444-120">Header</span></span>|<span data-ttu-id="56444-121">Wert</span><span class="sxs-lookup"><span data-stu-id="56444-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="46e08-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="46e08-119">Request headers</span></span>
+|<span data-ttu-id="46e08-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="46e08-120">Header</span></span>|<span data-ttu-id="46e08-121">Wert</span><span class="sxs-lookup"><span data-stu-id="46e08-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="56444-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="56444-122">Authorization</span></span>|<span data-ttu-id="56444-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="56444-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="56444-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="56444-124">Accept</span></span>|<span data-ttu-id="56444-125">application/json</span><span class="sxs-lookup"><span data-stu-id="56444-125">application/json</span></span>|
+|<span data-ttu-id="46e08-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="46e08-122">Authorization</span></span>|<span data-ttu-id="46e08-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="46e08-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="46e08-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="46e08-124">Accept</span></span>|<span data-ttu-id="46e08-125">application/json</span><span class="sxs-lookup"><span data-stu-id="46e08-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="56444-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="56444-126">Request body</span></span>
-<span data-ttu-id="56444-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="56444-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46e08-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="46e08-126">Request body</span></span>
+<span data-ttu-id="46e08-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="46e08-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="56444-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="56444-128">Response</span></span>
-<span data-ttu-id="56444-129">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `200 OK` und ein Objekt des Typs „String“ im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="56444-129">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="46e08-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="46e08-128">Response</span></span>
+<span data-ttu-id="46e08-129">Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine Zeichenfolge im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="46e08-129">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="56444-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="56444-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="46e08-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="46e08-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="56444-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="56444-131">Request</span></span>
-<span data-ttu-id="56444-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="56444-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="46e08-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="46e08-131">Request</span></span>
+<span data-ttu-id="46e08-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="46e08-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncryptionPublicKey
 ```
 
-### <a name="response"></a><span data-ttu-id="56444-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="56444-133">Response</span></span>
-<span data-ttu-id="56444-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="56444-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="46e08-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="46e08-133">Response</span></span>
+<span data-ttu-id="46e08-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="46e08-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
