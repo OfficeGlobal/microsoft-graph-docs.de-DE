@@ -4,12 +4,12 @@ description: Erstellen eines neuen roleScopeTag-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c17eebbcdff6ee9f466568baa8ace0825c73771d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dbdc7089dc7f02fc49610e3feab07105a83c5984
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154236"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959453"
 ---
 # <a name="create-rolescopetag"></a>RoleScopeTag erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154236"
 Erstellen eines neuen [roleScopeTag](../resources/intune-rbac-rolescopetag.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,8 +51,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
-|displayName|Zeichenfolge|Die Anzeige oder der angezeigte Name des Rollenbereichs Tags.|
+|id|String|Schlüssel der Entität Er ist schreibgeschützt und wird automatisch generiert.|
+|displayName|String|Die Anzeige oder der angezeigte Name des Rollenbereichs Tags.|
 |description|Zeichenfolge|Beschreibung des Rollenbereichs Tags.|
 
 

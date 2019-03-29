@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceManagementScriptDeviceS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65da8583b854c2cd912e877729bbe3ec7735c92a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 185b41fec2856c84a8729877a7d993715b7de425
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170609"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958165"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170609"
 Aktualisieren der Eigenschaften eines [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,12 +51,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Gerätestatus Entität des Device Management-Skripts.|
+|id|String|Schlüssel der Gerätestatus Entität des Device Management-Skripts.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status der letzten Ausführung des Geräteverwaltungs-Skripts. Mögliche Werte sind: `unknown`, `success` und `fail`.|
-|resultMessage|Zeichenfolge|Details der Ausführungs Ausgabe.|
+|resultMessage|String|Details der Ausführungs Ausgabe.|
 |lastStateUpdateDateTime|DateTimeOffset|Der letzte Zeitpunkt, zu dem das Geräte Verwaltungsskript ausgeführt wird.|
 |errorCode|Int32|Fehlercode, der einer fehlerhaften Ausführung des Geräteverwaltungsskripts entspricht.|
-|errorDescription|Zeichenfolge|Fehlerbeschreibung, die dem fehlerhaften Ausführen des Geräteverwaltungsskripts entspricht.|
+|errorDescription|String|Fehlerbeschreibung, die dem fehlerhaften Ausführen des Geräteverwaltungsskripts entspricht.|
 
 
 

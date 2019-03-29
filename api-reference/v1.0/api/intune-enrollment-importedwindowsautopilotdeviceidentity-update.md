@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines importedWindowsAutopilotDevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a81e7b8291bab7698869c60d5403fd07be08cb5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1a8668fa78c5996b2d33af18e7cbd23a03df1200
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261334"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959768"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity aktualisieren
 
@@ -18,7 +18,7 @@ ms.locfileid: "30261334"
 Aktualisieren der Eigenschaften eines [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -49,10 +49,10 @@ Die folgende Tabelle enthält die Eigenschaften, die beim Erstellen des [importe
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|GUID des Objekts|
+|id|String|GUID des Objekts|
 |orderIdentifier|String|Auftrags-ID des Windows AutoPilot-Geräts|
-|serialNumber|String|Seriennummer des Windows AutoPilot-Geräts|
-|productKey|Zeichenfolge|Product Key des Windows AutoPilot-Geräts|
+|serialNumber|Zeichenfolge|Seriennummer des Windows AutoPilot-Geräts|
+|productKey|String|Product Key des Windows AutoPilot-Geräts|
 |hardwareIdentifier|Binary|Hardware-Blob des Windows AutoPilot-Geräts|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Aktueller Status des importierten Geräts|
 
@@ -86,7 +86,7 @@ Content-length: 541
 }
 ```
 
-### <a name="response"></a>Reaktion
+### <a name="response"></a>Antwort
 Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.
 ``` http
 HTTP/1.1 200 OK

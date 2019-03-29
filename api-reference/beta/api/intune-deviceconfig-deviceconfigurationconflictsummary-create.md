@@ -4,12 +4,12 @@ description: Erstellen eines neuen deviceConfigurationConflictSummary-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f11731ba86c6ada7474cf3b854d30ec0653e736
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2e59946ce8e252daedc13cae4800eece4fdd8bd4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143204"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960685"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143204"
 Erstellen eines neuen [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md)-Sammlung|Die Gruppe von Richtlinien, die mit der angegebenen Einstellung in Konflikt stehen|
-|id|Zeichenfolge|Die ID für diesen Satz von Konflikt verursachenden Richtlinien. Diese ID ist die IDs aller Richtlinien in ConflictingDeviceConfigurations in lexikografische Reihenfolge durch Unterstriche getrennt.|
+|id|String|Die ID für diesen Satz von Konflikt verursachenden Richtlinien. Diese ID ist die IDs aller Richtlinien in ConflictingDeviceConfigurations in lexikografische Reihenfolge durch Unterstriche getrennt.|
 |contributingSettings|String collection|Die Gruppe von Einstellungen, die mit den angegebenen Richtlinien in Konflikt stehen|
 |deviceCheckinsImpacted|Int32|Die Anzahl der checkins, die von den widersprüchlichen Richtlinien und Einstellungen beeinflusst wurden|
 

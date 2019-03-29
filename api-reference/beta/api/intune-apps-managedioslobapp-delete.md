@@ -4,12 +4,12 @@ description: Löscht eine managedIOSLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 464bf47c3f4e0f585abc4b28782dd5701fc78cdc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d28b5b50f1bd1f11fe40faf9a7d9c2a14c6aeb69
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154803"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960013"
 ---
 # <a name="delete-managedioslobapp"></a>managedIOSLobApp löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154803"
 Löscht eine [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

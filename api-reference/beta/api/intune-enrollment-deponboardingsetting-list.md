@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der depOnboardingSettin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c8ffd4ac7b76a692978c73362ec94400facf139
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8a5151b4ab04cd5b1b76089f8ab5fd5c8e2519ed
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141461"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959138"
 ---
 # <a name="list-deponboardingsettings"></a>DepOnboardingSettings aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141461"
 AufListen von Eigenschaften und Beziehungen der [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

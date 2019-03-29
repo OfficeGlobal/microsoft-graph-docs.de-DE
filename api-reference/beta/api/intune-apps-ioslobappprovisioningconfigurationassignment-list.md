@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der iosLobAppProvisioni
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cf3755a54d3ad7c3a09c2342640a783a4a131ff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 93e6d6661e53fa401abc643c0aa14d38815be5cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170539"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960839"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>IosLobAppProvisioningConfigurationAssignments aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170539"
 AufListen von Eigenschaften und Beziehungen der [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

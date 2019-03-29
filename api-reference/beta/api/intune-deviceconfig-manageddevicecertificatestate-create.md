@@ -4,12 +4,12 @@ description: Erstellen eines neuen managedDeviceCertificateState-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65d4f145fd70787004b915caeaab9d042ff661ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 032005b88f248ec68781fb08d84295d22aa7610a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174053"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959033"
 ---
 # <a name="create-manageddevicecertificatestate"></a>ManagedDeviceCertificateState erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174053"
 Erstellen eines neuen [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -66,30 +66,29 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|Deviceplatform wurde|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte sind: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` und `androidWorkProfile`.|
+|id|String|Schlüssel der Entität|
+|Deviceplatform wurde|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Geräteplattform. Mögliche Werte: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Schlüsselverwendung. Mögliche Werte sind: `keyEncipherment` und `digitalSignature`.|
 |certificateValidityPeriodUnits|[Certificatevalidityperiodscale wurden](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Gültigkeitszeitraum Einheiten. Mögliche Werte sind: `days`, `months` und `years`.|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|VeröffentlichungsStatus. Mögliche Werte sind: `unknown`, `challengeIssued`, `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded` `enrollmentNotNeeded` `revoked`,,,,,,,, `removedFromCollection`,, `installed` ,,,,,, `renewVerified` `installFailed` `issueFailed` , `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Schlüsselspeicheranbieter. Mögliche Werte: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
+|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Schlüsselspeicheranbieter. Mögliche Werte sind: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail` und `useSoftwareKsp`.|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Format des Antragstellernamens. Mögliche Werte: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Format für alternative Antragstellernamen. Mögliche Werte: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Widerrufen des Status. Mögliche Werte: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Zeichenfolge|Anzeigename des Zertifikat Profils|
-|deviceDisplayName|Zeichenfolge|Anzeigename des Geräts|
-|userDisplayName|Zeichenfolge|Anzeigename des Benutzers.
-|
+|certificateProfileDisplayName|String|Anzeigename des Zertifikat Profils|
+|deviceDisplayName|String|Anzeigename des Geräts|
+|userDisplayName|Zeichenfolge|Anzeigename des Benutzers|
 |certificateExpirationDateTime|DateTimeOffset|Zertifikatablaufdatum|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Letzte Änderung des Zertifikat Ausstellungs Status|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Letzte Änderung des Zertifikat Ausstellungs Status|
-|certificateIssuer|Zeichenfolge|Aussteller|
-|certificateThumbprint|Zeichenfolge|Fingerabdruck|
-|certificateSerialNumber|Zeichenfolge|Seriennummer|
+|certificateIssuer|String|Aussteller|
+|certificateThumbprint|String|Fingerabdruck|
+|certificateSerialNumber|String|Seriennummer|
 |certificateKeyLength|Int32|Schlüssellänge|
-|certificateEnhancedKeyUsage|Zeichenfolge|Erweiterte Schlüsselverwendung|
+|certificateEnhancedKeyUsage|String|Erweiterte Schlüsselverwendung|
 |certificateValidityPeriod|Int32|Gültigkeitszeitraum|
-|certificateSubjectNameFormatString|Zeichenfolge|Formatzeichenfolge für den Antragstellernamen für benutzerdefinierte Antragstellernamen Formate|
-|certificateSubjectAlternativeNameFormatString|Zeichenfolge|Formatzeichenfolge für alternative Antragstellernamen für benutzerdefinierte Formate|
+|certificateSubjectNameFormatString|String|Formatzeichenfolge für den Antragstellernamen für benutzerdefinierte Antragstellernamen Formate|
+|certificateSubjectAlternativeNameFormatString|String|Formatzeichenfolge für alternative Antragstellernamen für benutzerdefinierte Formate|
 |certificateIssuanceDateTime|DateTimeOffset|Veröffentlichungsdatum|
 |certificateErrorCode|Int32|Fehlercode|
 

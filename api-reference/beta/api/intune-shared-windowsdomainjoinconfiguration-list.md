@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsDomainJoinCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 12e2b16bb919b17107e41aadae307b6a58fc0ae2
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 19f4687039e2a07b32994d855f3e215da2af85c8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571032"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960265"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>WindowsDomainJoinConfigurations aufListen
 
@@ -19,7 +19,7 @@ ms.locfileid: "30571032"
 
 AufListen von Eigenschaften und Beziehungen der [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) -Objekte.
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

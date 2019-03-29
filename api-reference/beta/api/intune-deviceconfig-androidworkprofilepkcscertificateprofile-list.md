@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der androidWorkProfileP
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 195b4eb6bcabb6a00086ca11638788d77f61caae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 81a31b40e3e0d7ef4a8caf539f636deb45aff25c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171848"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958676"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>AndroidWorkProfilePkcsCertificateProfiles aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171848"
 AufListen von Eigenschaften und Beziehungen der [androidWorkProfilePkcsCertificateProfile](../resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

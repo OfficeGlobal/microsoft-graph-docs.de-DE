@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „auditEvent“
-description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs auditEvent auf.
+description: Auflisten von Eigenschaften und Beziehungen der auditEvent-Objekte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 979d8b9a9a045d99733ccdf5389510069ab21b74
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 37e730a605e65af74666d0baa4b7a5ed2f04f781
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165800"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959383"
 ---
 # <a name="list-auditevents"></a>Auflisten von „auditEvent“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165800"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [auditEvent](../resources/intune-auditing-auditevent.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der restrictedAppsViola
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a66a87f30c815c45d9d8f39b44bd8409eb57705
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03e92ad1441c4e45f04aa6644ca3c8730179e2fc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172107"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957353"
 ---
 # <a name="list-restrictedappsviolations"></a>RestrictedAppsViolations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172107"
 AufListen von Eigenschaften und Beziehungen der [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des officeSuiteApp-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ba5785624b78ab614e63c12d9ac1cdae36b302f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: aa744933f90af9c0dd174a5fc22bc1993b9105c5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571452"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958865"
 ---
 # <a name="get-officesuiteapp"></a>OfficeSuiteApp abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571452"
 Lesen von Eigenschaften und Beziehungen des [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

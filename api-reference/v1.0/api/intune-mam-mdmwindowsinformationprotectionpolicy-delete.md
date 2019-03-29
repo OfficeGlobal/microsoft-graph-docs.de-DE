@@ -1,15 +1,15 @@
 ---
 title: mdmWindowsInformationProtectionPolicy löschen
-description: Löscht Objekte des Typs mdmWindowsInformationProtectionPolicy.
+description: Löscht ein mdmWindowsInformationProtectionPolicy-Objekt.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5c8a733b14a922cc434cd5ecda63c9733f152b2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 0b41e5b6f83798cda831e9e1d9a122bc96c78798
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262013"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959110"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>mdmWindowsInformationProtectionPolicy löschen
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262013"
 Löscht ein [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

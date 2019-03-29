@@ -1,15 +1,15 @@
 ---
 title: Abrufen von „deviceAppManagement“
-description: Liest die Eigenschaften und Beziehungen von Objekten des Typs deviceAppManagement.
+description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs deviceAppManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c5d54e1dfeb67192465468a8abe2f26a39c2c50a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 841282551258c23dc57e34c06e803d4184f86809
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257386"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958403"
 ---
 # <a name="get-deviceappmanagement"></a>Abrufen von „deviceAppManagement“
 
@@ -19,7 +19,7 @@ Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [dev
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/concepts/permissions-reference.md).  Beachten Sie, dass die entsprechende Berechtigung je nach Workflow variiert.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie unter [Berechtigungen](/graph/permissions-reference).  Beachten Sie, dass die entsprechende Berechtigung je nach Workflow variiert.
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,7 +51,7 @@ Geben Sie für diese Methode keinen Anforderungstext an.
 ## <a name="response"></a>Antwort
 Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) im Antworttext zurück.
 
-## <a name="example-request"></a>Beispielanforderung
+## <a name="example-request"></a>Beispiel für eine Anforderung
 
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement

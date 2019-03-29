@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des appLogCollectionRequest
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7aa03741987a6ac013b80ae9038e2a993aec756
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f3daa16ac5a343db6f057e74f80096c568bc0eb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959852"
 ---
 # <a name="get-applogcollectionrequest"></a>AppLogCollectionRequest abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144926"
 Lesen von Eigenschaften und Beziehungen des [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

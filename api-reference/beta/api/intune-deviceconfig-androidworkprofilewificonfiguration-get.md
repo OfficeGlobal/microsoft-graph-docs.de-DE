@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidWorkProfileWiFiC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a47e2afa8dc58e67ed650e6bf4eb50bae7b2f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd8e8cd7f06cb2ae8ee892b2105d5a396870b1f6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958851"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>AndroidWorkProfileWiFiConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157750"
 Lesen von Eigenschaften und Beziehungen des [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

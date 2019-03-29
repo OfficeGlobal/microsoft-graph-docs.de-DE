@@ -4,12 +4,12 @@ description: Erstellen eines neuen userPFXCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 32ac31aba2a3d88feb8b9254de7eedbd71d99a52
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158709"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958501"
 ---
 # <a name="create-userpfxcertificate"></a>UserPFXCertificate erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158709"
 Erstellen eines neuen [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,17 +50,17 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für das PFX-Zertifikat.|
-|Fingerabdruck|Zeichenfolge|SHA-1 Fingerabdruck des PFX-Zertifikats.|
+|id|String|Eindeutiger Bezeichner für das PFX-Zertifikat.|
+|Fingerabdruck|String|SHA-1 Fingerabdruck des PFX-Zertifikats.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Zweck des Zertifikats aus der Sicht der Bereitstellung. Mögliche Werte: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|Zeichenfolge|Benutzerprinzipal Name des PFX-Zertifikats.|
+|userPrincipalName|String|Benutzerprinzipal Name des PFX-Zertifikats.|
 |startDateTime|DateTimeOffset|Gültigkeitsdatum/-Uhrzeit des Zertifikats.|
 |expirationDateTime|DateTimeOffset|Gültigkeitsablauf Datum/-Uhrzeit des Zertifikats.|
-|providerName|Zeichenfolge|Crypto-Anbieter, der zum Verschlüsseln dieses BLOBs verwendet wird.|
-|keyName|Zeichenfolge|Der Name des Schlüssels (innerhalb des Anbieters), der zum Verschlüsseln des BLOBs verwendet wird.|
+|providerName|String|Crypto-Anbieter, der zum Verschlüsseln dieses BLOBs verwendet wird.|
+|keyName|String|Der Name des Schlüssels (innerhalb des Anbieters), der zum Verschlüsseln des BLOBs verwendet wird.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Vom Anbieter während der Verschlüsselung/Entschlüsselung verwendetes Padding-Schema. Mögliche Werte sind: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384` und `oaepSha512`.|
 |encryptedPfxBlob|Binär|Verschlüsselter PFX-BLOB.|
-|encryptedPfxPassword|Zeichenfolge|Kennwort für verSchlüsselte PFX.|
+|encryptedPfxPassword|String|Kennwort für verSchlüsselte PFX.|
 |createdDateTime|DateTimeOffset|Datum/Uhrzeit des Imports dieses PFX-Zertifikats.|
 |lastModifiedDateTime|DateTimeOffset|Datum/Uhrzeit der letzten Änderung dieses PFX-Zertifikats.|
 

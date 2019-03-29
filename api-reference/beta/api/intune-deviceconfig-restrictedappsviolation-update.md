@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines restrictedAppsViolation-Objek
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc2a440872d399cc684c2ce52ce2d825ba52f9ce
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 514b2398d5198f5d9d5fa8c6895ce3fa56beec20
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163350"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958844"
 ---
 # <a name="update-restrictedappsviolation"></a>RestrictedAppsViolation aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163350"
 Aktualisieren der Eigenschaften eines [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,13 +50,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Eindeutiger Bezeichner für das Objekt. Zusammengesetzt aus "Account-ID", "Device", "Policies" und "userId"|
+|id|String|Eindeutiger Bezeichner für das Objekt. Zusammengesetzt aus "Account-ID", "Device", "Policies" und "userId"|
 |userId|String|Benutzer eindeutiger Bezeichner, muss GUID sein|
-|userName|Zeichenfolge|Benutzername|
-|managedDeviceId|Zeichenfolge|Eindeutiger Bezeichner für verwaltetes Gerät, muss GUID sein|
-|deviceName|Zeichenfolge|Gerätename|
-|deviceConfigurationId|Zeichenfolge|Device Configuration Profile Unique Identifier, must be GUID|
-|deviceConfigurationName|Zeichenfolge|Name des Geräte Konfigurationsprofils|
+|userName|String|Benutzername|
+|managedDeviceId|String|Eindeutiger Bezeichner für verwaltetes Gerät, muss GUID sein|
+|deviceName|String|Gerätename|
+|deviceConfigurationId|String|Device Configuration Profile Unique Identifier, must be GUID|
+|deviceConfigurationName|String|Name des Geräte Konfigurationsprofils|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plattformtyp. Mögliche Werte: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Eingeschränkter apps-Status. Mögliche Werte sind: `prohibitedApps` und `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) -Sammlung|Liste der verletzten eingeschränkten apps|

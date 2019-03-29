@@ -1,26 +1,26 @@
 ---
-title: Abrufen von „managedDevice“
-description: Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs managedDevice.
+title: managedDevice abrufen
+description: Lesen von Eigenschaften und Beziehungen des managedDevice-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b5796686161c0ad532132670ef47bf9487ee6ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4f892d979d9d75bac330409a2c9c9a42f99baa8d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172982"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960454"
 ---
-# <a name="get-manageddevice"></a>Abrufen von „managedDevice“
+# <a name="get-manageddevice"></a>managedDevice abrufen
 
 > **Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.
 
 > **Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.
 
-Diese Methode liest die Eigenschaften und Beziehungen von Objekten des Typs [managedDevice](../resources/intune-devices-manageddevice.md).
+Lesen von Eigenschaften und Beziehungen des [managedDevice](../resources/intune-devices-manageddevice.md)-Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -53,7 +53,7 @@ Diese Methode unterstützt die [OData-Abfrageparameter](https://docs.microsoft.c
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Methode den Antwortcode `200 OK` und ein Objekt des Typs [managedDevice](../resources/intune-devices-manageddevice.md) im Antworttext zurück.
+Wenn die Methode erfolgreich verläuft, werden der Antwortcode `200 OK` und ein [managedDevice](../resources/intune-devices-manageddevice.md)-Objekt im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

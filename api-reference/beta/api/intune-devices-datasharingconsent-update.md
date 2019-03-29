@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines dataSharingConsent-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42be19a02b5839023a76568a1457df105036c4de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f89d81976eeea5cb4832aeb670c0bee26069487
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157995"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958018"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157995"
 Aktualisieren der Eigenschaften eines [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,13 +50,13 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Die Einwilligungs-ID für die Datenfreigabe|
-|serviceDisplayName|Zeichenfolge|Der Anzeigename des Dienst-Arbeitsflusses|
-|termsUrl|Zeichenfolge|Die TermsUrl für die Einwilligung zur Datenfreigabe|
-|granted|Boolean|Der erteilte Status für die Einwilligung zur Datenfreigabe|
+|id|String|Die Einwilligungs-ID für die Datenfreigabe|
+|serviceDisplayName|String|Der Anzeigename des Dienst-Arbeitsflusses|
+|termsUrl|String|Die TermsUrl für die Einwilligung zur Datenfreigabe|
+|granted|Boolescher Wert|Der erteilte Status für die Einwilligung zur Datenfreigabe|
 |grantDateTime|DateTimeOffset|Die Zeit Genehmigung für dieses Konto wurde erteilt.|
-|grantedByUpn|Zeichenfolge|Der UPN des Benutzers, der die Einwilligung für dieses Konto erteilt hat.|
-|grantedByUserId|Zeichenfolge|Die UserId des Benutzers, der die Einwilligung für dieses Konto erteilt hat|
+|grantedByUpn|String|Der UPN des Benutzers, der die Einwilligung für dieses Konto erteilt hat.|
+|grantedByUserId|String|Die UserId des Benutzers, der die Einwilligung für dieses Konto erteilt hat|
 
 
 

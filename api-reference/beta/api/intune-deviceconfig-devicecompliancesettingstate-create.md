@@ -4,12 +4,12 @@ description: Diese Methode erstellt ein neues Objekt des Typs deviceComplianceSe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e28121ec0596d11bead62b0622d115c5c8f46d4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b5661cc17d3fa3e605e0da5895f18b5099950517
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145479"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957017"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Erstellen von „deviceComplianceSettingState“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145479"
 Diese Methode erstellt ein neues Objekt des Typs [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,18 +50,18 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Schlüssel der Entität|
+|id|Zeichenfolge|Schlüssel der Entität|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Geräte Plattformtyp. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6` `nokia` `windowsPhone` `mac` `winCE` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM`,,,,,,,, `holoLens`,, `androidEnterprise` ,,,,,, `surfaceHub` `androidForWork` `winEmbedded` , `blackberry`, `palm`, `unknown`.|
-|setting|Zeichenfolge|Klassenname und Eigenschaftenname der Einstellung|
-|settingName|Zeichenfolge|Gemeldeter Einstellungsname|
-|deviceId|Zeichenfolge|Gemeldete Geräte-ID|
-|deviceName|Zeichenfolge|Gemeldeter Gerätename|
-|userId|Zeichenfolge|Gemeldete Benutzer-ID|
-|userEmail|String|Gemeldete Benutzer-E-Mail-Adresse|
-|userName|Zeichenfolge|Gemeldeter Benutzername|
-|userPrincipalName|String|Gemeldeter Benutzerprinzipalname|
-|deviceModel|Zeichenfolge|Gemeldetes Gerätemodell|
-|state|[Wurde](../resources/intune-shared-compliancestatus.md)|Der Kompatibilitätsstatus der Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|Einstellung|String|Der Klassenname und der Eigenschaftenname der Einstellung.|
+|settingName|String|Der gemeldete Einstellungsname|
+|deviceId|String|Die gemeldete Geräte-ID|
+|deviceName|Zeichenfolge|Der gemeldete Gerätename|
+|userId|String|Die gemeldete Benutzer-ID|
+|userEmail|String|Die gemeldete Benutzer-E-Mail-Adresse|
+|userName|String|Gemeldeter Benutzername|
+|userPrincipalName|String|Der gemeldete Benutzerprinzipalname|
+|deviceModel|String|Gemeldetes Gerätemodell|
+|state|[Wurde](../resources/intune-shared-compliancestatus.md)|Der Kompatibilitätsstatus der Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Datum und Uhrzeit des Ablaufs der Toleranzperiode für die Gerätekonformität|
 
 

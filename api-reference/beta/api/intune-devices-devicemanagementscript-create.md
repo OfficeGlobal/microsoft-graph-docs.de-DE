@@ -4,12 +4,12 @@ description: Erstellen eines neuen Devicemanagementscript hinzugefügt-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7a27fef1e3487bf39a0140bad51c7ecae7e21a5
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 1a46e5eed8a4b5c678c9510d7471e3b7dc450ccb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570760"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959278"
 ---
 # <a name="create-devicemanagementscript"></a>Devicemanagementscript hinzugefügt erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570760"
 Erstellen eines neuen [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -58,10 +58,10 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |createdDateTime|DateTimeOffset|Das Datum und die Uhrzeit, zu der das Geräte Verwaltungsskript erstellt wurde.|
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Geräteverwaltungsskripts.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Gibt den Typ des Ausführungskontexts an. Mögliche Werte sind: `system` und `user`.|
-|enforceSignatureCheck|Boolesch|Geben Sie an, ob die skriptsignatur überprüft werden muss.|
+|enforceSignatureCheck|Boolescher Wert|Geben Sie an, ob die skriptsignatur überprüft werden muss.|
 |fileName|String|Skriptdateiname.|
 |Rolescopetagids zur|String collection|Liste der Bereichstag-IDs für diese PowerShellScript-Instanz.|
-|runAs32Bit|Boolesch|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
+|runAs32Bit|Boolescher Wert|Ein Wert, der angibt, ob das PowerShell-Skript als 32-Bit ausgeführt werden soll|
 
 
 

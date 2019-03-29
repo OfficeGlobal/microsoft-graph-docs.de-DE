@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines mobileAppInstallSummary-Objek
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6065083d5ceb5892a95a6b12bc99657eca7d3eeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 980f6b9c4712bea8fd4060f627603310ef8c6747
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152955"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959663"
 ---
 # <a name="update-mobileappinstallsummary"></a>MobileAppInstallSummary aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152955"
 Aktualisieren der Eigenschaften eines [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |installedDeviceCount|Int32|Die Anzahl der Geräte, die diese APP erfolgreich installiert haben.|
 |failedDeviceCount|Int32|Anzahl der Geräte, die diese APP nicht installiert haben.|
 |notApplicableDeviceCount|Int32|Die Anzahl der Geräte, die für diese APP nicht anwendbar sind.|

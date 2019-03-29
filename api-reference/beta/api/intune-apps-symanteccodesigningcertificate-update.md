@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines symantecCodeSigningCertificat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26a56296956c3955808a308989a0ca8ded5d4ae5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56c665a75d594d2f1ad0e28c3800348f0fbde9c3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168754"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957528"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168754"
 Aktualisieren der Eigenschaften eines [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -55,9 +55,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der CERT-Status, der für die Einrichtung oder nicht-Einrichtung vorgesehen ist. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |password|String|Das für die PFX-Datei erforderliche Kennwort.|
 |subjectName|Zeichenfolge|Der AntragsTeller Name für das Zertifikat.|
-|subject|Zeichenfolge|Der Subject-Wert für das Zertifikat.|
-|issuerName|Zeichenfolge|Der Aussteller Name für das Zertifikat.|
-|Aussteller|Zeichenfolge|Der Aussteller Wert für das Zertifikat.|
+|subject|String|Der Subject-Wert für das Zertifikat.|
+|issuerName|String|Der Aussteller Name für das Zertifikat.|
+|Aussteller|String|Der Aussteller Wert für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Der Typ des deSign Zertifikats als Symantec cert.|
 

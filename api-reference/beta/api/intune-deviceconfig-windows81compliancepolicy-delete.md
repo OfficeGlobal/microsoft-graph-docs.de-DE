@@ -4,12 +4,12 @@ description: Löscht Objekte des Typs windows81CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b86da7b5a2118b5c853d075163cb30d10d3ca948
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5b6213e336730efe802e04601174ffa3fbb4d1dc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143155"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957668"
 ---
 # <a name="delete-windows81compliancepolicy"></a>windows81CompliancePolicy löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143155"
 Löscht Objekte des Typs [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

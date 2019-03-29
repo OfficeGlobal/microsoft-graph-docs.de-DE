@@ -4,12 +4,12 @@ description: Löscht eine iosVppAppAssignedLicense.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3476af11fa035899d796ed3bd8421bc887d1456f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bfb33cbd05764dd8f8f13bbedf9526278b1b0ac6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173556"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957654"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>IosVppAppAssignedLicense löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173556"
 Löscht eine [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

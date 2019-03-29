@@ -1,15 +1,15 @@
 ---
 title: Aktualisieren von „managedEBookAssignment“
-description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs managedEBookAssignment.
+description: Aktualisieren der Eigenschaften eines managedEBookAssignment-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af1310428999c41aad52198e9c4e5199fd4887d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f85fe3da8970c671520c7086390108af9f3a0a97
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165128"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959231"
 ---
 # <a name="update-managedebookassignment"></a>Aktualisieren von „managedEBookAssignment“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165128"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,9 +50,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Zuweisungsziel für das E-Book|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Installationspriorität für das E-Book. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
+|id|String|Schlüssel der Entität|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Das Zuweisungsziel für das E-Book.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Die Installationspriorität für das E-Book. Mögliche Werte sind: `available`, `required`, `uninstall` und `availableWithoutEnrollment`.|
 
 
 

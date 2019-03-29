@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „iosVppEBook“
-description: Listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppEBook auf.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs iosVppEBook auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f21ed4efab8548ebb972d441639256eb914029d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3b5aa595063c3fdaf0769edac1f574610daa23da
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256798"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960139"
 ---
 # <a name="list-iosvppebooks"></a>Auflisten von „iosVppEBook“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256798"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [iosVppEBook](../resources/intune-books-iosvppebook.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

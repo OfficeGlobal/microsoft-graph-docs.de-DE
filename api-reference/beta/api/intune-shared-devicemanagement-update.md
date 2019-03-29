@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceManagement-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a71212652d789b08a8cb496b6b98c18b12d3e9c7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571053"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960405"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement aktualisieren
 
@@ -21,7 +21,7 @@ Aktualisieren der Eigenschaften eines [deviceManagement](../resources/intune-sha
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 Beachten Sie, dass die Berechtigung je nach Workflow variiert.
 
@@ -38,7 +38,7 @@ Beachten Sie, dass die Berechtigung je nach Workflow variiert.
 | &nbsp;&nbsp; **Fechten** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Benachrichtigung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **Rollenbasierte Zugriffssteuerung (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remotezugriff** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Remote Unterstützung** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Telekom-Spesenverwaltung** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 |id|String|Eindeutiger Bezeichner für das Gerät.|
 |**deviceConfiguration**|
 |intuneAccountId|GUID|InTune-Konto-ID für angegebenen Mandanten|
-|legacyPcManangementEnabled|Boolesch|Die Eigenschaft zum Aktivieren der nicht-MDM-verwalteten Legacy-PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
+|legacyPcManangementEnabled|Boolescher Wert|Die Eigenschaft zum Aktivieren der nicht-MDM-verwalteten Legacy-PC-Verwaltung für dieses Konto. Diese Eigenschaft ist schreibgeschützt.|
 |maximumDepTokens|Int32|Maximale Anzahl der pro-Mandanten zulässigen DEP-Token.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Einstellungen auf Kontoebene|
 |**deviceManagement**|

@@ -4,12 +4,12 @@ description: Löscht eine windowsKioskConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f64d9e0e5328fc90c53d7056b01f4f1e78cb79e1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c019c86cd75d167243f918602f9ffa77a79f14d9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172100"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959544"
 ---
 # <a name="delete-windowskioskconfiguration"></a>WindowsKioskConfiguration löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172100"
 Löscht eine [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
