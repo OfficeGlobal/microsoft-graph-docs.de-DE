@@ -4,31 +4,31 @@ description: Exportiert die Mobile Konfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 070eb7ee31fa3d4c278f8ba95d728bdce418eaeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2bb1ef99054527c058d5a1598133d3653ccf8777
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154397"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975364"
 ---
-# <a name="exportmobileconfig-function"></a><span data-ttu-id="b5517-103">exportMobileConfig-Funktion</span><span class="sxs-lookup"><span data-stu-id="b5517-103">exportMobileConfig function</span></span>
+# <a name="exportmobileconfig-function"></a><span data-ttu-id="f7dba-103">exportMobileConfig-Funktion</span><span class="sxs-lookup"><span data-stu-id="f7dba-103">exportMobileConfig function</span></span>
 
-> <span data-ttu-id="b5517-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b5517-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f7dba-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f7dba-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b5517-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="b5517-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f7dba-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="f7dba-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5517-106">Exportiert die Mobile Konfiguration</span><span class="sxs-lookup"><span data-stu-id="b5517-106">Exports the mobile configuration</span></span>
+<span data-ttu-id="f7dba-106">Exportiert die Mobile Konfiguration</span><span class="sxs-lookup"><span data-stu-id="f7dba-106">Exports the mobile configuration</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b5517-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="b5517-107">Prerequisites</span></span>
-<span data-ttu-id="b5517-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="b5517-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f7dba-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="f7dba-107">Prerequisites</span></span>
+<span data-ttu-id="f7dba-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7dba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5517-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b5517-110">Permission type</span></span>|<span data-ttu-id="b5517-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="b5517-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f7dba-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="f7dba-110">Permission type</span></span>|<span data-ttu-id="f7dba-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="f7dba-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5517-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b5517-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b5517-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="b5517-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="b5517-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="b5517-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5517-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b5517-115">Not supported.</span></span>|
-|<span data-ttu-id="b5517-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b5517-116">Application</span></span>|<span data-ttu-id="b5517-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b5517-117">Not supported.</span></span>|
+|<span data-ttu-id="f7dba-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="f7dba-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f7dba-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7dba-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="f7dba-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="f7dba-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f7dba-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f7dba-115">Not supported.</span></span>|
+|<span data-ttu-id="f7dba-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="f7dba-116">Application</span></span>|<span data-ttu-id="f7dba-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="f7dba-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b5517-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b5517-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7dba-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7dba-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30154397"
 GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b5517-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b5517-119">Request headers</span></span>
-|<span data-ttu-id="b5517-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="b5517-120">Header</span></span>|<span data-ttu-id="b5517-121">Wert</span><span class="sxs-lookup"><span data-stu-id="b5517-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f7dba-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="f7dba-119">Request headers</span></span>
+|<span data-ttu-id="f7dba-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="f7dba-120">Header</span></span>|<span data-ttu-id="f7dba-121">Wert</span><span class="sxs-lookup"><span data-stu-id="f7dba-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5517-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5517-122">Authorization</span></span>|<span data-ttu-id="b5517-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="b5517-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b5517-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="b5517-124">Accept</span></span>|<span data-ttu-id="b5517-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b5517-125">application/json</span></span>|
+|<span data-ttu-id="f7dba-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7dba-122">Authorization</span></span>|<span data-ttu-id="f7dba-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="f7dba-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f7dba-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="f7dba-124">Accept</span></span>|<span data-ttu-id="f7dba-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f7dba-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5517-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b5517-126">Request body</span></span>
-<span data-ttu-id="b5517-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="b5517-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7dba-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="f7dba-126">Request body</span></span>
+<span data-ttu-id="f7dba-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="f7dba-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b5517-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="b5517-128">Response</span></span>
-<span data-ttu-id="b5517-129">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `200 OK` und ein Objekt des Typs „String“ im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="b5517-129">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f7dba-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7dba-128">Response</span></span>
+<span data-ttu-id="f7dba-129">Bei erfolgreicher Ausführung gibt die Funktion den `200 OK` Antwortcode und eine Zeichenfolge im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="f7dba-129">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5517-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b5517-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f7dba-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f7dba-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5517-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="b5517-131">Request</span></span>
-<span data-ttu-id="b5517-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b5517-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f7dba-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="f7dba-131">Request</span></span>
+<span data-ttu-id="f7dba-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="f7dba-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}/exportMobileConfig
 ```
 
-### <a name="response"></a><span data-ttu-id="b5517-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="b5517-133">Response</span></span>
-<span data-ttu-id="b5517-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b5517-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f7dba-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="f7dba-133">Response</span></span>
+<span data-ttu-id="f7dba-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f7dba-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -4,31 +4,31 @@ description: AufListen von Eigenschaften und Beziehungen der windowsInformationP
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed0e69af9061151c6fc13cc62c7ec554655d2103
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1d599f1eaafcae1498d196852205f393274973eb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163595"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972515"
 ---
-# <a name="list-windowsinformationprotectionwipeactions"></a><span data-ttu-id="326df-103">WindowsInformationProtectionWipeActions aufListen</span><span class="sxs-lookup"><span data-stu-id="326df-103">List windowsInformationProtectionWipeActions</span></span>
+# <a name="list-windowsinformationprotectionwipeactions"></a><span data-ttu-id="22119-103">WindowsInformationProtectionWipeActions aufListen</span><span class="sxs-lookup"><span data-stu-id="22119-103">List windowsInformationProtectionWipeActions</span></span>
 
-> <span data-ttu-id="326df-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="326df-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="22119-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="22119-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="326df-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="326df-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="22119-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="22119-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="326df-106">AufListen von Eigenschaften und Beziehungen der [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="326df-106">List properties and relationships of the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) objects.</span></span>
+<span data-ttu-id="22119-106">AufListen von Eigenschaften und Beziehungen der [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekte.</span><span class="sxs-lookup"><span data-stu-id="22119-106">List properties and relationships of the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="326df-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="326df-107">Prerequisites</span></span>
-<span data-ttu-id="326df-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="326df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="22119-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="22119-107">Prerequisites</span></span>
+<span data-ttu-id="22119-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22119-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="326df-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="326df-110">Permission type</span></span>|<span data-ttu-id="326df-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="326df-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="22119-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="22119-110">Permission type</span></span>|<span data-ttu-id="22119-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="22119-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="326df-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="326df-112">Delegated (work or school account)</span></span>|<span data-ttu-id="326df-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="326df-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="326df-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="326df-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="326df-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="326df-115">Not supported.</span></span>|
-|<span data-ttu-id="326df-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="326df-116">Application</span></span>|<span data-ttu-id="326df-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="326df-117">Not supported.</span></span>|
+|<span data-ttu-id="22119-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="22119-112">Delegated (work or school account)</span></span>|<span data-ttu-id="22119-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="22119-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="22119-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="22119-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22119-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="22119-115">Not supported.</span></span>|
+|<span data-ttu-id="22119-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="22119-116">Application</span></span>|<span data-ttu-id="22119-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="22119-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="326df-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="326df-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22119-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="22119-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30163595"
 GET /deviceAppManagement/windowsInformationProtectionWipeActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="326df-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="326df-119">Request headers</span></span>
-|<span data-ttu-id="326df-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="326df-120">Header</span></span>|<span data-ttu-id="326df-121">Wert</span><span class="sxs-lookup"><span data-stu-id="326df-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="22119-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="22119-119">Request headers</span></span>
+|<span data-ttu-id="22119-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="22119-120">Header</span></span>|<span data-ttu-id="22119-121">Wert</span><span class="sxs-lookup"><span data-stu-id="22119-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="326df-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="326df-122">Authorization</span></span>|<span data-ttu-id="326df-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="326df-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="326df-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="326df-124">Accept</span></span>|<span data-ttu-id="326df-125">application/json</span><span class="sxs-lookup"><span data-stu-id="326df-125">application/json</span></span>|
+|<span data-ttu-id="22119-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="22119-122">Authorization</span></span>|<span data-ttu-id="22119-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="22119-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="22119-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="22119-124">Accept</span></span>|<span data-ttu-id="22119-125">application/json</span><span class="sxs-lookup"><span data-stu-id="22119-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="326df-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="326df-126">Request body</span></span>
-<span data-ttu-id="326df-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="326df-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="22119-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="22119-126">Request body</span></span>
+<span data-ttu-id="22119-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="22119-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="326df-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="326df-128">Response</span></span>
-<span data-ttu-id="326df-129">Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="326df-129">If successful, this method returns a `200 OK` response code and a collection of [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="22119-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="22119-128">Response</span></span>
+<span data-ttu-id="22119-129">Bei erfolgreicher Ausführung gibt die Methode den `200 OK` Antwortcode und eine Sammlung von [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) -Objekten im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="22119-129">If successful, this method returns a `200 OK` response code and a collection of [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="326df-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="326df-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="22119-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="22119-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="326df-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="326df-131">Request</span></span>
-<span data-ttu-id="326df-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="326df-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="22119-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="22119-131">Request</span></span>
+<span data-ttu-id="22119-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="22119-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions
 ```
 
-### <a name="response"></a><span data-ttu-id="326df-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="326df-133">Response</span></span>
-<span data-ttu-id="326df-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="326df-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="22119-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="22119-133">Response</span></span>
+<span data-ttu-id="22119-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="22119-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
