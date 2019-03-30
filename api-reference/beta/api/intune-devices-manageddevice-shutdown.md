@@ -4,31 +4,31 @@ description: Gerät abschalten
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3b37d282e88b90ee4e423db8960e56b0227899d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6763f4e0d556b776aa114c6c43983854378aac2b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166108"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987244"
 ---
-# <a name="shutdown-action"></a><span data-ttu-id="98750-103">shutDown-Aktion</span><span class="sxs-lookup"><span data-stu-id="98750-103">shutDown action</span></span>
+# <a name="shutdown-action"></a><span data-ttu-id="52d70-103">shutDown-Aktion</span><span class="sxs-lookup"><span data-stu-id="52d70-103">shutDown action</span></span>
 
-> <span data-ttu-id="98750-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="98750-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="52d70-104">**Wichtig:** Microsoft Graph-APIs unter der/Beta-Version können geändert werden; die Produktion wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="52d70-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="98750-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="98750-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="52d70-105">**Hinweis:** Die Microsoft Graph-API für InTune benötigt eine [aktive INTUNE-Lizenz](https://go.microsoft.com/fwlink/?linkid=839381) für den Mandanten.</span><span class="sxs-lookup"><span data-stu-id="52d70-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="98750-106">Gerät abschalten</span><span class="sxs-lookup"><span data-stu-id="98750-106">Shut down device</span></span>
+<span data-ttu-id="52d70-106">Gerät abschalten</span><span class="sxs-lookup"><span data-stu-id="52d70-106">Shut down device</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="98750-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="98750-107">Prerequisites</span></span>
-<span data-ttu-id="98750-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="98750-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="52d70-107">Voraussetzungen</span><span class="sxs-lookup"><span data-stu-id="52d70-107">Prerequisites</span></span>
+<span data-ttu-id="52d70-p101">Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52d70-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="98750-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="98750-110">Permission type</span></span>|<span data-ttu-id="98750-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="98750-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="52d70-110">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="52d70-110">Permission type</span></span>|<span data-ttu-id="52d70-111">Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)</span><span class="sxs-lookup"><span data-stu-id="52d70-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="98750-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="98750-112">Delegated (work or school account)</span></span>|<span data-ttu-id="98750-113">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="98750-113">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="98750-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="98750-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98750-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="98750-115">Not supported.</span></span>|
-|<span data-ttu-id="98750-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="98750-116">Application</span></span>|<span data-ttu-id="98750-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="98750-117">Not supported.</span></span>|
+|<span data-ttu-id="52d70-112">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="52d70-112">Delegated (work or school account)</span></span>|<span data-ttu-id="52d70-113">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="52d70-113">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="52d70-114">Delegiert (persönliches Microsoft-Konto)</span><span class="sxs-lookup"><span data-stu-id="52d70-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="52d70-115">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="52d70-115">Not supported.</span></span>|
+|<span data-ttu-id="52d70-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="52d70-116">Application</span></span>|<span data-ttu-id="52d70-117">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="52d70-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="98750-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="98750-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="52d70-118">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="52d70-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/shutDown
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="98750-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="98750-119">Request headers</span></span>
-|<span data-ttu-id="98750-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="98750-120">Header</span></span>|<span data-ttu-id="98750-121">Wert</span><span class="sxs-lookup"><span data-stu-id="98750-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="52d70-119">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="52d70-119">Request headers</span></span>
+|<span data-ttu-id="52d70-120">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="52d70-120">Header</span></span>|<span data-ttu-id="52d70-121">Wert</span><span class="sxs-lookup"><span data-stu-id="52d70-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="98750-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="98750-122">Authorization</span></span>|<span data-ttu-id="98750-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="98750-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="98750-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="98750-124">Accept</span></span>|<span data-ttu-id="98750-125">application/json</span><span class="sxs-lookup"><span data-stu-id="98750-125">application/json</span></span>|
+|<span data-ttu-id="52d70-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="52d70-122">Authorization</span></span>|<span data-ttu-id="52d70-123">Bearer&lt;token&gt; erforderlich</span><span class="sxs-lookup"><span data-stu-id="52d70-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="52d70-124">Annehmen</span><span class="sxs-lookup"><span data-stu-id="52d70-124">Accept</span></span>|<span data-ttu-id="52d70-125">application/json</span><span class="sxs-lookup"><span data-stu-id="52d70-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="98750-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="98750-126">Request body</span></span>
-<span data-ttu-id="98750-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="98750-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="52d70-126">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="52d70-126">Request body</span></span>
+<span data-ttu-id="52d70-127">Geben Sie für diese Methode keinen Anforderungstext an.</span><span class="sxs-lookup"><span data-stu-id="52d70-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="98750-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="98750-128">Response</span></span>
-<span data-ttu-id="98750-129">Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.</span><span class="sxs-lookup"><span data-stu-id="98750-129">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="52d70-128">Antwort</span><span class="sxs-lookup"><span data-stu-id="52d70-128">Response</span></span>
+<span data-ttu-id="52d70-129">Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="52d70-129">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="98750-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="98750-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="52d70-130">Beispiel</span><span class="sxs-lookup"><span data-stu-id="52d70-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="98750-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="98750-131">Request</span></span>
-<span data-ttu-id="98750-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="98750-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="52d70-131">Anforderung</span><span class="sxs-lookup"><span data-stu-id="52d70-131">Request</span></span>
+<span data-ttu-id="52d70-132">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="52d70-132">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/shutDown
 ```
 
-### <a name="response"></a><span data-ttu-id="98750-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="98750-133">Response</span></span>
-<span data-ttu-id="98750-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="98750-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="52d70-133">Antwort</span><span class="sxs-lookup"><span data-stu-id="52d70-133">Response</span></span>
+<span data-ttu-id="52d70-p102">Nachfolgend sehen Sie ein Beispiel der Antwort. Hinweis: Das hier gezeigte Antwortobjekt ist möglicherweise aus Platzgründen abgeschnitten. Von einem tatsächlichen Aufruf werden alle Eigenschaften zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="52d70-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
