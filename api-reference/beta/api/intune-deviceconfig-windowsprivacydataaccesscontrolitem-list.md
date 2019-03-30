@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsPrivacyDataA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58aefa0b6f944d0af8207b6dac09e7d943aa004e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2afd9b49ccd59d36ce4677341ae0eec37df0fb55
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146571"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987160"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>WindowsPrivacyDataAccessControlItems aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146571"
 AufListen von Eigenschaften und Beziehungen der [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

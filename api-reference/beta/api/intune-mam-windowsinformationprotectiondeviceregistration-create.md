@@ -4,12 +4,12 @@ description: Erstellen eines neuen windowsInformationProtectionDeviceRegistratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b2e6131a1d4393026ebf88a7ed089ebba2390b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f07481326f3766e8a9b1173fc07914bb301d6588
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158842"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985991"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>WindowsInformationProtectionDeviceRegistration erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158842"
 Erstellen eines neuen [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,12 +50,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|userId|Zeichenfolge|ID, die diesem Geräte Registrierungseintrag zugeordnet ist.|
+|id|String|Schlüssel der Entität|
+|userId|String|ID, die diesem Geräte Registrierungseintrag zugeordnet ist.|
 |deviceRegistrationId|String|Gerätebezeichner für diesen Geräte Registrierungseintrag.|
-|deviceName|Zeichenfolge|Name des Geräts|
-|deviceType|Zeichenfolge|Gerätetyp, beispielsweise Windows Laptop und Windows phone.|
-|deviceMacAddress|Zeichenfolge|Mac-Adresse des Geräts.|
+|deviceName|String|Name des Geräts|
+|deviceType|String|Gerätetyp, beispielsweise Windows Laptop und Windows phone.|
+|deviceMacAddress|String|Mac-Adresse des Geräts.|
 |lastCheckInDateTime|DateTimeOffset|Zeitpunkt des letzten Eincheckens des Geräts.|
 
 

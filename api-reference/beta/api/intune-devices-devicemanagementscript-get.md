@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des Devicemanagementscript 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e3d8ae3c6b28d9a4527bdf477a0250c4d9c2aa2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e3d179fd3179988e5480b82c7a074fc1512c3ac0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170546"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968945"
 ---
 # <a name="get-devicemanagementscript"></a>Devicemanagementscript hinzugefügt abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170546"
 Lesen von Eigenschaften und Beziehungen des [devicemanagementscript hinzugefügt](../resources/intune-devices-devicemanagementscript.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Aufheben der Zuweisung des Ressourcenkontos von einem Autopilot-Ger
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ada22dab5e17d64315496ee9e0d7da25a5223740
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: fb79c58f20a0bcbca12e9211458765991defe8d3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631554"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986467"
 ---
 # <a name="unassignresourceaccountfromdevice-action"></a>unassignResourceAccountFromDevice-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631554"
 Aufheben der Zuweisung des Ressourcenkontos von einem Autopilot-Gerät.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

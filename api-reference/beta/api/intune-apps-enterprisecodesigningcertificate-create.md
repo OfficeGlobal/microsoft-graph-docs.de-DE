@@ -4,12 +4,12 @@ description: Erstellen eines neuen enterpriseCodeSigningCertificate-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20b65d8b1eda5eab4bdd3e497eb6d505753f04de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ce8700728284af5d2092d6fa6b3057368106eb6e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173101"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975238"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173101"
 Erstellen eines neuen [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -54,9 +54,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |content|Binär|Das Windows Enterprise-Code SignierungsZertifikat im RAW-Datenformat.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Der Zertifikat Status, der für die Einrichtung oder nicht-Einrichtung vorgesehen ist. Mögliche Werte sind: `notProvisioned` und `provisioned`.|
 |subjectName|Zeichenfolge|Der AntragsTeller Name für das Zertifikat.|
-|Betreff|Zeichenfolge|Der Subject-Wert für das Zertifikat.|
-|issuerName|Zeichenfolge|Der Aussteller Name für das Zertifikat.|
-|Aussteller|Zeichenfolge|Der Aussteller Wert für das Zertifikat.|
+|subject|String|Der Subject-Wert für das Zertifikat.|
+|issuerName|String|Der Aussteller Name für das Zertifikat.|
+|Aussteller|String|Der Aussteller Wert für das Zertifikat.|
 |expirationDateTime|DateTimeOffset|Das Ablaufdatum des Zertifikats.|
 |uploadDateTime|DateTimeOffset|Die Datum-Uhrzeit der mitGestaltung von CERT beim Hochladen.|
 

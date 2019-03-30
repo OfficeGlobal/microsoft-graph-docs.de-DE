@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „managedAppStatusRaw“
-description: Auflisten von Eigenschaften und Beziehungen der managedAppStatusRaw-Objekte.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs managedAppStatusRaw auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95a0f2dc4387a38f2d9f0d478c349a775b4c0403
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c634f1f6e8464190c8013e79cb5c22add75c0770
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152850"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985123"
 ---
 # <a name="list-managedappstatusraws"></a>Auflisten von „managedAppStatusRaw“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152850"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

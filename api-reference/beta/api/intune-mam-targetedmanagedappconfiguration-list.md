@@ -1,15 +1,15 @@
 ---
 title: Auflisten von „targetedManagedAppConfiguration“
-description: Auflisten von Eigenschaften und Beziehungen der targetedManagedAppConfiguration-Objekte.
+description: Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs targetedManagedAppConfiguration auf.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eafb158b01d6457273df6e7baf11971adf0e310
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d0f7ef2ddb50eaf376dbfbc5232da162769e60ea
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156714"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985606"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Auflisten von „targetedManagedAppConfiguration“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156714"
 Diese Methode listet die Eigenschaften und Beziehungen von Objekten des Typs [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) auf.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

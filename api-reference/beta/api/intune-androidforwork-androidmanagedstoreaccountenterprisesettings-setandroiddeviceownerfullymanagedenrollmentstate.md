@@ -4,12 +4,12 @@ description: Legt die Androidmanagedstoreaccountenterprisesettings hinzugefügt-
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a2517b59705ae8f46294b521aa5132c8bd8b1f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4301f4b58650f13bf94f37085ed3b4b07e68f329
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148916"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977765"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>setAndroidDeviceOwnerFullyManagedEnrollmentState-Aktion
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148916"
 Legt die Androidmanagedstoreaccountenterprisesettings hinzugefügt-AndroidDeviceOwnerFullyManagedEnrollmentEnabled auf den angegebenen Wert fest.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,12 +50,12 @@ In der folgenden Tabelle sind die Parameter aufgeführt, die mit dieser Aktion v
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|aktiviert|Boolescher Wert|Der Wert, auf den AndroidDeviceOwnerFullyManagedEnrollmentEnabled festgelegt werden soll.|
+|aktiviert|Boolean|Der Wert, auf den AndroidDeviceOwnerFullyManagedEnrollmentEnabled festgelegt werden soll.|
 
 
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Aktion den Antwortcode `204 No Content` zurück.
+Wenn die Aktion erfolgreich verläuft, wird der Antwortcode `204 No Content` zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 

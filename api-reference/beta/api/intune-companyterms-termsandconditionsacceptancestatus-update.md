@@ -1,15 +1,15 @@
 ---
 title: Aktualisieren von „termsAndConditionsAcceptanceStatus“
-description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs termsAndConditionsAcceptanceStatus.
+description: Aktualisieren der Eigenschaften eines termsAndConditionsAcceptanceStatus-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b48633ca987558cc4521d406c0518f6ad07d5d58
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 846cb823ab567aebea75dacf78ee3a3d36082578
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150806"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986278"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Aktualisieren von „termsAndConditionsAcceptanceStatus“
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150806"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,9 +50,9 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Eindeutiger Bezeichner der Entität|
+|id|String|Eindeutiger Bezeichner der Entität|
 |userDisplayName|String|Anzeigename des Benutzers, dessen Zustimmung die Entität darstellt|
-|acceptedVersion|Int32|Die Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
+|acceptedVersion|Int32|Versionsnummer der neuesten Version der Geschäftsbedingungen, die der Benutzer akzeptiert hat|
 |acceptedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Zustimmung zu den Bedingungen durch den Benutzer|
 
 

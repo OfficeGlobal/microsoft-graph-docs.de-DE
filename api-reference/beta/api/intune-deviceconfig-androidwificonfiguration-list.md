@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der androidWiFiConfigur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a91fbd7d6ed688af2046d8e55fb5e092f390da2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b15725bf5ed7b82ac37dcbf38bdc0729b68daa9c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173010"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982637"
 ---
 # <a name="list-androidwificonfigurations"></a>AndroidWiFiConfigurations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173010"
 AufListen von Eigenschaften und Beziehungen der [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

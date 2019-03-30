@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des androidWorkProfileGmail
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9e4955171cc585d58cd933f0ce9fcbcce18d81e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 001c2b803ac0fae75a90b0a9557f669706425804
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166402"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986033"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>AndroidWorkProfileGmailEasConfiguration abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166402"
 Lesen von Eigenschaften und Beziehungen des [androidWorkProfileGmailEasConfiguration](../resources/intune-deviceconfig-androidworkprofilegmaileasconfiguration.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

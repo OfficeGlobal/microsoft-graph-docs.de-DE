@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines managedDeviceEncryptionState-
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d05cf4b8d1401d887029bf614b86bb6b75ec7713
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9898d9eeb5e26dfa13707f5e93faa9907bcf1dee
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178199"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978213"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>ManagedDeviceEncryptionState aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30178199"
 Aktualisieren der Eigenschaften eines [managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,15 +50,15 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
-|userPrincipalName|Zeichenfolge|Benutzername|
+|id|String|Schlüssel der Entität|
+|userPrincipalName|String|Benutzername|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Plattform des Geräts. Mögliche Werte sind: `desktop`, `windowsRT`, `winMO6` `nokia` `windowsPhone` `mac` `winCE` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM`,,,,,,,, `holoLens`,, `androidEnterprise` ,,,,,, `surfaceHub` `androidForWork` `winEmbedded` , `blackberry`, `palm`, `unknown`.|
 |osVersion|String|Betriebssystemversion des Geräts|
-|tpmSpecificationVersion|Zeichenfolge|Geräte-TPM-Version|
+|tpmSpecificationVersion|String|Geräte-TPM-Version|
 |deviceName|Zeichenfolge|Gerätename|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Verschlüsselungs Bereitschaftsstatus. Mögliche Werte sind: `notReady` und `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Geräte Verschlüsselungsstatus. Mögliche Werte sind: `notEncrypted` und `encrypted`.|
-|encryptionPolicySettingState|[Wurde](../resources/intune-shared-compliancestatus.md)|Status der Verschlüsselungsrichtlinien Einstellung. Mögliche Werte sind: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` und `notAssigned`.|
+|encryptionPolicySettingState|[Wurde](../resources/intune-shared-compliancestatus.md)|Status der Verschlüsselungsrichtlinien Einstellung. Mögliche Werte: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |advancedBitLockerStates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|Erweiterter BitLocker-Status. Mögliche Werte sind: `success`, `noUserConsent`, `osVolumeEncryptionMethodMismatch` `osVolumeTpmRequired` `osVolumeTpmOnlyRequired` `osVolumeTpmPinRequired` `osVolumeTpmStartupKeyRequired` `recoveryKeyBackupFailed` `fixedDriveNotEncrypted` `fixedDriveEncryptionMethodMismatch` `loggedOnUserNonAdmin` `windowsRecoveryEnvironmentNotConfigured` `tpmNotAvailable`,,,, `tpmNotReady`,,,,,,,,,, `networkError` `osVolumeTpmPinStartupKeyRequired` `osVolumeUnprotected`|
 |policyDetails|[encryptionReportPolicyDetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md) -Sammlung|Richtlinien Details|
 

@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines depIOSEnrollmentProfile-Objek
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89ce85e09ee9ad59c19c67401238e2f0f950eaba
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea708a5ffe661f8024c027d1ac9ef10877474cd6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167732"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986943"
 ---
 # <a name="update-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167732"
 Aktualisieren der Eigenschaften eines [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,20 +50,20 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|string|Die GUID für das von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Objekt.|
-|displayName|Zeichenfolge|Name des von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbten Profils|
+|id|String|Die GUID für das von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Objekt.|
+|displayName|String|Name des von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbten Profils|
 |description|Zeichenfolge|Beschreibung des von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbten Profils|
 |requiresUserAuthentication|Boolescher Wert|Gibt an, ob für das Profil eine von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Benutzerauthentifizierung erforderlich ist.|
-|configurationEndpointUrl|Zeichenfolge|Konfigurations Endpunkt-URL für die von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Registrierung|
+|configurationEndpointUrl|String|Konfigurations Endpunkt-URL für die von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbte Registrierung|
 |enableAuthenticationViaCompanyPortal|Boolescher Wert|Gibt an, dass der Apple-Setup-Assistent anstelle des Unternehmensportals authentifiziert werden soll. Geerbt von [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolescher Wert|Gibt an, dass das Unternehmens Portal auf dem Setup-Assistenten erforderlich ist, der von [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) geerbt wurde.|
-|isDefault|Boolescher Wert|Gibt an, ob dies das Standardprofil ist, das von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbt wurde.|
+|isDefault|Boolean|Gibt an, ob dies das Standardprofil ist, das von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbt wurde.|
 |supervisedModeEnabled|Boolescher Wert|Überwachter Modus, true, um zu aktivieren, andernfalls false. Weitere https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune Informationen finden Sie unter. Geerbt von [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportDepartment|Zeichenfolge|Von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbte Support Abteilungsinformationen|
+|supportDepartment|String|Von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbte Support Abteilungsinformationen|
 |passCodeDisabled|Boolescher Wert|Gibt an, ob der Bereich "Passcode" deaktiviert ist geerbt von [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolescher Wert|Gibt an, ob das Profil obligatorisch von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbt wurde.|
 |locationDisabled|Boolescher Wert|Gibt an, ob der speicherortdienst-Setup Bereich deaktiviert ist geerbt von [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportPhoneNumber|Zeichenfolge|Von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbte Support Telefonnummer|
+|supportPhoneNumber|String|Von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbte Support Telefonnummer|
 |profileRemovalDisabled|Boolescher Wert|Gibt an, ob die Profil Entfernungs Option deaktiviert ist geerbt von [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |restoreBlocked|Boolescher Wert|Gibt an, ob der wiederHerstellungs-Setup Bereich von [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) geerbt wurde.|
 |appleIdDisabled|Boolescher Wert|Gibt an, ob der Apple ID-Setup Bereich deaktiviert ist, geerbt von [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -81,8 +81,8 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |awaitDeviceConfiguredConfirmation|Boolescher Wert|Gibt an, ob das Gerät auf die konfigurierte Bestätigung warten muss.|
 |sharedIPadMaximumUserCount|Int32|Dies gibt die maximale Anzahl von Benutzern an, die ein freigegebenes iPad verwenden können. Gilt nur für den freigegebenen iPad-Modus.|
 |Enablesharedipad wurden|Boolescher Wert|Dieser Wert gibt an, ob das Gerät in einen Modus eingeschrieben werden soll, der mehrere Benutzerszenarien ermöglicht. Gilt nur für freigegebene iPads.|
-|companyPortalVppTokenId|Zeichenfolge|Wenn festgelegt, gibt das VSS-Token an, das zum Bereitstellen des Unternehmensportals mit der Geräte Lizenzierung verwendet werden soll. ' enableAuthenticationViaCompanyPortal ' muss festgelegt werden, damit diese Eigenschaft festgelegt wird.|
-|enableSingleAppEnrollmentMode|Boolescher Wert|Weist das Gerät an, den Einzel APP-Modus zu aktivieren und die APP-Sperre während der Registrierung anzuwenden. Der Standardwert ist false. "enableAuthenticationViaCompanyPortal" und "companyPortalVppTokenId" müssen festgelegt werden, damit diese Eigenschaft festgelegt wird.|
+|companyPortalVppTokenId|String|Wenn festgelegt, gibt das VSS-Token an, das zum Bereitstellen des Unternehmensportals mit der Geräte Lizenzierung verwendet werden soll. ' enableAuthenticationViaCompanyPortal ' muss festgelegt werden, damit diese Eigenschaft festgelegt wird.|
+|enableSingleAppEnrollmentMode|Boolescher Wert|Weist das Gerät an, den Einzel APP-Modus zu aktivieren und die APP-Sperre während der Registrierung anzuwenden. Default is „false“. "enableAuthenticationViaCompanyPortal" und "companyPortalVppTokenId" müssen festgelegt werden, damit diese Eigenschaft festgelegt wird.|
 |homeButtonScreenDisabled|Boolescher Wert|Gibt an, ob der Bildschirm für die Home-Schaltfläche deaktiviert ist|
 |iMessageAndFaceTimeScreenDisabled|Boolescher Wert|Gibt an, ob iMessage-und FaceTime-Bildschirm deaktiviert sind.|
 |onBoardingScreenDisabled|Boolescher Wert|Gibt an, ob der Bildschirm Onboarding Setup deaktiviert ist.|

@@ -4,12 +4,12 @@ description: Erstellt neue Objekte des Typs windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f335b531228fa8bc8b1f5865cacb57007acd41a
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 9af661ab4397c8096b45bea8fdd199d2c78b0bd1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572117"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973866"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572117"
 Erstellt neue Objekte des Typs [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -57,9 +57,9 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |lastModifiedDateTime|DateTimeOffset|Datum und Uhrzeit der letzten Änderung des Objekts. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|Zeichenfolge|Name der Gerätekonfiguration (vom Administrator festgelegt). Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |Version|Int32|Version der Gerätekonfiguration. Geerbt von [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Boolesch|Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.|
-|passwordBlockSimple|Boolesch|Gibt an, ob einfache Kennwörter erlaubt sind.|
-|passwordRequiredToUnlockFromIdle|Boolesch|Legt fest, dass zum Entsperren eines im Leerlauf laufenden Geräts ein Kennwort erforderlich ist.|
+|passwordRequired|Boolescher Wert|Legt fest, dass zum Entsperren des Windows-Geräts ein Kennwort erforderlich ist.|
+|passwordBlockSimple|Boolescher Wert|Gibt an, ob einfache Kennwörter erlaubt sind.|
+|passwordRequiredToUnlockFromIdle|Boolescher Wert|Legt fest, dass zum Entsperren eines im Leerlauf laufenden Geräts ein Kennwort erforderlich ist.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Zeitraum von Inaktivität in Minuten, nach dem die Eingabe eines Kennworts gefordert wird|
 |passwordExpirationDays|Int32|Zeitraum in Tagen bis zum Ablaufen des Kennworts|
 |passwordMinimumLength|Int32|Mindestlänge des Kennworts|
@@ -71,23 +71,23 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |osMaximumVersion|String|Maximalversion von Windows 10|
 |mobileOsMinimumVersion|String|Mindestversion von Windows Phone|
 |mobileOsMaximumVersion|String|Maximalversion von Windows Phone|
-|earlyLaunchAntiMalwareDriverEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
-|bitLockerEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
-|secureBootEnabled|Boolesch|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
+|earlyLaunchAntiMalwareDriverEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Der Treiber für Antischadsoftware-Frühstart ist aktiviert.|
+|bitLockerEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: BitLocker ist aktiviert.|
+|secureBootEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss: Die Option „Sicherer Start“ ist aktiviert.|
 |codeIntegrityEnabled|Boolescher Wert|Legt fest, dass die Integrität von Geräten durch den Windows-Integritätsnachweis für Geräte bestätigt werden muss.|
 |storageRequireEncryption|Boolescher Wert|Legt fest, dass auf Windows-Geräten Verschlüsselung gefordert wird.|
-|activeFirewallRequired|Boolesch|Aktive Firewall auf Windows-Geräten erforderlich.|
-|defenderEnabled|Boolesch|Windows Defender-Antischadsoftware auf Windows-Geräten erforderlich.|
+|activeFirewallRequired|Boolescher Wert|Aktive Firewall auf Windows-Geräten erforderlich.|
+|defenderEnabled|Boolescher Wert|Windows Defender-Antischadsoftware auf Windows-Geräten erforderlich.|
 |defenderVersion|String|Mindestversion von Windows Defender Antischadsoftware auf Windows-Geräten|
-|signatureOutOfDate|Boolesch|Windows Defender-Antischadsoftware-Signatur muss auf Windows-Geräten auf dem neuesten Stand sein.|
-|rtpEnabled|Boolesch|Windows Defender-Antischadsoftware-Echtzeitschutz auf Windows-Geräten erforderlich.|
-|antivirusRequired|Boolesch|Erfordern Sie eine Antivirus-Lösung, die mit Windows Decurity Center registriert ist, um ein-und zu überwachen (beispielsweise Symantec, Windows Defender).|
-|antiSpywareRequired|Boolesch|Fordern Sie eine beliebige antiSpywarelösung an, die mit Windows Decurity Center registriert ist, um eingeschaltet und überwacht zu werden (z. b. Symantec, Windows Defender).|
+|signatureOutOfDate|Boolescher Wert|Windows Defender-Antischadsoftware-Signatur muss auf Windows-Geräten auf dem neuesten Stand sein.|
+|rtpEnabled|Boolescher Wert|Windows Defender-Antischadsoftware-Echtzeitschutz auf Windows-Geräten erforderlich.|
+|antivirusRequired|Boolescher Wert|Erfordern Sie eine Antivirus-Lösung, die mit Windows Decurity Center registriert ist, um ein-und zu überwachen (beispielsweise Symantec, Windows Defender).|
+|antiSpywareRequired|Boolescher Wert|Fordern Sie eine beliebige antiSpywarelösung an, die mit Windows Decurity Center registriert ist, um eingeschaltet und überwacht zu werden (z. b. Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) -Sammlung|Die gültigen buildbereiche des Betriebssystems auf Windows-Geräten. Diese Collection darf maximal 10.000 Elemente enthalten.|
 |deviceThreatProtectionEnabled|Boolean|Legt fest, dass auf Geräten der Gerätebedrohungsschutz aktiviert sein muss.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mindestrisiko für Geräte Bedrohungsstufe zum Melden der Nichtkonformität. Mögliche Werte sind: `unavailable`, `secured`, `low`, `medium`, `high` und `notSet`.|
-|configurationManagerComplianceRequired|Boolesch|Beachten Sie, dass der SCCM-Konformitätsstatus für den InTune-KonformitätsStatus berücksichtigt werden muss.|
-|tpmRequired|Boolesch|Es muss ein Trusted Platform Module (TPM) vorhanden sein.|
+|configurationManagerComplianceRequired|Boolescher Wert|Beachten Sie, dass der SCCM-Konformitätsstatus für den InTune-KonformitätsStatus berücksichtigt werden muss.|
+|tpmRequired|Boolescher Wert|Es muss ein Trusted Platform Module (TPM) vorhanden sein.|
 
 
 

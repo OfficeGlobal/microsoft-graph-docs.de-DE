@@ -4,12 +4,12 @@ description: Aktualisieren der Eigenschaften eines deviceManagementScriptRunSumm
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd41b6c7dbb7a2bb361175de564904c11e7e5e80
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 040214d3236e877b9c7d12b63bda659058028244
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141720"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986341"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>DeviceManagementScriptRunSummary aktualisieren
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141720"
 Aktualisieren der Eigenschaften eines [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Der Schlüssel der Device Management-Skript Ausführungs Zusammenfassungs Entität.|
+|id|String|Der Schlüssel der Device Management-Skript Ausführungs Zusammenfassungs Entität.|
 |successDeviceCount|Int32|Anzahl der erfolgreichen Geräte.|
 |errorDeviceCount|Int32|Fehlergeräte Anzahl.|
 |successUserCount|Int32|Anzahl der erfolgreichen Benutzer.|
