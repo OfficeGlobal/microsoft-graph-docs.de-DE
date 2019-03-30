@@ -4,12 +4,12 @@ description: Diese Methode aktualisiert die Eigenschaften von Objekten des Typs 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2522d6a9867993a88ec5420a37da9005e8bd94f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 63492e80bedc6a9e785f572e01db7c07b4cde8a7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263224"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988938"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Aktualisieren von „managedAppPolicyDeploymentSummary“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263224"
 Diese Methode aktualisiert die Eigenschaften von Objekten des Typs [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -51,12 +51,12 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|displayName|Zeichenfolge|Noch nicht dokumentiert|
-|configurationDeployedUserCount|Int32|Noch nicht dokumentiert|
-|lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert|
-|configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert|
-|id|string|Schlüssel der Entität|
-|Version|Zeichenfolge|Version der Entität|
+|displayName|Zeichenfolge|Noch nicht dokumentiert.|
+|configurationDeployedUserCount|Int32|Noch nicht dokumentiert.|
+|lastRefreshTime|DateTimeOffset|Noch nicht dokumentiert.|
+|configurationDeploymentSummaryPerApp|Collection von Objekten des Typs [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Noch nicht dokumentiert.|
+|id|String|Schlüssel der Entität|
+|Version|String|Version der Entität|
 
 
 

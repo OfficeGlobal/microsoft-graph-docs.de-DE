@@ -1,32 +1,32 @@
 ---
-title: Liste riskyUsers
-description: Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
+title: RiskyUsers aufListen
+description: Ruft die Eigenschaften und Beziehungen eines **riskyUsers** -Objekts ab.
 localization_priority: Normal
 author: cloudhandler
-ms.prod: security
-ms.openlocfilehash: 5c0c0557a5cd84312ef9d6381d8cf3018ab8ce7d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a902daf00f80470e1ac9a83a287eac507d55e171
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640938"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003727"
 ---
-# <a name="list-riskyusers"></a>Liste riskyUsers
+# <a name="list-riskyusers"></a>RiskyUsers aufListen
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rufen Sie die Eigenschaften und die Beziehungen eines **RiskyUsers** -Objekts ab.
+Ruft die Eigenschaften und Beziehungen eines **riskyUsers** -Objekts ab.
 
-> **Hinweis:** Diese API ist eine Azure AD Premium P2-Lizenz erforderlich.
+>**Hinweis:** Die Verwendung der riskyUsers-API erfordert eine Azure AD Premium P2-Lizenz.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp      | Berechtigungen (von der Berechtigung mit den wenigsten Rechten zu der mit den meisten Rechten)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegiert (Geschäfts-, Schul- oder Unikonto) | IdentityriskyUser.Read.All    |
+|Delegiert (Geschäfts-, Schul- oder Unikonto) | IdentityRiskyUser.Read.All    |
 |Delegiert (persönliches Microsoft-Konto) | Nicht unterstützt    |
-|Application | IdentityriskyUser.Read.All |
+|Anwendung | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-Anforderung
 <!-- { "blockType": "ignored" } -->
@@ -34,31 +34,31 @@ Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu
 GET /riskyUsers/{query}
 ```
 ## <a name="optional-query-parameters"></a>Optionale Abfrageparameter
-Diese Methode unterstützt `$filter` Antwort auf die Abfrage anpassen. Siehe das Beispiel weiter unten in diesem Thema. 
+Diese Methode unter `$filter` stützt die Anpassung der Abfrageantwort. Sehen Sie sich das Beispiel weiter unten in diesem Thema an. 
 
 ## <a name="request-headers"></a>Anforderungsheader
 | Name      |Beschreibung|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Erforderlich. |
-| Arbeitsmappensitzungs-ID  | Arbeitsmappensitzungs-ID, die bestimmt, ob Änderungen beibehalten werden. Optional.|
+| Arbeitsmappensitzungs-ID  | Sitzungs-ID der Arbeitsmappe, die bestimmt, ob Änderungen beibehalten werden. Optional.|
 
 ## <a name="request-body"></a>Anforderungstext
 Geben Sie für diese Methode keinen Anforderungstext an.
 
 ## <a name="response"></a>Antwort
 
-Wenn der Vorgang erfolgreich war, gibt diese Methode einen `200 OK` Antwortobjekt Code und [IdentityRiskEvent](../resources/identityriskevent.md) im Antworttext.
-## <a name="example"></a>Beispiel
-##### <a name="request-1"></a>Anforderung 1
+Bei erfolgreicher Ausführung gibt diese Methode den `200 OK` Antwortcode und ein [identityRiskEvent](../resources/identityriskevent.md) -Objekt im Antworttext zurück.
+## <a name="examples"></a>Beispiele
+#### <a name="example-1-list-risky-users"></a>Beispiel 1: aufListen von riskanten Benutzern
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "list_riskyusers"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### <a name="response-1"></a>Antwort 1
+
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
@@ -71,6 +71,7 @@ HTTP/1.1 200 OK
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
+  "isProcessing": true,
   "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
@@ -84,13 +85,13 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-##### <a name="request-2"></a>Anforderung 2
-Das folgende Beispiel zeigt, wie Sie `$filter` Abrufen der Auflistung der RiskyUser, deren aggregierte Risiko Ebene Mittel ist.
+#### <a name="example-2-list-risky-users-and-filter-the-results"></a>Beispiel 2: aufListen von riskanten Benutzern und Filtern der Ergebnisse
+Das folgende Beispiel zeigt, wie Sie `$filter` die Auflistung von riskyUser abrufen, deren aggregierte Risikostufe Mittel ist.
 <!-- {
   "blockType": "request",
   "name": "list_riskyusers"
@@ -98,7 +99,7 @@ Das folgende Beispiel zeigt, wie Sie `$filter` Abrufen der Auflistung der RiskyU
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-##### <a name="response-2"></a>Antwort 2
+Nachfolgend sehen Sie ein Beispiel der Antwort.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,6 +111,7 @@ HTTP/1.1 200 OK
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
       "isGuest": false,
+      "isProcessing": true,
       "isDeleted": false,
       "riskDetail": "none",
       "riskLevel": "medium",
@@ -122,15 +124,10 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

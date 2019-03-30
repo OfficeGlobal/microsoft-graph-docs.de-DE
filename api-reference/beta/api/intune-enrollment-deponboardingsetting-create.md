@@ -4,12 +4,12 @@ description: Erstellen eines neuen depOnboardingSetting-Objekts.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7eab98e4549e1aa1f0e97258c51e1063b85f4f85
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164386"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989519"
 ---
 # <a name="create-deponboardingsetting"></a>DepOnboardingSetting erstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164386"
 Erstellen eines neuen [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -56,12 +56,12 @@ In der folgenden Tabelle sind die Eigenschaften dargestellt, die zum Erstellen d
 |lastModifiedDateTime|DateTimeOffset|Wenn der Dienst an Bord war.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Wenn der Dienst zuletzt mit InTune syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|Wenn InTune eine Synchronisierung zuletzt angefordert hat.|
-|shareTokenWithSchoolDataSyncService|Boolean|Gibt an, ob die DEP-Token-Freigabe mit dem School Data Sync-Dienst aktiviert ist.|
+|shareTokenWithSchoolDataSyncService|Boolescher Wert|Gibt an, ob die DEP-Token-Freigabe mit dem School Data Sync-Dienst aktiviert ist.|
 |Lastsyncerrorcode wurden|Int32|Fehlercode, der von Apple während der letzten DEP-Synchronisierung gemeldet wurde.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Ruft den Typ der DEP-Token ab oder legt ihn fest. Mögliche Werte sind: `none`, `dep` und `appleSchoolManager`.|
-|Tokenname|Zeichenfolge|Anzeige Name für DEP-Token|
+|Tokenname|String|Anzeige Name für DEP-Token|
 |syncedDeviceCount|Int32|Ruft die Anzahl synchronisierter Geräte ab.|
-|dataSharingConsentGranted|Boolean|Einwilligung zur Datenfreigabe mit Apple DEP Service|
+|dataSharingConsentGranted|Boolescher Wert|Einwilligung zur Datenfreigabe mit Apple DEP Service|
 |Rolescopetagids zur|String collection|Liste der Bereichs Tags für diese Entitätsinstanz.|
 
 

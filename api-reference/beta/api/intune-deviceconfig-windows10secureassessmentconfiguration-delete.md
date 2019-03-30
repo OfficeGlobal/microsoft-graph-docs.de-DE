@@ -1,15 +1,15 @@
 ---
 title: windows10SecureAssessmentConfiguration löschen
-description: Löscht ein windows10SecureAssessmentConfiguration-Objekt.
+description: Löscht neue Objekte des Typs windows10SecureAssessmentConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4019a220a50cd112cc7b82b603c268810a37f206
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef0e3d54011dae0e2e0d8bb18db8b6801a790112
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160606"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988630"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfiguration löschen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160606"
 Löscht ein [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md)-Objekt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

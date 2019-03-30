@@ -4,12 +4,12 @@ description: Lesen von Eigenschaften und Beziehungen des Iosscepcertificateprofi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07e8cf6bc956cc59a884dfda311fc9a0f48d8407
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b81f861f4f11c6de3a68d228c7e7f2dabfddd61c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146578"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988882"
 ---
 # <a name="get-iosscepcertificateprofile"></a>Iosscepcertificateprofile hinzugefügt abrufen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146578"
 Lesen von Eigenschaften und Beziehungen des [iosscepcertificateprofile hinzugefügt](../resources/intune-deviceconfig-iosscepcertificateprofile.md) -Objekts.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

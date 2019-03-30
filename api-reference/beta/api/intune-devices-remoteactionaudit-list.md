@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der Remote Action Audit
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 428f7d80bd95c7a589e386510f03c43217fa892e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3b70d7f7a2434078a36b639c4afab02ac204cb59
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141888"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989400"
 ---
 # <a name="list-remoteactionaudits"></a>RemoteActionAudits aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141888"
 AufListen von Eigenschaften und Beziehungen der [Remote Action Audit](../resources/intune-devices-remoteactionaudit.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

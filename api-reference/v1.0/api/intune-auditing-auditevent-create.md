@@ -4,12 +4,12 @@ description: Diese Methode erstellt ein neues Objekt des Typs auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f85c7d8e9ff94ad5f6ae3a10df695c4cbb1f5d6
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1a08e7266070e3cbaaa0f639660d806d487ef6cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255972"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987629"
 ---
 # <a name="create-auditevent"></a>Erstellen von „auditEvent“
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255972"
 Diese Methode erstellt ein neues Objekt des Typs [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
@@ -48,18 +48,18 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die angegeben werde
 
 |Eigenschaft|Typ|Beschreibung|
 |:---|:---|:---|
-|id|Zeichenfolge|Schlüssel der Entität|
+|id|String|Schlüssel der Entität|
 |displayName|Zeichenfolge|Anzeigename des Ereignisses|
-|componentName|Zeichenfolge|Name der Komponente|
+|componentName|String|Name der Komponente|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD-Benutzer und -Anwendung, die dem Überwachungsereignis zugeordnet sind|
-|activity|Zeichenfolge|Anzeigename der Aktivität|
+|activity|String|Anzeigename der Aktivität|
 |activityDateTime|DateTimeOffset|Datum und Uhrzeit der Durchführung der Aktivität im UTC-Format|
-|activityType|Zeichenfolge|Typ der durchgeführten Aktivität|
-|activityOperationType|Zeichenfolge|HTTP-Vorgangstyp der Aktivität|
-|activityResult|Zeichenfolge|Ergebnis der Aktivität|
+|activityType|String|Typ der durchgeführten Aktivität|
+|activityOperationType|String|HTTP-Vorgangstyp der Aktivität|
+|activityResult|String|Ergebnis der Aktivität|
 |correlationId|Guid|ID der Clientanforderung, die zur Korrelation von Aktivitäten im System verwendet wird|
-|resources|Collection von Objekten des Typs [auditResource](../resources/intune-auditing-auditresource.md)|Ressourcen, die geändert werden|
-|category|String|Überwachungskategorie|
+|Ressourcen|Collection von Objekten des Typs [auditResource](../resources/intune-auditing-auditresource.md)|Ressourcen, die geändert werden|
+|Kategorie|String|Überwachungskategorie|
 
 
 

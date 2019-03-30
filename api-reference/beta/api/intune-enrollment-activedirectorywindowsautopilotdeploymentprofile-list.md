@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der activeDirectoryWind
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50e22ab4ce7218d21ce8a6f3c04ee2e715afeced
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: fef551b85ceb254fafcb4e38fea7efdc7faeeb9e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571711"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987468"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>ActiveDirectoryWindowsAutopilotDeploymentProfiles aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571711"
 AufListen von Eigenschaften und Beziehungen der [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|

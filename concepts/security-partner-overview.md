@@ -4,12 +4,12 @@ description: 'Dieser Artikel beschreibt Partner Möglichkeiten, die von der Sich
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f584e58c957e92ee4e61a6a12e333fc659428c48
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367155"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003699"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Partnerschaft mit der Microsoft Graph-Sicherheits-API – Möglichkeiten für Technologiepartner
 
@@ -61,9 +61,8 @@ Die folgenden drei Hauptvorteile können Sie bei der Integration in die Microsof
 
 - Aggregieren von Warnungen mehrerer Anbieter zum Erstellen von Vorfällen.
 - Zugriff auf zusätzlichen Kontext, um Warnungs Priorisierung und-Antwort zu informieren.
-
-Halten Sie den Warnungsstatus über Systeme hinweg synchronisiert, die Warnungen verwalten. </br>
-VerSchaffen Sie sich einen Überblick über die Sicherheitslage und die Empfehlung, wie Sie mit sicheren Ergebnissen verbessert werden kann.
+- Halten Sie den Warnungsstatus über Systeme hinweg synchronisiert, die Warnungen verwalten.
+- VerSchaffen Sie sich einen Überblick über die Sicherheitslage und die Empfehlung, wie Sie mit sicheren Ergebnissen verbessert werden kann.
 
 ### <a name="share-threat-intelligence-to-enable-custom-detections"></a>Freigeben von Threat Intelligence zum Aktivieren von benutzerdefinierten Entdeckungen
 

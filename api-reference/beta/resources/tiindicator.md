@@ -4,12 +4,12 @@ description: Indikatoren für Threat Intelligence (TI) stellen Daten dar, die zu
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f5374d42fb2601bfa5529de998778530a3b15d01
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482266"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988861"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator-Ressourcentyp
 
@@ -28,8 +28,8 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 | [List tiIndicators](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md) -Sammlung | Rufen Sie eine tiIndicator-Objektsammlung ab. |
 | [Update](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Aktualisieren des tiIndicator-Objekts. |
 | [Löschen](../api/tiindicator-delete.md) | Keine | TiIndicator-Objekt löschen. |
-|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|None| Löschen Sie mehrere tiIndicator-Objekte.|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|None| Löschen Sie mehrere tiIndicator-Objekte `externalId` nach der-Eigenschaft.|
+|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Keine| Löschen Sie mehrere tiIndicator-Objekte.|
+|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Keine| Löschen Sie mehrere tiIndicator-Objekte `externalId` nach der-Eigenschaft.|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) -Sammlung|Erstellen Sie neue tiIndicators, indem Sie eine tiIndicators-Auflistung veröffentlichen.|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) -Sammlung| Aktualisieren Sie mehrere tiIndicator-Objekte.|
 
@@ -37,42 +37,42 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|action|Zeichenfolge| Die Aktion, die angewendet werden soll, wenn das Symbol im targetProduct-Sicherheitstool abgeglichen wird. Mögliche Werte sind: `unknown`, `allow`, `block` und `alert`. **Erforderlich**|
+|action|string| Die Aktion, die angewendet werden soll, wenn das Symbol im targetProduct-Sicherheitstool abgeglichen wird. Mögliche Werte sind: `unknown`, `allow`, `block` und `alert`. **Erforderlich**|
 |activityGroupNames|String collection|Die Namen der Cyber Threat Intelligence für die Parteien, die für die bösartigen Aktivitäten verantwortlich sind, die vom Bedrohungs Indikator erfasst werden.|
-|Zusatzinformationen|Zeichenfolge|Ein CatchAll Bereich, in dem zusätzliche Daten aus dem Indikator, die nicht von anderen tiIndicator-Eigenschaften abgedeckt werden, möglicherweise eingefügt werden. Daten, die in Zusatzinformationen werden, werden in der Regel nicht vom targetProduct-Sicherheitstool verwendet.|
-|azureTenantId|Zeichenfolge| Wird vom System gestempelt, wenn das Symbol aufgenommen wird. Die Azure Active Directory-Mandanten-ID des übermittelnden Clients. **Erforderlich**|
+|Zusatzinformationen|String|Ein CatchAll Bereich, in dem zusätzliche Daten aus dem Indikator, die nicht von anderen tiIndicator-Eigenschaften abgedeckt werden, möglicherweise eingefügt werden. Daten, die in Zusatzinformationen werden, werden in der Regel nicht vom targetProduct-Sicherheitstool verwendet.|
+|azureTenantId|String| Wird vom System gestempelt, wenn das Symbol aufgenommen wird. Die Azure Active Directory-Mandanten-ID des übermittelnden Clients. **Erforderlich**|
 |confidence|Int32|Eine ganze Zahl, die die Vertrauenswürdigkeit der Daten innerhalb des Indikators kennzeichnet. Zulässige Werte sind 0 – 100, wobei 100 der höchste Wert ist.|
 |description|Zeichenfolge| Kurze Beschreibung (100 Zeichen oder kleiner) der Bedrohung, dargestellt durch den Indikator. **Erforderlich**|
-|diamondModel|[diamondModel](#diamondModel-values)|Der Bereich des Diamant Modells, in dem dieser Indikator vorhanden ist. Mögliche Werte: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|diamondModel|[diamondModel](#diamondmodel-values)|Der Bereich des Diamant Modells, in dem dieser Indikator vorhanden ist. Mögliche Werte: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime-Zeichenfolge, die angibt, wann das Symbol abläuft. Alle Indikatoren benötigen ein Ablaufdatum, um zu verhindern, dass veraltete Indikatoren im System beibehalten werden. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`. **Erforderlich**|
 |externalId|String| Eine Identifikationsnummer, die den Indikator zurück an das System des Indikator Anbieters bindet (beispielsweise einen Fremdschlüssel). |
 |id|String|Wird vom System erstellt, wenn das Symbol aufgenommen wird. Generierte GUID/eindeutiger Bezeichner. Schreibgeschützt.|
 |ingestedDateTime|DateTimeOffset| Wird vom System gestempelt, wenn das Symbol aufgenommen wird. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|isActive|Boolesch| Wird verwendet, um Indikatoren innerhalb von System zu deaktivieren. Standardmäßig werden alle übermittelten Indikatoren als aktiv festgelegt. Anbieter können jedoch vorhandene Indikatoren mit dieser Einstellung auf "false" übermitteln, um Indikatoren im System zu deaktivieren.|
-|killChain|[killChain](#killChain-values) -Sammlung|Ein JSON-Array von Zeichenfolgen, die beschreiben, welche Punkte auf der Killkette dieser Indikator erreicht. Genaue Werte finden Sie unten unter "killChain-Werte". |
-|knownFalsePositives|Zeichenfolge|Szenarien, in denen das Symbol zu falsch positiven Ergebnissen führen kann. Dies sollte ein lesbarer Text sein.|
+|isActive|Boolescher Wert| Wird verwendet, um Indikatoren innerhalb von System zu deaktivieren. Standardmäßig werden alle übermittelten Indikatoren als aktiv festgelegt. Anbieter können jedoch vorhandene Indikatoren mit dieser Einstellung auf "false" übermitteln, um Indikatoren im System zu deaktivieren.|
+|killChain|[killChain](#killchain-values) -Sammlung|Ein JSON-Array von Zeichenfolgen, die beschreiben, welche Punkte auf der Killkette dieser Indikator erreicht. Genaue Werte finden Sie unten unter "killChain-Werte". |
+|knownFalsePositives|String|Szenarien, in denen das Symbol zu falsch positiven Ergebnissen führen kann. Dies sollte ein lesbarer Text sein.|
 |lastReportedDateTime|DateTimeOffset|Der Zeitpunkt, zu dem der Indikator zuletzt angezeigt wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |malwareFamilyNames|String collection|Der Name der Schadsoftware-Familie, die mit einem Indikator verknüpft ist, falls vorhanden. Microsoft bevorzugt den Namen der Microsoft-Schadsoftware-Familie, falls möglich, der über die [Bedrohungs Enzyklopädie](https://www.microsoft.com/wdsi/threats)Windows Defender Security Intelligence gefunden werden kann.|
-|passiveOnly|Boolesch |Bestimmt, ob das Symbol ein Ereignis auslösen soll, das für einen Endbenutzer sichtbar ist. Bei Festlegung auf "true" werden vom Endbenutzer keine Sicherheitstools benachrichtigt, dass ein "Hit" aufgetreten ist. Diese wird am häufigsten von Sicherheitsprodukten als Überwachungs-oder Unbeaufsichtigter Modus behandelt, in dem Sie einfach protokollieren, ob eine Übereinstimmung aufgetreten ist, die Aktion jedoch nicht ausgeführt wird. Standardwert ist "false". |
+|passiveOnly|Boolescher Wert |Bestimmt, ob das Symbol ein Ereignis auslösen soll, das für einen Endbenutzer sichtbar ist. Bei Festlegung auf "true" werden vom Endbenutzer keine Sicherheitstools benachrichtigt, dass ein "Hit" aufgetreten ist. Diese wird am häufigsten von Sicherheitsprodukten als Überwachungs-oder Unbeaufsichtigter Modus behandelt, in dem Sie einfach protokollieren, ob eine Übereinstimmung aufgetreten ist, die Aktion jedoch nicht ausgeführt wird. Standardwert ist "false". |
 |Schweregrad|Int32| Eine ganze Zahl, die den Schweregrad des böswilligen Verhaltens darstellt, das durch die Daten innerhalb des Indikators identifiziert wird. Zulässige Werte sind 0 – 5, wobei 5 der schwerste ist und NULL nicht schwerwiegend ist. Der Standardwert ist 3. |
 |tags|String-Sammlung|Ein JSON-Array von Zeichenfolgen, in dem beliebige Tags/Schlüsselwörter gespeichert werden. |
-|targetProduct|Zeichenfolge|Ein String-Wert, der ein einzelnes Sicherheitsprodukt darstellt, auf das das Symbol angewendet werden soll. Zulässige Werte: `Azure Sentinel`. **Required**|
-|threattype|[threattype](#threatType-values)| Jeder Indikator muss einen gültigen Indikator Bedrohungs aufweisen. Mögliche Werte: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Erforderlich** |
-|tlpLevel|[tlpLevel](#tlpLevel-values)| Ampel-Protokollwert für das Symbol. Mögliche Werte: `unknown`, `white`, `green`, `amber`, `red`. **Erforderlich**|
+|targetProduct|String|Ein String-Wert, der ein einzelnes Sicherheitsprodukt darstellt, auf das das Symbol angewendet werden soll. Zulässige Werte: `Azure Sentinel`. **Required**|
+|threattype|[threattype](#threattype-values)| Jeder Indikator muss einen gültigen Indikator Bedrohungs aufweisen. Mögliche Werte: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Erforderlich** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| Ampel-Protokollwert für das Symbol. Mögliche Werte: `unknown`, `white`, `green`, `amber`, `red`. **Erforderlich**|
 
 ### <a name="indicator-observables---email"></a>Indikator beobachtbaren – E-Mail
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
-|emailEncoding|Zeichenfolge|Der in der e-Mail verwendete Text Codierungs.|
-|emailLanguage|Zeichenfolge|Die Sprache der e-Mail.|
-|emailRecipient|Zeichenfolge|E-Mail-Adresse des Empfängers.|
-|emailSenderAddress|Zeichenfolge|E-Mail-Adresse des attacker& # 124; Victim.|
-|emailSenderName|Zeichenfolge|Der angezeigte Name des attacker&-Opfers.|
-|emailSourceDomain|Zeichenfolge|In der e-Mail verwendete Domäne.|
-|emailSourceIpAddress|Zeichenfolge|Quell-IP-Adresse der e-Mail.|
-|emailSubject|Zeichenfolge|Betreffzeile der e-Mail.|
-|emailXMailer|Zeichenfolge|Der in der e-Mail verwendete X-Mailer-Wert.|
+|emailEncoding|String|Der in der e-Mail verwendete Text Codierungs.|
+|emailLanguage|String|Die Sprache der e-Mail.|
+|emailRecipient|String|E-Mail-Adresse des Empfängers.|
+|emailSenderAddress|String|E-Mail-Adresse des attacker& # 124; Victim.|
+|emailSenderName|String|Der angezeigte Name des attacker&-Opfers.|
+|emailSourceDomain|String|In der e-Mail verwendete Domäne.|
+|emailSourceIpAddress|String|Quell-IP-Adresse der e-Mail.|
+|emailSubject|String|Betreffzeile der e-Mail.|
+|emailXMailer|String|Der in der e-Mail verwendete X-Mailer-Wert.|
 
 ### <a name="indicator-observables---file"></a>Indikator ObservableCollection-file
 
@@ -80,37 +80,37 @@ Die über **tiIndicators** hochgeLadenen Bedrohungs Indikatoren werden in Verbin
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|DateTime, als die Datei kompiliert wurde. Der Timestamp-Typ stellt die Datums- und Uhrzeitinformationen mithilfe des ISO 8601-Formats dar und wird immer in UTC-Zeit angegeben. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| DateTime, als die Datei erstellt wurde. Der timestamp-Typ stellt Datums-und Uhrzeitinformationen unter Verwendung des ISO 8601-Formats dar und ist immer in UTC-Zeit. Mitternacht UTC-Zeit am 1. Januar 2014 würde z. B. wie folgt aussehen: `'2014-01-01T00:00:00Z'`|
-|fileHashType|Zeichenfolge| Der in fileHashvalue gespeicherte Hashtyp. Mögliche Werte: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
-|fileHashvalue|Zeichenfolge| Der Datei Hash Wert.|
-|fileMutexname|Zeichenfolge| Mutexname, der bei dateibasierten Ermittlungen verwendet wird.|
+|fileHashType|string| Der in fileHashvalue gespeicherte Hashtyp. Mögliche Werte: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
+|fileHashvalue|String| Der Datei Hash Wert.|
+|fileMutexname|String| Mutexname, der bei dateibasierten Ermittlungen verwendet wird.|
 |fileName|String|Name der Datei, wenn das Symboldatei basiert ist. Mehrere Dateinamen können durch Kommata getrennt werden. |
-|filePacker|Zeichenfolge|Der Packer, der zum Erstellen der fraglichen Datei verwendet wird.|
-|filePath|Zeichenfolge|Pfad der Datei, die eine Gefährdung angibt. Kann ein Windows-oder * nix-Pfad sein.|
+|filePacker|String|Der Packer, der zum Erstellen der fraglichen Datei verwendet wird.|
+|filePath|String|Pfad der Datei, die eine Gefährdung angibt. Kann ein Windows-oder * nix-Pfad sein.|
 |Größe|Int64|Die Größe der Datei in Byte.|
-|fileType|Zeichenfolge| Text Beschreibung des Dateityps. Beispiel: "Word-Dokument" oder "Binary".|
+|fileType|String| Text Beschreibung des Dateityps. Beispiel: "Word-Dokument" oder "Binary".|
 
 ### <a name="indicator-observables---network"></a>Indikator beobachtbar-Network
 
 | Eigenschaft     | Typ        | Beschreibung |
 |:-------------|:------------|:------------|
 |Domänname|Zeichenfolge|Domänenname, der diesem Indikator zugeordnet ist. Sollte das Format Subdomain. Domain. TopLevelDomain (beispielsweise baddomain.domain.net) aufweisen.|
-|networkCidrBlock|Zeichenfolge| CIDR-Block Notation Darstellung des Netzwerks, auf das in diesem Indikator verwiesen wird. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
+|networkCidrBlock|String| CIDR-Block Notation Darstellung des Netzwerks, auf das in diesem Indikator verwiesen wird. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
 |networkDestinationAsn|Int32|Die Ziel autonome System-ID des Netzwerks, auf das im Indikator verwiesen wird.|
-|networkDestinationCidrBlock|Zeichenfolge|CIDR-Block Notation Darstellung des Zielnetzwerks in diesem Indikator.|
-|networkDestinationIPv4|Zeichenfolge|IPv4-IP-Adress Ziel.|
-|networkDestinationIPv6|Zeichenfolge|IPv6-IP-Adress Ziel.|
+|networkDestinationCidrBlock|String|CIDR-Block Notation Darstellung des Zielnetzwerks in diesem Indikator.|
+|networkDestinationIPv4|String|IPv4-IP-Adress Ziel.|
+|networkDestinationIPv6|String|IPv6-IP-Adress Ziel.|
 |networkDestinationPort|Int32|TCP-Port Ziel.|
-|networkIPv4|Zeichenfolge| IPv4-IP-Adresse. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
-|networkIPv6|Zeichenfolge| IPv6-IP-Adresse. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
+|networkIPv4|String| IPv4-IP-Adresse. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
+|networkIPv6|String| IPv6-IP-Adresse. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
 |networkPort|Int32| TCP-Anschluß. Nur verwenden, wenn Quelle und Ziel nicht identifiziert werden können. |
 |networkProtocol|Int32|Dezimaldarstellung des Protokoll Felds im IPv4-Header.|
 |networkSourceAsn|Int32|Die Quelle des autonomen Systembezeichners des Netzwerks, auf das im Indikator verwiesen wird.|
-|networkSourceCidrBlock|Zeichenfolge|CIDR-Block Notations Darstellung des Quellnetzwerks in diesem Indikator|
-|networkSourceIPv4|Zeichenfolge|IPv4-IP-Adressquelle.|
-|networkSourceIPv6|Zeichenfolge|IPv6-IP-Adressquelle.|
+|networkSourceCidrBlock|String|CIDR-Block Notations Darstellung des Quellnetzwerks in diesem Indikator|
+|networkSourceIPv4|String|IPv4-IP-Adressquelle.|
+|networkSourceIPv6|String|IPv6-IP-Adressquelle.|
 |networkSourcePort|Int32|TCP-Anschluß Quelle.|
 |url|String|Uniform Resource Locator. Diese URL muss RFC 1738 entsprechen.|
-|userAgent|Zeichenfolge|Benutzer-Agent-Zeichenfolge aus einer Webanforderung, die auf eine Gefährdung hindeuten könnte.|
+|userAgent|String|Benutzer-Agent-Zeichenfolge aus einer Webanforderung, die auf eine Gefährdung hindeuten könnte.|
 
 ### <a name="diamondmodel-values"></a>diamondModel-Werte
 

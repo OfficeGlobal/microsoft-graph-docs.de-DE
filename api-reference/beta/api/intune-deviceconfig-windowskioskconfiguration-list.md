@@ -4,12 +4,12 @@ description: AufListen von Eigenschaften und Beziehungen der windowsKioskConfigu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58c071000b60ae98b62c821bc01854e3d8939136
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 77b4a681d3436b2c1870daf59eafe0f2ec45f1df
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570689"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988651"
 ---
 # <a name="list-windowskioskconfigurations"></a>WindowsKioskConfigurations aufListen
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570689"
 AufListen von Eigenschaften und Beziehungen der [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) -Objekte.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/concepts/permissions-reference.md).
+Eine der nachfolgenden Berechtigungen ist erforderlich, um diese API aufrufen zu können. Weitere Informationen, unter anderem zur Auswahl von Berechtigungen, finden Sie im Artikel zum Thema [Berechtigungen](/graph/permissions-reference).
 
 |Berechtigungstyp|Berechtigungen (von der Berechtigung mit den meisten Rechten zu der mit den wenigsten Rechten)|
 |:---|:---|
